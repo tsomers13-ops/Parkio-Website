@@ -77,7 +77,7 @@ export function Hero() {
             </div>
 
             <div
-              className="mt-10 flex animate-fade-up items-center gap-6 text-xs text-ink-500"
+              className="mt-10 flex animate-fade-up flex-wrap items-center gap-x-6 gap-y-2 text-xs text-ink-500"
               style={{ animationDelay: "240ms" }}
             >
               <Stat label="Parks supported" value="6" />

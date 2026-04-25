@@ -1,4 +1,6 @@
 import { notFound } from "next/navigation";
+import { Footer } from "@/components/Footer";
+import { ParkInsights } from "@/components/ParkInsights";
 import { ParkMap } from "@/components/ParkMap";
 import { PARKS, getPark, getRidesForPark } from "@/lib/data";
 import type { ParkId } from "@/lib/types";
@@ -17,8 +19,15 @@ export function generateMetadata({ params }: ParkPageProps) {
   const park = getPark(params.parkId);
   if (!park) return { title: "Park · Parkio" };
   return {
-    title: `${park.name} · Parkio`,
-    description: `Live wait times and a clean map for ${park.name}.`,
+    title: `${park.name} · Live wait times`,
+    description: `Real-time wait times for every attraction at ${park.name}. Live map, ride status, and a clean attraction list — updated every minute.`,
+    alternates: { canonical: `/parks/${park.id}` },
+    openGraph: {
+      title: `${park.name} — Live wait times on Parkio`,
+      description: `See live wait times, ride status, and the longest queues at ${park.name} right now.`,
+      type: "website",
+      url: `/parks/${park.id}`,
+    },
   };
 }
 
@@ -31,6 +40,8 @@ export default function ParkPage({ params }: ParkPageProps) {
   return (
     <main className="relative">
       <ParkMap park={park} rides={rides} />
+      <ParkInsights park={park} />
+      <Footer />
     </main>
   );
 }
