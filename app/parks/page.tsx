@@ -1,6 +1,7 @@
 import { Footer } from "@/components/Footer";
 import { Navbar } from "@/components/Navbar";
-import { ParkCard } from "@/components/ParkCard";
+import { ParkCardLive } from "@/components/ParkCardLive";
+import { ParksStatusSummary } from "@/components/ParksStatusSummary";
 import { PARKS } from "@/lib/data";
 
 export const metadata = {
@@ -29,9 +30,11 @@ export default function ParksPage() {
             </p>
           </div>
 
+          <ParksStatusSummary />
+
           <div className="mt-10 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-2">
             {PARKS.map((park) => (
-              <ParkCard key={park.id} park={park} />
+              <ParkCardLive key={park.id} park={park} />
             ))}
           </div>
         </div>

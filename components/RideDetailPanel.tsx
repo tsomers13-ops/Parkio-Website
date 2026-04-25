@@ -17,7 +17,9 @@ export function RideDetailPanel({
 }: RideDetailPanelProps) {
   const wait = display.wait;
   const isOperating = display.status === "OPERATING";
-  const tier = waitTier(wait);
+  const hasWait = typeof wait === "number";
+  // Use a neutral tier when wait is null so the card stays the same shape.
+  const tier = waitTier(wait ?? 0);
   const c = waitColorClasses(tier);
 
   const trendLabel =
@@ -72,7 +74,7 @@ export function RideDetailPanel({
       </div>
 
       <div className="mt-5 grid grid-cols-3 gap-3">
-        {isOperating ? (
+        {isOperating && hasWait ? (
           <div className={`rounded-2xl px-3 py-3 ring-1 ${c.bg} ${c.ring}`}>
             <div className={`text-[10px] font-medium uppercase tracking-widest ${c.text} opacity-80`}>
               Wait
@@ -80,6 +82,14 @@ export function RideDetailPanel({
             <div className={`mt-0.5 text-xl font-semibold ${c.text}`}>
               {wait} min
             </div>
+          </div>
+        ) : isOperating ? (
+          <div className="rounded-2xl bg-ink-100 px-3 py-3 ring-1 ring-ink-200">
+            <div className="text-[10px] font-medium uppercase tracking-widest text-ink-600 opacity-80">
+              Wait
+            </div>
+            <div className="mt-0.5 text-xl font-semibold text-ink-500">—</div>
+            <div className="mt-1 text-[10px] text-ink-500">No data</div>
           </div>
         ) : (
           <div className="rounded-2xl bg-ink-100 px-3 py-3 ring-1 ring-ink-200">

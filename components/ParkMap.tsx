@@ -3,22 +3,18 @@
 import type L from "leaflet";
 import dynamic from "next/dynamic";
 import { useEffect, useMemo, useRef, useState } from "react";
-import type { Park, Ride } from "@/lib/types";
 import {
-  fetchLiveData,
-  type RideLive,
-  type RideStatus,
-  simulatedWait,
-} from "@/lib/utils";
-
-export interface RideDisplay {
-  /** Numeric wait when the ride is operating. */
-  wait: number;
-  /** Status reported by the live API (or OPERATING when fallback to sim). */
-  status: RideStatus;
-  /** Was this value pulled from the live API (vs simulated)? */
-  isLive: boolean;
-}
+  fetchPark,
+  fetchParkLive,
+} from "@/lib/parkioClient";
+import type {
+  ApiPark,
+  ApiParkLive,
+  ApiAttractionStatus,
+  Park,
+  Ride,
+} from "@/lib/types";
+import { simulatedWait } from "@/lib/utils";
 import { BottomSheet } from "./BottomSheet";
 import { RideDetailPanel } from "./RideDetailPanel";
 
@@ -27,6 +23,25 @@ const LeafletMap = dynamic(() => import("./LeafletMap"), {
   ssr: false,
   loading: () => <div className="h-full w-full bg-ink-50" />,
 });
+
+/**
+ * What we render for each ride. Combines API data (when available)
+ * with a deterministic simulated fallback so the map always feels alive.
+ */
+export interface RideDisplay {
+  /** Wait minutes when known; null = no wait time available right now. */
+  wait: number | null;
+  /** Status: OPERATING / DOWN / CLOSED / REFURBISHMENT / UNKNOWN. */
+  status: ApiAttractionStatus;
+  /** True when the wait/status came from /api/parks/[slug]/live; false = simulated. */
+  isLive: boolean;
+}
+
+export type LiveStatus =
+  | "loading" // first fetch hasn't returned yet
+  | "live" // most recent fetch returned real data
+  | "estimates" // most recent fetch failed or upstream was down
+  ;
 
 interface ParkMapProps {
   park: Park;
@@ -37,38 +52,20 @@ export function ParkMap({ park, rides }: ParkMapProps) {
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [now, setNow] = useState<number>(() => Date.now());
   const [time, setTime] = useState<string>("--:--");
-  const [liveData, setLiveData] = useState<Map<string, RideLive>>(
-    () => new Map(),
-  );
-  const [liveStatus, setLiveStatus] = useState<"loading" | "live" | "offline">(
-    "loading",
-  );
+  const [parkApi, setParkApi] = useState<ApiPark | null>(null);
+  const [liveApi, setLiveApi] = useState<ApiParkLive | null>(null);
+  const [liveStatus, setLiveStatus] = useState<LiveStatus>("loading");
+  const [lastUpdated, setLastUpdated] = useState<string | null>(null);
   const mapRef = useRef<L.Map | null>(null);
 
-  // Tick simulated wait times every 30s (used as fallback when no live data)
+  // Tick once a minute so the simulated fallback breathes when live data is
+  // unavailable, and so the "last updated 2m ago" label refreshes.
   useEffect(() => {
     const id = setInterval(() => setNow(Date.now()), 30_000);
     return () => clearInterval(id);
   }, []);
 
-  // Fetch live wait times from themeparks.wiki on mount + every 60s
-  useEffect(() => {
-    let cancelled = false;
-    async function load() {
-      const live = await fetchLiveData(park);
-      if (cancelled) return;
-      setLiveData(live);
-      setLiveStatus(live.size > 0 ? "live" : "offline");
-    }
-    load();
-    const id = setInterval(load, 60_000);
-    return () => {
-      cancelled = true;
-      clearInterval(id);
-    };
-  }, [park]);
-
-  // Live clock (client-side only to avoid hydration mismatch)
+  // Live clock for the top bar (client-only, avoids hydration mismatch).
   useEffect(() => {
     function tick() {
       setTime(
@@ -83,17 +80,93 @@ export function ParkMap({ park, rides }: ParkMapProps) {
     return () => clearInterval(id);
   }, []);
 
+  // Pull both park metadata + live attractions from Parkio's own API.
+  useEffect(() => {
+    const ctl = new AbortController();
+    let timer: ReturnType<typeof setTimeout> | null = null;
+
+    async function load() {
+      try {
+        const [parkRes, liveRes] = await Promise.all([
+          fetchPark(park.id, ctl.signal),
+          fetchParkLive(park.id, ctl.signal),
+        ]);
+        setParkApi(parkRes);
+        setLiveApi(liveRes);
+        setLastUpdated(liveRes.lastUpdated);
+        setLiveStatus(liveRes.live ? "live" : "estimates");
+      } catch (err) {
+        // Network failure or aborted — keep showing simulated fallback.
+        if ((err as Error).name !== "AbortError") {
+          setLiveStatus("estimates");
+        }
+      } finally {
+        if (!ctl.signal.aborted) {
+          // Refresh every 60s even on success so the "Live" label stays honest.
+          timer = setTimeout(load, 60_000);
+        }
+      }
+    }
+
+    setLiveStatus("loading");
+    setLastUpdated(null);
+    load();
+
+    return () => {
+      ctl.abort();
+      if (timer) clearTimeout(timer);
+    };
+  }, [park]);
+
+  // Fast lookup of live attractions by Parkio slug.
+  const liveBySlug = useMemo(() => {
+    const map = new Map<string, ApiParkLive["attractions"][number]>();
+    for (const a of liveApi?.attractions ?? []) map.set(a.slug, a);
+    return map;
+  }, [liveApi]);
+
+  /**
+   * Per-ride display state. Resolves to one of:
+   *
+   *   - real wait (live, OPERATING + waitMinutes is a number)
+   *   - status pill (live, status DOWN/CLOSED/REFURBISHMENT)
+   *   - "no wait time" (live, OPERATING but waitMinutes is null)
+   *   - simulated fallback (no live data yet OR live but UNKNOWN)
+   */
   const displays = useMemo(() => {
     const map = new Map<string, RideDisplay>();
     for (const r of rides) {
-      const live = liveData.get(r.externalId);
-      if (live && live.status !== "OPERATING") {
-        // API says it's down/closed/refurbishing — show that, not a wait time
-        map.set(r.id, { wait: 0, status: live.status, isLive: true });
-      } else if (live && typeof live.wait === "number") {
-        map.set(r.id, { wait: live.wait, status: "OPERATING", isLive: true });
+      const live = liveBySlug.get(r.id);
+      if (live) {
+        if (live.status === "OPERATING") {
+          if (typeof live.waitMinutes === "number") {
+            map.set(r.id, {
+              wait: live.waitMinutes,
+              status: "OPERATING",
+              isLive: true,
+            });
+          } else {
+            // Operating but no standby data right now.
+            map.set(r.id, { wait: null, status: "OPERATING", isLive: true });
+          }
+        } else if (live.status === "UNKNOWN") {
+          // API admits it doesn't know — fall back to simulated so the
+          // map still feels alive.
+          map.set(r.id, {
+            wait: simulatedWait(r, now),
+            status: "OPERATING",
+            isLive: false,
+          });
+        } else {
+          // DOWN / CLOSED / REFURBISHMENT
+          map.set(r.id, {
+            wait: null,
+            status: live.status,
+            isLive: true,
+          });
+        }
       } else {
-        // No live data yet (or operating but no standby) → simulated fallback
+        // No row in the live response yet (still loading or attraction not in the upstream).
         map.set(r.id, {
           wait: simulatedWait(r, now),
           status: "OPERATING",
@@ -102,12 +175,29 @@ export function ParkMap({ park, rides }: ParkMapProps) {
       }
     }
     return map;
-  }, [rides, liveData, now]);
+  }, [rides, liveBySlug, now]);
 
   const selectedRide = useMemo(
     () => rides.find((r) => r.id === selectedId) ?? null,
     [rides, selectedId],
   );
+
+  // Park-level status. Prefer the API. Falls back to the static config.
+  const parkStatus = parkApi?.status ?? "UNKNOWN";
+  const isParkClosed = parkStatus === "CLOSED";
+
+  // Render a friendly "2m ago" / "just now" label for the lastUpdated stamp.
+  const lastUpdatedLabel = useMemo(() => {
+    if (!lastUpdated) return null;
+    const ts = Date.parse(lastUpdated);
+    if (Number.isNaN(ts)) return null;
+    const ageS = Math.max(0, Math.round((now - ts) / 1000));
+    if (ageS < 30) return "just now";
+    if (ageS < 90) return "1m ago";
+    if (ageS < 60 * 60) return `${Math.round(ageS / 60)}m ago`;
+    if (ageS < 60 * 60 * 24) return `${Math.round(ageS / 3600)}h ago`;
+    return new Date(ts).toLocaleString();
+  }, [lastUpdated, now]);
 
   function zoomIn() {
     mapRef.current?.zoomIn();
@@ -126,12 +216,7 @@ export function ParkMap({ park, rides }: ParkMapProps) {
           [Math.min(...lats), Math.min(...lngs)],
           [Math.max(...lats), Math.max(...lngs)],
         ],
-        {
-          padding: [80, 80],
-          maxZoom: 18,
-          animate: true,
-          duration: 0.6,
-        },
+        { padding: [80, 80], maxZoom: 18, animate: true, duration: 0.6 },
       );
     } else {
       map.flyTo([park.lat, park.lng], park.zoom, { duration: 0.6 });
@@ -187,42 +272,7 @@ export function ParkMap({ park, rides }: ParkMapProps) {
                 {park.name}
               </div>
             </div>
-            <span
-              className={`ml-2 hidden items-center gap-1.5 rounded-full px-2 py-1 text-[11px] font-medium ring-1 sm:inline-flex ${
-                liveStatus === "live"
-                  ? "bg-emerald-50 text-emerald-700 ring-emerald-200"
-                  : liveStatus === "offline"
-                    ? "bg-ink-100 text-ink-600 ring-ink-200"
-                    : "bg-ink-50 text-ink-500 ring-ink-200"
-              }`}
-              title={
-                liveStatus === "live"
-                  ? "Live wait times from themeparks.wiki"
-                  : liveStatus === "offline"
-                    ? "Live data unavailable — showing estimated waits"
-                    : "Loading live wait times…"
-              }
-            >
-              <span className="relative flex h-1.5 w-1.5">
-                {liveStatus === "live" && (
-                  <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75" />
-                )}
-                <span
-                  className={`relative inline-flex h-1.5 w-1.5 rounded-full ${
-                    liveStatus === "live"
-                      ? "bg-emerald-500"
-                      : liveStatus === "offline"
-                        ? "bg-ink-400"
-                        : "bg-ink-300"
-                  }`}
-                />
-              </span>
-              {liveStatus === "live"
-                ? "Live"
-                : liveStatus === "offline"
-                  ? "Estimates"
-                  : "Loading"}
-            </span>
+            <LiveBadge status={liveStatus} />
           </div>
 
           <div className="surface-glass inline-flex items-center gap-1.5 rounded-full px-3 py-2 text-sm font-medium text-ink-800 shadow-soft">
@@ -244,6 +294,22 @@ export function ParkMap({ park, rides }: ParkMapProps) {
             </svg>
             <span suppressHydrationWarning>{time}</span>
           </div>
+        </div>
+
+        {/* Last updated + Park closed strip */}
+        <div className="pointer-events-auto mx-auto mt-2 flex max-w-3xl items-center justify-center gap-2">
+          {isParkClosed && (
+            <div className="surface-glass inline-flex items-center gap-2 rounded-full px-3 py-1.5 text-[11px] font-semibold text-rose-700 shadow-soft ring-1 ring-rose-200">
+              <span className="h-1.5 w-1.5 rounded-full bg-rose-500" />
+              Park is closed today
+            </div>
+          )}
+          {lastUpdatedLabel && (
+            <div className="surface-glass inline-flex items-center gap-1.5 rounded-full px-3 py-1.5 text-[11px] font-medium text-ink-600 shadow-soft">
+              <span aria-hidden>·</span>
+              <span>Updated {lastUpdatedLabel}</span>
+            </div>
+          )}
         </div>
       </div>
 
@@ -354,5 +420,44 @@ export function ParkMap({ park, rides }: ParkMapProps) {
         )}
       </BottomSheet>
     </div>
+  );
+}
+
+/* ─────────────────── Live badge ─────────────────── */
+
+function LiveBadge({ status }: { status: LiveStatus }) {
+  if (status === "loading") {
+    return (
+      <span
+        className="ml-2 hidden items-center gap-1.5 rounded-full bg-ink-50 px-2 py-1 text-[11px] font-medium text-ink-500 ring-1 ring-ink-200 sm:inline-flex"
+        title="Loading live wait times…"
+      >
+        <span className="h-1.5 w-1.5 rounded-full bg-ink-300" />
+        Loading
+      </span>
+    );
+  }
+  if (status === "estimates") {
+    return (
+      <span
+        className="ml-2 hidden items-center gap-1.5 rounded-full bg-ink-100 px-2 py-1 text-[11px] font-medium text-ink-600 ring-1 ring-ink-200 sm:inline-flex"
+        title="Live data unavailable — showing estimated waits"
+      >
+        <span className="h-1.5 w-1.5 rounded-full bg-ink-400" />
+        Estimates
+      </span>
+    );
+  }
+  return (
+    <span
+      className="ml-2 hidden items-center gap-1.5 rounded-full bg-emerald-50 px-2 py-1 text-[11px] font-medium text-emerald-700 ring-1 ring-emerald-200 sm:inline-flex"
+      title="Live wait times from the Parkio API"
+    >
+      <span className="relative flex h-1.5 w-1.5">
+        <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75" />
+        <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-emerald-500" />
+      </span>
+      Live
+    </span>
   );
 }

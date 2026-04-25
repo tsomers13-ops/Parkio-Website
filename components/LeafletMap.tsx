@@ -177,11 +177,17 @@ function makeRideIcon(name: string, display: RideDisplay, selected: boolean) {
     : "ring-1 ring-ink-200";
 
   let pillContent: string;
-  if (display.status !== "OPERATING") {
+  if (display.status !== "OPERATING" && display.status !== "UNKNOWN") {
     // Gray pill with status text — Down / Closed / Refurb
     pillContent = `
       <span class="inline-block h-2 w-2 rounded-full bg-ink-300"></span>
-      <span class="text-[11px] font-semibold tracking-tight text-ink-500">${statusLabel(display.status)}</span>
+      <span class="text-[11px] font-semibold tracking-tight text-ink-500">${statusLabel(display.status as Exclude<typeof display.status, "UNKNOWN">)}</span>
+    `;
+  } else if (display.wait === null) {
+    // Operating but no standby data right now — show an em-dash placeholder.
+    pillContent = `
+      <span class="inline-block h-2 w-2 rounded-full bg-ink-300"></span>
+      <span class="text-[11px] font-semibold tracking-tight text-ink-500">—</span>
     `;
   } else {
     const tier = waitTier(display.wait);

@@ -31,6 +31,12 @@ export function Navbar() {
             >
               Preview
             </Link>
+            <Link
+              href="/#faq"
+              className="text-sm text-ink-600 transition hover:text-ink-900"
+            >
+              FAQ
+            </Link>
           </nav>
 
           <Link

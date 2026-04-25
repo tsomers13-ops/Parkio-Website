@@ -2,38 +2,42 @@
 
 Skip the lines. Own your day.
 
-A modern Disney park planning + navigation experience built with Next.js 14 (App Router), Tailwind CSS, and TypeScript. Designed iPhone-first, with a clean, premium feel and zero clutter.
+Parkio is a public website that helps you make smarter Disney park days
+with **real-time wait times, live park status, and a clean,
+glanceable map**. Built with Next.js 14 (App Router), Tailwind CSS, and
+TypeScript. The same Next.js app also serves Parkio's JSON API at
+`/api/*`.
 
 ## What's inside
 
-- **Landing page** — hero, feature grid, product preview, CTA, footer
-- **Park selection** — all six Disney parks: Walt Disney World (Magic Kingdom, EPCOT, Hollywood Studios, Animal Kingdom) and Disneyland Resort (Disneyland Park, Disney California Adventure), with live status + crowd indicators
-- **Park map (the core experience)** — full-screen SVG map with ride pins, color-coded wait times, drag-to-pan, pinch/wheel-to-zoom, and a draggable bottom sheet for ride details
-- **Ride detail** — wait time, trend (rising/falling/steady), Lightning Lane status, height requirements, description, "Add to plan"
-- **Simulated live data** — wait times jiggle every 30 seconds with a deterministic pseudo-random model so the app feels alive without an API
+- **Landing page** — hero, features, how-it-works, product preview, FAQ, CTA
+- **Park selection** — six U.S. Disney parks (4 Walt Disney World + 2 Disneyland Resort) with live "open today" status that hydrates from `/api/parks`
+- **Park map** — full-screen Leaflet map with real GPS-pinned attractions, color-coded live wait times, status pills (Down / Closed / Refurb), drag-to-pan, pinch/wheel-to-zoom, marker clustering, and a draggable bottom sheet
+- **Support** + **Privacy Policy** pages
+- **JSON API** under `/api/*` (see [API.md](./API.md))
 
 ## Tech
 
-- Next.js 14 · App Router
+- Next.js 14 · App Router (edge-runtime API routes)
 - React 18
-- Tailwind CSS 3.4 with a small custom design system (`ink`, `accent`, `wait` palettes, soft shadows, fade/slide animations)
+- Tailwind CSS 3.4 with a small custom design system (`ink`, `accent`,
+  wait-tier palettes; soft shadows; fade/slide animations)
 - TypeScript (strict)
-- Zustand (installed for future state expansion — not yet used)
-- Zero map dependencies — the park map is a custom SVG canvas built for a clean, premium feel
+- Leaflet + react-leaflet + leaflet.markercluster (CARTO Voyager basemap)
+- Zustand installed for future cross-page state — not yet used
+- Live data: themeparks.wiki public API, fetched server-side and cached
 
 ## Run locally
 
 ```bash
-# 1. Install dependencies
 npm install
-
-# 2. Start the dev server
 npm run dev
-
-# 3. Open http://localhost:3000
+# open http://localhost:3000
 ```
 
-Build for production:
+API routes are reachable at `http://localhost:3000/api/parks` etc.
+
+Production build:
 
 ```bash
 npm run build
@@ -45,125 +49,108 @@ npm start
 ```
 parkio/
 ├── app/
-│   ├── layout.tsx              # Root layout, fonts, metadata
-│   ├── globals.css             # Tailwind + design tokens
-│   ├── page.tsx                # Landing page
-│   └── parks/
-│       ├── page.tsx            # Park selection
-│       └── [parkId]/
-│           └── page.tsx        # Full-screen park map
+│   ├── layout.tsx
+│   ├── globals.css
+│   ├── page.tsx                     # Landing
+│   ├── parks/
+│   │   ├── page.tsx                 # Park selection
+│   │   └── [parkId]/page.tsx        # Park map
+│   ├── support/page.tsx
+│   ├── privacy/page.tsx
+│   └── api/                         # See API.md
+│       ├── parks/route.ts
+│       ├── parks/[parkSlug]/route.ts
+│       ├── parks/[parkSlug]/live/route.ts
+│       ├── parks/[parkSlug]/hours/route.ts
+│       ├── resorts/[resortSlug]/route.ts
+│       └── attractions/[attractionSlug]/route.ts
 ├── components/
-│   ├── Navbar.tsx
-│   ├── Footer.tsx
-│   ├── Hero.tsx
-│   ├── Features.tsx
-│   ├── AppPreview.tsx
-│   ├── CTASection.tsx
-│   ├── ParkCard.tsx
-│   ├── WaitTimeBadge.tsx
-│   ├── ParkMap.tsx             # Map surface, zoom/pan, top bar
-│   ├── RidePin.tsx             # Animated map pin with live wait
-│   ├── BottomSheet.tsx         # Drag-to-dismiss bottom sheet
-│   └── RideDetailPanel.tsx     # Ride info inside the sheet
-├── lib/
-│   ├── types.ts
-│   ├── data.ts                 # Mock parks + rides
-│   └── utils.ts                # Wait-tier color logic, simulated waits
-├── tailwind.config.ts
-├── postcss.config.mjs
-├── next.config.mjs
-├── tsconfig.json
-└── package.json
+│   ├── Hero.tsx, Features.tsx, HowItWorks.tsx, AppPreview.tsx, FAQ.tsx,
+│   ├── CTASection.tsx, Navbar.tsx, Footer.tsx, LegalLayout.tsx
+│   ├── ParkCard.tsx, ParkCardLive.tsx, ParksStatusSummary.tsx
+│   ├── ParkMap.tsx, LeafletMap.tsx, BottomSheet.tsx, RideDetailPanel.tsx
+│   └── WaitTimeBadge.tsx
+└── lib/
+    ├── parkioClient.ts              # Browser fetchers for /api/*
+    ├── disneyParkConfig.ts          # 6 parks + 2 resorts
+    ├── themeparksApi.ts             # Server-only upstream client
+    ├── parkioNormalizer.ts          # themeparks.wiki → Parkio JSON
+    ├── cache.ts                     # In-memory TTL cache
+    ├── data.ts                      # Static UI mock (theme colors, ride menu)
+    ├── types.ts                     # Park, Ride, ApiPark, ApiAttraction, …
+    └── utils.ts                     # statusLabel, simulatedWait, color helpers
 ```
 
-## Design system at a glance
-
-- 8pt spacing rhythm
-- Rounded corners (`rounded-2xl`, `rounded-3xl`, `rounded-4xl`)
-- Soft, layered shadows (`shadow-soft`, `shadow-lift`, `shadow-glow`)
-- Wait-time color coding: green (≤30m), amber (31–60m), rose (60m+)
-- Glass surfaces over the map (`surface-glass`)
-- Inter typeface for clean, modern hierarchy
-
-## Future-ready
-
-- `lib/data.ts` is structured to swap in a real wait-times API (themeparks.wiki, queue-times, or a custom backend) by replacing `simulatedWait()` and the static `RIDES` array — components consume types, not the data shape directly.
-- Zustand is wired up as a dependency for cross-page state when planning, favorites, and itineraries are added.
-- Ride pins are coordinate-based (`0–100` x/y), so swapping the SVG backdrop for a real licensed map is a one-component change.
-
-## Parkio API
-
-The website also serves Parkio's public JSON API at `/api/*`. The iOS app
-consumes the same endpoints — clients should never call themeparks.wiki
-directly.
-
-**Architecture:**
+## How the website talks to its data
 
 ```
-themeparks.wiki  →  Parkio API (cache + normalize)  →  Website + iPhone app
+themeparks.wiki  →  Parkio API (cache + normalize)  →  Website
 ```
 
-**Endpoints:**
+The browser **never** calls themeparks.wiki directly anymore. Every
+piece of live data flows through Parkio's own `/api/*` routes:
 
-| Method | Path                                | Purpose                              |
-| ------ | ----------------------------------- | ------------------------------------ |
-| GET    | `/api/parks`                        | List supported parks + today's hours |
-| GET    | `/api/parks/{parkSlug}`             | Single park metadata                 |
-| GET    | `/api/parks/{parkSlug}/live`        | Live wait times + ride status        |
-| GET    | `/api/parks/{parkSlug}/hours`       | Today's hours + 14-day forecast      |
-| GET    | `/api/resorts/{resortSlug}`         | Resort + its parks                   |
-| GET    | `/api/attractions/{attractionSlug}` | Single attraction                    |
+| Page                    | Routes consumed                                                      |
+| ----------------------- | -------------------------------------------------------------------- |
+| `/parks` (selection)    | `/api/parks`                                                         |
+| `/parks/[slug]` (map)   | `/api/parks/[slug]`, `/api/parks/[slug]/live` (refreshed every 60s)  |
 
-Supported `parkSlug` values: `magic-kingdom`, `epcot`, `hollywood-studios`,
-`animal-kingdom`, `disneyland`, `california-adventure`. Supported
-`resortSlug` values: `walt-disney-world`, `disneyland-resort`.
+That means:
 
-**Caching:** Live wait times cache for 5 minutes (in-memory + CDN edge
-cache); park hours cache for 30 minutes. If themeparks.wiki is
-unreachable, routes fall back to Parkio's static attraction list with
-`status: "UNKNOWN"` so the UI can render a graceful "estimates
-unavailable" state.
+- The same routes the website depends on are public, documented, and
+  testable
+- The upstream rate limit is shared and protected by an in-memory + CDN
+  cache (`s-maxage` = 5min for live, 30min for hours)
+- If themeparks.wiki ever goes down, every route returns a graceful
+  fallback shape with `live: false` / `status: "UNKNOWN"` — clients
+  render a "showing estimates" state instead of breaking
 
-Full reference: see [`API.md`](./API.md).
+Full API reference: [API.md](./API.md).
 
-## iOS integration
+## Fallback states the UI handles
 
-Swift `Codable` models for every response shape live in
-[`SWIFT_MODELS.md`](./SWIFT_MODELS.md). Drop them into the iPhone app to
-consume `/api/*` directly. **Slugs are stable for iOS** — persist by
-slug, not by themeparks.wiki UUID.
+| Situation                                  | What the user sees                                 |
+| ------------------------------------------ | -------------------------------------------------- |
+| First fetch in flight                      | "Loading" pill in the top bar                      |
+| `/api/.../live` returned `live: false`     | "Estimates" pill; pins fall back to simulated      |
+| Live row reports OPERATING, no wait number | Pin renders "—"; bottom sheet says "No data"       |
+| Live row reports DOWN/CLOSED/REFURBISHMENT | Gray pin + status word; bottom sheet status card   |
+| `/api/parks/[slug]` returns CLOSED         | Rose-tone "Park is closed today" strip in top bar  |
+| Last-updated freshness                     | "Updated 2m ago" pill next to the park name        |
 
-## API layer file map
+## Caching at a glance
 
-```
-lib/
-├── disneyParkConfig.ts   # 6 parks + 2 resorts; canonical externalIds
-├── themeparksApi.ts      # Raw upstream client (server-only)
-├── parkioNormalizer.ts   # themeparks.wiki → Parkio JSON
-└── cache.ts              # In-memory TTL cache + TTL constants
-
-app/api/
-├── _lib/respond.ts                    # Shared JSON helpers
-├── parks/route.ts                     # GET list
-├── parks/[parkSlug]/route.ts          # GET one
-├── parks/[parkSlug]/live/route.ts     # GET live waits
-├── parks/[parkSlug]/hours/route.ts    # GET hours
-├── resorts/[resortSlug]/route.ts      # GET resort
-└── attractions/[attractionSlug]/route.ts  # GET one attraction
-```
-
-All routes use `export const runtime = 'edge'` so they ship on
-Cloudflare Pages (with `@cloudflare/next-on-pages`) or Vercel.
+| Endpoint                    | In-memory TTL | CDN s-maxage   |
+| --------------------------- | ------------- | -------------- |
+| `/api/parks/[slug]/live`    | 5 min         | 5 min (SWR 20m) |
+| `/api/parks/[slug]/hours`   | 30 min        | 30 min          |
+| `/api/parks/[slug]` & list  | 30 min        | 30 min          |
+| `/api/resorts/[slug]`       | 30 min        | 30 min          |
+| `/api/attractions/[slug]`   | shares park-level live cache | 5 min |
 
 ## Deployment
 
-See [`DEPLOY.md`](./DEPLOY.md). Static export is no longer used — the
-new API routes need a runtime. Both Vercel and Cloudflare Pages (via
-`@cloudflare/next-on-pages`) are supported.
+See [DEPLOY.md](./DEPLOY.md). The site needs a runtime now (real API
+routes), so the previous static-export setup no longer applies. Two
+supported paths: Vercel (zero-config) or Cloudflare Pages with the
+`@cloudflare/next-on-pages` adapter.
 
 ## Notes on scope
 
-This build deliberately keeps things tight: no auth, no accounts, no
-favorites, no day-planner page. Those are intentional gaps — the data
-layer, types, design system, and API are the parts that needed to be
-right first.
+This is intentionally tight. **No** auth, accounts, favorites, day
+planner, or push notifications yet. The data layer, types, design
+system, and API are the parts that needed to be right first.
+
+---
+
+## Future: Parkio iPhone app
+
+Parkio's roadmap includes an iPhone companion app. The current API was
+shaped with that in mind — every endpoint returns a stable JSON shape
+with iOS-friendly slugs — but **iOS work is paused until the public
+website is fully production-ready**.
+
+When iOS work resumes, drop-in Swift Codable models live in
+[SWIFT_MODELS.md](./SWIFT_MODELS.md). The iPhone app will consume the
+exact same `/api/*` routes documented in [API.md](./API.md). The
+iPhone app should never call themeparks.wiki directly.

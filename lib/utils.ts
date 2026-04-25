@@ -1,4 +1,8 @@
-import type { CrowdLevel, Park, Ride } from "./types";
+import type {
+  ApiAttractionStatus,
+  CrowdLevel,
+  Ride,
+} from "./types";
 
 export type WaitTier = "low" | "mid" | "high";
 
@@ -98,66 +102,15 @@ export function formatTime(d: Date = new Date()): string {
   });
 }
 
-/* ──────────── Live wait times (themeparks.wiki API) ──────────── */
-
-export type RideStatus =
-  | "OPERATING"
-  | "DOWN"
-  | "CLOSED"
-  | "REFURBISHMENT";
-
-export interface RideLive {
-  /** null = no standby data (e.g. virtual queue only, or status != OPERATING). */
-  wait: number | null;
-  status: RideStatus;
-}
-
-interface LiveQueueEntry {
-  id: string;
-  status?: RideStatus;
-  queue?: {
-    STANDBY?: { waitTime: number | null };
-  };
-}
-
-interface LiveResponse {
-  liveData?: LiveQueueEntry[];
-}
+/* ──────────────────────── Status helpers ──────────────────────── */
 
 /**
- * Fetch live wait times + status for a single park from themeparks.wiki.
- * Returns a Map keyed by ride externalId.
- *
- * Falls back to an empty map on error so callers can keep showing
- * simulated waits without breaking.
+ * Friendly short label for a ride's status. Used by the map pin and
+ * the bottom sheet. The website never renders "OPERATING" through this
+ * helper — that path uses the wait minutes — so the OPERATING branch
+ * is only used in defensive code.
  */
-export async function fetchLiveData(
-  park: Park,
-): Promise<Map<string, RideLive>> {
-  const result = new Map<string, RideLive>();
-  try {
-    const res = await fetch(
-      `https://api.themeparks.wiki/v1/entity/${park.externalId}/live`,
-      { cache: "no-store" },
-    );
-    if (!res.ok) return result;
-    const data = (await res.json()) as LiveResponse;
-    for (const entry of data.liveData ?? []) {
-      const status = entry.status ?? "OPERATING";
-      const rawWait = entry.queue?.STANDBY?.waitTime;
-      result.set(entry.id, {
-        wait: typeof rawWait === "number" ? rawWait : null,
-        status,
-      });
-    }
-  } catch {
-    // Network or parsing error — silent fallback.
-  }
-  return result;
-}
-
-/** Friendly short label for a non-operating ride. */
-export function statusLabel(status: RideStatus): string {
+export function statusLabel(status: ApiAttractionStatus): string {
   switch (status) {
     case "DOWN":
       return "Down";
@@ -165,6 +118,8 @@ export function statusLabel(status: RideStatus): string {
       return "Closed";
     case "REFURBISHMENT":
       return "Refurb";
+    case "UNKNOWN":
+      return "—";
     case "OPERATING":
       return "Open";
   }
