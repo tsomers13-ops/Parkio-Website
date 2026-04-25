@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 255 255 255;
+  --foreground: 15 23 42;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  color: rgb(var(--foreground));
+  background: rgb(var(--background));
+  font-feature-settings: "ss01", "cv11";
+  letter-spacing: -0.011em;
+}
+
+/* Smooth focus rings */
+:focus-visible {
+  outline: 2px solid rgb(99 102 241);
+  outline-offset: 2px;
+  border-radius: 8px;
+}
+
+/* Hide scrollbar for elegant scroll containers */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Soft gradient backdrop used in hero / sections */
+.bg-aurora {
+  background-image:
+    radial-gradient(60% 50% at 20% 10%, rgba(99, 102, 241, 0.10) 0%, transparent 60%),
+    radial-gradient(50% 40% at 80% 0%, rgba(56, 189, 248, 0.10) 0%, transparent 60%),
+    radial-gradient(40% 40% at 50% 100%, rgba(244, 114, 182, 0.08) 0%, transparent 60%);
+}
+
+/* Subtle dotted backdrop for the map */
+.bg-dots {
+  background-image: radial-gradient(rgba(15, 23, 42, 0.08) 1px, transparent 1px);
+  background-size: 18px 18px;
+}
+
+/* Glassy surface used for floating panels */
+.surface-glass {
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: saturate(180%) blur(18px);
+  -webkit-backdrop-filter: saturate(180%) blur(18px);
+}
+
+/* Drag handle for the bottom sheet */
+.sheet-handle {
+  width: 40px;
+  height: 4px;
+  border-radius: 999px;
+  background: rgba(15, 23, 42, 0.18);
+}
