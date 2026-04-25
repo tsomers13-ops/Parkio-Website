@@ -1,15 +1,22 @@
 "use client";
 
 import type { Ride } from "@/lib/types";
-import { waitColorClasses, waitTier } from "@/lib/utils";
+import { statusLabel, waitColorClasses, waitTier } from "@/lib/utils";
+import type { RideDisplay } from "./ParkMap";
 
 interface RideDetailPanelProps {
   ride: Ride;
-  wait: number;
+  display: RideDisplay;
   onClose: () => void;
 }
 
-export function RideDetailPanel({ ride, wait, onClose }: RideDetailPanelProps) {
+export function RideDetailPanel({
+  ride,
+  display,
+  onClose,
+}: RideDetailPanelProps) {
+  const wait = display.wait;
+  const isOperating = display.status === "OPERATING";
   const tier = waitTier(wait);
   const c = waitColorClasses(tier);
 
@@ -65,14 +72,25 @@ export function RideDetailPanel({ ride, wait, onClose }: RideDetailPanelProps) {
       </div>
 
       <div className="mt-5 grid grid-cols-3 gap-3">
-        <div className={`rounded-2xl px-3 py-3 ring-1 ${c.bg} ${c.ring}`}>
-          <div className={`text-[10px] font-medium uppercase tracking-widest ${c.text} opacity-80`}>
-            Wait
+        {isOperating ? (
+          <div className={`rounded-2xl px-3 py-3 ring-1 ${c.bg} ${c.ring}`}>
+            <div className={`text-[10px] font-medium uppercase tracking-widest ${c.text} opacity-80`}>
+              Wait
+            </div>
+            <div className={`mt-0.5 text-xl font-semibold ${c.text}`}>
+              {wait} min
+            </div>
           </div>
-          <div className={`mt-0.5 text-xl font-semibold ${c.text}`}>
-            {wait} min
+        ) : (
+          <div className="rounded-2xl bg-ink-100 px-3 py-3 ring-1 ring-ink-200">
+            <div className="text-[10px] font-medium uppercase tracking-widest text-ink-600 opacity-80">
+              Status
+            </div>
+            <div className="mt-0.5 text-xl font-semibold text-ink-700">
+              {statusLabel(display.status)}
+            </div>
           </div>
-        </div>
+        )}
 
         <div className={`rounded-2xl px-3 py-3 ring-1 ${trendTone}`}>
           <div className="text-[10px] font-medium uppercase tracking-widest opacity-80">
