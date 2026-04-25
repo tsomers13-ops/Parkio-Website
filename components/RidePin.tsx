@@ -52,10 +52,10 @@ export function RidePin({ ride, wait, selected, onSelect }: RidePinProps) {
           </span>
         </span>
 
-        {/* Label, only when zoomed-out emphasis would be useful */}
+        {/* Ride name label, always visible */}
         <span
-          className={`mt-1 max-w-[140px] rounded-md bg-white/85 px-1.5 py-0.5 text-center text-[10px] font-medium text-ink-700 shadow-soft backdrop-blur transition ${
-            selected ? "opacity-100" : "opacity-0 group-hover:opacity-100"
+          className={`mt-1 max-w-[160px] truncate rounded-md bg-white/90 px-2 py-0.5 text-center text-[10px] font-semibold leading-tight tracking-tight shadow-soft backdrop-blur transition ${
+            selected ? "text-ink-900 ring-1 ring-ink-900" : "text-ink-700"
           }`}
         >
           {ride.name}
