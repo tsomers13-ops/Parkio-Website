@@ -4,7 +4,21 @@ import type L from "leaflet";
 import dynamic from "next/dynamic";
 import { useEffect, useMemo, useRef, useState } from "react";
 import type { Park, Ride } from "@/lib/types";
-import { fetchLiveWaits, simulatedWait } from "@/lib/utils";
+import {
+  fetchLiveData,
+  type RideLive,
+  type RideStatus,
+  simulatedWait,
+} from "@/lib/utils";
+
+export interface RideDisplay {
+  /** Numeric wait when the ride is operating. */
+  wait: number;
+  /** Status reported by the live API (or OPERATING when fallback to sim). */
+  status: RideStatus;
+  /** Was this value pulled from the live API (vs simulated)? */
+  isLive: boolean;
+}
 import { BottomSheet } from "./BottomSheet";
 import { RideDetailPanel } from "./RideDetailPanel";
 
@@ -23,7 +37,7 @@ export function ParkMap({ park, rides }: ParkMapProps) {
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [now, setNow] = useState<number>(() => Date.now());
   const [time, setTime] = useState<string>("--:--");
-  const [liveWaits, setLiveWaits] = useState<Map<string, number>>(
+  const [liveData, setLiveData] = useState<Map<string, RideLive>>(
     () => new Map(),
   );
   const [liveStatus, setLiveStatus] = useState<"loading" | "live" | "offline">(
@@ -41,9 +55,9 @@ export function ParkMap({ park, rides }: ParkMapProps) {
   useEffect(() => {
     let cancelled = false;
     async function load() {
-      const live = await fetchLiveWaits(park);
+      const live = await fetchLiveData(park);
       if (cancelled) return;
-      setLiveWaits(live);
+      setLiveData(live);
       setLiveStatus(live.size > 0 ? "live" : "offline");
     }
     load();
@@ -69,14 +83,26 @@ export function ParkMap({ park, rides }: ParkMapProps) {
     return () => clearInterval(id);
   }, []);
 
-  const waits = useMemo(() => {
-    const map = new Map<string, number>();
+  const displays = useMemo(() => {
+    const map = new Map<string, RideDisplay>();
     for (const r of rides) {
-      const live = liveWaits.get(r.externalId);
-      map.set(r.id, typeof live === "number" ? live : simulatedWait(r, now));
+      const live = liveData.get(r.externalId);
+      if (live && live.status !== "OPERATING") {
+        // API says it's down/closed/refurbishing — show that, not a wait time
+        map.set(r.id, { wait: 0, status: live.status, isLive: true });
+      } else if (live && typeof live.wait === "number") {
+        map.set(r.id, { wait: live.wait, status: "OPERATING", isLive: true });
+      } else {
+        // No live data yet (or operating but no standby) → simulated fallback
+        map.set(r.id, {
+          wait: simulatedWait(r, now),
+          status: "OPERATING",
+          isLive: false,
+        });
+      }
     }
     return map;
-  }, [rides, liveWaits, now]);
+  }, [rides, liveData, now]);
 
   const selectedRide = useMemo(
     () => rides.find((r) => r.id === selectedId) ?? null,
@@ -226,7 +252,7 @@ export function ParkMap({ park, rides }: ParkMapProps) {
         <LeafletMap
           park={park}
           rides={rides}
-          waits={waits}
+          displays={displays}
           selectedId={selectedId}
           onSelect={(id) => setSelectedId(id)}
           mapRef={mapRef}
@@ -316,7 +342,13 @@ export function ParkMap({ park, rides }: ParkMapProps) {
         {selectedRide && (
           <RideDetailPanel
             ride={selectedRide}
-            wait={waits.get(selectedRide.id) ?? selectedRide.baseWait}
+            display={
+              displays.get(selectedRide.id) ?? {
+                wait: selectedRide.baseWait,
+                status: "OPERATING",
+                isLive: false,
+              }
+            }
             onClose={() => setSelectedId(null)}
           />
         )}

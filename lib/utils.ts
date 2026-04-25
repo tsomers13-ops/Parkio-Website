@@ -100,9 +100,21 @@ export function formatTime(d: Date = new Date()): string {
 
 /* ──────────── Live wait times (themeparks.wiki API) ──────────── */
 
+export type RideStatus =
+  | "OPERATING"
+  | "DOWN"
+  | "CLOSED"
+  | "REFURBISHMENT";
+
+export interface RideLive {
+  /** null = no standby data (e.g. virtual queue only, or status != OPERATING). */
+  wait: number | null;
+  status: RideStatus;
+}
+
 interface LiveQueueEntry {
   id: string;
-  status?: "OPERATING" | "DOWN" | "CLOSED" | "REFURBISHMENT";
+  status?: RideStatus;
   queue?: {
     STANDBY?: { waitTime: number | null };
   };
@@ -113,16 +125,16 @@ interface LiveResponse {
 }
 
 /**
- * Fetch live wait times for a single park from themeparks.wiki.
+ * Fetch live wait times + status for a single park from themeparks.wiki.
  * Returns a Map keyed by ride externalId.
  *
  * Falls back to an empty map on error so callers can keep showing
  * simulated waits without breaking.
  */
-export async function fetchLiveWaits(
+export async function fetchLiveData(
   park: Park,
-): Promise<Map<string, number>> {
-  const result = new Map<string, number>();
+): Promise<Map<string, RideLive>> {
+  const result = new Map<string, RideLive>();
   try {
     const res = await fetch(
       `https://api.themeparks.wiki/v1/entity/${park.externalId}/live`,
@@ -131,13 +143,29 @@ export async function fetchLiveWaits(
     if (!res.ok) return result;
     const data = (await res.json()) as LiveResponse;
     for (const entry of data.liveData ?? []) {
-      const wait = entry.queue?.STANDBY?.waitTime;
-      if (typeof wait === "number" && entry.status === "OPERATING") {
-        result.set(entry.id, wait);
-      }
+      const status = entry.status ?? "OPERATING";
+      const rawWait = entry.queue?.STANDBY?.waitTime;
+      result.set(entry.id, {
+        wait: typeof rawWait === "number" ? rawWait : null,
+        status,
+      });
     }
   } catch {
     // Network or parsing error — silent fallback.
   }
   return result;
+}
+
+/** Friendly short label for a non-operating ride. */
+export function statusLabel(status: RideStatus): string {
+  switch (status) {
+    case "DOWN":
+      return "Down";
+    case "CLOSED":
+      return "Closed";
+    case "REFURBISHMENT":
+      return "Refurb";
+    case "OPERATING":
+      return "Open";
+  }
 }

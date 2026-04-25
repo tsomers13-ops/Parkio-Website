@@ -8,12 +8,13 @@ import "leaflet.markercluster/dist/MarkerCluster.Default.css";
 import { useEffect, useMemo, useRef } from "react";
 import { MapContainer, TileLayer, useMap } from "react-leaflet";
 import type { Park, Ride } from "@/lib/types";
-import { waitTier } from "@/lib/utils";
+import { statusLabel, waitTier } from "@/lib/utils";
+import type { RideDisplay } from "./ParkMap";
 
 interface LeafletMapProps {
   park: Park;
   rides: Ride[];
-  waits: Map<string, number>;
+  displays: Map<string, RideDisplay>;
   selectedId: string | null;
   onSelect: (rideId: string) => void;
   mapRef?: React.MutableRefObject<L.Map | null>;
@@ -22,7 +23,7 @@ interface LeafletMapProps {
 export default function LeafletMap({
   park,
   rides,
-  waits,
+  displays,
   selectedId,
   onSelect,
   mapRef,
@@ -55,7 +56,7 @@ export default function LeafletMap({
 
       <ClusterMarkers
         rides={rides}
-        waits={waits}
+        displays={displays}
         selectedId={selectedId}
         onSelect={onSelect}
       />
@@ -103,12 +104,12 @@ function MapHandle({
  */
 function ClusterMarkers({
   rides,
-  waits,
+  displays,
   selectedId,
   onSelect,
 }: {
   rides: Ride[];
-  waits: Map<string, number>;
+  displays: Map<string, RideDisplay>;
   selectedId: string | null;
   onSelect: (rideId: string) => void;
 }) {
@@ -152,42 +153,63 @@ function ClusterMarkers({
     if (!group) return;
     group.clearLayers();
     for (const ride of rides) {
-      const wait = waits.get(ride.id) ?? ride.baseWait;
+      const display = displays.get(ride.id) ?? {
+        wait: ride.baseWait,
+        status: "OPERATING" as const,
+        isLive: false,
+      };
       const selected = ride.id === selectedId;
       const marker = L.marker([ride.lat, ride.lng], {
-        icon: makeRideIcon(ride.name, wait, selected),
+        icon: makeRideIcon(ride.name, display, selected),
         zIndexOffset: selected ? 1000 : 0,
       });
       marker.on("click", () => onSelect(ride.id));
       group.addLayer(marker);
     }
-  }, [rides, waits, selectedId, onSelect]);
+  }, [rides, displays, selectedId, onSelect]);
 
   return null;
 }
 
-function makeRideIcon(name: string, wait: number, selected: boolean) {
-  const tier = waitTier(wait);
-  const dotClass =
-    tier === "low"
-      ? "bg-emerald-500"
-      : tier === "mid"
-        ? "bg-amber-500"
-        : "bg-rose-500";
-
+function makeRideIcon(name: string, display: RideDisplay, selected: boolean) {
   const ringClass = selected
     ? "ring-2 ring-ink-900 scale-110"
     : "ring-1 ring-ink-200";
 
+  let pillContent: string;
+  if (display.status !== "OPERATING") {
+    // Gray pill with status text — Down / Closed / Refurb
+    pillContent = `
+      <span class="inline-block h-2 w-2 rounded-full bg-ink-300"></span>
+      <span class="text-[11px] font-semibold tracking-tight text-ink-500">${statusLabel(display.status)}</span>
+    `;
+  } else {
+    const tier = waitTier(display.wait);
+    const dotClass =
+      tier === "low"
+        ? "bg-emerald-500"
+        : tier === "mid"
+          ? "bg-amber-500"
+          : "bg-rose-500";
+    pillContent = `
+      <span class="inline-block h-2 w-2 rounded-full ${dotClass}"></span>
+      <span class="text-[11px] font-semibold tracking-tight text-ink-900">${display.wait}m</span>
+    `;
+  }
+
+  const labelTone =
+    display.status === "OPERATING"
+      ? selected
+        ? "text-ink-900 ring-1 ring-ink-900"
+        : "text-ink-700"
+      : "text-ink-500";
+
   const html = `
     <div class="parkio-pin flex flex-col items-center pointer-events-auto">
       <div class="flex items-center gap-1 rounded-full bg-white px-2.5 py-1 shadow-md transition ${ringClass}">
-        <span class="inline-block h-2 w-2 rounded-full ${dotClass}"></span>
-        <span class="text-[11px] font-semibold tracking-tight text-ink-900">${wait}m</span>
+        ${pillContent}
       </div>
-      <div class="parkio-pin-label mt-1 max-w-[160px] truncate rounded-md bg-white/95 px-2 py-0.5 text-center text-[10px] font-semibold tracking-tight ${
-        selected ? "text-ink-900 ring-1 ring-ink-900" : "text-ink-700"
-      } shadow-sm">${escapeHtml(name)}</div>
+      <div class="parkio-pin-label mt-1 max-w-[160px] truncate rounded-md bg-white/95 px-2 py-0.5 text-center text-[10px] font-semibold tracking-tight ${labelTone} shadow-sm">${escapeHtml(name)}</div>
     </div>
   `;
 
