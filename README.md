@@ -2,12 +2,12 @@
 
 Skip the lines. Own your day.
 
-A modern Disney park planning + navigation experience built with Next.js 14 (App Router), Tailwind CSS, and TypeScript. Designed mobile-first, with a clean, premium feel and zero clutter.
+A modern Disney park planning + navigation experience built with Next.js 14 (App Router), Tailwind CSS, and TypeScript. Designed iPhone-first, with a clean, premium feel and zero clutter.
 
 ## What's inside
 
 - **Landing page** — hero, feature grid, product preview, CTA, footer
-- **Park selection** — Magic Kingdom, EPCOT, Hollywood Studios, Animal Kingdom with live status + crowd indicators
+- **Park selection** — all six Disney parks: Walt Disney World (Magic Kingdom, EPCOT, Hollywood Studios, Animal Kingdom) and Disneyland Resort (Disneyland Park, Disney California Adventure), with live status + crowd indicators
 - **Park map (the core experience)** — full-screen SVG map with ride pins, color-coded wait times, drag-to-pan, pinch/wheel-to-zoom, and a draggable bottom sheet for ride details
 - **Ride detail** — wait time, trend (rising/falling/steady), Lightning Lane status, height requirements, description, "Add to plan"
 - **Simulated live data** — wait times jiggle every 30 seconds with a deterministic pseudo-random model so the app feels alive without an API

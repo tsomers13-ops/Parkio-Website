@@ -7,12 +7,21 @@ export function Hero() {
       <div className="mx-auto max-w-7xl px-5 pb-20 pt-16 sm:px-8 sm:pb-28 sm:pt-24">
         <div className="grid items-center gap-12 lg:grid-cols-12">
           <div className="lg:col-span-7">
-            <div className="inline-flex animate-fade-up items-center gap-2 rounded-full border border-ink-200 bg-white/70 px-3 py-1 text-xs font-medium text-ink-600 shadow-soft backdrop-blur">
-              <span className="relative flex h-2 w-2">
-                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75" />
-                <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-500" />
+            <div className="flex animate-fade-up flex-wrap items-center gap-2">
+              <span className="inline-flex items-center gap-2 rounded-full border border-ink-200 bg-white/70 px-3 py-1 text-xs font-medium text-ink-600 shadow-soft backdrop-blur">
+                <span className="relative flex h-2 w-2">
+                  <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75" />
+                  <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-500" />
+                </span>
+                Live wait times · Updated every minute
               </span>
-              Live wait times · Updated every minute
+              <span className="inline-flex items-center gap-1.5 rounded-full border border-ink-200 bg-white/70 px-3 py-1 text-xs font-medium text-ink-600 shadow-soft backdrop-blur">
+                <svg viewBox="0 0 16 16" fill="none" className="h-3 w-3" aria-hidden>
+                  <rect x="4" y="1" width="8" height="14" rx="2" stroke="currentColor" strokeWidth="1.4" />
+                  <circle cx="8" cy="12.5" r="0.7" fill="currentColor" />
+                </svg>
+                Designed for iPhone
+              </span>
             </div>
 
             <h1
@@ -30,8 +39,9 @@ export function Hero() {
               className="mt-6 max-w-xl animate-fade-up text-lg text-ink-600 sm:text-xl"
               style={{ animationDelay: "120ms" }}
             >
-              Real-time Disney wait times, smarter planning, and a beautifully
-              simple park map. Built for the way you actually visit the parks.
+              Real-time wait times across all six Disney parks — Walt Disney
+              World and Disneyland Resort — designed for iPhone, built for the
+              way you actually visit.
             </p>
 
             <div
@@ -70,9 +80,9 @@ export function Hero() {
               className="mt-10 flex animate-fade-up items-center gap-6 text-xs text-ink-500"
               style={{ animationDelay: "240ms" }}
             >
-              <Stat label="Rides tracked" value="180+" />
-              <Stat label="Parks supported" value="4" />
-              <Stat label="Updates / min" value="Real-time" />
+              <Stat label="Parks supported" value="6" />
+              <Stat label="Rides tracked" value="40+" />
+              <Stat label="Updates" value="Real-time" />
             </div>
           </div>
 

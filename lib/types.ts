@@ -2,7 +2,11 @@ export type ParkId =
   | "magic-kingdom"
   | "epcot"
   | "hollywood-studios"
-  | "animal-kingdom";
+  | "animal-kingdom"
+  | "disneyland"
+  | "california-adventure";
+
+export type Resort = "Walt Disney World" | "Disneyland Resort";
 
 export type CrowdLevel = "Low" | "Moderate" | "High";
 
@@ -12,6 +16,7 @@ export interface Park {
   id: ParkId;
   name: string;
   shortName: string;
+  resort: Resort;
   tagline: string;
   status: ParkStatus;
   crowd: CrowdLevel;

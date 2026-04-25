@@ -36,7 +36,7 @@ export function ParkCard({ park }: { park: Park }) {
         </div>
         <div className="absolute bottom-3 left-4 text-white">
           <div className="text-[11px] font-medium uppercase tracking-widest text-white/80">
-            Walt Disney World
+            {park.resort}
           </div>
           <div className="text-2xl font-semibold tracking-tight">
             {park.name}
