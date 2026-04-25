@@ -23,6 +23,11 @@ export interface Park {
   hours: string;
   themeHex: string;
   themeAccentHex: string;
+  /** Real-world center coordinates for the Leaflet map. */
+  lat: number;
+  lng: number;
+  /** Default zoom level (16 ≈ park-wide; 17 for tighter parks). */
+  zoom: number;
 }
 
 export type RideTrend = "up" | "down" | "flat";

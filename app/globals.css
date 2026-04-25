@@ -68,3 +68,34 @@ body {
   border-radius: 999px;
   background: rgba(15, 23, 42, 0.18);
 }
+
+/* ───────── Leaflet overrides — make the map feel like part of Parkio ───────── */
+.parkio-divicon {
+  background: transparent !important;
+  border: 0 !important;
+}
+
+/* Tone down the default attribution chip */
+.leaflet-container .leaflet-control-attribution {
+  background: rgba(255, 255, 255, 0.78);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 999px;
+  padding: 2px 8px;
+  font-size: 10px;
+  color: #475569;
+  margin: 0 8px 8px 0;
+}
+.leaflet-container .leaflet-control-attribution a {
+  color: #4f46e5;
+}
+
+/* Slightly desaturate the basemap so wait-time pins remain the focal point */
+.leaflet-container .leaflet-tile-pane {
+  filter: saturate(0.85) brightness(1.02);
+}
+
+/* Pop the selected ride's label above its neighbors */
+.leaflet-marker-icon:has(.ring-ink-900) {
+  z-index: 600 !important;
+}

@@ -12,6 +12,9 @@ export const PARKS: Park[] = [
     hours: "9:00 AM — 11:00 PM",
     themeHex: "#6366f1",
     themeAccentHex: "#a5b4fc",
+    lat: 28.4177,
+    lng: -81.5812,
+    zoom: 17,
   },
   {
     id: "epcot",
@@ -24,6 +27,9 @@ export const PARKS: Park[] = [
     hours: "9:00 AM — 9:00 PM",
     themeHex: "#0ea5e9",
     themeAccentHex: "#7dd3fc",
+    lat: 28.3747,
+    lng: -81.5494,
+    zoom: 17,
   },
   {
     id: "hollywood-studios",
@@ -36,6 +42,9 @@ export const PARKS: Park[] = [
     hours: "8:30 AM — 9:30 PM",
     themeHex: "#ef4444",
     themeAccentHex: "#fca5a5",
+    lat: 28.3575,
+    lng: -81.5582,
+    zoom: 17,
   },
   {
     id: "animal-kingdom",
@@ -48,6 +57,9 @@ export const PARKS: Park[] = [
     hours: "8:00 AM — 8:00 PM",
     themeHex: "#10b981",
     themeAccentHex: "#6ee7b7",
+    lat: 28.3553,
+    lng: -81.5901,
+    zoom: 16,
   },
   {
     id: "disneyland",
@@ -60,6 +72,9 @@ export const PARKS: Park[] = [
     hours: "8:00 AM — 12:00 AM",
     themeHex: "#ec4899",
     themeAccentHex: "#f9a8d4",
+    lat: 33.8121,
+    lng: -117.919,
+    zoom: 17,
   },
   {
     id: "california-adventure",
@@ -72,6 +87,9 @@ export const PARKS: Park[] = [
     hours: "9:00 AM — 10:00 PM",
     themeHex: "#f97316",
     themeAccentHex: "#fdba74",
+    lat: 33.8067,
+    lng: -117.9209,
+    zoom: 17,
   },
 ];
 

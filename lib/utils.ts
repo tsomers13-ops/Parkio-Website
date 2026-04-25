@@ -1,4 +1,4 @@
-import type { CrowdLevel, Ride } from "./types";
+import type { CrowdLevel, Park, Ride } from "./types";
 
 export type WaitTier = "low" | "mid" | "high";
 
@@ -90,6 +90,18 @@ function pseudoRandom(seed: number): number {
   t = Math.imul(t ^ (t >>> 15), t | 1);
   t ^= t + Math.imul(t ^ (t >>> 7), t | 61);
   return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+}
+
+/**
+ * Convert a ride's stylized 0-100 x/y coordinates into approximate
+ * lat/lng around the park's center. Roughly ~1.4km × 1.2km spread,
+ * which matches the actual footprint of a Disney park.
+ */
+export function rideLatLng(park: Park, ride: Ride): [number, number] {
+  // y is inverted because SVG y grows downward but lat grows upward
+  const lat = park.lat + (50 - ride.y) * 0.00012;
+  const lng = park.lng + (ride.x - 50) * 0.00018;
+  return [lat, lng];
 }
 
 export function formatTime(d: Date = new Date()): string {
