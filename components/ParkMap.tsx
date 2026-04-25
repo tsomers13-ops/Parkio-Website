@@ -4,6 +4,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import type { Park, Ride } from "@/lib/types";
 import { simulatedWait } from "@/lib/utils";
 import { BottomSheet } from "./BottomSheet";
+import { MapBackground } from "./MapBackground";
 import { RideDetailPanel } from "./RideDetailPanel";
 import { RidePin } from "./RidePin";
 
@@ -210,7 +211,11 @@ export function ParkMap({ park, rides }: ParkMapProps) {
             transitionDuration: dragRef.current ? "0ms" : "150ms",
           }}
         >
-          <MapBackground theme={park.themeHex} accent={park.themeAccentHex} />
+          <MapBackground
+            parkId={park.id}
+            theme={park.themeHex}
+            accent={park.themeAccentHex}
+          />
 
           {rides.map((ride) => (
             <RidePin
@@ -312,96 +317,6 @@ export function ParkMap({ park, rides }: ParkMapProps) {
           />
         )}
       </BottomSheet>
-    </div>
-  );
-}
-
-function MapBackground({
-  theme,
-  accent,
-}: {
-  theme: string;
-  accent: string;
-}) {
-  return (
-    <div className="absolute inset-0">
-      {/* Soft themed gradient */}
-      <div
-        className="absolute inset-0"
-        style={{
-          background: `radial-gradient(60% 50% at 30% 30%, ${accent}33 0%, transparent 60%), radial-gradient(60% 60% at 80% 70%, ${theme}26 0%, transparent 60%), linear-gradient(180deg, #f8fafc 0%, #eef2f7 100%)`,
-        }}
-      />
-      {/* Dot grid */}
-      <div className="bg-dots absolute inset-0 opacity-60" />
-      {/* Decorative paths suggesting walkways */}
-      <svg
-        viewBox="0 0 1000 700"
-        className="absolute inset-0 h-full w-full"
-        preserveAspectRatio="xMidYMid slice"
-        aria-hidden
-      >
-        <defs>
-          <linearGradient id="walkway" x1="0" y1="0" x2="1" y2="1">
-            <stop offset="0%" stopColor="#cbd5e1" stopOpacity="0.7" />
-            <stop offset="100%" stopColor="#e2e8f0" stopOpacity="0.5" />
-          </linearGradient>
-          <linearGradient id="water" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0%" stopColor={`${accent}80`} />
-            <stop offset="100%" stopColor={`${accent}33`} />
-          </linearGradient>
-        </defs>
-
-        {/* Lake */}
-        <path
-          d="M620 480 C 700 460, 780 500, 800 560 C 820 620, 720 640, 660 620 C 580 600, 560 510, 620 480 Z"
-          fill="url(#water)"
-          opacity="0.6"
-        />
-
-        {/* Main walkway loop */}
-        <path
-          d="M120 200 C 220 140, 360 140, 460 200 C 600 260, 700 220, 820 280 C 880 320, 880 460, 800 520 C 700 580, 540 580, 420 540 C 300 500, 200 460, 160 380 C 130 320, 120 260, 120 200 Z"
-          stroke="url(#walkway)"
-          strokeWidth="22"
-          fill="none"
-          strokeLinejoin="round"
-        />
-        {/* Inner connector */}
-        <path
-          d="M340 220 C 420 280, 500 320, 580 280 C 660 240, 700 320, 720 380"
-          stroke="url(#walkway)"
-          strokeWidth="14"
-          fill="none"
-          strokeLinecap="round"
-        />
-        <path
-          d="M260 360 C 320 380, 380 380, 440 360"
-          stroke="url(#walkway)"
-          strokeWidth="10"
-          fill="none"
-          strokeLinecap="round"
-        />
-
-        {/* Trees */}
-        {Array.from({ length: 36 }).map((_, i) => {
-          const seed = (i * 9301 + 49297) % 233280;
-          const rand = seed / 233280;
-          const x = 80 + ((i * 71) % 880);
-          const y = 80 + ((i * 53) % 560);
-          const r = 6 + (rand * 8);
-          return (
-            <circle
-              key={i}
-              cx={x}
-              cy={y}
-              r={r}
-              fill="#10b981"
-              opacity={0.18}
-            />
-          );
-        })}
-      </svg>
     </div>
   );
 }
