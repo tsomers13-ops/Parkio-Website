@@ -45,7 +45,7 @@ export default function LeafletMap({
         if (mapRef) mapRef.current = instance;
       }}
     >
-      <MapHandle parkId={park.id} center={center} zoom={park.zoom} />
+      <MapHandle parkId={park.id} center={center} zoom={park.zoom} rides={rides} />
 
       <TileLayer
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a> &copy; <a href="https://carto.com/attributions">CARTO</a>'
@@ -63,20 +63,37 @@ export default function LeafletMap({
   );
 }
 
-/** Re-fly to the park whenever it changes (when navigating between parks). */
+/**
+ * On park change, fit the map to all the park's ride pins.
+ * Falls back to the park's center/zoom if the park has no rides yet.
+ */
 function MapHandle({
   parkId,
   center,
   zoom,
+  rides,
 }: {
   parkId: string;
   center: [number, number];
   zoom: number;
+  rides: Ride[];
 }) {
   const map = useMap();
   useEffect(() => {
-    map.flyTo(center, zoom, { duration: 0.6 });
-  }, [parkId, center, zoom, map]);
+    if (rides.length > 0) {
+      const bounds = L.latLngBounds(rides.map((r) => [r.lat, r.lng]));
+      map.fitBounds(bounds, {
+        padding: [80, 80],
+        maxZoom: 18,
+        animate: true,
+        duration: 0.6,
+      });
+    } else {
+      map.flyTo(center, zoom, { duration: 0.6 });
+    }
+    // Only run when the *park* changes, not on every ride update
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [parkId, map]);
   return null;
 }
 
@@ -103,8 +120,10 @@ function ClusterMarkers({
     const group = L.markerClusterGroup({
       showCoverageOnHover: false,
       spiderfyOnMaxZoom: true,
-      disableClusteringAtZoom: 17,
-      maxClusterRadius: 36,
+      // Inside a single park, every ride should be visible. Only cluster
+      // when the user has zoomed way out (resort-wide view).
+      disableClusteringAtZoom: 16,
+      maxClusterRadius: 24,
       iconCreateFunction: (cluster) => {
         const count = cluster.getChildCount();
         return L.divIcon({

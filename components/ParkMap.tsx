@@ -90,7 +90,26 @@ export function ParkMap({ park, rides }: ParkMapProps) {
     mapRef.current?.zoomOut();
   }
   function recenter() {
-    mapRef.current?.flyTo([park.lat, park.lng], park.zoom, { duration: 0.6 });
+    const map = mapRef.current;
+    if (!map) return;
+    if (rides.length > 0) {
+      const lats = rides.map((r) => r.lat);
+      const lngs = rides.map((r) => r.lng);
+      map.fitBounds(
+        [
+          [Math.min(...lats), Math.min(...lngs)],
+          [Math.max(...lats), Math.max(...lngs)],
+        ],
+        {
+          padding: [80, 80],
+          maxZoom: 18,
+          animate: true,
+          duration: 0.6,
+        },
+      );
+    } else {
+      map.flyTo([park.lat, park.lng], park.zoom, { duration: 0.6 });
+    }
   }
 
   return (
