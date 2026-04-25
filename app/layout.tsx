@@ -9,14 +9,51 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Parkio — Skip the Lines. Own Your Day.",
+  title: {
+    default: "Parkio — Skip the Lines. Own Your Day.",
+    template: "%s · Parkio",
+  },
   description:
-    "Real-time Disney wait times, smarter planning, and beautifully simple park maps. Built for the way you actually visit the parks.",
-  metadataBase: new URL("https://parkio.app"),
+    "Real-time Disney wait times, smarter planning, and beautifully simple park maps for all six U.S. Disney parks. Built for the way you actually visit.",
+  metadataBase: new URL("https://parkio.info"),
+  applicationName: "Parkio",
+  keywords: [
+    "Disney wait times",
+    "Walt Disney World",
+    "Disneyland",
+    "Magic Kingdom",
+    "EPCOT",
+    "Hollywood Studios",
+    "Animal Kingdom",
+    "California Adventure",
+    "park planner",
+    "live wait times",
+  ],
   openGraph: {
-    title: "Parkio",
-    description: "Real-time wait times, smarter park days.",
+    title: "Parkio — Skip the Lines. Own Your Day.",
+    description:
+      "Real-time Disney wait times, smarter planning, and beautifully simple park maps. All six U.S. Disney parks, refreshed every minute.",
     type: "website",
+    siteName: "Parkio",
+    url: "https://parkio.info",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Parkio — Skip the Lines. Own Your Day.",
+    description:
+      "Real-time Disney wait times, smarter planning, and beautifully simple park maps.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
+  alternates: {
+    canonical: "/",
   },
 };
 

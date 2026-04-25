@@ -17,6 +17,7 @@ import type {
 import { simulatedWait } from "@/lib/utils";
 import { BottomSheet } from "./BottomSheet";
 import { RideDetailPanel } from "./RideDetailPanel";
+import { RideList } from "./RideList";
 
 // Leaflet uses `window` and won't render server-side.
 const LeafletMap = dynamic(() => import("./LeafletMap"), {
@@ -50,6 +51,7 @@ interface ParkMapProps {
 
 export function ParkMap({ park, rides }: ParkMapProps) {
   const [selectedId, setSelectedId] = useState<string | null>(null);
+  const [listOpen, setListOpen] = useState(false);
   const [now, setNow] = useState<number>(() => Date.now());
   const [time, setTime] = useState<string>("--:--");
   const [parkApi, setParkApi] = useState<ApiPark | null>(null);
@@ -380,6 +382,21 @@ export function ParkMap({ park, rides }: ParkMapProps) {
             />
           </svg>
         </button>
+        <button
+          type="button"
+          onClick={() => setListOpen(true)}
+          className="surface-glass inline-flex h-10 w-10 items-center justify-center rounded-full text-ink-800 shadow-soft transition hover:text-ink-900"
+          aria-label="Open attraction list"
+        >
+          <svg viewBox="0 0 16 16" className="h-4 w-4" aria-hidden>
+            <path
+              d="M3 4h10M3 8h10M3 12h10"
+              stroke="currentColor"
+              strokeWidth="1.6"
+              strokeLinecap="round"
+            />
+          </svg>
+        </button>
       </div>
 
       {/* Legend */}
@@ -399,6 +416,19 @@ export function ParkMap({ park, rides }: ParkMapProps) {
           60m+
         </span>
       </div>
+
+      {/* List view side panel */}
+      <RideList
+        open={listOpen}
+        parkName={park.name}
+        rides={rides}
+        displays={displays}
+        onClose={() => setListOpen(false)}
+        onSelect={(id) => {
+          setListOpen(false);
+          setSelectedId(id);
+        }}
+      />
 
       {/* Bottom sheet */}
       <BottomSheet

@@ -58,7 +58,10 @@ const STEPS: Step[] = [
 
 export function HowItWorks() {
   return (
-    <section className="relative border-t border-ink-100 bg-white py-20 sm:py-28">
+    <section
+      id="how-it-works"
+      className="relative border-t border-ink-100 bg-white py-20 sm:py-28"
+    >
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
         <div className="max-w-2xl">
           <p className="text-sm font-medium uppercase tracking-widest text-accent-600">

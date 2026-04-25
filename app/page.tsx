@@ -5,6 +5,7 @@ import { Features } from "@/components/Features";
 import { Footer } from "@/components/Footer";
 import { Hero } from "@/components/Hero";
 import { HowItWorks } from "@/components/HowItWorks";
+import { LiveRightNow } from "@/components/LiveRightNow";
 import { Navbar } from "@/components/Navbar";
 
 export default function LandingPage() {
@@ -14,6 +15,7 @@ export default function LandingPage() {
       <Hero />
       <Features />
       <HowItWorks />
+      <LiveRightNow />
       <AppPreview />
       <FAQ />
       <CTASection />
