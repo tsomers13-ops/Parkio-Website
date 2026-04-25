@@ -2,15 +2,13 @@
 
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
+import "leaflet.markercluster";
+import "leaflet.markercluster/dist/MarkerCluster.css";
+import "leaflet.markercluster/dist/MarkerCluster.Default.css";
 import { useEffect, useMemo, useRef } from "react";
-import {
-  MapContainer,
-  Marker,
-  TileLayer,
-  useMap,
-} from "react-leaflet";
+import { MapContainer, TileLayer, useMap } from "react-leaflet";
 import type { Park, Ride } from "@/lib/types";
-import { rideLatLng, waitColorClasses, waitTier } from "@/lib/utils";
+import { waitTier } from "@/lib/utils";
 
 interface LeafletMapProps {
   park: Park;
@@ -18,7 +16,6 @@ interface LeafletMapProps {
   waits: Map<string, number>;
   selectedId: string | null;
   onSelect: (rideId: string) => void;
-  /** Internal map handle exposed so parent can do programmatic zoom/recenter. */
   mapRef?: React.MutableRefObject<L.Map | null>;
 }
 
@@ -39,7 +36,7 @@ export default function LeafletMap({
     <MapContainer
       center={center}
       zoom={park.zoom}
-      minZoom={15}
+      minZoom={14}
       maxZoom={19}
       zoomControl={false}
       attributionControl={true}
@@ -50,29 +47,18 @@ export default function LeafletMap({
     >
       <MapHandle parkId={park.id} center={center} zoom={park.zoom} />
 
-      {/* CARTO Voyager — clean, low-contrast basemap that lets pins pop */}
       <TileLayer
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a> &copy; <a href="https://carto.com/attributions">CARTO</a>'
         url="https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png"
         subdomains="abcd"
       />
 
-      {rides.map((ride) => {
-        const pos = rideLatLng(park, ride);
-        const wait = waits.get(ride.id) ?? ride.baseWait;
-        const selected = ride.id === selectedId;
-        const icon = makeRideIcon(ride.name, wait, selected);
-        return (
-          <Marker
-            key={ride.id}
-            position={pos}
-            icon={icon}
-            eventHandlers={{
-              click: () => onSelect(ride.id),
-            }}
-          />
-        );
-      })}
+      <ClusterMarkers
+        rides={rides}
+        waits={waits}
+        selectedId={selectedId}
+        onSelect={onSelect}
+      />
     </MapContainer>
   );
 }
@@ -94,6 +80,73 @@ function MapHandle({
   return null;
 }
 
+/**
+ * Imperatively manages a markerClusterGroup on top of the map.
+ * Markers are rebuilt whenever rides/waits/selection change.
+ */
+function ClusterMarkers({
+  rides,
+  waits,
+  selectedId,
+  onSelect,
+}: {
+  rides: Ride[];
+  waits: Map<string, number>;
+  selectedId: string | null;
+  onSelect: (rideId: string) => void;
+}) {
+  const map = useMap();
+  const groupRef = useRef<L.MarkerClusterGroup | null>(null);
+
+  // Create the cluster group once
+  useEffect(() => {
+    const group = L.markerClusterGroup({
+      showCoverageOnHover: false,
+      spiderfyOnMaxZoom: true,
+      disableClusteringAtZoom: 17,
+      maxClusterRadius: 36,
+      iconCreateFunction: (cluster) => {
+        const count = cluster.getChildCount();
+        return L.divIcon({
+          html: `
+            <div class="flex items-center justify-center rounded-full bg-white shadow-md ring-1 ring-ink-200" style="width: 40px; height: 40px;">
+              <span class="text-xs font-semibold tracking-tight text-ink-900">${count}</span>
+            </div>
+          `,
+          className: "parkio-cluster-icon",
+          iconSize: [40, 40],
+          iconAnchor: [20, 20],
+        });
+      },
+    });
+    groupRef.current = group;
+    map.addLayer(group);
+    return () => {
+      map.removeLayer(group);
+      groupRef.current = null;
+    };
+  }, [map]);
+
+  // Sync markers whenever the inputs change
+  useEffect(() => {
+    const group = groupRef.current;
+    if (!group) return;
+    group.clearLayers();
+    for (const ride of rides) {
+      const wait = waits.get(ride.id) ?? ride.baseWait;
+      const selected = ride.id === selectedId;
+      const marker = L.marker([ride.lat, ride.lng], {
+        icon: makeRideIcon(ride.name, wait, selected),
+        zIndexOffset: selected ? 1000 : 0,
+      });
+      marker.on("click", () => onSelect(ride.id));
+      group.addLayer(marker);
+    }
+  }, [rides, waits, selectedId, onSelect]);
+
+  return null;
+}
+
 function makeRideIcon(name: string, wait: number, selected: boolean) {
   const tier = waitTier(wait);
   const dotClass =
@@ -105,11 +158,8 @@ function makeRideIcon(name: string, wait: number, selected: boolean) {
 
   const ringClass = selected
     ? "ring-2 ring-ink-900 scale-110"
-    : "ring-1 ring-ink-200 hover:ring-ink-300";
+    : "ring-1 ring-ink-200";
 
-  // We render the pin + label as a small flex column. CSS classes match the
-  // Tailwind classes we already use elsewhere in the project so the JIT picks
-  // them up.
   const html = `
     <div class="parkio-pin flex flex-col items-center pointer-events-auto">
       <div class="flex items-center gap-1 rounded-full bg-white px-2.5 py-1 shadow-md transition ${ringClass}">

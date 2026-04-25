@@ -28,6 +28,8 @@ export interface Park {
   lng: number;
   /** Default zoom level (16 ≈ park-wide; 17 for tighter parks). */
   zoom: number;
+  /** themeparks.wiki entity UUID — used to fetch live wait times. */
+  externalId: string;
 }
 
 export type RideTrend = "up" | "down" | "flat";
@@ -46,11 +48,14 @@ export interface Ride {
   land: string;
   category: RideCategory;
   description: string;
-  /** Coordinates in 0-100 scale used for the SVG map. */
-  x: number;
-  y: number;
+  /** Real-world coordinates for the Leaflet map. */
+  lat: number;
+  lng: number;
+  /** Fallback wait time used until live data loads. */
   baseWait: number;
   trend: RideTrend;
   lightningLane: boolean;
   height?: string;
+  /** themeparks.wiki entity UUID — used to look up live wait time. */
+  externalId: string;
 }

@@ -62,8 +62,8 @@ export function crowdColor(level: CrowdLevel) {
 
 /**
  * Deterministic-ish "live" wait time around the ride's base wait.
- * Uses the ride id as a stable seed plus a time slice so the value
- * jiggles every ~30s but never gets out of plausible range.
+ * Used as a fallback when the live API is unreachable or for rides
+ * that don't have an externalId.
  */
 export function simulatedWait(ride: Ride, now: number = Date.now()): number {
   const seed = hashString(ride.id);
@@ -85,23 +85,10 @@ function hashString(s: string): number {
 }
 
 function pseudoRandom(seed: number): number {
-  // mulberry32
   let t = seed + 0x6d2b79f5;
   t = Math.imul(t ^ (t >>> 15), t | 1);
   t ^= t + Math.imul(t ^ (t >>> 7), t | 61);
   return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
-}
-
-/**
- * Convert a ride's stylized 0-100 x/y coordinates into approximate
- * lat/lng around the park's center. Roughly ~1.4km × 1.2km spread,
- * which matches the actual footprint of a Disney park.
- */
-export function rideLatLng(park: Park, ride: Ride): [number, number] {
-  // y is inverted because SVG y grows downward but lat grows upward
-  const lat = park.lat + (50 - ride.y) * 0.00012;
-  const lng = park.lng + (ride.x - 50) * 0.00018;
-  return [lat, lng];
 }
 
 export function formatTime(d: Date = new Date()): string {
@@ -109,4 +96,48 @@ export function formatTime(d: Date = new Date()): string {
     hour: "numeric",
     minute: "2-digit",
   });
+}
+
+/* ──────────── Live wait times (themeparks.wiki API) ──────────── */
+
+interface LiveQueueEntry {
+  id: string;
+  status?: "OPERATING" | "DOWN" | "CLOSED" | "REFURBISHMENT";
+  queue?: {
+    STANDBY?: { waitTime: number | null };
+  };
+}
+
+interface LiveResponse {
+  liveData?: LiveQueueEntry[];
+}
+
+/**
+ * Fetch live wait times for a single park from themeparks.wiki.
+ * Returns a Map keyed by ride externalId.
+ *
+ * Falls back to an empty map on error so callers can keep showing
+ * simulated waits without breaking.
+ */
+export async function fetchLiveWaits(
+  park: Park,
+): Promise<Map<string, number>> {
+  const result = new Map<string, number>();
+  try {
+    const res = await fetch(
+      `https://api.themeparks.wiki/v1/entity/${park.externalId}/live`,
+      { cache: "no-store" },
+    );
+    if (!res.ok) return result;
+    const data = (await res.json()) as LiveResponse;
+    for (const entry of data.liveData ?? []) {
+      const wait = entry.queue?.STANDBY?.waitTime;
+      if (typeof wait === "number" && entry.status === "OPERATING") {
+        result.set(entry.id, wait);
+      }
+    }
+  } catch {
+    // Network or parsing error — silent fallback.
+  }
+  return result;
 }

@@ -15,6 +15,7 @@ export const PARKS: Park[] = [
     lat: 28.4177,
     lng: -81.5812,
     zoom: 17,
+    externalId: "75ea578a-adc8-4116-a54d-dccb60765ef9",
   },
   {
     id: "epcot",
@@ -30,6 +31,7 @@ export const PARKS: Park[] = [
     lat: 28.3747,
     lng: -81.5494,
     zoom: 17,
+    externalId: "47f90d2c-e191-4239-a466-5892ef59a88b",
   },
   {
     id: "hollywood-studios",
@@ -45,6 +47,7 @@ export const PARKS: Park[] = [
     lat: 28.3575,
     lng: -81.5582,
     zoom: 17,
+    externalId: "288747d1-8b4f-4a64-867e-ea7c9b27bad8",
   },
   {
     id: "animal-kingdom",
@@ -60,6 +63,7 @@ export const PARKS: Park[] = [
     lat: 28.3553,
     lng: -81.5901,
     zoom: 16,
+    externalId: "1c84a229-8862-4648-9c71-378ddd2c7693",
   },
   {
     id: "disneyland",
@@ -75,6 +79,7 @@ export const PARKS: Park[] = [
     lat: 33.8121,
     lng: -117.919,
     zoom: 17,
+    externalId: "7340550b-c14d-4def-80bb-acdb51d49a66",
   },
   {
     id: "california-adventure",
@@ -90,11 +95,12 @@ export const PARKS: Park[] = [
     lat: 33.8067,
     lng: -117.9209,
     zoom: 17,
+    externalId: "832fcd51-ea19-4e77-85c7-75d5843b127c",
   },
 ];
 
 export const RIDES: Ride[] = [
-  // Magic Kingdom
+  // ─── Magic Kingdom ────────────────────────────────────────────────
   {
     id: "mk-space-mountain",
     parkId: "magic-kingdom",
@@ -103,12 +109,13 @@ export const RIDES: Ride[] = [
     category: "thrill",
     description:
       "Blast through the cosmos on a high-speed indoor coaster in near total darkness.",
-    x: 72,
-    y: 38,
+    lat: 28.4188341691,
+    lng: -81.5781962872,
     baseWait: 65,
     trend: "up",
     lightningLane: true,
     height: '44" (112 cm) minimum',
+    externalId: "b2260923-9315-40fd-9c6b-44dd811dbe64",
   },
   {
     id: "mk-seven-dwarfs",
@@ -118,27 +125,29 @@ export const RIDES: Ride[] = [
     category: "family",
     description:
       "A swaying mine-cart coaster through the diamond mines from Snow White.",
-    x: 50,
-    y: 30,
+    lat: 28.42037,
+    lng: -81.58031,
     baseWait: 80,
     trend: "up",
     lightningLane: true,
     height: '38" (97 cm) minimum',
+    externalId: "9d4d5229-7142-44b6-b4fb-528920969a2c",
   },
   {
     id: "mk-thunder-mountain",
     parkId: "magic-kingdom",
-    name: "Big Thunder Mountain",
+    name: "Big Thunder Mountain Railroad",
     land: "Frontierland",
     category: "thrill",
     description:
       "The wildest ride in the wilderness — a runaway mine train coaster.",
-    x: 26,
-    y: 40,
+    lat: 28.4199638504,
+    lng: -81.5846422864,
     baseWait: 45,
     trend: "flat",
     lightningLane: true,
     height: '40" (102 cm) minimum',
+    externalId: "de3309ca-97d5-4211-bffe-739fed47e92f",
   },
   {
     id: "mk-pirates",
@@ -148,11 +157,12 @@ export const RIDES: Ride[] = [
     category: "family",
     description:
       "A scenic boat ride through swashbuckling pirate adventures.",
-    x: 22,
-    y: 58,
+    lat: 28.4179699235,
+    lng: -81.5842252029,
     baseWait: 25,
     trend: "down",
     lightningLane: false,
+    externalId: "352feb94-e52e-45eb-9c92-e4b44c6b1a9d",
   },
   {
     id: "mk-haunted-mansion",
@@ -162,11 +172,12 @@ export const RIDES: Ride[] = [
     category: "family",
     description:
       "Doom buggies tour a manor with 999 happy haunts — and room for one more.",
-    x: 38,
-    y: 50,
+    lat: 28.4202,
+    lng: -81.58288,
     baseWait: 35,
     trend: "flat",
     lightningLane: true,
+    externalId: "2551a77d-023f-4ab1-9a19-8afec0190f39",
   },
   {
     id: "mk-jungle-cruise",
@@ -176,11 +187,12 @@ export const RIDES: Ride[] = [
     category: "family",
     description:
       "A skipper-led river cruise through the rivers of the world. Puns included.",
-    x: 30,
-    y: 62,
+    lat: 28.41797818,
+    lng: -81.5834393157,
     baseWait: 40,
     trend: "up",
     lightningLane: true,
+    externalId: "796b0a25-c51e-456e-9bb8-50a324e301b3",
   },
   {
     id: "mk-peter-pan",
@@ -189,11 +201,12 @@ export const RIDES: Ride[] = [
     land: "Fantasyland",
     category: "kids",
     description: "Soar over London and Neverland aboard a flying pirate ship.",
-    x: 56,
-    y: 36,
+    lat: 28.4202640272,
+    lng: -81.5818916811,
     baseWait: 70,
     trend: "up",
     lightningLane: true,
+    externalId: "86a41273-5f15-4b54-93b6-829f140e5161",
   },
   {
     id: "mk-tiana",
@@ -203,15 +216,16 @@ export const RIDES: Ride[] = [
     category: "family",
     description:
       "Plunge into the bayou for a musical journey with Princess Tiana and friends.",
-    x: 18,
-    y: 48,
+    lat: 28.419418,
+    lng: -81.58498,
     baseWait: 95,
     trend: "up",
     lightningLane: true,
     height: '40" (102 cm) minimum',
+    externalId: "73cb9445-0695-47a3-87ce-d08ae36b5f3c",
   },
 
-  // EPCOT
+  // ─── EPCOT ────────────────────────────────────────────────────────
   {
     id: "ep-guardians",
     parkId: "epcot",
@@ -220,12 +234,13 @@ export const RIDES: Ride[] = [
     category: "thrill",
     description:
       "A reverse-launch coaster that rotates 360° to follow the action.",
-    x: 64,
-    y: 38,
+    lat: 28.3749021961781,
+    lng: -81.5478397673417,
     baseWait: 90,
     trend: "up",
     lightningLane: true,
     height: '42" (107 cm) minimum',
+    externalId: "e3549451-b284-453d-9c31-e3b1207abd79",
   },
   {
     id: "ep-test-track",
@@ -235,12 +250,13 @@ export const RIDES: Ride[] = [
     category: "thrill",
     description:
       "Design your own concept car, then put it through its paces at 60+ mph.",
-    x: 70,
-    y: 56,
+    lat: 28.373228,
+    lng: -81.547489,
     baseWait: 60,
     trend: "flat",
     lightningLane: true,
     height: '40" (102 cm) minimum',
+    externalId: "37ae57c5-feaf-4e47-8f27-4b385be200f0",
   },
   {
     id: "ep-soarin",
@@ -250,12 +266,13 @@ export const RIDES: Ride[] = [
     category: "family",
     description:
       "Hang glide over the planet's most iconic landmarks in stunning IMAX scale.",
-    x: 30,
-    y: 46,
+    lat: 28.373592,
+    lng: -81.552248,
     baseWait: 45,
     trend: "down",
     lightningLane: true,
     height: '40" (102 cm) minimum',
+    externalId: "81b15dfd-cf6a-466f-be59-3dd65d2a2807",
   },
   {
     id: "ep-frozen",
@@ -265,11 +282,12 @@ export const RIDES: Ride[] = [
     category: "family",
     description:
       "A musical boat ride through Arendelle with Anna, Elsa, and Olaf.",
-    x: 24,
-    y: 70,
+    lat: 28.370745,
+    lng: -81.54653,
     baseWait: 75,
     trend: "up",
     lightningLane: true,
+    externalId: "8d7ccdb1-a22b-4e26-8dc8-65b1938ed5f0",
   },
   {
     id: "ep-remy",
@@ -278,11 +296,12 @@ export const RIDES: Ride[] = [
     land: "World Showcase — France",
     category: "family",
     description: "Shrink to rat-size and scurry through Gusteau's restaurant.",
-    x: 38,
-    y: 78,
+    lat: 28.36825,
+    lng: -81.553097,
     baseWait: 55,
     trend: "flat",
     lightningLane: true,
+    externalId: "1e735ffb-4868-47f1-b2cd-2ac1156cd5f0",
   },
   {
     id: "ep-spaceship-earth",
@@ -292,14 +311,15 @@ export const RIDES: Ride[] = [
     category: "family",
     description:
       "An iconic journey through the history of human communication.",
-    x: 50,
-    y: 28,
+    lat: 28.375583,
+    lng: -81.549401,
     baseWait: 20,
     trend: "down",
     lightningLane: false,
+    externalId: "480fde8f-fe58-4bfb-b3ab-052a39d4db7c",
   },
 
-  // Hollywood Studios
+  // ─── Hollywood Studios ────────────────────────────────────────────
   {
     id: "hs-rise",
     parkId: "hollywood-studios",
@@ -308,12 +328,13 @@ export const RIDES: Ride[] = [
     category: "thrill",
     description:
       "The most ambitious Disney ride ever — board a Star Destroyer and escape.",
-    x: 22,
-    y: 38,
+    lat: 28.354884,
+    lng: -81.560457,
     baseWait: 110,
     trend: "up",
     lightningLane: true,
     height: '40" (102 cm) minimum',
+    externalId: "1a2e70d9-50d5-4140-b69e-799e950f7d18",
   },
   {
     id: "hs-millennium",
@@ -322,12 +343,13 @@ export const RIDES: Ride[] = [
     land: "Galaxy's Edge",
     category: "family",
     description: "Pilot the fastest hunk of junk in the galaxy on a smuggling job.",
-    x: 28,
-    y: 50,
+    lat: 28.353889,
+    lng: -81.561689,
     baseWait: 50,
     trend: "flat",
     lightningLane: true,
     height: '38" (97 cm) minimum',
+    externalId: "34c4916b-989b-4ff1-a7e3-a6a846a3484f",
   },
   {
     id: "hs-slinky",
@@ -336,12 +358,13 @@ export const RIDES: Ride[] = [
     land: "Toy Story Land",
     category: "family",
     description: "A backyard family coaster that twists, turns, and dashes.",
-    x: 60,
-    y: 64,
+    lat: 28.356245,
+    lng: -81.562786,
     baseWait: 70,
     trend: "up",
     lightningLane: true,
     height: '38" (97 cm) minimum',
+    externalId: "399aa0a1-98e2-4d2b-b297-2b451e9665e1",
   },
   {
     id: "hs-tower",
@@ -350,12 +373,13 @@ export const RIDES: Ride[] = [
     land: "Sunset Boulevard",
     category: "thrill",
     description: "A haunted hotel free-fall drop through the Twilight Zone.",
-    x: 78,
-    y: 44,
+    lat: 28.359553,
+    lng: -81.559772,
     baseWait: 55,
     trend: "flat",
     lightningLane: true,
     height: '40" (102 cm) minimum',
+    externalId: "6f6998e8-a629-412c-b964-2cb06af8e26b",
   },
   {
     id: "hs-rocknroller",
@@ -364,12 +388,13 @@ export const RIDES: Ride[] = [
     land: "Sunset Boulevard",
     category: "thrill",
     description: "Launched coaster scored to Aerosmith. 0–60 in 2.8 seconds.",
-    x: 82,
-    y: 52,
+    lat: 28.359712,
+    lng: -81.56059,
     baseWait: 65,
     trend: "up",
     lightningLane: true,
     height: '48" (122 cm) minimum',
+    externalId: "e516f303-e82d-4fd3-8fbf-8e6ab624cf89",
   },
   {
     id: "hs-runaway-railway",
@@ -379,14 +404,15 @@ export const RIDES: Ride[] = [
     category: "family",
     description:
       "Step into a Mickey Mouse cartoon for a wonderfully unpredictable ride.",
-    x: 50,
-    y: 30,
+    lat: 28.3566783801,
+    lng: -81.5605667783,
     baseWait: 40,
     trend: "down",
     lightningLane: true,
+    externalId: "6e118e37-5002-408d-9d88-0b5d9cdb5d14",
   },
 
-  // Animal Kingdom
+  // ─── Animal Kingdom (DINOSAUR removed — closed early 2025) ────────
   {
     id: "ak-flight-of-passage",
     parkId: "animal-kingdom",
@@ -395,12 +421,13 @@ export const RIDES: Ride[] = [
     category: "thrill",
     description:
       "Bond with a banshee and soar across the moon of Pandora in 3D.",
-    x: 26,
-    y: 50,
+    lat: 28.355554,
+    lng: -81.592147,
     baseWait: 105,
     trend: "up",
     lightningLane: true,
     height: '44" (112 cm) minimum',
+    externalId: "24cf863c-b6ba-4826-a056-0b698989cbf7",
   },
   {
     id: "ak-navi",
@@ -409,11 +436,12 @@ export const RIDES: Ride[] = [
     land: "Pandora",
     category: "family",
     description: "A serene boat ride through the bioluminescent rainforest.",
-    x: 32,
-    y: 60,
+    lat: 28.355257,
+    lng: -81.591641,
     baseWait: 60,
     trend: "flat",
     lightningLane: true,
+    externalId: "7a5af3b7-9bc1-4962-92d0-3ea9c9ce35f0",
   },
   {
     id: "ak-everest",
@@ -422,12 +450,13 @@ export const RIDES: Ride[] = [
     land: "Asia",
     category: "thrill",
     description: "A high-speed coaster confronting the legendary Yeti.",
-    x: 70,
-    y: 38,
+    lat: 28.3584769119,
+    lng: -81.5873781396,
     baseWait: 35,
     trend: "down",
     lightningLane: true,
     height: '44" (112 cm) minimum',
+    externalId: "64a6915f-a835-4226-ba5c-8389fc4cade3",
   },
   {
     id: "ak-safari",
@@ -437,28 +466,15 @@ export const RIDES: Ride[] = [
     category: "family",
     description:
       "A real safari across 110 acres of African savanna and live wildlife.",
-    x: 50,
-    y: 28,
+    lat: 28.359331,
+    lng: -81.59228,
     baseWait: 30,
     trend: "flat",
     lightningLane: true,
-  },
-  {
-    id: "ak-dinosaur",
-    parkId: "animal-kingdom",
-    name: "DINOSAUR",
-    land: "DinoLand U.S.A.",
-    category: "thrill",
-    description: "A turbulent time-travel mission to rescue an Iguanodon.",
-    x: 78,
-    y: 60,
-    baseWait: 25,
-    trend: "down",
-    lightningLane: true,
-    height: '40" (102 cm) minimum',
+    externalId: "32e01181-9a5f-4936-8a77-0dace1de836c",
   },
 
-  // Disneyland Park
+  // ─── Disneyland Park ──────────────────────────────────────────────
   {
     id: "dl-rise",
     parkId: "disneyland",
@@ -467,12 +483,13 @@ export const RIDES: Ride[] = [
     category: "thrill",
     description:
       "Disney's most ambitious ride — board a Star Destroyer and escape the First Order.",
-    x: 22,
-    y: 22,
+    lat: 33.813859,
+    lng: -117.923079,
     baseWait: 105,
     trend: "up",
     lightningLane: true,
     height: '40" (102 cm) minimum',
+    externalId: "34b1d70f-11c4-42df-935e-d5582c9f1a8e",
   },
   {
     id: "dl-millennium-falcon",
@@ -482,12 +499,13 @@ export const RIDES: Ride[] = [
     category: "family",
     description:
       "Pilot the fastest hunk of junk in the galaxy on a smuggling job.",
-    x: 30,
-    y: 30,
+    lat: 33.814867,
+    lng: -117.921379,
     baseWait: 45,
     trend: "flat",
     lightningLane: true,
     height: '38" (97 cm) minimum',
+    externalId: "b2c2549c-e9da-4fdd-98ea-1dcff596fed7",
   },
   {
     id: "dl-space-mountain",
@@ -497,12 +515,13 @@ export const RIDES: Ride[] = [
     category: "thrill",
     description:
       "Disneyland's iconic high-speed indoor coaster through the cosmos.",
-    x: 72,
-    y: 38,
+    lat: 33.811548,
+    lng: -117.917056,
     baseWait: 60,
     trend: "up",
     lightningLane: true,
     height: '40" (102 cm) minimum',
+    externalId: "9167db1d-e5e7-46da-a07f-ae30a87bc4c4",
   },
   {
     id: "dl-matterhorn",
@@ -512,12 +531,13 @@ export const RIDES: Ride[] = [
     category: "thrill",
     description:
       "A bobsled race down the Matterhorn — and a run-in with the Abominable Snowman.",
-    x: 50,
-    y: 26,
+    lat: 33.813453,
+    lng: -117.91782,
     baseWait: 35,
     trend: "flat",
     lightningLane: false,
     height: '42" (107 cm) minimum',
+    externalId: "faaa8be9-cc1e-4535-ac20-04a535654bd0",
   },
   {
     id: "dl-indy",
@@ -527,12 +547,13 @@ export const RIDES: Ride[] = [
     category: "thrill",
     description:
       "An off-road jeep ride into the Temple of the Forbidden Eye.",
-    x: 22,
-    y: 60,
+    lat: 33.81130552,
+    lng: -117.9203269,
     baseWait: 70,
     trend: "up",
     lightningLane: true,
     height: '46" (117 cm) minimum',
+    externalId: "2aedc657-1ee2-4545-a1ce-14753f28cc66",
   },
   {
     id: "dl-pirates",
@@ -542,11 +563,12 @@ export const RIDES: Ride[] = [
     category: "family",
     description:
       "The original boat ride through swashbuckling pirate adventures.",
-    x: 28,
-    y: 70,
+    lat: 33.811387,
+    lng: -117.920819,
     baseWait: 25,
     trend: "down",
     lightningLane: false,
+    externalId: "82aeb29b-504a-416f-b13f-f41fa5b766aa",
   },
   {
     id: "dl-haunted-mansion",
@@ -556,11 +578,12 @@ export const RIDES: Ride[] = [
     category: "family",
     description:
       "Doom buggies tour a manor with 999 happy haunts — and room for one more.",
-    x: 36,
-    y: 65,
+    lat: 33.811656,
+    lng: -117.921873,
     baseWait: 40,
     trend: "flat",
     lightningLane: true,
+    externalId: "ff52cb64-c1d5-4feb-9d43-5dbd429bac81",
   },
   {
     id: "dl-thunder-mountain",
@@ -570,12 +593,13 @@ export const RIDES: Ride[] = [
     category: "thrill",
     description:
       "The wildest ride in the wilderness — a runaway mine train coaster.",
-    x: 30,
-    y: 50,
+    lat: 33.8124773145,
+    lng: -117.9203568914,
     baseWait: 40,
     trend: "flat",
     lightningLane: true,
     height: '40" (102 cm) minimum',
+    externalId: "0de1413a-73ee-46cf-af2e-c491cc7c7d3b",
   },
   {
     id: "dl-tiana",
@@ -585,15 +609,16 @@ export const RIDES: Ride[] = [
     category: "family",
     description:
       "A musical journey into the bayou with Princess Tiana and friends.",
-    x: 18,
-    y: 76,
+    lat: 33.812245,
+    lng: -117.922802,
     baseWait: 65,
     trend: "up",
     lightningLane: true,
     height: '40" (102 cm) minimum',
+    externalId: "a9076acd-7630-4bad-a8da-e6bd689ddcac",
   },
 
-  // Disney California Adventure
+  // ─── Disney California Adventure ──────────────────────────────────
   {
     id: "dca-radiator-springs",
     parkId: "california-adventure",
@@ -602,12 +627,13 @@ export const RIDES: Ride[] = [
     category: "thrill",
     description:
       "Race through Ornament Valley in a real-life recreation of Cars' Radiator Springs.",
-    x: 70,
-    y: 28,
+    lat: 33.8051689198,
+    lng: -117.9186152283,
     baseWait: 90,
     trend: "up",
     lightningLane: true,
     height: '40" (102 cm) minimum',
+    externalId: "c60c768b-3461-465c-8f4f-b44b087506fc",
   },
   {
     id: "dca-incredicoaster",
@@ -617,12 +643,13 @@ export const RIDES: Ride[] = [
     category: "thrill",
     description:
       "A launched, looping coaster scored to The Incredibles soundtrack.",
-    x: 78,
-    y: 60,
+    lat: 33.8046241652,
+    lng: -117.9207961819,
     baseWait: 55,
     trend: "flat",
     lightningLane: true,
     height: '48" (122 cm) minimum',
+    externalId: "5d07a2b1-49ca-4de7-9d32-6d08edf69b08",
   },
   {
     id: "dca-guardians",
@@ -632,12 +659,13 @@ export const RIDES: Ride[] = [
     category: "thrill",
     description:
       "A free-fall drop ride through the Collector's fortress, scored to a Guardians playlist.",
-    x: 30,
-    y: 25,
+    lat: 33.8068702058,
+    lng: -117.9171870344,
     baseWait: 60,
     trend: "up",
     lightningLane: true,
     height: '40" (102 cm) minimum',
+    externalId: "b7678dab-5544-48d5-8fdc-c1a0127cfbcd",
   },
   {
     id: "dca-webslingers",
@@ -647,11 +675,12 @@ export const RIDES: Ride[] = [
     category: "family",
     description:
       "Sling webs alongside Spider-Man to wrangle runaway Spider-Bots.",
-    x: 26,
-    y: 32,
+    lat: 33.806651,
+    lng: -117.918264,
     baseWait: 50,
     trend: "flat",
     lightningLane: true,
+    externalId: "2295351d-ce6b-4c04-92d5-5b416372c5b5",
   },
   {
     id: "dca-soarin",
@@ -661,12 +690,13 @@ export const RIDES: Ride[] = [
     category: "family",
     description:
       "Hang glide over the planet's most iconic landmarks in stunning IMAX scale.",
-    x: 22,
-    y: 50,
+    lat: 33.8082495017,
+    lng: -117.9200000105,
     baseWait: 40,
     trend: "down",
     lightningLane: true,
     height: '40" (102 cm) minimum',
+    externalId: "77f205a4-d482-4d91-a5ff-71e54a086ad2",
   },
   {
     id: "dca-grizzly-river",
@@ -676,12 +706,13 @@ export const RIDES: Ride[] = [
     category: "family",
     description:
       "A whitewater raft adventure down the slopes of Grizzly Peak. Expect to get soaked.",
-    x: 28,
-    y: 58,
+    lat: 33.807491905,
+    lng: -117.9208812632,
     baseWait: 30,
     trend: "flat",
     lightningLane: true,
     height: '42" (107 cm) minimum',
+    externalId: "b1d285a7-2444-4a7c-b7bb-d2d4d6428a85",
   },
   {
     id: "dca-toy-story",
@@ -691,11 +722,12 @@ export const RIDES: Ride[] = [
     category: "family",
     description:
       "A 4D shooting gallery hosted by Woody, Buzz, and the Toy Story crew.",
-    x: 72,
-    y: 65,
+    lat: 33.804645,
+    lng: -117.921839,
     baseWait: 35,
     trend: "flat",
     lightningLane: true,
+    externalId: "86ab3069-110d-49c5-a7e7-29ddf28695a6",
   },
   {
     id: "dca-pixar-pal",
@@ -705,11 +737,12 @@ export const RIDES: Ride[] = [
     category: "family",
     description:
       "A 150-foot Ferris wheel with a Pixar twist — pick a swinging or non-swinging gondola.",
-    x: 80,
-    y: 70,
+    lat: 33.8050267246,
+    lng: -117.922378889,
     baseWait: 25,
     trend: "down",
     lightningLane: false,
+    externalId: "4ca6cdbf-4c5f-45bf-b0dc-db83393ec208",
   },
 ];
 

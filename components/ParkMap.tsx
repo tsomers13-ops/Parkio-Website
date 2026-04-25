@@ -4,7 +4,7 @@ import type L from "leaflet";
 import dynamic from "next/dynamic";
 import { useEffect, useMemo, useRef, useState } from "react";
 import type { Park, Ride } from "@/lib/types";
-import { simulatedWait } from "@/lib/utils";
+import { fetchLiveWaits, simulatedWait } from "@/lib/utils";
 import { BottomSheet } from "./BottomSheet";
 import { RideDetailPanel } from "./RideDetailPanel";
 
@@ -23,13 +23,36 @@ export function ParkMap({ park, rides }: ParkMapProps) {
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [now, setNow] = useState<number>(() => Date.now());
   const [time, setTime] = useState<string>("--:--");
+  const [liveWaits, setLiveWaits] = useState<Map<string, number>>(
+    () => new Map(),
+  );
+  const [liveStatus, setLiveStatus] = useState<"loading" | "live" | "offline">(
+    "loading",
+  );
   const mapRef = useRef<L.Map | null>(null);
 
-  // Tick simulated wait times every 30s
+  // Tick simulated wait times every 30s (used as fallback when no live data)
   useEffect(() => {
     const id = setInterval(() => setNow(Date.now()), 30_000);
     return () => clearInterval(id);
   }, []);
+
+  // Fetch live wait times from themeparks.wiki on mount + every 60s
+  useEffect(() => {
+    let cancelled = false;
+    async function load() {
+      const live = await fetchLiveWaits(park);
+      if (cancelled) return;
+      setLiveWaits(live);
+      setLiveStatus(live.size > 0 ? "live" : "offline");
+    }
+    load();
+    const id = setInterval(load, 60_000);
+    return () => {
+      cancelled = true;
+      clearInterval(id);
+    };
+  }, [park]);
 
   // Live clock (client-side only to avoid hydration mismatch)
   useEffect(() => {
@@ -48,9 +71,12 @@ export function ParkMap({ park, rides }: ParkMapProps) {
 
   const waits = useMemo(() => {
     const map = new Map<string, number>();
-    for (const r of rides) map.set(r.id, simulatedWait(r, now));
+    for (const r of rides) {
+      const live = liveWaits.get(r.externalId);
+      map.set(r.id, typeof live === "number" ? live : simulatedWait(r, now));
+    }
     return map;
-  }, [rides, now]);
+  }, [rides, liveWaits, now]);
 
   const selectedRide = useMemo(
     () => rides.find((r) => r.id === selectedId) ?? null,
@@ -116,9 +142,41 @@ export function ParkMap({ park, rides }: ParkMapProps) {
                 {park.name}
               </div>
             </div>
-            <span className="ml-2 hidden items-center gap-1.5 rounded-full bg-emerald-50 px-2 py-1 text-[11px] font-medium text-emerald-700 ring-1 ring-emerald-200 sm:inline-flex">
-              <span className="h-1.5 w-1.5 rounded-full bg-emerald-500" />
-              {park.status}
+            <span
+              className={`ml-2 hidden items-center gap-1.5 rounded-full px-2 py-1 text-[11px] font-medium ring-1 sm:inline-flex ${
+                liveStatus === "live"
+                  ? "bg-emerald-50 text-emerald-700 ring-emerald-200"
+                  : liveStatus === "offline"
+                    ? "bg-ink-100 text-ink-600 ring-ink-200"
+                    : "bg-ink-50 text-ink-500 ring-ink-200"
+              }`}
+              title={
+                liveStatus === "live"
+                  ? "Live wait times from themeparks.wiki"
+                  : liveStatus === "offline"
+                    ? "Live data unavailable — showing estimated waits"
+                    : "Loading live wait times…"
+              }
+            >
+              <span className="relative flex h-1.5 w-1.5">
+                {liveStatus === "live" && (
+                  <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75" />
+                )}
+                <span
+                  className={`relative inline-flex h-1.5 w-1.5 rounded-full ${
+                    liveStatus === "live"
+                      ? "bg-emerald-500"
+                      : liveStatus === "offline"
+                        ? "bg-ink-400"
+                        : "bg-ink-300"
+                  }`}
+                />
+              </span>
+              {liveStatus === "live"
+                ? "Live"
+                : liveStatus === "offline"
+                  ? "Estimates"
+                  : "Loading"}
             </span>
           </div>
 
