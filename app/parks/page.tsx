@@ -5,8 +5,9 @@ import { ParksTodayOverview } from "@/components/ParksTodayOverview";
 import { PARKS } from "@/lib/data";
 
 export const metadata = {
-  title: "Parks · Parkio",
+  title: "Parks",
   description: "Pick your park. Real-time crowds and hours at a glance.",
+  alternates: { canonical: "/parks" },
 };
 
 export default function ParksPage() {

@@ -3,7 +3,7 @@ import { Footer } from "@/components/Footer";
 import { Navbar } from "@/components/Navbar";
 
 export const metadata = {
-  title: "About — Parkio",
+  title: "About",
   description:
     "Parkio is an independent live-data app for U.S. Disney parks. We make it dramatically easier to plan your day at the parks.",
   alternates: { canonical: "/about" },

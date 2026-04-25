@@ -3,7 +3,7 @@ import { Footer } from "@/components/Footer";
 import { Navbar } from "@/components/Navbar";
 
 export const metadata = {
-  title: "API — Parkio for developers",
+  title: "Developer API",
   description:
     "Parkio's public JSON API: live Disney wait times, park status, and operating hours. The same API powers the Parkio website.",
   alternates: { canonical: "/developers" },

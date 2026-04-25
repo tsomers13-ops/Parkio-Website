@@ -147,27 +147,13 @@ export function RideDetailPanel({
         {ride.description}
       </p>
 
-      <div className="mt-6 flex items-center gap-3">
-        <button
-          type="button"
-          className="inline-flex flex-1 items-center justify-center gap-2 rounded-full bg-ink-900 px-5 py-3 text-sm font-medium text-white shadow-soft transition hover:bg-ink-800 active:scale-[0.99]"
-        >
-          <svg viewBox="0 0 16 16" className="h-4 w-4" aria-hidden>
-            <path
-              d="M8 3v10M3 8h10"
-              stroke="currentColor"
-              strokeWidth="1.6"
-              strokeLinecap="round"
-            />
-          </svg>
-          Add to plan
-        </button>
-        <button
-          type="button"
-          className="inline-flex items-center justify-center gap-2 rounded-full border border-ink-200 bg-white px-4 py-3 text-sm font-medium text-ink-800 shadow-soft transition hover:border-ink-300 hover:bg-ink-50"
-        >
-          Directions
-        </button>
+      {/* Coming-soon hint replaces the "Add to plan / Directions" placeholder
+          buttons that had no behavior wired up. */}
+      <div className="mt-6 flex items-center justify-between gap-3 rounded-2xl border border-dashed border-ink-200 bg-ink-50/60 px-4 py-3 text-xs text-ink-600">
+        <span>Day-planning lands later. For now, scan the map and pick.</span>
+        <span className="rounded-full bg-white px-2 py-0.5 font-semibold text-ink-700 ring-1 ring-ink-200">
+          Coming soon
+        </span>
       </div>
     </div>
   );

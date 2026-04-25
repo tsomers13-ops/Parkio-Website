@@ -188,6 +188,21 @@ export function ParkMap({ park, rides }: ParkMapProps) {
   const parkStatus = parkApi?.status ?? "UNKNOWN";
   const isParkClosed = parkStatus === "CLOSED";
 
+  // Display hours: live API window when available, else the static label.
+  const hoursLabel = useMemo(() => {
+    const w = parkApi?.todayHours;
+    if (!w) return park.hours;
+    try {
+      const fmt = (iso: string) =>
+        new Date(iso)
+          .toLocaleTimeString([], { hour: "numeric", minute: "2-digit" })
+          .replace(":00", "");
+      return `${fmt(w.open)} — ${fmt(w.close)}`.toUpperCase();
+    } catch {
+      return park.hours;
+    }
+  }, [parkApi, park.hours]);
+
   // Render a friendly "2m ago" / "just now" label for the lastUpdated stamp.
   const lastUpdatedLabel = useMemo(() => {
     if (!lastUpdated) return null;
@@ -268,7 +283,7 @@ export function ParkMap({ park, rides }: ParkMapProps) {
             </span>
             <div className="min-w-0">
               <div className="truncate text-[11px] font-medium uppercase tracking-widest text-ink-500">
-                {park.hours}
+                {hoursLabel}
               </div>
               <div className="truncate text-sm font-semibold text-ink-900">
                 {park.name}

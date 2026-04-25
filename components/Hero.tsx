@@ -69,7 +69,7 @@ export function Hero() {
                 </svg>
               </Link>
               <Link
-                href="/#features"
+                href="/#how-it-works"
                 className="inline-flex items-center gap-2 rounded-full border border-ink-200 bg-white px-5 py-3 text-sm font-medium text-ink-800 shadow-soft transition hover:border-ink-300 hover:bg-ink-50"
               >
                 See how it works

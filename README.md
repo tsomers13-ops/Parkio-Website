@@ -135,6 +135,68 @@ routes), so the previous static-export setup no longer applies. Two
 supported paths: Vercel (zero-config) or Cloudflare Pages with the
 `@cloudflare/next-on-pages` adapter.
 
+## QA checklist (run before each deploy)
+
+A 5-minute pass on the live preview URL. Most items are click-through.
+
+### Pages load
+
+- [ ] `/` — hero renders, "Resort Cards" show real "Open today" + "Avg wait"
+- [ ] `/parks` — all 6 cards present, "Today's overview" tiles populate
+- [ ] `/parks/{slug}` — open each of the 6 parks, map loads
+- [ ] `/waits` — per-park top waits show
+- [ ] `/about`, `/developers`, `/support`, `/privacy` — render
+- [ ] `/__not-real` — 404 page with sitemap-style links
+
+### Navigation
+
+- [ ] Top nav: **Parks**, **Wait Times**, **API**, **About** all resolve
+- [ ] Mobile hamburger opens, closes via Escape, link tap, and backdrop tap
+- [ ] All footer links resolve (no Terms-style 404s)
+- [ ] Hero "See how it works" scrolls to How-It-Works section
+
+### Live data
+
+- [ ] Park-map top bar shows the live "Open today" hours window
+- [ ] "Live" pill goes live (green dot) within ~3s of page load
+- [ ] Pins show real waits; closed/down rides render gray status pills
+- [ ] "Last updated Xm ago" refreshes every 30s
+- [ ] When `/api/...` is artificially blocked (DevTools → Network →
+      Block request URL), pills fall back to "Estimates" — never blank
+
+### Empty + error states
+
+- [ ] First load shows "Loading" pill (not blank)
+- [ ] Park with no live data: insights cards say "Loading…" → graceful empty
+- [ ] Operating ride with no wait number → pin shows "—", bottom sheet
+      says "No data"
+- [ ] Park status `CLOSED` → "Park is closed today" strip visible
+
+### SEO + assets
+
+- [ ] `<title>` differs per page (no double "· Parkio" suffix)
+- [ ] `/sitemap.xml` lists every route + the 6 parks
+- [ ] `/robots.txt` allows `/`, disallows `/api/`
+- [ ] `/opengraph-image` returns a 1200×630 PNG
+- [ ] `/icon` returns a 32×32 PNG; favicon visible in tab
+- [ ] [Open Graph debugger](https://www.opengraph.xyz/) renders the
+      preview correctly when given the prod URL
+
+### Mobile (iPhone-sized viewport)
+
+- [ ] Top nav: hamburger opens cleanly; menu doesn't scroll background
+- [ ] Park-map top bar pills don't overflow at 375px
+- [ ] Bottom sheet drag-to-dismiss works
+- [ ] Ride list panel opens via right-rail button, scrolls
+- [ ] All grids stack to one column
+
+### Console + network
+
+- [ ] No hydration warnings in the console
+- [ ] No 4xx/5xx in the Network tab on page load
+- [ ] All `/api/*` responses return JSON with `Cache-Control` header
+- [ ] OG image + favicon return 200
+
 ## Notes on scope
 
 This is intentionally tight. **No** auth, accounts, favorites, day

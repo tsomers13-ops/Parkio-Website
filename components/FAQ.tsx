@@ -88,8 +88,8 @@ export function FAQ() {
         </div>
 
         <div className="mt-12 divide-y divide-ink-100 overflow-hidden rounded-3xl border border-ink-100 bg-white shadow-soft">
-          {FAQS.map((item, i) => (
-            <FAQItem key={i} item={item} />
+          {FAQS.map((item) => (
+            <FAQItem key={item.q} item={item} />
           ))}
         </div>
       </div>

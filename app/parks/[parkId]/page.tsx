@@ -17,9 +17,9 @@ export function generateStaticParams() {
 
 export function generateMetadata({ params }: ParkPageProps) {
   const park = getPark(params.parkId);
-  if (!park) return { title: "Park · Parkio" };
+  if (!park) return { title: "Park" };
   return {
-    title: `${park.name} · Live wait times`,
+    title: `${park.name} live wait times`,
     description: `Real-time wait times for every attraction at ${park.name}. Live map, ride status, and a clean attraction list — updated every minute.`,
     alternates: { canonical: `/parks/${park.id}` },
     openGraph: {

@@ -10,12 +10,11 @@ const PRODUCT_LINKS: Array<{ label: string; href: string }> = [
 const RESOURCE_LINKS: Array<{ label: string; href: string }> = [
   { label: "FAQ", href: "/#faq" },
   { label: "Support", href: "/support" },
-  { label: "API status", href: "/api/parks" },
+  { label: "Developer API", href: "/developers" },
 ];
 
 const LEGAL_LINKS: Array<{ label: string; href: string }> = [
   { label: "Privacy", href: "/privacy" },
-  { label: "Terms", href: "/support" },
 ];
 
 export function Footer() {

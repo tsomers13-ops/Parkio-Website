@@ -6,9 +6,10 @@ import { Navbar } from "@/components/Navbar";
 const SUPPORT_EMAIL = "parkio.support@gmail.com";
 
 export const metadata = {
-  title: "Support · Parkio",
+  title: "Support",
   description:
     "Need help, have feedback, or found a bug in Parkio? Reach the team here.",
+  alternates: { canonical: "/support" },
 };
 
 export default function SupportPage() {

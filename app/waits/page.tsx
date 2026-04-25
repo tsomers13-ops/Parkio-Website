@@ -4,7 +4,7 @@ import { ParksTodayOverview } from "@/components/ParksTodayOverview";
 import { WaitsAllParks } from "@/components/WaitsAllParks";
 
 export const metadata = {
-  title: "Live Wait Times — All Six Disney Parks",
+  title: "Live wait times",
   description:
     "Real-time wait times for every attraction at all six U.S. Disney parks. Updated every minute. Walt Disney World and Disneyland Resort.",
   alternates: { canonical: "/waits" },

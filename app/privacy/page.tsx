@@ -6,9 +6,10 @@ import { Navbar } from "@/components/Navbar";
 const SUPPORT_EMAIL = "parkio.support@gmail.com";
 
 export const metadata = {
-  title: "Privacy Policy · Parkio",
+  title: "Privacy Policy",
   description:
     "How Parkio handles your information. Short version: we don't collect personal data.",
+  alternates: { canonical: "/privacy" },
 };
 
 export default function PrivacyPage() {

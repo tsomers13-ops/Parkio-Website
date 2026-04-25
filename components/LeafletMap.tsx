@@ -181,7 +181,7 @@ function makeRideIcon(name: string, display: RideDisplay, selected: boolean) {
     // Gray pill with status text — Down / Closed / Refurb
     pillContent = `
       <span class="inline-block h-2 w-2 rounded-full bg-ink-300"></span>
-      <span class="text-[11px] font-semibold tracking-tight text-ink-500">${statusLabel(display.status as Exclude<typeof display.status, "UNKNOWN">)}</span>
+      <span class="text-[11px] font-semibold tracking-tight text-ink-500">${statusLabel(display.status)}</span>
     `;
   } else if (display.wait === null) {
     // Operating but no standby data right now — show an em-dash placeholder.
