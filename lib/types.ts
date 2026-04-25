@@ -59,3 +59,88 @@ export interface Ride {
   /** themeparks.wiki entity UUID — used to look up live wait time. */
   externalId: string;
 }
+
+/* ──────────────── Parkio public API response shapes ─────────────────
+   These are what the iOS app and the website consume from /api/*.
+   Stable on purpose — keep field names backwards-compatible.
+   ─────────────────────────────────────────────────────────────────── */
+
+export type ApiParkStatus = "OPEN" | "CLOSED" | "UNKNOWN";
+
+export type ApiAttractionStatus =
+  | "OPERATING"
+  | "DOWN"
+  | "CLOSED"
+  | "REFURBISHMENT"
+  | "UNKNOWN";
+
+export interface ApiHoursWindow {
+  /** ISO-8601 timestamp with timezone offset, e.g. "2026-04-26T09:00:00-04:00" */
+  open: string;
+  close: string;
+}
+
+export interface ApiCoordinates {
+  lat: number;
+  lng: number;
+}
+
+export interface ApiPark {
+  /** themeparks.wiki entity UUID */
+  id: string;
+  /** Parkio slug (stable for iOS) */
+  slug: string;
+  name: string;
+  resortSlug: string;
+  status: ApiParkStatus;
+  /** IANA timezone, e.g. "America/New_York" */
+  timezone: string;
+  todayHours: ApiHoursWindow | null;
+  /** ISO-8601 timestamp when this snapshot was generated server-side */
+  lastUpdated: string;
+}
+
+export interface ApiAttraction {
+  /** themeparks.wiki entity UUID */
+  id: string;
+  /** Parkio slug (stable for iOS) */
+  slug: string;
+  parkSlug: string;
+  name: string;
+  status: ApiAttractionStatus;
+  /** Standby wait in minutes, or null when not reported. */
+  waitMinutes: number | null;
+  coordinates: ApiCoordinates | null;
+  lastUpdated: string;
+}
+
+export interface ApiResort {
+  slug: string;
+  name: string;
+  timezone: string;
+  parks: ApiPark[];
+  lastUpdated: string;
+}
+
+export interface ApiParkLive {
+  parkSlug: string;
+  lastUpdated: string;
+  /** True when data came from themeparks.wiki; false when fallback was used. */
+  live: boolean;
+  attractions: ApiAttraction[];
+}
+
+export interface ApiParkHours {
+  parkSlug: string;
+  timezone: string;
+  today: ApiHoursWindow | null;
+  /** Up to 14 days of upcoming schedule. */
+  schedule: Array<{
+    /** ISO date "YYYY-MM-DD" */
+    date: string;
+    type: "OPERATING" | "INFO" | "EXTRA_HOURS" | "CLOSED";
+    open: string | null;
+    close: string | null;
+  }>;
+  lastUpdated: string;
+}

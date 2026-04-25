@@ -91,6 +91,79 @@ parkio/
 - Zustand is wired up as a dependency for cross-page state when planning, favorites, and itineraries are added.
 - Ride pins are coordinate-based (`0–100` x/y), so swapping the SVG backdrop for a real licensed map is a one-component change.
 
+## Parkio API
+
+The website also serves Parkio's public JSON API at `/api/*`. The iOS app
+consumes the same endpoints — clients should never call themeparks.wiki
+directly.
+
+**Architecture:**
+
+```
+themeparks.wiki  →  Parkio API (cache + normalize)  →  Website + iPhone app
+```
+
+**Endpoints:**
+
+| Method | Path                                | Purpose                              |
+| ------ | ----------------------------------- | ------------------------------------ |
+| GET    | `/api/parks`                        | List supported parks + today's hours |
+| GET    | `/api/parks/{parkSlug}`             | Single park metadata                 |
+| GET    | `/api/parks/{parkSlug}/live`        | Live wait times + ride status        |
+| GET    | `/api/parks/{parkSlug}/hours`       | Today's hours + 14-day forecast      |
+| GET    | `/api/resorts/{resortSlug}`         | Resort + its parks                   |
+| GET    | `/api/attractions/{attractionSlug}` | Single attraction                    |
+
+Supported `parkSlug` values: `magic-kingdom`, `epcot`, `hollywood-studios`,
+`animal-kingdom`, `disneyland`, `california-adventure`. Supported
+`resortSlug` values: `walt-disney-world`, `disneyland-resort`.
+
+**Caching:** Live wait times cache for 5 minutes (in-memory + CDN edge
+cache); park hours cache for 30 minutes. If themeparks.wiki is
+unreachable, routes fall back to Parkio's static attraction list with
+`status: "UNKNOWN"` so the UI can render a graceful "estimates
+unavailable" state.
+
+Full reference: see [`API.md`](./API.md).
+
+## iOS integration
+
+Swift `Codable` models for every response shape live in
+[`SWIFT_MODELS.md`](./SWIFT_MODELS.md). Drop them into the iPhone app to
+consume `/api/*` directly. **Slugs are stable for iOS** — persist by
+slug, not by themeparks.wiki UUID.
+
+## API layer file map
+
+```
+lib/
+├── disneyParkConfig.ts   # 6 parks + 2 resorts; canonical externalIds
+├── themeparksApi.ts      # Raw upstream client (server-only)
+├── parkioNormalizer.ts   # themeparks.wiki → Parkio JSON
+└── cache.ts              # In-memory TTL cache + TTL constants
+
+app/api/
+├── _lib/respond.ts                    # Shared JSON helpers
+├── parks/route.ts                     # GET list
+├── parks/[parkSlug]/route.ts          # GET one
+├── parks/[parkSlug]/live/route.ts     # GET live waits
+├── parks/[parkSlug]/hours/route.ts    # GET hours
+├── resorts/[resortSlug]/route.ts      # GET resort
+└── attractions/[attractionSlug]/route.ts  # GET one attraction
+```
+
+All routes use `export const runtime = 'edge'` so they ship on
+Cloudflare Pages (with `@cloudflare/next-on-pages`) or Vercel.
+
+## Deployment
+
+See [`DEPLOY.md`](./DEPLOY.md). Static export is no longer used — the
+new API routes need a runtime. Both Vercel and Cloudflare Pages (via
+`@cloudflare/next-on-pages`) are supported.
+
 ## Notes on scope
 
-This build deliberately keeps things tight: no auth, no real API yet, no day planner page. Those slots are clean to add — the data layer, types, and design system are the parts that needed to be right first.
+This build deliberately keeps things tight: no auth, no accounts, no
+favorites, no day-planner page. Those are intentional gaps — the data
+layer, types, design system, and API are the parts that needed to be
+right first.

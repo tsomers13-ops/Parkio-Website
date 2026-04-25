@@ -1,89 +1,111 @@
-# Deploy Parkio to Cloudflare Pages
+# Deploying Parkio
 
-Parkio is configured as a fully static Next.js export. `npm run build` writes everything to `./out` — that's the folder Cloudflare serves.
+Parkio is now a Next.js 14 App Router app with **real API routes** under
+`app/api/*`. That means it needs a runtime — a fully-static export won't
+work anymore. Pick one of:
 
-There are two paths. Pick the first one for a real production setup; pick the second for a one-shot upload.
+1. **Vercel** — zero-config, App Router + edge runtime out of the box.
+2. **Cloudflare Pages with `@cloudflare/next-on-pages`** — keeps you on
+   Cloudflare; one-time build adapter swap.
+
+Both options run the API routes on edge runtime. The site behaves the
+same on either platform.
 
 ---
 
-## Path A — Git integration (recommended)
-
-This connects your repo to Cloudflare. Every push redeploys automatically.
-
-### 1. Push the project to GitHub
-
-From the project root:
+## Path A — Vercel (recommended for a clean slate)
 
 ```bash
-git init
-git add .
-git commit -m "Initial Parkio commit"
-git branch -M main
+# 1. Install the Vercel CLI once
+npm i -g vercel
 
-# Create an empty repo on github.com first (e.g. parkio), then:
-git remote add origin https://github.com/<your-username>/parkio.git
-git push -u origin main
+# 2. From the repo root
+vercel
 ```
 
-### 2. Create the Pages project
+Follow the prompts — pick the default settings. Push commits to `main`
+and Vercel redeploys automatically.
 
-1. Go to **dash.cloudflare.com → Workers & Pages → Create → Pages → Connect to Git**.
-2. Authorize Cloudflare to read your GitHub repos and pick `parkio`.
-3. Configure the build:
+To map a custom domain (`parkio.info`):
 
-| Setting | Value |
-| --- | --- |
-| Framework preset | **Next.js (Static HTML Export)** |
-| Build command | `npm run build` |
-| Build output directory | `out` |
-| Root directory | _(leave blank)_ |
-| Node version env var | `NODE_VERSION` = `20` |
+1. Vercel dashboard → project → **Settings → Domains** → add `parkio.info`.
+2. Cloudflare DNS for `parkio.info`:
+   - Either change the CNAME for `parkio.info` to `cname.vercel-dns.com`
+   - Or use Cloudflare's *Origin Server* mode and let Cloudflare proxy.
 
-4. Click **Save and Deploy**.
-
-The first build takes ~2 minutes. You'll get a URL like `parkio.pages.dev`. Every push to `main` redeploys; PRs get preview deployments automatically.
-
-### 3. (Optional) Custom domain
-
-In the project's **Custom domains** tab, add your domain. Cloudflare handles SSL.
+That's it.
 
 ---
 
-## Path B — Direct upload via Wrangler CLI
+## Path B — Cloudflare Pages (`@cloudflare/next-on-pages`)
 
-Faster for a one-shot deploy. No GitHub needed.
+The previous deployment shipped a static export to Cloudflare Pages.
+With API routes added, the build command and output directory both
+change. You'll do this once.
+
+### 1. Add the adapter
 
 ```bash
-# 1. Build the static site
+npm install --save-dev @cloudflare/next-on-pages
+```
+
+### 2. Update Cloudflare Pages build settings
+
+In the Cloudflare dashboard → **Workers & Pages → parkio → Settings → Builds**:
+
+| Field                  | New value                                     |
+| ---------------------- | --------------------------------------------- |
+| Build command          | `npx @cloudflare/next-on-pages@1`             |
+| Build output directory | `.vercel/output/static`                       |
+| `NODE_VERSION` env     | `20`                                          |
+
+### 3. Add the compatibility flag
+
+Cloudflare Pages → **Settings → Functions → Compatibility flags**:
+
+- Production: add `nodejs_compat`
+- Preview: add `nodejs_compat`
+
+### 4. Redeploy
+
+Push to `main`. Cloudflare picks up the new build command, runs the
+adapter, and your `app/api/*` routes are now live edge functions on
+the same domain (`parkio.info`).
+
+---
+
+## Local development
+
+```bash
 npm install
-npm run build
-
-# 2. Deploy with Wrangler (uses your Cloudflare account)
-npx wrangler pages deploy ./out --project-name=parkio
+npm run dev
 ```
 
-The first run will open a browser to authenticate with Cloudflare. You'll be asked whether to create a new project — say yes, and it'll publish to `parkio.pages.dev`.
+API routes are reachable at `http://localhost:3000/api/parks` etc.
 
-To redeploy after changes, repeat steps 1 and 2.
+To test what Cloudflare's edge runtime will see:
 
----
-
-## Why static export
-
-Parkio has no API routes, no server actions, and no SSR — every page is pre-rendered at build time, including all four park maps via `generateStaticParams`. That means:
-
-- No edge runtime needed (no `@cloudflare/next-on-pages`)
-- Fast global CDN delivery on Cloudflare's network
-- Zero cold starts, zero per-request cost
-
-When you wire up a real wait-times API later, swap `lib/utils.ts → simulatedWait()` for a `fetch` to your endpoint — keep it client-side and you stay on the static export. If you want server-side fetching with ISR, switch to the `@cloudflare/next-on-pages` adapter then.
+```bash
+npm run build && npx @cloudflare/next-on-pages@1
+npx wrangler pages dev .vercel/output/static --compatibility-flag=nodejs_compat
+```
 
 ---
 
-## Troubleshooting
+## Caching note
 
-**Build fails with "Page X with `dynamic = "force-dynamic"` could not be exported"** — you've added a server-only feature. Either remove it or move to `@cloudflare/next-on-pages`.
+The API routes set `Cache-Control: public, s-maxage=…` so the platform's
+edge CDN caches each response. There's also an in-memory TTL cache
+inside the route handlers that gates upstream calls to themeparks.wiki:
 
-**404 on a park route** — the `dynamicParams = false` in `app/parks/[parkId]/page.tsx` means only the four pre-built park IDs work. That's intentional.
+| Endpoint                       | In-memory TTL | s-maxage |
+| ------------------------------ | ------------- | -------- |
+| `/api/parks/{slug}/live`       | 5 min         | 5 min    |
+| `/api/parks/{slug}/hours`      | 30 min        | 30 min   |
+| `/api/parks/{slug}` & list     | 30 min        | 30 min   |
+| `/api/resorts/{slug}`          | 30 min        | 30 min   |
+| `/api/attractions/{slug}`      | 5 min (shared)| 5 min    |
 
-**Local preview of the built site** — `npx serve out` serves the `out` folder on `localhost:3000` so you can sanity-check before deploying.
+In-memory cache is per-isolate. If you scale to many regions and want
+stricter cache hits, swap `lib/cache.ts` for Cloudflare KV (the
+`getOrFetch` signature stays the same).
