@@ -25,6 +25,16 @@ export interface ThemeparksLiveEntry {
     SINGLE_RIDER?: { waitTime: number | null };
     RETURN_TIME?: { state: string };
   };
+  /**
+   * Show / parade / meet-and-greet schedule for the entity. Populated
+   * by the upstream when the entity has scheduled performance windows.
+   * Times are ISO-8601 with the park's UTC offset.
+   */
+  showtimes?: Array<{
+    type?: string;
+    startTime?: string;
+    endTime?: string;
+  }>;
   lastUpdated?: string;
 }
 

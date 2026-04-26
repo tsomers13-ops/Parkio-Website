@@ -122,12 +122,42 @@ export interface ApiResort {
   lastUpdated: string;
 }
 
+/**
+ * A scheduled time-based experience that's NOT a queue ride — shows,
+ * parades, fireworks, and character meet & greets. Distinct from
+ * ApiAttraction because the user-facing question is "when does it
+ * start" rather than "how long is the wait".
+ */
+export type ApiEventType = "show" | "meet";
+
+export interface ApiEvent {
+  /** themeparks.wiki entity UUID */
+  id: string;
+  parkSlug: string;
+  name: string;
+  /** Categorized for the icon: 🎭 (show) vs 👑 (character meet). */
+  type: ApiEventType;
+  /**
+   * Upcoming start times as ISO-8601 strings with the park's UTC
+   * offset, sorted ascending. Past entries are filtered out by the
+   * normalizer at request time.
+   */
+  showtimes: string[];
+  lastUpdated: string;
+}
+
 export interface ApiParkLive {
   parkSlug: string;
   lastUpdated: string;
   /** True when data came from themeparks.wiki; false when fallback was used. */
   live: boolean;
   attractions: ApiAttraction[];
+  /**
+   * Time-based experiences (shows, parades, character meets) with
+   * upcoming start times. Empty when the upstream has no schedule
+   * for the day or no entities reported showtimes.
+   */
+  events: ApiEvent[];
 }
 
 export interface ApiParkHours {

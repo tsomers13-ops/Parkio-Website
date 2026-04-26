@@ -11,6 +11,8 @@ import { getParkConfig } from "./disneyParkConfig";
 import type {
   ApiAttraction,
   ApiAttractionStatus,
+  ApiEvent,
+  ApiEventType,
   ApiHoursWindow,
   ApiPark,
   ApiParkHours,
@@ -18,6 +20,7 @@ import type {
   ApiParkStatus,
 } from "./types";
 import type {
+  ThemeparksLiveEntry,
   ThemeparksLiveResponse,
   ThemeparksScheduleEntry,
   ThemeparksScheduleResponse,
@@ -138,6 +141,85 @@ function normalizeAttractionStatus(
     default:
       return "UNKNOWN";
   }
+}
+
+/* ─────────────────────── Event categorization ─────────────────────── */
+
+/**
+ * Decide whether a scheduled experience is a character meet & greet
+ * (👑) or a show / parade / fireworks (🎭). Heuristic over the
+ * upstream entity name — themeparks.wiki doesn't give us a clean
+ * label, so we look for telltale phrases.
+ */
+function categorizeEvent(name: string): ApiEventType {
+  const n = name.toLowerCase();
+  if (
+    /\bmeet[ &]/.test(n) ||
+    /\bgreet/.test(n) ||
+    /character experience/.test(n) ||
+    /fairytale hall/.test(n) ||
+    /royal hall/.test(n) ||
+    /royal theater/.test(n) ||
+    /town square theater/.test(n) ||
+    /pete'?s silly sideshow/.test(n) ||
+    /character spot/.test(n)
+  ) {
+    return "meet";
+  }
+  return "show";
+}
+
+/**
+ * Pull future showtimes from a single live-data entry, sorted ascending.
+ * Returns an empty array when the entry has no upcoming windows.
+ */
+function upcomingShowtimes(
+  entry: ThemeparksLiveEntry,
+  now: number,
+): string[] {
+  if (!entry.showtimes || entry.showtimes.length === 0) return [];
+  return entry.showtimes
+    .map((s) => s.startTime)
+    .filter((t): t is string => typeof t === "string" && t.length > 0)
+    .filter((t) => {
+      const ts = Date.parse(t);
+      return !Number.isNaN(ts) && ts >= now;
+    })
+    .sort();
+}
+
+/**
+ * Build the list of scheduled events for a park from raw upstream
+ * live data. Filters out entries with no upcoming showtimes (so the
+ * payload stays small).
+ */
+function normalizeEvents(
+  parkSlug: string,
+  live: ThemeparksLiveResponse | null | undefined,
+  now: number = Date.now(),
+): ApiEvent[] {
+  const out: ApiEvent[] = [];
+  for (const entry of live?.liveData ?? []) {
+    const upcoming = upcomingShowtimes(entry, now);
+    if (upcoming.length === 0) continue;
+    out.push({
+      id: entry.id,
+      parkSlug,
+      name: entry.name,
+      type: categorizeEvent(entry.name),
+      showtimes: upcoming,
+      lastUpdated: entry.lastUpdated ?? new Date(now).toISOString(),
+    });
+  }
+  // Sort by next-up start time so consumers get the most useful order
+  // by default. Consumers can re-filter (e.g. next 90 min) without
+  // re-sorting.
+  out.sort((a, b) => {
+    const aFirst = Date.parse(a.showtimes[0] ?? "");
+    const bFirst = Date.parse(b.showtimes[0] ?? "");
+    return aFirst - bFirst;
+  });
+  return out;
 }
 
 /* ─────────────────────── Park ─────────────────────── */
@@ -274,6 +356,7 @@ export function normalizeLive(
     lastUpdated,
     live: isLive,
     attractions,
+    events: normalizeEvents(cfg.slug, live),
   };
 }
 

@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import { Footer } from "@/components/Footer";
 import { MapFocusProvider } from "@/components/MapFocusProvider";
+import { ParkHappeningSoon } from "@/components/ParkHappeningSoon";
 import { ParkInsights } from "@/components/ParkInsights";
 import { ParkLiveDataProvider } from "@/components/ParkLiveDataProvider";
 import { ParkMap } from "@/components/ParkMap";
@@ -50,6 +51,7 @@ export default function ParkPage({ params }: ParkPageProps) {
           <div id="park-map" className="scroll-mt-4">
             <ParkMap park={park} rides={rides} />
           </div>
+          <ParkHappeningSoon park={park} />
           <ParkNearYou park={park} rides={rides} />
           <ParkRecommendations park={park} />
           <ParkInsights park={park} />
