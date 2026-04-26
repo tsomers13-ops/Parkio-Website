@@ -1,0 +1,112 @@
+{
+  "slug": "disney-park-news-2026-04-26",
+  "type": "daily-briefing",
+  "title": "Disney Park News — April 26, 2026",
+  "publishedAt": "2026-04-26",
+  "updatedAt": "2026-04-26T06:00:00-04:00",
+  "summary": "TRON returns to Magic Kingdom after a two-week refurb, EPCOT festival queues climb, and Hollywood Studios hits a busy Saturday. Today's briefing in 3 minutes.",
+  "sections": [
+    {
+      "kind": "breaking-news",
+      "items": [
+        {
+          "title": "TRON Lightcycle / Run reopens after refurbishment",
+          "body": "Magic Kingdom's TRON coaster is back operating this morning after a planned two-week maintenance window. Expect 60–90 minute waits all day as guests rush to ride it. Parkio Picks will surface walk-on windows the moment the wait dips — usually right before parade and fireworks slots.",
+          "source": {
+            "label": "Disney Parks Blog",
+            "url": "https://disneyparks.disney.go.com/blog/"
+          },
+          "parkSlug": "magic-kingdom"
+        }
+      ]
+    },
+    {
+      "kind": "big-news",
+      "items": [
+        {
+          "title": "EPCOT Flower & Garden Festival enters its busiest weekend",
+          "body": "Saturday foot traffic is projected to peak at 10am when topiary tours begin. Test Track and Guardians of the Galaxy: Cosmic Rewind will hit 80+ minutes by mid-morning. The smart move: hit Soarin' or Remy first, then the festival gardens.",
+          "parkSlug": "epcot"
+        },
+        {
+          "title": "Animal Kingdom extends Pandora hours through July 4",
+          "body": "Avatar Flight of Passage and Na'vi River Journey will run an extra 90 minutes after standard park close on weekends. Expect those late slots to fill fast — book around them.",
+          "parkSlug": "animal-kingdom"
+        }
+      ]
+    },
+    {
+      "kind": "top-stories",
+      "items": [
+        {
+          "title": "Disneyland confirms a Halloween 2026 overlay date",
+          "body": "Haunted Mansion Holiday returns September 6. Tiana's Bayou Adventure stays in standard mode this year. Refurbishment dates leading up to the overlay are not yet posted.",
+          "source": {
+            "label": "Disneyland press release",
+            "url": "https://disneyland.disney.go.com/"
+          },
+          "parkSlug": "disneyland"
+        },
+        {
+          "title": "Hollywood Studios sets Slinky Dog Dash record wait of 145 minutes",
+          "body": "Last weekend's Star Wars Day overflow pushed Slinky to a 145-minute peak — the longest single-ride wait posted at the park this year. Parkio's Skip For Now card surfaced it as 'plan around' status all afternoon.",
+          "parkSlug": "hollywood-studios"
+        },
+        {
+          "title": "Magic Kingdom Princess Fairytale Hall adds an early-morning meet window",
+          "body": "Cinderella and a rotating princess will appear from 8:45–9:30am on weekends starting May 4. Watch the Happening Soon section for confirmed showtimes each morning.",
+          "parkSlug": "magic-kingdom"
+        }
+      ]
+    },
+    {
+      "kind": "icymi",
+      "items": [
+        {
+          "title": "Soarin' Around the World gets a soft refresh",
+          "body": "EPCOT's flagship attraction quietly received minor projection updates last week. No downtime; subtle improvements to scene transitions and color grading.",
+          "parkSlug": "epcot"
+        },
+        {
+          "title": "Disney California Adventure's Pixar Pier night-time photo lighting tweaked",
+          "body": "Subtle but noticeable: the pier now glows warmer after sunset. If you've been holding off on a sunset shot, this weekend is the moment.",
+          "parkSlug": "california-adventure"
+        }
+      ]
+    },
+    {
+      "kind": "spotlight",
+      "items": [
+        {
+          "title": "How to use Parkio Picks when crowds are bad",
+          "body": "On a 9/10 crowd day like today's projected EPCOT, Parkio Picks shifts strategy: headliners with sub-30-minute waits become rare, so the algorithm leans into walk-on hidden gems. Soarin' at 10 minutes outranks a 50-minute Frozen Ever After. Open EPCOT now and the top of Best Right Now is doing the math for you.",
+          "ctaParkSlug": "epcot",
+          "ctaLabel": "Open EPCOT on Parkio"
+        }
+      ]
+    },
+    {
+      "kind": "videos",
+      "items": [
+        {
+          "title": "Walking through Magic Kingdom 4K — April 2026",
+          "channel": "DSNY Newscast",
+          "url": "https://www.youtube.com/results?search_query=magic+kingdom+walkthrough+april+2026",
+          "thumbnailUrl": "https://i.ytimg.com/vi/dQw4w9WgXcQ/hqdefault.jpg"
+        },
+        {
+          "title": "TRON Lightcycle / Run reopens — full POV ride",
+          "channel": "Coaster Studios",
+          "url": "https://www.youtube.com/results?search_query=tron+lightcycle+run+reopens",
+          "thumbnailUrl": "https://i.ytimg.com/vi/dQw4w9WgXcQ/hqdefault.jpg"
+        },
+        {
+          "title": "EPCOT Flower & Garden 2026 — every topiary in 8 minutes",
+          "channel": "Theme Park Spree",
+          "url": "https://www.youtube.com/results?search_query=epcot+flower+garden+2026",
+          "thumbnailUrl": "https://i.ytimg.com/vi/dQw4w9WgXcQ/hqdefault.jpg"
+        }
+      ]
+    }
+  ]
+}
