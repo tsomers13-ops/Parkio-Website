@@ -160,37 +160,55 @@ export default function NewsletterPage() {
 }
 
 function BeehiivPlaceholder() {
-  // Shown until NEXT_PUBLIC_BEEHIIV_EMBED_URL is configured. Plain
-  // mailto fallback keeps the page useful in the interim.
+  // Shown until NEXT_PUBLIC_BEEHIIV_EMBED_URL is configured. There's
+  // no API route to accept submissions yet, so we deliberately render
+  // NO form — just a clean "coming soon" state that funnels visitors
+  // into the live product instead. Once Beehiiv is wired, the parent
+  // component renders the iframe embed and this branch never shows.
   return (
-    <form
-      action="/api/newsletter/subscribe"
-      method="post"
-      className="mt-6 flex flex-col gap-3 sm:flex-row"
-      noValidate
-    >
-      <label className="sr-only" htmlFor="newsletter-email">
-        Email address
-      </label>
-      <input
-        id="newsletter-email"
-        type="email"
-        name="email"
-        placeholder="you@example.com"
-        autoComplete="email"
-        required
-        className="flex-1 rounded-full border border-ink-200 bg-white px-5 py-3 text-base text-ink-900 placeholder:text-ink-400 focus:border-accent-500 focus:outline-none focus:ring-2 focus:ring-accent-200"
-      />
-      <button
-        type="submit"
-        className="inline-flex items-center justify-center gap-2 rounded-full bg-ink-900 px-6 py-3 text-sm font-semibold text-white shadow-lift transition hover:bg-ink-800"
-      >
-        Subscribe — free
-      </button>
-      <p className="sr-only">
-        Subscribe form is connected once the Beehiiv embed URL is configured.
+    <div className="mt-6 rounded-2xl border border-ink-100 bg-white p-6 sm:p-8">
+      <p className="text-xs font-semibold uppercase tracking-widest text-accent-700">
+        Coming soon
       </p>
-    </form>
+      <p className="mt-2 text-lg font-semibold tracking-tight text-ink-900 sm:text-xl">
+        Email signup is launching with the iPhone app.
+      </p>
+      <p className="mt-2 text-sm leading-relaxed text-ink-600 sm:text-base">
+        We're wiring up Parkio Daily to email shortly. In the meantime,
+        every briefing publishes here at 6 AM Eastern — bookmark{" "}
+        <Link
+          href="/guide"
+          className="font-semibold text-accent-700 hover:text-accent-900"
+        >
+          /guide
+        </Link>{" "}
+        to read today's.
+      </p>
+      <div className="mt-5 flex flex-wrap items-center gap-3">
+        <Link
+          href="/guide"
+          className="inline-flex items-center gap-2 rounded-full bg-ink-900 px-4 py-2.5 text-sm font-semibold text-white shadow-soft transition hover:bg-ink-800"
+        >
+          Read today's briefing
+          <svg viewBox="0 0 16 16" className="h-3 w-3" aria-hidden>
+            <path
+              d="M6 3l5 5-5 5"
+              stroke="currentColor"
+              strokeWidth="1.8"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              fill="none"
+            />
+          </svg>
+        </Link>
+        <Link
+          href="/parks"
+          className="inline-flex items-center gap-1.5 rounded-full px-3 py-2.5 text-sm font-medium text-accent-700 transition hover:text-accent-900"
+        >
+          Or open Parkio →
+        </Link>
+      </div>
+    </div>
   );
 }
 
