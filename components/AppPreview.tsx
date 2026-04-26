@@ -54,17 +54,25 @@ export function AppPreview() {
               </p>
 
               <div className="mt-6 flex gap-3">
-                <button
-                  type="button"
-                  className="inline-flex items-center gap-2 rounded-full bg-ink-900 px-4 py-2.5 text-sm font-medium text-white shadow-soft transition hover:bg-ink-800 active:scale-[0.98]"
-                >
-                  Add to plan
-                </button>
                 <Link
                   href="/parks"
-                  className="inline-flex items-center gap-2 rounded-full border border-ink-200 bg-white px-4 py-2.5 text-sm font-medium text-ink-800 shadow-soft transition hover:border-ink-300 hover:bg-ink-50"
+                  className="inline-flex items-center gap-2 rounded-full bg-ink-900 px-4 py-2.5 text-sm font-medium text-white shadow-soft transition hover:bg-ink-800 active:scale-[0.98]"
                 >
                   Open the map
+                  <svg
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    className="h-3.5 w-3.5"
+                    aria-hidden
+                  >
+                    <path
+                      d="M6 3l5 5-5 5"
+                      stroke="currentColor"
+                      strokeWidth="1.6"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
                 </Link>
               </div>
             </div>

@@ -84,12 +84,19 @@ export function RideDetailPanel({
             </div>
           </div>
         ) : isOperating ? (
-          <div className="rounded-2xl bg-ink-100 px-3 py-3 ring-1 ring-ink-200">
+          <div
+            className="rounded-2xl bg-ink-100 px-3 py-3 ring-1 ring-ink-200"
+            title="Wait time not currently reported"
+          >
             <div className="text-[10px] font-medium uppercase tracking-widest text-ink-600 opacity-80">
               Wait
             </div>
-            <div className="mt-0.5 text-xl font-semibold text-ink-500">—</div>
-            <div className="mt-1 text-[10px] text-ink-500">No data</div>
+            <div className="mt-0.5 text-xl font-semibold text-ink-500">
+              No wait posted
+            </div>
+            <div className="mt-1 text-[10px] text-ink-500">
+              The park hasn't reported a standby wait for this ride.
+            </div>
           </div>
         ) : (
           <div className="rounded-2xl bg-ink-100 px-3 py-3 ring-1 ring-ink-200">
@@ -122,7 +129,7 @@ export function RideDetailPanel({
             Lightning Lane
           </div>
           <div className="mt-0.5 text-xl font-semibold">
-            {ride.lightningLane ? "Available" : "—"}
+            {ride.lightningLane ? "Available" : "Not offered"}
           </div>
         </div>
       </div>

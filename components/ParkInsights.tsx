@@ -277,9 +277,12 @@ function StatusBadge({
   }
   if (status === "estimates") {
     return (
-      <span className="inline-flex items-center gap-1.5 rounded-full bg-ink-100 px-3 py-1.5 text-[11px] font-medium text-ink-600 ring-1 ring-ink-200">
+      <span
+        className="inline-flex items-center gap-1.5 rounded-full bg-ink-100 px-3 py-1.5 text-[11px] font-medium text-ink-600 ring-1 ring-ink-200"
+        title="Live data unavailable — showing estimated waits"
+      >
         <span className="h-1.5 w-1.5 rounded-full bg-ink-400" />
-        Estimates only
+        Estimated waits
       </span>
     );
   }

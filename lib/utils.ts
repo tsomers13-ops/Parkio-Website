@@ -105,10 +105,12 @@ export function formatTime(d: Date = new Date()): string {
 /* ──────────────────────── Status helpers ──────────────────────── */
 
 /**
- * Friendly short label for a ride's status. Used by the map pin and
- * the bottom sheet. The website never renders "OPERATING" through this
- * helper — that path uses the wait minutes — so the OPERATING branch
- * is only used in defensive code.
+ * Friendly short label for a ride's status. Worded for guests, not
+ * for engineers. Used by the map pin and the ride bottom sheet.
+ *
+ * The website never renders "OPERATING" through this helper — that
+ * path uses the wait minutes — so the OPERATING branch is only used
+ * in defensive code.
  */
 export function statusLabel(status: ApiAttractionStatus): string {
   switch (status) {
@@ -117,9 +119,11 @@ export function statusLabel(status: ApiAttractionStatus): string {
     case "CLOSED":
       return "Closed";
     case "REFURBISHMENT":
-      return "Refurb";
+      // "Refurb" was internal jargon; "In refurb" reads as a state
+      // a guest would actually understand at a glance.
+      return "In refurb";
     case "UNKNOWN":
-      return "—";
+      return "No data";
     case "OPERATING":
       return "Open";
   }

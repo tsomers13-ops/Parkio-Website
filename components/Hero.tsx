@@ -81,7 +81,7 @@ export function Hero() {
               style={{ animationDelay: "240ms" }}
             >
               <Stat label="Parks supported" value="6" />
-              <Stat label="Rides tracked" value="40+" />
+              <Stat label="Rides tracked" value="80+" />
               <Stat label="Updates" value="Real-time" />
             </div>
           </div>

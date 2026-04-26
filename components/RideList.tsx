@@ -209,9 +209,12 @@ function RidePill({ display }: { display: RideDisplay | undefined }) {
   }
   if (display.wait === null) {
     return (
-      <span className="inline-flex items-center gap-1.5 rounded-full bg-ink-50 px-2.5 py-1 text-[11px] font-semibold text-ink-500 ring-1 ring-ink-200">
+      <span
+        className="inline-flex items-center gap-1.5 rounded-full bg-ink-50 px-2.5 py-1 text-[11px] font-semibold text-ink-500 ring-1 ring-ink-200"
+        title="Wait time not reported"
+      >
         <span className="h-1.5 w-1.5 rounded-full bg-ink-300" />
-        —
+        No wait posted
       </span>
     );
   }

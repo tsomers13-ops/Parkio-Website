@@ -26,7 +26,7 @@ export default function ParksPage() {
               Where to today?
             </h1>
             <p className="mt-4 text-lg text-ink-600">
-              Tap a park to open the live map. Status, crowds, and hours
+              Tap a park to open the live map. Park status and hours
               update in real time.
             </p>
           </div>

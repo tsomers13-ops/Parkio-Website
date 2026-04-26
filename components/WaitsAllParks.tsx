@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useAllLive } from "@/lib/useAllLive";
 import type { ApiAttraction, ApiPark } from "@/lib/types";
-import { statusLabel, waitColorClasses, waitTier } from "@/lib/utils";
+import { waitColorClasses, waitTier } from "@/lib/utils";
 
 export function WaitsAllParks() {
   const { status, parks, liveByPark } = useAllLive();
@@ -146,10 +146,15 @@ function ParkStatusPill({ status }: { status: ApiPark["status"] }) {
       </span>
     );
   }
+  // UNKNOWN — we don't have park hours data. Don't say "Closed" — that
+  // would mislead the guest. Be explicit instead.
   return (
-    <span className="inline-flex items-center gap-1.5 rounded-full bg-ink-100 px-2.5 py-1 text-[11px] font-semibold text-ink-600 ring-1 ring-ink-200">
+    <span
+      className="inline-flex items-center gap-1.5 rounded-full bg-ink-100 px-2.5 py-1 text-[11px] font-semibold text-ink-600 ring-1 ring-ink-200"
+      title="Park hours unavailable from the live data source"
+    >
       <span className="h-1.5 w-1.5 rounded-full bg-ink-300" />
-      {statusLabel("UNKNOWN")}
+      Hours unavailable
     </span>
   );
 }

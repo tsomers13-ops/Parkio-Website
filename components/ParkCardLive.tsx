@@ -34,12 +34,21 @@ export function ParkCardLive({ park, initialApi = null }: ParkCardLiveProps) {
   }, [park.id]);
 
   // Override the static park's status/hours when we have fresh API data.
+  // Importantly: if the API returns UNKNOWN (couldn't determine status),
+  // fall back to the static park.status rather than incorrectly labeling
+  // a park "Closed" when we just don't know — that would be a real
+  // trust-breaker for a guest checking the site.
   const hydratedPark: Park =
     api === null
       ? park
       : {
           ...park,
-          status: api.status === "OPEN" ? "Open" : "Closed",
+          status:
+            api.status === "OPEN"
+              ? "Open"
+              : api.status === "CLOSED"
+                ? "Closed"
+                : park.status,
           hours: api.todayHours
             ? formatHoursWindow(
                 api.todayHours.open,

@@ -496,7 +496,7 @@ function LiveBadge({ status }: { status: LiveStatus }) {
         title="Live data unavailable — showing estimated waits"
       >
         <span className="h-1.5 w-1.5 rounded-full bg-ink-400" />
-        Estimates
+        Estimated waits
       </span>
     );
   }
