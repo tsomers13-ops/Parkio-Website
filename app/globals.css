@@ -151,3 +151,20 @@ body {
     animation: none;
   }
 }
+
+/* ───────── Path hint fade-in ─────────
+   The subtle curved/dashed line drawn on the map between the user's
+   last selected ride and a recommended ride. Fades in over 500ms so
+   it appears alongside the camera fly-in instead of just popping. */
+@keyframes parkio-path-hint-in {
+  from { stroke-opacity: 0; }
+  to   { stroke-opacity: 0.5; }
+}
+.parkio-path-hint {
+  animation: parkio-path-hint-in 500ms ease-out forwards;
+}
+@media (prefers-reduced-motion: reduce) {
+  .parkio-path-hint {
+    animation: none;
+  }
+}

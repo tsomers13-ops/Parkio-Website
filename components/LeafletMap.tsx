@@ -22,6 +22,15 @@ interface LeafletMapProps {
    * "Right now" hero). Cleared automatically.
    */
   highlightId?: string | null;
+  /**
+   * Subtle curved/dashed path-hint line. Drawn from `from` to `to`
+   * when set. Cleared automatically by <ParkMap>. Not a real route —
+   * just a visual guide so the user can see roughly which way to go.
+   */
+  pathHint?: {
+    from: { lat: number; lng: number };
+    to: { lat: number; lng: number };
+  } | null;
   onSelect: (rideId: string) => void;
   mapRef?: React.MutableRefObject<L.Map | null>;
 }
@@ -32,6 +41,7 @@ export default function LeafletMap({
   displays,
   selectedId,
   highlightId = null,
+  pathHint = null,
   onSelect,
   mapRef,
 }: LeafletMapProps) {
@@ -68,8 +78,81 @@ export default function LeafletMap({
         highlightId={highlightId}
         onSelect={onSelect}
       />
+
+      <PathHintLine pathHint={pathHint} />
     </MapContainer>
   );
+}
+
+/**
+ * Renders a subtle, curved, dashed polyline from `from` → `to` when
+ * `pathHint` is set. Pure visual aid; deliberately NOT a real walking
+ * route. The curve is a quadratic Bezier with the control point
+ * offset perpendicular to the chord, which gives it a guide-like
+ * "swoosh" rather than a turn-by-turn-looking straight line.
+ */
+function PathHintLine({
+  pathHint,
+}: {
+  pathHint: LeafletMapProps["pathHint"];
+}) {
+  const map = useMap();
+
+  useEffect(() => {
+    if (!pathHint) return;
+    const pts = curvedPath(pathHint.from, pathHint.to);
+    const line = L.polyline(pts, {
+      color: "#6366f1", // accent-500
+      weight: 2,
+      opacity: 0.5,
+      dashArray: "6 8",
+      lineCap: "round",
+      lineJoin: "round",
+      interactive: false, // never blocks pin taps
+      className: "parkio-path-hint",
+      // Bury under marker pane so pins always read above the line
+      pane: "overlayPane",
+    });
+    line.addTo(map);
+    return () => {
+      map.removeLayer(line);
+    };
+  }, [map, pathHint]);
+
+  return null;
+}
+
+/**
+ * Quadratic Bezier curve from `from` → `to` with the control point
+ * offset perpendicular to the chord. Returns ~21 sample points along
+ * the curve, suitable for an L.polyline. The bow is proportional to
+ * chord length, so close rides get a gentle curve and far rides a
+ * more pronounced arc.
+ */
+function curvedPath(
+  from: { lat: number; lng: number },
+  to: { lat: number; lng: number },
+): [number, number][] {
+  const dlat = to.lat - from.lat;
+  const dlng = to.lng - from.lng;
+  const mx = (from.lat + to.lat) / 2;
+  const my = (from.lng + to.lng) / 2;
+  // Perpendicular offset for the control point (rotate the chord 90°).
+  // The 0.18 factor controls how much the curve bows — smaller = flatter.
+  const bow = 0.18;
+  const cx = mx - dlng * bow;
+  const cy = my + dlat * bow;
+
+  const pts: [number, number][] = [];
+  const STEPS = 20;
+  for (let i = 0; i <= STEPS; i++) {
+    const t = i / STEPS;
+    const u = 1 - t;
+    const px = u * u * from.lat + 2 * u * t * cx + t * t * to.lat;
+    const py = u * u * from.lng + 2 * u * t * cy + t * t * to.lng;
+    pts.push([px, py]);
+  }
+  return pts;
 }
 
 /**

@@ -59,8 +59,17 @@ export function ParkMap({ park, rides }: ParkMapProps) {
   // We also push every selection up to the shared provider so that
   // sibling sections (e.g. "Near you") can use the last-selected ride
   // as a proxy for the user's current location.
-  const { focusedRideSlug, focusToken, setCurrentRide } = useMapFocus();
+  const { focusedRideSlug, focusToken, currentRideSlug, setCurrentRide } =
+    useMapFocus();
   const [highlightId, setHighlightId] = useState<string | null>(null);
+  // Path hint — a subtle curved/dashed line drawn ONLY when the user
+  // arrives via the "Right now" hero's "View on map" button AND has
+  // a previously selected ride to anchor the line. Auto-clears on
+  // sheet close, on a different pin selection, or after 6s.
+  const [pathHint, setPathHint] = useState<{
+    from: Ride;
+    to: Ride;
+  } | null>(null);
 
   // Tick once a minute so the simulated fallback breathes when live data is
   // unavailable, and so the "last updated 2m ago" label refreshes.
@@ -159,18 +168,52 @@ export function ParkMap({ park, rides }: ParkMapProps) {
   // — explicit because the selection effect won't re-fire if the
   // ride is already the selected one (e.g. user re-taps the same
   // top pick). Re-runs on every focusRide() call thanks to focusToken.
+  //
+  // Path hint: when the user has a previously selected ride that's
+  // different from the focus target, also draw a subtle curved line
+  // between them. We capture currentRideSlug here BEFORE setSelectedId
+  // updates it (the selection effect runs later), so the closure value
+  // is the user's previous location. Excluded from deps so this effect
+  // doesn't re-fire when the location updates.
   useEffect(() => {
     if (!focusedRideSlug) return;
     const ride = rides.find((r) => r.id === focusedRideSlug);
     if (!ride) return;
 
+    const fromRide =
+      currentRideSlug && currentRideSlug !== ride.id
+        ? (rides.find((r) => r.id === currentRideSlug) ?? null)
+        : null;
+
     setSelectedId(ride.id);
     setHighlightId(ride.id);
     flyToRide(ride);
+    if (fromRide) setPathHint({ from: fromRide, to: ride });
 
-    const t = setTimeout(() => setHighlightId(null), 1600);
-    return () => clearTimeout(t);
+    const highlightTimer = setTimeout(() => setHighlightId(null), 1600);
+    // Path hint auto-clears after 6s — long enough to read, short
+    // enough to not clutter the map for someone exploring further.
+    const pathTimer = fromRide
+      ? setTimeout(() => setPathHint(null), 6000)
+      : null;
+    return () => {
+      clearTimeout(highlightTimer);
+      if (pathTimer) clearTimeout(pathTimer);
+    };
+    // currentRideSlug is intentionally excluded — see comment above.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [focusedRideSlug, focusToken, rides, flyToRide]);
+
+  // Clear the path hint when the user navigates away from its target
+  // (sheet closed, or a different pin selected). The hint is only
+  // meaningful while the user is looking at the destination it points
+  // to; afterwards, it's just clutter.
+  useEffect(() => {
+    if (!pathHint) return;
+    if (!selectedId || selectedId !== pathHint.to.id) {
+      setPathHint(null);
+    }
+  }, [selectedId, pathHint]);
 
   // Fast lookup of live attractions by Parkio slug.
   const liveBySlug = useMemo(() => {
@@ -409,10 +452,31 @@ export function ParkMap({ park, rides }: ParkMapProps) {
           displays={displays}
           selectedId={selectedId}
           highlightId={highlightId}
+          pathHint={
+            pathHint
+              ? {
+                  from: { lat: pathHint.from.lat, lng: pathHint.from.lng },
+                  to: { lat: pathHint.to.lat, lng: pathHint.to.lng },
+                }
+              : null
+          }
           onSelect={(id) => setSelectedId(id)}
           mapRef={mapRef}
         />
       </div>
+
+      {/* Path-hint disclaimer chip — only visible when a hint is drawn */}
+      {pathHint && (
+        <div
+          className="pointer-events-none absolute left-1/2 top-24 z-[800] -translate-x-1/2 sm:top-28"
+          aria-live="polite"
+        >
+          <div className="surface-glass inline-flex items-center gap-1.5 whitespace-nowrap rounded-full px-3 py-1.5 text-[11px] font-medium text-ink-700 shadow-soft ring-1 ring-ink-200">
+            <span className="h-1.5 w-1.5 rounded-full bg-accent-400" />
+            Path hint · approximate, not directions
+          </div>
+        </div>
+      )}
 
       {/* Custom map controls */}
       <div className="absolute right-4 top-1/2 z-[800] flex -translate-y-1/2 flex-col gap-2 sm:right-6">
