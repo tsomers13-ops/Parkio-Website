@@ -8,6 +8,7 @@ import {
 } from "@/lib/popularity";
 import type { Park } from "@/lib/types";
 import { waitColorClasses, waitTier } from "@/lib/utils";
+import { useMapFocus } from "./MapFocusProvider";
 import { useParkLive } from "./ParkLiveDataProvider";
 
 interface ParkRightNowProps {
@@ -29,6 +30,7 @@ interface ParkRightNowProps {
  */
 export function ParkRightNow({ park }: ParkRightNowProps) {
   const { liveApi: live, status } = useParkLive();
+  const { focusRide } = useMapFocus();
 
   const top = useMemo(() => {
     if (!live) return null;
@@ -37,6 +39,11 @@ export function ParkRightNow({ park }: ParkRightNowProps) {
   }, [live, park.id]);
 
   function handleViewOnMap() {
+    if (!top) return;
+    // Tell the map below to pan/zoom/highlight + auto-open the ride
+    // detail panel. ParkMap subscribes to the same MapFocusProvider
+    // and handles the actual flyTo + pulse + sheet open sequence.
+    focusRide(top.slug);
     const map = document.getElementById("park-map");
     if (map) map.scrollIntoView({ behavior: "smooth", block: "start" });
   }

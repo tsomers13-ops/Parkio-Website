@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import { Footer } from "@/components/Footer";
+import { MapFocusProvider } from "@/components/MapFocusProvider";
 import { ParkInsights } from "@/components/ParkInsights";
 import { ParkLiveDataProvider } from "@/components/ParkLiveDataProvider";
 import { ParkMap } from "@/components/ParkMap";
@@ -43,12 +44,14 @@ export default function ParkPage({ params }: ParkPageProps) {
   return (
     <main className="relative">
       <ParkLiveDataProvider parkSlug={park.id}>
-        <ParkRightNow park={park} />
-        <div id="park-map" className="scroll-mt-4">
-          <ParkMap park={park} rides={rides} />
-        </div>
-        <ParkRecommendations park={park} />
-        <ParkInsights park={park} />
+        <MapFocusProvider>
+          <ParkRightNow park={park} />
+          <div id="park-map" className="scroll-mt-4">
+            <ParkMap park={park} rides={rides} />
+          </div>
+          <ParkRecommendations park={park} />
+          <ParkInsights park={park} />
+        </MapFocusProvider>
       </ParkLiveDataProvider>
       <Footer />
     </main>

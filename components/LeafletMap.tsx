@@ -16,6 +16,12 @@ interface LeafletMapProps {
   rides: Ride[];
   displays: Map<string, RideDisplay>;
   selectedId: string | null;
+  /**
+   * Ride id that should pulse for ~1.6s. Set by <ParkMap> in response
+   * to a focusRide() call from elsewhere on the page (e.g. the
+   * "Right now" hero). Cleared automatically.
+   */
+  highlightId?: string | null;
   onSelect: (rideId: string) => void;
   mapRef?: React.MutableRefObject<L.Map | null>;
 }
@@ -25,6 +31,7 @@ export default function LeafletMap({
   rides,
   displays,
   selectedId,
+  highlightId = null,
   onSelect,
   mapRef,
 }: LeafletMapProps) {
@@ -58,6 +65,7 @@ export default function LeafletMap({
         rides={rides}
         displays={displays}
         selectedId={selectedId}
+        highlightId={highlightId}
         onSelect={onSelect}
       />
     </MapContainer>
@@ -106,11 +114,13 @@ function ClusterMarkers({
   rides,
   displays,
   selectedId,
+  highlightId,
   onSelect,
 }: {
   rides: Ride[];
   displays: Map<string, RideDisplay>;
   selectedId: string | null;
+  highlightId: string | null;
   onSelect: (rideId: string) => void;
 }) {
   const map = useMap();
@@ -159,22 +169,31 @@ function ClusterMarkers({
         isLive: false,
       };
       const selected = ride.id === selectedId;
+      const highlighted = ride.id === highlightId;
       const marker = L.marker([ride.lat, ride.lng], {
-        icon: makeRideIcon(ride.name, display, selected),
-        zIndexOffset: selected ? 1000 : 0,
+        icon: makeRideIcon(ride.name, display, selected, highlighted),
+        // Highlighted pin floats above selected, which floats above
+        // everything else.
+        zIndexOffset: highlighted ? 2000 : selected ? 1000 : 0,
       });
       marker.on("click", () => onSelect(ride.id));
       group.addLayer(marker);
     }
-  }, [rides, displays, selectedId, onSelect]);
+  }, [rides, displays, selectedId, highlightId, onSelect]);
 
   return null;
 }
 
-function makeRideIcon(name: string, display: RideDisplay, selected: boolean) {
+function makeRideIcon(
+  name: string,
+  display: RideDisplay,
+  selected: boolean,
+  highlighted: boolean = false,
+) {
   const ringClass = selected
     ? "ring-2 ring-ink-900 scale-110"
     : "ring-1 ring-ink-200";
+  const highlightClass = highlighted ? "parkio-pin-pulse" : "";
 
   let pillContent: string;
   if (display.status !== "OPERATING" && display.status !== "UNKNOWN") {
@@ -212,7 +231,7 @@ function makeRideIcon(name: string, display: RideDisplay, selected: boolean) {
 
   const html = `
     <div class="parkio-pin flex flex-col items-center pointer-events-auto">
-      <div class="flex items-center gap-1 rounded-full bg-white px-2.5 py-1 shadow-md transition ${ringClass}">
+      <div class="flex items-center gap-1 rounded-full bg-white px-2.5 py-1 shadow-md transition ${ringClass} ${highlightClass}">
         ${pillContent}
       </div>
       <div class="parkio-pin-label mt-1 max-w-[160px] truncate rounded-md bg-white/95 px-2 py-0.5 text-center text-[10px] font-semibold tracking-tight ${labelTone} shadow-sm">${escapeHtml(name)}</div>

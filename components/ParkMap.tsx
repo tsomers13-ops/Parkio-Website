@@ -10,6 +10,7 @@ import type {
 } from "@/lib/types";
 import { simulatedWait } from "@/lib/utils";
 import { BottomSheet } from "./BottomSheet";
+import { useMapFocus } from "./MapFocusProvider";
 import { useParkLive } from "./ParkLiveDataProvider";
 import { RideDetailPanel } from "./RideDetailPanel";
 import { RideList } from "./RideList";
@@ -51,6 +52,13 @@ export function ParkMap({ park, rides }: ParkMapProps) {
   const [time, setTime] = useState<string>("--:--");
   const mapRef = useRef<L.Map | null>(null);
 
+  // The "Right now" hero (and potentially other components) can ask
+  // the map to focus on a specific ride. We respond by smooth-panning
+  // the Leaflet map, briefly highlighting the pin, and auto-opening
+  // the ride detail sheet. Lightweight — no routing, no data fetch.
+  const { focusedRideSlug, focusToken } = useMapFocus();
+  const [highlightId, setHighlightId] = useState<string | null>(null);
+
   // Tick once a minute so the simulated fallback breathes when live data is
   // unavailable, and so the "last updated 2m ago" label refreshes.
   useEffect(() => {
@@ -72,6 +80,70 @@ export function ParkMap({ park, rides }: ParkMapProps) {
     const id = setInterval(tick, 30_000);
     return () => clearInterval(id);
   }, []);
+
+  // React to focus requests from the "Right now" hero.
+  //   1. Wait for Leaflet's map ref to be ready (poll briefly).
+  //   2. Smoothly fly to the ride's coordinates (or jump if the user
+  //      prefers reduced motion).
+  //   3. Pulse the pin for ~1.6s for a visual "directed attention" cue.
+  //   4. After the map settles (~800ms), open the RideDetailPanel.
+  // Re-runs on every focusRide() call (not just slug changes) thanks
+  // to the focusToken counter — so a second click on the same ride
+  // replays the sequence.
+  useEffect(() => {
+    if (!focusedRideSlug) return;
+    const ride = rides.find((r) => r.id === focusedRideSlug);
+    if (!ride) return;
+
+    let cancelled = false;
+    let attempts = 0;
+    let highlightTimer: ReturnType<typeof setTimeout> | null = null;
+    let openTimer: ReturnType<typeof setTimeout> | null = null;
+    let mapReadyTimer: ReturnType<typeof setTimeout> | null = null;
+
+    function start() {
+      if (cancelled) return;
+      const map = mapRef.current;
+      if (!map) {
+        // Leaflet still mounting; retry briefly. Cap at ~1.6s total.
+        if (attempts++ < 20) {
+          mapReadyTimer = setTimeout(start, 80);
+        }
+        return;
+      }
+      const reduced =
+        typeof window !== "undefined" &&
+        window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      const targetZoom = Math.max(map.getZoom(), 18);
+      if (reduced) {
+        map.setView([ride.lat, ride.lng], targetZoom, { animate: false });
+      } else {
+        map.flyTo([ride.lat, ride.lng], targetZoom, {
+          duration: 0.8,
+          easeLinearity: 0.25,
+        });
+      }
+      setHighlightId(ride.id);
+      highlightTimer = setTimeout(() => {
+        if (!cancelled) setHighlightId(null);
+      }, 1600);
+      openTimer = setTimeout(
+        () => {
+          if (!cancelled) setSelectedId(ride.id);
+        },
+        reduced ? 0 : 800,
+      );
+    }
+    start();
+
+    return () => {
+      cancelled = true;
+      if (highlightTimer) clearTimeout(highlightTimer);
+      if (openTimer) clearTimeout(openTimer);
+      if (mapReadyTimer) clearTimeout(mapReadyTimer);
+    };
+    // focusToken intentionally bumps re-runs even when slug is unchanged.
+  }, [focusedRideSlug, focusToken, rides]);
 
   // Fast lookup of live attractions by Parkio slug.
   const liveBySlug = useMemo(() => {
@@ -309,6 +381,7 @@ export function ParkMap({ park, rides }: ParkMapProps) {
           rides={rides}
           displays={displays}
           selectedId={selectedId}
+          highlightId={highlightId}
           onSelect={(id) => setSelectedId(id)}
           mapRef={mapRef}
         />

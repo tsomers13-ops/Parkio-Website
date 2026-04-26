@@ -117,3 +117,34 @@ body {
 .marker-cluster span {
   line-height: 1 !important;
 }
+
+/* ───────── "Right now" → map focus pin pulse ─────────
+   Applied to the inner pill of a ride pin for ~1.6s when the user
+   taps "View on map" in the ParkRightNow hero. One-shot, settles
+   back to the resting state. Combines a gentle scale with a soft
+   indigo halo so the pin reads as "look here". */
+@keyframes parkio-pin-pulse-scale {
+  0%   { transform: scale(1); }
+  35%  { transform: scale(1.15); }
+  70%  { transform: scale(1.02); }
+  100% { transform: scale(1); }
+}
+@keyframes parkio-pin-pulse-glow {
+  0%   { box-shadow: 0 0 0 0   rgba(99, 102, 241, 0); }
+  20%  { box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.45); }
+  60%  { box-shadow: 0 0 0 14px rgba(99, 102, 241, 0); }
+  100% { box-shadow: 0 0 0 0   rgba(99, 102, 241, 0); }
+}
+.parkio-pin-pulse {
+  animation:
+    parkio-pin-pulse-scale 1.6s cubic-bezier(0.22, 1, 0.36, 1) 1,
+    parkio-pin-pulse-glow  1.6s cubic-bezier(0.22, 1, 0.36, 1) 1;
+  transform-origin: center center;
+  /* Promote to its own composited layer for a smoother mobile animation */
+  will-change: transform, box-shadow;
+}
+@media (prefers-reduced-motion: reduce) {
+  .parkio-pin-pulse {
+    animation: none;
+  }
+}
