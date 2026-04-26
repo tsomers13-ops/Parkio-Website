@@ -18,20 +18,23 @@ export const metadata = {
 };
 
 /**
- * Beehiiv signup form embed.
+ * Beehiiv signup configuration — three-tier ladder.
  *
- * Set NEXT_PUBLIC_BEEHIIV_EMBED_URL on Cloudflare Pages to the
- * `src` URL Beehiiv generates for the publication's embed. The URL
- * looks like:
+ * Tier 1 — Inline iframe embed (best UX):
+ *   NEXT_PUBLIC_BEEHIIV_EMBED_URL = https://embeds.beehiiv.com/{form-id}
+ *   (the `src` from Beehiiv's iframe snippet; optional `?slim=true`)
  *
- *   https://embeds.beehiiv.com/00000000-0000-0000-0000-000000000000
+ * Tier 2 — Link out to Beehiiv's hosted subscribe page (interim):
+ *   NEXT_PUBLIC_BEEHIIV_SUBSCRIBE_URL = https://parkio.beehiiv.com/subscribe
  *
- * (optionally with `?slim=true` for a compact one-line variant).
+ * Tier 3 — Neither set: render the "Parkio Daily coming soon." card.
  *
- * When the env var is missing, the page renders a "Parkio Daily
- * coming soon" card with no form — never a broken submit endpoint.
+ * The page never POSTs to a Parkio API route — submission is always
+ * handled by Beehiiv directly (in the iframe or on their hosted page).
  */
 const BEEHIIV_EMBED_URL = process.env.NEXT_PUBLIC_BEEHIIV_EMBED_URL ?? "";
+const BEEHIIV_SUBSCRIBE_URL =
+  process.env.NEXT_PUBLIC_BEEHIIV_SUBSCRIBE_URL ?? "";
 
 export default function NewsletterPage() {
   return (
@@ -106,6 +109,8 @@ export default function NewsletterPage() {
                   style={{ background: "transparent" }}
                 />
               </div>
+            ) : BEEHIIV_SUBSCRIBE_URL ? (
+              <BeehiivHostedCta href={BEEHIIV_SUBSCRIBE_URL} />
             ) : (
               <BeehiivPlaceholder />
             )}
@@ -173,6 +178,53 @@ export default function NewsletterPage() {
 
       <Footer />
     </main>
+  );
+}
+
+/**
+ * Tier 2 — hosted Beehiiv subscribe page link-out. Used when the
+ * iframe embed URL isn't configured but the publication's hosted
+ * subscribe URL is. Opens in a new tab so the visitor doesn't lose
+ * Parkio context. Submission happens entirely on Beehiiv — no Parkio
+ * API route is involved.
+ */
+function BeehiivHostedCta({ href }: { href: string }) {
+  return (
+    <div className="mt-6 rounded-2xl border border-ink-100 bg-white p-6 sm:p-8">
+      <p className="text-xs font-semibold uppercase tracking-widest text-accent-700">
+        Subscribe via Beehiiv
+      </p>
+      <p className="mt-2 text-lg font-semibold tracking-tight text-ink-900 sm:text-xl">
+        One quick page, then you're done.
+      </p>
+      <p className="mt-2 text-sm leading-relaxed text-ink-600 sm:text-base">
+        We host the form on Beehiiv directly — drop your email there and
+        the next morning's briefing lands at 6 AM Eastern.
+      </p>
+      <a
+        href={href}
+        target="_blank"
+        rel="noopener"
+        className="mt-5 inline-flex items-center gap-2 rounded-full bg-ink-900 px-5 py-3 text-sm font-semibold text-white shadow-lift transition hover:bg-ink-800"
+      >
+        Subscribe on Beehiiv
+        <svg viewBox="0 0 16 16" className="h-3.5 w-3.5" aria-hidden>
+          {/* External-link arrow — signals the new-tab behavior */}
+          <path
+            d="M5 11l6-6M7 5h4v4"
+            stroke="currentColor"
+            strokeWidth="1.8"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            fill="none"
+          />
+        </svg>
+      </a>
+      <p className="mt-3 text-xs text-ink-500">
+        Opens parkio.beehiiv.com in a new tab. Free · No spam · Unsubscribe
+        anytime.
+      </p>
+    </div>
   );
 }
 
