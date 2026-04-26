@@ -18,10 +18,18 @@ export const metadata = {
 };
 
 /**
- * Beehiiv embed URL. Set NEXT_PUBLIC_BEEHIIV_EMBED_URL in the env to
- * the embed URL Beehiiv generates for the publication's signup form.
- * When unset, the page shows a clean placeholder with a mailto fallback
- * so the page never looks broken before the integration is wired up.
+ * Beehiiv signup form embed.
+ *
+ * Set NEXT_PUBLIC_BEEHIIV_EMBED_URL on Cloudflare Pages to the
+ * `src` URL Beehiiv generates for the publication's embed. The URL
+ * looks like:
+ *
+ *   https://embeds.beehiiv.com/00000000-0000-0000-0000-000000000000
+ *
+ * (optionally with `?slim=true` for a compact one-line variant).
+ *
+ * When the env var is missing, the page renders a "Parkio Daily
+ * coming soon" card with no form — never a broken submit endpoint.
  */
 const BEEHIIV_EMBED_URL = process.env.NEXT_PUBLIC_BEEHIIV_EMBED_URL ?? "";
 
@@ -81,12 +89,21 @@ export default function NewsletterPage() {
 
             {BEEHIIV_EMBED_URL ? (
               <div className="mt-6 overflow-hidden rounded-2xl border border-ink-100 bg-white">
+                {/*
+                  Beehiiv's recommended embed: transparent background,
+                  no frame border, no internal scroll. Height is set
+                  conservatively so the form has room to render before
+                  Beehiiv reports its true height — 480px fits both the
+                  default and `?slim=true` variants without clipping.
+                */}
                 <iframe
                   src={BEEHIIV_EMBED_URL}
                   title="Subscribe to Parkio Daily"
-                  className="h-[420px] w-full"
+                  className="h-[480px] w-full"
                   loading="lazy"
                   scrolling="no"
+                  frameBorder={0}
+                  style={{ background: "transparent" }}
                 />
               </div>
             ) : (
@@ -160,22 +177,21 @@ export default function NewsletterPage() {
 }
 
 function BeehiivPlaceholder() {
-  // Shown until NEXT_PUBLIC_BEEHIIV_EMBED_URL is configured. There's
-  // no API route to accept submissions yet, so we deliberately render
-  // NO form — just a clean "coming soon" state that funnels visitors
-  // into the live product instead. Once Beehiiv is wired, the parent
-  // component renders the iframe embed and this branch never shows.
+  // Shown only when NEXT_PUBLIC_BEEHIIV_EMBED_URL is missing in the
+  // environment. Deliberately renders NO form — there's no API route
+  // to accept submissions, so the safest fallback is a static card
+  // that funnels visitors into the live product instead.
   return (
     <div className="mt-6 rounded-2xl border border-ink-100 bg-white p-6 sm:p-8">
       <p className="text-xs font-semibold uppercase tracking-widest text-accent-700">
         Coming soon
       </p>
       <p className="mt-2 text-lg font-semibold tracking-tight text-ink-900 sm:text-xl">
-        Email signup is launching with the iPhone app.
+        Parkio Daily coming soon.
       </p>
       <p className="mt-2 text-sm leading-relaxed text-ink-600 sm:text-base">
-        We're wiring up Parkio Daily to email shortly. In the meantime,
-        every briefing publishes here at 6 AM Eastern — bookmark{" "}
+        Email signup is being wired up. In the meantime, every briefing
+        publishes here at 6 AM Eastern — bookmark{" "}
         <Link
           href="/guide"
           className="font-semibold text-accent-700 hover:text-accent-900"
