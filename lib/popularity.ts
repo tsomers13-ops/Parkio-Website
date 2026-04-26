@@ -94,20 +94,54 @@ export function isTopRide(parkSlug: string, rideSlug: string): boolean {
 export const HIGH_WAIT_CUTOFF_MIN = 60;
 
 /**
- * Lower bound for "Good options" — anything below this is short
- * enough that it goes into "Best right now" instead.
+ * Lower bound for "Good options" — anything below this either lands
+ * in Best Right Now (as a hidden gem) or falls into the gem cutoff
+ * for non-headliners. Aligns with GEM_MAX_WAIT_MIN so the buckets
+ * connect with no gap.
  */
-export const MODERATE_WAIT_FLOOR_MIN = 30;
+export const MODERATE_WAIT_FLOOR_MIN = 26;
+
+/**
+ * Threshold for the "Low wait" badge in the Best Right Now card.
+ * Anything at or below this number gets the badge — it signals
+ * a real walk-on opportunity.
+ */
+export const LOW_WAIT_THRESHOLD_MIN = 15;
+
+/**
+ * Maximum wait for a NON-headliner to qualify for "Best right now".
+ * Above this, a non-headliner is considered too unremarkable to
+ * recommend over a headliner with a moderate wait — it falls back
+ * to "Good options" instead. Keeps weak rides with mid waits from
+ * polluting the smart picks.
+ */
+export const GEM_MAX_WAIT_MIN = 25;
+
+/* Internal scoring tiers. Headliner picks always rank above gem
+ * picks, so we use disjoint numeric ranges:
+ *   - Headliner: HEADLINER_TIER_BASE - waitMinutes  → roughly 940..1000
+ *   - Gem:       GEM_TIER_BASE       - waitMinutes  → roughly 75..100
+ * The gap guarantees ordering without a secondary sort key.
+ */
+const HEADLINER_TIER_BASE = 1000;
+const GEM_TIER_BASE = 100;
 
 /**
  * Score for "Best right now" ranking. Higher = better recommendation.
  *
- * Formula:
- *   shorter wait ⇒ higher score
- *   popular ride ⇒ +30 bonus
+ * Tiered formula — designed so a low-wait but unremarkable ride never
+ * outranks a headliner with a reasonable wait:
+ *
+ *   Tier 1 (Headliners)   wait <= 60 min   → 940..1000 (shorter wait wins)
+ *   Tier 2 (Hidden gems)  wait <= 25 min   →  75..100  (shorter wait wins)
+ *   Otherwise → -Infinity (won't appear in Best Right Now)
+ *
+ * A non-headliner with a 35-minute wait used to rank near the bottom
+ * of Best Right Now; now it correctly falls through to Good Options.
  *
  * Returns -Infinity for rides we never want to surface (not operating,
- * no wait reported, or wait above the high-wait cutoff).
+ * no wait reported, above the high-wait cutoff, or non-headliner
+ * above the gem threshold).
  */
 export function bestNowScore(
   parkSlug: string,
@@ -117,9 +151,22 @@ export function bestNowScore(
   if (typeof attraction.waitMinutes !== "number") return -Infinity;
   if (attraction.waitMinutes > HIGH_WAIT_CUTOFF_MIN) return -Infinity;
 
-  const waitBonus = HIGH_WAIT_CUTOFF_MIN - attraction.waitMinutes; // 0..60
-  const popularityBonus = isTopRide(parkSlug, attraction.slug) ? 30 : 0;
-  return waitBonus + popularityBonus;
+  const wait = attraction.waitMinutes;
+  const popular = isTopRide(parkSlug, attraction.slug);
+
+  // Tier 1 — headliners always sit at the top, ranked by ascending wait.
+  if (popular) {
+    return HEADLINER_TIER_BASE - wait;
+  }
+
+  // Tier 2 — non-headliners only qualify when waits are genuinely low.
+  if (wait <= GEM_MAX_WAIT_MIN) {
+    return GEM_TIER_BASE - wait;
+  }
+
+  // Mid-wait non-headliners: not weak enough to skip, not strong enough
+  // to sit in Best Right Now. They get picked up by Good Options.
+  return -Infinity;
 }
 
 export interface PartitionedAttractions {

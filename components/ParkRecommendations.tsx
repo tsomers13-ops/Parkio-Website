@@ -1,7 +1,11 @@
 "use client";
 
 import { useMemo } from "react";
-import { isTopRide, partitionAttractions } from "@/lib/popularity";
+import {
+  LOW_WAIT_THRESHOLD_MIN,
+  isTopRide,
+  partitionAttractions,
+} from "@/lib/popularity";
 import type { ApiAttraction, Park } from "@/lib/types";
 import { waitColorClasses, waitTier } from "@/lib/utils";
 import { useParkLive } from "./ParkLiveDataProvider";
@@ -13,16 +17,18 @@ interface ParkRecommendationsProps {
 type LoadStatus = "loading" | "live" | "estimates";
 
 /**
- * "What to ride next" decision layer. Three scannable cards built on
- * top of the same /api/parks/{slug}/live data the map uses:
+ * "Parkio Picks" decision layer. Three scannable cards built on the
+ * same /api/parks/{slug}/live data the map uses:
  *
- *   - Best right now: short waits + popular headliners
- *   - Good options: moderate waits, not top-tier (strong B-list)
- *   - Skip for now: anything currently > 60-minute wait
+ *   - Best right now: tier-1 (headliners ≤ 60 min) and tier-2
+ *                     (hidden gems ≤ 25 min). Headliners always rank
+ *                     above gems; "Low wait" badge on rides ≤ 15 min.
+ *   - Good options:   non-headliners with moderate waits (26–60 min).
+ *   - Skip for now:   anything currently > 60 min.
  *
  * No real AI — just hand-curated popularity sets in lib/popularity.ts
- * combined with deterministic scoring. Designed to be readable in
- * under 5 seconds on a phone in line.
+ * combined with deterministic tiered scoring. Designed to be readable
+ * in under 5 seconds on a phone in line.
  *
  * Pulls live data from the page-level <ParkLiveDataProvider> so it
  * shares one fetch with ParkMap + ParkInsights.
@@ -41,18 +47,18 @@ export function ParkRecommendations({ park }: ParkRecommendationsProps) {
         <div className="flex flex-wrap items-end justify-between gap-4">
           <div className="max-w-2xl">
             <p className="text-sm font-medium uppercase tracking-widest text-accent-600">
-              What to ride next
+              Parkio Picks
             </p>
             <h2 className="mt-3 text-3xl font-semibold tracking-tight text-ink-900 sm:text-4xl">
-              Smart picks for{" "}
+              Best moves{" "}
               <span className="bg-gradient-to-br from-accent-600 to-sky-500 bg-clip-text text-transparent">
                 right now
               </span>
               .
             </h2>
             <p className="mt-3 text-base text-ink-600">
-              Updated every minute from live wait times. Pick a card and
-              go.
+              Based on live waits and attraction popularity. Refreshed
+              every minute.
             </p>
           </div>
           <StatusBadge status={status} />
@@ -169,11 +175,15 @@ function Row({
 }) {
   const popular = showTopBadge && isTopRide(parkSlug, attraction.slug);
   const wait = attraction.waitMinutes;
+  const lowWait =
+    showTopBadge &&
+    typeof wait === "number" &&
+    wait <= LOW_WAIT_THRESHOLD_MIN;
 
   return (
     <li className="flex items-center justify-between gap-4 py-3">
       <div className="min-w-0">
-        <div className="flex items-center gap-2">
+        <div className="flex flex-wrap items-center gap-1.5">
           <span
             className="truncate text-sm font-semibold tracking-tight text-ink-900"
             title={attraction.name}
@@ -186,6 +196,14 @@ function Row({
               title="Top-tier headliner"
             >
               Headliner
+            </span>
+          )}
+          {lowWait && (
+            <span
+              className="inline-flex shrink-0 items-center rounded-full bg-emerald-50 px-1.5 py-0.5 text-[10px] font-semibold text-emerald-700 ring-1 ring-emerald-100"
+              title="Walk-on territory"
+            >
+              Low wait
             </span>
           )}
         </div>
