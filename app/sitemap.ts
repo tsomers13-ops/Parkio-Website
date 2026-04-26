@@ -1,8 +1,15 @@
 import type { MetadataRoute } from "next";
-import { DISNEY_PARKS, DISNEY_RESORTS } from "@/lib/disneyParkConfig";
+import { DISNEY_PARKS } from "@/lib/disneyParkConfig";
 
 const SITE_URL = "https://parkio.info";
 
+/**
+ * Public sitemap. Only includes guest-facing pages.
+ *
+ * The /api/* routes are intentionally NOT listed — they exist for the
+ * iPhone app and the website's own client code, not for search engines.
+ * `app/robots.ts` also disallows /api/ to keep crawlers out.
+ */
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
 
@@ -11,7 +18,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE_URL}/parks`, lastModified: now, changeFrequency: "hourly", priority: 0.9 },
     { url: `${SITE_URL}/waits`, lastModified: now, changeFrequency: "hourly", priority: 0.9 },
     { url: `${SITE_URL}/about`, lastModified: now, changeFrequency: "monthly", priority: 0.5 },
-    { url: `${SITE_URL}/developers`, lastModified: now, changeFrequency: "monthly", priority: 0.5 },
     { url: `${SITE_URL}/support`, lastModified: now, changeFrequency: "monthly", priority: 0.4 },
     { url: `${SITE_URL}/privacy`, lastModified: now, changeFrequency: "yearly", priority: 0.3 },
   ];
@@ -23,14 +29,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
-  // Resorts don't have their own pages yet, but include the API endpoint
-  // hint so search engines can discover the data layer.
-  const resortApiRoutes: MetadataRoute.Sitemap = DISNEY_RESORTS.map((r) => ({
-    url: `${SITE_URL}/api/resorts/${r.slug}`,
-    lastModified: now,
-    changeFrequency: "daily",
-    priority: 0.2,
-  }));
-
-  return [...staticRoutes, ...parkRoutes, ...resortApiRoutes];
+  return [...staticRoutes, ...parkRoutes];
 }

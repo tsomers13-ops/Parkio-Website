@@ -10,7 +10,7 @@ const PRODUCT_LINKS: Array<{ label: string; href: string }> = [
 const RESOURCE_LINKS: Array<{ label: string; href: string }> = [
   { label: "FAQ", href: "/#faq" },
   { label: "Support", href: "/support" },
-  { label: "Developer API", href: "/developers" },
+  { label: "About", href: "/about" },
 ];
 
 const LEGAL_LINKS: Array<{ label: string; href: string }> = [

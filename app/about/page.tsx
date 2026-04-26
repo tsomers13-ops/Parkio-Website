@@ -60,16 +60,10 @@ export default function AboutPage() {
             </Section>
             <Section title="Coming next">
               <p>
-                A native iPhone app that consumes the same Parkio API
-                you can browse on{" "}
-                <Link
-                  href="/developers"
-                  className="font-medium text-ink-900 underline-offset-2 hover:underline"
-                >
-                  /developers
-                </Link>
-                . Push notifications for ride drops are on the
-                wishlist after that.
+                A native iPhone app for the same live data, the same
+                map, and the same clean planning experience you see on
+                the website. Push notifications for ride drops are on
+                the wishlist after that.
               </p>
             </Section>
           </div>

@@ -145,7 +145,7 @@ A 5-minute pass on the live preview URL. Most items are click-through.
 - [ ] `/parks` — all 6 cards present, "Today's overview" tiles populate
 - [ ] `/parks/{slug}` — open each of the 6 parks, map loads
 - [ ] `/waits` — per-park top waits show
-- [ ] `/about`, `/developers`, `/support`, `/privacy` — render
+- [ ] `/about`, `/support`, `/privacy` — render
 - [ ] `/__not-real` — 404 page with sitemap-style links
 
 ### Navigation

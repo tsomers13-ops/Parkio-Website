@@ -59,9 +59,9 @@ export default function NotFound() {
             <Suggest href="/" label="Home" />
             <Suggest href="/parks" label="All parks" />
             <Suggest href="/waits" label="Wait times" />
-            <Suggest href="/developers" label="API" />
             <Suggest href="/about" label="About" />
             <Suggest href="/support" label="Support" />
+            <Suggest href="/privacy" label="Privacy" />
           </div>
         </div>
       </section>
