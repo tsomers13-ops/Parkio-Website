@@ -20,6 +20,17 @@ interface MapFocusValue {
   focusToken: number;
   /** Request the map to focus on a ride. Pass null to clear. */
   focusRide: (slug: string | null) => void;
+
+  /**
+   * Last ride the user actively visited on the map (i.e. selected to
+   * see its details). Used as a proxy for "where the user is right
+   * now" until real GPS is wired in. Persists across sheet open/close
+   * and polling refreshes; resets only when the page (and provider)
+   * unmounts on a park navigation.
+   */
+  currentRideSlug: string | null;
+  /** Update the user's "current location" reference ride. */
+  setCurrentRide: (slug: string | null) => void;
 }
 
 const Ctx = createContext<MapFocusValue | null>(null);
@@ -38,9 +49,14 @@ export function MapFocusProvider({ children }: { children: ReactNode }) {
     slug: null,
     token: 0,
   });
+  const [currentRideSlug, setCurrentRideSlug] = useState<string | null>(null);
 
   const focusRide = useCallback((slug: string | null) => {
     setState((s) => ({ slug, token: s.token + 1 }));
+  }, []);
+
+  const setCurrentRide = useCallback((slug: string | null) => {
+    setCurrentRideSlug(slug);
   }, []);
 
   return (
@@ -49,6 +65,8 @@ export function MapFocusProvider({ children }: { children: ReactNode }) {
         focusedRideSlug: state.slug,
         focusToken: state.token,
         focusRide,
+        currentRideSlug,
+        setCurrentRide,
       }}
     >
       {children}

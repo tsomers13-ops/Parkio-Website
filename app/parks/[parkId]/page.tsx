@@ -4,6 +4,7 @@ import { MapFocusProvider } from "@/components/MapFocusProvider";
 import { ParkInsights } from "@/components/ParkInsights";
 import { ParkLiveDataProvider } from "@/components/ParkLiveDataProvider";
 import { ParkMap } from "@/components/ParkMap";
+import { ParkNearYou } from "@/components/ParkNearYou";
 import { ParkRecommendations } from "@/components/ParkRecommendations";
 import { ParkRightNow } from "@/components/ParkRightNow";
 import { PARKS, getPark, getRidesForPark } from "@/lib/data";
@@ -49,6 +50,7 @@ export default function ParkPage({ params }: ParkPageProps) {
           <div id="park-map" className="scroll-mt-4">
             <ParkMap park={park} rides={rides} />
           </div>
+          <ParkNearYou park={park} rides={rides} />
           <ParkRecommendations park={park} />
           <ParkInsights park={park} />
         </MapFocusProvider>

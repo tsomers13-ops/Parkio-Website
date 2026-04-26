@@ -56,7 +56,10 @@ export function ParkMap({ park, rides }: ParkMapProps) {
   // the map to focus on a specific ride. We respond by smooth-panning
   // the Leaflet map, briefly highlighting the pin, and auto-opening
   // the ride detail sheet. Lightweight — no routing, no data fetch.
-  const { focusedRideSlug, focusToken } = useMapFocus();
+  // We also push every selection up to the shared provider so that
+  // sibling sections (e.g. "Near you") can use the last-selected ride
+  // as a proxy for the user's current location.
+  const { focusedRideSlug, focusToken, setCurrentRide } = useMapFocus();
   const [highlightId, setHighlightId] = useState<string | null>(null);
 
   // Tick once a minute so the simulated fallback breathes when live data is
@@ -141,6 +144,14 @@ export function ParkMap({ park, rides }: ParkMapProps) {
     if (!ride) return;
     flyToRide(ride);
   }, [selectedId, rides, flyToRide]);
+
+  // ── Selection → "Near you" location anchor ──────────────────────
+  // Treat the most recently selected ride as the user's current
+  // location. We only push UP to the provider (we don't clear it on
+  // sheet close), so closing the sheet keeps the last known location.
+  useEffect(() => {
+    if (selectedId) setCurrentRide(selectedId);
+  }, [selectedId, setCurrentRide]);
 
   // ── "Right now" hero focus ──────────────────────────────────────
   // The hero's "View on map" button calls focusRide(slug). We open
