@@ -41,14 +41,27 @@ export function ParkCardLive({ park, initialApi = null }: ParkCardLiveProps) {
           ...park,
           status: api.status === "OPEN" ? "Open" : "Closed",
           hours: api.todayHours
-            ? formatHoursWindow(api.todayHours.open, api.todayHours.close)
+            ? formatHoursWindow(
+                api.todayHours.open,
+                api.todayHours.close,
+                api.timezone,
+              )
             : park.hours,
         };
 
   return <ParkCard park={hydratedPark} />;
 }
 
-function formatHoursWindow(openIso: string, closeIso: string): string {
+/**
+ * Formats an open/close ISO pair like "9AM — 11PM" using the park's
+ * local timezone (NOT the user's browser timezone), so a guest in
+ * California sees Magic Kingdom's hours in Eastern time.
+ */
+function formatHoursWindow(
+  openIso: string,
+  closeIso: string,
+  timezone: string,
+): string {
   try {
     const open = new Date(openIso);
     const close = new Date(closeIso);
@@ -57,6 +70,7 @@ function formatHoursWindow(openIso: string, closeIso: string): string {
         .toLocaleTimeString([], {
           hour: "numeric",
           minute: "2-digit",
+          timeZone: timezone,
         })
         .replace(":00", "")
         .replace(" ", "");

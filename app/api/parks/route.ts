@@ -17,7 +17,7 @@ import type { ApiPark } from "@/lib/types";
 import { jsonOk } from "../_lib/respond";
 
 export const runtime = "edge";
-export const revalidate = 1800; // 30 min — Next.js fetch revalidation hint
+export const revalidate = 300; // 5 min — status is time-sensitive
 
 export async function GET() {
   const parks: ApiPark[] = await Promise.all(
@@ -42,7 +42,7 @@ export async function GET() {
 
   return jsonOk(
     { parks, count: parks.length, lastUpdated: new Date().toISOString() },
-    CACHE_TTL.hours,
-    CACHE_TTL.hours * 2,
+    CACHE_TTL.parkStatus,
+    CACHE_TTL.parkStatus * 4,
   );
 }

@@ -22,7 +22,7 @@ import type { ApiPark, ApiResort } from "@/lib/types";
 import { jsonOk, notFound } from "../../_lib/respond";
 
 export const runtime = "edge";
-export const revalidate = 1800;
+export const revalidate = 300; // includes per-park status
 
 interface Params {
   params: { resortSlug: string };
@@ -62,5 +62,5 @@ export async function GET(_req: Request, { params }: Params) {
     lastUpdated: new Date().toISOString(),
   };
 
-  return jsonOk(body, CACHE_TTL.hours, CACHE_TTL.hours * 2);
+  return jsonOk(body, CACHE_TTL.parkStatus, CACHE_TTL.parkStatus * 4);
 }

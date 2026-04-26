@@ -62,8 +62,15 @@ export async function getOrFetch<T>(
 export const CACHE_TTL = {
   /** Live wait times: 5 minutes. */
   live: 5 * 60,
-  /** Park hours / schedule: 30 minutes. */
+  /** Underlying park-schedule fetch — themeparks.wiki rarely changes hours. */
   hours: 30 * 60,
+  /**
+   * Edge-cache TTL for endpoints that include `status: OPEN | CLOSED`.
+   * Shorter than `hours` because status flips when a park opens or
+   * closes, and we don't want a 30-min stale "CLOSED" lingering after
+   * gates open.
+   */
+  parkStatus: 5 * 60,
   /** Park / resort metadata: 1 hour. */
   park: 60 * 60,
 };

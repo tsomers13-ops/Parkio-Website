@@ -189,13 +189,20 @@ export function ParkMap({ park, rides }: ParkMapProps) {
   const isParkClosed = parkStatus === "CLOSED";
 
   // Display hours: live API window when available, else the static label.
+  // Always format in the park's local timezone so a viewer in Tokyo sees
+  // the Florida park's 9 AM open as "9 AM" — not "10 PM the next day".
   const hoursLabel = useMemo(() => {
     const w = parkApi?.todayHours;
     if (!w) return park.hours;
     try {
+      const tz = parkApi?.timezone;
       const fmt = (iso: string) =>
         new Date(iso)
-          .toLocaleTimeString([], { hour: "numeric", minute: "2-digit" })
+          .toLocaleTimeString([], {
+            hour: "numeric",
+            minute: "2-digit",
+            timeZone: tz,
+          })
           .replace(":00", "");
       return `${fmt(w.open)} — ${fmt(w.close)}`.toUpperCase();
     } catch {

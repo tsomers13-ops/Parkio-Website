@@ -13,7 +13,7 @@ import {
 import { jsonOk, notFound } from "../../_lib/respond";
 
 export const runtime = "edge";
-export const revalidate = 1800;
+export const revalidate = 300; // status is time-sensitive
 
 interface Params {
   params: { parkSlug: string };
@@ -40,5 +40,5 @@ export async function GET(_req: Request, { params }: Params) {
   const park = normalizePark(cfg.slug, schedule);
   if (!park) return notFound(`Unknown park slug: ${params.parkSlug}`);
 
-  return jsonOk(park, CACHE_TTL.hours, CACHE_TTL.hours * 2);
+  return jsonOk(park, CACHE_TTL.parkStatus, CACHE_TTL.parkStatus * 4);
 }

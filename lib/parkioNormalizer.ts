@@ -29,16 +29,33 @@ function nowIso(): string {
   return new Date().toISOString();
 }
 
-function todayKey(timezone: string): string {
-  // Date in the park's local timezone, formatted "YYYY-MM-DD".
-  // Intl.DateTimeFormat is available in the edge runtime.
+/**
+ * "YYYY-MM-DD" for the given moment, in the park's local timezone.
+ * The park's TZ is what the upstream schedule keys off of, so we
+ * never use the user's browser timezone for date math.
+ */
+function dateKeyInTz(timezone: string, when: Date = new Date()): string {
   const fmt = new Intl.DateTimeFormat("en-CA", {
     timeZone: timezone,
     year: "numeric",
     month: "2-digit",
     day: "2-digit",
   });
-  return fmt.format(new Date());
+  return fmt.format(when);
+}
+
+/**
+ * themeparks.wiki frequently returns multiple entries for the same date
+ * (an INFO entry plus the actual OPERATING entry, etc.). We always want
+ * the OPERATING/EXTRA_HOURS entry — falling back to the first non-INFO
+ * entry — never the INFO row, which doesn't carry hours.
+ */
+function pickOperatingEntry(
+  entries: ThemeparksScheduleEntry[],
+): ThemeparksScheduleEntry | undefined {
+  return entries.find(
+    (e) => e.type === "OPERATING" || e.type === "EXTRA_HOURS",
+  );
 }
 
 function pickTodayHours(
@@ -46,22 +63,66 @@ function pickTodayHours(
   timezone: string,
 ): ApiHoursWindow | null {
   if (!schedule) return null;
-  const today = todayKey(timezone);
-  const entry = schedule.find((s) => s.date === today && s.type === "OPERATING");
-  if (!entry?.openingTime || !entry.closingTime) return null;
-  return { open: entry.openingTime, close: entry.closingTime };
+  const today = dateKeyInTz(timezone);
+  const todayEntries = schedule.filter((s) => s.date === today);
+  const op = pickOperatingEntry(todayEntries);
+  if (!op?.openingTime || !op.closingTime) return null;
+  return { open: op.openingTime, close: op.closingTime };
 }
 
+/**
+ * Real-time park status. Resolves to:
+ *   - "OPEN":    current park-local time is inside today's open/close
+ *                window, OR yesterday's window extends past midnight
+ *                and we're still in it.
+ *   - "CLOSED":  today's schedule says CLOSED, or it's outside the
+ *                operating window (before opening / after closing).
+ *   - "UNKNOWN": no schedule data for today.
+ *
+ * All time math goes through Date.parse() on the upstream's ISO
+ * timestamps (which include the park's UTC offset), so the comparison
+ * is timezone-correct regardless of the visitor's browser timezone.
+ */
 function deriveParkStatus(
   schedule: ThemeparksScheduleEntry[] | undefined,
   timezone: string,
+  now: number = Date.now(),
 ): ApiParkStatus {
   if (!schedule) return "UNKNOWN";
-  const today = todayKey(timezone);
-  const entry = schedule.find((s) => s.date === today);
-  if (!entry) return "UNKNOWN";
-  if (entry.type === "OPERATING" || entry.type === "EXTRA_HOURS") return "OPEN";
-  if (entry.type === "CLOSED") return "CLOSED";
+
+  const today = dateKeyInTz(timezone, new Date(now));
+  const yesterday = dateKeyInTz(
+    timezone,
+    new Date(now - 24 * 60 * 60 * 1000),
+  );
+
+  // (1) Are we currently inside today's operating window?
+  const todayEntries = schedule.filter((s) => s.date === today);
+  const todayOp = pickOperatingEntry(todayEntries);
+  if (todayOp?.openingTime && todayOp.closingTime) {
+    const open = Date.parse(todayOp.openingTime);
+    const close = Date.parse(todayOp.closingTime);
+    if (!Number.isNaN(open) && !Number.isNaN(close)) {
+      if (now >= open && now < close) return "OPEN";
+    }
+  }
+
+  // (2) Edge case: did yesterday's window extend past midnight and is
+  //     still active? (Disney parks often close at 12 / 1 AM.)
+  const yesterdayOp = pickOperatingEntry(
+    schedule.filter((s) => s.date === yesterday),
+  );
+  if (yesterdayOp?.closingTime) {
+    const close = Date.parse(yesterdayOp.closingTime);
+    if (!Number.isNaN(close) && now < close) return "OPEN";
+  }
+
+  // (3) No active operating window. If we have today's schedule and it
+  //     either says CLOSED or has an OPERATING entry that we're outside
+  //     of, surface CLOSED. Otherwise we genuinely don't know.
+  if (todayEntries.length === 0) return "UNKNOWN";
+  if (todayEntries.some((e) => e.type === "CLOSED")) return "CLOSED";
+  if (todayOp) return "CLOSED"; // before opening or after closing
   return "UNKNOWN";
 }
 
