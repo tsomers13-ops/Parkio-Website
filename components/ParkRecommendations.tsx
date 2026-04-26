@@ -20,11 +20,13 @@ type LoadStatus = "loading" | "live" | "estimates";
  * "Parkio Picks" decision layer. Three scannable cards built on the
  * same /api/parks/{slug}/live data the map uses:
  *
- *   - Best right now: tier-1 (headliners ≤ 60 min) and tier-2
- *                     (hidden gems ≤ 25 min). Headliners always rank
- *                     above gems; "Low wait" badge on rides ≤ 15 min.
- *   - Good options:   non-headliners with moderate waits (26–60 min).
- *   - Skip for now:   anything currently > 60 min.
+ *   - Best right now:           tier-1 (headliners ≤ 60), tier-1½
+ *                               (walk-on gems ≤ 10), tier-2 (regular
+ *                               gems ≤ 25). "Low wait" badge ≤ 15 min.
+ *   - Backup picks & quick wins: priority-sorted overflow card. HL
+ *                               overflow first, then mid-wait non-HL,
+ *                               then walk-on gems that didn't fit Best.
+ *   - Skip for now:             anything currently > 60 min.
  *
  * No real AI — just hand-curated popularity sets in lib/popularity.ts
  * combined with deterministic tiered scoring. Designed to be readable
@@ -88,14 +90,14 @@ export function ParkRecommendations({ park }: ParkRecommendationsProps) {
             highlightTopRides
           />
           <Card
-            title="Good options"
+            title="Backup picks & quick wins"
             tone="amber"
             empty={
               status === "loading"
                 ? "Loading…"
                 : noneOperating
                   ? "Nothing operating yet — wait times will appear once the park opens."
-                  : "Try the headliners first — moderate-wait rides aren't reporting yet."
+                  : "No backups or quick wins right now."
             }
             attractions={goodOptions}
             parkSlug={park.id}
