@@ -2,7 +2,7 @@
 
 import type L from "leaflet";
 import dynamic from "next/dynamic";
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import type {
   ApiAttractionStatus,
   Park,
@@ -81,69 +81,85 @@ export function ParkMap({ park, rides }: ParkMapProps) {
     return () => clearInterval(id);
   }, []);
 
-  // React to focus requests from the "Right now" hero.
-  //   1. Wait for Leaflet's map ref to be ready (poll briefly).
-  //   2. Smoothly fly to the ride's coordinates (or jump if the user
-  //      prefers reduced motion).
-  //   3. Pulse the pin for ~1.6s for a visual "directed attention" cue.
-  //   4. After the map settles (~800ms), open the RideDetailPanel.
-  // Re-runs on every focusRide() call (not just slug changes) thanks
-  // to the focusToken counter — so a second click on the same ride
-  // replays the sequence.
-  useEffect(() => {
-    if (!focusedRideSlug) return;
-    const ride = rides.find((r) => r.id === focusedRideSlug);
-    if (!ride) return;
-
-    let cancelled = false;
+  // ── Shared camera motion ────────────────────────────────────────
+  // Smoothly pans and gently zooms the map so the ride sits ABOVE
+  // the bottom sheet — Google-Maps-style. Used by both the selection
+  // effect (pin tap) and the focus effect ("Right now" hero), so the
+  // motion feels identical regardless of where the user came from.
+  //
+  // Vertical offset: shift the camera CENTER down in pixel space so
+  // the pin lands in the upper-half of the visible viewport (the half
+  // not covered by the sheet). Phones use a bigger offset since the
+  // sheet covers more of the screen.
+  //
+  // Retries while Leaflet is still mounting (cap ~1.6s) so a fast
+  // tap right after page load still wins.
+  const flyToRide = useCallback((ride: Ride) => {
     let attempts = 0;
-    let highlightTimer: ReturnType<typeof setTimeout> | null = null;
-    let openTimer: ReturnType<typeof setTimeout> | null = null;
-    let mapReadyTimer: ReturnType<typeof setTimeout> | null = null;
-
-    function start() {
-      if (cancelled) return;
+    function go() {
       const map = mapRef.current;
       if (!map) {
-        // Leaflet still mounting; retry briefly. Cap at ~1.6s total.
-        if (attempts++ < 20) {
-          mapReadyTimer = setTimeout(start, 80);
-        }
+        if (attempts++ < 20) setTimeout(go, 80);
         return;
       }
       const reduced =
         typeof window !== "undefined" &&
         window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-      const targetZoom = Math.max(map.getZoom(), 18);
+      const targetZoom = Math.max(map.getZoom(), 17);
+      const isMobile =
+        typeof window !== "undefined" && window.innerWidth < 640;
+      const offsetY =
+        (typeof window !== "undefined" ? window.innerHeight : 800) *
+        (isMobile ? 0.22 : 0.15);
+
+      const pixelMarker = map.project([ride.lat, ride.lng], targetZoom);
+      const adjustedLatLng = map.unproject(
+        [pixelMarker.x, pixelMarker.y + offsetY],
+        targetZoom,
+      );
+
       if (reduced) {
-        map.setView([ride.lat, ride.lng], targetZoom, { animate: false });
+        map.setView(adjustedLatLng, targetZoom, { animate: false });
       } else {
-        map.flyTo([ride.lat, ride.lng], targetZoom, {
-          duration: 0.8,
+        map.flyTo(adjustedLatLng, targetZoom, {
+          duration: 0.7,
           easeLinearity: 0.25,
         });
       }
-      setHighlightId(ride.id);
-      highlightTimer = setTimeout(() => {
-        if (!cancelled) setHighlightId(null);
-      }, 1600);
-      openTimer = setTimeout(
-        () => {
-          if (!cancelled) setSelectedId(ride.id);
-        },
-        reduced ? 0 : 800,
-      );
     }
-    start();
+    go();
+  }, []);
 
-    return () => {
-      cancelled = true;
-      if (highlightTimer) clearTimeout(highlightTimer);
-      if (openTimer) clearTimeout(openTimer);
-      if (mapReadyTimer) clearTimeout(mapReadyTimer);
-    };
-    // focusToken intentionally bumps re-runs even when slug is unchanged.
-  }, [focusedRideSlug, focusToken, rides]);
+  // ── Selection → camera ──────────────────────────────────────────
+  // Whenever the selected ride changes (from a direct pin tap, or
+  // because the focus effect below set it), fly to the new ride.
+  // Skips when nothing is selected so closing the sheet doesn't move
+  // the map.
+  useEffect(() => {
+    if (!selectedId) return;
+    const ride = rides.find((r) => r.id === selectedId);
+    if (!ride) return;
+    flyToRide(ride);
+  }, [selectedId, rides, flyToRide]);
+
+  // ── "Right now" hero focus ──────────────────────────────────────
+  // The hero's "View on map" button calls focusRide(slug). We open
+  // the sheet, briefly pulse the pin, AND explicitly call flyToRide
+  // — explicit because the selection effect won't re-fire if the
+  // ride is already the selected one (e.g. user re-taps the same
+  // top pick). Re-runs on every focusRide() call thanks to focusToken.
+  useEffect(() => {
+    if (!focusedRideSlug) return;
+    const ride = rides.find((r) => r.id === focusedRideSlug);
+    if (!ride) return;
+
+    setSelectedId(ride.id);
+    setHighlightId(ride.id);
+    flyToRide(ride);
+
+    const t = setTimeout(() => setHighlightId(null), 1600);
+    return () => clearTimeout(t);
+  }, [focusedRideSlug, focusToken, rides, flyToRide]);
 
   // Fast lookup of live attractions by Parkio slug.
   const liveBySlug = useMemo(() => {

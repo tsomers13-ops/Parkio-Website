@@ -95,8 +95,11 @@ body {
   filter: saturate(0.85) brightness(1.02);
 }
 
-/* Pop the selected ride's label above its neighbors */
-.leaflet-marker-icon:has(.ring-ink-900) {
+/* Pop the active ride's marker above its neighbors so the ring +
+   halo aren't clipped by adjacent pins. The marker constructor also
+   sets zIndexOffset, but this CSS rule covers any case where Leaflet
+   recomputes z-index after the offset is applied. */
+.leaflet-marker-icon:has(.ring-accent-500) {
   z-index: 600 !important;
 }
 

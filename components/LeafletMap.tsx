@@ -190,9 +190,12 @@ function makeRideIcon(
   selected: boolean,
   highlighted: boolean = false,
 ) {
-  const ringClass = selected
-    ? "ring-2 ring-ink-900 scale-110"
-    : "ring-1 ring-ink-200";
+  // Selected = the active "this is the one I'm looking at" state.
+  // Larger scale, indigo ring, soft halo — reads like Google Maps'
+  // active POI marker. Defaults are kept subtle for the resting state.
+  const stateClass = selected
+    ? "ring-2 ring-accent-500 scale-[1.18] shadow-[0_0_0_4px_rgba(99,102,241,0.18),0_8px_20px_rgba(99,102,241,0.28)]"
+    : "ring-1 ring-ink-200 shadow-md";
   const highlightClass = highlighted ? "parkio-pin-pulse" : "";
 
   let pillContent: string;
@@ -225,13 +228,17 @@ function makeRideIcon(
   const labelTone =
     display.status === "OPERATING"
       ? selected
-        ? "text-ink-900 ring-1 ring-ink-900"
+        ? "text-accent-900 ring-1 ring-accent-300"
         : "text-ink-700"
       : "text-ink-500";
 
+  // The transition class still smooths in-place property changes
+  // (ring color, shadow) when the icon is preserved — and is a no-op
+  // on a freshly-created marker (which also looks fine because the
+  // active pin appears at the END of the camera fly-in).
   const html = `
     <div class="parkio-pin flex flex-col items-center pointer-events-auto">
-      <div class="flex items-center gap-1 rounded-full bg-white px-2.5 py-1 shadow-md transition ${ringClass} ${highlightClass}">
+      <div class="flex items-center gap-1 rounded-full bg-white px-2.5 py-1 transition duration-200 ${stateClass} ${highlightClass}">
         ${pillContent}
       </div>
       <div class="parkio-pin-label mt-1 max-w-[160px] truncate rounded-md bg-white/95 px-2 py-0.5 text-center text-[10px] font-semibold tracking-tight ${labelTone} shadow-sm">${escapeHtml(name)}</div>
