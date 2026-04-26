@@ -52,23 +52,31 @@ export function ParkRecommendations({ park }: ParkRecommendationsProps) {
     !live.attractions.some((a) => a.status === "OPERATING");
 
   return (
-    <section className="border-t border-ink-100 bg-ink-50/50">
-      <div className="mx-auto max-w-7xl px-5 py-16 sm:px-8 sm:py-20">
+    <section className="relative border-y border-ink-100 bg-gradient-to-b from-accent-50/40 via-white to-ink-50/40">
+      {/* Subtle accent top-line — signals premium / featured content */}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-x-0 top-0 h-[2px] bg-gradient-to-r from-transparent via-accent-400/70 to-transparent"
+      />
+      <div className="relative mx-auto max-w-7xl px-5 py-14 sm:px-8 sm:py-24">
         <div className="flex flex-wrap items-end justify-between gap-4">
           <div className="max-w-2xl">
-            <p className="text-sm font-medium uppercase tracking-widest text-accent-600">
-              Parkio Picks
-            </p>
-            <h2 className="mt-3 text-3xl font-semibold tracking-tight text-ink-900 sm:text-4xl">
-              Best moves{" "}
+            <div className="inline-flex items-center gap-2 rounded-full bg-accent-50 px-3 py-1 ring-1 ring-accent-100">
+              <span className="h-1.5 w-1.5 rounded-full bg-accent-500" />
+              <span className="text-xs font-semibold uppercase tracking-widest text-accent-700">
+                Parkio Picks
+              </span>
+            </div>
+            <h2 className="mt-4 text-3xl font-semibold tracking-tight text-ink-900 sm:text-4xl">
+              What to ride{" "}
               <span className="bg-gradient-to-br from-accent-600 to-sky-500 bg-clip-text text-transparent">
-                right now
+                next
               </span>
               .
             </h2>
-            <p className="mt-3 text-base text-ink-600">
-              Based on live waits and attraction popularity. Refreshed
-              every minute.
+            <p className="mt-3 text-base text-ink-600 sm:text-lg">
+              Start here — these are your best moves right now, based
+              on live waits and top rides.
             </p>
           </div>
           <StatusBadge status={status} />
@@ -146,7 +154,7 @@ function Card({
         : "bg-rose-50 text-rose-700 ring-rose-200";
 
   return (
-    <div className="rounded-3xl border border-ink-100 bg-white p-5 shadow-soft sm:p-6">
+    <div className="rounded-3xl border border-ink-100 bg-white p-5 shadow-lift transition-shadow duration-200 sm:p-6">
       <div className="flex items-center justify-between">
         <span
           className={`inline-flex items-center gap-1.5 rounded-full px-2.5 py-1 text-[11px] font-semibold ring-1 ${tag}`}
