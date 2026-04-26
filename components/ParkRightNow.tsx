@@ -6,13 +6,15 @@ import {
   isTopRide,
   partitionAttractions,
 } from "@/lib/popularity";
-import type { Park } from "@/lib/types";
+import type { Park, Ride } from "@/lib/types";
 import { waitColorClasses, waitTier } from "@/lib/utils";
+import { walkBucketBetween, type WalkBucket } from "@/lib/walk";
 import { useMapFocus } from "./MapFocusProvider";
 import { useParkLive } from "./ParkLiveDataProvider";
 
 interface ParkRightNowProps {
   park: Park;
+  rides: Ride[];
 }
 
 /**
@@ -28,15 +30,28 @@ interface ParkRightNowProps {
  * app/parks/[parkId]/page.tsx). No state changes, no marker open —
  * deliberately lightweight.
  */
-export function ParkRightNow({ park }: ParkRightNowProps) {
+export function ParkRightNow({ park, rides }: ParkRightNowProps) {
   const { liveApi: live, status } = useParkLive();
-  const { focusRide } = useMapFocus();
+  const { focusRide, currentRideSlug } = useMapFocus();
 
   const top = useMemo(() => {
     if (!live) return null;
     const { bestNow } = partitionAttractions(park.id, live.attractions);
     return bestNow[0] ?? null;
   }, [live, park.id]);
+
+  // Walk-time bucket from the user's "current location" (the last
+  // ride they tapped on the map) to the top pick. Hidden when the
+  // user hasn't picked a ride yet, OR when the top pick IS the
+  // ride they're already at — both cases would be misleading.
+  const walk: WalkBucket | null = useMemo(() => {
+    if (!top || !currentRideSlug) return null;
+    if (currentRideSlug === top.slug) return null;
+    const anchor = rides.find((r) => r.id === currentRideSlug);
+    const target = rides.find((r) => r.id === top.slug);
+    if (!anchor || !target) return null;
+    return walkBucketBetween(anchor, target);
+  }, [top, currentRideSlug, rides]);
 
   function handleViewOnMap() {
     if (!top) return;
@@ -103,6 +118,18 @@ export function ParkRightNow({ park }: ParkRightNowProps) {
               </span>
             )}
             <span className="text-sm text-ink-600">{reason}</span>
+            {walk && (
+              <span
+                className="inline-flex shrink-0 items-center gap-1 whitespace-nowrap text-sm text-ink-500"
+                title="Approximate walk from the last ride you tapped"
+              >
+                <span aria-hidden className="text-ink-300">
+                  ·
+                </span>
+                <WalkIcon />
+                {walk}
+              </span>
+            )}
           </div>
         </div>
 
@@ -201,6 +228,26 @@ function Eyebrow({ tone }: { tone: "live" | "muted" }) {
         Right now
       </span>
     </div>
+  );
+}
+
+/* ─────────────────────────── Walk-time icon ─────────────────────────── */
+
+function WalkIcon() {
+  // Minimal walking-figure glyph. Sized to match the surrounding
+  // text-sm so it reads as inline punctuation, not a chip.
+  return (
+    <svg
+      viewBox="0 0 16 16"
+      fill="currentColor"
+      className="h-3.5 w-3.5"
+      aria-hidden
+    >
+      <circle cx="9.5" cy="2.5" r="1.3" />
+      <path
+        d="M9 5.5c-.6 0-1 .3-1.3.8L6.5 8.5l-2 1 .5 1 2.2-1 .9-1.6V11l-1.5 3.4.95.4L8.5 12l1 1.4v1h1v-1.4l-1.3-2 .5-1.7L11 11.5v-2L10 8l.5-1.5h2v-1H10c-.4 0-.7-.4-1-1z"
+      />
+    </svg>
   );
 }
 

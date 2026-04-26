@@ -46,7 +46,7 @@ export default function ParkPage({ params }: ParkPageProps) {
     <main className="relative">
       <ParkLiveDataProvider parkSlug={park.id}>
         <MapFocusProvider>
-          <ParkRightNow park={park} />
+          <ParkRightNow park={park} rides={rides} />
           <div id="park-map" className="scroll-mt-4">
             <ParkMap park={park} rides={rides} />
           </div>
