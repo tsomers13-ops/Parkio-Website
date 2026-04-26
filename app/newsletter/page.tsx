@@ -42,15 +42,24 @@ export default function NewsletterPage() {
             </span>
           </div>
           <h1 className="mt-3 text-4xl font-semibold tracking-tight text-ink-900 sm:text-5xl">
-            A daily Disney park briefing
+            A smarter way to plan
             <br className="hidden sm:block" />
-            in your inbox every morning.
+            your park day.
           </h1>
           <p className="mt-4 text-lg leading-relaxed text-ink-600">
-            Three minutes. Breaking news, big stories, ICYMI, and the
-            most-watched Disney videos of the day — written for app-first
-            guests and built around Parkio's live data engine.
+            Get a daily Disney park briefing every morning at 6 AM.
+            Breaking news, big stories, ICYMI, and the most-watched
+            Disney videos of the day — written for app-first guests and
+            built around Parkio's live data engine.
           </p>
+          <div className="mt-6 flex flex-wrap items-center gap-3">
+            <Link
+              href="/parks"
+              className="inline-flex items-center gap-1.5 rounded-full border border-ink-200 bg-white px-4 py-2 text-sm font-medium text-ink-800 shadow-soft transition hover:border-ink-300 hover:text-ink-900"
+            >
+              Use Parkio live in the park →
+            </Link>
+          </div>
         </div>
       </section>
 

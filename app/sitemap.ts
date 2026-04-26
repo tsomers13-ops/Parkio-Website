@@ -47,9 +47,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // recent posts vs. older ones via the natural date-ordered sitemap.
   const dailyRoutes: MetadataRoute.Sitemap = listDailyPosts().map((post) => ({
     url: `${SITE_URL}/guide/${post.slug}`,
-    lastModified: post.updatedAt
-      ? new Date(post.updatedAt)
-      : new Date(post.publishedAt),
+    lastModified: post.updatedAt ? new Date(post.updatedAt) : new Date(post.date),
     changeFrequency: "never",
     priority: 0.7,
   }));

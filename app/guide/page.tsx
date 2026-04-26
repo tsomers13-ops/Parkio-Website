@@ -64,22 +64,24 @@ export default function GuideIndexPage() {
             </span>
           </div>
           <h1 className="mt-3 text-4xl font-semibold tracking-tight text-ink-900 sm:text-5xl">
-            Disney parks, every morning,
+            Today in the parks —
             <br className="hidden sm:block" />
-            in three minutes.
+            <span className="bg-gradient-to-br from-accent-600 to-sky-500 bg-clip-text text-transparent">
+              what matters right now.
+            </span>
           </h1>
           <p className="mt-4 max-w-2xl text-lg leading-relaxed text-ink-600">
-            Breaking news, big news, ICYMI, spotlight, and the most-watched
-            Disney videos of the day. Read it on the website, get the
-            teaser by email, then jump into Parkio when you're ready to
-            ride.
+            A 3-minute Disney parks briefing every morning. Breaking
+            news, big stories, ICYMI, and spotlight — written for
+            app-first guests, built around Parkio's live wait-time
+            engine.
           </p>
           <div className="mt-6 flex flex-wrap items-center gap-3">
             <Link
-              href="/newsletter"
-              className="inline-flex items-center gap-2 rounded-full bg-ink-900 px-5 py-3 text-sm font-medium text-white shadow-lift transition hover:bg-ink-800"
+              href="/parks"
+              className="inline-flex items-center gap-2 rounded-full bg-ink-900 px-5 py-3 text-sm font-semibold text-white shadow-lift transition hover:bg-ink-800"
             >
-              Subscribe — free
+              Open Parkio
               <svg viewBox="0 0 16 16" className="h-3.5 w-3.5" aria-hidden>
                 <path
                   d="M6 3l5 5-5 5"
@@ -92,10 +94,16 @@ export default function GuideIndexPage() {
               </svg>
             </Link>
             <Link
-              href="/parks"
+              href="/waits"
               className="inline-flex items-center gap-2 rounded-full border border-ink-200 bg-white px-5 py-3 text-sm font-medium text-ink-800 shadow-soft transition hover:border-ink-300 hover:text-ink-900"
             >
-              Open Parkio
+              Check live wait times
+            </Link>
+            <Link
+              href="/newsletter"
+              className="inline-flex items-center gap-2 rounded-full px-3 py-3 text-sm font-medium text-accent-700 transition hover:text-accent-900"
+            >
+              Subscribe to Parkio Daily →
             </Link>
           </div>
         </div>
@@ -113,14 +121,14 @@ export default function GuideIndexPage() {
                 Today's briefing
               </span>
               <span className="text-[12px] font-medium text-ink-500">
-                {formatBriefingDate(today.publishedAt)}
+                {formatBriefingDate(today.date)}
               </span>
             </div>
             <h2 className="mt-3 text-2xl font-semibold tracking-tight text-ink-900 group-hover:text-accent-800 sm:text-3xl">
               {today.title}
             </h2>
             <p className="mt-3 text-base leading-relaxed text-ink-600 sm:text-lg">
-              {today.summary}
+              {today.teaser}
             </p>
             <div className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-accent-700">
               Read today's briefing
@@ -178,13 +186,13 @@ export default function GuideIndexPage() {
                 className="group flex h-full flex-col rounded-3xl border border-ink-100 bg-white p-5 shadow-soft transition hover:border-ink-200 hover:shadow-lift sm:p-6"
               >
                 <span className="text-[11px] font-medium text-ink-500">
-                  {formatBriefingDate(post.publishedAt)}
+                  {formatBriefingDate(post.date)}
                 </span>
                 <h3 className="mt-2 text-base font-semibold tracking-tight text-ink-900 group-hover:text-accent-700">
                   {post.title}
                 </h3>
                 <p className="mt-2 flex-1 text-sm leading-relaxed text-ink-600 line-clamp-3">
-                  {post.summary}
+                  {post.teaser}
                 </p>
                 <div className="mt-3 inline-flex items-center gap-1 text-[13px] font-medium text-accent-700">
                   Read briefing
