@@ -1,10 +1,10 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
-import { fetchParkLive } from "@/lib/parkioClient";
+import { useMemo } from "react";
 import { isTopRide, partitionAttractions } from "@/lib/popularity";
-import type { ApiAttraction, ApiParkLive, Park } from "@/lib/types";
+import type { ApiAttraction, Park } from "@/lib/types";
 import { waitColorClasses, waitTier } from "@/lib/utils";
+import { useParkLive } from "./ParkLiveDataProvider";
 
 interface ParkRecommendationsProps {
   park: Park;
@@ -23,34 +23,12 @@ type LoadStatus = "loading" | "live" | "estimates";
  * No real AI — just hand-curated popularity sets in lib/popularity.ts
  * combined with deterministic scoring. Designed to be readable in
  * under 5 seconds on a phone in line.
+ *
+ * Pulls live data from the page-level <ParkLiveDataProvider> so it
+ * shares one fetch with ParkMap + ParkInsights.
  */
 export function ParkRecommendations({ park }: ParkRecommendationsProps) {
-  const [live, setLive] = useState<ApiParkLive | null>(null);
-  const [status, setStatus] = useState<LoadStatus>("loading");
-
-  useEffect(() => {
-    const ctl = new AbortController();
-    let timer: ReturnType<typeof setTimeout> | null = null;
-
-    async function load() {
-      try {
-        const res = await fetchParkLive(park.id, ctl.signal);
-        if (ctl.signal.aborted) return;
-        setLive(res);
-        setStatus(res.live ? "live" : "estimates");
-      } catch (err) {
-        if ((err as Error).name === "AbortError") return;
-        setStatus("estimates");
-      } finally {
-        if (!ctl.signal.aborted) timer = setTimeout(load, 60_000);
-      }
-    }
-    load();
-    return () => {
-      ctl.abort();
-      if (timer) clearTimeout(timer);
-    };
-  }, [park]);
+  const { liveApi: live, status } = useParkLive();
 
   const { bestNow, goodOptions, skipForNow } = useMemo(() => {
     if (!live) return { bestNow: [], goodOptions: [], skipForNow: [] };

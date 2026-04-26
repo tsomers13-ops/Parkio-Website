@@ -22,7 +22,7 @@ import type { ApiPark, ApiResort } from "@/lib/types";
 import { jsonOk, notFound } from "../../_lib/respond";
 
 export const runtime = "edge";
-export const revalidate = 300; // includes per-park status
+export const revalidate = 120; // includes per-park status
 
 interface Params {
   params: { resortSlug: string };

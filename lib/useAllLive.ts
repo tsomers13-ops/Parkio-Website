@@ -49,6 +49,7 @@ export function useAllLive(): AllLiveData {
   useEffect(() => {
     const ctl = new AbortController();
     let timer: ReturnType<typeof setTimeout> | null = null;
+    let cancelled = false;
 
     async function load() {
       try {
@@ -58,7 +59,7 @@ export function useAllLive(): AllLiveData {
             fetchParkLive(p.slug, ctl.signal).catch(() => null),
           ),
         );
-        if (ctl.signal.aborted) return;
+        if (cancelled || ctl.signal.aborted) return;
 
         const map = new Map<string, ApiParkLive>();
         let anyLive = false;
@@ -76,18 +77,47 @@ export function useAllLive(): AllLiveData {
         setStatus(anyLive ? "live" : "estimates");
       } catch (err) {
         if ((err as Error).name === "AbortError") return;
+        if (cancelled) return;
         setStatus("estimates");
       } finally {
-        if (!ctl.signal.aborted) {
+        if (cancelled || ctl.signal.aborted) return;
+        // Only schedule the next poll while the tab is visible. Hidden
+        // tabs sit idle until they come back into focus, saving battery
+        // and avoiding pointless network calls.
+        if (
+          typeof document === "undefined" ||
+          document.visibilityState === "visible"
+        ) {
           timer = setTimeout(load, 60_000);
         }
       }
     }
 
+    function onVisibilityChange() {
+      if (cancelled) return;
+      if (document.visibilityState === "visible") {
+        // Tab is back — refresh immediately and resume polling.
+        if (timer) clearTimeout(timer);
+        load();
+      } else if (timer) {
+        // Tab went hidden — pause the schedule.
+        clearTimeout(timer);
+        timer = null;
+      }
+    }
+
     load();
+    if (typeof document !== "undefined") {
+      document.addEventListener("visibilitychange", onVisibilityChange);
+    }
+
     return () => {
+      cancelled = true;
       ctl.abort();
       if (timer) clearTimeout(timer);
+      if (typeof document !== "undefined") {
+        document.removeEventListener("visibilitychange", onVisibilityChange);
+      }
     };
   }, []);
 

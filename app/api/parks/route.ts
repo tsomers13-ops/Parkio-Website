@@ -17,7 +17,7 @@ import type { ApiPark } from "@/lib/types";
 import { jsonOk } from "../_lib/respond";
 
 export const runtime = "edge";
-export const revalidate = 300; // 5 min — status is time-sensitive
+export const revalidate = 120; // 2 min — status is time-sensitive
 
 export async function GET() {
   const parks: ApiPark[] = await Promise.all(

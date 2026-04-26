@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import { Footer } from "@/components/Footer";
 import { ParkInsights } from "@/components/ParkInsights";
+import { ParkLiveDataProvider } from "@/components/ParkLiveDataProvider";
 import { ParkMap } from "@/components/ParkMap";
 import { ParkRecommendations } from "@/components/ParkRecommendations";
 import { PARKS, getPark, getRidesForPark } from "@/lib/data";
@@ -40,9 +41,11 @@ export default function ParkPage({ params }: ParkPageProps) {
 
   return (
     <main className="relative">
-      <ParkMap park={park} rides={rides} />
-      <ParkRecommendations park={park} />
-      <ParkInsights park={park} />
+      <ParkLiveDataProvider parkSlug={park.id}>
+        <ParkMap park={park} rides={rides} />
+        <ParkRecommendations park={park} />
+        <ParkInsights park={park} />
+      </ParkLiveDataProvider>
       <Footer />
     </main>
   );

@@ -13,7 +13,7 @@ import {
 import { jsonOk, notFound } from "../../_lib/respond";
 
 export const runtime = "edge";
-export const revalidate = 300; // status is time-sensitive
+export const revalidate = 120; // status is time-sensitive
 
 interface Params {
   params: { parkSlug: string };

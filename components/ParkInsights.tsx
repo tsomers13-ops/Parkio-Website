@@ -1,10 +1,10 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useMemo, useState } from "react";
-import { fetchParkLive } from "@/lib/parkioClient";
-import type { ApiAttraction, ApiParkLive, Park } from "@/lib/types";
+import { useMemo } from "react";
+import type { ApiAttraction, Park } from "@/lib/types";
 import { statusLabel, waitColorClasses, waitTier } from "@/lib/utils";
+import { useParkLive } from "./ParkLiveDataProvider";
 
 interface ParkInsightsProps {
   park: Park;
@@ -12,39 +12,14 @@ interface ParkInsightsProps {
 
 /**
  * Sections rendered below the full-screen map: Longest waits,
- * Temporarily down attractions, Recently updated. Independent fetch
- * (the API caches per-park live data for 5 min so this is essentially
- * free after the map page has loaded).
+ * Temporarily down attractions, Recently updated.
+ *
+ * Pulls its data from the page-level <ParkLiveDataProvider> so the
+ * fetch is shared with ParkMap and ParkRecommendations — one network
+ * round-trip per minute, not three.
  */
 export function ParkInsights({ park }: ParkInsightsProps) {
-  const [live, setLive] = useState<ApiParkLive | null>(null);
-  const [status, setStatus] = useState<"loading" | "live" | "estimates">(
-    "loading",
-  );
-
-  useEffect(() => {
-    const ctl = new AbortController();
-    let timer: ReturnType<typeof setTimeout> | null = null;
-
-    async function load() {
-      try {
-        const res = await fetchParkLive(park.id, ctl.signal);
-        if (ctl.signal.aborted) return;
-        setLive(res);
-        setStatus(res.live ? "live" : "estimates");
-      } catch (err) {
-        if ((err as Error).name === "AbortError") return;
-        setStatus("estimates");
-      } finally {
-        if (!ctl.signal.aborted) timer = setTimeout(load, 60_000);
-      }
-    }
-    load();
-    return () => {
-      ctl.abort();
-      if (timer) clearTimeout(timer);
-    };
-  }, [park]);
+  const { liveApi: live, status } = useParkLive();
 
   const longestWaits = useMemo(() => {
     if (!live) return [];

@@ -3,19 +3,14 @@
 import type L from "leaflet";
 import dynamic from "next/dynamic";
 import { useEffect, useMemo, useRef, useState } from "react";
-import {
-  fetchPark,
-  fetchParkLive,
-} from "@/lib/parkioClient";
 import type {
-  ApiPark,
-  ApiParkLive,
   ApiAttractionStatus,
   Park,
   Ride,
 } from "@/lib/types";
 import { simulatedWait } from "@/lib/utils";
 import { BottomSheet } from "./BottomSheet";
+import { useParkLive } from "./ParkLiveDataProvider";
 import { RideDetailPanel } from "./RideDetailPanel";
 import { RideList } from "./RideList";
 
@@ -38,26 +33,22 @@ export interface RideDisplay {
   isLive: boolean;
 }
 
-export type LiveStatus =
-  | "loading" // first fetch hasn't returned yet
-  | "live" // most recent fetch returned real data
-  | "estimates" // most recent fetch failed or upstream was down
-  ;
-
 interface ParkMapProps {
   park: Park;
   rides: Ride[];
 }
 
 export function ParkMap({ park, rides }: ParkMapProps) {
+  // All live data now flows from the page-level provider — no per-component
+  // fetching, no duplicate requests across ParkMap / ParkInsights /
+  // ParkRecommendations.
+  const { parkApi, liveApi, status: liveStatus, lastUpdated, isStale } =
+    useParkLive();
+
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [listOpen, setListOpen] = useState(false);
   const [now, setNow] = useState<number>(() => Date.now());
   const [time, setTime] = useState<string>("--:--");
-  const [parkApi, setParkApi] = useState<ApiPark | null>(null);
-  const [liveApi, setLiveApi] = useState<ApiParkLive | null>(null);
-  const [liveStatus, setLiveStatus] = useState<LiveStatus>("loading");
-  const [lastUpdated, setLastUpdated] = useState<string | null>(null);
   const mapRef = useRef<L.Map | null>(null);
 
   // Tick once a minute so the simulated fallback breathes when live data is
@@ -82,47 +73,9 @@ export function ParkMap({ park, rides }: ParkMapProps) {
     return () => clearInterval(id);
   }, []);
 
-  // Pull both park metadata + live attractions from Parkio's own API.
-  useEffect(() => {
-    const ctl = new AbortController();
-    let timer: ReturnType<typeof setTimeout> | null = null;
-
-    async function load() {
-      try {
-        const [parkRes, liveRes] = await Promise.all([
-          fetchPark(park.id, ctl.signal),
-          fetchParkLive(park.id, ctl.signal),
-        ]);
-        setParkApi(parkRes);
-        setLiveApi(liveRes);
-        setLastUpdated(liveRes.lastUpdated);
-        setLiveStatus(liveRes.live ? "live" : "estimates");
-      } catch (err) {
-        // Network failure or aborted — keep showing simulated fallback.
-        if ((err as Error).name !== "AbortError") {
-          setLiveStatus("estimates");
-        }
-      } finally {
-        if (!ctl.signal.aborted) {
-          // Refresh every 60s even on success so the "Live" label stays honest.
-          timer = setTimeout(load, 60_000);
-        }
-      }
-    }
-
-    setLiveStatus("loading");
-    setLastUpdated(null);
-    load();
-
-    return () => {
-      ctl.abort();
-      if (timer) clearTimeout(timer);
-    };
-  }, [park]);
-
   // Fast lookup of live attractions by Parkio slug.
   const liveBySlug = useMemo(() => {
-    const map = new Map<string, ApiParkLive["attractions"][number]>();
+    const map = new Map<string, NonNullable<typeof liveApi>["attractions"][number]>();
     for (const a of liveApi?.attractions ?? []) map.set(a.slug, a);
     return map;
   }, [liveApi]);
@@ -321,7 +274,7 @@ export function ParkMap({ park, rides }: ParkMapProps) {
         </div>
 
         {/* Last updated + Park closed strip */}
-        <div className="pointer-events-auto mx-auto mt-2 flex max-w-3xl items-center justify-center gap-2">
+        <div className="pointer-events-auto mx-auto mt-2 flex max-w-3xl flex-wrap items-center justify-center gap-2">
           {isParkClosed && (
             <div className="surface-glass inline-flex items-center gap-2 rounded-full px-3 py-1.5 text-[11px] font-semibold text-rose-700 shadow-soft ring-1 ring-rose-200">
               <span className="h-1.5 w-1.5 rounded-full bg-rose-500" />
@@ -329,9 +282,21 @@ export function ParkMap({ park, rides }: ParkMapProps) {
             </div>
           )}
           {lastUpdatedLabel && (
-            <div className="surface-glass inline-flex items-center gap-1.5 rounded-full px-3 py-1.5 text-[11px] font-medium text-ink-600 shadow-soft">
+            <div
+              className={`surface-glass inline-flex items-center gap-1.5 rounded-full px-3 py-1.5 text-[11px] font-medium shadow-soft ${
+                isStale ? "text-amber-700 ring-1 ring-amber-200" : "text-ink-600"
+              }`}
+              title={
+                isStale
+                  ? "This snapshot is more than 5 minutes old. Numbers may not reflect what's at the gate right now."
+                  : "Last live refresh"
+              }
+            >
               <span aria-hidden>·</span>
-              <span>Updated {lastUpdatedLabel}</span>
+              <span>
+                Updated {lastUpdatedLabel}
+                {isStale ? " · may be delayed" : ""}
+              </span>
             </div>
           )}
         </div>
@@ -477,7 +442,7 @@ export function ParkMap({ park, rides }: ParkMapProps) {
 
 /* ─────────────────── Live badge ─────────────────── */
 
-function LiveBadge({ status }: { status: LiveStatus }) {
+function LiveBadge({ status }: { status: "loading" | "live" | "estimates" }) {
   if (status === "loading") {
     return (
       <span

@@ -60,17 +60,26 @@ export async function getOrFetch<T>(
 
 /** TTL constants used by API routes — tweak in one place. */
 export const CACHE_TTL = {
-  /** Live wait times: 5 minutes. */
-  live: 5 * 60,
-  /** Underlying park-schedule fetch — themeparks.wiki rarely changes hours. */
+  /**
+   * Live wait times: 2 minutes. The in-memory cache here is the
+   * upstream-protection layer — themeparks.wiki gets at most one hit
+   * per park every 2 min regardless of how many visitors we have.
+   * Browser-side polling is also 60s so the user-visible staleness
+   * is bounded around 2-3 min worst case.
+   */
+  live: 2 * 60,
+  /**
+   * Underlying park-schedule fetch. Hours rarely change mid-day so we
+   * can cache the upstream pull longer to save calls; the rendered
+   * status field uses the shorter `parkStatus` TTL on the response.
+   */
   hours: 30 * 60,
   /**
-   * Edge-cache TTL for endpoints that include `status: OPEN | CLOSED`.
-   * Shorter than `hours` because status flips when a park opens or
-   * closes, and we don't want a 30-min stale "CLOSED" lingering after
-   * gates open.
+   * Response TTL for endpoints that include `status: OPEN | CLOSED`.
+   * Two minutes balances freshness (gate flips at 9 AM / 11 PM are
+   * visible quickly) with upstream protection.
    */
-  parkStatus: 5 * 60,
+  parkStatus: 2 * 60,
   /** Park / resort metadata: 1 hour. */
   park: 60 * 60,
 };

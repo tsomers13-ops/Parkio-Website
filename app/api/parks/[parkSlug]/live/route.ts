@@ -19,7 +19,7 @@ import {
 import { jsonOk, notFound } from "../../../_lib/respond";
 
 export const runtime = "edge";
-export const revalidate = 300; // 5 minutes
+export const revalidate = 120; // 2 minutes
 
 interface Params {
   params: { parkSlug: string };
