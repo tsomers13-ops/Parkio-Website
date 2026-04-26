@@ -8,7 +8,8 @@ const PRODUCT_LINKS: Array<{ label: string; href: string }> = [
 ];
 
 const RESOURCE_LINKS: Array<{ label: string; href: string }> = [
-  { label: "Guide", href: "/guide" },
+  { label: "Parkio Daily", href: "/guide" },
+  { label: "Newsletter", href: "/newsletter" },
   { label: "FAQ", href: "/#faq" },
   { label: "Support", href: "/support" },
   { label: "About", href: "/about" },

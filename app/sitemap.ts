@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { DISNEY_PARKS } from "@/lib/disneyParkConfig";
 import { listGuidePosts } from "@/lib/guide";
+import { listDailyPosts } from "@/lib/guideDaily";
 
 const SITE_URL = "https://parkio.info";
 
@@ -18,7 +19,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE_URL}/`, lastModified: now, changeFrequency: "weekly", priority: 1 },
     { url: `${SITE_URL}/parks`, lastModified: now, changeFrequency: "hourly", priority: 0.9 },
     { url: `${SITE_URL}/waits`, lastModified: now, changeFrequency: "hourly", priority: 0.9 },
-    { url: `${SITE_URL}/guide`, lastModified: now, changeFrequency: "weekly", priority: 0.7 },
+    { url: `${SITE_URL}/guide`, lastModified: now, changeFrequency: "daily", priority: 0.8 },
+    { url: `${SITE_URL}/newsletter`, lastModified: now, changeFrequency: "monthly", priority: 0.6 },
     { url: `${SITE_URL}/about`, lastModified: now, changeFrequency: "monthly", priority: 0.5 },
     { url: `${SITE_URL}/support`, lastModified: now, changeFrequency: "monthly", priority: 0.4 },
     { url: `${SITE_URL}/privacy`, lastModified: now, changeFrequency: "yearly", priority: 0.3 },
@@ -40,5 +42,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }));
 
-  return [...staticRoutes, ...parkRoutes, ...guideRoutes];
+  // Daily briefings — change frequency `never` after publish (each
+  // post is a snapshot of one specific day). Priority is bumped for
+  // recent posts vs. older ones via the natural date-ordered sitemap.
+  const dailyRoutes: MetadataRoute.Sitemap = listDailyPosts().map((post) => ({
+    url: `${SITE_URL}/guide/${post.slug}`,
+    lastModified: post.updatedAt
+      ? new Date(post.updatedAt)
+      : new Date(post.publishedAt),
+    changeFrequency: "never",
+    priority: 0.7,
+  }));
+
+  return [...staticRoutes, ...parkRoutes, ...dailyRoutes, ...guideRoutes];
 }
