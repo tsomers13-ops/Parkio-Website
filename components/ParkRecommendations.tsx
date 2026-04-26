@@ -197,32 +197,30 @@ function Row({
     wait <= LOW_WAIT_THRESHOLD_MIN;
 
   return (
-    <li className="flex items-center justify-between gap-4 py-3">
-      <div className="min-w-0">
-        <div className="flex flex-wrap items-center gap-1.5">
+    <li className="flex items-center justify-between gap-3 py-3">
+      <div className="flex min-w-0 flex-1 flex-wrap items-center gap-x-1.5 gap-y-1">
+        <span
+          className="min-w-0 truncate text-sm font-semibold tracking-tight text-ink-900"
+          title={attraction.name}
+        >
+          {attraction.name}
+        </span>
+        {popular && (
           <span
-            className="truncate text-sm font-semibold tracking-tight text-ink-900"
-            title={attraction.name}
+            className="inline-flex shrink-0 items-center whitespace-nowrap rounded-full bg-accent-50 px-1.5 py-0.5 text-[10px] font-semibold text-accent-700 ring-1 ring-accent-100"
+            title="Top-tier headliner"
           >
-            {attraction.name}
+            Headliner
           </span>
-          {popular && (
-            <span
-              className="inline-flex shrink-0 items-center rounded-full bg-accent-50 px-1.5 py-0.5 text-[10px] font-semibold text-accent-700 ring-1 ring-accent-100"
-              title="Top-tier headliner"
-            >
-              Headliner
-            </span>
-          )}
-          {lowWait && (
-            <span
-              className="inline-flex shrink-0 items-center rounded-full bg-emerald-50 px-1.5 py-0.5 text-[10px] font-semibold text-emerald-700 ring-1 ring-emerald-100"
-              title="Walk-on territory"
-            >
-              Low wait
-            </span>
-          )}
-        </div>
+        )}
+        {lowWait && (
+          <span
+            className="inline-flex shrink-0 items-center whitespace-nowrap rounded-full bg-emerald-50 px-1.5 py-0.5 text-[10px] font-semibold text-emerald-700 ring-1 ring-emerald-100"
+            title="Walk-on territory"
+          >
+            Low wait
+          </span>
+        )}
       </div>
       <WaitPill minutes={wait} />
     </li>
@@ -232,7 +230,7 @@ function Row({
 function WaitPill({ minutes }: { minutes: number | null }) {
   if (typeof minutes !== "number") {
     return (
-      <span className="inline-flex items-center gap-1.5 rounded-full bg-ink-100 px-2.5 py-1 text-[11px] font-semibold text-ink-500 ring-1 ring-ink-200">
+      <span className="inline-flex shrink-0 items-center gap-1.5 whitespace-nowrap rounded-full bg-ink-100 px-2.5 py-1 text-[11px] font-semibold tabular-nums text-ink-500 ring-1 ring-ink-200">
         <span className="h-1.5 w-1.5 rounded-full bg-ink-300" />
         —
       </span>
@@ -242,7 +240,7 @@ function WaitPill({ minutes }: { minutes: number | null }) {
   const c = waitColorClasses(tier);
   return (
     <span
-      className={`inline-flex items-center gap-1.5 rounded-full px-2.5 py-1 text-[11px] font-semibold ring-1 ${c.bg} ${c.text} ${c.ring}`}
+      className={`inline-flex shrink-0 items-center gap-1.5 whitespace-nowrap rounded-full px-2.5 py-1 text-[11px] font-semibold tabular-nums ring-1 ${c.bg} ${c.text} ${c.ring}`}
     >
       <span className={`h-1.5 w-1.5 rounded-full ${c.dot}`} />
       {minutes} min
