@@ -41,6 +41,14 @@ export function ParkRecommendations({ park }: ParkRecommendationsProps) {
     return partitionAttractions(park.id, live.attractions);
   }, [live, park.id]);
 
+  // Detect "park isn't really open" — no attractions are reporting an
+  // OPERATING status. Used to swap empty-state copy so guests don't
+  // see "Most rides have lines over an hour" when nothing is running.
+  const noneOperating =
+    !!live &&
+    live.attractions.length > 0 &&
+    !live.attractions.some((a) => a.status === "OPERATING");
+
   return (
     <section className="border-t border-ink-100 bg-ink-50/50">
       <div className="mx-auto max-w-7xl px-5 py-16 sm:px-8 sm:py-20">
@@ -71,7 +79,9 @@ export function ParkRecommendations({ park }: ParkRecommendationsProps) {
             empty={
               status === "loading"
                 ? "Loading…"
-                : "Most rides have lines over an hour. Good time for a snack or a show."
+                : noneOperating
+                  ? "Rides aren't running yet. Check back when the park opens."
+                  : "Most rides have lines over an hour. Good time for a snack or a show."
             }
             attractions={bestNow}
             parkSlug={park.id}
@@ -83,7 +93,9 @@ export function ParkRecommendations({ park }: ParkRecommendationsProps) {
             empty={
               status === "loading"
                 ? "Loading…"
-                : "Try the headliners first — moderate-wait rides aren't reporting yet."
+                : noneOperating
+                  ? "Nothing operating yet — wait times will appear once the park opens."
+                  : "Try the headliners first — moderate-wait rides aren't reporting yet."
             }
             attractions={goodOptions}
             parkSlug={park.id}
@@ -94,7 +106,9 @@ export function ParkRecommendations({ park }: ParkRecommendationsProps) {
             empty={
               status === "loading"
                 ? "Loading…"
-                : "No long lines right now. Take advantage."
+                : noneOperating
+                  ? "No queues to avoid yet — the park hasn't opened."
+                  : "No long lines right now. Take advantage."
             }
             attractions={skipForNow}
             parkSlug={park.id}

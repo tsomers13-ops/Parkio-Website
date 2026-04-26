@@ -202,7 +202,10 @@ export function partitionAttractions(
 
   const bestNowSlugs = new Set(bestNow.map((a) => a.slug));
 
-  // Good options: moderate waits, not in best-now picks, not top-tier.
+  // Good options: moderate waits, not in best-now picks. Top-tier
+  // rides ARE eligible here when they didn't make Best Right Now's
+  // 5-slot cap — a 55-min headliner is still a great backup pick
+  // and shouldn't disappear into a black hole between cards.
   const goodOptions = attractions
     .filter(
       (a) =>
@@ -210,8 +213,7 @@ export function partitionAttractions(
         typeof a.waitMinutes === "number" &&
         (a.waitMinutes as number) >= MODERATE_WAIT_FLOOR_MIN &&
         (a.waitMinutes as number) <= HIGH_WAIT_CUTOFF_MIN &&
-        !bestNowSlugs.has(a.slug) &&
-        !isTopRide(parkSlug, a.slug),
+        !bestNowSlugs.has(a.slug),
     )
     .sort((a, b) => (a.waitMinutes as number) - (b.waitMinutes as number))
     .slice(0, 5);
