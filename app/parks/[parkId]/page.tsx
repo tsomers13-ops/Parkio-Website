@@ -4,6 +4,7 @@ import { ParkInsights } from "@/components/ParkInsights";
 import { ParkLiveDataProvider } from "@/components/ParkLiveDataProvider";
 import { ParkMap } from "@/components/ParkMap";
 import { ParkRecommendations } from "@/components/ParkRecommendations";
+import { ParkRightNow } from "@/components/ParkRightNow";
 import { PARKS, getPark, getRidesForPark } from "@/lib/data";
 import type { ParkId } from "@/lib/types";
 
@@ -42,7 +43,10 @@ export default function ParkPage({ params }: ParkPageProps) {
   return (
     <main className="relative">
       <ParkLiveDataProvider parkSlug={park.id}>
-        <ParkMap park={park} rides={rides} />
+        <ParkRightNow park={park} />
+        <div id="park-map" className="scroll-mt-4">
+          <ParkMap park={park} rides={rides} />
+        </div>
         <ParkRecommendations park={park} />
         <ParkInsights park={park} />
       </ParkLiveDataProvider>
