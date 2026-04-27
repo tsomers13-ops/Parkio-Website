@@ -383,37 +383,89 @@
     },
     {
       "parameters": {
-        "authentication": "accessToken",
-        "resource": "file",
-        "operation": "create",
-        "owner": {
-          "__rl": true,
-          "mode": "name",
-          "value": "tsomers13-ops"
+        "method": "GET",
+        "url": "=https://api.github.com/repos/tsomers13-ops/Parkio-Website/contents/content/guide/daily/{{ $json.slug }}.json?ref=main",
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "githubApi",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Accept",
+              "value": "application/vnd.github+json"
+            },
+            {
+              "name": "User-Agent",
+              "value": "parkio-n8n"
+            }
+          ]
         },
-        "repository": {
-          "__rl": true,
-          "mode": "name",
-          "value": "Parkio-Website"
-        },
-        "filePath": "=content/guide/daily/{{ $json.slug }}.json",
-        "fileContent": "={{ $json.fileContent }}",
-        "commitMessage": "=Daily: {{ $json.post.date }} briefing",
-        "additionalParameters": {
-          "branch": {
-            "branch": "main"
+        "options": {
+          "response": {
+            "response": {
+              "responseFormat": "json"
+            }
           }
         }
       },
-      "id": "7ggggggg-gggg-4ggg-gggg-gggggggggggg",
-      "name": "Commit to GitHub",
-      "type": "n8n-nodes-base.github",
-      "typeVersion": 1.1,
+      "id": "irrrrrrr-rrrr-4rrr-rrrr-rrrrrrrrrrrr",
+      "name": "GitHub — Lookup existing SHA",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
       "position": [
-        2840,
+        2730,
         300
       ],
-      "notes": "Commits the JSON to content/guide/daily/{slug}.json on main. Cloudflare Pages auto-rebuilds on push — post is live within ~60–90s."
+      "onError": "continueRegularOutput",
+      "notes": "GETs existing file metadata so the SHA can be supplied when updating. 404 (file not yet on disk) is handled gracefully via Continue On Fail — that case is treated as a fresh create."
+    },
+    {
+      "parameters": {
+        "jsCode": "// Build the GitHub PUT-contents body from Validate output + Lookup result.\n// Buffer is available here (Code node, Node.js runtime); not in HTTP-node expressions.\n\nconst wrap = $('Validate + format JSON').first().json;\nconst lookup = $input.first().json;\n\nconst body = {\n  message: `Daily: ${wrap.post.date} briefing`,\n  content: Buffer.from(wrap.fileContent, 'utf8').toString('base64'),\n  branch: 'main'\n};\nif (lookup && lookup.sha) {\n  body.sha = lookup.sha;\n}\n\nreturn [{\n  json: {\n    putUrl: `https://api.github.com/repos/tsomers13-ops/Parkio-Website/contents/content/guide/daily/${wrap.slug}.json`,\n    putBody: body,\n    isUpdate: !!body.sha\n  }\n}];\n"
+      },
+      "id": "jsssssss-ssss-4sss-ssss-ssssssssssss",
+      "name": "GitHub — Build commit body",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        2960,
+        300
+      ],
+      "notes": "Constructs the GitHub PUT-contents body. Base64-encodes the file content here (Buffer is available in Code nodes; not in HTTP expressions). Includes sha when updating an existing file."
+    },
+    {
+      "parameters": {
+        "method": "PUT",
+        "url": "={{ $json.putUrl }}",
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "githubApi",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Accept",
+              "value": "application/vnd.github+json"
+            },
+            {
+              "name": "User-Agent",
+              "value": "parkio-n8n"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify($json.putBody) }}",
+        "options": {}
+      },
+      "id": "7ggggggg-gggg-4ggg-gggg-gggggggggggg",
+      "name": "Commit to GitHub",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        3180,
+        300
+      ],
+      "notes": "PUT to GitHub contents API. Body built upstream by 'GitHub — Build commit body'. Creates new file if no sha, updates existing if sha present (re-runs on the same day work cleanly)."
     },
     {
       "parameters": {
@@ -425,45 +477,10 @@
       "type": "n8n-nodes-base.wait",
       "typeVersion": 1.1,
       "position": [
-        3060,
+        3400,
         300
       ],
-      "notes": "Wait for Cloudflare Pages to rebuild. Beehiiv teaser must link to a live URL."
-    },
-    {
-      "parameters": {
-        "jsCode": "// Build the Beehiiv teaser-only email payload from the validated post.\n// HARD RULE (docs/AUTOMATION.md): the email contains ONLY teaser + 3 bullets + link.\n// No YouTube content. No section bodies. The full briefing lives on the website.\n\nconst wrap = $('Validate + format JSON').first().json;\nconst post = wrap.post;\nconst slug = wrap.slug;\n\nconst sec = post.sections || {};\n\n// Pick the strongest 3 bullets — prefer breaking → bignews → topstories.\nconst candidates = [];\nconst pushIf = (arr) => {\n  if (Array.isArray(arr)) {\n    for (const item of arr) {\n      if (item && item.title) candidates.push(item.title);\n    }\n  }\n};\npushIf(sec.breaking);\npushIf(sec.bignews);\npushIf(sec.topstories);\n\n// Dedupe + cap at 3\nconst seen = new Set();\nconst bullets = [];\nfor (const t of candidates) {\n  const key = t.trim().toLowerCase();\n  if (!seen.has(key)) {\n    seen.add(key);\n    bullets.push(t.trim());\n    if (bullets.length === 3) break;\n  }\n}\n\nconst url = `https://parkio.info/guide/${slug}`;\nconst bulletHtml = bullets.map(b =>\n  `<li style=\"margin:6px 0;\">${b}</li>`\n).join('');\n\nconst bodyHtml = `\n<div style=\"font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:16px;line-height:1.5;color:#111;\">\n  <p style=\"margin:0 0 16px 0;\">${post.teaser}</p>\n  <ul style=\"padding-left:20px;margin:0 0 20px 0;\">${bulletHtml}</ul>\n  <p style=\"margin:24px 0;\">\n    <a href=\"${url}\" style=\"display:inline-block;background:#0A84FF;color:#fff;text-decoration:none;padding:12px 20px;border-radius:14px;font-weight:600;\">Read the full briefing →</a>\n  </p>\n  <p style=\"margin:24px 0 8px 0;font-size:14px;color:#555;\">\n    Or jump straight in: <a href=\"https://parkio.info/parks\">Open Parkio</a> · <a href=\"https://parkio.info/parks\">Check live waits</a>\n  </p>\n  <p style=\"font-size:12px;color:#888;margin-top:32px;\">Parkio Daily — fresh every morning at 6 AM ET.</p>\n</div>\n`.trim();\n\nconst previewText = post.teaser.length > 100 ? post.teaser.slice(0, 97) + '...' : post.teaser;\n\nreturn [{\n  json: {\n    title: post.title,\n    subtitle: post.teaser,\n    preview_text: previewText,\n    body_content: bodyHtml,\n    slug,\n    canonical_url: url\n  }\n}];\n"
-      },
-      "id": "cmmmmmmm-mmmm-4mmm-mmmm-mmmmmmmmmmmm",
-      "name": "Build email teaser",
-      "type": "n8n-nodes-base.code",
-      "typeVersion": 2,
-      "position": [
-        3280,
-        300
-      ],
-      "notes": "Constructs the Beehiiv teaser-only payload: 1–2 sentence teaser + 3 bullets (breaking → bignews → topstories) + CTA link. NO YouTube content, NO section bodies. The website is the canonical copy."
-    },
-    {
-      "parameters": {
-        "method": "POST",
-        "url": "=https://api.beehiiv.com/v2/publications/pub_b81f7b11-b6d7-4048-93ab-36828976f698/posts",
-        "authentication": "predefinedCredentialType",
-        "nodeCredentialType": "httpHeaderAuth",
-        "sendBody": true,
-        "specifyBody": "json",
-        "jsonBody": "={\n  \"title\": \"={{ $json.title }}\",\n  \"subtitle\": \"={{ $json.subtitle }}\",\n  \"preview_text\": \"={{ $json.preview_text }}\",\n  \"body_content\": \"={{ $json.body_content }}\",\n  \"platform\": \"email\",\n  \"audience\": \"free\",\n  \"status\": \"draft\"\n}"
-      },
-      "id": "dnnnnnnn-nnnn-4nnn-nnnn-nnnnnnnnnnnn",
-      "name": "Beehiiv — Create Post (DRAFT)",
-      "type": "n8n-nodes-base.httpRequest",
-      "typeVersion": 4.2,
-      "position": [
-        3500,
-        300
-      ],
-      "disabled": true,
-      "notes": "DISABLED until Beehiiv API key is created (requires Stripe ID verification). When ready: enable this node, add an HTTP Header Auth credential named 'Beehiiv API' with header name='X-API-Key' and value=<your Beehiiv API key>. Posts are created as DRAFT for manual review until the workflow is trusted; flip status to 'confirmed' inside 'Build email teaser' to auto-send."
+      "notes": "Wait for Cloudflare Pages to rebuild. The /feed.xml endpoint refreshes automatically when the new daily JSON is committed; downstream RSS-to-Email service (Buttondown) polls the feed and emails subscribers. This wait is the terminal step of the n8n pipeline."
     }
   ],
   "connections": {
@@ -592,6 +609,28 @@
       "main": [
         [
           {
+            "node": "GitHub — Lookup existing SHA",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "GitHub — Lookup existing SHA": {
+      "main": [
+        [
+          {
+            "node": "GitHub — Build commit body",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "GitHub — Build commit body": {
+      "main": [
+        [
+          {
             "node": "Commit to GitHub",
             "type": "main",
             "index": 0
@@ -604,28 +643,6 @@
         [
           {
             "node": "Wait 90s for Cloudflare deploy",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Wait 90s for Cloudflare deploy": {
-      "main": [
-        [
-          {
-            "node": "Build email teaser",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Build email teaser": {
-      "main": [
-        [
-          {
-            "node": "Beehiiv — Create Post (DRAFT)",
             "type": "main",
             "index": 0
           }
