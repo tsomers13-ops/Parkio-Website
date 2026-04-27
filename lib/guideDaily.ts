@@ -9,8 +9,8 @@
  * workflow can produce it without contortions:
  *
  *   {
- *     "title":   "Disney Park News — April 26, 2026",
- *     "slug":    "disney-park-news-2026-04-26",
+ *     "title":   "Parkio Daily — April 26, 2026",
+ *     "slug":    "parkio-daily-2026-04-26",
  *     "date":    "2026-04-26",
  *     "teaser":  "1–2 sentence hook used for SEO + email teaser.",
  *     "rightNow": {
@@ -26,7 +26,13 @@
  *       "icymi":      [ ... ],
  *       "spotlight":  [ { "title", "body", "parkSlug?", "ctaLabel?" } ]
  *     },
- *     "videos": [ { "title", "channel", "url", "thumbnailUrl?" } ]
+ *     "videos": [
+ *       {
+ *         "title", "channel", "url", "thumbnailUrl?",
+ *         "videoId?", "viewCount?", "publishedAt?", "summary?"
+ *       }
+ *     ],
+ *     "meta": { "aiGenerated": true, "sources": [...], "generatedAt": "..." }
  *   }
  *
  * Section ORDER is fixed by the renderer (breaking → bignews → top
@@ -61,6 +67,14 @@ export interface DailyVideoItem {
   channel: string;
   url: string;
   thumbnailUrl?: string;
+  /** YouTube videoId — stable identifier for de-dup + analytics. */
+  videoId?: string;
+  /** Total views at the time the briefing was generated. */
+  viewCount?: number;
+  /** ISO timestamp from YouTube — useful for "X hours ago" display. */
+  publishedAt?: string;
+  /** 1–2 sentence editorial summary, written by the LLM. */
+  summary?: string;
 }
 
 export interface DailyRightNowRide {
@@ -137,6 +151,19 @@ export interface DailyPost {
   updatedAt?: string;
   /** Discriminator for the unified post-type union (vs. evergreen guides). */
   type?: "daily-briefing";
+  /**
+   * Internal metadata for AI-assisted briefings. Surfaced as a small
+   * "AI-assisted" badge on the page so readers know the editorial
+   * mix. Sources list the upstream feeds the LLM was given.
+   */
+  meta?: {
+    aiGenerated?: boolean;
+    sources?: string[];
+    /** ISO timestamp when the LLM produced this draft. */
+    generatedAt?: string;
+    /** Free-text fallback message when no real news is available. */
+    fallbackReason?: string;
+  };
 }
 
 /* ──────────────────────── Loader ──────────────────────── */
