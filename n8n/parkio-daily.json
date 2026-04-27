@@ -1,0 +1,212 @@
+{
+  "name": "Parkio Daily — 6 AM Briefing",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "cronExpression",
+              "expression": "0 6 * * *"
+            }
+          ]
+        }
+      },
+      "id": "1aaaaaaa-aaaa-4aaa-aaaa-aaaaaaaaaaaa",
+      "name": "Daily 6 AM ET",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [200, 300],
+      "notesInFlow": true,
+      "notes": "Triggers every morning at 6:00 AM Eastern. Set workflow timezone in Settings → Timezone to America/New_York."
+    },
+    {
+      "parameters": {
+        "url": "https://disneyparks.disney.go.com/blog/feed/",
+        "options": {
+          "response": {
+            "response": {
+              "responseFormat": "text"
+            }
+          }
+        }
+      },
+      "id": "2bbbbbbb-bbbb-4bbb-bbbb-bbbbbbbbbbbb",
+      "name": "Fetch Disney Parks Blog RSS",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [420, 220],
+      "notes": "Pulls the latest Disney Parks Blog RSS as raw text. Use as one of the research inputs."
+    },
+    {
+      "parameters": {
+        "url": "https://api.themeparks.wiki/v1/destinations",
+        "options": {}
+      },
+      "id": "3ccccccc-cccc-4ccc-cccc-cccccccccccc",
+      "name": "Fetch themeparks.wiki destinations",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [420, 380],
+      "notes": "Optional second research source — current ride status across parks."
+    },
+    {
+      "parameters": {
+        "jsCode": "// Bundle research inputs into a single context blob for the LLM.\n// Each input item has the previous node's body in $input.first().json or .data.\n\nconst rss = $('Fetch Disney Parks Blog RSS').first()?.json?.data ?? $('Fetch Disney Parks Blog RSS').first()?.json ?? '';\nconst parks = $('Fetch themeparks.wiki destinations').first()?.json ?? {};\n\n// Today's date in Eastern Time (YYYY-MM-DD)\nconst now = new Date();\nconst etDate = new Intl.DateTimeFormat('en-CA', {\n  timeZone: 'America/New_York',\n  year: 'numeric', month: '2-digit', day: '2-digit'\n}).format(now);\n\nconst slug = `disney-park-news-${etDate}`;\nconst niceDate = new Date(etDate + 'T00:00:00Z').toLocaleDateString('en-US', {\n  timeZone: 'UTC', month: 'long', day: 'numeric', year: 'numeric'\n});\n\nreturn [{\n  json: {\n    today: etDate,\n    slug,\n    title: `Disney Park News — ${niceDate}`,\n    rss: typeof rss === 'string' ? rss.slice(0, 30000) : JSON.stringify(rss).slice(0, 30000),\n    parks: JSON.stringify(parks).slice(0, 5000)\n  }\n}];"
+      },
+      "id": "4ddddddd-dddd-4ddd-dddd-dddddddddddd",
+      "name": "Build research context",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [640, 300],
+      "notes": "Combines the RSS + themeparks.wiki output into a single object the LLM can read. Computes today's slug + display date in Eastern Time."
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.anthropic.com/v1/messages",
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "anthropicApi",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            { "name": "anthropic-version", "value": "2023-06-01" },
+            { "name": "content-type", "value": "application/json" }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"model\": \"claude-sonnet-4-5\",\n  \"max_tokens\": 4000,\n  \"messages\": [\n    {\n      \"role\": \"user\",\n      \"content\": \"You are writing the Parkio Daily briefing for {{ $json.today }}.\\n\\nProduce ONE JSON object — no commentary, no markdown fences — matching this exact schema:\\n\\n{\\n  \\\"title\\\": string,\\n  \\\"slug\\\": string (must be \\\"{{ $json.slug }}\\\"),\\n  \\\"date\\\": string (must be \\\"{{ $json.today }}\\\"),\\n  \\\"teaser\\\": string (1-2 sentences, <160 chars; SEO + email teaser),\\n  \\\"updatedAt\\\": ISO timestamp,\\n  \\\"rightNow\\\": {\\n    \\\"headline\\\": \\\"Best rides right now\\\",\\n    \\\"rides\\\": [ { \\\"name\\\", \\\"parkSlug\\\" (one of: magic-kingdom|epcot|hollywood-studios|animal-kingdom|disneyland|california-adventure), \\\"note\\\" (short editorial reason) } ] (2-3 items)\\n  },\\n  \\\"sections\\\": {\\n    \\\"breaking\\\": [ { \\\"title\\\", \\\"body\\\" (plain text), \\\"parkSlug?\\\", \\\"source?\\\": { \\\"label\\\", \\\"url\\\" } } ] (0-2 items),\\n    \\\"bignews\\\": [...] (1-3),\\n    \\\"topstories\\\": [...] (2-4),\\n    \\\"icymi\\\": [...] (1-3),\\n    \\\"spotlight\\\": [ { \\\"title\\\", \\\"body\\\", \\\"parkSlug?\\\", \\\"ctaLabel?\\\" } ] (exactly 1)\\n  },\\n  \\\"videos\\\": [ { \\\"title\\\", \\\"channel\\\", \\\"url\\\", \\\"thumbnailUrl?\\\" } ] (2-3)\\n}\\n\\nWriting style: short, scannable, app-first guests. No fluff. Reference Parkio's live data engine where natural. Each story should mention the park where relevant.\\n\\nResearch — Disney Parks Blog RSS:\\n{{ $json.rss }}\\n\\nResearch — themeparks.wiki destinations summary:\\n{{ $json.parks }}\\n\\nReturn the JSON object only.\"\n    }\n  ]\n}"
+      },
+      "id": "5eeeeeee-eeee-4eee-eeee-eeeeeeeeeeee",
+      "name": "Compose with Claude",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [860, 300],
+      "notes": "Calls Claude to generate today's daily briefing JSON. Uses the Anthropic API credential — add yours under Credentials → Anthropic."
+    },
+    {
+      "parameters": {
+        "jsCode": "// Extract Claude's text output, parse JSON, validate the shape.\n// Throws if anything is malformed — n8n surfaces it in the run history\n// and the workflow stops (no broken file commits).\n\nconst resp = $input.first().json;\nconst text = resp?.content?.[0]?.text ?? '';\nif (!text) throw new Error('Claude returned no text content');\n\n// Strip any accidental markdown fence\nconst jsonStr = text.replace(/^```(?:json)?\\s*/i, '').replace(/```\\s*$/, '').trim();\n\nlet post;\ntry {\n  post = JSON.parse(jsonStr);\n} catch (e) {\n  throw new Error('Claude output is not valid JSON: ' + e.message + '\\n---\\n' + jsonStr.slice(0, 500));\n}\n\n// Schema sanity checks\nconst required = ['title', 'slug', 'date', 'teaser'];\nfor (const k of required) {\n  if (!post[k] || typeof post[k] !== 'string') {\n    throw new Error(`Missing required field: ${k}`);\n  }\n}\nif (!/^disney-park-news-\\d{4}-\\d{2}-\\d{2}$/.test(post.slug)) {\n  throw new Error(`Slug doesn't match disney-park-news-YYYY-MM-DD: ${post.slug}`);\n}\nif (post.teaser.length > 220) {\n  throw new Error(`Teaser too long (${post.teaser.length} chars)`);\n}\n\nconst VALID_PARKS = ['magic-kingdom','epcot','hollywood-studios','animal-kingdom','disneyland','california-adventure'];\nfor (const sec of Object.values(post.sections ?? {})) {\n  if (!Array.isArray(sec)) continue;\n  for (const item of sec) {\n    if (item.parkSlug && !VALID_PARKS.includes(item.parkSlug)) {\n      throw new Error(`Invalid parkSlug: ${item.parkSlug}`);\n    }\n  }\n}\nfor (const ride of (post.rightNow?.rides ?? [])) {\n  if (ride.parkSlug && !VALID_PARKS.includes(ride.parkSlug)) {\n    throw new Error(`Invalid rightNow parkSlug: ${ride.parkSlug}`);\n  }\n}\n\n// Force updatedAt to now\npost.updatedAt = new Date().toISOString();\n\nreturn [{\n  json: {\n    slug: post.slug,\n    post,\n    fileContent: JSON.stringify(post, null, 2)\n  }\n}];"
+      },
+      "id": "6fffffff-ffff-4fff-ffff-ffffffffffff",
+      "name": "Validate + format JSON",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1080, 300],
+      "notes": "Parses the LLM output, validates the shape against lib/guideDaily.ts schema, and produces the file payload for GitHub. Throws (stops the workflow) on any schema violation — better to skip a day than ship a broken post."
+    },
+    {
+      "parameters": {
+        "authentication": "accessToken",
+        "resource": "file",
+        "operation": "create",
+        "owner": {
+          "__rl": true,
+          "mode": "name",
+          "value": "tsomers13-ops"
+        },
+        "repository": {
+          "__rl": true,
+          "mode": "name",
+          "value": "Parkio-Website"
+        },
+        "filePath": "=content/guide/daily/{{ $json.slug }}.json",
+        "fileContent": "={{ $json.fileContent }}",
+        "commitMessage": "=Daily: {{ $json.post.date }} briefing",
+        "additionalParameters": {
+          "branch": {
+            "branch": "main"
+          }
+        }
+      },
+      "id": "7ggggggg-gggg-4ggg-gggg-gggggggggggg",
+      "name": "Commit to GitHub",
+      "type": "n8n-nodes-base.github",
+      "typeVersion": 1.1,
+      "position": [1300, 300],
+      "notes": "Commits the JSON file to content/guide/daily/{slug}.json on the main branch. Cloudflare Pages auto-rebuilds on push — the post is live within ~60-90s."
+    },
+    {
+      "parameters": {
+        "amount": 90,
+        "unit": "seconds"
+      },
+      "id": "8hhhhhhh-hhhh-4hhh-hhhh-hhhhhhhhhhhh",
+      "name": "Wait 90s for Cloudflare deploy",
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [1520, 300],
+      "notes": "Wait for Cloudflare Pages to rebuild before sending the email. The Beehiiv teaser should link to the live URL."
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "=https://api.beehiiv.com/v2/publications/pub_b81f7b11-b6d7-4048-93ab-36828976f698/posts",
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "httpHeaderAuth",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"title\": \"{{ $('Validate + format JSON').first().json.post.title }}\",\n  \"subtitle\": \"{{ $('Validate + format JSON').first().json.post.teaser }}\",\n  \"body\": \"{{ $('Validate + format JSON').first().json.post.teaser }}\\n\\n• {{ $('Validate + format JSON').first().json.post.sections.breaking?.[0]?.title || $('Validate + format JSON').first().json.post.sections.bignews?.[0]?.title }}\\n• {{ $('Validate + format JSON').first().json.post.sections.bignews?.[0]?.title || $('Validate + format JSON').first().json.post.sections.topstories?.[0]?.title }}\\n• {{ $('Validate + format JSON').first().json.post.sections.topstories?.[0]?.title }}\\n\\nRead the full briefing on Parkio Daily:\\nhttps://parkio.info/guide/{{ $('Validate + format JSON').first().json.slug }}\",\n  \"status\": \"draft\"\n}"
+      },
+      "id": "9iiiiiii-iiii-4iii-iiii-iiiiiiiiiiii",
+      "name": "Beehiiv — Create Post (DRAFT)",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [1740, 300],
+      "disabled": true,
+      "notes": "DISABLED until Beehiiv API key is created (requires Stripe ID verification). When ready: enable this node, add an HTTP Header Auth credential named 'Beehiiv API' with header name 'X-API-Key' and value = your Beehiiv API key. Note: posts created as 'draft' so you can review + send manually until the workflow is trusted; flip status to 'confirmed' to auto-send."
+    }
+  ],
+  "connections": {
+    "Daily 6 AM ET": {
+      "main": [
+        [
+          { "node": "Fetch Disney Parks Blog RSS", "type": "main", "index": 0 },
+          { "node": "Fetch themeparks.wiki destinations", "type": "main", "index": 0 }
+        ]
+      ]
+    },
+    "Fetch Disney Parks Blog RSS": {
+      "main": [
+        [{ "node": "Build research context", "type": "main", "index": 0 }]
+      ]
+    },
+    "Fetch themeparks.wiki destinations": {
+      "main": [
+        [{ "node": "Build research context", "type": "main", "index": 0 }]
+      ]
+    },
+    "Build research context": {
+      "main": [
+        [{ "node": "Compose with Claude", "type": "main", "index": 0 }]
+      ]
+    },
+    "Compose with Claude": {
+      "main": [
+        [{ "node": "Validate + format JSON", "type": "main", "index": 0 }]
+      ]
+    },
+    "Validate + format JSON": {
+      "main": [
+        [{ "node": "Commit to GitHub", "type": "main", "index": 0 }]
+      ]
+    },
+    "Commit to GitHub": {
+      "main": [
+        [{ "node": "Wait 90s for Cloudflare deploy", "type": "main", "index": 0 }]
+      ]
+    },
+    "Wait 90s for Cloudflare deploy": {
+      "main": [
+        [{ "node": "Beehiiv — Create Post (DRAFT)", "type": "main", "index": 0 }]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1",
+    "timezone": "America/New_York"
+  },
+  "active": false,
+  "tags": []
+}
