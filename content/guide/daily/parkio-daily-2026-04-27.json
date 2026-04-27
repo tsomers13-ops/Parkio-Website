@@ -2,24 +2,24 @@
   "title": "Parkio Daily for April 27, 2026",
   "slug": "parkio-daily-2026-04-27",
   "date": "2026-04-27",
-  "teaser": "Toy Story 5 merchandise launches ahead of June 19 film release. Parks operating normally with spring weather.",
+  "teaser": "Toy Story 5 merchandise hits stores ahead of the June 19 film release. Parks operating normally today with live streams from Magic Kingdom.",
   "rightNow": {
     "headline": "Best rides right now",
     "rides": [
       {
-        "name": "Seven Dwarfs Mine Train",
+        "name": "Space Mountain",
         "parkSlug": "magic-kingdom",
-        "note": "Morning crowds lighter than usual"
+        "note": "Classic experience running smoothly"
       },
       {
-        "name": "Flight of Passage",
+        "name": "Big Thunder Mountain Railroad",
+        "parkSlug": "magic-kingdom",
+        "note": "Great weather for outdoor thrills"
+      },
+      {
+        "name": "Expedition Everest",
         "parkSlug": "animal-kingdom",
-        "note": "Steady waits through midday"
-      },
-      {
-        "name": "Radiator Springs Racers",
-        "parkSlug": "california-adventure",
-        "note": "Good touring conditions"
+        "note": "Check out new Yak & Yeti menu items nearby"
       }
     ]
   },
@@ -27,8 +27,8 @@
     "breaking": [],
     "bignews": [
       {
-        "title": "Toy Story 5 merchandise collection launches today",
-        "body": "Disney unveiled a major product line ahead of Toy Story 5's June 19 theatrical release. The collection includes interactive talking figures from Mattel, LEGO playsets, LeapFrog's Explore & Learn Lilypad tablet toy, Crocs boots inspired by Jessie (available June 16), travel accessories from Away (June 9), and Pandora jewelry (May 21). New characters Lilypad and Smarty Pants join classic favorites Woody, Buzz, and Jessie across the merchandise range.",
+        "title": "Toy Story 5 Merchandise Now Available",
+        "body": "Disney and Pixar are launching a full line of Toy Story 5 products ahead of the film's June 19 theatrical release. New items include interactive talking figures from Mattel featuring Woody, Buzz, Jessie, and new character Lilypad, plus collectibles from Funko, LEGO sets, Crocs boots inspired by Jessie, and travel accessories from Away. The merchandise celebrates both classic characters and newcomers like Lilypad and Smarty Pants.",
         "source": {
           "label": "Disney Parks Blog",
           "url": "https://disneyparksblog.com/products/toy-story-5-products/"
@@ -37,24 +37,24 @@
     ],
     "topstories": [
       {
-        "title": "Interactive Toy Story figures talk to each other",
-        "body": "Mattel's new Playscale Interactables line features Woody, Buzz Lightyear, Jessie, Lilypad, and Forky figures with voice recognition technology. Each figure speaks iconic phrases and can recognize and respond to the other characters when placed nearby, bringing the 'toy meet tech' theme of Toy Story 5 to life.",
+        "title": "Interactive Toy Story 5 Figures Talk to Each Other",
+        "body": "Mattel's new Playscale Interactables bring imaginative play to life with figures that recognize and talk to each other. The collection includes Woody, Buzz Lightyear, Jessie, Lilypad, and Forky, each with their own iconic phrases. The toys embody the film's theme of toy meet tech, taking playtime to a new level.",
         "source": {
           "label": "Disney Parks Blog",
           "url": "https://disneyparksblog.com/products/toy-story-5-products/"
         }
       },
       {
-        "title": "Away launches Toy Story 5 travel collection",
-        "body": "The luggage brand debuts a full collection of travel gear inspired by Toy Story characters on June 9. The line includes rolling luggage, backpacks, and bag charms for kids and adults featuring Woody, Buzz Lightyear, Jessie, Aliens, and newcomer Lilypad. Available at awaytravel.com and select retail locations.",
+        "title": "LeapFrog Launches Explore & Learn Lilypad Toy",
+        "body": "Kids can interact with Toy Story 5's new character through LeapFrog's Explore & Learn Lilypad device. The interactive toy lets children explore letters, numbers, and problem-solving skills while playing games, or send text messages to favorite Toy Story characters using emojis and preset messages.",
         "source": {
           "label": "Disney Parks Blog",
           "url": "https://disneyparksblog.com/products/toy-story-5-products/"
         }
       },
       {
-        "title": "Jessie-inspired Crocs boots coming in June",
-        "body": "Crocs will release Western-themed boots inspired by Jessie's iconic look on June 16. The boots feature denim and cow print collars, red trim with white lacing, and four Jessie-themed Jibbitz charms. Part of a broader Toy Story 5 collection available at crocs.com and select retailers.",
+        "title": "Away Travel Collection Features Toy Story 5 Designs",
+        "body": "Away is launching Toy Story 5 travel essentials including rolling luggage, backpacks, and bag charms for kids and adults. The collection features designs inspired by Woody, Buzz Lightyear, Jessie, Aliens, and Lilypad. Products will be available on awaytravel.com and in select retail locations starting June 9.",
         "source": {
           "label": "Disney Parks Blog",
           "url": "https://disneyparksblog.com/products/toy-story-5-products/"
@@ -63,16 +63,16 @@
     ],
     "icymi": [
       {
-        "title": "LEGO releases Blaze's Horse Ranch set",
-        "body": "The LEGO Disney and Pixar Toy Story 5 Blaze's Horse Ranch building set is now available. The Western-themed playset includes six characters with Woody and Jessie minifigures, Bullseye the horse, and a buildable barn for Wild West adventures.",
+        "title": "Jessie-Inspired Crocs Boots Coming This Summer",
+        "body": "Crocs is releasing Jessie boots featuring denim and cow print collar, red trim with white lacing, and four Jessie-themed Jibbitz charms. The Toy Story 5 collection by Crocs will be available on crocs.com and in select retail locations starting June 16.",
         "source": {
           "label": "Disney Parks Blog",
           "url": "https://disneyparksblog.com/products/toy-story-5-products/"
         }
       },
       {
-        "title": "Pandora Toy Story jewelry arrives May 21",
-        "body": "Pandora's Toy Story collection launches May 21 with pieces inspired by the franchise. The Sheriff Star Bracelet features blue and brown leather with an embossed star charm honoring Woody. Available at us.pandora.net and select retail stores.",
+        "title": "Pandora Releasing Toy Story Sheriff Star Bracelet",
+        "body": "Pandora's new Toy Story Sheriff Star Bracelet features blue and brown leather with an embossed sheriff star charm inspired by Woody. The Toy Story collection by Disney Pixar x Pandora will be available at us.pandora.net and in select retail locations beginning May 21.",
         "source": {
           "label": "Disney Parks Blog",
           "url": "https://disneyparksblog.com/products/toy-story-5-products/"
@@ -81,8 +81,9 @@
     ],
     "spotlight": [
       {
-        "title": "Plan your Disney parks visit",
-        "body": "All Walt Disney World and Disneyland Resort parks are operating on regular schedules. Spring weather continues with afternoon showers possible in Florida. Check wait times and mobile order ahead for dining to maximize your day."
+        "title": "Plan Your Toy Story 5 Theater Trip",
+        "body": "Toy Story 5 gallops into theaters on June 19, bringing back Woody, Buzz Lightyear, and Jessie alongside exciting newcomers like Lilypad and Smarty Pants. The film explores Bonnie's imagination with a toy meet tech theme as classic toys encounter new high-tech playthings. Get ready for the adventure by checking out the new merchandise collection available now.",
+        "ctaLabel": "View Toy Story 5 Products"
       }
     ]
   },
@@ -93,9 +94,9 @@
       "channel": "Paging Mr. Morrow",
       "publishedAt": "2026-04-24T19:36:07Z",
       "thumbnailUrl": "https://i.ytimg.com/vi/Iniemrv_tvw/mqdefault.jpg",
-      "viewCount": 73245,
+      "viewCount": 73314,
       "url": "https://www.youtube.com/watch?v=Iniemrv_tvw",
-      "summary": "Paging Mr. Morrow covers new food offerings, park updates, and ongoing ride construction at Universal Orlando Resort."
+      "summary": "Paging Mr. Morrow covers the latest food offerings, park updates, and ongoing ride construction at Universal Orlando Resort."
     },
     {
       "videoId": "64i2p5Yiy6Q",
@@ -103,9 +104,29 @@
       "channel": "WrightDownMainStreet",
       "publishedAt": "2026-04-24T16:00:18Z",
       "thumbnailUrl": "https://i.ytimg.com/vi/64i2p5Yiy6Q/mqdefault.jpg",
-      "viewCount": 25389,
+      "viewCount": 25408,
       "url": "https://www.youtube.com/watch?v=64i2p5Yiy6Q",
-      "summary": "WrightDownMainStreet compares two Disney Springs waterfront restaurants to determine which offers the better dining experience."
+      "summary": "WrightDownMainStreet compares two popular Disney Springs waterfront restaurants to determine which offers the better dining experience."
+    },
+    {
+      "videoId": "sYA69Z-ULAU",
+      "title": "🔴Live: Magical Monday at the Magic Kingdom - Walt Disney World Live Stream - 4-27-26",
+      "channel": "ResortTV1",
+      "publishedAt": "2026-04-27T16:12:44Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/sYA69Z-ULAU/mqdefault.jpg",
+      "viewCount": 8323,
+      "url": "https://www.youtube.com/watch?v=sYA69Z-ULAU",
+      "summary": "ResortTV1 live streams from Magic Kingdom on Monday, April 27, showing real-time park conditions and attractions."
+    },
+    {
+      "videoId": "-gv3i7i25-4",
+      "title": "Disneyland's sword in the stone challenge.#disney #disneyland #disneyworld #funny #fyp #foryou",
+      "channel": "Mitchell Pich",
+      "publishedAt": "2026-04-27T09:44:55Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/-gv3i7i25-4/mqdefault.jpg",
+      "viewCount": 5232,
+      "url": "https://www.youtube.com/watch?v=-gv3i7i25-4",
+      "summary": "Mitchell Pich attempts the iconic sword in the stone challenge at Disneyland in this short comedic video."
     },
     {
       "videoId": "WYV1LDNQNek",
@@ -115,17 +136,7 @@
       "thumbnailUrl": "https://i.ytimg.com/vi/WYV1LDNQNek/mqdefault.jpg",
       "viewCount": 5195,
       "url": "https://www.youtube.com/watch?v=WYV1LDNQNek",
-      "summary": "Magical Goth Vibes livestreams a Sunday visit to Disneyland Resort."
-    },
-    {
-      "videoId": "-gv3i7i25-4",
-      "title": "Disneyland's sword in the stone challenge.#disney #disneyland #disneyworld #funny #fyp #foryou",
-      "channel": "Mitchell Pich",
-      "publishedAt": "2026-04-27T09:44:55Z",
-      "thumbnailUrl": "https://i.ytimg.com/vi/-gv3i7i25-4/mqdefault.jpg",
-      "viewCount": 5123,
-      "url": "https://www.youtube.com/watch?v=-gv3i7i25-4",
-      "summary": "Mitchell Pich attempts the sword in the stone challenge at Disneyland."
+      "summary": "Magical Goth Vibes live streams a Sunday visit to Disneyland Resort."
     },
     {
       "videoId": "wSR6abxVyHA",
@@ -133,9 +144,9 @@
       "channel": "Steph Nguyen ",
       "publishedAt": "2026-04-27T09:31:03Z",
       "thumbnailUrl": "https://i.ytimg.com/vi/wSR6abxVyHA/mqdefault.jpg",
-      "viewCount": 3629,
+      "viewCount": 3697,
       "url": "https://www.youtube.com/watch?v=wSR6abxVyHA",
-      "summary": "Steph Nguyen shares a haul of Stitch merchandise from Miniso and Disney parks."
+      "summary": "Steph Nguyen shares a haul of Stitch merchandise finds from Disneyland and Miniso."
     },
     {
       "videoId": "vwuB0ytTYQU",
@@ -143,9 +154,9 @@
       "channel": "鏡の国のリサチャンネル",
       "publishedAt": "2026-04-27T12:15:31Z",
       "thumbnailUrl": "https://i.ytimg.com/vi/vwuB0ytTYQU/mqdefault.jpg",
-      "viewCount": 2399,
+      "viewCount": 2402,
       "url": "https://www.youtube.com/watch?v=vwuB0ytTYQU",
-      "summary": "This channel covers a limited-time Toy Story event coming to Disney parks in summer 2026."
+      "summary": "Japanese Disney channel covers a limited-time Toy Story 5 event at Tokyo Disney Resort parks."
     },
     {
       "videoId": "RfUyE6mDRak",
@@ -155,17 +166,7 @@
       "thumbnailUrl": "https://i.ytimg.com/vi/RfUyE6mDRak/mqdefault.jpg",
       "viewCount": 2081,
       "url": "https://www.youtube.com/watch?v=RfUyE6mDRak",
-      "summary": "Apple tea soooooda captures a Goofy character meet and greet moment at Disney Resort."
-    },
-    {
-      "videoId": "INgvsCAHeOA",
-      "title": "Meet Disney characters at Disney parks #winniethepooh #disneyparks #waltdisneyworld #disneyworld",
-      "channel": "Hilda Travels",
-      "publishedAt": "2026-04-27T11:33:15Z",
-      "thumbnailUrl": "https://i.ytimg.com/vi/INgvsCAHeOA/mqdefault.jpg",
-      "viewCount": 1947,
-      "url": "https://www.youtube.com/watch?v=INgvsCAHeOA",
-      "summary": "Hilda Travels showcases character meet and greets featuring Winnie the Pooh at Walt Disney World."
+      "summary": "Apple tea soooooda captures a character meet and greet moment with Goofy at Tokyo Disneyland."
     },
     {
       "videoId": "KPwTfTzYeyk",
@@ -173,9 +174,9 @@
       "channel": "Super Enthused",
       "publishedAt": "2026-04-27T13:18:45Z",
       "thumbnailUrl": "https://i.ytimg.com/vi/KPwTfTzYeyk/mqdefault.jpg",
-      "viewCount": 1944,
+      "viewCount": 2049,
       "url": "https://www.youtube.com/watch?v=KPwTfTzYeyk",
-      "summary": "Super Enthused provides updates from Hollywood Studios including Muppets Coaster progress and park closures during rainy weather."
+      "summary": "Super Enthused covers Hollywood Studios updates including Muppets Coaster, Sorcerer Mickey appearances, closures, and dining during a rainy day."
     },
     {
       "videoId": "Gq0FTNDQ980",
@@ -183,12 +184,12 @@
       "channel": "WrightDownMainStreet",
       "publishedAt": "2026-04-27T16:00:04Z",
       "thumbnailUrl": "https://i.ytimg.com/vi/Gq0FTNDQ980/mqdefault.jpg",
-      "viewCount": 108,
+      "viewCount": 292,
       "url": "https://www.youtube.com/watch?v=Gq0FTNDQ980",
-      "summary": "WrightDownMainStreet reviews new menu items at Yak & Yeti restaurant in Disney's Animal Kingdom."
+      "summary": "WrightDownMainStreet reviews new menu items at Yak & Yeti Restaurant in Disney's Animal Kingdom."
     }
   ],
-  "updatedAt": "2026-04-27T16:07:51.972Z",
+  "updatedAt": "2026-04-27T16:18:02.695Z",
   "type": "daily-briefing",
   "meta": {
     "aiGenerated": true,
@@ -197,6 +198,6 @@
       "themeparks.wiki destinations",
       "YouTube Data API v3 (top 10 last 48h)"
     ],
-    "generatedAt": "2026-04-27T16:07:51.972Z"
+    "generatedAt": "2026-04-27T16:18:02.695Z"
   }
 }
