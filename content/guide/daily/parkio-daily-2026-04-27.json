@@ -1,25 +1,25 @@
 {
-  "title": "Parkio Daily Briefing for April 27, 2026",
+  "title": "Parkio Daily for April 27, 2026",
   "slug": "parkio-daily-2026-04-27",
   "date": "2026-04-27",
-  "teaser": "Toy Story 5 merchandise launches ahead of June 19 theatrical release. Parks operating normally with standard weekend crowds.",
+  "teaser": "Toy Story 5 merchandise debuts ahead of June theatrical release. Parks operating normally with typical weekend crowds.",
   "rightNow": {
     "headline": "Best rides right now",
     "rides": [
       {
         "name": "Space Mountain",
         "parkSlug": "magic-kingdom",
-        "note": "Early morning, short waits"
+        "note": "Classic thrill with minimal wait"
       },
       {
-        "name": "Flight of Passage",
-        "parkSlug": "animal-kingdom",
-        "note": "Best before 10 AM"
+        "name": "Test Track",
+        "parkSlug": "epcot",
+        "note": "Design your own vehicle"
       },
       {
-        "name": "Rise of the Resistance",
-        "parkSlug": "hollywood-studios",
-        "note": "Rope drop recommended"
+        "name": "Radiator Springs Racers",
+        "parkSlug": "california-adventure",
+        "note": "High-speed desert racing"
       }
     ]
   },
@@ -27,9 +27,8 @@
     "breaking": [],
     "bignews": [
       {
-        "title": "Toy Story 5 Merchandise Collection Launches",
-        "body": "Disney unveiled a wide range of Toy Story 5-themed products ahead of the film's June 19 theatrical release. New merchandise includes interactive talking figures from Mattel, LEGO playsets, collectibles from Funko and POP MART, Crocs Jessie boots launching June 16, and travel accessories from Away available June 9. The collection features classic characters plus newcomers Lilypad and Smarty Pants.",
-        "parkSlug": null,
+        "title": "Toy Story 5 Merchandise Now Available",
+        "body": "Disney Consumer Products has launched a wide range of Toy Story 5-themed merchandise ahead of the film's June 19 theatrical release. New products include interactive figures from Mattel, LEGO playsets, collectibles from Funko, and travel accessories from Away. The collection features classic characters like Woody, Buzz, and Jessie, plus newcomers Lilypad and Smarty Pants.",
         "source": {
           "label": "Disney Parks Blog",
           "url": "https://disneyparksblog.com/products/toy-story-5-products/"
@@ -39,26 +38,23 @@
     "topstories": [
       {
         "title": "Interactive Toy Story Figures Talk to Each Other",
-        "body": "Mattel's new Toy Story 5 Playscale Interactables bring innovative play features to the franchise. Woody, Buzz Lightyear, Jessie, Lilypad, and Forky figures each come with iconic phrases and can recognize and interact with each other when placed together.",
-        "parkSlug": null,
+        "body": "Mattel's new Toy Story 5 Playscale Interactables line brings imaginative play to a new level. The Woody, Buzz Lightyear, Jessie, Lilypad, and Forky figures come with iconic phrases and can recognize and talk to each other, creating dynamic play experiences.",
         "source": {
           "label": "Disney Parks Blog",
           "url": "https://disneyparksblog.com/products/toy-story-5-products/"
         }
       },
       {
-        "title": "LeapFrog Launches Educational Lilypad Toy",
-        "body": "The new Explore & Learn Lilypad from LeapFrog lets kids explore letters, numbers, and problem-solving skills through games. Children can also send text messages to Toy Story characters using emojis and preset messages, blending the film's toy-meet-tech theme with educational play.",
-        "parkSlug": null,
+        "title": "Crocs Releases Jessie-Inspired Boots",
+        "body": "Crocs will launch Toy Story 5 themed boots on June 16. The Jessie Boot features denim and cow print collar, red trim with white lacing, and four Jessie-themed Jibbitz charms. The Western-inspired design captures the character's iconic style.",
         "source": {
           "label": "Disney Parks Blog",
           "url": "https://disneyparksblog.com/products/toy-story-5-products/"
         }
       },
       {
-        "title": "Away Launches Toy Story Travel Collection",
-        "body": "Travel brand Away will release a Toy Story 5 collection on June 9 featuring rolling luggage, backpacks, and bag charms for kids and adults. Designs are inspired by Woody, Buzz Lightyear, Jessie, Aliens, and newcomer Lilypad, available online and in select retail locations.",
-        "parkSlug": null,
+        "title": "Away Travel Collection Features Toy Story Characters",
+        "body": "Away will debut a Toy Story 5 travel collection on June 9 with rolling luggage, backpacks, and bag charms for kids and adults. Designs feature Woody, Buzz Lightyear, Jessie, Aliens, and newcomer Lilypad.",
         "source": {
           "label": "Disney Parks Blog",
           "url": "https://disneyparksblog.com/products/toy-story-5-products/"
@@ -67,18 +63,16 @@
     ],
     "icymi": [
       {
-        "title": "Pandora Jewelry Adds Toy Story Sheriff Star Bracelet",
-        "body": "Pandora's Toy Story collection, launching May 21, includes a Sheriff Star Bracelet featuring blue and brown leather with an embossed sheriff star charm inspired by Woody. The collection will be available on us.pandora.net and in select retail locations.",
-        "parkSlug": null,
+        "title": "LeapFrog Explore & Learn Lilypad Debuts",
+        "body": "LeapFrog's new interactive toy inspired by Toy Story 5's Lilypad character lets kids explore letters, numbers, and problem-solving skills. The device allows children to send text messages to Toy Story characters using emojis and preset messages.",
         "source": {
           "label": "Disney Parks Blog",
           "url": "https://disneyparksblog.com/products/toy-story-5-products/"
         }
       },
       {
-        "title": "Crocs Unveils Jessie-Inspired Western Boots",
-        "body": "Crocs will release Toy Story 5 Jessie boots on June 16 featuring denim and cow print collars, red trim with white lacing, and four Jessie-themed Jibbitz charms. The Western-inspired design brings the character's iconic look to Crocs' signature footwear style.",
-        "parkSlug": null,
+        "title": "Pandora Toy Story Jewelry Arrives May 21",
+        "body": "Pandora will release a Toy Story collection on May 21 featuring a Sheriff Star Bracelet with blue and brown leather and an embossed sheriff star charm inspired by Woody. Available online and in select retail locations.",
         "source": {
           "label": "Disney Parks Blog",
           "url": "https://disneyparksblog.com/products/toy-story-5-products/"
@@ -87,10 +81,8 @@
     ],
     "spotlight": [
       {
-        "title": "Planning Your Next Disney Visit",
-        "body": "All Disney parks are operating on regular schedules this weekend. Spring weather continues to bring comfortable conditions for park-goers. Consider arriving early to maximize your time on popular attractions before midday crowds build.",
-        "parkSlug": null,
-        "ctaLabel": null
+        "title": "Planning Your Park Visit This Week",
+        "body": "With spring weather drawing crowds to the parks, arrive early and use mobile ordering to maximize your day. Check park hours and Lightning Lane availability through the official apps before heading out."
       }
     ]
   },
@@ -101,9 +93,9 @@
       "channel": "Paging Mr. Morrow",
       "publishedAt": "2026-04-24T19:36:07Z",
       "thumbnailUrl": "https://i.ytimg.com/vi/Iniemrv_tvw/mqdefault.jpg",
-      "viewCount": 73085,
+      "viewCount": 73118,
       "url": "https://www.youtube.com/watch?v=Iniemrv_tvw",
-      "summary": "Paging Mr. Morrow covers the latest Universal Orlando updates including new dining options, park changes, and ongoing construction projects."
+      "summary": "Paging Mr. Morrow covers the latest food offerings, park updates, and ongoing ride construction at Universal Orlando Resort."
     },
     {
       "videoId": "64i2p5Yiy6Q",
@@ -111,9 +103,9 @@
       "channel": "WrightDownMainStreet",
       "publishedAt": "2026-04-24T16:00:18Z",
       "thumbnailUrl": "https://i.ytimg.com/vi/64i2p5Yiy6Q/mqdefault.jpg",
-      "viewCount": 25357,
+      "viewCount": 25363,
       "url": "https://www.youtube.com/watch?v=64i2p5Yiy6Q",
-      "summary": "WrightDownMainStreet compares two popular Disney Springs waterfront restaurants to determine which offers the better dining experience."
+      "summary": "WrightDownMainStreet compares two popular Disney Springs restaurants to help diners decide which waterfront venue offers the better experience."
     },
     {
       "videoId": "WYV1LDNQNek",
@@ -123,7 +115,7 @@
       "thumbnailUrl": "https://i.ytimg.com/vi/WYV1LDNQNek/mqdefault.jpg",
       "viewCount": 5195,
       "url": "https://www.youtube.com/watch?v=WYV1LDNQNek",
-      "summary": "Magical Goth Vibes livestreams a Sunday visit to Disneyland Resort, capturing the parks in real-time."
+      "summary": "Magical Goth Vibes livestreams a Sunday visit to Disneyland Resort, sharing real-time park experiences with viewers."
     },
     {
       "videoId": "-gv3i7i25-4",
@@ -131,19 +123,9 @@
       "channel": "Mitchell Pich",
       "publishedAt": "2026-04-27T09:44:55Z",
       "thumbnailUrl": "https://i.ytimg.com/vi/-gv3i7i25-4/mqdefault.jpg",
-      "viewCount": 4644,
+      "viewCount": 4710,
       "url": "https://www.youtube.com/watch?v=-gv3i7i25-4",
-      "summary": "Mitchell Pich attempts the classic sword in the stone challenge at Disneyland in this humorous short video."
-    },
-    {
-      "videoId": "6CEWJtyAWNU",
-      "title": "DISNEYLAND LIVE STREAMING friends fun rides food shows merch music Peace Love Consideration 042626",
-      "channel": "DonnieLand",
-      "publishedAt": "2026-04-27T05:59:00Z",
-      "thumbnailUrl": "https://i.ytimg.com/vi/6CEWJtyAWNU/mqdefault.jpg",
-      "viewCount": 4055,
-      "url": "https://www.youtube.com/watch?v=6CEWJtyAWNU",
-      "summary": "DonnieLand livestreams a full day at Disneyland covering rides, food, shows, and merchandise."
+      "summary": "Mitchell Pich attempts the classic sword in the stone challenge at Disneyland in this lighthearted short video."
     },
     {
       "videoId": "wSR6abxVyHA",
@@ -151,9 +133,9 @@
       "channel": "Steph Nguyen ",
       "publishedAt": "2026-04-27T09:31:03Z",
       "thumbnailUrl": "https://i.ytimg.com/vi/wSR6abxVyHA/mqdefault.jpg",
-      "viewCount": 3378,
+      "viewCount": 3416,
       "url": "https://www.youtube.com/watch?v=wSR6abxVyHA",
-      "summary": "Steph Nguyen shares Stitch-themed merchandise finds from Disney and Miniso in this haul video."
+      "summary": "Steph Nguyen shares a Stitch merchandise haul featuring finds from Disneyland and Miniso stores."
     },
     {
       "videoId": "vwuB0ytTYQU",
@@ -161,9 +143,9 @@
       "channel": "鏡の国のリサチャンネル",
       "publishedAt": "2026-04-27T12:15:31Z",
       "thumbnailUrl": "https://i.ytimg.com/vi/vwuB0ytTYQU/mqdefault.jpg",
-      "viewCount": 2364,
+      "viewCount": 2366,
       "url": "https://www.youtube.com/watch?v=vwuB0ytTYQU",
-      "summary": "Japanese channel covers limited-time Toy Story events coming to Disney parks this summer."
+      "summary": "This channel covers a limited-time Toy Story 5 event coming to Tokyo Disney Resort this summer."
     },
     {
       "videoId": "RfUyE6mDRak",
@@ -173,7 +155,7 @@
       "thumbnailUrl": "https://i.ytimg.com/vi/RfUyE6mDRak/mqdefault.jpg",
       "viewCount": 2081,
       "url": "https://www.youtube.com/watch?v=RfUyE6mDRak",
-      "summary": "Apple tea soooooda captures a character greeting moment with Goofy at Tokyo Disneyland."
+      "summary": "Apple tea soooooda captures a character meet-and-greet moment with Goofy at Tokyo Disneyland."
     },
     {
       "videoId": "INgvsCAHeOA",
@@ -181,22 +163,32 @@
       "channel": "Hilda Travels",
       "publishedAt": "2026-04-27T11:33:15Z",
       "thumbnailUrl": "https://i.ytimg.com/vi/INgvsCAHeOA/mqdefault.jpg",
-      "viewCount": 1917,
+      "viewCount": 1922,
       "url": "https://www.youtube.com/watch?v=INgvsCAHeOA",
-      "summary": "Hilda Travels showcases character meet-and-greet experiences featuring Winnie the Pooh at Walt Disney World."
+      "summary": "Hilda Travels showcases character meet-and-greet experiences at Walt Disney World, featuring Winnie the Pooh."
     },
     {
-      "videoId": "Fj8kMX1FOB4",
-      "title": "The legacy of Disney's Captain Eo continues!",
-      "channel": "Banana Rockit",
-      "publishedAt": "2026-04-27T05:24:06Z",
-      "thumbnailUrl": "https://i.ytimg.com/vi/Fj8kMX1FOB4/mqdefault.jpg",
-      "viewCount": 1687,
-      "url": "https://www.youtube.com/watch?v=Fj8kMX1FOB4",
-      "summary": "Banana Rockit explores the continuing legacy of the classic Captain Eo attraction at Disney parks."
+      "videoId": "KPwTfTzYeyk",
+      "title": "HOLLYWOOD STUDIOS BIG UPDATES & Rain! Muppets Coaster, Sorcerer Mickey, Closures, Lunch & MORE",
+      "channel": "Super Enthused",
+      "publishedAt": "2026-04-27T13:18:45Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/KPwTfTzYeyk/mqdefault.jpg",
+      "viewCount": 1639,
+      "url": "https://www.youtube.com/watch?v=KPwTfTzYeyk",
+      "summary": "Super Enthused provides updates on Hollywood Studios including construction progress and a rainy day visit to the park."
+    },
+    {
+      "videoId": "_N3YNAIWIF8",
+      "title": "#frozen #parade #disney #disneyland #disneylandparis #olaf #paris #france #fyp",
+      "channel": "Cailey's world",
+      "publishedAt": "2026-04-27T06:52:58Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/_N3YNAIWIF8/mqdefault.jpg",
+      "viewCount": 1616,
+      "url": "https://www.youtube.com/watch?v=_N3YNAIWIF8",
+      "summary": "Cailey's world captures the Frozen parade at Disneyland Paris featuring Olaf and other beloved characters."
     }
   ],
-  "updatedAt": "2026-04-27T15:43:53.100Z",
+  "updatedAt": "2026-04-27T15:48:38.579Z",
   "type": "daily-briefing",
   "meta": {
     "aiGenerated": true,
@@ -205,6 +197,6 @@
       "themeparks.wiki destinations",
       "YouTube Data API v3 (top 10 last 48h)"
     ],
-    "generatedAt": "2026-04-27T15:43:53.100Z"
+    "generatedAt": "2026-04-27T15:48:38.579Z"
   }
 }
