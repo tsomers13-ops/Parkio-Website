@@ -1,34 +1,52 @@
 {
-  "title": "Parkio Daily Briefing for April 27, 2026",
+  "title": "Parkio Daily: April 27, 2026",
   "slug": "parkio-daily-2026-04-27",
   "date": "2026-04-27",
-  "teaser": "Toy Story 5 merchandise launches today, plus construction updates at Hollywood Studios and Disneyland. Parks operating normally.",
+  "teaser": "Disney Week of Wishes begins with reimagined Wish Lounge rededication at Magic Kingdom. Plus new Disneyland tech and Yak & Yeti menu updates.",
   "rightNow": {
     "headline": "Best rides right now",
     "rides": [
       {
         "name": "Space Mountain",
         "parkSlug": "magic-kingdom",
-        "note": "Lower waits this afternoon"
+        "note": "Operating normally during Disney Week of Wishes"
       },
       {
-        "name": "Slinky Dog Dash",
+        "name": "Rise of the Resistance",
         "parkSlug": "hollywood-studios",
-        "note": "Operating despite rain earlier"
+        "note": "Regular operation today"
       },
       {
         "name": "Flight of Passage",
         "parkSlug": "animal-kingdom",
-        "note": "Moderate waits today"
+        "note": "Running smoothly"
       }
     ]
   },
   "sections": {
-    "breaking": [],
+    "breaking": [
+      {
+        "title": "Magic Kingdom Rededicates Reimagined Wish Lounge for Make-A-Wish Families",
+        "body": "Walt Disney World rededicated the newly refreshed Wish Lounge at Magic Kingdom today as part of Disney Week of Wishes. Six-year-old Paxton, a Make-A-Wish recipient, joined Disney executives and former wish kid Abigail, now a cast member, for the ceremony. The lounge features new artwork and design details inspired by wish-granting moments from Disney stories.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/community-outreach/celebrating-disney-week-of-wishes-across-disney-experiences/"
+        }
+      }
+    ],
     "bignews": [
       {
-        "title": "Toy Story 5 merchandise collection launches ahead of June film release",
-        "body": "Disney has launched a full collection of Toy Story 5 products today, including interactive talking figures from Mattel, LEGO playsets, Crocs boots inspired by Jessie, and collectibles from Funko and POP MART. The merchandise features classic characters Woody, Buzz, and Jessie, plus new characters Lilypad and Smarty Pants ahead of the film's June 19 theatrical release.",
+        "title": "Disney Week of Wishes Kicks Off Across Disney Experiences",
+        "body": "Disney and Make-A-Wish are celebrating Disney Week of Wishes, honoring the more than 175,000 life-changing wishes granted over 45 years since the first official wish at Disneyland. A Disney wish is now granted every hour of every day. Walt Disney World grants more than 7,000 wishes each year at the resort.",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/community-outreach/celebrating-disney-week-of-wishes-across-disney-experiences/"
+        }
+      },
+      {
+        "title": "Toy Story 5 Merchandise Collection Launches Ahead of June Release",
+        "body": "New Toy Story 5 products are now available featuring Woody, Buzz Lightyear, Jessie and new characters like Lilypad and Smarty Pants. The merchandise showcases the film's 'toy meet tech' theme with new tech features. Toy Story 5 arrives in theaters June 19.",
         "source": {
           "label": "Disney Parks Blog",
           "url": "https://disneyparksblog.com/products/toy-story-5-products/"
@@ -37,40 +55,36 @@
     ],
     "topstories": [
       {
-        "title": "Hollywood Studios construction continues despite rainy weather",
-        "body": "Construction work on the Muppets coaster and other updates at Disney's Hollywood Studios is progressing today, with crews working through intermittent rain. The Muppets-themed attraction is part of ongoing expansion in the park.",
-        "parkSlug": "hollywood-studios"
-      },
-      {
-        "title": "Disneyland testing new entrance technology",
-        "body": "Disneyland has begun testing new technology at park entrances, marking the latest update to guest entry systems. Specific details about the new tech have not yet been disclosed by Disney.",
+        "title": "New Tech Launches at Disneyland Entrance",
+        "body": "Disneyland has introduced new technology at the park entrance, according to recent guest reports. Details about the specific technology improvements are being shared by visitors experiencing the updates firsthand.",
         "parkSlug": "disneyland"
       },
       {
-        "title": "Yak & Yeti introduces new menu items at Animal Kingdom",
-        "body": "The popular Asian-fusion restaurant Yak & Yeti at Disney's Animal Kingdom has rolled out new menu items for guests to try. The updates provide fresh dining options at the Anandapur-themed location.",
+        "title": "Yak & Yeti Debuts New Menu at Animal Kingdom",
+        "body": "Yak & Yeti restaurant at Disney's Animal Kingdom has rolled out a new menu with updated offerings. The Asian-inspired restaurant continues to serve guests in the Asia section of the park.",
         "parkSlug": "animal-kingdom"
+      },
+      {
+        "title": "Former Wish Kid Now Creates Magic as Cast Member",
+        "body": "Abigail, who visited Walt Disney World as a Make-A-Wish recipient over a decade ago, now works on the entertainment team helping families meet their favorite characters. She participates in granting approximately 7,000 wishes annually at the resort, calling it a full-circle moment.",
+        "parkSlug": "magic-kingdom"
       }
     ],
     "icymi": [
       {
-        "title": "Away travel brand launches Toy Story 5 luggage collection",
-        "body": "Away will release a Toy Story 5 travel collection on June 9, featuring rolling luggage, backpacks, and bag charms inspired by Woody, Buzz, Jessie, Aliens, and Lilypad. The collection offers travel essentials for both kids and adults.",
+        "title": "Disney Springs Restaurant Face-Off: Boathouse vs. Paddlefish",
+        "body": "Guests are comparing two signature Disney Springs waterfront dining locations to determine which restaurant offers the better experience. Both The Boathouse and Paddlefish offer unique dining atmospheres and menus.",
         "source": {
-          "label": "Disney Parks Blog",
-          "url": "https://disneyparksblog.com/products/toy-story-5-products/"
+          "label": "WrightDownMainStreet",
+          "url": "https://www.youtube.com/watch?v=64i2p5Yiy6Q"
         }
-      },
-      {
-        "title": "Disney Springs restaurant showdown highlights waterfront dining",
-        "body": "A new comparison review puts The Boathouse and Paddlefish head-to-head at Disney Springs, helping guests choose between the two popular waterfront dining destinations."
       }
     ],
     "spotlight": [
       {
-        "title": "Universal Orlando updates and new dining options roll out",
-        "body": "Universal Orlando Resort continues to add new food offerings and construction updates across its parks. Recent videos show progress on multiple projects and expanded dining choices for guests visiting the resort this spring.",
-        "ctaLabel": "Watch the latest updates"
+        "title": "Experience the Magic of a Disney Wish",
+        "body": "The reimagined Wish Lounge at Magic Kingdom provides Make-A-Wish families with a quiet, welcoming retreat during their visit. The space features thoughtful design details and artwork inspired by wish-granting moments from beloved Disney stories, offering families comfort, hope, and joy throughout their magical day.",
+        "parkSlug": "magic-kingdom"
       }
     ]
   },
@@ -81,9 +95,9 @@
       "channel": "Paging Mr. Morrow",
       "publishedAt": "2026-04-24T19:36:07Z",
       "thumbnailUrl": "https://i.ytimg.com/vi/Iniemrv_tvw/mqdefault.jpg",
-      "viewCount": 73982,
+      "viewCount": 75747,
       "url": "https://www.youtube.com/watch?v=Iniemrv_tvw",
-      "summary": "Paging Mr. Morrow provides a comprehensive guide to Universal Orlando's latest food additions and ongoing ride construction updates across the resort."
+      "summary": "Paging Mr. Morrow covers the latest food offerings, park updates, and ongoing construction projects at Universal Orlando Resort in 2026."
     },
     {
       "videoId": "64i2p5Yiy6Q",
@@ -91,9 +105,9 @@
       "channel": "WrightDownMainStreet",
       "publishedAt": "2026-04-24T16:00:18Z",
       "thumbnailUrl": "https://i.ytimg.com/vi/64i2p5Yiy6Q/mqdefault.jpg",
-      "viewCount": 25568,
+      "viewCount": 25912,
       "url": "https://www.youtube.com/watch?v=64i2p5Yiy6Q",
-      "summary": "WrightDownMainStreet compares two popular Disney Springs waterfront restaurants to help guests decide which dining experience is best."
+      "summary": "WrightDownMainStreet compares two popular Disney Springs waterfront restaurants to help guests decide which dining experience is superior."
     },
     {
       "videoId": "sYA69Z-ULAU",
@@ -101,49 +115,19 @@
       "channel": "ResortTV1",
       "publishedAt": "2026-04-27T16:12:44Z",
       "thumbnailUrl": "https://i.ytimg.com/vi/sYA69Z-ULAU/mqdefault.jpg",
-      "viewCount": 11319,
+      "viewCount": 13288,
       "url": "https://www.youtube.com/watch?v=sYA69Z-ULAU",
-      "summary": "ResortTV1 brings viewers a live stream from Magic Kingdom for a Monday tour of the park."
+      "summary": "ResortTV1 provides a live stream from Magic Kingdom on April 27, showcasing the park atmosphere and attractions."
     },
     {
-      "videoId": "KPwTfTzYeyk",
-      "title": "HOLLYWOOD STUDIOS BIG UPDATES & Rain! Muppets Coaster, Sorcerer Mickey, Closures, Lunch & MORE",
-      "channel": "Super Enthused",
-      "publishedAt": "2026-04-27T13:18:45Z",
-      "thumbnailUrl": "https://i.ytimg.com/vi/KPwTfTzYeyk/mqdefault.jpg",
-      "viewCount": 3546,
-      "url": "https://www.youtube.com/watch?v=KPwTfTzYeyk",
-      "summary": "Super Enthused covers Hollywood Studios updates including Muppets coaster construction and park conditions during rainy weather."
-    },
-    {
-      "videoId": "qOSkF_yIgAE",
-      "title": "Magic Kingdom 4/27/26 #live",
-      "channel": "That Crazy Disney Lady",
-      "publishedAt": "2026-04-27T12:39:28Z",
-      "thumbnailUrl": "https://i.ytimg.com/vi/qOSkF_yIgAE/mqdefault_live.jpg",
-      "viewCount": 3545,
-      "url": "https://www.youtube.com/watch?v=qOSkF_yIgAE",
-      "summary": "That Crazy Disney Lady streams live from Magic Kingdom on April 27, 2026."
-    },
-    {
-      "videoId": "_hjtgSqAYno",
-      "title": "Vintage EPCOT | Nostalgic Disney World Music & Ambience for Relax, Study & Sleep",
-      "channel": "Magical Escapes",
-      "publishedAt": "2026-04-27T11:00:58Z",
-      "thumbnailUrl": "https://i.ytimg.com/vi/_hjtgSqAYno/mqdefault.jpg",
-      "viewCount": 2501,
-      "url": "https://www.youtube.com/watch?v=_hjtgSqAYno",
-      "summary": "Magical Escapes offers nostalgic EPCOT music and ambient sounds for relaxation and background listening."
-    },
-    {
-      "videoId": "vwuB0ytTYQU",
-      "title": "【2026夏】ディズニーで期間限定トイストーリーのイベント開催❤️💙💛#ディズニー #ディズニーランド #トイストーリー #トイストーリー5 #ディズニーシー",
-      "channel": "鏡の国のリサチャンネル",
-      "publishedAt": "2026-04-27T12:15:31Z",
-      "thumbnailUrl": "https://i.ytimg.com/vi/vwuB0ytTYQU/mqdefault.jpg",
-      "viewCount": 2433,
-      "url": "https://www.youtube.com/watch?v=vwuB0ytTYQU",
-      "summary": "This channel covers a limited-time Toy Story event happening at Tokyo Disney parks during summer 2026."
+      "videoId": "Cr9DkWRa2jE",
+      "title": "🔴 LIVE: BoardWalk to EPCOT Morning Loop + Hollywood Studios Area | Day 237",
+      "channel": "The Disney With Sean Show",
+      "publishedAt": "2026-04-27T17:02:13Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Cr9DkWRa2jE/mqdefault.jpg",
+      "viewCount": 10049,
+      "url": "https://www.youtube.com/watch?v=Cr9DkWRa2jE",
+      "summary": "The Disney With Sean Show live streams a morning walk from BoardWalk to EPCOT and around the Hollywood Studios area."
     },
     {
       "videoId": "_AAUirUAR6E",
@@ -151,19 +135,9 @@
       "channel": "FreshBaked!",
       "publishedAt": "2026-04-27T17:00:47Z",
       "thumbnailUrl": "https://i.ytimg.com/vi/_AAUirUAR6E/mqdefault.jpg",
-      "viewCount": 2002,
+      "viewCount": 8693,
       "url": "https://www.youtube.com/watch?v=_AAUirUAR6E",
-      "summary": "FreshBaked! reports on new technology being introduced at Disneyland entrance areas alongside construction updates."
-    },
-    {
-      "videoId": "INgvsCAHeOA",
-      "title": "Meet Disney characters at Disney parks #winniethepooh #disneyparks #waltdisneyworld #disneyworld",
-      "channel": "Hilda Travels",
-      "publishedAt": "2026-04-27T11:33:15Z",
-      "thumbnailUrl": "https://i.ytimg.com/vi/INgvsCAHeOA/mqdefault.jpg",
-      "viewCount": 1955,
-      "url": "https://www.youtube.com/watch?v=INgvsCAHeOA",
-      "summary": "Hilda Travels showcases character meet-and-greet experiences at Disney parks, featuring Winnie the Pooh."
+      "summary": "FreshBaked! reports on new technology being implemented at the Disneyland entrance and shares construction updates from around the resort."
     },
     {
       "videoId": "Gq0FTNDQ980",
@@ -171,12 +145,52 @@
       "channel": "WrightDownMainStreet",
       "publishedAt": "2026-04-27T16:00:04Z",
       "thumbnailUrl": "https://i.ytimg.com/vi/Gq0FTNDQ980/mqdefault.jpg",
-      "viewCount": 1742,
+      "viewCount": 5361,
       "url": "https://www.youtube.com/watch?v=Gq0FTNDQ980",
-      "summary": "WrightDownMainStreet reviews the new menu items now available at Yak & Yeti restaurant in Animal Kingdom."
+      "summary": "WrightDownMainStreet reviews the new menu offerings at Yak & Yeti restaurant in Disney's Animal Kingdom."
+    },
+    {
+      "videoId": "Os5OkzgY0CA",
+      "title": "NEW MERCHANDISE #disney #reels #disneyland #shorts #tiktok #grwm #foryou #winnie #fyp #parati",
+      "channel": "MJDANSPARIS CHANNEL",
+      "publishedAt": "2026-04-27T15:35:11Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Os5OkzgY0CA/mqdefault.jpg",
+      "viewCount": 2081,
+      "url": "https://www.youtube.com/watch?v=Os5OkzgY0CA",
+      "summary": "MJDANSPARIS CHANNEL showcases new merchandise available at Disneyland in a short-form video."
+    },
+    {
+      "videoId": "jDHMCrFJZK8",
+      "title": "3 WEKEN Star Wars in Disneyland Parijs! 🤯 #starwars #disney #shorts",
+      "channel": "KTW Magazine",
+      "publishedAt": "2026-04-27T15:01:23Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/jDHMCrFJZK8/mqdefault.jpg",
+      "viewCount": 1665,
+      "url": "https://www.youtube.com/watch?v=jDHMCrFJZK8",
+      "summary": "KTW Magazine highlights a three-week Star Wars event or experience at Disneyland Paris."
+    },
+    {
+      "videoId": "1JVq5jqKYRk",
+      "title": "Live! EPCOT at Walt Disney World - VibeStream LiveStream",
+      "channel": "Rix Queue",
+      "publishedAt": "2026-04-27T18:25:43Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/1JVq5jqKYRk/mqdefault.jpg",
+      "viewCount": 1632,
+      "url": "https://www.youtube.com/watch?v=1JVq5jqKYRk",
+      "summary": "Rix Queue streams live from EPCOT at Walt Disney World, capturing the park's atmosphere and guest experience."
+    },
+    {
+      "videoId": "0oI4BjJu94w",
+      "title": "what I ate at Disneyland #disneyland #disneyworld #disneyfood #disney #food #whatieatinaday #wieiad",
+      "channel": "Jade Connolly",
+      "publishedAt": "2026-04-27T15:30:13Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/0oI4BjJu94w/mqdefault.jpg",
+      "viewCount": 1449,
+      "url": "https://www.youtube.com/watch?v=0oI4BjJu94w",
+      "summary": "Jade Connolly shares a day's worth of food consumed at Disneyland in a what-I-ate-in-a-day style video."
     }
   ],
-  "updatedAt": "2026-04-27T17:51:39.087Z",
+  "updatedAt": "2026-04-27T20:57:53.102Z",
   "type": "daily-briefing",
   "meta": {
     "aiGenerated": true,
@@ -185,6 +199,6 @@
       "themeparks.wiki destinations",
       "YouTube Data API v3 (top 10 last 48h)"
     ],
-    "generatedAt": "2026-04-27T17:51:39.088Z"
+    "generatedAt": "2026-04-27T20:57:53.102Z"
   }
 }
