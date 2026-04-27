@@ -150,14 +150,130 @@
         "options": {}
       },
       "id": "9iiiiiii-iiii-4iii-iiii-iiiiiiiiiiii",
-      "name": "YouTube — Search recent (48h)",
+      "name": "YouTube — Search broad (48h)",
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
         860,
         300
       ],
-      "notes": "YouTube Data API v3 — search videos uploaded in the last 48h. Requires a Generic Query Auth credential named 'YouTube API Key' with name=key, value=<your YouTube API key>."
+      "notes": "YouTube Data API v3 — broad Disney/parks search across the last 48h. Requires a Generic Query Auth credential named 'YouTube API Key' with name=key, value=<your YouTube API key>."
+    },
+    {
+      "parameters": {
+        "method": "GET",
+        "url": "https://www.googleapis.com/youtube/v3/search",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpQueryAuth",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "part",
+              "value": "snippet"
+            },
+            {
+              "name": "type",
+              "value": "video"
+            },
+            {
+              "name": "channelId",
+              "value": "UCscn2aSpMrS2U_mf7OF-UwQ"
+            },
+            {
+              "name": "publishedAfter",
+              "value": "={{ new Date(Date.now() - 7*24*60*60*1000).toISOString() }}"
+            },
+            {
+              "name": "maxResults",
+              "value": "5"
+            },
+            {
+              "name": "order",
+              "value": "date"
+            },
+            {
+              "name": "videoEmbeddable",
+              "value": "true"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "fooooooo-oooo-4ooo-oooo-oooooooooooo",
+      "name": "YouTube — Featured: PagingMrMorrow",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1080,
+        300
+      ],
+      "notes": "Featured creator @PagingMrMorrow (channelId UCscn2aSpMrS2U_mf7OF-UwQ). Pulls the 5 most recent uploads from the last 7 days. Most recent ALWAYS gets a slot in the daily Top 10."
+    },
+    {
+      "parameters": {
+        "method": "GET",
+        "url": "https://www.googleapis.com/youtube/v3/search",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpQueryAuth",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "part",
+              "value": "snippet"
+            },
+            {
+              "name": "type",
+              "value": "video"
+            },
+            {
+              "name": "channelId",
+              "value": "UCCE7kTsZ1icykc8hazTRNjg"
+            },
+            {
+              "name": "publishedAfter",
+              "value": "={{ new Date(Date.now() - 7*24*60*60*1000).toISOString() }}"
+            },
+            {
+              "name": "maxResults",
+              "value": "5"
+            },
+            {
+              "name": "order",
+              "value": "date"
+            },
+            {
+              "name": "videoEmbeddable",
+              "value": "true"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "gpppppppp-pppp-4ppp-pppp-pppppppppppp",
+      "name": "YouTube — Featured: Wright Down Main Street",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1300,
+        300
+      ],
+      "notes": "Featured creator @wrightdownmainstreet (channelId UCCE7kTsZ1icykc8hazTRNjg). Pulls the 5 most recent uploads from the last 7 days. Most recent ALWAYS gets a slot in the daily Top 10."
+    },
+    {
+      "parameters": {
+        "jsCode": "// Merge video IDs from the broad 48h search + 2 featured-channel searches.\n// Output a comma-separated ID list for videos.list and a featured-meta map\n// the rank node can use to guarantee inclusion.\n\nconst broad   = $('YouTube — Search broad (48h)').first()?.json?.items || [];\nconst morrow  = $('YouTube — Featured: PagingMrMorrow').first()?.json?.items || [];\nconst wright  = $('YouTube — Featured: Wright Down Main Street').first()?.json?.items || [];\n\nconst tagged = [];\nfor (const v of broad) {\n  if (v?.id?.videoId) tagged.push({ id: v.id.videoId, source: 'broad' });\n}\nfor (const v of morrow) {\n  if (v?.id?.videoId) tagged.push({\n    id: v.id.videoId, source: 'featured',\n    channelHandle: 'PagingMrMorrow'\n  });\n}\nfor (const v of wright) {\n  if (v?.id?.videoId) tagged.push({\n    id: v.id.videoId, source: 'featured',\n    channelHandle: 'wrightdownmainstreet'\n  });\n}\n\n// Dedupe by ID — prefer the 'featured' tag if a video appears in both sets.\nconst map = new Map();\nfor (const t of tagged) {\n  const existing = map.get(t.id);\n  if (!existing || existing.source !== 'featured') map.set(t.id, t);\n}\n\nconst ids = [...map.keys()];\nconst featuredMeta = {};\nfor (const [id, t] of map) {\n  if (t.source === 'featured') featuredMeta[id] = { channelHandle: t.channelHandle };\n}\n\nreturn [{\n  json: {\n    ids: ids.join(','),\n    featuredMeta,\n    counts: {\n      broad: broad.length,\n      morrow: morrow.length,\n      wright: wright.length,\n      unique: ids.length\n    }\n  }\n}];\n"
+      },
+      "id": "hqqqqqqq-qqqq-4qqq-qqqq-qqqqqqqqqqqq",
+      "name": "Merge YouTube IDs",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1520,
+        300
+      ],
+      "notes": "Combines IDs from the broad search + 2 featured-channel searches. Tags featured-channel videos so the rank node can guarantee inclusion. Output: { ids: 'id1,id2,...', featuredMeta: { videoId: { channelHandle } } }."
     },
     {
       "parameters": {
@@ -174,7 +290,7 @@
             },
             {
               "name": "id",
-              "value": "={{ ($input.first().json.items || []).map(i => i.id && i.id.videoId).filter(Boolean).join(',') }}"
+              "value": "={{ $json.ids }}"
             }
           ]
         },
@@ -185,24 +301,24 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        1080,
+        1740,
         300
       ],
-      "notes": "Fetches snippet + statistics (incl. viewCount) for the search-result IDs. Reuses the same 'YouTube API Key' credential."
+      "notes": "Fetches snippet + statistics for the merged ID list (broad + featured). Reuses the same 'YouTube API Key' credential."
     },
     {
       "parameters": {
-        "jsCode": "// Rank YouTube videos from the last 48h by view count, take top 10.\n// Input: YouTube videos.list response (snippet + statistics for up to 50 IDs).\n\nconst items = $input.first().json.items || [];\n\nconst ranked = items\n  .filter(v => v && v.id && v.statistics && v.statistics.viewCount)\n  .map(v => {\n    const thumbs = v.snippet && v.snippet.thumbnails ? v.snippet.thumbnails : {};\n    const thumb = thumbs.medium || thumbs.high || thumbs.default || {};\n    return {\n      videoId: v.id,\n      title: v.snippet ? v.snippet.title : '',\n      channel: v.snippet ? v.snippet.channelTitle : '',\n      publishedAt: v.snippet ? v.snippet.publishedAt : '',\n      thumbnailUrl: thumb.url || '',\n      viewCount: parseInt(v.statistics.viewCount, 10) || 0,\n      url: `https://www.youtube.com/watch?v=${v.id}`\n    };\n  })\n  // Defence-in-depth: drop anything with no title or channel\n  .filter(v => v.title && v.channel)\n  .sort((a, b) => b.viewCount - a.viewCount)\n  .slice(0, 10);\n\nreturn [{ json: { videos: ranked } }];\n"
+        "jsCode": "// Rank into the daily Top 10 with two guardrails:\n//   1. The most-recent recent upload from each featured channel ALWAYS appears\n//      (PagingMrMorrow + wrightdownmainstreet — last 7 days).\n//   2. Remaining slots fill by view count from the broad 48h search.\n//   3. Final list is sorted by view count for display.\n\nconst items = $input.first().json.items || [];\nconst featuredMeta = $('Merge YouTube IDs').first().json.featuredMeta || {};\n\nconst all = items\n  .filter(v => v && v.id && v.statistics && v.statistics.viewCount)\n  .map(v => {\n    const thumbs = v.snippet?.thumbnails || {};\n    const thumb = thumbs.medium || thumbs.high || thumbs.default || {};\n    const fm = featuredMeta[v.id];\n    return {\n      videoId: v.id,\n      title: v.snippet?.title || '',\n      channel: v.snippet?.channelTitle || '',\n      channelId: v.snippet?.channelId || '',\n      publishedAt: v.snippet?.publishedAt || '',\n      thumbnailUrl: thumb.url || '',\n      viewCount: parseInt(v.statistics.viewCount, 10) || 0,\n      url: `https://www.youtube.com/watch?v=${v.id}`,\n      featuredHandle: fm?.channelHandle || null\n    };\n  })\n  .filter(v => v.title && v.channel);\n\n// Reserve one slot per featured channel — pick the most-recent upload.\nconst FEATURED_HANDLES = ['PagingMrMorrow', 'wrightdownmainstreet'];\nconst featuredPicks = [];\nfor (const handle of FEATURED_HANDLES) {\n  const fromChannel = all\n    .filter(v => v.featuredHandle === handle)\n    .sort((a, b) => (a.publishedAt < b.publishedAt ? 1 : -1));\n  if (fromChannel.length > 0) featuredPicks.push(fromChannel[0]);\n}\n\n// Fill remaining slots with broad results, by view count.\nconst featuredIds = new Set(featuredPicks.map(v => v.videoId));\nconst fillers = all\n  .filter(v => !featuredIds.has(v.videoId))\n  .sort((a, b) => b.viewCount - a.viewCount);\n\nconst slotsLeft = Math.max(0, 10 - featuredPicks.length);\nconst combined = [...featuredPicks, ...fillers.slice(0, slotsLeft)];\n\n// Display order: by view count desc.\ncombined.sort((a, b) => b.viewCount - a.viewCount);\n\n// Strip the featuredHandle helper field — keep the schema clean for Claude.\nconst ranked = combined.slice(0, 10).map(({ featuredHandle, channelId, ...keep }) => keep);\n\nreturn [{ json: { videos: ranked } }];\n"
       },
       "id": "bkkkkkkk-kkkk-4kkk-kkkk-kkkkkkkkkkkk",
       "name": "Rank Top 10 by views",
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        1300,
+        1960,
         300
       ],
-      "notes": "Sorts the YouTube results by viewCount and keeps the top 10. Output: { videos: [...] }."
+      "notes": "Featured-channel videos always get a reserved slot (most recent upload from each). Remaining slots filled by view count from the broad search. Final display order is by view count."
     },
     {
       "parameters": {
@@ -213,7 +329,7 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        1520,
+        2180,
         300
       ],
       "notes": "Bundles RSS + themeparks.wiki + the top-10 video ranking into a single object the LLM can read. Computes today's slug + display date in Eastern Time."
@@ -246,7 +362,7 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        1740,
+        2400,
         300
       ],
       "notes": "Calls Claude (claude-sonnet-4-5) with the research context. Hardcoded guardrails forbid invented breaking news; videos must be copied from the upstream ranking."
@@ -260,7 +376,7 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        1960,
+        2620,
         300
       ],
       "notes": "Parses the LLM output, validates the shape against lib/guideDaily.ts, attaches AI metadata, and produces the file payload for GitHub. Throws (stops the workflow) on any schema violation — skip a day rather than ship a broken post."
@@ -294,7 +410,7 @@
       "type": "n8n-nodes-base.github",
       "typeVersion": 1.1,
       "position": [
-        2180,
+        2840,
         300
       ],
       "notes": "Commits the JSON to content/guide/daily/{slug}.json on main. Cloudflare Pages auto-rebuilds on push — post is live within ~60–90s."
@@ -309,7 +425,7 @@
       "type": "n8n-nodes-base.wait",
       "typeVersion": 1.1,
       "position": [
-        2400,
+        3060,
         300
       ],
       "notes": "Wait for Cloudflare Pages to rebuild. Beehiiv teaser must link to a live URL."
@@ -323,7 +439,7 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        2620,
+        3280,
         300
       ],
       "notes": "Constructs the Beehiiv teaser-only payload: 1–2 sentence teaser + 3 bullets (breaking → bignews → topstories) + CTA link. NO YouTube content, NO section bodies. The website is the canonical copy."
@@ -343,7 +459,7 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        2840,
+        3500,
         300
       ],
       "disabled": true,
@@ -377,14 +493,47 @@
       "main": [
         [
           {
-            "node": "YouTube — Search recent (48h)",
+            "node": "YouTube — Search broad (48h)",
             "type": "main",
             "index": 0
           }
         ]
       ]
     },
-    "YouTube — Search recent (48h)": {
+    "YouTube — Search broad (48h)": {
+      "main": [
+        [
+          {
+            "node": "YouTube — Featured: PagingMrMorrow",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "YouTube — Featured: PagingMrMorrow": {
+      "main": [
+        [
+          {
+            "node": "YouTube — Featured: Wright Down Main Street",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "YouTube — Featured: Wright Down Main Street": {
+      "main": [
+        [
+          {
+            "node": "Merge YouTube IDs",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Merge YouTube IDs": {
       "main": [
         [
           {
