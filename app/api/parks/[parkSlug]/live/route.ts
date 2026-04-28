@@ -3,14 +3,20 @@
  * Returns live wait times + status for every supported attraction in the park.
  *
  * Strategy:
- *   - Fetch fresh live data from themeparks.wiki (with 5-min cache).
+ *   - Fetch fresh live data from themeparks.wiki (with 2-min cache).
  *   - Normalize against Parkio's static attraction list (stable slugs).
  *   - On upstream failure, return the static list with status UNKNOWN
  *     and `live: false` so clients can decide how to render.
+ *   - On a CACHE MISS only (i.e. fresh upstream fetch), schedule a
+ *     non-blocking write to D1 with one row per attraction. See
+ *     `lib/historySnapshots.ts` and `docs/D1-SETUP.md`. The write fires
+ *     via `ctx.waitUntil(...)` so it never delays the user's response,
+ *     and it fails soft (no D1 binding → silent no-op).
  */
 
 import { CACHE_TTL, getOrFetch } from "@/lib/cache";
 import { getParkConfig } from "@/lib/disneyParkConfig";
+import { persistLiveSnapshots } from "@/lib/historySnapshots";
 import { normalizeLive } from "@/lib/parkioNormalizer";
 import {
   getEntityLive,
@@ -31,12 +37,20 @@ export async function GET(_req: Request, { params }: Params) {
     return notFound(`Unknown park slug: ${params.parkSlug}`);
   }
 
+  // Track whether this request actually pulled fresh upstream data.
+  // The closure inside `getOrFetch` only runs on a cache miss — we flip
+  // the flag there so we know to schedule a snapshot write afterward.
+  let isFreshFromUpstream = false;
+
   let live: ThemeparksLiveResponse | null = null;
   try {
     live = await getOrFetch(
       `live:${cfg.externalId}`,
       CACHE_TTL.live,
-      () => getEntityLive(cfg.externalId),
+      async () => {
+        isFreshFromUpstream = true;
+        return await getEntityLive(cfg.externalId);
+      },
     );
   } catch {
     // Upstream unavailable — fall through to fallback.
@@ -46,5 +60,47 @@ export async function GET(_req: Request, { params }: Params) {
   const payload = normalizeLive(cfg.slug, live);
   if (!payload) return notFound(`Unknown park slug: ${params.parkSlug}`);
 
+  // History collection — only when we actually pulled fresh data, never
+  // on cache hits. Wrapped in waitUntil so the response returns now and
+  // the DB write completes in the background. Errors are swallowed by
+  // persistLiveSnapshots — the API contract is unaffected by D1 state.
+  if (isFreshFromUpstream && payload.live) {
+    await scheduleSnapshotWrite(payload);
+  }
+
   return jsonOk(payload, CACHE_TTL.live, CACHE_TTL.live * 4);
+}
+
+/**
+ * Hook the snapshot write into the Cloudflare Pages request lifecycle
+ * via `ctx.waitUntil`. Pulled into its own function so the import of
+ * `getRequestContext` is isolated — the rest of the route works in
+ * any Next runtime (local dev / Vercel / etc.) even when D1 is absent.
+ *
+ * Three failure modes, all silent:
+ *   1. Not running on Cloudflare Pages (e.g., local `next dev`) →
+ *      `getRequestContext` throws or returns no ctx → we skip.
+ *   2. D1 binding not configured on the project → `env.DB` undefined
+ *      → persistLiveSnapshots returns immediately.
+ *   3. D1 schema not yet applied / write rejected → caught inside
+ *      persistLiveSnapshots, logged as warn, response unaffected.
+ */
+async function scheduleSnapshotWrite(
+  payload: ReturnType<typeof normalizeLive>,
+): Promise<void> {
+  if (!payload) return;
+  try {
+    // The package is provided at runtime by Cloudflare Pages but isn't
+    // a hard dependency of this codebase — the import is resolved
+    // dynamically so type-check + local builds don't require it.
+    const mod = (await import(
+      /* webpackIgnore: true */ "@cloudflare/next-on-pages" as string
+    )) as { getRequestContext?: () => { env: unknown; ctx: { waitUntil: (p: Promise<unknown>) => void } } };
+    if (!mod.getRequestContext) return;
+    const { env, ctx } = mod.getRequestContext();
+    ctx.waitUntil(persistLiveSnapshots(env as { DB?: unknown }, payload));
+  } catch {
+    // Either we're not on Cloudflare Pages, or @cloudflare/next-on-pages
+    // is not available in this environment. Silently skip.
+  }
 }
