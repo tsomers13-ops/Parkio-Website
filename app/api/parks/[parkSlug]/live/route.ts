@@ -3,7 +3,9 @@
  * Returns live wait times + status for every supported attraction in the park.
  *
  * Strategy:
- *   - Fetch fresh live data from themeparks.wiki (with 2-min cache).
+ *   - Fetch fresh live data from themeparks.wiki (with 5-min cache —
+ *     see lib/cache.ts for the rationale: balances user-visible
+ *     staleness, upstream protection, and the D1 write-budget).
  *   - Normalize against Parkio's static attraction list (stable slugs).
  *   - On upstream failure, return the static list with status UNKNOWN
  *     and `live: false` so clients can decide how to render.
@@ -25,7 +27,7 @@ import {
 import { jsonOk, notFound } from "../../../_lib/respond";
 
 export const runtime = "edge";
-export const revalidate = 120; // 2 minutes
+export const revalidate = 300; // 5 minutes — keep in sync with CACHE_TTL.live
 
 interface Params {
   params: { parkSlug: string };

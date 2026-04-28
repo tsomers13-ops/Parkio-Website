@@ -129,35 +129,43 @@ If `COUNT(*)` is 0 even after several minutes:
 ### Volume vs. D1 free-tier limits
 
 The free D1 tier allows **100,000 writes/day** and **5 GB storage**.
-Parkio's write rate depends on the live cache TTL (`CACHE_TTL.live = 120s`)
-and the number of distinct parks accessed:
+Parkio's write rate depends on the live cache TTL
+(`CACHE_TTL.live = 300s` — 5 minutes) and the number of distinct parks
+that get hit:
 
 ```
-  6 parks × 720 cache misses/day × ~30 attractions per park
-  ≈ 130,000 row inserts/day
+  6 parks × 288 cache misses/day × ~30 attractions per park
+  ≈ 52,000 row inserts/day
 ```
 
-That's slightly over the free tier. Three mitigation options when you
-hit the limit:
+That's roughly **half** the free-tier write budget, leaving headroom
+for traffic spikes, multi-region cache warmup, and growth. The 5-min
+TTL was chosen specifically to fit inside this budget — see
+`lib/cache.ts` for the rationale.
 
-1. **Increase the cache TTL** (e.g., 120s → 300s) — cuts writes ~60% but
-   slightly stales the user-facing data.
+If write volume eventually outgrows the free tier (more parks, more
+backend triggers, etc.), three escape hatches in order of impact:
+
+1. **Raise the cache TTL further** — moving from 5 → 10 min halves
+   writes again. User-visible staleness still acceptable for waits
+   that genuinely shift on a 5–15 min cadence.
 2. **Debounce identical samples** — skip the write if the previous
-   snapshot for the same `(park_slug, attraction_slug)` had the same
-   `wait_minutes` and `status` AND is less than N minutes old.
-   Most rides don't change every cycle. Often halves volume.
+   snapshot for the same `(park_slug, attraction_slug)` had identical
+   `wait_minutes` and `status` AND is less than N minutes old. Most
+   rides don't change every cycle. Typically halves volume again.
 3. **Upgrade to D1 paid** — $0.001 per 1k writes after the 100k/day
    free quota. Even at 200k writes/day that's ~$3/month.
 
-We deliberately did NOT add debouncing in v1: simpler is better while
-the system is shaking out, and the actual write rate depends on real
-traffic, not estimates.
+We deliberately have NOT added debouncing yet — simpler is better
+while the system is shaking out, and the 5-min TTL alone keeps us
+well under the cap.
 
 ### Storage growth
 
-At ~150K rows/day × ~80 bytes per row = **12 MB/day → ~4.4 GB/year**.
-You'll hit the 5 GB free-tier storage cap in roughly 12 months at the
-current shape. Mitigation:
+At ~52K rows/day × ~80 bytes per row = **~4 MB/day → ~1.5 GB/year**.
+That fits comfortably inside D1's 5 GB free-tier storage cap with
+~3 years of headroom even with no cleanup. Mitigation when the day
+comes:
 
 - Add a TTL job (cron Worker or n8n) that deletes snapshots older
   than 90/180/365 days.
