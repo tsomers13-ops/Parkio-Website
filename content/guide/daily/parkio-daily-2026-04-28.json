@@ -1,25 +1,25 @@
 {
-  "title": "Parkio Daily Briefing for April 28, 2026",
+  "title": "Parkio Daily for April 28, 2026",
   "slug": "parkio-daily-2026-04-28",
   "date": "2026-04-28",
-  "teaser": "Walt Disney World rededicates the reimagined Wish Lounge during Disney Week of Wishes. Toy Story 5 products arrive ahead of June release.",
+  "teaser": "Magic Kingdom's Wish Lounge reopens with fresh updates, plus Halloween party hints and construction walls go up around Big Thunder.",
   "rightNow": {
     "headline": "Best rides right now",
     "rides": [
       {
         "name": "Space Mountain",
         "parkSlug": "magic-kingdom",
-        "note": "Short waits this morning"
+        "note": "Big Thunder still closed, drawing crowds elsewhere"
       },
       {
         "name": "Test Track",
         "parkSlug": "epcot",
-        "note": "Operating normally today"
+        "note": "Moderate waits early morning"
       },
       {
         "name": "Flight of Passage",
         "parkSlug": "animal-kingdom",
-        "note": "Moderate crowds expected"
+        "note": "Best window before 10 a.m."
       }
     ]
   },
@@ -27,58 +27,80 @@
     "breaking": [],
     "bignews": [
       {
-        "title": "Walt Disney World rededicates reimagined Wish Lounge at Magic Kingdom",
-        "body": "The newly refreshed Wish Lounge reopened during Disney Week of Wishes with updated artwork and design inspired by wish-granting moments from Disney stories. The space serves as a retreat for Make-A-Wish families visiting the park. Six-year-old wish kid Paxton joined Disney executives and former wish recipient Abigail for the rededication ceremony.",
+        "title": "Magic Kingdom's Wish Lounge Reopens with New Design",
+        "body": "Walt Disney World rededicated the refreshed Wish Lounge at Magic Kingdom yesterday, a private space for Make-A-Wish families featuring new artwork inspired by Disney wish-granting stories. The lounge now offers updated amenities and a welcoming retreat during park visits.",
         "parkSlug": "magic-kingdom",
         "source": {
           "label": "Disney Parks Blog",
           "url": "https://disneyparksblog.com/community-outreach/celebrating-disney-week-of-wishes-across-disney-experiences/"
-        }
+        },
+        "parkioInsight": "This lounge is not accessible to regular guests, but you may see heightened activity near the entrance during wish family visits."
       },
       {
-        "title": "Toy Story 5 merchandise now available ahead of June 19 premiere",
-        "body": "New products featuring Woody, Buzz, Jessie, and newcomers like Lilypad and Smarty Pants are now on shelves. The merchandise line includes toys with tech features, collectibles, accessories, and books themed to the film's \"toy meet tech\" concept. The movie opens in theaters June 19.",
+        "title": "Halloween Party Start Date Teased for 2026",
+        "body": "Disney World hinted at the earliest-ever start date for Mickey's Not So Scary Halloween Party this year, with full details expected soon. The move suggests the seasonal event could begin before typical back-to-school schedules.",
+        "parkSlug": "magic-kingdom",
         "source": {
-          "label": "Disney Parks Blog",
-          "url": "https://disneyparksblog.com/products/toy-story-5-products/"
-        }
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-world-teases-earliest-ever-start-date-of-2026-mickeys-not-so-scary-halloween-party/"
+        },
+        "parkioInsight": "If you're planning a summer trip, watch for party night closures that will affect regular park hours starting earlier than usual."
       }
     ],
     "topstories": [
       {
-        "title": "Disney Week of Wishes celebrates Make-A-Wish partnership",
-        "body": "Disney Experiences locations worldwide are celebrating the partnership with Make-A-Wish throughout this week. Since the first official wish 45 years ago at Disneyland, Disney has granted more than 175,000 wishes globally. A Disney wish is now granted every hour of every day.",
-        "source": {
-          "label": "Disney Parks Blog",
-          "url": "https://disneyparksblog.com/community-outreach/celebrating-disney-week-of-wishes-across-disney-experiences/"
-        }
-      },
-      {
-        "title": "Former wish kid now grants wishes as Walt Disney World cast member",
-        "body": "Cast member Abigail, who visited the original Wish Lounge during her own Make-A-Wish trip over a decade ago, now works on the entertainment team helping families meet characters. She participated in the lounge rededication ceremony alongside wish kid Paxton and Disney leadership.",
+        "title": "Tall Walls Now Block Big Thunder Mountain Views",
+        "body": "Construction barriers around Big Thunder Mountain Railroad have gone up unusually high to block guest sightlines into the Villains Land and Cars expansion zones. The coaster remains closed through its 16-month refurbishment.",
         "parkSlug": "magic-kingdom",
         "source": {
-          "label": "Disney Parks Blog",
-          "url": "https://disneyparksblog.com/community-outreach/celebrating-disney-week-of-wishes-across-disney-experiences/"
-        }
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/new-photos-reveal-big-thunder-mountain-railroads-really-tall-walls-to-conceal-construction/"
+        },
+        "parkioInsight": "These walls reduce photo ops in Frontierland, so plan your shots near Splash Mountain or the riverboat instead."
+      },
+      {
+        "title": "Disney Springs Launches Free Fashion Emergency Vending Machine",
+        "body": "A complimentary vending machine at AMC DINE-in Disney Springs 24 is dispensing makeup, hair products, and accessories through May 3 as part of a promotional tie-in with The Devil Wears Prada 2. Items are free, no purchase required.",
+        "parkSlug": null,
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/04/disney-springs-is-giving-away-free-stuff-from-a-vending-machine-right-now-el1/"
+        },
+        "parkioInsight": "Stop by the AMC lobby before 8 p.m. if you need a touch-up before dinner or photos around the lake."
+      },
+      {
+        "title": "Rock 'n' Roller Coaster Changes Spark Guest Reaction",
+        "body": "Hollywood Studios guests are noticing significant updates to Rock 'n' Roller Coaster amid ongoing construction work in the area. The attraction remains operational while adjacent zones are under development.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "AllEars.Net",
+          "url": "https://allears.net/2026/04/27/this-huge-hollywood-studios-ride-change-stopped-us-in-our-tracks/"
+        },
+        "parkioInsight": "Expect construction noise and rerouted pathways near Sunset Boulevard throughout the day."
       }
     ],
     "icymi": [
       {
-        "title": "Walt Disney World grants more than 7,000 wishes annually",
-        "body": "The resort welcomes thousands of Make-A-Wish families each year to experience character meet-and-greets, attractions, and special moments. The Wish Lounge provides a quiet space for families to rest during their visit.",
-        "parkSlug": "magic-kingdom",
+        "title": "Guardians of the Galaxy Queue Protocols Now Semi-Permanent",
+        "body": "Epcot has settled on a consistent approach to managing pre-show and queue shenanigans at Guardians of the Galaxy: Cosmic Rewind after months of testing stop-gap solutions. The new protocol appears to be the long-term fix.",
+        "parkSlug": "epcot",
         "source": {
-          "label": "Disney Parks Blog",
-          "url": "https://disneyparksblog.com/community-outreach/celebrating-disney-week-of-wishes-across-disney-experiences/"
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/guardians-of-the-galaxy-cosmic-rewind-queue-pre-show-shenanigans-status-report/"
         }
       }
     ],
     "spotlight": [
       {
-        "title": "Planning your Disney visit?",
-        "body": "Check wait times and show schedules before you go. The parks are operating normally today with typical spring crowds. Arrive early for the most popular attractions and consider mobile ordering for quick-service meals to maximize your time.",
-        "ctaLabel": "View wait times"
+        "title": "October 2027 Ticket Prices Now Available",
+        "body": "Disney World has released exact pricing for October 2027, revealing the cheapest days to visit next fall. Peak and off-peak pricing shows significant swings depending on week and park choice.",
+        "parkSlug": null,
+        "source": {
+          "label": "AllEars.Net",
+          "url": "https://allears.net/2026/04/27/the-cheapest-days-to-visit-disney-world-in-october-2027-exact-dates-prices/"
+        },
+        "parkioInsight": "Book weekday visits in early October for the lowest gate prices and lighter Halloween party crowds.",
+        "ctaLabel": "See October 2027 pricing"
       }
     ]
   },
@@ -89,9 +111,9 @@
       "channel": "Paging Mr. Morrow",
       "publishedAt": "2026-04-24T19:36:07Z",
       "thumbnailUrl": "https://i.ytimg.com/vi/Iniemrv_tvw/mqdefault.jpg",
-      "viewCount": 80684,
+      "viewCount": 80772,
       "url": "https://www.youtube.com/watch?v=Iniemrv_tvw",
-      "summary": "Paging Mr. Morrow covers the latest food offerings, park updates, and ongoing construction at Universal Orlando Resort."
+      "summary": "Paging Mr. Morrow tours Universal Orlando's latest food offerings and construction updates across the resort."
     },
     {
       "videoId": "64i2p5Yiy6Q",
@@ -99,19 +121,9 @@
       "channel": "WrightDownMainStreet",
       "publishedAt": "2026-04-24T16:00:18Z",
       "thumbnailUrl": "https://i.ytimg.com/vi/64i2p5Yiy6Q/mqdefault.jpg",
-      "viewCount": 26953,
+      "viewCount": 26979,
       "url": "https://www.youtube.com/watch?v=64i2p5Yiy6Q",
-      "summary": "WrightDownMainStreet compares two popular Disney Springs restaurants to determine which offers the better dining experience."
-    },
-    {
-      "videoId": "U_hm4sNw_lA",
-      "title": "🔴Live Magic Kingdom Monday Parades and Fireworks at Walt Disney World 4/27/2026",
-      "channel": "RON ON THE GO",
-      "publishedAt": "2026-04-28T02:42:25Z",
-      "thumbnailUrl": "https://i.ytimg.com/vi/U_hm4sNw_lA/mqdefault.jpg",
-      "viewCount": 21874,
-      "url": "https://www.youtube.com/watch?v=U_hm4sNw_lA",
-      "summary": "RON ON THE GO livestreams parades and fireworks from Magic Kingdom on Monday evening."
+      "summary": "A head-to-head comparison of two waterfront dining spots at Disney Springs to help you pick the best option."
     },
     {
       "videoId": "Gq0FTNDQ980",
@@ -119,9 +131,9 @@
       "channel": "WrightDownMainStreet",
       "publishedAt": "2026-04-27T16:00:04Z",
       "thumbnailUrl": "https://i.ytimg.com/vi/Gq0FTNDQ980/mqdefault.jpg",
-      "viewCount": 20518,
+      "viewCount": 20670,
       "url": "https://www.youtube.com/watch?v=Gq0FTNDQ980",
-      "summary": "WrightDownMainStreet reviews new menu items at Yak & Yeti restaurant in Disney's Animal Kingdom."
+      "summary": "WrightDownMainStreet reviews the refreshed menu offerings at Animal Kingdom's Yak & Yeti restaurant."
     },
     {
       "videoId": "Zn7v3fLq51w",
@@ -129,19 +141,9 @@
       "channel": "Koda Bear the Explorer ",
       "publishedAt": "2026-04-28T06:58:51Z",
       "thumbnailUrl": "https://i.ytimg.com/vi/Zn7v3fLq51w/mqdefault.jpg",
-      "viewCount": 19160,
+      "viewCount": 19207,
       "url": "https://www.youtube.com/watch?v=Zn7v3fLq51w",
-      "summary": "Koda Bear the Explorer streams live from Disneyland featuring Paint the Night parade and Wondrous Journeys."
-    },
-    {
-      "videoId": "e-Yl4fRkDO0",
-      "title": "Trying all Disney desserts!She *QUIT* her job to bring these to BLR! #bangalore #food #disneyland",
-      "channel": "Mahak Saria",
-      "publishedAt": "2026-04-28T05:57:27Z",
-      "thumbnailUrl": "https://i.ytimg.com/vi/e-Yl4fRkDO0/mqdefault.jpg",
-      "viewCount": 4482,
-      "url": "https://www.youtube.com/watch?v=e-Yl4fRkDO0",
-      "summary": "Mahak Saria samples Disney-inspired desserts brought to Bangalore by someone who left their job for the venture."
+      "summary": "A live stream from Disneyland featuring Paint the Night Parade and Wondrous Journeys on a Monday evening."
     },
     {
       "videoId": "qA9-fhLk70g",
@@ -149,19 +151,19 @@
       "channel": "LunaDrift",
       "publishedAt": "2026-04-28T10:32:27Z",
       "thumbnailUrl": "https://i.ytimg.com/vi/qA9-fhLk70g/mqdefault.jpg",
-      "viewCount": 3803,
+      "viewCount": 5548,
       "url": "https://www.youtube.com/watch?v=qA9-fhLk70g",
-      "summary": "LunaDrift shares a humorous encounter with Stormtroopers at Disneyland."
+      "summary": "A short comedy clip featuring guest interactions with Stormtroopers at Disneyland."
     },
     {
-      "videoId": "jiLiPu9EuAo",
-      "title": "DISNEY HOTEL CHECK IN #disney #disneyland",
-      "channel": "Nayeli Alvarez",
-      "publishedAt": "2026-04-28T02:51:05Z",
-      "thumbnailUrl": "https://i.ytimg.com/vi/jiLiPu9EuAo/mqdefault.jpg",
-      "viewCount": 1508,
-      "url": "https://www.youtube.com/watch?v=jiLiPu9EuAo",
-      "summary": "Nayeli Alvarez documents checking into a Disney hotel."
+      "videoId": "e-Yl4fRkDO0",
+      "title": "Trying all Disney desserts!She *QUIT* her job to bring these to BLR! #bangalore #food #disneyland",
+      "channel": "Mahak Saria",
+      "publishedAt": "2026-04-28T05:57:27Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/e-Yl4fRkDO0/mqdefault.jpg",
+      "viewCount": 4627,
+      "url": "https://www.youtube.com/watch?v=e-Yl4fRkDO0",
+      "summary": "A food creator samples Disney-themed desserts and discusses bringing similar treats to Bangalore."
     },
     {
       "videoId": "cZJmQGEh9HE",
@@ -169,9 +171,9 @@
       "channel": "Steph Nguyen ",
       "publishedAt": "2026-04-28T09:54:50Z",
       "thumbnailUrl": "https://i.ytimg.com/vi/cZJmQGEh9HE/mqdefault.jpg",
-      "viewCount": 1407,
+      "viewCount": 1892,
       "url": "https://www.youtube.com/watch?v=cZJmQGEh9HE",
-      "summary": "Steph Nguyen shows off Stitch merchandise finds from Miniso."
+      "summary": "A merchandise haul video showcasing Stitch-themed items from Disneyland and Miniso."
     },
     {
       "videoId": "Ac1QhxRULpk",
@@ -179,12 +181,32 @@
       "channel": "Apple tea soooooda",
       "publishedAt": "2026-04-28T09:00:21Z",
       "thumbnailUrl": "https://i.ytimg.com/vi/Ac1QhxRULpk/mqdefault.jpg",
-      "viewCount": 1205,
+      "viewCount": 1524,
       "url": "https://www.youtube.com/watch?v=Ac1QhxRULpk",
-      "summary": "Apple tea soooooda captures a character greeting with Goofy and Max at Tokyo Disney Resort."
+      "summary": "A short video capturing a character meet featuring Goofy and Max at a Disney Resort."
+    },
+    {
+      "videoId": "aQIoJ7kIMxU",
+      "title": "⁠@TheWoodyShow ​⁠After Hours!  #disneycaliforniaadventure #disneyland #disney @DisneyParks",
+      "channel": "MariaZTheBlogger ",
+      "publishedAt": "2026-04-28T05:23:50Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/aQIoJ7kIMxU/mqdefault.jpg",
+      "viewCount": 1286,
+      "url": "https://www.youtube.com/watch?v=aQIoJ7kIMxU",
+      "summary": "After-hours coverage of The Woody Show event at Disney California Adventure."
+    },
+    {
+      "videoId": "P9OGNMSTEsw",
+      "title": "クラリスチップ＆デール#shorts #vlog #ディズニー #ディズニーランド #ディズニーシー #disney #disneyland #disneysea #かわいい",
+      "channel": "マイペースカップル",
+      "publishedAt": "2026-04-28T09:00:29Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/P9OGNMSTEsw/mqdefault.jpg",
+      "viewCount": 996,
+      "url": "https://www.youtube.com/watch?v=P9OGNMSTEsw",
+      "summary": "A short vlog featuring Clarice, Chip, and Dale at a Disney park in Japan."
     }
   ],
-  "updatedAt": "2026-04-28T12:05:47.726Z",
+  "updatedAt": "2026-04-28T12:47:46.073Z",
   "type": "daily-briefing",
   "meta": {
     "aiGenerated": true,
@@ -193,6 +215,6 @@
       "themeparks.wiki destinations",
       "YouTube Data API v3 (top 10 last 48h)"
     ],
-    "generatedAt": "2026-04-28T12:05:47.726Z"
+    "generatedAt": "2026-04-28T12:47:46.073Z"
   }
 }
