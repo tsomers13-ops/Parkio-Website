@@ -23,6 +23,8 @@ import {
   type DailySectionKey,
   type DailySpotlightItem,
   type DailyVideoItem,
+  type ParkioInsight,
+  type ParkioInsightCategory,
   SECTION_ORDER,
   formatBriefingDate,
   getDailyPost,
@@ -167,6 +169,19 @@ function DailyBriefing({ post }: { post: DailyPost }) {
 
           {/* Closing in-article conversion: app download */}
           <ConversionBlock variant="app" />
+
+          {/* Variability disclaimer — keeps insights honest. Crowd patterns
+              shift hour-to-hour, so guidance is probabilistic, not absolute. */}
+          <p className="mt-6 rounded-2xl bg-ink-50 px-4 py-3 text-center text-[12.5px] leading-snug text-ink-500 sm:text-[13px]">
+            Crowd patterns can change throughout the day.{" "}
+            <Link
+              href="/parks"
+              className="font-semibold text-ink-700 underline decoration-ink-300 underline-offset-2 transition hover:text-ink-900 hover:decoration-ink-500"
+            >
+              Use Parkio for live updates
+            </Link>
+            .
+          </p>
         </div>
 
         {/* Mid-article newsletter card */}
@@ -417,7 +432,7 @@ function NewsItemRow({
       <p className="mt-1.5 text-[15px] leading-relaxed text-ink-700">
         {item.body}
       </p>
-      {item.parkioInsight && <ParkioInsightCallout text={item.parkioInsight} />}
+      {item.parkioInsight && <ParkioInsightCallout insight={item.parkioInsight} />}
       <div className="mt-3 flex flex-wrap items-center gap-x-4 gap-y-1 text-[12px]">
         {item.parkSlug && (
           <Link
@@ -451,18 +466,81 @@ function NewsItemRow({
   );
 }
 
+/* ─────────────── Parkio Insight ─────────────── */
+
+/** Visual treatment per category — Tailwind classes for border + bg + label color. */
+const INSIGHT_CATEGORY_STYLE: Record<
+  ParkioInsightCategory,
+  { border: string; bg: string; chipText: string; chipBg: string; label: string }
+> = {
+  "crowd-impact": {
+    border: "border-amber-400",
+    bg: "bg-amber-50/60",
+    chipBg: "bg-amber-100 ring-amber-200",
+    chipText: "text-amber-800",
+    label: "Crowd Impact",
+  },
+  "timing-advantage": {
+    border: "border-emerald-500",
+    bg: "bg-emerald-50/60",
+    chipBg: "bg-emerald-100 ring-emerald-200",
+    chipText: "text-emerald-800",
+    label: "Timing Advantage",
+  },
+  opportunity: {
+    border: "border-sky-500",
+    bg: "bg-sky-50/60",
+    chipBg: "bg-sky-100 ring-sky-200",
+    chipText: "text-sky-800",
+    label: "Opportunity",
+  },
+  "avoid-risk": {
+    border: "border-rose-400",
+    bg: "bg-rose-50/60",
+    chipBg: "bg-rose-100 ring-rose-200",
+    chipText: "text-rose-800",
+    label: "Avoid / Risk",
+  },
+};
+
 /**
  * "What this means for your day" callout — Parkio's operational-takeaway
- * differentiator. Renders as a left-bordered card under the news body so
- * a reader can scan the post and grab the actionable line at a glance.
+ * differentiator. Color-coded by category so a reader can scan the post
+ * and grab the actionable line at a glance.
+ *
+ * Backward compat: tolerates older string-only insights by treating them
+ * as a generic crowd-impact note. New posts always include the category.
  */
-function ParkioInsightCallout({ text }: { text: string }) {
+function ParkioInsightCallout({
+  insight,
+}: {
+  insight: ParkioInsight | string;
+}) {
+  const normalized: ParkioInsight =
+    typeof insight === "string"
+      ? { category: "crowd-impact", text: insight }
+      : insight;
+  const style =
+    INSIGHT_CATEGORY_STYLE[normalized.category] ??
+    INSIGHT_CATEGORY_STYLE["crowd-impact"];
+
   return (
-    <div className="mt-3 rounded-xl border-l-2 border-accent-500 bg-accent-50/50 px-3.5 py-2.5">
-      <p className="text-[11px] font-semibold uppercase tracking-wider text-accent-700">
-        What this means for your day
+    <div
+      className={`mt-3 rounded-xl border-l-2 ${style.border} ${style.bg} px-3.5 py-2.5`}
+    >
+      <div className="flex items-center gap-2">
+        <span className="text-[10px] font-semibold uppercase tracking-wider text-ink-500">
+          What this means for your day
+        </span>
+        <span
+          className={`rounded-full px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide ring-1 ${style.chipBg} ${style.chipText}`}
+        >
+          {style.label}
+        </span>
+      </div>
+      <p className="mt-1 text-[14px] leading-snug text-ink-800">
+        {normalized.text}
       </p>
-      <p className="mt-0.5 text-[14px] leading-snug text-ink-800">{text}</p>
     </div>
   );
 }
@@ -477,7 +555,7 @@ function SpotlightItem({ item }: { item: DailySpotlightItem }) {
       <p className="mt-3 text-[15px] leading-relaxed text-ink-700 sm:text-base">
         {item.body}
       </p>
-      {item.parkioInsight && <ParkioInsightCallout text={item.parkioInsight} />}
+      {item.parkioInsight && <ParkioInsightCallout insight={item.parkioInsight} />}
       {item.parkSlug && (
         <Link
           href={`/parks/${item.parkSlug}`}

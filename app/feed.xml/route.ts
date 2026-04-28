@@ -63,7 +63,8 @@ function renderItem(post: DailyPost): string {
 <p>${escapeXml(post.teaser)}</p>
 ${bulletsHtml}
 <p><a href="${url}">Read the full briefing on Parkio Daily &rarr;</a></p>
-<p style="font-size:13px;color:#888;margin-top:24px">Parkio Daily &mdash; fresh every morning at 6 AM ET.</p>
+<p style="font-size:12.5px;color:#888;margin-top:20px;font-style:italic">Crowd patterns can change throughout the day. <a href="https://parkio.info/parks" style="color:#888">Use Parkio for live updates.</a></p>
+<p style="font-size:13px;color:#888;margin-top:8px">Parkio Daily &mdash; fresh every morning at 6 AM ET.</p>
   `.trim();
 
   // RSS pubDate must be RFC-822. Anchor each post at ~6 AM ET (10:00 UTC).

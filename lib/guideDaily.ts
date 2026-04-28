@@ -46,6 +46,30 @@ import type { ParkId } from "./types";
 
 /* ──────────────────────── Item types ──────────────────────── */
 
+/**
+ * Four mutually-exclusive categories for "What this means for your day"
+ * insights. Picked deliberately to color-code the operational takeaway:
+ *
+ *   crowd-impact     — heavier waits, traffic, or congestion expected
+ *   timing-advantage — a window where the guest gets a clear edge
+ *   opportunity      — something new to seek out (food, merch, character)
+ *   avoid-risk       — a reason to skip, reroute, or expect disappointment
+ *
+ * Always paired with a 1–2 sentence text. Language is probabilistic
+ * ("likely", "usually", "tends to") — never absolute predictions.
+ */
+export type ParkioInsightCategory =
+  | "crowd-impact"
+  | "timing-advantage"
+  | "opportunity"
+  | "avoid-risk";
+
+export interface ParkioInsight {
+  category: ParkioInsightCategory;
+  /** 1–2 sentences. Probabilistic. Actionable. Guest-focused. */
+  text: string;
+}
+
 export interface DailyNewsItem {
   title: string;
   body: string;
@@ -53,14 +77,11 @@ export interface DailyNewsItem {
   parkSlug?: ParkId;
   source?: { label: string; url: string };
   /**
-   * "What this means for your day" — a 1-sentence operational takeaway
-   * for guests planning their visit. The Parkio differentiator vs.
-   * generic Disney blogs. Examples:
-   *   - "Expect longer waits in Magic Kingdom mornings."
-   *   - "Good time to grab Soarin' before the festival crowds arrive."
-   *   - "This may push afternoon waits up at Hollywood Studios."
+   * "What this means for your day" — required on breaking, bignews,
+   * topstories, and spotlight items (omitted on icymi). The Parkio
+   * differentiator vs. generic Disney blogs.
    */
-  parkioInsight?: string;
+  parkioInsight?: ParkioInsight;
 }
 
 export interface DailySpotlightItem {
@@ -70,7 +91,7 @@ export interface DailySpotlightItem {
   /** Optional CTA button label override. Defaults to "Open {park} on Parkio". */
   ctaLabel?: string;
   /** Same as DailyNewsItem.parkioInsight — actionable takeaway. */
-  parkioInsight?: string;
+  parkioInsight?: ParkioInsight;
 }
 
 export interface DailyVideoItem {
