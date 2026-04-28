@@ -417,6 +417,7 @@ function NewsItemRow({
       <p className="mt-1.5 text-[15px] leading-relaxed text-ink-700">
         {item.body}
       </p>
+      {item.parkioInsight && <ParkioInsightCallout text={item.parkioInsight} />}
       <div className="mt-3 flex flex-wrap items-center gap-x-4 gap-y-1 text-[12px]">
         {item.parkSlug && (
           <Link
@@ -450,6 +451,22 @@ function NewsItemRow({
   );
 }
 
+/**
+ * "What this means for your day" callout — Parkio's operational-takeaway
+ * differentiator. Renders as a left-bordered card under the news body so
+ * a reader can scan the post and grab the actionable line at a glance.
+ */
+function ParkioInsightCallout({ text }: { text: string }) {
+  return (
+    <div className="mt-3 rounded-xl border-l-2 border-accent-500 bg-accent-50/50 px-3.5 py-2.5">
+      <p className="text-[11px] font-semibold uppercase tracking-wider text-accent-700">
+        What this means for your day
+      </p>
+      <p className="mt-0.5 text-[14px] leading-snug text-ink-800">{text}</p>
+    </div>
+  );
+}
+
 function SpotlightItem({ item }: { item: DailySpotlightItem }) {
   const park = item.parkSlug ? getPark(item.parkSlug) : null;
   return (
@@ -460,6 +477,7 @@ function SpotlightItem({ item }: { item: DailySpotlightItem }) {
       <p className="mt-3 text-[15px] leading-relaxed text-ink-700 sm:text-base">
         {item.body}
       </p>
+      {item.parkioInsight && <ParkioInsightCallout text={item.parkioInsight} />}
       {item.parkSlug && (
         <Link
           href={`/parks/${item.parkSlug}`}

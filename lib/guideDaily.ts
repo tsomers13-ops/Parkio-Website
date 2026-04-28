@@ -52,6 +52,15 @@ export interface DailyNewsItem {
   /** Deep-link to a park page when the story is park-specific. */
   parkSlug?: ParkId;
   source?: { label: string; url: string };
+  /**
+   * "What this means for your day" — a 1-sentence operational takeaway
+   * for guests planning their visit. The Parkio differentiator vs.
+   * generic Disney blogs. Examples:
+   *   - "Expect longer waits in Magic Kingdom mornings."
+   *   - "Good time to grab Soarin' before the festival crowds arrive."
+   *   - "This may push afternoon waits up at Hollywood Studios."
+   */
+  parkioInsight?: string;
 }
 
 export interface DailySpotlightItem {
@@ -60,6 +69,8 @@ export interface DailySpotlightItem {
   parkSlug?: ParkId;
   /** Optional CTA button label override. Defaults to "Open {park} on Parkio". */
   ctaLabel?: string;
+  /** Same as DailyNewsItem.parkioInsight — actionable takeaway. */
+  parkioInsight?: string;
 }
 
 export interface DailyVideoItem {
