@@ -16,6 +16,8 @@
  *     and it fails soft (no D1 binding → silent no-op).
  */
 
+import { getRequestContext } from "@cloudflare/next-on-pages";
+
 import { CACHE_TTL, getOrFetch } from "@/lib/cache";
 import { getParkConfig } from "@/lib/disneyParkConfig";
 import { persistLiveSnapshots } from "@/lib/historySnapshots";
@@ -67,7 +69,7 @@ export async function GET(_req: Request, { params }: Params) {
   // the DB write completes in the background. Errors are swallowed by
   // persistLiveSnapshots — the API contract is unaffected by D1 state.
   if (isFreshFromUpstream && payload.live) {
-    await scheduleSnapshotWrite(payload);
+    scheduleSnapshotWrite(payload);
   }
 
   return jsonOk(payload, CACHE_TTL.live, CACHE_TTL.live * 4);
@@ -75,34 +77,27 @@ export async function GET(_req: Request, { params }: Params) {
 
 /**
  * Hook the snapshot write into the Cloudflare Pages request lifecycle
- * via `ctx.waitUntil`. Pulled into its own function so the import of
- * `getRequestContext` is isolated — the rest of the route works in
- * any Next runtime (local dev / Vercel / etc.) even when D1 is absent.
+ * via `ctx.waitUntil`. Pulled into its own function so call sites stay
+ * tidy and the failure path is isolated.
  *
  * Three failure modes, all silent:
  *   1. Not running on Cloudflare Pages (e.g., local `next dev`) →
- *      `getRequestContext` throws or returns no ctx → we skip.
+ *      `getRequestContext` throws → we catch and skip.
  *   2. D1 binding not configured on the project → `env.DB` undefined
  *      → persistLiveSnapshots returns immediately.
  *   3. D1 schema not yet applied / write rejected → caught inside
  *      persistLiveSnapshots, logged as warn, response unaffected.
  */
-async function scheduleSnapshotWrite(
+function scheduleSnapshotWrite(
   payload: ReturnType<typeof normalizeLive>,
-): Promise<void> {
+): void {
   if (!payload) return;
   try {
-    // The package is provided at runtime by Cloudflare Pages but isn't
-    // a hard dependency of this codebase — the import is resolved
-    // dynamically so type-check + local builds don't require it.
-    const mod = (await import(
-      /* webpackIgnore: true */ "@cloudflare/next-on-pages" as string
-    )) as { getRequestContext?: () => { env: unknown; ctx: { waitUntil: (p: Promise<unknown>) => void } } };
-    if (!mod.getRequestContext) return;
-    const { env, ctx } = mod.getRequestContext();
+    const { env, ctx } = getRequestContext();
     ctx.waitUntil(persistLiveSnapshots(env as { DB?: unknown }, payload));
   } catch {
-    // Either we're not on Cloudflare Pages, or @cloudflare/next-on-pages
-    // is not available in this environment. Silently skip.
+    // Not running on Cloudflare Pages — silently skip. This path is
+    // hit by `next dev`, unit tests, and any preview environment that
+    // doesn't expose the Pages request context.
   }
 }
