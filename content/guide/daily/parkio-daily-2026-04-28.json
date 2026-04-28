@@ -1,25 +1,25 @@
 {
-  "title": "Parkio Daily for April 28, 2026",
+  "title": "Parkio Daily for Tuesday, April 28, 2026",
   "slug": "parkio-daily-2026-04-28",
   "date": "2026-04-28",
-  "teaser": "Magic Kingdom's Wish Lounge reopens with fresh updates, plus Halloween party hints and construction walls go up around Big Thunder.",
+  "teaser": "Halloween party dates drop, Food & Wine Festival returns, and Hyperspace Mountain is back at Disneyland for a limited run.",
   "rightNow": {
     "headline": "Best rides right now",
     "rides": [
       {
-        "name": "Space Mountain",
-        "parkSlug": "magic-kingdom",
-        "note": "Big Thunder still closed, drawing crowds elsewhere"
-      },
-      {
-        "name": "Test Track",
+        "name": "Soarin'",
         "parkSlug": "epcot",
-        "note": "Moderate waits early morning"
+        "note": "Walk-on windows often open during evening hours"
       },
       {
-        "name": "Flight of Passage",
-        "parkSlug": "animal-kingdom",
-        "note": "Best window before 10 a.m."
+        "name": "Guardians of the Galaxy: Cosmic Rewind",
+        "parkSlug": "epcot",
+        "note": "Ride early before crowds build"
+      },
+      {
+        "name": "Space Mountain (Hyperspace)",
+        "parkSlug": "disneyland",
+        "note": "Limited-time Star Wars overlay now running"
       }
     ]
   },
@@ -27,186 +27,207 @@
     "breaking": [],
     "bignews": [
       {
-        "title": "Magic Kingdom's Wish Lounge Reopens with New Design",
-        "body": "Walt Disney World rededicated the refreshed Wish Lounge at Magic Kingdom yesterday, a private space for Make-A-Wish families featuring new artwork inspired by Disney wish-granting stories. The lounge now offers updated amenities and a welcoming retreat during park visits.",
-        "parkSlug": "magic-kingdom",
-        "source": {
-          "label": "Disney Parks Blog",
-          "url": "https://disneyparksblog.com/community-outreach/celebrating-disney-week-of-wishes-across-disney-experiences/"
-        },
-        "parkioInsight": "This lounge is not accessible to regular guests, but you may see heightened activity near the entrance during wish family visits."
-      },
-      {
-        "title": "Halloween Party Start Date Teased for 2026",
-        "body": "Disney World hinted at the earliest-ever start date for Mickey's Not So Scary Halloween Party this year, with full details expected soon. The move suggests the seasonal event could begin before typical back-to-school schedules.",
+        "title": "Halloween party returns to Magic Kingdom this August",
+        "body": "Mickey's Not So Scary Halloween Party tickets are on sale now for select nights starting in late summer. The after-hours event typically sells out in advance, and this year's party will once again feature trick-or-treating, character cavalcades, and the Boo-to-You parade.",
         "parkSlug": "magic-kingdom",
         "source": {
           "label": "Disney Tourist Blog",
-          "url": "https://www.disneytouristblog.com/disney-world-teases-earliest-ever-start-date-of-2026-mickeys-not-so-scary-halloween-party/"
+          "url": "https://www.disneytouristblog.com/mickeys-not-so-scary-halloween-party-2026-dates-details-announced-by-disney-world/"
         },
-        "parkioInsight": "If you're planning a summer trip, watch for party night closures that will affect regular park hours starting earlier than usual."
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Party nights usually mean lighter daytime crowds at Magic Kingdom as guests hold tickets for the separately-ticketed evening. Consider visiting Magic Kingdom on party dates if you're skipping the event—waits often drop after 4pm."
+        }
+      },
+      {
+        "title": "Food & Wine Festival dates confirmed for EPCOT this fall",
+        "body": "EPCOT's signature culinary event returns for its 31st year with festival marketplace booths, live entertainment, and specialty menu items. The celebration runs through late fall and transforms World Showcase into a global tasting destination.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/2026-epcot-food-wine-festival-dates-details/"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "World Showcase pathways tend to fill up on festival weekends, especially between 12pm and 8pm. Visiting on weekdays or arriving before 11am usually keeps booth lines under 10 minutes."
+        }
+      },
+      {
+        "title": "Hyperspace Mountain overlay returns to Disneyland for limited run",
+        "body": "Space Mountain has shifted back to its Star Wars theme with new projections, music, and a narrative that ties into the original trilogy. The overlay is running now for a limited time ahead of expanded Star Wars character appearances launching tomorrow in Galaxy's Edge.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/hyperspace-mountain-star-wars-galaxys-edge-changes-april-2026/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Hyperspace Mountain tends to draw Star Wars fans early. Riding within the first 90 minutes of park opening usually keeps your wait under 30 minutes, even on busier days."
+        }
       }
     ],
     "topstories": [
       {
-        "title": "Tall Walls Now Block Big Thunder Mountain Views",
-        "body": "Construction barriers around Big Thunder Mountain Railroad have gone up unusually high to block guest sightlines into the Villains Land and Cars expansion zones. The coaster remains closed through its 16-month refurbishment.",
-        "parkSlug": "magic-kingdom",
+        "title": "Carthay Circle Restaurant closing briefly for interior updates",
+        "body": "The signature dining location at Disney California Adventure has construction walls around its entrance and will close tomorrow, April 29, reopening April 30. The restaurant is still taking reservations for meals starting April 30.",
+        "parkSlug": "california-adventure",
         "source": {
-          "label": "Disney Tourist Blog",
-          "url": "https://www.disneytouristblog.com/new-photos-reveal-big-thunder-mountain-railroads-really-tall-walls-to-conceal-construction/"
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/04/carthay-circle-restaurant-closing-for-short-refurbishment-at-disney-california-adventure/"
         },
-        "parkioInsight": "These walls reduce photo ops in Frontierland, so plan your shots near Splash Mountain or the riverboat instead."
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "If you're visiting California Adventure tomorrow and had hoped for a walk-up table, the restaurant will be closed. Storytellers Cafe at the Grand Californian often has same-day availability as an alternative."
+        }
       },
       {
-        "title": "Disney Springs Launches Free Fashion Emergency Vending Machine",
-        "body": "A complimentary vending machine at AMC DINE-in Disney Springs 24 is dispensing makeup, hair products, and accessories through May 3 as part of a promotional tie-in with The Devil Wears Prada 2. Items are free, no purchase required.",
-        "parkSlug": null,
-        "source": {
-          "label": "Inside the Magic",
-          "url": "https://insidethemagic.net/2026/04/disney-springs-is-giving-away-free-stuff-from-a-vending-machine-right-now-el1/"
-        },
-        "parkioInsight": "Stop by the AMC lobby before 8 p.m. if you need a touch-up before dinner or photos around the lake."
-      },
-      {
-        "title": "Rock 'n' Roller Coaster Changes Spark Guest Reaction",
-        "body": "Hollywood Studios guests are noticing significant updates to Rock 'n' Roller Coaster amid ongoing construction work in the area. The attraction remains operational while adjacent zones are under development.",
-        "parkSlug": "hollywood-studios",
+        "title": "Dapper Day returns to Disney World this weekend",
+        "body": "The unofficial vintage fashion gathering takes over EPCOT on May 3 as guests dress in retro-inspired outfits for photos, character meets, and socializing. The event is open to anyone—no ticket required beyond regular park admission.",
+        "parkSlug": "epcot",
         "source": {
           "label": "AllEars.Net",
-          "url": "https://allears.net/2026/04/27/this-huge-hollywood-studios-ride-change-stopped-us-in-our-tracks/"
+          "url": "https://allears.net/2026/04/28/the-unspoken-dress-code-disney-adults-are-following-this-weekend/"
         },
-        "parkioInsight": "Expect construction noise and rerouted pathways near Sunset Boulevard throughout the day."
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "EPCOT's World Showcase may feel busier than usual this Sunday, especially around popular photo spots like the Italy pavilion and Spaceship Earth. Arriving before 10am tends to give you clearer backdrops before the crowd peaks."
+        }
       }
     ],
     "icymi": [
       {
-        "title": "Guardians of the Galaxy Queue Protocols Now Semi-Permanent",
-        "body": "Epcot has settled on a consistent approach to managing pre-show and queue shenanigans at Guardians of the Galaxy: Cosmic Rewind after months of testing stop-gap solutions. The new protocol appears to be the long-term fix.",
-        "parkSlug": "epcot",
+        "title": "Disney partners with Make-A-Wish for Week of Wishes initiative",
+        "body": "The Walt Disney Company announced an expanded collaboration with the Make-A-Wish Foundation, granting additional wishes for critically ill children and opening a new Wish Lounge at a Disney resort.",
         "source": {
-          "label": "Disney Tourist Blog",
-          "url": "https://www.disneytouristblog.com/guardians-of-the-galaxy-cosmic-rewind-queue-pre-show-shenanigans-status-report/"
+          "label": "AllEars.Net",
+          "url": "https://allears.net/2026/04/28/this-disney-news-put-a-massive-smile-on-our-faces/"
+        }
+      },
+      {
+        "title": "Disney Store previews Halloween costumes ahead of October",
+        "body": "Halfway to Halloween brought early reveals of this year's character costumes, including Star Wars, Marvel, and Disney Princess collections. Many popular styles are already available for pre-order online.",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/products/disney-halloween-costumes/"
         }
       }
     ],
     "spotlight": [
       {
-        "title": "October 2027 Ticket Prices Now Available",
-        "body": "Disney World has released exact pricing for October 2027, revealing the cheapest days to visit next fall. Peak and off-peak pricing shows significant swings depending on week and park choice.",
+        "title": "Discovery Cove brings back Paradise Nights summer event after 8-year break",
+        "body": "SeaWorld's all-inclusive sister park will host evening events starting June 5, with happy hour, beachside dining, and tropical entertainment. The separately ticketed experience runs on select nights through August 8 and includes beer, wine, and a welcome cocktail for guests 21+. It's the first time the event has returned since 2018.",
         "parkSlug": null,
-        "source": {
-          "label": "AllEars.Net",
-          "url": "https://allears.net/2026/04/27/the-cheapest-days-to-visit-disney-world-in-october-2027-exact-dates-prices/"
-        },
-        "parkioInsight": "Book weekday visits in early October for the lowest gate prices and lighter Halloween party crowds.",
-        "ctaLabel": "See October 2027 pricing"
+        "ctaLabel": "Learn more at Discovery Cove",
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Paradise Nights is an intimate event with capped attendance. If you're planning a visit to Orlando this summer and want a break from traditional theme parks, booking early tends to secure better date options before popular weekends fill up."
+        }
       }
     ]
   },
   "videos": [
     {
-      "videoId": "Iniemrv_tvw",
       "title": "Universal Studios 2026 | New Food, Park Updates & Ride Construction | Universal Orlando Resort Guide",
       "channel": "Paging Mr. Morrow",
-      "publishedAt": "2026-04-24T19:36:07Z",
-      "thumbnailUrl": "https://i.ytimg.com/vi/Iniemrv_tvw/mqdefault.jpg",
-      "viewCount": 80772,
       "url": "https://www.youtube.com/watch?v=Iniemrv_tvw",
-      "summary": "Paging Mr. Morrow tours Universal Orlando's latest food offerings and construction updates across the resort."
+      "thumbnailUrl": "https://i.ytimg.com/vi/Iniemrv_tvw/mqdefault.jpg",
+      "videoId": "Iniemrv_tvw",
+      "viewCount": 83015,
+      "publishedAt": "2026-04-24T19:36:07Z",
+      "summary": "Paging Mr. Morrow walks through Universal Orlando's latest food offerings, ongoing construction updates, and park changes for 2026."
     },
     {
-      "videoId": "64i2p5Yiy6Q",
       "title": "Disney Springs Restaurant Challenge: The Boathouse vs. Paddlefish- Which is Better?",
       "channel": "WrightDownMainStreet",
-      "publishedAt": "2026-04-24T16:00:18Z",
-      "thumbnailUrl": "https://i.ytimg.com/vi/64i2p5Yiy6Q/mqdefault.jpg",
-      "viewCount": 26979,
       "url": "https://www.youtube.com/watch?v=64i2p5Yiy6Q",
-      "summary": "A head-to-head comparison of two waterfront dining spots at Disney Springs to help you pick the best option."
+      "thumbnailUrl": "https://i.ytimg.com/vi/64i2p5Yiy6Q/mqdefault.jpg",
+      "videoId": "64i2p5Yiy6Q",
+      "viewCount": 27405,
+      "publishedAt": "2026-04-24T16:00:18Z",
+      "summary": "WrightDownMainStreet compares two waterfront Disney Springs restaurants to decide which one delivers better food and atmosphere."
     },
     {
-      "videoId": "Gq0FTNDQ980",
       "title": "Must Try NEW Menu at Yak & Yeti in Animal Kingdom | Walt Disney World",
       "channel": "WrightDownMainStreet",
-      "publishedAt": "2026-04-27T16:00:04Z",
-      "thumbnailUrl": "https://i.ytimg.com/vi/Gq0FTNDQ980/mqdefault.jpg",
-      "viewCount": 20670,
       "url": "https://www.youtube.com/watch?v=Gq0FTNDQ980",
-      "summary": "WrightDownMainStreet reviews the refreshed menu offerings at Animal Kingdom's Yak & Yeti restaurant."
+      "thumbnailUrl": "https://i.ytimg.com/vi/Gq0FTNDQ980/mqdefault.jpg",
+      "videoId": "Gq0FTNDQ980",
+      "viewCount": 23387,
+      "publishedAt": "2026-04-27T16:00:04Z",
+      "summary": "WrightDownMainStreet reviews the updated menu at Yak & Yeti Restaurant, highlighting new dishes at the Animal Kingdom table-service spot."
     },
     {
-      "videoId": "Zn7v3fLq51w",
-      "title": "🔴 Live: Monday Stream at Disneyland! Paint the Night Parade, Wondrous Journeys & Rides - 04/27/26",
-      "channel": "Koda Bear the Explorer ",
-      "publishedAt": "2026-04-28T06:58:51Z",
-      "thumbnailUrl": "https://i.ytimg.com/vi/Zn7v3fLq51w/mqdefault.jpg",
-      "viewCount": 19207,
-      "url": "https://www.youtube.com/watch?v=Zn7v3fLq51w",
-      "summary": "A live stream from Disneyland featuring Paint the Night Parade and Wondrous Journeys on a Monday evening."
+      "title": "🔴 Live: 4 Parks in 1 Day at Walt Disney World | Disney World Live Stream 4.28.2026",
+      "channel": "Daily FastPass",
+      "url": "https://www.youtube.com/watch?v=otMia_MpvUE",
+      "thumbnailUrl": "https://i.ytimg.com/vi/otMia_MpvUE/mqdefault.jpg",
+      "videoId": "otMia_MpvUE",
+      "viewCount": 10761,
+      "publishedAt": "2026-04-28T18:43:59Z",
+      "summary": "Daily FastPass livestreams a four-park challenge at Walt Disney World, visiting all parks in a single day."
     },
     {
-      "videoId": "qA9-fhLk70g",
-      "title": "Fun Disneyland at Stormtroopers 😂 #funny #disney #disneyland #fyp #starwars",
-      "channel": "LunaDrift",
-      "publishedAt": "2026-04-28T10:32:27Z",
-      "thumbnailUrl": "https://i.ytimg.com/vi/qA9-fhLk70g/mqdefault.jpg",
-      "viewCount": 5548,
-      "url": "https://www.youtube.com/watch?v=qA9-fhLk70g",
-      "summary": "A short comedy clip featuring guest interactions with Stormtroopers at Disneyland."
+      "title": "🔴 LIVE: Birthday Morning at Magic Kingdom — Disney Walk, Shows & Rides | Day 238",
+      "channel": "The Disney With Sean Show",
+      "url": "https://www.youtube.com/watch?v=qvhhOuCP-dg",
+      "thumbnailUrl": "https://i.ytimg.com/vi/qvhhOuCP-dg/mqdefault.jpg",
+      "videoId": "qvhhOuCP-dg",
+      "viewCount": 9101,
+      "publishedAt": "2026-04-28T16:34:15Z",
+      "summary": "The Disney With Sean Show celebrates a birthday morning at Magic Kingdom with live park coverage, attractions, and entertainment."
     },
     {
-      "videoId": "e-Yl4fRkDO0",
-      "title": "Trying all Disney desserts!She *QUIT* her job to bring these to BLR! #bangalore #food #disneyland",
-      "channel": "Mahak Saria",
-      "publishedAt": "2026-04-28T05:57:27Z",
-      "thumbnailUrl": "https://i.ytimg.com/vi/e-Yl4fRkDO0/mqdefault.jpg",
-      "viewCount": 4627,
-      "url": "https://www.youtube.com/watch?v=e-Yl4fRkDO0",
-      "summary": "A food creator samples Disney-themed desserts and discusses bringing similar treats to Bangalore."
+      "title": "🔴 LIVE: EPCOT Day at Walt Disney World! Guardians, Soarin', Ratatouille & More!",
+      "channel": "Theme Park Giant",
+      "url": "https://www.youtube.com/watch?v=UVhakuoHlpY",
+      "thumbnailUrl": "https://i.ytimg.com/vi/UVhakuoHlpY/mqdefault.jpg",
+      "videoId": "UVhakuoHlpY",
+      "viewCount": 7272,
+      "publishedAt": "2026-04-28T18:01:41Z",
+      "summary": "Theme Park Giant livestreams an EPCOT day with rides on Guardians of the Galaxy, Soarin', and Remy's Ratatouille Adventure."
     },
     {
-      "videoId": "cZJmQGEh9HE",
-      "title": "I love stitch! #stitch #stitchfan #stitchlover #disney #disneyland #miniso #haul #ohana #find #cute",
-      "channel": "Steph Nguyen ",
-      "publishedAt": "2026-04-28T09:54:50Z",
-      "thumbnailUrl": "https://i.ytimg.com/vi/cZJmQGEh9HE/mqdefault.jpg",
-      "viewCount": 1892,
-      "url": "https://www.youtube.com/watch?v=cZJmQGEh9HE",
-      "summary": "A merchandise haul video showcasing Stitch-themed items from Disneyland and Miniso."
+      "title": "Pin Drop Mini Vlog🌸🌐✨ #disney #disneyvlog #epcot #disneyparks #waltdisneyworld #wdw",
+      "channel": "ElizabethEverAfter",
+      "url": "https://www.youtube.com/watch?v=nr-4LEM73Y8",
+      "thumbnailUrl": "https://i.ytimg.com/vi/nr-4LEM73Y8/mqdefault.jpg",
+      "videoId": "nr-4LEM73Y8",
+      "viewCount": 2759,
+      "publishedAt": "2026-04-28T20:03:11Z",
+      "summary": "ElizabethEverAfter shares a quick EPCOT vlog focused on pin collecting and park highlights."
     },
     {
-      "videoId": "Ac1QhxRULpk",
-      "title": "【グリ】キメる親子#ディズニーリゾート#ディズニー#ディズニーランド#disneyresort#disney#disneyland#グーフィー#マックス#親子#かっこいい#shorts",
-      "channel": "Apple tea soooooda",
-      "publishedAt": "2026-04-28T09:00:21Z",
-      "thumbnailUrl": "https://i.ytimg.com/vi/Ac1QhxRULpk/mqdefault.jpg",
-      "viewCount": 1524,
-      "url": "https://www.youtube.com/watch?v=Ac1QhxRULpk",
-      "summary": "A short video capturing a character meet featuring Goofy and Max at a Disney Resort."
+      "title": "Disney Mini vlog - Sometimes you gotta just leave cause the Disneyland crowds are too much #disney",
+      "channel": "Kristina Burrini",
+      "url": "https://www.youtube.com/watch?v=A_jIQei0tDE",
+      "thumbnailUrl": "https://i.ytimg.com/vi/A_jIQei0tDE/mqdefault.jpg",
+      "videoId": "A_jIQei0tDE",
+      "viewCount": 2055,
+      "publishedAt": "2026-04-28T15:58:34Z",
+      "summary": "Kristina Burrini recaps a Disneyland visit cut short by heavy crowd levels."
     },
     {
-      "videoId": "aQIoJ7kIMxU",
-      "title": "⁠@TheWoodyShow ​⁠After Hours!  #disneycaliforniaadventure #disneyland #disney @DisneyParks",
-      "channel": "MariaZTheBlogger ",
-      "publishedAt": "2026-04-28T05:23:50Z",
-      "thumbnailUrl": "https://i.ytimg.com/vi/aQIoJ7kIMxU/mqdefault.jpg",
-      "viewCount": 1286,
-      "url": "https://www.youtube.com/watch?v=aQIoJ7kIMxU",
-      "summary": "After-hours coverage of The Woody Show event at Disney California Adventure."
+      "title": "So many goodies from @Disney Parks & @YouTube 🫶🏼🫶🏼 #swagbag #haul #disneycruise #disney #youtube",
+      "channel": "Raina Elegado",
+      "url": "https://www.youtube.com/watch?v=rJN_VPrvN3I",
+      "thumbnailUrl": "https://i.ytimg.com/vi/rJN_VPrvN3I/mqdefault.jpg",
+      "videoId": "rJN_VPrvN3I",
+      "viewCount": 1854,
+      "publishedAt": "2026-04-28T18:10:41Z",
+      "summary": "Raina Elegado unboxes a haul of Disney Parks and YouTube merchandise from a recent collaboration."
     },
     {
-      "videoId": "P9OGNMSTEsw",
-      "title": "クラリスチップ＆デール#shorts #vlog #ディズニー #ディズニーランド #ディズニーシー #disney #disneyland #disneysea #かわいい",
-      "channel": "マイペースカップル",
-      "publishedAt": "2026-04-28T09:00:29Z",
-      "thumbnailUrl": "https://i.ytimg.com/vi/P9OGNMSTEsw/mqdefault.jpg",
-      "viewCount": 996,
-      "url": "https://www.youtube.com/watch?v=P9OGNMSTEsw",
-      "summary": "A short vlog featuring Clarice, Chip, and Dale at a Disney park in Japan."
+      "title": "PACK FOR DISNEY #disney#disneyland#disneypark",
+      "channel": "Nayeli Alvarez",
+      "url": "https://www.youtube.com/watch?v=w6y21SDRV9U",
+      "thumbnailUrl": "https://i.ytimg.com/vi/w6y21SDRV9U/mqdefault.jpg",
+      "videoId": "w6y21SDRV9U",
+      "viewCount": 1511,
+      "publishedAt": "2026-04-28T16:36:28Z",
+      "summary": "Nayeli Alvarez shares packing tips and essentials for a Disneyland vacation."
     }
   ],
-  "updatedAt": "2026-04-28T12:47:46.073Z",
+  "updatedAt": "2026-04-28T20:53:52.732Z",
   "type": "daily-briefing",
   "meta": {
     "aiGenerated": true,
@@ -215,6 +236,6 @@
       "themeparks.wiki destinations",
       "YouTube Data API v3 (top 10 last 48h)"
     ],
-    "generatedAt": "2026-04-28T12:47:46.073Z"
+    "generatedAt": "2026-04-28T20:53:52.732Z"
   }
 }
