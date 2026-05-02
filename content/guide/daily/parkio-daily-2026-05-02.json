@@ -1,0 +1,192 @@
+{
+  "title": "Parkio Daily Briefing for May 2, 2026",
+  "slug": "parkio-daily-2026-05-02",
+  "date": "2026-05-02",
+  "teaser": "Big Thunder Mountain Railroad returns to Magic Kingdom tomorrow with new magic. Deep dive into the lore across all Disney Parks.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Big Thunder Mountain Railroad",
+        "parkSlug": "disneyland",
+        "note": "Wildest ride in the wilderness operating normally"
+      },
+      {
+        "name": "Yak & Yeti Restaurant",
+        "parkSlug": "animal-kingdom",
+        "note": "New menu items available now"
+      },
+      {
+        "name": "Fantasmic!",
+        "parkSlug": "hollywood-studios",
+        "note": "Shows at 9pm and 10:30pm tonight"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [
+      {
+        "title": "Big Thunder Mountain Railroad Returns Tomorrow",
+        "body": "Big Thunder Mountain Railroad roars back to life at Magic Kingdom on May 3, marking its return to Frontierland after an extended refurbishment with new magic and enhanced effects throughout the attraction.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/disney-experiences/dig-deep-into-the-story-of-big-thunder-mountain-railroad-across-disney-parks/"
+        }
+      }
+    ],
+    "bignews": [
+      {
+        "title": "The Legend Behind Big Thunder Mountain Railroad",
+        "body": "Disney shares the rich backstory of Big Thunder Mountain Railroad across all parks worldwide. From Barnabas T. Bullion and the Society of Explorers and Adventurers at Magic Kingdom, to Rainbow Ridge at Disneyland, to the Ravenswood family at Disneyland Paris, each version tells a unique tale of gold rush ambition, supernatural forces, and runaway mine trains. The mountain's legend spans boomtowns, mysterious rumblings, and the consequences of digging too deep.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/disney-experiences/dig-deep-into-the-story-of-big-thunder-mountain-railroad-across-disney-parks/"
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "New Details on Magic Kingdom's Enhanced Queue",
+        "body": "Guests entering Big Thunder Mountain Railroad at Magic Kingdom will pass through the Big Thunder Mining Offices, seeing Bullion's land grant signed by James K. Polk, a blown-open safe, and signs reading 'No Drinking, No Fighting, No Whistling, No Kidding' before descending into the mine shaft. The queue includes the Foreman's Post operated by G. Willikers and showcases the bustling mining operation below with flickering lanterns and busy workers.",
+        "parkSlug": "magic-kingdom"
+      },
+      {
+        "title": "Rainbow Ridge Brings Gold Rush History to Life",
+        "body": "At Disneyland, the Frontierland town of Rainbow Ridge sits at the base of Big Thunder Mountain. Once a sleepy settlement, the town boomed in the late 1860s when a prospector discovered gold nuggets on the mountain slopes. Today, guests can spot signs pointing to Dinosaur Gap, Spiral Butte, Coyote Canyon, Never Mine, and Busted Flats—all locations tied to the mountain's supernatural legends.",
+        "parkSlug": "disneyland"
+      },
+      {
+        "title": "Disneyland Paris Version Connects to Phantom Manor",
+        "body": "Big Thunder Mountain at Disneyland Paris features unique storytelling tied to the Ravenswood family, who also reside in the nearby Phantom Manor on Boot Hill. The attraction is built on an island with trains passing under the Rivers of the Far West. The Ravenswood family founded the Big Thunder Mountain Mining Company before mysterious supernatural forces drove miners away.",
+        "parkSlug": null
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Big Thunder Sound Effects Used in Indiana Jones Film",
+        "body": "The iconic sound effects from Big Thunder Mountain Railroad trains were mixed into the memorable mine chase sequence in 1984's Indiana Jones and the Temple of Doom, connecting the Disney Parks experience to Hollywood adventure.",
+        "parkSlug": "disneyland"
+      }
+    ],
+    "spotlight": {
+      "title": "Six Train Names at Magic Kingdom",
+      "body": "Big Thunder Mountain Railroad at Walt Disney World features six uniquely named open-air trains: U.B. Bold, U.R. Daring, U.R. Courageous, I.M. Brave, I.B. Hearty, and I.M. Fearless. Each name plays on the courage required to take on the wildest ride in the wilderness.",
+      "parkSlug": "magic-kingdom"
+    }
+  },
+  "videos": [
+    {
+      "videoId": "Gq0FTNDQ980",
+      "title": "Must Try NEW Menu at Yak & Yeti in Animal Kingdom | Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-04-27T16:00:04Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Gq0FTNDQ980/mqdefault.jpg",
+      "viewCount": 37295,
+      "url": "https://www.youtube.com/watch?v=Gq0FTNDQ980",
+      "summary": "WrightDownMainStreet showcases the new menu items at Yak & Yeti restaurant in Disney's Animal Kingdom."
+    },
+    {
+      "videoId": "-_omKZ-HsMA",
+      "title": "🔴Live: Celebrating Josh's Birthday at Magic Kingdom - 5-1-26 - Walt Disney World Live Stream",
+      "channel": "ResortTV1",
+      "publishedAt": "2026-05-02T04:04:11Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/-_omKZ-HsMA/mqdefault.jpg",
+      "viewCount": 28675,
+      "url": "https://www.youtube.com/watch?v=-_omKZ-HsMA",
+      "summary": "ResortTV1 live streams a birthday celebration at Magic Kingdom on May 1, 2026."
+    },
+    {
+      "videoId": "Bkjku9Zai_g",
+      "title": "Trying the BEST New Food at Universal Orlando | Universal Studios & Islands of Adventure",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-04-30T15:58:19Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Bkjku9Zai_g/mqdefault.jpg",
+      "viewCount": 18600,
+      "url": "https://www.youtube.com/watch?v=Bkjku9Zai_g",
+      "summary": "WrightDownMainStreet samples new food offerings at Universal Studios and Islands of Adventure."
+    },
+    {
+      "videoId": "vwF0wEzCgp0",
+      "title": "🔴Live: Disney's Hollywood Studios Fantasmic at 9pm 10:30pm on Fridat at Walt Disney World 5/1/2026",
+      "channel": "RON ON THE GO",
+      "publishedAt": "2026-05-02T03:38:48Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/vwF0wEzCgp0/mqdefault.jpg",
+      "viewCount": 18382,
+      "url": "https://www.youtube.com/watch?v=vwF0wEzCgp0",
+      "summary": "RON ON THE GO live streams Fantasmic performances at Hollywood Studios on May 1, 2026."
+    },
+    {
+      "videoId": "lmIAXD3Ln-8",
+      "title": "LIVE: Disneyland in 4K - Friday  05/01/2026",
+      "channel": "GreatRoadsAdventuring",
+      "publishedAt": "2026-05-02T07:54:21Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/lmIAXD3Ln-8/mqdefault.jpg",
+      "viewCount": 7889,
+      "url": "https://www.youtube.com/watch?v=lmIAXD3Ln-8",
+      "summary": "GreatRoadsAdventuring provides a 4K live stream from Disneyland on Friday, May 1, 2026."
+    },
+    {
+      "videoId": "fdPoE9xdtrw",
+      "title": "Friday night live at Disneyland! We are now entering a new galaxy of fun! Come and join us!",
+      "channel": "Disney Secret Kingdom",
+      "publishedAt": "2026-05-02T05:33:02Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/fdPoE9xdtrw/mqdefault.jpg",
+      "viewCount": 4959,
+      "url": "https://www.youtube.com/watch?v=fdPoE9xdtrw",
+      "summary": "Disney Secret Kingdom live streams Friday night activities at Disneyland."
+    },
+    {
+      "videoId": "3m317iESuiQ",
+      "title": "world's most coolest churro lightsaber holder #fun #sith #disney #disneyland #starwars #jedi #fyp",
+      "channel": "LUCKY'S DIY GARAGE",
+      "publishedAt": "2026-05-02T02:54:24Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/3m317iESuiQ/mqdefault.jpg",
+      "viewCount": 4674,
+      "url": "https://www.youtube.com/watch?v=3m317iESuiQ",
+      "summary": "LUCKY'S DIY GARAGE showcases a custom churro lightsaber holder at Disneyland."
+    },
+    {
+      "videoId": "d2cYGezB53c",
+      "title": "#disney #disneyland #travel #vlog #shorts",
+      "channel": "Nariman",
+      "publishedAt": "2026-05-02T08:00:42Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/d2cYGezB53c/mqdefault.jpg",
+      "viewCount": 3300,
+      "url": "https://www.youtube.com/watch?v=d2cYGezB53c",
+      "summary": "Nariman shares a short Disneyland travel vlog."
+    },
+    {
+      "videoId": "lTYx8KTOW78",
+      "title": "Fun moments at Disneyland #fyp #fun #funny #funnytiktok #foryou #disney #disneyland #disneyworld",
+      "channel": "Hoàng Đỗ",
+      "publishedAt": "2026-05-02T04:50:04Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/lTYx8KTOW78/mqdefault.jpg",
+      "viewCount": 1802,
+      "url": "https://www.youtube.com/watch?v=lTYx8KTOW78",
+      "summary": "Hoàng Đỗ captures fun moments from a Disneyland visit."
+    },
+    {
+      "videoId": "tcvJCZvEeR0",
+      "title": "🔴 LIVE: Starlight and Happily Ever After ⭐️ Magic Kingdom Parades and Fireworks",
+      "channel": "All Aboard With Blake",
+      "publishedAt": "2026-05-02T02:50:06Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/tcvJCZvEeR0/mqdefault.jpg",
+      "viewCount": 1594,
+      "url": "https://www.youtube.com/watch?v=tcvJCZvEeR0",
+      "summary": "All Aboard With Blake live streams Magic Kingdom parades and the Happily Ever After fireworks show."
+    }
+  ],
+  "updatedAt": "2026-05-02T10:00:48.658Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-05-02T10:00:48.658Z"
+  }
+}
