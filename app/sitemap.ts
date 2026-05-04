@@ -29,6 +29,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE_URL}/animal-kingdom-wait-times-today`, lastModified: now, changeFrequency: "hourly", priority: 0.85 },
     { url: `${SITE_URL}/disneyland-wait-times-today`, lastModified: now, changeFrequency: "hourly", priority: 0.85 },
     { url: `${SITE_URL}/california-adventure-wait-times-today`, lastModified: now, changeFrequency: "hourly", priority: 0.85 },
+    // "Best rides today" cluster — same data as /wait-times-today but
+    // pivots to Parkio Picks (decision-focused). Targets the
+    // "best rides at <park> today" search intent.
+    { url: `${SITE_URL}/best-rides-today`, lastModified: now, changeFrequency: "hourly", priority: 0.85 },
+    { url: `${SITE_URL}/magic-kingdom-best-rides-today`, lastModified: now, changeFrequency: "hourly", priority: 0.85 },
+    { url: `${SITE_URL}/epcot-best-rides-today`, lastModified: now, changeFrequency: "hourly", priority: 0.85 },
+    { url: `${SITE_URL}/hollywood-studios-best-rides-today`, lastModified: now, changeFrequency: "hourly", priority: 0.85 },
+    { url: `${SITE_URL}/animal-kingdom-best-rides-today`, lastModified: now, changeFrequency: "hourly", priority: 0.85 },
+    { url: `${SITE_URL}/disneyland-best-rides-today`, lastModified: now, changeFrequency: "hourly", priority: 0.85 },
+    { url: `${SITE_URL}/california-adventure-best-rides-today`, lastModified: now, changeFrequency: "hourly", priority: 0.85 },
     { url: `${SITE_URL}/guide`, lastModified: now, changeFrequency: "daily", priority: 0.8 },
     { url: `${SITE_URL}/feed.xml`, lastModified: now, changeFrequency: "daily", priority: 0.7 },
     { url: `${SITE_URL}/newsletter`, lastModified: now, changeFrequency: "monthly", priority: 0.6 },

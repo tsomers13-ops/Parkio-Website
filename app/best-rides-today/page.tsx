@@ -1,55 +1,56 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+
+import { BestRidesAllParksGrid } from "@/components/BestRidesAllParksGrid";
 import { ConversionBlock } from "@/components/ConversionBlock";
 import { Footer } from "@/components/Footer";
 import { HomeDailyTeaser } from "@/components/HomeDailyTeaser";
 import { Navbar } from "@/components/Navbar";
-import { ParksTodayOverview } from "@/components/ParksTodayOverview";
-import { WaitsAllParks } from "@/components/WaitsAllParks";
 import { getTodayLandingDate } from "@/lib/seoLandingDate";
 
 /**
- * Park-cluster internal-nav links. Hand-curated rather than derived
- * from disneyParkConfig so the slug→landing-page mapping is visible
- * here and the order matches search demand (WDW first by traffic,
- * Disneyland Resort below). Adding a new park = add a row here.
+ * Park-cluster internal-nav links for the "best rides today" hub.
+ * Hand-curated (mirrors /wait-times-today) so the slug→landing-page
+ * mapping is visible here and the order matches search demand.
  */
 const PARK_LANDINGS: ReadonlyArray<{
   name: string;
   resort: string;
   href: string;
 }> = [
-  { name: "Magic Kingdom", resort: "Walt Disney World", href: "/magic-kingdom-wait-times-today" },
-  { name: "EPCOT", resort: "Walt Disney World", href: "/epcot-wait-times-today" },
-  { name: "Hollywood Studios", resort: "Walt Disney World", href: "/hollywood-studios-wait-times-today" },
-  { name: "Animal Kingdom", resort: "Walt Disney World", href: "/animal-kingdom-wait-times-today" },
-  { name: "Disneyland", resort: "Disneyland Resort", href: "/disneyland-wait-times-today" },
-  { name: "California Adventure", resort: "Disneyland Resort", href: "/california-adventure-wait-times-today" },
+  { name: "Magic Kingdom", resort: "Walt Disney World", href: "/magic-kingdom-best-rides-today" },
+  { name: "EPCOT", resort: "Walt Disney World", href: "/epcot-best-rides-today" },
+  { name: "Hollywood Studios", resort: "Walt Disney World", href: "/hollywood-studios-best-rides-today" },
+  { name: "Animal Kingdom", resort: "Walt Disney World", href: "/animal-kingdom-best-rides-today" },
+  { name: "Disneyland", resort: "Disneyland Resort", href: "/disneyland-best-rides-today" },
+  { name: "California Adventure", resort: "Disneyland Resort", href: "/california-adventure-best-rides-today" },
 ];
 
 /* ─────────────────────────────────────────────────────────────────
- * /wait-times-today
+ * /best-rides-today
  *
- * SEO landing page targeting the cross-park query
- *   "disney wait times today"
+ * SEO landing page targeting the cross-park decision query
+ *   "best disney rides today"
  *
- * The page reuses the same components that power /waits — no new UI
- * built — but front-loads the date and "today" framing for query
- * intent, plus pushes the Parkio Daily and the iPhone app.
+ * Sister page to /wait-times-today. Where /wait-times-today shows
+ * the raw data, this page shows the *decision*: Parkio's top 1–2
+ * picks per park right now, derived from the same live data via
+ * `partitionAttractions()`. No new visual primitives — the hub grid
+ * and the per-park pages compose existing components.
  * ───────────────────────────────────────────────────────────────── */
 
-const PATH = "/wait-times-today";
+const PATH = "/best-rides-today";
 
 export function generateMetadata(): Metadata {
   const { long } = getTodayLandingDate();
-  const title = `Disney Wait Times Today — ${long}`;
-  const description = `Live Disney wait times for ${long}. Real-time queues at Magic Kingdom, EPCOT, Hollywood Studios, Animal Kingdom, Disneyland, and California Adventure — refreshed every minute on Parkio.`;
+  const title = `Best Disney Rides Today — ${long}`;
+  const description = `What to ride at Disney today, ${long}. Parkio's smart picks across Magic Kingdom, EPCOT, Hollywood Studios, Animal Kingdom, Disneyland, and California Adventure — headliners with short queues, walk-on gems, and what to skip — refreshed every minute.`;
   return {
     title,
     description,
     alternates: { canonical: PATH },
     openGraph: {
-      title: "Disney Wait Times Today — Parkio",
+      title: "Best Disney Rides Today — Parkio",
       description,
       type: "website",
       url: PATH,
@@ -58,7 +59,7 @@ export function generateMetadata(): Metadata {
   };
 }
 
-export default function WaitTimesTodayPage() {
+export default function BestRidesTodayPage() {
   const { long } = getTodayLandingDate();
 
   return (
@@ -73,12 +74,13 @@ export default function WaitTimesTodayPage() {
               Today · {long}
             </p>
             <h1 className="mt-3 text-4xl font-semibold tracking-tight text-ink-900 sm:text-5xl">
-              Disney wait times today.
+              Best Disney rides today.
             </h1>
             <p className="mt-4 text-lg text-ink-600">
-              Live queues across all six U.S. Disney parks, refreshed every
-              minute. Tap a park to see every operating ride and the best
-              picks right now.
+              Smart picks across all six U.S. Disney parks based on live wait
+              times right now. Headliners with short queues, walk-on gems most
+              people skip, and what to avoid until later — refreshed every
+              minute.
             </p>
             <div className="mt-5 flex flex-wrap gap-3">
               <Link
@@ -88,10 +90,10 @@ export default function WaitTimesTodayPage() {
                 Open Parkio
               </Link>
               <Link
-                href="/best-rides-today"
+                href="/wait-times-today"
                 className="inline-flex items-center gap-2 rounded-full bg-white px-5 py-3 text-sm font-semibold text-ink-900 ring-1 ring-ink-200 transition hover:bg-ink-50"
               >
-                See best rides today →
+                See live wait times →
               </Link>
               <Link
                 href="/guide"
@@ -101,19 +103,16 @@ export default function WaitTimesTodayPage() {
               </Link>
             </div>
           </div>
-
-          <ParksTodayOverview />
         </div>
       </section>
 
       {/* By-park internal navigation. Six explicit links to the park-
-          specific landing pages so Google can discover the full
-          cluster in one crawl and visitors can jump straight to the
-          park they're searching for. Renders as a dense pill grid so
-          all six fit above the fold on mobile. */}
+          specific best-rides-today pages so Google can discover the
+          full cluster in one crawl and visitors can jump straight to
+          the park they're searching for. */}
       <section className="mx-auto max-w-7xl px-5 sm:px-8">
         <h2 className="text-sm font-semibold uppercase tracking-widest text-ink-500">
-          Wait times by park
+          Best rides by park
         </h2>
         <ul className="mt-4 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
           {PARK_LANDINGS.map((p) => (
@@ -137,11 +136,10 @@ export default function WaitTimesTodayPage() {
         </ul>
       </section>
 
-      {/* The full per-park live grid — reused 1:1 from /waits */}
-      <WaitsAllParks />
+      {/* The full per-park top-picks grid — primary content. */}
+      <BestRidesAllParksGrid />
 
-      {/* Conversion: Parkio Daily teaser → keeps the reader in the
-          Parkio ecosystem with the latest briefing. */}
+      {/* Conversion: Parkio Daily teaser */}
       <section className="mx-auto max-w-7xl px-5 sm:px-8">
         <HomeDailyTeaser />
       </section>
