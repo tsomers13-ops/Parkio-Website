@@ -1,5 +1,11 @@
 import Link from "next/link";
 
+import {
+  APP_DOWNLOAD_CTA_ATTR,
+  APP_STORE_LIVE,
+  APP_STORE_URL,
+} from "@/lib/appStore";
+
 interface AppStoreCtaProps {
   /**
    * "card" sits inline in article bodies; "banner" spans full-width
@@ -13,42 +19,35 @@ interface AppStoreCtaProps {
 }
 
 /**
- * App Store call-to-action. Reads the App Store URL from the
- * NEXT_PUBLIC_APP_STORE_URL env var so we can ship before the app is
- * publicly listed. When unset, falls back to /parks (the live web
- * experience) so the CTA still funnels into the product.
+ * App Store call-to-action. Reads the App Store URL from
+ * `lib/appStore` (single source of truth) so the URL and tracking
+ * stay in sync with every other download CTA across the site.
  */
-const APP_STORE_URL =
-  process.env.NEXT_PUBLIC_APP_STORE_URL ??
-  process.env.APP_STORE_URL ??
-  "/parks";
-
-const APP_LIVE = APP_STORE_URL.startsWith("http");
+const APP_LIVE = APP_STORE_LIVE;
 
 export function AppStoreCta({
   variant = "card",
   headline,
   subline,
 }: AppStoreCtaProps) {
-  const h =
-    headline ??
-    (APP_LIVE
-      ? "Parkio for iPhone"
-      : "Until the app ships, the web is fast.");
+  const h = headline ?? "Parkio for iPhone";
   const s =
     subline ??
-    (APP_LIVE
-      ? "Live wait times, smart picks, and walk-time hints — designed for use in the park."
-      : "Open Parkio on the web and get the same live picks and map.");
-  const ctaLabel = APP_LIVE ? "Download on the App Store" : "Open Parkio";
-  const ctaHref = APP_LIVE ? APP_STORE_URL : "/parks";
+    "Live wait times, smart picks, and walk-time hints — designed for use in the park.";
+  const ctaLabel = "Download Parkio";
+  const ctaHref = APP_STORE_URL;
+  const externalProps = APP_LIVE
+    ? { target: "_blank" as const, rel: "noopener" as const }
+    : {};
+  const trackingAttr = { "data-cta": APP_DOWNLOAD_CTA_ATTR };
 
   if (variant === "inline") {
     return (
       <Link
         href={ctaHref}
+        {...trackingAttr}
         className="group inline-flex items-center gap-2 rounded-full bg-ink-900 px-4 py-2 text-sm font-medium text-white shadow-soft transition hover:bg-ink-800"
-        {...(APP_LIVE ? { target: "_blank", rel: "noopener" } : {})}
+        {...externalProps}
       >
         {APP_LIVE && <AppleGlyph />}
         <span>{ctaLabel}</span>
@@ -79,8 +78,9 @@ export function AppStoreCta({
           </div>
           <Link
             href={ctaHref}
+            {...trackingAttr}
             className="inline-flex shrink-0 items-center gap-2 rounded-full bg-white px-5 py-3 text-sm font-semibold text-ink-900 shadow-lift transition hover:bg-ink-100"
-            {...(APP_LIVE ? { target: "_blank", rel: "noopener" } : {})}
+            {...externalProps}
           >
             {APP_LIVE && <AppleGlyph />}
             {ctaLabel}
@@ -105,8 +105,9 @@ export function AppStoreCta({
           <p className="mt-1 text-sm text-white/70">{s}</p>
           <Link
             href={ctaHref}
+            {...trackingAttr}
             className="mt-3 inline-flex items-center gap-1.5 rounded-full bg-white px-4 py-2 text-sm font-medium text-ink-900 transition hover:bg-ink-100"
-            {...(APP_LIVE ? { target: "_blank", rel: "noopener" } : {})}
+            {...externalProps}
           >
             {ctaLabel}
             <svg viewBox="0 0 16 16" className="h-3 w-3" aria-hidden>

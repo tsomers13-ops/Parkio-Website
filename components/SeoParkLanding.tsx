@@ -13,6 +13,7 @@
 
 import Link from "next/link";
 
+import { AppDownloadButton } from "@/components/AppDownloadButton";
 import { ConversionBlock } from "@/components/ConversionBlock";
 import { Footer } from "@/components/Footer";
 import { HomeDailyTeaser } from "@/components/HomeDailyTeaser";
@@ -57,11 +58,14 @@ export function SeoParkLanding({
               now, plus the full live map.
             </p>
             <div className="mt-5 flex flex-wrap gap-3">
+              {/* Primary CTA: App Store. Above the fold so a search-
+                  driven visitor sees the download path first. */}
+              <AppDownloadButton tone="dark" size="md" />
               <Link
                 href={`/parks/${park.id}`}
-                className="inline-flex items-center gap-2 rounded-full bg-ink-900 px-5 py-3 text-sm font-semibold text-white shadow-soft transition hover:bg-ink-800"
+                className="inline-flex items-center gap-2 rounded-full bg-white px-5 py-3 text-sm font-semibold text-ink-900 ring-1 ring-ink-200 transition hover:bg-ink-50"
               >
-                Open {park.shortName ?? park.name} on Parkio
+                Open in app
               </Link>
               <Link
                 href="/guide"

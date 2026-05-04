@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
+import { AppDownloadButton } from "@/components/AppDownloadButton";
 import { BestRidesAllParksGrid } from "@/components/BestRidesAllParksGrid";
 import { ConversionBlock } from "@/components/ConversionBlock";
 import { Footer } from "@/components/Footer";
@@ -83,23 +84,19 @@ export default function BestRidesTodayPage() {
               minute.
             </p>
             <div className="mt-5 flex flex-wrap gap-3">
+              {/* Primary CTA: App Store. Above the fold. */}
+              <AppDownloadButton tone="dark" size="md" />
               <Link
                 href="/parks"
-                className="inline-flex items-center gap-2 rounded-full bg-ink-900 px-5 py-3 text-sm font-semibold text-white shadow-soft transition hover:bg-ink-800"
+                className="inline-flex items-center gap-2 rounded-full bg-white px-5 py-3 text-sm font-semibold text-ink-900 ring-1 ring-ink-200 transition hover:bg-ink-50"
               >
-                Open Parkio
+                Open in app
               </Link>
               <Link
                 href="/wait-times-today"
                 className="inline-flex items-center gap-2 rounded-full bg-white px-5 py-3 text-sm font-semibold text-ink-900 ring-1 ring-ink-200 transition hover:bg-ink-50"
               >
                 See live wait times →
-              </Link>
-              <Link
-                href="/guide"
-                className="inline-flex items-center gap-2 rounded-full bg-white px-5 py-3 text-sm font-semibold text-ink-900 ring-1 ring-ink-200 transition hover:bg-ink-50"
-              >
-                Read Parkio Daily →
               </Link>
             </div>
           </div>

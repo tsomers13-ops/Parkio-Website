@@ -1,10 +1,12 @@
 import Link from "next/link";
 
-const APP_STORE_URL =
-  process.env.NEXT_PUBLIC_APP_STORE_URL ??
-  process.env.APP_STORE_URL ??
-  "";
-const APP_LIVE = APP_STORE_URL.startsWith("http");
+import {
+  APP_DOWNLOAD_CTA_ATTR,
+  APP_STORE_LIVE,
+  APP_STORE_URL,
+} from "@/lib/appStore";
+
+const APP_LIVE = APP_STORE_LIVE;
 
 /**
  * Conversion-focused homepage hero.
@@ -116,10 +118,11 @@ function PrimaryCta() {
         href={APP_STORE_URL}
         target="_blank"
         rel="noopener"
+        data-cta={APP_DOWNLOAD_CTA_ATTR}
         className="group inline-flex items-center justify-center gap-2.5 rounded-full bg-ink-900 px-6 py-3.5 text-base font-semibold text-white shadow-lift transition hover:bg-ink-800 active:scale-[0.98]"
       >
         <AppleGlyph />
-        Download on the App Store
+        Download Parkio
       </Link>
     );
   }
@@ -128,9 +131,10 @@ function PrimaryCta() {
   return (
     <Link
       href="/parks"
+      data-cta={APP_DOWNLOAD_CTA_ATTR}
       className="group inline-flex items-center justify-center gap-2.5 rounded-full bg-ink-900 px-6 py-3.5 text-base font-semibold text-white shadow-lift transition hover:bg-ink-800 active:scale-[0.98]"
     >
-      Open Parkio
+      Download Parkio
       <svg viewBox="0 0 16 16" className="h-4 w-4" aria-hidden>
         <path
           d="M6 3l5 5-5 5"

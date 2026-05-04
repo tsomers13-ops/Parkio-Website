@@ -6,6 +6,7 @@ import { ParkInsights } from "@/components/ParkInsights";
 import { ParkLiveDataProvider } from "@/components/ParkLiveDataProvider";
 import { ParkMap } from "@/components/ParkMap";
 import { ParkNearYou } from "@/components/ParkNearYou";
+import { ParkPageAppCta } from "@/components/ParkPageAppCta";
 import { ParkRecommendations } from "@/components/ParkRecommendations";
 import { ParkRightNow } from "@/components/ParkRightNow";
 import { PARKS, getPark, getRidesForPark } from "@/lib/data";
@@ -57,6 +58,9 @@ export default function ParkPage({ params }: ParkPageProps) {
           <ParkInsights park={park} />
         </MapFocusProvider>
       </ParkLiveDataProvider>
+      {/* Subtle inline App Store CTA — sits above the footer so it
+          never competes with the live map. */}
+      <ParkPageAppCta />
       <Footer />
     </main>
   );

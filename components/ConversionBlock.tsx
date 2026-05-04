@@ -1,5 +1,11 @@
 import Link from "next/link";
 
+import {
+  APP_DOWNLOAD_CTA_ATTR,
+  APP_STORE_LIVE,
+  APP_STORE_URL,
+} from "@/lib/appStore";
+
 type Variant = "picks" | "waits" | "app";
 
 interface ConversionBlockProps {
@@ -106,7 +112,7 @@ export function ConversionBlock({ variant }: ConversionBlockProps) {
         Built for use in the park
       </p>
       <h3 className="mt-1 text-2xl font-semibold tracking-tight sm:text-[28px]">
-        Download the Parkio app.
+        Download Parkio.
       </h3>
       <p className="mt-2 max-w-xl text-sm text-white/70 sm:text-base">
         Live wait times, smart picks, walk-time hints, and the map —
@@ -118,7 +124,7 @@ export function ConversionBlock({ variant }: ConversionBlockProps) {
           href="/parks"
           className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-5 py-3 text-sm font-medium text-white/90 backdrop-blur transition hover:bg-white/10"
         >
-          Or open on the web
+          Open in app
         </Link>
       </div>
     </div>
@@ -141,30 +147,26 @@ function Chevron() {
 }
 
 /**
- * Inline App Store button. Reads the App Store URL from env at build
- * time. Falls back to "Open Parkio on the web" when the URL isn't yet
- * configured, so the funnel is never broken.
+ * Inline App Store button. Reads the App Store URL from
+ * `lib/appStore` (single source of truth across the site) and tags
+ * the click with `data-cta="app-download"` for analytics.
  */
 function AppStoreInlineCta() {
-  const url =
-    process.env.NEXT_PUBLIC_APP_STORE_URL ??
-    process.env.APP_STORE_URL ??
-    "/parks";
-  const live = url.startsWith("http");
   return (
     <Link
-      href={url}
+      href={APP_STORE_URL}
+      data-cta={APP_DOWNLOAD_CTA_ATTR}
       className="inline-flex items-center gap-2 rounded-full bg-white px-5 py-3 text-sm font-semibold text-ink-900 shadow-lift transition hover:bg-ink-100"
-      {...(live ? { target: "_blank", rel: "noopener" } : {})}
+      {...(APP_STORE_LIVE ? { target: "_blank", rel: "noopener" } : {})}
     >
-      {live ? (
+      {APP_STORE_LIVE ? (
         <>
           <AppleGlyph />
-          Download on the App Store
+          Download Parkio
         </>
       ) : (
         <>
-          Open Parkio
+          Download Parkio
           <Chevron />
         </>
       )}
