@@ -2,6 +2,7 @@ import { Fragment } from "react";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
+import { AppDownloadButton } from "@/components/AppDownloadButton";
 import { AppStoreCta } from "@/components/AppStoreCta";
 import { ConversionBlock } from "@/components/ConversionBlock";
 import { Footer } from "@/components/Footer";
@@ -155,9 +156,14 @@ function DailyBriefing({ post }: { post: DailyPost }) {
 
         {/* Body sections + interleaved conversion blocks */}
         <div className="mx-auto max-w-3xl px-5 sm:px-8">
-          {presentSections.map((key) => (
+          {presentSections.map((key, idx) => (
             <Fragment key={key}>
               <DailySectionView post={post} sectionKey={key} />
+              {/* After-first-section App download strip — the primary
+                  in-article download moment per the conversion brief.
+                  Compact one-line strip so it doesn't compete with the
+                  picks/waits ConversionBlocks below. */}
+              {idx === 0 && <DailyAppDownloadStrip />}
               {key === picksAfter && <ConversionBlock variant="picks" />}
               {key === waitsAfter && <ConversionBlock variant="waits" />}
             </Fragment>
@@ -371,6 +377,33 @@ function CtaPill({
       </span>
       <Chevron />
     </Link>
+  );
+}
+
+/* ─────────────── In-article App download strip ─────────────── */
+
+/**
+ * Compact one-line App Store CTA inserted between body sections in
+ * the daily briefing. Sits after the FIRST present section so a
+ * reader who's already engaged sees a low-friction download moment
+ * without any modal or popup.
+ *
+ * Mobile-friendly: stacks the eyebrow + button into a column on
+ * narrow viewports, side-by-side on sm+. Tap target is 44px+.
+ */
+function DailyAppDownloadStrip() {
+  return (
+    <aside className="my-8 flex flex-col items-start justify-between gap-3 rounded-2xl border border-ink-100 bg-white px-4 py-4 shadow-soft sm:flex-row sm:items-center sm:px-5">
+      <div className="min-w-0">
+        <p className="text-xs font-semibold uppercase tracking-widest text-accent-700">
+          In your pocket today
+        </p>
+        <p className="mt-0.5 text-sm font-semibold text-ink-900 sm:text-base">
+          Live picks + walk-time hints, designed for use in the park.
+        </p>
+      </div>
+      <AppDownloadButton tone="dark" size="md" />
+    </aside>
   );
 }
 
@@ -751,6 +784,10 @@ function EvergreenGuide({ post }: { post: GuidePost }) {
         </div>
       </article>
 
+      {/* End-of-article App Store CTA — second download moment at the
+          tail of the evergreen guide, mirroring the daily briefing's
+          AppStoreCta banner. */}
+      <AppStoreCta variant="banner" />
       <Footer />
     </main>
   );
