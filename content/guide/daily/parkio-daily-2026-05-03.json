@@ -1,0 +1,159 @@
+{
+  "title": "Parkio Daily: May 3, 2026",
+  "slug": "parkio-daily-2026-05-03",
+  "date": "2026-05-03",
+  "teaser": "Disney Week of Wishes continues worldwide. Plus live streams from Disneyland and Magic Kingdom, new food spotlights, and Star Wars Nite merch.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Big Thunder Mountain Railroad",
+        "parkSlug": "magic-kingdom",
+        "note": "Soft opening rumored—check park hours"
+      },
+      {
+        "name": "Paint the Night",
+        "parkSlug": "disneyland",
+        "note": "Returning for evening shows tonight"
+      },
+      {
+        "name": "Yak & Yeti Restaurant",
+        "parkSlug": "animal-kingdom",
+        "note": "New menu items now available"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [],
+    "bignews": [
+      {
+        "title": "Disney Week of Wishes celebrates Make-A-Wish partnerships worldwide",
+        "body": "Disney parks around the globe are hosting wish experiences for children facing critical illnesses. Disneyland Paris welcomed 80 wish families from 10 countries for a Frozen-inspired celebration. Hong Kong Disneyland granted a photography-themed wish and announced an HK$800,000 donation to Make-A-Wish Hong Kong. Tokyo Disney Resort, Shanghai Disney Resort, and other parks are granting wishes all week. Since 1980, Disney has worked with Make-A-Wish to grant more than 175,000 wishes worldwide.",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/community-outreach/celebrating-disney-week-of-wishes-across-disney-experiences/"
+        }
+      }
+    ],
+    "topstories": [],
+    "icymi": [],
+    "spotlight": {
+      "title": "A wish is granted every hour",
+      "body": "Throughout Disney Week of Wishes, Disney parks are working with Make-A-Wish chapters to create life-changing moments for children and their families. From professional photography sessions to Super Hero training and character encounters, each wish is tailored to the passions and dreams of the wish child. The partnership has created magical memories for families around the world for more than four decades.",
+      "ctaLabel": "Read wish stories"
+    }
+  },
+  "videos": [
+    {
+      "videoId": "Gq0FTNDQ980",
+      "title": "Must Try NEW Menu at Yak & Yeti in Animal Kingdom | Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-04-27T16:00:04Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Gq0FTNDQ980/mqdefault.jpg",
+      "viewCount": 39294,
+      "url": "https://www.youtube.com/watch?v=Gq0FTNDQ980",
+      "summary": "WrightDownMainStreet reviews the new menu items at Yak & Yeti restaurant in Disney's Animal Kingdom."
+    },
+    {
+      "videoId": "1vLw4mKqByU",
+      "title": "🔴 Live: Saturday Stream at Disneyland! Paint the Night & Wondrous Journeys Fireworks - 05/02/26",
+      "channel": "Koda Bear the Explorer ",
+      "publishedAt": "2026-05-03T06:50:11Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/1vLw4mKqByU/mqdefault.jpg",
+      "viewCount": 36128,
+      "url": "https://www.youtube.com/watch?v=1vLw4mKqByU",
+      "summary": "Koda Bear the Explorer live streams from Disneyland featuring Paint the Night parade and Wondrous Journeys fireworks."
+    },
+    {
+      "videoId": "Bkjku9Zai_g",
+      "title": "Trying the BEST New Food at Universal Orlando | Universal Studios & Islands of Adventure",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-04-30T15:58:19Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Bkjku9Zai_g/mqdefault.jpg",
+      "viewCount": 22095,
+      "url": "https://www.youtube.com/watch?v=Bkjku9Zai_g",
+      "summary": "WrightDownMainStreet samples new food offerings across Universal Orlando's two theme parks."
+    },
+    {
+      "videoId": "josi8YRCCuQ",
+      "title": "LIVE from Magic Kingdom! Big Thunder Mountain Soft Open? Disney's NEW Starlight Parade & Rides",
+      "channel": "Living in DIZ",
+      "publishedAt": "2026-05-03T05:32:48Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/josi8YRCCuQ/mqdefault.jpg",
+      "viewCount": 15419,
+      "url": "https://www.youtube.com/watch?v=josi8YRCCuQ",
+      "summary": "Living in DIZ broadcasts live from Magic Kingdom covering possible Big Thunder Mountain soft opening and the new Starlight Parade."
+    },
+    {
+      "videoId": "aT3WFrmXyxM",
+      "title": "Fun moments at Disneyland #fyp #fun #funny #funnytiktok #foryou #disney #disneyland #disneyworld",
+      "channel": "Hoàng Đỗ",
+      "publishedAt": "2026-05-03T04:52:46Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/aT3WFrmXyxM/mqdefault.jpg",
+      "viewCount": 9335,
+      "url": "https://www.youtube.com/watch?v=aT3WFrmXyxM",
+      "summary": "Hoàng Đỗ shares funny moments captured at Disneyland."
+    },
+    {
+      "videoId": "dp3VLY_fOzU",
+      "title": "Exclusive Star Wars Nite Merch!",
+      "channel": "Finding The Force",
+      "publishedAt": "2026-05-03T02:51:50Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/dp3VLY_fOzU/mqdefault.jpg",
+      "viewCount": 2098,
+      "url": "https://www.youtube.com/watch?v=dp3VLY_fOzU",
+      "summary": "Finding The Force showcases exclusive merchandise available at Star Wars Nite events."
+    },
+    {
+      "videoId": "atioYIdh1Bw",
+      "title": "opening 2026 hidden mickey wave a pin packs at disneyland #disneyland #disneypintrading",
+      "channel": "Anabel Hernández",
+      "publishedAt": "2026-05-03T04:08:28Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/atioYIdh1Bw/mqdefault.jpg",
+      "viewCount": 1626,
+      "url": "https://www.youtube.com/watch?v=atioYIdh1Bw",
+      "summary": "Anabel Hernández opens 2026 Hidden Mickey pin packs at Disneyland."
+    },
+    {
+      "videoId": "IQ53iLBRl-Q",
+      "title": "They're not that noticeable on our face right? @StarWars #disneyland #disney #starwars",
+      "channel": "Breezy In The Park ",
+      "publishedAt": "2026-05-03T04:12:55Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/IQ53iLBRl-Q/mqdefault.jpg",
+      "viewCount": 1419,
+      "url": "https://www.youtube.com/watch?v=IQ53iLBRl-Q",
+      "summary": "Breezy In The Park shares a Star Wars-themed moment at Disneyland."
+    },
+    {
+      "videoId": "5Kc1OplboYQ",
+      "title": "a little disney tour #disneyland",
+      "channel": "Avantika Chauhan",
+      "publishedAt": "2026-05-03T03:01:42Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/5Kc1OplboYQ/mqdefault.jpg",
+      "viewCount": 1359,
+      "url": "https://www.youtube.com/watch?v=5Kc1OplboYQ",
+      "summary": "Avantika Chauhan gives a brief tour of Disneyland."
+    },
+    {
+      "videoId": "sGNikjJJyJs",
+      "title": "i love disney 😜🎢🏰 #disney #disneyland #shorts #funny #humor #disneyparks #friends #disneychannel",
+      "channel": "daymon",
+      "publishedAt": "2026-05-03T05:14:01Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/sGNikjJJyJs/mqdefault.jpg",
+      "viewCount": 1117,
+      "url": "https://www.youtube.com/watch?v=sGNikjJJyJs",
+      "summary": "Daymon shares humorous Disney parks content with friends."
+    }
+  ],
+  "updatedAt": "2026-05-03T10:00:36.143Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-05-03T10:00:36.143Z"
+  }
+}
