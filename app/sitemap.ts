@@ -19,6 +19,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE_URL}/`, lastModified: now, changeFrequency: "weekly", priority: 1 },
     { url: `${SITE_URL}/parks`, lastModified: now, changeFrequency: "hourly", priority: 0.9 },
     { url: `${SITE_URL}/waits`, lastModified: now, changeFrequency: "hourly", priority: 0.9 },
+    // High-intent SEO landing pages — same data as /waits and /parks/*
+    // but framed for the "today" search query. lastModified is `now`
+    // so each Cloudflare rebuild bumps the freshness signal.
+    { url: `${SITE_URL}/wait-times-today`, lastModified: now, changeFrequency: "hourly", priority: 0.85 },
+    { url: `${SITE_URL}/magic-kingdom-wait-times-today`, lastModified: now, changeFrequency: "hourly", priority: 0.85 },
+    { url: `${SITE_URL}/epcot-wait-times-today`, lastModified: now, changeFrequency: "hourly", priority: 0.85 },
+    { url: `${SITE_URL}/hollywood-studios-wait-times-today`, lastModified: now, changeFrequency: "hourly", priority: 0.85 },
+    { url: `${SITE_URL}/animal-kingdom-wait-times-today`, lastModified: now, changeFrequency: "hourly", priority: 0.85 },
+    { url: `${SITE_URL}/disneyland-wait-times-today`, lastModified: now, changeFrequency: "hourly", priority: 0.85 },
+    { url: `${SITE_URL}/california-adventure-wait-times-today`, lastModified: now, changeFrequency: "hourly", priority: 0.85 },
     { url: `${SITE_URL}/guide`, lastModified: now, changeFrequency: "daily", priority: 0.8 },
     { url: `${SITE_URL}/feed.xml`, lastModified: now, changeFrequency: "daily", priority: 0.7 },
     { url: `${SITE_URL}/newsletter`, lastModified: now, changeFrequency: "monthly", priority: 0.6 },
