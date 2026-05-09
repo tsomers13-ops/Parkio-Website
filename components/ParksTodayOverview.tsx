@@ -2,10 +2,26 @@
 
 import { useAllLive } from "@/lib/useAllLive";
 
+/**
+ * Resolves the value to display in a tile for a particular metric.
+ *
+ * Three states matter to a guest:
+ *   - LOADING    → "Loading…" (we haven't heard back from the API yet)
+ *   - HAVE VALUE → render the value (with optional "(est.)" hint)
+ *   - NO DATA    → "Not available" (loaded, but nothing to compute from
+ *                  — a CLOSED night, an upstream outage with empty
+ *                  ride lists, etc.). Better than "—" which reads as
+ *                  "broken".
+ *
+ * The rendering rules below are duplicated for each tile rather than
+ * abstracted, so the copy stays clear in the JSX.
+ */
+
 export function ParksTodayOverview() {
   const {
     status,
     averageWait,
+    averageWaitEstimated,
     busiestPark,
     quietestPark,
     openParkCount,
@@ -14,6 +30,37 @@ export function ParksTodayOverview() {
   } = useAllLive();
 
   const total = parks.length || 6;
+  const isLoading = status === "loading";
+
+  // Avg-wait tile: append "(est.)" when the entire average came from
+  // baseWait estimates rather than live data — keeps the number honest.
+  const avgValue = isLoading
+    ? "Loading…"
+    : averageWait !== null
+      ? `${averageWait} min${averageWaitEstimated ? " (est.)" : ""}`
+      : "Not available";
+
+  // Busiest / Quietest: the per-park summary already carries an
+  // `estimated` flag so we can label that specific park's row.
+  const busiestValue = isLoading
+    ? "Loading…"
+    : busiestPark
+      ? busiestPark.name
+      : "Not available";
+  const busiestSub =
+    !isLoading && busiestPark
+      ? `${busiestPark.avg} min avg${busiestPark.estimated ? " (est.)" : ""}`
+      : undefined;
+
+  const quietestValue = isLoading
+    ? "Loading…"
+    : quietestPark
+      ? quietestPark.name
+      : "Not available";
+  const quietestSub =
+    !isLoading && quietestPark
+      ? `${quietestPark.avg} min avg${quietestPark.estimated ? " (est.)" : ""}`
+      : undefined;
 
   return (
     <div className="mt-10">
@@ -30,22 +77,11 @@ export function ParksTodayOverview() {
       <div className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-4">
         <Tile
           label="Parks open"
-          value={status === "loading" ? "—" : `${openParkCount} / ${total}`}
+          value={isLoading ? "Loading…" : `${openParkCount} / ${total}`}
         />
-        <Tile
-          label="Avg wait"
-          value={averageWait !== null ? `${averageWait} min` : "—"}
-        />
-        <Tile
-          label="Busiest park"
-          value={busiestPark ? busiestPark.name : "—"}
-          sub={busiestPark ? `${busiestPark.avg} min avg` : undefined}
-        />
-        <Tile
-          label="Quietest park"
-          value={quietestPark ? quietestPark.name : "—"}
-          sub={quietestPark ? `${quietestPark.avg} min avg` : undefined}
-        />
+        <Tile label="Avg wait" value={avgValue} />
+        <Tile label="Busiest park" value={busiestValue} sub={busiestSub} />
+        <Tile label="Quietest park" value={quietestValue} sub={quietestSub} />
       </div>
     </div>
   );
