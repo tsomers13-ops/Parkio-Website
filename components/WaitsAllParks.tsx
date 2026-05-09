@@ -1,13 +1,118 @@
 "use client";
 
+import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import { RIDES } from "@/lib/data";
+import { fetchParkLive } from "@/lib/parkioClient";
 import { useAllLive } from "@/lib/useAllLive";
 import type { ApiAttraction, ApiPark, ApiParkLive } from "@/lib/types";
 import { waitColorClasses, waitTier } from "@/lib/utils";
 
+/**
+ * Shared "real live data" predicate. The single source of truth for
+ * deciding whether a park has actually-usable live waits, used in
+ * three places:
+ *   - `ParkBlock` mode classifier
+ *   - the backup-fetch effect (decides which parks need a re-pull)
+ *   - the diagnostic logger
+ *
+ * Real live = at least one attraction with status === "OPERATING" AND
+ * a numeric `waitMinutes`. Anything else (UNKNOWN/null entries, an
+ * empty attractions array, or `live: true` with junk content) does
+ * NOT count as real live data, regardless of the `live.live` flag.
+ */
+function hasRealLive(live: ApiParkLive | null | undefined): boolean {
+  return !!live?.attractions.some(
+    (a) => a.status === "OPERATING" && typeof a.waitMinutes === "number",
+  );
+}
+
 export function WaitsAllParks() {
   const { status, parks, liveByPark } = useAllLive();
+
+  // Backup per-park fetch. The multi-park parallel fetch inside
+  // `useAllLive` occasionally drops a park (transient network blip,
+  // HTTP/1.1 connection cap, abort race in StrictMode). When that
+  // happens, the shared `liveByPark` is missing that park's entry
+  // even though a single follow-up fetch would succeed — which is
+  // exactly the case where /parks/{slug} shows real waits while this
+  // page is stuck on Estimated. We keep a local backup keyed by slug
+  // and prefer it whenever `useAllLive`'s entry is unhealthy.
+  const [backupBySlug, setBackupBySlug] = useState<Map<string, ApiParkLive>>(
+    () => new Map(),
+  );
+  // Tracks slugs we've already attempted a backup fetch for, so we
+  // don't re-fire on every render. Reset when slugs come back online
+  // in the shared map.
+  const inFlightRef = useRef<Set<string>>(new Set());
+
+  useEffect(() => {
+    if (parks.length === 0) return;
+
+    let cancelled = false;
+    const ctls: AbortController[] = [];
+
+    for (const park of parks) {
+      // Skip closed parks — we don't need real waits for them.
+      if (park.status === "CLOSED") continue;
+
+      const shared = liveByPark.get(park.slug) ?? null;
+      // Already healthy in the shared map → drop any backup we kept.
+      if (hasRealLive(shared)) {
+        if (backupBySlug.has(park.slug)) {
+          setBackupBySlug((prev) => {
+            if (!prev.has(park.slug)) return prev;
+            const next = new Map(prev);
+            next.delete(park.slug);
+            return next;
+          });
+        }
+        inFlightRef.current.delete(park.slug);
+        continue;
+      }
+
+      // Shared entry is missing OR present-but-junk. If the local
+      // backup we already have is real-live, we're good — leave it.
+      if (hasRealLive(backupBySlug.get(park.slug))) continue;
+
+      // Skip if a backup fetch is already in-flight for this slug.
+      if (inFlightRef.current.has(park.slug)) continue;
+
+      inFlightRef.current.add(park.slug);
+      const ctl = new AbortController();
+      ctls.push(ctl);
+
+      fetchParkLive(park.slug, ctl.signal)
+        .then((res) => {
+          if (cancelled || ctl.signal.aborted) return;
+          // Only commit a backup that actually has real-live data —
+          // otherwise we'd be replacing junk with more junk.
+          if (hasRealLive(res)) {
+            setBackupBySlug((prev) => {
+              const next = new Map(prev);
+              next.set(park.slug, res);
+              return next;
+            });
+          }
+        })
+        .catch(() => {
+          // Silent fail — the card will keep rendering whatever the
+          // shared map provides (likely Estimated mode).
+        })
+        .finally(() => {
+          inFlightRef.current.delete(park.slug);
+        });
+    }
+
+    return () => {
+      cancelled = true;
+      for (const ctl of ctls) ctl.abort();
+    };
+    // We intentionally exclude `backupBySlug` from deps — it's only
+    // read for early-exit checks, not for triggering re-fetches.
+    // Including it would cause a refetch storm.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [parks, liveByPark]);
 
   if (status === "loading" && parks.length === 0) {
     return (
@@ -25,13 +130,27 @@ export function WaitsAllParks() {
     <section className="border-t border-ink-100 bg-white">
       <div className="mx-auto max-w-7xl px-5 py-16 sm:px-8 sm:py-24">
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
-          {parks.map((park) => (
-            <ParkBlock
-              key={park.slug}
-              park={park}
-              live={liveByPark.get(park.slug) ?? null}
-            />
-          ))}
+          {parks.map((park) => {
+            // Prefer the shared payload from `useAllLive` when it has
+            // real-live data; otherwise prefer the per-park backup
+            // (also gated on real-live); otherwise fall back to whatever
+            // is non-null (so estimated rendering still has the
+            // attractions list to look at if upstream returned junk).
+            const shared = liveByPark.get(park.slug) ?? null;
+            const backup = backupBySlug.get(park.slug) ?? null;
+            const effective: ApiParkLive | null = hasRealLive(shared)
+              ? shared
+              : hasRealLive(backup)
+                ? backup
+                : (shared ?? backup);
+            return (
+              <ParkBlock
+                key={park.slug}
+                park={park}
+                live={effective}
+              />
+            );
+          })}
         </div>
       </div>
     </section>
@@ -51,18 +170,10 @@ export function WaitsAllParks() {
  *                   or `live` itself is null/false). Shows
  *                   "X attractions tracked" + "Estimated waits available"
  *                   + a small "Estimated" pill so the card looks usable
- *                   instead of empty. This is the fallback for any
- *                   junk-live-data case.
+ *                   instead of empty.
  *   - "closed"    — park is CLOSED today. We never advertise estimated
  *                   waits for closed parks; show closed-state copy and
  *                   suppress the Estimated pill.
- *
- * Note: an explicit "preopen" mode (live.live === true but nothing yet
- * operating) was considered but dropped — it can't be distinguished
- * from a junk-data response by shape alone, and rendering "0 of N
- * operating" / "No live waits reported yet today" in that ambiguous
- * case is the exact bug we're fixing. Treating both as `estimated` is
- * the safer default per the conversion brief.
  */
 type CardMode = "live" | "estimated" | "closed";
 
@@ -74,25 +185,33 @@ function ParkBlock({
   live: ApiParkLive | null;
 }) {
   const attractions: ApiAttraction[] = live?.attractions ?? [];
-  const operating = attractions.filter(
-    (a) => a.status === "OPERATING" && typeof a.waitMinutes === "number",
+  const operating = useMemo(
+    () =>
+      attractions.filter(
+        (a) =>
+          a.status === "OPERATING" && typeof a.waitMinutes === "number",
+      ),
+    [attractions],
   );
-  const top = [...operating]
-    .sort((a, b) => (b.waitMinutes as number) - (a.waitMinutes as number))
-    .slice(0, 6);
+  const top = useMemo(
+    () =>
+      [...operating]
+        .sort((a, b) => (b.waitMinutes as number) - (a.waitMinutes as number))
+        .slice(0, 6),
+    [operating],
+  );
 
-  // The ONLY signal we trust for live data: at least one operating
-  // attraction with a numeric wait. `live?.live === true` alone is
-  // unreliable — upstream sometimes flags a payload as live while
-  // every attraction is UNKNOWN / null.
-  const hasRealLiveData = attractions.some(
-    (a) => a.status === "OPERATING" && typeof a.waitMinutes === "number",
-  );
+  // Same predicate as `hasRealLive` above — inlined so React/tooling
+  // can see the dep cleanly.
+  const hasRealLiveData = operating.length > 0;
 
   // Static fallback — how many attractions Parkio tracks for this park,
   // independent of any live response. Used to size the "X attractions
   // tracked" line in estimated mode.
-  const trackedCount = RIDES.filter((r) => r.parkId === park.slug).length;
+  const trackedCount = useMemo(
+    () => RIDES.filter((r) => r.parkId === park.slug).length,
+    [park.slug],
+  );
 
   const mode: CardMode =
     park.status === "CLOSED"
