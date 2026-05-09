@@ -203,6 +203,13 @@ The Compose node hardcodes these guardrails into Claude's prompt:
    bignews item titled "No major updates today" and set
    `sections.breaking` and `sections.icymi` to `[]`. The Validate node
    detects this and sets `meta.fallbackReason = 'no-news'`.
+
+   This is distinct from the **transport-failure fallback** (see
+   "Failure handling" below): no-news comes from Claude itself when
+   sources are thin; transport-failure fires when Claude's API call
+   never returns a usable response (529 overload, 5xx, JSON parse
+   error, timeout). Both produce a publishable post; the
+   `fallbackReason` field disambiguates.
 3. **Ground every factual claim** in the provided source data.
 4. **Tone:** helpful, fast, guest-focused. No clickbait. No emojis.
 5. **Video summaries** are 1–2 sentences and based only on the video's
@@ -224,12 +231,69 @@ The Compose node hardcodes these guardrails into Claude's prompt:
 | 8 | YouTube — Get video stats | httpRequest | `videos.list` with `snippet,statistics` |
 | 9 | Rank Top 10 by views | code | Featured channels guaranteed slots; rest by view count |
 | 10 | Build research context | code | Bundle inputs + build Anthropic request body |
-| 11 | Compose with Claude | httpRequest | Anthropic credential `anthropicApi`, `claude-sonnet-4-5` |
+| 11 | Compose with Claude | httpRequest | Anthropic credential `anthropicApi`, `claude-sonnet-4-5`. **Hardened**: 120s timeout, `retryOnFail` 3× with 30s wait, `continueOnFail`+`neverError` so any non-2xx (529/500/429/etc.) flows to the validate node instead of stopping the pipeline. |
 | 12 | Validate + format JSON | code | Schema check + AI metadata + file payload |
 | 13 | GitHub — Lookup existing SHA | httpRequest | `Continue On Fail` so 404 is OK (means new file) |
 | 14 | GitHub — Build commit body | code | Base64-encode (Code-node Buffer); include sha if updating |
 | 15 | Commit to GitHub | httpRequest | `PUT /contents/{path}` — upsert |
 | 16 | Wait 90s for Cloudflare deploy | wait | Terminal — gives Pages time to rebuild before the feed is consumed |
+
+## Failure handling — Compose with Claude
+
+The Claude HTTP call is the single most failure-prone node in the
+pipeline (it depends on a third-party API and a long context). It's
+hardened to never hard-stop the workflow:
+
+| Failure mode | Symptom | What happens |
+|---|---|---|
+| Transient overload | HTTP 529 ("Overloaded") | Retry 3× with 30s backoff; if still failing, fallback fires |
+| Server error | HTTP 500/502/504 | Same — retry then fallback |
+| Rate limit | HTTP 429 | Same — retry then fallback |
+| Bad request | HTTP 400 (e.g. invalid model) | No retry-and-recover (it would loop); fallback fires |
+| Auth failure | HTTP 401 | Same as 400 — fallback fires; **fix the credential, not the workflow** |
+| Timeout | Request exceeds 120s | Retry then fallback |
+| Non-JSON output | Claude returned prose | Caught by JSON.parse; fallback fires (`fallbackReason: 'json-parse-failure'`) |
+
+The fallback briefing is minimal but valid:
+
+- `meta.fallbackReason` is set to `'claude-failure'` or
+  `'json-parse-failure'`
+- `meta.fallbackDetail` contains the upstream error message (or
+  HTTP status) so you can grep for the root cause across past runs
+- `meta.aiGenerated` is `false` (so the website's AI-generated
+  badge isn't shown)
+- One bignews item: "No major updates found today. Check live park
+  data in Parkio."
+- Videos pass through from the upstream YouTube ranking — the rail
+  still has content
+
+GitHub commit, Cloudflare rebuild, and the RSS feed all still happen
+on the fallback path. Buttondown will still send. Subscribers get a
+short, honest briefing rather than nothing.
+
+### How to read the actual Claude error
+
+Open the failed execution in n8n:
+
+1. Workflow URL: https://parkio.app.n8n.cloud/workflow/XWPcRzW8r2chhoRt
+2. Executions tab → click the failed run
+3. Click the **Compose with Claude** node
+4. Inspect:
+   - **Output → Error → response.body** — Anthropic's actual error JSON
+   - **Output → Error → status / statusCode** — HTTP code (e.g. 529)
+   - **Input → claudeBody** — the request body that was sent
+
+With `neverError: true` on the node, Anthropic's error JSON now
+appears in the **Output** (not Error) tab — easier to inspect.
+`meta.fallbackDetail` on the published post also captures it.
+
+### When to bump the model
+
+`claude-sonnet-4-5` is the current alias. If the API ever returns
+`{ "type":"error", "error":{ "type":"not_found_error" } }` for the
+model name, swap to a date-suffixed alias or a newer mainline model
+(`claude-sonnet-4-6`) by editing `model:` in the **Build research
+context** Code node — that's the only place the model is named.
 
 ## Required credentials in n8n
 
