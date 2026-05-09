@@ -27,6 +27,107 @@ function hasRealLive(live: ApiParkLive | null | undefined): boolean {
   );
 }
 
+function operatingNumericCount(
+  live: ApiParkLive | null | undefined,
+): number {
+  return (live?.attractions ?? []).filter(
+    (a) => a.status === "OPERATING" && typeof a.waitMinutes === "number",
+  ).length;
+}
+
+/* ────────────────────────────────────────────────────────────────
+ *
+ * TEMPORARY DIAGNOSTICS — remove this block once the WaitsAllParks
+ * vs. ParkMap data-source discrepancy is root-caused.
+ *
+ * What it logs (per park, per render and per backup-fetch event):
+ *
+ *   [WaitsAllParks] mk render
+ *     park.id, park.status, endpoint
+ *     liveByPark has entry?  shared.live, shared.attractions.length,
+ *       shared OPERATING+numeric count, sample attraction (if any)
+ *     backup attempted?  in-flight?  committed?
+ *     backup.live, backup.attractions.length, backup OP+numeric count
+ *     final selected mode (live | estimated | closed)
+ *
+ *   [WaitsAllParks] mk backup fetch START  → URL
+ *   [WaitsAllParks] mk backup fetch RESOLVED  → counts + sample
+ *   [WaitsAllParks] mk backup fetch FAILED  → error message
+ *
+ * To inspect: open DevTools → Console; filter by `[WaitsAllParks]`.
+ * Network tab will also show the `/api/parks/{slug}/live` calls
+ * with status, headers, and JSON body — copy those for any park
+ * that misbehaves.
+ *
+ * ──────────────────────────────────────────────────────────────── */
+
+const DEBUG_TAG = "[WaitsAllParks]";
+
+function dbgRender(
+  park: ApiPark,
+  shared: ApiParkLive | null,
+  backup: ApiParkLive | null,
+  backupAttempted: boolean,
+  inFlight: boolean,
+  mode: string,
+) {
+  if (typeof window === "undefined") return;
+  const sharedAttrs = shared?.attractions ?? [];
+  const backupAttrs = backup?.attractions ?? [];
+  const sample = [...sharedAttrs, ...backupAttrs].find(
+    (a) => a.status === "OPERATING" && typeof a.waitMinutes === "number",
+  );
+  // eslint-disable-next-line no-console
+  console.groupCollapsed(`${DEBUG_TAG} ${park.slug} render → mode=${mode}`);
+  // eslint-disable-next-line no-console
+  console.log("park.id          :", park.slug);
+  // eslint-disable-next-line no-console
+  console.log("park.status      :", park.status);
+  // eslint-disable-next-line no-console
+  console.log(
+    "endpoint         :",
+    `/api/parks/${park.slug}/live`,
+  );
+  // eslint-disable-next-line no-console
+  console.log("shared present?  :", shared !== null);
+  // eslint-disable-next-line no-console
+  console.log("shared.live      :", shared?.live);
+  // eslint-disable-next-line no-console
+  console.log("shared attr len  :", sharedAttrs.length);
+  // eslint-disable-next-line no-console
+  console.log(
+    "shared OP+number :",
+    operatingNumericCount(shared),
+  );
+  // eslint-disable-next-line no-console
+  console.log("backup attempted :", backupAttempted);
+  // eslint-disable-next-line no-console
+  console.log("backup in-flight :", inFlight);
+  // eslint-disable-next-line no-console
+  console.log("backup present?  :", backup !== null);
+  // eslint-disable-next-line no-console
+  console.log("backup.live      :", backup?.live);
+  // eslint-disable-next-line no-console
+  console.log("backup attr len  :", backupAttrs.length);
+  // eslint-disable-next-line no-console
+  console.log(
+    "backup OP+number :",
+    operatingNumericCount(backup),
+  );
+  if (sample) {
+    // eslint-disable-next-line no-console
+    console.log("real-live sample :", {
+      slug: sample.slug,
+      status: sample.status,
+      waitMinutes: sample.waitMinutes,
+    });
+  }
+  // eslint-disable-next-line no-console
+  console.log("final mode       :", mode);
+  // eslint-disable-next-line no-console
+  console.groupEnd();
+}
+
 export function WaitsAllParks() {
   const { status, parks, liveByPark } = useAllLive();
 
@@ -82,9 +183,43 @@ export function WaitsAllParks() {
       const ctl = new AbortController();
       ctls.push(ctl);
 
+      // [DIAGNOSTIC] backup fetch START
+      // eslint-disable-next-line no-console
+      console.log(
+        `${DEBUG_TAG} ${park.slug} backup fetch START →`,
+        `/api/parks/${park.slug}/live`,
+      );
+
       fetchParkLive(park.slug, ctl.signal)
         .then((res) => {
-          if (cancelled || ctl.signal.aborted) return;
+          if (cancelled || ctl.signal.aborted) {
+            // [DIAGNOSTIC] backup fetch ABORTED
+            // eslint-disable-next-line no-console
+            console.log(
+              `${DEBUG_TAG} ${park.slug} backup fetch ABORTED (effect re-run before resolve)`,
+            );
+            return;
+          }
+          // [DIAGNOSTIC] backup fetch RESOLVED
+          const opCount = operatingNumericCount(res);
+          const sample = res.attractions.find(
+            (a) =>
+              a.status === "OPERATING" && typeof a.waitMinutes === "number",
+          );
+          // eslint-disable-next-line no-console
+          console.log(`${DEBUG_TAG} ${park.slug} backup fetch RESOLVED`, {
+            "live.live": res.live,
+            "attractions.length": res.attractions.length,
+            "OP+number count": opCount,
+            "would commit?": opCount > 0,
+            sample: sample
+              ? {
+                  slug: sample.slug,
+                  status: sample.status,
+                  waitMinutes: sample.waitMinutes,
+                }
+              : null,
+          });
           // Only commit a backup that actually has real-live data —
           // otherwise we'd be replacing junk with more junk.
           if (hasRealLive(res)) {
@@ -95,9 +230,13 @@ export function WaitsAllParks() {
             });
           }
         })
-        .catch(() => {
-          // Silent fail — the card will keep rendering whatever the
-          // shared map provides (likely Estimated mode).
+        .catch((err) => {
+          // [DIAGNOSTIC] backup fetch FAILED
+          // eslint-disable-next-line no-console
+          console.warn(
+            `${DEBUG_TAG} ${park.slug} backup fetch FAILED →`,
+            (err as Error)?.message ?? err,
+          );
         })
         .finally(() => {
           inFlightRef.current.delete(park.slug);
@@ -143,6 +282,30 @@ export function WaitsAllParks() {
               : hasRealLive(backup)
                 ? backup
                 : (shared ?? backup);
+
+            // [DIAGNOSTIC] resolve final mode the same way ParkBlock will,
+            // so the render log matches exactly what the user sees on
+            // the card.
+            const effOps = operatingNumericCount(effective);
+            const finalMode =
+              park.status === "CLOSED"
+                ? "closed"
+                : effOps > 0
+                  ? "live"
+                  : "estimated";
+            const backupAttempted =
+              inFlightRef.current.has(park.slug) ||
+              backupBySlug.has(park.slug);
+            const inFlight = inFlightRef.current.has(park.slug);
+            dbgRender(
+              park,
+              shared,
+              backup,
+              backupAttempted,
+              inFlight,
+              finalMode,
+            );
+
             return (
               <ParkBlock
                 key={park.slug}
