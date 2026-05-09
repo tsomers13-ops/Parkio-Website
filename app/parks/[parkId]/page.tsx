@@ -39,6 +39,26 @@ export function generateMetadata({ params }: ParkPageProps) {
   };
 }
 
+/**
+ * Park page — full-screen map experience.
+ *
+ * Layout intent:
+ *   1. The map is the FIRST and DOMINANT surface. ParkMap renders at
+ *      `h-[100dvh]` so on landing the user sees a full-viewport map
+ *      and nothing else above it.
+ *   2. The page deliberately does NOT render the global <Navbar />.
+ *      The only persistent nav on this route is <MapNavOverlay />,
+ *      which floats fixed at the viewport corners (top-left "← Parks",
+ *      top-right "Open Parkio") and never moves with scroll.
+ *   3. Supporting sections (Right Now hero, Happening Soon, Near You,
+ *      Recommendations, Insights, App CTA) scroll BELOW the map for
+ *      users who want more — but they're not in the way of the map
+ *      on first paint.
+ *
+ * Constraints honored: the map component itself, ParkLiveDataProvider,
+ * MapFocusProvider, and every supporting component are unchanged.
+ * Only the order and placement on this single route file changed.
+ */
 export default function ParkPage({ params }: ParkPageProps) {
   const park = getPark(params.parkId);
   if (!park) notFound();
@@ -47,22 +67,34 @@ export default function ParkPage({ params }: ParkPageProps) {
 
   return (
     <main className="relative">
-      {/* Floating top-of-viewport back + App Store CTA. The map page
-          omits the global Navbar to give the map vertical room, so
-          this lightweight overlay is the only nav surface here. */}
+      {/* Floating top-of-viewport back + App Store CTA. Sits at
+          fixed/top-0/z-50 so it stays in place at every scroll depth.
+          This is the only nav surface on this route — the global
+          Navbar is intentionally NOT rendered. */}
       <MapNavOverlay />
+
       <ParkLiveDataProvider parkSlug={park.id}>
         <MapFocusProvider>
-          <ParkRightNow park={park} rides={rides} />
-          <div id="park-map" className="scroll-mt-4">
+          {/* MAP — full-viewport hero. First child of <main> with no
+              padding/margin pushing it down, so the map sits flush
+              against the viewport top under the floating overlay. */}
+          <div id="park-map" className="scroll-mt-0">
             <ParkMap park={park} rides={rides} />
           </div>
+
+          {/* Supporting sections — scroll below the full-viewport
+              map. Order is intentional: Right Now hero (single best
+              pick), then Happening Soon (showtimes), then Near You
+              (proximity-aware list), then Recommendations (Parkio
+              Picks), then Insights. */}
+          <ParkRightNow park={park} rides={rides} />
           <ParkHappeningSoon park={park} />
           <ParkNearYou park={park} rides={rides} />
           <ParkRecommendations park={park} />
           <ParkInsights park={park} />
         </MapFocusProvider>
       </ParkLiveDataProvider>
+
       {/* Subtle inline App Store CTA — sits above the footer so it
           never competes with the live map. */}
       <ParkPageAppCta />
