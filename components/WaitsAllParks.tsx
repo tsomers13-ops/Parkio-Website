@@ -39,26 +39,32 @@ export function WaitsAllParks() {
 }
 
 /**
- * Per-park card with one of four display modes:
+ * Per-park card with one of three display modes:
  *
- *   - "live"      — upstream returned live data with at least one
- *                   OPERATING attraction with a numeric wait. Shows the
- *                   top-6 waits list and "X of Y operating".
- *   - "preopen"   — upstream returned live data but nothing is yet
- *                   OPERATING (e.g. before park opening, all rides
- *                   CLOSED/UNKNOWN). Keeps the original "No live waits
- *                   reported yet today" copy because that's accurate —
- *                   we have live data, it just hasn't woken up yet.
- *   - "estimated" — upstream live data is unavailable (live === false),
- *                   so the page is in estimated-wait mode overall. Shows
+ *   - "live"      — at least one attraction has status === "OPERATING"
+ *                   AND a numeric waitMinutes. This is the ONLY signal
+ *                   we trust for "live" — `live.live === true` alone
+ *                   isn't enough, because upstream sometimes ships a
+ *                   "live" payload whose attractions are entirely
+ *                   UNKNOWN / null. Shows the top-6 waits list.
+ *   - "estimated" — no real live data (everything is UNKNOWN or null,
+ *                   or `live` itself is null/false). Shows
  *                   "X attractions tracked" + "Estimated waits available"
  *                   + a small "Estimated" pill so the card looks usable
- *                   instead of empty.
+ *                   instead of empty. This is the fallback for any
+ *                   junk-live-data case.
  *   - "closed"    — park is CLOSED today. We never advertise estimated
  *                   waits for closed parks; show closed-state copy and
  *                   suppress the Estimated pill.
+ *
+ * Note: an explicit "preopen" mode (live.live === true but nothing yet
+ * operating) was considered but dropped — it can't be distinguished
+ * from a junk-data response by shape alone, and rendering "0 of N
+ * operating" / "No live waits reported yet today" in that ambiguous
+ * case is the exact bug we're fixing. Treating both as `estimated` is
+ * the safer default per the conversion brief.
  */
-type CardMode = "live" | "preopen" | "estimated" | "closed";
+type CardMode = "live" | "estimated" | "closed";
 
 function ParkBlock({
   park,
@@ -75,6 +81,14 @@ function ParkBlock({
     .sort((a, b) => (b.waitMinutes as number) - (a.waitMinutes as number))
     .slice(0, 6);
 
+  // The ONLY signal we trust for live data: at least one operating
+  // attraction with a numeric wait. `live?.live === true` alone is
+  // unreliable — upstream sometimes flags a payload as live while
+  // every attraction is UNKNOWN / null.
+  const hasRealLiveData = attractions.some(
+    (a) => a.status === "OPERATING" && typeof a.waitMinutes === "number",
+  );
+
   // Static fallback — how many attractions Parkio tracks for this park,
   // independent of any live response. Used to size the "X attractions
   // tracked" line in estimated mode.
@@ -83,11 +97,9 @@ function ParkBlock({
   const mode: CardMode =
     park.status === "CLOSED"
       ? "closed"
-      : live?.live && operating.length > 0
+      : hasRealLiveData
         ? "live"
-        : live?.live
-          ? "preopen"
-          : "estimated";
+        : "estimated";
 
   // Header sub-line, just under the park name.
   const headerSub =
@@ -95,11 +107,9 @@ function ParkBlock({
       ? "Park is closed today"
       : mode === "live"
         ? `${operating.length} of ${attractions.length} operating`
-        : mode === "preopen"
-          ? `${operating.length} of ${attractions.length} operating`
-          : trackedCount > 0
-            ? `${trackedCount} attractions tracked`
-            : "Not available";
+        : trackedCount > 0
+          ? `${trackedCount} attractions tracked`
+          : "Not available";
 
   return (
     <article className="rounded-3xl border border-ink-100 bg-white p-6 shadow-soft sm:p-8">
@@ -141,11 +151,9 @@ function ParkBlock({
         <p className="mt-5 rounded-2xl bg-ink-50/60 px-4 py-4 text-center text-sm text-ink-600">
           {mode === "closed"
             ? "Closed today — check the park page for hours."
-            : mode === "preopen"
-              ? "No live waits reported yet today."
-              : trackedCount > 0
-                ? "Estimated waits available — open the park map for individual times."
-                : "Not available."}
+            : trackedCount > 0
+              ? "Estimated waits available — open the park map for individual times."
+              : "Not available."}
         </p>
       )}
 
