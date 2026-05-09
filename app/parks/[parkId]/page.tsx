@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import { Footer } from "@/components/Footer";
 import { MapFocusProvider } from "@/components/MapFocusProvider";
+import { MapNavOverlay } from "@/components/MapNavOverlay";
 import { ParkHappeningSoon } from "@/components/ParkHappeningSoon";
 import { ParkInsights } from "@/components/ParkInsights";
 import { ParkLiveDataProvider } from "@/components/ParkLiveDataProvider";
@@ -46,6 +47,10 @@ export default function ParkPage({ params }: ParkPageProps) {
 
   return (
     <main className="relative">
+      {/* Floating top-of-viewport back + App Store CTA. The map page
+          omits the global Navbar to give the map vertical room, so
+          this lightweight overlay is the only nav surface here. */}
+      <MapNavOverlay />
       <ParkLiveDataProvider parkSlug={park.id}>
         <MapFocusProvider>
           <ParkRightNow park={park} rides={rides} />
