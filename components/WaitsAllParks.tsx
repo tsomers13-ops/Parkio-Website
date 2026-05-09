@@ -1,8 +1,9 @@
 "use client";
 
 import Link from "next/link";
+import { RIDES } from "@/lib/data";
 import { useAllLive } from "@/lib/useAllLive";
-import type { ApiAttraction, ApiPark } from "@/lib/types";
+import type { ApiAttraction, ApiPark, ApiParkLive } from "@/lib/types";
 import { waitColorClasses, waitTier } from "@/lib/utils";
 
 export function WaitsAllParks() {
@@ -28,7 +29,7 @@ export function WaitsAllParks() {
             <ParkBlock
               key={park.slug}
               park={park}
-              attractions={liveByPark.get(park.slug)?.attractions ?? []}
+              live={liveByPark.get(park.slug) ?? null}
             />
           ))}
         </div>
@@ -37,19 +38,68 @@ export function WaitsAllParks() {
   );
 }
 
+/**
+ * Per-park card with one of four display modes:
+ *
+ *   - "live"      — upstream returned live data with at least one
+ *                   OPERATING attraction with a numeric wait. Shows the
+ *                   top-6 waits list and "X of Y operating".
+ *   - "preopen"   — upstream returned live data but nothing is yet
+ *                   OPERATING (e.g. before park opening, all rides
+ *                   CLOSED/UNKNOWN). Keeps the original "No live waits
+ *                   reported yet today" copy because that's accurate —
+ *                   we have live data, it just hasn't woken up yet.
+ *   - "estimated" — upstream live data is unavailable (live === false),
+ *                   so the page is in estimated-wait mode overall. Shows
+ *                   "X attractions tracked" + "Estimated waits available"
+ *                   + a small "Estimated" pill so the card looks usable
+ *                   instead of empty.
+ *   - "closed"    — park is CLOSED today. We never advertise estimated
+ *                   waits for closed parks; show closed-state copy and
+ *                   suppress the Estimated pill.
+ */
+type CardMode = "live" | "preopen" | "estimated" | "closed";
+
 function ParkBlock({
   park,
-  attractions,
+  live,
 }: {
   park: ApiPark;
-  attractions: ApiAttraction[];
+  live: ApiParkLive | null;
 }) {
+  const attractions: ApiAttraction[] = live?.attractions ?? [];
   const operating = attractions.filter(
     (a) => a.status === "OPERATING" && typeof a.waitMinutes === "number",
   );
   const top = [...operating]
     .sort((a, b) => (b.waitMinutes as number) - (a.waitMinutes as number))
     .slice(0, 6);
+
+  // Static fallback — how many attractions Parkio tracks for this park,
+  // independent of any live response. Used to size the "X attractions
+  // tracked" line in estimated mode.
+  const trackedCount = RIDES.filter((r) => r.parkId === park.slug).length;
+
+  const mode: CardMode =
+    park.status === "CLOSED"
+      ? "closed"
+      : live?.live && operating.length > 0
+        ? "live"
+        : live?.live
+          ? "preopen"
+          : "estimated";
+
+  // Header sub-line, just under the park name.
+  const headerSub =
+    mode === "closed"
+      ? "Park is closed today"
+      : mode === "live"
+        ? `${operating.length} of ${attractions.length} operating`
+        : mode === "preopen"
+          ? `${operating.length} of ${attractions.length} operating`
+          : trackedCount > 0
+            ? `${trackedCount} attractions tracked`
+            : "Not available";
 
   return (
     <article className="rounded-3xl border border-ink-100 bg-white p-6 shadow-soft sm:p-8">
@@ -62,19 +112,18 @@ function ParkBlock({
             {park.name}
           </Link>
           <div className="mt-1 text-[12px] font-medium uppercase tracking-widest text-ink-500">
-            {operating.length} of {attractions.length} operating
+            {headerSub}
           </div>
         </div>
-        <ParkStatusPill status={park.status} />
+        <div className="flex flex-wrap items-center gap-2">
+          <ParkStatusPill status={park.status} />
+          {mode === "estimated" && trackedCount > 0 && <EstimatedPill />}
+        </div>
       </header>
 
-      <ul className="mt-5 divide-y divide-ink-100">
-        {top.length === 0 ? (
-          <li className="py-6 text-center text-sm text-ink-500">
-            No live waits reported yet today.
-          </li>
-        ) : (
-          top.map((a) => (
+      {mode === "live" ? (
+        <ul className="mt-5 divide-y divide-ink-100">
+          {top.map((a) => (
             <li
               key={a.id}
               className="flex items-center justify-between gap-4 py-3"
@@ -86,9 +135,19 @@ function ParkBlock({
               </div>
               <WaitPill minutes={a.waitMinutes as number} />
             </li>
-          ))
-        )}
-      </ul>
+          ))}
+        </ul>
+      ) : (
+        <p className="mt-5 rounded-2xl bg-ink-50/60 px-4 py-4 text-center text-sm text-ink-600">
+          {mode === "closed"
+            ? "Closed today — check the park page for hours."
+            : mode === "preopen"
+              ? "No live waits reported yet today."
+              : trackedCount > 0
+                ? "Estimated waits available — open the park map for individual times."
+                : "Not available."}
+        </p>
+      )}
 
       <div className="mt-5 flex items-center justify-end">
         <Link
@@ -125,6 +184,23 @@ function WaitPill({ minutes }: { minutes: number }) {
     >
       <span className={`h-1.5 w-1.5 rounded-full ${c.dot}`} />
       {minutes} min
+    </span>
+  );
+}
+
+/**
+ * Small "Estimated" pill shown next to the park status pill when the
+ * card is rendering an estimated-wait summary. Visually quiet so it
+ * doesn't compete with the live status indicator.
+ */
+function EstimatedPill() {
+  return (
+    <span
+      className="inline-flex items-center gap-1.5 rounded-full bg-ink-100 px-2.5 py-1 text-[11px] font-semibold text-ink-600 ring-1 ring-ink-200"
+      title="Live waits unavailable — showing an estimated summary"
+    >
+      <span className="h-1.5 w-1.5 rounded-full bg-ink-400" />
+      Estimated
     </span>
   );
 }
