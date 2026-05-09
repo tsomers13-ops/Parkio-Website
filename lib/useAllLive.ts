@@ -1,30 +1,14 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
-import { RIDES } from "./data";
 import { fetchParkLive, fetchParksList } from "./parkioClient";
 import type { ApiAttraction, ApiPark, ApiParkLive } from "./types";
-import { simulatedWait } from "./utils";
 
 export type AllLiveStatus = "loading" | "live" | "estimates";
 
 export interface AggregatedRide {
   attraction: ApiAttraction;
   parkName: string;
-}
-
-/**
- * A per-park summary for the overview tiles. `estimated` is true when
- * the average was computed from static `baseWait` (because upstream
- * live data is unavailable or empty for this park) instead of from
- * real operating waits — the tile can render an "(est.)" hint in
- * that case so the number isn't misleading.
- */
-export interface ParkWaitSummary {
-  slug: string;
-  name: string;
-  avg: number;
-  estimated: boolean;
 }
 
 export interface AllLiveData {
@@ -39,14 +23,12 @@ export interface AllLiveData {
   /** OPERATING attractions across all parks, sorted by descending waitMinutes. */
   longestWaits: AggregatedRide[];
 
-  /** Average wait across all parks (rounded to nearest min). May be estimated — see `averageWaitEstimated`. */
+  /** Average operating wait across all parks (rounded to nearest min). */
   averageWait: number | null;
-  /** True when `averageWait` was derived entirely from `baseWait` estimates (no live data anywhere). */
-  averageWaitEstimated: boolean;
   /** Park with the highest average wait. */
-  busiestPark: ParkWaitSummary | null;
+  busiestPark: { slug: string; name: string; avg: number } | null;
   /** Park with the lowest average wait. */
-  quietestPark: ParkWaitSummary | null;
+  quietestPark: { slug: string; name: string; avg: number } | null;
   /** Count of parks reporting OPEN today. */
   openParkCount: number;
 }
@@ -55,6 +37,17 @@ export interface AllLiveData {
  * Fetches /api/parks + each park's /api/parks/{slug}/live in parallel.
  * Refreshes every 60 seconds. Used by both the home-page "Right now"
  * widget and the parks-listing "Today's overview" tiles.
+ *
+ * IMPORTANT: this hook returns LIVE-derived stats only. `averageWait`,
+ * `busiestPark`, and `quietestPark` are `null` when no operating
+ * attractions with numeric waits are present anywhere — that's the
+ * contract every consumer (LiveRightNow, ResortCards, WaitsAllParks,
+ * BestRidesAllParksGrid, ParksTodayOverview) was written against.
+ *
+ * If a surface needs a fallback (e.g. baseWait estimates when upstream
+ * is empty), it should compute that fallback locally over `parks` +
+ * `liveByPark` rather than expanding this hook's shape — broadening
+ * here is risky because every consumer reads the same fields.
  */
 export function useAllLive(): AllLiveData {
   const [status, setStatus] = useState<AllLiveStatus>("loading");
@@ -140,115 +133,50 @@ export function useAllLive(): AllLiveData {
   }, []);
 
   const derived = useMemo(() => {
-    // `operating` is the LIVE-only set of rides — used for shortestWaits
-    // and longestWaits (which only make sense with real data).
     const operating: AggregatedRide[] = [];
-
-    // Each park contributes one summary row. When live data is present,
-    // the row is computed from operating attractions with numeric waits;
-    // when live data is missing OR empty, we fall back to a deterministic
-    // estimate from each ride's static `baseWait`. This is what powers
-    // the overview tiles (Avg / Busiest / Quietest), which previously
-    // rendered "—" any time upstream went out — even though the page
-    // still claimed "Estimated waits" in the status line.
-    const perParkAvg: ParkWaitSummary[] = [];
-
-    // Aggregate of all numeric waits (live + estimated) used to compute
-    // the cross-park average. We average over rides, not over parks, so
-    // a park with 30 rides isn't weighted the same as one with 5.
-    let totalWait = 0;
-    let totalCount = 0;
-    let liveContributedAny = false;
-    let estimatedContributedAny = false;
+    const perParkAvg: Array<{ slug: string; name: string; avg: number }> = [];
 
     for (const park of parks) {
       const live = liveByPark.get(park.slug);
-
-      // Skip CLOSED parks entirely — closed parks don't have meaningful
-      // wait stats. UNKNOWN parks still pass through (we assume they
-      // might be open and just don't have schedule yet).
-      if (park.status === "CLOSED") continue;
-
-      // ── Real-live path ─────────────────────────────────────────────
-      // Use live operating attractions when available. Excludes CLOSED,
-      // DOWN, REFURBISHMENT, and rides with null waitMinutes — only
-      // OPERATING + numeric waits count.
-      const liveOperating =
-        live?.attractions.filter(
-          (a) => a.status === "OPERATING" && typeof a.waitMinutes === "number",
-        ) ?? [];
-
-      if (liveOperating.length > 0) {
-        for (const a of liveOperating) {
-          operating.push({ attraction: a, parkName: park.name });
-          totalWait += a.waitMinutes as number;
-          totalCount += 1;
-        }
+      if (!live) continue;
+      const opAttrs = live.attractions.filter(
+        (a) => a.status === "OPERATING" && typeof a.waitMinutes === "number",
+      );
+      for (const a of opAttrs) {
+        operating.push({ attraction: a, parkName: park.name });
+      }
+      if (opAttrs.length > 0) {
         const avg =
-          liveOperating.reduce((s, a) => s + (a.waitMinutes as number), 0) /
-          liveOperating.length;
+          opAttrs.reduce(
+            (sum, a) => sum + (a.waitMinutes as number),
+            0,
+          ) / opAttrs.length;
         perParkAvg.push({
           slug: park.slug,
           name: park.name,
           avg: Math.round(avg),
-          estimated: false,
         });
-        liveContributedAny = true;
-        continue;
       }
-
-      // ── Estimated path ─────────────────────────────────────────────
-      // No live operating data for this park. Build an average from the
-      // static ride list using `simulatedWait` (deterministic-ish around
-      // each ride's `baseWait`), so the tiles aren't blank. We still
-      // exclude any ride that the partial live response explicitly
-      // marked as not running (CLOSED / DOWN / REFURBISHMENT).
-      const blocked = new Set<string>();
-      for (const a of live?.attractions ?? []) {
-        if (
-          a.status === "CLOSED" ||
-          a.status === "DOWN" ||
-          a.status === "REFURBISHMENT"
-        ) {
-          blocked.add(a.slug);
-        }
-      }
-
-      const parkRides = RIDES.filter(
-        (r) => r.parkId === park.slug && !blocked.has(r.id),
-      );
-      if (parkRides.length === 0) continue;
-
-      const estWaits = parkRides.map((r) => simulatedWait(r));
-      const sum = estWaits.reduce((s, w) => s + w, 0);
-      perParkAvg.push({
-        slug: park.slug,
-        name: park.name,
-        avg: Math.round(sum / parkRides.length),
-        estimated: true,
-      });
-      totalWait += sum;
-      totalCount += parkRides.length;
-      estimatedContributedAny = true;
     }
 
     const shortestWaits = [...operating]
-      .sort((a, b) => a.attraction.waitMinutes! - b.attraction.waitMinutes!)
+      .sort((a, b) => (a.attraction.waitMinutes! - b.attraction.waitMinutes!))
       .slice(0, 3);
 
     const longestWaits = [...operating]
-      .sort((a, b) => b.attraction.waitMinutes! - a.attraction.waitMinutes!)
+      .sort((a, b) => (b.attraction.waitMinutes! - a.attraction.waitMinutes!))
       .slice(0, 3);
 
-    const averageWait = totalCount === 0 ? null : Math.round(totalWait / totalCount);
-    // True when the cross-park average had no live contribution at all
-    // — every park's row was estimated. The overview tile uses this to
-    // append an "(est.)" hint so guests know the number isn't live.
-    const averageWaitEstimated =
-      averageWait !== null && estimatedContributedAny && !liveContributedAny;
+    const averageWait =
+      operating.length === 0
+        ? null
+        : Math.round(
+            operating.reduce((s, r) => s + (r.attraction.waitMinutes as number), 0) /
+              operating.length,
+          );
 
-    let busiestPark: ParkWaitSummary | null = null;
-    let quietestPark: ParkWaitSummary | null = null;
+    let busiestPark: AllLiveData["busiestPark"] = null;
+    let quietestPark: AllLiveData["quietestPark"] = null;
     for (const entry of perParkAvg) {
       if (!busiestPark || entry.avg > busiestPark.avg) busiestPark = entry;
       if (!quietestPark || entry.avg < quietestPark.avg) quietestPark = entry;
@@ -260,7 +188,6 @@ export function useAllLive(): AllLiveData {
       shortestWaits,
       longestWaits,
       averageWait,
-      averageWaitEstimated,
       busiestPark,
       quietestPark,
       openParkCount,

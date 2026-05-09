@@ -1,47 +1,155 @@
 "use client";
 
+import { useMemo } from "react";
+import { RIDES } from "@/lib/data";
 import { useAllLive } from "@/lib/useAllLive";
+import type { ApiPark, ApiParkLive } from "@/lib/types";
+import { simulatedWait } from "@/lib/utils";
 
 /**
- * Resolves the value to display in a tile for a particular metric.
+ * /parks page "Today's overview" tiles.
  *
- * Three states matter to a guest:
- *   - LOADING    → "Loading…" (we haven't heard back from the API yet)
- *   - HAVE VALUE → render the value (with optional "(est.)" hint)
- *   - NO DATA    → "Not available" (loaded, but nothing to compute from
- *                  — a CLOSED night, an upstream outage with empty
- *                  ride lists, etc.). Better than "—" which reads as
- *                  "broken".
+ * Reads the shared `useAllLive` hook for live data, but does its OWN
+ * computation of average / busiest / quietest with a baseWait-based
+ * fallback. The fallback lives here (not in the hook) so we don't
+ * change the shape of `useAllLive` — every other consumer of that
+ * hook (LiveRightNow, BestRidesAllParksGrid, WaitsAllParks,
+ * ResortCards) sees the exact same data it always has.
  *
- * The rendering rules below are duplicated for each tile rather than
- * abstracted, so the copy stays clear in the JSX.
+ * Tile state matrix:
+ *   - status === "loading"     → "Loading…"
+ *   - we have a numeric value  → "{N} min" (with "(est.)" hint if any
+ *                                 contributing park used baseWaits)
+ *   - no data anywhere         → "Not available"
  */
 
-export function ParksTodayOverview() {
-  const {
-    status,
+interface OverviewSummary {
+  averageWait: number | null;
+  averageWaitEstimated: boolean;
+  busiestPark: { slug: string; name: string; avg: number; estimated: boolean } | null;
+  quietestPark: { slug: string; name: string; avg: number; estimated: boolean } | null;
+  openParkCount: number;
+}
+
+function computeOverview(
+  parks: ApiPark[],
+  liveByPark: Map<string, ApiParkLive>,
+): OverviewSummary {
+  const perParkAvg: Array<{ slug: string; name: string; avg: number; estimated: boolean }> = [];
+
+  let totalWait = 0;
+  let totalCount = 0;
+  let liveContributedAny = false;
+  let estimatedContributedAny = false;
+
+  for (const park of parks) {
+    // Skip parks the API has explicitly flagged CLOSED — closed parks
+    // don't have meaningful wait stats. UNKNOWN parks pass through.
+    if (park.status === "CLOSED") continue;
+
+    const live = liveByPark.get(park.slug);
+
+    // Real-live path — exclude CLOSED / DOWN / REFURBISHMENT and rides
+    // with null waitMinutes. Only OPERATING + numeric waits count.
+    const liveOperating =
+      live?.attractions.filter(
+        (a) => a.status === "OPERATING" && typeof a.waitMinutes === "number",
+      ) ?? [];
+
+    if (liveOperating.length > 0) {
+      const sum = liveOperating.reduce(
+        (s, a) => s + (a.waitMinutes as number),
+        0,
+      );
+      perParkAvg.push({
+        slug: park.slug,
+        name: park.name,
+        avg: Math.round(sum / liveOperating.length),
+        estimated: false,
+      });
+      totalWait += sum;
+      totalCount += liveOperating.length;
+      liveContributedAny = true;
+      continue;
+    }
+
+    // Estimated path — no live operating attractions for this park.
+    // Fall back to deterministic-ish simulated waits over the static
+    // ride list, excluding any ride a partial live response marked as
+    // not running (CLOSED / DOWN / REFURBISHMENT).
+    const blocked = new Set<string>();
+    for (const a of live?.attractions ?? []) {
+      if (
+        a.status === "CLOSED" ||
+        a.status === "DOWN" ||
+        a.status === "REFURBISHMENT"
+      ) {
+        blocked.add(a.slug);
+      }
+    }
+
+    const parkRides = RIDES.filter(
+      (r) => r.parkId === park.slug && !blocked.has(r.id),
+    );
+    if (parkRides.length === 0) continue;
+
+    const estWaits = parkRides.map((r) => simulatedWait(r));
+    const sum = estWaits.reduce((s, w) => s + w, 0);
+    perParkAvg.push({
+      slug: park.slug,
+      name: park.name,
+      avg: Math.round(sum / parkRides.length),
+      estimated: true,
+    });
+    totalWait += sum;
+    totalCount += parkRides.length;
+    estimatedContributedAny = true;
+  }
+
+  const averageWait = totalCount === 0 ? null : Math.round(totalWait / totalCount);
+  const averageWaitEstimated =
+    averageWait !== null && estimatedContributedAny && !liveContributedAny;
+
+  let busiestPark: OverviewSummary["busiestPark"] = null;
+  let quietestPark: OverviewSummary["quietestPark"] = null;
+  for (const entry of perParkAvg) {
+    if (!busiestPark || entry.avg > busiestPark.avg) busiestPark = entry;
+    if (!quietestPark || entry.avg < quietestPark.avg) quietestPark = entry;
+  }
+
+  const openParkCount = parks.filter((p) => p.status === "OPEN").length;
+
+  return {
     averageWait,
     averageWaitEstimated,
     busiestPark,
     quietestPark,
     openParkCount,
-    parks,
-    lastUpdated,
-  } = useAllLive();
+  };
+}
+
+export function ParksTodayOverview() {
+  const { status, parks, liveByPark, lastUpdated } = useAllLive();
+
+  const {
+    averageWait,
+    averageWaitEstimated,
+    busiestPark,
+    quietestPark,
+    openParkCount,
+  } = useMemo(() => computeOverview(parks, liveByPark), [parks, liveByPark]);
 
   const total = parks.length || 6;
   const isLoading = status === "loading";
 
-  // Avg-wait tile: append "(est.)" when the entire average came from
-  // baseWait estimates rather than live data — keeps the number honest.
+  // Avg-wait tile: append "(est.)" only when the entire average came
+  // from baseWait estimates rather than live data.
   const avgValue = isLoading
     ? "Loading…"
     : averageWait !== null
       ? `${averageWait} min${averageWaitEstimated ? " (est.)" : ""}`
       : "Not available";
 
-  // Busiest / Quietest: the per-park summary already carries an
-  // `estimated` flag so we can label that specific park's row.
   const busiestValue = isLoading
     ? "Loading…"
     : busiestPark
