@@ -140,6 +140,15 @@ export function ParkNearYou({ park, rides }: ParkNearYouProps) {
     if (map) map.scrollIntoView({ behavior: "smooth", block: "start" });
   }
 
+  // Hide the section entirely when there's nothing actionable to show.
+  // Two cases:
+  //   • The user hasn't selected an anchor ride on the map yet — there
+  //     are no proximity-based recommendations to compute.
+  //   • The user has selected an anchor but no rides nearby qualify
+  //     (all over the wait ceiling, or all not operating).
+  // Per the conversion brief: no empty cards, no "Pick a ride" prompt.
+  if (!anchor || nearYou.length === 0) return null;
+
   return (
     <section
       className="border-y border-ink-100 bg-white"
@@ -155,59 +164,45 @@ export function ParkNearYou({ park, rides }: ParkNearYouProps) {
               What's close to your last stop
             </h2>
             <p className="mt-1.5 text-sm text-ink-600">
-              {anchor ? (
-                <>
-                  Based on your last selected ride:{" "}
-                  <span className="font-semibold text-ink-800">
-                    {anchor.name}
-                  </span>
-                  .
-                </>
-              ) : (
-                <>Select a ride on the map to see what's nearby.</>
-              )}
+              Based on your last selected ride:{" "}
+              <span className="font-semibold text-ink-800">{anchor.name}</span>
+              .
             </p>
           </div>
         </div>
 
         <div className="mt-6 rounded-3xl border border-ink-100 bg-ink-50/40 p-2 sm:p-3">
-          {!anchor ? (
-            <EmptyState />
-          ) : nearYou.length === 0 ? (
-            <NoMatchesState />
-          ) : (
-            <ul className="divide-y divide-ink-100/70">
-              {nearYou.map(({ ride, wait }) => (
-                <li key={ride.id}>
-                  <button
-                    type="button"
-                    onClick={() => handlePick(ride.id)}
-                    className="group flex w-full items-center justify-between gap-3 rounded-2xl px-3 py-3 text-left transition hover:bg-white sm:px-4"
-                    aria-label={`Show ${ride.name} on the map`}
-                  >
-                    <div className="flex min-w-0 flex-1 flex-wrap items-center gap-x-2 gap-y-1">
-                      <span
-                        className="min-w-0 truncate text-sm font-semibold tracking-tight text-ink-900"
-                        title={ride.name}
-                      >
-                        {ride.name}
+          <ul className="divide-y divide-ink-100/70">
+            {nearYou.map(({ ride, wait }) => (
+              <li key={ride.id}>
+                <button
+                  type="button"
+                  onClick={() => handlePick(ride.id)}
+                  className="group flex w-full items-center justify-between gap-3 rounded-2xl px-3 py-3 text-left transition hover:bg-white sm:px-4"
+                  aria-label={`Show ${ride.name} on the map`}
+                >
+                  <div className="flex min-w-0 flex-1 flex-wrap items-center gap-x-2 gap-y-1">
+                    <span
+                      className="min-w-0 truncate text-sm font-semibold tracking-tight text-ink-900"
+                      title={ride.name}
+                    >
+                      {ride.name}
+                    </span>
+                    {isTopRide(park.id, ride.id) && (
+                      <span className="inline-flex shrink-0 items-center whitespace-nowrap rounded-full bg-accent-50 px-1.5 py-0.5 text-[10px] font-semibold text-accent-700 ring-1 ring-accent-100">
+                        Headliner
                       </span>
-                      {isTopRide(park.id, ride.id) && (
-                        <span className="inline-flex shrink-0 items-center whitespace-nowrap rounded-full bg-accent-50 px-1.5 py-0.5 text-[10px] font-semibold text-accent-700 ring-1 ring-accent-100">
-                          Headliner
-                        </span>
-                      )}
-                      <span className="text-[11px] font-medium text-ink-500">
-                        {ride.land}
-                      </span>
-                    </div>
-                    <WaitPill minutes={wait} />
-                    <Chevron />
-                  </button>
-                </li>
-              ))}
-            </ul>
-          )}
+                    )}
+                    <span className="text-[11px] font-medium text-ink-500">
+                      {ride.land}
+                    </span>
+                  </div>
+                  <WaitPill minutes={wait} />
+                  <Chevron />
+                </button>
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
     </section>
@@ -216,51 +211,9 @@ export function ParkNearYou({ park, rides }: ParkNearYouProps) {
 
 /* ──────────────────────── Sub-views ──────────────────────── */
 
-function EmptyState() {
-  return (
-    <div className="flex items-center justify-center px-4 py-8 text-center sm:py-10">
-      <div className="max-w-md">
-        <div className="mx-auto inline-flex h-9 w-9 items-center justify-center rounded-full bg-ink-100 text-ink-500">
-          <svg
-            viewBox="0 0 16 16"
-            fill="none"
-            className="h-4 w-4"
-            aria-hidden
-          >
-            <path
-              d="M8 1.5C5.5 1.5 3.5 3.5 3.5 6c0 3 4.5 8 4.5 8s4.5-5 4.5-8c0-2.5-2-4.5-4.5-4.5z"
-              stroke="currentColor"
-              strokeWidth="1.4"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-            <circle
-              cx="8"
-              cy="6"
-              r="1.5"
-              stroke="currentColor"
-              strokeWidth="1.4"
-            />
-          </svg>
-        </div>
-        <p className="mt-2 text-sm font-medium text-ink-700">
-          Pick a ride on the map to anchor recommendations.
-        </p>
-        <p className="mt-1 text-xs text-ink-500">
-          We'll suggest nearby rides with short waits.
-        </p>
-      </div>
-    </div>
-  );
-}
-
-function NoMatchesState() {
-  return (
-    <div className="px-4 py-8 text-center text-sm text-ink-500 sm:py-10">
-      Nothing nearby with a short wait right now. Try the picks below.
-    </div>
-  );
-}
+// EmptyState / NoMatchesState helpers removed — the section now
+// returns null when there's nothing actionable to show instead of
+// rendering an empty "pick a ride" or "nothing nearby" card.
 
 function WaitPill({ minutes }: { minutes: number | null }) {
   if (typeof minutes !== "number") {

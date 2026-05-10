@@ -1,13 +1,14 @@
 "use client";
 
 import { useMemo } from "react";
+import { RIDES } from "@/lib/data";
 import {
   LOW_WAIT_THRESHOLD_MIN,
   isTopRide,
   partitionAttractions,
 } from "@/lib/popularity";
 import type { ApiAttraction, Park } from "@/lib/types";
-import { waitColorClasses, waitTier } from "@/lib/utils";
+import { simulatedWait, waitColorClasses, waitTier } from "@/lib/utils";
 import { useParkLive } from "./ParkLiveDataProvider";
 
 interface ParkRecommendationsProps {
@@ -38,18 +39,84 @@ type LoadStatus = "loading" | "live" | "estimates";
 export function ParkRecommendations({ park }: ParkRecommendationsProps) {
   const { liveApi: live, status } = useParkLive();
 
-  const { bestNow, goodOptions, skipForNow } = useMemo(() => {
+  // Tier-1: ideal picks from popularity-aware partitioning. This is
+  // the existing logic — unchanged. When live data has at least a few
+  // OPERATING + numeric attractions, this populates well.
+  const { bestNow: idealPicks, goodOptions, skipForNow } = useMemo(() => {
     if (!live) return { bestNow: [], goodOptions: [], skipForNow: [] };
     return partitionAttractions(park.id, live.attractions);
   }, [live, park.id]);
 
-  // Detect "park isn't really open" — no attractions are reporting an
-  // OPERATING status. Used to swap empty-state copy so guests don't
-  // see "Most rides have lines over an hour" when nothing is running.
-  const noneOperating =
-    !!live &&
-    live.attractions.length > 0 &&
-    !live.attractions.some((a) => a.status === "OPERATING");
+  /**
+   * Best Right Now — fallback chain so the card ALWAYS has at least
+   * one actionable recommendation:
+   *
+   *   1. Ideal picks from `partitionAttractions` (curated headliners +
+   *      walk-on gems + tiered scoring).
+   *   2. If empty, lowest-wait OPERATING rides from the live response.
+   *      Not as targeted, but at least a real "shortest waits right
+   *      now" surface.
+   *   3. If still empty (failed fetch, all-UNKNOWN payload, park
+   *      pre-opening, etc.), synthesize from the static RIDES list
+   *      with `simulatedWait()`. Headliners ranked first, then by
+   *      simulated wait ascending. Same simulation ParkMap and
+   *      ParkRightNow use — surfaces stay consistent.
+   *
+   * The list always returns at least one item per the conversion
+   * brief, unless the park has no static rides at all (defensive
+   * safety net).
+   */
+  const bestNow = useMemo<ApiAttraction[]>(() => {
+    // Tier 1: ideal picks
+    if (idealPicks.length > 0) return idealPicks;
+
+    // Tier 2: lowest-wait operating rides from live data
+    if (live) {
+      const operating = live.attractions
+        .filter(
+          (a) => a.status === "OPERATING" && typeof a.waitMinutes === "number",
+        )
+        .sort(
+          (a, b) => (a.waitMinutes as number) - (b.waitMinutes as number),
+        )
+        .slice(0, 5);
+      if (operating.length > 0) return operating;
+    }
+
+    // Tier 3: simulated picks from static RIDES — headliners first,
+    // then by ascending simulated wait. Excludes any ride the partial
+    // payload explicitly flagged as not running.
+    const blocked = new Set<string>();
+    for (const a of live?.attractions ?? []) {
+      if (
+        a.status === "CLOSED" ||
+        a.status === "DOWN" ||
+        a.status === "REFURBISHMENT"
+      ) {
+        blocked.add(a.slug);
+      }
+    }
+    const fallbackTimestamp = live?.lastUpdated ?? new Date().toISOString();
+    const synthesized: ApiAttraction[] = RIDES.filter(
+      (r) => r.parkId === park.id && !blocked.has(r.id),
+    ).map((r) => ({
+      id: r.externalId,
+      slug: r.id,
+      parkSlug: park.id,
+      name: r.name,
+      status: "OPERATING",
+      waitMinutes: simulatedWait(r),
+      coordinates: { lat: r.lat, lng: r.lng },
+      lastUpdated: fallbackTimestamp,
+    }));
+    synthesized.sort((a, b) => {
+      const ah = isTopRide(park.id, a.slug) ? 1 : 0;
+      const bh = isTopRide(park.id, b.slug) ? 1 : 0;
+      if (ah !== bh) return bh - ah;
+      return (a.waitMinutes as number) - (b.waitMinutes as number);
+    });
+    return synthesized.slice(0, 5);
+  }, [idealPicks, live, park.id]);
 
   return (
     <section className="relative border-y border-ink-100 bg-gradient-to-b from-accent-50/40 via-white to-ink-50/40">
@@ -82,6 +149,11 @@ export function ParkRecommendations({ park }: ParkRecommendationsProps) {
           <StatusBadge status={status} />
         </div>
 
+        {/* Card grid — `Best right now` always renders with content via
+            the fallback chain above. Backup + Skip cards are
+            conditionally rendered: only shown when they have real picks
+            from `partitionAttractions`. No more "No backups or quick
+            wins" / "No long lines right now" empty copy. */}
         <div className="mt-10 grid grid-cols-1 gap-6 lg:grid-cols-3">
           <Card
             title="Best right now"
@@ -89,40 +161,30 @@ export function ParkRecommendations({ park }: ParkRecommendationsProps) {
             empty={
               status === "loading"
                 ? "Loading…"
-                : noneOperating
-                  ? "Rides aren't running yet. Check back when the park opens."
-                  : "Most rides have lines over an hour. Good time for a snack or a show."
+                : "Rides aren't running yet. Check back when the park opens."
             }
             attractions={bestNow}
             parkSlug={park.id}
             highlightTopRides
           />
-          <Card
-            title="Backup picks & quick wins"
-            tone="amber"
-            empty={
-              status === "loading"
-                ? "Loading…"
-                : noneOperating
-                  ? "Nothing operating yet — wait times will appear once the park opens."
-                  : "No backups or quick wins right now."
-            }
-            attractions={goodOptions}
-            parkSlug={park.id}
-          />
-          <Card
-            title="Skip for now"
-            tone="rose"
-            empty={
-              status === "loading"
-                ? "Loading…"
-                : noneOperating
-                  ? "No queues to avoid yet — the park hasn't opened."
-                  : "No long lines right now. Take advantage."
-            }
-            attractions={skipForNow}
-            parkSlug={park.id}
-          />
+          {goodOptions.length > 0 && (
+            <Card
+              title="Backup picks & quick wins"
+              tone="amber"
+              empty=""
+              attractions={goodOptions}
+              parkSlug={park.id}
+            />
+          )}
+          {skipForNow.length > 0 && (
+            <Card
+              title="Skip for now"
+              tone="rose"
+              empty=""
+              attractions={skipForNow}
+              parkSlug={park.id}
+            />
+          )}
         </div>
       </div>
     </section>

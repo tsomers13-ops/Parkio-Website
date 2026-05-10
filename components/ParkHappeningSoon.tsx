@@ -76,7 +76,7 @@ function formatStart(startTs: number, timezone: string | undefined): string {
  * so "Starts in 23 min" stays accurate without forcing a poll.
  */
 export function ParkHappeningSoon({ park }: ParkHappeningSoonProps) {
-  const { liveApi: live, parkApi, status } = useParkLive();
+  const { liveApi: live, parkApi } = useParkLive();
 
   // Local "now" tick — refreshes every 60s so relative times stay
   // current between the upstream's 2-min polls. Uses requestIdle when
@@ -100,11 +100,16 @@ export function ParkHappeningSoon({ park }: ParkHappeningSoonProps) {
   }, [live, now]);
 
   const tz = parkApi?.timezone;
-  // Skeleton is reserved for the TRUE initial-fetch state. When the
-  // provider's catch path leaves `live` at null with status
-  // "estimates", we fall through to the unavailable state below
-  // rather than staying on a skeleton forever.
-  const isLoading = status === "loading";
+
+  // Hide the section entirely when there's no actionable content.
+  // Two cases trigger a hide:
+  //   1. Initial-fetch hasn't returned anything yet (status === "loading"
+  //      with live === null) — render nothing rather than a skeleton
+  //      that may be replaced with "no shows" anyway.
+  //   2. Loaded but no upcoming shows in the next 90 minutes — including
+  //      the failed-fetch case (live === null after the catch path).
+  // Per the conversion brief: no empty cards, no "unavailable" copy.
+  if (upcoming.length === 0) return null;
 
   return (
     <section
@@ -128,40 +133,30 @@ export function ParkHappeningSoon({ park }: ParkHappeningSoonProps) {
         </div>
 
         <div className="mt-6 rounded-3xl border border-ink-100 bg-ink-50/40 p-2 sm:p-3">
-          {isLoading ? (
-            <LoadingState />
-          ) : !live ? (
-            // Failed-fetch case: provider's catch path left `live` at
-            // null. Be honest instead of pretending nothing is on.
-            <UnavailableState />
-          ) : upcoming.length === 0 ? (
-            <EmptyState />
-          ) : (
-            <ul className="divide-y divide-ink-100/70">
-              {upcoming.map(({ event, startTs }) => (
-                <li
-                  key={event.id}
-                  className="flex items-center gap-3 px-3 py-3 sm:px-4"
-                >
-                  <EventIcon type={event.type} />
-                  <div className="min-w-0 flex-1">
-                    <div
-                      className="truncate text-sm font-semibold tracking-tight text-ink-900"
-                      title={event.name}
-                    >
-                      {event.name}
-                    </div>
-                    <div className="mt-0.5 text-[12px] text-ink-500">
-                      {relativeMinutes(startTs, now)} ·{" "}
-                      <span className="tabular-nums">
-                        {formatStart(startTs, tz)}
-                      </span>
-                    </div>
+          <ul className="divide-y divide-ink-100/70">
+            {upcoming.map(({ event, startTs }) => (
+              <li
+                key={event.id}
+                className="flex items-center gap-3 px-3 py-3 sm:px-4"
+              >
+                <EventIcon type={event.type} />
+                <div className="min-w-0 flex-1">
+                  <div
+                    className="truncate text-sm font-semibold tracking-tight text-ink-900"
+                    title={event.name}
+                  >
+                    {event.name}
                   </div>
-                </li>
-              ))}
-            </ul>
-          )}
+                  <div className="mt-0.5 text-[12px] text-ink-500">
+                    {relativeMinutes(startTs, now)} ·{" "}
+                    <span className="tabular-nums">
+                      {formatStart(startTs, tz)}
+                    </span>
+                  </div>
+                </div>
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
     </section>
@@ -188,40 +183,6 @@ function EventIcon({ type }: { type: ApiEvent["type"] }) {
   );
 }
 
-function LoadingState() {
-  return (
-    <div className="space-y-2 px-3 py-3 sm:px-4">
-      {[0, 1, 2].map((i) => (
-        <div key={i} className="flex items-center gap-3">
-          <div className="h-9 w-9 shrink-0 animate-pulse rounded-full bg-ink-100" />
-          <div className="min-w-0 flex-1 space-y-1.5">
-            <div className="h-3.5 w-3/4 animate-pulse rounded bg-ink-100" />
-            <div className="h-3 w-1/3 animate-pulse rounded bg-ink-100" />
-          </div>
-        </div>
-      ))}
-    </div>
-  );
-}
-
-function EmptyState() {
-  return (
-    <div className="px-4 py-8 text-center text-sm text-ink-500 sm:py-10">
-      No shows or meet &amp; greets starting soon.
-    </div>
-  );
-}
-
-/**
- * Shown when the provider couldn't load live data for this park
- * (e.g. failed initial fetch, upstream outage). Honest about the
- * gap instead of pretending nothing is on.
- */
-function UnavailableState() {
-  return (
-    <div className="px-4 py-8 text-center text-sm text-ink-500 sm:py-10">
-      Live event data unavailable right now — open the park map for
-      what's running.
-    </div>
-  );
-}
+// LoadingState / EmptyState / UnavailableState helpers removed — the
+// section now returns null when there's nothing actionable to show
+// instead of rendering an empty card or an "unavailable" message.
