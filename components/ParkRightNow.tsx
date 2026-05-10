@@ -149,9 +149,17 @@ export function ParkRightNow({ park, rides }: ParkRightNowProps) {
   const lowWait = typeof wait === "number" && wait <= LOW_WAIT_THRESHOLD_MIN;
   const reason = pickReason(popular, wait);
 
+  // When `top` came from the simulated-fallback path (no real live
+  // data), surface that to the reader: muted eyebrow tone (no live
+  // pulse), an "Estimated" pill in the chip row, and an "(est.)"
+  // suffix on the wait pill. The recommendation itself is still
+  // useful — we're just being honest that the number is computed
+  // from baseWait, not pulled from a live queue.
+  const isEstimated = !hasRealLiveData;
+
   return (
-    <Shell>
-      <Eyebrow tone="live" />
+    <Shell muted={isEstimated}>
+      <Eyebrow tone={isEstimated ? "muted" : "live"} />
 
       <div className="mt-3 flex items-end justify-between gap-4 sm:gap-6">
         <div className="min-w-0 flex-1">
@@ -172,6 +180,15 @@ export function ParkRightNow({ park, rides }: ParkRightNowProps) {
                 Low wait
               </span>
             )}
+            {isEstimated && (
+              <span
+                className="inline-flex shrink-0 items-center gap-1 whitespace-nowrap rounded-full bg-ink-100 px-2 py-0.5 text-[11px] font-semibold text-ink-600 ring-1 ring-ink-200"
+                title="Live waits unavailable — wait time is estimated from this ride's typical wait"
+              >
+                <span className="h-1 w-1 rounded-full bg-ink-400" />
+                Estimated
+              </span>
+            )}
             <span className="text-sm text-ink-600">{reason}</span>
             {walk && (
               <span
@@ -189,7 +206,7 @@ export function ParkRightNow({ park, rides }: ParkRightNowProps) {
         </div>
 
         <div className="flex shrink-0 flex-col items-end gap-2">
-          <BigWaitPill minutes={wait} />
+          <BigWaitPill minutes={wait} estimated={isEstimated} />
           <button
             type="button"
             onClick={handleViewOnMap}
@@ -308,12 +325,37 @@ function WalkIcon() {
 
 /* ─────────────────────────── Wait pill (large) ─────────────────────────── */
 
-function BigWaitPill({ minutes }: { minutes: number | null }) {
+function BigWaitPill({
+  minutes,
+  estimated = false,
+}: {
+  minutes: number | null;
+  estimated?: boolean;
+}) {
   if (typeof minutes !== "number") {
     return (
       <span className="inline-flex shrink-0 items-center gap-2 whitespace-nowrap rounded-full bg-ink-100 px-3.5 py-2 text-base font-semibold tabular-nums text-ink-500 ring-1 ring-ink-200">
         <span className="h-2 w-2 rounded-full bg-ink-300" />
         —
+      </span>
+    );
+  }
+  // When estimated, render in the neutral ink palette (no green/
+  // amber/rose tier color) so the number doesn't visually compete
+  // with real live waits elsewhere on the page. A tiny "(est.)"
+  // suffix removes any ambiguity for a reader who jumps straight
+  // to the wait pill without reading the chips.
+  if (estimated) {
+    return (
+      <span
+        className="inline-flex shrink-0 items-center gap-2 whitespace-nowrap rounded-full bg-ink-100 px-3.5 py-2 text-base font-semibold tabular-nums text-ink-700 ring-1 ring-ink-200"
+        title="Estimated from this ride's typical wait — live data unavailable right now"
+      >
+        <span className="h-2 w-2 rounded-full bg-ink-400" />
+        {minutes} min
+        <span className="text-[11px] font-medium uppercase tracking-wider text-ink-500">
+          est.
+        </span>
       </span>
     );
   }
