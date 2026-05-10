@@ -47,7 +47,7 @@ export function ParkInsights({ park }: ParkInsightsProps) {
   // attractions, `live: true` with junk content) falls through to
   // estimated mode, mirroring WaitsAllParks's classification.
   const hasRealLiveData = useMemo(() => {
-    return !!live?.attractions.some(
+    return !!live?.attractions?.some(
       (a) => a.status === "OPERATING" && typeof a.waitMinutes === "number",
     );
   }, [live]);
@@ -80,8 +80,15 @@ export function ParkInsights({ park }: ParkInsightsProps) {
   }, [live]);
 
   const longestWaits = useMemo<ApiAttraction[]>(() => {
-    if (!live) return [];
-    if (hasRealLiveData) {
+    // Initial load: stay empty so <Card> + <EmptyRow> render
+    // "Loading…" via the `status` prop. Every other branch must
+    // produce content — the estimated fallback runs even when
+    // `live` is null (e.g. a failed initial fetch), because the
+    // provider's catch path sets status="estimates" while leaving
+    // `liveApi = null`.
+    if (status === "loading") return [];
+
+    if (live && hasRealLiveData) {
       return [...live.attractions]
         .filter(
           (a) => a.status === "OPERATING" && typeof a.waitMinutes === "number",
@@ -89,10 +96,14 @@ export function ParkInsights({ park }: ParkInsightsProps) {
         .sort((a, b) => (b.waitMinutes as number) - (a.waitMinutes as number))
         .slice(0, 5);
     }
-    // Estimated fallback — synthesize ApiAttraction-shaped rows from
-    // the static RIDES list using `simulatedWait`. We never overwrite
-    // a real status: if a ride is explicitly CLOSED/DOWN/REFURB in
-    // the partial payload, it's filtered out above.
+
+    // Estimated fallback — runs whenever there's no usable live
+    // data, INCLUDING the case where the provider failed to fetch
+    // and `live === null`. Synthesizes ApiAttraction-shaped rows
+    // from the static RIDES list using `simulatedWait` (same
+    // simulation ParkMap uses for UNKNOWN attractions). Excludes
+    // rides the partial payload explicitly marked as not running.
+    const fallbackTimestamp = live?.lastUpdated ?? new Date().toISOString();
     return parkRides
       .filter((r) => !blockedFromEstimate.has(r.id))
       .map<ApiAttraction>((r) => ({
@@ -103,11 +114,11 @@ export function ParkInsights({ park }: ParkInsightsProps) {
         status: "OPERATING",
         waitMinutes: simulatedWait(r),
         coordinates: { lat: r.lat, lng: r.lng },
-        lastUpdated: live.lastUpdated,
+        lastUpdated: fallbackTimestamp,
       }))
       .sort((a, b) => (b.waitMinutes as number) - (a.waitMinutes as number))
       .slice(0, 5);
-  }, [live, hasRealLiveData, parkRides, blockedFromEstimate, park.id]);
+  }, [live, hasRealLiveData, parkRides, blockedFromEstimate, park.id, status]);
 
   const downAttractions = useMemo(() => {
     if (!live) return [];
