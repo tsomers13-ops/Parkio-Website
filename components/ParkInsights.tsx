@@ -3,13 +3,9 @@
 import Link from "next/link";
 import { useMemo } from "react";
 import { RIDES } from "@/lib/data";
+import { isTopRide } from "@/lib/popularity";
 import type { ApiAttraction, Park } from "@/lib/types";
-import {
-  simulatedWait,
-  statusLabel,
-  waitColorClasses,
-  waitTier,
-} from "@/lib/utils";
+import { simulatedWait } from "@/lib/utils";
 import { useParkLive } from "./ParkLiveDataProvider";
 
 interface ParkInsightsProps {
@@ -17,55 +13,41 @@ interface ParkInsightsProps {
 }
 
 /**
- * "Park insights" panel rendered below the full-screen map. Three
- * cards: Longest waits, Temporarily down, Recently updated. All three
- * read from the page-level `<ParkLiveDataProvider>` so the fetch is
- * shared with ParkMap and ParkRecommendations.
+ * "Park insights" panel rendered below Parkio Picks. Replaces the old
+ * three-card layout (Longest waits / Temporarily down / Recently
+ * updated) with ONE actionable strategy card that tells the guest
+ * what to do given the current state of the park.
  *
- * Mode handling:
+ * The strategy is computed from the live data (or estimated data
+ * when live is unavailable) using simple heuristics over the wait
+ * distribution and headliner availability — NO weak "data
+ * unavailable" copy ever renders.
  *
- *   - "live" (at least one OPERATING + numeric attraction): real data
- *     drives all three cards as before.
- *   - "estimated" (upstream returned no usable live data, or the
- *     payload is all UNKNOWN/null): "Longest waits" falls back to
- *     `simulatedWait()` over the static RIDES list — same simulation
- *     ParkMap uses for UNKNOWN attractions, so the surfaces stay
- *     visually consistent. "Temporarily down" and "Recently updated"
- *     render honest empty states instead of claiming "Everything is
- *     operating" — we don't actually know that without live data.
- *   - "loading": every card shows "Loading…" — unchanged from before.
- *
- * The "Estimated waits" badge at the top of the section already
- * tells the reader the cards are using simulated values; no per-row
- * marker is needed.
+ * Same useParkLive data source as ParkMap and Parkio Picks. No new
+ * fetches, no provider/contract changes.
  */
 export function ParkInsights({ park }: ParkInsightsProps) {
   const { liveApi: live, status } = useParkLive();
 
-  // Real-live = at least one attraction reporting OPERATING with a
-  // numeric wait. Anything else (UNKNOWN/null payloads, empty
-  // attractions, `live: true` with junk content) falls through to
-  // estimated mode, mirroring WaitsAllParks's classification.
-  const hasRealLiveData = useMemo(() => {
-    return !!live?.attractions?.some(
-      (a) => a.status === "OPERATING" && typeof a.waitMinutes === "number",
-    );
-  }, [live]);
-
-  // Static rides for this park. Used by the estimated-mode fallback
-  // for "Longest waits" so the card always has something useful to
-  // show, instead of the misleading "No waits reported yet." that
-  // previously rendered in estimated mode.
-  const parkRides = useMemo(
-    () => RIDES.filter((r) => r.parkId === park.id),
-    [park.id],
+  const hasRealLiveData = useMemo(
+    () =>
+      !!live?.attractions?.some(
+        (a) => a.status === "OPERATING" && typeof a.waitMinutes === "number",
+      ),
+    [live],
   );
+  const isEstimated = !hasRealLiveData;
 
-  // Slugs the partial live payload has explicitly flagged as not
-  // running. Excluded from the simulated list so we don't promise
-  // estimated waits for a ride that's actually CLOSED / DOWN /
-  // REFURBISHMENT today.
-  const blockedFromEstimate = useMemo(() => {
+  // Build the working attraction set. In live mode this is the real
+  // operating attractions; in estimated mode this is the static RIDES
+  // list with simulated waits. Either way, we have something to
+  // reason over so the strategy card is always populated.
+  const workingSet = useMemo<ApiAttraction[]>(() => {
+    if (hasRealLiveData && live) {
+      return live.attractions.filter(
+        (a) => a.status === "OPERATING" && typeof a.waitMinutes === "number",
+      );
+    }
     const blocked = new Set<string>();
     for (const a of live?.attractions ?? []) {
       if (
@@ -76,67 +58,41 @@ export function ParkInsights({ park }: ParkInsightsProps) {
         blocked.add(a.slug);
       }
     }
-    return blocked;
-  }, [live]);
-
-  const longestWaits = useMemo<ApiAttraction[]>(() => {
-    // Initial load: stay empty so <Card> + <EmptyRow> render
-    // "Loading…" via the `status` prop. Every other branch must
-    // produce content — the estimated fallback runs even when
-    // `live` is null (e.g. a failed initial fetch), because the
-    // provider's catch path sets status="estimates" while leaving
-    // `liveApi = null`.
-    if (status === "loading") return [];
-
-    if (live && hasRealLiveData) {
-      return [...live.attractions]
-        .filter(
-          (a) => a.status === "OPERATING" && typeof a.waitMinutes === "number",
-        )
-        .sort((a, b) => (b.waitMinutes as number) - (a.waitMinutes as number))
-        .slice(0, 5);
-    }
-
-    // Estimated fallback — runs whenever there's no usable live
-    // data, INCLUDING the case where the provider failed to fetch
-    // and `live === null`. Synthesizes ApiAttraction-shaped rows
-    // from the static RIDES list using `simulatedWait` (same
-    // simulation ParkMap uses for UNKNOWN attractions). Excludes
-    // rides the partial payload explicitly marked as not running.
     const fallbackTimestamp = live?.lastUpdated ?? new Date().toISOString();
-    return parkRides
-      .filter((r) => !blockedFromEstimate.has(r.id))
-      .map<ApiAttraction>((r) => ({
-        id: r.externalId,
-        slug: r.id,
-        parkSlug: park.id,
-        name: r.name,
-        status: "OPERATING",
-        waitMinutes: simulatedWait(r),
-        coordinates: { lat: r.lat, lng: r.lng },
-        lastUpdated: fallbackTimestamp,
-      }))
-      .sort((a, b) => (b.waitMinutes as number) - (a.waitMinutes as number))
-      .slice(0, 5);
-  }, [live, hasRealLiveData, parkRides, blockedFromEstimate, park.id, status]);
+    return RIDES.filter(
+      (r) => r.parkId === park.id && !blocked.has(r.id),
+    ).map((r) => ({
+      id: r.externalId,
+      slug: r.id,
+      parkSlug: park.id,
+      name: r.name,
+      status: "OPERATING",
+      waitMinutes: simulatedWait(r),
+      coordinates: { lat: r.lat, lng: r.lng },
+      lastUpdated: fallbackTimestamp,
+    }));
+  }, [live, hasRealLiveData, park.id]);
 
-  const downAttractions = useMemo(() => {
-    if (!live) return [];
-    return live.attractions.filter(
-      (a) =>
-        a.status === "DOWN" ||
-        a.status === "CLOSED" ||
-        a.status === "REFURBISHMENT",
-    );
-  }, [live]);
+  // Live-only signals — used for the strategy heuristic when we have
+  // real data. In estimated mode these are skipped (we don't pretend
+  // to know what's "down" right now).
+  const downCount = useMemo(
+    () =>
+      live
+        ? live.attractions.filter(
+            (a) =>
+              a.status === "DOWN" ||
+              a.status === "CLOSED" ||
+              a.status === "REFURBISHMENT",
+          ).length
+        : 0,
+    [live],
+  );
 
-  const recentlyUpdated = useMemo(() => {
-    if (!live) return [];
-    return [...live.attractions]
-      .filter((a) => a.status === "OPERATING" && typeof a.waitMinutes === "number")
-      .sort((a, b) => Date.parse(b.lastUpdated) - Date.parse(a.lastUpdated))
-      .slice(0, 5);
-  }, [live]);
+  const insight = useMemo(
+    () => buildStrategy(workingSet, park, hasRealLiveData, downCount),
+    [workingSet, park, hasRealLiveData, downCount],
+  );
 
   return (
     <section className="border-t border-ink-100 bg-white">
@@ -150,59 +106,38 @@ export function ParkInsights({ park }: ParkInsightsProps) {
               {park.name} at a glance
             </h2>
           </div>
-          <StatusBadge status={status} />
+          <StatusBadge status={status} estimated={isEstimated} />
         </div>
 
-        <div className="mt-10 grid grid-cols-1 gap-6 lg:grid-cols-3">
-          <Card title="Longest waits" tone="rose" status={status}>
-            {longestWaits.length === 0 ? (
-              <EmptyRow status={status} fallback="No waits reported yet." />
-            ) : (
-              <ul className="divide-y divide-ink-100">
-                {longestWaits.map((a) => (
-                  <RideRow key={a.id} attraction={a} />
-                ))}
-              </ul>
+        <article className="mt-10 rounded-3xl border border-ink-100 bg-gradient-to-br from-accent-50/60 via-white to-emerald-50/30 p-6 shadow-lift sm:p-8">
+          <div className="flex items-center gap-2">
+            <span className="inline-flex items-center gap-1.5 rounded-full bg-accent-50 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-widest text-accent-700 ring-1 ring-accent-100">
+              Strategy
+            </span>
+            {insight.tag && (
+              <span className="inline-flex items-center rounded-full bg-white px-2 py-0.5 text-[11px] font-medium text-ink-600 ring-1 ring-ink-200">
+                {insight.tag}
+              </span>
             )}
-          </Card>
-
-          <Card title="Temporarily down" tone="ink" status={status}>
-            {downAttractions.length === 0 ? (
-              <div className="px-1 py-6 text-center text-sm text-ink-500">
-                {status === "loading"
-                  ? "Loading…"
-                  : hasRealLiveData
-                    ? "Everything is operating right now."
-                    : "Live ride status unavailable — open the map for details."}
-              </div>
-            ) : (
-              <ul className="divide-y divide-ink-100">
-                {downAttractions.map((a) => (
-                  <RideRow key={a.id} attraction={a} />
-                ))}
-              </ul>
-            )}
-          </Card>
-
-          <Card title="Recently updated" tone="emerald" status={status}>
-            {recentlyUpdated.length === 0 ? (
-              <EmptyRow
-                status={status}
-                fallback={
-                  hasRealLiveData
-                    ? "No updates yet."
-                    : "Updates resume when live data is back."
-                }
-              />
-            ) : (
-              <ul className="divide-y divide-ink-100">
-                {recentlyUpdated.map((a) => (
-                  <RideRow key={a.id} attraction={a} showUpdated />
-                ))}
-              </ul>
-            )}
-          </Card>
-        </div>
+          </div>
+          <h3 className="mt-3 text-2xl font-semibold tracking-tight text-ink-900 sm:text-[28px]">
+            {insight.title}
+          </h3>
+          <p className="mt-2 text-base leading-relaxed text-ink-700 sm:text-lg">
+            {insight.body}
+          </p>
+          {insight.cta && (
+            <div className="mt-4">
+              <Link
+                href={insight.cta.href}
+                className="inline-flex items-center gap-2 rounded-full bg-ink-900 px-5 py-2.5 text-sm font-semibold text-white shadow-soft transition hover:bg-ink-800"
+              >
+                {insight.cta.label}
+                <Chevron />
+              </Link>
+            </div>
+          )}
+        </article>
 
         <div className="mt-10 text-center">
           <Link
@@ -210,20 +145,7 @@ export function ParkInsights({ park }: ParkInsightsProps) {
             className="inline-flex items-center gap-2 rounded-full border border-ink-200 bg-white px-5 py-3 text-sm font-medium text-ink-800 shadow-soft transition hover:border-ink-300 hover:bg-ink-50"
           >
             See all parks
-            <svg
-              viewBox="0 0 16 16"
-              fill="none"
-              className="h-3.5 w-3.5"
-              aria-hidden
-            >
-              <path
-                d="M6 3l5 5-5 5"
-                stroke="currentColor"
-                strokeWidth="1.6"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
+            <Chevron />
           </Link>
         </div>
       </div>
@@ -231,114 +153,168 @@ export function ParkInsights({ park }: ParkInsightsProps) {
   );
 }
 
-function Card({
-  title,
-  tone,
-  status,
-  children,
-}: {
+/* ─────────────────────────── Strategy builder ─────────────────────────── */
+
+interface Strategy {
+  /** Short label next to the "Strategy" pill (e.g. "Light crowds"). */
+  tag: string | null;
+  /** Headline: 5–9 words, action-forward. */
   title: string;
-  tone: "rose" | "emerald" | "ink";
-  status: "loading" | "live" | "estimates";
-  children: React.ReactNode;
-}) {
-  const tag =
-    tone === "rose"
-      ? "bg-rose-50 text-rose-700 ring-rose-200"
-      : tone === "emerald"
-        ? "bg-emerald-50 text-emerald-700 ring-emerald-200"
-        : "bg-ink-100 text-ink-700 ring-ink-200";
-  return (
-    <div className="rounded-3xl border border-ink-100 bg-white p-5 shadow-soft sm:p-6">
-      <div className="flex items-center justify-between">
-        <span
-          className={`inline-flex items-center gap-1.5 rounded-full px-2.5 py-1 text-[11px] font-semibold ring-1 ${tag}`}
-        >
-          {title}
-        </span>
-        {status === "loading" && (
-          <span className="text-[11px] font-medium text-ink-400">Loading…</span>
-        )}
-      </div>
-      <div className="mt-4">{children}</div>
-    </div>
-  );
+  /** Body: 1–2 sentences, concrete advice. */
+  body: string;
+  /** Optional primary CTA link to drive the action. */
+  cta: { label: string; href: string } | null;
 }
 
-function RideRow({
-  attraction,
-  showUpdated = false,
-}: {
-  attraction: ApiAttraction;
-  showUpdated?: boolean;
-}) {
-  return (
-    <li className="flex items-center justify-between gap-4 py-3">
-      <div className="min-w-0">
-        <Link
-          href={`/parks/${attraction.parkSlug}`}
-          className="block truncate text-sm font-semibold tracking-tight text-ink-900 transition hover:text-accent-600"
-          title={attraction.name}
-        >
-          {attraction.name}
-        </Link>
-        {showUpdated ? (
-          <div className="mt-0.5 text-[11px] font-medium text-ink-500">
-            Updated {formatAge(attraction.lastUpdated)}
-          </div>
-        ) : null}
-      </div>
-      <Pill attraction={attraction} />
-    </li>
-  );
-}
-
-function Pill({ attraction }: { attraction: ApiAttraction }) {
-  if (attraction.status !== "OPERATING") {
-    return (
-      <span className="inline-flex items-center gap-1.5 rounded-full bg-ink-100 px-2.5 py-1 text-[11px] font-semibold text-ink-600 ring-1 ring-ink-200">
-        <span className="h-1.5 w-1.5 rounded-full bg-ink-300" />
-        {statusLabel(attraction.status)}
-      </span>
-    );
+/**
+ * Pick the single most actionable line for the current park state.
+ *
+ * Heuristic order (first match wins):
+ *
+ *   1. Multiple attractions are down → tell the reader to check the map.
+ *   2. We have a headliner with a notably short wait → "Ride X now."
+ *   3. Average wait is high (crowds heavy) → suggest a break or
+ *      heading to a less popular ride.
+ *   4. Average wait is low (light crowds) → suggest knocking out
+ *      headliners while the park is light.
+ *   5. Estimated mode default → generic "hit headliners early" advice
+ *      grounded in real park-pattern knowledge.
+ *
+ * Each branch returns a Strategy with a concrete title + body.
+ */
+function buildStrategy(
+  attractions: ApiAttraction[],
+  park: Park,
+  hasRealLive: boolean,
+  downCount: number,
+): Strategy {
+  // 1. Several rides down (live-only signal).
+  if (hasRealLive && downCount >= 3) {
+    return {
+      tag: "Heads up",
+      title: `${downCount} attractions are down right now.`,
+      body: "Reroute through what's running. The map shows live ride status — gray pins are out of service, colored pins are operating.",
+      cta: { label: "Open the map", href: "#park-map" },
+    };
   }
-  if (typeof attraction.waitMinutes !== "number") {
-    return (
-      <span className="inline-flex items-center gap-1.5 rounded-full bg-ink-50 px-2.5 py-1 text-[11px] font-semibold text-ink-500 ring-1 ring-ink-200">
-        <span className="h-1.5 w-1.5 rounded-full bg-ink-300" />—
-      </span>
-    );
+
+  // 2. Headliner with a short wait — strongest call-to-action.
+  const shortHeadliner = pickShortHeadliner(park.id, attractions);
+  if (shortHeadliner) {
+    const wait = shortHeadliner.waitMinutes as number;
+    return {
+      tag: "Window open",
+      title: `Ride ${shortHeadliner.name} now — ${wait} min for a headliner.`,
+      body: hasRealLive
+        ? "Headliner waits like this don't last long once the park fills in. Burn this window first, then circle back to gentler attractions."
+        : "Headliner waits typically rise sharply through midday. The shortest window for a top ride is the first hour after gates open — start here.",
+      cta: { label: "Plan it on the map", href: "#park-map" },
+    };
   }
-  const tier = waitTier(attraction.waitMinutes);
-  const c = waitColorClasses(tier);
+
+  // 3. Heavy crowds — average operating wait is high.
+  const avg = averageWait(attractions);
+  if (hasRealLive && avg !== null && avg >= 55) {
+    return {
+      tag: "Heavy crowds",
+      title: "Most rides are over 50 minutes. Reset and ride later.",
+      body: "Use this window for a meal, a show, or air-conditioning. Headliner waits typically dip 60–90 minutes before park close — that's the next clean window.",
+      cta: { label: "Open the map", href: "#park-map" },
+    };
+  }
+
+  // 4. Light crowds — average wait is low.
+  if (hasRealLive && avg !== null && avg <= 25) {
+    return {
+      tag: "Light crowds",
+      title: "Crowds are light — knock out headliners now.",
+      body: `Average wait across operating rides is just ${avg} min. Hit your top picks at ${park.shortName ?? park.name} while the queues are friendly; come back for shows and food when crowds peak later.`,
+      cta: { label: "Pick a headliner", href: "#park-map" },
+    };
+  }
+
+  // 5. Estimated-mode default. Always actionable, grounded in real
+  //    park knowledge — never says "data unavailable".
+  if (!hasRealLive) {
+    return {
+      tag: "Game plan",
+      title: "Hit your headliner first. Crowds peak after lunch.",
+      body: `Top rides at ${park.shortName ?? park.name} have their shortest waits in the first hour after opening. Lock in your number-one pick before 11am, then work outward to the smaller rides as crowds build.`,
+      cta: { label: "Open the map", href: "#park-map" },
+    };
+  }
+
+  // 6. Mixed / moderate crowds — the catch-all when none of the
+  //    sharper heuristics fired.
+  return {
+    tag: "Steady day",
+    title: "Standard crowds — start with shorter waits and work up.",
+    body: avg !== null
+      ? `Average operating wait is around ${avg} min. Knock out a few short-queue rides first; revisit headliners when the lunch crowd thins out.`
+      : "Knock out a few short-queue rides first; revisit headliners as crowds shift through the day.",
+    cta: { label: "Open the map", href: "#park-map" },
+  };
+}
+
+/**
+ * Pick a curated headliner whose current wait is at least 25%
+ * shorter than the park's running average — a real "ride this NOW"
+ * window. Returns null when nothing qualifies.
+ */
+function pickShortHeadliner(
+  parkSlug: string,
+  attractions: ApiAttraction[],
+): ApiAttraction | null {
+  if (attractions.length < 3) return null;
+  const avg = averageWait(attractions);
+  if (avg == null) return null;
+  const threshold = Math.min(35, Math.round(avg * 0.75));
+  const headliners = attractions
+    .filter(
+      (a) =>
+        isTopRide(parkSlug, a.slug) &&
+        typeof a.waitMinutes === "number" &&
+        (a.waitMinutes as number) <= threshold,
+    )
+    .sort((a, b) => (a.waitMinutes as number) - (b.waitMinutes as number));
+  return headliners[0] ?? null;
+}
+
+function averageWait(attractions: ApiAttraction[]): number | null {
+  const waits = attractions
+    .map((a) => a.waitMinutes)
+    .filter((w): w is number => typeof w === "number");
+  if (waits.length === 0) return null;
+  return Math.round(waits.reduce((s, w) => s + w, 0) / waits.length);
+}
+
+/* ─────────────────────────── Chrome ─────────────────────────── */
+
+function Chevron() {
   return (
-    <span
-      className={`inline-flex items-center gap-1.5 rounded-full px-2.5 py-1 text-[11px] font-semibold ring-1 ${c.bg} ${c.text} ${c.ring}`}
-    >
-      <span className={`h-1.5 w-1.5 rounded-full ${c.dot}`} />
-      {attraction.waitMinutes} min
-    </span>
+    <svg viewBox="0 0 16 16" fill="none" className="h-3.5 w-3.5" aria-hidden>
+      <path
+        d="M6 3l5 5-5 5"
+        stroke="currentColor"
+        strokeWidth="1.6"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
   );
 }
 
-function EmptyRow({
-  status,
-  fallback,
-}: {
-  status: "loading" | "live" | "estimates";
-  fallback: string;
-}) {
-  return (
-    <div className="px-1 py-6 text-center text-sm text-ink-500">
-      {status === "loading" ? "Loading…" : fallback}
-    </div>
-  );
-}
-
+/**
+ * Estimated badge gains a "Predicted from park patterns" supporting
+ * line so guests know exactly where the numbers come from. Same
+ * two-line layout used in Parkio Picks for consistency.
+ */
 function StatusBadge({
   status,
+  estimated,
 }: {
   status: "loading" | "live" | "estimates";
+  estimated: boolean;
 }) {
   if (status === "loading") {
     return (
@@ -348,14 +324,21 @@ function StatusBadge({
       </span>
     );
   }
-  if (status === "estimates") {
+  if (estimated) {
     return (
       <span
-        className="inline-flex items-center gap-1.5 rounded-full bg-ink-100 px-3 py-1.5 text-[11px] font-medium text-ink-600 ring-1 ring-ink-200"
-        title="Live data unavailable — showing estimated waits"
+        className="inline-flex items-start gap-2 rounded-2xl bg-ink-100 px-3 py-2 text-left ring-1 ring-ink-200"
+        title="Live data unavailable — strategy based on each ride's typical wait at this park"
       >
-        <span className="h-1.5 w-1.5 rounded-full bg-ink-400" />
-        Estimated waits
+        <span className="mt-1 h-1.5 w-1.5 rounded-full bg-ink-400" />
+        <span className="flex flex-col leading-tight">
+          <span className="text-[11px] font-semibold text-ink-700">
+            Estimated waits
+          </span>
+          <span className="text-[10px] font-medium text-ink-500">
+            Predicted from park patterns
+          </span>
+        </span>
       </span>
     );
   }
@@ -368,15 +351,4 @@ function StatusBadge({
       Live · refreshes every minute
     </span>
   );
-}
-
-function formatAge(iso: string): string {
-  const ts = Date.parse(iso);
-  if (Number.isNaN(ts)) return "just now";
-  const ageS = Math.max(0, Math.round((Date.now() - ts) / 1000));
-  if (ageS < 30) return "just now";
-  if (ageS < 90) return "1m ago";
-  if (ageS < 60 * 60) return `${Math.round(ageS / 60)}m ago`;
-  if (ageS < 60 * 60 * 24) return `${Math.round(ageS / 3600)}h ago`;
-  return new Date(ts).toLocaleString();
 }
