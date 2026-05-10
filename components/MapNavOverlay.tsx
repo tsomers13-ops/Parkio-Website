@@ -33,9 +33,13 @@ import {
  *  • The wrapper has `pointer-events: none` so the gap between the two
  *    buttons doesn't capture clicks meant for the map. Each button
  *    re-enables pointer events on itself.
- *  • z-50 sits above the page chrome but stays below the map's own
- *    z-[800] overlays, which are scoped to the map container's
- *    stacking context — they don't visually overlap the corners.
+ *  • z-[1000] sits above the map's own internal z-[800] top bar AND
+ *    above Leaflet's panes (which max out at z-700 for popups). The
+ *    overlay's geographic position (corners) doesn't overlap the
+ *    map's center info pill or right-mid controls anyway, so the
+ *    elevated z-index only matters for tile/marker coverage at
+ *    certain zoom levels — without it, Leaflet content over the
+ *    top-left corner can hide the "← Parks" button.
  *  • The "← Parks" button prefers `router.back()` when there's any
  *    in-tab history; otherwise it pushes /parks. Cold-load (fresh
  *    tab) → /parks. Within-app navigation → back.
@@ -61,7 +65,7 @@ export function MapNavOverlay() {
   return (
     <div
       aria-label="Map navigation"
-      className="pointer-events-none fixed inset-x-0 top-0 z-50 flex items-start justify-between gap-3 px-4 pt-4 sm:px-5 sm:pt-5"
+      className="pointer-events-none fixed inset-x-0 top-0 z-[1000] flex items-start justify-between gap-3 px-4 pt-4 sm:px-5 sm:pt-5"
     >
       <button
         type="button"

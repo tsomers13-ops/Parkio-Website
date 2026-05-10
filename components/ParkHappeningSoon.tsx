@@ -100,7 +100,11 @@ export function ParkHappeningSoon({ park }: ParkHappeningSoonProps) {
   }, [live, now]);
 
   const tz = parkApi?.timezone;
-  const isLoading = status === "loading" || !live;
+  // Skeleton is reserved for the TRUE initial-fetch state. When the
+  // provider's catch path leaves `live` at null with status
+  // "estimates", we fall through to the unavailable state below
+  // rather than staying on a skeleton forever.
+  const isLoading = status === "loading";
 
   return (
     <section
@@ -126,6 +130,10 @@ export function ParkHappeningSoon({ park }: ParkHappeningSoonProps) {
         <div className="mt-6 rounded-3xl border border-ink-100 bg-ink-50/40 p-2 sm:p-3">
           {isLoading ? (
             <LoadingState />
+          ) : !live ? (
+            // Failed-fetch case: provider's catch path left `live` at
+            // null. Be honest instead of pretending nothing is on.
+            <UnavailableState />
           ) : upcoming.length === 0 ? (
             <EmptyState />
           ) : (
@@ -200,6 +208,20 @@ function EmptyState() {
   return (
     <div className="px-4 py-8 text-center text-sm text-ink-500 sm:py-10">
       No shows or meet &amp; greets starting soon.
+    </div>
+  );
+}
+
+/**
+ * Shown when the provider couldn't load live data for this park
+ * (e.g. failed initial fetch, upstream outage). Honest about the
+ * gap instead of pretending nothing is on.
+ */
+function UnavailableState() {
+  return (
+    <div className="px-4 py-8 text-center text-sm text-ink-500 sm:py-10">
+      Live event data unavailable right now — open the park map for
+      what's running.
     </div>
   );
 }

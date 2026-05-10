@@ -1,13 +1,14 @@
 "use client";
 
 import { useMemo } from "react";
+import { RIDES } from "@/lib/data";
 import {
   LOW_WAIT_THRESHOLD_MIN,
   isTopRide,
   partitionAttractions,
 } from "@/lib/popularity";
-import type { Park, Ride } from "@/lib/types";
-import { waitColorClasses, waitTier } from "@/lib/utils";
+import type { ApiAttraction, Park, Ride } from "@/lib/types";
+import { simulatedWait, waitColorClasses, waitTier } from "@/lib/utils";
 import { walkBucketBetween, type WalkBucket } from "@/lib/walk";
 import { useMapFocus } from "./MapFocusProvider";
 import { useParkLive } from "./ParkLiveDataProvider";
@@ -34,11 +35,62 @@ export function ParkRightNow({ park, rides }: ParkRightNowProps) {
   const { liveApi: live, status } = useParkLive();
   const { focusRide, currentRideSlug } = useMapFocus();
 
+  // Real-live = at least one OPERATING + numeric attraction. Mirrors
+  // the predicate used by ParkInsights and WaitsAllParks so all three
+  // surfaces classify "live" the same way.
+  const hasRealLiveData = useMemo(
+    () =>
+      !!live?.attractions?.some(
+        (a) => a.status === "OPERATING" && typeof a.waitMinutes === "number",
+      ),
+    [live],
+  );
+
   const top = useMemo(() => {
-    if (!live) return null;
-    const { bestNow } = partitionAttractions(park.id, live.attractions);
+    // Live path — real attractions feed partitionAttractions.
+    if (live && hasRealLiveData) {
+      const { bestNow } = partitionAttractions(park.id, live.attractions);
+      return bestNow[0] ?? null;
+    }
+
+    // Estimated fallback — synthesize ApiAttraction-shaped rows from
+    // the static RIDES list using `simulatedWait` (same simulation
+    // ParkMap uses for UNKNOWN attractions). Blocks rides the partial
+    // payload has explicitly marked CLOSED/DOWN/REFURBISHMENT so we
+    // never recommend a ride that's actually not running. Runs even
+    // when `live === null` (e.g. provider's catch path on a failed
+    // initial fetch) so the section never gets stuck on its skeleton.
+    if (status === "loading") return null;
+
+    const blocked = new Set<string>();
+    for (const a of live?.attractions ?? []) {
+      if (
+        a.status === "CLOSED" ||
+        a.status === "DOWN" ||
+        a.status === "REFURBISHMENT"
+      ) {
+        blocked.add(a.slug);
+      }
+    }
+
+    const fallbackTimestamp = live?.lastUpdated ?? new Date().toISOString();
+    const synthesized: ApiAttraction[] = RIDES.filter(
+      (r) => r.parkId === park.id && !blocked.has(r.id),
+    ).map((r) => ({
+      id: r.externalId,
+      slug: r.id,
+      parkSlug: park.id,
+      name: r.name,
+      status: "OPERATING",
+      waitMinutes: simulatedWait(r),
+      coordinates: { lat: r.lat, lng: r.lng },
+      lastUpdated: fallbackTimestamp,
+    }));
+    if (synthesized.length === 0) return null;
+
+    const { bestNow } = partitionAttractions(park.id, synthesized);
     return bestNow[0] ?? null;
-  }, [live, park.id]);
+  }, [live, hasRealLiveData, status, park.id]);
 
   // Walk-time bucket from the user's "current location" (the last
   // ride they tapped on the map) to the top pick. Hidden when the
@@ -63,8 +115,11 @@ export function ParkRightNow({ park, rides }: ParkRightNowProps) {
     if (map) map.scrollIntoView({ behavior: "smooth", block: "start" });
   }
 
-  /* ─── Loading skeleton ─── */
-  if (status === "loading" || !live) {
+  /* ─── Loading skeleton — only during the true initial fetch.
+       After that, even if `live` is still null (failed fetch), the
+       estimated-fallback path above produces a usable `top` from
+       static RIDES + simulatedWait. No more lock-in. ─── */
+  if (status === "loading") {
     return (
       <Shell>
         <Eyebrow tone="muted" />
