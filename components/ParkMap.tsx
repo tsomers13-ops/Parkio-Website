@@ -344,30 +344,27 @@ export function ParkMap({ park, rides }: ParkMapProps) {
 
   return (
     <div className="relative h-[100dvh] w-full overflow-hidden bg-ink-50">
-      {/* Top bar */}
+      {/* Top bar — back-to-parks link removed; that affordance now
+          lives in the page-level <MapNavOverlay /> (top-left, fixed,
+          always visible). The remaining elements (center info pill
+          with park name + hours + live status, and the clock pill on
+          the right) are unchanged. */}
       <div className="pointer-events-none absolute inset-x-0 top-0 z-[800] px-4 pt-4 sm:px-6 sm:pt-6">
         <div className="pointer-events-auto mx-auto flex max-w-3xl items-center justify-between gap-3">
-          <a
-            href="/parks"
-            className="surface-glass inline-flex shrink-0 items-center gap-2 rounded-full px-3 py-2 text-sm font-medium text-ink-800 shadow-soft transition hover:text-ink-900"
-            aria-label="Back to parks"
+          {/* Invisible left spacer — preserves the original three-slot
+              flex layout so the center info pill keeps the exact same
+              horizontal position it had when the back button was here.
+              `invisible` keeps space without painting; `aria-hidden`
+              keeps it out of the accessibility tree. Dimensions match
+              the original button (icon at every size, "Parks" label
+              sm+) so spacing is identical across breakpoints. */}
+          <div
+            aria-hidden
+            className="invisible inline-flex shrink-0 items-center gap-2 rounded-full px-3 py-2 text-sm font-medium"
           >
-            <svg
-              viewBox="0 0 16 16"
-              className="h-3.5 w-3.5"
-              fill="none"
-              aria-hidden
-            >
-              <path
-                d="M10 3L5 8l5 5"
-                stroke="currentColor"
-                strokeWidth="1.6"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
+            <span className="block h-3.5 w-3.5" />
             <span className="hidden sm:inline">Parks</span>
-          </a>
+          </div>
 
           <div className="surface-glass flex min-w-0 flex-1 items-center gap-3 rounded-full px-4 py-2 shadow-soft sm:flex-none">
             <span
