@@ -5,7 +5,7 @@
  *
  * Compact "top picks per park" grid for the /best-rides-today hub.
  *
- * Reuses the SAME data + scoring as ParkRecommendations:
+ * Reuses the SAME data + scoring as ParkNextMove:
  *   - `useAllLive()` — single multiplexed fetch across all 6 parks
  *     (the same hook /waits already uses, so no extra round-trips).
  *   - `partitionAttractions()` — Parkio Picks logic from lib/popularity
@@ -17,7 +17,7 @@
  * Picks page.
  *
  * If you want to extend the per-park section, do it inside
- * <ParkRecommendations> on the park-specific page. This grid is
+ * <ParkNextMove> on the park-specific page. This grid is
  * deliberately minimal so it doesn't compete with that surface.
  */
 

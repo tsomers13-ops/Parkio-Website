@@ -42,7 +42,7 @@ interface ParkMapProps {
 export function ParkMap({ park, rides }: ParkMapProps) {
   // All live data now flows from the page-level provider — no per-component
   // fetching, no duplicate requests across ParkMap / ParkInsights /
-  // ParkRecommendations.
+  // ParkNextMove / ParkRightNow.
   const { parkApi, liveApi, status: liveStatus, lastUpdated, isStale } =
     useParkLive();
 

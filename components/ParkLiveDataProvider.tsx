@@ -15,7 +15,7 @@ import type { ApiPark, ApiParkLive } from "@/lib/types";
 /**
  * Live-data context for an entire park page. ONE polling loop fetches
  * /api/parks/{slug} and /api/parks/{slug}/live every minute and shares
- * the result with ParkMap, ParkInsights, and ParkRecommendations via
+ * the result with ParkMap, ParkInsights, ParkNextMove, etc. via
  * `useParkLive()`.
  *
  * Behaviors:

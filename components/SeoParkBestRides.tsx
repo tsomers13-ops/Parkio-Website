@@ -2,9 +2,10 @@
  * SeoParkBestRides
  *
  * Composition helper for the park-specific "best rides today" SEO
- * landing pages. Mirrors `SeoParkLanding` but flips the primary
- * section from <ParkRightNow> (one top pick) to <ParkRecommendations>
- * (full Parkio Picks card stack — best now, backup, skip).
+ * landing pages. Mirrors `SeoParkLanding` but uses the One-tap
+ * Strategy surface (<ParkNextMove>) as the primary section: a single
+ * decisive recommendation + an "After that" follow-up plan, instead
+ * of the older multi-card "What to ride next" stack.
  *
  * No new visual primitives. The hero copy, conversion stack, and
  * underlying data flow are all reused from existing components.
@@ -23,7 +24,7 @@ import { MapFocusProvider } from "@/components/MapFocusProvider";
 import { Navbar } from "@/components/Navbar";
 import { ParkLiveDataProvider } from "@/components/ParkLiveDataProvider";
 import { ParkMap } from "@/components/ParkMap";
-import { ParkRecommendations } from "@/components/ParkRecommendations";
+import { ParkNextMove } from "@/components/ParkNextMove";
 import type { Park, Ride } from "@/lib/types";
 
 export interface SeoParkBestRidesProps {
@@ -81,11 +82,12 @@ export function SeoParkBestRides({
 
       {/* Live data — exact same data flow used on /parks/[parkId] so
           there's no duplication of fetches or component logic. The
-          PRIMARY section here is Parkio Picks; the map sits below as
-          a secondary "see everything" surface. */}
+          PRIMARY section here is the One-tap Strategy ("Your next
+          move" + "After that"); the map sits below as a secondary
+          "see everything" surface. */}
       <ParkLiveDataProvider parkSlug={park.id}>
         <MapFocusProvider>
-          <ParkRecommendations park={park} />
+          <ParkNextMove park={park} />
           <div id="park-map" className="scroll-mt-4">
             <ParkMap park={park} rides={rides} />
           </div>
