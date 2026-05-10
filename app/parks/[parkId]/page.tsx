@@ -7,6 +7,7 @@ import { ParkInsights } from "@/components/ParkInsights";
 import { ParkLiveDataProvider } from "@/components/ParkLiveDataProvider";
 import { ParkMap } from "@/components/ParkMap";
 import { ParkNearYou } from "@/components/ParkNearYou";
+import { ParkNextMove } from "@/components/ParkNextMove";
 import { ParkPageAppCta } from "@/components/ParkPageAppCta";
 import { ParkRecommendations } from "@/components/ParkRecommendations";
 import { ParkRightNow } from "@/components/ParkRightNow";
@@ -90,6 +91,13 @@ export default function ParkPage({ params }: ParkPageProps) {
           <ParkRightNow park={park} rides={rides} />
           <ParkHappeningSoon park={park} />
           <ParkNearYou park={park} rides={rides} />
+          {/* One-tap Strategy — primary action surface that sits ABOVE
+              Parkio Picks. Reuses the same partitionAttractions +
+              simulated fallback chain used by the picks/insights
+              surfaces, but presents a single recommendation with one
+              CTA ("Take me there") that fires focusRide() + scrolls
+              the page to the map. */}
+          <ParkNextMove park={park} />
           <ParkRecommendations park={park} />
           <ParkInsights park={park} />
         </MapFocusProvider>
