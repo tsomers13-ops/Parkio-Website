@@ -2,8 +2,14 @@
 
 import Link from "next/link";
 import { useMemo } from "react";
+import { RIDES } from "@/lib/data";
 import type { ApiAttraction, Park } from "@/lib/types";
-import { statusLabel, waitColorClasses, waitTier } from "@/lib/utils";
+import {
+  simulatedWait,
+  statusLabel,
+  waitColorClasses,
+  waitTier,
+} from "@/lib/utils";
 import { useParkLive } from "./ParkLiveDataProvider";
 
 interface ParkInsightsProps {
@@ -11,25 +17,97 @@ interface ParkInsightsProps {
 }
 
 /**
- * Sections rendered below the full-screen map: Longest waits,
- * Temporarily down attractions, Recently updated.
+ * "Park insights" panel rendered below the full-screen map. Three
+ * cards: Longest waits, Temporarily down, Recently updated. All three
+ * read from the page-level `<ParkLiveDataProvider>` so the fetch is
+ * shared with ParkMap and ParkRecommendations.
  *
- * Pulls its data from the page-level <ParkLiveDataProvider> so the
- * fetch is shared with ParkMap and ParkRecommendations — one network
- * round-trip per minute, not three.
+ * Mode handling:
+ *
+ *   - "live" (at least one OPERATING + numeric attraction): real data
+ *     drives all three cards as before.
+ *   - "estimated" (upstream returned no usable live data, or the
+ *     payload is all UNKNOWN/null): "Longest waits" falls back to
+ *     `simulatedWait()` over the static RIDES list — same simulation
+ *     ParkMap uses for UNKNOWN attractions, so the surfaces stay
+ *     visually consistent. "Temporarily down" and "Recently updated"
+ *     render honest empty states instead of claiming "Everything is
+ *     operating" — we don't actually know that without live data.
+ *   - "loading": every card shows "Loading…" — unchanged from before.
+ *
+ * The "Estimated waits" badge at the top of the section already
+ * tells the reader the cards are using simulated values; no per-row
+ * marker is needed.
  */
 export function ParkInsights({ park }: ParkInsightsProps) {
   const { liveApi: live, status } = useParkLive();
 
-  const longestWaits = useMemo(() => {
+  // Real-live = at least one attraction reporting OPERATING with a
+  // numeric wait. Anything else (UNKNOWN/null payloads, empty
+  // attractions, `live: true` with junk content) falls through to
+  // estimated mode, mirroring WaitsAllParks's classification.
+  const hasRealLiveData = useMemo(() => {
+    return !!live?.attractions.some(
+      (a) => a.status === "OPERATING" && typeof a.waitMinutes === "number",
+    );
+  }, [live]);
+
+  // Static rides for this park. Used by the estimated-mode fallback
+  // for "Longest waits" so the card always has something useful to
+  // show, instead of the misleading "No waits reported yet." that
+  // previously rendered in estimated mode.
+  const parkRides = useMemo(
+    () => RIDES.filter((r) => r.parkId === park.id),
+    [park.id],
+  );
+
+  // Slugs the partial live payload has explicitly flagged as not
+  // running. Excluded from the simulated list so we don't promise
+  // estimated waits for a ride that's actually CLOSED / DOWN /
+  // REFURBISHMENT today.
+  const blockedFromEstimate = useMemo(() => {
+    const blocked = new Set<string>();
+    for (const a of live?.attractions ?? []) {
+      if (
+        a.status === "CLOSED" ||
+        a.status === "DOWN" ||
+        a.status === "REFURBISHMENT"
+      ) {
+        blocked.add(a.slug);
+      }
+    }
+    return blocked;
+  }, [live]);
+
+  const longestWaits = useMemo<ApiAttraction[]>(() => {
     if (!live) return [];
-    return [...live.attractions]
-      .filter(
-        (a) => a.status === "OPERATING" && typeof a.waitMinutes === "number",
-      )
+    if (hasRealLiveData) {
+      return [...live.attractions]
+        .filter(
+          (a) => a.status === "OPERATING" && typeof a.waitMinutes === "number",
+        )
+        .sort((a, b) => (b.waitMinutes as number) - (a.waitMinutes as number))
+        .slice(0, 5);
+    }
+    // Estimated fallback — synthesize ApiAttraction-shaped rows from
+    // the static RIDES list using `simulatedWait`. We never overwrite
+    // a real status: if a ride is explicitly CLOSED/DOWN/REFURB in
+    // the partial payload, it's filtered out above.
+    return parkRides
+      .filter((r) => !blockedFromEstimate.has(r.id))
+      .map<ApiAttraction>((r) => ({
+        id: r.externalId,
+        slug: r.id,
+        parkSlug: park.id,
+        name: r.name,
+        status: "OPERATING",
+        waitMinutes: simulatedWait(r),
+        coordinates: { lat: r.lat, lng: r.lng },
+        lastUpdated: live.lastUpdated,
+      }))
       .sort((a, b) => (b.waitMinutes as number) - (a.waitMinutes as number))
       .slice(0, 5);
-  }, [live]);
+  }, [live, hasRealLiveData, parkRides, blockedFromEstimate, park.id]);
 
   const downAttractions = useMemo(() => {
     if (!live) return [];
@@ -82,7 +160,9 @@ export function ParkInsights({ park }: ParkInsightsProps) {
               <div className="px-1 py-6 text-center text-sm text-ink-500">
                 {status === "loading"
                   ? "Loading…"
-                  : "Everything is operating right now."}
+                  : hasRealLiveData
+                    ? "Everything is operating right now."
+                    : "Live ride status unavailable — open the map for details."}
               </div>
             ) : (
               <ul className="divide-y divide-ink-100">
@@ -95,7 +175,14 @@ export function ParkInsights({ park }: ParkInsightsProps) {
 
           <Card title="Recently updated" tone="emerald" status={status}>
             {recentlyUpdated.length === 0 ? (
-              <EmptyRow status={status} fallback="No updates yet." />
+              <EmptyRow
+                status={status}
+                fallback={
+                  hasRealLiveData
+                    ? "No updates yet."
+                    : "Updates resume when live data is back."
+                }
+              />
             ) : (
               <ul className="divide-y divide-ink-100">
                 {recentlyUpdated.map((a) => (
