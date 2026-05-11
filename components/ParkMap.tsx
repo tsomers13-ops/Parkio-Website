@@ -342,8 +342,34 @@ export function ParkMap({ park, rides }: ParkMapProps) {
     }
   }
 
+  /**
+   * Scrolls the page just past the map's bottom edge, landing the
+   * viewport on the "Your Next Move" hero. Used by the "↓ Strategy"
+   * affordance — gives users a one-tap escape from the 100dvh map
+   * to the content below, especially important on touch devices
+   * where Leaflet's drag handler eats vertical swipes.
+   *
+   * Uses `#park-map` (the wrapper assigned in
+   * app/parks/[parkId]/page.tsx) as the reference frame so this works
+   * whether the page is mounted at /parks/[parkId] or inside an SEO
+   * landing wrapper.
+   */
+  function scrollPastMap() {
+    if (typeof document === "undefined") return;
+    const mapEl = document.getElementById("park-map");
+    if (!mapEl) {
+      // Fallback — scroll one viewport-height down. Handles the rare
+      // case where the wrapper id isn't on the page (e.g. a future
+      // embed surface forgot to add it).
+      window.scrollTo({ top: window.innerHeight, behavior: "smooth" });
+      return;
+    }
+    const targetY = mapEl.offsetTop + mapEl.offsetHeight;
+    window.scrollTo({ top: targetY, behavior: "smooth" });
+  }
+
   return (
-    <div className="relative h-[100dvh] w-full overflow-hidden bg-ink-50">
+    <div className="relative min-h-[100dvh] w-full overflow-hidden bg-ink-50">
       {/* Top bar — back-to-parks link removed; that affordance now
           lives in the page-level <MapNavOverlay /> (top-left, fixed,
           always visible). The remaining elements (center info pill
@@ -546,6 +572,36 @@ export function ParkMap({ park, rides }: ParkMapProps) {
           </svg>
         </button>
       </div>
+
+      {/* "↓ Strategy" affordance — gives users a one-tap escape past
+          the full-viewport map to the Your Next Move / Park Insights
+          sections below. Critical on mobile (where touch is captured
+          by Leaflet's dragger) and on desktops where the user might
+          not realize there's more content past the 100dvh hero. The
+          button is bottom-center so it doesn't conflict with the
+          existing left-anchored legend or right-anchored controls. */}
+      <button
+        type="button"
+        onClick={scrollPastMap}
+        aria-label="Scroll to strategy and recommendations"
+        className="surface-glass absolute bottom-6 left-1/2 z-[800] inline-flex -translate-x-1/2 items-center gap-1.5 rounded-full px-4 py-2 text-sm font-semibold text-ink-800 shadow-soft transition hover:bg-white/95 active:scale-[0.98]"
+      >
+        <svg
+          viewBox="0 0 16 16"
+          fill="none"
+          className="h-3.5 w-3.5 animate-bounce"
+          aria-hidden
+        >
+          <path
+            d="M8 3v9M3 8l5 5 5-5"
+            stroke="currentColor"
+            strokeWidth="1.8"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+        </svg>
+        Strategy
+      </button>
 
       {/* Legend */}
       <div className="surface-glass absolute bottom-6 left-4 z-[800] hidden items-center gap-3 rounded-full px-3 py-2 text-[11px] font-medium text-ink-700 shadow-soft sm:left-6 sm:inline-flex">

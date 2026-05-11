@@ -58,6 +58,13 @@ export default function LeafletMap({
       maxZoom={19}
       zoomControl={false}
       attributionControl={true}
+      // Wheel zoom is OFF so the cursor-over-map wheel scrolls the
+      // PAGE rather than zooming the map. Users zoom via the on-screen
+      // +/- controls in ParkMap, the "↓ Strategy" affordance, double-
+      // click, or pinch on touch. Without this prop set, the map at
+      // h-[100dvh] traps every wheel event on landing and the user
+      // can't reach sections below.
+      scrollWheelZoom={false}
       className="h-full w-full bg-ink-50"
       ref={(instance) => {
         if (mapRef) mapRef.current = instance;
