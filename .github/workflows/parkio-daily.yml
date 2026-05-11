@@ -1,0 +1,63 @@
+name: Parkio Daily
+
+# Builds the daily briefing every morning. Replaces the previous
+# n8n workflow — see docs/AUTOMATION.md for the full pipeline and
+# scripts/parkio-daily/build.mjs for the actual logic.
+#
+# Schedule: runs at 11:00 UTC every day.
+#   • 6 AM EST in winter (US/Eastern observes UTC-5)
+#   • 7 AM EDT in summer (US/Eastern observes UTC-4)
+# GitHub Actions cron only accepts a single UTC time; if you need
+# exact 6 AM ET year-round, add a second cron at 10:00 UTC and have
+# the script no-op when today's file already exists.
+
+on:
+  schedule:
+    - cron: "0 11 * * *"
+  # Manual trigger from the Actions tab — useful for back-fills,
+  # debugging, or running an extra briefing the same day.
+  workflow_dispatch:
+
+# Concurrency guard — if a previous run is still going (rare; the
+# build is < 3 min), cancel it so we never end up with two commits
+# racing for the same date file.
+concurrency:
+  group: parkio-daily
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      # Allow the workflow to push the committed JSON back to main.
+      # The default GITHUB_TOKEN is scoped per-run, no PAT needed.
+      contents: write
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+
+      - name: Set up Node 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Build today's briefing
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+        run: node scripts/parkio-daily/build.mjs
+
+      - name: Commit the new briefing
+        run: |
+          git config user.name "parkio-daily-bot"
+          git config user.email "parkio-daily-bot@users.noreply.github.com"
+          git add content/guide/daily/
+          if git diff --cached --quiet; then
+            echo "No content changes — nothing to commit."
+            exit 0
+          fi
+          today=$(TZ=America/New_York date +%Y-%m-%d)
+          git commit -m "Parkio Daily — ${today}"
+          git push

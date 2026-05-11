@@ -1,66 +1,90 @@
 # Parkio Daily — Automation setup
 
-Runbook for n8n + GitHub + Cloudflare + RSS-to-Email. The website code is
-already in place; this doc explains how the daily-content pipeline hooks
-in and how email delivery is decoupled from the build pipeline.
+Runbook for GitHub Actions + GitHub + Cloudflare + RSS-to-Email. The
+website code is already in place; this doc explains how the daily-content
+pipeline hooks in and how email delivery is decoupled from the build
+pipeline.
 
-> **Live workflow:** https://parkio.app.n8n.cloud/workflow/XWPcRzW8r2chhoRt
-> **Source-of-truth JSON:** [`n8n/parkio-daily.json`](../n8n/parkio-daily.json) — re-import to restore.
+> **Active pipeline:** [`.github/workflows/parkio-daily.yml`](../.github/workflows/parkio-daily.yml)
+> calling [`scripts/parkio-daily/build.mjs`](../scripts/parkio-daily/build.mjs).
 > **Public RSS feed:** https://parkio.info/feed.xml — the bridge to the email service.
+>
+> **Previous pipeline:** an n8n Cloud workflow (https://parkio.app.n8n.cloud/workflow/XWPcRzW8r2chhoRt)
+> ran this same recipe until 2026-05-11. The source-of-truth JSON
+> ([`n8n/parkio-daily.json`](../n8n/parkio-daily.json)) is checked in
+> as a historical reference and re-import target if you ever need to
+> roll back. Disable the n8n workflow's `Active` toggle once GitHub
+> Actions is producing the same daily file — keeping both on would
+> create duplicate commits.
 
 ## Architecture
 
 ```
-6 AM ET ─► n8n
-            │
-            ├─► Disney Parks Blog RSS
-            ├─► themeparks.wiki destinations
-            ├─► YouTube broad search (48h)
-            ├─► YouTube featured channel: PagingMrMorrow (7d)
-            └─► YouTube featured channel: WrightDownMainStreet (7d)
-            │
-            ▼
-        Merge YouTube IDs (cap 50, featured first)
-            │
-            ▼
-        YouTube videos.list (snippet + viewCount)
-            │
-            ▼
-        Rank Top 10 (featured guaranteed, rest by views)
-            │
-            ▼
-        Build research context (Code) — bundles RSS + parks + videos,
-                                        builds Anthropic request body
-            │
-            ▼
-        Compose with Claude (claude-sonnet-4-5, hardcoded guardrails)
-            │
-            ▼
-        Validate + format JSON (schema check, attach AI metadata)
-            │
-            ▼
-        GitHub — Lookup existing SHA  (HTTP GET — 404-tolerant)
-            │
-            ▼
-        GitHub — Build commit body (Code — base64, optional sha)
-            │
-            ▼
-        Commit to GitHub (HTTP PUT — upsert)
-            │
-            ▼
-        Cloudflare Pages auto-rebuild → /guide/{slug} live
-                                       → /feed.xml refreshed with new <item>
-            │
-            ▼
-        Wait 90s (deployment buffer, terminal step)
+11:00 UTC daily  ─► GitHub Actions (parkio-daily.yml)
+                      │
+                      ▼
+                 node scripts/parkio-daily/build.mjs
+                      │
+                      ├─► Disney Parks Blog RSS
+                      ├─► 5 additional Disney sources (parallel, isolated failures)
+                      ├─► themeparks.wiki destinations
+                      ├─► YouTube broad search (48h)
+                      ├─► YouTube featured: PagingMrMorrow (7d)
+                      └─► YouTube featured: WrightDownMainStreet (7d)
+                      │
+                      ▼
+                 Merge YouTube IDs (cap 50, featured first)
+                      │
+                      ▼
+                 YouTube videos.list (snippet + viewCount)
+                      │
+                      ▼
+                 Rank Top 10 (featured guaranteed, rest by views)
+                      │
+                      ▼
+                 Build Claude prompt (RSS + parks + videos + research)
+                      │
+                      ▼
+                 Compose with Claude (claude-sonnet-4-5)
+                   retry 3× / 30s / 120s timeout / neverError
+                      │
+                      ▼
+                 Validate + format JSON
+                   • on parse fail / API fail → fallback content
+                   • on schema violation → fail the run loudly
+                   • attach AI metadata + per-run token cost
+                      │
+                      ▼
+                 Write content/guide/daily/{slug}.json
+                      │
+                      ▼
+                 git commit + git push (Actions GITHUB_TOKEN)
+                      │
+                      ▼
+                 Cloudflare Pages auto-rebuild → /guide/{slug} live
+                                                → /feed.xml refreshed
 
 ──── EMAIL DELIVERY (out-of-band) ────
 
   Buttondown (or another RSS-to-Email service) polls
   https://parkio.info/feed.xml on its own schedule, dedupes by <guid>,
-  and emails new posts to subscribers automatically. Not a node in the
-  n8n workflow — fully decoupled.
+  and emails new posts to subscribers automatically. Not part of the
+  GitHub Action — fully decoupled.
 ```
+
+### Why we moved off n8n
+
+The pipeline is a single cron-driven HTTP recipe. n8n Cloud's $24/mo
+Starter plan was overkill for one daily run:
+
+- **GitHub Actions** is free for our usage (one ~2-3 min run per day).
+- The Action runs **inside the repo**, so the GitHub commit step uses
+  the built-in `GITHUB_TOKEN` — no PAT to manage.
+- All retry / fallback / JSON-validation behavior the n8n nodes had
+  is preserved 1:1 in `scripts/parkio-daily/build.mjs`.
+- Every committed briefing now carries `meta.tokens = { input,
+  output, costUsd }` so per-post cost is greppable across
+  `content/guide/daily/*.json`.
 
 The website post is the **canonical** copy. The email is generated by the
 RSS-to-Email service from the feed item's `<content:encoded>` block, which
@@ -295,16 +319,37 @@ model name, swap to a date-suffixed alias or a newer mainline model
 (`claude-sonnet-4-6`) by editing `model:` in the **Build research
 context** Code node — that's the only place the model is named.
 
-## Required credentials in n8n
+## Required secrets in GitHub Actions
 
-| Credential | Type | Used by | How to set up |
-|---|---|---|---|
-| `Anthropic API` | Anthropic API | Compose with Claude | Settings → Credentials → New → "Anthropic API" → paste key |
-| `GitHub` | GitHub API (access token) | Lookup SHA + Commit to GitHub | Fine-grained PAT at github.com/settings/personal-access-tokens with `Contents: Read and write` on `tsomers13-ops/Parkio-Website` |
-| `YouTube API Key` | Generic → Query Auth | Search + Featured (×2) + Get stats | name=`key`, value=`<your YouTube Data API v3 key>` |
+Add both as **Repository secrets** at
+`https://github.com/tsomers13-ops/Parkio-Website/settings/secrets/actions`.
 
-No credential is required by n8n for email delivery — that's the email
-service's responsibility entirely.
+| Secret | Used by | How to get it |
+|---|---|---|
+| `ANTHROPIC_API_KEY` | Claude API call in `build.mjs` | console.anthropic.com → API Keys |
+| `YOUTUBE_API_KEY` | YouTube Data API v3 calls in `build.mjs` | Google Cloud Console → APIs & Services → Credentials, enable "YouTube Data API v3" |
+
+No GitHub PAT is needed — the Action authenticates as the repo using
+the built-in `GITHUB_TOKEN` (granted `contents: write` in the workflow
+file). No credential is required for email delivery — Buttondown polls
+the RSS feed independently.
+
+### Manual run / back-fill
+
+The workflow is `workflow_dispatch`-enabled, so you can trigger an
+extra run any time:
+
+1. Open https://github.com/tsomers13-ops/Parkio-Website/actions/workflows/parkio-daily.yml
+2. Click **Run workflow** → **Run workflow** (default branch).
+3. The job's logs show every fetch + the per-run Claude token cost
+   under `[parkio-daily] Claude usage: …`.
+
+### Legacy n8n credentials (no longer in use)
+
+The old n8n workflow needed three credentials inside n8n Cloud
+(`Anthropic API`, `GitHub` PAT, `YouTube API Key`). After flipping
+the n8n workflow's `Active` toggle off, those can be deleted from the
+n8n credential store — they're not referenced anywhere else.
 
 ## Email delivery setup (Buttondown)
 
