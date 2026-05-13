@@ -1,0 +1,262 @@
+{
+  "title": "Parkio Daily for May 13, 2026",
+  "slug": "parkio-daily-2026-05-13",
+  "date": "2026-05-13",
+  "teaser": "Rock 'n' Roller Coaster transforms with The Muppets next week. Beach Club work extends further, and Halloween party dates selling fast.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Remy's Ratatouille Adventure",
+        "parkSlug": "epcot",
+        "note": "Mid-week mornings usually yield sub-20 minute waits"
+      },
+      {
+        "name": "Tiana's Bayou Adventure",
+        "parkSlug": "magic-kingdom",
+        "note": "First hour entry tends to keep lines manageable"
+      },
+      {
+        "name": "Slinky Dog Dash",
+        "parkSlug": "hollywood-studios",
+        "note": "Rope drop window often best for this one"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [
+      {
+        "title": "Rock 'n' Roller Coaster reopens May 26 with The Muppets theme",
+        "body": "Hollywood Studios' reimagined coaster drops guests into The Electric Mayhem's biggest concert night. Five-track set list features the band plus friends, new psychedelic guitar marquee out front, and G-Force Records queue theming throughout.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/the-electric-mayhem-arrives-at-rock-n-roller-coaster-starring-the-muppets/"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "Sunset Boulevard tends to see heavy foot traffic on reopening days. Riding during evening hours or using Lightning Lane may help avoid multi-hour standby waits in the first week."
+        }
+      }
+    ],
+    "bignews": [
+      {
+        "title": "Beach Club refurb timeline pushed back again",
+        "body": "Disney's Beach Club Resort construction now has a revised end date. The resort has seen multiple timeline adjustments as work continues.",
+        "parkSlug": null,
+        "source": {
+          "label": "AllEars.Net",
+          "url": "https://allears.net/2026/05/12/disneys-beach-club-resort-refurbishment-just-got-another-timeline-update/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Resort construction noise and closed amenities can affect your stay quality. Consider nearby Yacht Club or BoardWalk for quieter EPCOT-area lodging until work wraps."
+        }
+      },
+      {
+        "title": "Halloween party's priciest night sold out in hours",
+        "body": "The $229 Mickey's Not So Scary date sold faster than any previous year. Other peak dates likely to follow as general ticket sales opened this week.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/highest-priced-date-of-2026-mickeys-not-so-scary-halloween-party-sells-out-in-record-time-again/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Early September and late October weeknights usually have better availability and lower per-ticket costs. Booking those dates now often saves money and stress."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "Gideon's Bakehouse adds new cake slice this month",
+        "body": "The popular Disney Springs bakery debuted a fresh cake slice flavor. Lines typically form early, especially on weekends.",
+        "parkSlug": null,
+        "source": {
+          "label": "AllEars.Net",
+          "url": "https://allears.net/2026/05/12/review-this-new-snack-proves-why-this-popular-restaurant-should-stay-on-your-bucket-list/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Gideon's new items often sell out by early afternoon. Visiting Disney Springs before noon usually improves your chances of snagging the latest treat."
+        }
+      },
+      {
+        "title": "Haunted Mansion Loungefly backpack now up for pre-order",
+        "body": "BoxLunch exclusive mini backpack features the Disneyland mansion facade with Hitchhiking Ghosts and opening Stretching Room portrait panels. Priced at $84.90.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/05/pre-order-the-haunted-mansion-loungefly-backpack-from-boxlunch/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Limited-edition Loungefly releases tend to sell out quickly online and at park retail locations. Pre-ordering now likely secures the item before in-park stock disappears."
+        }
+      },
+      {
+        "title": "Walt Disney World president announces retirement",
+        "body": "Jeff Vahle's departure follows recent leadership reshuffling across Disney Parks and Resorts. No successor named yet.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/president-of-walt-disney-world-announces-retirement/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Leadership transitions rarely affect day-to-day park operations. Guests visiting in the next few months should see no immediate service or policy changes."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Disneyland updates pin trading rules in Frontierland",
+        "body": "New etiquette guidelines eliminate designated trading spots. Handouts being distributed to pin collectors at the California park.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/new-disney-pin-rules-remove-designated-trading-spot-at-disneyland/"
+        }
+      },
+      {
+        "title": "Tokyo Disneyland's Space Mountain Earthrise uses spinning vehicles",
+        "body": "Construction photos reveal ride system similar to Cosmic Rewind but not identical. The project is shaping up to be one of Imagineering's costliest attractions ever.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/space-mountain-earthrise-using-cosmic-rewind-style-spinning-vehicle/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "Disney Springs exploration pays off mid-week",
+        "body": "With Gideon's new offerings, updated Planet Hollywood menu items, and lighter weekday foot traffic, the shopping and dining district offers solid variety away from park crowds. Late morning through early afternoon tends to be the sweet spot for browsing without congestion.",
+        "parkSlug": null,
+        "ctaLabel": "Plan your Disney Springs visit",
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Weekday afternoons at Disney Springs usually mean shorter waits at popular restaurants and easier parking. Arriving around 11am often beats both lunch rushes and evening dinner crowds."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "ar8TcbgGRsQ",
+      "title": "Disney Springs 2026 | New Gideon's Cookies, Planet Hollywood & Mother's Day Gift | Walt Disney World",
+      "channel": "Paging Mr. Morrow",
+      "publishedAt": "2026-05-06T13:29:37Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/ar8TcbgGRsQ/mqdefault.jpg",
+      "viewCount": 96988,
+      "url": "https://www.youtube.com/watch?v=ar8TcbgGRsQ",
+      "summary": "Paging Mr. Morrow tours Disney Springs, spotlighting new Gideon's cookies and Planet Hollywood updates for Mother's Day."
+    },
+    {
+      "videoId": "cFc9lmCMkJ4",
+      "title": "I Tested the WORST Rated Restaurant in Magic Kingdom- The Plaza",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-05-10T16:06:16Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/cFc9lmCMkJ4/mqdefault.jpg",
+      "viewCount": 35581,
+      "url": "https://www.youtube.com/watch?v=cFc9lmCMkJ4",
+      "summary": "WrightDownMainStreet reviews The Plaza Restaurant, often cited as Magic Kingdom's lowest-rated dining spot."
+    },
+    {
+      "videoId": "CUa6gad9-7M",
+      "title": "Is This Epcot's Best Restaurant?  Chefs de France New Menu Review | Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-05-07T15:55:59Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/CUa6gad9-7M/mqdefault.jpg",
+      "viewCount": 35476,
+      "url": "https://www.youtube.com/watch?v=CUa6gad9-7M",
+      "summary": "WrightDownMainStreet samples the updated menu at Chefs de France in EPCOT's France pavilion."
+    },
+    {
+      "videoId": "jMQQOgNsjQY",
+      "title": "🔴 LIVE: Disney World Rides – Magic Kingdom Fireworks (Happily Ever After) 4K POV",
+      "channel": "Fun to be Free",
+      "publishedAt": "2026-05-13T03:44:10Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/jMQQOgNsjQY/mqdefault.jpg",
+      "viewCount": 9901,
+      "url": "https://www.youtube.com/watch?v=jMQQOgNsjQY",
+      "summary": "Fun to be Free streams a live 4K point-of-view experience of Magic Kingdom rides and Happily Ever After fireworks."
+    },
+    {
+      "videoId": "L3UUbBxe1Hw",
+      "title": "#LIVE Disneyland The 3 Amigos Take Over the Park, Rides, Characters, New Merch",
+      "channel": "Main Street Cowgirl",
+      "publishedAt": "2026-05-13T06:33:17Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/L3UUbBxe1Hw/mqdefault.jpg",
+      "viewCount": 9439,
+      "url": "https://www.youtube.com/watch?v=L3UUbBxe1Hw",
+      "summary": "Main Street Cowgirl goes live at Disneyland with friends, covering rides, character meets, and new merchandise."
+    },
+    {
+      "videoId": "JUx2jMl5b5U",
+      "title": "Tuesday night live at Disneyland! Dodging the crowds while making Disney memories! Come join us!",
+      "channel": "Disney Secret Kingdom",
+      "publishedAt": "2026-05-13T05:21:27Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/JUx2jMl5b5U/mqdefault.jpg",
+      "viewCount": 6556,
+      "url": "https://www.youtube.com/watch?v=JUx2jMl5b5U",
+      "summary": "Disney Secret Kingdom streams a Tuesday evening visit to Disneyland, navigating crowds and making park memories."
+    },
+    {
+      "videoId": "2oWJmfuY9Os",
+      "title": "I love stitch! #stitch #stitchfan #stitchlover #disney #disneyland #miniso #haul #ohana #find #cute",
+      "channel": "Steph Nguyen ",
+      "publishedAt": "2026-05-13T09:36:11Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/2oWJmfuY9Os/mqdefault.jpg",
+      "viewCount": 3034,
+      "url": "https://www.youtube.com/watch?v=2oWJmfuY9Os",
+      "summary": "Steph Nguyen showcases Stitch-themed merchandise finds from Disneyland and Miniso in this haul video."
+    },
+    {
+      "videoId": "OptoZVqkRAY",
+      "title": "🏰 Disneyland Has 3 Secret Rules You Won't Believe Exist 😳🏰",
+      "channel": "Dreamland Moments",
+      "publishedAt": "2026-05-13T04:02:39Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/OptoZVqkRAY/mqdefault.jpg",
+      "viewCount": 2704,
+      "url": "https://www.youtube.com/watch?v=OptoZVqkRAY",
+      "summary": "Dreamland Moments explores three lesser-known Disneyland park rules that surprise many guests."
+    },
+    {
+      "videoId": "i62mY1aajD4",
+      "title": "Disney Parks Mandalorian Cosplay #starwars #mandalorian #cosplay #shorts",
+      "channel": "Lord Polski",
+      "publishedAt": "2026-05-13T12:42:01Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/i62mY1aajD4/mqdefault.jpg",
+      "viewCount": 2462,
+      "url": "https://www.youtube.com/watch?v=i62mY1aajD4",
+      "summary": "Lord Polski features a Mandalorian cosplay appearance at a Disney park in this short video."
+    },
+    {
+      "videoId": "6DcNVAoAYcA",
+      "title": "【ディズニー】2014年7月嫁さんと行ったディズニーランドホテル #shorts #ディズニー #ディズニーランド #ディズニーシー",
+      "channel": "ギガ丸 / 子育てパパVTuber",
+      "publishedAt": "2026-05-13T09:00:07Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/6DcNVAoAYcA/mqdefault.jpg",
+      "viewCount": 1389,
+      "url": "https://www.youtube.com/watch?v=6DcNVAoAYcA",
+      "summary": "ギガ丸 shares memories from a July 2014 stay at Tokyo Disneyland Hotel with his wife."
+    }
+  ],
+  "updatedAt": "2026-05-13T13:08:04.432Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-05-13T13:08:04.432Z",
+    "tokens": {
+      "input": 30085,
+      "output": 4035,
+      "costUsd": 0.1508
+    }
+  }
+}
