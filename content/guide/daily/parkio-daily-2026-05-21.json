@@ -1,0 +1,255 @@
+{
+  "title": "Parkio Daily for May 21, 2026",
+  "slug": "parkio-daily-2026-05-21",
+  "date": "2026-05-21",
+  "teaser": "Disney Jr. show opens May 26 at Hollywood Studios, plus new Tree of Life playset and Smugglers Run updates.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Flight of Passage",
+        "parkSlug": "animal-kingdom",
+        "note": "Early morning waits remain lowest before 10am"
+      },
+      {
+        "name": "Test Track",
+        "parkSlug": "epcot",
+        "note": "Mid-afternoon windows often open up"
+      },
+      {
+        "name": "Seven Dwarfs Mine Train",
+        "parkSlug": "magic-kingdom",
+        "note": "First hour of park opening tends to be best"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [],
+    "bignews": [
+      {
+        "title": "Disney Jr. Mickey Mouse Clubhouse Live debuts May 26",
+        "body": "A new live show opens May 26 at Hollywood Studios featuring Mickey, Minnie, and friends helping find missing pals in a musical celebration. The show is housed in a reimagined soundstage inside The Walt Disney Studios courtyard area, which also opens May 26 with an outdoor plaza inspired by the Burbank studio lot.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/disney-animation-inspired-experience-coming-to-disneys-hollywood-studios/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "The new courtyard and show are likely to draw families early in the day. Arriving during the first hour or after 3pm usually offers shorter waits for meet-and-greet characters nearby."
+        }
+      },
+      {
+        "title": "Magic of Disney Animation experience coming late summer",
+        "body": "A new family attraction arrives late summer 2026 at Hollywood Studios, featuring interactive drawing classes with Olaf, character meet-and-greets including Mulan and Rapunzel, and a Wonderland-themed indoor playground. The building is topped with Mickey's Sorcerer Hat and houses the updated Animation Academy.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/disney-animation-inspired-experience-coming-to-disneys-hollywood-studios/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "When the experience opens, the drawing classes and playground tend to fill quickly mid-morning. Booking early slots or visiting during dinner hours often yields shorter wait times for character meets."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "Tree of Life playset now available for $70",
+        "body": "A new interactive playset modeled after Animal Kingdom's Tree of Life is now on sale for $69.99. The toy features lights, jungle sounds, and includes 10 character figures plus nine accessories including a rolling gurney and stethoscope.",
+        "parkSlug": "animal-kingdom",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/05/tree-of-life-playset-at-disneys-animal-kingdom/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Park-exclusive toys like this playset tend to sell fastest at flagship stores. Stopping by Island Mercantile early in the day or late afternoon usually helps avoid checkout lines."
+        }
+      },
+      {
+        "title": "Millennium Falcon adds Mandalorian and Grogu missions",
+        "body": "Smugglers Run at Disneyland and Hollywood Studios now features three new missions with The Mandalorian and Grogu, taking guests to Tatooine. The update gives engineer positions more active roles in gameplay and opens today at both parks.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "AllEars.Net",
+          "url": "https://allears.net/2026/05/20/early-look-millennium-falcon-smugglers-run-just-got-a-massive-upgrade-at-disneyland/"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "New attraction content usually draws heavier crowds for the first few weeks. Rope drop or the final two hours of park operation tend to offer shorter standby waits for Smugglers Run."
+        }
+      },
+      {
+        "title": "Buzz Lightyear gets updated scoring system at Magic Kingdom",
+        "body": "Space Ranger Spin recently received a gameplay refresh that improves target tracking and scoring mechanics. The updates position it as a stronger competitor to Toy Story Mania in overall experience.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/buzz-lightyears-space-ranger-spin-strategy-guide-tips-review/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Tomorrowland wait times typically spike between 11am and 2pm. Riding Buzz Lightyear within the first 90 minutes of park opening or after 7pm often keeps waits under 15 minutes."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Disney World debuts $399 private PhotoPass sessions",
+        "body": "A new pilot program offers 20-minute private photo shoots with PhotoPass photographers at select resorts for $399. Sessions include digital downloads and are now bookable for Grand Floridian, Polynesian, and Contemporary.",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-world-debuts-new-400-private-photopass-shoots-at-resorts/"
+        }
+      },
+      {
+        "title": "Rock 'n' Roller Coaster Muppets Easter eggs revealed",
+        "body": "Disney released a guide to hidden references inside the rethemed coaster, including nods to MuppetVision and past park appearances. The queue and show scenes feature dozens of callbacks for longtime fans.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/easter-eggs-muppetvision-rock-roller-coaster-starring-muppets/"
+        }
+      },
+      {
+        "title": "Cinderella Castle repaint nearing completion",
+        "body": "The castle's multi-month color refresh is almost finished, with new elegant shades and refined details now visible. The project has restored a more regal and tasteful appearance to the Magic Kingdom icon.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/repainted-cinderella-castle-magic-kingdom-review-postcard-perfect/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "Max and Aydar streetmosphere returns to EPCOT",
+        "body": "One of the park's most beloved live entertainment acts is performing regularly in World Showcase. The duo's improv comedy and audience interaction make them a standout addition to EPCOT's daily lineup, often appearing near the America pavilion.",
+        "parkSlug": "epcot",
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Streetmosphere performances tend to draw small crowds that linger for 10-15 minutes. Catching the show during mid-afternoon often means easier viewing spots and a relaxed break from attraction lines."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "N9_masc6j_c",
+      "title": "Animal Kingdom Logo Pin Challenge 🤯 #disneyworld #waltdisneyworld #disney #disneyparks #wdw",
+      "channel": "Summer",
+      "publishedAt": "2026-05-21T03:19:37Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/N9_masc6j_c/mqdefault.jpg",
+      "viewCount": 67866,
+      "url": "https://www.youtube.com/watch?v=N9_masc6j_c",
+      "summary": "A guest attempts a pin trading challenge at Animal Kingdom focused on collecting logo-themed pins."
+    },
+    {
+      "videoId": "ALSeA1X04CI",
+      "title": "Spend the day with us at Disney, Animal Kingdom #vlog #disney",
+      "channel": "Kat Clark",
+      "publishedAt": "2026-05-21T03:56:16Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/ALSeA1X04CI/mqdefault.jpg",
+      "viewCount": 66720,
+      "url": "https://www.youtube.com/watch?v=ALSeA1X04CI",
+      "summary": "Kat Clark shares a full day vlog touring Animal Kingdom and visiting attractions."
+    },
+    {
+      "videoId": "1IzK7IRGBvo",
+      "title": "I Tried Every Viral Food at Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-05-15T16:03:09Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/1IzK7IRGBvo/mqdefault.jpg",
+      "viewCount": 62518,
+      "url": "https://www.youtube.com/watch?v=1IzK7IRGBvo",
+      "summary": "WrightDownMainStreet tastes trending food items across Disney World parks to review what's worth the hype."
+    },
+    {
+      "videoId": "9I7DXjPwatM",
+      "title": "BEST Dinner at Epcot's Space 220- New Menu! | Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-05-17T15:29:04Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/9I7DXjPwatM/mqdefault.jpg",
+      "viewCount": 37723,
+      "url": "https://www.youtube.com/watch?v=9I7DXjPwatM",
+      "summary": "A full review of the updated dinner menu at EPCOT's Space 220 restaurant."
+    },
+    {
+      "videoId": "CEgyhFB2dCM",
+      "title": "🔴 Live: Wednesday Stream at Disneyland! Paint the Night Parade, Wondrous Journeys & Rides - 05/20/26",
+      "channel": "Koda Bear the Explorer ",
+      "publishedAt": "2026-05-21T08:28:28Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/CEgyhFB2dCM/mqdefault.jpg",
+      "viewCount": 27858,
+      "url": "https://www.youtube.com/watch?v=CEgyhFB2dCM",
+      "summary": "Koda Bear livestreams an evening at Disneyland featuring Paint the Night and the Wondrous Journeys show."
+    },
+    {
+      "videoId": "i56PkMIdvrU",
+      "title": "🔴 Live: Epcot Wednesday for rides and Luminous 9pm story time at Walt Disney World 5/20/2026",
+      "channel": "RON ON THE GO",
+      "publishedAt": "2026-05-21T03:54:37Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/i56PkMIdvrU/mqdefault.jpg",
+      "viewCount": 17517,
+      "url": "https://www.youtube.com/watch?v=i56PkMIdvrU",
+      "summary": "A live stream from EPCOT featuring rides and the Luminous nighttime spectacular."
+    },
+    {
+      "videoId": "aKIe9U_scX8",
+      "title": "あなたは騙されています。 #ディズニー #すごい #ディズニーランド",
+      "channel": "るーと28",
+      "publishedAt": "2026-05-21T09:00:39Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/aKIe9U_scX8/mqdefault.jpg",
+      "viewCount": 13517,
+      "url": "https://www.youtube.com/watch?v=aKIe9U_scX8",
+      "summary": "A Japanese-language video from るーと28 discussing Disney parks."
+    },
+    {
+      "videoId": "Fbw8UgJwYQw",
+      "title": "🔴 LIVE: Happily Ever After – Magic Kingdom Fireworks & Disney Ambience (4K)",
+      "channel": "Fun to be Free",
+      "publishedAt": "2026-05-21T04:08:14Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Fbw8UgJwYQw/mqdefault.jpg",
+      "viewCount": 9584,
+      "url": "https://www.youtube.com/watch?v=Fbw8UgJwYQw",
+      "summary": "A 4K livestream of Happily Ever After fireworks at Magic Kingdom."
+    },
+    {
+      "videoId": "4CfQHnprN6s",
+      "title": "Blake vs Dad… who wins? Disney Parks",
+      "channel": "4KidsCallMeDad",
+      "publishedAt": "2026-05-21T03:37:47Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/4CfQHnprN6s/mqdefault.jpg",
+      "viewCount": 2729,
+      "url": "https://www.youtube.com/watch?v=4CfQHnprN6s",
+      "summary": "A family challenges each other to a competition during their Disney Parks visit."
+    },
+    {
+      "videoId": "-WccNQrMs-Y",
+      "title": "My Go-To Drink for a Hot Day! #disney #disneyland #disneyparks #disneyeats #disneyfood #summer",
+      "channel": "thatsojessiejessie",
+      "publishedAt": "2026-05-21T02:36:49Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/-WccNQrMs-Y/mqdefault.jpg",
+      "viewCount": 1593,
+      "url": "https://www.youtube.com/watch?v=-WccNQrMs-Y",
+      "summary": "Jessie shares her favorite refreshing drink recommendation for hot days at Disneyland."
+    }
+  ],
+  "updatedAt": "2026-05-21T13:55:56.994Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-05-21T13:55:56.994Z",
+    "tokens": {
+      "input": 28111,
+      "output": 3950,
+      "costUsd": 0.1436
+    }
+  }
+}
