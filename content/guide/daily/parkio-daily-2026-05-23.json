@@ -1,0 +1,284 @@
+{
+  "title": "Parkio Daily — May 23, 2026",
+  "slug": "parkio-daily-2026-05-23",
+  "date": "2026-05-23",
+  "teaser": "Memorial Day weekend arrives with extended hours, early openings, and major debuts across all four Walt Disney World parks Monday.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Tiana's Bayou Adventure",
+        "parkSlug": "magic-kingdom",
+        "note": "Wait times lower in the next hour before Memorial Day crowds build"
+      },
+      {
+        "name": "Remy's Ratatouille Adventure",
+        "parkSlug": "epcot",
+        "note": "Short waits early today before Soarin' Across America weekend buzz"
+      },
+      {
+        "name": "Flight of Passage",
+        "parkSlug": "animal-kingdom",
+        "note": "Bluey's Wild World preview window keeping main park rides calmer"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [
+      {
+        "title": "Hollywood Studios Opens Hour Early Monday for Memorial Day Weekend Debut",
+        "body": "Hollywood Studios will open at 8am Monday May 26 (one hour earlier than usual), with Early Entry starting at 7:30am for resort guests. The early opening coincides with Rock 'n' Roller Coaster Starring The Muppets's public debut, the new Walt Disney Studios area, and high expected demand across the resort.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/05/disney-reveals-this-orlando-theme-park-will-open-early-on-its-biggest-day-of-the-year-el1/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Resort guests booking Early Entry Monday likely have the cleanest shot at Rock 'n' Roller Coaster before noon crowds fill Sunset Boulevard. Arriving by 7:30am usually yields sub-30-minute waits for the first two hours."
+        }
+      },
+      {
+        "title": "Soarin' Across America Soft Opens Early at EPCOT",
+        "body": "The new America-focused Soarin' film began technical rehearsals Friday ahead of its official May 26 opening. The patriotic overlay highlights U.S. landmarks and is scheduled to run through the nation's 250th anniversary celebrations.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/soarin-across-america-opens-early-at-epcot/"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "EPCOT's World Nature pavilion tends to see heavier traffic when Soarin' changes films. Rope-drop windows for Test Track and Frozen Ever After may tighten through the holiday weekend."
+        }
+      }
+    ],
+    "bignews": [
+      {
+        "title": "Bluey's Wild World Preview Generates Virtual Queue Demand at Animal Kingdom",
+        "body": "Animal Kingdom's new Bluey experience opened for cast and passholder previews this week. Disney confirmed a virtual queue will be in place Monday when the interactive play area officially opens to all guests.",
+        "parkSlug": "animal-kingdom",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/sneak-peek-at-blueys-wild-world-first-impressions/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Virtual queue drop windows typically occur at park open and 1pm. Guests prioritizing Bluey should join the queue at 7am (off-site) or during Early Entry, then ride Flight of Passage or Expedition Everest while waiting for their return time."
+        }
+      },
+      {
+        "title": "All Four Parks Add New Offerings Monday in Coordinated Memorial Day Push",
+        "body": "May 26 marks the broadest single-day opening Disney World has seen in months. Beyond Hollywood Studios and EPCOT additions, Magic Kingdom debuts Jessie's Roundup at the Diamond Horseshoe and Animal Kingdom unveils Bluey's Wild World—all timed to kick off summer season.",
+        "parkSlug": null,
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/05/disney-reveals-this-orlando-theme-park-will-open-early-on-its-biggest-day-of-the-year-el1/"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "Memorial Day Monday will likely be the busiest single day of the month across all four parks. Guests flexible with dates may find calmer conditions Tuesday or Wednesday, after opening-day rush subsides."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "Rock 'n' Roller Coaster Passholder Previews Sold Out Hollywood Studios Reservations",
+        "body": "Annual Passholder preview windows for the Muppets-themed coaster filled park reservation inventory within hours of opening. General public access begins Monday during extended operating hours.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "AllEars.Net",
+          "url": "https://allears.net/2026/05/22/answering-your-burning-question-about-rock-n-roller-coaster-starring-the-muppets-at-disney-world/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Monday standby waits for Rock 'n' Roller Coaster could easily exceed 90 minutes by mid-morning. Guests without Lightning Lane may want to ride during the final two hours of the day, when waits typically drop below posted times."
+        }
+      },
+      {
+        "title": "Police Officers Denied Entry to Disney Springs Over Law Enforcement Apparel",
+        "body": "Officers from multiple jurisdictions visiting for a conference were turned away at Disney Springs this week for wearing clothing with law enforcement logos. Disney's dress code prohibits costumes and certain branded attire in its shopping district.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/05/police-officers-turned-away-from-disney-springs-over-clothing-with-law-enforcement-logos-in-todays-daily-recap-for-5-22-2026/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Guests wearing branded or logo-heavy clothing (team jerseys, professional gear, or costumes) may face delays or denial at park and Disney Springs entrances. Neutral clothing choices tend to streamline security screening."
+        }
+      },
+      {
+        "title": "Disney Experiences Picks Up Ten Awards at 2026 Telly and Shorty Ceremonies",
+        "body": "Disney's creative work earned recognition for video storytelling, including gold honors for the Disneyland Handcrafted documentary's sound design and archival footage use. Other wins covered podcast collaborations and behind-the-scenes content across social platforms.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/disney-experiences/disney-experiences-earns-recognition-at-the-telly-and-shorty-awards/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Fans of Disney storytelling can stream the award-winning Disneyland Handcrafted documentary on Disney+ and explore the Imagineer That! series on YouTube for deeper dives into attraction design and park history."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Nomad Lounge Ranks #1 in Disney World Restaurant Survey",
+        "body": "The Animal Kingdom lounge continues to draw praise for its small-plate menu, handcrafted cocktails, and relaxed atmosphere. Recent menu highlights include Korean barbecue pork belly bao buns and the returning naan-and-dips bread service.",
+        "parkSlug": "animal-kingdom",
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/05/22/its-official-this-disney-world-spot-ruined-all-other-restaurants-for-me/"
+        }
+      },
+      {
+        "title": "Disney Loungefly Bags Under $50 Available on Amazon",
+        "body": "A range of Disney-themed Loungefly backpacks and crossbody bags are currently discounted on Amazon, with select styles priced below fifty dollars. Popular designs include Lilo & Stitch holiday totes and Tangled cake-themed bags.",
+        "parkSlug": null,
+        "source": {
+          "label": "AllEars.Net",
+          "url": "https://allears.net/2026/05/22/all-the-disney-loungeflys-under-50-on-amazon-right-now/"
+        }
+      },
+      {
+        "title": "BaubleBar Disney Collection on Sale This Weekend",
+        "body": "The jewelry retailer is offering discounts on Disney-themed accessories, including birthstone Mickey bracelets and character-inspired earrings. The sale runs through the Memorial Day weekend.",
+        "parkSlug": null,
+        "source": {
+          "label": "AllEars.Net",
+          "url": "https://allears.net/2026/05/22/alert-disney-items-are-on-sale-at-baublebar/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "Memorial Day Weekend Brings Year's Busiest Crowds to Walt Disney World",
+        "body": "With four major openings Monday, extended hours at Hollywood Studios, and holiday travel patterns converging, this weekend is shaping up to be one of the highest-attendance periods of 2026. Lightning Lane pricing reflects the spike, and park reservation inventory for Monday is limited across all four gates.",
+        "parkSlug": null,
+        "ctaLabel": null,
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "Guests visiting this weekend should expect waits 20–40% higher than typical May averages. Prioritizing Early Entry, securing Lightning Lane for top attractions before 9am, and dining during off-peak windows (11am or after 2pm) can help manage the day."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "9I7DXjPwatM",
+      "title": "BEST Dinner at Epcot's Space 220- New Menu! | Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-05-17T15:29:04Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/9I7DXjPwatM/mqdefault.jpg",
+      "viewCount": 41447,
+      "url": "https://www.youtube.com/watch?v=9I7DXjPwatM",
+      "summary": "WrightDownMainStreet reviews the updated dinner menu at EPCOT's Space 220 restaurant, exploring new dishes and the immersive dining experience."
+    },
+    {
+      "videoId": "Lpo3f3qJmCw",
+      "title": "🔴Live Magic Kingdom Friday Rides Parades and Fireworks at Walt Disney World 5/22/2026",
+      "channel": "RON ON THE GO",
+      "publishedAt": "2026-05-23T04:15:14Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Lpo3f3qJmCw/mqdefault.jpg",
+      "viewCount": 35340,
+      "url": "https://www.youtube.com/watch?v=Lpo3f3qJmCw",
+      "summary": "Ron On The Go streams a live walkthrough of Magic Kingdom on Friday evening, capturing rides, parades, and the nighttime fireworks show."
+    },
+    {
+      "videoId": "df_LLosO34Q",
+      "title": "🔴 Live: Fantasmic Friday Stream at Disneyland! Wondrous Journeys, WoC & Paint the Night - 05/22/26",
+      "channel": "Koda Bear the Explorer ",
+      "publishedAt": "2026-05-23T07:46:43Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/df_LLosO34Q/mqdefault.jpg",
+      "viewCount": 28271,
+      "url": "https://www.youtube.com/watch?v=df_LLosO34Q",
+      "summary": "Koda Bear the Explorer broadcasts a live stream from Disneyland featuring Fantasmic, Wondrous Journeys, World of Color, and Paint the Night parade."
+    },
+    {
+      "videoId": "zmE1hW76CjA",
+      "title": "$1000+ Club Level Room at the Contemporary Resort | Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-05-22T16:44:35Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/zmE1hW76CjA/mqdefault.jpg",
+      "viewCount": 24190,
+      "url": "https://www.youtube.com/watch?v=zmE1hW76CjA",
+      "summary": "WrightDownMainStreet tours a Club Level room at Disney's Contemporary Resort, discussing amenities and pricing for the premium accommodation option."
+    },
+    {
+      "videoId": "SIfQE-ETPAo",
+      "title": "Disney's Best Gift Shop?  Epcot's Creations Shop #epcot #disneyworld ",
+      "channel": "Disinfinity",
+      "publishedAt": "2026-05-23T04:27:28Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/SIfQE-ETPAo/mqdefault.jpg",
+      "viewCount": 1785,
+      "url": "https://www.youtube.com/watch?v=SIfQE-ETPAo",
+      "summary": "Disinfinity explores EPCOT's Creations Shop, highlighting merchandise and discussing whether it ranks as Disney World's top gift shop."
+    },
+    {
+      "videoId": "WSzycyTre0Y",
+      "title": "Um Sonho 😍#familia #shortsviral #disney #disneyland",
+      "channel": "Família Castilho",
+      "publishedAt": "2026-05-23T01:58:06Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/WSzycyTre0Y/mqdefault.jpg",
+      "viewCount": 1771,
+      "url": "https://www.youtube.com/watch?v=WSzycyTre0Y",
+      "summary": "Família Castilho shares a short family moment from a Disney park visit, capturing the magic of their Disneyland experience."
+    },
+    {
+      "videoId": "_kGWBG-7AD0",
+      "title": "Parade dans l'eau #disney #disneyland #love #frozen #music",
+      "channel": "Clara.A",
+      "publishedAt": "2026-05-23T06:41:42Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/_kGWBG-7AD0/mqdefault.jpg",
+      "viewCount": 1601,
+      "url": "https://www.youtube.com/watch?v=_kGWBG-7AD0",
+      "summary": "Clara.A captures footage of a water-based parade at a Disney park, featuring Frozen-themed music and characters."
+    },
+    {
+      "videoId": "5eDKvCM-WKg",
+      "title": "Masuk ke Dunia peri #diaryland #disneyland #disney #tangled #trendingreels",
+      "channel": "faiz nan gemoy",
+      "publishedAt": "2026-05-23T06:39:25Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/5eDKvCM-WKg/mqdefault.jpg",
+      "viewCount": 1426,
+      "url": "https://www.youtube.com/watch?v=5eDKvCM-WKg",
+      "summary": "Faiz nan gemoy shares a short reel exploring a Tangled-themed area at a Disney park, entering the world of the fairy tale."
+    },
+    {
+      "videoId": "6udxw-rdmdM",
+      "title": "Only at Disney #disney #disneyhotel #hiddenmickey #disneylife #disneyland",
+      "channel": "Jack Jerry",
+      "publishedAt": "2026-05-23T07:41:12Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/6udxw-rdmdM/mqdefault.jpg",
+      "viewCount": 1388,
+      "url": "https://www.youtube.com/watch?v=6udxw-rdmdM",
+      "summary": "Jack Jerry highlights unique Disney hotel details, including hidden Mickey discoveries and special touches found only at Disney resorts."
+    },
+    {
+      "videoId": "wZBbiXPkLeM",
+      "title": "ad Eat your way around Epcot 🍣🌮🥞 #epcot @Disney Parks @TUI UK & Ireland  #stuartandfrancis #shor",
+      "channel": "StuartAndFrancis",
+      "publishedAt": "2026-05-23T01:58:44Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/wZBbiXPkLeM/mqdefault.jpg",
+      "viewCount": 1380,
+      "url": "https://www.youtube.com/watch?v=wZBbiXPkLeM",
+      "summary": "Stuart and Francis create a sponsored short showcasing a culinary tour around EPCOT's international pavilions and dining options."
+    }
+  ],
+  "updatedAt": "2026-05-23T11:55:16.305Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-05-23T11:55:16.305Z",
+    "tokens": {
+      "input": 27837,
+      "output": 4738,
+      "costUsd": 0.1546
+    }
+  }
+}
