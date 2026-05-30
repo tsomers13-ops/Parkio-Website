@@ -76,4 +76,11 @@ jobs:
           fi
           today=$(TZ=America/New_York date +%Y-%m-%d)
           git commit -m "Parkio Daily — ${today}"
-          git push
+          # The remote main may have advanced since checkout (manual pushes,
+          # a prior run). A plain push then fails with non-fast-forward
+          # ([rejected] fetch first), which is what silently stopped the bot
+          # from committing. Rebase our single new-file commit onto the
+          # latest remote, then push. --autostash keeps it safe if anything
+          # is dirty; the dated JSON file won't conflict with other work.
+          git pull --rebase --autostash origin main
+          git push origin HEAD:main
