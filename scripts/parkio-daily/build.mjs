@@ -97,6 +97,8 @@ export {
   todaysSlugAndDate,
   mergeYouTubeIds,
   rankTop10,
+  parseFeedItems,
+  formatFeedItems,
   stitchAdditionalSources,
   buildPrompt,
   buildPost,
@@ -115,6 +117,33 @@ async function main() {
       fetchAdditionalSources(),
       fetchThemeparksDestinations(),
     ]);
+
+  // Parse the official Parks Blog into discrete items (Fix 2 — no more
+  // raw-XML byte slicing). Then log a per-source item count so a thin
+  // briefing can always be traced back to a thin (or failed) feed.
+  const parksBlogItems = parseFeedItems(parksBlogRss, 10);
+  console.log(
+    `[parkio-daily] Feeds parsed:\n` +
+      `[parkio-daily]   Disney Parks Blog (official): ${parksBlogItems.length} items`,
+  );
+  for (const s of additionalSources) {
+    console.log(
+      `[parkio-daily]   ${s.name}: ` +
+        (s.ok ? `${s.count} items` : `FETCH FAILED — ${s.err}`),
+    );
+  }
+  const failedSources = additionalSources.filter((s) => !s.ok).map((s) => s.name);
+  if (failedSources.length) {
+    console.warn(
+      `[parkio-daily] ${failedSources.length} source(s) failed to fetch: ${failedSources.join(", ")}`,
+    );
+  }
+  const totalRssItems =
+    parksBlogItems.length +
+    additionalSources.reduce((n, s) => n + (s.ok ? s.count : 0), 0);
+  console.log(
+    `[parkio-daily] Total parsed RSS items across all feeds: ${totalRssItems}`,
+  );
 
   // ── YouTube ─────────────────────────────────────────────────
   const [broadSearch, morrowSearch, wrightSearch] = await Promise.all([
@@ -139,10 +168,11 @@ async function main() {
   const prompt = buildPrompt({
     etDate,
     slug,
-    rssText: stringSlice(parksBlogRss, 25_000),
+    rssText: formatFeedItems(parksBlogItems),
     additionalText: stitchAdditionalSources(additionalSources),
     parksJson: JSON.stringify(parksDestinations).slice(0, 4_000),
     videosJson: JSON.stringify(rankedVideos),
+    totalRssItems,
   });
   const claudeBody = JSON.stringify({
     model: MODEL,
@@ -166,6 +196,27 @@ async function main() {
   const outPath = path.join(outDir, `${slug}.json`);
   writeFileSync(outPath, JSON.stringify(post, null, 2) + "\n", "utf8");
   console.log(`[parkio-daily] Wrote ${outPath}`);
+
+  // Fix 1: explicit story count + commit decision in the log.
+  const storyCount = ["breaking", "bignews", "topstories", "icymi", "spotlight"].reduce(
+    (n, k) => n + (Array.isArray(post.sections?.[k]) ? post.sections[k].length : 0),
+    0,
+  );
+  console.log(
+    `[parkio-daily] Stories generated: ${storyCount} written ` +
+      `(breaking ${post.sections?.breaking?.length ?? 0}, ` +
+      `bignews ${post.sections?.bignews?.length ?? 0}, ` +
+      `topstories ${post.sections?.topstories?.length ?? 0}, ` +
+      `icymi ${post.sections?.icymi?.length ?? 0}, ` +
+      `spotlight ${post.sections?.spotlight?.length ?? 0}) ` +
+      `+ ${post.videos?.length ?? 0} videos`,
+  );
+  console.log(
+    `[parkio-daily] Commit expected: YES — ${slug}.json written` +
+      (post.meta?.fallbackReason
+        ? ` (note: fallbackReason=${post.meta.fallbackReason})`
+        : ""),
+  );
 
   // ── Cost log ───────────────────────────────────────────────
   if (claudeResult?.usage) {
@@ -239,21 +290,127 @@ async function fetchAdditionalSources() {
           headers,
           timeoutMs: SOURCE_TIMEOUT_MS,
         });
+        // Fix 2: parse the feed into discrete items instead of slicing
+        // the first 8 KB of raw XML (which gave Claude ~0–1 stories on
+        // content-heavy WordPress feeds). Keep the 8 most recent items.
+        const items = parseFeedItems(xml, 8);
         return {
           name: src.name,
           ok: true,
           bytes: xml.length,
-          xml: xml.slice(0, 8_000),
+          count: items.length,
+          items,
         };
       } catch (err) {
         return {
           name: src.name,
           ok: false,
+          count: 0,
+          items: [],
           err: String(err?.message || err).slice(0, 200),
         };
       }
     }),
   );
+}
+
+/* ──────────────────────────────────────────────────────────────
+ * RSS / Atom item parser (Fix 2)
+ *
+ * Lightweight, dependency-free. Handles both RSS (<item>) and Atom
+ * (<entry>) feeds. Returns the N most recent items as flat objects:
+ *   { title, link, pubDate, description }
+ * `description` is HTML-stripped and capped so the full <content:encoded>
+ * article body never bloats the prompt. We deliberately do NOT hand
+ * Claude raw markup — just real headlines + short excerpts.
+ * ────────────────────────────────────────────────────────────── */
+
+function parseFeedItems(xml, max = 10) {
+  if (typeof xml !== "string" || !xml) return [];
+
+  const stripCdata = (s) => s.replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, "$1");
+  const decodeEntities = (s) =>
+    s
+      .replace(/&amp;/g, "&")
+      .replace(/&lt;/g, "<")
+      .replace(/&gt;/g, ">")
+      .replace(/&quot;/g, '"')
+      .replace(/&(?:apos|#0?39);/g, "'")
+      .replace(/&#8217;/g, "’")
+      .replace(/&#8216;/g, "‘")
+      .replace(/&#8220;/g, "“")
+      .replace(/&#8221;/g, "”")
+      .replace(/&#8211;/g, "–")
+      .replace(/&#8212;/g, "—")
+      .replace(/&#8230;/g, "…")
+      .replace(/&nbsp;/g, " ");
+  const clean = (s) =>
+    decodeEntities(stripCdata(s || ""))
+      .replace(/<[^>]+>/g, " ")
+      .replace(/\s+/g, " ")
+      .trim();
+
+  const pickTag = (block, tags) => {
+    for (const t of tags) {
+      const m = block.match(
+        new RegExp(`<${t}(?:\\s[^>]*)?>([\\s\\S]*?)</${t}>`, "i"),
+      );
+      if (m) return m[1];
+    }
+    return "";
+  };
+  const pickLink = (block) => {
+    // Atom: <link href="..."/>. RSS: <link>...</link>.
+    const attr = block.match(
+      /<link[^>]*\bhref=["']([^"']+)["'][^>]*\/?>(?:<\/link>)?/i,
+    );
+    if (attr) return attr[1].trim();
+    return clean(pickTag(block, ["link", "guid"]));
+  };
+
+  const isAtom = /<entry[\s>]/i.test(xml) && !/<item[\s>]/i.test(xml);
+  const tag = isAtom ? "entry" : "item";
+  const chunks = xml.split(new RegExp(`<${tag}(?:\\s[^>]*)?>`, "i")).slice(1);
+
+  const items = [];
+  for (const raw of chunks) {
+    const block = raw.split(new RegExp(`</${tag}>`, "i"))[0];
+    const title = clean(pickTag(block, ["title"]));
+    if (!title) continue;
+    const link = pickLink(block);
+    const pubDate = clean(
+      pickTag(block, ["pubDate", "published", "updated", "dc:date"]),
+    );
+    let description = clean(
+      pickTag(block, [
+        "description",
+        "summary",
+        "content:encoded",
+        "content",
+      ]),
+    );
+    if (description.length > 300) {
+      description = description.slice(0, 300).replace(/\s+\S*$/, "") + "…";
+    }
+    items.push({ title, link, pubDate, description });
+    if (items.length >= max) break;
+  }
+  return items;
+}
+
+/* Format a list of parsed items into compact, Claude-readable text. */
+function formatFeedItems(items) {
+  if (!Array.isArray(items) || items.length === 0) {
+    return "[no items parsed from this feed]";
+  }
+  return items
+    .map((it, i) => {
+      const meta = it.pubDate ? ` — ${it.pubDate}` : "";
+      const link = it.link ? `\n   ${it.link}` : "";
+      const desc = it.description ? `\n   ${it.description}` : "";
+      return `${i + 1}. ${it.title}${meta}${link}${desc}`;
+    })
+    .join("\n\n");
 }
 
 async function fetchThemeparksDestinations() {
@@ -264,12 +421,14 @@ async function fetchThemeparksDestinations() {
 }
 
 function stitchAdditionalSources(sources) {
-  // Mirror the n8n shape Claude was already prompted against:
-  // `=== name ===\n{xml}` blocks separated by `\n\n---\n\n`.
+  // Fix 2: emit parsed headline+excerpt items per source, not raw XML.
+  // `=== name (N items) ===\n{formatted items}` blocks, `\n\n---\n\n` apart.
   return sources
     .map((s) =>
       s.ok
-        ? `=== ${s.name} ===\n${s.xml}`
+        ? `=== ${s.name} (${s.items?.length ?? 0} recent items) ===\n${formatFeedItems(
+            s.items,
+          )}`
         : `=== ${s.name} ===\n[unavailable: ${s.err || "unknown error"}]`,
     )
     .join("\n\n---\n\n");
@@ -433,8 +592,11 @@ function buildPrompt({
   additionalText,
   parksJson,
   videosJson,
+  totalRssItems = 0,
 }) {
   return `You are writing the Parkio Daily briefing for ${etDate}.
+
+SOURCE VOLUME TODAY: ${totalRssItems} parsed article items across all RSS feeds (plus live park status and the YouTube list below). Treat this as a normal news day unless that count is very low (≈5 or fewer items total).
 
 Parkio Daily is a fast, trusted morning briefing for Disney park guests. It is NOT a blog. It feels like a quick read that helps a guest plan their park day. Every word is yours — no copy/paste from sources, no paraphrased blog posts.
 
@@ -444,8 +606,8 @@ GUARDRAILS — read carefully, follow strictly:
 1. ORIGINAL LANGUAGE ONLY. Do NOT copy any phrasing from the source feeds. Do NOT paraphrase entire articles. Each story must be summarized in 1–2 sentences using ENTIRELY ORIGINAL language. The Parkio voice is fast, plain, direct. If you find yourself echoing source phrasing, rewrite.
 2. COMBINE DUPLICATES. If multiple sources cover the same story (e.g., WDWNT, AllEars, and Inside the Magic all covering one announcement), merge into ONE summary item. Never list the same story twice.
 3. NO INVENTION. Every factual claim — names, dates, closures, openings, prices — MUST be supported by AT LEAST ONE source feed below or by themeparks.wiki status. If you cannot ground a claim, drop the item. Do not speculate.
-4. NO-NEWS FALLBACK. If overall source data is weak (no real news today), respond with a single bignews item titled "No major updates today" and a short body noting the parks are operating normally. Set sections.breaking and sections.icymi to [].
-5. PREFER FEWER, HIGHER-QUALITY STORIES. It is better to ship 4 strong items than 10 weak ones. If you can only ground 3 stories, ship 3 — do not pad with speculation or filler. Quality over volume.
+4. NO-NEWS FALLBACK — LAST RESORT ONLY. Only use this if SOURCE VOLUME TODAY is genuinely low (≈5 or fewer total items) AND none describe a real development. In that case respond with a single bignews item titled "No major updates today" with a short body noting the parks are operating normally, and set sections.breaking and sections.icymi to []. Do NOT use this fallback on a normal news day just because writing is harder — if there are real items, cover them.
+5. COVER THE NEWS — do not underfill. The feeds below typically contain many distinct stories (new attractions, ride closures/openings, food and festival updates, entertainment changes, resort/hotel news, merchandise, and major operational changes across Walt Disney World AND Disneyland). TARGET 10–13 distinct, well-grounded stories per day across all sections when the sources support it. Include every DISTINCT story you can ground in a source — across Magic Kingdom, EPCOT, Hollywood Studios, Animal Kingdom, Disneyland, and California Adventure, and across all categories above. Do NOT drop a real, sourced story just to keep the list short, and do NOT pad with speculation. Quality AND coverage — a reader should leave feeling caught up on the day, not handed three items.
 6. TOPIC DIVERSITY — strict. Each item across ALL sections (breaking + bignews + topstories + icymi + spotlight) must cover a DISTINCT story. Aim for breadth — different parks, different categories (attractions, food, merchandise, entertainment, transportation, characters, news), different angles. A reader should never feel like they're reading the same story rephrased twice.
 7. PARKIO INSIGHT — REQUIRED for every item in breaking, bignews, topstories, and spotlight. This is the Parkio differentiator. The field is an OBJECT with two keys:
    {
@@ -486,11 +648,12 @@ SCHEMA (produce this object):
     "rides": [ { "name": string, "parkSlug": string, "note": string } ]   // 2–3 items
   },
   "sections": {
-    "breaking":   [ { "title", "body", "parkSlug?", "source?": { "label", "url" }, "parkioInsight": { "category", "text" } } ],   // 0–2
-    "bignews":    [ { ...same shape with parkioInsight object } ],                                                                  // 1–3
-    "topstories": [ { ...same shape with parkioInsight object } ],                                                                  // 2–4
-    "icymi":      [ { "title", "body", "parkSlug?", "source?": { "label", "url" } } ],                                              // 1–3, NO parkioInsight
+    "breaking":   [ { "title", "body", "parkSlug?", "source?": { "label", "url" }, "parkioInsight": { "category", "text" } } ],   // 0–3 (only genuinely breaking, sourced)
+    "bignews":    [ { ...same shape with parkioInsight object } ],                                                                  // 2–4
+    "topstories": [ { ...same shape with parkioInsight object } ],                                                                  // 4–7
+    "icymi":      [ { "title", "body", "parkSlug?", "source?": { "label", "url" } } ],                                              // 2–4, NO parkioInsight
     "spotlight":  [ { "title", "body", "parkSlug?", "ctaLabel?", "parkioInsight": { "category", "text" } } ]                        // exactly 1
+    // Aim for 10–13 DISTINCT stories total across breaking+bignews+topstories+icymi+spotlight when sources support it.
   },
   "videos": [
     { "title", "channel", "url", "thumbnailUrl", "videoId", "viewCount", "publishedAt", "summary" }
@@ -499,10 +662,10 @@ SCHEMA (produce this object):
 
 parkSlug enum: magic-kingdom | epcot | hollywood-studios | animal-kingdom | disneyland | california-adventure.
 
-RESEARCH — Disney Parks Blog RSS (official):
+RESEARCH — Disney Parks Blog (official), parsed recent items [title — date / link / excerpt]:
 ${rssText}
 
-RESEARCH — Additional Disney sources (community blogs, RSS feeds):
+RESEARCH — Additional Disney sources (community blogs), parsed recent items [title — date / link / excerpt]:
 ${additionalText}
 
 RESEARCH — themeparks.wiki destinations summary (live park status):
@@ -670,45 +833,83 @@ function buildPost({ claudeResult, etDate, slug, niceDate, rankedVideos }) {
     }
   }
 
+  // Fix 1: REPAIR-AND-WARN instead of throw. A single malformed field
+  // from Claude should never blow up the whole run (which left no commit
+  // and a silent multi-day outage). We fix what we safely can, drop the
+  // specific offending piece otherwise, collect warnings for the log, and
+  // still publish. The run only hard-fails earlier, on a true API failure
+  // with no usable response (that path already produced a fallback post).
+  const validationWarnings = [];
   if (!usedFallback) {
-    // Required top-level fields — these throw because they indicate a
-    // schema/prompt bug, not a transient failure. Failing the workflow
-    // surface-level lets us notice in the GitHub Actions run.
-    const required = ["title", "slug", "date", "teaser"];
-    for (const k of required) {
-      if (!post[k] || typeof post[k] !== "string") {
-        throw new Error(`Missing required field: ${k}`);
-      }
+    // Top-level required fields — repair from known-good values.
+    if (!post.title || typeof post.title !== "string") {
+      validationWarnings.push("missing/invalid title — repaired");
+      post.title = `Parkio Daily — ${niceDate}`;
     }
-    if (!/^parkio-daily-\d{4}-\d{2}-\d{2}$/.test(post.slug)) {
-      throw new Error(`Slug doesn't match parkio-daily-YYYY-MM-DD: ${post.slug}`);
+    if (
+      !post.slug ||
+      typeof post.slug !== "string" ||
+      !/^parkio-daily-\d{4}-\d{2}-\d{2}$/.test(post.slug)
+    ) {
+      validationWarnings.push(`slug "${post.slug}" invalid — repaired to ${slug}`);
+      post.slug = slug;
+    }
+    if (!post.date || typeof post.date !== "string") {
+      validationWarnings.push("missing/invalid date — repaired");
+      post.date = etDate;
+    }
+    if (!post.teaser || typeof post.teaser !== "string") {
+      validationWarnings.push("missing/invalid teaser — repaired");
+      post.teaser =
+        "Today's Disney parks briefing from Parkio — wait times, news, and what to do.";
     }
     if (post.teaser.length > 220) {
-      throw new Error(`Teaser too long (${post.teaser.length} chars)`);
+      validationWarnings.push(`teaser ${post.teaser.length} chars — truncated to 220`);
+      post.teaser = post.teaser.slice(0, 217).replace(/\s+\S*$/, "") + "…";
     }
-    for (const sec of Object.values(post.sections ?? {})) {
+    // Section items: drop an invalid parkSlug, keep the story.
+    for (const [secName, sec] of Object.entries(post.sections ?? {})) {
       if (!Array.isArray(sec)) continue;
       for (const item of sec) {
-        if (item.parkSlug && !VALID_PARKS.includes(item.parkSlug)) {
-          throw new Error(`Invalid parkSlug: ${item.parkSlug}`);
+        if (item && item.parkSlug && !VALID_PARKS.includes(item.parkSlug)) {
+          validationWarnings.push(
+            `${secName}: dropped invalid parkSlug "${item.parkSlug}"`,
+          );
+          delete item.parkSlug;
         }
       }
     }
     for (const ride of post.rightNow?.rides ?? []) {
-      if (ride.parkSlug && !VALID_PARKS.includes(ride.parkSlug)) {
-        throw new Error(`Invalid rightNow parkSlug: ${ride.parkSlug}`);
+      if (ride && ride.parkSlug && !VALID_PARKS.includes(ride.parkSlug)) {
+        validationWarnings.push(
+          `rightNow: dropped invalid parkSlug "${ride.parkSlug}"`,
+        );
+        delete ride.parkSlug;
       }
     }
+    // Videos: rebuild from ranked list if missing; drop malformed entries.
     if (!Array.isArray(post.videos)) {
-      throw new Error("post.videos must be an array");
+      validationWarnings.push("videos not an array — rebuilt from ranked list");
+      post.videos = (rankedVideos ?? []).map((v) => ({
+        ...v,
+        summary: v.title || "",
+      }));
     }
     if (post.videos.length > 10) post.videos = post.videos.slice(0, 10);
+    const beforeVideos = post.videos.length;
+    post.videos = post.videos.filter(
+      (v) =>
+        v &&
+        ["title", "channel", "url", "summary"].every(
+          (k) => v[k] && typeof v[k] === "string",
+        ),
+    );
+    if (post.videos.length !== beforeVideos) {
+      validationWarnings.push(
+        `dropped ${beforeVideos - post.videos.length} malformed video(s)`,
+      );
+    }
     for (const v of post.videos) {
-      for (const k of ["title", "channel", "url", "summary"]) {
-        if (!v[k] || typeof v[k] !== "string") {
-          throw new Error(`Video missing field: ${k}`);
-        }
-      }
       if (
         typeof v.viewCount !== "undefined" &&
         typeof v.viewCount !== "number"
@@ -734,6 +935,18 @@ function buildPost({ claudeResult, etDate, slug, niceDate, rankedVideos }) {
     post.meta || {},
   );
   if (usedFallback) post.meta.fallbackReason = fallbackReason;
+
+  // Fix 1: record + log any repairs so a degraded-but-published run is
+  // visible in the Action log without failing the whole build.
+  if (validationWarnings.length) {
+    post.meta.validationWarnings = validationWarnings;
+    console.warn(
+      `[parkio-daily] ${validationWarnings.length} validation issue(s) repaired (run NOT failed):`,
+    );
+    for (const w of validationWarnings) console.warn(`[parkio-daily]    - ${w}`);
+  } else if (!usedFallback) {
+    console.log("[parkio-daily] Validation: clean — no repairs needed.");
+  }
 
   // Detect Claude's own "no-news" fallback
   if (!usedFallback) {

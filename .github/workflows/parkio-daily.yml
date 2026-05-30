@@ -13,9 +13,13 @@ name: Parkio Daily
 
 on:
   schedule:
+    # Active daily trigger. NOTE: GitHub only runs scheduled workflows
+    # from the repo's DEFAULT branch, and disables them after 60 days of
+    # no repo activity — re-enable from the Actions tab if that happens.
     - cron: "0 11 * * *"
   # Manual trigger from the Actions tab — useful for back-fills,
-  # debugging, or running an extra briefing the same day.
+  # debugging, or running an extra briefing the same day. Confirmed
+  # working; this is how you run a same-day briefing on demand.
   workflow_dispatch:
 
 # Concurrency guard — if a previous run is still going (rare; the
@@ -48,6 +52,18 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
         run: node scripts/parkio-daily/build.mjs
+
+      - name: Verify today's briefing was written
+        # Fix 1: surface a missing-file outage immediately instead of
+        # letting the run "succeed" with nothing produced.
+        run: |
+          today=$(TZ=America/New_York date +%Y-%m-%d)
+          f="content/guide/daily/parkio-daily-${today}.json"
+          if [ ! -f "$f" ]; then
+            echo "::error::Expected $f was not produced by build.mjs."
+            exit 1
+          fi
+          echo "Found $f — a commit should be created."
 
       - name: Commit the new briefing
         run: |
