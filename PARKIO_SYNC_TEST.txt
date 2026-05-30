@@ -1,0 +1,3 @@
+If you can see this file in GitHub Desktop's Changes tab or in File Explorer,
+then Claude's file writes DO reach your real folder.
+Created during the Parkio Daily fix session.
