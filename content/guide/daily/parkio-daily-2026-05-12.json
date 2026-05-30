@@ -1,0 +1,237 @@
+{
+  "title": "Parkio Daily for May 12, 2026",
+  "slug": "parkio-daily-2026-05-12",
+  "date": "2026-05-12",
+  "teaser": "Halloween party tickets sell out fast, EPCOT crowds build this weekend, and a classic attraction pauses briefly for updates.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Soarin'",
+        "parkSlug": "epcot",
+        "note": "Closing May 14 for temporary update—ride before Wednesday"
+      },
+      {
+        "name": "Space Mountain",
+        "parkSlug": "magic-kingdom",
+        "note": "Early morning tends to offer shortest waits"
+      },
+      {
+        "name": "Test Track",
+        "parkSlug": "epcot",
+        "note": "Reopened with reimagined theme—check wait times before noon"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [
+      {
+        "title": "Halloween Party Sells Out for October 31",
+        "body": "Mickey's Not-So-Scary Halloween Party tickets for Halloween night sold out within hours of going on sale this morning. The October 31 date—falling on a Saturday this year—is no longer available, though other August through October dates remain open with pricing from $119 to $229.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/05/breaking-mickeys-not-so-scary-halloween-party-sold-out-for-halloween-night-2026/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Alternative party dates in late October tend to offer similar entertainment with better availability. Booking mid-week dates often means lower pricing and easier access to trick-or-treat stops."
+        }
+      }
+    ],
+    "bignews": [
+      {
+        "title": "Walt Disney World President Announces Retirement",
+        "body": "Jeff Vahle, current president of Walt Disney World Resort, will retire this summer after several years leading operations. The announcement follows recent Parks & Resorts leadership changes across the Walt Disney Company, though no successor has been named yet.",
+        "source": {
+          "label": "AllEars",
+          "url": "https://allears.net/2026/05/11/walt-disney-world-president-jeff-vahle-announces-retirement/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Leadership transitions at this level rarely impact day-to-day park operations immediately. Guests visiting in the next few months are unlikely to notice changes tied to this shift."
+        }
+      },
+      {
+        "title": "EPCOT Park Reservations Fill Up for Weekend",
+        "body": "Park reservations for ticket holders are sold out at EPCOT this coming Saturday and Sunday. The Flower & Garden Festival continues through May, drawing higher-than-usual weekend crowds to the park.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "AllEars",
+          "url": "https://allears.net/2026/05/11/warning-epcot-might-be-extra-crowded-this-weekend/"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "EPCOT festival weekends usually see heavier traffic near World Showcase after 11am. Riding Remy's Ratatouille Adventure or Guardians of the Galaxy before 10am typically avoids peak waits."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "Soarin' Pauses May 14 for Brief Update",
+        "body": "The flight simulator attraction at EPCOT will close May 14 for a temporary update, giving guests just two more days to experience the current version. Disney has indicated the closure will last only a short time, with the attraction returning later this month in a refreshed format.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/05/disney-world-issues-48-hour-warning-before-21-year-old-attraction-disappears-at-epcot-sb1/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "If you want to ride the current version before it changes, visit before Wednesday evening. Soarin' wait times tend to drop after 7pm during Flower & Garden."
+        }
+      },
+      {
+        "title": "Old Navy x Disney Summer Collection Launches May 13",
+        "body": "A new Americana-themed Mickey & Friends apparel line arrives in Old Navy stores and online tomorrow. The collection includes tees, sweatshirts, and matching sets for all ages with nostalgic summer graphics.",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/products/old-navy-celebrates-new-disney-americana-collection/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "These collabs often sell out quickly in popular sizes online. Shopping early tomorrow morning usually offers the best selection before items go out of stock."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Kate Mara Visits Magic Kingdom for Mother's Day",
+        "body": "The actress shared Instagram photos from her Mother's Day visit to Walt Disney World, thanking the resort for 'magical adventures' with her family.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/05/kate-mara-mothers-day-walt-disney-world/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "Early Entry Strategy for Peak Crowd Days",
+        "body": "A recent Disney Tourist Blog photo report documents a challenging Early Entry morning at Hollywood Studios during a 10/10 crowd day, showing how even resort guest perks can be overwhelmed during peak periods. The experience highlights the importance of having backup plans when first-choice attractions hit capacity early.",
+        "parkSlug": "hollywood-studios",
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "On high-crowd days, pivoting to lower-demand areas during Early Entry often yields better results than queuing for the most popular rides. Consider hitting Sunset Boulevard attractions if Galaxy's Edge fills up fast."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "ar8TcbgGRsQ",
+      "title": "Disney Springs 2026 | New Gideon's Cookies, Planet Hollywood & Mother's Day Gift | Walt Disney World",
+      "channel": "Paging Mr. Morrow",
+      "publishedAt": "2026-05-06T13:29:37Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/ar8TcbgGRsQ/mqdefault.jpg",
+      "viewCount": 93767,
+      "url": "https://www.youtube.com/watch?v=ar8TcbgGRsQ",
+      "summary": "Paging Mr. Morrow explores new offerings at Disney Springs, including fresh Gideon's cookie flavors and updates at Planet Hollywood."
+    },
+    {
+      "videoId": "CUa6gad9-7M",
+      "title": "Is This Epcot's Best Restaurant?  Chefs de France New Menu Review | Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-05-07T15:55:59Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/CUa6gad9-7M/mqdefault.jpg",
+      "viewCount": 33929,
+      "url": "https://www.youtube.com/watch?v=CUa6gad9-7M",
+      "summary": "WrightDownMainStreet reviews the updated menu at Chefs de France to see if it ranks among EPCOT's top dining experiences."
+    },
+    {
+      "videoId": "cFc9lmCMkJ4",
+      "title": "I Tested the WORST Rated Restaurant in Magic Kingdom- The Plaza",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-05-10T16:06:16Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/cFc9lmCMkJ4/mqdefault.jpg",
+      "viewCount": 30832,
+      "url": "https://www.youtube.com/watch?v=cFc9lmCMkJ4",
+      "summary": "The channel visits The Plaza Restaurant at Magic Kingdom to test whether its low ratings are justified."
+    },
+    {
+      "videoId": "Q-ThCjaJvFo",
+      "title": "🔴 LIVE AT DISNEY | WALKING AROUND DISNEYLAND and DCA",
+      "channel": "iamCHRISRODGERS",
+      "publishedAt": "2026-05-12T06:39:30Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Q-ThCjaJvFo/mqdefault.jpg",
+      "viewCount": 3473,
+      "url": "https://www.youtube.com/watch?v=Q-ThCjaJvFo",
+      "summary": "A live stream walkthrough of Disneyland and Disney California Adventure parks."
+    },
+    {
+      "videoId": "jD-elQ6EZjQ",
+      "title": "Disneyland! 👑❤️🏰 #disney",
+      "channel": "Kelly in the Parks",
+      "publishedAt": "2026-05-12T04:10:25Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/jD-elQ6EZjQ/mqdefault.jpg",
+      "viewCount": 1732,
+      "url": "https://www.youtube.com/watch?v=jD-elQ6EZjQ",
+      "summary": "Kelly in the Parks shares a short Disneyland visit highlight."
+    },
+    {
+      "videoId": "rBfurs4mP9s",
+      "title": "Trust us, the 6 AM wake up is worth it 🤭😅 #disney #disneyland #ropedrop #disneyworld",
+      "channel": "Happily Ever Twins",
+      "publishedAt": "2026-05-12T06:32:58Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/rBfurs4mP9s/mqdefault.jpg",
+      "viewCount": 1458,
+      "url": "https://www.youtube.com/watch?v=rBfurs4mP9s",
+      "summary": "Happily Ever Twins make the case for early rope drop mornings at Disney parks."
+    },
+    {
+      "videoId": "lFU5HGoV5qI",
+      "title": "Rope dropping DCA on a Friday #disney #disneyland #california #vlog #anaheim",
+      "channel": "Jayandjenny_",
+      "publishedAt": "2026-05-12T04:15:59Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/lFU5HGoV5qI/mqdefault.jpg",
+      "viewCount": 1227,
+      "url": "https://www.youtube.com/watch?v=lFU5HGoV5qI",
+      "summary": "A vlog documenting a rope drop strategy at Disney California Adventure on a Friday morning."
+    },
+    {
+      "videoId": "_fqRUgBRdOg",
+      "title": "Follow me at pixie_pr1ncess #disneymom #disney #disneyland #disneyfamily",
+      "channel": "Brittany Gatewood",
+      "publishedAt": "2026-05-12T05:17:41Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/_fqRUgBRdOg/mqdefault.jpg",
+      "viewCount": 1179,
+      "url": "https://www.youtube.com/watch?v=_fqRUgBRdOg",
+      "summary": "Brittany Gatewood shares family moments from a Disneyland visit."
+    },
+    {
+      "videoId": "vR_la8yUI7M",
+      "title": "Disneyland Paris🐭🩷",
+      "channel": "Eleonora | Travel Creator",
+      "publishedAt": "2026-05-12T08:55:26Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/vR_la8yUI7M/mqdefault.jpg",
+      "viewCount": 1173,
+      "url": "https://www.youtube.com/watch?v=vR_la8yUI7M",
+      "summary": "Eleonora documents her visit to Disneyland Paris."
+    },
+    {
+      "videoId": "mw7fR7oefYs",
+      "title": "Dオタにはたまらない💕イースターエッグのブラインドボックスボックス🥰✨コメント欄から買えるからチェックしてみてね✅ #pr #ブラインドボックス #開封動画 #ディズニーグッズ",
+      "channel": "Miki Room みきるーむ",
+      "publishedAt": "2026-05-12T09:44:14Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/mw7fR7oefYs/mqdefault.jpg",
+      "viewCount": 1143,
+      "url": "https://www.youtube.com/watch?v=mw7fR7oefYs",
+      "summary": "Miki Room unboxes Disney Easter egg blind boxes in this Japanese-language video."
+    }
+  ],
+  "updatedAt": "2026-05-12T13:01:57.326Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-05-12T13:01:57.326Z",
+    "tokens": {
+      "input": 29814,
+      "output": 3656,
+      "costUsd": 0.1443
+    }
+  }
+}

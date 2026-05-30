@@ -1,0 +1,288 @@
+{
+  "title": "Parkio Daily for May 20, 2026",
+  "slug": "parkio-daily-2026-05-20",
+  "date": "2026-05-20",
+  "teaser": "Millennium Falcon gets a new mission tomorrow, Disneyland drops park hopping restrictions June 9, and a new Cinderella Castle reveal.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Space Mountain",
+        "parkSlug": "magic-kingdom",
+        "note": "Morning waits tend to stay low before lunch crowds arrive"
+      },
+      {
+        "name": "Radiator Springs Racers",
+        "parkSlug": "california-adventure",
+        "note": "Early entry typically offers the shortest lines of the day"
+      },
+      {
+        "name": "Rise of the Resistance",
+        "parkSlug": "hollywood-studios",
+        "note": "Virtual queue opens at park entry; best odds in first minute"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [
+      {
+        "title": "New Millennium Falcon Mission Launches Tomorrow with Mando and Grogu",
+        "body": "Millennium Falcon: Smugglers Run debuts an updated mission May 22 at both Disneyland and Hollywood Studios, teaming guests with the Mandalorian and Grogu to track bounties across Tatooine, Cloud City, Coruscant, and the Endor wreckage. Flight crews take on pilot, gunner, or engineer roles in the updated experience.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/disney-experiences/star-wars-at-disneyland-disney-world-and-more/"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "Galaxy's Edge tends to draw heavy crowds on new-mission launch days. Riding Smugglers Run within the first two hours of park opening usually keeps waits under 30 minutes."
+        }
+      },
+      {
+        "title": "Disneyland Drops 11 AM Park Hopping Restriction June 9",
+        "body": "Starting June 9, Disneyland Resort guests with Park Hopper tickets or Magic Keys can move between Disneyland and California Adventure at any time, ending the 11 AM wait rule in place since reopening. Guests still need a park reservation indicating their starting park.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "AllEars.Net",
+          "url": "https://allears.net/2026/05/20/the-new-disneyland-park-hopping-rule-change-you-need-to-know/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "This change opens early-morning hopping windows. Guests can now rope-drop one park, then hop for lunch or mid-morning attractions in the other before mid-day crowds peak."
+        }
+      }
+    ],
+    "bignews": [
+      {
+        "title": "BDX Droids Return to Galaxy's Edge at Disneyland May 22",
+        "body": "Three BDX droids—Red, Oskar, and Grek—will begin appearing at Black Spire Station in Disneyland's Galaxy's Edge starting tomorrow. The playful droids-in-training roam the land, showing off unique personalities as they take on new challenges.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/disney-experiences/star-wars-at-disneyland-disney-world-and-more/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Character interactions in Galaxy's Edge tend to draw clusters of guests. Catching the droids early in the morning or late afternoon near Black Spire Station often offers shorter wait times for photos."
+        }
+      },
+      {
+        "title": "Cinderella Castle Repaint Nearly Complete at Magic Kingdom",
+        "body": "Magic Kingdom has confirmed its Cinderella Castle makeover is almost done, restoring the icon to a more classic, refined color scheme. The project removes the bright blue-and-pink accents added during the 50th anniversary celebration.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/repainted-cinderella-castle-magic-kingdom-review-postcard-perfect/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Photos in front of the castle are easiest to grab early morning or late evening when crowds thin. Main Street tends to be clearest within 30 minutes of park opening."
+        }
+      },
+      {
+        "title": "Disney Launches $399 Private PhotoPass Shoots at Select Resorts",
+        "body": "Walt Disney World is piloting Signature Portrait Sessions, offering private 20-minute photo shoots with a PhotoPass photographer at select resort locations for $399. The sessions include digital downloads and are bookable in advance.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-world-debuts-new-400-private-photopass-shoots-at-resorts/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Resort photo sessions tend to offer quieter backdrops than in-park shoots. Booking early-morning slots usually avoids other guests in the background and provides softer lighting."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "ABC Commissary Sees Guest Praise Turnaround at Hollywood Studios",
+        "body": "The quick-service spot once labeled a skip by many guests is earning positive reviews for updated menu items, including a raspberry pistachio cheesecake and improved entrees. The location offers indoor seating and shorter lines than nearby Docking Bay 7.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "AllEars.Net",
+          "url": "https://allears.net/2026/05/20/used-to-be-an-instant-skip-the-underrated-hollywood-studios-restaurant-you-shouldnt-miss/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "ABC Commissary tends to be quieter during lunch than Docking Bay or Woody's Lunch Box. Arriving between 11:30 and noon often keeps wait times under 10 minutes."
+        }
+      },
+      {
+        "title": "Rock 'n' Roller Coaster Easter Eggs Honor MuppetVision 3D Legacy",
+        "body": "Disney has released a guide to Easter eggs hidden throughout the newly rethemed Rock 'n' Roller Coaster Starring the Muppets, including nods to the shuttered MuppetVision 3D theater and past Muppets park appearances. Full POV videos are now online.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/easter-eggs-muppetvision-rock-roller-coaster-starring-muppets/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Guests looking for Easter egg details should ride early or late in the day when queue lines move faster. Mid-morning and early afternoon tend to see the heaviest waits."
+        }
+      },
+      {
+        "title": "LEGO Unveils $400 Main Street USA Set with 4,900 Pieces",
+        "body": "LEGO and Disney Parks have announced a massive Main Street USA set featuring the iconic Disneyland and Magic Kingdom entrance land. The highly detailed build includes storefronts, streetscapes, and miniature characters.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-parks-lego-unveil-massive-400-main-street-usa-it-looks-fantastic-worth-every-penny/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "High-demand LEGO sets tied to Disney Parks often sell out fast at Emporium and World of Disney. Shopping within the first hour of park opening typically offers the best stock."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "SeaWorld Orlando Hits 43,000 Animal Rescues Milestone",
+        "body": "SeaWorld's year-round rescue operation has now saved more than 43,000 marine animals, including the 43,000th rescue—a California sea lion pup found in Carlsbad. The federally recognized program operates 24/7 across all three SeaWorld locations.",
+        "parkSlug": null,
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/05/the-theme-park-everyone-loves-to-criticize-just-hit-a-major-animal-rescue-milestone-el1/"
+        }
+      },
+      {
+        "title": "Space 220 Debuts Updated Dinner Menu at EPCOT",
+        "body": "The popular EPCOT restaurant has refreshed its evening menu with new entrees and updated plating. Reservations remain difficult to secure, with availability often appearing 60 days out.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "YouTube",
+          "url": "https://www.youtube.com/watch?v=9I7DXjPwatM"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "Shadows of Memory Skywalker Saga Show Illuminates Galaxy's Edge Nightly",
+        "body": "This projection-mapping spectacular transforms the spires of Batuu into a canvas for the Skywalker family story, featuring stunning visuals and iconic Star Wars music. The show runs nightly near the Millennium Falcon, with the best views from multiple vantage points including Droid Depot and Black Spire Surplus.",
+        "parkSlug": "disneyland",
+        "ctaLabel": "Plan your Galaxy's Edge visit",
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Staking out a viewing spot 20–30 minutes before showtime usually offers clear sightlines. The area near the Falcon tends to fill fastest, while spots near Droid Depot often stay open longer."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "1IzK7IRGBvo",
+      "title": "I Tried Every Viral Food at Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-05-15T16:03:09Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/1IzK7IRGBvo/mqdefault.jpg",
+      "viewCount": 57612,
+      "url": "https://www.youtube.com/watch?v=1IzK7IRGBvo",
+      "summary": "A tour of trending snacks and meals across Disney World parks, testing which viral food items live up to online hype."
+    },
+    {
+      "videoId": "9I7DXjPwatM",
+      "title": "BEST Dinner at Epcot's Space 220- New Menu! | Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-05-17T15:29:04Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/9I7DXjPwatM/mqdefault.jpg",
+      "viewCount": 34668,
+      "url": "https://www.youtube.com/watch?v=9I7DXjPwatM",
+      "summary": "A full review of Space 220's updated dinner menu at EPCOT, showcasing new dishes and the restaurant's immersive atmosphere."
+    },
+    {
+      "videoId": "VbOy4vS9nhg",
+      "title": "#LIVE Disneyland Madness, Rides, Characters, New Merch",
+      "channel": "Main Street Cowgirl",
+      "publishedAt": "2026-05-20T06:52:06Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/VbOy4vS9nhg/mqdefault.jpg",
+      "viewCount": 7283,
+      "url": "https://www.youtube.com/watch?v=VbOy4vS9nhg",
+      "summary": "A live stream from Disneyland covering attractions, character meet-and-greets, and newly arrived merchandise."
+    },
+    {
+      "videoId": "eYsXfmAf_6g",
+      "title": "NEW Rock 'n' Roller Coaster Starring The Muppets! Full Ride POV & Review!",
+      "channel": "JoJo's World",
+      "publishedAt": "2026-05-20T05:10:14Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/eYsXfmAf_6g/mqdefault.jpg",
+      "viewCount": 3655,
+      "url": "https://www.youtube.com/watch?v=eYsXfmAf_6g",
+      "summary": "A complete on-ride POV and first-impression review of the Muppets-themed Rock 'n' Roller Coaster at Hollywood Studios."
+    },
+    {
+      "videoId": "hYS-W1AYAp0",
+      "title": "\\ ボン・ヴォヤージュ /ディズニーシー25周年のぬいぐるみバッジ販売再開で平日でも混雑",
+      "channel": "みい🎀",
+      "publishedAt": "2026-05-20T05:19:43Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/hYS-W1AYAp0/mqdefault.jpg",
+      "viewCount": 3181,
+      "url": "https://www.youtube.com/watch?v=hYS-W1AYAp0",
+      "summary": "Coverage of Tokyo DisneySea 25th anniversary plush badge restocks at Bon Voyage, showing midweek crowds."
+    },
+    {
+      "videoId": "jMtgt42UhQI",
+      "title": "Rock 'N' Roller Coaster Starring The Muppets POV 🎸 | FULL Ride Through at Disney's Hollywood Studios",
+      "channel": "Living in DIZ",
+      "publishedAt": "2026-05-20T04:00:06Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/jMtgt42UhQI/mqdefault.jpg",
+      "viewCount": 1593,
+      "url": "https://www.youtube.com/watch?v=jMtgt42UhQI",
+      "summary": "A full POV video of the Muppets-themed Rock 'n' Roller Coaster at Disney's Hollywood Studios."
+    },
+    {
+      "videoId": "FAMowG9WjwQ",
+      "title": "#viral #disneyparks #disneyland #disneylandparis #disney #paris #funnyvideo #rain #disneylife #love",
+      "channel": "simplyfrancescaa ",
+      "publishedAt": "2026-05-20T07:00:49Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/FAMowG9WjwQ/mqdefault.jpg",
+      "viewCount": 1240,
+      "url": "https://www.youtube.com/watch?v=FAMowG9WjwQ",
+      "summary": "A lighthearted moment captured during a rainy day at Disneyland Paris."
+    },
+    {
+      "videoId": "vo9oL10_W9U",
+      "title": "#disney #californiaadventure #disneyland #date #wife",
+      "channel": "Esteban ",
+      "publishedAt": "2026-05-20T04:20:30Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/vo9oL10_W9U/mqdefault.jpg",
+      "viewCount": 1024,
+      "url": "https://www.youtube.com/watch?v=vo9oL10_W9U",
+      "summary": "A couple's visit to Disneyland and California Adventure, sharing moments from their park day."
+    },
+    {
+      "videoId": "0DL0np28HQM",
+      "title": "Does coffee somehow taste better in Disney parks… or is it just us? ☕✨🏰",
+      "channel": "The Clegg Kingdom",
+      "publishedAt": "2026-05-20T06:58:05Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/0DL0np28HQM/mqdefault.jpg",
+      "viewCount": 998,
+      "url": "https://www.youtube.com/watch?v=0DL0np28HQM",
+      "summary": "A playful look at whether coffee tastes better inside Disney parks or if it's just the magic of the setting."
+    },
+    {
+      "videoId": "affaOtlrebE",
+      "title": "Come eat snacks with me @ Disney ✨ #disney #disneyland #dca #disneyadult #foodasmr",
+      "channel": "Darlene Ramirez",
+      "publishedAt": "2026-05-20T04:22:24Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/affaOtlrebE/mqdefault.jpg",
+      "viewCount": 919,
+      "url": "https://www.youtube.com/watch?v=affaOtlrebE",
+      "summary": "A snack tour through Disneyland and California Adventure, highlighting treats and ASMR-style eating moments."
+    }
+  ],
+  "updatedAt": "2026-05-20T13:32:04.950Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-05-20T13:32:04.950Z",
+    "tokens": {
+      "input": 28425,
+      "output": 4723,
+      "costUsd": 0.1561
+    }
+  }
+}

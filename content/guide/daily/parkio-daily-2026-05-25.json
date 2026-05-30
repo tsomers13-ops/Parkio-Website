@@ -1,0 +1,240 @@
+{
+  "title": "Parkio Daily for May 25, 2026",
+  "slug": "parkio-daily-2026-05-25",
+  "date": "2026-05-25",
+  "teaser": "Baby Care Center debuts at Hollywood Studios. Disneyland monitors nearby hazmat situation. Memorial Day crowds build across all parks.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Spaceship Earth",
+        "parkSlug": "epcot",
+        "note": "Memorial Day morning crowds still building"
+      },
+      {
+        "name": "Tower of Terror",
+        "parkSlug": "hollywood-studios",
+        "note": "Lighter waits before midday"
+      },
+      {
+        "name": "Big Thunder Mountain",
+        "parkSlug": "magic-kingdom",
+        "note": "Early window before holiday crowds peak"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [
+      {
+        "title": "Disneyland operating normally despite nearby hazmat incident",
+        "body": "A chemical tank malfunction at a facility in Garden Grove, roughly five miles from Disneyland, has triggered evacuation orders in parts of Orange County. Disney officials confirmed the resort is outside the evacuation zone and remains open with no guest impact. The company is monitoring the situation with local authorities.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "AllEars.Net",
+          "url": "https://allears.net/2026/05/25/disneyland-remains-open-with-nearby-chemical-incident/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "If you're feeling uneasy about air quality or the evolving situation, consider delaying your visit or staying flexible with your plans. Local authorities are the source for evacuation zone updates, not park operations."
+        }
+      }
+    ],
+    "bignews": [
+      {
+        "title": "New Baby Care Center opens at Hollywood Studios",
+        "body": "A refreshed Baby Care Center has opened in the newly reimagined Walt Disney Studios courtyard at Hollywood Studios. The space features Disney baby character theming, nursing rooms, changing stations, high chairs, and a kitchenette. Basic infant supplies are sold on-site, subject to availability.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/05/photos-inside-the-new-baby-care-center-at-disneys-hollywood-studios/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Families with infants now have a quieter, climate-controlled retreat near the Animation Courtyard. The center tends to be less crowded during early afternoon when many guests are at lunch or shows."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "Rock 'n' Roller Coaster Muppet easter eggs revealed",
+        "body": "Disney Parks Blog shared a detailed look at the hidden references and memorabilia inside the reimagined Rock 'n' Roller Coaster queue. Items from MuppetVision 3D, original Electric Mayhem props, and character tributes are layered throughout the G-Force Records building.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/muppet-easter-eggs-and-nods-at-rock-n-roller-coaster/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Queue detail hunting is easiest during lighter wait windows, typically late evening or right before park close. Standby lines mid-morning often move too quickly to catch everything."
+        }
+      },
+      {
+        "title": "Jessie's Roundup dance party starts early at Magic Kingdom",
+        "body": "The Toy Story-themed dance party at Diamond Horseshoe began soft openings ahead of Cool Kids' Summer official kickoff. Jessie hosts the interactive show, which includes Western-themed songs and character interaction.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/jessies-roundup-rip-roarin-revue-diamond-horseshoe-magic-kingdom/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Soft openings like this often mean lighter crowds and shorter waits for meet-and-greets afterward. Worth stopping by Frontierland mid-afternoon before the dinner rush fills the area."
+        }
+      },
+      {
+        "title": "Victoria & Albert's raises prix fixe menu to $375",
+        "body": "Walt Disney World's only Michelin-starred restaurant increased its base prix fixe menu by $80 following recent culinary leadership changes. The new price applies to reservations booked going forward at the Grand Floridian flagship.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-world-increases-price-of-flagship-restaurant-by-80-to-375-amidst-culinary-leadership-changes/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "At this price point, the value proposition becomes even narrower. If you're considering a splurge, read recent guest reviews carefully to gauge whether the current menu justifies the premium over other Signature Dining options."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "EPCOT Imagination Pavilion remains underutilized",
+        "body": "Despite Figment's popularity, large portions of the Imagination Pavilion sit empty or underused. The space once housed multiple attractions and interactive areas but now feels sparse outside the Journey Into Imagination ride.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "AllEars.Net",
+          "url": "https://allears.net/2026/05/25/to-say-this-epcot-pavilion-is-abandoned-is-an-understatement/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "Memorial Day crowds expected across all parks today",
+        "body": "Monday, May 25 is a federal holiday. Wait times and attendance typically spike by mid-morning at all six Disney parks. Rope drop and late evening hours offer the best windows for lower waits.",
+        "parkSlug": null,
+        "ctaLabel": "See wait times",
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "Holiday Mondays usually hit peak congestion between 11am and 4pm. Arrive before official opening or plan a midday break to dodge the worst of it. Evening hours often thin out after dinner, especially at EPCOT and Hollywood Studios."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "title": "$1000+ Club Level Room at the Contemporary Resort | Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "url": "https://www.youtube.com/watch?v=zmE1hW76CjA",
+      "thumbnailUrl": "https://i.ytimg.com/vi/zmE1hW76CjA/mqdefault.jpg",
+      "videoId": "zmE1hW76CjA",
+      "viewCount": 42035,
+      "publishedAt": "2026-05-22T16:44:35Z",
+      "summary": "WrightDownMainStreet tours a Club Level room at Disney's Contemporary Resort priced over $1,000 per night."
+    },
+    {
+      "title": "New Food at Walt Disney World Resorts: Pop Century, Art of Animation, All Stars",
+      "channel": "WrightDownMainStreet",
+      "url": "https://www.youtube.com/watch?v=qEEyK-6C41I",
+      "thumbnailUrl": "https://i.ytimg.com/vi/qEEyK-6C41I/mqdefault.jpg",
+      "videoId": "qEEyK-6C41I",
+      "viewCount": 22896,
+      "publishedAt": "2026-05-24T15:38:02Z",
+      "summary": "WrightDownMainStreet highlights new menu items at Pop Century, Art of Animation, and All-Star Resorts."
+    },
+    {
+      "title": "🔴 Live: Sunday Stream at Disneyland! Band, Flag Retreat, Shows & Rides - 05/24/26",
+      "channel": "Koda Bear the Explorer ",
+      "url": "https://www.youtube.com/watch?v=FneLc0iRDiA",
+      "thumbnailUrl": "https://i.ytimg.com/vi/FneLc0iRDiA/mqdefault.jpg",
+      "videoId": "FneLc0iRDiA",
+      "viewCount": 18266,
+      "publishedAt": "2026-05-25T06:46:15Z",
+      "summary": "Koda Bear the Explorer streams a Sunday at Disneyland covering the band, flag retreat, shows, and ride experiences."
+    },
+    {
+      "title": "Funny Disney moments #disney #disneyparktour #disneyland",
+      "channel": "Anil Sk",
+      "url": "https://www.youtube.com/watch?v=S9b2NTbdFXw",
+      "thumbnailUrl": "https://i.ytimg.com/vi/S9b2NTbdFXw/mqdefault.jpg",
+      "videoId": "S9b2NTbdFXw",
+      "viewCount": 6291,
+      "publishedAt": "2026-05-25T10:12:32Z",
+      "summary": "Anil Sk shares a short compilation of humorous moments from Disney parks."
+    },
+    {
+      "title": "🔴Live: Magical Monday at Epcot on Memorial Day - Walt Disney World Live Stream - 5-25-26",
+      "channel": "ResortTV1",
+      "url": "https://www.youtube.com/watch?v=_in0cKVWHRI",
+      "thumbnailUrl": "https://i.ytimg.com/vi/_in0cKVWHRI/mqdefault_live.jpg",
+      "videoId": "_in0cKVWHRI",
+      "viewCount": 3514,
+      "publishedAt": "2026-05-25T10:14:03Z",
+      "summary": "ResortTV1 streams live from EPCOT on Memorial Day, May 25, 2026."
+    },
+    {
+      "title": "I'd rather be at Disneyland!  #disneyland #waltdisneyworld #shorts",
+      "channel": "Kelly in the Parks",
+      "url": "https://www.youtube.com/watch?v=Pk3fu62c2cg",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Pk3fu62c2cg/mqdefault.jpg",
+      "videoId": "Pk3fu62c2cg",
+      "viewCount": 1665,
+      "publishedAt": "2026-05-25T04:53:23Z",
+      "summary": "Kelly in the Parks posts a short expressing their preference for Disneyland."
+    },
+    {
+      "title": "25 trips around the sun🤭🌺🌊✨#birthday #disney #disneyland #disneyworld #birthdaycelebration #fyp",
+      "channel": "Megan Tayler",
+      "url": "https://www.youtube.com/watch?v=2Wuy8livsGc",
+      "thumbnailUrl": "https://i.ytimg.com/vi/2Wuy8livsGc/mqdefault.jpg",
+      "videoId": "2Wuy8livsGc",
+      "viewCount": 1625,
+      "publishedAt": "2026-05-25T08:36:27Z",
+      "summary": "Megan Tayler celebrates her 25th birthday with Disney park highlights."
+    },
+    {
+      "title": "Funny Disney moments #disney #disneyparktour #disneyland #universalparks",
+      "channel": "Anil Sk",
+      "url": "https://www.youtube.com/watch?v=NE3Lq9EGd8o",
+      "thumbnailUrl": "https://i.ytimg.com/vi/NE3Lq9EGd8o/mqdefault.jpg",
+      "videoId": "NE3Lq9EGd8o",
+      "viewCount": 1512,
+      "publishedAt": "2026-05-25T10:13:31Z",
+      "summary": "Anil Sk shares another set of funny clips from Disney and Universal theme parks."
+    },
+    {
+      "title": "My cute traveling companion and Disney travel agent, all in one 😅 #disney #disneyland #tokyo",
+      "channel": "theivoryfawn",
+      "url": "https://www.youtube.com/watch?v=Si17w7FFRVk",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Si17w7FFRVk/mqdefault.jpg",
+      "videoId": "Si17w7FFRVk",
+      "viewCount": 1194,
+      "publishedAt": "2026-05-25T04:33:34Z",
+      "summary": "theivoryfawn highlights their travel companion who also acts as a Disney travel agent."
+    },
+    {
+      "title": "Soon ikaw na  🤞 #disney #disneyland",
+      "channel": "For memories only",
+      "url": "https://www.youtube.com/watch?v=gbj3z8ynFWk",
+      "thumbnailUrl": "https://i.ytimg.com/vi/gbj3z8ynFWk/mqdefault.jpg",
+      "videoId": "gbj3z8ynFWk",
+      "viewCount": 1152,
+      "publishedAt": "2026-05-25T09:01:12Z",
+      "summary": "For memories only posts a short Disneyland clip with a hopeful message for future visitors."
+    }
+  ],
+  "updatedAt": "2026-05-25T13:56:05.860Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-05-25T13:56:05.860Z",
+    "tokens": {
+      "input": 29244,
+      "output": 3705,
+      "costUsd": 0.1433
+    }
+  }
+}

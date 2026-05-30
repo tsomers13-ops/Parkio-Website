@@ -1,0 +1,247 @@
+{
+  "title": "Parkio Daily for Sunday, May 24, 2026",
+  "slug": "parkio-daily-2026-05-24",
+  "date": "2026-05-24",
+  "teaser": "Soarin' Across America and Rock 'n' Roller Coaster with the Muppets both opened early this week. Check ride wait times and plan your day.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Soarin' Across America",
+        "parkSlug": "epcot",
+        "note": "Just opened; early morning windows likely offer shorter waits"
+      },
+      {
+        "name": "Rock 'n' Roller Coaster Starring the Muppets",
+        "parkSlug": "hollywood-studios",
+        "note": "Reimagined attraction now open; ride early to avoid buildup"
+      },
+      {
+        "name": "TRON Lightcycle / Run",
+        "parkSlug": "magic-kingdom",
+        "note": "First-hour waits typically stay manageable before noon"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [],
+    "bignews": [
+      {
+        "title": "Soarin' Across America Opens Early at EPCOT",
+        "body": "The new patriotic flight film debuted May 22, four days ahead of schedule. Celebrating the USA's 250th anniversary, the attraction features all-new scenes over American landmarks and a distinct salute to national pride.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/soarin-across-america-opens-early-at-epcot/"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "Early openings tend to pull guests into The Land pavilion during morning hours. Riding Test Track or Frozen Ever After before 11am usually avoids the Soarin' spillover crowds."
+        }
+      },
+      {
+        "title": "Rock 'n' Roller Coaster Reimagined with The Muppets",
+        "body": "Hollywood Studios' thrill coaster reopened with Electric Mayhem band theming, multiple song tracks, and new Easter eggs throughout the queue and ride. Reviews praise the blend of humor and high-speed thrills.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/rock-roller-coaster-starring-muppets-review-good-bad-ugly-muppetvision-cosmic-rewind-comparison/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Sunset Boulevard often fills by mid-morning with the new coaster draw. Riding within the first 90 minutes of park open or after 7pm typically keeps waits under 40 minutes."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "Bluey's Wild World Preview at Animal Kingdom",
+        "body": "Disney shared a first look at the new Bluey-themed experience debuting alongside Cool Kids' Summer on May 26. The addition uses a virtual queue and brings Bingo and Bluey characters to the park for the first time.",
+        "parkSlug": "animal-kingdom",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/sneak-peek-at-blueys-wild-world-first-impressions/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Virtual queue slots for new additions often fill within minutes of park open. Joining the queue at 7am on your My Disney Experience app usually secures an entry window before noon."
+        }
+      },
+      {
+        "title": "The Walt Disney Studios Land Now Open at Hollywood Studios",
+        "body": "The new courtyard area featuring character meets with Pua and Thumper, plus FØØD by Swedish Chef, opened earlier than expected this week. Hidden details throughout the land reference classic Disney animation and studio history.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "AllEars",
+          "url": "https://allears.net/2026/05/23/did-you-know-about-all-of-these-hidden-details-in-disney-worlds-newest-land/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Character meet queues in new lands tend to be lightest during parade times or in the final two hours before park close. Visiting after 6pm often means shorter waits."
+        }
+      },
+      {
+        "title": "Memorial Day BBQ Pork Chop Debuts at Homecomin'",
+        "body": "Chef Art Smith's Homecomin' at Disney Springs added a limited-time blueberry BBQ pork chop for Memorial Day week. Early reviews call it one of the best dinners currently available at the resort.",
+        "parkSlug": null,
+        "source": {
+          "label": "AllEars",
+          "url": "https://allears.net/2026/05/23/review-this-memorial-day-exclusive-dinner-is-one-of-the-best-at-disney-world/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Limited-time menu items at popular Disney Springs spots often sell out by evening. Booking a 5pm or earlier reservation usually ensures availability before the dinner rush."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Disney Experiences Wins 10 Telly Awards",
+        "body": "Disney Parks content earned recognition across video and digital storytelling categories, including gold honors for Disneyland Handcrafted and collaborations with Dude Perfect and Kylie Kelce.",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/disney-experiences/disney-experiences-earns-recognition-at-the-telly-and-shorty-awards/"
+        }
+      },
+      {
+        "title": "Security Escorts Family from Magic Kingdom After Parade Spot Dispute",
+        "body": "A confrontation over viewing spots for Disney Starlight parade on Main Street, U.S.A., escalated to the point that security removed one family from the park. The incident briefly delayed the nighttime parade.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/05/security-responds-to-dispute-over-magic-kingdom-parade-viewing-spot-jc1/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "Multiple Closures End This Week at Walt Disney World",
+        "body": "Several refurbishments wrap up May 26, including Liberty Square Riverboat, Rafiki's Planet Watch, and pools at Beach Club, Yacht Club, and Pop Century. Cool Kids' Summer also kicks off the same day, bringing new entertainment and the Bluey experience to Animal Kingdom.",
+        "parkSlug": null,
+        "ctaLabel": "Plan your week",
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Reopening days often draw curious crowds to newly refreshed attractions. Visiting those spots mid-week or after the holiday weekend usually offers lighter waits than opening day."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "9I7DXjPwatM",
+      "title": "BEST Dinner at Epcot's Space 220- New Menu! | Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-05-17T15:29:04Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/9I7DXjPwatM/mqdefault.jpg",
+      "viewCount": 42547,
+      "url": "https://www.youtube.com/watch?v=9I7DXjPwatM",
+      "summary": "WrightDownMainStreet reviews the updated dinner menu at Space 220 in EPCOT."
+    },
+    {
+      "videoId": "zmE1hW76CjA",
+      "title": "$1000+ Club Level Room at the Contemporary Resort | Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-05-22T16:44:35Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/zmE1hW76CjA/mqdefault.jpg",
+      "viewCount": 35881,
+      "url": "https://www.youtube.com/watch?v=zmE1hW76CjA",
+      "summary": "A walkthrough and review of a Club Level room at Disney's Contemporary Resort."
+    },
+    {
+      "videoId": "Vd-VMQMXfeE",
+      "title": "🔴LIVE🔴 MAGIC KINGDOM: Fireworks, Rides, Strolls, Parade | Walt Disney World 4K",
+      "channel": "Park Pass TV",
+      "publishedAt": "2026-05-24T03:48:12Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Vd-VMQMXfeE/mqdefault.jpg",
+      "viewCount": 14989,
+      "url": "https://www.youtube.com/watch?v=Vd-VMQMXfeE",
+      "summary": "Park Pass TV streams a live Magic Kingdom evening with fireworks, attractions, and parade coverage."
+    },
+    {
+      "videoId": "iqf2fhUcN3k",
+      "title": "ZOOTOPIA en La Vida Real 🦊🐰 #disneyshanghai #disney #zootopia #zootropolis #disneyland",
+      "channel": "yaremidl",
+      "publishedAt": "2026-05-24T09:05:45Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/iqf2fhUcN3k/mqdefault.jpg",
+      "viewCount": 3049,
+      "url": "https://www.youtube.com/watch?v=iqf2fhUcN3k",
+      "summary": "Yaremidl showcases the Zootopia-themed area at Shanghai Disneyland."
+    },
+    {
+      "videoId": "A_Xo-33rhls",
+      "title": "Chocolate Ville Bangkok Thailand 🇹🇭 #disney #disneyland #fountain #travel",
+      "channel": "John Gill",
+      "publishedAt": "2026-05-24T06:13:03Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/A_Xo-33rhls/mqdefault.jpg",
+      "viewCount": 2275,
+      "url": "https://www.youtube.com/watch?v=A_Xo-33rhls",
+      "summary": "John Gill visits Chocolate Ville in Bangkok, highlighting Disney-inspired design elements."
+    },
+    {
+      "videoId": "OXea2uDU05E",
+      "title": "#disneyland #harrypotter #disney #funny #youtubeshorts",
+      "channel": "Wardana Family ",
+      "publishedAt": "2026-05-24T09:00:05Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/OXea2uDU05E/mqdefault.jpg",
+      "viewCount": 2092,
+      "url": "https://www.youtube.com/watch?v=OXea2uDU05E",
+      "summary": "A humorous short from Wardana Family blending Disneyland and Harry Potter themes."
+    },
+    {
+      "videoId": "K15K9pejzlQ",
+      "title": "outside of disneyland hongkong #disneyparks #magickingdom #disneyland #disneyworld #disneyparktour",
+      "channel": "explore hongkong",
+      "publishedAt": "2026-05-24T05:12:19Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/K15K9pejzlQ/mqdefault.jpg",
+      "viewCount": 2065,
+      "url": "https://www.youtube.com/watch?v=K15K9pejzlQ",
+      "summary": "Explore Hongkong tours the exterior areas of Hong Kong Disneyland."
+    },
+    {
+      "videoId": "wt1OjlFvUkQ",
+      "title": "Life Lately💖✨️/ #disney#snowwhite#waltdisneyworld#anime#cosplay#fyp#boost#disneyshorts#goth#epcot",
+      "channel": "𝒜𝓇𝒾ℯ𝓁 ℒ𝓎𝓃𝓃",
+      "publishedAt": "2026-05-24T04:09:05Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/wt1OjlFvUkQ/mqdefault.jpg",
+      "viewCount": 1875,
+      "url": "https://www.youtube.com/watch?v=wt1OjlFvUkQ",
+      "summary": "Ariel Lynn shares recent Disney World moments with Snow White cosplay and EPCOT visits."
+    },
+    {
+      "videoId": "jqAsuhlWwtA",
+      "title": "【速報】平日との差がヤバイ⁉️ディズニーリゾート最新混雑状況【2026.5.24】",
+      "channel": "ジョマジのディズニー研究所",
+      "publishedAt": "2026-05-24T03:15:19Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/jqAsuhlWwtA/mqdefault.jpg",
+      "viewCount": 1458,
+      "url": "https://www.youtube.com/watch?v=jqAsuhlWwtA",
+      "summary": "Jomaji's Disney Research Lab reports crowd levels at Tokyo Disney Resort for May 24."
+    },
+    {
+      "videoId": "DiUzCR61QYw",
+      "title": "#shorts #disney #disneyland #disneylandpark #disneylandresor",
+      "channel": "RoadDwagZ",
+      "publishedAt": "2026-05-24T03:04:13Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/DiUzCR61QYw/mqdefault.jpg",
+      "viewCount": 1446,
+      "url": "https://www.youtube.com/watch?v=DiUzCR61QYw",
+      "summary": "RoadDwagZ shares a quick Disneyland Park moment in short-form video."
+    }
+  ],
+  "updatedAt": "2026-05-24T11:59:10.961Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-05-24T11:59:10.961Z",
+    "tokens": {
+      "input": 28047,
+      "output": 3912,
+      "costUsd": 0.1428
+    }
+  }
+}
