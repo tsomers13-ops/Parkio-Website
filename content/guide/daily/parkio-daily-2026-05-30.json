@@ -1,27 +1,218 @@
 {
-  "title": "Parkio Daily — May 30, 2026",
+  "title": "Parkio Daily for Saturday, May 30, 2026",
   "slug": "parkio-daily-2026-05-30",
   "date": "2026-05-30",
-  "teaser": "No major Disney parks updates today. Operations look normal — check Parkio for live wait times.",
+  "teaser": "Bluey's Wild World drops virtual queue, Magic of Disney Animation details revealed, Columbia store remodel begins at Disney Springs.",
   "rightNow": {
     "headline": "Best rides right now",
-    "rides": []
+    "rides": [
+      {
+        "name": "Soarin'",
+        "parkSlug": "epcot",
+        "note": "New Soarin' Across America version now playing"
+      },
+      {
+        "name": "Rock 'n' Roller Coaster",
+        "parkSlug": "hollywood-studios",
+        "note": "Muppets version debuted this week"
+      },
+      {
+        "name": "Bluey's Wild World",
+        "parkSlug": "animal-kingdom",
+        "note": "Switching to standby soon"
+      }
+    ]
   },
   "sections": {
     "breaking": [],
     "bignews": [
       {
-        "title": "No major updates today",
-        "body": "No major updates found today. Check live park data in Parkio.",
+        "title": "Bluey's Wild World drops virtual queue next week",
+        "body": "The dance party at Animal Kingdom will switch from virtual queue to standby line after operating with digital-only access since opening earlier this week.",
+        "parkSlug": "animal-kingdom",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-ditching-virtual-queue-for-blueys-wild-world/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Standby availability may reduce unpredictability for families with young kids. Mornings right after rope drop and late afternoons usually see lighter foot traffic at Discovery Island attractions."
+        }
+      },
+      {
+        "title": "Magic of Disney Animation building map and opening target announced",
+        "body": "Hollywood Studios revealed layout details and concept art for the new courtyard experience replacing the Sorcerer's Hat footprint, targeting late summer debut.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/new-map-for-magic-of-disney-animation-details-opening-target/"
+        },
         "parkioInsight": {
           "category": "opportunity",
-          "text": "Quiet news days often mean shorter standby waits at headliners. Check live waits in Parkio and pick a high-priority ride to start with."
+          "text": "Character encounters tied to Disney Animation films are likely part of the experience. Animation Courtyard tends to be quieter mid-afternoon when Galaxy's Edge pulls most crowds."
+        }
+      },
+      {
+        "title": "Banana Ball coming to ESPN Wide World of Sports this year",
+        "body": "The Savannah Bananas' traveling baseball show will play at the sports complex in 2026, with dates revealed during a live ESPN broadcast.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/disney-experiences/banana-ball-coming-to-disney-world/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Tickets for niche sporting events at the complex often sell out weeks ahead. Worth checking availability if you're visiting during the announced window."
+        }
+      },
+      {
+        "title": "Trader Sam's 15th anniversary pin released at Disneyland Hotel",
+        "body": "A limited-edition commemorative pin marking the refurbished tiki bar's anniversary is available at the Fantasia Shop for $24.99.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/05/limited-edition-15th-anniversary-trader-sams-enchanted-tiki-bar-pin-now-at-disneyland-resort/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Limited pins tied to anniversary milestones usually move fast at resort shops. Morning hours before park opening often see lower foot traffic at hotel retail."
         }
       }
     ],
-    "topstories": [],
-    "icymi": [],
-    "spotlight": []
+    "topstories": [
+      {
+        "title": "Columbia Sportswear store remodel begins at Disney Springs",
+        "body": "Construction walls now surround the Town Center location ahead of a previously announced refurbishment project.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/05/construction-walls-installed-around-columbia-sportswear-store-at-disney-springs-ahead-of-major-remodel/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Construction in Town Center may create pedestrian bottlenecks near the fountain during peak shopping hours. Marketplace and West Side typically offer easier foot traffic flow."
+        }
+      },
+      {
+        "title": "New Disney Springs parking rule for Pin Tuesday releases",
+        "body": "Walt Disney World introduced crowd control measures including revised parking and drop-off protocols for weekly pin releases to reduce chaos and improve fairness.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-worlds-new-rules-for-pin-release-crowd-control/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Tuesday mornings at Disney Springs may see heavier congestion near main parking structures due to collector activity. Arriving after 11am usually avoids pin-release crowds."
+        }
+      },
+      {
+        "title": "Sawdust collectibles machine installed at Rainforest Cafe",
+        "body": "A new station at Disney Springs' Rainforest Cafe produces animal figures from sustainably sourced sawdust.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/05/sustainable-collectibles-made-from-sawdust-now-available-at-disney-springs-in-todays-daily-recap-for-5-29-2026/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Novelty merchandise machines tend to draw lines during prime dinner hours at Rainforest Cafe. Mid-afternoon visits often offer quicker access."
+        }
+      },
+      {
+        "title": "Kids Rule Summer activities announced for Disneyland hotels",
+        "body": "Exclusive poolside events, dance parties featuring Dug, and resort programming will run at Disneyland Hotel, Grand Californian, and Pixar Place Hotel this summer.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/05/dugs-dance-party-pool-parties-and-more-coming-to-disneyland-hotels-for-kids-rule-summer/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Hotel-exclusive activities are typically reserved for registered guests and may fill capacity during peak summer weeks. Checking schedules at check-in usually secures spots."
+        }
+      },
+      {
+        "title": "Victoria & Albert's retains Michelin Star in 2026 Florida guide",
+        "body": "The Grand Floridian signature restaurant kept its Star in the newly released statewide Michelin Guide, while another Disney World restaurant dropped from the list.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/victoria-alberts-retains-star-in-2026-michelin-guide-as-another-disney-world-restaurant-drops-from-list/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Michelin recognition often tightens reservation availability at Victoria & Albert's. Booking windows 60 days out typically see the best selection for summer evenings."
+        }
+      },
+      {
+        "title": "Her Universe Disney Parks varsity collection released online",
+        "body": "A new pastel varsity-style merchandise line featuring vintage Walt Disney World and Disneyland graphics launched at the Disney Store.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/05/get-nostalgic-with-her-universe-disney-parks-collection/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Online-exclusive apparel drops often see popular sizes sell out within the first week. Ordering early usually ensures availability before restocks."
+        }
+      },
+      {
+        "title": "My Disney Experience app AI and planning tools coming soon",
+        "body": "Walt Disney World will roll out major app updates including AI-driven search, a trip planning checklist, and price comparison features in upcoming releases.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-world-is-adding-ai-more-to-app/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "New app features may streamline dining and Lightning Lane booking during initial rollout. Early adopters often gain an edge before the broader guest base adapts."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Carousel of Progress 2027 overhaul draws mixed reactions",
+        "body": "Walt Disney World confirmed major updates to the Magic Kingdom classic ahead of its 60th anniversary, sparking debate among fans about preserving the original vision versus modernization.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/05/disney-fans-divided-over-the-changes-coming-to-carousel-of-progress-at-magic-kingdom-rl1/"
+        }
+      },
+      {
+        "title": "Viral snack now available at Saratoga Springs resort",
+        "body": "A popular Disney World treat known for frequent sellouts has been added to food locations at the Vacation Club property.",
+        "parkSlug": null,
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/05/viral-disney-snack-that-sells-out-constantly-just-landed-at-a-disney-world-hotel-el1/"
+        }
+      },
+      {
+        "title": "Donald Duck character appearance at Disney World golf course",
+        "body": "The notoriously temperamental duck made a rare appearance at one of the resort's championship golf courses this week.",
+        "parkSlug": null,
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/05/a-famously-upset-disney-character-just-took-the-stage-at-a-walt-disney-world-golf-course-el1/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "Rock 'n' Roller Coaster Muppets Easter eggs worth hunting",
+        "body": "The freshly reopened coaster at Hollywood Studios hides dozens of Muppet references, inside jokes, and visual gags throughout the queue, preshow, and ride experience. Disney Parks Blog published a detailed guide to hidden details fans might miss on first rides.",
+        "parkSlug": "hollywood-studios",
+        "ctaLabel": "Read the full guide",
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Queue waits for the Muppets version are likely to stay elevated through the summer debut window. Riding during the final hour before park close often cuts standby times significantly."
+        }
+      }
+    ]
   },
   "videos": [
     {
@@ -30,9 +221,9 @@
       "channel": "Paging Mr. Morrow",
       "publishedAt": "2026-05-26T13:30:03Z",
       "thumbnailUrl": "https://i.ytimg.com/vi/oeHR687nFAI/mqdefault.jpg",
-      "viewCount": 104661,
+      "viewCount": 104760,
       "url": "https://www.youtube.com/watch?v=oeHR687nFAI",
-      "summary": "EPCOT 2026 | NEW Soarin Across America, Regal Eagle BBQ & Memorial Day Crowds | Walt Disney World"
+      "summary": "Paging Mr. Morrow tours EPCOT during Memorial Day weekend, covering the new Soarin' Across America experience and barbecue options at Regal Eagle."
     },
     {
       "videoId": "qEEyK-6C41I",
@@ -40,9 +231,9 @@
       "channel": "WrightDownMainStreet",
       "publishedAt": "2026-05-24T15:38:02Z",
       "thumbnailUrl": "https://i.ytimg.com/vi/qEEyK-6C41I/mqdefault.jpg",
-      "viewCount": 39202,
+      "viewCount": 39216,
       "url": "https://www.youtube.com/watch?v=qEEyK-6C41I",
-      "summary": "New Food at Walt Disney World Resorts: Pop Century, Art of Animation, All Stars"
+      "summary": "WrightDownMainStreet reviews recently updated dining menus at value resorts including Pop Century, Art of Animation, and All-Star properties."
     },
     {
       "videoId": "Mt7w4exF5wc",
@@ -50,9 +241,9 @@
       "channel": "WrightDownMainStreet",
       "publishedAt": "2026-05-27T18:07:03Z",
       "thumbnailUrl": "https://i.ytimg.com/vi/Mt7w4exF5wc/mqdefault.jpg",
-      "viewCount": 35205,
+      "viewCount": 35259,
       "url": "https://www.youtube.com/watch?v=Mt7w4exF5wc",
-      "summary": "I Tried all NEW Summer Food at Walt Disney World: Muppets, Bluey, Star Wars & More!"
+      "summary": "A tasting tour of summer 2026 food offerings tied to Muppets, Bluey, and Star Wars across Walt Disney World."
     },
     {
       "videoId": "H9wzp0QpvIE",
@@ -60,19 +251,9 @@
       "channel": "ResortTV1",
       "publishedAt": "2026-05-30T01:59:11Z",
       "thumbnailUrl": "https://i.ytimg.com/vi/H9wzp0QpvIE/mqdefault.jpg",
-      "viewCount": 21041,
+      "viewCount": 21121,
       "url": "https://www.youtube.com/watch?v=H9wzp0QpvIE",
-      "summary": "🔴Live: Friday Night Live at Disney's Hollywood Studios - Walt Disney World Live Stream- 5-29-26"
-    },
-    {
-      "videoId": "KnvRcgKX4ww",
-      "title": "Disneyland just got hit with a $5 million lawsuit! #lawyer #disney #california #lawsuit",
-      "channel": "AttorneyPish",
-      "publishedAt": "2026-05-30T01:14:43Z",
-      "thumbnailUrl": "https://i.ytimg.com/vi/KnvRcgKX4ww/mqdefault.jpg",
-      "viewCount": 3458,
-      "url": "https://www.youtube.com/watch?v=KnvRcgKX4ww",
-      "summary": "Disneyland just got hit with a $5 million lawsuit! #lawyer #disney #california #lawsuit"
+      "summary": "ResortTV1 broadcasts a live walkthrough of Hollywood Studios on Friday evening, May 29."
     },
     {
       "videoId": "k9Z7_Z_bIGs",
@@ -82,7 +263,7 @@
       "thumbnailUrl": "https://i.ytimg.com/vi/k9Z7_Z_bIGs/mqdefault.jpg",
       "viewCount": 2050,
       "url": "https://www.youtube.com/watch?v=k9Z7_Z_bIGs",
-      "summary": "This is an easy way to get millions of views! #youtubeintros #disney #disneyland #california"
+      "summary": "RealFinn shares tips on creating engaging YouTube intros using Disneyland footage."
     },
     {
       "videoId": "1cp5OVHhS_c",
@@ -90,19 +271,19 @@
       "channel": "みい🎀",
       "publishedAt": "2026-05-30T03:22:25Z",
       "thumbnailUrl": "https://i.ytimg.com/vi/1cp5OVHhS_c/mqdefault.jpg",
-      "viewCount": 1829,
+      "viewCount": 1871,
       "url": "https://www.youtube.com/watch?v=1cp5OVHhS_c",
-      "summary": "\\ ボン・ヴォヤージュ /ディズニーシー25周年グッズ第2弾のお菓子販売中！"
+      "summary": "A look at Tokyo DisneySea's 25th anniversary merchandise and confections now available at Bon Voyage."
     },
     {
-      "videoId": "ikbjIGmOXrg",
-      "title": "🔴 LIVE Magic Kingdom  #live #disney #waltdisneyworld #disneyland #coffeetalk  #disneynews",
-      "channel": "Zip-a-Dee-Doo Doug",
-      "publishedAt": "2026-05-30T03:40:02Z",
-      "thumbnailUrl": "https://i.ytimg.com/vi/ikbjIGmOXrg/mqdefault.jpg",
-      "viewCount": 1339,
-      "url": "https://www.youtube.com/watch?v=ikbjIGmOXrg",
-      "summary": "🔴 LIVE Magic Kingdom  #live #disney #waltdisneyworld #disneyland #coffeetalk  #disneynews"
+      "videoId": "w8Ckw-x0WCc",
+      "title": "Pluto'dan Manifest Dansı | #pluto #aktivite #kesfetol #disney #disneyland #paris| @Elos77 ",
+      "channel": "~Elos~",
+      "publishedAt": "2026-05-30T07:43:09Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/w8Ckw-x0WCc/mqdefault.jpg",
+      "viewCount": 1543,
+      "url": "https://www.youtube.com/watch?v=w8Ckw-x0WCc",
+      "summary": "Elos captures a dance performance featuring Pluto at Disneyland Paris."
     },
     {
       "videoId": "rLimHHyIpXI",
@@ -110,9 +291,19 @@
       "channel": "Bella Wolfe",
       "publishedAt": "2026-05-30T03:43:43Z",
       "thumbnailUrl": "https://i.ytimg.com/vi/rLimHHyIpXI/mqdefault.jpg",
-      "viewCount": 1317,
+      "viewCount": 1420,
       "url": "https://www.youtube.com/watch?v=rLimHHyIpXI",
-      "summary": "life in the fast(pass) lane ⚡️ @Disney @DisneyParks #disneyparks #disneyworld #magickingdom"
+      "summary": "Bella Wolfe shares a quick look at navigating Magic Kingdom using Lightning Lane services."
+    },
+    {
+      "videoId": "ikbjIGmOXrg",
+      "title": "🔴 LIVE Magic Kingdom  #live #disney #waltdisneyworld #disneyland #coffeetalk  #disneynews",
+      "channel": "Zip-a-Dee-Doo Doug",
+      "publishedAt": "2026-05-30T03:40:02Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/ikbjIGmOXrg/mqdefault.jpg",
+      "viewCount": 1342,
+      "url": "https://www.youtube.com/watch?v=ikbjIGmOXrg",
+      "summary": "Zip-a-Dee-Doo Doug hosts a live stream from Magic Kingdom with Disney news discussion."
     },
     {
       "videoId": "QB0XZYYixAE",
@@ -120,20 +311,25 @@
       "channel": "Arabella Medina",
       "publishedAt": "2026-05-30T05:20:21Z",
       "thumbnailUrl": "https://i.ytimg.com/vi/QB0XZYYixAE/mqdefault.jpg",
-      "viewCount": 1310,
+      "viewCount": 1317,
       "url": "https://www.youtube.com/watch?v=QB0XZYYixAE",
-      "summary": "DISNEY WITH US!"
+      "summary": "Arabella Medina documents a Disney parks visit with friends or family."
     }
   ],
+  "updatedAt": "2026-05-30T12:42:07.057Z",
+  "type": "daily-briefing",
   "meta": {
-    "aiGenerated": false,
+    "aiGenerated": true,
     "sources": [
-      "fallback"
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
     ],
-    "generatedAt": "2026-05-30T12:01:04.010Z",
-    "fallbackReason": "claude-failure",
-    "fallbackDetail": "You have reached your specified API usage limits. You will regain access on 2026-06-01 at 00:00 UTC."
-  },
-  "updatedAt": "2026-05-30T12:01:04.010Z",
-  "type": "daily-briefing"
+    "generatedAt": "2026-05-30T12:42:07.057Z",
+    "tokens": {
+      "input": 12112,
+      "output": 5072,
+      "costUsd": 0.1124
+    }
+  }
 }
