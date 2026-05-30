@@ -65,11 +65,17 @@ jobs:
           fi
           echo "Found $f — a commit should be created."
 
+      - name: Generate social drafts
+        # Reformats today's briefing into ready-to-post social drafts at
+        # content/social/{slug}.md. Zero API cost (no Claude call). Marked
+        # non-fatal so a drafting hiccup can never block the briefing commit.
+        run: node scripts/parkio-daily/social.mjs || echo "social drafts step skipped (non-fatal)"
+
       - name: Commit the new briefing
         run: |
           git config user.name "parkio-daily-bot"
           git config user.email "parkio-daily-bot@users.noreply.github.com"
-          git add content/guide/daily/
+          git add content/guide/daily/ content/social/
           if git diff --cached --quiet; then
             echo "No content changes — nothing to commit."
             exit 0
