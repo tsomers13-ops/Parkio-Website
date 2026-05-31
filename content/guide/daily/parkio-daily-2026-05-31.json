@@ -1,0 +1,344 @@
+{
+  "title": "Parkio Daily for May 31, 2026",
+  "slug": "parkio-daily-2026-05-31",
+  "date": "2026-05-31",
+  "teaser": "Big Thunder reopens with updates, new Hollywood Studios Animation experience announced, and queue damage reported at Rock 'n' Roller Coaster.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Big Thunder Mountain Railroad",
+        "parkSlug": "magic-kingdom",
+        "note": "Just reopened after 16 months; waits lower than typical thanks to fresh novelty window"
+      },
+      {
+        "name": "Soarin' Around the World",
+        "parkSlug": "epcot",
+        "note": "Memorial Day weekend crowds have passed; mid-morning windows often under 30 minutes"
+      },
+      {
+        "name": "Rock 'n' Roller Coaster Starring The Muppets",
+        "parkSlug": "hollywood-studios",
+        "note": "New Muppets theme driving long waits; rope-drop or evening hours recommended"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [],
+    "bignews": [
+      {
+        "title": "Big Thunder Mountain Railroad reopens with visible updates after 16-month closure",
+        "body": "The classic Magic Kingdom coaster returned to operation following a major refurbishment. Guests report new effects and improved infrastructure, though some enhancements remain unfinished.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/big-thunder-mountain-railroad-ride-review-good-bad-opossum-optimism-whats-missing/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "The first two weeks after a major reopening usually see lighter crowds than typical. Ride during the first hour or final two hours of park operation to avoid peak demand."
+        }
+      },
+      {
+        "title": "Disney Animation-inspired experience confirmed for Hollywood Studios",
+        "body": "A new walk-through bringing Walt Disney Animation Studios characters and settings to life is in development. The experience will evoke the studio's Burbank campus and let guests interact with animated characters in physical form.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/disney-animation-inspired-experience-coming-to-disneys-hollywood-studios/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "No opening date is public yet, but Hollywood Studios tends to preview new attractions during soft openings. Keep an eye on the Studios Lot area for unannounced access in coming months."
+        }
+      },
+      {
+        "title": "Guests peel paint off Rock 'n' Roller Coaster queue within days of Muppets reopening",
+        "body": "Less than a week after the attraction launched its Electric Mayhem makeover, visible damage appeared along the standby queue walls. Guests have been removing fresh paint as souvenirs.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/05/guests-are-already-defacing-queue-at-rock-n-roller-coaster-starring-the-muppets-in-todays-daily-recap-for-5-30-2026/?adt_ei=*|EMAIL|*"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Queue aesthetics may look worn faster than expected. If theming details matter to your experience, ride sooner rather than later before more deterioration occurs."
+        }
+      },
+      {
+        "title": "Bluey's Wild World dropping virtual queue system soon",
+        "body": "The Animal Kingdom dance party opened this week with a virtual-queue-only model but will transition to a standby line in the near future. Disney has not yet announced the exact cutover date.",
+        "parkSlug": "animal-kingdom",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-ditching-virtual-queue-for-blueys-wild-world/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Virtual queues typically fill within seconds at park open. If the standby line arrives before your trip, mid-afternoon slots often see lighter foot traffic than morning or evening shows."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "Banana Ball exhibition games coming to ESPN Wide World of Sports in 2026",
+        "body": "The theatrical baseball league announced on ESPN2 that Walt Disney World will host Banana Ball events later this year. Specific game dates were revealed during the live City Selection Show.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/disney-experiences/banana-ball-coming-to-disney-world/"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "Sporting events at Wide World of Sports tend to congest resort transportation and nearby parking. If staying at BoardWalk or Yacht Club during game days, allow extra travel time to Magic Kingdom or EPCOT."
+        }
+      },
+      {
+        "title": "Two new summer drinks debut at eet by Maneet Chauhan in Disney Springs",
+        "body": "A cotton candy margarita and a second beverage with a decorative tiger garnish are now available. Both are limited-time offerings for the summer season.",
+        "parkSlug": null,
+        "source": {
+          "label": "AllEars.Net",
+          "url": "https://allears.net/2026/05/30/review-a-cotton-candy-margarita-exists-in-disney-world-and-were-sold/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Specialty drinks at Disney Springs restaurants often sell out or run low on garnishes by evening. Stop by during early afternoon to secure the full presentation."
+        }
+      },
+      {
+        "title": "Chicken Guy adds two limited-time menu items for summer",
+        "body": "The Disney Springs quick-service has introduced a new shake and an additional item through the end of summer. Reviews suggest both are strong additions worth trying.",
+        "parkSlug": null,
+        "source": {
+          "label": "AllEars.Net",
+          "url": "https://allears.net/2026/05/30/review-we-need-these-new-chicken-guy-menu-items-year-round-in-disney-world/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Chicken Guy lunch rushes typically peak between noon and 1:30pm. Visiting before 11:30am or after 2pm usually cuts wait time in half."
+        }
+      },
+      {
+        "title": "Victoria and Albert's retains Michelin Star as second Disney World restaurant loses recognition",
+        "body": "The 2026 Florida Michelin Guide confirmed the Grand Floridian flagship kept its star. Another Walt Disney World venue dropped from the list entirely, though the specific restaurant was not named in available sources.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/victoria-alberts-retains-star-in-2026-michelin-guide-as-another-disney-world-restaurant-drops-from-list/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Michelin recognition tends to tighten reservations for weeks after the announcement. Book Victoria and Albert's at the 60-day window if dining there is a priority."
+        }
+      },
+      {
+        "title": "Port Orleans Riverside Magnolia Bend rooms complete refurbishment",
+        "body": "The moderate resort has unveiled updated guest rooms in the Magnolia Bend section. New finishes and fixtures are now in place across the building.",
+        "parkSlug": null,
+        "source": {
+          "label": "AllEars.Net",
+          "url": "https://allears.net/2026/05/30/full-tour-of-the-newly-updated-rooms-at-disneys-port-orleans-riverside/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Newly refurbished resort rooms often carry the same nightly rate as older wings for a brief period. Request Magnolia Bend when booking to secure fresh accommodations at no premium."
+        }
+      },
+      {
+        "title": "Art of Animation Resort room reimagining scheduled for 2027",
+        "body": "Disney confirmed the value resort will receive its first hard-goods overhaul since opening nearly 15 years ago. The project follows similar updates at Pop Century and the All-Star resorts.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/art-animation-resort-room-reimagining-refurbishment-2027/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Resort refurbishments typically happen in phases, closing entire buildings. If Art of Animation is your top pick for 2027, confirm room availability in non-construction wings before finalizing dates."
+        }
+      },
+      {
+        "title": "Live-action Moana photo opportunity installed at Disney Springs",
+        "body": "A billboard-style backdrop featuring characters from the upcoming July film now stands near Earl of Sandwich. Guests can pose with imagery of Moana and Maui ahead of the theatrical release.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/05/live-action-moana-photo-op-installed-at-disney-springs/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Photo ops in Disney Springs tend to attract crowds during evening dining hours. Visit in mid-afternoon or late morning for shorter lines and better lighting."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Pastel monochrome plush accessories featuring Stitch, Pooh, Donald, and Mickey arrive at both coasts",
+        "body": "Claw clips and other accessories in single-color palettes are now sold at Walt Disney World and Disneyland Resort. Each character is rendered in a distinct pastel shade.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/05/pooh-donald-and-mickey-pastel-monochrome-plush-claw-clips-arrive-at-walt-disney-world/"
+        }
+      },
+      {
+        "title": "Her Universe releases retro Walt Disney World marquee mini tote bag",
+        "body": "The bag features the classic entrance sign and is part of a varsity-themed parks collection. It is available at Magic Kingdom's Uptown Jewelers and online at the Disney Store.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/05/marquee-mini-tote-bag-by-her-universe-arrives-to-walt-disney-world/"
+        }
+      },
+      {
+        "title": "Disney Springs launches Summer 2026 signage and Cool Kids guides",
+        "body": "New banners and printed maps highlight family programming and seasonal offerings across the shopping and dining district. The initiative targets school-break visitors.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/05/disney-springs-debuts-summer-signage-and-2026-cool-kids-summer-guides/"
+        }
+      },
+      {
+        "title": "BoardWalk confirms multiple projects for vacant restaurant and retail spaces",
+        "body": "Walt Disney World acknowledged that at least two new tenants are in the works for empty storefronts along the promenade. No brands or opening timelines have been disclosed.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-world-confirms-two-more-boardwalk-mystery-projects-in-empty-restaurant-retail-spaces/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "Soarin' now features updated Across America content at EPCOT",
+        "body": "The Land pavilion attraction has swapped in new North American footage, replacing portions of the previous Soarin' Around the World film. The change went live this week and includes fresh aerial sequences.",
+        "parkSlug": "epcot",
+        "ctaLabel": "Ride Soarin'",
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Flight-film updates typically draw curious repeat riders for the first few weeks. Early-morning Lightning Lane inventory tends to last longer than standby windows under 20 minutes during the 9–10am hour."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "oeHR687nFAI",
+      "title": "EPCOT 2026 | NEW Soarin Across America, Regal Eagle BBQ & Memorial Day Crowds | Walt Disney World",
+      "channel": "Paging Mr. Morrow",
+      "url": "https://www.youtube.com/watch?v=oeHR687nFAI",
+      "thumbnailUrl": "https://i.ytimg.com/vi/oeHR687nFAI/mqdefault.jpg",
+      "viewCount": 113470,
+      "publishedAt": "2026-05-26T13:30:03Z",
+      "summary": "Paging Mr. Morrow walks through the updated Soarin' Across America, checks out Regal Eagle Smokehouse, and documents Memorial Day weekend crowd levels at EPCOT."
+    },
+    {
+      "videoId": "qEEyK-6C41I",
+      "title": "New Food at Walt Disney World Resorts: Pop Century, Art of Animation, All Stars",
+      "channel": "WrightDownMainStreet",
+      "url": "https://www.youtube.com/watch?v=qEEyK-6C41I",
+      "thumbnailUrl": "https://i.ytimg.com/vi/qEEyK-6C41I/mqdefault.jpg",
+      "viewCount": 40198,
+      "publishedAt": "2026-05-24T15:38:02Z",
+      "summary": "WrightDownMainStreet samples new menu additions at Pop Century, Art of Animation, and All-Star Resorts, highlighting recent changes to value-resort dining."
+    },
+    {
+      "videoId": "Mt7w4exF5wc",
+      "title": "I Tried all NEW Summer Food at Walt Disney World: Muppets, Bluey, Star Wars & More!",
+      "channel": "WrightDownMainStreet",
+      "url": "https://www.youtube.com/watch?v=Mt7w4exF5wc",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Mt7w4exF5wc/mqdefault.jpg",
+      "viewCount": 38752,
+      "publishedAt": "2026-05-27T18:07:03Z",
+      "summary": "A comprehensive tasting tour of summer 2026 limited-time offerings across Walt Disney World, including items tied to Muppets, Bluey, and Star Wars themes."
+    },
+    {
+      "videoId": "gvcVYWlO9OI",
+      "title": "🔴 LIVE: Happily Ever After - Magic Kingdom (2026 Fireworks), Walt Disney World | Full Show 4K",
+      "channel": "Fun to be Free",
+      "url": "https://www.youtube.com/watch?v=gvcVYWlO9OI",
+      "thumbnailUrl": "https://i.ytimg.com/vi/gvcVYWlO9OI/mqdefault.jpg",
+      "viewCount": 13825,
+      "publishedAt": "2026-05-31T05:10:00Z",
+      "summary": "A full 4K livestream of Happily Ever After fireworks at Magic Kingdom, capturing the complete nighttime spectacular in high resolution."
+    },
+    {
+      "videoId": "f7e2otWBQmY",
+      "title": "🔴 LIVE Disney World Park Hopping + Queensrÿche Concert at EPCOT! 🏰🎸🏰🎸#DisneyWorld #disneylivestream",
+      "channel": "Skootah Adventures ",
+      "url": "https://www.youtube.com/watch?v=f7e2otWBQmY",
+      "thumbnailUrl": "https://i.ytimg.com/vi/f7e2otWBQmY/mqdefault.jpg",
+      "viewCount": 4184,
+      "publishedAt": "2026-05-31T02:26:04Z",
+      "summary": "Skootah Adventures broadcasts a park-hopping day ending with a Queensrÿche concert at EPCOT's America Gardens Theatre."
+    },
+    {
+      "videoId": "q-m02sZuGCo",
+      "title": "Kai Montinola wore a chic outfit during a trip to Disneyland. #kaimontinola #disneyland #princess",
+      "channel": "Suomafrich",
+      "url": "https://www.youtube.com/watch?v=q-m02sZuGCo",
+      "thumbnailUrl": "https://i.ytimg.com/vi/q-m02sZuGCo/mqdefault.jpg",
+      "viewCount": 1892,
+      "publishedAt": "2026-05-31T06:16:59Z",
+      "summary": "A short feature on Kai Montinola's Disneyland visit showcasing her outfit and park experience."
+    },
+    {
+      "videoId": "viofte0CpDU",
+      "title": "NUEVO LEGO de Disney Land Main Street USA #lego #disney #disneyland",
+      "channel": "Stbricks",
+      "url": "https://www.youtube.com/watch?v=viofte0CpDU",
+      "thumbnailUrl": "https://i.ytimg.com/vi/viofte0CpDU/mqdefault.jpg",
+      "viewCount": 1628,
+      "publishedAt": "2026-05-31T02:36:45Z",
+      "summary": "Stbricks showcases a new LEGO set modeled after Disneyland's Main Street USA."
+    },
+    {
+      "videoId": "mNLicPScRwc",
+      "title": "【速報】日曜日で人数激増‼️ディズニーリゾート最新混雑状況【2026.5.31】",
+      "channel": "ジョマジのディズニー研究所",
+      "url": "https://www.youtube.com/watch?v=mNLicPScRwc",
+      "thumbnailUrl": "https://i.ytimg.com/vi/mNLicPScRwc/mqdefault.jpg",
+      "viewCount": 1559,
+      "publishedAt": "2026-05-31T04:31:05Z",
+      "summary": "A Japanese-language report on Sunday crowd surges at Tokyo Disney Resort as of May 31, 2026."
+    },
+    {
+      "videoId": "JTUj5og5TgE",
+      "title": "Mike Wazowski, James P. Sullivan and Boo #disney #disneycaliforniaadventurepark #pixar #disneyland",
+      "channel": "disneyxsiempre",
+      "url": "https://www.youtube.com/watch?v=JTUj5og5TgE",
+      "thumbnailUrl": "https://i.ytimg.com/vi/JTUj5og5TgE/mqdefault.jpg",
+      "viewCount": 1332,
+      "publishedAt": "2026-05-31T05:50:45Z",
+      "summary": "A short clip featuring Mike Wazowski, Sulley, and Boo at Disney California Adventure Park."
+    },
+    {
+      "videoId": "IQrEGCbRp2Q",
+      "title": "Paint the Night ParadeDisneyland May 27, 2026 Part 6 #disney #disneyparktour #disneyland",
+      "channel": "John Project",
+      "url": "https://www.youtube.com/watch?v=IQrEGCbRp2Q",
+      "thumbnailUrl": "https://i.ytimg.com/vi/IQrEGCbRp2Q/mqdefault.jpg",
+      "viewCount": 1313,
+      "publishedAt": "2026-05-31T08:00:16Z",
+      "summary": "Part six of John Project's Paint the Night parade coverage from Disneyland on May 27, 2026."
+    }
+  ],
+  "updatedAt": "2026-05-31T12:07:44.522Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-05-31T12:07:44.522Z",
+    "tokens": {
+      "input": 12317,
+      "output": 5534,
+      "costUsd": 0.12
+    }
+  }
+}
