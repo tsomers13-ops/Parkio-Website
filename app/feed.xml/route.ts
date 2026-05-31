@@ -27,43 +27,109 @@ function escapeXml(s: string): string {
     .replace(/'/g, "&apos;");
 }
 
-/** Same bullet-picking logic the n8n teaser builder uses. */
-function pickBullets(post: DailyPost, max = 3): string[] {
-  const sec = post.sections ?? {};
-  const candidates: string[] = [];
-  for (const arr of [sec.breaking, sec.bignews, sec.topstories]) {
-    if (!Array.isArray(arr)) continue;
-    for (const item of arr) {
-      const title = (item as { title?: string })?.title;
-      if (title) candidates.push(title);
-    }
+/* ─────────────── story shaping ───────────────
+ * Email philosophy (see PARKIO_NEWSLETTER_STRATEGY.md): answer in the
+ * email, deepen in the app. Every story carries its actionable
+ * "what to do" line (parkioInsight) so the reader gets real value
+ * without clicking — then the CTA sends them to Parkio's LIVE tool,
+ * not a static article. No JSON-schema changes: we just render fields
+ * (parkioInsight, rightNow) the old teaser ignored.
+ */
+
+type Insight = { category?: string; text?: string };
+type NewsItem = {
+  title?: string;
+  parkSlug?: string;
+  parkioInsight?: Insight;
+};
+type Ride = { name?: string; parkSlug?: string; note?: string };
+
+const PARK_PATH: Record<string, string> = {
+  "magic-kingdom": "magic-kingdom-wait-times-today",
+  epcot: "epcot-wait-times-today",
+  "hollywood-studios": "hollywood-studios-wait-times-today",
+  "animal-kingdom": "animal-kingdom-wait-times-today",
+  disneyland: "disneyland-wait-times-today",
+  "california-adventure": "california-adventure-wait-times-today",
+};
+
+function parkLink(parkSlug?: string): string {
+  const path = parkSlug && PARK_PATH[parkSlug];
+  return path ? `${SITE_URL}/${path}` : `${SITE_URL}/wait-times-today`;
+}
+
+/** Top stories with their actionable insight, deduped, breaking first. */
+function pickStories(post: DailyPost, max = 4): NewsItem[] {
+  const sec = (post.sections ?? {}) as Record<string, NewsItem[]>;
+  const ordered: NewsItem[] = [];
+  for (const key of ["breaking", "bignews", "topstories"]) {
+    const arr = sec[key];
+    if (Array.isArray(arr)) ordered.push(...arr);
   }
   const seen = new Set<string>();
-  const bullets: string[] = [];
-  for (const t of candidates) {
-    const key = t.trim().toLowerCase();
+  const out: NewsItem[] = [];
+  for (const item of ordered) {
+    const title = item?.title?.trim();
+    if (!title) continue;
+    const key = title.toLowerCase();
     if (seen.has(key)) continue;
     seen.add(key);
-    bullets.push(t.trim());
-    if (bullets.length === max) break;
+    out.push(item);
+    if (out.length === max) break;
   }
-  return bullets;
+  return out;
 }
 
 /* ─────────────── feed item ─────────────── */
 
 function renderItem(post: DailyPost): string {
   const url = `${SITE_URL}/guide/${post.slug}`;
-  const bullets = pickBullets(post);
-  const bulletsHtml = bullets.length
-    ? `<ul>${bullets.map((b) => `<li>${escapeXml(b)}</li>`).join("")}</ul>`
+
+  // 1) Snapshot: "best rides right now" — the live-data hook that leads.
+  const rides = (post.rightNow?.rides ?? []) as Ride[];
+  const snapshotHtml = rides.length
+    ? `<p style="margin:0 0 4px;font-weight:700">🏰 Best rides right now</p>` +
+      `<ul style="margin:0 0 18px">${rides
+        .slice(0, 3)
+        .map(
+          (r) =>
+            `<li>${escapeXml(r.name || "")}${
+              r.note ? ` &mdash; ${escapeXml(r.note)}` : ""
+            }</li>`,
+        )
+        .join("")}</ul>`
     : "";
+
+  // 2) Stories, each with its actionable "what to do" line + a deep link
+  //    to that park's LIVE wait-times page (drives app/site usage).
+  const stories = pickStories(post);
+  const storiesHtml = stories
+    .map((s) => {
+      const tip = s.parkioInsight?.text?.trim();
+      const tipHtml = tip
+        ? `<p style="margin:2px 0 0;font-size:14px"><strong>What to do:</strong> ${escapeXml(
+            tip,
+          )}</p>`
+        : "";
+      const live = `<p style="margin:4px 0 0;font-size:13px"><a href="${parkLink(
+        s.parkSlug,
+      )}">See live waits &rarr;</a></p>`;
+      return (
+        `<div style="margin:0 0 18px">` +
+        `<p style="margin:0;font-weight:700">${escapeXml(s.title || "")}</p>` +
+        tipHtml +
+        live +
+        `</div>`
+      );
+    })
+    .join("");
 
   const contentHtml = `
 <p>${escapeXml(post.teaser)}</p>
-${bulletsHtml}
+${snapshotHtml}
+${storiesHtml}
 <p><a href="${url}">Read the full briefing on Parkio Daily &rarr;</a></p>
-<p style="font-size:12.5px;color:#888;margin-top:20px;font-style:italic">Crowd patterns can change throughout the day. <a href="https://parkio.info/parks" style="color:#888">Use Parkio for live updates.</a></p>
+<p style="font-size:12.5px;color:#888;margin-top:20px;font-style:italic">Crowd patterns can change throughout the day. <a href="https://parkio.info/parks" style="color:#888">Open Parkio for live wait times.</a></p>
 <p style="font-size:13px;color:#888;margin-top:8px">Parkio Daily &mdash; fresh every morning at 6 AM ET.</p>
   `.trim();
 

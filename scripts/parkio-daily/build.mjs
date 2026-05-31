@@ -642,7 +642,7 @@ SCHEMA (produce this object):
   "title": string,
   "slug": string (must equal "${slug}"),
   "date": string (must equal "${etDate}"),
-  "teaser": string (1–2 sentences, ≤160 chars; SEO + email teaser; no source phrasing),
+  "teaser": string (1–2 sentences, ≤160 chars; SEO + email subject/preview + first email line. Lead with the single most concrete, useful, TODAY-specific fact — a name, a park, a number, a date — not vague hype. Good: "Big Thunder reopens today; EPCOT is your best low-wait bet." Bad: "You won't believe what Disney just announced!" No source phrasing),
   "rightNow": {
     "headline": "Best rides right now",
     "rides": [ { "name": string, "parkSlug": string, "note": string } ]   // 2–3 items
