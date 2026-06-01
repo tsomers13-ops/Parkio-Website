@@ -1,0 +1,340 @@
+{
+  "title": "Parkio Daily for June 1, 2026",
+  "slug": "parkio-daily-2026-06-01",
+  "date": "2026-06-01",
+  "teaser": "Big Thunder reopens today at Magic Kingdom; Pride Month treats debut; Tropical Americas construction hits new milestone at Animal Kingdom.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Big Thunder Mountain Railroad",
+        "parkSlug": "magic-kingdom",
+        "note": "Reopened after 16-month refurb; morning waits under 30 minutes likely"
+      },
+      {
+        "name": "Rock 'n' Roller Coaster Starring The Muppets",
+        "parkSlug": "hollywood-studios",
+        "note": "New Muppets overlay just opened; try early or rope drop"
+      },
+      {
+        "name": "Haunted Mansion",
+        "parkSlug": "magic-kingdom",
+        "note": "Exit work continues but ride operational; consistent moderate waits"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [],
+    "bignews": [
+      {
+        "title": "Big Thunder Mountain Railroad reopens after 16-month closure",
+        "body": "The refurbished coaster returned to Magic Kingdom following its longest downtime, though additional theming and enhancements are still in progress. The classic ride received technical updates and maintenance work during the extended refurbishment.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/big-thunder-mountain-railroad-ride-review-good-bad-opossum-optimism-whats-missing/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Early morning usually offers the shortest waits after a major reopening, often under 30 minutes in the first operating hour. Afternoons and evenings tend to see heavier crowds as word spreads."
+        }
+      },
+      {
+        "title": "Toy Story 5 merchandise arrives across Walt Disney World",
+        "body": "The Emporium and Frontier Trading Post now carry apparel, plush, accessories, and figurines tied to the upcoming film. Jessie-themed items are available at locations near the new Jessie's Roundup area.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/06/full-list-with-prices-toy-story-5-merchandise-walt-disney-world/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Film-linked merchandise tends to sell out quickly at flagship stores like the Emporium. Visiting Main Street early or late in the day usually improves selection before popular items vanish."
+        }
+      },
+      {
+        "title": "Annual Passholders receive new June perks and dining discounts",
+        "body": "V.I.PASSHOLDER Summer Days continues with up to 40 percent off at ten Disney World restaurants, plus free keepsakes and a coffee challenge. The monthly perk package includes additional savings at select locations.",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-worlds-new-summer-perks-for-aps-extra-discounts-free-keepsakes-coffee-challenge/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Character dining and resort table-service spots often see lighter walk-up availability mid-afternoon when discounts apply. Worth checking same-day reservations around 2–4pm for surprise openings."
+        }
+      },
+      {
+        "title": "Tropical Americas construction at Animal Kingdom reaches permitting milestone",
+        "body": "The expansion behind the former Dinosaur area took a step forward with new filings, bringing the project closer to guest opening. The land will feature immersive environments inspired by Central and South American ecosystems.",
+        "parkSlug": "animal-kingdom",
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/06/01/disneys-animal-kingdom-expansion-is-one-step-closer-to-opening/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Construction noise and equipment tend to be most noticeable near Asia and DinoLand pathways between 9am and noon. Planning quieter sit-down meals or theater shows during those windows usually improves comfort."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "Pride Month orange slushy debuts at Tomorrowland's Astrofizz",
+        "body": "Magic Kingdom introduced a limited-time Fanta Orange slushy topped with whipped cream and rainbow sprinkles for Pride Month. The specialty beverage is priced at $6.79 and available through June.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/06/review-orange-slushy-celebrates-pride-month-at-magic-kingdom/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Specialty snacks in Tomorrowland tend to sell fastest between noon and 3pm when crowds peak. Grabbing the slushy before 11am or after 5pm usually means shorter lines at Astrofizz."
+        }
+      },
+      {
+        "title": "Haunted Mansion exit area now covered in construction scrim",
+        "body": "Green scrim was installed around the attraction's exit building at Magic Kingdom, joining the facade work that has been underway since early 2026. The ride itself remains operational while exterior refurbishment continues.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/06/exit-scrim-goes-up-at-haunted-mansion-in-magic-kingdom/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Exit paths near construction zones can feel congested during afternoon parade and fireworks prep. Riding Haunted Mansion in the first two hours or final hour before park close usually avoids bottlenecks."
+        }
+      },
+      {
+        "title": "Soarin' Across America patriotic decor installed at Disney California Adventure",
+        "body": "Red, white, and blue bunting now lines the walkway outside Soarin' ahead of the attraction's July 2 reopening. The overlay will feature domestic flight footage and a new patriotic score.",
+        "parkSlug": "california-adventure",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/06/patriotic-bunting-decor-arrives-for-soarin-across-america-at-disney-california-adventure/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Reopening day for overlays typically draws heavier crowds to that pavilion. Visiting in the week before July 2 often offers lower waits at neighboring attractions like Grizzly River Run."
+        }
+      },
+      {
+        "title": "Mickey and Minnie patriotic window displays return to Main Street",
+        "body": "Two bay windows outside the Emporium now feature red, white, and blue bunting with Mickey and Minnie figures in seasonal attire. The displays are part of Magic Kingdom's summer and July 4 theming.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/06/patriotic-main-street-window-displays-featuring-mickey-and-minnie-at-magic-kingdom/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Main Street photo ops tend to be least crowded during the first 30 minutes after park open or the final hour before close. Snapping window shots outside those times often means waiting through crowds."
+        }
+      },
+      {
+        "title": "Disney+ subscribers can enter sweepstakes for $13,000 Disney World trip",
+        "body": "A new subscriber perk offers entry into a drawing for a vacation package covering Cool Kids' Summer experiences at the resort. The promotion runs through June and is open to active Disney+ members.",
+        "source": {
+          "label": "AllEars.Net",
+          "url": "https://allears.net/2026/06/01/new-perk-disney-subscribers-can-enter-to-win-a-13000-disney-world-trip/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Sweepstakes promotions tend to see most entries in the first few days after launch. Entering later in the window may slightly improve odds as initial interest tapers."
+        }
+      },
+      {
+        "title": "BoardWalk confirms multiple projects for vacant restaurant and retail spaces",
+        "body": "Disney World announced that several empty storefronts along the BoardWalk promenade will be filled with new dining and shopping concepts. Details on opening dates and tenants remain under wraps.",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-world-confirms-two-more-boardwalk-mystery-projects-in-empty-restaurant-retail-spaces/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "BoardWalk crowds tend to be lightest on weekday afternoons between 2–5pm, before dinner reservations start. Exploring during that window usually offers easier strolling and shorter waits at open venues."
+        }
+      },
+      {
+        "title": "Main Street U.S.A. LEGO set now available online",
+        "body": "The highly anticipated Disney Main Street building set launched on shopDisney and the LEGO Store website after selling out quickly in parks. The detailed model recreates iconic facades from the Magic Kingdom entrance area.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "AllEars.Net",
+          "url": "https://allears.net/2026/06/01/disneys-new-main-street-lego-set-is-finally-available-online/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Popular LEGO collaborations often restock inconsistently online. Adding to cart immediately and checking at off-peak hours like early morning usually improves success before inventory drops again."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Banana Ball baseball event coming to ESPN Wide World of Sports in 2026",
+        "body": "The Savannah Bananas announced a stop at Disney World's sports complex during a live broadcast on ESPN networks. Dates and ticket details for the high-energy exhibition game were revealed during the Banana Ball City Selection Show.",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/disney-experiences/banana-ball-coming-to-disney-world/"
+        }
+      },
+      {
+        "title": "Disney Animation-inspired experience announced for Hollywood Studios",
+        "body": "A new walkthrough attraction inspired by the Walt Disney Animation Studios lot in Burbank will bring characters and storytelling environments to the park. The experience aims to recreate the feeling of exploring the studio campus where films are made.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/disney-animation-inspired-experience-coming-to-disneys-hollywood-studios/"
+        }
+      },
+      {
+        "title": "Pineapple Upside Down Bundt Cake recipe shared from Plaza Inn",
+        "body": "Disney Parks Blog published a home recipe for the dessert featured during the Celebrate Soulfully: Summer Vibes event at Disneyland. The limited-time celebration runs June 19 through July 19 and highlights Black heritage and culture.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/dlr/disney-eats-pineapple-upside-down-bundt-cake-recipe-from-plaza-inn/"
+        }
+      },
+      {
+        "title": "ABC News uses IllumiNations music in July 4th promo",
+        "body": "A promotional spot for the Disney Celebrates America 24-hour broadcast featured scenes and score from the former EPCOT nighttime show. IllumiNations: Reflections of Earth ran from 1999 to 2019 and remains a fan favorite.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/06/illuminations-scenes-score-used-to-promote-abc-news-24-hour-july-4th-event/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "Pride mural returns to Tomorrowland Purple Wall",
+        "body": "The rainbow Mickey Love mural reappeared near Tomorrowland Terrace on June 1, marking the start of Pride Month at Magic Kingdom. The colorful backdrop has become a popular photo location during past Pride Month celebrations at the park.",
+        "parkSlug": "magic-kingdom",
+        "ctaLabel": "Plan your photo stop",
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "The Purple Wall area tends to see longest lines for photos between 10am and 2pm. Visiting during early morning or evening hours usually offers quicker access and softer lighting for pictures."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "oeHR687nFAI",
+      "title": "EPCOT 2026 | NEW Soarin Across America, Regal Eagle BBQ & Memorial Day Crowds | Walt Disney World",
+      "channel": "Paging Mr. Morrow",
+      "publishedAt": "2026-05-26T13:30:03Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/oeHR687nFAI/mqdefault.jpg",
+      "viewCount": 122371,
+      "url": "https://www.youtube.com/watch?v=oeHR687nFAI",
+      "summary": "Paging Mr. Morrow tours EPCOT during Memorial Day weekend, covering the upcoming Soarin' Across America overlay, dining at Regal Eagle, and navigating holiday crowds."
+    },
+    {
+      "videoId": "Mt7w4exF5wc",
+      "title": "I Tried all NEW Summer Food at Walt Disney World: Muppets, Bluey, Star Wars & More!",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-05-27T18:07:03Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Mt7w4exF5wc/mqdefault.jpg",
+      "viewCount": 41800,
+      "url": "https://www.youtube.com/watch?v=Mt7w4exF5wc",
+      "summary": "WrightDownMainStreet samples the newest summer snacks and meals across Disney World, including items tied to Muppets, Bluey, and Star Wars themes."
+    },
+    {
+      "videoId": "9XgCYsnIHPA",
+      "title": "The beautiful Disney moment🥰#foryour #disney #disneyworld #disneyland #kids",
+      "channel": "Majid Eronen",
+      "publishedAt": "2026-06-01T07:46:02Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/9XgCYsnIHPA/mqdefault.jpg",
+      "viewCount": 11039,
+      "url": "https://www.youtube.com/watch?v=9XgCYsnIHPA",
+      "summary": "Majid Eronen shares a heartwarming moment captured at a Disney park involving children and characters."
+    },
+    {
+      "videoId": "89PItpHaJTc",
+      "title": "Disneyland moment #disney #disneyparktour #disneyland",
+      "channel": "Shanique Hughes",
+      "publishedAt": "2026-06-01T10:02:13Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/89PItpHaJTc/mqdefault.jpg",
+      "viewCount": 8202,
+      "url": "https://www.youtube.com/watch?v=89PItpHaJTc",
+      "summary": "Shanique Hughes captures a quick Disneyland park experience in this short tour clip."
+    },
+    {
+      "videoId": "Or2ODn5riSY",
+      "title": "Ada yang bisa tebak siapa ketiga karakter pertama di video? 😅‼️ #disney #lucu #penemuan",
+      "channel": "Maemunah Shorts",
+      "publishedAt": "2026-06-01T10:42:00Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Or2ODn5riSY/mqdefault.jpg",
+      "viewCount": 3638,
+      "url": "https://www.youtube.com/watch?v=Or2ODn5riSY",
+      "summary": "Maemunah Shorts posts a Disney character guessing game in Indonesian, challenging viewers to identify three characters."
+    },
+    {
+      "videoId": "n0A7rs_Q9v8",
+      "title": "Disneyland is truly a haven for grown-ups to heal their hearts. #disney #youtube #disneyland",
+      "channel": "Olivia_00..",
+      "publishedAt": "2026-06-01T09:54:21Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/n0A7rs_Q9v8/mqdefault.jpg",
+      "viewCount": 3612,
+      "url": "https://www.youtube.com/watch?v=n0A7rs_Q9v8",
+      "summary": "Olivia reflects on Disneyland's emotional appeal for adults seeking comfort and nostalgia in the parks."
+    },
+    {
+      "videoId": "Wf3dKKG247M",
+      "title": "New Bluey Snacks in Animal Kingdom!💖🍰 #disney #disneyparks #disneyfood #waltdisneyworld #bluey",
+      "channel": "ElizabethEverAfter",
+      "publishedAt": "2026-06-01T14:09:30Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Wf3dKKG247M/mqdefault.jpg",
+      "viewCount": 3166,
+      "url": "https://www.youtube.com/watch?v=Wf3dKKG247M",
+      "summary": "ElizabethEverAfter showcases the new Bluey-themed food items now available at Animal Kingdom."
+    },
+    {
+      "videoId": "wY0Qo699Znw",
+      "title": "3 Mistakes 99% Makes in Disneyland 👀 #disney #disneyland #shorts",
+      "channel": "JuzStory",
+      "publishedAt": "2026-06-01T12:49:29Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/wY0Qo699Znw/mqdefault.jpg",
+      "viewCount": 1783,
+      "url": "https://www.youtube.com/watch?v=wY0Qo699Znw",
+      "summary": "JuzStory identifies three common planning or touring mistakes that most Disneyland visitors make."
+    },
+    {
+      "videoId": "MKPYNYwtOI8",
+      "title": "Disneyland moment #disney #disneyparktour #disneyland #universalparks",
+      "channel": "Shanique Hughes",
+      "publishedAt": "2026-06-01T10:02:47Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/MKPYNYwtOI8/mqdefault.jpg",
+      "viewCount": 1076,
+      "url": "https://www.youtube.com/watch?v=MKPYNYwtOI8",
+      "summary": "Shanique Hughes shares another brief Disneyland park moment in this tour short."
+    },
+    {
+      "videoId": "UY6rxc1Dcu8",
+      "title": "L'Anniversaire de SPACE MOUNTAIN à DISNEYLAND PARIS !  #disneylandparis #endroits #insolite #disney",
+      "channel": "Willyyaam",
+      "publishedAt": "2026-06-01T11:09:46Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/UY6rxc1Dcu8/mqdefault.jpg",
+      "viewCount": 1031,
+      "url": "https://www.youtube.com/watch?v=UY6rxc1Dcu8",
+      "summary": "Willyyaam celebrates Space Mountain's anniversary at Disneyland Paris, highlighting special moments from the attraction."
+    }
+  ],
+  "updatedAt": "2026-06-01T16:32:40.813Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-06-01T16:32:40.814Z",
+    "tokens": {
+      "input": 12258,
+      "output": 5576,
+      "costUsd": 0.1204
+    }
+  }
+}
