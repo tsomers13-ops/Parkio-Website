@@ -1,0 +1,317 @@
+{
+  "title": "Parkio Daily for June 2, 2026",
+  "slug": "parkio-daily-2026-06-02",
+  "date": "2026-06-02",
+  "teaser": "Bluey's Wild World opens today at Animal Kingdom; Disney Celebrates America lineup revealed for July 4th at Magic Kingdom and EPCOT.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Soarin'",
+        "parkSlug": "epcot",
+        "note": "Walk-on windows typically open during dinner hour, 6–7pm"
+      },
+      {
+        "name": "Big Thunder Mountain Railroad",
+        "parkSlug": "magic-kingdom",
+        "note": "Reopened today; first-hour waits trending low"
+      },
+      {
+        "name": "Millennium Falcon: Smugglers Run",
+        "parkSlug": "hollywood-studios",
+        "note": "Light crowds continue; midday waits under 30 minutes"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [],
+    "bignews": [
+      {
+        "title": "Bluey's Wild World now open at Animal Kingdom",
+        "body": "The new Bluey experience launched today in the Australia section of Animal Kingdom as part of Cool Kids' Summer. Guests can meet Bluey, Bingo, and see animals native to Australia throughout the summer and beyond.",
+        "parkSlug": "animal-kingdom",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/everything-you-need-to-know-about-bluey-at-disneys-animal-kingdom/"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "The Australia pavilion typically sees heavy family traffic between 10am and 1pm when this kind of character experience debuts. Arriving at rope drop or after 3pm usually yields shorter waits for meet-and-greets."
+        }
+      },
+      {
+        "title": "Disney Celebrates America lineup announced for July 4th",
+        "body": "Disney revealed programming for Independence Day including a 24-hour multi-platform broadcast, a primetime television special, and patriotic lighting effects on Spaceship Earth at EPCOT. The initiative runs through July 4th across Magic Kingdom, EPCOT, and Disneyland.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/06/disney-celebrates-america-special-24-hour-broadcast-patriotic-spaceship-earth-lighting-and-more-announced-for-4th-of-july/"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "July 4th typically brings some of the heaviest park attendance of the year. Booking Lightning Lane passes as early as possible and arriving before official opening usually offers the best chance to experience headliners with manageable waits."
+        }
+      },
+      {
+        "title": "New Disney Animation courtyard coming to Hollywood Studios",
+        "body": "Disney announced a new Walt Disney Animation Studios-inspired area for Hollywood Studios that will let guests explore a recreation of the Burbank campus and interact with animated characters. Opening date and specific location within the park were not disclosed.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/disney-animation-inspired-experience-coming-to-disneys-hollywood-studios/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "When this type of immersive walkthrough area opens, the first few weeks tend to draw lighter crowds than headliner rides. Planning a visit within the debut month often means shorter lines and more time with each character."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "Cool Kids' Summer snacks debut under ten dollars",
+        "body": "Disney World introduced a set of limited-time snacks tied to Cool Kids' Summer, all priced under ten dollars. The menu includes items themed to Toy Story and other franchises across the four parks.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/cool-kids-summer-snacks-under-10-dollars/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Limited-time food typically sells out or disappears from carts by mid-afternoon on busy days. Grabbing these snacks during the first half of your park day usually ensures better availability."
+        }
+      },
+      {
+        "title": "Spaceship Earth Pride mural returns to EPCOT",
+        "body": "The rainbow Spaceship Earth photo mural is back on the wall outside Connections Cafe for Pride Month. The installation features the icon with a rainbow arc overhead.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/06/spaceship-earth-rainbow-mural-back-at-epcot-for-pride-month-2026/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Photo walls near Spaceship Earth tend to draw lines during the late morning and early afternoon. Stopping by within the first hour after park opening or after sunset usually means shorter waits for your shot."
+        }
+      },
+      {
+        "title": "Disneyland After Dark: Pride Nites snacks announced",
+        "body": "Disneyland revealed 11 exclusive treats available during After Dark: Pride Nites, a separately ticketed event. The snacks are themed to the celebration and available only during those evening hours in June.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/06/02/11-limited-time-snacks-are-coming-to-disneyland-soon/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "After Dark events typically offer lower wait times for attractions and food than daytime crowds. Arriving right at the event start time usually gives the best selection before popular items run out."
+        }
+      },
+      {
+        "title": "Polite Pig recognized in MICHELIN Guide 2026",
+        "body": "The barbecue restaurant at Disney Springs earned a spot in the new MICHELIN Guide for 2026. The Polite Pig joins a short list of Disney-area dining recognized by the guide.",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/06/disney-springs-the-polite-pig-featured-in-michelin-guide-2026/"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "MICHELIN recognition often drives a spike in walk-up demand over the following weeks. Making a reservation or arriving before the lunch rush at 11:30am typically reduces wait time for a table."
+        }
+      },
+      {
+        "title": "Princess Half Marathon Weekend registration delayed",
+        "body": "General registration for the 2027 Disney Princess Half Marathon Weekend was postponed from its scheduled 10am opening on June 2. RunDisney has not announced a new registration date.",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/06/disney-princess-half-marathon-weekend-2027-registration-delayed/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "When registration reopens, spots for popular race weekends often fill within hours. Setting a calendar reminder and logging in right at the published start time usually improves your odds of securing a bib."
+        }
+      },
+      {
+        "title": "Taylor Swift announces Toy Story 5 original song",
+        "body": "Taylor Swift revealed she recorded a new track, \"I Knew It, I Knew You,\" for Toy Story 5, opening June 19. The song will be available on streaming platforms ahead of the theatrical release.",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/taylor-swift-announces-new-song-in-toy-story-5/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Major film releases tied to major pop artists often drive a surge in Toy Story merchandise and meet-and-greet demand at the parks. Visiting Toy Story Land early in the day or late in the evening typically means lighter crowds at Woody and Buzz photo spots."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Disneyland partners with Lyft for 50-percent ride discount",
+        "body": "A new Disneyland perk offers guests up to 50 percent off Lyft rides to and from the resort. Terms and eligible dates were not detailed in the announcement.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "AllEars.Net",
+          "url": "https://allears.net/2026/06/01/this-new-disneyland-perk-can-save-you-50-on-lyft-rides/"
+        }
+      },
+      {
+        "title": "Disneyland debuts six new snacks in June",
+        "body": "Six limited-time treats launched at Disneyland Park this month, spanning sweet and savory options. Specific locations and flavors were previewed by AllEars.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "AllEars.Net",
+          "url": "https://allears.net/2026/06/02/6-new-snacks-are-coming-to-disneyland-in-june/"
+        }
+      },
+      {
+        "title": "June Annual Passholder perks include coffee challenge and freebies",
+        "body": "Walt Disney World announced V.I.PASSHOLDER Summer Days benefits for June, including a Joffrey's Coffee Challenge with exclusive drinks, extra discounts, and complimentary keepsakes at select locations.",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-worlds-new-summer-perks-for-aps-extra-discounts-free-keepsakes-coffee-challenge/"
+        }
+      },
+      {
+        "title": "Haunted Mansion refurbishment expands at Magic Kingdom",
+        "body": "Additional scrims went up around the Haunted Mansion exterior as the multi-month exterior restoration continues in Liberty Square. The attraction remains open during the work.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/06/magic-kingdoms-haunted-mansion-gets-even-more-scrim-as-months-long-refurbishment-continues-rl1/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "Disney Store Japan and China merchandise coming to DisneyStore.com",
+        "body": "Exclusive plush, keychains, and other items previously sold only at Disney Store locations in Japan and China will roll out on DisneyStore.com throughout June. The first wave includes sleepy Donald Duck, sporty Mickey and Friends, and Winnie the Pooh Bee collections.",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/products/disney-store-japan-plush-and-keychains-coming-to-disneystore-com/"
+        },
+        "ctaLabel": "Shop Disney Store",
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "International Disney Store drops often sell out within the first day or two of availability. Checking the site early in the morning on release day typically offers the widest selection before popular items go out of stock."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "Mt7w4exF5wc",
+      "title": "I Tried all NEW Summer Food at Walt Disney World: Muppets, Bluey, Star Wars & More!",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-05-27T18:07:03Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Mt7w4exF5wc/mqdefault.jpg",
+      "viewCount": 43552,
+      "url": "https://www.youtube.com/watch?v=Mt7w4exF5wc",
+      "summary": "WrightDownMainStreet samples limited-time summer food offerings across Walt Disney World, including dishes tied to Muppets, Bluey, and Star Wars."
+    },
+    {
+      "videoId": "ZFGihWqwuUg",
+      "title": "Le distributeur de savon Mickey ne fonctionne que dans une seule position",
+      "channel": "dr_loox",
+      "publishedAt": "2026-06-02T12:33:12Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/ZFGihWqwuUg/mqdefault.jpg",
+      "viewCount": 10287,
+      "url": "https://www.youtube.com/watch?v=ZFGihWqwuUg",
+      "summary": "Dr_loox demonstrates a Mickey-themed soap dispenser that only works when positioned a specific way."
+    },
+    {
+      "videoId": "vp-9a_WzRjA",
+      "title": "Disney World Resort TV 🏰 Park Hours Today | Magic Kingdom, EPCOT & More",
+      "channel": "WDW Today",
+      "publishedAt": "2026-06-02T02:37:52Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/vp-9a_WzRjA/mqdefault.jpg",
+      "viewCount": 4192,
+      "url": "https://www.youtube.com/watch?v=vp-9a_WzRjA",
+      "summary": "WDW Today provides current park hours for Magic Kingdom, EPCOT, and other Walt Disney World parks."
+    },
+    {
+      "videoId": "6l6Zmy4r-_I",
+      "title": "【速報】台風の影響で人数激減⁉️ディズニーシー最新混雑状況【2026.6.2】",
+      "channel": "ジョマジのディズニー研究所",
+      "publishedAt": "2026-06-02T09:04:15Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/6l6Zmy4r-_I/mqdefault.jpg",
+      "viewCount": 2302,
+      "url": "https://www.youtube.com/watch?v=6l6Zmy4r-_I",
+      "summary": "ジョマジのディズニー研究所 reports on reduced crowds at Tokyo DisneySea due to a typhoon affecting the area."
+    },
+    {
+      "videoId": "1eEoGQtrsjU",
+      "title": "Disney Parks Magic Kingdom LIVE Happily Ever After Fireworks",
+      "channel": "Pete McDevitt Show",
+      "publishedAt": "2026-06-02T02:36:19Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/1eEoGQtrsjU/mqdefault.jpg",
+      "viewCount": 1908,
+      "url": "https://www.youtube.com/watch?v=1eEoGQtrsjU",
+      "summary": "Pete McDevitt Show streams a live broadcast of Happily Ever After fireworks at Magic Kingdom."
+    },
+    {
+      "videoId": "CkxaW8GA2pc",
+      "title": "Fun Disneyland💕🤣#happy #kids #Foryou #funnyvideos #disney #disneyland",
+      "channel": "Huy Bùi Văn",
+      "publishedAt": "2026-06-02T11:14:34Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/CkxaW8GA2pc/mqdefault.jpg",
+      "viewCount": 1362,
+      "url": "https://www.youtube.com/watch?v=CkxaW8GA2pc",
+      "summary": "Huy Bùi Văn shares a short, lighthearted video featuring kids at Disneyland."
+    },
+    {
+      "videoId": "d6T5V5eJovo",
+      "title": "2026年6月2日！現在販売中！カチューシャ最新まとめ！ #ディズニー #ディズニーランド #ディズニーシー",
+      "channel": "ディズニーグッズもも",
+      "publishedAt": "2026-06-02T09:30:40Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/d6T5V5eJovo/mqdefault.jpg",
+      "viewCount": 1250,
+      "url": "https://www.youtube.com/watch?v=d6T5V5eJovo",
+      "summary": "ディズニーグッズもも provides an updated roundup of Mickey ear headbands currently available at Tokyo Disney Resort."
+    },
+    {
+      "videoId": "Fxk1z0NkQP8",
+      "title": "#disney #disneyland #youtubeshorts #ytshorts #themepark",
+      "channel": "FM7 Studios",
+      "publishedAt": "2026-06-02T08:18:47Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Fxk1z0NkQP8/mqdefault.jpg",
+      "viewCount": 971,
+      "url": "https://www.youtube.com/watch?v=Fxk1z0NkQP8",
+      "summary": "FM7 Studios posts a short clip featuring Disneyland theme park content."
+    },
+    {
+      "videoId": "GJctYZdUgW8",
+      "title": "Musical performance at Disneyland Paris. #paris #disney #music",
+      "channel": "Pedro Moreira Vlogs",
+      "publishedAt": "2026-06-02T11:13:57Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/GJctYZdUgW8/mqdefault.jpg",
+      "viewCount": 916,
+      "url": "https://www.youtube.com/watch?v=GJctYZdUgW8",
+      "summary": "Pedro Moreira Vlogs captures a live musical performance at Disneyland Paris."
+    },
+    {
+      "videoId": "n6bBvOt-QK8",
+      "title": "Hands down the BEST treat at Disneyland! #disneyland #disney",
+      "channel": "Las Vegas Hungry",
+      "publishedAt": "2026-06-02T08:30:14Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/n6bBvOt-QK8/mqdefault.jpg",
+      "viewCount": 886,
+      "url": "https://www.youtube.com/watch?v=n6bBvOt-QK8",
+      "summary": "Las Vegas Hungry highlights a favorite snack item available at Disneyland."
+    }
+  ],
+  "updatedAt": "2026-06-02T14:44:05.162Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-06-02T14:44:05.162Z",
+    "tokens": {
+      "input": 12203,
+      "output": 5111,
+      "costUsd": 0.1133
+    }
+  }
+}
