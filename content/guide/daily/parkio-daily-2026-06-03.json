@@ -1,0 +1,344 @@
+{
+  "title": "Parkio Daily for June 3, 2026",
+  "slug": "parkio-daily-2026-06-03",
+  "date": "2026-06-03",
+  "teaser": "Monstropolis entrance takes shape at Hollywood Studios; Disneyland park hopping rules ease next week; Cake Bake Shop faces wage lawsuits.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Space Mountain",
+        "parkSlug": "magic-kingdom",
+        "note": "Short waits early morning before Tomorrowland fills"
+      },
+      {
+        "name": "Soarin'",
+        "parkSlug": "epcot",
+        "note": "Dinner-hour windows often see walk-on access"
+      },
+      {
+        "name": "Rise of the Resistance",
+        "parkSlug": "hollywood-studios",
+        "note": "Rope-drop arrival tends to keep posted times lowest"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [],
+    "bignews": [
+      {
+        "title": "Monstropolis entrance columns now visible at Hollywood Studios",
+        "body": "Four new column frameworks have risen above construction walls near the front of the Monstropolis build zone, replacing the old brick pillars demolished earlier this year. The structures mark the first vertical element of the entrance architecture for the upcoming land.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/06/new-entrance-columns-rise-monstropolis-disneys-hollywood-studios/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Construction activity near Sunset Boulevard tends to be loudest and most disruptive mid-morning. Plan sit-down meals or indoor attractions in that area after 1pm when work often pauses."
+        }
+      },
+      {
+        "title": "Disneyland park hopping restrictions lifted starting next week",
+        "body": "Guests with park hopper tickets will no longer face time-of-day limits beginning June 10. The change removes the previous requirement to wait until a set afternoon hour before moving between Disneyland and California Adventure.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/06/03/park-hopping-rule-change-hits-disneyland-next-week/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Morning rope-drop at one park followed by a mid-morning hop to the other often yields two low-wait windows in a single day. Target headliners at each park before lunch for the best cadence."
+        }
+      },
+      {
+        "title": "Cake Bake Shop sued by former employees over wage claims",
+        "body": "Eleven former staff members have filed lawsuits against the BoardWalk restaurant alleging wage theft. The suits mark the first public labor controversy for the high-end bakery since its Disney World opening last year.",
+        "parkSlug": null,
+        "source": {
+          "label": "AllEars",
+          "url": "https://allears.net/2026/06/03/former-employees-sue-cake-bake-shop-at-disney-world-for-wage-theft/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Service quality at restaurants involved in labor disputes can vary. If a seamless meal matters for your schedule, consider a backup reservation at nearby Trattoria al Forno or Beaches & Cream."
+        }
+      },
+      {
+        "title": "Disney Springs announces new tenant for recently closed retail space",
+        "body": "A replacement store has been confirmed for a shopping location that shut its doors in recent weeks. Disney Springs representatives expect the new concept to open later this summer in the vacated building.",
+        "parkSlug": null,
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/06/disney-springs-confirms-major-replacement-for-recently-closed-shopping-location-bwb1/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Grand-opening retail launches often see limited-quantity items sell out within hours. Visit Disney Springs early on opening day if exclusive merchandise matters to your trip."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "Tokyo Disney parks ending free Priority Pass line-skip system",
+        "body": "The complimentary service that replaced FastPass after the pandemic will soon disappear at Tokyo Disneyland and Tokyo DisneySea. Once the change takes effect, no Disney park worldwide will offer a free skip-the-line option.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/free-fastpass-successor-ending-at-tokyo-disney-parks/"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "Elimination of free systems typically pushes more guests into standby queues. At Florida parks, Lightning Lane demand often spikes on high-crowd days, so purchasing early in the morning tends to secure better return windows."
+        }
+      },
+      {
+        "title": "Oogie Boogie Bash tickets go on sale with new Haunted Mansion street party",
+        "body": "Disney has announced ticket availability and pricing for the 2026 Halloween event at California Adventure, which replaces the traditional parade with a Madame Leota-themed procession. Dates run mid-August through October 31.",
+        "parkSlug": "california-adventure",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-reveals-new-haunted-mansion-street-party-for-2026-oogie-boogie-bash-replacing-halloween-parade/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Early September weeknight tickets historically sell out last. If flexibility allows, Tuesday or Wednesday dates after Labor Day often deliver lower crowds and easier character-meet access."
+        }
+      },
+      {
+        "title": "Check-in days at Disney World resorts shifting this summer",
+        "body": "Walt Disney World has confirmed that arrival procedures will change for guests checking into resort hotels during the summer season. The adjustment affects how visitors structure their first day on property.",
+        "parkSlug": null,
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/06/walt-disney-world-confirms-check-in-days-will-be-changed-in-summer-2026-ab1/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Check-in day park visits often yield half-day value. If the new policy allows earlier room access, rope-drop at a nearby park becomes more feasible, especially at EPCOT from BoardWalk-area resorts."
+        }
+      },
+      {
+        "title": "Annual Passholder Joffrey's coffee challenge launches across four parks",
+        "body": "V.I.PASSHOLDER members can now hunt for specialty cold brews at locations in Magic Kingdom, EPCOT, Hollywood Studios, and Animal Kingdom through July 31. Each park features a unique drink recipe tied to the scavenger-hunt promotion.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/06/review-rockin-cold-brew-at-disneys-hollywood-studios-for-passholder-joffreys-coffee-challenge/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Joffrey's kiosks near park entrances tend to have shortest lines before 10am. Completing the challenge in one morning across monorail-loop parks is usually doable if you start at Magic Kingdom rope-drop."
+        }
+      },
+      {
+        "title": "Disney Springs Pride Month activities include LGBTQ+ nonprofit donations",
+        "body": "The shopping district has expanded its June presence beyond photo ops and murals to include fundraising partnerships with community organizations. Multiple locations are participating in the monthlong initiative.",
+        "parkSlug": null,
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/06/disney-springs-is-celebrating-and-donating-to-the-lgbtq-community-this-pride-month-el1/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Disney Springs weekday mornings usually see lighter foot traffic. Visit before 11am if you want photos at themed installations without waiting for crowd clearance."
+        }
+      },
+      {
+        "title": "Kids' summer snacks under ten dollars debut across Walt Disney World",
+        "body": "Dozens of limited-time treats have launched as part of the Cool Kids' Summer promotion, with every item priced below the ten-dollar threshold. The menu includes sips, sweets, and savory options at quick-service spots in all four theme parks.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/cool-kids-summer-snacks-under-10-dollars/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Specialty snack kiosks often run out of popular items by mid-afternoon. If a specific treat matters, mobile-order it before noon or visit the location during early park hours."
+        }
+      },
+      {
+        "title": "Disney Store launches twice-a-year sale with up to forty percent off",
+        "body": "Nearly one thousand items are discounted on DisneyStore.com during the Twice Upon a Year event, spanning apparel, collectibles, and international plush. Prices are already marked down, and orders over eighty-five dollars ship free with a promo code.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/06/disney-store-twice-upon-a-year-sale-sees-up-to-40-off-apparel-collectibles-international-plush-and-more/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Limited-edition items from Disney Store Japan and China tend to sell out fastest. If you spot a high-demand plush or keychain in your cart, complete checkout immediately rather than waiting."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Disneyland announces Halloween and fall 2026 celebrations",
+        "body": "The resort has detailed its autumn lineup, including ride overlays, themed treats, and exclusive merchandise running through the Halloween season. Details are now available for guests planning visits between late August and October.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/dlr/halloween-and-fall-celebrations-at-disneyland/"
+        }
+      },
+      {
+        "title": "Grammy-winning Disney vocalist Peabo Bryson dies at seventy-five",
+        "body": "The singer behind 'A Whole New World' and the title track of 'Beauty and the Beast' has passed away. Both songs earned Bryson Grammy Awards and remain among the most recognized ballads in Disney history.",
+        "parkSlug": null,
+        "source": {
+          "label": "AllEars",
+          "url": "https://allears.net/2026/06/03/legendary-disney-singer-peabo-bryson-has-passed-away-at-75/"
+        }
+      },
+      {
+        "title": "Atlantis: The Lost Empire twenty-fifth anniversary Spirit Jersey available online",
+        "body": "Disney Store has released an exclusive glow-in-the-dark jersey to mark the film's milestone. The dark-blue mineral-wash design features gold Atlantean symbols and is sold only through the online shop.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/06/celebrate-25-years-of-atlantis-the-lost-empire-with-disney-store-exclusive-glow-in-the-dark-spirit-jersey/"
+        }
+      },
+      {
+        "title": "Cars twentieth anniversary apparel collection now on sale",
+        "body": "A new line of Lightning McQueen-themed clothing has launched to honor the original film's debut two decades ago. The collection includes a racing jacket, Spirit Jersey, dress, T-shirts, and hats available at Disney Store.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/06/life-is-a-highway-cars-20th-anniversary-apparel-released-online/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "Bluey's Wild World opens at Animal Kingdom with Australian animal experiences",
+        "body": "The limited-time area launched May 26 and continues beyond the summer, bringing Bluey, Bingo, and creatures from their Australian homeland into the park. The activation is part of the Cool Kids' Summer programming and includes character interactions tied to the show's native wildlife themes.",
+        "parkSlug": "animal-kingdom",
+        "ctaLabel": "Plan your visit",
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "Character meet-and-greets tied to preschool properties tend to draw long waits by mid-morning, especially on weekends. Arriving at park open and heading directly to the Bluey area usually keeps line times under twenty minutes."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "Mt7w4exF5wc",
+      "title": "I Tried all NEW Summer Food at Walt Disney World: Muppets, Bluey, Star Wars & More!",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-05-27T18:07:03Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Mt7w4exF5wc/mqdefault.jpg",
+      "viewCount": 44938,
+      "url": "https://www.youtube.com/watch?v=Mt7w4exF5wc",
+      "summary": "A vlogger samples the latest seasonal menu items across Walt Disney World, covering Muppets, Bluey, and Star Wars-themed offerings."
+    },
+    {
+      "videoId": "JxLLuxJs53c",
+      "title": "Disneyland Moment #disney #disneyparktour #disneyland #universalparks",
+      "channel": "Shanique Hughes",
+      "publishedAt": "2026-06-03T10:10:04Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/JxLLuxJs53c/mqdefault.jpg",
+      "viewCount": 12274,
+      "url": "https://www.youtube.com/watch?v=JxLLuxJs53c",
+      "summary": "A short Disneyland park tour moment captured by a visitor."
+    },
+    {
+      "videoId": "KBkAi-ki3GU",
+      "title": "\\ ボン・ヴォヤージュ /6月3日販売状況を紹介！",
+      "channel": "みい🎀",
+      "publishedAt": "2026-06-03T05:33:44Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/KBkAi-ki3GU/mqdefault.jpg",
+      "viewCount": 4765,
+      "url": "https://www.youtube.com/watch?v=KBkAi-ki3GU",
+      "summary": "A merchandise availability update from Bon Voyage, the Tokyo Disney Resort shop, for June 3."
+    },
+    {
+      "videoId": "u-JNWgSqeXo",
+      "title": "the feet are hurting 💀💀💀 #disney #disneyland #disneytrip #disneylandtiktok",
+      "channel": "Paisley Wright",
+      "publishedAt": "2026-06-03T13:15:57Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/u-JNWgSqeXo/mqdefault.jpg",
+      "viewCount": 4136,
+      "url": "https://www.youtube.com/watch?v=u-JNWgSqeXo",
+      "summary": "A guest shares their experience of sore feet after a long Disneyland visit."
+    },
+    {
+      "videoId": "YsONMI3di-M",
+      "title": "Disneymagie 👑🏗😂 #disneyliebe #disneylandparis #epcot #disney #bzufanclub #disneychannel",
+      "channel": "Disntoker",
+      "publishedAt": "2026-06-03T07:02:21Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/YsONMI3di-M/mqdefault.jpg",
+      "viewCount": 2978,
+      "url": "https://www.youtube.com/watch?v=YsONMI3di-M",
+      "summary": "A humorous look at Disney magic across Disneyland Paris and EPCOT."
+    },
+    {
+      "videoId": "vit8qOFHipA",
+      "title": "Pov: you checked one of your bucketlist🥹#disney #disneyland #travel #love #happy",
+      "channel": "Buhay Yatra",
+      "publishedAt": "2026-06-03T07:14:16Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/vit8qOFHipA/mqdefault.jpg",
+      "viewCount": 1525,
+      "url": "https://www.youtube.com/watch?v=vit8qOFHipA",
+      "summary": "A traveler celebrates completing a Disneyland bucket-list item."
+    },
+    {
+      "videoId": "HKEBGhqrgi8",
+      "title": "DIS-KNEEEE day 🏰💫 #disney #disneylandparis #disneyland #disknee #disneyparks",
+      "channel": "Travelcircus",
+      "publishedAt": "2026-06-03T10:13:11Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/HKEBGhqrgi8/mqdefault.jpg",
+      "viewCount": 1485,
+      "url": "https://www.youtube.com/watch?v=HKEBGhqrgi8",
+      "summary": "A playful take on knee pain after a full day at Disneyland Paris."
+    },
+    {
+      "videoId": "sLejI6iMgAs",
+      "title": "Disney Parks Kanpur 👏 #disneyparks #ytshorts #explore #youtubeshorts",
+      "channel": "Sachin Gupta",
+      "publishedAt": "2026-06-03T07:44:28Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/sLejI6iMgAs/mqdefault.jpg",
+      "viewCount": 1292,
+      "url": "https://www.youtube.com/watch?v=sLejI6iMgAs",
+      "summary": "A short video about Disney Parks, tagged with Kanpur, India."
+    },
+    {
+      "videoId": "pMGXqL2e434",
+      "title": "Incredicoaster with Ray band metas #disney #incredicoster #rides #disneyland",
+      "channel": "Haeberli Films",
+      "publishedAt": "2026-06-03T05:00:37Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/pMGXqL2e434/mqdefault.jpg",
+      "viewCount": 1060,
+      "url": "https://www.youtube.com/watch?v=pMGXqL2e434",
+      "summary": "A rider films the Incredicoaster experience using Ray-Ban smart glasses."
+    },
+    {
+      "videoId": "xorNZNB0kNc",
+      "title": "#disney #disneyland #disney100 #disneyparks #chip #dale #chipanddale #hug #dca",
+      "channel": "ねでさんぽ〜Take a walk with Nede🐿〜",
+      "publishedAt": "2026-06-03T07:40:20Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/xorNZNB0kNc/mqdefault.jpg",
+      "viewCount": 1058,
+      "url": "https://www.youtube.com/watch?v=xorNZNB0kNc",
+      "summary": "A guest captures a hug with Chip and Dale characters at Disney California Adventure."
+    }
+  ],
+  "updatedAt": "2026-06-03T15:26:13.235Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-06-03T15:26:13.235Z",
+    "tokens": {
+      "input": 12374,
+      "output": 5542,
+      "costUsd": 0.1203
+    }
+  }
+}
