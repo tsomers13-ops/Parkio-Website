@@ -1,0 +1,316 @@
+{
+  "title": "Parkio Daily for June 6, 2026",
+  "slug": "parkio-daily-2026-06-06",
+  "date": "2026-06-06",
+  "teaser": "Tomorrowland towers demolished at Magic Kingdom; baby giraffe debuts soon at Animal Kingdom; Bullseye popcorn bucket lands at Disneyland.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Space Mountain",
+        "parkSlug": "magic-kingdom",
+        "note": "Tomorrowland construction wrapping — waits lowest before 10am"
+      },
+      {
+        "name": "Kilimanjaro Safaris",
+        "parkSlug": "animal-kingdom",
+        "note": "New baby giraffe joining herd soon — animals most active early"
+      },
+      {
+        "name": "Haunted Mansion",
+        "parkSlug": "disneyland",
+        "note": "Running smoothly after yesterday's evacuation incident"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [],
+    "bignews": [
+      {
+        "title": "Tomorrowland towers demolished at Magic Kingdom",
+        "body": "The 1994 towers that flanked Tomorrowland's entrance have been torn down, marking the next phase of the land's ongoing refresh. Steel removal is complete and the area remains walled off.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/06/we-can-no-longer-assist-you-guests-told-to-evacuate-themselves-from-haunted-mansion-at-disneyland-in-todays-daily-recap-for-06-05-2026/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Tomorrowland walkways tend to narrow near construction zones, slowing foot traffic mid-morning. Routing through Main Street or via the Storybook Circus bridge usually moves faster until walls come down."
+        }
+      },
+      {
+        "title": "Baby giraffe to debut at Animal Kingdom soon",
+        "body": "Disney named the park's newest giraffe calf and announced it will join the Kilimanjaro Safaris herd in the coming days. The calf was born recently and has been bonding behind the scenes.",
+        "parkSlug": "animal-kingdom",
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/06/05/baby-animal-alert-a-new-baby-giraffe-will-make-its-animal-kingdom-debut-soon/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Kilimanjaro Safaris tends to see heavier waits once the calf debuts, especially in the first week. Riding within the first hour of park opening usually offers the best sightings and shortest lines."
+        }
+      },
+      {
+        "title": "Monstropolis construction advances at Hollywood Studios",
+        "body": "Steel structures for the Monsters, Inc. land are now visible behind walls at Hollywood Studios. Disney shared the backstory explaining how humans are being invited into the monster world as part of the land's narrative framework.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/monsters-inc-land-monstropolis-walt-disney-world/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Construction noise near Animation Courtyard tends to peak mid-morning and early afternoon. Dining or indoor attractions in other areas of the park usually provide quieter breaks until walls shift."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "Haunted Mansion guests told to self-evacuate at Disneyland",
+        "body": "Visitors aboard Haunted Mansion yesterday were instructed to evacuate themselves after a stoppage, with cast members unable to assist. The unusual incident drew attention on social media and the ride reopened later in the day.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/06/we-can-no-longer-assist-you-guests-told-to-evacuate-themselves-from-haunted-mansion-at-disneyland-in-todays-daily-recap-for-06-05-2026/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Haunted Mansion waits tend to spike after any downtime as guests return. Checking the app for a short queue in the late afternoon or evening usually avoids the post-incident backlog."
+        }
+      },
+      {
+        "title": "Toy Story Bullseye popcorn bucket arrives at Disneyland",
+        "body": "A new Bullseye-themed popcorn bucket shaped like Woody's horse is now available at Disneyland Resort. The sculpted bucket joins the rotating lineup of collectible containers.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "AllEars.Net",
+          "url": "https://allears.net/2026/06/05/were-obsessed-with-this-new-disney-popcorn-bucket/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Character-themed popcorn buckets often sell out at flagship carts by early afternoon. Stopping at a cart near the park entrance or in Frontierland before 11am usually secures availability."
+        }
+      },
+      {
+        "title": "Disney Dining Plans gain customization for 2027",
+        "body": "Starting with 2027 vacations, Walt Disney World's Dining Plans will offer more flexible options, including the new Deluxe tier. Disney outlined how guests can tailor meal credits across quick-service, table-service, and snack options.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/how-to-use-a-dining-plan-at-walt-disney-world/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Booking dining reservations early tends to maximize plan value, especially for signature restaurants. Reservations open 60 days out and popular slots often fill within the first week."
+        }
+      },
+      {
+        "title": "Halloween 2026 details released for Disneyland",
+        "body": "Disneyland announced its fall lineup, including Halloween overlays, themed merchandise, and seasonal treats. The celebration kicks off later this summer and runs through October.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/dlr/halloween-and-fall-celebrations-at-disneyland/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "September weekdays tend to offer lighter crowds before Halloween season peaks. Visiting before mid-October usually means shorter waits for overlay attractions like Haunted Mansion Holiday."
+        }
+      },
+      {
+        "title": "MagicBands fading at Walt Disney World and Disneyland",
+        "body": "MagicBand availability continues to decline at both resorts, with MagicBand+ nearly discontinued at Disneyland and reduced support at Walt Disney World. Guests increasingly rely on phones for park entry and payments.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/the-writing-is-on-the-wall-for-magicbands-at-disney/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Charging stations and battery packs tend to be in higher demand as phone reliance grows. Bringing a portable charger usually prevents midday lockouts from depleted devices."
+        }
+      },
+      {
+        "title": "Cool Kids' Summer snacks under ten dollars at Walt Disney World",
+        "body": "Disney highlighted affordable seasonal treats across Walt Disney World, all priced under ten dollars and tied to the Cool Kids' Summer event. Options include sips, sweets, and savory bites at various quick-service locations.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/cool-kids-summer-snacks-under-10-dollars/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Quick-service lines for seasonal snacks tend to grow during lunch and early afternoon. Grabbing treats mid-morning or after 3pm usually avoids peak wait times at counters."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Disney Springs location blocked off without explanation",
+        "body": "Another retail space at Disney Springs has been walled off with no official announcement. The closure follows several recent changes to the shopping and dining district.",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/06/another-disney-springs-shopping-location-just-got-blocked-off-without-explanation-el1/"
+        }
+      },
+      {
+        "title": "Father's Day and Finding Dory pins released online",
+        "body": "Disney Store launched a limited-release Ariel and Triton Father's Day pin alongside a Finding Dory 10th anniversary pin this week. Both are available while supplies last.",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/06/ariel-and-triton-fathers-day-pin-and-finding-dory-10th-anniversary-pin-released-online/"
+        }
+      },
+      {
+        "title": "Jedi lightsaber storage box now at Galaxy's Edge",
+        "body": "A decorative wood-tone lightsaber box is available at Disneyland's Star Wars land and on backorder at Disney Store online. The box features geometric detailing and ships later this month.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/06/jedi-star-wars-lightsaber-box-now-available-at-disneyland/"
+        }
+      },
+      {
+        "title": "Winnie the Pooh dazzle keychains arrive at Disneyland",
+        "body": "New gem-studded keychains featuring Winnie the Pooh, Minnie Mouse, and Marie from The Aristocats are now sold at Disneyland Resort. Each keychain is priced at fourteen ninety-nine.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/06/winnie-the-pooh-minnie-and-marie-dazzle-keychains-arrive-at-the-disneyland-resort/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "Celebrate Soulfully kicks off June 19 at Disneyland",
+        "body": "Disneyland's summer celebration of Black heritage and culture begins June 19 and runs through July 19. The event features music, food, and art, including a Pineapple Upside Down Bundt Cake recipe from Plaza Inn that Disney shared this week.",
+        "parkSlug": "disneyland",
+        "ctaLabel": "Plan your visit",
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Limited-time cultural events tend to draw guests during evening hours when entertainment peaks. Arriving for early afternoon food offerings usually means shorter lines before dinner crowds build."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "hjK367n5Tb0",
+      "title": "Disney's Magic Kingdom 2026 | Park Update: New Food,Big Thunder & Toy Story Show | Walt Disney World",
+      "channel": "Paging Mr. Morrow",
+      "publishedAt": "2026-06-04T14:29:39Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/hjK367n5Tb0/mqdefault.jpg",
+      "viewCount": 82818,
+      "url": "https://www.youtube.com/watch?v=hjK367n5Tb0",
+      "summary": "Paging Mr. Morrow walks through Magic Kingdom covering new food offerings, Big Thunder Mountain updates, and the Toy Story show."
+    },
+    {
+      "videoId": "2YAHjCNgjRA",
+      "title": "🔴Live Magic Kingdom All Day Friday Rides Parades and Fireworks at Walt Disney World 6/5/2026",
+      "channel": "RON ON THE GO",
+      "publishedAt": "2026-06-06T04:02:25Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/2YAHjCNgjRA/mqdefault.jpg",
+      "viewCount": 44004,
+      "url": "https://www.youtube.com/watch?v=2YAHjCNgjRA",
+      "summary": "Ron streams a full day at Magic Kingdom, capturing rides, parades, and the fireworks show."
+    },
+    {
+      "videoId": "yDvnL1jxx2w",
+      "title": "Ultimate Guide to Happy Hour in Disney Springs: Best Food & Drinks | Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-06-03T15:30:37Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/yDvnL1jxx2w/mqdefault.jpg",
+      "viewCount": 28507,
+      "url": "https://www.youtube.com/watch?v=yDvnL1jxx2w",
+      "summary": "WrightDownMainStreet reviews the best food and drink options during happy hour at Disney Springs locations."
+    },
+    {
+      "videoId": "gLvpAemNZtc",
+      "title": "Il cibo più piccolo di Disneyland ? 😱🍚",
+      "channel": "Mago della Conoscenza",
+      "publishedAt": "2026-06-06T08:00:11Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/gLvpAemNZtc/mqdefault.jpg",
+      "viewCount": 19788,
+      "url": "https://www.youtube.com/watch?v=gLvpAemNZtc",
+      "summary": "Mago della Conoscenza explores unusually small food items available at Disneyland."
+    },
+    {
+      "videoId": "OwWd2lAZzOg",
+      "title": "【速報】シーのチケット品切れでランドも激混み⁉️ディズニーランド最新混雑状況【2026.6.6】",
+      "channel": "ジョマジのディズニー研究所",
+      "publishedAt": "2026-06-06T04:46:54Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/OwWd2lAZzOg/mqdefault.jpg",
+      "viewCount": 2571,
+      "url": "https://www.youtube.com/watch?v=OwWd2lAZzOg",
+      "summary": "ジョマジのディズニー研究所 reports on Tokyo Disneyland crowd levels following DisneySea ticket sellouts."
+    },
+    {
+      "videoId": "xB4c3RomwoM",
+      "title": "Neymar, bruna & Mavie & Disney land🇧🇷 #neymar #shortvideo",
+      "channel": "Neymar jr, & Mavie Fan",
+      "publishedAt": "2026-06-06T08:33:55Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/xB4c3RomwoM/mqdefault.jpg",
+      "viewCount": 1350,
+      "url": "https://www.youtube.com/watch?v=xB4c3RomwoM",
+      "summary": "A fan channel shares footage of Neymar and family visiting Disneyland."
+    },
+    {
+      "videoId": "NfG3Hg6kYqo",
+      "title": "子どもも大人も夢中になる理由",
+      "channel": "tdr.ch_disco",
+      "publishedAt": "2026-06-06T03:29:06Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/NfG3Hg6kYqo/mqdefault.jpg",
+      "viewCount": 1169,
+      "url": "https://www.youtube.com/watch?v=NfG3Hg6kYqo",
+      "summary": "tdr.ch_disco discusses why Tokyo Disney Resort appeals to both children and adults."
+    },
+    {
+      "videoId": "aTr8lkOm5GQ",
+      "title": "packed up and ready to go!!! #disney #disneyland #pack... #Shorts #alainapastro",
+      "channel": "Alaina Pastro",
+      "publishedAt": "2026-06-06T05:57:11Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/aTr8lkOm5GQ/mqdefault.jpg",
+      "viewCount": 1089,
+      "url": "https://www.youtube.com/watch?v=aTr8lkOm5GQ",
+      "summary": "Alaina Pastro shares her packing process ahead of a Disneyland trip."
+    },
+    {
+      "videoId": "ZFj57oT_UqA",
+      "title": "#shootinggames #disney #disneyland #tokyo #explore #love#fypシ゚viral #fyp",
+      "channel": "Our Stories",
+      "publishedAt": "2026-06-06T07:14:26Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/ZFj57oT_UqA/mqdefault.jpg",
+      "viewCount": 1048,
+      "url": "https://www.youtube.com/watch?v=ZFj57oT_UqA",
+      "summary": "Our Stories features shooting game attractions at Tokyo Disneyland."
+    },
+    {
+      "videoId": "9DHVWPVVa6I",
+      "title": "Disney was great 🌝🤰🏻",
+      "channel": "Ban Ahmed",
+      "publishedAt": "2026-06-06T04:26:31Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/9DHVWPVVa6I/mqdefault.jpg",
+      "viewCount": 1043,
+      "url": "https://www.youtube.com/watch?v=9DHVWPVVa6I",
+      "summary": "Ban Ahmed shares highlights from a recent Disney park visit."
+    }
+  ],
+  "updatedAt": "2026-06-06T12:04:53.585Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-06-06T12:04:53.585Z",
+    "tokens": {
+      "input": 12216,
+      "output": 5060,
+      "costUsd": 0.1125
+    }
+  }
+}
