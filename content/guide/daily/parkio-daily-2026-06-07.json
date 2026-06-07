@@ -1,0 +1,348 @@
+{
+  "title": "Parkio Daily for June 7, 2026",
+  "slug": "parkio-daily-2026-06-07",
+  "date": "2026-06-07",
+  "teaser": "Polynesian bus depot opens; Mickey and Minnie debut Halloween costumes; donut flights land in Disney Springs.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Soarin'",
+        "parkSlug": "epcot",
+        "note": "Posted 35-minute wait at 9am, typically low before 11am"
+      },
+      {
+        "name": "Big Thunder Mountain",
+        "parkSlug": "magic-kingdom",
+        "note": "Recently reopened, drawing moderate crowds mid-morning"
+      },
+      {
+        "name": "Muppet*Vision 3D",
+        "parkSlug": "hollywood-studios",
+        "note": "Wait times climbing as nostalgia drives repeat visits"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [],
+    "bignews": [
+      {
+        "title": "Polynesian Village bus depot now complete",
+        "body": "The new bus station beneath the monorail beam at Disney's Polynesian Village Resort finished construction this week. Walls are down and furniture is in place, though the depot has not yet opened for guest use.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/06/disneys-polynesian-village-resort-bus-depot-construction-complete-not-open-yet/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Once operational, this depot may offer faster loading than the old stops during morning park opening windows. Monitor resort signage for the official start date."
+        }
+      },
+      {
+        "title": "Mickey and Minnie get Halloween costumes for Disneyland",
+        "body": "Disneyland shared preview images of new Halloween outfits for Mickey and Minnie Mouse debuting during the fall season this year. The makeover arrives as part of the resort's 2026 Halloween celebration plans.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/06/mickey-and-minnie-mouse-debut-outfits-for-halloween-at-disneyland-california-jc1/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Character meet queues tend to spike in the first week after costume debuts. Visiting during the second or third week of the season usually offers shorter waits for photos."
+        }
+      },
+      {
+        "title": "Donut flights debut at Disney Springs",
+        "body": "A new mocktail donut flight platter is now available at Amorette's Patisserie in Disney Springs. Early reviews praise the pairing concept, though some flavors landed better than others.",
+        "parkSlug": null,
+        "source": {
+          "label": "AllEars.Net",
+          "url": "https://allears.net/2026/06/06/review-donut-flights-have-landed-in-disney-springs-and-were-going-to-need-100/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Amorette's display cases tend to run low on signature items after 3pm. Stopping by mid-morning or early afternoon often ensures the full flight selection is available."
+        }
+      },
+      {
+        "title": "Rare character costumes appear at DVC events",
+        "body": "Disney Vacation Club member gatherings have introduced seldom-seen character outfits not regularly available in the parks. The appearances mark a shift in how DVC activates member perks.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/new-character-costumes-debut-at-disneys-best-kept-secret/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "DVC events are typically smaller and less crowded than in-park meet-and-greets. Members attending may find shorter photo lines and longer interaction windows."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "Stitch merchandise released for 626 Day",
+        "body": "Two new Lilo and Stitch items dropped at Disneyland this week in time for June 26 (6/26), the annual fan holiday celebrating Experiment 626. A Laundry Hero plush and companion piece are both in stock.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/06/celebrate-626-day-with-new-stitch-plush-and-more-now-available-at-disneyland/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Limited-edition Stitch drops often sell out within 48 hours at Disneyland stores. Checking World of Disney or Emporium early in the day may secure inventory before it moves online-only."
+        }
+      },
+      {
+        "title": "Country Bears spotted at EPCOT for character appearances",
+        "body": "Guests reported seeing Country Bear characters greeting in EPCOT this week, an unusual placement for the typically Magic Kingdom-based group. The appearances have not been officially announced.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/06/06/youll-never-guess-which-4-characters-we-saw-at-epcot-and-now-were-questioning-everything/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Unscheduled character appearances tend to draw smaller crowds than advertised meets. If you spot the Bears in World Showcase, photo queues may be shorter than usual."
+        }
+      },
+      {
+        "title": "Pastel Walt Disney World apparel arrives at resorts",
+        "body": "Yellow and pink pastel sweatshirts and tank tops bearing the Walt Disney World logo are now in stock at Riverside Depot in Animal Kingdom and Keystone Clothiers in Hollywood Studios.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/06/pastel-walt-disney-world-sweatshirt-and-tank-top-at-disneys-animal-kingdom/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "New apparel designs often vanish from shelves within a week. Grabbing the item on your first park day typically avoids a sold-out situation later in your trip."
+        }
+      },
+      {
+        "title": "Earl of Sandwich construction shows interior lighting in Downtown Disney",
+        "body": "Patio furniture and interior fixtures are now visible inside the upcoming Earl of Sandwich and Gordon Ramsay Carnaby location at Downtown Disney. Exterior facade work is nearly complete.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/06/patio-furniture-interior-lighting-visible-at-earl-of-sandwich-the-carnaby-in-downtown-disney/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "New dining locations often soft-open without much notice. Checking the Downtown Disney directory board daily may catch an early preview window before the official opening rush."
+        }
+      },
+      {
+        "title": "Star Wars racing apparel and Mandalorian gear arrive at Disneyland",
+        "body": "A collection of Star Wars racing-themed sweatshirts and a Mandalorian gauntlet-and-shield set are now on shelves at Disneyland Resort, matching items previously released online and at Walt Disney World.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/06/star-wars-racing-apparel-mandalorian-gauntlet-and-shield-disneyland/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Star Wars merchandise tends to move fastest at Galaxy's Edge shops. Stopping by Dok-Ondar's before noon usually ensures the widest selection before popular sizes sell out."
+        }
+      },
+      {
+        "title": "Tomorrowland quietly continues aesthetic refresh at Magic Kingdom",
+        "body": "Imagineering has been steadily updating Tomorrowland signage, color schemes, and landscaping over the past year to move away from dated design elements. The changes are ongoing but not widely advertised.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-worlds-stealth-tomorrowland-transformation/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Construction scaffolding and paint crews tend to be most visible in Tomorrowland mornings before 11am. Scheduling your visit to this land after lunch often avoids the bulk of the work zones."
+        }
+      },
+      {
+        "title": "Japan Pavilion bread selection draws positive reviews at EPCOT",
+        "body": "A recently expanded bread counter at the Japan Pavilion in EPCOT World Showcase has earned strong guest feedback for quality and variety, adding a new quick-service option to the pavilion.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "AllEars.Net",
+          "url": "https://allears.net/2026/06/06/review-why-were-running-to-epcots-japan-pavilion-for-bread/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Freshly baked items in World Showcase often sell out by mid-afternoon. Grabbing bread at the Japan Pavilion during your morning loop usually ensures the best selection."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Monstropolis construction continues at Hollywood Studios",
+        "body": "Steel framework is rising behind walls at the new Monsters Inc. land under construction at Disney's Hollywood Studios. The Disney Parks Blog shared progress photos showing vertical work on multiple structures.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/monsters-inc-land-monstropolis-walt-disney-world/"
+        }
+      },
+      {
+        "title": "Alaska Airlines unveils Toy Story 5 themed plane",
+        "body": "Alaska Airlines partnered with Disney to wrap one aircraft in Toy Story 5 livery ahead of the film's release. The plane is now in service on select routes.",
+        "parkSlug": null,
+        "source": {
+          "label": "AllEars.Net",
+          "url": "https://allears.net/2026/06/06/why-every-disney-fan-will-be-booking-an-alaska-airlines-flight/"
+        }
+      },
+      {
+        "title": "Disneyland Halloween details announced for fall 2026",
+        "body": "The Disney Parks Blog published a full rundown of Halloween and fall programming coming to Disneyland Resort this year, including ride overlays, seasonal merchandise, and themed food items.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/dlr/halloween-and-fall-celebrations-at-disneyland/"
+        }
+      },
+      {
+        "title": "MagicBands continue slow decline at Disneyland and Walt Disney World",
+        "body": "Usage and availability of MagicBand wearables have dropped steadily over the past few years, with Disneyland seeing particularly low adoption and Walt Disney World scaling back inventory.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/the-writing-is-on-the-wall-for-magicbands-at-disney/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "Bluey's Wild World opens at Animal Kingdom this month",
+        "body": "Bluey, Bingo, and Australian wildlife arrive at Disney's Animal Kingdom on May 26 as part of the Cool Kids Summer programming. The experience includes character meet-and-greets and themed activities that will run beyond the summer season.",
+        "parkSlug": "animal-kingdom",
+        "ctaLabel": "Read the full Bluey guide",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/everything-you-need-to-know-about-bluey-at-disneys-animal-kingdom/"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "New character experiences tend to draw families with young children, especially during morning hours. Animal Kingdom's Discovery Island may see heavier foot traffic between 10am and noon while Bluey meet times are active."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "hjK367n5Tb0",
+      "title": "Disney's Magic Kingdom 2026 | Park Update: New Food,Big Thunder & Toy Story Show | Walt Disney World",
+      "channel": "Paging Mr. Morrow",
+      "publishedAt": "2026-06-04T14:29:39Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/hjK367n5Tb0/mqdefault.jpg",
+      "viewCount": 99413,
+      "url": "https://www.youtube.com/watch?v=hjK367n5Tb0",
+      "summary": "Paging Mr. Morrow tours Magic Kingdom to cover new food offerings, the recently reopened Big Thunder Mountain, and the debut of a Toy Story stage show."
+    },
+    {
+      "videoId": "yDvnL1jxx2w",
+      "title": "Ultimate Guide to Happy Hour in Disney Springs: Best Food & Drinks | Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-06-03T15:30:37Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/yDvnL1jxx2w/mqdefault.jpg",
+      "viewCount": 31249,
+      "url": "https://www.youtube.com/watch?v=yDvnL1jxx2w",
+      "summary": "WrightDownMainStreet walks through the top happy hour deals at Disney Springs restaurants, highlighting discounted food and drink menus."
+    },
+    {
+      "videoId": "nV4qKGN5H1E",
+      "title": "🔴 Watch Live At Disneyland For Some Night Time Fun And Fireworks 6-06-2026",
+      "channel": "ROPE DROP NATION",
+      "publishedAt": "2026-06-07T07:31:49Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/nV4qKGN5H1E/mqdefault.jpg",
+      "viewCount": 2563,
+      "url": "https://www.youtube.com/watch?v=nV4qKGN5H1E",
+      "summary": "ROPE DROP NATION streams a live evening session at Disneyland, featuring nighttime entertainment and the fireworks show."
+    },
+    {
+      "videoId": "q4YuMID2Wtc",
+      "title": "Disney's Sword Picked a New Hero 👑 #curiosidades #disney #disneyland",
+      "channel": "Solo Ambition",
+      "publishedAt": "2026-06-07T04:49:12Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/q4YuMID2Wtc/mqdefault.jpg",
+      "viewCount": 1472,
+      "url": "https://www.youtube.com/watch?v=q4YuMID2Wtc",
+      "summary": "Solo Ambition shares a short clip about a guest successfully pulling the sword in the stone at Disneyland."
+    },
+    {
+      "videoId": "KkbPdwKMntE",
+      "title": "Vietnam Disneyland 🏰🐠🌸",
+      "channel": "BlushnChaos",
+      "publishedAt": "2026-06-07T09:36:15Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/KkbPdwKMntE/mqdefault.jpg",
+      "viewCount": 1377,
+      "url": "https://www.youtube.com/watch?v=KkbPdwKMntE",
+      "summary": "BlushnChaos posts footage from a Vietnam theme park that incorporates Disney-inspired elements and designs."
+    },
+    {
+      "videoId": "6un7PCBwu-k",
+      "title": "【ディズニーランド】ヴァネパル　エンドダンサーさん　2026年6月　#イッツアスウィーツフルタイム",
+      "channel": "I love Hawaii",
+      "publishedAt": "2026-06-07T08:00:36Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/6un7PCBwu-k/mqdefault.jpg",
+      "viewCount": 1341,
+      "url": "https://www.youtube.com/watch?v=6un7PCBwu-k",
+      "summary": "I love Hawaii captures a June 2026 performance of the It's a Sweetsful Time show at Tokyo Disneyland, focusing on one of the dancers."
+    },
+    {
+      "videoId": "mpanUhMvLSw",
+      "title": "ディズニーが「夢の国」を辞めた日 #ディズニー #ディズニーランド #ディスニーシー #オリエンタルランド",
+      "channel": "Japan is wonderful!!",
+      "publishedAt": "2026-06-07T09:00:18Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/mpanUhMvLSw/mqdefault.jpg",
+      "viewCount": 1256,
+      "url": "https://www.youtube.com/watch?v=mpanUhMvLSw",
+      "summary": "Japan is wonderful!! discusses a moment when Tokyo Disney parks shifted away from traditional branding or messaging, based on the video title."
+    },
+    {
+      "videoId": "WzLLiDI1SEo",
+      "title": "#disney #disneyland #disneyparks #waltdisneyworld #disneycruise #donald #daisy #disneyplus",
+      "channel": "ねでさんぽ〜Take a walk with Nede🐿〜",
+      "publishedAt": "2026-06-07T10:07:32Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/WzLLiDI1SEo/mqdefault.jpg",
+      "viewCount": 1130,
+      "url": "https://www.youtube.com/watch?v=WzLLiDI1SEo",
+      "summary": "Nede posts a walk-around video featuring Donald and Daisy Duck characters at a Disney park or cruise experience."
+    },
+    {
+      "videoId": "cNpgEPXotnY",
+      "title": "Star Tours!!! #disney #disneyland  #starwars",
+      "channel": "disneyxsiempre",
+      "publishedAt": "2026-06-07T05:07:48Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/cNpgEPXotnY/mqdefault.jpg",
+      "viewCount": 1106,
+      "url": "https://www.youtube.com/watch?v=cNpgEPXotnY",
+      "summary": "disneyxsiempre shares a ride-through or queue experience from the Star Tours attraction at Disneyland."
+    },
+    {
+      "videoId": "eqBRjlbuKnI",
+      "title": "It's a Sweetsful Time! #ディズニーダンサー #イッツアスイーツフルタイム　#ディズニーランド　#disneyland #disney #ヴァネパル　#shoets",
+      "channel": "あつの週末ディズニーチャンネル",
+      "publishedAt": "2026-06-07T06:00:11Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/eqBRjlbuKnI/mqdefault.jpg",
+      "viewCount": 1046,
+      "url": "https://www.youtube.com/watch?v=eqBRjlbuKnI",
+      "summary": "This channel posts a short clip of dancers performing in the It's a Sweetsful Time show at Tokyo Disneyland."
+    }
+  ],
+  "updatedAt": "2026-06-07T12:16:57.220Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-06-07T12:16:57.220Z",
+    "tokens": {
+      "input": 12386,
+      "output": 5580,
+      "costUsd": 0.1209
+    }
+  }
+}
