@@ -1,0 +1,332 @@
+{
+  "title": "Parkio Daily for June 9, 2026",
+  "slug": "parkio-daily-2026-06-09",
+  "date": "2026-06-09",
+  "teaser": "Disneyland drops its 11am park hopping rule today; La Poutinerie opens June 13 at EPCOT; Magic Kingdom food trucks now gone.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Big Thunder Mountain Railroad",
+        "parkSlug": "magic-kingdom",
+        "note": "Moat refill complete, Tomorrowland is quieter"
+      },
+      {
+        "name": "Soarin'",
+        "parkSlug": "epcot",
+        "note": "Canada pavilion renovation wrapping up"
+      },
+      {
+        "name": "Rise of the Resistance",
+        "parkSlug": "hollywood-studios",
+        "note": "Monstropolis construction noise is mid-morning only"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [
+      {
+        "title": "Disneyland removes 11am park hopping restriction",
+        "body": "Starting today, guests with Park Hopper tickets can switch between Disneyland and California Adventure at any time. The pandemic-era rule that held hoppers until 11am is officially gone.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/06/disneyland-removes-11-am-park-hopping-restriction/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Rope-drop one park, then hop as early as 10am if crowds feel heavy. This flexibility tends to work best on days when Disneyland opens before California Adventure."
+        }
+      }
+    ],
+    "bignews": [
+      {
+        "title": "La Poutinerie debuts June 13 at EPCOT",
+        "body": "The reimagined Canadian quick-service location opens Friday with poutine bowls, sandwiches, and desserts. Full menu and pricing have been released.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-world-announces-la-poutinerie-opening-date-full-menu-food-photos-prices-for-epcot-eatery/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Opening-week lines for new dining locations tend to peak between noon and 2pm. A late-afternoon stop around 4pm usually cuts your wait."
+        }
+      },
+      {
+        "title": "Magic Kingdom moat refilled after castle makeover",
+        "body": "The water around Cinderella Castle has been restored, marking the unofficial end of the multi-month refurbishment. New landscaping and pathways are now visible.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/magic-kingdom-moat-refilled-concluding-superb-cinderella-castle-makeover-project/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Photo spots around the hub tend to be least crowded during the first hour after rope drop and again after 8pm. Mid-afternoon sun creates harsh shadows."
+        }
+      },
+      {
+        "title": "Disney Springs food trucks permanently closed",
+        "body": "Three mobile food vendors have been removed from Disney Springs. The trucks were a fixture near the parking garages for several years.",
+        "parkSlug": null,
+        "source": {
+          "label": "AllEars.Net",
+          "url": "https://allears.net/2026/06/08/disney-springs-food-trucks-disappear/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Quick-bite options near the garages are now limited. Plan a stop at one of the indoor quick-service spots if you're short on time between shopping and dinner."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "Kendi the rhino undergoes successful eye surgery",
+        "body": "The 27-year-old white rhino at Animal Kingdom received treatment for cataracts and has regained her sight. Disney's animal care team caught the cloudiness early during routine observation.",
+        "parkSlug": "animal-kingdom",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/kendi-the-white-rhino-at-disneys-animal-kingdom/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Guests on Kilimanjaro Safaris in the morning often see rhinos near the water feature. Ask a cast member at the loading area which vehicle rows offer the best sightlines."
+        }
+      },
+      {
+        "title": "Monstropolis construction progressing at Hollywood Studios",
+        "body": "Steel frameworks are rising behind the walls where the Monsters Inc. land is taking shape. Disney released new details and images of the ongoing build.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/monsters-inc-land-monstropolis-walt-disney-world/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Construction noise near Sunset Boulevard tends to be loudest between 10am and 1pm. If you're planning a table-service lunch nearby, request a table away from the windows."
+        }
+      },
+      {
+        "title": "27 Walt Disney World restaurant menus updated",
+        "body": "Locations including Morimoto Asia and Sunshine Seasons rolled out menu changes this week. Pricing and dish offerings have shifted at quick-service and table-service spots across the resort.",
+        "parkSlug": null,
+        "source": {
+          "label": "AllEars.Net",
+          "url": "https://allears.net/2026/06/08/morimoto-asia-sunshine-seasons-and-25-more-disney-world-restaurants-changed-this-week/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Menu refreshes often include limited-time items that disappear within a few weeks. If something catches your eye, try it early in your trip rather than saving it for the last day."
+        }
+      },
+      {
+        "title": "New chicken tender bowls debut at Magic Kingdom",
+        "body": "A fresh snack lineup featuring tater tot and chicken tender combinations has launched at quick-service locations in the park and at the Grand Floridian.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/06/08/new-chicken-tender-alert-find-out-where-to-get-magic-kingdoms-newest-snack/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Quick-service counter lines tend to spike right before parades and fireworks. Ordering 30 minutes before showtime usually keeps your wait under 10 minutes."
+        }
+      },
+      {
+        "title": "Polynesian Resort construction reaches new milestone",
+        "body": "The reimagined arrival experience, including rerouted bus lanes and vehicle entrances, is nearing completion. Work around the resort continues but major progress is visible.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-world-makes-major-construction-progress-at-polynesian-resort-but-big-impacts-are-ongoing/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Bus drop-off and pickup areas may still have temporary signage and detours. Allow an extra 5 minutes when navigating the resort during your stay."
+        }
+      },
+      {
+        "title": "Toy Story 5 mystery pin set arrives at California Adventure",
+        "body": "A new collectible pin series inspired by the upcoming film launched at the park. Each blind box features characters in social-media-style designs.",
+        "parkSlug": "california-adventure",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/06/toy-story-5-mystery-pin-set-arrives-at-disney-california-adventure/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Limited-edition pins tied to new releases often sell out at flagship stores within days. Check Elias & Co. near the main entrance first thing if you're collecting."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Donald and Daisy Duck appear at EPCOT Passholder event",
+        "body": "The characters are scheduled for select appearances during the V.I.PASSHOLDER Summer Days celebration at EPCOT. The lounge inside Restaurant Marrakesh and exclusive merchandise are also part of the event.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/06/donald-daisy-duck-disney-world-vipassholder-event-th1/"
+        }
+      },
+      {
+        "title": "Father's Day gift guide released by Disney",
+        "body": "The official Disney Parks Blog shared a curated list of merchandise spanning Toy Story, Star Wars, and Marvel themes. Items are available online and in park shops.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/products/fathers-day-gifts-for-disney-fans/"
+        }
+      },
+      {
+        "title": "Cool Kids Summer snacks under ten dollars announced",
+        "body": "Disney highlighted budget-friendly treats available during the summer event at Walt Disney World. Options include sweets and savory bites across the parks.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/cool-kids-summer-snacks-under-10-dollars/"
+        }
+      },
+      {
+        "title": "Disneyland Halloween celebration details unveiled",
+        "body": "The resort announced dates and offerings for the 2026 Halloween season, including ride overlays, themed merchandise, and seasonal food. The celebration begins later this summer.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/dlr/halloween-and-fall-celebrations-at-disneyland/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "Bluey's Wild World settling into Animal Kingdom",
+        "body": "The new character experience launched May 26 and continues beyond summer. Guests can meet Bluey and Bingo and explore themed activities celebrating Australian wildlife.",
+        "parkSlug": "animal-kingdom",
+        "ctaLabel": "Plan your visit",
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "Character meet queues for new experiences often stretch longest between 11am and 3pm. Arriving right at park opening or after 5pm usually cuts your wait by half."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "hjK367n5Tb0",
+      "title": "Disney's Magic Kingdom 2026 | Park Update: New Food,Big Thunder & Toy Story Show | Walt Disney World",
+      "channel": "Paging Mr. Morrow",
+      "publishedAt": "2026-06-04T14:29:39Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/hjK367n5Tb0/mqdefault.jpg",
+      "viewCount": 120645,
+      "url": "https://www.youtube.com/watch?v=hjK367n5Tb0",
+      "summary": "Paging Mr. Morrow covers recent changes at Magic Kingdom, including new food offerings, Big Thunder Mountain updates, and the Toy Story show."
+    },
+    {
+      "videoId": "yDvnL1jxx2w",
+      "title": "Ultimate Guide to Happy Hour in Disney Springs: Best Food & Drinks | Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-06-03T15:30:37Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/yDvnL1jxx2w/mqdefault.jpg",
+      "viewCount": 34183,
+      "url": "https://www.youtube.com/watch?v=yDvnL1jxx2w",
+      "summary": "WrightDownMainStreet tours happy-hour specials across Disney Springs restaurants, highlighting food and drink deals."
+    },
+    {
+      "videoId": "j1nhLXLSKC0",
+      "title": "Disney Food Challenge: Eating the Best Gluten Free Food in Hollywood Studios for a Day!",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-06-07T15:29:37Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/j1nhLXLSKC0/mqdefault.jpg",
+      "viewCount": 16754,
+      "url": "https://www.youtube.com/watch?v=j1nhLXLSKC0",
+      "summary": "WrightDownMainStreet samples gluten-free menu options throughout Hollywood Studios in a full-day food challenge."
+    },
+    {
+      "videoId": "uWjkcrAJgw8",
+      "title": "Funny Disney moments #disney #disneyparktour #disneyland #universalparks",
+      "channel": "Shanique Hughes",
+      "publishedAt": "2026-06-09T09:54:14Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/uWjkcrAJgw8/mqdefault.jpg",
+      "viewCount": 2111,
+      "url": "https://www.youtube.com/watch?v=uWjkcrAJgw8",
+      "summary": "Shanique Hughes shares humorous moments captured during Disney and Universal park visits."
+    },
+    {
+      "videoId": "aa5RFjzfLZU",
+      "title": "Disneyland princes #disney #shoertsvideo #shortsfeed",
+      "channel": "Disneyland princes",
+      "publishedAt": "2026-06-09T09:49:16Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/aa5RFjzfLZU/mqdefault.jpg",
+      "viewCount": 1252,
+      "url": "https://www.youtube.com/watch?v=aa5RFjzfLZU",
+      "summary": "A short video from Disneyland princes featuring Disney character content."
+    },
+    {
+      "videoId": "Kgf-8QUK3Wg",
+      "title": "It's a Sweetsful Time! #ディズニーダンサー #イッツアスイーツフルタイム　#ディズニーランド　#disneyland #disney #ヴァネパル　#shoets",
+      "channel": "あつの週末ディズニーチャンネル",
+      "publishedAt": "2026-06-09T06:00:01Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Kgf-8QUK3Wg/mqdefault.jpg",
+      "viewCount": 1218,
+      "url": "https://www.youtube.com/watch?v=Kgf-8QUK3Wg",
+      "summary": "A Japanese Disney channel showcases dancers performing at Tokyo Disneyland during the Sweetsful Time event."
+    },
+    {
+      "videoId": "UywPVWQZ7GU",
+      "title": "Funny Disney moments #disney #disneyparktour #disneyland #universalparks",
+      "channel": "Shanique Hughes",
+      "publishedAt": "2026-06-09T09:54:36Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/UywPVWQZ7GU/mqdefault.jpg",
+      "viewCount": 977,
+      "url": "https://www.youtube.com/watch?v=UywPVWQZ7GU",
+      "summary": "Another collection of funny moments from Shanique Hughes during Disney and Universal park tours."
+    },
+    {
+      "videoId": "-FpPySIkVdc",
+      "title": "Bimbi a Disneyland 🏰🐭✨",
+      "channel": "Roberto Crognale",
+      "publishedAt": "2026-06-09T10:22:03Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/-FpPySIkVdc/mqdefault.jpg",
+      "viewCount": 953,
+      "url": "https://www.youtube.com/watch?v=-FpPySIkVdc",
+      "summary": "Roberto Crognale shares a family visit to Disneyland featuring children enjoying the park."
+    },
+    {
+      "videoId": "mqItOwFADl4",
+      "title": "Let's go to Disney Disneyland!",
+      "channel": "Puppy Lover Fan",
+      "publishedAt": "2026-06-09T06:05:37Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/mqItOwFADl4/mqdefault.jpg",
+      "viewCount": 895,
+      "url": "https://www.youtube.com/watch?v=mqItOwFADl4",
+      "summary": "Puppy Lover Fan documents a Disneyland visit in this video."
+    },
+    {
+      "videoId": "3wRHiic2HT0",
+      "title": "NESSUNA ZANZARA A WALT DISNEY WORLD #disneysecrets #parchidivertimento #disneyland",
+      "channel": "Parks & Fun",
+      "publishedAt": "2026-06-09T10:00:37Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/3wRHiic2HT0/mqdefault.jpg",
+      "viewCount": 879,
+      "url": "https://www.youtube.com/watch?v=3wRHiic2HT0",
+      "summary": "Parks & Fun shares a Disney secret about mosquito control at Walt Disney World."
+    }
+  ],
+  "updatedAt": "2026-06-09T13:38:18.460Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-06-09T13:38:18.460Z",
+    "tokens": {
+      "input": 12076,
+      "output": 4942,
+      "costUsd": 0.1104
+    }
+  }
+}
