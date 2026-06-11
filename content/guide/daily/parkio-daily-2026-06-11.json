@@ -1,0 +1,333 @@
+{
+  "title": "Parkio Daily for June 11, 2026",
+  "slug": "parkio-daily-2026-06-11",
+  "date": "2026-06-11",
+  "teaser": "Baby giraffe Ivy debuts at Kilimanjaro Safaris today; Les Halles menu changes now live at EPCOT.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Big Thunder Mountain Railroad",
+        "parkSlug": "magic-kingdom",
+        "note": "Recently reopened, lighter crowds than usual"
+      },
+      {
+        "name": "Soarin'",
+        "parkSlug": "epcot",
+        "note": "Early morning window, low waits"
+      },
+      {
+        "name": "Kilimanjaro Safaris",
+        "parkSlug": "animal-kingdom",
+        "note": "New baby giraffe Ivy on the savanna"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [
+      {
+        "title": "Baby giraffe Ivy makes Kilimanjaro Safaris debut",
+        "body": "Four-month-old Masai giraffe Ivy stepped onto the Kilimanjaro Safaris savanna this morning for the first time, joining her mother Willow. Guests can now spot the calf during regular safari rides.",
+        "parkSlug": "animal-kingdom",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/06/photos-ivy-the-baby-giraffe-arrives-at-kilimanjaro-safaris-in-disneys-animal-kingdom/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Morning safari departures tend to offer the clearest sightlines for spotting Ivy. Aim for a ride before 10am when animals are typically more active near viewing areas."
+        }
+      }
+    ],
+    "bignews": [
+      {
+        "title": "Tom Hanks and Conan O'Brien visit Disneyland ahead of Toy Story 5 release",
+        "body": "The costars made a surprise appearance at Disneyland Resort on June 10, touring Disney California Adventure and greeting guests. The visit comes ahead of Toy Story 5's theatrical release.",
+        "parkSlug": "california-adventure",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/06/photos-tom-hanks-conan-obrien-from-toy-story-5-visit-disneyland-resort/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Toy Story merchandise tends to sell out quickly after celebrity visits and film promotions. Pixar Pier shops usually restock overnight, so early-morning stops often yield better selection."
+        }
+      },
+      {
+        "title": "Les Halles Boulangerie adds items, raises prices at EPCOT",
+        "body": "The France pavilion bakery has rolled out new pastries and removed select items from its menu. Several existing offerings now carry higher price tags, and the Croiss Oh La La is now a permanent menu fixture.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/06/price-increases-new-items-more-at-les-halles-boulangerie-patisserie-in-epcot/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Les Halles often sees its longest lines between 11am and 1pm. Stopping by mid-afternoon or just before World Showcase opening usually means shorter waits for the new pastries."
+        }
+      },
+      {
+        "title": "America 250th celebration foods arrive across Walt Disney World",
+        "body": "Red, white, and blue-themed treats are now available resort-wide to mark the nation's 250th anniversary. The lineup includes Fourth of July beignets, a Sam Eagle popcorn bucket, and a special Hoop-Dee-Doo Musical Revue commemorative mug.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/disney-experiences/disney-eats-disney-celebrates-america-foodie-guide/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Limited-edition popcorn buckets typically sell out within the first few days. Main Street Confectionery and Frontier Trading Post tend to have the widest stock early in the morning."
+        }
+      },
+      {
+        "title": "Logo Mania merchandise collection launches in Disney parks",
+        "body": "A new colorful apparel and accessory line celebrating favorite attractions, lands, and park icons is now on shelves. The collection features six distinct designs spotlighting different Disney experiences.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/products/new-disney-parks-merch-logo-mania/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "New apparel collections usually see the heaviest traffic at Emporium and World of Disney in the late morning. Shopping right at park opening or after 7pm often means lighter crowds and fuller size runs."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "Indiana Jones Epic Stunt Spectacular getting new signage",
+        "body": "Walt Disney Imagineering has filed permits to install updated signage at the Hollywood Studios attraction. Work is set to be handled by contractor Kentavo.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/06/walt-disney-imagineering-files-permit-for-signage-at-indiana-jones-epic-stunt-spectacular/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Signage work on active attractions can sometimes mean scaffolding or temporary obstructions near the entrance. If photo opportunities matter, check the area before committing to a visit."
+        }
+      },
+      {
+        "title": "Mickey's Not So Scary Halloween Party dates and details released for 2026",
+        "body": "The Magic Kingdom after-hours event returns this fall with tickets ranging from $119 to $229 depending on the night. Select August through October dates are now available for booking.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/mickeys-not-so-scary-halloween-party-review-tips/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Earlier party dates in August and September tend to offer lower ticket prices and lighter crowds than October nights. Booking now locks in the best availability before popular weekends sell out."
+        }
+      },
+      {
+        "title": "Disneyland fall and Halloween celebrations detailed for 2026",
+        "body": "Disneyland Resort has announced its autumn lineup, featuring seasonal ride overlays, themed merchandise, and special treats. Full details are now available for guests planning visits between September and October.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/dlr/halloween-and-fall-celebrations-at-disneyland/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Haunted Mansion Holiday and other overlays usually debut in mid-September. Visiting during the first week of the overlay often means shorter waits before word spreads and crowds build."
+        }
+      },
+      {
+        "title": "Monstropolis construction progresses at Hollywood Studios",
+        "body": "Vertical steel is now visible behind construction walls as the Monsters Inc land takes shape. The project includes a door coaster attraction and new themed environments.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/monsters-inc-land-monstropolis-walt-disney-world/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Construction noise near Animation Courtyard tends to peak during midday hours. If you're planning a table-service meal or character meet nearby, early or late time slots usually offer a quieter experience."
+        }
+      },
+      {
+        "title": "Annual Passholder exclusive drink available at Disney Springs",
+        "body": "A new beverage offering is now exclusive to Walt Disney World Annual Passholders at select Disney Springs locations. The drink joins other passholder perks available across the resort.",
+        "parkSlug": null,
+        "source": {
+          "label": "AllEars",
+          "url": "https://allears.net/2026/06/10/an-exclusive-passholder-perk-is-hiding-in-disney-springs/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Passholder-exclusive items often generate lines during peak lunch and dinner hours. Stopping by a Disney Springs bar or quick-service spot mid-afternoon usually means faster service."
+        }
+      },
+      {
+        "title": "Disney After Hours event dates and tickets now available for 2026",
+        "body": "Walt Disney World has released the full calendar for its late-night hard-ticket events across Magic Kingdom, EPCOT, and Hollywood Studios. Tickets are on sale now for summer and fall dates.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/disney-after-hours-dates-tickets-tips/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "After Hours events typically offer walk-on waits for headliners like Seven Dwarfs and Slinky Dog. Booking weeknight dates often costs less and sees lighter attendance than Friday or Saturday events."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Her Universe summer collection debuts at Disney Store online",
+        "body": "A new seasonal apparel line featuring Mickey Mouse swim tops and other summer styles is now available exclusively on the Disney Store website. Prices start at $24.99.",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/06/her-universe-releases-exclusive-summer-collection-online-at-disney-store/"
+        }
+      },
+      {
+        "title": "Kendi the white rhino receives successful eye surgery at Animal Kingdom",
+        "body": "The 27-year-old rhino underwent a procedure to restore her sight after keepers noticed cloudiness in her eye. The Animal Care team reports Kendi is recovering well.",
+        "parkSlug": "animal-kingdom",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/kendi-the-white-rhino-at-disneys-animal-kingdom/"
+        }
+      },
+      {
+        "title": "Father's Day gift guide released for Disney fans",
+        "body": "Disney has shared a curated list of gifts for Father's Day, including items themed to Toy Story, Star Wars, and Marvel. The guide highlights products available both in-park and online.",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/products/fathers-day-gifts-for-disney-fans/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "Dining Plans at Walt Disney World get a refresh for 2027",
+        "body": "Starting with 2027 vacation packages, guests will have more flexibility to customize their Disney Dining Plan experience. The new Deluxe tier offers additional options for table-service meals and snacks, making it easier to tailor the plan to your party's preferences.",
+        "ctaLabel": "Read the full guide",
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Booking a 2027 package now locks in current pricing structures before any potential increases. If your group dines at signature or character meals frequently, the Deluxe plan often delivers better value than paying out of pocket."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "hjK367n5Tb0",
+      "title": "Disney's Magic Kingdom 2026 | Park Update: New Food,Big Thunder & Toy Story Show | Walt Disney World",
+      "channel": "Paging Mr. Morrow",
+      "publishedAt": "2026-06-04T14:29:39Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/hjK367n5Tb0/mqdefault.jpg",
+      "viewCount": 131673,
+      "url": "https://www.youtube.com/watch?v=hjK367n5Tb0",
+      "summary": "Paging Mr. Morrow covers new food offerings, Big Thunder Mountain updates, and the latest Toy Story show at Magic Kingdom."
+    },
+    {
+      "videoId": "j1nhLXLSKC0",
+      "title": "Disney Food Challenge: Eating the Best Gluten Free Food in Hollywood Studios for a Day!",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-06-07T15:29:37Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/j1nhLXLSKC0/mqdefault.jpg",
+      "viewCount": 20112,
+      "url": "https://www.youtube.com/watch?v=j1nhLXLSKC0",
+      "summary": "WrightDownMainStreet tests gluten-free dining options across Hollywood Studios in a full-day food challenge."
+    },
+    {
+      "videoId": "L4WGerALQxM",
+      "title": "NEW Brunch at Disney World- Worth It? The Edison at Disney Springs",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-06-10T15:41:14Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/L4WGerALQxM/mqdefault.jpg",
+      "viewCount": 16867,
+      "url": "https://www.youtube.com/watch?v=L4WGerALQxM",
+      "summary": "WrightDownMainStreet reviews the new brunch service at The Edison in Disney Springs to see if it's worth the price."
+    },
+    {
+      "videoId": "o_5hq8Xt55E",
+      "title": "Funny Disney world💕🤣#happy #Foryou #funnyvideos #disney #disneyland",
+      "channel": "jakechill10",
+      "publishedAt": "2026-06-11T09:55:41Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/o_5hq8Xt55E/mqdefault.jpg",
+      "viewCount": 1604,
+      "url": "https://www.youtube.com/watch?v=o_5hq8Xt55E",
+      "summary": "A short collection of humorous moments captured at Disney World."
+    },
+    {
+      "videoId": "GI2LTnCa6w4",
+      "title": "Funny Disney moments #disney #disneyparktour #disneyland #universalparks",
+      "channel": "Shanique Hughes",
+      "publishedAt": "2026-06-11T10:12:06Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/GI2LTnCa6w4/mqdefault.jpg",
+      "viewCount": 1542,
+      "url": "https://www.youtube.com/watch?v=GI2LTnCa6w4",
+      "summary": "Shanique Hughes shares a compilation of funny guest moments from Disney parks."
+    },
+    {
+      "videoId": "3cczWxtjP7U",
+      "title": "The beautiful Disney moments🥰🥹#beautiful #disney #disneyland #fyp #usa",
+      "channel": "Karl Pittman",
+      "publishedAt": "2026-06-11T11:10:00Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/3cczWxtjP7U/mqdefault.jpg",
+      "viewCount": 1450,
+      "url": "https://www.youtube.com/watch?v=3cczWxtjP7U",
+      "summary": "Karl Pittman highlights heartwarming and scenic moments from Disneyland."
+    },
+    {
+      "videoId": "2ZWX7eMOgug",
+      "title": "My favourite Disneyland Paris gift shop #disney #disneylandparis",
+      "channel": "Adventures with Sophie",
+      "publishedAt": "2026-06-11T07:48:05Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/2ZWX7eMOgug/mqdefault.jpg",
+      "viewCount": 1285,
+      "url": "https://www.youtube.com/watch?v=2ZWX7eMOgug",
+      "summary": "Adventures with Sophie takes viewers through her favorite retail location at Disneyland Paris."
+    },
+    {
+      "videoId": "KkJF8h6cUhU",
+      "title": "90% 🤔🤑Fail #emoji #disney #disneyland #emoji",
+      "channel": "emoji yt",
+      "publishedAt": "2026-06-11T09:56:00Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/KkJF8h6cUhU/mqdefault.jpg",
+      "viewCount": 1225,
+      "url": "https://www.youtube.com/watch?v=KkJF8h6cUhU",
+      "summary": "A Disney-themed emoji challenge video from emoji yt."
+    },
+    {
+      "videoId": "GoYqobH6Frg",
+      "title": "no sorry im fully booked #disneyland #disneyadult #disney#tokyodisneyland #disneygirl",
+      "channel": "Topaz Beeston",
+      "publishedAt": "2026-06-11T07:18:29Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/GoYqobH6Frg/mqdefault.jpg",
+      "viewCount": 1105,
+      "url": "https://www.youtube.com/watch?v=GoYqobH6Frg",
+      "summary": "Topaz Beeston shares a humorous take on being a busy Disney enthusiast visiting Tokyo Disneyland."
+    },
+    {
+      "videoId": "6uIxBZkMWBQ",
+      "title": "Funny Disney moments #disney #disneyparktour #disneyland #universalparks #disneyparks",
+      "channel": "Shanique Hughes",
+      "publishedAt": "2026-06-11T10:12:51Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/6uIxBZkMWBQ/mqdefault.jpg",
+      "viewCount": 861,
+      "url": "https://www.youtube.com/watch?v=6uIxBZkMWBQ",
+      "summary": "Another collection of amusing Disney park moments from Shanique Hughes."
+    }
+  ],
+  "updatedAt": "2026-06-11T14:30:56.693Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-06-11T14:30:56.693Z",
+    "tokens": {
+      "input": 12320,
+      "output": 5138,
+      "costUsd": 0.114
+    }
+  }
+}
