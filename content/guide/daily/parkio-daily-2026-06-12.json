@@ -1,0 +1,340 @@
+{
+  "title": "Parkio Daily for June 12, 2026",
+  "slug": "parkio-daily-2026-06-12",
+  "date": "2026-06-12",
+  "teaser": "Heat index hits 100+ this weekend in Orlando; new America 250th treats debut; Bullseye popcorn bucket arrives soon.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Soarin'",
+        "parkSlug": "epcot",
+        "note": "Walk-on possible during dinner hour"
+      },
+      {
+        "name": "TRON Lightcycle / Run",
+        "parkSlug": "magic-kingdom",
+        "note": "Shortest waits in first operating hour"
+      },
+      {
+        "name": "Kilimanjaro Safaris",
+        "parkSlug": "animal-kingdom",
+        "note": "Animals most active before 10am"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [
+      {
+        "title": "Dangerous heat index forecast for Orlando this weekend",
+        "body": "Central Florida meteorologists predict heat index values reaching 100 degrees June 13–14. Intense summer heat is typical but these readings are on the higher end for mid-June.",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/06/heat-indexes-into-the-100s-this-weekend-in-orlando-area/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Indoor attractions and air-conditioned quick-service spots tend to be your best bet during peak afternoon hours. Take breaks every 90 minutes and hydrate before you feel thirsty."
+        }
+      }
+    ],
+    "bignews": [
+      {
+        "title": "New baby animals arrive at Disney's Animal Kingdom",
+        "body": "Spring brought a wave of births behind the scenes at Animal Kingdom, with several new animals now visible to guests. The park celebrates the arrivals as part of ongoing conservation work.",
+        "parkSlug": "animal-kingdom",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/meet-the-newest-baby-animals-at-walt-disney-world/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "The Kilimanjaro Safaris route usually offers the best glimpses of newborns during early morning hours. Cast members near the loading area can often point out where families are resting."
+        }
+      },
+      {
+        "title": "Logo Mania merchandise collection now available at parks",
+        "body": "A new colorful merchandise line celebrating Disney attractions, lands, and transportation options is rolling out. The collection features six designs highlighting favorite park icons.",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/products/new-disney-parks-merch-logo-mania/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "New collections like this tend to sell out at flagship shops by mid-afternoon on busy days. Stopping at Emporium or World of Disney before 11am usually improves selection."
+        }
+      },
+      {
+        "title": "America 250th anniversary treats debut across Walt Disney World",
+        "body": "Disney chefs unveiled a red, white, and blue menu for the nation's 250th anniversary. Items include Fourth of July beignets and other patriotic snacks available at multiple locations.",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/disney-experiences/disney-eats-disney-celebrates-america-foodie-guide/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Festival-style food offerings often draw lines at outdoor kiosks by lunchtime. Grabbing a specialty item mid-morning or after 7pm usually saves 10–15 minutes of queue time."
+        }
+      },
+      {
+        "title": "Sam Eagle popcorn bucket coming to Walt Disney World",
+        "body": "A patriotic Sam Eagle popcorn bucket will launch alongside the America 250th celebration menu. A new Hoop-Dee-Doo Musical Revue mug also debuts as part of the anniversary collection.",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/sam-eagle-popcorn-bucket-hoop-dee-doo-mug-america-250th-foods-coming-to-disney-world/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Character-themed popcorn buckets tend to sell out within hours at major carts. Checking locations near park entrances right at rope drop often secures one before the rush."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "Bullseye popcorn bucket released at Hong Kong, coming to US parks soon",
+        "body": "Hong Kong Disneyland launched a rideable Bullseye popcorn bucket from Toy Story. The design is confirmed to arrive at both Disneyland Resort and Walt Disney World in the near future.",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/06/photos-toy-story-bullseye-popcorn-bucket-released-at-hong-kong-disneyland/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "New popcorn buckets often appear without advance notice at flagship stands. Checking with cast members at main popcorn locations each morning can help you spot the drop day."
+        }
+      },
+      {
+        "title": "Disney Springs bus rule may return for Fourth of July weekend",
+        "body": "An unpopular transportation restriction at Disney Springs could come back next month for the July 4 holiday. The rule has been used during peak crowd periods in the past.",
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/06/12/heads-up-this-disney-springs-transportation-rule-could-come-back-next-month/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Disney Springs bus service tends to slow significantly on major holidays. Arriving before 5pm or using rideshare during evening hours usually avoids the longest waits."
+        }
+      },
+      {
+        "title": "Sorcerer Mickey pullover hoodie now on sale at Hollywood Studios",
+        "body": "A new denim-blue hoodie featuring the iconic Sorcerer Mickey hat design is available. The pullover retails for $69.99 and ties into the recent return of the hat symbol to the park.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/06/wear-the-magic-sorcerer-mickey-pullover-arrives-at-walt-disney-world-resort/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Apparel tied to park icons often moves quickly at main retail locations. Stopping at Mickey's of Hollywood during early entry or late evening usually offers better size availability."
+        }
+      },
+      {
+        "title": "Three new deals launched at Disney Springs for summer",
+        "body": "Disney Springs Resort Area Hotels are offering up to 25 percent off as teacher appreciation through September 7. Additional discounts on dining and entertainment also started this week.",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/3-new-deals-on-show-hotels-dining-at-disney-springs/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Disney Springs dining deals tend to be valid Sunday through Thursday. Booking reservations mid-week usually improves availability and maximizes discount value."
+        }
+      },
+      {
+        "title": "Ghirardelli temporary relocation underway at Disney Springs",
+        "body": "The Ghirardelli Soda Fountain and Chocolate Shop is moving from Marketplace to Town Center during construction. A recent permit reveals the permanent space will open in 2027.",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/06/update-on-ghirardelli-construction-at-disney-springs-jc1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "The temporary Town Center location may have reduced seating and longer waits during the transition. Visiting during off-peak afternoon hours tends to keep lines manageable."
+        }
+      },
+      {
+        "title": "Disneyland ordered to shut down gas-powered Autopia by 2027",
+        "body": "California government records confirm Disneyland must close the gas-powered Autopia by 2027. The park announced nearly two years ago it would transition the opening-day attraction to electric engines.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/06/disneylands-autopia-must-close-by-2027-per-government-order-jc1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Autopia will likely close for an extended refurbishment to complete the engine swap. Riding the attraction during your next Disneyland trip may be your last chance before the conversion."
+        }
+      },
+      {
+        "title": "Wagyu now available at EPCOT quick-service location",
+        "body": "A new wagyu dish launched at a popular EPCOT quick-service spot. The upscale offering joins the menu at a counter-service restaurant in the park.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/06/11/wait-what-you-can-get-wagyu-at-a-disney-world-quick-service-spot/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Quick-service locations with premium menu items tend to run out by mid-afternoon on busy days. Ordering before 1pm or after 8pm usually ensures availability."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Margaret Kerry, Tinker Bell model, passes away at 97",
+        "body": "Margaret Kerry, who served as the live-action reference model for Tinker Bell in Peter Pan (1953), died June 11. Animator Marc Davis selected Kerry to pantomime for the iconic character.",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/06/tinker-bell-model-margaret-kerry-passes-away-at-97/"
+        }
+      },
+      {
+        "title": "Tomorrowland performer Michael Iceberg dies",
+        "body": "Michael Iseberg, known as Michael Iceberg, passed away June 9 at Johns Hopkins Hospital. Iceberg performed in Tomorrowland and was remembered by fans and friends this week.",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/06/tomorrowland-performer-michael-iceberg-passes-away/"
+        }
+      },
+      {
+        "title": "Flags at Walt Disney World lowered for Pulse Remembrance Day",
+        "body": "American flags across Walt Disney World are at half-staff June 12 to honor the anniversary of the Pulse nightclub shooting. Governor Ron DeSantis ordered the statewide tribute.",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/06/american-flags-at-walt-disney-world-half-staff-to-honor-anniversary-of-pulse-shooting/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "My Disney Experience app gets major update",
+        "body": "A significant change rolled out to the My Disney Experience app this week. The update affects how guests interact with park features and plan their day, though specific details are still emerging.",
+        "source": {
+          "label": "AllEars",
+          "url": "https://allears.net/2026/06/11/theres-been-a-big-change-to-the-disney-world-app/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "App updates can occasionally cause temporary glitches in the first 48 hours. Checking your Lightning Lane selections and dining reservations early in the morning helps catch any sync issues before park arrival."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "L4WGerALQxM",
+      "title": "NEW Brunch at Disney World- Worth It? The Edison at Disney Springs",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-06-10T15:41:14Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/L4WGerALQxM/mqdefault.jpg",
+      "viewCount": 22727,
+      "url": "https://www.youtube.com/watch?v=L4WGerALQxM",
+      "summary": "WrightDownMainStreet reviews the new brunch offering at The Edison in Disney Springs to see if it's worth your dining dollar."
+    },
+    {
+      "videoId": "j1nhLXLSKC0",
+      "title": "Disney Food Challenge: Eating the Best Gluten Free Food in Hollywood Studios for a Day!",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-06-07T15:29:37Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/j1nhLXLSKC0/mqdefault.jpg",
+      "viewCount": 20682,
+      "url": "https://www.youtube.com/watch?v=j1nhLXLSKC0",
+      "summary": "WrightDownMainStreet takes on a full day of gluten-free dining at Hollywood Studios to find the best options in the park."
+    },
+    {
+      "videoId": "mUOgnd-VeSo",
+      "title": "Rahasia Pedang Disney Akhirnya Terungkap! 😱",
+      "channel": "Dunia Absurd",
+      "publishedAt": "2026-06-12T10:00:29Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/mUOgnd-VeSo/mqdefault.jpg",
+      "viewCount": 18222,
+      "url": "https://www.youtube.com/watch?v=mUOgnd-VeSo",
+      "summary": "Dunia Absurd reveals secrets about Disney swords in this video."
+    },
+    {
+      "videoId": "g-AyeGIDKgg",
+      "title": "🔴 Live: Thursday Stream at Disneyland! Paint the Night Parade, Wondrous Journeys & Rides - 06/11/26",
+      "channel": "Koda Bear the Explorer ",
+      "publishedAt": "2026-06-12T07:04:45Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/g-AyeGIDKgg/mqdefault.jpg",
+      "viewCount": 17078,
+      "url": "https://www.youtube.com/watch?v=g-AyeGIDKgg",
+      "summary": "Koda Bear the Explorer live-streams an evening at Disneyland featuring Paint the Night Parade and Wondrous Journeys."
+    },
+    {
+      "videoId": "92CafEmMY8Q",
+      "title": "Funny Disney moments #disney #disneyparktour #disneyland #universalparks",
+      "channel": "Shanique Hughes",
+      "publishedAt": "2026-06-12T10:01:09Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/92CafEmMY8Q/mqdefault.jpg",
+      "viewCount": 5054,
+      "url": "https://www.youtube.com/watch?v=92CafEmMY8Q",
+      "summary": "Shanique Hughes shares a compilation of funny moments captured at Disney parks."
+    },
+    {
+      "videoId": "nGFlcnUx1WU",
+      "title": "90%😛🤔 Fail #emoji #disney #disneyland #emoji",
+      "channel": "emoji yt",
+      "publishedAt": "2026-06-12T06:17:21Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/nGFlcnUx1WU/mqdefault.jpg",
+      "viewCount": 1930,
+      "url": "https://www.youtube.com/watch?v=nGFlcnUx1WU",
+      "summary": "Emoji yt posts a Disney-themed emoji challenge claiming a 90 percent fail rate."
+    },
+    {
+      "videoId": "FmlJuLeyOkY",
+      "title": "Pretty Little Minnie before Paint the Night Parade at Disneyland! #disney #disneyland #shorts",
+      "channel": "Uso Scooter Chris",
+      "publishedAt": "2026-06-12T04:48:56Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/FmlJuLeyOkY/mqdefault.jpg",
+      "viewCount": 1610,
+      "url": "https://www.youtube.com/watch?v=FmlJuLeyOkY",
+      "summary": "Uso Scooter Chris captures Minnie Mouse before the Paint the Night Parade at Disneyland."
+    },
+    {
+      "videoId": "BwM_EmAqgXs",
+      "title": "Disneyなんてリアクションの宝庫なのに #shorts #夫婦 #日常 #disney #disneyland #tdl #ディズニー #ディズニーランド #toontown",
+      "channel": "ごんちゃん夫婦",
+      "publishedAt": "2026-06-12T08:00:40Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/BwM_EmAqgXs/mqdefault.jpg",
+      "viewCount": 1512,
+      "url": "https://www.youtube.com/watch?v=BwM_EmAqgXs",
+      "summary": "A couple shares their reactions to Tokyo Disneyland in this Japanese-language short."
+    },
+    {
+      "videoId": "tmWqm6lq8bk",
+      "title": "Live -Disneyland Thursday - CELEBRATION!!!  #live #livestream #disney #disneyparks #disneyland",
+      "channel": "FocalWorld (Jim)",
+      "publishedAt": "2026-06-12T07:20:48Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/tmWqm6lq8bk/mqdefault.jpg",
+      "viewCount": 1212,
+      "url": "https://www.youtube.com/watch?v=tmWqm6lq8bk",
+      "summary": "FocalWorld (Jim) live-streams a Thursday celebration at Disneyland."
+    },
+    {
+      "videoId": "igdF-p3jCHU",
+      "title": "#disney #disneyland",
+      "channel": "Ylenzobinbin",
+      "publishedAt": "2026-06-12T10:40:25Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/igdF-p3jCHU/mqdefault.jpg",
+      "viewCount": 1188,
+      "url": "https://www.youtube.com/watch?v=igdF-p3jCHU",
+      "summary": "Ylenzobinbin shares Disney and Disneyland content in this brief video."
+    }
+  ],
+  "updatedAt": "2026-06-12T13:59:02.418Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-06-12T13:59:02.418Z",
+    "tokens": {
+      "input": 12132,
+      "output": 5286,
+      "costUsd": 0.1157
+    }
+  }
+}
