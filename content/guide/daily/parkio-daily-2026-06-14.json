@@ -1,0 +1,339 @@
+{
+  "title": "Parkio Daily for Saturday, June 14, 2026",
+  "slug": "parkio-daily-2026-06-14",
+  "date": "2026-06-14",
+  "teaser": "Hollywood Studios construction filings hint at Epic Stunt changes; solar trash cans roll into EPCOT; new baby animals debut at Animal Kingdom.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Space Mountain",
+        "parkSlug": "magic-kingdom",
+        "note": "Early morning waits typically under 25 minutes"
+      },
+      {
+        "name": "Test Track",
+        "parkSlug": "epcot",
+        "note": "World Showcase opens later; ride before 11am"
+      },
+      {
+        "name": "Flight of Passage",
+        "parkSlug": "animal-kingdom",
+        "note": "Rope-drop window offers shortest waits"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [],
+    "bignews": [
+      {
+        "title": "Construction permits filed for Indiana Jones Epic Stunt Spectacular",
+        "body": "Imagineering submitted three construction permits under the code name Project Fedora for the Epic Stunt Spectacular at Hollywood Studios. The filings do not specify whether the work is routine maintenance or a larger update to the show.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/indiana-jones-and-the-mystery-project-of-hat/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Construction noise and walls near Echo Lake may disrupt that corner of the park over the next few months. Plan quieter breaks in other sections like Galaxy's Edge or Grand Avenue if the work expands."
+        }
+      },
+      {
+        "title": "Baby animals arrive at Animal Kingdom and resorts",
+        "body": "Several baby animals born this spring are now viewable at Animal Kingdom and backstage areas. The park has not yet released specific species or viewing locations.",
+        "parkSlug": "animal-kingdom",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/meet-the-newest-baby-animals-at-walt-disney-world/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Animal viewing areas like Gorilla Falls and Maharajah Jungle Trek tend to be quieter early morning or late afternoon. Arrive during those windows for clearer sightlines and shorter crowds around exhibits."
+        }
+      },
+      {
+        "title": "Logo Mania merchandise line debuts across parks",
+        "body": "A new collection celebrating individual attractions, lands, and transportation icons launched at Disney Parks stores. The line includes six color-coded designs covering favorites like rides and park areas.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/products/new-disney-parks-merch-logo-mania/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Flagship stores like Emporium and World of Disney tend to stock limited-run collections more reliably than satellite shops. Stop in during morning Extra Magic Hours or late evening for the fullest selection before stock thins."
+        }
+      },
+      {
+        "title": "America's 250th anniversary food offerings roll out",
+        "body": "Disney Chefs created Fourth of July-themed bites and drinks for Walt Disney World, including new beignets and red-white-blue desserts. The items celebrate the nation's 250th anniversary and are available now.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/disney-experiences/disney-eats-disney-celebrates-america-foodie-guide/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Festival booths and quick-service windows often sell out of specialty items by mid-afternoon during holiday weekends. Grab anniversary treats before lunch to avoid disappointment, especially at EPCOT festival kiosks."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "EPCOT adds solar-powered trash cans with foot pedals",
+        "body": "New solar trash receptacles with hands-free foot pedals continue rolling into World Showcase. The upgrade is part of ongoing infrastructure improvements around the lagoon.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/06/solar-powered-trash-cans-continue-to-arrive-in-epcot-2/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "World Showcase pavilions typically see lighter foot traffic before 11am when locals and early guests finish Future World. Use that window for pavilion tours and quick-service pick-ups before the lunch rush."
+        }
+      },
+      {
+        "title": "Kids cooking class launches at eet by Maneet Chauhan",
+        "body": "The Disney Springs restaurant now offers hands-on cooking classes for ages seven to fifteen. Each ticket covers the class, a shirt, and a meal, with dates scheduled throughout summer.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/06/kids-cooking-class-coming-to-eet-by-maneet-chauhan-at-disney-springs/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Disney Springs classes and tours often book weeks ahead during summer. Reserve now if visiting in July or August, and plan arrival thirty minutes early for check-in and prep."
+        }
+      },
+      {
+        "title": "Disneyland shows lighter crowds as summer begins",
+        "body": "Despite the season, Disneyland Resort is seeing lower-than-expected attendance in early June. Wait times have remained shorter than typical summer peaks so far.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/06/disney-parks-empty-summer-cj1/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Lower crowds may not last once school districts finish for the year. If visiting this week or next, prioritize high-demand attractions like Rise of the Resistance and Radiator Springs Racers before mid-June rush."
+        }
+      },
+      {
+        "title": "Inside Out Emotional Whirlwind closed for extended refurbishment",
+        "body": "The California Adventure spinner has been offline for nearly four months with no announced reopening date. Disney has not yet detailed the scope of work underway.",
+        "parkSlug": "california-adventure",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/06/disney-closes-inside-out-emotional-whirlwind-cj1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Pixar Pier lacks a family-friendly ride alternative while the spinner is down. If traveling with young kids, shift focus to Cars Land or Hollywood Land for lower-height attractions."
+        }
+      },
+      {
+        "title": "Disneyland refurbishments added to summer calendar",
+        "body": "Six new closure dates were posted for Disneyland Resort attractions over the coming months. The list includes routine maintenance windows and minor upgrades, though specific ride names were not disclosed in all cases.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/6-new-refurbishment-dates-added-to-disneyland-closure-calendar-for-summer-2026-beyond/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Check the official Disneyland app each morning for same-day closures not listed in advance. Refurbishments sometimes extend or shift, particularly during lighter crowd periods when park operations adjust schedules."
+        }
+      },
+      {
+        "title": "Virgin Atlantic moves to new terminal at Orlando airport",
+        "body": "Starting June 30, all Virgin Atlantic arrivals and departures shift from the current terminal to a new gate area at MCO. Passengers should confirm terminal assignments before travel.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/06/virgin-atlantic-terminal-relocating-at-orlando-international-airport/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Terminal changes can add confusion and delay on arrival day. Build extra buffer time into your airport-to-resort transfer if flying Virgin Atlantic after June 30, especially if using Magical Express or rideshare."
+        }
+      },
+      {
+        "title": "Winnie the Pooh apparel and accessories arrive at Disneyland",
+        "body": "New Pooh-themed merchandise includes a bomber jacket and tees for adults at Disney Clothiers, plus a youth shirt at Five and Dime in California Adventure.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/06/adult-and-youth-winnie-the-pooh-apparel-at-disneyland/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Character-specific merch tends to move quickly at flagship locations like Disney Clothiers. Stop in during morning Extra Magic Hour if you want the full size run before afternoon sellouts."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Toy Story 5 luggage collection now available from Away",
+        "body": "A new travel-gear line includes Woody and Toy Story-themed suitcases, backpacks, and packing cubes for adults and kids. Prices start at thirty-eight dollars for accessories.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/06/pixar-away-toy-story-5-luggage-collection-now-available/"
+        }
+      },
+      {
+        "title": "Imagineering shares video on Scooter animatronic",
+        "body": "A behind-the-scenes look at the newest Audio-Animatronic in Walt Disney World was posted this week. The video covers design and engineering details for the character.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/06/13/imagineering-shares-behind-the-scenes-look-at-newest-disney-world-animatronic/"
+        }
+      },
+      {
+        "title": "Drawn to Life tickets discounted thirty percent",
+        "body": "The Cirque du Soleil show at Disney Springs is offering a limited-time price cut. The discount applies to select performances through the summer season.",
+        "parkSlug": null,
+        "source": {
+          "label": "AllEars.Net",
+          "url": "https://allears.net/2026/06/13/you-can-save-30-off-tickets-for-this-underrated-disney-world-show/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "After Hours events continue through fall at Walt Disney World",
+        "body": "Disney After Hours nights offer low-crowd access to select parks with included ice cream and popcorn. New dates were added for Magic Kingdom, EPCOT, and Hollywood Studios through October, with tickets on sale now.",
+        "parkSlug": null,
+        "ctaLabel": "View After Hours schedule",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/disney-after-hours-dates-tickets-tips/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "After Hours crowds are usually lightest on weeknights in September and early October. Book those dates for near-walk-on access to headliners like Seven Dwarfs and Test Track without Lightning Lane."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "Jf_npkelIFk",
+      "title": "Disney's Hollywood Studios 2026 | Park Update: NEW Muppets Coaster, Star Wars & Food | Disney World",
+      "channel": "Paging Mr. Morrow",
+      "url": "https://www.youtube.com/watch?v=Jf_npkelIFk",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Jf_npkelIFk/mqdefault.jpg",
+      "viewCount": 70601,
+      "publishedAt": "2026-06-12T15:25:10Z",
+      "summary": "Paging Mr. Morrow walks through Hollywood Studios construction updates, food offerings, and Star Wars experiences."
+    },
+    {
+      "videoId": "Gvhx6ibI3QQ",
+      "title": "🔴 Live: Saturday Stream at Disneyland! Paint the Night & Wondrous Journeys Fireworks - 06/13/26",
+      "channel": "Koda Bear the Explorer ",
+      "url": "https://www.youtube.com/watch?v=Gvhx6ibI3QQ",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Gvhx6ibI3QQ/mqdefault.jpg",
+      "viewCount": 35672,
+      "publishedAt": "2026-06-14T07:54:29Z",
+      "summary": "Koda Bear livestreams Paint the Night parade and Wondrous Journeys fireworks from Disneyland on Saturday night."
+    },
+    {
+      "videoId": "L4WGerALQxM",
+      "title": "NEW Brunch at Disney World- Worth It? The Edison at Disney Springs",
+      "channel": "WrightDownMainStreet",
+      "url": "https://www.youtube.com/watch?v=L4WGerALQxM",
+      "thumbnailUrl": "https://i.ytimg.com/vi/L4WGerALQxM/mqdefault.jpg",
+      "viewCount": 28823,
+      "publishedAt": "2026-06-10T15:41:14Z",
+      "summary": "WrightDownMainStreet reviews the new brunch menu at The Edison restaurant in Disney Springs."
+    },
+    {
+      "videoId": "j1nhLXLSKC0",
+      "title": "Disney Food Challenge: Eating the Best Gluten Free Food in Hollywood Studios for a Day!",
+      "channel": "WrightDownMainStreet",
+      "url": "https://www.youtube.com/watch?v=j1nhLXLSKC0",
+      "thumbnailUrl": "https://i.ytimg.com/vi/j1nhLXLSKC0/mqdefault.jpg",
+      "viewCount": 21472,
+      "publishedAt": "2026-06-07T15:29:37Z",
+      "summary": "WrightDownMainStreet samples gluten-free dining options throughout Hollywood Studios for a full day."
+    },
+    {
+      "videoId": "KLJ6qqrZq2g",
+      "title": "LIVE from Disney's Hollywood Studios! Rides, Food Reviews & Fantasmic Nighttime Show | Living in Diz",
+      "channel": "Living in DIZ",
+      "url": "https://www.youtube.com/watch?v=KLJ6qqrZq2g",
+      "thumbnailUrl": "https://i.ytimg.com/vi/KLJ6qqrZq2g/mqdefault.jpg",
+      "viewCount": 5731,
+      "publishedAt": "2026-06-14T04:36:48Z",
+      "summary": "Living in DIZ livestreams attractions, food, and Fantasmic from Hollywood Studios."
+    },
+    {
+      "videoId": "JGsBtuOQPTM",
+      "title": "Lightning cold as ice 🥶⚡️ #fyp #cars #lightningmcqueen #disney #disneyland #dca",
+      "channel": "LifewithNaty",
+      "url": "https://www.youtube.com/watch?v=JGsBtuOQPTM",
+      "thumbnailUrl": "https://i.ytimg.com/vi/JGsBtuOQPTM/mqdefault.jpg",
+      "viewCount": 1415,
+      "publishedAt": "2026-06-14T04:03:14Z",
+      "summary": "LifewithNaty shares a short video featuring Lightning McQueen at Disney California Adventure."
+    },
+    {
+      "videoId": "kp-sEPPuAOQ",
+      "title": "🤭 #disney #disneyland #disneyparks #disneycalifornia #teacups #aliceinwonderland #disneypassholder",
+      "channel": "BrendaAshley",
+      "url": "https://www.youtube.com/watch?v=kp-sEPPuAOQ",
+      "thumbnailUrl": "https://i.ytimg.com/vi/kp-sEPPuAOQ/mqdefault.jpg",
+      "viewCount": 1394,
+      "publishedAt": "2026-06-14T07:06:59Z",
+      "summary": "BrendaAshley posts a moment from the Alice in Wonderland teacups at Disneyland."
+    },
+    {
+      "videoId": "YtZBJrQ-fXM",
+      "title": "Need a Disney Husband #disney #disneyland #disneyparks #disneycouples #disneycalifornia #anaheim",
+      "channel": "BrendaAshley",
+      "url": "https://www.youtube.com/watch?v=YtZBJrQ-fXM",
+      "thumbnailUrl": "https://i.ytimg.com/vi/YtZBJrQ-fXM/mqdefault.jpg",
+      "viewCount": 1205,
+      "publishedAt": "2026-06-14T07:08:44Z",
+      "summary": "BrendaAshley shares a couples-themed moment from Disneyland Resort."
+    },
+    {
+      "videoId": "ht3n8UOLp24",
+      "title": "나홀로 디즈니씨에서 놀기",
+      "channel": "짱쥬스",
+      "url": "https://www.youtube.com/watch?v=ht3n8UOLp24",
+      "thumbnailUrl": "https://i.ytimg.com/vi/ht3n8UOLp24/mqdefault.jpg",
+      "viewCount": 1164,
+      "publishedAt": "2026-06-14T07:19:08Z",
+      "summary": "A solo day at Tokyo DisneySea, shared by 짱쥬스."
+    },
+    {
+      "videoId": "7y4jfuEzf5U",
+      "title": "#disney#disneyland#outfit#dnd",
+      "channel": "Diana Molina",
+      "url": "https://www.youtube.com/watch?v=7y4jfuEzf5U",
+      "thumbnailUrl": "https://i.ytimg.com/vi/7y4jfuEzf5U/mqdefault.jpg",
+      "viewCount": 1075,
+      "publishedAt": "2026-06-14T05:10:09Z",
+      "summary": "Diana Molina showcases a Disneyland outfit in this short video."
+    }
+  ],
+  "updatedAt": "2026-06-14T12:58:52.180Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-06-14T12:58:52.180Z",
+    "tokens": {
+      "input": 11835,
+      "output": 5218,
+      "costUsd": 0.1138
+    }
+  }
+}
