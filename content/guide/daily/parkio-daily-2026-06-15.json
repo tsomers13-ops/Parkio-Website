@@ -1,0 +1,344 @@
+{
+  "title": "Parkio Daily for June 15, 2026",
+  "slug": "parkio-daily-2026-06-15",
+  "date": "2026-06-15",
+  "teaser": "Treehouse Villas debut today at Saratoga Springs; Sam Eagle popcorn bucket drops; 11 restaurant menus changed overnight.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Space Mountain",
+        "parkSlug": "magic-kingdom",
+        "note": "Early morning window before Tomorrowland fills"
+      },
+      {
+        "name": "Soarin'",
+        "parkSlug": "epcot",
+        "note": "Lighter crowds during dinner hours"
+      },
+      {
+        "name": "Slinky Dog Dash",
+        "parkSlug": "hollywood-studios",
+        "note": "First hour of park opening"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [],
+    "bignews": [
+      {
+        "title": "Reimagined Treehouse Villas open today at Saratoga Springs",
+        "body": "The three-bedroom hideaways along the Sassagoula River are now available for bookings following a full renovation. The elevated villas offer secluded woodland views and updated interiors.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/dvc/first-look-inside-the-reimagined-treehouse-villas-at-disneys-saratoga-springs-resort/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Treehouse Villas tend to book quickly after refurbishments. Check availability for fall dates if you want the woodland setting before word spreads wider."
+        }
+      },
+      {
+        "title": "Sam Eagle popcorn bucket launches for America's 250th anniversary",
+        "body": "The blue Muppet bucket wears stars-and-stripes and costs twenty-two dollars with popcorn included. It joins a slate of patriotic treats across all four Walt Disney World parks.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/06/sam-eagle-popcorn-bucket-now-available-at-walt-disney-world/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Character buckets often sell out at flagship popcorn carts by mid-afternoon. Grab yours at the Magic Kingdom or EPCOT entrance before noon to avoid disappointment."
+        }
+      },
+      {
+        "title": "Disney World quietly updates menus at eleven restaurants",
+        "body": "Menu changes rolled out this week across table-service and quick-service locations. Details have not been disclosed but multiple outlets confirm the adjustments.",
+        "parkSlug": null,
+        "source": {
+          "label": "AllEars.Net",
+          "url": "https://allears.net/2026/06/15/disney-world-just-quietly-changed-the-menus-at-11-restaurants/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "If you booked a table for a specific dish, call ahead to confirm it's still available. Menu swaps can disappoint guests who planned meals around a favorite item."
+        }
+      },
+      {
+        "title": "Shanghai Disneyland names third resort hotel opening in 2027",
+        "body": "Disney revealed the official name for the property that broke ground nearly three years ago. The hotel will be the third themed accommodation at the resort as it marks its tenth anniversary.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-reveals-name-for-new-hotel-opening-in-2027/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "New resort openings abroad often include introductory booking discounts. Watch for package deals if you're planning a Shanghai trip next year."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "Spider-Man coaster track complete at Shanghai Disneyland",
+        "body": "The final red track section was installed on white supports this week. Disney shared photos of the milestone as construction continues on the signature attraction.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/06/final-track-piece-of-spider-man-roller-coaster-installed-at-shanghai-disneyland/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Track completion usually signals a six-to-nine-month window before soft openings begin. Plan a Shanghai visit for early 2027 to catch previews ahead of the official debut."
+        }
+      },
+      {
+        "title": "Logo Mania keychains arrive at Walt Disney World",
+        "body": "Faux leather designs include monorail, dice, tropical leaf, traffic cone, and attraction quote motifs. Each keychain carries gold-tone hardware and a Mickey icon detail.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/06/disney-fans-can-wear-their-feelings-with-new-logo-mania-keychains-at-walt-disney-world/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Novelty keychains in the Logo Mania line often sell fastest at the Emporium and World of Disney. Stop by early afternoon to secure your pick before stock thins."
+        }
+      },
+      {
+        "title": "New Pixar Spirit Jerseys spotlight Toy Story, Incredibles, and Up",
+        "body": "The collection includes a light blue Toy Story jersey with Andy's cloud wallpaper pattern, plus designs celebrating the Parr family and Carl's house. A Frozone tee is also available.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/06/incredibles-toy-story-and-up-featured-on-new-spirit-jerseys/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Spirit Jerseys in popular franchises tend to move quickly in standard sizes. Check merchandise locations at Hollywood Studios or Disney Springs before lunch for the best selection."
+        }
+      },
+      {
+        "title": "Red Velvet Riveter cake debuts at Hollywood Studios",
+        "body": "Rosie's All-American Cafe is serving a Rosie the Riveter-inspired dessert as part of the America's 250th celebration. The red velvet cake carries a patriotic theme and costs just under six dollars.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/06/review-rosie-the-riveter-red-velvet-cake-at-disneys-hollywood-studios/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Limited-time festival desserts at quick-service spots often disappear by late afternoon during busy weeks. Grab yours before two pm if you want to avoid a sold-out sign."
+        }
+      },
+      {
+        "title": "Fourth of July strawberry cheesecake available at Coronado Springs",
+        "body": "Barcelona Lounge is offering a vanilla bean cheesecake with strawberry coulis and white chocolate collar. The seasonal dessert is priced under seven dollars.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/06/review-4th-of-july-strawberry-cheesecake-from-disneys-coronado-springs-resort/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Resort lounge desserts typically offer lighter crowds than park kiosks. Stop by Coronado Springs on an off-park evening to skip lines and enjoy a quieter setting."
+        }
+      },
+      {
+        "title": "Two Magic Kingdom restaurants now offer better Annual Passholder discounts",
+        "body": "Unspecified locations inside the park rolled out improved AP pricing this summer. Booking rules apply and guests should confirm terms before arrival.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/06/15/these-2-magic-kingdom-restaurants-are-suddenly-a-much-better-deal/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "New AP discounts often disappear once word spreads. Call dining reservations to confirm which restaurants participate and book before summer peak weeks hit."
+        }
+      },
+      {
+        "title": "Disney on the Yard: Yardfest returns to Downtown Disney this Friday",
+        "body": "The celebration kicks off June nineteenth at the Disneyland shopping district. No park ticket is required to attend the event.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/06/15/why-everyone-is-running-to-downtown-disney-this-friday/"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "Special events at Downtown Disney often cause parking congestion Friday evenings. Arrive before five pm or use the monorail from Disneyland Hotel to skip the lot hunt."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "New baby animals arrive at Animal Kingdom and resort locations",
+        "body": "Spring births include several species at the theme park and Disney's Animal Kingdom Lodge. The care teams are celebrating healthy milestones across the collection.",
+        "parkSlug": "animal-kingdom",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/meet-the-newest-baby-animals-at-walt-disney-world/"
+        }
+      },
+      {
+        "title": "Kendi the white rhino receives successful eye treatment",
+        "body": "The twenty-seven-year-old rhino regained clear vision after Animal Kingdom's care team noticed cloudiness and coordinated veterinary intervention. Kendi has lived at the park her entire life.",
+        "parkSlug": "animal-kingdom",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/kendi-the-white-rhino-at-disneys-animal-kingdom/"
+        }
+      },
+      {
+        "title": "Indiana Jones Epic Stunt Spectacular receives construction permit",
+        "body": "Walt Disney World filed paperwork for the Hollywood Studios show under the code name Project Fedora. Details on the scope of work remain undisclosed.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/indiana-jones-and-the-mystery-project-of-hat/"
+        }
+      },
+      {
+        "title": "Popular airline shifts operations at Orlando Airport this month",
+        "body": "The carrier announced a terminal or gate change affecting flights in and out of MCO. Travelers should confirm updated departure locations before heading to the airport.",
+        "parkSlug": null,
+        "source": {
+          "label": "AllEars.Net",
+          "url": "https://allears.net/2026/06/15/popular-airline-announces-big-change-at-orlando-airport/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "Monstropolis construction progresses at Hollywood Studios",
+        "body": "Steel framing continues to rise behind walls as Disney builds the Monsters Inc-themed land. The official blog shared updates on the pace of work and design details taking shape.",
+        "parkSlug": "hollywood-studios",
+        "ctaLabel": "Read the full update",
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Construction zones near Animation Courtyard can generate noise and limit pathways during mid-morning hours. Plan your route to Toy Story Land or Tower of Terror using the main entrance corridor instead."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "Jf_npkelIFk",
+      "title": "Disney's Hollywood Studios 2026 | Park Update: NEW Muppets Coaster, Star Wars & Food | Disney World",
+      "channel": "Paging Mr. Morrow",
+      "url": "https://www.youtube.com/watch?v=Jf_npkelIFk",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Jf_npkelIFk/mqdefault.jpg",
+      "viewCount": 85544,
+      "publishedAt": "2026-06-12T15:25:10Z",
+      "summary": "Paging Mr. Morrow walks through Hollywood Studios construction updates including the new Muppets coaster, Star Wars developments, and food offerings."
+    },
+    {
+      "videoId": "L4WGerALQxM",
+      "title": "NEW Brunch at Disney World- Worth It? The Edison at Disney Springs",
+      "channel": "WrightDownMainStreet",
+      "url": "https://www.youtube.com/watch?v=L4WGerALQxM",
+      "thumbnailUrl": "https://i.ytimg.com/vi/L4WGerALQxM/mqdefault.jpg",
+      "viewCount": 30911,
+      "publishedAt": "2026-06-10T15:41:14Z",
+      "summary": "WrightDownMainStreet reviews the new brunch service at The Edison in Disney Springs to see if it's worth the price."
+    },
+    {
+      "videoId": "R0k1kAGtN80",
+      "title": "ULTIMATE GUIDE: Eating Around the World at Epcot | Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "url": "https://www.youtube.com/watch?v=R0k1kAGtN80",
+      "thumbnailUrl": "https://i.ytimg.com/vi/R0k1kAGtN80/mqdefault.jpg",
+      "viewCount": 23131,
+      "publishedAt": "2026-06-14T16:00:04Z",
+      "summary": "WrightDownMainStreet offers a complete guide to dining through all eleven countries in EPCOT's World Showcase."
+    },
+    {
+      "videoId": "B6YuC5EP_HU",
+      "title": "The Heeler Family😍🩵🧡 @DisneyParks @Disney @Disneyland",
+      "channel": "Erik y Andrea",
+      "url": "https://www.youtube.com/watch?v=B6YuC5EP_HU",
+      "thumbnailUrl": "https://i.ytimg.com/vi/B6YuC5EP_HU/mqdefault.jpg",
+      "viewCount": 16312,
+      "publishedAt": "2026-06-15T11:27:24Z",
+      "summary": "Erik y Andrea capture a meet-and-greet with the Heeler family characters from Bluey at a Disney park."
+    },
+    {
+      "videoId": "PTeLB61g6GY",
+      "title": "DISNEYLAND Sunday Night! | Fantasmic + World of Color #livestream",
+      "channel": "MGV",
+      "url": "https://www.youtube.com/watch?v=PTeLB61g6GY",
+      "thumbnailUrl": "https://i.ytimg.com/vi/PTeLB61g6GY/mqdefault.jpg",
+      "viewCount": 5739,
+      "publishedAt": "2026-06-15T08:28:24Z",
+      "summary": "MGV livestreams Disneyland's Sunday evening entertainment including Fantasmic and World of Color."
+    },
+    {
+      "videoId": "rxNgVMoopF0",
+      "title": "Live - Disneyland -  StarWars Sunday- CELEBRATE!  #live #livestream #disney #disneyparks #disneyland",
+      "channel": "FocalWorld (Jim)",
+      "url": "https://www.youtube.com/watch?v=rxNgVMoopF0",
+      "thumbnailUrl": "https://i.ytimg.com/vi/rxNgVMoopF0/mqdefault.jpg",
+      "viewCount": 3073,
+      "publishedAt": "2026-06-15T08:41:36Z",
+      "summary": "FocalWorld livestreams a Star Wars Sunday celebration event at Disneyland."
+    },
+    {
+      "videoId": "v0UkYaA48S8",
+      "title": "Disneyland's funny moments 🥳🤣#funny #disney #fyp #Foryou #usa",
+      "channel": "SquishyStory",
+      "url": "https://www.youtube.com/watch?v=v0UkYaA48S8",
+      "thumbnailUrl": "https://i.ytimg.com/vi/v0UkYaA48S8/mqdefault.jpg",
+      "viewCount": 1893,
+      "publishedAt": "2026-06-15T10:38:25Z",
+      "summary": "SquishyStory compiles humorous clips from recent Disneyland visits."
+    },
+    {
+      "videoId": "sPEM90dtG_A",
+      "title": "Say Hi to Rex at Hong Kong Disneyland #disney #disneyland",
+      "channel": "Natalie Chan",
+      "url": "https://www.youtube.com/watch?v=sPEM90dtG_A",
+      "thumbnailUrl": "https://i.ytimg.com/vi/sPEM90dtG_A/mqdefault.jpg",
+      "viewCount": 1775,
+      "publishedAt": "2026-06-15T09:05:59Z",
+      "summary": "Natalie Chan greets Rex the dinosaur during a character encounter at Hong Kong Disneyland."
+    },
+    {
+      "videoId": "NywIUDEd1As",
+      "title": "Cindellera # #tokyodisneyresort #ディズニー #disney #cinderella #disneyland #disneysea",
+      "channel": "Rakosbright disneytrip",
+      "url": "https://www.youtube.com/watch?v=NywIUDEd1As",
+      "thumbnailUrl": "https://i.ytimg.com/vi/NywIUDEd1As/mqdefault.jpg",
+      "viewCount": 1686,
+      "publishedAt": "2026-06-15T10:40:35Z",
+      "summary": "Rakosbright disneytrip shares a Cinderella-themed moment from Tokyo Disney Resort."
+    },
+    {
+      "videoId": "otX50-jS7Hg",
+      "title": "Lamplight boardwalk #disney #disneyland #shorts #shortvideo #shortsfeed #follow",
+      "channel": "YaBoiiLuii",
+      "url": "https://www.youtube.com/watch?v=otX50-jS7Hg",
+      "thumbnailUrl": "https://i.ytimg.com/vi/otX50-jS7Hg/mqdefault.jpg",
+      "viewCount": 1443,
+      "publishedAt": "2026-06-15T07:46:19Z",
+      "summary": "YaBoiiLuii films the lamplit boardwalk atmosphere at a Disney park."
+    }
+  ],
+  "updatedAt": "2026-06-15T16:14:44.008Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-06-15T16:14:44.008Z",
+    "tokens": {
+      "input": 11936,
+      "output": 5382,
+      "costUsd": 0.1165
+    }
+  }
+}
