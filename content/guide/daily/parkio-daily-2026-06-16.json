@@ -1,0 +1,344 @@
+{
+  "title": "Parkio Daily for June 16, 2026",
+  "slug": "parkio-daily-2026-06-16",
+  "date": "2026-06-16",
+  "teaser": "Level99 opens June 29 at Disney Springs; Magic Kingdom extends July 4th hours; Oogie Boogie Bash tickets on sale today for Inspire Key holders.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Big Thunder Mountain Railroad",
+        "parkSlug": "magic-kingdom",
+        "note": "Lower waits early morning before Frontierland fills"
+      },
+      {
+        "name": "Test Track",
+        "parkSlug": "epcot",
+        "note": "Capacity warning issued for July 4th week—ride today before crowds spike"
+      },
+      {
+        "name": "Flight of Passage",
+        "parkSlug": "animal-kingdom",
+        "note": "Rope drop remains your best window for sub-30 minute waits"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [],
+    "bignews": [
+      {
+        "title": "Level99 interactive gaming venue opens June 29 at Disney Springs",
+        "body": "The immersive challenge experience taking over the former NBA building goes on sale soon, bringing life-sized games, original art, and scratch kitchen food to the West Side. Tickets and pricing details drop this week.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/06/level99-at-disney-springs-opening-date-announced/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Opening-week waits for walk-ins tend to be long at new Disney Springs venues. Buying tickets online in advance usually saves 30–45 minutes at the door."
+        }
+      },
+      {
+        "title": "Magic Kingdom extends July 4th hours with longest summer operating window",
+        "body": "Disney just added evening hours across several parks for Independence Day week, with Magic Kingdom seeing the biggest expansion. The move signals higher-than-usual holiday demand.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/06/walt-disney-world-reveals-biggest-magic-kingdom-hours-change-of-the-summer-bwb1/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Extended hours often mean lighter crowds in the final two operating hours. Riding Seven Dwarfs or Space Mountain after 9pm typically shaves 20–30 minutes off peak waits."
+        }
+      },
+      {
+        "title": "Oogie Boogie Bash tickets on sale now for Inspire Key holders",
+        "body": "Disneyland's Halloween party pre-sale begins today at 9am PT for Inspire Key members, with additional Magic Key tiers gaining access over the next two days. General sale follows later this month.",
+        "parkSlug": "california-adventure",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/06/inspire-key-holders-can-purchase-oogie-boogie-bash-2026-tickets-today/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Popular October dates tend to sell out during pre-sale windows. Booking a mid-week September night usually offers shorter trick-or-treat lines and better character photo ops."
+        }
+      },
+      {
+        "title": "EPCOT capacity warning issued ahead of July 4th weekend",
+        "body": "Disney alerted guests that EPCOT may reach capacity during Independence Day week due to fireworks viewing demand. Other parks will see elevated crowds but no formal warnings yet.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/06/disney-world-releases-critical-capacity-warning-for-epcot-ahead-of-july-4th-holiday-sb1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "EPCOT capacity closures tend to trigger by early afternoon on July 4th. Arriving before 10am or switching to Magic Kingdom after 3pm usually keeps your park-hopping options open."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "Disney Springs bus verification rules become permanent after July 4th",
+        "body": "The pilot program requiring resort guests to show room keys before boarding buses from Disney Springs ends its test phase and becomes standard policy on June 28. The change closes a long-used free parking workaround.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-world-confirms-closing-of-free-parking-loophole-via-new-bus-boat-rules/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Guests without resort credentials will need to use rideshare or pay for parking. Lyft pickups at the Orange Garage usually save 10–15 minutes over the main lot during evening rush."
+        }
+      },
+      {
+        "title": "Carousel of Progress permit filed for new construction phase",
+        "body": "A fresh work authorization appeared for the Magic Kingdom attraction, signaling the next stage of ongoing refurbishment. No closure dates or scope details were disclosed in the filing.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "AllEars.Net",
+          "url": "https://allears.net/2026/06/16/disney-files-new-permit-for-carousel-of-progress-changes/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Major attraction refurbs often begin within 30–60 days of permit filing. Riding Carousel before mid-July may be your last chance for several months if a closure is announced."
+        }
+      },
+      {
+        "title": "Contemporary Resort Grand Canyon Concourse ceiling work wraps up",
+        "body": "Protective netting and scrims have been removed from a section of the atrium ceiling, marking another milestone in the resort's multi-phase restoration. The iconic space remains open during construction.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/06/ceiling-work-complete-in-disneys-contemporary-resort-grand-canyon-concourse/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "The newly restored ceiling sections look best in morning light through the atrium windows. Stopping by the fourth-floor observation deck between 8–10am usually offers unobstructed photos."
+        }
+      },
+      {
+        "title": "Walt Disney World launches limited 2-Day, 2-Park ticket offer for summer",
+        "body": "A new discounted ticket covering two parks over two days is now available for late summer and fall visits, expanded beyond Florida residents to all guests. Blackout dates and park pairings apply.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-world-brings-back-limited-2-day-ticket-deal-for-summer-2026-but-expands-it-to-everyone/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Two-park tickets work best when pairing Magic Kingdom with EPCOT or Animal Kingdom with Hollywood Studios. Hopping mid-afternoon usually dodges peak entry queues at the second park."
+        }
+      },
+      {
+        "title": "Goofy's Candy Company adding create-your-own popcorn station this summer",
+        "body": "Disney Springs' flagship candy shop will debut a custom popcorn mix experience, similar to the setup at Magic Kingdom's Main Street Confectionery. Launch timing was not specified.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/06/create-your-own-popcorn-coming-to-goofys-candy-company-at-disney-springs/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Custom popcorn stations tend to draw lines during peak afternoon shopping hours. Visiting Goofy's Candy before 11am or after 7pm usually cuts wait time in half."
+        }
+      },
+      {
+        "title": "Treehouse Villas at Saratoga Springs debut reimagined interiors",
+        "body": "Disney Vacation Club released first-look photos of the refreshed three-bedroom units tucked along the Sassagoula River, showcasing updated furnishings and finishes while preserving the elevated, secluded feel.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/dvc/first-look-inside-the-reimagined-treehouse-villas-at-disneys-saratoga-springs-resort/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Newly refurbished DVC villas often book quickly for peak weeks. Searching availability 11 months out at the booking window usually yields the best selection for holiday and spring break dates."
+        }
+      },
+      {
+        "title": "RunDisney Springtime Surprise Weekend shifts to new April 2027 dates",
+        "body": "The 2027 race weekend at Walt Disney World moved from its original slot, landing on different April dates that may overlap with more spring break travel. Registration details have not yet been released.",
+        "parkSlug": null,
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/06/walt-disney-world-makes-april-2027-change-that-could-affect-spring-break-plans-bwb1/"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "RunDisney weekends typically add 15,000–20,000 guests and trigger early park closures for race staging. Booking a non-race weekend in late March or early May usually offers lighter crowds and full operating hours."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Disney celebrates America foodie guide released for 250th anniversary",
+        "body": "Disney chefs across all U.S. resorts unveiled patriotic menu items for summer, including Fourth of July beignets at Walt Disney World and red-white-and-blue treats coast to coast.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/disney-experiences/disney-eats-disney-celebrates-america-foodie-guide/"
+        }
+      },
+      {
+        "title": "Logo Mania merchandise collection arrives at Disney Parks",
+        "body": "A new apparel and accessory line lets guests rep their favorite attractions, lands, and park icons with bold, colorful branding across six design themes.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/products/new-disney-parks-merch-logo-mania/"
+        }
+      },
+      {
+        "title": "Shanghai Disney Resort marks 10th anniversary today",
+        "body": "The resort opened June 16, 2016, as the sixth Disney destination worldwide and the first in mainland China. Disney released retrospectives and future vision content to celebrate the milestone.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/shdl/then-and-now-10-years-at-shanghai-disney-resort/"
+        }
+      },
+      {
+        "title": "New baby animals debut at Walt Disney World for spring season",
+        "body": "Animal Kingdom and resort animal care teams introduced several newborns, including species milestones and behind-the-scenes care stories as part of Earth Month programming.",
+        "parkSlug": "animal-kingdom",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/meet-the-newest-baby-animals-at-walt-disney-world/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "Level99 food menu teased ahead of June 29 opening",
+        "body": "Disney Springs' new gaming venue confirmed three menu items will be available from its scratch kitchen, though full details remain under wraps until closer to launch. The 50,000-square-foot space promises original art installations alongside interactive challenges.",
+        "parkSlug": null,
+        "ctaLabel": "Plan your visit",
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "New Disney Springs dining spots often run soft openings a few days early for walk-ins. Checking the venue's social channels the week of June 23 may reveal preview opportunities before the official launch."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "Jf_npkelIFk",
+      "title": "Disney's Hollywood Studios 2026 | Park Update: NEW Muppets Coaster, Star Wars & Food | Disney World",
+      "channel": "Paging Mr. Morrow",
+      "publishedAt": "2026-06-12T15:25:10Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Jf_npkelIFk/mqdefault.jpg",
+      "viewCount": 94204,
+      "url": "https://www.youtube.com/watch?v=Jf_npkelIFk",
+      "summary": "Paging Mr. Morrow walks through Hollywood Studios construction updates, including the new Muppets coaster project, Star Wars area changes, and recent food additions."
+    },
+    {
+      "videoId": "R0k1kAGtN80",
+      "title": "ULTIMATE GUIDE: Eating Around the World at Epcot | Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-06-14T16:00:04Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/R0k1kAGtN80/mqdefault.jpg",
+      "viewCount": 33927,
+      "url": "https://www.youtube.com/watch?v=R0k1kAGtN80",
+      "summary": "WrightDownMainStreet offers a comprehensive guide to dining at EPCOT's World Showcase pavilions, covering must-try dishes and touring strategies."
+    },
+    {
+      "videoId": "L4WGerALQxM",
+      "title": "NEW Brunch at Disney World- Worth It? The Edison at Disney Springs",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-06-10T15:41:14Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/L4WGerALQxM/mqdefault.jpg",
+      "viewCount": 31601,
+      "url": "https://www.youtube.com/watch?v=L4WGerALQxM",
+      "summary": "WrightDownMainStreet reviews the new brunch service at The Edison in Disney Springs, evaluating menu offerings and overall value."
+    },
+    {
+      "videoId": "vcTN_sD-4bU",
+      "title": "POV mom getting ready to go to Disney parks the next day",
+      "channel": "dsewlssd988",
+      "publishedAt": "2026-06-16T11:38:45Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/vcTN_sD-4bU/mqdefault.jpg",
+      "viewCount": 8680,
+      "url": "https://www.youtube.com/watch?v=vcTN_sD-4bU",
+      "summary": "A lighthearted look at the pre-park preparation routine from a parent's perspective before a Disney day."
+    },
+    {
+      "videoId": "DB5bHlbEO8k",
+      "title": "Funny Disney moments #disneyland #disneyparktour #disney #universalparks #disneyparks",
+      "channel": "Shanique Hughes",
+      "publishedAt": "2026-06-16T10:19:24Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/DB5bHlbEO8k/mqdefault.jpg",
+      "viewCount": 2457,
+      "url": "https://www.youtube.com/watch?v=DB5bHlbEO8k",
+      "summary": "Shanique Hughes shares humorous clips and moments captured during Disneyland park visits."
+    },
+    {
+      "videoId": "zKYQlpmnygA",
+      "title": "#disney #disneyland #lifeisbutadream #love",
+      "channel": "Clara.A",
+      "publishedAt": "2026-06-16T10:40:45Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/zKYQlpmnygA/mqdefault.jpg",
+      "viewCount": 1878,
+      "url": "https://www.youtube.com/watch?v=zKYQlpmnygA",
+      "summary": "Clara.A posts a short Disneyland-themed video celebrating Disney park experiences."
+    },
+    {
+      "videoId": "k-KchGHSvAQ",
+      "title": "90% Fail 😥🤔#emoji #disney #disneyland #emoji",
+      "channel": "emoji yt",
+      "publishedAt": "2026-06-16T10:07:34Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/k-KchGHSvAQ/mqdefault.jpg",
+      "viewCount": 1726,
+      "url": "https://www.youtube.com/watch?v=k-KchGHSvAQ",
+      "summary": "An emoji-themed challenge video with a Disney and Disneyland focus from emoji yt."
+    },
+    {
+      "videoId": "NOsw_jAjGSo",
+      "title": "#disney#paris #disneyland",
+      "channel": "Sunita's Diary",
+      "publishedAt": "2026-06-16T10:26:01Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/NOsw_jAjGSo/mqdefault.jpg",
+      "viewCount": 1572,
+      "url": "https://www.youtube.com/watch?v=NOsw_jAjGSo",
+      "summary": "Sunita's Diary shares content from a Disneyland Paris visit."
+    },
+    {
+      "videoId": "WjSCYNUE89A",
+      "title": "#viral #disneyland #disneylandparis #disneyparks #couplefun #disney #disneyvlog #vlog #disneyworld",
+      "channel": "simplyfrancescaa ",
+      "publishedAt": "2026-06-16T12:19:21Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/WjSCYNUE89A/mqdefault.jpg",
+      "viewCount": 1365,
+      "url": "https://www.youtube.com/watch?v=WjSCYNUE89A",
+      "summary": "Simplyfrancescaa vlogs a couples trip to Disneyland Paris with park highlights and experiences."
+    },
+    {
+      "videoId": "ak4TRaeAtUQ",
+      "title": "It's just a ride… #tangled #rapunzel #disney #disneyland #disneyaddict",
+      "channel": "NukaSmog",
+      "publishedAt": "2026-06-16T10:43:07Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/ak4TRaeAtUQ/mqdefault.jpg",
+      "viewCount": 1256,
+      "url": "https://www.youtube.com/watch?v=ak4TRaeAtUQ",
+      "summary": "NukaSmog features a Tangled or Rapunzel-themed attraction moment at Disneyland."
+    }
+  ],
+  "updatedAt": "2026-06-16T15:49:31.621Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-06-16T15:49:31.621Z",
+    "tokens": {
+      "input": 11862,
+      "output": 5360,
+      "costUsd": 0.116
+    }
+  }
+}
