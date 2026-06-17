@@ -1,0 +1,338 @@
+{
+  "title": "Parkio Daily for June 17, 2026",
+  "slug": "parkio-daily-2026-06-17",
+  "date": "2026-06-17",
+  "teaser": "Eat to the Beat lineup drops for EPCOT. Hollywood Studios closes 3 hours early tomorrow. Disney Springs bus rules tighten next week.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Soarin'",
+        "parkSlug": "epcot",
+        "note": "Evening window opening up—waits typically drop 6–7pm"
+      },
+      {
+        "name": "Slinky Dog Dash",
+        "parkSlug": "hollywood-studios",
+        "note": "First hour before crowds build in Toy Story Land"
+      },
+      {
+        "name": "Big Thunder Mountain",
+        "parkSlug": "magic-kingdom",
+        "note": "Mid-afternoon lull often brings sub-30 minute waits"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [
+      {
+        "title": "Hollywood Studios closes 3 hours early tomorrow",
+        "body": "The park shuts at 6pm on June 18 for a private event. Day guests lose evening hours.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/06/reminder-disneys-hollywood-studios-closing-early-on-june-18/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Rope-drop strategy becomes essential tomorrow. Hitting Galaxy's Edge and Toy Story Land before 10am likely gives you three-plus major attractions before the 6pm close."
+        }
+      },
+      {
+        "title": "Disney Springs bus and boat access restricted starting next week",
+        "body": "Non-resort guests will be permanently blocked from boarding buses or watercraft at Disney Springs. The change closes a free-parking loophole and makes resort-hopping harder.",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-world-confirms-closing-of-free-parking-loophole-via-new-bus-boat-rules/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "If you planned to visit a resort hotel for dining or shopping via Disney Springs transport, budget extra time for ride-share or your own car. The free-shuttle option vanishes next week."
+        }
+      }
+    ],
+    "bignews": [
+      {
+        "title": "EPCOT Eat to the Beat concert lineup announced",
+        "body": "The full roster for the Food and Wine Festival concert series is live, running August 27 through November 16. Shows happen nightly at the America Gardens Theatre.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/eat-to-the-beat-lineup-full-concert-schedule/"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "World Showcase typically sees heavier foot traffic on concert nights, especially near American Adventure. Plan dining reservations before 5pm or after 8pm to avoid the pre-show rush."
+        }
+      },
+      {
+        "title": "Level99 interactive gaming venue opens at Disney Springs in June",
+        "body": "The former DisneyQuest space debuts as a new challenge-based attraction. Ticket sales have started, with pricing and hours now public.",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/level99-at-disney-world-announces-opening-date-ticket-sales-starting-new-details/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Opening-week crowds at new venues often mean longer waits. Booking an early-morning or late-evening slot usually offers shorter lines and a smoother experience."
+        }
+      },
+      {
+        "title": "Magic Kingdom After Hours event on June 22 sells out",
+        "body": "The fifth date is now gone. Only three dates remain open for all of 2026.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/06/fifth-magic-kingdom-after-hours-event-sold-out/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "If you want low waits on Seven Dwarfs or TRON without the upcharge event, aim for the final two hours of regular park days—crowds often thin as guests leave for dinner."
+        }
+      },
+      {
+        "title": "Port Orleans Riverside Royal Guest Rooms renovation complete",
+        "body": "The themed rooms have reopened with updated decor. Tours and photos are circulating online.",
+        "source": {
+          "label": "AllEars.Net",
+          "url": "https://allears.net/2026/06/16/come-with-us-for-a-full-tour-of-the-new-royal-guest-rooms-at-port-orleans-resort-riverside/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Newly renovated rooms tend to book fast. If you're eyeing a stay later this year, locking in a reservation now often avoids higher rack rates or sold-out dates."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "Treehouse Villas at Saratoga Springs reimagined",
+        "body": "The three-bedroom hideaways along the Sassagoula River have been refreshed. Disney shared first-look photos of the new interiors.",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/dvc/first-look-inside-the-reimagined-treehouse-villas-at-disneys-saratoga-springs-resort/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Villas this size fill up months ahead for holiday weeks. If your group wants the space and seclusion, booking early in the reservation window usually locks in availability."
+        }
+      },
+      {
+        "title": "H2O Glow After Hours returns to Typhoon Lagoon",
+        "body": "The neon-lit evening event is back for summer, featuring a dance party and extended slide access. Tickets are on sale now.",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/h2o-glow-2026-review-disney-date-night-after-hours/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "After-hours water park events often mean walk-on slides and shorter lines for food. Arriving right at event start typically maximizes your number of rides before midnight."
+        }
+      },
+      {
+        "title": "Disney World expanding iPhone park-entry features",
+        "body": "My Disney Experience app now supports faster tap-to-enter at turnstiles. The rollout aims to replace older MagicBand hardware by September.",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/06/september-2026-deadline-disney-world-fast-tracks-new-upgrades-to-replace-magicbands-ab1/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Testing new tech at rope drop can slow you down. Keeping a backup MagicBand or card until the system stabilizes usually saves a few minutes at the gate."
+        }
+      },
+      {
+        "title": "New baby animals arrive at Animal Kingdom and resort locations",
+        "body": "Spring births include several species visible on Kilimanjaro Safaris and behind-the-scenes habitats. Disney shared photos and care updates.",
+        "parkSlug": "animal-kingdom",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/meet-the-newest-baby-animals-at-walt-disney-world/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Early-morning safaris often give better sightings when animals are most active. Booking a 9–10am slot tends to improve your odds of spotting the youngest residents."
+        }
+      },
+      {
+        "title": "Logo Mania merchandise collection debuts at both resorts",
+        "body": "Six colorful designs celebrating attractions, lands, and transport are now on shelves. Items include apparel and accessories.",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/products/new-disney-parks-merch-logo-mania/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Popular merch lines tend to sell out fastest at flagship stores like Emporium and World of Disney. Shopping before 11am usually avoids the midday rush and stock gaps."
+        }
+      },
+      {
+        "title": "America's 250th anniversary food offerings roll out across parks",
+        "body": "Red-white-and-blue treats and specialty bites are available through the summer at Walt Disney World and Disneyland. Highlights include Fourth of July beignets.",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/disney-experiences/disney-eats-disney-celebrates-america-foodie-guide/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Limited-time snacks often vanish by late afternoon. Grabbing them during your first lap through a park usually ensures availability before kitchens run out."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Gideon's Bakehouse signage up at Six Ravens location in Disney Springs",
+        "body": "The new storefront is taking shape. No official opening date announced yet.",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/06/disney-springs-will-permanently-ban-watercraft-access-for-non-resort-guests-beginning-next-week-daily-recap-for-6-16-2026/"
+        }
+      },
+      {
+        "title": "Patriotic Mickey Mouse plush celebrates America's Semiquincentennial",
+        "body": "A 250th-anniversary-themed Mickey wearing red, white, and blue is now on sale at Walt Disney World for $29.99.",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/06/patriotic-mickey-mouse-plush-celebrates-americas-250th-anniversary-at-disney-world/"
+        }
+      },
+      {
+        "title": "Shanghai Disney Resort marks 10th anniversary",
+        "body": "The resort opened June 16, 2016. Disney shared retrospective content and a look ahead at future plans.",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/shdl/then-and-now-10-years-at-shanghai-disney-resort/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "Hollywood Studios Lightning Lane surprise—Toy Story Land is the bottleneck",
+        "body": "Data confirms Slinky Dog Dash and Alien Swirling Saucers book out faster than Rock 'n' Roller Coaster. Early-morning reservations vanish within minutes of park opening.",
+        "parkSlug": "hollywood-studios",
+        "ctaLabel": "Plan your Lightning Lane strategy",
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Securing a Slinky Dog Lightning Lane at 7am sharp tends to be the single most important booking of the day. If you miss it, riding standby in the first 30 minutes of Early Entry often beats waiting until afternoon."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "Jf_npkelIFk",
+      "title": "Disney's Hollywood Studios 2026 | Park Update: NEW Muppets Coaster, Star Wars & Food | Disney World",
+      "channel": "Paging Mr. Morrow",
+      "publishedAt": "2026-06-12T15:25:10Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Jf_npkelIFk/mqdefault.jpg",
+      "viewCount": 100692,
+      "url": "https://www.youtube.com/watch?v=Jf_npkelIFk",
+      "summary": "Paging Mr. Morrow walks through the latest changes at Hollywood Studios, covering the new Muppets coaster construction, Star Wars updates, and food offerings."
+    },
+    {
+      "videoId": "R0k1kAGtN80",
+      "title": "ULTIMATE GUIDE: Eating Around the World at Epcot | Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-06-14T16:00:04Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/R0k1kAGtN80/mqdefault.jpg",
+      "viewCount": 39751,
+      "url": "https://www.youtube.com/watch?v=R0k1kAGtN80",
+      "summary": "WrightDownMainStreet provides a comprehensive guide to navigating World Showcase dining, from quick bites to table service across all eleven pavilions."
+    },
+    {
+      "videoId": "L4WGerALQxM",
+      "title": "NEW Brunch at Disney World- Worth It? The Edison at Disney Springs",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-06-10T15:41:14Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/L4WGerALQxM/mqdefault.jpg",
+      "viewCount": 32158,
+      "url": "https://www.youtube.com/watch?v=L4WGerALQxM",
+      "summary": "WrightDownMainStreet reviews the new brunch menu at The Edison in Disney Springs, evaluating whether the experience justifies the price."
+    },
+    {
+      "videoId": "rZi6_rT08O4",
+      "title": "My heart 🥰My eyes 😭#disney #disneyland #foryou #funny #fyp",
+      "channel": "Wallie Tintler",
+      "publishedAt": "2026-06-17T06:00:18Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/rZi6_rT08O4/mqdefault.jpg",
+      "viewCount": 5289,
+      "url": "https://www.youtube.com/watch?v=rZi6_rT08O4",
+      "summary": "Wallie Tintler shares a short, emotional moment from a Disneyland visit captured in viral-style format."
+    },
+    {
+      "videoId": "MMZquTvN0cY",
+      "title": "90% 😮🤔Fail #emoji #disney #disneyland #emoji",
+      "channel": "emoji yt",
+      "publishedAt": "2026-06-17T07:46:26Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/MMZquTvN0cY/mqdefault.jpg",
+      "viewCount": 1749,
+      "url": "https://www.youtube.com/watch?v=MMZquTvN0cY",
+      "summary": "A Disney-themed emoji challenge video from emoji yt testing viewers' pattern recognition skills."
+    },
+    {
+      "videoId": "c3RwQkWmZkM",
+      "title": "Step behind the scenes of The American Adventure at #EPCOT 🇺🇸 #DisneyCelebratesAmerica",
+      "channel": "Disney Parks",
+      "publishedAt": "2026-06-17T13:02:55Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/c3RwQkWmZkM/mqdefault.jpg",
+      "viewCount": 1469,
+      "url": "https://www.youtube.com/watch?v=c3RwQkWmZkM",
+      "summary": "Disney Parks offers a behind-the-scenes look at The American Adventure attraction as part of the America's 250th anniversary celebration."
+    },
+    {
+      "videoId": "OgH5QMEla-k",
+      "title": "#momlife #disney #mom #disneyland #fyp #viral #shorts",
+      "channel": "Karla Calderon",
+      "publishedAt": "2026-06-17T05:43:58Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/OgH5QMEla-k/mqdefault.jpg",
+      "viewCount": 1304,
+      "url": "https://www.youtube.com/watch?v=OgH5QMEla-k",
+      "summary": "Karla Calderon shares a relatable moment from a Disney park visit through the lens of parenting."
+    },
+    {
+      "videoId": "TkF1jZPwe4I",
+      "title": "Love the Memory. Feel the Moment.\" 🏰✨ #disney #disneyland",
+      "channel": "ZUMPI",
+      "publishedAt": "2026-06-17T10:11:25Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/TkF1jZPwe4I/mqdefault.jpg",
+      "viewCount": 1275,
+      "url": "https://www.youtube.com/watch?v=TkF1jZPwe4I",
+      "summary": "ZUMPI captures an atmospheric Disney moment emphasizing nostalgia and present-moment park experiences."
+    },
+    {
+      "videoId": "Z3T7rrEwb7E",
+      "title": "BRAND NEW Pin Board! #disney #disneystore #disneyparks #disneyparktour #disneyland",
+      "channel": "Mandamouseketeer",
+      "publishedAt": "2026-06-17T10:09:45Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Z3T7rrEwb7E/mqdefault.jpg",
+      "viewCount": 1248,
+      "url": "https://www.youtube.com/watch?v=Z3T7rrEwb7E",
+      "summary": "Mandamouseketeer showcases a newly released pin board display at a Disney retail location, likely highlighting collectible trading pins."
+    },
+    {
+      "videoId": "ShLjzfhnSQ4",
+      "title": "90% 😾🤔Fail #emoji #disney #disneyland #emoji",
+      "channel": "emoji yt",
+      "publishedAt": "2026-06-17T07:43:52Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/ShLjzfhnSQ4/mqdefault.jpg",
+      "viewCount": 1156,
+      "url": "https://www.youtube.com/watch?v=ShLjzfhnSQ4",
+      "summary": "Another Disney-themed emoji puzzle from emoji yt challenging viewers to spot the difference or solve a visual riddle."
+    }
+  ],
+  "updatedAt": "2026-06-17T14:25:10.287Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-06-17T14:25:10.287Z",
+    "tokens": {
+      "input": 12126,
+      "output": 5147,
+      "costUsd": 0.1136
+    }
+  }
+}
