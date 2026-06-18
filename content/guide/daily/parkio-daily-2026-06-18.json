@@ -1,0 +1,349 @@
+{
+  "title": "Parkio Daily for June 18, 2026",
+  "slug": "parkio-daily-2026-06-18",
+  "date": "2026-06-18",
+  "teaser": "Autopia gas cars retire by Feb 2027; EPCOT announces Food & Wine concert lineup; Chefs de France breakfast buffet returns; heat advisory for Central Florida.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Remy's Ratatouille Adventure",
+        "parkSlug": "epcot",
+        "note": "Low waits early morning before World Showcase buzz picks up"
+      },
+      {
+        "name": "Flight of Passage",
+        "parkSlug": "animal-kingdom",
+        "note": "Rope-drop window typically offers sub-30-minute waits"
+      },
+      {
+        "name": "Rise of the Resistance",
+        "parkSlug": "hollywood-studios",
+        "note": "First hour after opening usually your best shot"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [
+      {
+        "title": "Heat advisory issued for Central Florida this week",
+        "body": "Forecasters warn of dangerous heat conditions across the Walt Disney World area, with elevated thunderstorm chances later in the day.",
+        "parkSlug": null,
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/06/disney-world-vacations-officially-take-turn-for-the-worst-as-guest-risk-increases-th1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Midday outdoor queues and long walks between attractions tend to be most uncomfortable during heat advisories. Prioritize indoor shows, air-conditioned dining, and resort breaks between noon and 4pm."
+        }
+      }
+    ],
+    "bignews": [
+      {
+        "title": "Disneyland Autopia must retire gas-powered cars by February 2027",
+        "body": "Under a state agreement, the attraction faces a firm deadline to transition away from gasoline engines.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/06/disneyland-must-retire-gas-powered-autopia-cars-by-february-2027-under-state-agreement/?adt_ei=*|EMAIL|*"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Autopia may close for extended refurbishment as the deadline approaches. If the attraction is a must-do, riding in the next few months usually offers more certainty than waiting until late fall."
+        }
+      },
+      {
+        "title": "EPCOT announces full 2026 Food & Wine Festival concert lineup",
+        "body": "Disney revealed the complete Eat to the Beat schedule, including performing artists, show dates, and dining package details for this year's festival.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/eat-to-the-beat-lineup-full-concert-schedule/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Concert dining packages typically book fast for popular acts. Securing reservations within the first few days of availability often means better seating and restaurant choice."
+        }
+      },
+      {
+        "title": "Level99 at Disney Springs sets opening date and ticket pricing",
+        "body": "The interactive experience inside the former DisneyQuest building confirmed its June launch, with ticket sales starting soon and menu highlights now public.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/level99-at-disney-world-announces-opening-date-ticket-sales-starting-new-details/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Soft-opening periods for new attractions at Disney Springs often mean lighter crowds before word spreads. Visiting in the first week may offer shorter wait times for popular challenges."
+        }
+      },
+      {
+        "title": "Disney World unveils Wetlands pool area at new Lakeshore Lodge",
+        "body": "The resort released concept art and details for its outdoor recreation zone, including a lazy river, lagoon pool, and themed play areas opening summer 2027.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-world-reveals-wetlands-pool-at-lakeshore-lodge-lazy-river-lagoon-otter-heron-play-areas/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Resort bookings for marquee pool experiences tend to fill early. Guests interested in a Magic Kingdom-area waterfront stay may want to monitor reservation windows as they open."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "Chefs de France breakfast buffet returns for 2026 Food & Wine Festival",
+        "body": "The Parisian breakfast experience, introduced last year, is now bookable via My Disney Experience for this fall's festival run.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/06/chefs-de-france-breakfast-buffet-returning-for-2026-epcot-international-food-wine-festival/?adt_ei=*|EMAIL|*"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Breakfast reservations at World Showcase locations often allow early entry before the pavilion officially opens. Booking early morning slots may mean quieter surroundings and easier parking."
+        }
+      },
+      {
+        "title": "Disney upgrades MagicMobile with enhanced digital key features",
+        "body": "Walt Disney World is rolling out improvements to its digital MagicBand alternative, simplifying park entry and room access via iPhone and Apple Watch.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-worlds-digital-magicband-alternative-getting-big-upgrades-via-enhanced-keys/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Early adopters of new mobile features often encounter initial bugs but gain faster entry once glitches are smoothed out. Testing the updated app at rope drop may save a few minutes at the gate."
+        }
+      },
+      {
+        "title": "H2O Glow After Hours returns to Typhoon Lagoon for 2026",
+        "body": "The neon-themed water park event is back this year, featuring DJ dance parties, unlimited snacks, and special lighting across slides and wave pools.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/h2o-glow-2026-review-disney-date-night-after-hours/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "After-hours water park events typically offer walk-on slide access and shorter lines for food. Arriving right at the start time usually maximizes ride opportunities before late-night crowds build."
+        }
+      },
+      {
+        "title": "New Port Orleans beignets and Boatwright's menu items debut",
+        "body": "Disney's Port Orleans Resort introduced updated food offerings, including new beignet flavors and expanded dining options at Boatwright's.",
+        "parkSlug": null,
+        "source": {
+          "label": "WrightDownMainStreet (YouTube)",
+          "url": "https://www.youtube.com/watch?v=wc1aABi3Zg8"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Resort dining spots off the main loop often have same-day availability when park restaurants are booked. Swinging by Port Orleans for a snack break may offer easier parking and shorter waits."
+        }
+      },
+      {
+        "title": "Logo Mania merchandise collection arrives at Disney Parks",
+        "body": "A colorful new line celebrating favorite attractions, lands, and park icons launched across Walt Disney World and Disneyland locations.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/products/new-disney-parks-merch-logo-mania/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Limited-release apparel and accessories tend to sell out quickly at flagship stores. Visiting Emporium or World of Disney early in the day usually means better size and style selection."
+        }
+      },
+      {
+        "title": "Disney Springs adds new interactive gaming venue and dining this summer",
+        "body": "The entertainment district announced a wave of openings, including an interactive gaming experience and a new restaurant.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/everything-new-coming-to-disney-springs-this-summer/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Disney Springs crowds usually peak late afternoon and evening. Arriving mid-morning for new venue openings often means shorter waits and easier parking near the West Side."
+        }
+      },
+      {
+        "title": "Treehouse Villas at Saratoga Springs complete reimagined interior refresh",
+        "body": "Disney Vacation Club unveiled the updated three-bedroom accommodations, featuring modernized décor and amenities along the Sassagoula River.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/dvc/first-look-inside-the-reimagined-treehouse-villas-at-disneys-saratoga-springs-resort/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Newly refurbished villa inventory tends to book fast once photos go live. DVC members or renters interested in secluded accommodations may want to check availability before summer sellout."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Actress Daveigh Chase, voice of Lilo, passes away at 35",
+        "body": "The star who voiced Lilo in Disney's animated film and its sequels has died, prompting tributes from fans and colleagues.",
+        "parkSlug": null,
+        "source": {
+          "label": "AllEars.Net",
+          "url": "https://allears.net/2026/06/17/actress-daveigh-chase-voice-of-lilo-in-disneys-lilo-stitch-has-passed-away/"
+        }
+      },
+      {
+        "title": "Shanghai Disney Resort marks 10th anniversary with retrospective",
+        "body": "The resort celebrated a decade since opening, highlighting milestones and future expansion plans in a detailed blog post.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/shdl/then-and-now-10-years-at-shanghai-disney-resort/"
+        }
+      },
+      {
+        "title": "Patina restaurant workers demand back pay from EPCOT Italy pavilion",
+        "body": "Four employees filed a claim for over $134,000, alleging years of wage theft at the restaurant group's World Showcase location.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/06/patina-restaurant-employees-from-epcots-italy-pavilion-demanding-134k-in-missing-pay/?adt_ei=*|EMAIL|*"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "Best low-wait attractions at EPCOT today",
+        "body": "With heat and thunderstorms expected, indoor pavilions like Seas with Nemo, Living with the Land, and Spaceship Earth typically offer comfort and shorter queues during midday hours.",
+        "parkSlug": "epcot",
+        "ctaLabel": "Plan your route",
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Air-conditioned attractions in Future World tend to see walk-on windows during lunch and early afternoon when guests seek shade. Knocking out longer pavilion experiences between noon and 3pm often beats morning crowds."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "Jf_npkelIFk",
+      "title": "Disney's Hollywood Studios 2026 | Park Update: NEW Muppets Coaster, Star Wars & Food | Disney World",
+      "channel": "Paging Mr. Morrow",
+      "publishedAt": "2026-06-12T15:25:10Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Jf_npkelIFk/mqdefault.jpg",
+      "viewCount": 105341,
+      "url": "https://www.youtube.com/watch?v=Jf_npkelIFk",
+      "summary": "Paging Mr. Morrow walks through Hollywood Studios construction updates, including progress on the new Muppets coaster and changes in the Star Wars area."
+    },
+    {
+      "videoId": "R0k1kAGtN80",
+      "title": "ULTIMATE GUIDE: Eating Around the World at Epcot | Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-06-14T16:00:04Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/R0k1kAGtN80/mqdefault.jpg",
+      "viewCount": 42709,
+      "url": "https://www.youtube.com/watch?v=R0k1kAGtN80",
+      "summary": "WrightDownMainStreet provides a comprehensive guide to dining across EPCOT's World Showcase pavilions."
+    },
+    {
+      "videoId": "wc1aABi3Zg8",
+      "title": "New Food at Disney's Port Orleans Resort: New Beignets & New Menu at Boatwright's | Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-06-17T16:00:01Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/wc1aABi3Zg8/mqdefault.jpg",
+      "viewCount": 18952,
+      "url": "https://www.youtube.com/watch?v=wc1aABi3Zg8",
+      "summary": "WrightDownMainStreet reviews newly introduced beignet flavors and updated menu items at Port Orleans Resort's Boatwright's Dining Hall."
+    },
+    {
+      "videoId": "zYnrpP4nWMI",
+      "title": "Currently craving a trip to Typhoon Lagoon 🌊☀️| @DisneyUK | Walt Disney World Resort in Florida",
+      "channel": "Disney UK",
+      "publishedAt": "2026-06-18T06:00:20Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/zYnrpP4nWMI/mqdefault.jpg",
+      "viewCount": 3274,
+      "url": "https://www.youtube.com/watch?v=zYnrpP4nWMI",
+      "summary": "Disney UK shares highlights and scenes from Typhoon Lagoon water park at Walt Disney World."
+    },
+    {
+      "videoId": "LnngxykIrI4",
+      "title": "The 2008 Disney Parks Art Deco Mickey Mouse Lightsaber... #lightsaber #starwars #toys #collection",
+      "channel": "An Elegant Weapon ",
+      "publishedAt": "2026-06-18T10:08:21Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/LnngxykIrI4/mqdefault.jpg",
+      "viewCount": 2195,
+      "url": "https://www.youtube.com/watch?v=LnngxykIrI4",
+      "summary": "An Elegant Weapon showcases a 2008 Disney Parks Art Deco Mickey Mouse lightsaber from their collection."
+    },
+    {
+      "videoId": "fPRpg-FA27M",
+      "title": "My heart 🥰My eyes 😭#disney #disneyland #foryou #funny #fyp",
+      "channel": "ANURAG DJ BEATS 7K",
+      "publishedAt": "2026-06-18T09:24:28Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/fPRpg-FA27M/mqdefault.jpg",
+      "viewCount": 1719,
+      "url": "https://www.youtube.com/watch?v=fPRpg-FA27M",
+      "summary": "ANURAG DJ BEATS 7K shares a short Disney-themed clip labeled as funny and emotional content."
+    },
+    {
+      "videoId": "rb3FJHroxC8",
+      "title": "90%😌🤔 Fail #emoji #disney #disneyland #emoji90% 😌🤔Fail #emoji #disney #disneyland #emoji",
+      "channel": "emoji yt",
+      "publishedAt": "2026-06-18T09:01:19Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/rb3FJHroxC8/mqdefault.jpg",
+      "viewCount": 1607,
+      "url": "https://www.youtube.com/watch?v=rb3FJHroxC8",
+      "summary": "Emoji yt posts a Disney-themed emoji challenge video."
+    },
+    {
+      "videoId": "rLnlflaC4bs",
+      "title": "🎶✨ กล่อง เพลง Disney จาก Hong Kong Disneylandของลิมิเต็ดเฉพาะที่ฮ่องกงเท่านั้นนะ! 🏰",
+      "channel": "Khaning Channel",
+      "publishedAt": "2026-06-18T07:44:40Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/rLnlflaC4bs/mqdefault.jpg",
+      "viewCount": 1260,
+      "url": "https://www.youtube.com/watch?v=rLnlflaC4bs",
+      "summary": "Khaning Channel features a limited-edition Disney music box exclusive to Hong Kong Disneyland."
+    },
+    {
+      "videoId": "a3MPYFILYhU",
+      "title": "Epcot, sunflower, monorail and space ship earth.  #waltdisneyworld #epcot #disney",
+      "channel": "Tom A (Tom the Traveler.)",
+      "publishedAt": "2026-06-18T09:48:29Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/a3MPYFILYhU/mqdefault.jpg",
+      "viewCount": 1206,
+      "url": "https://www.youtube.com/watch?v=a3MPYFILYhU",
+      "summary": "Tom the Traveler captures scenes at EPCOT, including the monorail, Spaceship Earth, and sunflowers."
+    },
+    {
+      "videoId": "ruEjT3RcrKk",
+      "title": "Disney Sea Happiest Place on Earth #themepark #disneyland",
+      "channel": "Lakwatsero Vlog",
+      "publishedAt": "2026-06-18T09:00:20Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/ruEjT3RcrKk/mqdefault.jpg",
+      "viewCount": 1204,
+      "url": "https://www.youtube.com/watch?v=ruEjT3RcrKk",
+      "summary": "Lakwatsero Vlog shares footage from Tokyo DisneySea theme park."
+    }
+  ],
+  "updatedAt": "2026-06-18T13:56:47.784Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-06-18T13:56:47.785Z",
+    "tokens": {
+      "input": 12379,
+      "output": 5375,
+      "costUsd": 0.1178
+    }
+  }
+}
