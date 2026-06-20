@@ -1,0 +1,336 @@
+{
+  "title": "Parkio Daily for June 20, 2026",
+  "slug": "parkio-daily-2026-06-20",
+  "date": "2026-06-20",
+  "teaser": "Cinderella Castle refresh is done; BoardWalk gets a new nightclub and restaurant; Wilderness Lodge faces AC outage during heat wave.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Soarin'",
+        "parkSlug": "epcot",
+        "note": "Dinner-hour window often brings walk-ons"
+      },
+      {
+        "name": "Big Thunder Mountain Railroad",
+        "parkSlug": "magic-kingdom",
+        "note": "First-hour waits typically under 20 minutes"
+      },
+      {
+        "name": "Star Tours",
+        "parkSlug": "hollywood-studios",
+        "note": "New merch in Tatooine Traders today"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [
+      {
+        "title": "Wilderness Lodge AC outage hits during heat advisory",
+        "body": "Multiple-day air conditioning failure at Disney's Wilderness Lodge has left deluxe rooms in the 90-degree range amid a Central Florida heat advisory. Restaurant reservations at the resort are currently unavailable.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/06/permanently-closed-indiana-jones-adventure-outpost-now-being-used-for-caricatures-at-hollywood-studios-in-todays-daily-recap-for-06-19-2026/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Guests with Wilderness Lodge reservations this weekend may want to contact Disney about relocation options. The resort tends to run hot even with working AC during summer afternoons."
+        }
+      }
+    ],
+    "bignews": [
+      {
+        "title": "Cinderella Castle repainting project complete",
+        "body": "Magic Kingdom's icon refresh, which began earlier this year with minimal guest impact, is now finished. The castle received a full repaint with enhanced detailing and brighter colors.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/meet-the-team-behind-cinderella-castles-sparkling-refresh/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Morning light between 8–9am tends to offer the best photo conditions on the newly refreshed castle. Hub crowds are usually thinner before 10am."
+        }
+      },
+      {
+        "title": "BoardWalk nightclub, restaurant, and retail confirmed for late 2026",
+        "body": "Disney announced new dining, nightlife, and shopping experiences coming to BoardWalk following recent vacancies. The venues will include a new lounge and restaurant concept inspired by turn-of-the-century coastal boardwalks.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/new-experiences-are-coming-to-disneys-boardwalk/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Current BoardWalk dining options tend to fill up by 7pm on weekends. Worth booking reservations early if visiting before the new venues open later this year."
+        }
+      },
+      {
+        "title": "EPCOT Parisian Breakfast Buffet returns for Food & Wine Festival",
+        "body": "Chefs de France will once again offer the all-you-can-eat French breakfast with bottomless mimosas during the 2026 Food & Wine Festival. The fan-favorite experience was missing from recent festival lineups.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-world-brings-back-fan-favorite-france-breakfast-buffet-to-2026-epcot-food-wine-festival/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Early breakfast reservations at Chefs de France often allow quick access to World Showcase before the 11am rope drop. Worth booking as soon as the festival window opens."
+        }
+      },
+      {
+        "title": "Disney restricts bus and boat access between Disney Springs and resorts",
+        "body": "New policies limit free transportation between Disney Springs and WDW hotels, with updated rules for on-site guest resort hopping and parking. Third-party resort guests face stricter access limits.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/new-details-for-disney-world-bus-boat-restrictions-on-site-guest-resort-hopping-rules-parking-policies/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Guests planning evening Disney Springs visits from resorts may need to budget extra time for ride-share or personal vehicles. Bus frequency tends to drop after 9pm regardless of new policies."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "Toy Story 5 merchandise and experiences live across parks",
+        "body": "New character designs, themed food items, and collectibles tied to the film's June 19 theatrical release are now available at Walt Disney World and Disneyland. Fresh meet-and-greet opportunities are also rolling out.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/disney-experiences/toy-story-5-across-disney-experiences/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Toy Story merchandise at flagship locations like Once Upon a Toy tends to sell out within the first few days of film releases. Morning shopping runs usually offer the best selection."
+        }
+      },
+      {
+        "title": "Indiana Jones Adventure Outpost now hosts caricature artists",
+        "body": "The permanently closed merchandise location at Hollywood Studios has been repurposed for character caricature services. The outpost had been shuttered since early 2025.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/06/permanently-closed-indiana-jones-adventure-outpost-now-being-used-for-caricatures-at-hollywood-studios-in-todays-daily-recap-for-06-19-2026/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Caricature wait times are typically shortest during mid-afternoon when most guests are queuing for attractions. Sessions usually run 15–20 minutes per guest."
+        }
+      },
+      {
+        "title": "Star Tours merch refresh at Hollywood Studios",
+        "body": "A new Star Tours t-shirt is now available at Tatooine Traders, and the StarSpeeder play set has been discounted by over $150 both in-park and online at the Disney Store.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/06/star-tours-t-shirt-released-at-walt-disney-world-starspeeder-play-set-price-reduced/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Tatooine Traders tends to be less crowded in the first park hour and after 7pm. The StarSpeeder discount may signal limited remaining inventory."
+        }
+      },
+      {
+        "title": "Sequined Minnie and Maleficent ear headbands debut",
+        "body": "Two new ear designs—one featuring pink, purple, and blue sequins, the other inspired by Maleficent—are now on sale at Animal Kingdom's Riverside Depot for $36.99 each.",
+        "parkSlug": "animal-kingdom",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/06/sequined-minnie-maleficent-ear-headbands-at-walt-disney-world/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Limited-edition ear headbands often sell out at the debut location within a week. Check Riverside Depot early in your Animal Kingdom visit if these are a priority."
+        }
+      },
+      {
+        "title": "Tiana's Bayou Adventure queue honors military service",
+        "body": "New photos reveal queue elements highlighting Tiana's father as a decorated World War I veteran, adding historical depth to the attraction's backstory.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/a-salute-to-military-service-in-tianas-bayou-adventure/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "The queue's storytelling details are easier to appreciate during low-wait windows, which tend to occur in the final two park hours. Morning waits often exceed 60 minutes."
+        }
+      },
+      {
+        "title": "Port Orleans Resort rolls out new beignets and Boatwright's menu",
+        "body": "Disney's Port Orleans Resort has introduced updated beignet flavors and a refreshed menu at Boatwright's Dining Hall, expanding the resort's Cajun-inspired food offerings.",
+        "parkSlug": null,
+        "source": {
+          "label": "WrightDownMainStreet (YouTube)",
+          "url": "https://www.youtube.com/watch?v=wc1aABi3Zg8"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Resort dining at Port Orleans is usually easier to access without a reservation during weekday lunch windows. Beignets are often freshest before 10am."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Lion medallions replace Zootopia designs at Animal Kingdom",
+        "body": "The collectible medallion machine at Discovery Trading Company now features four lion designs instead of the Zootopia: Better Zoogether graphics that had been available since summer 2025.",
+        "parkSlug": "animal-kingdom",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/06/lion-medallions-replace-zootopia-designs-disneys-animal-kingdom/"
+        }
+      },
+      {
+        "title": "Oogie Boogie Bash Halloween night sold out",
+        "body": "Despite slower overall ticket sales compared to Magic Kingdom's Halloween party, the October 31 date for Disneyland's Oogie Boogie Bash has reached capacity for 2026.",
+        "parkSlug": "california-adventure",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/halloween-night-sold-out-for-2026-oogie-boogie-bash-party-despite-slower-ticket-sales/"
+        }
+      },
+      {
+        "title": "Disney Lakeshore Lodge construction updates shared",
+        "body": "Disney Parks Blog launched a new series titled Letters from Lakeshore, offering behind-the-scenes progress reports on the nature-inspired resort being built on the south shore of Bay Lake.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/lakeshore-lodge-disney-world-updates/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "Full Eat to the Beat concert schedule released for Food & Wine",
+        "body": "EPCOT's live entertainment team has published the complete lineup for the 2026 Food & Wine Festival concert series at America Gardens Theatre. The schedule features returning acts and several festival debuts.",
+        "parkSlug": "epcot",
+        "ctaLabel": "See the full lineup",
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "America Gardens Theatre seating tends to fill 30–45 minutes before popular headliners. Arriving during the prior set usually secures better sightlines without a long wait."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "R0k1kAGtN80",
+      "title": "ULTIMATE GUIDE: Eating Around the World at Epcot | Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-06-14T16:00:04Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/R0k1kAGtN80/mqdefault.jpg",
+      "viewCount": 47443,
+      "url": "https://www.youtube.com/watch?v=R0k1kAGtN80",
+      "summary": "WrightDownMainStreet walks through strategies for sampling food and drink across EPCOT's World Showcase pavilions."
+    },
+    {
+      "videoId": "wc1aABi3Zg8",
+      "title": "New Food at Disney's Port Orleans Resort: New Beignets & New Menu at Boatwright's | Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-06-17T16:00:01Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/wc1aABi3Zg8/mqdefault.jpg",
+      "viewCount": 29467,
+      "url": "https://www.youtube.com/watch?v=wc1aABi3Zg8",
+      "summary": "WrightDownMainStreet reviews the updated beignet offerings and Boatwright's Dining Hall menu at Port Orleans Resort."
+    },
+    {
+      "videoId": "VBRy8y_PncM",
+      "title": "🔴Live: Friday Night Live Riding Boats Around the Magic Kingdom Resorts - Walt Disney World - 6-19-26",
+      "channel": "ResortTV1",
+      "publishedAt": "2026-06-20T03:16:14Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/VBRy8y_PncM/mqdefault.jpg",
+      "viewCount": 25218,
+      "url": "https://www.youtube.com/watch?v=VBRy8y_PncM",
+      "summary": "ResortTV1 livestreams a Friday evening boat tour of the Magic Kingdom resort loop on June 19, 2026."
+    },
+    {
+      "videoId": "0ASCxI7T7vE",
+      "title": "We found our platonic soulmates!🥹 Thanx for having us Disney Parks !!! #disneypowerofjoy",
+      "channel": "LorenSharice",
+      "publishedAt": "2026-06-20T00:45:11Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/0ASCxI7T7vE/mqdefault.jpg",
+      "viewCount": 23515,
+      "url": "https://www.youtube.com/watch?v=0ASCxI7T7vE",
+      "summary": "LorenSharice shares highlights from a Disney Parks visit celebrating friendship and the Power of Joy campaign."
+    },
+    {
+      "videoId": "AAkn8BKDmjI",
+      "title": "🔴Live Disney's Hollywood Studios Fantasmic at 9:05, 10:30pm on Friday at Walt Disney World 6/19/2026",
+      "channel": "RON ON THE GO",
+      "publishedAt": "2026-06-20T02:40:56Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/AAkn8BKDmjI/mqdefault.jpg",
+      "viewCount": 15719,
+      "url": "https://www.youtube.com/watch?v=AAkn8BKDmjI",
+      "summary": "RON ON THE GO livestreams both Fantasmic showings at Hollywood Studios on June 19, 2026."
+    },
+    {
+      "videoId": "kNqHTM80lsk",
+      "title": "🔴 LIVE: Happily Ever After – Magic Kingdom (2026 Fireworks), Disney World | Full Show 4K",
+      "channel": "Fun to be Free",
+      "publishedAt": "2026-06-20T04:37:15Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/kNqHTM80lsk/mqdefault.jpg",
+      "viewCount": 10599,
+      "url": "https://www.youtube.com/watch?v=kNqHTM80lsk",
+      "summary": "Fun to be Free streams the full Happily Ever After fireworks show in 4K from Magic Kingdom."
+    },
+    {
+      "videoId": "ERTpDV4K6N8",
+      "title": "One of the one hit wonders from Disney 😂 #disneyland #magickingdom",
+      "channel": "Alex *",
+      "publishedAt": "2026-06-20T00:45:38Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/ERTpDV4K6N8/mqdefault.jpg",
+      "viewCount": 1828,
+      "url": "https://www.youtube.com/watch?v=ERTpDV4K6N8",
+      "summary": "Alex comments on a lesser-known Disney attraction or entertainment offering at Disneyland or Magic Kingdom."
+    },
+    {
+      "videoId": "TGKjAQKn968",
+      "title": "Fourth Park Before Animal Kingdom? #disney #disneyland #disneyworld #animalkingdom",
+      "channel": "thedisneygeeks 2",
+      "publishedAt": "2026-06-20T01:42:52Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/TGKjAQKn968/mqdefault.jpg",
+      "viewCount": 1777,
+      "url": "https://www.youtube.com/watch?v=TGKjAQKn968",
+      "summary": "The Disney Geeks discuss early concepts for a fourth Walt Disney World park before Animal Kingdom was built."
+    },
+    {
+      "videoId": "aHA4RZ_bw4U",
+      "title": "El recorrido de La Sirenita en Disney ✨ #Disney #LaSirenita #Ariel",
+      "channel": "BOOMSTREAM",
+      "publishedAt": "2026-06-20T02:52:51Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/aHA4RZ_bw4U/mqdefault.jpg",
+      "viewCount": 1700,
+      "url": "https://www.youtube.com/watch?v=aHA4RZ_bw4U",
+      "summary": "BOOMSTREAM presents a walkthrough of The Little Mermaid attraction at a Disney park."
+    },
+    {
+      "videoId": "QtoppJyyF_0",
+      "title": "Disneyland Paris 🇫🇷 #disneylandparis #disney #disneyland #summer #travel #viral #adventure #worthy",
+      "channel": "WherearetheKims?",
+      "publishedAt": "2026-06-20T02:00:28Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/QtoppJyyF_0/mqdefault.jpg",
+      "viewCount": 1294,
+      "url": "https://www.youtube.com/watch?v=QtoppJyyF_0",
+      "summary": "WherearetheKims shares summer travel highlights from a Disneyland Paris visit."
+    }
+  ],
+  "updatedAt": "2026-06-20T12:24:22.707Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-06-20T12:24:22.707Z",
+    "tokens": {
+      "input": 12196,
+      "output": 5251,
+      "costUsd": 0.1154
+    }
+  }
+}
