@@ -1,0 +1,362 @@
+{
+  "title": "Parkio Daily for June 21, 2026",
+  "slug": "parkio-daily-2026-06-21",
+  "date": "2026-06-21",
+  "teaser": "Wilderness Lodge AC is out during a heat wave; new EPCOT lane dividers; Cinderella Castle's refresh is officially complete.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Soarin'",
+        "parkSlug": "epcot",
+        "note": "Low waits likely during EPCOT's new lane divider adjustments"
+      },
+      {
+        "name": "Frozen Ever After",
+        "parkSlug": "epcot",
+        "note": "Early morning window before World Showcase heats up"
+      },
+      {
+        "name": "Flight of Passage",
+        "parkSlug": "animal-kingdom",
+        "note": "Cooler indoor queue, watch for heat-related ride pauses"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [
+      {
+        "title": "Wilderness Lodge Air Conditioning Out for Days During Heat Wave",
+        "body": "Air conditioning has failed at Disney's Wilderness Lodge for multiple consecutive days during a week when heat advisories are pushing the heat index above 110 degrees. Guests are reporting uncomfortable room conditions while Disney works on repairs.",
+        "parkSlug": null,
+        "source": {
+          "label": "AllEars.Net",
+          "url": "https://allears.net/2026/06/20/news-air-conditioning-out-for-3-days-at-disneys-fort-wilderness-lodge/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "If you're staying at Wilderness Lodge this weekend, request a room check at the front desk before settling in. Portable cooling units may be available, but rebooking at another resort is worth considering until the system is fully restored."
+        }
+      },
+      {
+        "title": "Heat Wave Forces Some Rides to Close Across Disney Parks",
+        "body": "Extreme heat warnings are affecting parks worldwide, with the heat index at Walt Disney World reaching 111 degrees this week. Several outdoor attractions have experienced temporary closures as temperatures spike.",
+        "parkSlug": null,
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/06/disney-parks-extreme-heat-rides-close-cj1/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Hit outdoor attractions like Big Thunder Mountain and Splash Mountain before 11am or after 6pm. Mid-afternoon heat closures are more likely; plan indoor shows and air-conditioned dining between noon and 4pm."
+        }
+      }
+    ],
+    "bignews": [
+      {
+        "title": "New EPCOT Parking Lane Dividers Prevent Last-Minute Lane Switches",
+        "body": "Physical dividers now separate lanes at the EPCOT parking entrance before guests reach toll booths. The barriers prevent drivers from switching lanes, aiming to speed entry flow during busy mornings.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/06/dividers-installed-at-epcot-parking-entrance-prevent-guests-from-switching-lanes-in-todays-daily-recap-for-6-20-2026/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Commit to your parking lane early as you approach the EPCOT entrance. The new dividers make it impossible to change lanes once you're funneled in, so choose the shortest-looking queue from a distance."
+        }
+      },
+      {
+        "title": "Cinderella Castle Repainting Project Officially Complete",
+        "body": "Magic Kingdom's Cinderella Castle refresh is done, with Disney releasing behind-the-scenes details on the repainting process. The work, which started earlier this year, was executed with minimal guest impact and the castle now shows brighter, crisper colors.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/meet-the-team-behind-cinderella-castles-sparkling-refresh/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Photos of the refreshed castle are sharpest in the first hour after park open and again during golden hour before sunset. Scaffolding and construction barriers are gone, so all classic angles are back in play."
+        }
+      },
+      {
+        "title": "New Experiences Coming to Disney's BoardWalk Starting Late 2026",
+        "body": "Disney's BoardWalk will see fresh dining, shopping, and nightlife additions opening later this year. The announcement describes a mix of new venues inspired by turn-of-the-century coastal boardwalk culture, though specific names and opening dates are still to come.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/new-experiences-are-coming-to-disneys-boardwalk/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "If you're planning a fall or winter trip, consider booking a BoardWalk-area resort. New dining and entertainment options will likely draw crowds, but staying on-site gives you first access and easy walkability from EPCOT and Hollywood Studios."
+        }
+      },
+      {
+        "title": "Disneyland Cuts Operating Hours Starting August 8",
+        "body": "Disneyland Paris is reducing park hours at both Disneyland Park and Disney Adventure World beginning August 8. The change affects daily schedules across both gates.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/06/disneyland-paris-disney-adventure-world-hours-change-on-august-8-jc1/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "If you're visiting Disneyland Paris in late summer, book trips before August 8 to take advantage of longer park days. Shorter hours mean tighter touring windows, especially for popular evening shows and parades."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "Toy Story 5 Celebrations Roll Out Across Disney Parks",
+        "body": "Disney and Pixar's Toy Story 5 opened in theaters June 19, and parks worldwide are adding themed food, merchandise, and character appearances. Expect new looks for Woody, Buzz, and the gang at multiple locations.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/disney-experiences/toy-story-5-across-disney-experiences/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Toy Story merchandise tied to the new film tends to sell out quickly at flagship stores like Once Upon a Toy in Disney Springs. Visit early in the day for the best selection, especially on weekend mornings."
+        }
+      },
+      {
+        "title": "EPCOT World Showcase Store Closing in One Week",
+        "body": "An unnamed shop in EPCOT's World Showcase will temporarily close next week. The announcement does not specify the store's name or how long the closure will last.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/06/21/this-epcot-world-showcase-store-is-closing-in-one-week/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "If you have a favorite World Showcase shop for souvenirs or snacks, check whether it's affected before your trip. Alternative pavilion stores usually carry similar items, but selection may be thinner during refurbishments."
+        }
+      },
+      {
+        "title": "New PhotoPass Opportunities Added at Hollywood Studios",
+        "body": "Disney World rolled out new PhotoPass backdrops and Magic Shot locations at Hollywood Studios. The additions are designed to enhance photo variety for guests using Memory Maker.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/06/20/why-your-photos-are-going-to-be-even-better-in-disneys-hollywood-studios/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Photographers are typically stationed at new Magic Shot locations in the morning and late afternoon. Stop by during off-peak hours between 2pm and 4pm for shorter lines and more time to get the shot right."
+        }
+      },
+      {
+        "title": "Hollywood Studios Construction Ramps Up in Former Muppets Courtyard",
+        "body": "Work is accelerating in the area that once housed Muppets Courtyard at Hollywood Studios, with new permits filed by Walt Disney Imagineering. The zone has seen dramatic changes over the past year, though no official announcement has been made about what's being built.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/06/disney-world-pushes-forward-with-permanent-hollywood-studios-park-change-th1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Construction noise tends to be loudest mid-morning near the former Muppets area. Plan quieter activities like dining or character meets on the opposite side of the park until after 1pm."
+        }
+      },
+      {
+        "title": "Tiana's Bayou Adventure Queue Features Tribute to Military Service",
+        "body": "New photos from the Tiana's Bayou Adventure queue show details honoring Tiana's father, a decorated World War I veteran. The backstory elements are woven into the attraction's preshow area.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/a-salute-to-military-service-in-tianas-bayou-adventure/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "The queue storytelling is easiest to appreciate during slower wait times. Ride in the first hour after park open or use Lightning Lane to avoid rushing past the tribute details."
+        }
+      },
+      {
+        "title": "EPCOT Eat to the Beat Concert Lineup Announced for Food and Wine Festival",
+        "body": "The full Eat to the Beat concert schedule for EPCOT's International Food and Wine Festival is now public. Disney Live Entertainment has assembled a lineup that spans multiple genres and performs nightly at the America Gardens Theatre.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/eat-to-the-beat-lineup-full-concert-schedule/"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "World Showcase typically sees heavier foot traffic in the hour before and after each concert. If you're touring pavilions, plan to finish the loop before showtime or wait until after the performance lets out."
+        }
+      },
+      {
+        "title": "New Toy Story Pool Party Coming to Disneyland Resort Hotels",
+        "body": "A Toy Story-themed pool party experience is launching at Disneyland Resort hotels. The announcement teases interactive entertainment and character appearances poolside.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/06/21/the-new-disney-hotel-pool-perk-youre-going-to-be-obsessed-with/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Hotel pool events tend to fill up fast during peak summer afternoons. Arrive early or check the resort's daily schedule at check-in to secure a good spot for the Toy Story activities."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "H2O Glow After Hours Returns to Typhoon Lagoon with New Headliner",
+        "body": "The H2O Glow After Hours event is back at Typhoon Lagoon this summer, featuring a dance party with a new headlining performer. The separately ticketed event includes unlimited ice cream, character appearances, and extended access to water slides.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/h2o-glow-2026-review-disney-date-night-after-hours/"
+        }
+      },
+      {
+        "title": "New Dining and Gaming Venues Announced for Disney Springs This Summer",
+        "body": "Disney Springs is adding an interactive gaming world and a new dining spot as part of its summer expansion. The announcement highlights additional retail and entertainment options launching in the coming weeks.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/everything-new-coming-to-disney-springs-this-summer/"
+        }
+      },
+      {
+        "title": "Lakeshore Lodge Construction Updates Released by Disney",
+        "body": "Disney World shared new details on Lakeshore Lodge, the nature-inspired resort under construction on the south shore of Bay Lake. A blog series called Letters from Lakeshore will document progress as the project moves forward.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/lakeshore-lodge-disney-world-updates/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "Monsters University Loungefly Now at Disneyland Resort",
+        "body": "A new Monsters University-themed Loungefly mini backpack is available at World of Disney in Downtown Disney District and online. The design features nostalgic artwork from the film and retails for eighty dollars.",
+        "parkSlug": null,
+        "ctaLabel": "Shop Disney",
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Loungefly releases tied to current film anniversaries or new releases often sell out within the first few days. If you're at Disneyland this weekend, stop by World of Disney early to avoid missing out on popular designs."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "R0k1kAGtN80",
+      "title": "ULTIMATE GUIDE: Eating Around the World at Epcot | Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-06-14T16:00:04Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/R0k1kAGtN80/mqdefault.jpg",
+      "viewCount": 49476,
+      "url": "https://www.youtube.com/watch?v=R0k1kAGtN80",
+      "summary": "WrightDownMainStreet walks through a complete strategy for dining around EPCOT's World Showcase pavilions."
+    },
+    {
+      "videoId": "DWuaLleFRdw",
+      "title": "Disney's Animal Kingdom 2026 | Park Update, Bluey Experience & New Avatar Food | Walt Disney World",
+      "channel": "Paging Mr. Morrow",
+      "publishedAt": "2026-06-20T13:59:03Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/DWuaLleFRdw/mqdefault.jpg",
+      "viewCount": 45313,
+      "url": "https://www.youtube.com/watch?v=DWuaLleFRdw",
+      "summary": "Paging Mr. Morrow covers the latest updates at Animal Kingdom, including the Bluey experience and new Avatar-themed food offerings."
+    },
+    {
+      "videoId": "ANcrr3uVkHo",
+      "title": "🔴 Live: Saturday Stream at Disneyland! Paint the Night & Wondrous Journeys Fireworks - 06/20/26",
+      "channel": "Koda Bear the Explorer ",
+      "publishedAt": "2026-06-21T08:06:26Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/ANcrr3uVkHo/mqdefault.jpg",
+      "viewCount": 42179,
+      "url": "https://www.youtube.com/watch?v=ANcrr3uVkHo",
+      "summary": "Koda Bear the Explorer livestreams from Disneyland, capturing Paint the Night parade and Wondrous Journeys fireworks."
+    },
+    {
+      "videoId": "wc1aABi3Zg8",
+      "title": "New Food at Disney's Port Orleans Resort: New Beignets & New Menu at Boatwright's | Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-06-17T16:00:01Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/wc1aABi3Zg8/mqdefault.jpg",
+      "viewCount": 31386,
+      "url": "https://www.youtube.com/watch?v=wc1aABi3Zg8",
+      "summary": "WrightDownMainStreet reviews new beignet flavors and Boatwright's updated menu at Port Orleans Resort."
+    },
+    {
+      "videoId": "Mrv99L9kHxo",
+      "title": "Disneyland's love #disney #disneyland #love #fyp #funny #moments",
+      "channel": "Wallie Tintler",
+      "publishedAt": "2026-06-21T09:40:15Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Mrv99L9kHxo/mqdefault.jpg",
+      "viewCount": 3620,
+      "url": "https://www.youtube.com/watch?v=Mrv99L9kHxo",
+      "summary": "Wallie Tintler shares a short clip capturing funny and heartwarming moments at Disneyland."
+    },
+    {
+      "videoId": "MCWpnzc7Pcw",
+      "title": "Disneyland's funny moments#funny #disney #fyp #Foryou #usa",
+      "channel": "Darinko Zelenika",
+      "publishedAt": "2026-06-21T05:25:38Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/MCWpnzc7Pcw/mqdefault.jpg",
+      "viewCount": 2944,
+      "url": "https://www.youtube.com/watch?v=MCWpnzc7Pcw",
+      "summary": "Darinko Zelenika posts a compilation of humorous Disneyland guest interactions."
+    },
+    {
+      "videoId": "Lx0ndZFI26M",
+      "title": "Y'a que moi pour faire zga dans le château de la belle au bois dormant 😂 #disney #disneyland",
+      "channel": "Ahmed GoodVibes ☀️😎",
+      "publishedAt": "2026-06-21T07:17:33Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Lx0ndZFI26M/mqdefault.jpg",
+      "viewCount": 2170,
+      "url": "https://www.youtube.com/watch?v=Lx0ndZFI26M",
+      "summary": "Ahmed GoodVibes shares a lighthearted moment inside Sleeping Beauty Castle at Disneyland Paris."
+    },
+    {
+      "videoId": "5a7NKxauTxw",
+      "title": "Live At Disneyland For Some Night Time Fun. Rides, Parades, Shows. 06-20-2026",
+      "channel": "ROPE DROP NATION",
+      "publishedAt": "2026-06-21T08:05:28Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/5a7NKxauTxw/mqdefault.jpg",
+      "viewCount": 1731,
+      "url": "https://www.youtube.com/watch?v=5a7NKxauTxw",
+      "summary": "ROPE DROP NATION livestreams nighttime entertainment at Disneyland, including rides, parades, and shows."
+    },
+    {
+      "videoId": "p_E57TvH8-k",
+      "title": "Funny disney #disney #foryou #disneyland #funny",
+      "channel": "Raka Saddler",
+      "publishedAt": "2026-06-21T09:45:42Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/p_E57TvH8-k/mqdefault.jpg",
+      "viewCount": 1343,
+      "url": "https://www.youtube.com/watch?v=p_E57TvH8-k",
+      "summary": "Raka Saddler posts a short funny Disney moment captured at the parks."
+    },
+    {
+      "videoId": "XD3WEJ4cHi4",
+      "title": "A Day In Disney World Magic Kingdom",
+      "channel": "Muhammad Wasiq",
+      "publishedAt": "2026-06-21T04:50:05Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/XD3WEJ4cHi4/mqdefault.jpg",
+      "viewCount": 1300,
+      "url": "https://www.youtube.com/watch?v=XD3WEJ4cHi4",
+      "summary": "Muhammad Wasiq documents a full day visiting Magic Kingdom at Walt Disney World."
+    }
+  ],
+  "updatedAt": "2026-06-21T13:02:30.798Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-06-21T13:02:30.798Z",
+    "tokens": {
+      "input": 11975,
+      "output": 5807,
+      "costUsd": 0.123
+    }
+  }
+}
