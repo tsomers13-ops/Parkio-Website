@@ -1,0 +1,371 @@
+{
+  "title": "Parkio Daily for June 22, 2026",
+  "slug": "parkio-daily-2026-06-22",
+  "date": "2026-06-22",
+  "teaser": "Haunted Mansion scrim comes down at Magic Kingdom; Level99 tickets on sale for Disney Springs opening at month's end.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "TRON Lightcycle Run",
+        "parkSlug": "magic-kingdom",
+        "note": "New character displays added to post-show"
+      },
+      {
+        "name": "Tiana's Bayou Adventure",
+        "parkSlug": "magic-kingdom",
+        "note": "Queue features WWI tribute to Tiana's father"
+      },
+      {
+        "name": "Soarin'",
+        "parkSlug": "epcot",
+        "note": "Check new menu items at nearby Geo-82"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [
+      {
+        "title": "Haunted Mansion exterior work wrapping up",
+        "body": "Crews are removing the scrim and scaffolding that covered the Haunted Mansion tower and chimneys since mid-March. Most of the upper structure is now visible again, though some lower sections remain covered.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/06/haunted-mansion-scrim-being-removed-at-magic-kingdom/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "The mansion's iconic silhouette is likely best photographed from Liberty Square in late afternoon light. Grab exterior shots now before any future refurbishment work resumes."
+        }
+      },
+      {
+        "title": "Magic Kingdom park reservation sell-out looms for July 4",
+        "body": "The park is approaching absolute capacity for America's 250th birthday celebration. Annual passholders may face lockouts as Disney manages attendance for the Semiquincentennial festivities.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/06/magic-kingdom-locks-out-annual-pass-holders-as-park-reaches-capacity-on-fourth-of-july-for-americas-250th-birthday-rl1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "If you're planning a July 4 visit, securing park reservations today is likely your last window. Walk-up access tends to close hours before fireworks on milestone holidays like this."
+        }
+      }
+    ],
+    "bignews": [
+      {
+        "title": "Level99 tickets now available for Disney Springs debut",
+        "body": "The challenge-based entertainment venue opens at the end of June. Weekday 1.5-hour sessions start at $29.99; Saturday tickets reach $39.99. Two-and-a-half-hour windows add $10 across all days.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/06/tickets-now-on-sale-for-level99-at-disney-springs-pricing-revealed/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Booking a weekday morning slot usually offers shorter waits at challenge rooms and easier parking at Disney Springs. Opening week tends to draw crowds; late June weekdays may be calmer."
+        }
+      },
+      {
+        "title": "Disney teases holiday announcements this week",
+        "body": "The parks are marking 'Halfway to the Holidays' with incoming details on Mickey's Very Merry Christmas Party, Jollywood Nights, and other winter celebrations across Walt Disney World.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/06/disney-parks-teases-halfway-to-the-holidays-announcements-coming-soon/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Party tickets for popular November and December dates often sell out within hours of release. Checking Disney's channels daily this week may let you book before the wider guest pool hears the news."
+        }
+      },
+      {
+        "title": "Bluey's Wild World now open at Animal Kingdom",
+        "body": "The Australian kids' show character experience launched May 26 and continues beyond summer. Bluey, Bingo, and Australian animal encounters are stationed in the park.",
+        "parkSlug": "animal-kingdom",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/everything-you-need-to-know-about-bluey-at-disneys-animal-kingdom/"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "Families with preschoolers tend to cluster near character spots mid-morning. Visiting Bluey's area right at park opening or after 3pm often cuts wait times significantly."
+        }
+      },
+      {
+        "title": "Extended Evening Hours shift away from Magic Kingdom",
+        "body": "The late-night perk for Deluxe Resort guests moves to other parks starting late summer and likely continues through early 2027. Magic Kingdom loses the benefit for several months.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/extended-evening-hours-moves-from-magic-kingdom-likely-for-rest-of-2026/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "If you're staying Deluxe in late summer, checking which park offers Extended Hours on your dates can guide which night to skip Magic Kingdom. EPCOT and Hollywood Studios often see lighter crowds during these windows."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "New character art installed in TRON post-show",
+        "body": "Team Green posters featuring fresh character designs have gone up in the Lightcycle Run exit area. The Enterprise-sponsored post-show area showcases the updated graphics alongside the display Lightcycle.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/06/team-green-posters-have-new-characters-in-tron-lightcycle-run-post-show/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "The post-show is typically less crowded than the queue photo op. Stopping for character art and Lightcycle photos after your ride often means no wait at all."
+        }
+      },
+      {
+        "title": "Piston Peak retaining wall nears completion",
+        "body": "Construction crews are filling in land between the new Frontierland wall and the existing pathways. Aerial images show the structure is nearly finished as the Cars-themed expansion advances.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/06/1446498/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Daytime construction noise tends to be loudest near Big Thunder Mountain and the Frontierland walkways. Planning table-service meals or indoor attractions during midday often bypasses the disruption."
+        }
+      },
+      {
+        "title": "New menu items debut at EPCOT dining spots",
+        "body": "Geo-82, Regal Eagle, and La Cava del Tequila have rolled out updated food and drink options. The changes span multiple World Showcase pavilions and the America pavilion.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "WrightDownMainStreet (YouTube)",
+          "url": "https://www.youtube.com/watch?v=mFtjrUqi2Y4"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "New menu launches often draw lines at lunch and dinner. Visiting Geo-82 or La Cava mid-afternoon usually means shorter waits and full availability before evening crowds arrive."
+        }
+      },
+      {
+        "title": "Port Orleans Resort updates beignet menu and Boatwright's offerings",
+        "body": "Disney's Port Orleans has introduced new beignet flavors and refreshed the menu at Boatwright's Dining Hall. The changes expand options for resort guests and visitors.",
+        "parkSlug": null,
+        "source": {
+          "label": "WrightDownMainStreet (YouTube)",
+          "url": "https://www.youtube.com/watch?v=wc1aABi3Zg8"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Resort dining locations tend to be quieter than in-park spots during peak meal windows. A midday break at Port Orleans for beignets often beats fighting Magic Kingdom snack lines."
+        }
+      },
+      {
+        "title": "Vuori activewear store confirmed for Disney Springs",
+        "body": "Disney Springs has posted signage for the athletic apparel brand in the former Shore storefront. Shore closed permanently in early May after a clearance sale.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/06/disney-springs-confirms-vuori-coming-soon/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "New Disney Springs retailers often launch with opening-week promotions. Watching for an official debut date may let you shop before word spreads and checkout lines grow."
+        }
+      },
+      {
+        "title": "Toy Story 5 merchandise and experiences arrive across parks",
+        "body": "With the film opening June 19, Disney has rolled out new character looks, themed food items, and souvenirs at Walt Disney World and other Disney destinations worldwide.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/disney-experiences/toy-story-5-across-disney-experiences/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Film tie-in merch tends to sell fastest at flagship stores like World of Disney in Disney Springs. Arriving before noon on weekdays usually offers the widest selection."
+        }
+      },
+      {
+        "title": "Disney's BoardWalk plans new dining and nightlife for late 2026",
+        "body": "The lakeside promenade will debut fresh experiences inspired by turn-of-the-century coastal boardwalks. Details on specific venues and opening timelines are expected soon.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/new-experiences-are-coming-to-disneys-boardwalk/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "BoardWalk dining tends to fill up during EPCOT festival evenings. Booking reservations as soon as venue names and dates drop may secure the best waterfront tables."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Lakeshore Lodge construction updates shared",
+        "body": "Disney has launched a 'Letters from Lakeshore' blog series tracking the nature-inspired resort taking shape on Bay Lake. The first post covers early development progress at the proposed property.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/lakeshore-lodge-disney-world-updates/"
+        }
+      },
+      {
+        "title": "EPCOT Food & Wine Festival concert lineup announced",
+        "body": "Disney Live Entertainment has released the full Eat to the Beat schedule for the 2026 festival. The lineup spans multiple evenings at the America Gardens Theatre.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/eat-to-the-beat-lineup-full-concert-schedule/"
+        }
+      },
+      {
+        "title": "Cinderella Castle refresh team profiled",
+        "body": "A Disney Parks Blog feature highlights the crew behind the castle's recent exterior work. The project has enhanced the iconic structure's appearance for guests.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/meet-the-team-behind-cinderella-castles-sparkling-refresh/"
+        }
+      },
+      {
+        "title": "Shanghai Disney Resort marks 10th anniversary",
+        "body": "The China park celebrated a decade of operation with special events and guest experiences. Disney noted the milestone across social channels and blog coverage.",
+        "parkSlug": null,
+        "source": {
+          "label": "AllEars.Net",
+          "url": "https://allears.net/2026/06/22/lets-see-how-disneys-newest-resort-celebrated-its-10th-birthday/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "Level99 reveals full food and drink menu ahead of opening",
+        "body": "The Disney Springs challenge venue has published its dining options, featuring a mix of shareable plates, entrees, and specialty beverages to fuel guests between activity sessions. The menu is designed for quick refueling between immersive game rooms.",
+        "parkSlug": null,
+        "ctaLabel": "View Level99 details",
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Combination ticket-and-dining packages often launch after opening week. If you're visiting in early July, booking separately may offer more flexibility than waiting for bundles that may not appear."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "DWuaLleFRdw",
+      "title": "Disney's Animal Kingdom 2026 | Park Update, Bluey Experience & New Avatar Food | Walt Disney World",
+      "channel": "Paging Mr. Morrow",
+      "publishedAt": "2026-06-20T13:59:03Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/DWuaLleFRdw/mqdefault.jpg",
+      "viewCount": 69738,
+      "url": "https://www.youtube.com/watch?v=DWuaLleFRdw",
+      "summary": "Paging Mr. Morrow walks through Animal Kingdom's latest updates, covering the new Bluey experience and fresh Avatar-themed food offerings."
+    },
+    {
+      "videoId": "wc1aABi3Zg8",
+      "title": "New Food at Disney's Port Orleans Resort: New Beignets & New Menu at Boatwright's | Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-06-17T16:00:01Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/wc1aABi3Zg8/mqdefault.jpg",
+      "viewCount": 32743,
+      "url": "https://www.youtube.com/watch?v=wc1aABi3Zg8",
+      "summary": "WrightDownMainStreet reviews the updated beignet flavors and new Boatwright's Dining Hall menu at Port Orleans Resort."
+    },
+    {
+      "videoId": "mFtjrUqi2Y4",
+      "title": "Every NEW Food at Epcot- Geo-82, Regal Eagle, La Cava Del Tequila | Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-06-21T15:55:59Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/mFtjrUqi2Y4/mqdefault.jpg",
+      "viewCount": 25051,
+      "url": "https://www.youtube.com/watch?v=mFtjrUqi2Y4",
+      "summary": "WrightDownMainStreet samples new menu items across three EPCOT dining locations, including Geo-82 and La Cava del Tequila."
+    },
+    {
+      "videoId": "5Q1AtLub14I",
+      "title": "My heart 🥰My eyes 😭#disney #disneyland #foryou #funny #fyp",
+      "channel": "ANURAG DJ BEATS 7K",
+      "publishedAt": "2026-06-22T09:17:35Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/5Q1AtLub14I/mqdefault.jpg",
+      "viewCount": 10057,
+      "url": "https://www.youtube.com/watch?v=5Q1AtLub14I",
+      "summary": "A short Disneyland moment capturing an emotional guest reaction to the park experience."
+    },
+    {
+      "videoId": "jWGb-pT2RJk",
+      "title": "The only type of busy I want to BE!!!💫🎀🥹🎡🧚‍♀️💅🏻🐭 #disney #disneyparks #wdw #magickingdom",
+      "channel": "JULIA PAIGE",
+      "publishedAt": "2026-06-22T13:03:35Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/jWGb-pT2RJk/mqdefault.jpg",
+      "viewCount": 6446,
+      "url": "https://www.youtube.com/watch?v=jWGb-pT2RJk",
+      "summary": "Julia Paige shares a Magic Kingdom visit focused on the energizing pace of a Disney park day."
+    },
+    {
+      "videoId": "DcKaQk-Qnj0",
+      "title": "Happy Disneyland. #disney #disneyland #usa #funny #fyp",
+      "channel": "Van Hong Nguen",
+      "publishedAt": "2026-06-22T09:58:57Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/DcKaQk-Qnj0/mqdefault.jpg",
+      "viewCount": 4554,
+      "url": "https://www.youtube.com/watch?v=DcKaQk-Qnj0",
+      "summary": "Van Hong Nguen posts a lighthearted Disneyland clip highlighting guest reactions at the California park."
+    },
+    {
+      "videoId": "Uy9mIdKuhiA",
+      "title": "DISNEY CROWDS Sunday Night at Disneyland #livestream",
+      "channel": "Magical Goth Vibes",
+      "publishedAt": "2026-06-22T08:22:55Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Uy9mIdKuhiA/mqdefault.jpg",
+      "viewCount": 3935,
+      "url": "https://www.youtube.com/watch?v=Uy9mIdKuhiA",
+      "summary": "Magical Goth Vibes livestreams a Sunday evening walk through Disneyland, showing real-time crowd levels."
+    },
+    {
+      "videoId": "B9tMATbLGL8",
+      "title": "【在庫状況】ボン・ヴォヤージュ｜2026/06/21 #ディズニーランド #ディズニー #ディズニーランド #ボンヴォヤージュ  #カチューシャ  #shorts",
+      "channel": "すずみね夫婦のディズニーライフ",
+      "publishedAt": "2026-06-22T08:53:32Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/B9tMATbLGL8/mqdefault.jpg",
+      "viewCount": 1468,
+      "url": "https://www.youtube.com/watch?v=B9tMATbLGL8",
+      "summary": "A Tokyo Disney merchandise stock update from Bon Voyage, showing available ear headbands and other items."
+    },
+    {
+      "videoId": "bwXVGvcKSCM",
+      "title": "Did you get to see your favorite Disney character there #disneyland #disney #foryou",
+      "channel": "dfgbujt7",
+      "publishedAt": "2026-06-22T10:26:27Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/bwXVGvcKSCM/mqdefault.jpg",
+      "viewCount": 1382,
+      "url": "https://www.youtube.com/watch?v=bwXVGvcKSCM",
+      "summary": "A quick Disneyland character meet clip asking viewers about their favorite character encounters."
+    },
+    {
+      "videoId": "PQaY6mygVr0",
+      "title": "EPCOT International Gateway Music & Ambience | 6 Hour Relaxing Disney Park Loop",
+      "channel": "Magical Escapes",
+      "publishedAt": "2026-06-22T11:15:11Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/PQaY6mygVr0/mqdefault.jpg",
+      "viewCount": 1027,
+      "url": "https://www.youtube.com/watch?v=PQaY6mygVr0",
+      "summary": "Magical Escapes offers a six-hour ambient audio loop from EPCOT's International Gateway area."
+    }
+  ],
+  "updatedAt": "2026-06-22T15:48:22.222Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-06-22T15:48:22.222Z",
+    "tokens": {
+      "input": 12137,
+      "output": 5753,
+      "costUsd": 0.1227
+    }
+  }
+}
