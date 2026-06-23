@@ -1,0 +1,340 @@
+{
+  "title": "Parkio Daily for June 23, 2026",
+  "slug": "parkio-daily-2026-06-23",
+  "date": "2026-06-23",
+  "teaser": "Extended Evening Hours shift from Magic Kingdom to Animal Kingdom in August; Bluey's Wild World opens today; Level99 menu revealed.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Tiana's Bayou Adventure",
+        "parkSlug": "magic-kingdom",
+        "note": "Morning waits typically shorter before 10am"
+      },
+      {
+        "name": "Flight of Passage",
+        "parkSlug": "animal-kingdom",
+        "note": "Rope drop priority with Bluey crowds expected"
+      },
+      {
+        "name": "Guardians of the Galaxy",
+        "parkSlug": "epcot",
+        "note": "Virtual queue filling fast today"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [
+      {
+        "title": "Extended Evening Hours moving to Animal Kingdom",
+        "body": "Resort hotel guests will find Extended Evening Hours at Animal Kingdom instead of Magic Kingdom on at least two Wednesday nights in August and September. The benefit typically runs Wednesdays and has been exclusive to Magic Kingdom for most of the year.",
+        "parkSlug": "animal-kingdom",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/06/extended-evening-hours-moving-from-magic-kingdom-to-animal-kingdom-later-this-summer/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Animal Kingdom's evening hours typically offer walk-on windows for Flight of Passage and Expedition Everest. Eligible guests may want to save that park for Wednesday evenings in late summer rather than mornings."
+        }
+      }
+    ],
+    "bignews": [
+      {
+        "title": "Bluey's Wild World opens at Animal Kingdom",
+        "body": "Bluey, Bingo, and Australian animal exhibits join Animal Kingdom today as part of Cool Kids' Summer, running through the season and beyond. The experience launched May 26 and continues into fall.",
+        "parkSlug": "animal-kingdom",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/everything-you-need-to-know-about-bluey-at-disneys-animal-kingdom/"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "Discovery Island and the character meet zones near the Tree of Life often see heavier foot traffic when new character experiences launch. Rope-dropping Flight of Passage or Kilimanjaro Safaris may help avoid mid-morning congestion."
+        }
+      },
+      {
+        "title": "Level99 food and drink menu released",
+        "body": "The two-story bar inside the former DisneyQuest building at Disney Springs now has a full menu available ahead of the interactive experience's opening. Offerings include dishes, desserts, and specialty cocktails.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/full-food-drinks-menu-for-level99-at-disney-world/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "New dining at Disney Springs typically draws lighter crowds on weekday afternoons before dinner service. Arriving between 2pm and 4pm often means shorter waits for tables and a chance to explore the space before it fills."
+        }
+      },
+      {
+        "title": "Disneyland confirms guest safe after Tiana's Bayou Adventure incident",
+        "body": "A child who exited a ride vehicle and slid down the 50-foot drop on Tiana's Bayou Adventure at Disneyland on June 21 is okay, the resort confirmed. The incident occurred Sunday evening and the attraction has since reopened.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/06/disneyland-issues-statement-following-childs-50-foot-fall-from-attraction-ad1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Attraction incidents sometimes lead to temporary heightened safety protocols and slower loading. Tiana's Bayou Adventure wait times may run longer than usual today as crews verify operational procedures."
+        }
+      },
+      {
+        "title": "Jollywood Nights details teased for soon",
+        "body": "Disney announced that news about the 2026 Jollywood Nights holiday event at Hollywood Studios is coming soon, part of a Halfway to the Holidays social media campaign. No date or ticket information has been released yet.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/06/disney-teases-jollywood-nights-announcements-coming-soon/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Holiday event tickets for Hollywood Studios often sell out within days of going on sale. Setting alerts for Disney announcements this week may give you first access to limited-capacity nights."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "EPCOT Eat to the Beat concert lineup released",
+        "body": "The full performance schedule for live concerts during EPCOT's International Food and Wine Festival is now available. Acts will perform nightly at the America Gardens Theatre throughout the festival.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/eat-to-the-beat-lineup-full-concert-schedule/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Concert showtimes typically pull guests toward World Showcase in late afternoon and evening. Riding Test Track or Frozen Ever After during the 5:30pm or 7pm sets often yields shorter waits."
+        }
+      },
+      {
+        "title": "Disney's BoardWalk new venues opening late 2026",
+        "body": "Fresh dining, shopping, and nightlife experiences are scheduled to debut at Disney's BoardWalk starting in late 2026. The additions continue the resort area's turn-of-the-century coastal boardwalk theme.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/new-experiences-are-coming-to-disneys-boardwalk/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "BoardWalk construction and refurbishment projects sometimes bring preview openings or soft openings. Guests staying at nearby EPCOT resorts may find early access opportunities by checking the area in the evenings."
+        }
+      },
+      {
+        "title": "Stoney Clover Lane Fantasyland collection arrives",
+        "body": "A new Fantasyland line featuring Cinderella Castle and Mad Tea Party designs from Stoney Clover Lane is now available at Uptown Jewelers in Magic Kingdom. Patches and accessories are part of the release.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/06/fantasyland-collection-by-stoney-clover-lane-at-walt-disney-world/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Limited-edition collaborations at Uptown Jewelers tend to draw shoppers throughout the day. Visiting within the first hour of park opening or during evening parades often means lighter crowds inside the store."
+        }
+      },
+      {
+        "title": "Lightning Lane Premier Pass selling out near July 4",
+        "body": "Magic Kingdom's highest-tier Lightning Lane Premier Pass is sold out on multiple dates surrounding Independence Day weekend. The premium skip-the-line product has reached capacity as the resort enters peak summer travel.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/06/after-july-4-weekend-magic-kingdom-to-drop-costly-lightning-lane-pass-th1/"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "Sold-out Premier Pass dates often signal higher overall attendance and longer standby waits. Guests without Lightning Lane access may find better park experiences at EPCOT or Animal Kingdom during the holiday week."
+        }
+      },
+      {
+        "title": "Toy Story 5 experiences roll out across parks",
+        "body": "New character appearances, themed food, and merchandise celebrating Toy Story 5's June 19 theatrical release are now available at Disney parks. The film's opening weekend broke box office records.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/disney-experiences/toy-story-5-across-disney-experiences/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Limited-time film tie-in items at Disney parks often sell out within the first few weeks. Checking merchandise locations at Hollywood Studios and Disneyland early in your visit may secure popular pieces before stock runs low."
+        }
+      },
+      {
+        "title": "32 Disney World restaurants updated menus this week",
+        "body": "Menu changes went live across 32 dining locations at Walt Disney World in the past seven days. Updates include new items, seasonal offerings, and pricing adjustments at table-service and quick-service spots.",
+        "parkSlug": null,
+        "source": {
+          "label": "AllEars.Net",
+          "url": "https://allears.net/2026/06/22/32-disney-world-restaurants-changed-their-menus-this-week/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "New menu items at Disney restaurants sometimes take a few days to stabilize in mobile order systems. Checking the My Disney Experience app the morning of your visit often reveals additions that weren't available at reservation time."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Cinderella Castle refresh team profiled",
+        "body": "Disney highlighted the crew behind the recent sparkle and paint refresh of Cinderella Castle at Magic Kingdom. The iconic landmark received updated finishes and cleaning to maintain its signature look.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/meet-the-team-behind-cinderella-castles-sparkling-refresh/"
+        }
+      },
+      {
+        "title": "Tiana's Bayou Adventure queue honors military service",
+        "body": "New photos from the attraction's queue reveal backstory details about Tiana's father, a decorated World War I veteran. The tributes are visible to guests as they move through the pre-show area.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/a-salute-to-military-service-in-tianas-bayou-adventure/"
+        }
+      },
+      {
+        "title": "Disney Lakeshore Lodge construction updates begin",
+        "body": "A new blog series called Letters from Lakeshore launched to document progress on Disney Lakeshore Lodge, the nature-inspired resort planned for Bay Lake at Walt Disney World. The first post shares early construction milestones.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/lakeshore-lodge-disney-world-updates/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "H2O Glow After Hours returns to Typhoon Lagoon",
+        "body": "The neon-lit nighttime water park event is back at Typhoon Lagoon with dancing, unlimited snacks, and wave pool parties. This year's edition features a headlining performer and extended hours for ticket holders.",
+        "parkSlug": null,
+        "ctaLabel": "Plan your H2O Glow visit",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/h2o-glow-2026-review-disney-date-night-after-hours/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "After-hours events at water parks tend to draw lighter crowds than daytime operations, especially on weeknights. Arriving when gates open for H2O Glow often means walk-on access to slides and minimal wait for food."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "DWuaLleFRdw",
+      "title": "Disney's Animal Kingdom 2026 | Park Update, Bluey Experience & New Avatar Food | Walt Disney World",
+      "channel": "Paging Mr. Morrow",
+      "publishedAt": "2026-06-20T13:59:03Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/DWuaLleFRdw/mqdefault.jpg",
+      "viewCount": 81774,
+      "url": "https://www.youtube.com/watch?v=DWuaLleFRdw",
+      "summary": "Paging Mr. Morrow walks through Animal Kingdom's latest additions including the new Bluey experience and Avatar-themed dining offerings."
+    },
+    {
+      "videoId": "mFtjrUqi2Y4",
+      "title": "Every NEW Food at Epcot- Geo-82, Regal Eagle, La Cava Del Tequila | Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-06-21T15:55:59Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/mFtjrUqi2Y4/mqdefault.jpg",
+      "viewCount": 34547,
+      "url": "https://www.youtube.com/watch?v=mFtjrUqi2Y4",
+      "summary": "WrightDownMainStreet reviews new menu items at multiple EPCOT dining locations including Geo-82, Regal Eagle, and La Cava Del Tequila."
+    },
+    {
+      "videoId": "wc1aABi3Zg8",
+      "title": "New Food at Disney's Port Orleans Resort: New Beignets & New Menu at Boatwright's | Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-06-17T16:00:01Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/wc1aABi3Zg8/mqdefault.jpg",
+      "viewCount": 33598,
+      "url": "https://www.youtube.com/watch?v=wc1aABi3Zg8",
+      "summary": "This channel showcases updated beignet offerings and the refreshed menu at Boatwright's Dining Hall at Port Orleans Resort."
+    },
+    {
+      "videoId": "4UwhBObIf5w",
+      "title": "ディズニーランドでひたすら食べる😋🍽 #Shorts",
+      "channel": "はまちこちゃんねる",
+      "publishedAt": "2026-06-23T08:00:00Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/4UwhBObIf5w/mqdefault.jpg",
+      "viewCount": 32513,
+      "url": "https://www.youtube.com/watch?v=4UwhBObIf5w",
+      "summary": "A short-form video featuring food sampling throughout Disneyland from Japanese creator Hamachiko."
+    },
+    {
+      "videoId": "iswuB213-N4",
+      "title": "🔴 Live: Monday Stream at Disneyland! Paint the Night Parade, Wondrous Journeys & Rides - 06/22/26",
+      "channel": "Koda Bear the Explorer ",
+      "publishedAt": "2026-06-23T07:36:29Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/iswuB213-N4/mqdefault.jpg",
+      "viewCount": 24856,
+      "url": "https://www.youtube.com/watch?v=iswuB213-N4",
+      "summary": "Koda Bear livestreams from Disneyland covering Paint the Night parade, Wondrous Journeys fireworks, and various attractions."
+    },
+    {
+      "videoId": "qyyd0OeNnwk",
+      "title": "Walt Disney World/ Epcot  6/22/26 #live",
+      "channel": "That Crazy Disney Lady",
+      "publishedAt": "2026-06-23T02:48:22Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/qyyd0OeNnwk/mqdefault.jpg",
+      "viewCount": 19436,
+      "url": "https://www.youtube.com/watch?v=qyyd0OeNnwk",
+      "summary": "A live broadcast from EPCOT at Walt Disney World on June 22, 2026."
+    },
+    {
+      "videoId": "Mze-bK5zUis",
+      "title": "🔴 Live: Magic Kingdom Rides, Fireworks & Starlight Monday Night | Disney World Live Stream 6.22.2026",
+      "channel": "Daily FastPass",
+      "publishedAt": "2026-06-23T02:40:40Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Mze-bK5zUis/mqdefault.jpg",
+      "viewCount": 17099,
+      "url": "https://www.youtube.com/watch?v=Mze-bK5zUis",
+      "summary": "Daily FastPass streams live from Magic Kingdom covering rides, fireworks, and evening entertainment."
+    },
+    {
+      "videoId": "xfXGbvLn5qM",
+      "title": "🔴 BUILDING A LIGHTSABER AT DISNEY WORLD! Disney's Hollywood Studios",
+      "channel": "JoJo's World",
+      "publishedAt": "2026-06-23T02:09:47Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/xfXGbvLn5qM/mqdefault.jpg",
+      "viewCount": 5168,
+      "url": "https://www.youtube.com/watch?v=xfXGbvLn5qM",
+      "summary": "JoJo's World documents the lightsaber-building experience at Savi's Workshop in Hollywood Studios."
+    },
+    {
+      "videoId": "uCyTs5fW9FU",
+      "title": "\\ ボン・ヴォヤージュ /6月23日販売状況を紹介！",
+      "channel": "みい🎀",
+      "publishedAt": "2026-06-23T03:40:21Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/uCyTs5fW9FU/mqdefault.jpg",
+      "viewCount": 2718,
+      "url": "https://www.youtube.com/watch?v=uCyTs5fW9FU",
+      "summary": "This Japanese-language video reviews merchandise availability at Bon Voyage on June 23."
+    },
+    {
+      "videoId": "xNACvrCeizE",
+      "title": "Pov: 5 months until Christmas at Disney!🎄 #christmas #holiday",
+      "channel": "Anabel Curb",
+      "publishedAt": "2026-06-23T02:36:02Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/xNACvrCeizE/mqdefault.jpg",
+      "viewCount": 1599,
+      "url": "https://www.youtube.com/watch?v=xNACvrCeizE",
+      "summary": "A short countdown-style video looking ahead to Christmas season at Disney parks."
+    }
+  ],
+  "updatedAt": "2026-06-23T13:36:53.991Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-06-23T13:36:53.991Z",
+    "tokens": {
+      "input": 12071,
+      "output": 5358,
+      "costUsd": 0.1166
+    }
+  }
+}
