@@ -1,0 +1,350 @@
+{
+  "title": "Parkio Daily for June 24, 2026",
+  "slug": "parkio-daily-2026-06-24",
+  "date": "2026-06-24",
+  "teaser": "Jollywood Nights extends into January 2027; Astrofizz now offers mobile order; Wilderness Lodge A/C offline for repairs.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Remy's Ratatouille Adventure",
+        "parkSlug": "epcot",
+        "note": "Short waits early morning"
+      },
+      {
+        "name": "Kilimanjaro Safaris",
+        "parkSlug": "animal-kingdom",
+        "note": "Animals most active before 11am"
+      },
+      {
+        "name": "Big Thunder Mountain Railroad",
+        "parkSlug": "magic-kingdom",
+        "note": "Recently refreshed, lower crowds"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [
+      {
+        "title": "Jollywood Nights extends into January 2027 with new entertainment",
+        "body": "Hollywood Studios confirmed that the holiday after-hours event will run select nights from November through early January 2027, marking the first time the separately ticketed party stretches beyond December. Expect themed entertainment and festive décor on Sunset Boulevard.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/disney-jollywood-nights-dates-tickets-and-more/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "January dates typically see lighter attendance than November and December holiday events. Booking the later nights often means shorter lines for character meets and food stations."
+        }
+      },
+      {
+        "title": "Wilderness Lodge shuts off air conditioning for maintenance",
+        "body": "The resort turned off cooling systems Wednesday morning for repairs after a week of problems. Guests received notices about the temporary outage.",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/06/disneys-wilderness-lodge-air-conditioning-turned-off-for-maintenance/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "If you have a Wilderness Lodge reservation today, consider booking a backup dining reservation at a nearby resort with working climate control. Lobby and room temperatures may be uncomfortable until systems restart."
+        }
+      }
+    ],
+    "bignews": [
+      {
+        "title": "Astrofizz kiosk launches mobile ordering in Tomorrowland",
+        "body": "The snack stand that replaced Cool Ship last fall now lets guests order drinks and treats through the My Disney Experience app, cutting down on queue time.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/06/astrofizz-at-magic-kingdom-launches-mobile-order/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Mobile order typically shaves five to ten minutes off midday waits. Place your Astrofizz order before heading to Space Mountain and pick up on your way out."
+        }
+      },
+      {
+        "title": "July 8 and 9 now open for Annual Passholders without reservations",
+        "body": "Disney World added two Good-to-Go days in early July for all four pass tiers, meaning holders can visit any theme park those dates without a park reservation.",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/06/select-july-dates-are-now-good-to-go-days-for-disney-world-annual-passholders/"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "Good-to-Go windows often bring a modest uptick in passholder visits, especially at EPCOT and Magic Kingdom. Arrive at rope drop if you want shorter lines for headliners those mornings."
+        }
+      },
+      {
+        "title": "Disney World holiday season kicks off November 13",
+        "body": "The official 2026 holiday period runs through January 6, 2027. The announcement came via a video featuring the Dapper Dans in seasonal attire.",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/06/walt-disney-world-announces-official-2026-holiday-season-dates/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "The first two weeks of the season usually offer lighter crowds than Thanksgiving week or the December rush. Booking mid-November often means shorter waits for decorated park photos and holiday shows."
+        }
+      },
+      {
+        "title": "Disney gift cards now load into digital wallet for faster checkout",
+        "body": "Guests can save multiple gift cards in the MyDisney wallet and use them directly in the Walt Disney World and Disneyland apps, speeding up mobile orders and ticket purchases.",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/big-win-for-discount-disney-gift-card-hoarders/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "If you buy discounted gift cards in bulk, load them into the app before your trip. Mobile food orders complete faster when payment is already stored, especially during lunch and dinner rushes."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "Homecomin' adds Friday brunch service for Fourth of July weekend",
+        "body": "Chef Art Smith's Disney Springs restaurant will serve brunch Friday through Sunday around Independence Day, expanding its usual Saturday and Sunday schedule.",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/06/4th-of-july-weekend-brunch-coming-to-chef-art-smiths-homecomin-at-disney-springs/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Brunch reservations at Homecomin' fill quickly on weekends. Booking the Friday slot may offer better availability and shorter waits than Saturday or Sunday."
+        }
+      },
+      {
+        "title": "Animal Kingdom quietly adds new cast member to Kilimanjaro Safaris narration",
+        "body": "Guests recently noticed an updated voice during the safari ride. The change appears to have happened without official announcement.",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/06/disney-quietly-added-a-new-face-to-kilimanjaro-safaris-and-guests-just-noticed-el1/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Safaris remain best in the first operating hour when animals are most active. The updated narration is another reason to ride early before midday heat drives wildlife into shade."
+        }
+      },
+      {
+        "title": "New snack location confirmed for Downtown Disney at Disneyland",
+        "body": "Disney announced a fresh food spot will open in the Anaheim shopping and dining district, though details on menu and timing remain limited.",
+        "source": {
+          "label": "AllEars.Net",
+          "url": "https://allears.net/2026/06/23/just-announced-a-new-snack-spot-is-coming-to-downtown-disney/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Downtown Disney additions usually draw crowds in their first weeks. If you visit Disneyland soon, plan to stop by early in the day before lines build at the new location."
+        }
+      },
+      {
+        "title": "Crush's Coaster at Disneyland Paris enters longest refurbishment yet",
+        "body": "The spinning coaster will close September 7 for its most extensive technical overhaul since opening in 2007. No reopening date has been announced.",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/06/crushs-coaster-to-undergo-most-extensive-technical-refurbishment-to-date/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "If Crush's Coaster is on your Paris bucket list, book a trip before early September. The closure may stretch several months given the scope of work described."
+        }
+      },
+      {
+        "title": "BoardWalk expansion to bring new dining and entertainment late 2026",
+        "body": "Disney confirmed several fresh experiences will debut at the lakeside resort starting toward year's end, continuing the venue's recent revitalization.",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/new-experiences-are-coming-to-disneys-boardwalk/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "BoardWalk venues tend to be less crowded than Disney Springs on weeknights. If you're visiting late 2026, the new spots may offer easier walk-up seating than established locations."
+        }
+      },
+      {
+        "title": "Footage surfaces of teen's fall from Tiana's Bayou Adventure vehicle",
+        "body": "Video published by TMZ shows the June 21 incident at Disneyland in which a 13-year-old exited a ride car before the attraction ended and slid down the 50-foot drop. The guest sustained injuries and Disney confirmed the ride was operating normally.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/06/tianas-bayou-adventure-disneyland-incident-footage-cj1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Remind children to stay seated with lap bars secured until cast members give the all-clear. On water rides, exiting early poses serious injury risk even if the vehicle appears stopped."
+        }
+      },
+      {
+        "title": "Germany pavilion closure rumored at EPCOT with no official date",
+        "body": "Reports suggest a refurbishment of the World Showcase pavilion may be in the works, though Disney has not confirmed timing or scope.",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/06/epcot-germany-refurbishment-coming-soon-jc1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "If you love the Germany pavilion's shops or dining, visit soon. Refurbishment announcements often come with little lead time, and closures can stretch months."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Disney Store app pilots AI shopping assistant for select iOS users",
+        "body": "A new feature lets a small group of guests ask questions and receive product recommendations through artificial intelligence. The pilot aims to improve discovery and personalization.",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/products/introducing-new-disney-store-personal-shopping-assistant/"
+        }
+      },
+      {
+        "title": "Toy Story 5 merchandise and food arrive across Disney parks",
+        "body": "With the film opening June 19, themed snacks and souvenirs featuring updated character looks are now available at Walt Disney World and Disneyland.",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/disney-experiences/toy-story-5-across-disney-experiences/"
+        }
+      },
+      {
+        "title": "Cinderella Castle refresh team shares behind-the-scenes details",
+        "body": "Cast members who worked on the recent exterior updates discussed the painstaking process of cleaning and restoring the Magic Kingdom icon.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/meet-the-team-behind-cinderella-castles-sparkling-refresh/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "Bluey's Wild World now open daily at Animal Kingdom through summer",
+        "body": "The Australia-themed character zone featuring Bluey, Bingo, and live animals from their home country launched May 26 and will stick around beyond the Cool Kids' Summer promotion. Families can meet the characters and explore interactive animal habitats.",
+        "parkSlug": "animal-kingdom",
+        "ctaLabel": "Plan your visit",
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "Character meets with Bluey tend to draw long waits by mid-morning, often exceeding an hour. Rope-drop Animal Kingdom and head straight to the Bluey area if your kids are fans."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "DWuaLleFRdw",
+      "title": "Disney's Animal Kingdom 2026 | Park Update, Bluey Experience & New Avatar Food | Walt Disney World",
+      "channel": "Paging Mr. Morrow",
+      "publishedAt": "2026-06-20T13:59:03Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/DWuaLleFRdw/mqdefault.jpg",
+      "viewCount": 89591,
+      "url": "https://www.youtube.com/watch?v=DWuaLleFRdw",
+      "summary": "Paging Mr. Morrow tours Animal Kingdom's latest updates, including the new Bluey experience and fresh food offerings in Pandora."
+    },
+    {
+      "videoId": "mFtjrUqi2Y4",
+      "title": "Every NEW Food at Epcot- Geo-82, Regal Eagle, La Cava Del Tequila | Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-06-21T15:55:59Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/mFtjrUqi2Y4/mqdefault.jpg",
+      "viewCount": 41939,
+      "url": "https://www.youtube.com/watch?v=mFtjrUqi2Y4",
+      "summary": "WrightDownMainStreet samples recent menu additions at three EPCOT dining locations, covering new items at Geo-82, Regal Eagle, and La Cava."
+    },
+    {
+      "videoId": "wc1aABi3Zg8",
+      "title": "New Food at Disney's Port Orleans Resort: New Beignets & New Menu at Boatwright's | Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-06-17T16:00:01Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/wc1aABi3Zg8/mqdefault.jpg",
+      "viewCount": 34389,
+      "url": "https://www.youtube.com/watch?v=wc1aABi3Zg8",
+      "summary": "WrightDownMainStreet reviews updated food offerings at Port Orleans, including fresh beignet options and Boatwright's revamped menu."
+    },
+    {
+      "videoId": "rWpLmj6tB4w",
+      "title": "🔴 Live: Tuesday Stream at Disneyland! Fantasmic, Wondrous Journeys & Paint the Night - 06/23/26",
+      "channel": "Koda Bear the Explorer ",
+      "publishedAt": "2026-06-24T07:38:53Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/rWpLmj6tB4w/mqdefault.jpg",
+      "viewCount": 27713,
+      "url": "https://www.youtube.com/watch?v=rWpLmj6tB4w",
+      "summary": "Koda Bear streams live from Disneyland, broadcasting Fantasmic, Wondrous Journeys fireworks, and the Paint the Night parade."
+    },
+    {
+      "videoId": "0rkBGPCrKtQ",
+      "title": "🔴 LIVE: Happily Ever After – Magic Kingdom (2026 Fireworks), Disney World | Full Show [4K]",
+      "channel": "Fun to be Free",
+      "publishedAt": "2026-06-24T04:53:10Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/0rkBGPCrKtQ/mqdefault.jpg",
+      "viewCount": 10909,
+      "url": "https://www.youtube.com/watch?v=0rkBGPCrKtQ",
+      "summary": "Fun to be Free live-streams the full Happily Ever After fireworks show from Magic Kingdom in 4K."
+    },
+    {
+      "videoId": "LDxpYmgWud4",
+      "title": "#LIVE Disneyland Solo Insanity, Rides, Characters, New Merch",
+      "channel": "Main Street Cowgirl",
+      "publishedAt": "2026-06-24T07:34:51Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/LDxpYmgWud4/mqdefault.jpg",
+      "viewCount": 7268,
+      "url": "https://www.youtube.com/watch?v=LDxpYmgWud4",
+      "summary": "Main Street Cowgirl live-streams a solo day at Disneyland covering rides, character meets, and new merchandise."
+    },
+    {
+      "videoId": "xx_-EMa54tg",
+      "title": "My heart 🥰My eyes 😭#disney #disneyland #foryou #funny #fyp",
+      "channel": "Wallie Tintler",
+      "publishedAt": "2026-06-24T05:58:39Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/xx_-EMa54tg/mqdefault.jpg",
+      "viewCount": 5627,
+      "url": "https://www.youtube.com/watch?v=xx_-EMa54tg",
+      "summary": "Wallie Tintler shares a short, emotional Disney moment from their Disneyland visit."
+    },
+    {
+      "videoId": "p7otIEMWM18",
+      "title": "Comment tu rentres dans le pays des contes de fées à Disneyland avec ton chien d'assistance ?",
+      "channel": "June_aussie_",
+      "publishedAt": "2026-06-24T10:01:12Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/p7otIEMWM18/mqdefault.jpg",
+      "viewCount": 2615,
+      "url": "https://www.youtube.com/watch?v=p7otIEMWM18",
+      "summary": "June_aussie_ demonstrates entering Fantasyland at Disneyland Paris with a service dog."
+    },
+    {
+      "videoId": "MFWLMoZvRZ8",
+      "title": "First part of my day at magic kingdom!!! #disney #disneyworld #vacation #fyp",
+      "channel": "GabiL ",
+      "publishedAt": "2026-06-24T04:24:28Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/MFWLMoZvRZ8/mqdefault.jpg",
+      "viewCount": 2278,
+      "url": "https://www.youtube.com/watch?v=MFWLMoZvRZ8",
+      "summary": "GabiL recaps the first half of their Magic Kingdom day in a short vacation video."
+    },
+    {
+      "videoId": "7mYw0b265d8",
+      "title": "Minnie Mouse drawing at Animation Academy #minniemouse #drawing #disneyland #disney #disneyshorts",
+      "channel": "CreatingAFairytale",
+      "publishedAt": "2026-06-24T04:20:27Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/7mYw0b265d8/mqdefault.jpg",
+      "viewCount": 1425,
+      "url": "https://www.youtube.com/watch?v=7mYw0b265d8",
+      "summary": "CreatingAFairytale records a Minnie Mouse drawing lesson at Disneyland's Animation Academy."
+    }
+  ],
+  "updatedAt": "2026-06-24T13:12:46.822Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-06-24T13:12:46.822Z",
+    "tokens": {
+      "input": 12091,
+      "output": 5454,
+      "costUsd": 0.1181
+    }
+  }
+}
