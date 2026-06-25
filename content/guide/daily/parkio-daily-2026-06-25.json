@@ -1,0 +1,349 @@
+{
+  "title": "Parkio Daily for June 25, 2026",
+  "slug": "parkio-daily-2026-06-25",
+  "date": "2026-06-25",
+  "teaser": "Pete's Silly Sideshow reopens Saturday; holiday details now live for Mickey's Very Merry, Jollywood Nights, and EPCOT's Festival of the Holidays.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Big Thunder Mountain Railroad",
+        "parkSlug": "magic-kingdom",
+        "note": "Low waits before 11am"
+      },
+      {
+        "name": "Test Track",
+        "parkSlug": "epcot",
+        "note": "Shortest lines at rope drop"
+      },
+      {
+        "name": "Rock 'n' Roller Coaster Starring The Muppets",
+        "parkSlug": "hollywood-studios",
+        "note": "Morning windows under 30 minutes"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [
+      {
+        "title": "Pete's Silly Sideshow Returns Saturday After Six-Month Closure",
+        "body": "The character meet location in Storybook Circus reopens June 27 after a refurbishment that began in January. Minnie, Donald, Daisy, and Goofy will resume daily appearances.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/06/reopening-date-for-petes-silly-sideshow-at-magic-kingdom/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Character meet lines at Pete's tend to build by late morning on reopening weekends. Arriving within the first hour usually means waits under 15 minutes for all four greetings."
+        }
+      }
+    ],
+    "bignews": [
+      {
+        "title": "Mickey's Very Merry Christmas Party Dates and Details Announced",
+        "body": "The after-hours holiday event returns to Magic Kingdom this November and December with select-night ticketing, special entertainment, and seasonal treats. Exact dates and ticket pricing are now available for booking.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/mickeys-very-merry-christmas-party-dates-and-festive-details/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Early-season party nights in November tend to offer lighter crowds than December dates. Booking now often secures lower ticket tiers before sell-outs begin."
+        }
+      },
+      {
+        "title": "Jollywood Nights Returns to Hollywood Studios This Holiday Season",
+        "body": "The separately ticketed evening event blending old Hollywood glamour with Christmas festivities will run select nights in November and December. Dates and ticket sales are now open.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/disney-jollywood-nights-dates-tickets-and-more/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Sunset Boulevard attractions during Jollywood Nights typically see waits drop after the first hour as guests scatter for shows and food. Riding Tower of Terror or Rock 'n' Roller Coaster after 8pm often yields walk-on windows."
+        }
+      },
+      {
+        "title": "EPCOT Festival of the Holidays Dates Confirmed for Late 2026",
+        "body": "The month-long celebration featuring global holiday traditions, specialty food booths, and nightly entertainment will return this winter. Full schedule and booth details are now posted.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/epcot-festival-of-the-holidays-dates-details/"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "World Showcase tends to see heavier foot traffic during festival weekends, especially between 5–8pm. Visiting on weekday mornings or late evenings usually offers shorter booth lines and easier walkways."
+        }
+      },
+      {
+        "title": "Grand Floridian Gingerbread House Permanently Retired",
+        "body": "The iconic holiday display will not return in 2026 or future years. The resort will instead feature alternative seasonal decor for select guests this Christmas.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-world-retires-flagship-resort-christmas-gingerbread-house-adds-hotel-hopping-rules/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Resort hopping for holiday displays may face new access restrictions this season. Checking resort policies before planning a gingerbread tour can save wasted trips."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "Cinderella Castle Dream Lights Will Not Return for Christmas 2026",
+        "body": "The illuminated castle overlay that ran for decades will remain absent this holiday season. Magic Kingdom will instead feature other seasonal lighting elements.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-world-declines-to-bring-back-cinderella-castle-dream-lights-for-christmas-2026/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Guests planning visits specifically for the Dream Lights may want to adjust expectations. The Happily Ever After fireworks typically offer the best nighttime castle views during the holidays."
+        }
+      },
+      {
+        "title": "Room Discounts Up to 30% Available for Fall and Holiday Travel",
+        "body": "Annual Passholders and Florida residents can now book resort stays through Christmas Eve with savings reaching 30 percent on select dates. General public discounts up to 25 percent are also live.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/up-to-30-off-disney-world-resort-room-deals-in-fall-to-late-2026-for-annual-pass-florida-residents/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Weekday stays in early October and late November tend to show the deepest discounts and widest availability. Booking within 48 hours often secures the best room categories before inventory tightens."
+        }
+      },
+      {
+        "title": "Steakhouse 71 Adds Key Lime Pancakes and Breakfast Burger to Menu",
+        "body": "The Contemporary Resort restaurant has rolled out seasonal Key Lime Pie pancakes and a new breakfast burger, plus upgraded the steak and eggs entrée to a New York Strip cut.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/06/review-key-lime-pie-pancakes-breakfast-burger-and-more-upgrades-at-steakhouse-71/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Steakhouse 71 breakfast reservations often open up day-of after 8am cancellations. Checking the app mid-morning can yield same-day seating for the new menu items."
+        }
+      },
+      {
+        "title": "Big Boi Lumpia Bringing Filipino Comfort Food to Downtown Disney",
+        "body": "The restaurant brand announced a new cart location opening soon at Disneyland Resort. Menu details and exact opening date have not been released.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/06/big-boi-lumpia-coming-soon-to-downtown-disney/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "New Downtown Disney food carts typically draw longest lines during the first weekend. Visiting on weekday afternoons usually means shorter waits once the novelty settles."
+        }
+      },
+      {
+        "title": "Rock 'n' Roller Coaster Now Issues Future Rock Star Cards to Height-Restricted Kids",
+        "body": "Cast members are handing out special keepsake cards resembling backstage passes to children who don't meet the 48-inch height requirement. The gesture mirrors similar programs at other attractions.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/06/kids-not-tall-enough-for-rock-n-roller-coaster-starring-the-muppets-get-a-future-rock-star-card/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Ask the greeter at the attraction entrance about the card program if your child is close to the height mark. The cards often help ease disappointment and make a good keepsake for future visits."
+        }
+      },
+      {
+        "title": "Holiday Ride Overlays Returning to Disneyland Resort This Winter",
+        "body": "Seasonal transformations for select attractions will debut this Christmas season, continuing the resort's tradition of festive reimaginings during November and December.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/dlr/christmas-holiday-ride-overlays-at-disneyland/"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "Overlay attractions typically see wait spikes during the first two weeks after reopening. Visiting on weekday mornings or using Lightning Lane often avoids the longest standby queues."
+        }
+      },
+      {
+        "title": "2027 Walt Disney World Calendar and Merchandise Artwork Now Available",
+        "body": "The new calendar reveals next year's collection artwork featuring Mickey, Minnie, Donald, and Goofy on a blue cover. It's on sale now for $16.99.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/06/2027-walt-disney-world-calendar-released/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Annual merchandise with new artwork tends to sell fastest at Emporium and World of Disney. Shopping early in the day or ordering online usually secures stock before popular items disappear."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Behind the Attraction Season 3 Now Streaming on Disney Plus",
+        "body": "The new episodes explore Disney Cruise Line storytelling and innovation in a special two-part event. All seasons are available to stream now.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/disney-experiences/stream-episodes-of-behind-the-attraction/"
+        }
+      },
+      {
+        "title": "Disney Store Piloting AI Personal Shopping Assistant on iOS App",
+        "body": "Select guests can now test a new AI-driven shopping tool designed to improve product discovery. The feature is currently in limited rollout.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/products/introducing-new-disney-store-personal-shopping-assistant/"
+        }
+      },
+      {
+        "title": "Toy Story 5 Crosses 200 Million Dollars at Domestic Box Office",
+        "body": "The film opened with the strongest weekend of 2026 and is tracking toward a second-weekend haul between 88 and 96 million dollars. Global totals continue to climb.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/06/toy-story-5-passes-200-million-at-domestic-box-office/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "Bluey's Wild World Continues Through Summer at Animal Kingdom",
+        "body": "The experience featuring Bluey, Bingo, and Australian wildlife launched in late May and will remain at the park beyond the summer season. Character meet opportunities and themed activities are available daily.",
+        "parkSlug": "animal-kingdom",
+        "ctaLabel": "Plan your visit",
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "Bluey meet-and-greet lines tend to peak mid-morning and early afternoon. Arriving at park opening or visiting after 4pm usually offers shorter waits and better photo opportunities."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "DWuaLleFRdw",
+      "title": "Disney's Animal Kingdom 2026 | Park Update, Bluey Experience & New Avatar Food | Walt Disney World",
+      "channel": "Paging Mr. Morrow",
+      "publishedAt": "2026-06-20T13:59:03Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/DWuaLleFRdw/mqdefault.jpg",
+      "viewCount": 94927,
+      "url": "https://www.youtube.com/watch?v=DWuaLleFRdw",
+      "summary": "Paging Mr. Morrow tours Animal Kingdom's latest additions including the Bluey experience and new dining options in Pandora."
+    },
+    {
+      "videoId": "mFtjrUqi2Y4",
+      "title": "Every NEW Food at Epcot- Geo-82, Regal Eagle, La Cava Del Tequila | Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-06-21T15:55:59Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/mFtjrUqi2Y4/mqdefault.jpg",
+      "viewCount": 48220,
+      "url": "https://www.youtube.com/watch?v=mFtjrUqi2Y4",
+      "summary": "WrightDownMainStreet reviews new menu items across multiple EPCOT dining locations including Geo-82 and Regal Eagle."
+    },
+    {
+      "videoId": "FlRVvsxzhCU",
+      "title": "🔴 Live: Magic Kingdom Fireworks, Rides & Starlight Wednesday | Disney World Live Stream 6.24.2026",
+      "channel": "Daily FastPass",
+      "publishedAt": "2026-06-25T04:35:25Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/FlRVvsxzhCU/mqdefault.jpg",
+      "viewCount": 13915,
+      "url": "https://www.youtube.com/watch?v=FlRVvsxzhCU",
+      "summary": "Daily FastPass live streams an evening at Magic Kingdom featuring rides, entertainment, and Happily Ever After fireworks."
+    },
+    {
+      "videoId": "LFDqfIoLfG8",
+      "title": "🔴 LIVE: EPIC Magic Kingdom Rides, Shows, Parades & Happily Ever After Fireworks at Disney World | 4K",
+      "channel": "Fun to be Free",
+      "publishedAt": "2026-06-25T05:57:07Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/LFDqfIoLfG8/mqdefault.jpg",
+      "viewCount": 9429,
+      "url": "https://www.youtube.com/watch?v=LFDqfIoLfG8",
+      "summary": "Fun to be Free broadcasts a live 4K stream capturing Magic Kingdom's nighttime entertainment and attractions."
+    },
+    {
+      "videoId": "owHjLO0Gwcg",
+      "title": "🔴 LIVE from Magic Kingdom! Disney's NEW Starlight Parade, Happily Ever After Fireworks & Rides",
+      "channel": "Living in DIZ",
+      "publishedAt": "2026-06-25T04:27:02Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/owHjLO0Gwcg/mqdefault.jpg",
+      "viewCount": 3271,
+      "url": "https://www.youtube.com/watch?v=owHjLO0Gwcg",
+      "summary": "Living in DIZ streams live from Magic Kingdom showcasing the Starlight Parade and evening fireworks show."
+    },
+    {
+      "videoId": "s5GVTdk0jKw",
+      "title": "\\ ボン・ヴォヤージュ / 🎀🌙新作グッズ登場🦊🐰",
+      "channel": "みい🎀",
+      "publishedAt": "2026-06-25T05:08:58Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/s5GVTdk0jKw/mqdefault.jpg",
+      "viewCount": 2129,
+      "url": "https://www.youtube.com/watch?v=s5GVTdk0jKw",
+      "summary": "This Japanese-language video highlights new merchandise arrivals at Tokyo Disney Resort's Bon Voyage shop."
+    },
+    {
+      "videoId": "ybzM3M1_8eU",
+      "title": "The fun Disneyland💕✨🤣#happy #Foryou #funnyvideos #disney #disneyland",
+      "channel": "Cynthia Dunn",
+      "publishedAt": "2026-06-25T09:56:45Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/ybzM3M1_8eU/mqdefault.jpg",
+      "viewCount": 960,
+      "url": "https://www.youtube.com/watch?v=ybzM3M1_8eU",
+      "summary": "Cynthia Dunn shares a short, lighthearted moment captured at Disneyland Resort."
+    },
+    {
+      "videoId": "91eyjitfIww",
+      "title": "Scratch asmr #asmr #viral #asmrsounds #disney #disneyland #spongesqueezing #follow #asmrcommunity",
+      "channel": "Sponge Squeeze Addicts",
+      "publishedAt": "2026-06-25T07:54:26Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/91eyjitfIww/mqdefault.jpg",
+      "viewCount": 941,
+      "url": "https://www.youtube.com/watch?v=91eyjitfIww",
+      "summary": "An ASMR video featuring scratch and squeeze sounds with Disney park tags."
+    },
+    {
+      "videoId": "t0Ta74r7Mqg",
+      "title": "Mateo's first time in the Happiest Place on Earth #carslife #disney #disneyland #adventure #siblings",
+      "channel": "Qwuinnatt",
+      "publishedAt": "2026-06-25T07:06:01Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/t0Ta74r7Mqg/mqdefault.jpg",
+      "viewCount": 918,
+      "url": "https://www.youtube.com/watch?v=t0Ta74r7Mqg",
+      "summary": "Qwuinnatt documents a child's first visit to Disneyland with family."
+    },
+    {
+      "videoId": "ejKLrT3wxhU",
+      "title": "La Garra ….-#toystory  #humor #videoviral #viral #comedia #disney #disneyland",
+      "channel": "Los Salas Beristain",
+      "publishedAt": "2026-06-25T11:20:29Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/ejKLrT3wxhU/mqdefault.jpg",
+      "viewCount": 899,
+      "url": "https://www.youtube.com/watch?v=ejKLrT3wxhU",
+      "summary": "Los Salas Beristain posts a comedic video with Toy Story and Disney park themes."
+    }
+  ],
+  "updatedAt": "2026-06-25T13:11:54.475Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-06-25T13:11:54.475Z",
+    "tokens": {
+      "input": 12178,
+      "output": 5447,
+      "costUsd": 0.1182
+    }
+  }
+}
