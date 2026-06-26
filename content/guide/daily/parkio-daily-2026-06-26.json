@@ -1,0 +1,349 @@
+{
+  "title": "Parkio Daily for June 26, 2026",
+  "slug": "parkio-daily-2026-06-26",
+  "date": "2026-06-26",
+  "teaser": "626 Day Stitch merch drops today; fall Disney World hotel discounts up to 25% off now bookable through Christmas Eve.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Soarin'",
+        "parkSlug": "epcot",
+        "note": "Dinner-hour windows often see walk-on waits"
+      },
+      {
+        "name": "Big Thunder Mountain",
+        "parkSlug": "magic-kingdom",
+        "note": "Check status before rope drop"
+      },
+      {
+        "name": "Toy Story Mania",
+        "parkSlug": "hollywood-studios",
+        "note": "New Toy Story 5 excitement driving demand"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [
+      {
+        "title": "Fire at EPCOT-area resort closes Bourbon Steak indefinitely",
+        "body": "A kitchen fire broke out yesterday at Bourbon Steak inside the Walt Disney World Dolphin Resort, prompting lobby evacuation. The upscale steakhouse remains closed with no reopening date announced.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/06/fire-breaks-out-at-epcot-resort-location-guests-evacuated-th1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Dolphin Resort guests looking for upscale dining may need alternate reservations tonight. California Grill at the Contemporary or Citricos at the Grand Floridian tend to have similar menus and sometimes offer same-day availability."
+        }
+      }
+    ],
+    "bignews": [
+      {
+        "title": "Disney World drops fall and holiday resort discounts up to 25% off",
+        "body": "Room-only discounts are now bookable for mid-September through Christmas Eve, with savings reaching 25% at select resorts. Package bookings also unlock a free Park Hopper upgrade during the same window.",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/save-25-off-disney-world-resorts-free-park-hopper-ticket-upgrade-in-september-to-december-2026/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Availability tends to shrink fast on discounted dates near Thanksgiving and Christmas week. Booking within the next few days usually gives the widest choice of resorts and room categories."
+        }
+      },
+      {
+        "title": "Cinderella Castle Dream Lights will not return for Christmas 2026",
+        "body": "Disney confirmed the iconic icicle light display on Cinderella Castle will remain retired this holiday season, continuing its absence from Magic Kingdom.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-world-declines-to-bring-back-cinderella-castle-dream-lights-for-christmas-2026/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Guests planning holiday visits solely for the Dream Lights may want to adjust expectations. EPCOT's Festival of the Holidays and Hollywood Studios' Jollywood Nights tend to offer stronger seasonal experiences this year."
+        }
+      },
+      {
+        "title": "Grand Floridian retiring flagship gingerbread house display",
+        "body": "The resort's famous lobby gingerbread house will not appear this Christmas. Disney plans alternative displays for select guests instead.",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-world-retires-flagship-resort-christmas-gingerbread-house-adds-hotel-hopping-rules/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "The gingerbread house was a major draw for resort-hopping families. Beach Club's gingerbread carousel and Contemporary's display tend to be the next-best alternatives, though both draw heavier crowds in early December."
+        }
+      },
+      {
+        "title": "626 Day Stitch merchandise launches today with global pop-ups",
+        "body": "New Stitch products arrive at Disney parks and the Disney Store to celebrate June 26 (626 Day). Pop-up activations are live in Newport Beach, Shanghai, Tokyo, London, Lisbon, and Taiwan cities.",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/products/2026-stitch-day-merch/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Limited-edition character merchandise tends to sell out fastest at flagship stores like World of Disney. Arriving before 11 a.m. usually improves your odds of snagging popular items."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "Annual Passholders get up to 30% off fall and holiday resort stays",
+        "body": "Passholder-exclusive discounts cover October through Christmas Eve, with savings up to 30% at select Disney World resorts. Florida residents receive the same offer.",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/up-to-30-off-disney-world-resort-room-deals-in-fall-to-late-2026-for-annual-pass-florida-residents/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Passholder discounts often have tighter inventory windows than public offers. Booking mid-week arrivals in early November or the first two weeks of December tends to yield the deepest savings and widest availability."
+        }
+      },
+      {
+        "title": "Toy Story 5 in theaters drives Toy Story Mania demand",
+        "body": "With Toy Story 5 now showing, Disney parks are seeing renewed interest in the Toy Story Mania attraction at Hollywood Studios and California Adventure. The parks blog released tips for higher scores.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/disney-experiences/toy-story-mania-tips-and-secrets-high-score/"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "Toy Story Mania waits tend to spike mid-morning and after 2 p.m. when families finish other Toy Story Land attractions. Riding within the first 30 minutes of park opening or using Lightning Lane usually keeps waits manageable."
+        }
+      },
+      {
+        "title": "Orlando airport adds four new nonstop routes this month",
+        "body": "Orlando International Airport launched four new nonstop flights in June, expanding travel options for Disney World guests.",
+        "source": {
+          "label": "AllEars.Net",
+          "url": "https://allears.net/2026/06/25/orlando-airport-adds-4-new-nonstop-flights-this-month-6/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "New routes sometimes offer promotional fares in their first few months. Checking flight prices within the next week or two may surface deals for fall and winter travel windows."
+        }
+      },
+      {
+        "title": "Mickey's Very Merry Christmas Party dates and tickets now available",
+        "body": "Disney released full details and ticket sales for the 2026 Mickey's Very Merry Christmas Party at Magic Kingdom. The separately ticketed event runs select November and December nights.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/mickeys-very-merry-christmas-party-dates-and-festive-details/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Early-season party nights in November tend to sell out slower and cost less than dates closer to Christmas. Booking mid-November usually balances lower crowds with full holiday decor."
+        }
+      },
+      {
+        "title": "Jollywood Nights returns to Hollywood Studios this holiday season",
+        "body": "The separately ticketed Jollywood Nights event is confirmed for November and December at Disney's Hollywood Studios, blending old Hollywood glamour with Christmas festivities.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/disney-jollywood-nights-dates-tickets-and-more/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Jollywood Nights offers lower crowds on Tower of Terror and Rock 'n' Roller Coaster during event hours. Guests staying late tend to walk onto headliners after the opening show ends around 8 p.m."
+        }
+      },
+      {
+        "title": "EPCOT Festival of the Holidays dates confirmed for late 2026",
+        "body": "The EPCOT International Festival of the Holidays, presented by AdventHealth, returns this November and December with global holiday treats and entertainment around World Showcase.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/epcot-festival-of-the-holidays-dates-details/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Festival weekdays in early December tend to offer shorter kiosk lines and easier World Showcase strolling than weekends or the week between Christmas and New Year's. Arriving by 11 a.m. usually means fresher pastries and full stock."
+        }
+      },
+      {
+        "title": "Disney Springs restaurant slashes prices for summer",
+        "body": "One Disney Springs dining location has introduced reduced pricing for the summer season, addressing guest concerns about lunch menu costs.",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/06/one-disney-springs-restaurant-just-slashed-its-prices-for-summer-el1/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Summer dining deals at Disney Springs tend to disappear once fall crowds return in late September. Locking in a lunch reservation this week or next usually locks in lower pricing before any autumn menu changes."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Disney reveals first look at 2026 holiday merchandise",
+        "body": "The company previewed this year's Christmas souvenir lineup, including ornaments, apparel, and home decor, arriving at parks and shopDisney later this year.",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/products/a-festive-first-look-at-disney-holiday-merchandise/"
+        }
+      },
+      {
+        "title": "New Disney x Formula 1 collection available online",
+        "body": "A collaboration between Disney and Formula 1 launched on the Disney Store website, featuring apparel and accessories.",
+        "source": {
+          "label": "AllEars.Net",
+          "url": "https://allears.net/2026/06/25/a-new-disney-x-formula-1-collection-just-dropped-online/"
+        }
+      },
+      {
+        "title": "Disneyland parks blog highlights best cold treats for summer",
+        "body": "Disney shared a guide to ice cream, slushies, and frozen snacks available across Disneyland Resort to help guests cool off during warm park days.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/dlr/disney-eats-where-to-find-ice-cream-slushies-and-more-cold-treats-at-disneyland/"
+        }
+      },
+      {
+        "title": "Behind the Attraction Season 3 now streaming on Disney+",
+        "body": "The documentary series added two new episodes focused on Disney Cruise Line, exploring storytelling and immersive design aboard the ships.",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/disney-experiences/stream-episodes-of-behind-the-attraction/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "Animal Kingdom debuts new Avatar-themed food and Bluey experience",
+        "body": "Disney's Animal Kingdom recently added Avatar-inspired menu items and opened a Bluey character experience, drawing families with young children and Pandora fans alike.",
+        "parkSlug": "animal-kingdom",
+        "ctaLabel": "Watch the full park tour",
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "New character experiences tend to see longest waits between 10 a.m. and 2 p.m. Arriving at the Bluey meet within the first hour of park opening or after 4 p.m. usually cuts standby time in half."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "DWuaLleFRdw",
+      "title": "Disney's Animal Kingdom 2026 | Park Update, Bluey Experience & New Avatar Food | Walt Disney World",
+      "channel": "Paging Mr. Morrow",
+      "publishedAt": "2026-06-20T13:59:03Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/DWuaLleFRdw/mqdefault.jpg",
+      "viewCount": 98826,
+      "url": "https://www.youtube.com/watch?v=DWuaLleFRdw",
+      "summary": "Paging Mr. Morrow tours Animal Kingdom's latest additions, including the new Bluey character experience and Avatar-themed dining options."
+    },
+    {
+      "videoId": "mFtjrUqi2Y4",
+      "title": "Every NEW Food at Epcot- Geo-82, Regal Eagle, La Cava Del Tequila | Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-06-21T15:55:59Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/mFtjrUqi2Y4/mqdefault.jpg",
+      "viewCount": 53454,
+      "url": "https://www.youtube.com/watch?v=mFtjrUqi2Y4",
+      "summary": "WrightDownMainStreet reviews new menu items at three EPCOT dining locations, including Geo-82, Regal Eagle, and La Cava Del Tequila."
+    },
+    {
+      "videoId": "UXsL4cxZAgU",
+      "title": "🔴 Live: Thursday Stream at Disneyland! Paint the Night Parade, Wondrous Journeys & Rides - 06/25/26",
+      "channel": "Koda Bear the Explorer ",
+      "publishedAt": "2026-06-26T07:30:53Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/UXsL4cxZAgU/mqdefault.jpg",
+      "viewCount": 29314,
+      "url": "https://www.youtube.com/watch?v=UXsL4cxZAgU",
+      "summary": "Koda Bear livestreams an evening at Disneyland featuring Paint the Night parade, Wondrous Journeys fireworks, and attraction ride-throughs."
+    },
+    {
+      "videoId": "g_M3tEaKiiM",
+      "title": "2026年6月25日発売ディズニー新グッズを紹介！ #ディズニー #ディズニーランド #ディズニーシー",
+      "channel": "ぽきちゃんねる",
+      "publishedAt": "2026-06-26T07:52:36Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/g_M3tEaKiiM/mqdefault.jpg",
+      "viewCount": 3422,
+      "url": "https://www.youtube.com/watch?v=g_M3tEaKiiM",
+      "summary": "Poki Channel showcases new Disney merchandise released June 25, 2026 at Tokyo Disneyland and DisneySea."
+    },
+    {
+      "videoId": "OoWEVHiZHEQ",
+      "title": "6月11日発売ディズニー新グッズを紹介！ #ディズニー #ディズニーランド #ディズニーシー",
+      "channel": "ぽきちゃんねる",
+      "publishedAt": "2026-06-26T07:50:32Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/OoWEVHiZHEQ/mqdefault.jpg",
+      "viewCount": 3396,
+      "url": "https://www.youtube.com/watch?v=OoWEVHiZHEQ",
+      "summary": "Poki Channel highlights Disney products that launched June 11 at Tokyo Disney Resort parks."
+    },
+    {
+      "videoId": "N1FPDoEXlZY",
+      "title": "2026年6月18日発売ディズニー新グッズを紹介！ #ディズニー #ディズニーランド #ディズニーシー",
+      "channel": "ぽきちゃんねる",
+      "publishedAt": "2026-06-26T07:51:42Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/N1FPDoEXlZY/mqdefault.jpg",
+      "viewCount": 2303,
+      "url": "https://www.youtube.com/watch?v=N1FPDoEXlZY",
+      "summary": "Poki Channel reviews new Disney merchandise released June 18 at Tokyo Disneyland and DisneySea."
+    },
+    {
+      "videoId": "iLllhXSJVeI",
+      "title": "Disneyland Fun!! @DisneyParks #disney #disneyland #dance #friends",
+      "channel": "Russell Hustle Inc.",
+      "publishedAt": "2026-06-26T05:36:17Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/iLllhXSJVeI/mqdefault.jpg",
+      "viewCount": 2294,
+      "url": "https://www.youtube.com/watch?v=iLllhXSJVeI",
+      "summary": "Russell Hustle Inc. shares a fun dance moment with friends at Disneyland park."
+    },
+    {
+      "videoId": "hOXe0_2LjfI",
+      "title": "We weren't Ready to Leave Disneyland #darthmaul #like #starwars #disney #fun #lightsaber #familyvlog",
+      "channel": "LUCKY'S DIY GARAGE",
+      "publishedAt": "2026-06-26T04:46:06Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/hOXe0_2LjfI/mqdefault.jpg",
+      "viewCount": 1522,
+      "url": "https://www.youtube.com/watch?v=hOXe0_2LjfI",
+      "summary": "Lucky's DIY Garage vlogs a family Disneyland visit featuring Star Wars experiences and lightsaber encounters."
+    },
+    {
+      "videoId": "A94p86wMqOI",
+      "title": "Disney Magic Kingdom Livestream",
+      "channel": "Theme Park Films",
+      "publishedAt": "2026-06-26T03:42:42Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/A94p86wMqOI/mqdefault.jpg",
+      "viewCount": 1424,
+      "url": "https://www.youtube.com/watch?v=A94p86wMqOI",
+      "summary": "Theme Park Films livestreams from Magic Kingdom, offering real-time views of the park."
+    },
+    {
+      "videoId": "iFGD3ezelNM",
+      "title": "What is this luck?!🤩🔍 #disney #disneypintrading #disneyparks #disneypins #pintrading #mysterypins",
+      "channel": "Kelsey's Adventureland",
+      "publishedAt": "2026-06-26T04:28:01Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/iFGD3ezelNM/mqdefault.jpg",
+      "viewCount": 1158,
+      "url": "https://www.youtube.com/watch?v=iFGD3ezelNM",
+      "summary": "Kelsey's Adventureland showcases a lucky pin trading moment at a Disney park."
+    }
+  ],
+  "updatedAt": "2026-06-26T13:04:13.743Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-06-26T13:04:13.743Z",
+    "tokens": {
+      "input": 10864,
+      "output": 5589,
+      "costUsd": 0.1164
+    }
+  }
+}
