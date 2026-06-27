@@ -1,0 +1,329 @@
+{
+  "title": "Parkio Daily for June 27, 2026",
+  "slug": "parkio-daily-2026-06-27",
+  "date": "2026-06-27",
+  "teaser": "Pirates of the Caribbean debuts transforming skeleton animatronic today; Earl of Sandwich returns to Downtown Disney in largest location yet.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Space Mountain",
+        "parkSlug": "magic-kingdom",
+        "note": "Character meet reopened early in Tomorrowland"
+      },
+      {
+        "name": "Soarin'",
+        "parkSlug": "epcot",
+        "note": "New food items debuting across World Showcase"
+      },
+      {
+        "name": "Pirates of the Caribbean",
+        "parkSlug": "disneyland",
+        "note": "New transforming animatronic debuts after refurb"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [
+      {
+        "title": "Pirates of the Caribbean debuts transforming skeleton animatronic at Disneyland",
+        "body": "A new audio-animatronic figure that transforms from human to skeleton in real time debuted today when Pirates of the Caribbean reopened from refurbishment. The technology replaces the iconic skeleton-on-treasure scene.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/imagineerings-innovative-new-transforming-audio-animatronics-debuts-in-pirates-of-the-caribbean/"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "Pirates tends to draw heavy morning crowds on reopening days. Riding within the first 90 minutes after rope drop usually keeps waits under 30 minutes."
+        }
+      }
+    ],
+    "bignews": [
+      {
+        "title": "Earl of Sandwich opens largest location to date at Downtown Disney",
+        "body": "The sandwich chain returned to Downtown Disney District with its biggest restaurant footprint yet. The new permanent location replaces the previous spot that closed during recent district renovations.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/earl-of-sandwich-restaurant-makes-triumphant-return-to-downtown-disney-with-its-largest-location/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "New restaurant openings typically see their longest waits during lunch and dinner rush. Visiting between 2–4pm often means shorter lines and fresh inventory."
+        }
+      },
+      {
+        "title": "Disney Cruise Line offering 30% discount for four days only",
+        "body": "In honor of 626 Day, Disney Cruise Line launched a limited-time 30% discount on select sailings through December 2026. The promotion runs through June 30.",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/stitch-glitch-30-off-disney-cruise-line-for-626-day/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Four-day flash sales typically see heaviest booking activity in the final 24 hours. Comparing sailing dates early in the window often yields better cabin selection."
+        }
+      },
+      {
+        "title": "Magic Kingdom character meet reopens ahead of schedule",
+        "body": "A popular character greeting location in Magic Kingdom returned earlier than expected after a lengthy closure. The exact character lineup was not specified in the announcement.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/06/26/after-a-lengthy-closure-this-magic-kingdom-attraction-reopened-early/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Character meets tend to see lighter crowds in the hour before parades. Planning meet-and-greets around 2pm often shortens wait times by 15–20 minutes."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "New Pirates experience coming to Magic Kingdom this Halloween",
+        "body": "Disney announced a new Pirates-themed experience for Magic Kingdom during the fall season. The announcement has sparked speculation about a potential Adventureland expansion.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/06/disney-world-pirates-experience-halloween-emd1/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Seasonal overlays typically debut with soft openings days before official launch. Checking the app for availability in late September may reveal early access windows."
+        }
+      },
+      {
+        "title": "EPCOT adds new menu items at three World Showcase locations",
+        "body": "Geo-82, Regal Eagle, and La Cava del Tequila rolled out updated food offerings. The new items span appetizers, entrees, and specialty drinks.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "YouTube",
+          "url": "https://www.youtube.com/watch?v=mFtjrUqi2Y4"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "New menu launches usually see their fastest sellouts on weekends. Visiting World Showcase before 1pm on weekdays often means full availability and shorter counter waits."
+        }
+      },
+      {
+        "title": "Animal Kingdom debuts new drinkware collection",
+        "body": "Three themed drink vessels featuring Animal Kingdom graphics and animal prints arrived at Riverside Depot. The collection includes a tumbler, water bottle, and mug priced between $35–$45.",
+        "parkSlug": "animal-kingdom",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/06/disneys-animal-kingdom-featured-on-new-water-bottle-tumbler-and-mug/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Park-specific merchandise tends to sell fastest at flagship retail locations between 10am–2pm. Shopping near park closing often reveals restocked items with no lines."
+        }
+      },
+      {
+        "title": "Disney Springs debuts Level99 experience and new Gideon's cookies",
+        "body": "Level99, a challenge-based entertainment venue, opened alongside an expanded Gideon's Bakehouse menu featuring new cookie flavors. Both additions are now operating in the district.",
+        "source": {
+          "label": "YouTube",
+          "url": "https://www.youtube.com/watch?v=hqd2hMX0Sj4"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Disney Springs crowds usually lighten after 9pm on weeknights. Late visits often mean shorter waits for both entertainment venues and bakery lines."
+        }
+      },
+      {
+        "title": "Saharan dust impacting air quality at Disney World this weekend",
+        "body": "A significant dust plume from the Sahara is reducing visibility and air quality across central Florida. Outdoor conditions may be hazy through Sunday.",
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/06/26/no-thats-not-pixie-dust-in-the-air-at-disney-world-this-weekend/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Poor air quality tends to worsen in midday heat. Scheduling indoor attractions and air-conditioned dining between 12–4pm often makes outdoor walking more comfortable later."
+        }
+      },
+      {
+        "title": "Walt Disney World 25% resort discount now available for fall",
+        "body": "Room-only discounts covering mid-September through Christmas Eve went on sale, with an option to add a free Park Hopper upgrade when booking as a package. Savings reach 25% at select resorts.",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/save-25-off-disney-world-resorts-free-park-hopper-ticket-upgrade-in-september-to-december-2026/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Resort discount inventory typically shrinks within 48 hours of release. Booking weekday arrivals in September or early December often yields better room category availability."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "New Pandora charms celebrate Beach Club, Old Key West, and Contemporary",
+        "body": "Three resort-themed Pandora jewelry charms debuted at Walt Disney World, each priced at $80 and featuring signature architectural elements from the respective hotels.",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/06/beach-club-old-key-west-contemporary-pandora-charms/"
+        }
+      },
+      {
+        "title": "Cinderella Castle Dream Lights will not return for Christmas 2026",
+        "body": "Disney confirmed the iconic holiday light display on Magic Kingdom's castle will remain retired. The decision follows the announcement of other holiday programming for the parks.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-world-declines-to-bring-back-cinderella-castle-dream-lights-for-christmas-2026/"
+        }
+      },
+      {
+        "title": "EPCOT Festival of the Holidays dates announced for 2026",
+        "body": "The annual celebration returns to EPCOT this winter with holiday storytelling, cuisine, and entertainment across World Showcase. Specific dates and programming details were released by Disney.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/epcot-festival-of-the-holidays-dates-details/"
+        }
+      },
+      {
+        "title": "Sorcerer Mickey interactive bubble wand now at Animal Kingdom",
+        "body": "A light-up bubble toy styled after Fantasia's Sorcerer Mickey arrived at Walt Disney World retail locations. The wand is priced at $39.99 and includes bubble solution.",
+        "parkSlug": "animal-kingdom",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/06/interactive-sorcerer-mickey-bubble-glow-wand-at-walt-disney-world/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "626 Day celebrates Stitch across all Disney parks",
+        "body": "Disney marked June 26 as an unofficial Stitch holiday with special merchandise, pop-up events, and character appearances at parks worldwide. Limited-edition items and photo opportunities were part of the celebration.",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/disney-experiences/lilo-stitch-across-disney-parks/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Character-themed celebration days tend to draw fans early for limited merchandise. Arriving at park opening and heading directly to flagship stores often secures exclusive items before midday sellouts."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "DWuaLleFRdw",
+      "title": "Disney's Animal Kingdom 2026 | Park Update, Bluey Experience & New Avatar Food | Walt Disney World",
+      "channel": "Paging Mr. Morrow",
+      "publishedAt": "2026-06-20T13:59:03Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/DWuaLleFRdw/mqdefault.jpg",
+      "viewCount": 101376,
+      "url": "https://www.youtube.com/watch?v=DWuaLleFRdw",
+      "summary": "Paging Mr. Morrow tours Animal Kingdom covering park updates, the new Bluey experience, and recently added Avatar-themed food offerings."
+    },
+    {
+      "videoId": "mFtjrUqi2Y4",
+      "title": "Every NEW Food at Epcot- Geo-82, Regal Eagle, La Cava Del Tequila | Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-06-21T15:55:59Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/mFtjrUqi2Y4/mqdefault.jpg",
+      "viewCount": 56544,
+      "url": "https://www.youtube.com/watch?v=mFtjrUqi2Y4",
+      "summary": "WrightDownMainStreet reviews new menu items at three EPCOT World Showcase locations including Geo-82, Regal Eagle, and La Cava del Tequila."
+    },
+    {
+      "videoId": "hqd2hMX0Sj4",
+      "title": "Disney Springs 2026 | Level99 Full Review, New Gideon's Cookies & BIG Changes | Walt Disney World",
+      "channel": "Paging Mr. Morrow",
+      "publishedAt": "2026-06-26T21:00:40Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/hqd2hMX0Sj4/mqdefault.jpg",
+      "viewCount": 34524,
+      "url": "https://www.youtube.com/watch?v=hqd2hMX0Sj4",
+      "summary": "Paging Mr. Morrow provides a full walkthrough of the new Level99 attraction at Disney Springs and samples new cookie offerings at Gideon's Bakehouse."
+    },
+    {
+      "videoId": "t0WI9XILY2Q",
+      "title": "🔴Live Magic Kingdom Friday with Rides, Shows, Parades, Fireworks at Walt Disney World 6/26/2026",
+      "channel": "RON ON THE GO",
+      "publishedAt": "2026-06-27T04:18:32Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/t0WI9XILY2Q/mqdefault.jpg",
+      "viewCount": 34083,
+      "url": "https://www.youtube.com/watch?v=t0WI9XILY2Q",
+      "summary": "RON ON THE GO live-streams a Friday at Magic Kingdom featuring rides, shows, parades, and fireworks."
+    },
+    {
+      "videoId": "l-DropuEd4Y",
+      "title": "🔴 Live: Fantasmic Friday Stream at Disneyland! Fantasmic, Fireworks & Paint the Night - 06/26/26",
+      "channel": "Koda Bear the Explorer ",
+      "publishedAt": "2026-06-27T07:28:11Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/l-DropuEd4Y/mqdefault.jpg",
+      "viewCount": 24528,
+      "url": "https://www.youtube.com/watch?v=l-DropuEd4Y",
+      "summary": "Koda Bear the Explorer live-streams Disneyland's evening entertainment including Fantasmic, fireworks, and Paint the Night parade."
+    },
+    {
+      "videoId": "4ukPnIbzg4I",
+      "title": "🔴Live: Friday Night Live at Epcot & The Epcot Resorts - Walt Disney World Live Stream - 6-26-26",
+      "channel": "ResortTV1",
+      "publishedAt": "2026-06-27T02:39:58Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/4ukPnIbzg4I/mqdefault.jpg",
+      "viewCount": 22540,
+      "url": "https://www.youtube.com/watch?v=4ukPnIbzg4I",
+      "summary": "ResortTV1 broadcasts a Friday evening live stream from EPCOT and surrounding resort hotels."
+    },
+    {
+      "videoId": "tHsGPYVlwCA",
+      "title": "Disneyland with love 🥰💕#funny #disney #Foryou #usa #fyp",
+      "channel": "Pagaduan Mccullon",
+      "publishedAt": "2026-06-27T03:05:37Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/tHsGPYVlwCA/mqdefault.jpg",
+      "viewCount": 10981,
+      "url": "https://www.youtube.com/watch?v=tHsGPYVlwCA",
+      "summary": "Pagaduan Mccullon shares a short, humorous video filmed at Disneyland."
+    },
+    {
+      "videoId": "t1ABgs3paho",
+      "title": "🔴 LIVE: Happily Ever After - Magic Kingdom (2026 Fireworks), Disney World | Full Show 4K",
+      "channel": "Fun to be Free",
+      "publishedAt": "2026-06-27T04:52:13Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/t1ABgs3paho/mqdefault.jpg",
+      "viewCount": 9245,
+      "url": "https://www.youtube.com/watch?v=t1ABgs3paho",
+      "summary": "Fun to be Free live-streams the full Happily Ever After fireworks show from Magic Kingdom in 4K."
+    },
+    {
+      "videoId": "Im5CytYY3wM",
+      "title": "🔴 Disneyland LIVE ✨ Celebrating 626 Day at the happiest place on earth! 🎢✨☀️",
+      "channel": "Popescu Family Adventures",
+      "publishedAt": "2026-06-27T04:56:51Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Im5CytYY3wM/mqdefault.jpg",
+      "viewCount": 3955,
+      "url": "https://www.youtube.com/watch?v=Im5CytYY3wM",
+      "summary": "Popescu Family Adventures live-streams from Disneyland during the 626 Day Stitch celebration."
+    },
+    {
+      "videoId": "xWJGDwtcsSw",
+      "title": "🔴[LIVE] Disney's Hollywood Studios et l'attraction Mandalorian and Grogu et Animation Courtyard !",
+      "channel": "Theme Park Travellers",
+      "publishedAt": "2026-06-27T02:29:25Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/xWJGDwtcsSw/mqdefault.jpg",
+      "viewCount": 3724,
+      "url": "https://www.youtube.com/watch?v=xWJGDwtcsSw",
+      "summary": "Theme Park Travellers live-streams from Hollywood Studios featuring the Mandalorian and Grogu attraction and Animation Courtyard."
+    }
+  ],
+  "updatedAt": "2026-06-27T12:06:04.661Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-06-27T12:06:04.661Z",
+    "tokens": {
+      "input": 11461,
+      "output": 5118,
+      "costUsd": 0.1112
+    }
+  }
+}
