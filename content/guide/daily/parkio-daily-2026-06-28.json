@@ -1,0 +1,349 @@
+{
+  "title": "Parkio Daily for June 28, 2026",
+  "slug": "parkio-daily-2026-06-28",
+  "date": "2026-06-28",
+  "teaser": "Carousel of Progress closes July 5; Disney blocks walking access to Magic Kingdom via Polynesian; Earl of Sandwich reopens at Downtown Disney.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Flight of Passage",
+        "parkSlug": "animal-kingdom",
+        "note": "Early morning waits tend to stay lowest before 10am"
+      },
+      {
+        "name": "Soarin'",
+        "parkSlug": "epcot",
+        "note": "Dinner-hour window usually offers walk-on opportunities"
+      },
+      {
+        "name": "Space Mountain",
+        "parkSlug": "magic-kingdom",
+        "note": "First-hour waits typically stay under 20 minutes"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [
+      {
+        "title": "Walt Disney World blocks non-resort-guest walking access through Polynesian to Magic Kingdom",
+        "body": "Disney has restricted the walking path from the Polynesian Village Resort to the Transportation & Ticket Center and Magic Kingdom to on-site resort guests only, ending a common resort-hopping route.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/06/guests-blocked-from-walking-to-ttc-and-magic-kingdom-from-disneys-polynesian-village-resort-jc1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Day guests planning to walk from TTC to Magic Kingdom should plan for monorail or ferry instead. The walking route via Polynesian now requires resort verification, likely adding 10–15 minutes to your arrival time."
+        }
+      },
+      {
+        "title": "Carousel of Progress closes permanently July 5 at Magic Kingdom",
+        "body": "The Walt Disney-era Tomorrowland attraction will rotate for the final time in one week. Disney has not announced what will replace the theater.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/06/magic-kingdoms-carousel-of-progress-closes-next-week-but-pieces-of-the-attraction-remain-throughout-disney-world-rl1/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Final week for one of Magic Kingdom's original attractions. Afternoon showtimes between 2–5pm tend to have shortest waits if you want one last ride before closure."
+        }
+      }
+    ],
+    "bignews": [
+      {
+        "title": "Earl of Sandwich reopens at Downtown Disney Disneyland with largest location yet",
+        "body": "The sandwich shop has returned to the Disneyland Resort with its biggest restaurant footprint to date, ending the location's multi-year closure.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/earl-of-sandwich-restaurant-makes-triumphant-return-to-downtown-disney-with-its-largest-location/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "New restaurant openings at Disney shopping districts usually draw lunch-hour lines for the first few weeks. Arriving before 11:30am or after 2pm typically reduces waits to under 10 minutes."
+        }
+      },
+      {
+        "title": "Disney Cruise Line offering 30 percent off select sailings through December in 626 Day promotion",
+        "body": "A pricing error or intentional Stitch Day promotion has reduced fares on multiple Disney Cruise Line voyages departing through the end of 2026.",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/stitch-glitch-30-off-disney-cruise-line-for-626-day/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Cruise pricing errors at Disney rarely last more than a few hours once discovered. If you're considering a sailing, booking before end of business today may lock in the discount before it's corrected."
+        }
+      },
+      {
+        "title": "Two long-closed Walt Disney World locations reopen this week",
+        "body": "Disney World is removing multiple items from its closure list, though specific venue names and reopening dates were not detailed in the source.",
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/06/27/two-spots-finally-reopen-in-disney-world-this-week/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Newly reopened Disney restaurants and shops tend to see curiosity traffic for the first week. Visiting in the final hour before park close usually offers shorter waits and fuller inventory."
+        }
+      },
+      {
+        "title": "EPCOT International Festival of the Holidays dates announced for 2026",
+        "body": "Disney has confirmed the return of the holiday festival at EPCOT with a month-long celebration featuring storytellers, holiday kitchens, and seasonal entertainment.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/epcot-festival-of-the-holidays-dates-details/"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "EPCOT festival weekends typically add 15–25 percent to World Showcase foot traffic. Weekday mornings before 11am and post-dinner windows after 8pm tend to offer easier navigation around food booths."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "Level99 opens at Disney Springs with full interactive challenge experience",
+        "body": "The new attraction and dining concept has debuted at Disney Springs, offering multi-level challenge rooms alongside food and beverage service.",
+        "source": {
+          "label": "Paging Mr. Morrow (YouTube)",
+          "url": "https://www.youtube.com/watch?v=hqd2hMX0Sj4"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "New Disney Springs venues usually see peak crowds during evening hours. Arriving for lunch or mid-afternoon sessions often means shorter waits for challenge rooms and dining reservations."
+        }
+      },
+      {
+        "title": "Multiple new menu items debut at EPCOT locations including Regal Eagle and La Cava del Tequila",
+        "body": "EPCOT has rolled out updated food offerings across several quick-service and bar locations in World Showcase and Future World.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "WrightDownMainStreet (YouTube)",
+          "url": "https://www.youtube.com/watch?v=mFtjrUqi2Y4"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "New EPCOT menu items tend to sell out by mid-afternoon on weekends. Mobile-ordering 30–45 minutes ahead of your planned meal time usually secures the freshest options."
+        }
+      },
+      {
+        "title": "Fantasyland at Disneyland closes earlier than rest of park under new summer hours",
+        "body": "One section of Disneyland will now shut down ahead of the park's posted closing time, limiting evening access to select attractions in the land.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/06/fantasyland-closing-early-disney-park-cj1/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "When one land closes early, guests tend to redistribute to remaining areas, adding 10–20 minutes to wait times park-wide. Prioritizing Fantasyland rides in the first half of your day usually avoids the cutoff."
+        }
+      },
+      {
+        "title": "Holiday merchandise preview released by Disney six months early",
+        "body": "Disney has shared a first look at Christmas 2026 products, including ornaments, apparel, and home décor hitting shelves later this year.",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/products/a-festive-first-look-at-disney-holiday-merchandise/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Popular Disney holiday items often sell out within weeks of release. Shoppers who visit flagship stores on launch day or order online in the first 48 hours tend to secure limited-edition pieces before inventory runs low."
+        }
+      },
+      {
+        "title": "Seven major operational changes coming to Walt Disney World in July",
+        "body": "Disney World will implement multiple updates next month affecting attractions, dining, and park procedures across the resort.",
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/06/27/7-major-changes-coming-to-disney-world-in-july/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "The first week of major Disney World changes often brings operational hiccups and guest confusion. Guests visiting in the second half of July usually benefit from smoother execution once cast members have adapted."
+        }
+      },
+      {
+        "title": "Downtown Disney District guide highlights dining and shopping options at Disneyland Resort",
+        "body": "Disney has published a comprehensive overview of the outdoor shopping and entertainment area, covering new and returning venues.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/dlr/your-ultimate-guide-to-downtown-disney-district-at-disneyland-resort/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Downtown Disney tends to be least crowded during mid-afternoon weekdays. Parking and walkways stay clearest between 2–4pm if you're planning a dedicated shopping trip."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Universal Orlando confirms six attractions permanently removed from theme park",
+        "body": "Universal has closed multiple experiences as part of ongoing resort transformation and Epic Universe preparations.",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/06/universal-orlando-concludes-era-confirms-6-major-attractions-permanently-removed-from-theme-park-sb1/"
+        }
+      },
+      {
+        "title": "Disney blog posts tips for high scores on Toy Story Mania with Toy Story 5 now in theaters",
+        "body": "Disney has shared strategies for the interactive shooting attraction at Hollywood Studios and California Adventure, timed to the new film's release.",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/disney-experiences/toy-story-mania-tips-and-secrets-high-score/"
+        }
+      },
+      {
+        "title": "Lilo & Stitch 626 Day celebrated across Disney parks with merchandise and pop-ups",
+        "body": "Disney marked June 26 with special Stitch-themed products, character appearances, and limited-time activations at multiple resorts worldwide.",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/disney-experiences/lilo-stitch-across-disney-parks/"
+        }
+      },
+      {
+        "title": "Behind the Attraction Season 3 streams on Disney+ with Disney Cruise Line episodes",
+        "body": "The documentary series has added two new installments focused on the history and design of Disney's cruise ships.",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/disney-experiences/stream-episodes-of-behind-the-attraction/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "Magic Kingdom Early Entry strategy shifts as TRON Lightcycle Run opens during 30-minute window",
+        "body": "Disney has quietly begun opening the Tomorrowland headliner during the resort guest early-entry period, changing optimal touring plans for the first hour. Guests who previously focused on Seven Dwarfs or Space Mountain now have a third high-demand option available before park opening, potentially redistributing crowds across the land.",
+        "parkSlug": "magic-kingdom",
+        "ctaLabel": "Read the full strategy",
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "TRON's early-entry availability typically pulls 30–40 percent of resort guests toward Tomorrowland's right side. Arriving at the gates 20 minutes before Early Entry start usually positions you for a sub-15-minute TRON wait, leaving time for Space Mountain before the general public enters."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "hqd2hMX0Sj4",
+      "title": "Disney Springs 2026 | Level99 Full Review, New Gideon's Cookies & BIG Changes | Walt Disney World",
+      "channel": "Paging Mr. Morrow",
+      "publishedAt": "2026-06-26T21:00:40Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/hqd2hMX0Sj4/mqdefault.jpg",
+      "viewCount": 62366,
+      "url": "https://www.youtube.com/watch?v=hqd2hMX0Sj4",
+      "summary": "Paging Mr. Morrow tours the newly opened Level99 interactive challenge experience at Disney Springs and reviews updated offerings at Gideon's Bakehouse."
+    },
+    {
+      "videoId": "mFtjrUqi2Y4",
+      "title": "Every NEW Food at Epcot- Geo-82, Regal Eagle, La Cava Del Tequila | Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-06-21T15:55:59Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/mFtjrUqi2Y4/mqdefault.jpg",
+      "viewCount": 58494,
+      "url": "https://www.youtube.com/watch?v=mFtjrUqi2Y4",
+      "summary": "WrightDownMainStreet samples and reviews new menu items rolled out across multiple EPCOT dining locations including Regal Eagle and La Cava del Tequila."
+    },
+    {
+      "videoId": "VZXsaXTn7q0",
+      "title": "🔴 Live: Saturday Stream at Disneyland! CHOC Walk Dedication Stream ALL Donations to CHOC - 06/27/26",
+      "channel": "Koda Bear the Explorer ",
+      "publishedAt": "2026-06-28T08:10:37Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/VZXsaXTn7q0/mqdefault.jpg",
+      "viewCount": 49074,
+      "url": "https://www.youtube.com/watch?v=VZXsaXTn7q0",
+      "summary": "Koda Bear the Explorer streams live from Disneyland on Saturday, dedicating the broadcast to CHOC Walk fundraising efforts."
+    },
+    {
+      "videoId": "_WQ9FofmVfo",
+      "title": "🔴Live: A Stormy Saturday Evening at Magic Kingdom with Lightning Lane - 6-27-26 - Walt Disney World",
+      "channel": "ResortTV1",
+      "publishedAt": "2026-06-28T04:08:17Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/_WQ9FofmVfo/mqdefault.jpg",
+      "viewCount": 47946,
+      "url": "https://www.youtube.com/watch?v=_WQ9FofmVfo",
+      "summary": "ResortTV1 livestreams Saturday evening at Magic Kingdom during stormy weather, covering Lightning Lane operations and park conditions."
+    },
+    {
+      "videoId": "6CIq9XAE5Uc",
+      "title": "Loại Kẹo Bị Cấm Ở Disneyland Suốt Hơn 70 Năm 😱",
+      "channel": "Hiểu biết mỗi ngày",
+      "publishedAt": "2026-06-28T10:00:06Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/6CIq9XAE5Uc/mqdefault.jpg",
+      "viewCount": 31046,
+      "url": "https://www.youtube.com/watch?v=6CIq9XAE5Uc",
+      "summary": "Hiểu biết mỗi ngày discusses a type of candy that has been banned at Disneyland for over 70 years."
+    },
+    {
+      "videoId": "fues8wf7SjM",
+      "title": "LIVE from Magic Kingdom! Disney's NEW Starlight Parade, Happily Ever After Fireworks & Rides",
+      "channel": "Living in DIZ",
+      "publishedAt": "2026-06-28T04:48:42Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/fues8wf7SjM/mqdefault.jpg",
+      "viewCount": 6526,
+      "url": "https://www.youtube.com/watch?v=fues8wf7SjM",
+      "summary": "Living in DIZ streams live from Magic Kingdom covering the new Starlight Parade, Happily Ever After fireworks, and evening attractions."
+    },
+    {
+      "videoId": "Hh5xWPj5Fow",
+      "title": "when in France (Epcot)🤭✨ #epcot #taylorswift #taylornation #disneyworld #disneyworld #fypシ #lipsync",
+      "channel": "kennedy blade",
+      "publishedAt": "2026-06-28T02:36:26Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Hh5xWPj5Fow/mqdefault.jpg",
+      "viewCount": 1880,
+      "url": "https://www.youtube.com/watch?v=Hh5xWPj5Fow",
+      "summary": "Kennedy Blade posts a Taylor Swift lip-sync video filmed in the France pavilion at EPCOT's World Showcase."
+    },
+    {
+      "videoId": "2ZgNGdhOwVU",
+      "title": "Shanghai | #travel #disney #disneyland #shorts #shortsvideo #short #shortvideo",
+      "channel": "Arlene Aces",
+      "publishedAt": "2026-06-28T04:00:38Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/2ZgNGdhOwVU/mqdefault.jpg",
+      "viewCount": 1879,
+      "url": "https://www.youtube.com/watch?v=2ZgNGdhOwVU",
+      "summary": "Arlene Aces shares a short travel video from Shanghai Disneyland."
+    },
+    {
+      "videoId": "NIqa7Xz5hPI",
+      "title": "#stopchallenge",
+      "channel": "FactGyan-Unofficial ",
+      "publishedAt": "2026-06-28T02:31:04Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/NIqa7Xz5hPI/mqdefault.jpg",
+      "viewCount": 1705,
+      "url": "https://www.youtube.com/watch?v=NIqa7Xz5hPI",
+      "summary": "FactGyan-Unofficial posts a stop-challenge video."
+    },
+    {
+      "videoId": "FVSOoTkhQXc",
+      "title": "🔴 LIVE: Magic Kingdom Sunday Morning Boardwalk Area | Shows, Parade & Disney Magic | Day 299",
+      "channel": "The Disney With Sean Show",
+      "publishedAt": "2026-06-28T09:24:41Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/FVSOoTkhQXc/mqdefault_live.jpg",
+      "viewCount": 1572,
+      "url": "https://www.youtube.com/watch?v=FVSOoTkhQXc",
+      "summary": "The Disney With Sean Show livestreams Sunday morning from Magic Kingdom's Boardwalk area, covering shows, parade, and general park atmosphere."
+    }
+  ],
+  "updatedAt": "2026-06-28T12:13:06.942Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-06-28T12:13:06.942Z",
+    "tokens": {
+      "input": 9959,
+      "output": 5510,
+      "costUsd": 0.1125
+    }
+  }
+}
