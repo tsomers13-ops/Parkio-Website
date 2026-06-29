@@ -1,0 +1,336 @@
+{
+  "title": "Parkio Daily for June 29, 2026",
+  "slug": "parkio-daily-2026-06-29",
+  "date": "2026-06-29",
+  "teaser": "Level99 opens at Disney Springs today; transportation verification now required for resort buses and boats from Disney Springs.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Toy Story Mania",
+        "parkSlug": "hollywood-studios",
+        "note": "Early morning waits typically under 30 minutes"
+      },
+      {
+        "name": "Living with the Land",
+        "parkSlug": "epcot",
+        "note": "Relaxing indoor ride, good heat break"
+      },
+      {
+        "name": "Space Mountain",
+        "parkSlug": "magic-kingdom",
+        "note": "Low waits before 10am"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [
+      {
+        "title": "Level99 opens at Disney Springs",
+        "body": "The real-world gaming venue with 63 physical and mental challenges opens at 11am today on the West Side, replacing the NBA Experience. This is the company's largest location to date.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/06/level99-opens-today-at-disney-springs/?adt_ei=*|EMAIL|*"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Opening day crowds tend to peak between noon and 3pm. Arriving right at 11am or after 6pm usually means shorter wait times for popular challenges."
+        }
+      },
+      {
+        "title": "Heat advisory in effect across Orlando through 7pm",
+        "body": "Actual temperatures will hit mid-to-upper 90s today, with feel-like temps pushing the National Weather Service to issue an advisory from noon to 7pm.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/06/heat-advisory-in-effect-for-orlando-area-today/?adt_ei=*|EMAIL|*"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Indoor attractions like Living with the Land and Carousel of Progress offer the longest air-conditioned relief. Plan outdoor rides before 11am or after 7pm when heat stress risk drops."
+        }
+      }
+    ],
+    "bignews": [
+      {
+        "title": "Disney Springs transportation verification now in effect",
+        "body": "Guests using buses and boats from Disney Springs to resorts must now verify a hotel reservation, dining booking, or activity reservation. The official website has been updated with verification requirements.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-world-adds-restrictions-for-resort-bound-boats-buses-from-disney-springs-to-official-sites/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "If you're planning a resort-hopping dining trip, bring confirmation emails on your phone. Verification typically adds 2-3 minutes per party at the bus stop, so allow extra buffer time."
+        }
+      },
+      {
+        "title": "Magic Kingdom adds crowd barriers ahead of July 4 weekend",
+        "body": "Green crowd control barriers have been installed around Magic Kingdom security checkpoints to manage guest flow during the busy holiday week.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/06/barriers-installed-at-magic-kingdom-security-for-holiday-crowd-control/?adt_ei=*|EMAIL|*"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "Security lines tend to swell between 9-11am during holiday weeks. Arriving at rope drop or using the Contemporary monorail entrance after 2pm often cuts security wait by 10-15 minutes."
+        }
+      },
+      {
+        "title": "New Moana merchandise collection launches ahead of film release",
+        "body": "A collection of toys, books, accessories, and apparel inspired by the live-action Moana film arrives at Disney parks ahead of the July 10 theatrical debut.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/products/new-disney-moana-merchandise/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Limited-edition character merchandise typically sells fastest at World of Disney in Disney Springs and Emporium on Main Street. Visiting before 11am usually ensures best selection."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "Comcast to spin off NBCUniversal and theme parks",
+        "body": "Comcast announced it will separate NBCUniversal, including its theme park division, and Sky into two publicly traded companies. The separation is expected to take one year.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/06/comcast-to-spin-off-nbcuniversal-expected-to-take-one-year/?adt_ei=*|EMAIL|*"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Corporate restructuring typically doesn't affect day-to-day park operations for months. If you've been considering a Universal trip, current pricing and policies are likely stable through fall."
+        }
+      },
+      {
+        "title": "Art of Animation Resort faces widespread closures in 2027",
+        "body": "Disney confirmed significant refurbishment work will close portions of Art of Animation Resort next year, though specific dates and affected buildings have not been announced.",
+        "parkSlug": null,
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/06/disney-confirms-widespread-closure-for-art-of-animation-resort-in-2027-bwb1/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "If Art of Animation is your preferred Value resort, booking trips before early 2027 usually avoids construction noise and reduced amenity access. Monitor Disney's official site for closure dates."
+        }
+      },
+      {
+        "title": "Disney Lakeshore Lodge construction continues at Bay Lake",
+        "body": "The nature-inspired resort on the former River Country site between Wilderness Lodge and Fort Wilderness is under active construction, with vertical building now visible from the water.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/06/29/new-construction-photos-have-us-seriously-excited-about-disney-worlds-new-hotel/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Wilderness Lodge boat service may experience occasional short delays near construction zones. Allow an extra 5-10 minutes if using boats to reach Magic Kingdom during morning rush."
+        }
+      },
+      {
+        "title": "Living with the Land branch falls near guest boat at EPCOT",
+        "body": "An artificial tree branch detached from the ceiling during a recent ride cycle, landing close to a guest boat but causing no reported injuries. The attraction remained operational.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/06/epcot-living-with-the-land-accident-video-jc1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Disney typically completes safety inspections within 24 hours of incidents. If you're concerned, asking a Cast Member at load about recent maintenance checks often provides reassurance."
+        }
+      },
+      {
+        "title": "Select California Adventure restaurants closed certain July days",
+        "body": "One popular dining location at Disney California Adventure will operate on a reduced schedule with select closures throughout July, though the specific restaurant and dates were not detailed in available reports.",
+        "parkSlug": "california-adventure",
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/06/29/it-just-got-a-lot-harder-to-eat-at-this-disney-restaurant-next-month/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Check the Disneyland app each morning for real-time dining availability. Walk-up lists at Lamplight Lounge and Storytellers Cafe tend to move fastest during early lunch (11-11:30am)."
+        }
+      },
+      {
+        "title": "Captain Jack Sparrow entertainment added to Halloween party",
+        "body": "New Captain Jack Sparrow character experiences will debut at Mickey's Not So Scary Halloween Party this year, with the first event scheduled for early August.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/new-captain-jack-sparrow-entertainment-coming-to-2026-mickeys-not-so-scary-halloween-party/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Character experiences at Halloween parties typically see shortest lines during the first parade at 8:15pm. Arriving at the location 20 minutes early often secures front-of-line access."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "EPCOT Festival of the Holidays dates announced",
+        "body": "The 2026 EPCOT International Festival of the Holidays presented by AdventHealth will return this winter with holiday kitchens, storytellers, and Candlelight Processional performances.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/epcot-festival-of-the-holidays-dates-details/"
+        }
+      },
+      {
+        "title": "Disney releases 2026 holiday merchandise preview",
+        "body": "A first look at seasonal products for the 2026 holiday season includes ornaments, apparel, and collectibles available at parks and Disney Springs starting later this year.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/products/a-festive-first-look-at-disney-holiday-merchandise/"
+        }
+      },
+      {
+        "title": "Floral princess keychains arrive at World of Disney",
+        "body": "A five-piece keychain set featuring Rapunzel, Tiana, Belle, and two additional princesses on colored flowers with rose gold chains is now available for $29.99.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/06/rapunzel-tiana-belle-and-more-princesses-featured-on-floral-keychains-at-walt-disney-world-resort/?adt_ei=*|EMAIL|*"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "Cool down with ice cream across Disneyland Resort",
+        "body": "Summer heat makes ice cream, slushies, and frozen treats essential. The Parks Blog highlights top locations including Clarabelle's, Gibson Girl, and Plaza Inn for classic soft-serve, plus specialty frozen options throughout both parks.",
+        "parkSlug": "disneyland",
+        "ctaLabel": "Find treats",
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Ice cream kiosks near Main Street and Buena Vista Street tend to have 15-20 minute waits between 2-4pm. Hitting stands right at park open or after 7pm usually means walk-up service."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "hqd2hMX0Sj4",
+      "title": "Disney Springs 2026 | Level99 Full Review, New Gideon's Cookies & BIG Changes | Walt Disney World",
+      "channel": "Paging Mr. Morrow",
+      "publishedAt": "2026-06-26T21:00:40Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/hqd2hMX0Sj4/mqdefault.jpg",
+      "viewCount": 79219,
+      "url": "https://www.youtube.com/watch?v=hqd2hMX0Sj4",
+      "summary": "Paging Mr. Morrow tours the new Level99 gaming venue at Disney Springs and covers recent updates including new Gideon's cookies and other changes around the shopping and dining district."
+    },
+    {
+      "videoId": "OkHv5fUITbE",
+      "title": "DISNEY ALL WATER RIDES at Disneyland Resort #livestream",
+      "channel": "Magical Goth Vibes",
+      "publishedAt": "2026-06-29T08:34:42Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/OkHv5fUITbE/mqdefault.jpg",
+      "viewCount": 4619,
+      "url": "https://www.youtube.com/watch?v=OkHv5fUITbE",
+      "summary": "Magical Goth Vibes livestreams a tour of water-based attractions across Disneyland Resort parks."
+    },
+    {
+      "videoId": "E8FLZNn2mk8",
+      "title": "#fy #themepark #japan #rides #travel #disney #travelvlog #disneyland #universalstudios #fy #fyp",
+      "channel": "aakocrich",
+      "publishedAt": "2026-06-29T10:20:11Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/E8FLZNn2mk8/mqdefault.jpg",
+      "viewCount": 1897,
+      "url": "https://www.youtube.com/watch?v=E8FLZNn2mk8",
+      "summary": "Aakocrich shares theme park travel footage from Japan featuring Disney and Universal Studios visits."
+    },
+    {
+      "videoId": "Fcr0B_3SHWo",
+      "title": "Years of Disney memories 🐭❤️🥂 #disney #disneyland #disneycruise #wdw",
+      "channel": "Mooses on the Move",
+      "publishedAt": "2026-06-29T09:00:13Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Fcr0B_3SHWo/mqdefault.jpg",
+      "viewCount": 1735,
+      "url": "https://www.youtube.com/watch?v=Fcr0B_3SHWo",
+      "summary": "Mooses on the Move compiles a montage of Disney memories from Disneyland, Walt Disney World, and Disney Cruise Line visits."
+    },
+    {
+      "videoId": "VbHchALA9so",
+      "title": "売り切れ続出のグッズが再入荷！マンダロリアン&グローグーのポップアップショップへ行ってきた！",
+      "channel": "なまけもの、でもディズニーは本気。",
+      "publishedAt": "2026-06-29T09:30:31Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/VbHchALA9so/mqdefault.jpg",
+      "viewCount": 1664,
+      "url": "https://www.youtube.com/watch?v=VbHchALA9so",
+      "summary": "A Japanese Disney channel visits a Mandalorian and Grogu pop-up shop featuring restocked merchandise."
+    },
+    {
+      "videoId": "mYLXw4ma7qc",
+      "title": "that feeling when you first get back home @Disney #disneyland #california #disneyadult #disneyhome",
+      "channel": "gavinator_moore",
+      "publishedAt": "2026-06-29T07:05:38Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/mYLXw4ma7qc/mqdefault.jpg",
+      "viewCount": 1460,
+      "url": "https://www.youtube.com/watch?v=mYLXw4ma7qc",
+      "summary": "Gavinator_moore captures the feeling of returning home to Disneyland as a California resident and Disney fan."
+    },
+    {
+      "videoId": "phtk-njD0Mo",
+      "title": "Dog meets favorite disney character🐶 #disney #disneyland #disneyworld #cute #dog #love #fyp",
+      "channel": "Sharp Frieman",
+      "publishedAt": "2026-06-29T11:09:28Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/phtk-njD0Mo/mqdefault.jpg",
+      "viewCount": 1267,
+      "url": "https://www.youtube.com/watch?v=phtk-njD0Mo",
+      "summary": "Sharp Frieman shares a moment of a dog meeting its favorite Disney character at a Disney park."
+    },
+    {
+      "videoId": "ADhCi7KoLW0",
+      "title": "CUM ARATĂ DISNEYLAND? 🏰✨ #shorts #bogdanblog #disney #disneyland",
+      "channel": "BOGDAN BLOG 🇷🇴",
+      "publishedAt": "2026-06-29T11:01:32Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/ADhCi7KoLW0/mqdefault.jpg",
+      "viewCount": 1202,
+      "url": "https://www.youtube.com/watch?v=ADhCi7KoLW0",
+      "summary": "Bogdan Blog shares a short walkthrough showing what Disneyland looks like for international visitors."
+    },
+    {
+      "videoId": "z9Et4cgtptA",
+      "title": "Nick Wilde from Zootopia 2 🦊 #disney #disneyland #zootopia #disneycaliforniaadventure #shorts",
+      "channel": "Disney Mouseketeer",
+      "publishedAt": "2026-06-29T09:30:06Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/z9Et4cgtptA/mqdefault.jpg",
+      "viewCount": 1132,
+      "url": "https://www.youtube.com/watch?v=z9Et4cgtptA",
+      "summary": "Disney Mouseketeer features Nick Wilde from Zootopia 2 appearing at Disneyland Resort."
+    },
+    {
+      "videoId": "lovrOPWd-Jw",
+      "title": "Follow me at pixie_pr1ncess #disney #disneymom #disneystyle #disneyland #pandora",
+      "channel": "Brittany Gatewood",
+      "publishedAt": "2026-06-29T06:01:41Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/lovrOPWd-Jw/mqdefault.jpg",
+      "viewCount": 1074,
+      "url": "https://www.youtube.com/watch?v=lovrOPWd-Jw",
+      "summary": "Brittany Gatewood showcases Disney-themed style and Pandora jewelry worn at Disneyland."
+    }
+  ],
+  "updatedAt": "2026-06-29T14:42:40.685Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-06-29T14:42:40.685Z",
+    "tokens": {
+      "input": 11211,
+      "output": 5241,
+      "costUsd": 0.1122
+    }
+  }
+}
