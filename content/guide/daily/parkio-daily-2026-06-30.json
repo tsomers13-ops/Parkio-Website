@@ -1,0 +1,362 @@
+{
+  "title": "Parkio Daily for Tuesday, June 30, 2026",
+  "slug": "parkio-daily-2026-06-30",
+  "date": "2026-06-30",
+  "teaser": "Yachtsman Steakhouse reopens after refresh; Disney Springs transport now restricted to resort guests; new Encanto recording revealed.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Soarin'",
+        "parkSlug": "epcot",
+        "note": "Low waits during early dinner hours"
+      },
+      {
+        "name": "Space Mountain",
+        "parkSlug": "magic-kingdom",
+        "note": "Shorter lines in first operating hour"
+      },
+      {
+        "name": "Living with the Land",
+        "parkSlug": "epcot",
+        "note": "Walk-on most of the day"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [
+      {
+        "title": "Disney Springs transportation now restricted to resort guests only",
+        "body": "Free boats and buses between Disney Springs and Walt Disney World hotels now require proof of resort stay. The permanent policy took effect over the weekend.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-world-adds-restrictions-for-resort-bound-boats-buses-from-disney-springs-to-official-sites/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "If you're off-property, plan rideshare or parking fees into your Disney Springs budget. The free transport option is no longer available to day guests."
+        }
+      },
+      {
+        "title": "Fire reported at Caribbean Beach Resort Monday evening",
+        "body": "Emergency crews responded to a fire at Disney's Caribbean Beach Resort around 6:42 p.m. on June 29. The extent of damage remains unclear.",
+        "parkSlug": null,
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/06/fire-at-disneys-caribbean-beach-resort-on-june-29-jc1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Guests with reservations at Caribbean Beach should contact Disney directly to confirm room availability and possible impacts to amenities."
+        }
+      }
+    ],
+    "bignews": [
+      {
+        "title": "Yachtsman Steakhouse reopening date announced after multi-month closure",
+        "body": "The signature dining venue at Disney's Yacht Club Resort will reopen following a multi-month refresh. A specific reopening date has now been confirmed by Walt Disney World.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-world-reveals-refurbishment-reopening-date-for-yachtsman-steakhouse-signature-restaurant/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Signature dining reservations tend to fill quickly after refurbishments. Book your table within the next few days if you're visiting in July or August."
+        }
+      },
+      {
+        "title": "Adassa records new Encanto attraction dialogue at Imagineering",
+        "body": "The voice of Dolores shared behind-the-scenes footage from a recent recording session for the upcoming Encanto attraction at Animal Kingdom. Studio work and Imagineering visits were documented.",
+        "parkSlug": "animal-kingdom",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/06/encanto-voice-actress-adassa-shows-behind-the-scenes-of-recording-for-new-animal-kingdom-attraction/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "The Encanto attraction continues to progress toward opening. Keep an eye on official announcements over the next few months for debut timing and preview opportunities."
+        }
+      },
+      {
+        "title": "LEVEL99 challenge experience opens at Disney Springs",
+        "body": "The multi-level physical and mental challenge venue debuted at Disney Springs. Opening day visitors explored the new entertainment offering, which features a variety of puzzle and activity rooms.",
+        "parkSlug": null,
+        "source": {
+          "label": "AllEars.Net",
+          "url": "https://allears.net/2026/06/29/7-things-we-learned-after-visiting-level99-in-disney-springs-on-opening-day/"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "Disney Springs parking tends to fill faster with new openings. Arrive before 11 a.m. or after 8 p.m. to find closer spots near the West Side."
+        }
+      },
+      {
+        "title": "Disney partners with Heritage Auctions to sell retired park props at D23",
+        "body": "Props and memorabilia from closed attractions including MuppetVision 3D, Dinosaur, and Rivers of America will be auctioned to the public starting at D23 in August. The partnership marks a new revenue stream for retired park items.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/06/disney-will-again-sell-beloved-theme-park-props-including-muppetvision-dinosaur-rivers-of-america-for-profit/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Serious collectors should register with Heritage Auctions now. High-demand items from beloved attractions tend to attract competitive bidding in the first hours."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "EPCOT toll plaza construction permit filed for up to one year",
+        "body": "A new permit covers general construction work at the main entrance toll plaza for EPCOT. The project timeline extends through mid-2027.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/06/epcot-toll-plaza-general-construction-permit-jc1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Morning arrival lanes may be reduced or shifted during construction. Add ten extra minutes to your drive time if you're parking at EPCOT before 10 a.m."
+        }
+      },
+      {
+        "title": "Polynesian Village Resort removes historic kukui nut tree",
+        "body": "The resort's one-of-a-kind Hawaiian kukui tree was cut down in late June after dying from recent cold weather. The tree had been a distinctive feature for nearly 30 years.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/06/historic-hawaiian-kukui-tree-cut-down-after-nearly-30-years-at-disneys-polynesian-village-resort/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Longtime Polynesian guests may notice the change near the main pool area. The resort's tropical landscaping remains otherwise intact."
+        }
+      },
+      {
+        "title": "Sunshine Seasons debuts refreshed menu at EPCOT pavilion",
+        "body": "The Land pavilion's quick-service food court has rolled out new menu items. The updated offerings expand choices at one of EPCOT's less-promoted dining locations.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/epcots-forgotten-food-court-gets-a-new-menu/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Sunshine Seasons typically has shorter lines than World Showcase quick-service spots during lunch. Try the new menu between 11:30 a.m. and 12:30 p.m. before the midday rush."
+        }
+      },
+      {
+        "title": "Mickey's of Glendale booth returning to D23 with Imagineering collection",
+        "body": "The popular Imagineering merchandise shop will set up at D23: The Ultimate Disney Fan Event in August. A new Walt Disney Imagineering collection will be available exclusively at the booth.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/disney-experiences/mickeys-of-glendale-d23-walt-disney-imagineering-collection/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Mickey's of Glendale items often sell out within the first day of D23. Make the booth your first stop when the expo floor opens if you're attending."
+        }
+      },
+      {
+        "title": "New Magic Kingdom park map distributed to guests",
+        "body": "An updated paper map debuted at Magic Kingdom this week. The refresh reflects current park layout and attractions.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/06/29/a-new-park-map-just-debuted-in-magic-kingdom/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Pick up a map at Guest Relations before rope drop. The print version often shows restroom and first-aid locations more clearly than the app during peak crowd periods."
+        }
+      },
+      {
+        "title": "Waterview Park roof construction continues at Disney Springs",
+        "body": "The outdoor space closed in early May for refurbishment. Wooden roof supports are now visible over the construction walls, though the project timeline remains unclear.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/06/delayed-roof-building-progress-spotted-at-waterview-park-in-disney-springs/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "If you're looking for outdoor seating at Disney Springs, head to the Marketplace or West Side. Waterview Park likely won't reopen until late summer."
+        }
+      },
+      {
+        "title": "Captain Jack Sparrow entertainment added to Mickey's Not So Scary Halloween Party",
+        "body": "New pirate-themed entertainment featuring Captain Jack will debut at this year's Halloween event at Magic Kingdom. The first party takes place in early August.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/new-captain-jack-sparrow-entertainment-coming-to-2026-mickeys-not-so-scary-halloween-party/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Character experiences tend to have shorter waits during parade and stage-show times. Seek out Captain Jack during those windows for quicker interactions."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Halloween merchandise arrives early at Magic Kingdom",
+        "body": "Shirts featuring Hocus Pocus, pumpkin Stormtroopers, and Winnie the Pooh designs are now on shelves at the Emporium. All shirts are priced at $32.99, or $29.99 each when buying two.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/06/hocus-pocus-parody-pumpkin-stormtrooper-pooh-and-friends-and-more-halloween-shirts-arrive-at-walt-disney-world-resort/"
+        }
+      },
+      {
+        "title": "July pin releases include Kingdom Hearts and Fox and the Hound designs",
+        "body": "Limited-release and limited-edition pins arriving at Walt Disney World in late June and July feature anniversary designs for The Fox and the Hound and The Great Mouse Detective, plus new monthly series entries.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/06/disney-visa-cardholder-kingdom-hearts-the-fox-and-the-hound-haunted-mansion-and-more-pins-coming-to-walt-disney-world-in-july/"
+        }
+      },
+      {
+        "title": "Disney debuts vintage soccer collection with Brain Dead and Adidas",
+        "body": "A new apparel collaboration inspired by vintage soccer aesthetics launched in time for the World Cup. The collection is available at select Disney retail locations.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/06/29/this-new-disney-collection-is-perfect-for-the-world-cup/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "Five Universal Orlando attractions closed for July refurbishments",
+        "body": "Multiple rides across Universal's Florida parks will be down for scheduled maintenance throughout July. Guests planning visits next month should check operating calendars before arrival to avoid disappointment.",
+        "parkSlug": null,
+        "ctaLabel": "Plan your visit",
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "If a must-do Universal ride is closed during your trip, consider shifting your visit date or adjusting expectations. Refurbishment schedules are typically firm once posted."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "hqd2hMX0Sj4",
+      "title": "Disney Springs 2026 | Level99 Full Review, New Gideon's Cookies & BIG Changes | Walt Disney World",
+      "channel": "Paging Mr. Morrow",
+      "publishedAt": "2026-06-26T21:00:40Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/hqd2hMX0Sj4/mqdefault.jpg",
+      "viewCount": 87318,
+      "url": "https://www.youtube.com/watch?v=hqd2hMX0Sj4",
+      "summary": "Paging Mr. Morrow tours the new LEVEL99 challenge experience at Disney Springs and checks out updated Gideon's Bakehouse offerings."
+    },
+    {
+      "videoId": "B0Y69FyXFiI",
+      "title": "🔴 Live: Monday Stream at Disneyland! Paint the Night Parade, Wondrous Journeys & Rides - 06/29/26",
+      "channel": "Koda Bear the Explorer ",
+      "publishedAt": "2026-06-30T07:39:23Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/B0Y69FyXFiI/mqdefault.jpg",
+      "viewCount": 24176,
+      "url": "https://www.youtube.com/watch?v=B0Y69FyXFiI",
+      "summary": "Koda Bear streams a Monday evening at Disneyland, capturing Paint the Night Parade and Wondrous Journeys fireworks."
+    },
+    {
+      "videoId": "9pCJU9gBh_Y",
+      "title": "🔴 LIVE: Disney World – Magic Kingdom Fireworks (Happily Ever After) – 4K POV",
+      "channel": "Fun to be Free",
+      "publishedAt": "2026-06-30T04:32:47Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/9pCJU9gBh_Y/mqdefault.jpg",
+      "viewCount": 9485,
+      "url": "https://www.youtube.com/watch?v=9pCJU9gBh_Y",
+      "summary": "Fun to be Free live-streams Happily Ever After fireworks from Magic Kingdom in 4K."
+    },
+    {
+      "videoId": "CXUB-zJjvzA",
+      "title": "🔴 Live At Disneyland For Some Night Time Fun. Rides, Parades, Shows. 06-29-2026",
+      "channel": "ROPE DROP NATION",
+      "publishedAt": "2026-06-30T05:24:11Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/CXUB-zJjvzA/mqdefault.jpg",
+      "viewCount": 2794,
+      "url": "https://www.youtube.com/watch?v=CXUB-zJjvzA",
+      "summary": "ROPE DROP NATION broadcasts a nighttime Disneyland visit featuring rides, parades, and evening entertainment."
+    },
+    {
+      "videoId": "7E9kvPDDn2I",
+      "title": "This Disneyland Security Officer Just Made Her Whole Year!❤️ #disney #princess #wholesome #cute",
+      "channel": "SnapWorld",
+      "publishedAt": "2026-06-30T06:16:41Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/7E9kvPDDn2I/mqdefault.jpg",
+      "viewCount": 2321,
+      "url": "https://www.youtube.com/watch?v=7E9kvPDDn2I",
+      "summary": "SnapWorld shares a heartwarming moment between a Disneyland security officer and a Disney princess character."
+    },
+    {
+      "videoId": "BqSZexcdJxo",
+      "title": "Aladdin and Jasmine #tokyodisneyresort #disney  #disneyland #tokyodisneyland #aladdin #jasmine",
+      "channel": "Rakosbright disneytrip",
+      "publishedAt": "2026-06-30T07:36:39Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/BqSZexcdJxo/mqdefault.jpg",
+      "viewCount": 1971,
+      "url": "https://www.youtube.com/watch?v=BqSZexcdJxo",
+      "summary": "Rakosbright disneytrip captures Aladdin and Jasmine characters at Tokyo Disneyland."
+    },
+    {
+      "videoId": "aVRbIVEIlDE",
+      "title": "Meeting Disney ❤️#baby #kid #babylove #foryoupage #disneyland #disneyworld #fyp #titok",
+      "channel": "Wisp97",
+      "publishedAt": "2026-06-30T10:17:20Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/aVRbIVEIlDE/mqdefault.jpg",
+      "viewCount": 1326,
+      "url": "https://www.youtube.com/watch?v=aVRbIVEIlDE",
+      "summary": "Wisp97 films a young child meeting Disney characters at the parks."
+    },
+    {
+      "videoId": "HaxQFQyEmLc",
+      "title": "#buzzlightyear toys! To infinity and beyond~ #toystory5 #merchandise #toystory #shorts",
+      "channel": "DavisRBPlays",
+      "publishedAt": "2026-06-30T10:10:25Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/HaxQFQyEmLc/mqdefault.jpg",
+      "viewCount": 1255,
+      "url": "https://www.youtube.com/watch?v=HaxQFQyEmLc",
+      "summary": "DavisRBPlays showcases Buzz Lightyear toys tied to the new Toy Story 5 film."
+    },
+    {
+      "videoId": "s0QLw0Lw9io",
+      "title": "POV: your friends are reviewing Disney food🍪 #disney #disneyland #disneyparks #disneyfood #cookies",
+      "channel": "thatsojessiejessie",
+      "publishedAt": "2026-06-30T04:29:53Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/s0QLw0Lw9io/mqdefault.jpg",
+      "viewCount": 1065,
+      "url": "https://www.youtube.com/watch?v=s0QLw0Lw9io",
+      "summary": "Thatsojessiejessie films friends tasting and reviewing Disney park cookies."
+    },
+    {
+      "videoId": "D5LV8W4k28o",
+      "title": "Disney Has a FREE Bakery Tour?! 🍞😳 #losangeles",
+      "channel": "Stu on the Move",
+      "publishedAt": "2026-06-30T06:00:32Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/D5LV8W4k28o/mqdefault.jpg",
+      "viewCount": 967,
+      "url": "https://www.youtube.com/watch?v=D5LV8W4k28o",
+      "summary": "Stu on the Move explores a complimentary Disney bakery tour in the Los Angeles area."
+    }
+  ],
+  "updatedAt": "2026-06-30T13:04:36.310Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-06-30T13:04:36.310Z",
+    "tokens": {
+      "input": 12394,
+      "output": 5642,
+      "costUsd": 0.1218
+    }
+  }
+}
