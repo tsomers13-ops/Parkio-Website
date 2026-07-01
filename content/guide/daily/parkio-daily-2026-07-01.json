@@ -1,0 +1,362 @@
+{
+  "title": "Parkio Daily for July 1, 2026",
+  "slug": "parkio-daily-2026-07-01",
+  "date": "2026-07-01",
+  "teaser": "EPCOT closes at 5:30pm today; Seven Seas Drive intersection near Magic Kingdom shuts permanently July 15; La Poutinerie debuts in Canada.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Soarin'",
+        "parkSlug": "epcot",
+        "note": "EPCOT closes early today at 5:30pm—ride before the rush"
+      },
+      {
+        "name": "Big Thunder Mountain Railroad",
+        "parkSlug": "magic-kingdom",
+        "note": "Morning waits staying low with balanced crowds"
+      },
+      {
+        "name": "Flight of Passage",
+        "parkSlug": "animal-kingdom",
+        "note": "Early afternoon sees lighter traffic than usual"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [
+      {
+        "title": "EPCOT closes at 5:30pm today for private event",
+        "body": "The park opens for Early Entry at 8:30am and regular guests at 9am, then shuts down several hours ahead of schedule this evening. A private booking is the likely cause.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/reminder-epcot-closing-early-today-july-1/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Ride World Showcase attractions before 4pm to avoid last-minute crowding. Test Track and Frozen typically see the heaviest late-day push when guests realize the closure."
+        }
+      },
+      {
+        "title": "Seven Seas Drive intersection closes permanently July 15",
+        "body": "The intersection of Seven Seas Drive and Floridian Way between Polynesian Village Resort and the Transportation and Ticket Center parking will shut for good in two weeks. Traffic patterns around Magic Kingdom will shift.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/intersection-outside-magic-kingdom-polynesian-village-resort-closing-permanently/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Allow extra time for parking and bus routes after mid-July. Polynesian guests may see longer walks or detours to the TTC—plan arrivals 15 minutes earlier than usual."
+        }
+      }
+    ],
+    "bignews": [
+      {
+        "title": "La Poutinerie kiosk opens in EPCOT Canada Pavilion",
+        "body": "The new quick-service spot serving poutine now appears on the official park map. Guests can grab the Canadian classic alongside existing dining options in World Showcase.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/epcot-map-debuts-la-poutinerie-quick-service-kiosk-in-canada-pavilion/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Lines for new food offerings tend to spike mid-morning through lunch. Swing by La Poutinerie before 11am or after 2pm to keep your wait under five minutes."
+        }
+      },
+      {
+        "title": "Coral Reef Restaurant closing for seasonal refurbishment after summer",
+        "body": "Disney quietly posted a notice that the EPCOT aquarium dining room will shut temporarily following the summer season. No reopening date has been confirmed yet.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-world-announces-coral-reef-restaurant-seasonal-closure-starts-after-summer-2026/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Book Coral Reef reservations in July or August if you want one last underwater meal before the closure. Availability usually opens up same-day between 2–4pm as guests adjust plans."
+        }
+      },
+      {
+        "title": "New Disney hotel perk launches tomorrow",
+        "body": "Starting July 2, resort guests gain access to an additional benefit during their stay. Details on the perk have not yet been fully disclosed.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/07/01/a-new-disney-hotel-perk-starts-tomorrow/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Check your My Disney Experience app after midnight tonight for the new perk details. Early adopters often secure limited inventory before the wider guest base logs in."
+        }
+      },
+      {
+        "title": "Discounted evening Disneyland tickets now on sale for $59",
+        "body": "Disney released a promotion offering single-day admission to Disneyland or California Adventure valid only during evening hours. The deal applies to select dates this summer.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/single-day-discount-disneyland-evening-ticket-59-dollars-summer-2026/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Evening-only tickets work best on nights with fireworks or extended hours. Check the Disneyland app for show schedules before buying—some blackout dates may skip entertainment."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "Tangled-themed restrooms reopen at Magic Kingdom",
+        "body": "The popular bathrooms near Fantasyland are back in service after a brief closure. Guests can once again visit the decorated facilities inspired by Rapunzel's tower.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "AllEars.Net",
+          "url": "https://allears.net/2026/06/30/whew-my-favorite-magic-kingdom-bathroom-just-reopened/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Stop by early in the day for photo opportunities before the afternoon rush. Tangled bathrooms tend to draw lines after lunch when families take mid-day breaks."
+        }
+      },
+      {
+        "title": "Orange Bird PEZ dispenser available at Walt Disney World",
+        "body": "The Florida citrus icon now comes in collectible candy dispenser form. The item retails for four dollars and forty-nine cents and has been spotted at Riverside Depot in Animal Kingdom.",
+        "parkSlug": "animal-kingdom",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/let-orange-bird-carry-those-pez-in-new-pez-dispenser-at-walt-disney-world/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Popular character merchandise often sells out by mid-afternoon at smaller shops. Grab the Orange Bird PEZ at rope drop or just before park close when restocks sometimes arrive."
+        }
+      },
+      {
+        "title": "Yachtsman Steakhouse reopening date announced",
+        "body": "Walt Disney World confirmed the Yacht Club signature restaurant will return from its multi-month refresh with a set reopening date. The dining room has been closed for refurbishment.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-world-reveals-refurbishment-reopening-date-for-yachtsman-steakhouse-signature-restaurant/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Reservations for newly reopened restaurants often fill within hours of release. Set a 6am alarm on booking day to snag prime dinner slots before availability vanishes."
+        }
+      },
+      {
+        "title": "New Haunted Mansion collection launching on DisneyStore.com",
+        "body": "Disney announced a fresh line of merchandise themed to the classic attraction. The collection will debut online soon, featuring apparel and home goods.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/products/new-haunted-mansion-collection-coming-to-disney-store/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Limited-edition Haunted Mansion items typically sell out within the first day. Add pieces to your cart the moment the collection goes live to avoid missing your size or style."
+        }
+      },
+      {
+        "title": "Halloween merchandise guide released by Disney",
+        "body": "Disney published its 2026 Halloween product lineup, showcasing costumes, decorations, and seasonal treats available at parks and online. The guide highlights items arriving throughout the season.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/products/halloween-merchandise-guide-frightfully-fun-finds-for-every-disney-fan/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Halloween merchandise arrives in waves from August through October. Early releases often see lighter crowds at shops—stop by Emporium or World of Disney before 10am for easiest browsing."
+        }
+      },
+      {
+        "title": "Disney Cruise Line offering up to fifteen hundred dollars off fall sailings",
+        "body": "A new promotion discounts select late-2026 voyages, including Halloween and Christmas cruises. The savings apply to specific ships and departure dates.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/1500-dollars-savings-disney-cruise-line-sailings-halloween-christmas-2026/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Cruise deals often disappear within 48 hours as cabins fill. Book by end-of-day Wednesday if you want a holiday sailing—discounted staterooms usually vanish before the weekend."
+        }
+      },
+      {
+        "title": "The Land Pavilion unveils refreshed menu at Sunshine Seasons",
+        "body": "EPCOT's food court added new dishes and updated existing offerings. The changes aim to modernize the pavilion's quick-service dining experience.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/epcots-forgotten-food-court-gets-a-new-menu/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Sunshine Seasons tends to fill between noon and 1:30pm. Arrive before 11:30am or after 2pm to skip the lunch rush and try new menu items with minimal wait."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Mickey's of Glendale returning to D23 2026 with Imagineering merchandise",
+        "body": "The fan-favorite booth will once again sell exclusive Walt Disney Imagineering collectibles at this year's Ultimate Disney Fan Event. New items debut at the convention.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/disney-experiences/mickeys-of-glendale-d23-walt-disney-imagineering-collection/"
+        }
+      },
+      {
+        "title": "Disney and Formula 1 continue partnership for 2026 race season",
+        "body": "Mickey and Friends return to trackside activations, building on last year's Las Vegas Grand Prix debut. The multi-year Fuel the Magic collaboration carries into a second season.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/products/disney-and-formula-1-2026-race-season/"
+        }
+      },
+      {
+        "title": "Live-action Moana merchandise collection launches ahead of film release",
+        "body": "Disney released toys, apparel, and accessories tied to the upcoming July 10 theatrical debut. The line features adventure-themed products for fans of the wayfinder story.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/products/new-disney-moana-merchandise/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "BoardWalk construction continues through summer",
+        "body": "Multiple refurbishment projects remain active at Disney's BoardWalk resort area. Guests visiting this season should expect ongoing work zones, noise, and detours around dining and entertainment venues.",
+        "parkSlug": null,
+        "ctaLabel": "Plan your BoardWalk visit",
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Construction tends to pause after 8pm when evening entertainment begins. Schedule BoardWalk dining or strolls for later in the day to minimize noise and visual disruption."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "hqd2hMX0Sj4",
+      "title": "Disney Springs 2026 | Level99 Full Review, New Gideon's Cookies & BIG Changes | Walt Disney World",
+      "channel": "Paging Mr. Morrow",
+      "publishedAt": "2026-06-26T21:00:40Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/hqd2hMX0Sj4/mqdefault.jpg",
+      "viewCount": 93817,
+      "url": "https://www.youtube.com/watch?v=hqd2hMX0Sj4",
+      "summary": "Paging Mr. Morrow tours Level99 at Disney Springs, samples new Gideon's cookies, and covers major changes around the shopping and dining district."
+    },
+    {
+      "videoId": "TP11axcZflk",
+      "title": "🔴Live Magic Kingdom with Rides, Shows, Parades, Fireworks at Walt Disney World 6/30/2026",
+      "channel": "RON ON THE GO",
+      "publishedAt": "2026-07-01T04:01:12Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/TP11axcZflk/mqdefault.jpg",
+      "viewCount": 45527,
+      "url": "https://www.youtube.com/watch?v=TP11axcZflk",
+      "summary": "RON ON THE GO livestreams a full day at Magic Kingdom, including attractions, entertainment, and the evening fireworks."
+    },
+    {
+      "videoId": "Ojf3tGULB-Y",
+      "title": "🔴 Live: Tuesday Stream at Disneyland! Final Soarin Over California, Fireworks & Parade - 06/30/26",
+      "channel": "Koda Bear the Explorer ",
+      "publishedAt": "2026-07-01T08:00:01Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Ojf3tGULB-Y/mqdefault.jpg",
+      "viewCount": 36683,
+      "url": "https://www.youtube.com/watch?v=Ojf3tGULB-Y",
+      "summary": "Koda Bear the Explorer broadcasts live from Disneyland on the final day of Soarin' Over California, plus fireworks and parade coverage."
+    },
+    {
+      "videoId": "bfguM-VMslg",
+      "title": "🔴 LIVE: Disney World – YOU Pick! Fantasmic vs Disney Fireworks [4K]",
+      "channel": "Fun to be Free",
+      "publishedAt": "2026-07-01T03:57:34Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/bfguM-VMslg/mqdefault.jpg",
+      "viewCount": 8484,
+      "url": "https://www.youtube.com/watch?v=bfguM-VMslg",
+      "summary": "Fun to be Free offers a live viewer-choice stream comparing Fantasmic and Magic Kingdom fireworks in 4K."
+    },
+    {
+      "videoId": "MI37XfH54U0",
+      "title": "🔴LIVE🔴 MAGIC KINGDOM: Fireworks, Rides, Strolls, Parade | Walt Disney World 4K",
+      "channel": "Park Pass TV",
+      "publishedAt": "2026-07-01T04:34:17Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/MI37XfH54U0/mqdefault.jpg",
+      "viewCount": 7204,
+      "url": "https://www.youtube.com/watch?v=MI37XfH54U0",
+      "summary": "Park Pass TV livestreams Magic Kingdom in 4K, featuring attractions, parades, and the nightly fireworks show."
+    },
+    {
+      "videoId": "KmCjcpHrXcs",
+      "title": "#LIVE Disneyland The 3 Amigos Reunite with Friends, Rides, Characters, New Merch",
+      "channel": "Main Street Cowgirl",
+      "publishedAt": "2026-07-01T07:45:15Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/KmCjcpHrXcs/mqdefault.jpg",
+      "viewCount": 5777,
+      "url": "https://www.youtube.com/watch?v=KmCjcpHrXcs",
+      "summary": "Main Street Cowgirl goes live at Disneyland as three friends reunite for a day of rides, character meet-and-greets, and new merchandise."
+    },
+    {
+      "videoId": "bO47wp27a6c",
+      "title": "#disney #disneyland #funny #comedy #shorts",
+      "channel": "Nariman",
+      "publishedAt": "2026-07-01T12:00:26Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/bO47wp27a6c/mqdefault.jpg",
+      "viewCount": 5664,
+      "url": "https://www.youtube.com/watch?v=bO47wp27a6c",
+      "summary": "Nariman shares a humorous Disney short filmed at Disneyland."
+    },
+    {
+      "videoId": "i98vH3FHxw8",
+      "title": "#travel #trip #holiday #disney #disneyland #hongkong",
+      "channel": "Yunus Fantoni",
+      "publishedAt": "2026-07-01T03:45:23Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/i98vH3FHxw8/mqdefault.jpg",
+      "viewCount": 1611,
+      "url": "https://www.youtube.com/watch?v=i98vH3FHxw8",
+      "summary": "Yunus Fantoni posts travel footage from a Hong Kong Disneyland holiday trip."
+    },
+    {
+      "videoId": "6aYbV38oDbc",
+      "title": "Disney's coolest summer hack❄️ #disney #disneyland #disneyparks #disneymerch #summer #mistingfan",
+      "channel": "thatsojessiejessie",
+      "publishedAt": "2026-07-01T03:52:45Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/6aYbV38oDbc/mqdefault.jpg",
+      "viewCount": 1367,
+      "url": "https://www.youtube.com/watch?v=6aYbV38oDbc",
+      "summary": "Thatsojessiejessie highlights a portable misting fan as a summer cooling hack for Disney park guests."
+    },
+    {
+      "videoId": "lUKl8rKmy80",
+      "title": "Dumbo drawing at Animation Academy #disney #drawing #dumbo #disneyland #sketching #sketch #art",
+      "channel": "CreatingAFairytale",
+      "publishedAt": "2026-07-01T02:25:55Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/lUKl8rKmy80/mqdefault.jpg",
+      "viewCount": 1361,
+      "url": "https://www.youtube.com/watch?v=lUKl8rKmy80",
+      "summary": "CreatingAFairytale demonstrates how to sketch Dumbo during a session at Disneyland's Animation Academy."
+    }
+  ],
+  "updatedAt": "2026-07-01T13:32:16.697Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-07-01T13:32:16.697Z",
+    "tokens": {
+      "input": 12283,
+      "output": 5525,
+      "costUsd": 0.1197
+    }
+  }
+}
