@@ -1,0 +1,366 @@
+{
+  "title": "Parkio Daily for July 2, 2026",
+  "slug": "parkio-daily-2026-07-02",
+  "date": "2026-07-02",
+  "teaser": "Small world evacuated after smoke incident; Magic Kingdom resort access now restricted; Coral Reef closes late summer.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Soarin'",
+        "parkSlug": "epcot",
+        "note": "Lower crowds expected with July 4 weekend focus on Magic Kingdom"
+      },
+      {
+        "name": "Flight of Passage",
+        "parkSlug": "animal-kingdom",
+        "note": "Early morning window before heat builds"
+      },
+      {
+        "name": "Test Track",
+        "parkSlug": "epcot",
+        "note": "Steady waits but moving faster than usual today"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [
+      {
+        "title": "it's a small world evacuated after smoke fills loading area",
+        "body": "Guests were evacuated from the Magic Kingdom attraction yesterday after a small fire caused smoke in an indoor showroom. Cast members cleared the loading area and the ride remained closed through the evening.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/video-fire-at-its-a-small-world-attraction-in-magic-kingdom/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Check the My Disney Experience app before heading to Fantasyland today. If small world is still offline, waits at nearby Peter Pan and Seven Dwarfs tend to climb 15–20 minutes higher than usual."
+        }
+      },
+      {
+        "title": "Magic Kingdom resort access restricted effective immediately",
+        "body": "Walt Disney World now limits bus and boat service from Disney Springs to Magic Kingdom area resorts to registered guests only. The new policy appears to be permanent and is already in effect ahead of the busy July 4 weekend.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-world-restricting-access-to-magic-kingdom-resorts-via-new-policies/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "If you're not staying at a Magic Kingdom resort, plan to dine or shop at Disney Springs instead of visiting those resort lobbies. Transportation checks may add 10–15 minutes to your route if you're redirected."
+        }
+      }
+    ],
+    "bignews": [
+      {
+        "title": "Coral Reef Restaurant closing for extended refurbishment after summer",
+        "body": "The aquarium-side EPCOT dining room will shut down following the summer season for what Disney is calling a seasonal closure. No reopening date has been announced yet.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-world-announces-coral-reef-restaurant-seasonal-closure-starts-after-summer-2026/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "If you want the underwater dining experience, book a table in the next six weeks. Walk-up availability at lunch tends to open up on weekdays around 2pm."
+        }
+      },
+      {
+        "title": "Grand Floridian Gingerbread House will not return this holiday season",
+        "body": "Disney confirmed the lobby centerpiece will remain absent for Christmas 2026. The announcement leaves the door open for a possible return in 2027.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-world-confirms-grand-floridian-gingerbread-house-wont-appear-this-year/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "The Contemporary and Beach Club gingerbread displays typically draw lighter crowds. Plan a resort-hopping morning in December to catch those without the usual Grand Floridian bottleneck."
+        }
+      },
+      {
+        "title": "Disneyland evening tickets now available for $59",
+        "body": "A new single-day discount ticket admits guests to either Disneyland or California Adventure starting at 6pm on select summer dates. The offer is valid through late August.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/single-day-discount-disneyland-evening-ticket-59-dollars-summer-2026/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Four-hour windows after 6pm often see 30–40 percent drops in posted waits as day guests leave. Fantasyland and Tomorrowland rides usually offer the best late-evening value."
+        }
+      },
+      {
+        "title": "Lightning Lane Premier Pass prices surge for July 4 weekend at Magic Kingdom",
+        "body": "Premier Pass access at Magic Kingdom is jumping to record highs this holiday weekend as Disney adjusts pricing based on demand for the 250th anniversary celebrations.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/07/disney-world-guests-lose-access-to-magic-kingdom-passes-for-multiple-days-effective-immediately-th1/"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "July 4 weekend tends to push standby waits 20–30 minutes higher than typical Saturdays. Rope-drop and late-evening windows usually offer the best relief from midday crowds."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "New cheeseburger pods debut in Pandora at Animal Kingdom",
+        "body": "Satu'li Canteen introduced an updated version of its cheeseburger pods with what guests are calling a major flavor upgrade. The hand-held item remains priced similarly to the previous version.",
+        "parkSlug": "animal-kingdom",
+        "source": {
+          "label": "AllEars",
+          "url": "https://allears.net/2026/07/01/review-cheeseburger-pods-have-gotten-a-major-upgrade-in-disneys-animal-kingdom-and-were-here-for-it/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Satu'li mobile order windows tend to fill up by 11:30am for lunch. Placing your order around 10:45am usually locks in a pickup time before the midday rush."
+        }
+      },
+      {
+        "title": "American Adventure gallery closed due to power outage at EPCOT",
+        "body": "The Native American art exhibit inside the World Showcase pavilion lost power and is temporarily unavailable. No reopening timeline has been shared ahead of the July 4 weekend.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/07/power-outage-closes-epcot-world-showcase-american-adventure-pavilion-exhibit-jc1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "The gallery is a quiet, air-conditioned break spot during afternoon heat. With it offline, the ImageWorks area at Imagination tends to offer similar relief without crowds."
+        }
+      },
+      {
+        "title": "Hollywood Studios lounge upgrade rumored to be underway",
+        "body": "Reports suggest a popular lounge at the park may be getting a significant refurbishment soon, though Disney has not confirmed details or timing.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "AllEars",
+          "url": "https://allears.net/2026/07/01/this-popular-disney-world-lounge-could-be-getting-a-major-upgrade/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "If you enjoy the current lounge setup, visit in the next few weeks. Refurbishment closures at Hollywood Studios typically last three to six months once announced."
+        }
+      },
+      {
+        "title": "Air Force flyover scheduled for Walt Disney World on July 4",
+        "body": "Military aircraft will pass over the resort as part of the 250th anniversary celebrations this Saturday. Timing and exact flight path have not been released.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/07/us-air-force-to-fly-over-disney-world-on-july-4-jc1mmb/"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "Flyover events tend to draw guests outdoors and create momentary gridlock on walkways. If you're inside an attraction when it happens, you'll likely miss smaller queues for 10–15 minutes afterward."
+        }
+      },
+      {
+        "title": "New pink Cinderella Castle apparel collection launches at Walt Disney World",
+        "body": "A line of adult clothing featuring a small white castle graphic on pink sweaters, tees, and pullovers is now available across park shops and Disney Springs.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/pink-castle-apparel-collection-now-available-at-walt-disney-world/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Popular apparel collections tend to see size sellouts by midweek. Shopping in the morning at Emporium or World of Disney usually offers the widest selection."
+        }
+      },
+      {
+        "title": "Disneyland Paris retiring Main Street horses by end of year",
+        "body": "The horse-drawn streetcar service will permanently close before 2027, with the animals heading into retirement. This follows the earlier closure of the Buffalo Bill show horses in 2020.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/main-street-horses-retiring-this-year-at-disneyland-paris/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "If you're visiting Paris before December, riding the streetcar early in the morning tends to avoid the longest photo-op waits near the castle hub."
+        }
+      },
+      {
+        "title": "Haunted Mansion merchandise collection arriving at Disney Store online",
+        "body": "A new line of home goods, apparel, and collectibles themed to the classic attraction will launch on DisneyStore.com in the coming days.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/products/new-haunted-mansion-collection-coming-to-disney-store/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Limited-edition Haunted Mansion items tend to sell out within 48 hours of launch. Setting an alert or checking early morning Pacific time usually improves your chances."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Disney and Formula 1 partnership continues into 2026 season",
+        "body": "Mickey and Friends will appear at select F1 race weekends this year as part of the multi-year sponsorship deal that began in Las Vegas last fall.",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/products/disney-and-formula-1-2026-race-season/"
+        }
+      },
+      {
+        "title": "Mickey's of Glendale booth returning to D23 event with Imagineering collection",
+        "body": "The fan-favorite pop-up shop will offer exclusive Walt Disney Imagineering merchandise at this year's D23 Ultimate Disney Fan Event in Anaheim.",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/disney-experiences/mickeys-of-glendale-d23-walt-disney-imagineering-collection/"
+        }
+      },
+      {
+        "title": "New Moana merchandise line launches ahead of live-action film",
+        "body": "Toys, apparel, and accessories inspired by the upcoming July 10 movie release are now available at retail and Disney Store locations.",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/products/new-disney-moana-merchandise/"
+        }
+      },
+      {
+        "title": "Disney Cruise Line offering up to $1,500 in savings on fall and holiday sailings",
+        "body": "A limited-time discount applies to select Halloween and Christmas 2026 voyages, following the recent Stitch Glitch flash sale.",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/1500-dollars-savings-disney-cruise-line-sailings-halloween-christmas-2026/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "LEVEL99 now open at Disney Springs",
+        "body": "The new interactive challenge experience offers over 40 mental and physical rooms spread across multiple floors. Guests can book sessions online or walk up based on availability.",
+        "ctaLabel": "Plan your visit",
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Disney Springs parking tends to fill up by 11am on holiday weekends. Arriving before 10am or after 8pm usually guarantees a spot in the Orange or Lime garages closest to LEVEL99."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "hqd2hMX0Sj4",
+      "title": "Disney Springs 2026 | Level99 Full Review, New Gideon's Cookies & BIG Changes | Walt Disney World",
+      "channel": "Paging Mr. Morrow",
+      "publishedAt": "2026-06-26T21:00:40Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/hqd2hMX0Sj4/mqdefault.jpg",
+      "viewCount": 98383,
+      "url": "https://www.youtube.com/watch?v=hqd2hMX0Sj4",
+      "summary": "Paging Mr. Morrow walks through the new LEVEL99 attraction at Disney Springs and covers recent changes including new Gideon's menu items."
+    },
+    {
+      "videoId": "xq2i2-rmeLQ",
+      "title": "$650+ Club Level Room at Disney's Coronado Springs Resort | Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-07-01T15:56:48Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/xq2i2-rmeLQ/mqdefault.jpg",
+      "viewCount": 20220,
+      "url": "https://www.youtube.com/watch?v=xq2i2-rmeLQ",
+      "summary": "WrightDownMainStreet reviews a Club Level room at Coronado Springs, showing amenities and pricing details for the premium accommodation tier."
+    },
+    {
+      "videoId": "tZEf-mIaPI4",
+      "title": "🔴 Live: Magic Kingdom Wednesday Night Rides, Parades & Fireworks | Disney World Live Stream 7.1.2026",
+      "channel": "Daily FastPass",
+      "publishedAt": "2026-07-02T02:41:05Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/tZEf-mIaPI4/mqdefault.jpg",
+      "viewCount": 18350,
+      "url": "https://www.youtube.com/watch?v=tZEf-mIaPI4",
+      "summary": "Daily FastPass livestreams an evening at Magic Kingdom covering attractions, the parade, and Happily Ever After fireworks on July 1."
+    },
+    {
+      "videoId": "JVCcdy0Gfw8",
+      "title": "Updates at Walt Disney World's Haunted Mansion, Child Guest Jumps In Animal Kingdom Lodge Enclosure",
+      "channel": "WDW News Today",
+      "publishedAt": "2026-07-01T23:10:14Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/JVCcdy0Gfw8/mqdefault.jpg",
+      "viewCount": 16938,
+      "url": "https://www.youtube.com/watch?v=JVCcdy0Gfw8",
+      "summary": "WDW News Today reports on Haunted Mansion changes and covers an incident involving a child at Animal Kingdom Lodge."
+    },
+    {
+      "videoId": "1__wt3NxP48",
+      "title": "🔴 LIVE: Happily Ever After – Magic Kingdom (EPIC 2026 Fireworks), Disney World | Full Show 4K",
+      "channel": "Fun to be Free",
+      "publishedAt": "2026-07-02T04:19:00Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/1__wt3NxP48/mqdefault.jpg",
+      "viewCount": 9982,
+      "url": "https://www.youtube.com/watch?v=1__wt3NxP48",
+      "summary": "Fun to be Free streams the full Happily Ever After fireworks spectacular from Magic Kingdom in 4K quality."
+    },
+    {
+      "videoId": "_pZPWJfgtj8",
+      "title": "Best Dadgum Night! | DISNEYLAND LIVE #rides #shows fun",
+      "channel": "Theme Park Casual",
+      "publishedAt": "2026-07-02T07:55:53Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/_pZPWJfgtj8/mqdefault.jpg",
+      "viewCount": 8796,
+      "url": "https://www.youtube.com/watch?v=_pZPWJfgtj8",
+      "summary": "Theme Park Casual livestreams a night at Disneyland featuring rides and entertainment across the park."
+    },
+    {
+      "videoId": "tLgogUDeC_E",
+      "title": "My heart 🥰My eyes 😭#disney #disneyland #foryou #funny #fyp",
+      "channel": "Wallie Tintler",
+      "publishedAt": "2026-07-02T05:52:21Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/tLgogUDeC_E/mqdefault.jpg",
+      "viewCount": 2902,
+      "url": "https://www.youtube.com/watch?v=tLgogUDeC_E",
+      "summary": "Wallie Tintler shares a short, humorous Disneyland moment captured on video."
+    },
+    {
+      "videoId": "HeoVMZOdRT4",
+      "title": "🔴 LIVE: Magic Kingdom Morning Reset | Polynesian Walk Test & Disney Calm | Day 303",
+      "channel": "The Disney With Sean Show",
+      "publishedAt": "2026-07-02T00:44:59Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/HeoVMZOdRT4/mqdefault_live.jpg",
+      "viewCount": 2564,
+      "url": "https://www.youtube.com/watch?v=HeoVMZOdRT4",
+      "summary": "The Disney With Sean Show streams an early morning walk from the Polynesian to Magic Kingdom as part of a daily series."
+    },
+    {
+      "videoId": "6T36Bpp1Q_c",
+      "title": "Slight traffic but we'll make it dw #disney #disneyland #starwars #riseoftheresistance #galaxysedge",
+      "channel": "krystienne",
+      "publishedAt": "2026-07-02T00:44:02Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/6T36Bpp1Q_c/mqdefault.jpg",
+      "viewCount": 1717,
+      "url": "https://www.youtube.com/watch?v=6T36Bpp1Q_c",
+      "summary": "Krystienne shares a quick clip of navigating crowds on the way to Rise of the Resistance at Galaxy's Edge."
+    },
+    {
+      "videoId": "FN3CBQZSlW8",
+      "title": "Loungefly collector 🎒",
+      "channel": "Space Ranger Teacher",
+      "publishedAt": "2026-07-02T00:29:56Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/FN3CBQZSlW8/mqdefault.jpg",
+      "viewCount": 1591,
+      "url": "https://www.youtube.com/watch?v=FN3CBQZSlW8",
+      "summary": "Space Ranger Teacher showcases a Loungefly backpack collection in a short video."
+    }
+  ],
+  "updatedAt": "2026-07-02T12:54:32.896Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-07-02T12:54:32.896Z",
+    "tokens": {
+      "input": 12128,
+      "output": 5663,
+      "costUsd": 0.1213
+    }
+  }
+}
