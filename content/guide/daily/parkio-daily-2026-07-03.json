@@ -1,0 +1,323 @@
+{
+  "title": "Parkio Daily for July 3, 2026",
+  "slug": "parkio-daily-2026-07-03",
+  "date": "2026-07-03",
+  "teaser": "Soarin' Across America debuts at Disneyland, Lotus Blossom Café dining area reopens at EPCOT, and Halloween merch arrives in Magic Kingdom early.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Test Track",
+        "parkSlug": "epcot",
+        "note": "Low waits today; Lotus Blossom Café refurb just finished nearby"
+      },
+      {
+        "name": "Flight of Passage",
+        "parkSlug": "animal-kingdom",
+        "note": "Animal Kingdom seeing lighter crowds this week"
+      },
+      {
+        "name": "Soarin' Across America",
+        "parkSlug": "california-adventure",
+        "note": "Brand-new version opened today at DCA"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [
+      {
+        "title": "Happily Ever After fireworks show temporarily canceled at Magic Kingdom",
+        "body": "Magic Kingdom has paused performances of Happily Ever After effective immediately. The resort has not announced a return date or provided details on the reason for the cancellation.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/07/disney-world-to-cancel-happily-ever-after-performances-for-all-guests-at-magic-kingdom-th1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Plan your Magic Kingdom exit strategy around parades or earlier in the evening instead of waiting for a fireworks finale that likely won't happen tonight."
+        }
+      }
+    ],
+    "bignews": [
+      {
+        "title": "Soarin' Across America opens today at Disney California Adventure",
+        "body": "The updated Soarin' experience featuring American landmarks officially launched at DCA, replacing the previous Around the World version. The attraction uses the same flight simulator technology with new scenery.",
+        "parkSlug": "california-adventure",
+        "source": {
+          "label": "AllEars",
+          "url": "https://allears.net/2026/07/02/soarin-to-tower-huge-ride-update-hits-disneyland-resort/"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "Grizzly Peak Plaza tends to fill up on opening days. Riding during the lunch hour or late evening often cuts wait times in half compared to mid-morning."
+        }
+      },
+      {
+        "title": "Vans store opens early at Disney Springs",
+        "body": "A new Vans retail location at Disney Springs began welcoming guests ahead of its scheduled opening. The store joins a growing lineup of footwear and fashion brands in the shopping district.",
+        "parkSlug": null,
+        "source": {
+          "label": "AllEars",
+          "url": "https://allears.net/2026/07/02/a-new-disney-springs-store-just-opened/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Disney Springs tends to be quieter in the early morning and just after park closing. Stopping by before 11am or after 9pm usually means shorter checkout lines."
+        }
+      },
+      {
+        "title": "Transportation and mobile ordering restrictions tighten for non-resort guests at Magic Kingdom area hotels",
+        "body": "Walt Disney World has expanded restrictions, reportedly blocking non-resort guests from using mobile ordering at Magic Kingdom resort quick-service locations. Combined with existing bus and boat access limits from Disney Springs, visiting these resorts without a reservation now requires more planning.",
+        "parkSlug": null,
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/07/disney-appears-to-block-non-resort-guests-from-quick-service-mobile-ordering-at-magic-kingdom-resorts-rl1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "If you're day-tripping without a resort reservation, plan meals inside the parks or at Disney Springs instead of counting on Grand Floridian or Polynesian dining access."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "Lotus Blossom Café dining area reopens after refurbishment at EPCOT",
+        "body": "A partially enclosed seating section at the China pavilion quick-service spot has returned following months behind construction walls. The refresh updates the left-side dining space.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/refurbished-dining-area-reopens-at-lotus-blossom-cafe-in-epcot/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "World Showcase quick-service spots tend to be less crowded mid-afternoon. Grabbing a table at Lotus Blossom around 2–3pm often means shorter waits than lunch or dinner rushes."
+        }
+      },
+      {
+        "title": "Halloween merchandise arrives at Magic Kingdom in early July",
+        "body": "Seasonal items themed to fall and Halloween have appeared on shelves at the Emporium and other shops weeks before the official season begins. Guests can pick up costumes, home decor, and character-themed accessories now.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "AllEars",
+          "url": "https://allears.net/2026/07/02/too-early-or-right-on-time-either-way-new-halloween-souvenirs-just-dropped-at-magic-kingdom/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Limited-edition seasonal items tend to sell out by mid-August. Shopping early in the morning or on weekdays usually offers the widest selection before popular sizes disappear."
+        }
+      },
+      {
+        "title": "Grand Floridian gingerbread house confirmed out for 2026 holiday season",
+        "body": "Walt Disney World has officially announced the iconic lobby display will not return this Christmas. The resort has not ruled out a comeback in 2027 but offered no firm commitment.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-world-confirms-grand-floridian-gingerbread-house-wont-appear-this-year/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "If the gingerbread house is a holiday must-do for you, plan a monorail loop to other resorts instead. Contemporary and Wilderness Lodge often feature smaller seasonal displays worth visiting."
+        }
+      },
+      {
+        "title": "Eight Walt Disney World Annual Passholder perks expire at end of July",
+        "body": "A batch of exclusive discounts and benefits available to passholders wraps up this month. Guests should check the My Disney Experience app for the full list of expiring offers and plan redemptions accordingly.",
+        "parkSlug": null,
+        "source": {
+          "label": "AllEars",
+          "url": "https://allears.net/2026/07/02/8-exclusive-disney-world-annual-passholder-perks-end-this-month/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Passholder dining and merchandise discounts tend to save the most when used on weekdays or during slower travel windows. Stacking perks before the July 31 cutoff often maximizes value."
+        }
+      },
+      {
+        "title": "Limited-edition Jerrod Maruyama Toy Story art now available at Disney Springs",
+        "body": "Art of Disney is selling two new signed prints by the artist, including a 95-piece Andy's Room scene for $229. The store also has one-of-a-kind Toy Story figures on shelves.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/limited-edition-jerrod-maruyama-toy-story-art-and-one-of-a-kind-figures-at-art-of-disney-in-disney-springs/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Limited-run art pieces tend to move quickly at Disney Springs flagship stores. Shopping within the first few days of release often secures the best selection before editions sell out."
+        }
+      },
+      {
+        "title": "Disney and Formula 1 announce 2026 race season partnership",
+        "body": "The multi-year collaboration continues this season with Mickey and Friends appearing trackside at select Grand Prix events. The debut activation at Las Vegas in 2025 included a fountain takeover at the Bellagio.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/products/disney-and-formula-1-2026-race-season/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Parks merchandise tied to major sports partnerships tends to drop in limited waves. Checking Emporium or World of Disney early in a race weekend often catches exclusive items before they vanish."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "America's 250th anniversary celebrations underway at Disney resorts",
+        "body": "Walt Disney World and Disneyland are marking the milestone with patriotic entertainment, special decor, and themed experiences over the Fourth of July weekend. Disney Cruise Line is also participating.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/disney-experiences/honoring-americas-250th-anniversary-with-disney-magic/"
+        }
+      },
+      {
+        "title": "Build-A-Bear to open world's largest location in Orlando later this year",
+        "body": "The supersized store will debut in the Orlando area before the end of 2026. The new flagship is expected to feature expanded customization options and exclusive merchandise.",
+        "parkSlug": null,
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/07/the-worlds-largest-build-a-bear-opens-this-year-and-orlando-is-getting-it-el1/"
+        }
+      },
+      {
+        "title": "Limited-edition Eeyore knit plush launches at Disney Store",
+        "body": "The online-exclusive collectible celebrates the 100th anniversary of Winnie the Pooh with only 5,000 pieces available worldwide. The plush sells for $34.99.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/limited-edition-eeyore-knit-plush-now-available-at-disney-store/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "Animal Kingdom seeing lighter waits than usual this week",
+        "body": "Multiple reports note the park is experiencing lower-than-typical crowds for early July. Popular attractions like Flight of Passage and Expedition Everest are running shorter queues than forecasted.",
+        "parkSlug": "animal-kingdom",
+        "ctaLabel": "Check live wait times",
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "When Animal Kingdom runs light, mornings tend to offer near-walk-on windows for Kilimanjaro Safaris and Na'vi River Journey. Arriving at rope drop often clears multiple headliners before lunch."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "hqd2hMX0Sj4",
+      "title": "Disney Springs 2026 | Level99 Full Review, New Gideon's Cookies & BIG Changes | Walt Disney World",
+      "channel": "Paging Mr. Morrow",
+      "publishedAt": "2026-06-26T21:00:40Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/hqd2hMX0Sj4/mqdefault.jpg",
+      "viewCount": 102247,
+      "url": "https://www.youtube.com/watch?v=hqd2hMX0Sj4",
+      "summary": "Paging Mr. Morrow tours the Level99 challenge experience at Disney Springs and samples new menu items at Gideon's Bakehouse."
+    },
+    {
+      "videoId": "xq2i2-rmeLQ",
+      "title": "$650+ Club Level Room at Disney's Coronado Springs Resort | Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-07-01T15:56:48Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/xq2i2-rmeLQ/mqdefault.jpg",
+      "viewCount": 28833,
+      "url": "https://www.youtube.com/watch?v=xq2i2-rmeLQ",
+      "summary": "WrightDownMainStreet reviews the Club Level accommodations and amenities at Disney's Coronado Springs Resort."
+    },
+    {
+      "videoId": "sp5fUz4L3AQ",
+      "title": "🔴 Live: Thursday Stream at Disneyland! Opening Soarin Across America, Fireworks & Parade - 07/02/26",
+      "channel": "Koda Bear the Explorer ",
+      "publishedAt": "2026-07-03T07:40:28Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/sp5fUz4L3AQ/mqdefault.jpg",
+      "viewCount": 28806,
+      "url": "https://www.youtube.com/watch?v=sp5fUz4L3AQ",
+      "summary": "Koda Bear streams live from Disneyland on opening day of Soarin' Across America, including fireworks and parade coverage."
+    },
+    {
+      "videoId": "WnDmXdSlcoE",
+      "title": "🔴 LIVE: EPIC Magic Kingdom Rides & Happily Ever After Fireworks at Disney World | 4K",
+      "channel": "Fun to be Free",
+      "publishedAt": "2026-07-03T04:39:25Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/WnDmXdSlcoE/mqdefault.jpg",
+      "viewCount": 13657,
+      "url": "https://www.youtube.com/watch?v=WnDmXdSlcoE",
+      "summary": "Fun to be Free broadcasts attractions and the Happily Ever After fireworks show from Magic Kingdom in 4K."
+    },
+    {
+      "videoId": "saPPjAZcTL4",
+      "title": "TOYSTORYラブブとディズニー行ってきた🐭🩶 #shorts #popmart #ポップマート #labubu #ラブブ  #ディズニー #disney  #シークレット #ディズニーランド",
+      "channel": "〰️ るくちゃん 〰️",
+      "publishedAt": "2026-07-03T08:23:39Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/saPPjAZcTL4/mqdefault.jpg",
+      "viewCount": 9953,
+      "url": "https://www.youtube.com/watch?v=saPPjAZcTL4",
+      "summary": "A short video featuring Popmart Labubu figures at a Disney park visit."
+    },
+    {
+      "videoId": "yxKMyUTsPJ0",
+      "title": "#LIVE Disneyland Come Fly with Me, Rides, Characters, New Merch",
+      "channel": "Main Street Cowgirl",
+      "publishedAt": "2026-07-03T08:03:59Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/yxKMyUTsPJ0/mqdefault.jpg",
+      "viewCount": 9483,
+      "url": "https://www.youtube.com/watch?v=yxKMyUTsPJ0",
+      "summary": "Main Street Cowgirl livestreams from Disneyland covering attractions, character appearances, and new merchandise."
+    },
+    {
+      "videoId": "6y0uhPLhvws",
+      "title": "Disney Kylo Ren Lightsaber Vs Neopixel",
+      "channel": "Finding The Force",
+      "publishedAt": "2026-07-03T04:41:07Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/6y0uhPLhvws/mqdefault.jpg",
+      "viewCount": 2849,
+      "url": "https://www.youtube.com/watch?v=6y0uhPLhvws",
+      "summary": "Finding The Force compares the Disney Parks Kylo Ren lightsaber to an aftermarket Neopixel version."
+    },
+    {
+      "videoId": "9ijeULU_Ljs",
+      "title": "ピザプラネットは最高すぎる！ #ディズニー #disney  #ディズニーランド",
+      "channel": "ぽきちゃんねる",
+      "publishedAt": "2026-07-03T08:19:11Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/9ijeULU_Ljs/mqdefault.jpg",
+      "viewCount": 2118,
+      "url": "https://www.youtube.com/watch?v=9ijeULU_Ljs",
+      "summary": "A short video praising the Pizza Planet dining experience at a Disney park."
+    },
+    {
+      "videoId": "KyRXHioJbgo",
+      "title": "7月1日発売ディズニーのトイストーリーグッズを紹介！ #ディズニー #ディズニーランド #トイストーリー",
+      "channel": "ぽきちゃんねる",
+      "publishedAt": "2026-07-03T07:58:50Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/KyRXHioJbgo/mqdefault.jpg",
+      "viewCount": 2108,
+      "url": "https://www.youtube.com/watch?v=KyRXHioJbgo",
+      "summary": "A look at Toy Story merchandise released at Disney parks on July 1."
+    },
+    {
+      "videoId": "5w31EeMKMqM",
+      "title": "🔴 LIVE AT DISNEY | WALKING AROUND DISNEYLAND and DCA",
+      "channel": "iamCHRISRODGERS",
+      "publishedAt": "2026-07-03T05:37:00Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/5w31EeMKMqM/mqdefault.jpg",
+      "viewCount": 2072,
+      "url": "https://www.youtube.com/watch?v=5w31EeMKMqM",
+      "summary": "iamCHRISRODGERS streams a walking tour through Disneyland and Disney California Adventure."
+    }
+  ],
+  "updatedAt": "2026-07-03T12:52:44.367Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-07-03T12:52:44.367Z",
+    "tokens": {
+      "input": 12163,
+      "output": 5153,
+      "costUsd": 0.1138
+    }
+  }
+}
