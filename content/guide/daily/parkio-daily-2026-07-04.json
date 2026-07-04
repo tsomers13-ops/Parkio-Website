@@ -1,0 +1,371 @@
+{
+  "title": "Parkio Daily for Friday, July 4, 2026",
+  "slug": "parkio-daily-2026-07-04",
+  "date": "2026-07-04",
+  "teaser": "Carousel of Progress closes Sunday; EPCOT has patriotic Spaceship Earth lighting; Tomorrowland evacuated yesterday after emergency.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Soarin'",
+        "parkSlug": "epcot",
+        "note": "EPCOT crowds lighter than Magic Kingdom today"
+      },
+      {
+        "name": "Slinky Dog Dash",
+        "parkSlug": "hollywood-studios",
+        "note": "Early morning waits under 30 minutes"
+      },
+      {
+        "name": "Big Thunder Mountain",
+        "parkSlug": "magic-kingdom",
+        "note": "Tomorrowland closure yesterday may shift crowds here"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [
+      {
+        "title": "Tomorrowland venues evacuated after emergency response",
+        "body": "Multiple Tomorrowland dining and retail locations at Magic Kingdom were suddenly evacuated yesterday afternoon after emergency personnel responded to an incident. The closures disrupted guest traffic during peak hours on one of the busiest weekends of the year.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/07/emergency-at-magic-kingdoms-tomorrowland-closing-several-locations-as-heavy-crowds-hit-disney-world-rl1/"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "Tomorrowland may see residual operational slowdowns today. If you're planning Space Mountain or TRON, mornings before 10am tend to avoid any lingering congestion from yesterday's disruption."
+        }
+      },
+      {
+        "title": "Magic Kingdom cuts entertainment due to extreme heat",
+        "body": "Several outdoor shows and character appearances at Magic Kingdom were canceled yesterday as heat index values hit 100–105 degrees. Orlando faces similarly brutal conditions through the holiday weekend.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/07/magic-kingdom-disney-world-entertainment-changes-heat-cj1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Outdoor entertainment may continue to be pulled today and tomorrow if heat persists. Plan indoor attractions and air-conditioned dining during midday; early morning and post-sunset hours usually offer the safest windows for parades and shows."
+        }
+      }
+    ],
+    "bignews": [
+      {
+        "title": "Carousel of Progress closes permanently Sunday",
+        "body": "Walt Disney's Carousel of Progress will shut down for good on July 5 after decades of operation in Magic Kingdom's Tomorrowland. The rotating theater attraction has suffered repeated breakdowns in its final weekend.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/07/disneys-carousel-of-progress-enters-its-final-weekend-as-the-ride-keeps-breaking-down-at-magic-kingdom-rl1/"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "Fans racing to ride before Sunday's closure may pack Tomorrowland today and tomorrow. If you're not sentimental about the attraction, skipping this area until Monday tends to save 15–20 minutes of walking and congestion."
+        }
+      },
+      {
+        "title": "Disneyland Resort marks one billionth guest",
+        "body": "Disneyland and Disney California Adventure together welcomed their one billionth visitor this week, seven decades after the original park opened. The resort held a ceremony at Disneyland's entrance to mark the milestone.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/dlr/disneyland-one-billionth-guest/"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "Expect heightened media presence and photo ops near the main entrance today. Arriving before rope drop or using the alternate Harbor Boulevard security checkpoint usually avoids the ceremonial crowds."
+        }
+      },
+      {
+        "title": "EPCOT lights Spaceship Earth in red, white, and blue",
+        "body": "EPCOT has wrapped Spaceship Earth in patriotic lighting for America's 250th anniversary, with blue lights and white stars at the top and red-and-white stripes below. Additional red, white, and blue accents appear throughout the park.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/photos-patriotic-lighting-at-epcot-for-americas-250th/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "The Spaceship Earth lighting makes for strong evening photos through the weekend. Arriving at World Celebration around sunset usually offers clearer sightlines before post-fireworks crowds gather."
+        }
+      },
+      {
+        "title": "Mickey's Magical Friendship Faire takes temporary break",
+        "body": "The castle-stage show at Magic Kingdom will pause performances starting July 9 for a brief hiatus. The show is expected to return after the closure period.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "AllEars.Net",
+          "url": "https://allears.net/2026/07/03/this-popular-magic-kingdom-show-temporarily-closes-soon/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "If you want to catch the show before the break, plan to see it in the next four days. Midday showtimes between 1–3pm often have better stage-front viewing availability than morning or evening slots."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "Festival of the Lion King performer Veryl Jones retiring",
+        "body": "Veryl Jones, a longtime cast member in Disney's Animal Kingdom's Festival of the Lion King, is stepping down after years of performances. The show continues with its regular schedule.",
+        "parkSlug": "animal-kingdom",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/iconic-festival-of-the-lion-king-performer-veryl-jones-retiring-in-todays-daily-recap-for-07-03-2026/"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "Fans hoping to see Jones may fill early showtimes today and this weekend. If you're not tied to a specific performer, afternoon slots after 3pm tend to have shorter standby queues."
+        }
+      },
+      {
+        "title": "New gorilla born on Gorilla Falls Exploration Trail",
+        "body": "Animal Kingdom's gorilla family has welcomed a new infant, now visible along the Gorilla Falls walking trail in the Africa section of the park.",
+        "parkSlug": "animal-kingdom",
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/07/03/theres-a-new-family-member-in-disneys-animal-kingdom/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Animal viewing windows are clearest in the first two hours after park opening, before midday heat drives the troop into shaded areas. Visiting the trail between 8–10am usually offers the best sightlines."
+        }
+      },
+      {
+        "title": "Walt Disney World tightens resort access policies",
+        "body": "Disney World has expanded transportation and amenity restrictions at its resort hotels, now requiring wristbands for certain areas and blocking non-resort guests from using buses and boats from Disney Springs.",
+        "parkSlug": null,
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/07/disney-world-hotel-restrictions-wristbands-cj1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "If you're not staying on property, plan alternative transport to the parks; Uber or personal vehicles tend to be faster than navigating the new wristband checkpoints at boat and bus stops."
+        }
+      },
+      {
+        "title": "Toy Story 5 merchandise arrives at Walt Disney World",
+        "body": "New toys tied to the Pixar sequel in theaters now include a talking Wheezy figure and a Buzz Lightyear jet pack, available at multiple Walt Disney World retail locations.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/buzz-lightyear-jet-pack-wheezy-figure-and-more-toy-story-toys-at-disney-world/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Movie tie-in toys tend to sell out at flagship shops by mid-afternoon on busy weekends. Stopping at Once Upon a Toy in Disney Springs or the Emporium on Main Street before noon usually secures the best selection."
+        }
+      },
+      {
+        "title": "Disneyland 70th anniversary ornaments now at Disney World",
+        "body": "A boxed set of Disneyland 70th anniversary ornaments has crossed coasts and is now available at Disney's Days of Christmas in Disney Springs, priced at 79.99 dollars.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/disneyland-70th-anniversary-ornaments-arrive-at-disney-world/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Limited-edition ornament sets often vanish within days of arrival. If you're a collector, visiting Disney Springs early today or tomorrow usually beats the post-fireworks shopping surge."
+        }
+      },
+      {
+        "title": "U.S. Army Jazz Ambassadors performed at Disney California Adventure",
+        "body": "The Army Field Band's Jazz Ambassadors held Fourth of July concerts at Paradise Gardens Park on July 2 as part of America's 250th anniversary celebrations.",
+        "parkSlug": "california-adventure",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/jazz-ambassadors-performing-today-at-disney-california-adventure/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Live military band performances draw patriotic crowds to Paradise Gardens. If you're riding nearby attractions like Incredicoaster or Toy Story Midway Mania, wait times often dip during concert windows."
+        }
+      },
+      {
+        "title": "Cheapest Mickey's Not-So-Scary Halloween Party tickets sold out",
+        "body": "Every 119-dollar entry to this fall's Halloween event at Magic Kingdom has now been claimed. Higher-priced dates remain available for purchase.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/07/walt-disney-world-eliminates-every-119-mickeys-not-so-scary-halloween-party-ticket-ab1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "If you're hoping to attend at the lowest price point, that window has closed. Booking mid-week August or early September dates tends to offer better per-ticket value than peak October nights."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Grand Floridian gingerbread house will not return this year",
+        "body": "Disney World confirmed the iconic holiday display will be absent from the Grand Floridian lobby during the 2026 Christmas season, though the announcement left room for a potential return in 2027.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-world-confirms-grand-floridian-gingerbread-house-wont-appear-this-year/"
+        }
+      },
+      {
+        "title": "Disney and Formula 1 extend multi-year partnership",
+        "body": "Mickey and Friends return to F1 circuits in 2026 under the Fuel the Magic campaign, following last year's debut at the Las Vegas Grand Prix.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/products/disney-and-formula-1-2026-race-season/"
+        }
+      },
+      {
+        "title": "New Haunted Mansion collection coming to DisneyStore.com",
+        "body": "An online merchandise drop tied to the classic attraction will debut soon on Disney's e-commerce site, featuring apparel and home goods.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/products/new-haunted-mansion-collection-coming-to-disney-store/"
+        }
+      },
+      {
+        "title": "Mickey's of Glendale returns to D23 2026 with Imagineering collection",
+        "body": "The fan-favorite Walt Disney Imagineering retail booth will once again appear at this summer's D23 convention, offering exclusive merchandise.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/disney-experiences/mickeys-of-glendale-d23-walt-disney-imagineering-collection/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "Summer crowds at Walt Disney World running below historic norms",
+        "body": "June and July—once peak summer months—are seeing wait times closer to off-season levels this year, continuing a multi-year trend of lighter attendance during hot-weather windows. Parks remain operational and far from empty, but guests are finding shorter queues than in years past.",
+        "parkSlug": null,
+        "ctaLabel": "Plan your visit",
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Lower summer crowds mean popular attractions like Seven Dwarfs Mine Train and Rise of the Resistance often hit their shortest waits in early afternoons, not just at rope drop. Midweek visits through August tend to deliver the best value for heat-tolerant families."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "OBbqfiqm40U",
+      "title": "🔴Live: Disney's July 4th Fireworks on July 3rd at Magic Kingdom & Epcot - Walt Disney World 2026",
+      "channel": "ResortTV1",
+      "publishedAt": "2026-07-04T03:51:48Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/OBbqfiqm40U/mqdefault.jpg",
+      "viewCount": 77674,
+      "url": "https://www.youtube.com/watch?v=OBbqfiqm40U",
+      "summary": "ResortTV1 livestreams both the Magic Kingdom and EPCOT Fourth of July fireworks shows on the evening of July 3, 2026."
+    },
+    {
+      "videoId": "PbeOWm1apPo",
+      "title": "🔴 Live: Friday Stream at Disneyland! Flag Retreat, Celebrate America Fireworks & Parade - 07/03/26",
+      "channel": "Koda Bear the Explorer ",
+      "publishedAt": "2026-07-04T08:00:04Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/PbeOWm1apPo/mqdefault.jpg",
+      "viewCount": 50350,
+      "url": "https://www.youtube.com/watch?v=PbeOWm1apPo",
+      "summary": "Koda Bear the Explorer streams Disneyland's flag retreat ceremony, fireworks, and parade for the Fourth of July celebration."
+    },
+    {
+      "videoId": "1UUGrLuWuhM",
+      "title": "🔴 Live July 3rd 2026 Magic Kingdom for rides, shows, parades, Fireworks Walt Disney World 7/3/2026",
+      "channel": "RON ON THE GO",
+      "publishedAt": "2026-07-04T03:44:33Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/1UUGrLuWuhM/mqdefault.jpg",
+      "viewCount": 49334,
+      "url": "https://www.youtube.com/watch?v=1UUGrLuWuhM",
+      "summary": "RON ON THE GO broadcasts a full day at Magic Kingdom, covering rides, shows, and the evening fireworks spectacular."
+    },
+    {
+      "videoId": "xq2i2-rmeLQ",
+      "title": "$650+ Club Level Room at Disney's Coronado Springs Resort | Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-07-01T15:56:48Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/xq2i2-rmeLQ/mqdefault.jpg",
+      "viewCount": 33253,
+      "url": "https://www.youtube.com/watch?v=xq2i2-rmeLQ",
+      "summary": "WrightDownMainStreet tours a club-level room at Disney's Coronado Springs Resort, highlighting amenities and pricing."
+    },
+    {
+      "videoId": "p8PmhQzZ4BU",
+      "title": "🔴 Disney World Live: Magic Kingdom's July 3rd 'Fourth of July Fireworks' Celebration 7/3/26",
+      "channel": "Living in DIZ",
+      "publishedAt": "2026-07-04T03:57:31Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/p8PmhQzZ4BU/mqdefault.jpg",
+      "viewCount": 7063,
+      "url": "https://www.youtube.com/watch?v=p8PmhQzZ4BU",
+      "summary": "Living in DIZ streams Magic Kingdom's July 3 Fourth of July fireworks show live from the park."
+    },
+    {
+      "videoId": "TF3vdrNpC_E",
+      "title": "🔴 LIVE: First Night of Disney's 4th of July Fireworks & Party! | Magic Kingdom & EPCOT | America 250",
+      "channel": "The Weekly Hop",
+      "publishedAt": "2026-07-04T04:46:34Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/TF3vdrNpC_E/mqdefault.jpg",
+      "viewCount": 4861,
+      "url": "https://www.youtube.com/watch?v=TF3vdrNpC_E",
+      "summary": "The Weekly Hop covers the opening night of Disney's Fourth of July celebrations at both Magic Kingdom and EPCOT."
+    },
+    {
+      "videoId": "ZB24BRG2MBE",
+      "title": "#ディズニー #ディズニーランド #食玩",
+      "channel": "ピンキー",
+      "publishedAt": "2026-07-04T09:00:00Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/ZB24BRG2MBE/mqdefault.jpg",
+      "viewCount": 2981,
+      "url": "https://www.youtube.com/watch?v=ZB24BRG2MBE",
+      "summary": "ピンキー shares Disney and Disneyland-themed food toys in this video."
+    },
+    {
+      "videoId": "N7s1_R-6hb8",
+      "title": "My heart 🥰My eyes 😭#disney #disneyland #foryou #love",
+      "channel": "ANURAG DJ BEATS 7K",
+      "publishedAt": "2026-07-04T09:15:39Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/N7s1_R-6hb8/mqdefault.jpg",
+      "viewCount": 2825,
+      "url": "https://www.youtube.com/watch?v=N7s1_R-6hb8",
+      "summary": "ANURAG DJ BEATS 7K posts a Disney and Disneyland-themed video expressing emotional connection to the parks."
+    },
+    {
+      "videoId": "itw4omshXlc",
+      "title": "Journeying beyond the reef for this week's Disney Download... 🌊 @DisneyUK",
+      "channel": "Disney UK",
+      "publishedAt": "2026-07-04T07:00:05Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/itw4omshXlc/mqdefault.jpg",
+      "viewCount": 1526,
+      "url": "https://www.youtube.com/watch?v=itw4omshXlc",
+      "summary": "Disney UK presents this week's Disney Download, featuring content tied to ocean adventures."
+    },
+    {
+      "videoId": "QxhmrAb7XG4",
+      "title": "Obuna bõling🤍 #reeeeeeeeeeeek #blackpink #kpop #disney #disneyland #disneyprincess",
+      "channel": "Oy_Nuri365",
+      "publishedAt": "2026-07-04T07:28:38Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/QxhmrAb7XG4/mqdefault.jpg",
+      "viewCount": 1275,
+      "url": "https://www.youtube.com/watch?v=QxhmrAb7XG4",
+      "summary": "Oy_Nuri365 combines K-pop and Disney themes in this short video."
+    }
+  ],
+  "updatedAt": "2026-07-04T12:03:09.588Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-07-04T12:03:09.588Z",
+    "tokens": {
+      "input": 12147,
+      "output": 5898,
+      "costUsd": 0.1249
+    }
+  }
+}
