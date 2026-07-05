@@ -1,0 +1,335 @@
+{
+  "title": "Parkio Daily for Saturday, July 5, 2026",
+  "slug": "parkio-daily-2026-07-05",
+  "date": "2026-07-05",
+  "teaser": "Disneyland Resort marks 1 billion guests; new Build-a-Bag stations now open; Grand Floridian holiday gingerbread house canceled for 2026.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Tiana's Bayou Adventure",
+        "parkSlug": "magic-kingdom",
+        "note": "Queue holds new solar-powered trash cans; outdoor sections typically quieter before 10am"
+      },
+      {
+        "name": "Soarin'",
+        "parkSlug": "epcot",
+        "note": "Post-holiday lull often means shorter waits early today"
+      },
+      {
+        "name": "Guardians of the Galaxy: Cosmic Rewind",
+        "parkSlug": "epcot",
+        "note": "Virtual queue fills fast; join at park open"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [],
+    "bignews": [
+      {
+        "title": "Disneyland Resort celebrates one billionth guest milestone",
+        "body": "Disneyland park and Disney California Adventure together welcomed their one billionth visitor across seven decades. A ceremony at the Disneyland entrance marked the moment.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/dlr/disneyland-one-billionth-guest/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Celebratory signage and cast interaction around Main Street may offer photo moments through the weekend. Arriving before 9am typically avoids the heaviest foot traffic near the entrance."
+        }
+      },
+      {
+        "title": "Grand Floridian gingerbread house will not return for Christmas 2026",
+        "body": "Walt Disney World confirmed the iconic holiday display will remain closed this year. The resort lobby construction continues to affect seasonal installations.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-world-confirms-grand-floridian-gingerbread-house-wont-appear-this-year/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "If you're planning a Grand Floridian visit for holiday atmosphere this December, the Contemporary or Beach Club gingerbread displays may be better alternatives. Both tend to draw lighter crowds mid-morning."
+        }
+      },
+      {
+        "title": "Build-a-Bag customization stations now open at Disney Springs and Magic Kingdom",
+        "body": "Guests can purchase modular bag accessories including straps and add-ons at Tren-D and Uptown Jewelers. DisneyStore.com launch follows July 6.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/build-a-bag-now-available-at-disney-springs/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Uptown Jewelers on Main Street often sees lighter shopper traffic during afternoon parade hours. Arriving around 3pm may offer quicker access to the Build-a-Bag display."
+        }
+      },
+      {
+        "title": "Resort transportation access tightened across Magic Kingdom area hotels",
+        "body": "Bus and boat routes from Disney Springs now require proof of dining or hotel reservations. Additional security checkpoints appeared over the holiday weekend at monorail resorts.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-world-restricting-access-to-magic-kingdom-resorts-via-new-policies/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Resort hopping for dining or exploration now requires advance reservations or proof of stay. Allow an extra 10–15 minutes at security stops when traveling between resorts via monorail or boat."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "Solar-powered trash receptacles installed in Tiana's Bayou Adventure queue",
+        "body": "Two new compacting bins debuted in the outdoor section near the Children's Garden sign. The units run entirely on rooftop solar panels.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/walt-disney-worlds-new-solar-powered-trash-cans-make-their-debut-at-magic-kingdom/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "The queue addition signals continued infrastructure upgrades. Tiana's standby line typically moves fastest in the first 90 minutes after rope drop."
+        }
+      },
+      {
+        "title": "Magic Key mascot Duckey now appears on Disneyland entry screens",
+        "body": "Annual passholders at Disneyland Resort see the duck character holding a welcome sign when tapping through turnstiles. The update rolled out this week.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/duckey-the-disneyland-resort-magic-key-mascot-added-to-entry-gate-screen/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "The small touch adds character to the entry experience. Magic Key holders arriving during mid-morning windows often face shorter tap-in lines than opening rush."
+        }
+      },
+      {
+        "title": "Encanto voice actors return to recording studio for Animal Kingdom project",
+        "body": "Cast members from the 2021 film confirmed they are back in session. The work likely supports the upcoming tropical Americas land under construction.",
+        "parkSlug": "animal-kingdom",
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/07/04/disneys-encanto-actors-are-back-in-the-studio-recording-for-something-new/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Audio production suggests the Encanto attraction is advancing toward completion. DinoLand U.S.A. remains open; visiting before the changeover offers a chance to experience the classic area."
+        }
+      },
+      {
+        "title": "Cheapest Mickey's Not So Scary Halloween Party dates already sold out",
+        "body": "August and early September lower-priced tickets are no longer available. Mid-October and later dates still show inventory.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/cheapest-dates-sold-out-for-2026-mickeys-not-so-scary-halloween-party/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Weeknight parties in late October often offer better availability and lighter crowds than weekend dates. Booking now for November events may secure both lower prices and shorter candy lines."
+        }
+      },
+      {
+        "title": "Halloween merchandise collections arrive early across Disney locations",
+        "body": "Haunted Mansion apparel and seasonal décor launched online and in-park this week. Additional drops scheduled through August.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/products/halloween-merchandise-guide-frightfully-fun-finds-for-every-disney-fan/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Popular Haunted Mansion items tend to sell out by mid-August. Shopping DisneyStore.com early or visiting Memento Mori at Magic Kingdom within the next two weeks usually ensures better selection."
+        }
+      },
+      {
+        "title": "Headband plush add-ons expand at Disneyland Resort",
+        "body": "New character clips including Olaf, Rajah, and Belle arrived at Bing Bong's Sweet Stuff. Headbands sold separately.",
+        "parkSlug": "california-adventure",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/decorate-your-headband-with-olaf-raja-belle-and-more-plush-now-at-disneyland-resort/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Bing Bong's Sweet Stuff sees lighter shopper traffic late afternoon, typically between 4–6pm. Visiting then may offer easier browsing of the new plush clips."
+        }
+      },
+      {
+        "title": "Disney and Formula 1 extend partnership through 2026 season",
+        "body": "Mickey and Friends branding returns trackside for the full calendar after debuting at Las Vegas in 2025. Additional activations planned.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/products/disney-and-formula-1-2026-race-season/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "The collaboration may bring F1-themed merchandise to Disney Springs or Disneyland resort shops later this year. Checking Tren-D or World of Disney weekly often catches limited drops early."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Disney releases retrospective on Soarin' evolution at California Adventure",
+        "body": "A new blog post traces the attraction's history from California Skies to the current Around the World film. Archive photos and Imagineer interviews included.",
+        "parkSlug": "california-adventure",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/dlr/the-evolution-of-soarin-at-disneyland-resort/"
+        }
+      },
+      {
+        "title": "Roundup Rodeo BBQ profiled in Disney Parks Blog review",
+        "body": "The all-you-care-to-eat restaurant at Hollywood Studios received a detailed walkthrough covering menu items and Toy Story Land theming. Reservations remain competitive.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/come-sit-with-us-our-rootin-tootin-roundup-rodeo-bbq-review/"
+        }
+      },
+      {
+        "title": "Mickey's of Glendale booth returns to D23 Expo with new Imagineering collection",
+        "body": "The fan-favorite merchandise stand will sell exclusive WDI items at this year's Ultimate Disney Fan Event. Booth details announced this week.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/disney-experiences/mickeys-of-glendale-d23-walt-disney-imagineering-collection/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "America's 250th anniversary celebrations activate across Disney Parks and cruise ships",
+        "body": "Disney Celebrates America programming runs through the July 4 weekend with special entertainment, patriotic décor, and themed food offerings at Walt Disney World, Disneyland, and aboard Disney Cruise Line. Fireworks spectaculars honored the milestone at Magic Kingdom and EPCOT.",
+        "parkSlug": null,
+        "ctaLabel": "Watch the fireworks",
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "Holiday weekend attendance typically peaks mid-afternoon and during evening shows. Visiting EPCOT or Magic Kingdom before 10am or after 9pm often offers noticeably lighter pathways and shorter queues for top attractions."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "xXDoqyCv2JA",
+      "title": "🔴Live: America's 250th Birthday 4th of July Fireworks at Magic Kingdom & Epcot - Walt Disney World",
+      "channel": "ResortTV1",
+      "publishedAt": "2026-07-05T05:08:18Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/xXDoqyCv2JA/mqdefault.jpg",
+      "viewCount": 135047,
+      "url": "https://www.youtube.com/watch?v=xXDoqyCv2JA",
+      "summary": "ResortTV1 livestreamed the America 250 fireworks shows at both Magic Kingdom and EPCOT on Independence Day."
+    },
+    {
+      "videoId": "4ub34h5ddXM",
+      "title": "🔴 Live: 2026 250th 4th of July Stream at Disneyland! - Celebrate America Fireworks! - 07/04/26",
+      "channel": "Koda Bear the Explorer ",
+      "publishedAt": "2026-07-05T08:08:31Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/4ub34h5ddXM/mqdefault.jpg",
+      "viewCount": 104094,
+      "url": "https://www.youtube.com/watch?v=4ub34h5ddXM",
+      "summary": "Koda Bear the Explorer captured Disneyland's Celebrate America fireworks for the 250th anniversary live from the park."
+    },
+    {
+      "videoId": "m2H4VrKvLwE",
+      "title": "Magic Kingdom 4th of July Fireworks 2026 – America's 250th Birthday Spectacular | 4K Full Show",
+      "channel": "Fun to be Free",
+      "publishedAt": "2026-07-05T05:34:43Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/m2H4VrKvLwE/mqdefault.jpg",
+      "viewCount": 51055,
+      "url": "https://www.youtube.com/watch?v=m2H4VrKvLwE",
+      "summary": "Fun to be Free posted the complete 4K recording of Magic Kingdom's 250th anniversary fireworks spectacular."
+    },
+    {
+      "videoId": "xq2i2-rmeLQ",
+      "title": "$650+ Club Level Room at Disney's Coronado Springs Resort | Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-07-01T15:56:48Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/xq2i2-rmeLQ/mqdefault.jpg",
+      "viewCount": 36347,
+      "url": "https://www.youtube.com/watch?v=xq2i2-rmeLQ",
+      "summary": "WrightDownMainStreet tours a Club Level room at Coronado Springs priced over $650 per night."
+    },
+    {
+      "videoId": "9aAE6WZrrTo",
+      "title": "🔴 LIVE: Disney's 4th of July Fireworks & Celebration! | Magic Kingdom | America 250 | USA 2026",
+      "channel": "The Weekly Hop",
+      "publishedAt": "2026-07-05T05:10:43Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/9aAE6WZrrTo/mqdefault.jpg",
+      "viewCount": 13523,
+      "url": "https://www.youtube.com/watch?v=9aAE6WZrrTo",
+      "summary": "The Weekly Hop livestreamed Magic Kingdom's America 250 celebration and fireworks on July 4th."
+    },
+    {
+      "videoId": "GIzhQcZabjs",
+      "title": "DISNEY 4th of July Weekend at Disneyland Resort! #livestream",
+      "channel": "Magical Goth Vibes",
+      "publishedAt": "2026-07-05T07:57:30Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/GIzhQcZabjs/mqdefault.jpg",
+      "viewCount": 3681,
+      "url": "https://www.youtube.com/watch?v=GIzhQcZabjs",
+      "summary": "Magical Goth Vibes streamed from Disneyland Resort during the Fourth of July weekend festivities."
+    },
+    {
+      "videoId": "cLqcTLo5wAY",
+      "title": "Independence Day at Walt Disney World — All 4 Parks Celebration Live",
+      "channel": "WDW Today",
+      "publishedAt": "2026-07-05T04:17:27Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/cLqcTLo5wAY/mqdefault.jpg",
+      "viewCount": 2839,
+      "url": "https://www.youtube.com/watch?v=cLqcTLo5wAY",
+      "summary": "WDW Today covered Independence Day celebrations live from all four Walt Disney World theme parks."
+    },
+    {
+      "videoId": "bn-pLxoBOfI",
+      "title": "Live Disneyland  4th of July Celebrate!!!  #live #livestream #disney #disneyparks #disneyland",
+      "channel": "FocalWorld (Jim)",
+      "publishedAt": "2026-07-05T06:50:12Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/bn-pLxoBOfI/mqdefault.jpg",
+      "viewCount": 2291,
+      "url": "https://www.youtube.com/watch?v=bn-pLxoBOfI",
+      "summary": "FocalWorld streamed Disneyland's Fourth of July celebration live from the park."
+    },
+    {
+      "videoId": "1jIpQSmzn0k",
+      "title": "The fun Disneyland #happy #fyp #usa #disney #disneyland",
+      "channel": "Listify Zone",
+      "publishedAt": "2026-07-05T03:53:05Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/1jIpQSmzn0k/mqdefault.jpg",
+      "viewCount": 1921,
+      "url": "https://www.youtube.com/watch?v=1jIpQSmzn0k",
+      "summary": "Listify Zone posted short clips highlighting fun moments at Disneyland during the holiday."
+    },
+    {
+      "videoId": "gkOnWjZqCS0",
+      "title": "お酒を飲まない私がディズニーで1番飲みたかったもの！#ディズニーランド #disney #ディズニー #disneyland #couple #アウトドアグルメ",
+      "channel": "sena",
+      "publishedAt": "2026-07-05T04:02:50Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/gkOnWjZqCS0/mqdefault.jpg",
+      "viewCount": 1469,
+      "url": "https://www.youtube.com/watch?v=gkOnWjZqCS0",
+      "summary": "Sena shares a favorite non-alcoholic beverage found at Disneyland in this Japanese-language video."
+    }
+  ],
+  "updatedAt": "2026-07-05T12:09:57.376Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-07-05T12:09:57.376Z",
+    "tokens": {
+      "input": 12287,
+      "output": 5187,
+      "costUsd": 0.1147
+    }
+  }
+}
