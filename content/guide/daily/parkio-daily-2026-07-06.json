@@ -1,0 +1,336 @@
+{
+  "title": "Parkio Daily for July 6, 2026",
+  "slug": "parkio-daily-2026-07-06",
+  "date": "2026-07-06",
+  "teaser": "Carousel of Progress closed overnight for 2027 reimagining. Swiss Family Treehouse work starts. Disneyland celebrates one billionth guest.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Avatar Flight of Passage",
+        "parkSlug": "animal-kingdom",
+        "note": "5-minute posted waits yesterday afternoon — Animal Kingdom tends to stay lighter in summer heat"
+      },
+      {
+        "name": "Space Mountain",
+        "parkSlug": "magic-kingdom",
+        "note": "Tomorrowland crowds may shift with Carousel of Progress closed; early morning often best"
+      },
+      {
+        "name": "Soarin'",
+        "parkSlug": "epcot",
+        "note": "Dinner-hour windows often drop to walk-on levels"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [
+      {
+        "title": "Carousel of Progress closed for reimagining through 2027",
+        "body": "Construction walls went up overnight at Walt Disney's Carousel of Progress in Magic Kingdom. The attraction closed after its final show on July 5 and will remain shuttered until 2027 for a major overhaul that shifts the setting from the first half of the 20th century to the latter half and early 21st century.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/construction-walls-up-at-carousel-of-progress-now-closed-for-reimagining/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Tomorrowland foot traffic may lighten slightly without this walk-through attraction absorbing guests. Space Mountain and TRON usually see better wait windows mid-afternoon as a result."
+        }
+      },
+      {
+        "title": "Swiss Family Treehouse work begins in Adventureland",
+        "body": "Scrims printed with forest imagery now surround part of Swiss Family Treehouse in Magic Kingdom. The construction purpose has not been disclosed, but the camouflage blends into Adventureland's landscaping.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/construction-scrims-appear-at-swiss-family-treehouse-in-magic-kingdom/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Construction noise and visual clutter may affect nearby pathways during morning hours. Jungle Cruise and Pirates often offer quieter queue experiences early in the day."
+        }
+      }
+    ],
+    "bignews": [
+      {
+        "title": "Disneyland Resort marks one billion guests across seven decades",
+        "body": "Disneyland Resort held a ceremony at the park entrance to commemorate welcoming its one billionth visitor since opening in 1955. The milestone spans both Disneyland and Disney California Adventure.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/dlr/disneyland-one-billionth-guest/"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "Media attention and commemorative displays may draw heavier Main Street foot traffic through the week. Fantasyland and Star Wars: Galaxy's Edge often stay lighter during morning hours."
+        }
+      },
+      {
+        "title": "Screen burn-in visible on TRON Lightcycle Run queue displays",
+        "body": "Most screens showing safety instructions in the TRON Lightcycle Run queue now have permanent lightcycle images burned into them. The displays continue to function, showing boarding instructions and personal-belongings guidance.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/lightcycle-burnt-in-on-tron-lightcycle-run-queue-screens/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "The worn screens may detract from the immersive queue experience. Virtual Queue windows at park opening or after 1 PM often bypass longer standby lines if you prefer to minimize queue time."
+        }
+      },
+      {
+        "title": "Toy Story merchandise collection debuts at Tokyo Disney Resort",
+        "body": "A new line of Toy Story apparel, accessories, stationery, and housewares including a Mr. Potato Head potato peeler is now available at the Grand Emporium in Tokyo Disneyland.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/toy-story-5-merchandise-at-tokyo-disney-resort/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "New Toy Story releases tend to sell out quickly at flagship stores. If visiting Tokyo Disneyland, morning shopping at Grand Emporium usually offers the fullest selection before afternoon crowds arrive."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "Mickey's Not So Scary Halloween Party cheapest dates sold out",
+        "body": "The lowest-priced ticket dates for Mickey's Not So Scary Halloween Party at Magic Kingdom have sold out. The event begins in August, and higher-priced dates remain available.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/cheapest-dates-sold-out-for-2026-mickeys-not-so-scary-halloween-party/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Mid-week September dates often carry lighter attendance and lower prices if still available. Booking soon may secure better value before upper-tier pricing becomes the only option."
+        }
+      },
+      {
+        "title": "Annual Passholder affogato cup available at Vivoli il Gelato",
+        "body": "A yellow souvenir mug and saucer exclusive to Annual Passholders is now offered at the Vivoli il Gelato affogato cart in Disney Springs. The design mirrors the standard white set with the Vivoli logo.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/annual-passholder-affogato-cup-now-available-at-vivoli-il-gelato-in-disney-springs/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Passholder exclusives often see limited inventory at cart locations. Stopping by early afternoon before dinner crowds arrive usually improves your chances of securing the item."
+        }
+      },
+      {
+        "title": "EPCOT churro sundae recipe updated",
+        "body": "The popular churro sundae at EPCOT has changed and received positive guest feedback. Details on the new preparation or ingredients have been noted as an improvement over the original version.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "AllEars.Net",
+          "url": "https://allears.net/2026/07/05/review-wait-what-a-popular-epcot-snack-changed-for-the-better/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Snack carts at World Showcase often restock after the lunch rush. Visiting mid-afternoon may offer shorter lines and fresher product before evening festival crowds arrive."
+        }
+      },
+      {
+        "title": "Disney and Formula 1 extend multi-year partnership for 2026 season",
+        "body": "Mickey and Friends return trackside for the 2026 Formula 1 race season under the continued Fuel the Magic partnership. The collaboration includes on-site activations following the debut at the 2025 Las Vegas Grand Prix.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/products/disney-and-formula-1-2026-race-season/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Formula 1 co-branded merchandise may appear at Tomorrowland or World Showcase shops in the coming weeks. Early-morning shopping at Mouse Gear or Tomorrowland Light and Power Co. often secures limited releases before sellout."
+        }
+      },
+      {
+        "title": "Disney celebrates America's 250th anniversary with special programming",
+        "body": "Disney Celebrates America marked the country's 250th anniversary over Fourth of July weekend with patriotic entertainment, storytelling experiences, and themed offerings across parks and Disney Cruise Line.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/disney-experiences/honoring-americas-250th-anniversary-with-disney-magic/"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "Holiday weekend crowds tend to linger through Monday and Tuesday. Magic Kingdom and EPCOT evening shows often draw heavy hub congestion; arriving 45 minutes early usually secures better viewing spots."
+        }
+      },
+      {
+        "title": "Haunted Mansion collection launching on DisneyStore.com",
+        "body": "A new Haunted Mansion merchandise line will soon materialize on DisneyStore.com. The collection includes apparel, accessories, and home goods themed to the iconic attraction.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/products/new-haunted-mansion-collection-coming-to-disney-store/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Online releases often sell out within hours of launch. Adding items to your cart immediately at drop time and checking out quickly tends to improve your odds before stock depletes."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Giant Spider-Bot installed at Shanghai Disneyland Spider-Man land",
+        "body": "A large Spider-Bot sculpture has been placed in the new Spider-Man themed area under construction at Shanghai Disneyland. Shanghai Disney Resort and Walt Disney Imagineering confirmed the installation on social media.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/giant-spider-bot-arrives-at-shanghai-disney-resorts-spider-man-land/"
+        }
+      },
+      {
+        "title": "Mickey's of Glendale booth returns to D23 with new Imagineering items",
+        "body": "The fan-favorite Mickey's of Glendale merchandise booth will return to D23: The Ultimate Disney Fan Event with a new Walt Disney Imagineering collection. The booth has been a popular shopping destination at past D23 events.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/disney-experiences/mickeys-of-glendale-d23-walt-disney-imagineering-collection/"
+        }
+      },
+      {
+        "title": "Disney World restaurants adjust offerings this week",
+        "body": "Several Walt Disney World restaurants made menu or service changes recently. Details on specific locations and adjustments were noted across multiple dining venues.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/07/05/weve-got-some-bad-news-about-several-disney-world-restaurants/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "Summer wait times running unexpectedly low across Walt Disney World",
+        "body": "Average wait times across Magic Kingdom, EPCOT, Hollywood Studios, and Animal Kingdom have tracked at off-season levels throughout June and early July despite the summer calendar. Animal Kingdom saw posted waits as low as five minutes for Avatar Flight of Passage on July 5. The trend mirrors previous summers when June and July crowds dropped below historical norms.",
+        "parkSlug": null,
+        "ctaLabel": "Plan your low-wait strategy",
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Lower summer crowds typically open walk-on windows for headliners during mid-afternoon and dinner hours. Rope-drop strategies may be less critical this month — arriving by 10 AM often still delivers short waits on popular attractions."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "-XPaF-s9BFg",
+      "title": "Disney's Vero Beach Resort 2026 | Full Tour, Oceanview Room & Character Dining | Disney Resort | DVC",
+      "channel": "Paging Mr. Morrow",
+      "publishedAt": "2026-07-05T13:00:13Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/-XPaF-s9BFg/mqdefault.jpg",
+      "viewCount": 59460,
+      "url": "https://www.youtube.com/watch?v=-XPaF-s9BFg",
+      "summary": "Paging Mr. Morrow tours Disney's Vero Beach Resort in 2026, showcasing an oceanview room and character dining experience at the DVC property."
+    },
+    {
+      "videoId": "gxNQIvH_GHU",
+      "title": "Live July 5th 2026 Magic Kingdom for rides, shows, parades, Fireworks Walt Disney World 7/5/2026",
+      "channel": "RON ON THE GO",
+      "publishedAt": "2026-07-06T03:47:51Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/gxNQIvH_GHU/mqdefault.jpg",
+      "viewCount": 56863,
+      "url": "https://www.youtube.com/watch?v=gxNQIvH_GHU",
+      "summary": "RON ON THE GO livestreams a full day at Magic Kingdom on July 5, covering rides, shows, parades, and fireworks."
+    },
+    {
+      "videoId": "xq2i2-rmeLQ",
+      "title": "$650+ Club Level Room at Disney's Coronado Springs Resort | Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-07-01T15:56:48Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/xq2i2-rmeLQ/mqdefault.jpg",
+      "viewCount": 38967,
+      "url": "https://www.youtube.com/watch?v=xq2i2-rmeLQ",
+      "summary": "WrightDownMainStreet reviews a Club Level room at Disney's Coronado Springs Resort priced above $650 per night."
+    },
+    {
+      "videoId": "lxaIemNrL0o",
+      "title": "🔴Live: Magic Kingdom July 4th Fireworks on July 5th - FULL SHOW VIEW - Walt Disney World 2026",
+      "channel": "ResortTV1",
+      "publishedAt": "2026-07-06T04:20:02Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/lxaIemNrL0o/mqdefault.jpg",
+      "viewCount": 36038,
+      "url": "https://www.youtube.com/watch?v=lxaIemNrL0o",
+      "summary": "ResortTV1 streams the full Magic Kingdom Fourth of July fireworks show performed on July 5, 2026."
+    },
+    {
+      "videoId": "RsEN6qvRs80",
+      "title": "Disney Worlds BEST Restaurant? | Jiko at Animal Kingdom Lodge",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-07-05T15:58:18Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/RsEN6qvRs80/mqdefault.jpg",
+      "viewCount": 14022,
+      "url": "https://www.youtube.com/watch?v=RsEN6qvRs80",
+      "summary": "WrightDownMainStreet explores Jiko at Disney's Animal Kingdom Lodge and evaluates whether it ranks as Disney World's best restaurant."
+    },
+    {
+      "videoId": "hY4eHsCSdbc",
+      "title": "🔴Live: Cinematic Night at Hollywood Studios! - Rides & Fantasmic - Disney World Livestream",
+      "channel": "GooToYou!",
+      "publishedAt": "2026-07-06T02:03:34Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/hY4eHsCSdbc/mqdefault.jpg",
+      "viewCount": 7416,
+      "url": "https://www.youtube.com/watch?v=hY4eHsCSdbc",
+      "summary": "GooToYou livestreams an evening at Hollywood Studios featuring rides and the Fantasmic nighttime spectacular."
+    },
+    {
+      "videoId": "8K8zmjONYz4",
+      "title": "My heart 🥰My eyes 😭#disney #disneyland #foryou #love",
+      "channel": "ANURAG DJ BEATS 7K",
+      "publishedAt": "2026-07-06T10:26:27Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/8K8zmjONYz4/mqdefault.jpg",
+      "viewCount": 6598,
+      "url": "https://www.youtube.com/watch?v=8K8zmjONYz4",
+      "summary": "ANURAG DJ BEATS 7K shares an emotional Disney moment at Disneyland."
+    },
+    {
+      "videoId": "UXeQo30H4-E",
+      "title": "\\ ボン・ヴォヤージュ /7月6日販売状況を紹介！",
+      "channel": "みい🎀",
+      "publishedAt": "2026-07-06T01:31:03Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/UXeQo30H4-E/mqdefault.jpg",
+      "viewCount": 3965,
+      "url": "https://www.youtube.com/watch?v=UXeQo30H4-E",
+      "summary": "みい🎀 provides a July 6 merchandise availability update from Bon Voyage at Tokyo Disney Resort."
+    },
+    {
+      "videoId": "mCMsFlT3VXc",
+      "title": "Disney Princesses Get SHOCKED When Guests Do THIS 😳 #disneyland #disneyparktour #disney",
+      "channel": "Dreamland Moments",
+      "publishedAt": "2026-07-06T09:59:29Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/mCMsFlT3VXc/mqdefault.jpg",
+      "viewCount": 3819,
+      "url": "https://www.youtube.com/watch?v=mCMsFlT3VXc",
+      "summary": "Dreamland Moments captures Disney Princess character reactions to surprising guest interactions at Disneyland."
+    },
+    {
+      "videoId": "avat4HiSpdE",
+      "title": "DISNEY 4th of July FIREWORKS at Disneyland Resort! #livestream",
+      "channel": "Magical Goth Vibes",
+      "publishedAt": "2026-07-06T07:56:47Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/avat4HiSpdE/mqdefault.jpg",
+      "viewCount": 2413,
+      "url": "https://www.youtube.com/watch?v=avat4HiSpdE",
+      "summary": "Magical Goth Vibes livestreams the Fourth of July fireworks at Disneyland Resort."
+    }
+  ],
+  "updatedAt": "2026-07-06T14:23:30.830Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-07-06T14:23:30.830Z",
+    "tokens": {
+      "input": 12297,
+      "output": 5336,
+      "costUsd": 0.1169
+    }
+  }
+}
