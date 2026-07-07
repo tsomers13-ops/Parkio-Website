@@ -1,0 +1,354 @@
+{
+  "title": "Parkio Daily for July 7, 2026",
+  "slug": "parkio-daily-2026-07-07",
+  "date": "2026-07-07",
+  "teaser": "Hollywood Studios adds September Extended Evening Hours; July crowds hit five-year low across Walt Disney World.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Space Mountain",
+        "parkSlug": "magic-kingdom",
+        "note": "Magic Kingdom is running unusually light today"
+      },
+      {
+        "name": "Test Track",
+        "parkSlug": "epcot",
+        "note": "EPCOT wait times lowest in recent memory"
+      },
+      {
+        "name": "Slinky Dog Dash",
+        "parkSlug": "hollywood-studios",
+        "note": "Studios crowds remain manageable"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [
+      {
+        "title": "Hollywood Studios gets September Extended Evening Hours slot",
+        "body": "Walt Disney World has added Extended Evening Hours at Hollywood Studios for one September date, replacing the usual Magic Kingdom slot. Deluxe resort guests can stay from 9 to 11 p.m.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/disneys-hollywood-studios-extended-evening-hours-added-to-the-calendar/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Hollywood Studios evening hours tend to offer walk-on access to Rise of the Resistance and Tower of Terror. Guests staying at deluxe resorts may find better value here than the usual Magic Kingdom slot this month."
+        }
+      }
+    ],
+    "bignews": [
+      {
+        "title": "July crowds hit lowest levels since September 2021",
+        "body": "Wait times across Walt Disney World over Independence Day weekend and into this week have dropped to the lowest levels recorded since September 2021, despite sold-out Annual Passholder park reservations.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/july-2026-is-disney-worlds-least-busy-month-since-september-2021/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Every park is likely seeing short waits through mid-July. Spontaneous visits and rope-drop skipping may actually work well this week, though Lightning Lane still saves time on headliners during midday heat."
+        }
+      },
+      {
+        "title": "Carousel of Progress closed for 2027 updates",
+        "body": "Walt Disney's Carousel of Progress at Magic Kingdom closed July 6 for a multi-month refurbishment. The attraction is expected to reopen in 2027 with updates to its final scene.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/theres-a-great-big-beautiful-tomorrow-for-walt-disneys-carousel-of-progress-shining-in-2027/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Tomorrowland loses one of its air-conditioned breaks. On hot afternoons, consider the Tomorrowland Transit Authority PeopleMover or move to Fantasyland for indoor queue relief instead."
+        }
+      },
+      {
+        "title": "Disneyland $59 evening ticket sold out in under a week",
+        "body": "Disneyland's discounted $59 evening admission ticket for select dates sold out in less than seven days. A new $71 Southern California resident ticket offer is now available for summer and Halloween dates.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/07/06/this-59-disneyland-ticket-deal-sold-out-in-less-than-a-week/"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "High demand for discount tickets often signals heavier-than-expected turnout on eligible dates. Guests using the new resident offer may want to target weekday evenings when the park typically clears out after dinner."
+        }
+      },
+      {
+        "title": "Disneyland Resort marks one billionth guest milestone",
+        "body": "Disneyland Resort celebrated its one billionth guest across Disneyland Park and Disney California Adventure since the resort opened in 1955. A ceremony was held at the Disneyland entrance.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/dlr/disneyland-one-billionth-guest/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Commemorative merchandise and photo ops tied to the milestone may appear near the entrance or Emporium. Worth a quick stop if you collect limited-run Disney history items."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "EPCOT Portraits of Courage exhibit closes permanently",
+        "body": "The Portraits of Courage exhibit at EPCOT, featuring paintings by President George W. Bush of military veterans, closed permanently following an extended July Fourth run.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/07/disney-world-officially-closes-epcot-location-permanently-th1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Guests looking for a quiet air-conditioned gallery experience at EPCOT now have fewer options. The Odyssey pavilion may see heavier foot traffic as guests seek indoor breaks."
+        }
+      },
+      {
+        "title": "Three July ride closures announced at Disneyland",
+        "body": "Three attractions at Disneyland and Disney California Adventure will be closed for maintenance during July, impacting guest itineraries.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "AllEars.Net",
+          "url": "https://allears.net/2026/07/06/3-rides-will-be-closed-at-disneyland-in-july/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "July closures tend to target slower attractions during off-peak summer weeks. Check the Disneyland app before rope drop to adjust touring plans and avoid wasted walks to shuttered rides."
+        }
+      },
+      {
+        "title": "Fantasmic debuts alternate finale after technical issue",
+        "body": "A recent showing of Fantasmic at Hollywood Studios ended without its traditional finale aboard the Mark Twain boat due to a technical failure. Guests reportedly applauded the unexpected variation.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/07/disney-world-guests-experience-rare-attraction-after-operational-failure-th1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Fantasmic occasionally experiences downtime or modified endings. Guests aiming for the full show may want to attend a second night if their schedule allows, though most elements typically run as planned."
+        }
+      },
+      {
+        "title": "New Cake Bake Shop cotton candy slice draws strong reviews",
+        "body": "A new $22 cotton candy cake slice at Disney World's Cake Bake Shop is earning positive guest reactions for flavor and presentation.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/07/06/review-we-paid-22-for-cotton-candy-cake-in-disney-world-and-wed-100-do-it-again/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Cake Bake Shop often sells out of popular slices by mid-afternoon. Guests wanting to try the new cotton candy option should visit before 2 p.m. or make a reservation for sit-down service."
+        }
+      },
+      {
+        "title": "TRON Lightcycle queue screens show burn-in damage",
+        "body": "Queue screens at TRON Lightcycle Run in Magic Kingdom are displaying visible burn-in from repeated lightcycle imagery, a cosmetic issue noticed by guests waiting in line.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/lightcycle-burnt-in-on-tron-lightcycle-run-queue-screens-in-todays-daily-recap-for-07-06-2026/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "The burn-in does not affect ride operation but may detract from the queue experience. Guests sensitive to show quality issues might prefer riding during lower-wait windows when queue time is minimal."
+        }
+      },
+      {
+        "title": "Fourteen Walt Disney World restaurant menus updated",
+        "body": "Menu changes rolled out across 14 Walt Disney World dining locations this week, affecting both quick-service and table-service restaurants.",
+        "parkSlug": null,
+        "source": {
+          "label": "AllEars.Net",
+          "url": "https://allears.net/2026/07/06/14-disney-world-restaurants-changed-this-week/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Menu refreshes often include limited-time items that disappear within weeks. Guests with dining reservations today should ask servers about new additions before ordering."
+        }
+      },
+      {
+        "title": "Boatwrights cornbread returns to Port Orleans menu",
+        "body": "Walt Disney World reversed a controversial menu cut by restoring cornbread to Boatwright's Dining Hall at Port Orleans Resort following guest feedback.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-world-reverses-controversial-cornbread-cut-restores-peace-at-port-orleans-resort/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Boatwright's walk-up availability tends to improve during weekday lunch hours. Guests staying at Port Orleans or visiting Disney Springs may find same-day seating easier than weekend evenings."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Mickey's of Glendale returns to D23 with Imagineering collection",
+        "body": "The Mickey's of Glendale booth will return to D23 2026 with a new Walt Disney Imagineering merchandise collection for convention attendees.",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/disney-experiences/mickeys-of-glendale-d23-walt-disney-imagineering-collection/"
+        }
+      },
+      {
+        "title": "New Haunted Mansion merchandise arrives online",
+        "body": "A new Haunted Mansion collection launched on DisneyStore.com, featuring apparel, accessories, and home goods inspired by the attraction.",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/products/new-haunted-mansion-collection-coming-to-disney-store/"
+        }
+      },
+      {
+        "title": "Disney and Formula 1 continue partnership for 2026 season",
+        "body": "Disney and Formula 1 announced continued collaboration for the 2026 race season, building on the 2025 Las Vegas Grand Prix debut with Mickey and Friends track-side activations.",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/products/disney-and-formula-1-2026-race-season/"
+        }
+      },
+      {
+        "title": "Cheapest Mickey's Not So Scary Halloween Party dates sold out",
+        "body": "The lowest-priced ticket dates for 2026 Mickey's Not So Scary Halloween Party at Magic Kingdom have sold out, leaving higher-tier pricing for remaining August and September nights.",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/cheapest-dates-sold-out-for-2026-mickeys-not-so-scary-halloween-party/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "Secret walk-up method gets you into Oga's Cantina without a reservation",
+        "body": "Guests at Hollywood Studios can access Oga's Cantina without an advance reservation by joining the walk-up list during off-peak hours, typically mid-afternoon weekdays. The lounge often has last-minute openings when the park is not at capacity.",
+        "parkSlug": "hollywood-studios",
+        "ctaLabel": "Plan your visit",
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Walk-up availability at Oga's tends to open between 2 and 4 p.m. on weekdays when lunch crowds clear out. Guests willing to wait 20 to 40 minutes often secure a spot without a 60-day booking."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "-XPaF-s9BFg",
+      "title": "Disney's Vero Beach Resort 2026 | Full Tour, Oceanview Room & Character Dining | Disney Resort | DVC",
+      "channel": "Paging Mr. Morrow",
+      "publishedAt": "2026-07-05T13:00:13Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/-XPaF-s9BFg/mqdefault.jpg",
+      "viewCount": 80454,
+      "url": "https://www.youtube.com/watch?v=-XPaF-s9BFg",
+      "summary": "Paging Mr. Morrow tours Disney's Vero Beach Resort in 2026, covering oceanview rooms and character dining at the DVC property."
+    },
+    {
+      "videoId": "xq2i2-rmeLQ",
+      "title": "$650+ Club Level Room at Disney's Coronado Springs Resort | Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-07-01T15:56:48Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/xq2i2-rmeLQ/mqdefault.jpg",
+      "viewCount": 40651,
+      "url": "https://www.youtube.com/watch?v=xq2i2-rmeLQ",
+      "summary": "WrightDownMainStreet reviews a club level room at Coronado Springs Resort with pricing exceeding $650 per night."
+    },
+    {
+      "videoId": "j-oy_EnYkF0",
+      "title": "Live at Disney's Epcot  Rides/ Fireworks  7/6/26 #live",
+      "channel": "That Crazy Disney Lady",
+      "publishedAt": "2026-07-07T03:59:48Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/j-oy_EnYkF0/mqdefault.jpg",
+      "viewCount": 24488,
+      "url": "https://www.youtube.com/watch?v=j-oy_EnYkF0",
+      "summary": "That Crazy Disney Lady streams live from EPCOT on July 6, covering rides and fireworks throughout the evening."
+    },
+    {
+      "videoId": "RsEN6qvRs80",
+      "title": "Disney Worlds BEST Restaurant? | Jiko at Animal Kingdom Lodge",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-07-05T15:58:18Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/RsEN6qvRs80/mqdefault.jpg",
+      "viewCount": 19776,
+      "url": "https://www.youtube.com/watch?v=RsEN6qvRs80",
+      "summary": "WrightDownMainStreet explores whether Jiko at Animal Kingdom Lodge ranks as Disney World's best restaurant."
+    },
+    {
+      "videoId": "dO3p9kjcIEI",
+      "title": "🔴 Live: Magic Kingdom Rides, Starlight Parade & Fireworks Monday | Disney World Live Stream 7.6.2026",
+      "channel": "Daily FastPass",
+      "publishedAt": "2026-07-07T03:34:02Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/dO3p9kjcIEI/mqdefault.jpg",
+      "viewCount": 16534,
+      "url": "https://www.youtube.com/watch?v=dO3p9kjcIEI",
+      "summary": "Daily FastPass streams live from Magic Kingdom on July 6, covering rides, the Starlight Parade, and evening fireworks."
+    },
+    {
+      "videoId": "5es4MOlDEMI",
+      "title": "🔴Live Disney's Hollywood Studios Fantasmic at 9:05pm on Monday at Walt Disney World 7/6/2026",
+      "channel": "RON ON THE GO",
+      "publishedAt": "2026-07-07T04:19:20Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/5es4MOlDEMI/mqdefault.jpg",
+      "viewCount": 15102,
+      "url": "https://www.youtube.com/watch?v=5es4MOlDEMI",
+      "summary": "RON ON THE GO streams Fantasmic live from Hollywood Studios at 9:05 p.m. on July 6."
+    },
+    {
+      "videoId": "Iw62pvO3_2s",
+      "title": "🔴 LIVE – Disneyland  |  (Wondrous) Fireworks + 7 Rides!",
+      "channel": "Kevin Sue Magic",
+      "publishedAt": "2026-07-07T06:04:52Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Iw62pvO3_2s/mqdefault.jpg",
+      "viewCount": 6885,
+      "url": "https://www.youtube.com/watch?v=Iw62pvO3_2s",
+      "summary": "Kevin Sue Magic streams live from Disneyland, covering Wondrous fireworks and seven different attractions."
+    },
+    {
+      "videoId": "tqUTRGM2F9Q",
+      "title": "🔴 LIVE AT DISNEY | WALKING AROUND DISNEYLAND and DCA",
+      "channel": "iamCHRISRODGERS",
+      "publishedAt": "2026-07-07T07:44:25Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/tqUTRGM2F9Q/mqdefault.jpg",
+      "viewCount": 2922,
+      "url": "https://www.youtube.com/watch?v=tqUTRGM2F9Q",
+      "summary": "iamCHRISRODGERS walks around both Disneyland and Disney California Adventure in a live stream."
+    },
+    {
+      "videoId": "C1km1Y50Bm0",
+      "title": "Touching moments when children see Disney characters.#disney #disneyland #foryou #fyp #tiktok",
+      "channel": "Ksy Ms",
+      "publishedAt": "2026-07-07T08:41:36Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/C1km1Y50Bm0/mqdefault.jpg",
+      "viewCount": 1648,
+      "url": "https://www.youtube.com/watch?v=C1km1Y50Bm0",
+      "summary": "Ksy Ms shares compilation footage of children meeting Disney characters at the parks."
+    },
+    {
+      "videoId": "nLiK0lbCwDY",
+      "title": "Waiting for the Disney characters #parades #disneyland #hongkong",
+      "channel": "FOOD WANDERER TEKLA",
+      "publishedAt": "2026-07-07T03:28:33Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/nLiK0lbCwDY/mqdefault.jpg",
+      "viewCount": 1565,
+      "url": "https://www.youtube.com/watch?v=nLiK0lbCwDY",
+      "summary": "FOOD WANDERER TEKLA captures the anticipation before a Disney character parade at Hong Kong Disneyland."
+    }
+  ],
+  "updatedAt": "2026-07-07T13:12:19.583Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-07-07T13:12:19.583Z",
+    "tokens": {
+      "input": 12243,
+      "output": 5540,
+      "costUsd": 0.1198
+    }
+  }
+}
