@@ -1,0 +1,350 @@
+{
+  "title": "Parkio Daily for July 8, 2026",
+  "slug": "parkio-daily-2026-07-08",
+  "date": "2026-07-08",
+  "teaser": "Pirates of the Caribbean closed all day at Disneyland; Moana sundae arrives at Animal Kingdom; Joe Schott starts as WDW president Aug 3.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Soarin'",
+        "parkSlug": "epcot",
+        "note": "Walk-ons likely during dinner hour"
+      },
+      {
+        "name": "Space Mountain",
+        "parkSlug": "magic-kingdom",
+        "note": "Ride early before Tomorrowland fills"
+      },
+      {
+        "name": "Expedition Everest",
+        "parkSlug": "animal-kingdom",
+        "note": "Low waits mid-morning"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [
+      {
+        "title": "Pirates of the Caribbean closed all day at Disneyland",
+        "body": "The classic New Orleans Square attraction failed to open with the park on July 7 and remained closed through the afternoon. No reopening timeline has been announced.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/07/pirates-of-the-caribbean-issues-at-disneyland-on-tuesday-jc1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "If Pirates reopens today, waits may spike with guests making up for yesterday. Check the app before heading to New Orleans Square and have a backup plan for Haunted Mansion or Indy."
+        }
+      }
+    ],
+    "bignews": [
+      {
+        "title": "Joe Schott takes over as Walt Disney World president August 3",
+        "body": "Nearly four months after leadership changes began across Disney, Schott officially assumes the WDW president role in less than a month. The transition marks the final major change in the parks division.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-worlds-new-president-takes-over-next-month/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "New leadership often brings operational tweaks in the first 90 days. Worth keeping an eye on any policy shifts around park hours, Lightning Lane, or guest services through early fall."
+        }
+      },
+      {
+        "title": "Ken Potrock announces retirement after 32 years with Disney",
+        "body": "The former Disneyland Resort president, currently serving as President of Major Events Integration, will officially retire in early 2027. Potrock's departure closes a long chapter in West Coast parks leadership.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/ken-potrock-former-president-of-disneyland-resort-has-announced-his-retirement-from-the-walt-disney-company/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Leadership transitions at Disneyland sometimes bring surprise announcements or soft launches of new initiatives. Watch for any resort updates or policy changes through the fall season."
+        }
+      },
+      {
+        "title": "Moana-themed sundae and pineapple drink debut at Animal Kingdom",
+        "body": "The Motunui Ube Sundae features ube soft-serve, tropical fruits, coconut, and raspberry crumbs at the Anandapur Ice Cream Truck. A new pineapple drink is also available, timed to the live-action Moana remake release.",
+        "parkSlug": "animal-kingdom",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/moana-sundae-and-pineapple-drink-coming-to-walt-disney-world/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Movie tie-in treats often sell out by mid-afternoon on opening week. Swing by Anandapur before lunch if you want to try the sundae without a line."
+        }
+      },
+      {
+        "title": "Disneyland welcomes one billionth guest milestone",
+        "body": "The resort celebrated seven decades and one billion total guests with a ceremony at the park entrance on July 3. The milestone comes just days before Disneyland's 71st birthday.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/dlr/disneyland-one-billionth-guest/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Anniversary celebrations sometimes extend into the weeks that follow. Look for special photo ops or surprise character appearances near the Main Street hub through mid-July."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "New truffle burger debuts at Cosmic Ray's for late-night dining",
+        "body": "Magic Kingdom's largest quick-service restaurant now offers a truffle burger aimed at extended-hours guests. The addition addresses the park's longstanding weak late-night food lineup.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/best-burger-magic-kingdom-restaurant/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Late-night dining in Magic Kingdom tends to have shorter lines after 9pm. If you're staying for fireworks, this is likely your best counter-service bet without leaving Tomorrowland."
+        }
+      },
+      {
+        "title": "Carousel of Progress closes for reimagining; fan footage surfaces",
+        "body": "Following the official closure of the Magic Kingdom classic, superfans shared detailed walk-through videos they captured during a rare theater access opportunity. Disney has filed a general construction notice for the attraction.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/carousel-of-progress-fans-capture-close-up-walkaround-footage-before-attractions-closure-in-todays-daily-recap-for-7-7-2026/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Tomorrowland capacity drops with Carousel dark. Space Mountain and TRON waits may run 10–15 minutes longer during peak afternoon hours through the refurbishment."
+        }
+      },
+      {
+        "title": "New Mickey Bar variety launches at Disneyland",
+        "body": "Disneyland has introduced a new flavor variation of the iconic frozen treat. The updated bar joins the classic vanilla version at several park carts.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/07/07/review-disneyland-just-changed-an-iconic-disney-treat/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "New Mickey Bar flavors typically move fast in the first week, especially at Main Street and Fantasyland carts. Grab one before noon to avoid sellouts."
+        }
+      },
+      {
+        "title": "Polynesian Village road closure begins in six days",
+        "body": "A major road shutdown near the Polynesian Village Resort starts July 13. The closure affects access routes and parking for resort guests and monorail riders.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/07/disney-world-drivers-face-major-road-shutdown-in-6-days-ad1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "If you're driving to the Polynesian or planning a meal reservation there next week, add 10–15 minutes for alternate routes. Monorail access remains unaffected."
+        }
+      },
+      {
+        "title": "July 2026 is slowest month at Disney World since September 2021",
+        "body": "Despite sold-out Annual Passholder reservations over Independence Day, overall wait times and crowd levels remain historically low. The trend continues less than a week into the month.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/july-2026-is-disney-worlds-least-busy-month-since-september-2021/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "July's low crowds make this one of the best summer touring windows in five years. Hitting attractions before 11am likely keeps most waits under 30 minutes across all four parks."
+        }
+      },
+      {
+        "title": "2027 planDisney panelist search opens",
+        "body": "Disney has launched the annual search for the next class of planDisney panelists, who help guests plan vacations and share vacation tips. Applications are now open for 2027.",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/disney-experiences/2027-plandisney-panel-search/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "If you're a frequent visitor with planning expertise, applying could land you a front-row seat to Disney news and access to special events. The panel typically meets virtually and attends in-park sessions."
+        }
+      },
+      {
+        "title": "Benny the security dog retires after six years at Disneyland",
+        "body": "The canine cast member, who spent six years keeping the resort safe, was honored with a retirement party. Benny's service marks the end of a long chapter in Disneyland security operations.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/dlr/celebrating-benny-disneyland-security-dog/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Security dogs often work near park entrances and bag check. If you spot a working K9 today, it's likely part of Benny's team continuing the safety work he started."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Mickey's of Glendale returns to D23 with new Imagineering collection",
+        "body": "The fan-favorite booth will be back at D23: The Ultimate Disney Fan Event this year, offering exclusive Walt Disney Imagineering merchandise and collectibles.",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/disney-experiences/mickeys-of-glendale-d23-walt-disney-imagineering-collection/"
+        }
+      },
+      {
+        "title": "Disney announces America's 250th anniversary celebration",
+        "body": "Disney Celebrates America will run from Veterans Day 2025 through July 4, 2026 weekend, with special entertainment, patriotic experiences, and events across parks and cruise ships.",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/disney-experiences/disney-festivities-announced-for-americas-250th-anniversary/"
+        }
+      },
+      {
+        "title": "Nomad Lounge adds new drink to menu at Animal Kingdom",
+        "body": "The popular lounge has introduced a specialty drink featuring edible bees as garnish. The new beverage joins Nomad's rotating cocktail list.",
+        "parkSlug": "animal-kingdom",
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/07/07/review-this-is-the-only-acceptable-way-to-have-bees-in-your-disney-world-drink/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "Anaheim resident ticket deal for $71 sells out fast",
+        "body": "Disneyland's new summer and Halloween discount ticket for local residents has already sold out for several dates. The $71 offer provides access to both Disneyland and California Adventure during select windows.",
+        "parkSlug": "disneyland",
+        "ctaLabel": "Check ticket availability",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/new-71-disneyland-resident-ticket-deal-evening-discount-sold-out/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Resident deals tend to drive heavier local crowds on weekends and holidays. If you're visiting on a discounted date, rope-drop and late evenings usually offer the best touring windows."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "PWz8O6m4sZg",
+      "title": "🦁 Disney World: Animal Kingdom",
+      "channel": "Presley and Brock",
+      "publishedAt": "2026-07-08T02:45:00Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/PWz8O6m4sZg/mqdefault.jpg",
+      "viewCount": 240878,
+      "url": "https://www.youtube.com/watch?v=PWz8O6m4sZg",
+      "summary": "Presley and Brock tour Disney's Animal Kingdom, covering attractions, dining, and park highlights."
+    },
+    {
+      "videoId": "-XPaF-s9BFg",
+      "title": "Disney's Vero Beach Resort 2026 | Full Tour, Oceanview Room & Character Dining | Disney Resort | DVC",
+      "channel": "Paging Mr. Morrow",
+      "publishedAt": "2026-07-05T13:00:13Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/-XPaF-s9BFg/mqdefault.jpg",
+      "viewCount": 92368,
+      "url": "https://www.youtube.com/watch?v=-XPaF-s9BFg",
+      "summary": "Paging Mr. Morrow provides a full tour of Disney's Vero Beach Resort, including an oceanview room and character dining experience."
+    },
+    {
+      "videoId": "xq2i2-rmeLQ",
+      "title": "$650+ Club Level Room at Disney's Coronado Springs Resort | Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-07-01T15:56:48Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/xq2i2-rmeLQ/mqdefault.jpg",
+      "viewCount": 42258,
+      "url": "https://www.youtube.com/watch?v=xq2i2-rmeLQ",
+      "summary": "WrightDownMainStreet reviews the Club Level accommodations at Disney's Coronado Springs Resort, including pricing and amenities."
+    },
+    {
+      "videoId": "RsEN6qvRs80",
+      "title": "Disney Worlds BEST Restaurant? | Jiko at Animal Kingdom Lodge",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-07-05T15:58:18Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/RsEN6qvRs80/mqdefault.jpg",
+      "viewCount": 23412,
+      "url": "https://www.youtube.com/watch?v=RsEN6qvRs80",
+      "summary": "WrightDownMainStreet explores Jiko at Animal Kingdom Lodge and evaluates whether it's Disney World's best dining experience."
+    },
+    {
+      "videoId": "cJBbMMNo9UM",
+      "title": "#LIVE Disneyland Tangled Up In Fun, Rides, Characters, New Merch",
+      "channel": "Main Street Cowgirl",
+      "publishedAt": "2026-07-08T07:43:23Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/cJBbMMNo9UM/mqdefault.jpg",
+      "viewCount": 11884,
+      "url": "https://www.youtube.com/watch?v=cJBbMMNo9UM",
+      "summary": "Main Street Cowgirl livestreams from Disneyland, covering rides, character meets, and new merchandise offerings."
+    },
+    {
+      "videoId": "txt7U8UJVLk",
+      "title": "My heart 🥰My eyes 😭#disney #disneyland #foryou #love",
+      "channel": "ANURAG DJ BEATS 7K",
+      "publishedAt": "2026-07-08T09:43:38Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/txt7U8UJVLk/mqdefault.jpg",
+      "viewCount": 4688,
+      "url": "https://www.youtube.com/watch?v=txt7U8UJVLk",
+      "summary": "ANURAG DJ BEATS 7K shares an emotional Disneyland moment capturing the magic of the parks."
+    },
+    {
+      "videoId": "yv-b5RPsN40",
+      "title": "Gadis Ini Malu Berat, Tapi yang Terjadi Malah Bikin Semua Senyum! 🥹❤️",
+      "channel": "Ruang.tawa_TV",
+      "publishedAt": "2026-07-08T11:15:19Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/yv-b5RPsN40/mqdefault.jpg",
+      "viewCount": 4386,
+      "url": "https://www.youtube.com/watch?v=yv-b5RPsN40",
+      "summary": "Ruang.tawa_TV shares a heartwarming Disney moment that brought smiles to everyone watching."
+    },
+    {
+      "videoId": "l8dMScSfgdM",
+      "title": "My heart 🥰 My eyes 😭 #disney #disneyland #love #funny #fyp",
+      "channel": "Roni Koria",
+      "publishedAt": "2026-07-08T06:30:49Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/l8dMScSfgdM/mqdefault.jpg",
+      "viewCount": 2483,
+      "url": "https://www.youtube.com/watch?v=l8dMScSfgdM",
+      "summary": "Roni Koria captures a touching and funny Disney moment that resonates with park fans."
+    },
+    {
+      "videoId": "9i6T0CrCSMc",
+      "title": "【トイストーリー5】期間限定の新メニュー🍕🥤✨#ディズニー #ディズニーランド #トイストーリー #トイストーリー5 #ピザプラネット",
+      "channel": "鏡の国のリサチャンネル",
+      "publishedAt": "2026-07-08T10:23:10Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/9i6T0CrCSMc/mqdefault.jpg",
+      "viewCount": 1353,
+      "url": "https://www.youtube.com/watch?v=9i6T0CrCSMc",
+      "summary": "The channel showcases limited-time Toy Story 5 menu items at a Disney theme park location."
+    },
+    {
+      "videoId": "1F3qSxziokA",
+      "title": "Spotted this cute Winnie the Pooh plush! #disney #disneyland #disneyparks #winniethepooh #pooh",
+      "channel": "thatsojessiejessie",
+      "publishedAt": "2026-07-08T04:13:04Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/1F3qSxziokA/mqdefault.jpg",
+      "viewCount": 1323,
+      "url": "https://www.youtube.com/watch?v=1F3qSxziokA",
+      "summary": "Thatsojessiejessie highlights a new Winnie the Pooh plush available at Disneyland."
+    }
+  ],
+  "updatedAt": "2026-07-08T12:14:48.993Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-07-08T12:14:48.993Z",
+    "tokens": {
+      "input": 12022,
+      "output": 5477,
+      "costUsd": 0.1182
+    }
+  }
+}
