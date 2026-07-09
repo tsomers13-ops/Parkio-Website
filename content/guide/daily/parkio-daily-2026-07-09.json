@@ -1,0 +1,349 @@
+{
+  "title": "Parkio Daily for July 9, 2026",
+  "slug": "parkio-daily-2026-07-09",
+  "date": "2026-07-09",
+  "teaser": "Christmas party tickets now on sale for resort guests start at $189; Extended Evening Hours shift to Hollywood Studios this fall.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Soarin'",
+        "parkSlug": "epcot",
+        "note": "Germany pavilion work may funnel guests elsewhere; World Showcase usually lighter before noon"
+      },
+      {
+        "name": "Kilimanjaro Safaris",
+        "parkSlug": "animal-kingdom",
+        "note": "Morning hours offer cooler temps and more active animals"
+      },
+      {
+        "name": "Big Thunder Mountain",
+        "parkSlug": "magic-kingdom",
+        "note": "Heat advisory in effect; indoor queues fill quickly after 11am"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [
+      {
+        "title": "Heat advisory issued for Central Florida through 8pm",
+        "body": "Orange and Osceola counties are under a heat advisory from 11am to 8pm today, with afternoon storms expected. Index values may exceed safe outdoor activity levels.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/heat-advisory-issued-for-central-florida-plus-storms-this-evening/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Indoor attractions and air-conditioned dining tend to see heavier crowds between 11am and 3pm on advisory days. Plan table-service meals or shows during peak heat to avoid long outdoor queues."
+        }
+      }
+    ],
+    "bignews": [
+      {
+        "title": "Mickey's Very Merry Christmas Party tickets now on sale for resort guests",
+        "body": "Tickets for the November and December holiday event are priced $189 to $229 per guest, up from 2025. General on-sale begins July 16.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/mickeys-very-merry-christmas-party-2026-tickets-on-sale-for-hotel-guests-pircing-revealed/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Early November dates typically offer lower ticket prices and lighter party crowds. Booking before general on-sale often secures preferred dates before sellouts."
+        }
+      },
+      {
+        "title": "Disney Jollywood Nights tickets available for resort guests",
+        "body": "The Hollywood Studios after-hours holiday event returns this year with tickets now on sale for hotel guests. General availability starts July 16.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/disney-jollywood-nights-2026-ticket-pricing-revealed-now-on-sale-for-hotel-guests/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Resort guest pre-sale windows tend to close out popular dates quickly. Early December nights usually see heavier demand than mid-November."
+        }
+      },
+      {
+        "title": "Extended Evening Hours move from Magic Kingdom to Hollywood Studios this fall",
+        "body": "The Deluxe resort perk shifts to Hollywood Studios after summer, likely running through early January 2027. Magic Kingdom will no longer host the benefit during that window.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/extended-evening-hours-switch-from-magic-kingdom-to-disneys-hollywood-studios-in-fall-2026/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Studios typically sees lower evening crowds than Magic Kingdom. Eligible guests may find shorter waits for Tower of Terror and Rock 'n' Roller Coaster during the extra hours."
+        }
+      },
+      {
+        "title": "Food and Wine Festival setup underway at EPCOT",
+        "body": "Booths and signage are appearing around World Showcase ahead of the annual fall festival, which officially opens in a few weeks.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/07/unexpected-food-wine-festival-arrival-spotted-at-epcot-weeks-ahead-of-opening-sb1/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "World Showcase construction zones may narrow walkways during setup. Early-morning touring before booth crowds build tends to offer easier navigation."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "Level99 at Disney Springs extends operating hours",
+        "body": "The new challenge attraction is adding late hours starting July 13 due to high guest demand since its June 29 opening. Weekdays and Sundays will now close at 11pm, Fridays and Saturdays at midnight.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/level99-at-disney-springs-extending-operating-hours-due-to-high-demand/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Late-evening slots often see lighter walk-in traffic than afternoon windows. Booking after 9pm may reduce wait times for challenge rooms."
+        }
+      },
+      {
+        "title": "Germany pavilion construction expands at EPCOT",
+        "body": "Work areas in the Germany World Showcase pavilion continue to grow, with additional sections now closed off. The pavilion remains open but with restricted pathways.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/07/disney-world-issues-update-after-closing-germany-areas-at-epcot-th1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "World Showcase bottlenecks tend to worsen between Germany and China during peak afternoon hours. Routing through the opposite side of the lagoon may save time."
+        }
+      },
+      {
+        "title": "Allergy-friendly ordering stations roll out at Disney resort hotels",
+        "body": "Select Walt Disney World resorts are now testing dedicated ordering locations for guests with dietary restrictions, including Art of Animation and other properties.",
+        "parkSlug": null,
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/07/disney-world-begins-rolling-out-guest-dining-changes-resort-wide-th1/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Designated stations often reduce wait times for allergy orders. Guests with restrictions may find faster service at participating resort food courts during breakfast and lunch rushes."
+        }
+      },
+      {
+        "title": "Disney Store running sitewide Friends and Family sale through Sunday",
+        "body": "Online shoppers can take 25 percent off purchases with code DISNEYPAL through July 12.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/disney-store-offering-limited-time-25-off-discount-sitewide/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Sale pricing tends to move quickly on popular items. Ordering today increases the likelihood of securing in-stock merchandise before weekend inventory drops."
+        }
+      },
+      {
+        "title": "Kilimanjaro Safaris merchandise debuts at Animal Kingdom",
+        "body": "A new attraction-themed t-shirt is now available at Riverside Depot, priced at $32.99.",
+        "parkSlug": "animal-kingdom",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/kilimanjaro-safaris-t-shirt-at-disneys-animal-kingdom/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Attraction-specific apparel often sells out within days at flagship shops. Stopping by Riverside Depot early in your Animal Kingdom visit tends to ensure size availability."
+        }
+      },
+      {
+        "title": "New character wallet keychains and Fantasyland coin purse arrive at Magic Kingdom",
+        "body": "Mickey, Minnie, Donald, and Daisy wallet keychains plus a Fantasyland-themed coin purse are now sold at the Emporium and other locations.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/character-wallet-keychains-and-fantasyland-coin-purse-arrive-at-walt-disney-world/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Emporium crowds usually peak mid-afternoon and just before park close. Shopping during morning Extra Magic Hours or early evening often means shorter checkout lines."
+        }
+      },
+      {
+        "title": "Annual passholders gain additional July park access",
+        "body": "Walt Disney World has released a new batch of available dates for eligible pass types this month, expanding flexibility for summer visits.",
+        "parkSlug": null,
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/07/disney-world-passholders-gain-surprise-july-access-in-new-update-sb1/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Newly opened reservation slots tend to fill within 24 to 48 hours. Booking today improves the likelihood of securing preferred parks and dates."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Disneyland celebrates one billionth guest milestone",
+        "body": "The Disneyland Resort marked its billionth combined visitor across Disneyland and California Adventure with a ceremony at the park entrance last week.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/dlr/disneyland-one-billionth-guest/"
+        }
+      },
+      {
+        "title": "Disney and Formula 1 extend partnership for 2026 season",
+        "body": "Mickey and friends return trackside for another year of F1 collaboration, building on the debut activation at the Las Vegas Grand Prix.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/products/disney-and-formula-1-2026-race-season/"
+        }
+      },
+      {
+        "title": "GANNI x Disney unveil new Daisy Duck collection",
+        "body": "The fashion brand and Disney launched a third drop featuring Daisy Duck and Minnie Mouse Parisian designs.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/products/ganni-disney-unveil-new-daisy-duck-collection/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "The Boathouse introduces new sriracha popcorn at Disney Springs",
+        "body": "The waterfront restaurant now serves a limited-time sriracha-flavored popcorn, joining its existing snack menu. Multiple blogs have called it a standout offering.",
+        "parkSlug": null,
+        "ctaLabel": "Visit The Boathouse",
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Disney Springs crowds tend to thin between 2pm and 5pm on weekdays. Stopping by The Boathouse during that window often means easier seating and quicker service for walk-ins."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "-XPaF-s9BFg",
+      "title": "Disney's Vero Beach Resort 2026 | Full Tour, Oceanview Room & Character Dining | Disney Resort | DVC",
+      "channel": "Paging Mr. Morrow",
+      "publishedAt": "2026-07-05T13:00:13Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/-XPaF-s9BFg/mqdefault.jpg",
+      "viewCount": 100655,
+      "url": "https://www.youtube.com/watch?v=-XPaF-s9BFg",
+      "summary": "Paging Mr. Morrow tours Disney's Vero Beach Resort, showcasing an oceanview room and character dining experience at the DVC property."
+    },
+    {
+      "videoId": "RsEN6qvRs80",
+      "title": "Disney Worlds BEST Restaurant? | Jiko at Animal Kingdom Lodge",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-07-05T15:58:18Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/RsEN6qvRs80/mqdefault.jpg",
+      "viewCount": 24987,
+      "url": "https://www.youtube.com/watch?v=RsEN6qvRs80",
+      "summary": "WrightDownMainStreet reviews Jiko at Animal Kingdom Lodge, exploring whether it ranks as Disney World's top restaurant."
+    },
+    {
+      "videoId": "uPavMuYC4GE",
+      "title": "Every NEW Food at Disney Springs- The Boathouse, Chicken Guy & More! | Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-07-08T16:00:09Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/uPavMuYC4GE/mqdefault.jpg",
+      "viewCount": 22734,
+      "url": "https://www.youtube.com/watch?v=uPavMuYC4GE",
+      "summary": "WrightDownMainStreet samples new menu items across Disney Springs locations including The Boathouse and Chicken Guy."
+    },
+    {
+      "videoId": "RftFxOJcrBU",
+      "title": "🔴 LIVE: Happily Ever After – EPIC Nighttime Spectacular, Disney World | Full Show 4K",
+      "channel": "Fun to be Free",
+      "publishedAt": "2026-07-09T04:42:08Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/RftFxOJcrBU/mqdefault.jpg",
+      "viewCount": 13723,
+      "url": "https://www.youtube.com/watch?v=RftFxOJcrBU",
+      "summary": "Fun to be Free livestreams a full 4K showing of Magic Kingdom's Happily Ever After fireworks spectacular."
+    },
+    {
+      "videoId": "f4hZSajhPzA",
+      "title": "My heart 🥰My eyes 😭#disney #disneyland #foryou #love",
+      "channel": "ANURAG DJ BEATS 7K",
+      "publishedAt": "2026-07-09T09:47:11Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/f4hZSajhPzA/mqdefault.jpg",
+      "viewCount": 9455,
+      "url": "https://www.youtube.com/watch?v=f4hZSajhPzA",
+      "summary": "A short Disney-themed clip from ANURAG DJ BEATS 7K capturing an emotional Disneyland moment."
+    },
+    {
+      "videoId": "ELPNzTUAjtA",
+      "title": "My heart 🥰 My eyes 😭 #disney #disneyland #love #funny #fyp",
+      "channel": "Roni Koria",
+      "publishedAt": "2026-07-09T06:02:50Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/ELPNzTUAjtA/mqdefault.jpg",
+      "viewCount": 5657,
+      "url": "https://www.youtube.com/watch?v=ELPNzTUAjtA",
+      "summary": "Roni Koria shares a brief funny and heartfelt Disney park experience."
+    },
+    {
+      "videoId": "KYULP0Jjij8",
+      "title": "#trip #travel #travelvlog #traveling #travelshorts #disney #disneyland #hongkong",
+      "channel": "Yunus Fantoni",
+      "publishedAt": "2026-07-09T06:01:56Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/KYULP0Jjij8/mqdefault.jpg",
+      "viewCount": 1395,
+      "url": "https://www.youtube.com/watch?v=KYULP0Jjij8",
+      "summary": "Yunus Fantoni documents a travel short from Hong Kong Disneyland."
+    },
+    {
+      "videoId": "Ar_VP1jNR1A",
+      "title": "Disneyland 😍 #europe #disney #trending #youtubeshorts",
+      "channel": "BeauTy oF EuRope",
+      "publishedAt": "2026-07-09T07:45:28Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Ar_VP1jNR1A/mqdefault.jpg",
+      "viewCount": 1213,
+      "url": "https://www.youtube.com/watch?v=Ar_VP1jNR1A",
+      "summary": "BeauTy oF EuRope showcases a European Disneyland experience in a trending short."
+    },
+    {
+      "videoId": "0NubtZYzRbY",
+      "title": "【最新】TDLトイストーリーイベントのフード＆映えスポットまとめ！ #ディズニー",
+      "channel": "すずみね夫婦のディズニーライフ",
+      "publishedAt": "2026-07-09T09:54:55Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/0NubtZYzRbY/mqdefault.jpg",
+      "viewCount": 1121,
+      "url": "https://www.youtube.com/watch?v=0NubtZYzRbY",
+      "summary": "A Japanese Disney channel covers food and photo spots at Tokyo Disneyland's Toy Story event."
+    },
+    {
+      "videoId": "0K4RyCtazKQ",
+      "title": "Always Look 👀 at the GOAT 🐐 #disney #travelvlog  #disneyparktour #disneyland #thundermountain",
+      "channel": "Breezy In The Park ",
+      "publishedAt": "2026-07-09T05:55:36Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/0K4RyCtazKQ/mqdefault.jpg",
+      "viewCount": 1084,
+      "url": "https://www.youtube.com/watch?v=0K4RyCtazKQ",
+      "summary": "Breezy In The Park features Big Thunder Mountain Railroad in a Disneyland park tour vlog."
+    }
+  ],
+  "updatedAt": "2026-07-09T13:43:29.417Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-07-09T13:43:29.417Z",
+    "tokens": {
+      "input": 12081,
+      "output": 5250,
+      "costUsd": 0.115
+    }
+  }
+}
