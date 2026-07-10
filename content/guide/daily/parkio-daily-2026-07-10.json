@@ -1,0 +1,330 @@
+{
+  "title": "Parkio Daily for July 10, 2026",
+  "slug": "parkio-daily-2026-07-10",
+  "date": "2026-07-10",
+  "teaser": "Heat Advisory hits Central Florida through 8pm; two Hollywood Studios bars add walk-up seating; Cars Land quick-service dining closes at DCA.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Space Mountain",
+        "parkSlug": "magic-kingdom",
+        "note": "Cooler indoor queue beats midday heat"
+      },
+      {
+        "name": "Rise of the Resistance",
+        "parkSlug": "hollywood-studios",
+        "note": "Early morning windows still short"
+      },
+      {
+        "name": "Radiator Springs Racers",
+        "parkSlug": "california-adventure",
+        "note": "Check Cars Land dining closures first"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [
+      {
+        "title": "Heat Advisory in effect through 8pm today",
+        "body": "Central Florida is under a Heat Advisory from 11am to 8pm EDT, covering Walt Disney World and the surrounding counties. This is the second consecutive day of the advisory.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/heat-advisory-issued-for-central-florida-for-second-day-in-a-row/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Indoor attractions with air conditioning tend to be the safest bet between noon and 4pm. Plan sit-down meals or resort breaks during peak heat hours to avoid exhaustion."
+        }
+      },
+      {
+        "title": "Stray firework entered Fantasmic crowd last night",
+        "body": "A firework misfired into the Fantasmic audience at Hollywood Studios on July 9. Eyewitnesses reported no apparent injuries, though the incident was captured on video.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/video-stray-firework-shoots-into-fantasmic-crowd-at-disneys-hollywood-studios/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Seating farther from the lagoon edge tends to reduce risk from technical malfunctions. Disney usually reviews safety protocols quickly, but guests may want to monitor park communications before tonight's show."
+        }
+      }
+    ],
+    "bignews": [
+      {
+        "title": "Two Hollywood Studios lounges now offer walk-up waitlist",
+        "body": "Beak and Barrel at Pirates of the Caribbean and GEO-82 inside Spaceship Earth have quietly added walk-up waitlist functionality in My Disney Experience. Both bars previously required advance reservations only.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "AllEars",
+          "url": "https://allears.net/2026/07/09/2-popular-disney-world-bars-add-walk-up-list-option/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Walk-up windows often open during off-peak hours, typically between 2pm and 5pm. Trying mid-afternoon usually yields shorter waits than dinner rush."
+        }
+      },
+      {
+        "title": "Cars Land quick-service locations closed at DCA",
+        "body": "Three popular quick-service dining spots in Cars Land at Disney California Adventure shut down on July 9. Disneyland's website does not currently list the closures or provide a reopening timeline.",
+        "parkSlug": "california-adventure",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/07/disneyland-confirms-closure-of-cars-land-cozy-cone-motel-area-effective-july-9-jc1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Plan to eat before entering Cars Land or head to Pacific Wharf for backup quick-service options. Lunch crowds may shift to nearby locations, so earlier dining usually helps."
+        }
+      },
+      {
+        "title": "Mickey's Very Merry Christmas Party pricing revealed",
+        "body": "Tickets for the 2026 Mickey's Very Merry Christmas Party are on sale for hotel guests, with most dates priced at two hundred dollars or higher. The event runs select nights in November and December.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/price-increases-for-2026-mickeys-very-merry-christmas-party-make-most-dates-200-or-more/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Early November dates and weeknights tend to cost less and draw lighter crowds. Booking now often locks in current pricing before general public sale drives up demand."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "LEVEL99 extends hours at Disney Springs",
+        "body": "The new interactive game experience at Disney Springs is adding evening hours due to strong guest demand. The venue opened just two weeks ago and has seen higher-than-expected traffic.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/07/09/level99-is-now-open-later-at-disney-springs/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Later hours usually mean lighter crowds after dinner. Visiting after 8pm often offers shorter wait times for challenge rooms than mid-afternoon windows."
+        }
+      },
+      {
+        "title": "Jollywood Nights tickets on sale with 2027 dates",
+        "body": "Disney Jollywood Nights at Hollywood Studios is now available for booking, with select dates in November and December 2026 plus bonus nights in early 2027. Post-Christmas dates are priced lower than peak holiday weeks.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/ticket-prices-for-disney-jollywood-nights-party-with-cheaper-better-dates-after-christmas-in-2027/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "January dates tend to draw smaller crowds and offer better value than pre-Christmas nights. Booking early 2027 sessions often means lower ticket prices and shorter attraction waits."
+        }
+      },
+      {
+        "title": "New Star Wars merchandise at Disneyland",
+        "body": "Disneyland Resort has released a wave of Star Wars products including New Republic marshal badges, Tatooine and Mandalore biome displays, and Maul Shadow Lord action figures. Items are priced between nineteen and thirty dollars.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/tatooine-mandalore-biomes-maul-shadow-lord-figures-more-new-star-wars-merch-at-disneyland/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Limited-run Star Wars items usually sell out within days at Galaxy's Edge locations. Shopping before noon tends to offer the best selection before collectors clear shelves."
+        }
+      },
+      {
+        "title": "Super Nintendo World first anniversary merch at Epic Universe",
+        "body": "Universal Epic Universe has rolled out anniversary merchandise for Super Nintendo World, which celebrated its first year in May. The collection includes spirit jerseys priced at eighty-five dollars and themed home goods.",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/full-list-with-prices-of-super-nintendo-world-first-anniversary-merchandise-at-epic-universe/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Anniversary collections often have limited stock at Super Nintendo World. Early morning visits typically yield the best merch availability before midday crowds arrive."
+        }
+      },
+      {
+        "title": "Gideon's Bakehouse art director steps down",
+        "body": "The visual identity lead for Gideon's Bakehouse at Disney Springs has left the company. The brand is known for its distinctive gothic aesthetic and carefully designed packaging.",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/07/the-gideons-bakehouse-era-at-disney-springs-may-be-over-for-good-el1/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Branding changes may signal shifts in product lines or availability. Fans of the current design aesthetic may want to visit soon before any visual updates roll out."
+        }
+      },
+      {
+        "title": "GANNI and Disney launch new Daisy Duck collection",
+        "body": "Fashion brand GANNI has released its third collaboration with Disney, featuring Daisy Duck and Minnie Mouse in Paris-themed designs. The drop continues a series exploring Daisy's personal style journey.",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/products/ganni-disney-unveil-new-daisy-duck-collection/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Limited fashion collaborations usually sell out quickly online and at Disneyland and World of Disney locations. Checking inventory first thing in the morning often yields the best size selection."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Disney announces America's 250th anniversary celebration",
+        "body": "The Walt Disney Company has launched Disney Celebrates America, a multi-month initiative running from Veterans Day 2025 through July 4, 2026. The program includes park events, content releases, and patriotic programming across Disney platforms.",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/disney-experiences/disney-festivities-announced-for-americas-250th-anniversary/"
+        }
+      },
+      {
+        "title": "Disneyland Resort marks one billion total guests",
+        "body": "Disneyland Park and Disney California Adventure collectively welcomed their billionth visitor since Disneyland's 1955 opening. The milestone was celebrated with a ceremony at the Disneyland entrance on July 3.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/dlr/disneyland-one-billionth-guest/"
+        }
+      },
+      {
+        "title": "Ron Clements memoir now available for pre-order",
+        "body": "Disney animation director Ron Clements has a new book releasing through Disney Editions Deluxe. Making Disney Magic covers his work on The Little Mermaid, Aladdin, Moana, and other films, and is priced at forty-two dollars on Amazon.",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/new-memoir-from-ron-clements-prolific-disney-animator-and-director-now-available-for-pre-order/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "Pixar Pals Spectacular debuts at Hong Kong Disneyland",
+        "body": "Hong Kong Disneyland has launched a new nighttime spectacular celebrating Pixar films. The show transforms the Castle of Magical Dreams and Main Street USA with projections and effects highlighting Pixar friendships and storytelling. Behind-the-scenes cast profiles showcase the creative team responsible for the production.",
+        "ctaLabel": "Read Hong Kong Disneyland news",
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Major nighttime shows typically draw heavy crowds near the castle. Staking out viewing spots thirty to forty-five minutes early usually secures better sightlines than arriving at showtime."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "-XPaF-s9BFg",
+      "title": "Disney's Vero Beach Resort 2026 | Full Tour, Oceanview Room & Character Dining | Disney Resort | DVC",
+      "channel": "Paging Mr. Morrow",
+      "publishedAt": "2026-07-05T13:00:13Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/-XPaF-s9BFg/mqdefault.jpg",
+      "viewCount": 106301,
+      "url": "https://www.youtube.com/watch?v=-XPaF-s9BFg",
+      "summary": "Paging Mr. Morrow tours Disney's Vero Beach Resort in 2026, covering oceanview rooms and character dining experiences at this DVC property."
+    },
+    {
+      "videoId": "uPavMuYC4GE",
+      "title": "Every NEW Food at Disney Springs- The Boathouse, Chicken Guy & More! | Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-07-08T16:00:09Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/uPavMuYC4GE/mqdefault.jpg",
+      "viewCount": 31731,
+      "url": "https://www.youtube.com/watch?v=uPavMuYC4GE",
+      "summary": "WrightDownMainStreet samples new menu items at Disney Springs locations including The Boathouse and Chicken Guy."
+    },
+    {
+      "videoId": "0AEc72VGxwc",
+      "title": "Món Ăn Vặt Nhỏ Nhất Ở Disneyland! Bạn Sẽ Bất Ngờ!",
+      "channel": "Hiểu biết mỗi ngày",
+      "publishedAt": "2026-07-10T04:00:31Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/0AEc72VGxwc/mqdefault.jpg",
+      "viewCount": 29770,
+      "url": "https://www.youtube.com/watch?v=0AEc72VGxwc",
+      "summary": "This channel explores surprisingly small snack offerings at Disneyland in a Vietnamese-language video."
+    },
+    {
+      "videoId": "RsEN6qvRs80",
+      "title": "Disney Worlds BEST Restaurant? | Jiko at Animal Kingdom Lodge",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-07-05T15:58:18Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/RsEN6qvRs80/mqdefault.jpg",
+      "viewCount": 25836,
+      "url": "https://www.youtube.com/watch?v=RsEN6qvRs80",
+      "summary": "WrightDownMainStreet reviews Jiko restaurant at Animal Kingdom Lodge and evaluates whether it's the best dining spot at Walt Disney World."
+    },
+    {
+      "videoId": "u35RYHhNo3A",
+      "title": "🔴 LIVE: Happily Ever After – EPIC Nighttime Spectacular, Disney World – Full Show 4K",
+      "channel": "Fun to be Free",
+      "publishedAt": "2026-07-10T04:44:13Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/u35RYHhNo3A/mqdefault.jpg",
+      "viewCount": 12715,
+      "url": "https://www.youtube.com/watch?v=u35RYHhNo3A",
+      "summary": "Fun to be Free livestreams the complete Happily Ever After fireworks show at Magic Kingdom in 4K resolution."
+    },
+    {
+      "videoId": "N1pzeo9Mv5k",
+      "title": "Comment the answer!! #trending #disney #disneyland",
+      "channel": "FARA",
+      "publishedAt": "2026-07-10T04:28:44Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/N1pzeo9Mv5k/mqdefault.jpg",
+      "viewCount": 10903,
+      "url": "https://www.youtube.com/watch?v=N1pzeo9Mv5k",
+      "summary": "FARA posts a trending Disney or Disneyland trivia question asking viewers to comment their answers."
+    },
+    {
+      "videoId": "CBErbGqGh5M",
+      "title": "My heart 🥰My eyes 😭#disney #disneyland #foryou #love",
+      "channel": "ANURAG DJ BEATS 7K",
+      "publishedAt": "2026-07-10T08:59:47Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/CBErbGqGh5M/mqdefault.jpg",
+      "viewCount": 9520,
+      "url": "https://www.youtube.com/watch?v=CBErbGqGh5M",
+      "summary": "ANURAG DJ BEATS 7K shares an emotional Disney or Disneyland moment highlighting heartfelt park experiences."
+    },
+    {
+      "videoId": "GS0k6D9BuBE",
+      "title": "#LIVE Disneyland Sunshine and Lollipops, Rides, Characters, New Merch",
+      "channel": "Main Street Cowgirl",
+      "publishedAt": "2026-07-10T07:46:13Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/GS0k6D9BuBE/mqdefault.jpg",
+      "viewCount": 9376,
+      "url": "https://www.youtube.com/watch?v=GS0k6D9BuBE",
+      "summary": "Main Street Cowgirl livestreams from Disneyland covering rides, character encounters, and newly released merchandise."
+    },
+    {
+      "videoId": "9lkSIw5ljqI",
+      "title": "🔴LIVE from Magic Kingdom | A Perfect Summer Night at Walt Disney World",
+      "channel": "Cory Meets World",
+      "publishedAt": "2026-07-10T03:07:04Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/9lkSIw5ljqI/mqdefault.jpg",
+      "viewCount": 8476,
+      "url": "https://www.youtube.com/watch?v=9lkSIw5ljqI",
+      "summary": "Cory Meets World broadcasts live from Magic Kingdom during an evening visit to Walt Disney World."
+    },
+    {
+      "videoId": "R9-B50n4xXY",
+      "title": "disneyyy 🎢 | #disney #disneyland #preppy #grwm #viral #fyp",
+      "channel": "𝓂𝒶𝓇𝒾 ",
+      "publishedAt": "2026-07-10T03:51:53Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/R9-B50n4xXY/mqdefault.jpg",
+      "viewCount": 1808,
+      "url": "https://www.youtube.com/watch?v=R9-B50n4xXY",
+      "summary": "Mari shares a get-ready-with-me style video themed around a Disney or Disneyland visit."
+    }
+  ],
+  "updatedAt": "2026-07-10T13:04:17.678Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-07-10T13:04:17.678Z",
+    "tokens": {
+      "input": 12177,
+      "output": 5218,
+      "costUsd": 0.1148
+    }
+  }
+}
