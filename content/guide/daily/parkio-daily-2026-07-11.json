@@ -1,0 +1,349 @@
+{
+  "title": "Parkio Daily for July 11, 2026",
+  "slug": "parkio-daily-2026-07-11",
+  "date": "2026-07-11",
+  "teaser": "Fort Wilderness pool and lobby reopened; Space Mountain rebuild rumored; Fantasmic firework went off-course last night at Hollywood Studios.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Test Track",
+        "parkSlug": "epcot",
+        "note": "Early morning wait times typically lowest before 10am"
+      },
+      {
+        "name": "Flight of Passage",
+        "parkSlug": "animal-kingdom",
+        "note": "Rope drop window usually offers sub-30-minute waits"
+      },
+      {
+        "name": "Radiator Springs Racers",
+        "parkSlug": "california-adventure",
+        "note": "First hour after park open tends to be shortest queue"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [
+      {
+        "title": "Firework Misfired Into Fantasmic Crowd at Hollywood Studios",
+        "body": "A stray pyrotechnic element from the Fantasmic nighttime show discharged into the guest viewing area on July 10. No injuries have been publicly reported, but the incident was captured on video by parkgoers.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/video-stray-firework-shoots-into-fantasmic-crowd-at-disneys-hollywood-studios-in-todays-daily-recap-for-7-10-2026/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Pyrotechnic shows occasionally face technical adjustments after incidents. Tonight's Fantasmic may see modified effects or a backup show format—arrive early if it matters to your evening plans."
+        }
+      }
+    ],
+    "bignews": [
+      {
+        "title": "Fort Wilderness Pool Area and Lobby Refresh Complete",
+        "body": "The resort's modernized pool deck and front-lobby renovation are now open to guests. New seating, updated finishes, and expanded family pool space headline the changes at the 54-year-old property.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/new-pool-area-and-refreshed-lobby-at-fort-wilderness/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "The pool refresh tends to draw curious resort guests in the first few weeks. Afternoons and evenings usually see heavier traffic—mornings often remain quieter for swimmers."
+        }
+      },
+      {
+        "title": "Space Mountain Rebuild Gaining Traction in Rumor Mill",
+        "body": "Multiple fan sites are reporting that a multi-year closure and track replacement for Magic Kingdom's Space Mountain may be announced at D23 Expo next month. No official confirmation has been released by Disney.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/space-mountain-reimagining-rumored-at-disney-world/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "If a long closure is announced in August, expect a spike in Space Mountain ridership through late summer and fall. Riding during the next few weeks—before any confirmation—usually avoids the farewell rush."
+        }
+      },
+      {
+        "title": "Star View Station Closing for Extended Work at Disneyland",
+        "body": "The quick-service spot in Tomorrowland will shut down for a multi-month refurbishment starting soon. Reopening timeline has not been shared.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/star-view-station-closing-for-multi-month-refurbishment/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Tomorrowland counter-service options will shrink once construction begins. Alien Pizza Planet and Galactic Grill may see longer lines during peak meal windows—ordering mobile ahead often cuts 10–15 minutes."
+        }
+      },
+      {
+        "title": "Bartender's Bash Returns to Disney Springs for One Night",
+        "body": "The Edison will host the popular mixology competition and tasting event for a single evening this month. Tickets are on sale now and historically sell out quickly.",
+        "parkSlug": null,
+        "source": {
+          "label": "AllEars.Net",
+          "url": "https://allears.net/2026/07/10/youre-not-going-to-want-to-miss-this-disney-springs-event/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Single-night events at The Edison tend to draw heavy foot traffic in the Landing district. Arrive at Disney Springs 30–45 minutes before your ticket window to avoid parking delays."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "Virtual Queue Changes for Star Wars Rise of the Resistance",
+        "body": "Disney has updated the boarding-group system for the Galaxy's Edge headliner, though specifics of the adjustment have not been detailed in guest communications.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/07/disney-parks-star-wars-virtual-queue-change-cj1/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Virtual queue tweaks sometimes redistribute boarding windows. Joining at the 7am drop usually offers more group availability than the 1pm window, especially on busy days."
+        }
+      },
+      {
+        "title": "Cinderella Castle Forecourt Stage Repainting Underway",
+        "body": "Following the castle's own color refresh, crews have begun recoating the stage structure in front of the icon. Work is happening during daytime hours with partial view obstruction.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/07/disney-world-replace-current-cinderella-castle-structure-th1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Castle photos from the Hub tend to include scaffolding or scrim during midday. Shooting from the train-station end of Main Street or after dark often minimizes construction visibility."
+        }
+      },
+      {
+        "title": "Level99 Extends Hours at Disney Springs",
+        "body": "The interactive challenge attraction has added evening time slots due to higher-than-expected guest demand in its opening weeks. Updated hours are live on the booking site.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/level99-at-disney-world-extending-hours-due-to-strong-guest-demand/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Late-evening slots—after 8pm—often see lighter crowds and shorter challenge waits. Booking the final session of the night may offer a more relaxed experience than afternoon blocks."
+        }
+      },
+      {
+        "title": "New African-Style Meat Pie Debuts at Animal Kingdom",
+        "body": "A limited-time savory pastry has appeared at a quick-service window in the park, drawing positive early reviews from food bloggers.",
+        "parkSlug": "animal-kingdom",
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/07/10/review-we-need-more-snacks-like-this-at-disneys-animal-kingdom/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Limited-time snacks sometimes disappear without warning. Trying new menu items in the first few days usually ensures availability before sell-outs or recipe changes."
+        }
+      },
+      {
+        "title": "Spaceship Earth and Pirates Lounges Add Walk-Up Waitlist",
+        "body": "The GEO-82 bar inside Spaceship Earth and the Beak and Barrel tavern in Magic Kingdom now show waitlist functionality in My Disney Experience, signaling non-reservation seating may launch soon.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/spaceship-earth-pirates-of-caribbean-lounges-add-walk-up-waitlist-in-disney-world-app/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Walk-up lists tend to move faster during off-peak hours. Checking in between 2–4pm or after 9pm often results in shorter physical wait than prime dinner windows."
+        }
+      },
+      {
+        "title": "Marketplace Co-Op Refurbishment Progresses at Disney Springs",
+        "body": "A second section of the retail pavilion is now behind curtains for floor and paint updates. A previously closed area has reopened with fresh finishes.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/marketplace-co-op-refurbishments-continue-at-disney-springs/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Rotating closures inside Marketplace Co-Op limit merchandise access. If you're hunting specific items from Wonderground Gallery or Cherry Tree Lane, calling ahead often confirms which sections are open."
+        }
+      },
+      {
+        "title": "New Star Wars and Haunted Mansion MagicBands Released Online",
+        "body": "A fresh wave of MagicBand Plus designs tied to Galaxy's Edge and the Haunted Mansion franchise is now available on shopDisney and at select resort gift shops.",
+        "parkSlug": null,
+        "source": {
+          "label": "AllEars.Net",
+          "url": "https://allears.net/2026/07/10/new-star-wars-and-haunted-mansion-magicbands-just-launched-online/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Popular MagicBand designs often sell out within days at in-park locations. Ordering online before your trip usually guarantees your preferred color and avoids resort-shop stockouts."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Chocolate Milk Bottle Arrives at Disney Springs",
+        "body": "A premium bottled chocolate milk has debuted at a Disney Springs quick-service location, earning strong reviews for flavor despite a higher price point.",
+        "parkSlug": null,
+        "source": {
+          "label": "AllEars.Net",
+          "url": "https://allears.net/2026/07/10/review-this-fancy-chocolate-milk-from-disney-springs-will-live-rent-free-in-our-minds/"
+        }
+      },
+      {
+        "title": "Disney Celebrates America Initiative Announced",
+        "body": "The company launched a cross-platform program honoring the nation's 250th anniversary, running from Veterans Day 2025 through July 4, 2026, with in-park activations and content.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/disney-experiences/disney-festivities-announced-for-americas-250th-anniversary/"
+        }
+      },
+      {
+        "title": "Don Iwerks Remembered as Disney Legend",
+        "body": "The son of animation pioneer Ub Iwerks and himself a technical innovator in theme-park projection and imaging systems has passed away. Disney honored his decades of contributions in an official statement.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/disney-experiences/remembering-disney-legend-don-iwerks/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "Moana Presence Expands Across Global Disney Parks",
+        "body": "Character meet-and-greets, live entertainment acts, and themed environments tied to the Moana franchise are rolling out at resorts worldwide, coinciding with the live-action film release. New experiences span Disneyland, Walt Disney World, and international properties.",
+        "parkSlug": null,
+        "ctaLabel": "Check character schedules in My Disney Experience",
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Character debuts typically draw long queues in the first few weeks. Arriving at meet-and-greet locations 15–20 minutes before the posted start time often secures a spot in the first rotation."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "-XPaF-s9BFg",
+      "title": "Disney's Vero Beach Resort 2026 | Full Tour, Oceanview Room & Character Dining | Disney Resort | DVC",
+      "channel": "Paging Mr. Morrow",
+      "publishedAt": "2026-07-05T13:00:13Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/-XPaF-s9BFg/mqdefault.jpg",
+      "viewCount": 110315,
+      "url": "https://www.youtube.com/watch?v=-XPaF-s9BFg",
+      "summary": "A complete walkthrough of Disney's Vero Beach Resort covering the oceanview accommodations and character dining experience."
+    },
+    {
+      "videoId": "WLqAlX081l0",
+      "title": "🔴Live Magic Kingdom Friday with Rides, Shows, Parades, Fireworks at Walt Disney World 7/10/2026",
+      "channel": "RON ON THE GO",
+      "publishedAt": "2026-07-11T04:05:02Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/WLqAlX081l0/mqdefault.jpg",
+      "viewCount": 43929,
+      "url": "https://www.youtube.com/watch?v=WLqAlX081l0",
+      "summary": "Live stream from Magic Kingdom on July 10 featuring attractions, entertainment, and the evening fireworks spectacular."
+    },
+    {
+      "videoId": "uPavMuYC4GE",
+      "title": "Every NEW Food at Disney Springs- The Boathouse, Chicken Guy & More! | Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-07-08T16:00:09Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/uPavMuYC4GE/mqdefault.jpg",
+      "viewCount": 36074,
+      "url": "https://www.youtube.com/watch?v=uPavMuYC4GE",
+      "summary": "A roundup of recently introduced menu items at multiple Disney Springs dining locations including The Boathouse and Chicken Guy."
+    },
+    {
+      "videoId": "E6AhcBGhNRc",
+      "title": "🔴Live: Friday Night Live at Epcot - Walt Disney World Live Stream - 7-10-26",
+      "channel": "ResortTV1",
+      "publishedAt": "2026-07-11T03:18:23Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/E6AhcBGhNRc/mqdefault.jpg",
+      "viewCount": 31069,
+      "url": "https://www.youtube.com/watch?v=E6AhcBGhNRc",
+      "summary": "Live evening coverage from Epcot on July 10 showcasing the park atmosphere and nighttime offerings."
+    },
+    {
+      "videoId": "RsEN6qvRs80",
+      "title": "Disney Worlds BEST Restaurant? | Jiko at Animal Kingdom Lodge",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-07-05T15:58:18Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/RsEN6qvRs80/mqdefault.jpg",
+      "viewCount": 26553,
+      "url": "https://www.youtube.com/watch?v=RsEN6qvRs80",
+      "summary": "A dining review and tour of Jiko, the signature restaurant at Animal Kingdom Lodge."
+    },
+    {
+      "videoId": "NzIPuEzanJ0",
+      "title": "When a child sees a character they like at Disneyland #disney #disneyland #lol #fyp #happy",
+      "channel": "Le Nguyen",
+      "publishedAt": "2026-07-11T03:06:40Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/NzIPuEzanJ0/mqdefault.jpg",
+      "viewCount": 7140,
+      "url": "https://www.youtube.com/watch?v=NzIPuEzanJ0",
+      "summary": "A short clip capturing a child's reaction to meeting a favorite character at Disneyland."
+    },
+    {
+      "videoId": "G0hVWvgf4U8",
+      "title": "My heart 🥰My eyes 😭#disney #disneyland #foryou #love",
+      "channel": "ANURAG DJ BEATS 7K",
+      "publishedAt": "2026-07-11T09:24:47Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/G0hVWvgf4U8/mqdefault.jpg",
+      "viewCount": 5933,
+      "url": "https://www.youtube.com/watch?v=G0hVWvgf4U8",
+      "summary": "An emotional moment captured at a Disney park."
+    },
+    {
+      "videoId": "7sPb6Yi4fkE",
+      "title": "#LIVE Disneyland Friday I'm in Love, Rides, Characters, New Merch",
+      "channel": "Main Street Cowgirl",
+      "publishedAt": "2026-07-11T04:49:02Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/7sPb6Yi4fkE/mqdefault.jpg",
+      "viewCount": 5888,
+      "url": "https://www.youtube.com/watch?v=7sPb6Yi4fkE",
+      "summary": "Live Friday stream from Disneyland featuring attractions, character encounters, and new merchandise finds."
+    },
+    {
+      "videoId": "slvp7JUSYCs",
+      "title": "Funny Star Wars park.🤣🤣💕#funny #starwars #disney #fyp #disneyland",
+      "channel": "ahmed balegh",
+      "publishedAt": "2026-07-11T03:26:57Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/slvp7JUSYCs/mqdefault.jpg",
+      "viewCount": 2855,
+      "url": "https://www.youtube.com/watch?v=slvp7JUSYCs",
+      "summary": "A humorous moment filmed in the Star Wars area of a Disney park."
+    },
+    {
+      "videoId": "rS7DnU3K8Jc",
+      "title": "Take me to #Disneyland #Disney #DisneyParks #DisneyWorld #WaltDisneyWorld #MagicKingdom #vacation￼￼",
+      "channel": "CastleWander",
+      "publishedAt": "2026-07-11T02:46:11Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/rS7DnU3K8Jc/mqdefault.jpg",
+      "viewCount": 1938,
+      "url": "https://www.youtube.com/watch?v=rS7DnU3K8Jc",
+      "summary": "A vacation highlight reel from Disneyland and Walt Disney World."
+    }
+  ],
+  "updatedAt": "2026-07-11T11:45:18.040Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-07-11T11:45:18.040Z",
+    "tokens": {
+      "input": 12017,
+      "output": 5366,
+      "costUsd": 0.1165
+    }
+  }
+}
