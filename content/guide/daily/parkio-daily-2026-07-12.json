@@ -1,0 +1,341 @@
+{
+  "title": "Parkio Daily for July 12, 2026",
+  "slug": "parkio-daily-2026-07-12",
+  "date": "2026-07-12",
+  "teaser": "Fort Wilderness debuts a new pool area; Magic Kingdom lightning strike closed rides last week; Space Mountain reimagining rumored.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Soarin'",
+        "parkSlug": "epcot",
+        "note": "Low waits during dinner hour"
+      },
+      {
+        "name": "Flight of Passage",
+        "parkSlug": "animal-kingdom",
+        "note": "First hour of park open"
+      },
+      {
+        "name": "Space Mountain",
+        "parkSlug": "magic-kingdom",
+        "note": "Early morning windows"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [],
+    "bignews": [
+      {
+        "title": "Fort Wilderness unveils new pool area and refreshed lobby",
+        "body": "Disney's Fort Wilderness Resort & Campground has completed a refresh including a redesigned pool area and updated lobby. The enhancements add more recreational space to the 750-acre wooded resort.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/new-pool-area-and-refreshed-lobby-at-fort-wilderness/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "The new pool area tends to be less crowded in late afternoon. Guests staying at Fort Wilderness may find the refreshed spaces offer a quieter escape after mid-park days."
+        }
+      },
+      {
+        "title": "Lightning strike hit Magic Kingdom building during storm last week",
+        "body": "A lightning bolt reportedly struck a Fantasyland building at Magic Kingdom during severe weather on July 5, briefly forcing ride closures and sending guests to shelter. Video captured the moment of impact.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/07/lightning-strikes-building-at-magic-kingdom-park-jc1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Summer afternoon thunderstorms usually arrive between 2pm and 5pm. Plan indoor attractions or dining during that window to avoid evacuation delays."
+        }
+      },
+      {
+        "title": "Space Mountain reimagining rumored ahead of D23 Expo",
+        "body": "Industry chatter suggests a major rebuild of Space Mountain at Magic Kingdom may be announced at D23 Expo next month. The project would likely involve retracking and significant interior updates.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/space-mountain-reimagining-rumored-at-disney-world/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "If the closure is confirmed at D23, riders may have only a few months left. Knock out Space Mountain during morning Extra Magic Hours while the announcement is still unconfirmed."
+        }
+      },
+      {
+        "title": "New Moana-themed drink debuts at EPCOT",
+        "body": "A new Moana-inspired beverage is now available at EPCOT, tying in with the live-action film's theatrical run. The drink costs seven dollars and has drawn positive early reviews.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/07/11/review-the-new-7-drink-well-be-sipping-on-all-day-in-epcot/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Festival kiosks tend to sell out of specialty drinks by early evening. Stop by World Showcase before 4pm to try the new Moana beverage while supply lasts."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "Star View Station at Disneyland closing for multi-month refurbishment",
+        "body": "The Tomorrowland lounge and meet-and-greet space at Disneyland will close for an extended refurbishment. No reopening timeline has been announced.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/star-view-station-closing-for-multi-month-refurbishment/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Families with young children often use Star View Station as a quiet break spot. Plan alternative rest areas like the Hungry Bear patio or Main Street Opera House during the closure."
+        }
+      },
+      {
+        "title": "Rebecca Hook launching Ghost Mickey necklace at Disneyland trunk show",
+        "body": "Designer Rebecca Hook will debut a new Ghost Mickey necklace at a trunk show running July 17-19 at the Emporium on Main Street, U.S.A. The piece is expected to be available park-wide shortly after.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/rebecca-hook-launching-ghost-mickey-necklace-at-disneyland/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Limited-edition trunk show releases often sell out within the first few hours. Arrive at the Emporium before 10am on opening day for the best selection."
+        }
+      },
+      {
+        "title": "Wait times dropped unexpectedly during Fourth of July week",
+        "body": "Disney World saw lighter-than-expected crowds during the Independence Day holiday period, with average wait times lower than typical summer weeks. Multiple parks experienced walk-on windows.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/07/11/the-4th-of-july-had-a-surprising-effect-on-disney-worlds-wait-times-last-week/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Mid-July weekdays often stay quieter than expected after holiday visitors leave. Today and Monday may offer shorter lines before summer crowds return next weekend."
+        }
+      },
+      {
+        "title": "Jonas Brothers announced for D23 Expo performance",
+        "body": "The Jonas Brothers will perform at D23: The Ultimate Disney Fan Event next month. The band joins an expanding lineup of entertainment for the biennial convention.",
+        "parkSlug": null,
+        "source": {
+          "label": "AllEars.Net",
+          "url": "https://allears.net/2026/07/11/disney-just-made-d23-even-better-and-we-didnt-know-that-was-possible/"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "D23 Expo weekend in August usually draws heavy crowds to Anaheim hotels and Disneyland Resort. Book dining reservations and Lightning Lane selections well in advance if visiting that week."
+        }
+      },
+      {
+        "title": "Dogs now allowed at select Disney restaurant patios",
+        "body": "One Disney resort has updated pet policies to permit dogs at five restaurant outdoor seating areas starting this week. The change applies only to designated patio zones.",
+        "parkSlug": null,
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/07/disney-parks-dogs-restaurants-rule-change-cj1/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Guests traveling with service animals may find the expanded seating options helpful during peak meal times. Call ahead to confirm availability at your preferred location."
+        }
+      },
+      {
+        "title": "Moana Urupocha-Chan plush collection available online",
+        "body": "A full line of Moana character plushes in the Urupocha-Chan style has arrived at the Disney Store online. The collection includes Pua, Tamatoa, and Kakamora figures previously sold only in parks.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/moana-urupocha-chan-plush-now-available-online-at-disney-store/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Popular plush releases often sell out online within days. Ordering before Monday typically ensures stock before the weekend rush hits."
+        }
+      },
+      {
+        "title": "Live-action Moana opens softly with 18 million on first day",
+        "body": "The new live-action Moana film earned 18 million dollars on opening day, including previews, marking a slower start than recent Disney remakes. The adaptation features Dwayne Johnson reprising his voice role in live action.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/live-action-moana-makes-only-18-million-on-opening-day/"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "Moana character meet-and-greets may see lighter demand than anticipated if box office trends continue. Today's wait for the Adventureland meet is likely under 30 minutes."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Disney remembers Imagineer Don Iwerks",
+        "body": "The Walt Disney Company paid tribute to Disney Legend Don Iwerks, son of animation pioneer Ub Iwerks, who contributed decades of technical innovation to theme parks and film.",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/disney-experiences/remembering-disney-legend-don-iwerks/"
+        }
+      },
+      {
+        "title": "Customizable crystal castles debut at Disneyland",
+        "body": "Arribas Brothers at Cristal d'Orleans now offers hollow crystal Sleeping Beauty Castle figures that guests can fill with custom beads for 59 dollars. A Remy ornament also launched.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/customizable-crystal-castles-remy-ornament-available-at-disneyland-resort/"
+        }
+      },
+      {
+        "title": "Delta introduces Basic Business seating tier",
+        "body": "Delta Airlines has added a new Basic Business fare class with restricted benefits. The change may affect guests flying to Orlando or Southern California for park visits.",
+        "source": {
+          "label": "AllEars.Net",
+          "url": "https://allears.net/2026/07/11/delta-just-made-major-changes-to-its-seating/"
+        }
+      },
+      {
+        "title": "Disney surveys guests on expanded DVC perks",
+        "body": "Disney Vacation Club is testing interest in enhanced Membership Magic Beyond benefits, including potential dining discounts, lounge access, and exclusive character experiences at both resorts.",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/is-disney-world-bringing-back-tables-in-wonderland-dining-discounts-for-membership-magic-beyond/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "Disney Celebrates America kicks off with 250th anniversary events",
+        "body": "The Walt Disney Company has announced Disney Celebrates America, a multi-month initiative honoring the nation's 250th anniversary from Veterans Day 2025 through July 4, 2026. The program includes park entertainment, storytelling, and special tributes across domestic properties.",
+        "parkSlug": null,
+        "ctaLabel": "Learn more on Disney Parks Blog",
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Patriotic-themed entertainment and limited-time food offerings tend to appear during the finale week. Plan a visit around July 4 weekend for the fullest celebration experience."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "-XPaF-s9BFg",
+      "title": "Disney's Vero Beach Resort 2026 | Full Tour, Oceanview Room & Character Dining | Disney Resort | DVC",
+      "channel": "Paging Mr. Morrow",
+      "publishedAt": "2026-07-05T13:00:13Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/-XPaF-s9BFg/mqdefault.jpg",
+      "viewCount": 114698,
+      "url": "https://www.youtube.com/watch?v=-XPaF-s9BFg",
+      "summary": "Paging Mr. Morrow walks through Disney's Vero Beach Resort, showcasing an oceanview room and character dining experience at the Florida DVC property."
+    },
+    {
+      "videoId": "DDsWIMApYE0",
+      "title": "🔴Live Magic Kingdom with Rides, Shows, Parades, Fireworks at Walt Disney World 7/11/2026",
+      "channel": "RON ON THE GO",
+      "publishedAt": "2026-07-12T03:53:22Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/DDsWIMApYE0/mqdefault.jpg",
+      "viewCount": 45571,
+      "url": "https://www.youtube.com/watch?v=DDsWIMApYE0",
+      "summary": "RON ON THE GO streams live from Magic Kingdom on July 11, covering rides, shows, parades, and fireworks throughout the day."
+    },
+    {
+      "videoId": "uPavMuYC4GE",
+      "title": "Every NEW Food at Disney Springs- The Boathouse, Chicken Guy & More! | Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-07-08T16:00:09Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/uPavMuYC4GE/mqdefault.jpg",
+      "viewCount": 39392,
+      "url": "https://www.youtube.com/watch?v=uPavMuYC4GE",
+      "summary": "WrightDownMainStreet reviews new menu items at multiple Disney Springs restaurants including The Boathouse and Chicken Guy."
+    },
+    {
+      "videoId": "S7DNneAOpyc",
+      "title": "🔴Live: Saturday Evening at Magic Kingdom - 7-11-26 - Walt Disney World Live Stream",
+      "channel": "ResortTV1",
+      "publishedAt": "2026-07-12T03:46:51Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/S7DNneAOpyc/mqdefault.jpg",
+      "viewCount": 37747,
+      "url": "https://www.youtube.com/watch?v=S7DNneAOpyc",
+      "summary": "ResortTV1 broadcasts a Saturday evening live stream from Magic Kingdom on July 11, 2026."
+    },
+    {
+      "videoId": "RsEN6qvRs80",
+      "title": "Disney Worlds BEST Restaurant? | Jiko at Animal Kingdom Lodge",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-07-05T15:58:18Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/RsEN6qvRs80/mqdefault.jpg",
+      "viewCount": 27321,
+      "url": "https://www.youtube.com/watch?v=RsEN6qvRs80",
+      "summary": "WrightDownMainStreet reviews Jiko at Disney's Animal Kingdom Lodge and evaluates whether it ranks among the resort's best dining options."
+    },
+    {
+      "videoId": "Tel4JHH4R-M",
+      "title": "🔴 LIVE  Epcot Center  - Disney World Orlando. -  Guardians of the Galaxy",
+      "channel": "Now Is The Time",
+      "publishedAt": "2026-07-12T04:23:09Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Tel4JHH4R-M/mqdefault.jpg",
+      "viewCount": 7320,
+      "url": "https://www.youtube.com/watch?v=Tel4JHH4R-M",
+      "summary": "Now Is The Time live streams from EPCOT, featuring Guardians of the Galaxy: Cosmic Rewind and other park experiences."
+    },
+    {
+      "videoId": "zgM2UvOaQXo",
+      "title": "LIVE from Disney's Hollywood Studios! Rides, Food Reviews & Fantasmic Nighttime Show | Living in Diz",
+      "channel": "Living in DIZ",
+      "publishedAt": "2026-07-12T04:54:34Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/zgM2UvOaQXo/mqdefault.jpg",
+      "viewCount": 5561,
+      "url": "https://www.youtube.com/watch?v=zgM2UvOaQXo",
+      "summary": "Living in DIZ broadcasts live from Hollywood Studios, covering rides, food reviews, and the Fantasmic nighttime spectacular."
+    },
+    {
+      "videoId": "VUtwLbcikMM",
+      "title": "Chef Mickeys at Walt Disney World",
+      "channel": "DisneyWagon ",
+      "publishedAt": "2026-07-12T02:25:03Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/VUtwLbcikMM/mqdefault.jpg",
+      "viewCount": 1903,
+      "url": "https://www.youtube.com/watch?v=VUtwLbcikMM",
+      "summary": "DisneyWagon explores the Chef Mickey's character dining experience at Disney's Contemporary Resort."
+    },
+    {
+      "videoId": "7guhIBbvH0U",
+      "title": "DISNEY OUTFIT PLANNING #disney #disneystore #disneyland #disneyparks #disneyoutfit",
+      "channel": "Nayeli Alvarez",
+      "publishedAt": "2026-07-12T04:33:15Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/7guhIBbvH0U/mqdefault.jpg",
+      "viewCount": 1639,
+      "url": "https://www.youtube.com/watch?v=7guhIBbvH0U",
+      "summary": "Nayeli Alvarez shares Disney outfit planning tips for upcoming park visits."
+    },
+    {
+      "videoId": "ZNiwYrXe6BY",
+      "title": "MATTERHORN BOBSLEDS LEFT SIDE Disneyland #rollercoaster #disney #disneyland #matterhorn",
+      "channel": "TwistedMattyG",
+      "publishedAt": "2026-07-12T02:32:19Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/ZNiwYrXe6BY/mqdefault.jpg",
+      "viewCount": 1360,
+      "url": "https://www.youtube.com/watch?v=ZNiwYrXe6BY",
+      "summary": "TwistedMattyG rides the left track of Matterhorn Bobsleds at Disneyland, capturing the full roller coaster experience."
+    }
+  ],
+  "updatedAt": "2026-07-12T11:51:45.548Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-07-12T11:51:45.548Z",
+    "tokens": {
+      "input": 12097,
+      "output": 5242,
+      "costUsd": 0.1149
+    }
+  }
+}
