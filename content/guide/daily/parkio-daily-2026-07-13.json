@@ -1,0 +1,345 @@
+{
+  "title": "Parkio Daily for July 13, 2026",
+  "slug": "parkio-daily-2026-07-13",
+  "date": "2026-07-13",
+  "teaser": "Polynesian's new bus stop opens today; Frontierland boardwalk closes soon; Fort Wilderness pool area debuts.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Test Track",
+        "parkSlug": "epcot",
+        "note": "Post-refurb waits staying moderate"
+      },
+      {
+        "name": "Big Thunder Mountain Railroad",
+        "parkSlug": "magic-kingdom",
+        "note": "Reopened with minimal lines"
+      },
+      {
+        "name": "Rock 'n' Roller Coaster",
+        "parkSlug": "hollywood-studios",
+        "note": "Muppets version drawing lighter crowds"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [
+      {
+        "title": "Polynesian Village bus stop opens today",
+        "body": "The redesigned bus stop at Disney's Polynesian Village Resort began operating this morning after months of construction. Guests now use the new facility for all park and resort transportation.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/new-bus-stop-opens-at-disneys-polynesian-village-resort/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Morning pickup times may be slightly longer today as guests adjust to the new layout. Arriving five minutes earlier than usual tends to smooth out any confusion during the first week."
+        }
+      }
+    ],
+    "bignews": [
+      {
+        "title": "Fort Wilderness unveils new pool area and refreshed lobby",
+        "body": "Disney's Fort Wilderness Resort has completed a major update, introducing a redesigned pool complex and modernized lobby spaces. The resort's woodland theming remains intact throughout the refresh.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/new-pool-area-and-refreshed-lobby-at-fort-wilderness/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "The new pool area is likely to draw resort guests mid-afternoon. Visiting before 11am or after 5pm usually offers quieter access and shorter waits for poolside seating."
+        }
+      },
+      {
+        "title": "Magic Kingdom preparing to close Frontierland boardwalk shortcut",
+        "body": "The Frontierland boardwalk walkway has been removed from park maps and will soon close entirely as construction work near the Rivers of America continues. The shortcut has been gradually restricted over recent months.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-world-prepares-to-close-frontierland-shortcut/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Plan extra walking time between Liberty Square and Splash Mountain areas once the closure takes effect. Routing through the main Frontierland path adds roughly five minutes during moderate crowd levels."
+        }
+      },
+      {
+        "title": "Tomorrowland entrance pillars removed ahead of potential overhaul",
+        "body": "Magic Kingdom quietly dismantled the final 1990s-era decorative pillars at Tomorrowland's entrance, marking another step in rumored land-wide renovations. The structures had stood since the land's last major redesign.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/07/disney-takes-down-final-1990s-pillars-leading-into-tomorrowland-ahead-of-possible-major-changes-at-magic-kingdom-land-rl1/"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "Tomorrowland entrance areas may see minor foot-traffic rerouting during the work. Arriving via the carousel side rather than the main hub path often avoids bottlenecks when construction zones are active."
+        }
+      },
+      {
+        "title": "Hollywood Studios expands Muppets area with second project",
+        "body": "Disney has launched additional development work in the Muppets courtyard at Hollywood Studios, following the recent debut of Rock 'n' Roller Coaster Starring The Muppets earlier this year. Details on the expansion remain unannounced.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/07/confirmed-disney-launches-2nd-muppets-land-project-at-hollywood-studios-ab1/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "The current Muppets area is likely to see increased guest interest as word spreads. Visiting between rope drop and 10am usually offers the shortest waits for Rock 'n' Roller Coaster before midday crowds arrive."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "Port Royal shop reopens with Halloween merchandise at Disneyland",
+        "body": "Port Royal Curios and Curiosities has returned to New Orleans Square at Disneyland Park, now stocked with early Halloween items including character accessories and seasonal apparel. The space previously operated as a jazz club seating area.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/port-royal-curios-and-curiosities-reopens-with-halloween-merchandise/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Halloween merchandise at Disneyland typically sells out quickly in flagship locations. Stopping by before noon today likely secures the best selection before popular items disappear."
+        }
+      },
+      {
+        "title": "Caribbean Beach debuts Little Mermaid-themed rooms",
+        "body": "Disney's Caribbean Beach Resort has completed a reimagining of select guest rooms with Under the Sea theming inspired by The Little Mermaid. The update replaces the resort's previous pirate-themed accommodations.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/photos-video-little-mermaid-rooms-caribbean-beach-resort/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Newly themed rooms often book up weeks in advance once word spreads. Checking availability for fall and winter stays today may offer better selection before demand increases."
+        }
+      },
+      {
+        "title": "Tokyo Disney Resort announces fall Halloween event dates",
+        "body": "Tokyo Disney Resort confirmed its annual Disney Halloween celebration will run from September 16 through November, featuring the returning Disney Villains parade, character Halloween Greeting, and the Coco-themed event.",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/tokyo-disney-resort-halloween-2026-dates-details/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "International park Halloween events often inspire merchandise and programming at domestic resorts. Watching for similar announcements at Walt Disney World and Disneyland over the next few weeks may help plan fall visits."
+        }
+      },
+      {
+        "title": "Sunshine Seasons adds two new menu items at EPCOT",
+        "body": "The counter-service restaurant Sunshine Seasons in EPCOT's The Land pavilion has introduced two fresh dishes to its rotating menu. The location continues to offer breakfast, lunch, and dinner options.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "AllEars.Net",
+          "url": "https://allears.net/2026/07/12/review-we-think-we-just-found-the-most-underrated-restaurant-in-epcot/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Sunshine Seasons usually sees lighter lunch crowds than World Showcase restaurants. Arriving between 11:30am and noon often means shorter lines and immediate seating during the festival season."
+        }
+      },
+      {
+        "title": "Popular Disney World restaurant raises menu prices",
+        "body": "An unnamed but frequently visited Walt Disney World restaurant updated its menu pricing this week, reflecting broader adjustments across resort dining locations. Specific increases were not detailed.",
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/07/12/price-increases-arrive-at-popular-disney-world-restaurant/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Menu price changes tend to ripple across multiple locations within a few weeks. Locking in dining reservations or mobile orders today may secure current pricing before additional updates roll out."
+        }
+      },
+      {
+        "title": "Moana presence expands across Disney Parks globally",
+        "body": "Disney Parks Blog highlighted the growing footprint of Moana-themed experiences worldwide, including live entertainment, character meet-and-greets, and immersive environments at domestic and international resorts.",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/disney-experiences/moana-across-disney-parks-and-beyond/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Character meet locations for Moana tend to see shorter waits during the first and last hours of park operation. Checking the app for current availability often reveals walk-up windows mid-morning."
+        }
+      },
+      {
+        "title": "Loungefly releases Inside Out 2 Ennui accessories online",
+        "body": "Loungefly added a mini backpack and wallet featuring the character Ennui from Inside Out 2 to its online shop. Both items showcase the character's signature periwinkle color scheme and bubble motif.",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/loungefly-releases-inside-out-2-ennui-backpack-and-wallet-online/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Limited-edition Loungefly drops often sell out within days of release. Ordering online today likely ensures availability before stock moves to in-park locations where selection may be thinner."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Disney celebrates America's 250th anniversary through July 4 weekend",
+        "body": "The Walt Disney Company launched a nationwide initiative called Disney Celebrates America, running from Veterans Day 2025 through the July 4, 2026 weekend. The campaign features patriotic programming and in-park festivities.",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/disney-experiences/disney-festivities-announced-for-americas-250th-anniversary/"
+        }
+      },
+      {
+        "title": "Command Performance band returns to UK Pavilion at EPCOT",
+        "body": "The Command Performance band resumed live performances at the United Kingdom Pavilion in EPCOT's World Showcase after a hiatus. The group plays British classics daily.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/moana-live-action-is-verified-hot-by-audiences-on-rotten-tomatoes-in-todays-daily-recap-for-7-12-2026/"
+        }
+      },
+      {
+        "title": "Tinker Bell pixie dust collection launches at Loungefly",
+        "body": "Loungefly released a new Tinker Bell-themed collection featuring black velvet bags with gold appliques of stars, pixie dust, and crescent moons. The line is available online.",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/tinker-bell-pixie-dust-collection-lands-online-at-loungefly/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "Fourth of July weekend wait times defied expectations",
+        "body": "Wait times at Walt Disney World over the Independence Day holiday weekend tracked lower than anticipated despite high attendance, suggesting operational adjustments and guest distribution patterns shifted from prior years.",
+        "source": {
+          "label": "AllEars.Net",
+          "url": "https://allears.net/2026/07/12/disney-world-wait-times-did-what-over-4th-of-july-weekend/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Summer weekdays immediately following major holidays often see lighter crowds as families return home. Visiting Monday through Wednesday this week may offer shorter waits across all four parks before the next weekend surge."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "ifSm1wX0oEM",
+      "title": "Trading for the RAREST Disney Pin 🤯💎 #disneyworld #disney #disneyparks  #disneyland #wdw",
+      "channel": "Summer",
+      "publishedAt": "2026-07-13T03:04:07Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/ifSm1wX0oEM/mqdefault.jpg",
+      "viewCount": 94360,
+      "url": "https://www.youtube.com/watch?v=ifSm1wX0oEM",
+      "summary": "A guest attempts to trade for an extremely rare Disney pin at the parks."
+    },
+    {
+      "videoId": "uPavMuYC4GE",
+      "title": "Every NEW Food at Disney Springs- The Boathouse, Chicken Guy & More! | Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-07-08T16:00:09Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/uPavMuYC4GE/mqdefault.jpg",
+      "viewCount": 41464,
+      "url": "https://www.youtube.com/watch?v=uPavMuYC4GE",
+      "summary": "A comprehensive look at the latest menu additions across Disney Springs dining locations including The Boathouse and Chicken Guy."
+    },
+    {
+      "videoId": "Avko6McfI6s",
+      "title": "The 3 BEST Quick Service Restaurants at Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-07-12T15:46:34Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Avko6McfI6s/mqdefault.jpg",
+      "viewCount": 29117,
+      "url": "https://www.youtube.com/watch?v=Avko6McfI6s",
+      "summary": "The channel ranks its top three counter-service dining spots across Walt Disney World's four parks."
+    },
+    {
+      "videoId": "nIcPhkFlqek",
+      "title": "🔴 LIVE: Magic Kingdom – YOU Pick! Rides & Happily Ever After, Disney World (Full show 4K)",
+      "channel": "Fun to be Free",
+      "publishedAt": "2026-07-13T04:39:40Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/nIcPhkFlqek/mqdefault.jpg",
+      "viewCount": 12135,
+      "url": "https://www.youtube.com/watch?v=nIcPhkFlqek",
+      "summary": "A live stream from Magic Kingdom featuring viewer-selected attractions and the Happily Ever After fireworks show in 4K."
+    },
+    {
+      "videoId": "al_GnKsZ-dY",
+      "title": "My heart 🥰My eyes 😭#disney #disneyland #foryou #love",
+      "channel": "Khoát Nguyễn văn",
+      "publishedAt": "2026-07-13T09:00:16Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/al_GnKsZ-dY/mqdefault.jpg",
+      "viewCount": 8525,
+      "url": "https://www.youtube.com/watch?v=al_GnKsZ-dY",
+      "summary": "An emotional moment captured at Disneyland that resonates with Disney fans."
+    },
+    {
+      "videoId": "ehVIlqgr8EA",
+      "title": "The best Rope Drop at Disneyland #ropedropwrides #disney #disneyland #disneyparks",
+      "channel": "Rope Drop Wrides",
+      "publishedAt": "2026-07-13T03:04:32Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/ehVIlqgr8EA/mqdefault.jpg",
+      "viewCount": 1533,
+      "url": "https://www.youtube.com/watch?v=ehVIlqgr8EA",
+      "summary": "A guide to maximizing the rope drop strategy at Disneyland for the shortest wait times."
+    },
+    {
+      "videoId": "bhQZVmp4P10",
+      "title": "Disney's animatronics are NOT okay 😂 #disney #disneyland",
+      "channel": "Just_a_Guy",
+      "publishedAt": "2026-07-13T04:15:47Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/bhQZVmp4P10/mqdefault.jpg",
+      "viewCount": 1431,
+      "url": "https://www.youtube.com/watch?v=bhQZVmp4P10",
+      "summary": "A humorous take on animatronic malfunctions spotted at Disney parks."
+    },
+    {
+      "videoId": "oKFHgbo8LXc",
+      "title": "to be free ✨ #disney #disneyparktour #disneyland #disneyparks #disneyworld #disneylifestylers",
+      "channel": "Sophia Amato",
+      "publishedAt": "2026-07-13T05:56:08Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/oKFHgbo8LXc/mqdefault.jpg",
+      "viewCount": 1239,
+      "url": "https://www.youtube.com/watch?v=oKFHgbo8LXc",
+      "summary": "A reflective park tour celebrating the freedom and joy of visiting Disney destinations."
+    },
+    {
+      "videoId": "xH5PFRLRers",
+      "title": "@Disney #disneyland #billionaire #attendance @Disneyland #mickymouse",
+      "channel": "Dolores Cantu",
+      "publishedAt": "2026-07-13T05:59:32Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/xH5PFRLRers/mqdefault.jpg",
+      "viewCount": 1231,
+      "url": "https://www.youtube.com/watch?v=xH5PFRLRers",
+      "summary": "Commentary on Disneyland attendance and the Disney experience."
+    },
+    {
+      "videoId": "F7RhHP3sedU",
+      "title": "Don't do that #disneyworld #disneyland #disneytrip #disneyhack #disne",
+      "channel": "Snsysnsnsne",
+      "publishedAt": "2026-07-13T06:52:35Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/F7RhHP3sedU/mqdefault.jpg",
+      "viewCount": 1197,
+      "url": "https://www.youtube.com/watch?v=F7RhHP3sedU",
+      "summary": "A warning about a common Disney park mistake or ineffective hack to avoid."
+    }
+  ],
+  "updatedAt": "2026-07-13T13:12:59.547Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-07-13T13:12:59.547Z",
+    "tokens": {
+      "input": 12102,
+      "output": 5356,
+      "costUsd": 0.1166
+    }
+  }
+}
