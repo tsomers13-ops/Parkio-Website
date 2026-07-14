@@ -1,0 +1,330 @@
+{
+  "title": "Parkio Daily for Monday, July 14, 2026",
+  "slug": "parkio-daily-2026-07-14",
+  "date": "2026-07-14",
+  "teaser": "Gordon Ramsay's Carnaby opens in Downtown Disney; Fort Wilderness debuts new pool area; intersection near Polynesian closes permanently.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Space Mountain",
+        "parkSlug": "magic-kingdom",
+        "note": "Morning window before crowds build"
+      },
+      {
+        "name": "Soarin'",
+        "parkSlug": "epcot",
+        "note": "Short waits during early hours"
+      },
+      {
+        "name": "Flight of Passage",
+        "parkSlug": "animal-kingdom",
+        "note": "Rope drop advantage still strong"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [
+      {
+        "title": "Gordon Ramsay's Carnaby opens in Downtown Disney",
+        "body": "The British gastropub soft-opened on July 13 in the second-floor space above Earl of Sandwich. Menu includes Beef Wellington, sticky toffee pudding, and other signature items at reasonable prices for the chef's brand.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/review-gordon-ramsay-at-the-carnaby-opens-in-downtown-disney-with-beef-wellington-sticky-toffee-pudding-and-more/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "New restaurants tend to fill up fast in the first few weeks. Reservations or early arrival likely give you the best shot at a table before dinner rush."
+        }
+      }
+    ],
+    "bignews": [
+      {
+        "title": "Fort Wilderness unveils expanded pool and refreshed lobby",
+        "body": "The multi-year improvement project at Fort Wilderness Resort hit a milestone with the debut of a larger pool and recreation area plus an updated Reception Outpost lobby. Additional upgrades continue ahead of the Lakeshore Lodge opening in 2027.",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/new-pool-area-and-refreshed-lobby-at-fort-wilderness/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "The new pool area typically offers more shade and seating than older facilities. Visiting during mid-afternoon usually avoids the morning and evening guest peaks."
+        }
+      },
+      {
+        "title": "Seven Seas Drive intersection at Polynesian now permanently closed",
+        "body": "The intersection of Seven Seas Drive and Floridian Way outside Magic Kingdom has closed for good, changing decades-old traffic patterns for Polynesian Village Resort guests. The closure redirects vehicle access away from the longstanding entry point.",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/intersection-that-brought-guests-to-disneys-polynesian-village-resort-for-decades-now-permanently-closed-in-todays-daily-recap-for-7-13-2026/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Rideshare and personal vehicle routes to the Polynesian may take longer during the adjustment period. Monorail or boat transport from Magic Kingdom often proves faster than driving right now."
+        }
+      },
+      {
+        "title": "Neil Patrick Harris to host Disney Parks panel at D23 Expo",
+        "body": "The actor and self-described Figment superfan will host the marquee Parks Panel for the first time at D23 on August 14-16 in Anaheim. The full programming schedule is now live with cosplay meet-ups and other fan events confirmed.",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/figment-fan-neil-patrick-harris-hosting-disney-parks-panel-at-2026-d23-expo/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Major park announcements tend to come from this panel. Catching the livestream or recap posts within an hour often reveals booking windows or limited-time offers before they sell out."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "Solar-powered trash cans reach Morocco Pavilion at EPCOT",
+        "body": "The new compacting bins spotted throughout World Showcase have now arrived in the Morocco Pavilion. The solar units continue their phased rollout across the park.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/solar-powered-trash-cans-arrive-at-morocco-pavilion-in-epcot/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "The new bins tend to reduce overflow and odor in high-traffic areas. Morocco usually sees lighter crowds before lunch, making it a good early stop during Food and Wine season."
+        }
+      },
+      {
+        "title": "American Heritage Gallery reopens at EPCOT's American Adventure",
+        "body": "The gallery is open again after a brief closure, and the columns outside the pavilion are now covered following damage from removed bunting and signage last week.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/columns-covered-and-american-heritage-gallery-reopened-at-american-adventure-in-epcot/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "The gallery offers air-conditioned downtime with rotating exhibits. Mid-afternoon between shows at the American Adventure theater typically means an empty gallery and quick viewing."
+        }
+      },
+      {
+        "title": "Magic Kingdom Frontierland boardwalk shortcut removed from maps",
+        "body": "The popular walkway near Frontierland is being phased out and no longer appears on official park maps. Walls are expected to go up soon as construction work continues adjacent to Big Thunder Mountain.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-world-prepares-to-close-frontierland-shortcut/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Losing this cut-through may add five to seven minutes between Frontierland and Liberty Square during peak hours. Rerouting through the hub before midday usually avoids the worst congestion."
+        }
+      },
+      {
+        "title": "Trader Sam's Tiki Terrace closure extends past forecast at Polynesian",
+        "body": "The outdoor bar area at Disney's Polynesian Village Resort remains closed with no reopening date, far longer than originally announced. The indoor Grog Grotto continues to operate.",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/07/trader-sams-tiki-terrace-at-disneys-polynesian-village-resort-is-still-closed-jc1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "The Grog Grotto tends to reach capacity by early evening without the terrace overflow space. Arriving before 5pm or after 9pm often shortens the wait for a table."
+        }
+      },
+      {
+        "title": "Germany Pavilion construction spreads at EPCOT",
+        "body": "Refurbishment work at the Germany Pavilion has expanded with additional temporary closures now in place across the World Showcase location. Multiple areas are behind walls as crews continue the upgrade project.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/07/disney-world-dismantles-germany-pavilion-at-epcot-closures-abound-th1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Construction noise and blocked pathways tend to disrupt the atmosphere here. China and Italy pavilions next door usually offer better browsing and dining experiences until the work wraps."
+        }
+      },
+      {
+        "title": "Pandora shop at Animal Kingdom temporarily closed",
+        "body": "A retail location in Pandora – The World of Avatar at Disney's Animal Kingdom has closed without advance notice this week. No reopening timeline has been shared.",
+        "parkSlug": "animal-kingdom",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/07/without-warning-disney-world-closes-animal-kingdom-location-indefinitely-th1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Limited merchandise options may mean longer waits at the remaining Pandora shop. Grabbing any Avatar-themed items right after riding Flight of Passage often beats the afternoon rush."
+        }
+      },
+      {
+        "title": "Tokyo Disney announces fall Halloween lineup with Coco event and Villains parade",
+        "body": "Tokyo Disneyland and DisneySea will host the Lazos de la Familia Coco celebration, a new Villains Into the Frenzy parade, and Duffy and Friends Autumn Surprise this fall. The resort also quietly raised prices for the season.",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/halloween-guide-tokyo-disneyland-disneysea/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Halloween events at Tokyo Disney tend to draw international visitors. Booking flights and hotel rooms now often locks in better rates before demand spikes in late summer."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Mickey's of Glendale returns to D23 Expo with Imagineering collection",
+        "body": "The fan-favorite booth will once again sell exclusive Walt Disney Imagineering merchandise at D23: The Ultimate Disney Fan Event in Anaheim, August 14-16.",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/disney-experiences/mickeys-of-glendale-d23-walt-disney-imagineering-collection/"
+        }
+      },
+      {
+        "title": "Disney Cruise Line recognized by Forbes as best brand in social impact",
+        "body": "Forbes named Disney Cruise Line the top cruise company in its Best Brands for Social Impact list for 2026, along with a second category recognition.",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/forbes-recognizes-disney-cruise-line-as-a-best-brand-in-two-categories-for-2026/"
+        }
+      },
+      {
+        "title": "Polynesian Village debuts nature guide mentioning cut-down kukui tree",
+        "body": "A new Nature Guide for kids and families is available at the resort's check-in desk with activities. The guide references the historic kukui nut tree that was removed several weeks ago.",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/disneys-polynesian-village-resort-debuts-new-guide-mentioning-recently-cut-down-kukui-tree/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "Over 20 menu updates rolled out at Disney World restaurants this week",
+        "body": "A wave of menu changes hit multiple dining locations across Walt Disney World in recent days, including new entrees, snacks, and beverage options. The updates span quick-service and table-service venues at all four parks and resort hotels.",
+        "source": {
+          "label": "AllEars.Net",
+          "url": "https://allears.net/2026/07/13/over-20-new-menu-items-came-to-disney-world-this-week/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "New menu items tend to appear on mobile order screens within a day or two of rollout. Checking the My Disney Experience app this morning often reveals fresh options not yet covered in reviews."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "Oj5iQKWklEk",
+      "title": "🔴Live Magic Kingdom All Day Monday Rides Parades and Fireworks at Walt Disney World 7/13/2026",
+      "channel": "RON ON THE GO",
+      "publishedAt": "2026-07-14T02:52:44Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Oj5iQKWklEk/mqdefault.jpg",
+      "viewCount": 44293,
+      "url": "https://www.youtube.com/watch?v=Oj5iQKWklEk",
+      "summary": "Full-day livestream covering rides, parades, and fireworks at Magic Kingdom on July 13."
+    },
+    {
+      "videoId": "uPavMuYC4GE",
+      "title": "Every NEW Food at Disney Springs- The Boathouse, Chicken Guy & More! | Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-07-08T16:00:09Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/uPavMuYC4GE/mqdefault.jpg",
+      "viewCount": 42597,
+      "url": "https://www.youtube.com/watch?v=uPavMuYC4GE",
+      "summary": "Tour of new menu items at multiple Disney Springs dining locations including The Boathouse and Chicken Guy."
+    },
+    {
+      "videoId": "Avko6McfI6s",
+      "title": "The 3 BEST Quick Service Restaurants at Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-07-12T15:46:34Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Avko6McfI6s/mqdefault.jpg",
+      "viewCount": 40720,
+      "url": "https://www.youtube.com/watch?v=Avko6McfI6s",
+      "summary": "Ranking and review of the top three quick-service dining spots at Walt Disney World."
+    },
+    {
+      "videoId": "F6DMwt81N_k",
+      "title": "🔴 Live: Magic Kingdom Fireworks, Rides & Starlight Monday | Disney World Live Stream 7.13.2026",
+      "channel": "Daily FastPass",
+      "publishedAt": "2026-07-14T02:34:12Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/F6DMwt81N_k/mqdefault.jpg",
+      "viewCount": 17280,
+      "url": "https://www.youtube.com/watch?v=F6DMwt81N_k",
+      "summary": "Livestream from Magic Kingdom featuring fireworks, attractions, and evening entertainment on July 13."
+    },
+    {
+      "videoId": "x_OXqH5qHi4",
+      "title": "🔴 Magic Kingdom LIVE: Happily Ever After – (EPIC 2026 Fireworks), Disney World | Full Show 4K",
+      "channel": "Fun to be Free",
+      "publishedAt": "2026-07-14T04:21:12Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/x_OXqH5qHi4/mqdefault.jpg",
+      "viewCount": 10300,
+      "url": "https://www.youtube.com/watch?v=x_OXqH5qHi4",
+      "summary": "Complete 4K recording of the Happily Ever After fireworks show at Magic Kingdom."
+    },
+    {
+      "videoId": "ZDKQWRbP_p8",
+      "title": "My heart 🥰 My eyes 😭 #disney #disneyland #love #funny #fyp",
+      "channel": "Roni Koria",
+      "publishedAt": "2026-07-14T05:41:37Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/ZDKQWRbP_p8/mqdefault.jpg",
+      "viewCount": 9009,
+      "url": "https://www.youtube.com/watch?v=ZDKQWRbP_p8",
+      "summary": "Short emotional moment captured at Disneyland Resort."
+    },
+    {
+      "videoId": "YS0BO1VU2R0",
+      "title": "🔴 LIVE: An Evening At Epcot | Walt Disney World Live Stream 7-13-26",
+      "channel": "Steve's World",
+      "publishedAt": "2026-07-14T02:26:20Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/YS0BO1VU2R0/mqdefault.jpg",
+      "viewCount": 4799,
+      "url": "https://www.youtube.com/watch?v=YS0BO1VU2R0",
+      "summary": "Evening livestream tour of EPCOT at Walt Disney World on July 13."
+    },
+    {
+      "videoId": "ngT7RkNqrcg",
+      "title": "My heart 🥰My eyes 😭#disney #disneyland #foryou #love",
+      "channel": "EUGENIO NAKIA",
+      "publishedAt": "2026-07-14T08:42:16Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/ngT7RkNqrcg/mqdefault.jpg",
+      "viewCount": 2702,
+      "url": "https://www.youtube.com/watch?v=ngT7RkNqrcg",
+      "summary": "Brief emotional clip from a Disneyland visit."
+    },
+    {
+      "videoId": "h10tiIO3MhM",
+      "title": "USJ Secret Perks｜Never turn down staff surveys!🎁 #usj #universal #universalstudios #usjfan #usjobs",
+      "channel": "USJ Family Guide",
+      "publishedAt": "2026-07-14T07:38:57Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/h10tiIO3MhM/mqdefault.jpg",
+      "viewCount": 1680,
+      "url": "https://www.youtube.com/watch?v=h10tiIO3MhM",
+      "summary": "Tips about taking advantage of staff surveys at Universal Studios Japan for potential perks."
+    },
+    {
+      "videoId": "B-ZyfNElfNM",
+      "title": "DISNEY LAND | California #disney #fypシ゚viral #explorepage #friends #trip #trending #shorts #short",
+      "channel": "Praveena Amithab",
+      "publishedAt": "2026-07-14T03:46:47Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/B-ZyfNElfNM/mqdefault.jpg",
+      "viewCount": 1487,
+      "url": "https://www.youtube.com/watch?v=B-ZyfNElfNM",
+      "summary": "Short video from a group trip to Disneyland in California."
+    }
+  ],
+  "updatedAt": "2026-07-14T12:06:21.735Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-07-14T12:06:21.735Z",
+    "tokens": {
+      "input": 12082,
+      "output": 5198,
+      "costUsd": 0.1142
+    }
+  }
+}
