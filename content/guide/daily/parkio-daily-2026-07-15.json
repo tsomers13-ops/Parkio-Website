@@ -1,0 +1,344 @@
+{
+  "title": "Parkio Daily for July 15, 2026",
+  "slug": "parkio-daily-2026-07-15",
+  "date": "2026-07-15",
+  "teaser": "Cinderella Castle Suite sweepstakes opens; Fort Wilderness unveils new pool; Disneyland menu prices climb across hundreds of items.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Space Mountain",
+        "parkSlug": "magic-kingdom",
+        "note": "Early morning windows tend to stay under 25 minutes"
+      },
+      {
+        "name": "Soarin'",
+        "parkSlug": "epcot",
+        "note": "Lighter crowds today; walk-ons likely mid-afternoon"
+      },
+      {
+        "name": "Radiator Springs Racers",
+        "parkSlug": "california-adventure",
+        "note": "Rope-drop usually delivers shortest waits of the day"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [],
+    "bignews": [
+      {
+        "title": "Cinderella Castle Suite sweepstakes returns for 2027",
+        "body": "A new charity sweepstakes benefiting Give Kids The World now offers entries for an overnight stay inside the exclusive Cinderella Castle Suite at Magic Kingdom, following the suite's recent classic makeover. Proceeds support the Orlando nonprofit serving critically ill children.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/enter-to-win-a-stay-in-cinderella-castle-suite-with-sweepstakes-supporting-give-kids-the-world/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Entries are open now and the sweepstakes window is likely limited. If the Castle Suite is on your bucket list, entering early tends to maximize your odds before word spreads."
+        }
+      },
+      {
+        "title": "Fort Wilderness debuts refreshed pool area and lobby",
+        "body": "Disney's Fort Wilderness Resort has opened a newly renovated pool area and updated lobby, part of ongoing improvements to the 750-acre campground resort. The refresh aims to enhance the property's outdoor experience while maintaining its wooded setting.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/new-pool-area-and-refreshed-lobby-at-fort-wilderness/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Fort Wilderness tends to be less crowded than other resorts during summer afternoons. The new pool area usually offers more space and shade options for midday resort breaks."
+        }
+      },
+      {
+        "title": "Disneyland raises prices on hundreds of menu items",
+        "body": "Price increases have rolled out across Disneyland, California Adventure, and resort hotels, affecting entrees, desserts, drinks, and snacks at both counter-service and table-service locations. The summer 2026 adjustments span most dining venues across the resort.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/hundreds-of-menu-price-increases-hit-disneyland/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Mobile ordering before arrival tends to lock in your meal plan at today's prices. Budgeting an extra 5–8% for dining usually covers recent increases at most quick-service spots."
+        }
+      },
+      {
+        "title": "Neil Patrick Harris to host Parks Panel at D23 Expo",
+        "body": "Disney announced that actor and Disney enthusiast Neil Patrick Harris will host the Parks Panel at D23 Expo in Anaheim on August 14–16, marking the first time the flagship presentation has featured a celebrity host. Harris is a known Figment fan and frequent parks visitor.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/figment-fan-neil-patrick-harris-hosting-disney-parks-panel-at-2026-d23-expo/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Major announcements often follow D23 panels within days. Planning visits after mid-August may let you experience newly revealed attractions or entertainment earlier than expected."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "Disney props auction includes Big Thunder Mountain trains",
+        "body": "Sections of retired Big Thunder Mountain Railroad trains, vintage garbage cans, and other park artifacts are being offered in an upcoming Disney auction. The sale includes memorabilia from multiple parks and decades of operations.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/cut-up-big-thunder-mountain-trains-jim-hensons-legacy-garbage-cans-disney-unveils-park-props-for-auction-in-todays-daily-recap-for-7-14-2026/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Collectors often drive bidding high, but smaller props tend to go under the radar. Registering early and setting alerts for specific items usually improves your chances before auction day."
+        }
+      },
+      {
+        "title": "Gordon Ramsay restaurant opens at Downtown Disney",
+        "body": "Gordon Ramsay at The Carnaby has launched at Downtown Disney, serving beef Wellington, sticky toffee pudding, and other signature dishes. The new table-service spot adds to the district's expanding dining lineup.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/cut-up-big-thunder-mountain-trains-jim-hensons-legacy-garbage-cans-disney-unveils-park-props-for-auction-in-todays-daily-recap-for-7-14-2026/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "New restaurant openings tend to book solid for the first few weeks. Walk-up availability often improves after 8pm or on weeknights when day-trippers head home."
+        }
+      },
+      {
+        "title": "Permit hints at possible Typhoon Lagoon expansion",
+        "body": "A recently filed construction permit points toward potential work at Typhoon Lagoon, though no official details or timeline have been released. The permit covers infrastructure improvements but does not specify new attractions or amenities.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/cut-up-big-thunder-mountain-trains-jim-hensons-legacy-garbage-cans-disney-unveils-park-props-for-auction-in-todays-daily-recap-for-7-14-2026/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Water park expansions often mean phased closures in coming months. Visiting Typhoon Lagoon before late summer usually avoids construction zones and longer lines at remaining attractions."
+        }
+      },
+      {
+        "title": "New Magic Kingdom permit filed for undisclosed project",
+        "body": "Disney submitted a construction permit for Magic Kingdom, though the filing does not reveal the scope or location of the work. Permit activity often precedes ride refurbishments or new infrastructure installations.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "AllEars.Net",
+          "url": "https://allears.net/2026/07/14/alert-disney-just-filed-a-new-construction-permit-for-magic-kingdom/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Permits typically lead to construction walls or lane closures within a few weeks. Checking attraction wait-time apps before heading to specific lands usually helps you steer clear of bottlenecks."
+        }
+      },
+      {
+        "title": "Oogie Boogie Bash teases new villain character for 2026",
+        "body": "Disney hinted at an additional villain character joining this year's Oogie Boogie Bash lineup at California Adventure, running select nights from August 18 through October 31. The identity has not been officially revealed, sparking speculation among 90s Disney fans.",
+        "parkSlug": "california-adventure",
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/07/14/disney-teases-new-villain-for-oogie-boogie-bash-and-90s-kids-are-ready/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Character meet queues at Oogie Boogie Bash tend to peak early evening. Arriving at rope drop or waiting until the final hour usually shortens waits for rare villains."
+        }
+      },
+      {
+        "title": "Mickey's Not So Scary Halloween Party dates selling out",
+        "body": "Tickets for several nights of Mickey's Not So Scary Halloween Party at Magic Kingdom are now sold out, including the cheapest dates, Fall Break evenings, and the final night. Availability is expected to tighten further as the event draws closer.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/cheapest-dates-sold-out-for-2026-mickeys-not-so-scary-halloween-party/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Mid-week September dates often have the lightest crowds and best candy-stop availability. Buying tickets now for those nights usually secures entry before the remaining inventory disappears."
+        }
+      },
+      {
+        "title": "Trader Sam's Tiki Terrace closure status remains unclear",
+        "body": "Disney has not provided a firm reopening timeline for Trader Sam's Tiki Terrace at the Polynesian Village Resort, which has been closed since April during Grand Ceremonial House refurbishment. Updates remain vague despite guest inquiries.",
+        "parkSlug": null,
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/07/disney-world-confirms-polynesian-resorts-closure-status-th1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Tiki bar fans often default to Trader Sam's Grog Grotto indoors, which tends to fill by early evening. Arriving before 5pm or after 9pm usually improves your odds of snagging a seat."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Mickey's of Glendale returning to D23 with Imagineering collection",
+        "body": "The fan-favorite booth Mickey's of Glendale will be back at D23 Expo in August, featuring exclusive merchandise from Walt Disney Imagineering. Details on the collection's contents have not been fully disclosed.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/disney-experiences/mickeys-of-glendale-d23-walt-disney-imagineering-collection/"
+        }
+      },
+      {
+        "title": "Spider-Man and What If merchandise arrives at Disneyland Resort",
+        "body": "New shirts and collectibles tied to Spider-Man: Brand New Day and the Marvel What If series are now available at Avengers Reserve in Downtown Disney and select park locations. Stock varies by store.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/spider-man-brand-new-day-and-what-if-merchandise-now-at-disneyland-resort/"
+        }
+      },
+      {
+        "title": "Nightmare Before Christmas ear headband released at Magic Kingdom",
+        "body": "A Sally-themed ear headband inspired by The Nightmare Before Christmas is now on shelves at Fantasy Faire in Magic Kingdom. The accessory features autumnal colors and detailing.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/whats-this-nightmare-before-christmas-ear-headband-released-at-walt-disney-world/"
+        }
+      },
+      {
+        "title": "D23 members receive exclusive in-game perk",
+        "body": "D23 has launched a limited-time free perk for members in a Disney video game, though specifics on the game and reward have not been widely detailed. The offer window is expected to be short.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/07/14/hurry-this-free-new-d23-members-perk-wont-last-long/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "PhotoPass guide highlights Cinderella Castle photo ops",
+        "body": "Disney published a refresher guide to PhotoPass Service at Walt Disney World, emphasizing opportunities to capture memories in front of the newly repainted Cinderella Castle and during summer events. The service includes on-ride photos, Magic Shots, and roaming photographer locations across all four parks.",
+        "parkSlug": null,
+        "ctaLabel": "Learn PhotoPass tips",
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Castle backdrops tend to be clearest early morning or late evening when crowds thin. Booking PhotoPass sessions before 10am or after 7pm usually delivers better lighting and fewer guests in the frame."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "Avko6McfI6s",
+      "title": "The 3 BEST Quick Service Restaurants at Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-07-12T15:46:34Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Avko6McfI6s/mqdefault.jpg",
+      "viewCount": 47152,
+      "url": "https://www.youtube.com/watch?v=Avko6McfI6s",
+      "summary": "WrightDownMainStreet ranks their top three counter-service dining spots across Walt Disney World's four parks."
+    },
+    {
+      "videoId": "uPavMuYC4GE",
+      "title": "Every NEW Food at Disney Springs- The Boathouse, Chicken Guy & More! | Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-07-08T16:00:09Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/uPavMuYC4GE/mqdefault.jpg",
+      "viewCount": 43884,
+      "url": "https://www.youtube.com/watch?v=uPavMuYC4GE",
+      "summary": "The channel tours recent menu additions at Disney Springs restaurants including The Boathouse and Chicken Guy."
+    },
+    {
+      "videoId": "T2OfTB5B3DI",
+      "title": "🔴Live: Tranquil Tuesday at Magic Kingdom & the Monorail Resorts - Walt Disney World - 7-14-26",
+      "channel": "ResortTV1",
+      "publishedAt": "2026-07-15T03:12:34Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/T2OfTB5B3DI/mqdefault.jpg",
+      "viewCount": 29077,
+      "url": "https://www.youtube.com/watch?v=T2OfTB5B3DI",
+      "summary": "ResortTV1 streams live from Magic Kingdom and the monorail resort loop on a Tuesday morning."
+    },
+    {
+      "videoId": "S4BKx-o0lFI",
+      "title": "🔴 Live: EPCOT Rides, Luminous Fireworks & More Tuesday Night | Disney World Live Stream 7.14.2026",
+      "channel": "Daily FastPass",
+      "publishedAt": "2026-07-15T01:45:56Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/S4BKx-o0lFI/mqdefault.jpg",
+      "viewCount": 15171,
+      "url": "https://www.youtube.com/watch?v=S4BKx-o0lFI",
+      "summary": "Daily FastPass broadcasts a live evening walk through EPCOT attractions and the Luminous nighttime spectacular."
+    },
+    {
+      "videoId": "JzrcPD4E6lY",
+      "title": "My heart 🥰 My eyes 😭 #disney #disneyland #love #funny #fyp",
+      "channel": "Roni Koria",
+      "publishedAt": "2026-07-15T06:10:02Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/JzrcPD4E6lY/mqdefault.jpg",
+      "viewCount": 10178,
+      "url": "https://www.youtube.com/watch?v=JzrcPD4E6lY",
+      "summary": "Roni Koria shares a short, humorous Disneyland moment tagged with love and funny themes."
+    },
+    {
+      "videoId": "mpydLL14eVU",
+      "title": "Live @Walt Disney World's Magic Kingdom Starlight Parade and  Happily Ever After Fireworks 🎆",
+      "channel": "Sprinkles of Adventures",
+      "publishedAt": "2026-07-15T03:43:04Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/mpydLL14eVU/mqdefault.jpg",
+      "viewCount": 3527,
+      "url": "https://www.youtube.com/watch?v=mpydLL14eVU",
+      "summary": "Sprinkles of Adventures streams the Starlight Parade and Happily Ever After fireworks live from Magic Kingdom."
+    },
+    {
+      "videoId": "Yx4PQ3FfTdY",
+      "title": "Hot take: Disneyland is for kids #disneyland #disney #disneyadults #conservative #mom",
+      "channel": "Sabrina Kosmas",
+      "publishedAt": "2026-07-15T03:28:39Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Yx4PQ3FfTdY/mqdefault.jpg",
+      "viewCount": 1673,
+      "url": "https://www.youtube.com/watch?v=Yx4PQ3FfTdY",
+      "summary": "Sabrina Kosmas offers a personal opinion on Disneyland being primarily a destination for children."
+    },
+    {
+      "videoId": "XaUtx6ctdIU",
+      "title": "인어공주 애리얼 넘이쁨 (The Little Mermaid)",
+      "channel": "퓨란",
+      "publishedAt": "2026-07-15T06:00:06Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/XaUtx6ctdIU/mqdefault.jpg",
+      "viewCount": 1514,
+      "url": "https://www.youtube.com/watch?v=XaUtx6ctdIU",
+      "summary": "A Korean-language video highlighting Ariel from The Little Mermaid at a Disney park."
+    },
+    {
+      "videoId": "8W9QTEhcqOo",
+      "title": "DISNEY PRINCESS because of my parents!! #shorts #disneyshorts #disneyland",
+      "channel": "Ingy",
+      "publishedAt": "2026-07-15T03:00:29Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/8W9QTEhcqOo/mqdefault.jpg",
+      "viewCount": 1289,
+      "url": "https://www.youtube.com/watch?v=8W9QTEhcqOo",
+      "summary": "Ingy shares a short clip about a Disney princess encounter influenced by family at Disneyland."
+    },
+    {
+      "videoId": "JKoWws2kzZI",
+      "title": "Cocomelon and Princess 👸",
+      "channel": "@Dudidam",
+      "publishedAt": "2026-07-15T03:10:51Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/JKoWws2kzZI/mqdefault.jpg",
+      "viewCount": 1146,
+      "url": "https://www.youtube.com/watch?v=JKoWws2kzZI",
+      "summary": "A family-oriented video mixing Cocomelon characters with a Disney princess theme."
+    }
+  ],
+  "updatedAt": "2026-07-15T12:10:31.644Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-07-15T12:10:31.644Z",
+    "tokens": {
+      "input": 12122,
+      "output": 5591,
+      "costUsd": 0.1202
+    }
+  }
+}
