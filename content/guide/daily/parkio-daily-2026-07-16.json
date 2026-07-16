@@ -1,0 +1,349 @@
+{
+  "title": "Parkio Daily for July 16, 2026",
+  "slug": "parkio-daily-2026-07-16",
+  "date": "2026-07-16",
+  "teaser": "Magic of Disney Animation opens this fall at Hollywood Studios; Tiki Terrace returns October at Polynesian; fire incident at Yacht Club resolved.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Soarin'",
+        "parkSlug": "epcot",
+        "note": "Walk-on windows likely between 6–7pm during dinner hour"
+      },
+      {
+        "name": "Big Thunder Mountain Railroad",
+        "parkSlug": "magic-kingdom",
+        "note": "Early morning waits tend to stay under 25 minutes"
+      },
+      {
+        "name": "Pirates of the Caribbean",
+        "parkSlug": "disneyland",
+        "note": "New tavern lounge testing walk-up access soon"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [
+      {
+        "title": "Fire incident at Yacht Club Resort resolved",
+        "body": "A fire occurred at Disney's Yacht Club Resort on the morning of July 15. The situation has been contained and the resort remains operational.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/fire-at-disneys-yacht-club-resort-in-todays-daily-recap-for-7-15-2026/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Yacht Club operations appear normal today. If staying there, confirm any area restrictions with the front desk before heading to your room."
+        }
+      }
+    ],
+    "bignews": [
+      {
+        "title": "Magic of Disney Animation sets fall 2026 opening at Hollywood Studios",
+        "body": "The new Magic of Disney Animation experience in the reimagined courtyard at Hollywood Studios will debut this fall. Disney announced the opening window for the immersive walk-through that brings animation characters into the real world.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/disney-animation-inspired-experience-coming-to-disneys-hollywood-studios/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Soft openings often start weeks before official debut. Check the courtyard area near Animation Hall in late August or early September for preview access."
+        }
+      },
+      {
+        "title": "Trader Sam's Tiki Terrace reopening in October at Polynesian",
+        "body": "The outdoor bar at Disney's Polynesian Village Resort will reopen in October after an extended closure. The lounge serves tropical drinks and light bites on the terrace overlooking Seven Seas Lagoon.",
+        "parkSlug": null,
+        "source": {
+          "label": "AllEars.Net",
+          "url": "https://allears.net/2026/07/15/we-finally-know-when-this-popular-disney-world-spot-will-open/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Tiki Terrace typically fills fast at sunset. Arrive by 5pm on reopening week to claim a table with Magic Kingdom fireworks views across the lagoon."
+        }
+      },
+      {
+        "title": "Four new DOLE Whip flavors arrive at Disney parks",
+        "body": "Disney has introduced four new DOLE Whip varieties across locations at Walt Disney World and Disneyland Resort. The additions expand the frozen treat lineup ahead of DOLE Whip Day on July 17.",
+        "parkSlug": null,
+        "source": {
+          "label": "AllEars.Net",
+          "url": "https://allears.net/2026/07/15/disney-just-dropped-4-new-dole-whip-flavors/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "DOLE Whip stands tend to see longer lines after 1pm in summer heat. Stop by Aloha Isle or Tiki Juice Bar before 11am to sample new flavors with minimal wait."
+        }
+      },
+      {
+        "title": "Earl of Sandwich opens permanent location at Disneyland Resort",
+        "body": "The popular sandwich counter has found a permanent home at Disneyland Resort after operating from temporary spots. The location is now open in Downtown Disney District.",
+        "parkSlug": null,
+        "source": {
+          "label": "AllEars.Net",
+          "url": "https://allears.net/2026/07/15/its-here-this-dining-spot-has-finally-found-a-permanent-home-at-disneyland-resort/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Downtown Disney dining peaks during park closing hours. Visit Earl of Sandwich mid-afternoon for faster counter service and easier seating."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "Walk-up waitlist briefly appeared for Spaceship Earth and Pirates lounges",
+        "body": "The My Disney Experience app temporarily displayed walk-up waitlist options for the GEO-82 lounge inside Spaceship Earth and the Beak and Barrel tavern at Pirates of the Caribbean. Both features were removed shortly after appearing, suggesting reservation-free access may launch soon.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/spaceship-earth-pirates-of-caribbean-lounges-add-walk-up-waitlist-in-disney-world-app/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "If walk-up access launches, both lounges likely fill fastest between 7–9pm. Try joining a waitlist during late afternoon or post-fireworks for shorter holds."
+        }
+      },
+      {
+        "title": "Germany Pavilion at EPCOT remains partially closed",
+        "body": "Construction walls continue to surround portions of the Germany Pavilion at World Showcase. Some shops and pathways remain inaccessible while Disney completes maintenance work.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/07/disney-world-reassembles-germany-pavilion-experience-at-epcot-closures-linger-el1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Germany shopping and some food access remain limited. Plan your World Showcase lap to visit neighboring Italy or China pavilions for full retail and dining options."
+        }
+      },
+      {
+        "title": "Animal Kingdom entrance repaving underway",
+        "body": "Green construction walls have appeared at the main guest entrance to Disney's Animal Kingdom as crews begin repaving the arrival plaza. The work is expected to continue for several weeks.",
+        "parkSlug": "animal-kingdom",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/07/entrance-repaving-project-at-disneys-animal-kingdom-theme-park-jc1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Entry flow may be tighter during peak morning arrival. Arriving by 8:30am or after 10am tends to avoid the heaviest gate congestion during construction."
+        }
+      },
+      {
+        "title": "Fort Wilderness debuts refreshed pool and lobby",
+        "body": "Disney's Fort Wilderness Resort has completed renovation of its pool area and main lobby. The updates bring new seating, landscaping, and decor to the lakeside campground resort.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/new-pool-area-and-refreshed-lobby-at-fort-wilderness/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Fort Wilderness boat dock offers a scenic, crowd-free route to Magic Kingdom. The new pool area makes a relaxing mid-day retreat if staying on property."
+        }
+      },
+      {
+        "title": "Cinderella Castle Suite stay available through charity sweepstakes",
+        "body": "Disney is offering a night in the exclusive Cinderella Castle Suite at Magic Kingdom through a charitable donation sweepstakes. Entries are accepted online with proceeds benefiting a designated nonprofit.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "AllEars.Net",
+          "url": "https://allears.net/2026/07/15/dreaming-of-staying-in-disney-worlds-cinderella-castle-suite-nows-your-chance-2/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "The suite sits above Cinderella's Royal Table. If you enter the sweepstakes, booking a late dinner reservation lets you scout the castle interior while you wait for results."
+        }
+      },
+      {
+        "title": "Disneyland fireworks ban extended due to heat",
+        "body": "Disney has prolonged the suspension of nighttime fireworks at Disneyland Resort after local authorities extended a pyrotechnics ban originally set to expire July 15. Extreme temperatures prompted the continued restriction.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/07/disney-fireworks-ban-extended-cj1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Without fireworks, Main Street USA and castle hub crowds tend to thin by 9pm. Use that window for walk-on access to Peter Pan or Matterhorn before park close."
+        }
+      },
+      {
+        "title": "Yzma character may debut at Oogie Boogie Bash this fall",
+        "body": "Disney teased a new Villains Treat Trail for the 2026 Oogie Boogie Bash Halloween party at Disneyland, with promotional material hinting at the debut of Yzma from The Emperor's New Groove.",
+        "parkSlug": "california-adventure",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-teases-emperors-new-groove-villain-debuting-at-2026-oogie-boogie-bash-halloween-party/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "New character meet-and-greets at Oogie Boogie Bash often draw hour-plus waits on opening night. Attending mid-run dates in September usually shortens character queues."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "New Animal Kingdom Lodge merchandise collection released",
+        "body": "A resort-specific apparel and home goods line featuring Disney's Animal Kingdom Lodge branding is now available at Zawadi Marketplace. Items include hoodies, tees, and decor.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/disneys-animal-kingdom-lodge-merchandise/"
+        }
+      },
+      {
+        "title": "Disneyland price increases hit hundreds of menu items",
+        "body": "Disney has raised prices on hundreds of food and beverage items across Disneyland, California Adventure, and resort hotels. The adjustments cover entrees, snacks, desserts, and drinks.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/hundreds-of-menu-price-increases-hit-disneyland/"
+        }
+      },
+      {
+        "title": "Halloween Loungefly collection launches online",
+        "body": "A new Halloween-themed Loungefly line featuring The Aristocats has been released on shopDisney. The pink collection includes backpacks, wallets, and accessories.",
+        "parkSlug": null,
+        "source": {
+          "label": "AllEars.Net",
+          "url": "https://allears.net/2026/07/15/a-new-disney-loungefly-halloween-collection-just-released-online/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "Sleeping Beauty Castle snow globe and new Disneyland merch arrive",
+        "body": "A light-up Sleeping Beauty Castle snow globe, character figures, and a Toy Story 5 kids suitcase are now available at Downtown Disney and select Disneyland shops. The castle globe retails for 99 dollars and features detailed interior scenes.",
+        "parkSlug": "disneyland",
+        "ctaLabel": "Shop Downtown Disney",
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Castle-themed home goods tend to sell out quickly during summer vacation weeks. Visit Disney Home or World of Disney before noon to find the fullest selection."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "Avko6McfI6s",
+      "title": "The 3 BEST Quick Service Restaurants at Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-07-12T15:46:34Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Avko6McfI6s/mqdefault.jpg",
+      "viewCount": 49940,
+      "url": "https://www.youtube.com/watch?v=Avko6McfI6s",
+      "summary": "WrightDownMainStreet ranks their top three quick-service dining spots across Walt Disney World Resort."
+    },
+    {
+      "videoId": "8LXqmgKGO_w",
+      "title": "Best Restaurant in Magic Kingdom? Skipper Canteen | Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-07-15T15:55:30Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/8LXqmgKGO_w/mqdefault.jpg",
+      "viewCount": 20231,
+      "url": "https://www.youtube.com/watch?v=8LXqmgKGO_w",
+      "summary": "A review of Jungle Navigation Co. Ltd. Skipper Canteen and whether it stands as Magic Kingdom's top table-service restaurant."
+    },
+    {
+      "videoId": "KvdjNFI1mlc",
+      "title": "My heart 🥰My eyes 😭#disney #disneyland #foryou #funny #fyp",
+      "channel": "Wallie Tintler",
+      "publishedAt": "2026-07-16T05:42:57Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/KvdjNFI1mlc/mqdefault.jpg",
+      "viewCount": 16876,
+      "url": "https://www.youtube.com/watch?v=KvdjNFI1mlc",
+      "summary": "A short Disneyland moment shared by Wallie Tintler capturing an emotional or humorous guest experience."
+    },
+    {
+      "videoId": "NWUJMGxI00o",
+      "title": "🔴 Live: Magic Kingdom Rides, Starlight & Fireworks Wednesday | Disney World Live Stream 7.15.2026",
+      "channel": "Daily FastPass",
+      "publishedAt": "2026-07-16T02:37:53Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/NWUJMGxI00o/mqdefault.jpg",
+      "viewCount": 13880,
+      "url": "https://www.youtube.com/watch?v=NWUJMGxI00o",
+      "summary": "Daily FastPass streams a live evening at Magic Kingdom featuring attractions and the nighttime fireworks spectacular."
+    },
+    {
+      "videoId": "mKodaCDJ4J0",
+      "title": "🔴 LIVE: Happily Ever After – EPIC Nighttime Spectacular, Disney World | Full Show 4K",
+      "channel": "Fun to be Free",
+      "publishedAt": "2026-07-16T04:34:40Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/mKodaCDJ4J0/mqdefault.jpg",
+      "viewCount": 10778,
+      "url": "https://www.youtube.com/watch?v=mKodaCDJ4J0",
+      "summary": "A full 4K recording of the Happily Ever After fireworks show at Magic Kingdom streamed live by Fun to be Free."
+    },
+    {
+      "videoId": "mGbaJ1DDB4M",
+      "title": "My heart 🥰My eyes 😭#disney #disneyland #foryou #funny #fyp",
+      "channel": "EUGENIO NAKIA",
+      "publishedAt": "2026-07-16T03:56:35Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/mGbaJ1DDB4M/mqdefault.jpg",
+      "viewCount": 10729,
+      "url": "https://www.youtube.com/watch?v=mGbaJ1DDB4M",
+      "summary": "EUGENIO NAKIA shares a brief Disney or Disneyland clip highlighting a heartwarming or funny park moment."
+    },
+    {
+      "videoId": "pS4l5H58gD8",
+      "title": "🔴 LIVE! An Evening at EPCOT - Rides & Luminous Fireworks 7.15.26",
+      "channel": "Disney Girl Kim",
+      "publishedAt": "2026-07-16T01:49:20Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/pS4l5H58gD8/mqdefault.jpg",
+      "viewCount": 7440,
+      "url": "https://www.youtube.com/watch?v=pS4l5H58gD8",
+      "summary": "Disney Girl Kim livestreams an EPCOT evening covering attractions and the Luminous nighttime spectacular."
+    },
+    {
+      "videoId": "YjZSObzwkK8",
+      "title": "🔴Live: Wild Afternoon at Animal Kingdom & Hollywood Studios! - Rides & Fun - Disney World Livestream",
+      "channel": "GooToYou!",
+      "publishedAt": "2026-07-16T01:33:09Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/YjZSObzwkK8/mqdefault.jpg",
+      "viewCount": 5592,
+      "url": "https://www.youtube.com/watch?v=YjZSObzwkK8",
+      "summary": "GooToYou streams a multi-park afternoon visiting Animal Kingdom and Hollywood Studios attractions."
+    },
+    {
+      "videoId": "3SS-Lmya2CU",
+      "title": "\\ ボン・ヴォヤージュ /7月16日販売状況を紹介！",
+      "channel": "みい🎀",
+      "publishedAt": "2026-07-16T04:37:37Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/3SS-Lmya2CU/mqdefault.jpg",
+      "viewCount": 1351,
+      "url": "https://www.youtube.com/watch?v=3SS-Lmya2CU",
+      "summary": "A July 16 merchandise availability update from Bon Voyage, the Disney Store near Tokyo Disney Resort."
+    },
+    {
+      "videoId": "h40BGmSblkU",
+      "title": "Epcot Disney World Elsa princess",
+      "channel": "Adriana LEAL",
+      "publishedAt": "2026-07-16T01:35:20Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/h40BGmSblkU/mqdefault.jpg",
+      "viewCount": 1075,
+      "url": "https://www.youtube.com/watch?v=h40BGmSblkU",
+      "summary": "Adriana LEAL captures an Elsa character appearance or meet-and-greet at EPCOT."
+    }
+  ],
+  "updatedAt": "2026-07-16T12:15:16.886Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-07-16T12:15:16.886Z",
+    "tokens": {
+      "input": 11820,
+      "output": 5386,
+      "costUsd": 0.1163
+    }
+  }
+}
