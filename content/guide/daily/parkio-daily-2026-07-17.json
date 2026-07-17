@@ -1,0 +1,332 @@
+{
+  "title": "Parkio Daily for July 17, 2026",
+  "slug": "parkio-daily-2026-07-17",
+  "date": "2026-07-17",
+  "teaser": "Animal Kingdom tests new rope drop procedures; D23 Day at Disneyland set for August 13; Hollywood Studios debuts Animation-inspired experience.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Test Track",
+        "parkSlug": "epcot",
+        "note": "Walk-on windows early morning"
+      },
+      {
+        "name": "Guardians of the Galaxy: Cosmic Rewind",
+        "parkSlug": "epcot",
+        "note": "Shortest waits before 10am"
+      },
+      {
+        "name": "Space Mountain",
+        "parkSlug": "magic-kingdom",
+        "note": "Lower waits first hour"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [
+      {
+        "title": "Animal Kingdom Testing New Rope Drop Setup",
+        "body": "Animal Kingdom began testing new rope drop procedures this week, holding guests on Discovery Island rather than the Oasis entrance area before park opening.",
+        "parkSlug": "animal-kingdom",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/disneys-animal-kingdom-testing-new-rope-drop-procedures-in-todays-daily-recap-for-7-16-2026/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "If testing continues, arriving 30 minutes before opening may no longer get you closer to Flight of Passage. Plan to move quickly once ropes drop from Discovery Island instead."
+        }
+      }
+    ],
+    "bignews": [
+      {
+        "title": "D23 Day at Disneyland Set for August 13",
+        "body": "Disneyland will host D23 Day on August 13, one day before the D23 Expo begins in Anaheim. The fan event will feature special entertainment, activities, and storytelling experiences across the resort.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/dlr/details-for-d23-day-at-disneyland/"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "August 13 will likely see some of the heaviest Disneyland crowds of the summer. If visiting that day, prioritize Lightning Lane purchases and arrive before rope drop to maximize ride time."
+        }
+      },
+      {
+        "title": "Disney Animation Experience Coming to Hollywood Studios",
+        "body": "A new Disney Animation-inspired experience is coming to Hollywood Studios, designed to recreate the Burbank studio campus and showcase characters leaping from screen to real life.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/disney-animation-inspired-experience-coming-to-disneys-hollywood-studios/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "No opening date announced yet, but this addition may shift crowd patterns toward Animation Courtyard once it debuts. Keep an eye on official announcements for timing."
+        }
+      },
+      {
+        "title": "Disney Jr. Let's Play Party Returns to California Adventure August 13",
+        "body": "Disney Jr. Let's Play Party returns to California Adventure on August 13 with entertainment and activities themed to Disney Jr. shows and characters, continuing into a second day.",
+        "parkSlug": "california-adventure",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/dlr/disney-jr-lets-play-party-at-disneyland/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Families with preschoolers may find California Adventure a better bet than Disneyland on August 13, with dedicated character meet opportunities and shows during the event."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "Three New Rice Bowls Debut at Sunshine Seasons",
+        "body": "Sunshine Seasons in EPCOT added three new rice bowl options to its quick-service menu, including pork carnitas, plant-based alternatives, and customizable toppings.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/review-we-tried-all-three-new-rice-bowls-at-sunshine-seasons-in-epcot/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Sunshine Seasons tends to have shorter lines than World Showcase quick-service spots during lunch. Worth trying if you're in Future World between 11am and 1pm."
+        }
+      },
+      {
+        "title": "Create-Your-Own Popcorn Opens at Disney Springs",
+        "body": "A new create-your-own popcorn experience launched at Disney Springs, offering customizable flavor combinations without requiring a park ticket.",
+        "parkSlug": null,
+        "source": {
+          "label": "AllEars.Net",
+          "url": "https://allears.net/2026/07/16/review-new-create-your-own-popcorn-hits-disney-world-no-park-ticket-required/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Disney Springs parking is free and the shop is likely less crowded before noon. Good option if you're staying on property and want a snack run without burning park time."
+        }
+      },
+      {
+        "title": "Parisian Breakfast Buffet Returns to EPCOT Food and Wine Festival",
+        "body": "The Parisian Breakfast Buffet with bottomless mimosas will return to Chefs de France during the 2026 EPCOT Food and Wine Festival, with reservations now open.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-world-brings-back-fan-favorite-france-breakfast-buffet-to-2026-epcot-food-wine-festival/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Book early if interested—this buffet typically sells out within days of reservations opening. Starting your EPCOT day with breakfast here often means shorter waits for Test Track afterward."
+        }
+      },
+      {
+        "title": "Spider-Man-Inspired Products Launch Ahead of Film Release",
+        "body": "New Spider-Man merchandise is rolling out across Disney Parks ahead of Sony Pictures' Spider-Man: Brand New Day theatrical release this summer.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/products/swing-into-style-with-spider-man-products/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Limited-edition Marvel merch tends to move fast at flagship stores like World of Disney. Stop by early in your trip if you're a collector."
+        }
+      },
+      {
+        "title": "Two Construction Projects Progress at Hollywood Studios",
+        "body": "Multiple construction zones remain active at Hollywood Studios this week, with work continuing on unannounced projects near Animation Courtyard and backstage areas.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "AllEars.Net",
+          "url": "https://allears.net/2026/07/16/2-big-construction-updates-hit-disneys-hollywood-studios-this-week/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Construction noise near Sunset Boulevard tends to peak mid-morning. If you're planning a sit-down meal or rest break, head to BaseLine Tap House or Hollywood Brown Derby after 1pm for quieter conditions."
+        }
+      },
+      {
+        "title": "Mickey's of Glendale Returns to D23 Expo with Imagineering Collection",
+        "body": "Walt Disney Imagineering's Mickey's of Glendale booth will return to D23 Expo 2026 with a new collection of exclusive merchandise for fans attending the August event.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/disney-experiences/mickeys-of-glendale-d23-walt-disney-imagineering-collection/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Imagineering collectibles at D23 often sell out on day one. If you're attending the expo, prioritize the Mickey's of Glendale booth within the first two hours of opening."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "DOLE Whip Day Recipes Released Online",
+        "body": "DOLE released three official DOLE Whip recipes online for DOLE Whip Day, allowing fans to recreate the Disney Parks treat at home.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/three-new-dole-whip-recipes-released-online-for-dole-whip-day/"
+        }
+      },
+      {
+        "title": "Ice Gator Cookie Available at Blizzard Beach",
+        "body": "Blizzard Beach is selling prepackaged Ice Gator sugar cookies at Lottawatta Lodge, themed to the water park's mascot.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/review-prepackaged-ice-gator-cookie-at-blizzard-beach-surprisingly-fresh/"
+        }
+      },
+      {
+        "title": "Disney Lorcana Attack of the Vine Release Event Tomorrow",
+        "body": "Disney Springs will host a Disney Lorcana release event tomorrow, July 16, with a free promo card for guests and an artist signing for the new Attack of the Vine card set.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/artist-signing-free-promo-card-for-upcoming-disney-lorcana-attack-of-the-vine-release/"
+        }
+      },
+      {
+        "title": "Magical Dining Month Includes Disney World and Universal Restaurants",
+        "body": "Several Disney World and Universal Orlando table-service restaurants are participating in Magical Dining Month 2026, offering discounted three-course meals at participating locations.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/2026-magical-dining-deals-at-disney-world-universal-add-helios-grand-hotel-restaurants/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "EPCOT Your Best Bet for Low Waits Today",
+        "body": "EPCOT is showing consistently lower wait times across major attractions this week compared to Magic Kingdom and Hollywood Studios. Test Track, Guardians of the Galaxy, and Soarin' are all seeing walk-on or near-walk-on windows in the first 90 minutes after rope drop.",
+        "parkSlug": "epcot",
+        "ctaLabel": "Check live wait times",
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "EPCOT crowds usually stay lighter until World Showcase opens at 11am. Knock out Future World attractions before lunch, then shift to food and drink in World Showcase as ride waits climb."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "Avko6McfI6s",
+      "title": "The 3 BEST Quick Service Restaurants at Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-07-12T15:46:34Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Avko6McfI6s/mqdefault.jpg",
+      "viewCount": 51954,
+      "url": "https://www.youtube.com/watch?v=Avko6McfI6s",
+      "summary": "WrightDownMainStreet ranks the top three quick-service dining spots across Walt Disney World based on food quality and value."
+    },
+    {
+      "videoId": "YvlrAmzSq5s",
+      "title": "EPCOT World Showcase 2026 | Eating Around the World for Under $100 | NEW Food | Walt Disney World",
+      "channel": "Paging Mr. Morrow",
+      "publishedAt": "2026-07-16T19:29:49Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/YvlrAmzSq5s/mqdefault.jpg",
+      "viewCount": 51030,
+      "url": "https://www.youtube.com/watch?v=YvlrAmzSq5s",
+      "summary": "Paging Mr. Morrow attempts to eat around EPCOT's World Showcase for under $100, sampling new food offerings at each pavilion."
+    },
+    {
+      "videoId": "8LXqmgKGO_w",
+      "title": "Best Restaurant in Magic Kingdom? Skipper Canteen | Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-07-15T15:55:30Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/8LXqmgKGO_w/mqdefault.jpg",
+      "viewCount": 27400,
+      "url": "https://www.youtube.com/watch?v=8LXqmgKGO_w",
+      "summary": "WrightDownMainStreet reviews Jungle Navigation Co. Ltd. Skipper Canteen to determine if it's the best table-service restaurant in Magic Kingdom."
+    },
+    {
+      "videoId": "P_cfi8A6WUU",
+      "title": "🔴 Live: Thursday Stream at Disneyland! Paint the Night Parade, Wondrous Journeys & Rides - 07/16/26",
+      "channel": "Koda Bear the Explorer ",
+      "publishedAt": "2026-07-17T07:47:07Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/P_cfi8A6WUU/mqdefault.jpg",
+      "viewCount": 22953,
+      "url": "https://www.youtube.com/watch?v=P_cfi8A6WUU",
+      "summary": "Koda Bear the Explorer livestreams from Disneyland, featuring Paint the Night parade and Wondrous Journeys fireworks on July 16."
+    },
+    {
+      "videoId": "9o2k5nYmRCk",
+      "title": "🔴 LIVE: Magic Kingdom – YOU Pick! Rides & Happily Ever After, Disney World [Full show 4K]",
+      "channel": "Fun to be Free",
+      "publishedAt": "2026-07-17T04:53:01Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/9o2k5nYmRCk/mqdefault.jpg",
+      "viewCount": 13064,
+      "url": "https://www.youtube.com/watch?v=9o2k5nYmRCk",
+      "summary": "Fun to be Free livestreams from Magic Kingdom, letting viewers choose attractions and ending with Happily Ever After fireworks in 4K."
+    },
+    {
+      "videoId": "5AZopDwX_p0",
+      "title": "My heart 🥰My eyes 😭#disney #disneyland #foryou #funny #fyp",
+      "channel": "Wallie Tintler",
+      "publishedAt": "2026-07-17T05:56:40Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/5AZopDwX_p0/mqdefault.jpg",
+      "viewCount": 8387,
+      "url": "https://www.youtube.com/watch?v=5AZopDwX_p0",
+      "summary": "Wallie Tintler shares a humorous Disneyland moment in this short-form video."
+    },
+    {
+      "videoId": "OYJcnOIXkZ4",
+      "title": "choosing disney ears for each other challenge!! 🐭🍀✨ ​⁠#epcot @Disney @DisneyAUNZ @DisneyParks",
+      "channel": "SAM TODD",
+      "publishedAt": "2026-07-17T07:34:57Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/OYJcnOIXkZ4/mqdefault.jpg",
+      "viewCount": 7939,
+      "url": "https://www.youtube.com/watch?v=OYJcnOIXkZ4",
+      "summary": "SAM TODD films a challenge video at EPCOT where friends pick out Disney ears for each other."
+    },
+    {
+      "videoId": "hRbbWa2QiLA",
+      "title": "#LIVE Disneyland Fun in the Sun, Rides, Characters, New Merch",
+      "channel": "Main Street Cowgirl",
+      "publishedAt": "2026-07-17T05:55:29Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/hRbbWa2QiLA/mqdefault.jpg",
+      "viewCount": 7524,
+      "url": "https://www.youtube.com/watch?v=hRbbWa2QiLA",
+      "summary": "Main Street Cowgirl livestreams from Disneyland, showcasing rides, character appearances, and new merchandise."
+    },
+    {
+      "videoId": "vhyYCqRG5AQ",
+      "title": "My heart 🥰 My eyes 😭 #disney #disneyland #love #funny #fyp",
+      "channel": "Roni Koria",
+      "publishedAt": "2026-07-17T06:11:53Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/vhyYCqRG5AQ/mqdefault.jpg",
+      "viewCount": 6005,
+      "url": "https://www.youtube.com/watch?v=vhyYCqRG5AQ",
+      "summary": "Roni Koria shares a lighthearted Disneyland moment in this short video."
+    },
+    {
+      "videoId": "M6OA3wd6vj0",
+      "title": "🔴LIVE: Disney's Magic Kingdom | Disney World Livestream | Dreaming With Our Pals | 7/16/2026",
+      "channel": "DIS Our Dream",
+      "publishedAt": "2026-07-17T02:50:30Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/M6OA3wd6vj0/mqdefault.jpg",
+      "viewCount": 5411,
+      "url": "https://www.youtube.com/watch?v=M6OA3wd6vj0",
+      "summary": "DIS Our Dream livestreams from Magic Kingdom on July 16, exploring the park with viewers."
+    }
+  ],
+  "updatedAt": "2026-07-17T12:03:10.784Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-07-17T12:03:10.784Z",
+    "tokens": {
+      "input": 12138,
+      "output": 5182,
+      "costUsd": 0.1141
+    }
+  }
+}
