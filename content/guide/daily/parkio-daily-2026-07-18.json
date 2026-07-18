@@ -1,0 +1,365 @@
+{
+  "title": "Parkio Daily for July 18, 2026",
+  "slug": "parkio-daily-2026-07-18",
+  "date": "2026-07-18",
+  "teaser": "Disneyland turns 71 today with a special cavalcade. Magic Kingdom adds a fourth ferry for the first time in 50 years.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Test Track",
+        "parkSlug": "epcot",
+        "note": "Early morning windows typically stay under 30 minutes"
+      },
+      {
+        "name": "Big Thunder Mountain Railroad",
+        "parkSlug": "magic-kingdom",
+        "note": "Smooth operation today, mid-morning waits holding steady"
+      },
+      {
+        "name": "Soarin'",
+        "parkSlug": "epcot",
+        "note": "Pre-lunch crowds remain light"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [
+      {
+        "title": "Major rain system heads for Walt Disney World this weekend",
+        "body": "Heavy rainfall is forecast across Central Florida this weekend, potentially developing into the Atlantic Hurricane Season's next named storm. Outdoor attractions and entertainment may see delays or cancellations.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/07/17/news-major-rain-will-hit-disney-world-this-weekend"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Outdoor shows and parades often pause during downpours. Plan table-service meals or indoor attractions like Cosmic Rewind for midday windows when storms tend to peak."
+        }
+      },
+      {
+        "title": "Live-action Tiana movie confirmed in development at Disney",
+        "body": "Colman Domingo and Robert O'Hara are in talks to co-write an original live-action film based on The Princess and the Frog. The project is actively moving forward despite mixed reactions to recent remakes.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/original-live-action-princess-and-the-frog-movie-in-the-works-at-disney/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Tiana's Bayou Adventure merchandise and character meet-and-greets may see increased interest as news spreads. Early-morning visits to the Magic Kingdom meet spot typically offer shorter waits."
+        }
+      }
+    ],
+    "bignews": [
+      {
+        "title": "Magic Kingdom ferry fleet expands for first time in over 50 years",
+        "body": "Walt Disney World is adding a fourth ferry, named The Meg Gilbert Crofton, to the Magic Kingdom fleet ahead of the park's Cars and Villains Land expansions. Construction photos show the top deck has been attached to the hull.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/top-deck-added-to-fourth-magic-kingdom-ferry-as-construction-continues/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Ferry capacity will increase once the new boat launches, likely reducing wait times during peak arrival hours. Monorail queues may offer a faster option until the fourth ferry enters service."
+        }
+      },
+      {
+        "title": "Disneyland celebrates 71st birthday with special cavalcade today",
+        "body": "A Disneyland 71st anniversary edition of the Celebrate Happy Cavalcade is running today only, continuing the park's tradition of special anniversary entertainment each July 17.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/photos-video-celebrate-happy-cavalcade-disneylands-71st-birthday-celebration-edition/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Anniversary cavalcades tend to draw crowds along Main Street mid-morning. Claiming a spot near the Castle hub 15 minutes early usually offers better sightlines than Frontierland corners."
+        }
+      },
+      {
+        "title": "Disney Animation-themed experience confirmed for Hollywood Studios",
+        "body": "A new Disney Animation-inspired attraction is coming to Hollywood Studios, designed to bring characters off the screen and into a walkable environment inspired by the Burbank studio campus.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/disney-animation-inspired-experience-coming-to-disneys-hollywood-studios/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Construction zones may shift guest flow near Animation Courtyard over the coming months. Attractions like Star Tours on the opposite side of the park often see lighter waits during early build phases."
+        }
+      },
+      {
+        "title": "Massive crowds hit Downtown Disney for Disney Lorcana card game release",
+        "body": "The launch of the Curator's Collection Heroines Edition and Attack of the Vine Lorcana sets drew unusually heavy crowds to Downtown Disney, Disney Springs, and the Disney Store in London.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/massive-crowds-hit-downtown-disney-for-disney-lorcana-release-in-todays-daily-recap-for-7-17-2026/"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "Retail zones at Disney Springs and Downtown Disney may remain congested through the weekend as fans hunt for remaining stock. World of Disney often restocks mid-morning if initial inventory sells out."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "Disney Springs loses second transportation route this summer",
+        "body": "Walt Disney World is cutting the Sassagoula River Cruise route from Old Key West to Disney Springs, following a broader crackdown on resort-hopping transportation access.",
+        "parkSlug": null,
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/07/disney-cuts-sassagoula-river-cruise-route-from-old-key-west-cutting-another-disney-springs-transportation-option-rl1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Bus service from resorts to Disney Springs may see longer waits during evening hours with reduced boat options. Arriving before 5pm or after 9pm typically avoids peak dining-rush congestion."
+        }
+      },
+      {
+        "title": "New beverage debuts at Oga's Cantina in Disneyland",
+        "body": "A new drink has arrived on the menu at Oga's Cantina in Star Wars Galaxy's Edge at Disneyland Resort.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "AllEars.Net",
+          "url": "https://allears.net/2026/07/17/well-now-you-have-a-new-reason-to-go-to-ogas-cantina-in-disneyland/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Oga's walk-up list tends to fill quickly after rope drop and during evening hours. Joining the list mid-afternoon often yields shorter waits than peak dinner times."
+        }
+      },
+      {
+        "title": "Woody replaced by Jessie at meet-and-greet location",
+        "body": "Jessie has permanently taken over a Disney park character meet spot previously held by Woody, following the release of Toy Story 5 which focused on her story.",
+        "parkSlug": null,
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/07/woody-removed-replaced-disney-park-jessie-cj1/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Character meet rotations often see elevated interest during the first weeks of a change. Early-morning or late-afternoon visits typically offer shorter queues than midday peaks."
+        }
+      },
+      {
+        "title": "Wine Bar George wins Best Short Wine List award for North America",
+        "body": "The World of Fine Wine recognized Wine Bar George at Disney Springs with the 2026 Best Short Wine List award for North America.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/wine-bar-george-at-disney-springs-honored-with-best-short-wine-list-award/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Award recognition often boosts walk-in demand at popular dining spots. Same-day reservations or walk-up availability tend to open up during the 3–5pm window before dinner service."
+        }
+      },
+      {
+        "title": "Animal Kingdom's Encanto attraction advances with major update",
+        "body": "A significant development milestone has been reached for the upcoming Encanto-themed ride coming to Disney's Animal Kingdom.",
+        "parkSlug": "animal-kingdom",
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/07/17/disneys-new-encanto-ride-is-one-step-closer-to-becoming-reality-2/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Construction activity near Dinoland U.S.A. may create pathway detours during certain hours. Flight of Passage and Expedition Everest on the opposite side of the park often see lighter crowds while construction progresses."
+        }
+      },
+      {
+        "title": "D23 Day at Disneyland detailed ahead of August fan event",
+        "body": "Disney revealed the full lineup for D23 Day at Disneyland on August 13, including special entertainment and Imagineering's largest-ever expo booth, one day before the D23 Expo begins in Anaheim.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/dlr/details-for-d23-day-at-disneyland/"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "D23 events tend to pack Disneyland beyond typical summer levels. Guests visiting August 13–14 may want to prioritize early-entry attractions or plan for higher waits across all lands."
+        }
+      },
+      {
+        "title": "Disney Jr. Let's Play Party returns to California Adventure in August",
+        "body": "The Disney Jr. Let's Play Party event is returning to Disney California Adventure on August 13, featuring entertainment and activities centered on Disney Jr. shows and characters.",
+        "parkSlug": "california-adventure",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/dlr/disney-jr-lets-play-party-at-disneyland/"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "Special events at California Adventure often concentrate families with young children in Hollywood Land and Pixar Pier. Grizzly Peak and Avengers Campus may offer lighter waits during party hours."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "New Blizzard Beach collectible medallions feature Ice Gator and Olaf",
+        "body": "Blizzard Beach added new pressed-coin style medallions to the Beach Haus shop, featuring Mickey and Friends along with Ice Gator and Olaf designs. Pricing is one for six dollars or four for twenty dollars.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/ice-gator-olaf-and-more-featured-on-new-blizzard-beach-collectible-medallions/"
+        }
+      },
+      {
+        "title": "Spider-Man and Hulk limited-edition Hey Dude shoes released",
+        "body": "Hey Dude launched a limited collection of Wally Funk slip-on shoes featuring Spider-Man and Hulk designs ahead of the July 31 theatrical release of Spider-Man Brand New Day.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/hey-dude-releases-limited-edition-spider-man-the-hulk-shoes/"
+        }
+      },
+      {
+        "title": "EPCOT expands Figment merchandise selection in 2026",
+        "body": "More Figment-themed products are now available at EPCOT than in recent years, despite Journey Into Imagination remaining one of the park's least popular attractions.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/epcot-has-even-more-figment-merchandise-in-2026-heres-why-thats-a-problem-disney-needs-to-fix/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "Walt Disney World guest satisfaction scores climb 15–20 percent",
+        "body": "Internal guest satisfaction metrics at Walt Disney World have increased by double digits following recent ride reimaginings and resort room updates across Magic Kingdom-area hotels. The improvements reflect positive reception to reinvestment efforts.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-world-improving-guest-satisfaction-scores-reimagining-rides-hotels/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Refurbished attractions and resorts often see elevated demand immediately after reopening. Visiting newly updated properties during the shoulder season may offer better availability and pricing than peak summer or holiday windows."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "YvlrAmzSq5s",
+      "title": "EPCOT World Showcase 2026 | Eating Around the World for Under $100 | NEW Food | Walt Disney World",
+      "channel": "Paging Mr. Morrow",
+      "publishedAt": "2026-07-16T19:29:49Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/YvlrAmzSq5s/mqdefault.jpg",
+      "viewCount": 82068,
+      "url": "https://www.youtube.com/watch?v=YvlrAmzSq5s",
+      "summary": "Paging Mr. Morrow samples food and drink across EPCOT World Showcase on a budget, highlighting new menu items available in 2026."
+    },
+    {
+      "videoId": "Avko6McfI6s",
+      "title": "The 3 BEST Quick Service Restaurants at Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-07-12T15:46:34Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Avko6McfI6s/mqdefault.jpg",
+      "viewCount": 53705,
+      "url": "https://www.youtube.com/watch?v=Avko6McfI6s",
+      "summary": "WrightDownMainStreet ranks the top three quick-service dining locations across Walt Disney World."
+    },
+    {
+      "videoId": "BS5hJDHqIlE",
+      "title": "🔴Live: Friday Night Live at Magic Kingdom - 7-17-26 - Walt Disney World Live Stream",
+      "channel": "ResortTV1",
+      "publishedAt": "2026-07-18T04:04:17Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/BS5hJDHqIlE/mqdefault.jpg",
+      "viewCount": 38894,
+      "url": "https://www.youtube.com/watch?v=BS5hJDHqIlE",
+      "summary": "ResortTV1 livestreams a Friday evening at Magic Kingdom, capturing attractions and entertainment on July 17."
+    },
+    {
+      "videoId": "8LXqmgKGO_w",
+      "title": "Best Restaurant in Magic Kingdom? Skipper Canteen | Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-07-15T15:55:30Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/8LXqmgKGO_w/mqdefault.jpg",
+      "viewCount": 30444,
+      "url": "https://www.youtube.com/watch?v=8LXqmgKGO_w",
+      "summary": "WrightDownMainStreet reviews Jungle Navigation Co. Skipper Canteen and discusses whether it ranks as Magic Kingdom's best table-service option."
+    },
+    {
+      "videoId": "TUFXnPbYp30",
+      "title": "🔴 Live: Happy 71st Anniversary Stream at Disneyland! Fantasmic, Fireworks & Parade - 07/17/26",
+      "channel": "Koda Bear the Explorer ",
+      "publishedAt": "2026-07-18T07:45:20Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/TUFXnPbYp30/mqdefault.jpg",
+      "viewCount": 30128,
+      "url": "https://www.youtube.com/watch?v=TUFXnPbYp30",
+      "summary": "Koda Bear the Explorer livestreams Disneyland's 71st birthday celebrations, including Fantasmic, fireworks, and the special anniversary parade."
+    },
+    {
+      "videoId": "j6FbHOXgSpQ",
+      "title": "🔴Live Disney's Hollywood Studios Fantasmic at 9pm, 10:30pm on Friday at Walt Disney World 7/17/2026",
+      "channel": "RON ON THE GO",
+      "publishedAt": "2026-07-18T03:28:29Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/j6FbHOXgSpQ/mqdefault.jpg",
+      "viewCount": 22241,
+      "url": "https://www.youtube.com/watch?v=j6FbHOXgSpQ",
+      "summary": "RON ON THE GO streams both Fantasmic showtimes from Hollywood Studios on Friday evening."
+    },
+    {
+      "videoId": "SjoVa0329aQ",
+      "title": "🔴 LIVE: Disney World – YOU Pick! Happily Ever After, Fantasmic or Disney Fireworks (4K)",
+      "channel": "Fun to be Free",
+      "publishedAt": "2026-07-18T04:04:49Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/SjoVa0329aQ/mqdefault.jpg",
+      "viewCount": 9238,
+      "url": "https://www.youtube.com/watch?v=SjoVa0329aQ",
+      "summary": "Fun to be Free offers a viewer-choice livestream covering nighttime spectaculars across Walt Disney World parks."
+    },
+    {
+      "videoId": "95ov8qGbeQo",
+      "title": "My heart 🥰My eyes 😭#disney #disneyland #foryou #funny #fyp",
+      "channel": "Wallie Tintler",
+      "publishedAt": "2026-07-18T06:12:33Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/95ov8qGbeQo/mqdefault.jpg",
+      "viewCount": 8291,
+      "url": "https://www.youtube.com/watch?v=95ov8qGbeQo",
+      "summary": "Wallie Tintler shares a short emotional moment from Disneyland."
+    },
+    {
+      "videoId": "jl6MVCZ-qdg",
+      "title": "My heart 🥰My eyes 😭#disney #disneyland #foryou #love",
+      "channel": "Proud people5",
+      "publishedAt": "2026-07-18T03:27:44Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/jl6MVCZ-qdg/mqdefault.jpg",
+      "viewCount": 7488,
+      "url": "https://www.youtube.com/watch?v=jl6MVCZ-qdg",
+      "summary": "Proud people5 posts a short clip highlighting a heartfelt Disneyland experience."
+    },
+    {
+      "videoId": "kghYZShP4cQ",
+      "title": "My heart 🥰 My eyes 😭 #disney #disneyland #love #funny #fyp",
+      "channel": "Roni Koria",
+      "publishedAt": "2026-07-18T06:16:58Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/kghYZShP4cQ/mqdefault.jpg",
+      "viewCount": 5656,
+      "url": "https://www.youtube.com/watch?v=kghYZShP4cQ",
+      "summary": "Roni Koria shares an emotional moment from a Disneyland visit."
+    }
+  ],
+  "updatedAt": "2026-07-18T11:45:31.150Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-07-18T11:45:31.150Z",
+    "tokens": {
+      "input": 12125,
+      "output": 5745,
+      "costUsd": 0.1226
+    }
+  }
+}
