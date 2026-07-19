@@ -1,0 +1,344 @@
+{
+  "title": "Parkio Daily for July 19, 2026",
+  "slug": "parkio-daily-2026-07-19",
+  "date": "2026-07-19",
+  "teaser": "Magic Kingdom ferry expansion approved; Tropical Americas construction visible at Animal Kingdom; first Mickey's Not-So-Scary night sold out.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Soarin'",
+        "parkSlug": "epcot",
+        "note": "Walk-on windows often appear during dinner hours, 6–7pm"
+      },
+      {
+        "name": "Big Thunder Mountain Railroad",
+        "parkSlug": "magic-kingdom",
+        "note": "First hour after rope drop typically under 20 minutes"
+      },
+      {
+        "name": "Radiator Springs Racers",
+        "parkSlug": "california-adventure",
+        "note": "Shortest waits early morning before 10am"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [],
+    "bignews": [
+      {
+        "title": "Magic Kingdom ferry fleet to expand for first time in 50+ years",
+        "body": "Walt Disney World announced a major investment in ferry transportation ahead of the Magic Kingdom expansion with Cars and Villains Lands. The iconic fleet will add new boats to handle increased capacity.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-world-expands-magic-kingdom-ferry-fleet-for-first-time-in-over-50-years/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Ferry wait times tend to spike during opening and closing hours. The expanded fleet may ease morning congestion, but resort monorail or bus lines often move faster during peak entry windows."
+        }
+      },
+      {
+        "title": "Disney Animation experience confirmed for Hollywood Studios",
+        "body": "A new walk-through attraction inspired by the Walt Disney Animation Studios lot in Burbank is coming to Hollywood Studios. The experience will allow guests to explore the campus and interact with Disney Animation characters.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/disney-animation-inspired-experience-coming-to-disneys-hollywood-studios/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Hollywood Studios Animation Courtyard tends to be quieter mid-morning. Once this opens, expect the area to draw heavier traffic; nearby attractions like Star Tours may see lighter crowds during the first weeks."
+        }
+      },
+      {
+        "title": "Encanto Casita and Indiana Jones temple now visible at Animal Kingdom",
+        "body": "Construction walls in the Tropical Americas expansion area at Animal Kingdom reveal the Encanto Magical Madrigal Casita attraction and Indiana Jones Adventure temple taking shape. Aerial photos show significant vertical progress on both structures.",
+        "parkSlug": "animal-kingdom",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/encanto-casita-indiana-jones-temple-rising-as-tropical-americas-construction-speeds-ahead/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Construction noise near the former DinoLand U.S.A. area tends to peak mid-morning through early afternoon. Plan quieter activities like Gorilla Falls Exploration Trail or dining at Flame Tree during those hours."
+        }
+      },
+      {
+        "title": "First Mickey's Not-So-Scary Halloween Party night sells out",
+        "body": "The opening night of Mickey's Not-So-Scary Halloween Party on August 10 is now sold out, marking the first date to reach capacity. Other early August dates remain available.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/first-night-sold-out-for-mickeys-not-so-scary-halloween-party-2026/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Party nights often mean lighter daytime crowds at Magic Kingdom. If you're visiting mid-week in August without a party ticket, evening hours may offer shorter waits before the 6pm hard-ticket cutoff."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "Coronado Springs convention center construction scheduled through 2027",
+        "body": "Walt Disney World added a year-plus construction project at Coronado Springs Resort to the calendar. Work appears confined to the convention center area and is expected to run into 2027.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-world-calendars-year-plus-construction-project-at-coronado-springs-resort/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Convention center construction noise and equipment traffic may affect nearby resort areas during the day. Guests staying at Coronado Springs should request rooms in the Casitas or Ranchos buildings for quieter surroundings."
+        }
+      },
+      {
+        "title": "D23 Day at Disneyland set for August 13",
+        "body": "Disneyland Resort will host D23 Day on August 13, a fan event taking place one day before D23: The Ultimate Disney Fan Event begins in Anaheim. The celebration includes special entertainment and activities across the resort.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/dlr/details-for-d23-day-at-disneyland/"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "D23 Day typically draws thousands of fans to Disneyland. Main Street U.S.A. and high-traffic merchandise locations tend to see heaviest congestion. Fantasyland and Critter Country often offer lighter crowds during the event."
+        }
+      },
+      {
+        "title": "Disney Jr. Let's Play Party returns to California Adventure August 13",
+        "body": "The Disney Jr. Let's Play Party event is coming back to Disney California Adventure on August 13, featuring entertainment and activities themed to Disney Jr. stories and characters.",
+        "parkSlug": "california-adventure",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/dlr/disney-jr-lets-play-party-at-disneyland/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Families with young children will find character meet-and-greets and stage shows concentrated in Hollywood Land. Arrive early; these events tend to draw lines for photo ops by mid-morning."
+        }
+      },
+      {
+        "title": "Gideon's Bakehouse 10th anniversary cake available one day only",
+        "body": "Gideon's Bakehouse at Disney Springs is celebrating its 10th anniversary with an exclusive anniversary cake slice available for one day only on July 25.",
+        "parkSlug": null,
+        "source": {
+          "label": "AllEars.Net",
+          "url": "https://allears.net/2026/07/18/gideons-bakehouse-is-turning-10-heres-how-to-celebrate-p-s-it-involves-cake/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Gideon's lines often exceed 60 minutes on special-release days. Arriving when Disney Springs opens at 10am or after 8pm tends to shorten waits, though limited-run items may sell out early."
+        }
+      },
+      {
+        "title": "New bedazzled Cars Land merchandise debuts at California Adventure",
+        "body": "Ramone's House of Body Art at Disney California Adventure now carries bedazzled Cars Land apparel, including a zip-up hoodie and tee featuring the Cars Land logo.",
+        "parkSlug": "california-adventure",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/bedazzled-cars-land-merchandise-debuts-at-disneyland-resort/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Merchandise tied to specific lands tends to sell quickly in flagship sizes. Stop by Ramone's in the first hour after park opening to secure popular items before stock thins."
+        }
+      },
+      {
+        "title": "Glow-in-the-dark Haunted Mansion pins now at Disneyland Resort",
+        "body": "Four new open-edition Haunted Mansion pins featuring glow-in-the-dark designs have been released at Disney California Adventure, including a Madame Leota pin.",
+        "parkSlug": "california-adventure",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/glow-in-the-dark-haunted-mansion-pins-materialize-at-the-disneyland-resort/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Pin collectors often converge on merchandise locations early. Check Elias & Co. or other pin-trading hubs near rope drop to avoid sold-out styles by afternoon."
+        }
+      },
+      {
+        "title": "Hannah Montana and High School Musical jerseys arrive at Disney Springs",
+        "body": "World of Disney at Disney Springs is now selling sports jerseys themed to Disney Channel classics Hannah Montana and High School Musical.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/jerseys-featuring-disney-channel-classics-now-available-at-walt-disney-world/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Nostalgia-driven merchandise tends to move fast in the first week of release. Visit World of Disney before noon to secure your size, especially in popular adult cuts."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Wait times climb across Walt Disney World this week",
+        "body": "Average wait times across all four Walt Disney World parks increased this week as summer vacation continues. Hollywood Studios and Magic Kingdom saw the largest upticks.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/07/18/disney-worlds-wait-times-are-heating-up-along-with-the-temperature/"
+        }
+      },
+      {
+        "title": "Disney Store cancels London Lorcana release after crowd issues",
+        "body": "The Disney Store in London canceled an in-person Disney Lorcana card game pre-sale after a large group rushed the queue, prompting the store to close temporarily.",
+        "parkSlug": null,
+        "source": {
+          "label": "AllEars.Net",
+          "url": "https://allears.net/2026/07/18/disney-store-cancels-in-person-release-and-closes-after-group-storms-queue/"
+        }
+      },
+      {
+        "title": "Guest satisfaction scores up 15-20% at Walt Disney World",
+        "body": "Walt Disney World reported higher guest satisfaction scores following recent hotel room and Magic Kingdom attraction refurbishments, marking a notable improvement in approval ratings.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-world-improving-guest-satisfaction-scores-reimagining-rides-hotels/"
+        }
+      },
+      {
+        "title": "Disney Cruise Line Very Merrytime cruises announced for holiday season",
+        "body": "Disney Cruise Line revealed its Very Merrytime Cruises itinerary for the holiday season, offering themed sailings with festive entertainment and decor.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/dcl/disney-cruise-lines-very-merrytime-cruises-christmas/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "Half-price ice cream at Disney Springs on July 25",
+        "body": "A Disney Springs location is offering half-off ice cream for one day only on July 25. The limited-time promotion is expected to draw large crowds to the shopping district.",
+        "parkSlug": null,
+        "ctaLabel": "Plan your visit",
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Single-day promotions at Disney Springs tend to create lines by late morning. Arriving when the location opens or waiting until after 7pm usually cuts wait times significantly."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "YvlrAmzSq5s",
+      "title": "EPCOT World Showcase 2026 | Eating Around the World for Under $100 | NEW Food | Walt Disney World",
+      "channel": "Paging Mr. Morrow",
+      "publishedAt": "2026-07-16T19:29:49Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/YvlrAmzSq5s/mqdefault.jpg",
+      "viewCount": 101693,
+      "url": "https://www.youtube.com/watch?v=YvlrAmzSq5s",
+      "summary": "Paging Mr. Morrow explores EPCOT World Showcase, sampling food and drink from multiple pavilions on a budget under $100."
+    },
+    {
+      "videoId": "Avko6McfI6s",
+      "title": "The 3 BEST Quick Service Restaurants at Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-07-12T15:46:34Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Avko6McfI6s/mqdefault.jpg",
+      "viewCount": 55821,
+      "url": "https://www.youtube.com/watch?v=Avko6McfI6s",
+      "summary": "WrightDownMainStreet ranks the top three quick-service dining locations across Walt Disney World's four theme parks."
+    },
+    {
+      "videoId": "lTR8V5JscRY",
+      "title": "making a custom fan at walt disney world!! 🪭🐭🫧 ​⁠#epcot #disney @DisneyParks @DisneyAUNZ @Disney",
+      "channel": "SAM TODD",
+      "publishedAt": "2026-07-19T01:38:32Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/lTR8V5JscRY/mqdefault.jpg",
+      "viewCount": 44102,
+      "url": "https://www.youtube.com/watch?v=lTR8V5JscRY",
+      "summary": "SAM TODD visits EPCOT to create a personalized hand fan, demonstrating a popular customization activity available at the park."
+    },
+    {
+      "videoId": "8LXqmgKGO_w",
+      "title": "Best Restaurant in Magic Kingdom? Skipper Canteen | Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-07-15T15:55:30Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/8LXqmgKGO_w/mqdefault.jpg",
+      "viewCount": 33079,
+      "url": "https://www.youtube.com/watch?v=8LXqmgKGO_w",
+      "summary": "WrightDownMainStreet reviews Jungle Navigation Co. Ltd. Skipper Canteen at Magic Kingdom, exploring whether it deserves the title of best restaurant in the park."
+    },
+    {
+      "videoId": "Ppmhh373tLE",
+      "title": "🔴Live: Riding Every Ride at Hollywood Studios with Premier Pass - Walt Disney World Live Stream",
+      "channel": "ResortTV1",
+      "publishedAt": "2026-07-19T02:19:35Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Ppmhh373tLE/mqdefault.jpg",
+      "viewCount": 31281,
+      "url": "https://www.youtube.com/watch?v=Ppmhh373tLE",
+      "summary": "ResortTV1 livestreams from Hollywood Studios, attempting to ride every attraction in one day using the Premier Pass skip-the-line product."
+    },
+    {
+      "videoId": "bWBee8SEMdw",
+      "title": "อาหารที่เล็กที่สุดในดิสนีย์แลนด์!",
+      "channel": "Nicknofox",
+      "publishedAt": "2026-07-19T05:00:24Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/bWBee8SEMdw/mqdefault.jpg",
+      "viewCount": 26947,
+      "url": "https://www.youtube.com/watch?v=bWBee8SEMdw",
+      "summary": "Nicknofox showcases the smallest food items available at Disneyland in this video."
+    },
+    {
+      "videoId": "0lvEEgZcMLA",
+      "title": "🔴 LIVE: Happily Ever After – EPIC Nighttime Spectacular | Disney World, Full Show 4K",
+      "channel": "Fun to be Free",
+      "publishedAt": "2026-07-19T04:40:51Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/0lvEEgZcMLA/mqdefault.jpg",
+      "viewCount": 11223,
+      "url": "https://www.youtube.com/watch?v=0lvEEgZcMLA",
+      "summary": "Fun to be Free streams the complete Happily Ever After fireworks show from Magic Kingdom in 4K resolution."
+    },
+    {
+      "videoId": "q7nPQYyCvvw",
+      "title": "LIVE from Magic Kingdom! Disney's NEW Starlight Parade, Happily Ever After Fireworks & Rides",
+      "channel": "Living in DIZ",
+      "publishedAt": "2026-07-19T04:49:46Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/q7nPQYyCvvw/mqdefault.jpg",
+      "viewCount": 7531,
+      "url": "https://www.youtube.com/watch?v=q7nPQYyCvvw",
+      "summary": "Living in DIZ livestreams from Magic Kingdom, covering the Starlight Parade, Happily Ever After fireworks, and multiple attractions."
+    },
+    {
+      "videoId": "ljOjF7kUJaU",
+      "title": "My heart 🥰My eyes 😭#disney #disneyland #foryou #love",
+      "channel": "Proud people5",
+      "publishedAt": "2026-07-19T02:18:03Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/ljOjF7kUJaU/mqdefault.jpg",
+      "viewCount": 4383,
+      "url": "https://www.youtube.com/watch?v=ljOjF7kUJaU",
+      "summary": "Proud people5 shares an emotional moment from their Disneyland visit."
+    },
+    {
+      "videoId": "2gYc1DdJtZE",
+      "title": "🔴LIVE🔴 Disney Springs Shopping and Merchandise Strolls | Walt Disney World",
+      "channel": "Park Pass TV",
+      "publishedAt": "2026-07-19T05:59:34Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/2gYc1DdJtZE/mqdefault.jpg",
+      "viewCount": 2817,
+      "url": "https://www.youtube.com/watch?v=2gYc1DdJtZE",
+      "summary": "Park Pass TV livestreams a shopping tour through Disney Springs, showcasing current merchandise offerings."
+    }
+  ],
+  "updatedAt": "2026-07-19T11:49:42.266Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-07-19T11:49:42.266Z",
+    "tokens": {
+      "input": 12139,
+      "output": 5370,
+      "costUsd": 0.117
+    }
+  }
+}
