@@ -1,0 +1,318 @@
+{
+  "title": "Parkio Daily for July 20, 2026",
+  "slug": "parkio-daily-2026-07-20",
+  "date": "2026-07-20",
+  "teaser": "Monstropolis construction accelerates at Hollywood Studios; Der Teddybar reopens at EPCOT after six years; Tower of Terror runs limited shafts.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Soarin'",
+        "parkSlug": "epcot",
+        "note": "Walk-on windows during dinner hour"
+      },
+      {
+        "name": "Spaceship Earth",
+        "parkSlug": "epcot",
+        "note": "Consistently low waits all day"
+      },
+      {
+        "name": "Pirates of the Caribbean",
+        "parkSlug": "magic-kingdom",
+        "note": "Short lines in late afternoon"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [],
+    "bignews": [
+      {
+        "title": "Monstropolis entrance takes shape at Hollywood Studios",
+        "body": "Aerial photos show the first themed concrete installed at the future Monstropolis entrance, with decorative columns and trim work now visible. The land transformation continues as construction crews shape the gateway between Animation Courtyard and the new attractions.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/aerial-photos-reveal-first-themed-concrete-and-entrance-columns-trashed-at-monstropolis/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Construction noise and fencing around Animation Courtyard tends to make navigation tight during peak afternoon hours. Plan your route through Toy Story Land or Galaxy's Edge when heading to Tower of Terror or Rock 'n' Roller Coaster."
+        }
+      },
+      {
+        "title": "Der Teddybar reopens in Germany pavilion after six years",
+        "body": "The plush and toy shop in EPCOT's Germany pavilion has reopened following a closure that began in 2020. The store offers German-themed merchandise and stuffed animals in World Showcase.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/07/19/6-years-later-this-epcot-store-is-finally-open/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Newly reopened shops often see a surge of curious visitors in the first few weeks. Stop by early morning or late evening to browse without shoulder-to-shoulder crowds."
+        }
+      },
+      {
+        "title": "Tower of Terror operating with reduced capacity",
+        "body": "The Twilight Zone Tower of Terror is running fewer elevator shafts following repeated mechanical issues, resulting in longer-than-usual queues. Wait times have climbed as Disney limits operational vehicles on the drop tower.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/07/confirmed-disney-world-limits-tower-of-terror-operations-following-repeated-mechanical-failures-bwb1/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Tower of Terror waits tend to peak between 11 a.m. and 3 p.m. Rope drop or the final hour before park close usually offer the shortest queues, even with limited shafts."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "Magic Kingdom extends early entry for party season",
+        "body": "Extra morning hours will return to Magic Kingdom during the 2026 fall party season, giving resort guests additional time before ticketed event closures. The extensions offset shorter operating days when after-hours events begin.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/extra-early-entry-returns-to-magic-kingdom-for-2026-party-season/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Party nights typically push day guests out by 6 p.m. Resort guests can stack early entry with a park-hop to maximize attraction hours without the evening rush."
+        }
+      },
+      {
+        "title": "Descendants costumes and props now on display at Hollywood Studios",
+        "body": "Walt Disney Presents is showcasing costumes and props from Descendants: Wicked Wonderland, including Queen of Hearts outfits and set pieces. The exhibit joins other film and television memorabilia at the Animation Courtyard walkthrough.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/descendants-wicked-wonderland-costumes-and-props-arrive-at-disneys-hollywood-studios/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Walt Disney Presents rarely draws long lines. Duck in during midday heat or heavy rain when outdoor queues spike elsewhere in the park."
+        }
+      },
+      {
+        "title": "Coronado Springs Resort construction scheduled through 2027",
+        "body": "Disney has calendared a year-plus renovation project at Coronado Springs Resort starting soon. The work appears focused on the convention center rather than guest rooms, though disruption details remain limited.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-world-calendars-year-plus-construction-project-at-coronado-springs-resort/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Convention center projects can bring noise, fencing, and truck traffic to resort walkways. Guests who value quiet mornings may prefer Pop Century or Art of Animation until completion."
+        }
+      },
+      {
+        "title": "Nine Disney World restaurants update menus this week",
+        "body": "Menu changes rolled out across multiple Walt Disney World dining locations this week, adjusting items and pricing at quick-service and table-service venues. Specific changes vary by restaurant.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/07/19/9-disney-world-restaurants-just-changed-their-menus/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Menu updates often bring limited-time offerings that disappear within weeks. Check your reservation's online menu the morning of to spot new dishes worth trying."
+        }
+      },
+      {
+        "title": "Disney transportation suspensions announced",
+        "body": "Disney Skyliner, boat, and bus service will see periodic suspensions for maintenance and weather. Guests should plan extra travel time and monitor notifications through My Disney Experience.",
+        "parkSlug": null,
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/07/walt-disney-world-confirms-suspensions-of-skyliner-boat-and-bus-bwb1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Skyliner downtime tends to ripple into longer bus waits at Caribbean Beach and Riviera. Build a 20-minute buffer if you're hopping parks or heading to a dining reservation."
+        }
+      },
+      {
+        "title": "New Disney Animation experience coming to Hollywood Studios",
+        "body": "An immersive Disney Animation-inspired attraction is planned for Hollywood Studios, designed to bring animated characters into a walk-through or interactive environment. Details on opening timeline and location remain under wraps.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/disney-animation-inspired-experience-coming-to-disneys-hollywood-studios/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "New Animation Courtyard offerings usually draw families with younger children. Soft openings often happen weeks ahead of formal announcements—watch for signage near Star Wars Launch Bay."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "D23 Day at Disneyland set for August 13",
+        "body": "D23 members can join a special event day at Disneyland on August 13, featuring exclusive entertainment and activities ahead of the D23 fan convention in Anaheim. Tickets and registration details are available through the D23 website.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/dlr/details-for-d23-day-at-disneyland/"
+        }
+      },
+      {
+        "title": "Disney Jr. Let's Play Party returns to California Adventure",
+        "body": "The Disney Jr.-themed event is scheduled for August 13 at Disney California Adventure, with character meet-and-greets and play zones for preschool guests. The celebration continues into the following days.",
+        "parkSlug": "california-adventure",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/dlr/disney-jr-lets-play-party-at-disneyland/"
+        }
+      },
+      {
+        "title": "Very Merrytime Christmas cruises announced for late 2026",
+        "body": "Disney Cruise Line will offer holiday-themed sailings in November and December 2026 with seasonal decorations, character appearances, and festive dining. Bookings are open for select itineraries.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/dcl/disney-cruise-lines-very-merrytime-cruises-christmas/"
+        }
+      },
+      {
+        "title": "Beach-themed ornaments arrive at Disneyland",
+        "body": "Christmas in July merchandise includes beach-themed holiday ornaments featuring Stitch, Finding Nemo characters, and Mickey designs. The items are available now at Disneyland Resort shops.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/beach-themed-ornaments-featuring-stitch-finding-nemo-seagulls-and-more-now-available-at-disneyland/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "EPCOT World Showcase food tour under $100",
+        "body": "A new video walks through eating around World Showcase for less than one hundred dollars, highlighting fresh menu items and budget-friendly snacks at pavilions from Mexico to Canada. The route covers shareable plates and drinks without table-service reservations.",
+        "parkSlug": "epcot",
+        "ctaLabel": "Watch the full food tour",
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "World Showcase kiosks and quick-service windows tend to have shorter lines before 11 a.m. and after 7 p.m. Start your food crawl early or late to skip festival-sized crowds at each pavilion."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "YvlrAmzSq5s",
+      "title": "EPCOT World Showcase 2026 | Eating Around the World for Under $100 | NEW Food | Walt Disney World",
+      "channel": "Paging Mr. Morrow",
+      "publishedAt": "2026-07-16T19:29:49Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/YvlrAmzSq5s/mqdefault.jpg",
+      "viewCount": 114443,
+      "url": "https://www.youtube.com/watch?v=YvlrAmzSq5s",
+      "summary": "A budget-friendly food tour around EPCOT's World Showcase highlighting new menu items and snacks for under one hundred dollars."
+    },
+    {
+      "videoId": "EX9NUAPCvIk",
+      "title": "🔴Live Magic Kingdom All day with Rides, Shows, Parades, Fireworks at Walt Disney World 7/19/2026",
+      "channel": "RON ON THE GO",
+      "publishedAt": "2026-07-20T04:04:39Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/EX9NUAPCvIk/mqdefault.jpg",
+      "viewCount": 55650,
+      "url": "https://www.youtube.com/watch?v=EX9NUAPCvIk",
+      "summary": "A full-day live stream from Magic Kingdom covering rides, parades, shows, and fireworks throughout the park."
+    },
+    {
+      "videoId": "8LXqmgKGO_w",
+      "title": "Best Restaurant in Magic Kingdom? Skipper Canteen | Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-07-15T15:55:30Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/8LXqmgKGO_w/mqdefault.jpg",
+      "viewCount": 35325,
+      "url": "https://www.youtube.com/watch?v=8LXqmgKGO_w",
+      "summary": "A review and walkthrough of Jungle Navigation Co. Skipper Canteen, exploring whether it ranks as Magic Kingdom's top dining spot."
+    },
+    {
+      "videoId": "3Z7xK2dawUg",
+      "title": "🔴 LIVE: Happily Ever After – Magic Kingdom (2026 Fireworks) Disney World | Full Show 4K",
+      "channel": "Fun to be Free",
+      "publishedAt": "2026-07-20T04:34:40Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/3Z7xK2dawUg/mqdefault.jpg",
+      "viewCount": 10694,
+      "url": "https://www.youtube.com/watch?v=3Z7xK2dawUg",
+      "summary": "A live 4K broadcast of the full Happily Ever After fireworks show at Magic Kingdom."
+    },
+    {
+      "videoId": "LPtXqjxNGAQ",
+      "title": "🔴Live: Night at Hollywood Studios & Magic Kingdom! - Rides & Fireworks - Disney World Livestream",
+      "channel": "GooToYou!",
+      "publishedAt": "2026-07-20T02:32:54Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/LPtXqjxNGAQ/mqdefault.jpg",
+      "viewCount": 9002,
+      "url": "https://www.youtube.com/watch?v=LPtXqjxNGAQ",
+      "summary": "An evening live stream covering attractions and fireworks at both Hollywood Studios and Magic Kingdom."
+    },
+    {
+      "videoId": "9lR5J0NckXo",
+      "title": "🔴LIVE🔴 Viewers Decide! Hollywood Studios Start | Walt Disney World 4K",
+      "channel": "Park Pass TV",
+      "publishedAt": "2026-07-20T03:37:20Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/9lR5J0NckXo/mqdefault.jpg",
+      "viewCount": 7061,
+      "url": "https://www.youtube.com/watch?v=9lR5J0NckXo",
+      "summary": "An interactive live stream from Hollywood Studios where viewers vote on which rides and attractions to visit next."
+    },
+    {
+      "videoId": "XjD9mg5RJhg",
+      "title": "【イッツ・ア・スウィーツフルタイム！】デイジーちゃん💜🍭",
+      "channel": "Ai's Memories",
+      "publishedAt": "2026-07-20T09:00:19Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/XjD9mg5RJhg/mqdefault.jpg",
+      "viewCount": 1905,
+      "url": "https://www.youtube.com/watch?v=XjD9mg5RJhg",
+      "summary": "Footage of Daisy Duck in a sweets-themed show or parade, likely from Tokyo Disney Resort."
+    },
+    {
+      "videoId": "fbEJEb7QQRY",
+      "title": "New Halloween Disney at Costco",
+      "channel": "Serena Patterson",
+      "publishedAt": "2026-07-20T02:15:24Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/fbEJEb7QQRY/mqdefault.jpg",
+      "viewCount": 1841,
+      "url": "https://www.youtube.com/watch?v=fbEJEb7QQRY",
+      "summary": "A look at new Disney Halloween merchandise now available at Costco stores."
+    },
+    {
+      "videoId": "5UI98V2iapc",
+      "title": "🐭WHAT I ATE AT DISNEY🐭",
+      "channel": "Jea",
+      "publishedAt": "2026-07-20T04:50:32Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/5UI98V2iapc/mqdefault.jpg",
+      "viewCount": 1715,
+      "url": "https://www.youtube.com/watch?v=5UI98V2iapc",
+      "summary": "A personal food diary showing meals and snacks eaten during a Disney parks visit."
+    },
+    {
+      "videoId": "VT_zLea6v80",
+      "title": "#starwars #galaxyedge #disneyland ##california #usa #disney",
+      "channel": "Detroit Bunny",
+      "publishedAt": "2026-07-20T04:14:20Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/VT_zLea6v80/mqdefault.jpg",
+      "viewCount": 1469,
+      "url": "https://www.youtube.com/watch?v=VT_zLea6v80",
+      "summary": "Short clips from Star Wars: Galaxy's Edge at Disneyland in California."
+    }
+  ],
+  "updatedAt": "2026-07-20T13:00:56.614Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-07-20T13:00:56.614Z",
+    "tokens": {
+      "input": 12085,
+      "output": 4903,
+      "costUsd": 0.1098
+    }
+  }
+}
