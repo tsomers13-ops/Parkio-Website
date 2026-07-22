@@ -1,0 +1,362 @@
+{
+  "title": "Parkio Daily for July 22, 2026",
+  "slug": "parkio-daily-2026-07-22",
+  "date": "2026-07-22",
+  "teaser": "Gideon's Six Ravens opens at Disney Springs today; Space Mountain closed through Friday; Coronado Springs enters year-long refurb.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Test Track",
+        "parkSlug": "epcot",
+        "note": "Walk-ons likely during morning EMH window"
+      },
+      {
+        "name": "Rise of the Resistance",
+        "parkSlug": "hollywood-studios",
+        "note": "First hour tends to stay under 30 minutes"
+      },
+      {
+        "name": "Flight of Passage",
+        "parkSlug": "animal-kingdom",
+        "note": "Early rope-drop window often avoids peak crowds"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [
+      {
+        "title": "Six Ravens restaurant opens today at Disney Springs",
+        "body": "Gideon's Bakehouse opens its first full-service restaurant at Disney Springs this morning with a villain-themed menu and atmosphere. The new location expands beyond pastries into entrees and cocktails.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/six-ravens-restaurant-opens-today-at-disney-world-full-menu-hours-details/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Opening day crowds at Disney Springs restaurants tend to peak during the lunch and dinner windows. A mid-afternoon reservation or early dinner slot (before 5pm) usually avoids the longest waits."
+        }
+      },
+      {
+        "title": "Space Mountain closed through Friday at Disneyland",
+        "body": "Disneyland has pulled Space Mountain from the operational roster for a four-day closure ending July 25. No refurbishment details have been shared yet.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/07/disney-attraction-closure-cali-emd1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Tomorrowland waits often redistribute to Matterhorn and Indiana Jones when Space Mountain is down. Rope-dropping one of those two attractions today may save 20–30 minutes compared to mid-morning."
+        }
+      }
+    ],
+    "bignews": [
+      {
+        "title": "Coronado Springs begins year-long refurbishment",
+        "body": "Disney's Coronado Springs Resort will enter a major renovation lasting approximately twelve months. Construction will affect guest rooms and common areas during the work.",
+        "parkSlug": null,
+        "source": {
+          "label": "AllEars.Net",
+          "url": "https://allears.net/2026/07/21/this-popular-disney-world-hotel-has-a-year-long-refurbishment-on-the-way/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Resort refurbishments often bring construction noise and closed amenities. Guests with upcoming reservations may want to consider switching to Caribbean Beach or a Skyliner resort for similar pricing without disruption."
+        }
+      },
+      {
+        "title": "Kraft Heinz partnership announced for Disney parks",
+        "body": "Disney has signed a multi-year sponsorship with the Kraft Heinz Company that will bring branded food products to Walt Disney World, Disneyland, and Disney Cruise Line starting at D23 Expo next month.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-crafts-kraft-heinz-partnership-for-parks-more/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Corporate food partnerships at Disney often debut at quick-service locations first. If you prefer non-branded park dining, sit-down restaurants tend to remain insulated from sponsorship menu changes."
+        }
+      },
+      {
+        "title": "Disney bus fire closes road near resort hotels",
+        "body": "A Walt Disney World bus caught fire Monday night with smoke visible from the vehicle, prompting an evacuation and temporary road closure near the resort hotel area.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/smoking-walt-disney-world-bus-leads-to-road-closure-in-todays-daily-recap-for-7-21-2026/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Bus incidents rarely affect service the next day, but resort guests may want to allow an extra 10–15 minutes for transportation this morning in case reroutes are still active."
+        }
+      },
+      {
+        "title": "EPCOT Food & Wine Festival adds new culinary events",
+        "body": "Walt Disney World has announced a signature culinary event series for the 2026 EPCOT International Food & Wine Festival this fall, expanding the roster of premium dining experiences.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/new-signature-culinary-event-series-coming-to-disney-world-during-2026-epcot-food-wine-festival/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Festival dining events typically sell out within a few weeks of booking windows opening. Setting a calendar reminder for the announcement date often secures first-choice time slots."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "Crystal Arts glass blowing closed for several weeks",
+        "body": "The Arribas Brothers glass-blowing demonstration at Crystal Arts in Magic Kingdom is temporarily suspended. Custom hand-blown pieces will not be available during the closure.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/crystal-arts-glass-blowing-temporarily-closed-at-walt-disney-world/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Guests planning custom glasswork for a special occasion may want to visit the Arribas location at Disney Springs instead, where demonstrations usually continue during park-side closures."
+        }
+      },
+      {
+        "title": "Plaza Inn character meals drop Minnie Mouse rotation",
+        "body": "Disneyland's Plaza Inn has adjusted its character dining lineup, removing Minnie Mouse and other favorites from the regular breakfast and lunch rotation.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/07/disneyland-removes-minnie-mouse-and-other-beloved-characters-ad1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Character dining rosters shift frequently. Guests hoping to meet Minnie may have better luck at Goofy's Kitchen in the Disneyland Hotel, where her appearances tend to be more consistent."
+        }
+      },
+      {
+        "title": "Halloween Horror Nights 35 adds early-entry windows",
+        "body": "Universal Orlando has confirmed that thousands of Halloween Horror Nights guests will receive early access to at least three haunted houses starting this fall, extending event time by nearly five hours.",
+        "parkSlug": null,
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/07/universal-hhn-35-2026-emd1/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Early entry at Halloween Horror Nights tends to clear house queues before general admission arrives. Guests with the perk should prioritize the most popular houses first to maximize the walk-on window."
+        }
+      },
+      {
+        "title": "Disney auction at D23 sparks fan debate",
+        "body": "Disney has announced a rare props and memorabilia auction at the upcoming D23 Expo featuring theme park artifacts. The event has drawn mixed reactions from fans concerned about park history leaving the archives.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-world-disneyland-auction-rare-parks-props-controversial-2026-d23-expo/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "D23 auction previews often draw collectors to the exhibit floor early. Attendees hoping to view items before bidding should arrive when doors open to avoid peak crowd congestion around display cases."
+        }
+      },
+      {
+        "title": "Lightning Lane changes under internal review",
+        "body": "Disney is reportedly considering simplifications to the Lightning Lane system after feedback that the designated planner in each group spends too much time managing reservations instead of enjoying attractions.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-mulls-making-lightning-lanes-less-complex/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Until changes roll out, splitting Lightning Lane booking duties across multiple guests in your party often reduces stress. One person handles morning selections, another takes afternoon refreshes."
+        }
+      },
+      {
+        "title": "Wine Bar George launches blind tasting series",
+        "body": "Master Sommelier George Miliotes will host a 90-minute wine tasting event at Wine Bar George in Disney Springs on select dates this fall. The experience includes six hand-selected wines presented blind.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/learn-how-to-taste-wine-with-master-sommelier-george-miliotes-owner-of-wine-bar-george-at-disney-springs/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Specialty wine events at Disney Springs typically sell out weeks in advance. Booking as soon as registration opens often secures a spot before popular dates fill."
+        }
+      },
+      {
+        "title": "Piston Peak construction progresses in Magic Kingdom",
+        "body": "Vertical work is now visible at the Piston Peak attraction site in Magic Kingdom, with structural framing advancing behind construction walls in the back half of Frontierland.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "AllEars.Net",
+          "url": "https://allears.net/2026/07/21/this-piston-peak-construction-update-in-magic-kingdom-could-be-bigger-than-you-realize/"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "Construction noise near Big Thunder Mountain tends to peak mid-morning when crews ramp up. Guests sensitive to drilling and equipment sounds may prefer morning rope-drop or evening hours in that corner of the park."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Nightmare Before Christmas drinkware arrives at Disney World",
+        "body": "New Corkcicle tumblers themed to The Nightmare Before Christmas are now available at the Corkcicle kiosk in Disney Springs, along with Haunted Mansion Squishmallows featuring the Hitchhiking Ghosts.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/nightmare-before-christmas-corkcicle-tumblers-haunted-mansion-squishmallows-at-disney-world/"
+        }
+      },
+      {
+        "title": "Mickey Family Halloween Collection launches July 27",
+        "body": "A new Halloween merchandise line starring Mickey and Friends will debut on DisneyStore.com on July 27, with select items rolling out to Disney Parks shortly after.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/products/new-mickey-family-halloween-collection/"
+        }
+      },
+      {
+        "title": "Inside Out Loungefly backpack debuts at Disney World",
+        "body": "A purple Loungefly mini backpack featuring memory orbs and characters from Inside Out and Inside Out 2 is now available at Walt Disney World retail locations for $80.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/inside-out-emotions-loungefly-at-walt-disney-world/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "Tesla rideshare pilot expands to Orlando theme parks",
+        "body": "Tesla is testing an autonomous rideshare service in the Orlando area with routes connecting major theme park resorts and hotel districts. The pilot program offers an alternative to traditional rental cars and shuttles for park guests.",
+        "parkSlug": null,
+        "ctaLabel": "Learn more",
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Early-stage autonomous services often offer promotional rates to build ridership. Guests comfortable with the technology may find lower fares than Uber or Lyft during the trial period."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "YvlrAmzSq5s",
+      "title": "EPCOT World Showcase 2026 | Eating Around the World for Under $100 | NEW Food | Walt Disney World",
+      "channel": "Paging Mr. Morrow",
+      "publishedAt": "2026-07-16T19:29:49Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/YvlrAmzSq5s/mqdefault.jpg",
+      "viewCount": 130118,
+      "url": "https://www.youtube.com/watch?v=YvlrAmzSq5s",
+      "summary": "Paging Mr. Morrow walks the World Showcase testing whether it's possible to sample food from every pavilion while staying under a $100 budget, highlighting new menu items along the way."
+    },
+    {
+      "videoId": "itDrePOpH8A",
+      "title": "🔴Live Magic Kingdom with Rides, Shows, Parades, Fireworks at Walt Disney World 7/21/2026",
+      "channel": "RON ON THE GO",
+      "publishedAt": "2026-07-22T04:11:43Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/itDrePOpH8A/mqdefault.jpg",
+      "viewCount": 49266,
+      "url": "https://www.youtube.com/watch?v=itDrePOpH8A",
+      "summary": "RON ON THE GO livestreams an evening at Magic Kingdom, covering attractions, entertainment, parades, and the nighttime fireworks spectacular."
+    },
+    {
+      "videoId": "8LXqmgKGO_w",
+      "title": "Best Restaurant in Magic Kingdom? Skipper Canteen | Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-07-15T15:55:30Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/8LXqmgKGO_w/mqdefault.jpg",
+      "viewCount": 37274,
+      "url": "https://www.youtube.com/watch?v=8LXqmgKGO_w",
+      "summary": "WrightDownMainStreet reviews Jungle Navigation Co. Ltd. Skipper Canteen to determine whether it deserves the title of Magic Kingdom's best table-service restaurant."
+    },
+    {
+      "videoId": "q6j2o4N5EuU",
+      "title": "Epcot's Best NEW Snack!- La Poutinerie & Le Cellier | Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-07-20T16:02:38Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/q6j2o4N5EuU/mqdefault.jpg",
+      "viewCount": 29697,
+      "url": "https://www.youtube.com/watch?v=q6j2o4N5EuU",
+      "summary": "WrightDownMainStreet samples new snack offerings at La Poutinerie and Le Cellier in EPCOT's Canada Pavilion, highlighting what may be the park's top new quick bite."
+    },
+    {
+      "videoId": "AfwyWWbPFbs",
+      "title": "Funny Disney Moments #disney #disneyland #love #funny #fyp",
+      "channel": "Roni Koria",
+      "publishedAt": "2026-07-22T05:56:22Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/AfwyWWbPFbs/mqdefault.jpg",
+      "viewCount": 12894,
+      "url": "https://www.youtube.com/watch?v=AfwyWWbPFbs",
+      "summary": "Roni Koria compiles humorous clips from recent Disneyland visits, capturing spontaneous guest interactions and character moments."
+    },
+    {
+      "videoId": "WKrRoBHKJH0",
+      "title": "My heart 🥰My eyes 😭#disney #disneyland #foryou #love",
+      "channel": "Proud people5",
+      "publishedAt": "2026-07-22T02:51:11Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/WKrRoBHKJH0/mqdefault.jpg",
+      "viewCount": 9404,
+      "url": "https://www.youtube.com/watch?v=WKrRoBHKJH0",
+      "summary": "Proud people5 shares an emotional Disneyland moment, highlighting the park's ability to create memorable experiences for guests."
+    },
+    {
+      "videoId": "FuB9hlDoJ2k",
+      "title": "#LIVE Disneyland Wouldn't It Be Nice, Rides, Characters, New Merch",
+      "channel": "Main Street Cowgirl",
+      "publishedAt": "2026-07-22T04:04:30Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/FuB9hlDoJ2k/mqdefault.jpg",
+      "viewCount": 6307,
+      "url": "https://www.youtube.com/watch?v=FuB9hlDoJ2k",
+      "summary": "Main Street Cowgirl livestreams from Disneyland, touring attractions, meeting characters, and showcasing newly released merchandise across the resort."
+    },
+    {
+      "videoId": "U-wz154GfRg",
+      "title": "✨ NEW 2026 Disneyland Resort FOODS! | NEW Merch, BIG Updates, Magic Key Experience + MUCH MORE!",
+      "channel": "Making Magical Adventures",
+      "publishedAt": "2026-07-22T01:45:34Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/U-wz154GfRg/mqdefault.jpg",
+      "viewCount": 4586,
+      "url": "https://www.youtube.com/watch?v=U-wz154GfRg",
+      "summary": "Making Magical Adventures covers the latest food offerings at Disneyland Resort along with new merchandise drops, construction updates, and Magic Key holder experiences."
+    },
+    {
+      "videoId": "spDuyKJXHFg",
+      "title": "🔴LIVE Magic Kingdom Evening in Walt Disney World  with Starlight Parade 07/21/2026",
+      "channel": "Jennifer Caruso",
+      "publishedAt": "2026-07-22T02:34:24Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/spDuyKJXHFg/mqdefault.jpg",
+      "viewCount": 4131,
+      "url": "https://www.youtube.com/watch?v=spDuyKJXHFg",
+      "summary": "Jennifer Caruso livestreams an evening visit to Magic Kingdom, capturing the Starlight Parade and nighttime atmosphere as guests wind down their park day."
+    },
+    {
+      "videoId": "T4fK6dCtHhM",
+      "title": "Funny Moments at Disneyland #funny  #disney #disneyland",
+      "channel": "DisneyLand Tv",
+      "publishedAt": "2026-07-22T03:00:36Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/T4fK6dCtHhM/mqdefault.jpg",
+      "viewCount": 3475,
+      "url": "https://www.youtube.com/watch?v=T4fK6dCtHhM",
+      "summary": "DisneyLand Tv highlights amusing guest and cast member interactions from recent Disneyland visits, showcasing the lighter side of park experiences."
+    }
+  ],
+  "updatedAt": "2026-07-22T12:22:38.557Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-07-22T12:22:38.557Z",
+    "tokens": {
+      "input": 11898,
+      "output": 5615,
+      "costUsd": 0.1199
+    }
+  }
+}
