@@ -1,0 +1,324 @@
+{
+  "title": "Parkio Daily for July 24, 2026",
+  "slug": "parkio-daily-2026-07-24",
+  "date": "2026-07-24",
+  "teaser": "Mickey's Not-So-Scary Halloween Party food debuts August 7; Animal Kingdom rope drop changes now permanent; new Winnie the Pooh tea at Disneyland.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Test Track",
+        "parkSlug": "epcot",
+        "note": "Early Entry window opens strong ride opportunities before regular crowds arrive"
+      },
+      {
+        "name": "Expedition Everest",
+        "parkSlug": "animal-kingdom",
+        "note": "New rope drop procedures make morning access smoother"
+      },
+      {
+        "name": "Guardians of the Galaxy: Cosmic Rewind",
+        "parkSlug": "epcot",
+        "note": "Second Early Entry headliner after Test Track yields short waits"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [],
+    "bignews": [
+      {
+        "title": "Mickey's Not-So-Scary Halloween Party food menu revealed for 2026",
+        "body": "Disney published the complete lineup of event-exclusive snacks, entrees, and desserts coming to Magic Kingdom during party nights from August 7 through October 31. The menu includes new Halloween-themed treats available only during the after-hours event, plus daytime fall offerings that will be served throughout the season.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/disney-eats-mickeys-not-so-scary-halloween-party-foodie-guide/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Party-exclusive food tends to sell out faster at walk-up locations after the first parade. Ordering before 8pm usually means shorter lines and fuller menus at Casey's Corner and Pecos Bill."
+        }
+      },
+      {
+        "title": "Animal Kingdom rope drop procedures now permanent",
+        "body": "Cast members confirmed that the updated morning entry rules implemented eight days ago at Disney's Animal Kingdom are staying in place indefinitely. The new procedures change how guests access the park at opening and navigate Early Entry windows.",
+        "parkSlug": "animal-kingdom",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/07/disneys-animal-kingdom-theme-park-new-rope-drop-procedures-are-permanent-jc1mmb/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "The updated entry flow tends to reduce bottlenecks near the Tree of Life. Arriving 20 minutes before Early Entry usually puts you ahead of the main wave at Flight of Passage."
+        }
+      },
+      {
+        "title": "Winnie the Pooh tea collection arrives at Disneyland Resort",
+        "body": "A new line of character-themed teas inspired by Pooh, Tigger, Piglet, and Eeyore is now available for purchase. Each container is designed by the fictional 100 Acre Wood Tea Company and features colorful artwork tied to individual characters.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/tea-collection-inspired-by-winnie-the-pooh-and-friends-now-available-at-disneyland-resort/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Character-specific merchandise tied to classic franchises often moves quickly at World of Disney and Pooh Corner. Shopping before 11am typically offers the widest selection before restocks."
+        }
+      },
+      {
+        "title": "Disney Cruise Line hires first female ship captain",
+        "body": "The cruise line reached a milestone by appointing its first woman to serve as captain of a Disney ship. The historic promotion marks a leadership change for the fleet.",
+        "source": {
+          "label": "AllEars.Net",
+          "url": "https://allears.net/2026/07/23/disney-cruise-line-just-hired-its-first-female-ship-captain/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "This leadership announcement may draw attention to cruise booking windows for 2027 sailings. Reserving early in the booking cycle often secures better cabin categories and pricing."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "Disney Vacation Club adds eight new member perks",
+        "body": "DVC members gained access to a bundle of new benefits announced this week. The perks expand the program's existing lineup of discounts and exclusive offerings.",
+        "source": {
+          "label": "AllEars.Net",
+          "url": "https://allears.net/2026/07/23/disney-vacation-club-members-get-8-major-new-perks/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "New DVC perks often include dining or merchandise discounts that require advance booking. Checking the member portal early in the week usually reveals the best availability for limited-time offers."
+        }
+      },
+      {
+        "title": "Sleeping Beauty Castle sculpture behind construction walls at Disneyland",
+        "body": "Work crews placed barriers around a section of the castle area this week, though Disney has not issued a statement about the scope or duration of the project. The disassembly does not block photo opportunities with the main castle structure.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/07/sleeping-beauty-castle-sculpture-behind-construction-walls-at-disneyland-jc1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Castle-area construction often introduces noise and foot-traffic detours during morning hours. Planning castle photos before 10am or after 7pm usually avoids the heaviest crew activity."
+        }
+      },
+      {
+        "title": "Guest satisfaction scores rise at Walt Disney World after ride and resort updates",
+        "body": "Disney reported a 15 to 20 percent increase in guest approval ratings following recent reimaginings of Magic Kingdom attractions and resort hotel rooms. The company attributes the higher scores to targeted reinvestment in guest-facing experiences.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-world-improving-guest-satisfaction-scores-reimagining-rides-hotels/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Refurbished resort rooms and updated attractions tend to draw repeat visitors during the first few months. Booking stays at recently refreshed hotels often means newer amenities and better in-room conditions."
+        }
+      },
+      {
+        "title": "Disneyland Cast Member jumps into Rivers of America",
+        "body": "A Cast Member reportedly threw personal items including keys and a walkie-talkie into the water before jumping into the Rivers of America while partially out of uniform. Social media footage captured the incident, though Disney has not publicly commented.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/disneyland-cast-member-jumps-into-rivers-of-america-in-half-of-uniform/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Frontierland and the Rivers of America may see temporary Cast Member reassignments or delays in attraction operations following incidents. Checking the app for real-time status before heading to Tom Sawyer Island or the Mark Twain usually avoids unexpected downtime."
+        }
+      },
+      {
+        "title": "California Grill sushi chef profiled for National Culinary Arts Month",
+        "body": "Lead Sushi Chef Jose Fernandez Daboin was highlighted in a Disney Parks Blog feature exploring how he tailors each dish to individual guests at the Contemporary Resort restaurant. The profile is part of a series celebrating Walt Disney World culinary talent.",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/sushi-chef-at-california-grill/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "California Grill's sushi counter offers personalized service that can extend meal times. Reserving the earliest dinner seating usually means more one-on-one interaction with chefs before the rush."
+        }
+      },
+      {
+        "title": "Expedition Everest Yeti merchandise now available at Animal Kingdom",
+        "body": "A new pullover sweatshirt featuring the Yeti holding broken train tracks went on sale at the park. The green design includes Mt. Everest graphics and a playful Yeti, Set, Go tagline.",
+        "parkSlug": "animal-kingdom",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/expedition-everest-yeti-set-go-sweatshirt-at-disneys-animal-kingdom/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Ride-specific apparel at Animal Kingdom often sells fastest in the shops closest to the attraction. Stopping at Serka Zong Bazaar right after riding Everest usually means the widest size selection."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Universal announces Evil Dead, Hellraiser, and Fortnite houses for Halloween Horror Nights",
+        "body": "The theme park confirmed three new intellectual properties joining the 2026 event lineup alongside previously announced franchises like Sinners and Stranger Things. The additions expand the maze roster for the fall season.",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/evil-dead-hellraiser-fortnite-franchises-coming-to-universal-halloween-horror-nights/"
+        }
+      },
+      {
+        "title": "Percy Jackson season three premieres on Disney+ November 20",
+        "body": "Disney confirmed the return date for the next season of Percy Jackson and the Olympians. The streaming series continues its adaptation of the bestselling book franchise.",
+        "source": {
+          "label": "AllEars.Net",
+          "url": "https://allears.net/2026/07/23/the-next-percy-jackson-season-is-premiering-on-disney-sooner-than-you-think/"
+        }
+      },
+      {
+        "title": "Michael Eisner reflects on Disney's early video game struggles",
+        "body": "The former CEO acknowledged in a recent interview that Disney initially failed to understand how to translate its franchises into successful video games. Eisner noted the company eventually found success in the medium after early missteps.",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/former-disney-ceo-michael-eisner-concedes-disney-failed-at-early-video-game-development/"
+        }
+      },
+      {
+        "title": "Ghirardelli Soda Fountain refurbishment continues at Disney Springs",
+        "body": "An ongoing project at the chocolate shop near World of Disney has stripped an iconic feature from the location effective immediately. The work is part of a larger update to the Disney Springs venue.",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/07/disney-world-confirms-disney-springs-removal-effective-immediately-jc1/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "EPCOT Early Entry delivers two headliners before rope drop",
+        "body": "A recent walkthrough demonstrated that guests can successfully ride both Test Track and Guardians of the Galaxy: Cosmic Rewind during the 30-minute Early Entry window, even with a delayed arrival. The strategy involves heading to Test Track first, then moving quickly to the second attraction before regular park opening.",
+        "parkSlug": "epcot",
+        "ctaLabel": "Plan your EPCOT morning",
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Test Track tends to build longer waits than Guardians immediately after Early Entry ends. Riding Test Track within the first 10 minutes of Early Entry usually leaves enough time to walk to Guardians before the main crowd enters."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "gB8W3E7pJZo",
+      "title": "Who Can Find the Most of the SAME Disney Pin?! 🤷🏻‍♀️ #disneyworld #wdw #disney #disneyparks #game",
+      "channel": "Summer",
+      "publishedAt": "2026-07-24T02:11:31Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/gB8W3E7pJZo/mqdefault.jpg",
+      "viewCount": 44973,
+      "url": "https://www.youtube.com/watch?v=gB8W3E7pJZo",
+      "summary": "A pin-trading challenge at Disney World tests who can locate the most duplicates of a single pin design."
+    },
+    {
+      "videoId": "q6j2o4N5EuU",
+      "title": "Epcot's Best NEW Snack!- La Poutinerie & Le Cellier | Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-07-20T16:02:38Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/q6j2o4N5EuU/mqdefault.jpg",
+      "viewCount": 35170,
+      "url": "https://www.youtube.com/watch?v=q6j2o4N5EuU",
+      "summary": "A review of EPCOT's newest snack offerings at La Poutinerie and Le Cellier in the Canada pavilion."
+    },
+    {
+      "videoId": "4AiYo483N5s",
+      "title": "🔴Live Disney's Hollywood Studios Fantasmic at 9, 10:30pm on Thursdat at Walt Disney World 7/23/2026",
+      "channel": "RON ON THE GO",
+      "publishedAt": "2026-07-24T03:22:00Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/4AiYo483N5s/mqdefault.jpg",
+      "viewCount": 23244,
+      "url": "https://www.youtube.com/watch?v=4AiYo483N5s",
+      "summary": "A live stream of both Fantasmic performances at Hollywood Studios on July 23."
+    },
+    {
+      "videoId": "gLBCVciBWa4",
+      "title": "The BEST Italian Restaurant at Disney World- Ravello at Four Seasons Orlando",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-07-23T17:18:05Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/gLBCVciBWa4/mqdefault.jpg",
+      "viewCount": 15831,
+      "url": "https://www.youtube.com/watch?v=gLBCVciBWa4",
+      "summary": "A dining review of Ravello, the Italian restaurant at Four Seasons Orlando near Walt Disney World."
+    },
+    {
+      "videoId": "k_H6Pkhkuzs",
+      "title": "Disney land's funny moments 💕🤣✨#fyp#disneyland#disneyparks#disney",
+      "channel": "Neveno Pirura",
+      "publishedAt": "2026-07-24T01:33:02Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/k_H6Pkhkuzs/mqdefault.jpg",
+      "viewCount": 12985,
+      "url": "https://www.youtube.com/watch?v=k_H6Pkhkuzs",
+      "summary": "A compilation of humorous guest moments captured at Disneyland."
+    },
+    {
+      "videoId": "9PfKiXYGz5U",
+      "title": "🔴 LIVE: Disney World – YOU Pick! Happily Ever After, Fantasmic or Disney Fireworks (Full Show 4K)",
+      "channel": "Fun to be Free",
+      "publishedAt": "2026-07-24T03:56:36Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/9PfKiXYGz5U/mqdefault.jpg",
+      "viewCount": 9982,
+      "url": "https://www.youtube.com/watch?v=9PfKiXYGz5U",
+      "summary": "An interactive live stream where viewers choose which Disney World nighttime spectacular to watch."
+    },
+    {
+      "videoId": "UspzAtJ1i6Q",
+      "title": "#LIVE Disneyland Get Your Motor Running, Rides, Characters, New Merch",
+      "channel": "Main Street Cowgirl",
+      "publishedAt": "2026-07-24T07:35:21Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/UspzAtJ1i6Q/mqdefault.jpg",
+      "viewCount": 8001,
+      "url": "https://www.youtube.com/watch?v=UspzAtJ1i6Q",
+      "summary": "A live tour of Disneyland covering attractions, character meet-and-greets, and merchandise releases."
+    },
+    {
+      "videoId": "spdkRDIXfOc",
+      "title": "🔴 Live: EPCOT Rides, Luminous Fireworks & More Thursday Night | Disney World Live Stream 7.23.2026",
+      "channel": "Daily FastPass",
+      "publishedAt": "2026-07-24T01:45:28Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/spdkRDIXfOc/mqdefault.jpg",
+      "viewCount": 7698,
+      "url": "https://www.youtube.com/watch?v=spdkRDIXfOc",
+      "summary": "A live evening stream from EPCOT featuring rides and the Luminous fireworks show."
+    },
+    {
+      "videoId": "UZARhF_oOeo",
+      "title": "My heart 🥰My eyes 😭#disney #disneyland #foryou #funny #fyp",
+      "channel": "Wallie Tintler",
+      "publishedAt": "2026-07-24T05:59:02Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/UZARhF_oOeo/mqdefault.jpg",
+      "viewCount": 4135,
+      "url": "https://www.youtube.com/watch?v=UZARhF_oOeo",
+      "summary": "A short emotional reaction video filmed at Disneyland."
+    },
+    {
+      "videoId": "f9wTShCnPDg",
+      "title": "My heart 🥰 My eyes 😭 #disney #disneyland #love #funny #fyp",
+      "channel": "Roni Koria",
+      "publishedAt": "2026-07-24T06:12:32Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/f9wTShCnPDg/mqdefault.jpg",
+      "viewCount": 2458,
+      "url": "https://www.youtube.com/watch?v=f9wTShCnPDg",
+      "summary": "A brief heartfelt moment captured at Disneyland."
+    }
+  ],
+  "updatedAt": "2026-07-24T12:13:40.666Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-07-24T12:13:40.666Z",
+    "tokens": {
+      "input": 12002,
+      "output": 5233,
+      "costUsd": 0.1145
+    }
+  }
+}
