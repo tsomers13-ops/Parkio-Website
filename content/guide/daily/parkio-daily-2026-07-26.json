@@ -1,0 +1,339 @@
+{
+  "title": "Parkio Daily for July 26, 2026",
+  "slug": "parkio-daily-2026-07-26",
+  "date": "2026-07-26",
+  "teaser": "Expedition Everest single-rider line removed; Disney Springs happy hour now $12; new 40% hotel flash sale starts soon.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Soarin'",
+        "parkSlug": "epcot",
+        "note": "Lower waits during dinner hour typically"
+      },
+      {
+        "name": "Big Thunder Mountain Railroad",
+        "parkSlug": "magic-kingdom",
+        "note": "First hour crowds usually lighter"
+      },
+      {
+        "name": "Flight of Passage",
+        "parkSlug": "animal-kingdom",
+        "note": "Rope drop tends to offer shortest waits"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [
+      {
+        "title": "Single-rider line removed at Expedition Everest",
+        "body": "Animal Kingdom removed the dedicated single-rider entrance at Expedition Everest this week. The attraction still operates but guests now join the standard standby or Lightning Lane queues.",
+        "parkSlug": "animal-kingdom",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/single-rider-entrance-sign-removed-from-expedition-everest-in-todays-daily-recap-for-7-25-2026/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Standby waits at Everest tend to climb 10–15 minutes higher without the single-rider option. Rope drop or late evening usually offers the shortest queues."
+        }
+      },
+      {
+        "title": "Emergency evacuations at Yacht Club and Beach Club resorts",
+        "body": "Guests and cast members were evacuated from both Yacht Club and Beach Club resorts last night due to an unspecified emergency. Both properties have since resumed normal operations.",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/07/guests-and-cast-members-evacuated-from-two-disney-world-resorts-th1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "If you have reservations at either resort this weekend, confirm room availability directly with the front desk. Overnight disruptions may still affect some services."
+        }
+      }
+    ],
+    "bignews": [
+      {
+        "title": "New 40% off resort hotel flash sale launching soon",
+        "body": "Disney World will release a flash sale offering up to 40% off resort hotels for summer dates and beyond. The sale appears similar to last year's limited-time promotion and starts within days.",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/new-40-off-disney-world-resort-hotels-flash-sale-starts-soon-for-summer-2026-beyond/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Flash sales tend to vanish within 24–48 hours. Book the moment it opens if your travel dates are flexible—best inventory usually clears by day two."
+        }
+      },
+      {
+        "title": "Disney Springs restaurant adds $12 happy hour deal",
+        "body": "A top-rated Disney Springs dining spot now offers a beer, burger, and dessert for $12 during happy hour. The promotion is available daily at select times.",
+        "source": {
+          "label": "AllEars.Net",
+          "url": "https://allears.net/2026/07/25/were-running-to-disney-springs-for-this-new-happy-hour-deal/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Happy hour slots tend to fill quickly on weekends. Arrive right at opening time or plan for a mid-afternoon snack break to secure a table."
+        }
+      },
+      {
+        "title": "Mickey's Not-So-Scary Halloween Party foodie guide released",
+        "body": "Disney published the full list of treats and snacks available at this year's Halloween party, running August 7 through October 31. Menu highlights include new themed desserts and savory options across Magic Kingdom.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/disney-eats-mickeys-not-so-scary-halloween-party-foodie-guide/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Party-exclusive food tends to sell out by 9pm on peak nights. Grab your must-try items right after 7pm entry to avoid disappointment later."
+        }
+      },
+      {
+        "title": "Disneyland moves Christmas 2026 start date earlier",
+        "body": "Disneyland pushed its holiday season start date forward by several days for Christmas 2026. Official decorations and seasonal overlays will now debut earlier than the original schedule.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disneyland-moves-christmas-2026-start-date-earlier-its-still-too-late/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "The first week of any seasonal rollout usually offers photo-ready decor with lighter crowds. Book tickets for the opening weekend if you want holiday magic without peak waits."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "Eight rides averaged nearly hour-long waits this week",
+        "body": "Wait times at eight Disney World attractions climbed close to 60 minutes on average over the past seven days as summer travel continues. The highest waits spanned all four parks.",
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/07/25/8-disney-rides-averaged-waits-of-nearly-an-hour-this-week/"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "Mid-morning through early afternoon tends to push waits highest park-wide. Prioritize your top two rides at rope drop or return after 7pm when lines often thin."
+        }
+      },
+      {
+        "title": "Avengers Campus expansion construction progresses at California Adventure",
+        "body": "New paint and scaffold removal are visible at the Avengers Campus expansion site, including freshly installed restrooms. Construction continues on additional facilities and theming.",
+        "parkSlug": "california-adventure",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/new-cross-beams-and-paint-at-avengers-campus-expansion-in-disney-california-adventure/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Construction noise near Avengers Campus tends to spike mid-morning. Plan character meet-and-greets or dining breaks in other lands if you're noise-sensitive."
+        }
+      },
+      {
+        "title": "Transportation restricted at one Disney World hotel",
+        "body": "Bus and boat service from Disney Springs to certain resort hotels now requires proof of a dining reservation, hotel booking, or Enchanting Extras purchase. Cast members verify credentials before boarding.",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/07/disney-cast-members-block-magic-kingdom-resort-guests-cj1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "If you're planning a resort-hop for dining or shopping, book a reservation in advance. Walk-up arrivals may face denial of boarding without confirmation."
+        }
+      },
+      {
+        "title": "Hong Kong Disneyland announces Magic Run Fest marathon weekend",
+        "body": "Hong Kong Disneyland revealed a new runDisney-style event called Magic Run Fest. The race weekend will include multiple distance options and park access for participants.",
+        "source": {
+          "label": "AllEars.Net",
+          "url": "https://allears.net/2026/07/25/rundisney-fans-we-just-found-the-ultimate-race-for-you/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "International runDisney events tend to offer lower entry barriers than U.S. races. Registration usually opens months ahead—sign up early if you're considering a trip."
+        }
+      },
+      {
+        "title": "Character experiences guide published for Animal Kingdom",
+        "body": "Disney released a detailed guide to all character greeting locations inside Animal Kingdom, covering times and meet-and-greet spots across the park.",
+        "parkSlug": "animal-kingdom",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/guide-to-character-experiences-at-disneys-animal-kingdom/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Character lines tend to be shortest in the first 90 minutes after rope drop. Knock out your must-meet characters early before heading to Flight of Passage."
+        }
+      },
+      {
+        "title": "D23 event shopping details revealed for Imagineering merchandise",
+        "body": "Mickey's of Glendale will return to D23: The Ultimate Disney Fan Event in August with a new Walt Disney Imagineering collection. The booth typically draws heavy crowds for exclusive items.",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/disney-experiences/mickeys-of-glendale-d23-walt-disney-imagineering-collection/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "D23 merchandise lines can reach multi-hour waits on day one. Arrive at the booth during off-peak convention hours—usually late afternoon—for better odds."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Evermore Resort near Disney World adds new guest experiences",
+        "body": "The Evermore Resort in Orlando launched additional activities and amenities for visitors staying near Walt Disney World. The property continues expanding its offerings for families.",
+        "source": {
+          "label": "AllEars.Net",
+          "url": "https://allears.net/2026/07/25/one-of-our-favorite-hotels-for-disney-world-just-added-new-experiences/"
+        }
+      },
+      {
+        "title": "California Grill sushi chef profile highlights guest-focused preparation",
+        "body": "Disney profiled the lead sushi chef at California Grill, detailing how he tailors each dish to individual guest preferences and creates personalized dining experiences.",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/sushi-chef-at-california-grill/"
+        }
+      },
+      {
+        "title": "New Disney Worldbuilders documentary coming to Disney Plus in August",
+        "body": "A behind-the-scenes documentary series called Disney Worldbuilders will premiere on Disney Plus next month, exploring how Imagineers design and build theme park lands and attractions.",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/disney-experiences/disney-worldbuilders-details-and-more/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "La Poutinerie debuts new snack at EPCOT Canada pavilion",
+        "body": "EPCOT's Canada pavilion now serves a fresh poutine option at La Poutinerie, drawing praise as one of the best new quick-service items in World Showcase. The dish is available daily.",
+        "parkSlug": "epcot",
+        "ctaLabel": "Try it today",
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "World Showcase kiosks tend to have the shortest lines mid-afternoon before dinner rush. Grab this snack between 2–4pm to skip the wait."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "sknh8nMnWCE",
+      "title": "🔴Live Magic Kingdom Saturday with Rides, Shows, Parades, Fireworks at Walt Disney World 7/25/2026",
+      "channel": "RON ON THE GO",
+      "publishedAt": "2026-07-26T03:49:23Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/sknh8nMnWCE/mqdefault.jpg",
+      "viewCount": 55906,
+      "url": "https://www.youtube.com/watch?v=sknh8nMnWCE",
+      "summary": "A live stream tour of Magic Kingdom covering attractions, entertainment, parades, and the Happily Ever After fireworks show."
+    },
+    {
+      "videoId": "q6j2o4N5EuU",
+      "title": "Epcot's Best NEW Snack!- La Poutinerie & Le Cellier | Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-07-20T16:02:38Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/q6j2o4N5EuU/mqdefault.jpg",
+      "viewCount": 37450,
+      "url": "https://www.youtube.com/watch?v=q6j2o4N5EuU",
+      "summary": "A review of the new poutine offering at EPCOT's Canada pavilion and a visit to Le Cellier Steakhouse."
+    },
+    {
+      "videoId": "gLBCVciBWa4",
+      "title": "The BEST Italian Restaurant at Disney World- Ravello at Four Seasons Orlando",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-07-23T17:18:05Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/gLBCVciBWa4/mqdefault.jpg",
+      "viewCount": 24443,
+      "url": "https://www.youtube.com/watch?v=gLBCVciBWa4",
+      "summary": "A dining review of Ravello, the Italian restaurant located at Four Seasons Resort Orlando."
+    },
+    {
+      "videoId": "8vClwwXxess",
+      "title": "🔴 LIVE: Magic Kingdom – Happily Ever After & NEW Starlight Parade! YOU Pick the Rides | 4K",
+      "channel": "Fun to be Free",
+      "publishedAt": "2026-07-26T04:46:59Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/8vClwwXxess/mqdefault.jpg",
+      "viewCount": 10785,
+      "url": "https://www.youtube.com/watch?v=8vClwwXxess",
+      "summary": "A live interactive stream from Magic Kingdom featuring the Starlight Parade and Happily Ever After fireworks in 4K."
+    },
+    {
+      "videoId": "VkTDq3akRew",
+      "title": "🔴 LIVE  Epcot Center  - Disney World Orlando. -  Guardians of the Galaxy",
+      "channel": "Now Is The Time",
+      "publishedAt": "2026-07-26T05:23:22Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/VkTDq3akRew/mqdefault.jpg",
+      "viewCount": 6763,
+      "url": "https://www.youtube.com/watch?v=VkTDq3akRew",
+      "summary": "A live EPCOT walkthrough featuring Guardians of the Galaxy: Cosmic Rewind and other park experiences."
+    },
+    {
+      "videoId": "pjk1_3k11nU",
+      "title": "🔴 LIVE! Magic Kingdom Saturday for Rides, Parades & More 7.25.26",
+      "channel": "Disney Girl Kim",
+      "publishedAt": "2026-07-26T06:26:21Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/pjk1_3k11nU/mqdefault.jpg",
+      "viewCount": 3816,
+      "url": "https://www.youtube.com/watch?v=pjk1_3k11nU",
+      "summary": "A Saturday live stream from Magic Kingdom showcasing rides, parades, and entertainment throughout the day."
+    },
+    {
+      "videoId": "p_TbPXa6rbA",
+      "title": "Disney Princesses Paint the Night Parade the Disneyland Resort 70th Anniversary Celebration #shorts",
+      "channel": "Villey Dizon",
+      "publishedAt": "2026-07-26T03:37:57Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/p_TbPXa6rbA/mqdefault.jpg",
+      "viewCount": 1775,
+      "url": "https://www.youtube.com/watch?v=p_TbPXa6rbA",
+      "summary": "A short clip highlighting Disney Princesses during Disneyland's Paint the Night Parade for the 70th anniversary."
+    },
+    {
+      "videoId": "rbitWq2kncc",
+      "title": "A MILLION SPLASHES OF COLOUR #fyp #shorts #lionking #dlp #disneylandparis #disneyland #disney #tbt",
+      "channel": "THOMISNEYVISION",
+      "publishedAt": "2026-07-26T07:20:06Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/rbitWq2kncc/mqdefault.jpg",
+      "viewCount": 1569,
+      "url": "https://www.youtube.com/watch?v=rbitWq2kncc",
+      "summary": "A short video featuring colorful moments from Disneyland Paris, focused on Lion King-themed experiences."
+    },
+    {
+      "videoId": "cG0T7aU0ZZQ",
+      "title": "#disney#disneyland#cartoon#baby#2026#mickeymouse#magical#world#youtubeshorts#youtube#viral#shorts",
+      "channel": "The Trishi Edit",
+      "publishedAt": "2026-07-26T04:15:11Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/cG0T7aU0ZZQ/mqdefault.jpg",
+      "viewCount": 1256,
+      "url": "https://www.youtube.com/watch?v=cG0T7aU0ZZQ",
+      "summary": "A short Disney-themed video featuring Mickey Mouse and various magical moments from the parks."
+    },
+    {
+      "videoId": "mk-M6lb-WYs",
+      "title": "DISNEY WORLD VLOG ✨ Epcot, Disney Springs and going home ✈️",
+      "channel": "Disney in Detail",
+      "publishedAt": "2026-07-26T08:00:15Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/mk-M6lb-WYs/mqdefault.jpg",
+      "viewCount": 1220,
+      "url": "https://www.youtube.com/watch?v=mk-M6lb-WYs",
+      "summary": "A vacation vlog documenting a day at EPCOT and Disney Springs before heading home from Disney World."
+    }
+  ],
+  "updatedAt": "2026-07-26T11:55:47.185Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-07-26T11:55:47.185Z",
+    "tokens": {
+      "input": 11929,
+      "output": 5187,
+      "costUsd": 0.1136
+    }
+  }
+}
