@@ -1,0 +1,349 @@
+{
+  "title": "Parkio Daily for July 27, 2026",
+  "slug": "parkio-daily-2026-07-27",
+  "date": "2026-07-27",
+  "teaser": "Bakari the silverback debuts on Gorilla Falls Trail; Millennium Falcon preshow doors working again; heat index hits 109°F across Central Florida today.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Expedition Everest",
+        "parkSlug": "animal-kingdom",
+        "note": "Single-rider option still available despite recent changes"
+      },
+      {
+        "name": "Millennium Falcon: Smugglers Run",
+        "parkSlug": "hollywood-studios",
+        "note": "Preshow doors now fully operational again"
+      },
+      {
+        "name": "Cosmic Rewind",
+        "parkSlug": "epcot",
+        "note": "Lighter crowds expected during dinner hours"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [
+      {
+        "title": "Heat Advisory in Effect Across Central Florida",
+        "body": "Central Florida is under a heat advisory from 11am to 8pm today with heat index values climbing to 109°F. The advisory covers the Walt Disney World and Universal Orlando areas.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/central-florida-under-heat-advisory-again-feels-like-109/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Peak heat tends to hit hardest between noon and 4pm. Schedule indoor attractions, shows, and air-conditioned breaks during those hours to stay comfortable."
+        }
+      },
+      {
+        "title": "Bakari the Silverback Now Appearing on Gorilla Falls Trail",
+        "body": "A 21-year-old male gorilla named Bakari, who arrived from the Saint Louis Zoo in late June, has joined the family troop and is now visible to guests on the Gorilla Falls Exploration Trail.",
+        "parkSlug": "animal-kingdom",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/bakari-now-appearing-on-gorilla-falls-exploration-trail-at-disneys-animal-kingdom/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Gorilla viewing tends to be best in early morning or late afternoon when animals are most active. Plan your Gorilla Falls visit before 10am for calmer interactions."
+        }
+      }
+    ],
+    "bignews": [
+      {
+        "title": "Millennium Falcon Preshow Doors Operating Again",
+        "body": "The large sliding doors leading from the queue into the Hondo Ohnaka preshow room on Millennium Falcon: Smugglers Run are now opening and closing again after years of remaining static.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/millennium-falcon-smugglers-run-preshow-doors-finally-operating-again-in-todays-daily-recap-for-7-26-2026/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "The restored effect tends to slow boarding slightly but adds immersion. First-time riders often appreciate the full experience; rope-drop remains the best window for short waits."
+        }
+      },
+      {
+        "title": "Mickey's Not-So-Scary Halloween Party Food Revealed",
+        "body": "The official 2026 foodie guide for Mickey's Not-So-Scary Halloween Party has been released, showcasing specialty treats available during the event running August 7 through October 31.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/disney-eats-mickeys-not-so-scary-halloween-party-foodie-guide/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Party-exclusive snacks often sell out by 10pm on busy event nights. Grab specialty items early in your evening, usually between 7pm and 8:30pm, before lines form."
+        }
+      },
+      {
+        "title": "Expedition Everest Single-Rider Loophole Still Active",
+        "body": "Despite recent changes to single-rider availability at Animal Kingdom, guests report that Expedition Everest's shortcut queue remains accessible for those willing to ride separately from their group.",
+        "parkSlug": "animal-kingdom",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/07/disney-guests-find-loophole-to-single-rider-line-removal-bwb1/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Single-rider tends to save 20–30 minutes during mid-day peaks. Use it between 11am and 3pm when standby waits climb above 40 minutes for the fastest boarding."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "Walt Disney World Menu Changes Hit 14 Restaurants",
+        "body": "Pecos Bill, Liberty Tree Tavern, and twelve other dining locations across the resort updated their menus this week with seasonal adjustments and new offerings.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/07/26/pecos-bill-liberty-tree-tavern-and-12-more-disney-world-restaurants-changed-this-week/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "New menu items tend to be most reliably available during the first few weeks after launch. Check menus online before reservations to confirm your favorites are still offered."
+        }
+      },
+      {
+        "title": "Halloween Droid Collectible Arrives at Hollywood Studios",
+        "body": "A new R2-WRWLF Halloween droid figure featuring a werewolf costume is now available at Mickey's of Hollywood for $17.99.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/halloween-droid-figure-arrives-at-walt-disney-world-resort/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Seasonal collectibles like this often sell out within a week at flagship shops. Swing by Mickey's of Hollywood before 11am to avoid both merchandise shortages and afternoon crowds."
+        }
+      },
+      {
+        "title": "Downtown Disney Restaurants and Entrance Under Construction",
+        "body": "Arthur & Sons and Pearl's Roadside BBQ construction continues at Downtown Disney, while the Earl of Sandwich pop-up is now behind fences and the north entrance remains walled off for ongoing work.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/downtown-disney-district-arthur-sons-progress-earl-of-sandwich-pop-up-behind-fences-north-entrance-construction-walls/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Construction noise and fencing tend to concentrate near the north side. Enter from the west parking structure for clearer pathways and easier navigation today."
+        }
+      },
+      {
+        "title": "Phineas and Ferb Jersey Available at Disney Springs",
+        "body": "A new Disney-themed sports jersey featuring Phineas and Ferb has arrived at Walt Disney World, though stock at Disney Style sold out quickly on July 23.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/phineas-and-ferb-jersey-arrives-at-walt-disney-world-resort/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "High-demand apparel like this often restocks unevenly across locations. Check World of Disney or park shops if Disney Style is sold out; inventory tends to replenish midweek."
+        }
+      },
+      {
+        "title": "Gaylord Palms Announces Ice! Exhibits for Holiday Season",
+        "body": "The hotel near Walt Disney World will host Ice! experiences themed to Nightmare Before Christmas, Home Alone, Harry Potter, and the returning Polar Express starting this holiday season.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/ice-by-gaylord-adds-nightmare-before-christmas-home-alone-polar-express-returns-to-orlando/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Ice! exhibits typically sell out weekend slots early. Book weekday afternoon sessions in November for lower ticket prices and smaller crowds if you plan to visit off-property."
+        }
+      },
+      {
+        "title": "Resort Transportation Changes Showing Success",
+        "body": "Reports indicate that recent restrictions on non-resort guests using Disney hotel buses are working as intended, though local Annual Passholders remain frustrated by the loss of resort-hopping access.",
+        "parkSlug": null,
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/07/disney-world-resort-guests-report-the-new-transportation-ban-is-working-but-what-is-it-costing-disney-rl1/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Resort bus wait times tend to be shorter now for paying guests, especially during peak breakfast and dinner hours. Use hotel transportation confidently for quicker park access."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "California Grill Sushi Chef Profile Published",
+        "body": "Disney Parks Blog spotlighted Lead Sushi Chef Jose Fernandez Daboin at California Grill, detailing how he personalizes each guest's experience at the Contemporary Resort restaurant.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/sushi-chef-at-california-grill/"
+        }
+      },
+      {
+        "title": "D23 Event Shopping Guides Released",
+        "body": "Disney published detailed guides on how to shop at D23: The Ultimate Disney Fan Event in August, including a preview of the Mickey's of Glendale booth and the debut of Disney .YNSD merchandise.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/disney-experiences/how-to-shop-at-d23/"
+        }
+      },
+      {
+        "title": "Disney Worldbuilders Documentary Coming to Disney+",
+        "body": "A new documentary series about Walt Disney Imagineering's creative process will premiere on Disney+ in August, offering behind-the-scenes looks at theme park development.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/disney-experiences/disney-worldbuilders-details-and-more/"
+        }
+      },
+      {
+        "title": "Luminous Replacement Rumors Surface",
+        "body": "Unconfirmed reports suggest EPCOT may be considering retiring Luminous: The Symphony of Us in favor of bringing back a previous nighttime spectacular, though Disney has made no official announcement.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/07/rumor-disney-world-to-retire-luminous-legendary-epcot-show-set-for-return-ab1/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "Character Meet Guide for Animal Kingdom Published",
+        "body": "Disney released a comprehensive guide to all character greeting locations at Animal Kingdom, making it easier for guests to plan their character experiences throughout the park.",
+        "parkSlug": "animal-kingdom",
+        "ctaLabel": "View character locations",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/guide-to-character-experiences-at-disneys-animal-kingdom/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Character queues tend to be shortest in the first hour after park opening and during the final two hours before close. Target those windows for faster meet-and-greet experiences."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "D29MrWZ9DsI",
+      "title": "🔴Live Magic Kingdom with Rides, Shows, Parades, Fireworks at Walt Disney World 7/26/2026",
+      "channel": "RON ON THE GO",
+      "publishedAt": "2026-07-27T03:47:15Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/D29MrWZ9DsI/mqdefault.jpg",
+      "viewCount": 60119,
+      "url": "https://www.youtube.com/watch?v=D29MrWZ9DsI",
+      "summary": "A live stream from Magic Kingdom covering attractions, entertainment, and the evening fireworks show on July 26."
+    },
+    {
+      "videoId": "q6j2o4N5EuU",
+      "title": "Epcot's Best NEW Snack!- La Poutinerie & Le Cellier | Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-07-20T16:02:38Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/q6j2o4N5EuU/mqdefault.jpg",
+      "viewCount": 38560,
+      "url": "https://www.youtube.com/watch?v=q6j2o4N5EuU",
+      "summary": "A review of new snack offerings at EPCOT's La Poutinerie kiosk and Le Cellier restaurant."
+    },
+    {
+      "videoId": "gLBCVciBWa4",
+      "title": "The BEST Italian Restaurant at Disney World- Ravello at Four Seasons Orlando",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-07-23T17:18:05Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/gLBCVciBWa4/mqdefault.jpg",
+      "viewCount": 26869,
+      "url": "https://www.youtube.com/watch?v=gLBCVciBWa4",
+      "summary": "A dining review of Ravello, the Italian restaurant at Four Seasons Resort Orlando near Walt Disney World."
+    },
+    {
+      "videoId": "3Xv2LY5CdO4",
+      "title": "🔴 LIVE: Disney World - YOU Pick! Fantasmic vs Disney Fireworks 4K",
+      "channel": "Fun to be Free",
+      "publishedAt": "2026-07-27T04:54:11Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/3Xv2LY5CdO4/mqdefault.jpg",
+      "viewCount": 10274,
+      "url": "https://www.youtube.com/watch?v=3Xv2LY5CdO4",
+      "summary": "A live stream comparing Fantasmic at Hollywood Studios with Magic Kingdom fireworks, letting viewers choose which to watch."
+    },
+    {
+      "videoId": "P3tdDH9UOFA",
+      "title": "🔴 LIVE: Magic Kingdom! | Rides, Parades, Happily Ever After Fireworks & TRON! | Walt Disney World",
+      "channel": "The Weekly Hop",
+      "publishedAt": "2026-07-27T05:20:05Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/P3tdDH9UOFA/mqdefault.jpg",
+      "viewCount": 9158,
+      "url": "https://www.youtube.com/watch?v=P3tdDH9UOFA",
+      "summary": "A live Magic Kingdom tour featuring TRON, parades, and the Happily Ever After fireworks show."
+    },
+    {
+      "videoId": "AAjFIRrGQmc",
+      "title": "My heart 🥰 My eyes 😭 #disney #disneyland #love #funny #kindness",
+      "channel": "Roni Koria",
+      "publishedAt": "2026-07-27T10:25:15Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/AAjFIRrGQmc/mqdefault.jpg",
+      "viewCount": 6010,
+      "url": "https://www.youtube.com/watch?v=AAjFIRrGQmc",
+      "summary": "A short video capturing an emotional or heartwarming moment at a Disney park."
+    },
+    {
+      "videoId": "uJDrIeNM4GE",
+      "title": "My heart 🥰My eyes 😭#disney #disneyland #foryou #funny #fyp",
+      "channel": "Wallie Tintler",
+      "publishedAt": "2026-07-27T10:16:03Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/uJDrIeNM4GE/mqdefault.jpg",
+      "viewCount": 5949,
+      "url": "https://www.youtube.com/watch?v=uJDrIeNM4GE",
+      "summary": "A brief Disney park clip highlighting a touching or funny guest experience."
+    },
+    {
+      "videoId": "764fbziRVWs",
+      "title": "pov: the best ride of your life! #tron #disney #disneyland #shanghai #china #fyp #fypシ #fypシ゚viral",
+      "channel": "Anusha",
+      "publishedAt": "2026-07-27T05:48:04Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/764fbziRVWs/mqdefault.jpg",
+      "viewCount": 1325,
+      "url": "https://www.youtube.com/watch?v=764fbziRVWs",
+      "summary": "A first-person perspective video of the TRON ride experience at Shanghai Disneyland."
+    },
+    {
+      "videoId": "Tsk3cJiazOw",
+      "title": "Disneyland EXTRA! #disney #disneyland #crafty #forfun #artsandcrafts #theothersideofmakebelieve",
+      "channel": "Blainez Gaming ",
+      "publishedAt": "2026-07-27T04:18:23Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Tsk3cJiazOw/mqdefault.jpg",
+      "viewCount": 1322,
+      "url": "https://www.youtube.com/watch?v=Tsk3cJiazOw",
+      "summary": "A short video featuring Disney-themed crafts or creative projects inspired by Disneyland."
+    },
+    {
+      "videoId": "Tyh4_GDJq54",
+      "title": "Disneyland nails!!! #nails #nailstyle #disney #disneynails #fypシ",
+      "channel": "NailsbyBryn",
+      "publishedAt": "2026-07-27T04:28:12Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Tyh4_GDJq54/mqdefault.jpg",
+      "viewCount": 1284,
+      "url": "https://www.youtube.com/watch?v=Tyh4_GDJq54",
+      "summary": "A showcase of Disney-themed nail art designs inspired by Disneyland characters and parks."
+    }
+  ],
+  "updatedAt": "2026-07-27T13:33:24.434Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-07-27T13:33:24.434Z",
+    "tokens": {
+      "input": 12095,
+      "output": 5370,
+      "costUsd": 0.1168
+    }
+  }
+}
