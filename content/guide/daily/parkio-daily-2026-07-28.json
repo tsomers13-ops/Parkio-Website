@@ -1,0 +1,351 @@
+{
+  "title": "Parkio Daily for July 28, 2026",
+  "slug": "parkio-daily-2026-07-28",
+  "date": "2026-07-28",
+  "teaser": "Magic of Disney Animation page goes live; Tinker Bell meet-and-greet closes at Disneyland August 4; Halloween party food guide released.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Soarin'",
+        "parkSlug": "epcot",
+        "note": "Walk-on windows often open during dinner hours"
+      },
+      {
+        "name": "Space Mountain",
+        "parkSlug": "magic-kingdom",
+        "note": "Shortest waits in the first hour after rope drop"
+      },
+      {
+        "name": "Expedition Everest",
+        "parkSlug": "animal-kingdom",
+        "note": "Mid-morning crowds lighter than usual today"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [
+      {
+        "title": "Fast & Furious: Hollywood Drift soft opens at Universal Studios Hollywood",
+        "body": "The outdoor high-speed coaster began unofficial operation July 27 after testing delays and neighborhood noise concerns. No official opening date has been announced.",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/fast-furious-hollywood-drift-soft-opens/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Soft openings typically mean shorter lines and no Lightning Lane yet. If you're at Universal Hollywood today, head there first thing—waits may stay under 30 minutes through mid-morning."
+        }
+      }
+    ],
+    "bignews": [
+      {
+        "title": "The Magic of Disney Animation webpage now live ahead of September 14 opening",
+        "body": "Hollywood Studios posted the official page for the reimagined Animation Courtyard attraction, complete with concept art. The experience debuts in just under seven weeks.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/the-magic-of-disney-animation-webpage-is-live-on-the-disney-world-website/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Animation Courtyard tends to draw curious crowds on opening days. Visiting in the first week of September—before the official debut—lets you explore the area's other offerings with lighter foot traffic."
+        }
+      },
+      {
+        "title": "Tinker Bell meet-and-greet closing indefinitely at Disneyland August 4",
+        "body": "The Pixie Hollow character experience in Fantasyland will end next week with no reopening date announced. Disneyland has not explained the change.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/07/disneyland-removes-tinker-bell-character-effective-august-4-jc1/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "If Tinker Bell is on your must-meet list, plan a Fantasyland stop before August 4. Lines for character greetings often grow when closure announcements hit, so aim for early morning or late evening slots this week."
+        }
+      },
+      {
+        "title": "Firefighters evacuated Spaceship Earth during incident July 27",
+        "body": "Guests walked through portions of the ride Monday after an unspecified event triggered an emergency response. Video showed crews entering the attraction; no injuries were reported.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/07/firefighters-enter-spaceship-earth-during-unexpected-epcot-evacuation-bwb1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Spaceship Earth may experience intermittent stops or shorter operating windows today while crews inspect. If it's a priority, check wait times frequently and have a backup plan—Test Track or Frozen tend to absorb overflow crowds."
+        }
+      },
+      {
+        "title": "Mickey's Not-So-Scary Halloween Party food lineup revealed for 2026",
+        "body": "Magic Kingdom released the full menu guide for this year's Halloween event, running August 7 through October 31. New themed snacks and returning favorites are included.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/disney-eats-mickeys-not-so-scary-halloween-party-foodie-guide/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Halloween party snacks often sell out by 9pm, especially on peak nights. Grab your top picks during the first hour of the event—lines at food carts tend to be shortest before 8pm."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "Disneyland's Halloween-themed walking tour returns in August",
+        "body": "The guided experience through seasonal decorations and park history is back for fall 2026. Reservations are expected to open soon; pricing and dates have not been announced.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "AllEars.Net",
+          "url": "https://allears.net/2026/07/27/disneylands-halloween-tour-is-officially-returning-heres-how-to-snag-your-spot/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Specialty tours typically book out within a few days of release. Set a calendar alert for the reservation window and check the Disneyland site first thing in the morning—slots often disappear by noon."
+        }
+      },
+      {
+        "title": "Over 50 menu items updated at Walt Disney World restaurants this week",
+        "body": "Dining locations across all four parks and resorts rolled out changes July 21–27. Updates span quick-service and table-service venues.",
+        "source": {
+          "label": "AllEars.Net",
+          "url": "https://allears.net/2026/07/27/wow-over-50-new-menu-items-arrived-at-disney-world-restaurants-this-week/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "New menu items tend to be promoted heavily by servers and sometimes run out by dinner. If a specific dish caught your eye, visit that restaurant during lunch hours—kitchens are usually better stocked before 2pm."
+        }
+      },
+      {
+        "title": "Japan pavilion debuts shaved ice trend at EPCOT",
+        "body": "A new cold beverage option launched in World Showcase, priced at five dollars. The offering is part of EPCOT's summer refreshment lineup.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "AllEars.Net",
+          "url": "https://allears.net/2026/07/27/review-this-new-japan-pavilion-drink-at-epcot-is-key-to-cooling-down-in-the-summer-heat/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "World Showcase food kiosks often see their longest lines between 12–3pm when guests are seeking midday relief. Visiting Japan before 11am or after 4pm usually cuts wait times in half."
+        }
+      },
+      {
+        "title": "Mickey's of Glendale returns to D23 with Imagineering collection",
+        "body": "The Walt Disney Imagineering merchandise booth will appear at D23: The Ultimate Disney Fan Event next month. A new product line and panel host were announced July 27.",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/disney-experiences/mickeys-of-glendale-d23-walt-disney-imagineering-collection/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Exclusive D23 merchandise typically sells out in the first hours of the convention. If the Imagineering collection is a priority, line up before the show floor opens and head straight to the Mickey's of Glendale booth."
+        }
+      },
+      {
+        "title": "Construction milestone reached at Magic Kingdom's Cars Land expansion",
+        "body": "Major visible progress appeared at the Frontierland development site over the weekend. No opening timeline has been confirmed for the Piston Peak area.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "AllEars.Net",
+          "url": "https://allears.net/2026/07/27/something-huge-just-happened-at-magic-kingdoms-cars-land-expansion/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Frontierland construction zones can generate noise and reroute foot traffic, especially during midday hours. If you're exploring Big Thunder or Splash Mountain, early morning visits tend to offer clearer sightlines and quieter conditions."
+        }
+      },
+      {
+        "title": "Flash sale offers up to 40% off Walt Disney World resort stays",
+        "body": "The discount covers select hotels for travel dates through fall 2026, including the Halloween season. The offer went live July 27 and may have limited availability.",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-worlds-40-off-resort-flash-sale-for-summer-fall-2026-is-live/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Flash sales often expire within 48–72 hours or once inventory runs out. If you're considering a fall trip, book today—popular resorts like Animal Kingdom Lodge and the Polynesian tend to fill first."
+        }
+      },
+      {
+        "title": "Orlando International Airport ranked 7th busiest in US for 2025",
+        "body": "The airport, located near Walt Disney World and Universal Orlando, moved up in national rankings according to Airports Council International data released this week.",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/orlando-international-airport-7th-busiest-airport-in-united-states-for-2025/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Higher airport traffic usually means longer security lines during peak travel windows. Arriving 90 minutes early for domestic flights—rather than the standard 60—tends to reduce stress, especially on Friday afternoons and Monday mornings."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Mickey and Donald windbreakers now available at Walt Disney World",
+        "body": "Two character-themed jackets debuted at resort shops, priced at $89.99. Unbranded versions are also sold online at the Disney Store.",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/mickey-and-donald-windbreakers-now-available-at-walt-disney-world-resort/"
+        }
+      },
+      {
+        "title": "Bulova Clock Cleaners Mickey watch released online and in-park",
+        "body": "The $475 stainless steel timepiece honors the 1937 short film and is sold at Uptown Jewelers in Magic Kingdom and the Disney Store website.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/bulova-clock-cleaners-mickey-watch-now-available-online-and-at-walt-disney-world-resort/"
+        }
+      },
+      {
+        "title": "New princess hats, Belle ears, and Loungefly items arrive at Disneyland",
+        "body": "Accessories including a Minnie princess hat ($34.99) and snacks-themed backpack are now in shops at the Disneyland Resort.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/princess-hats-belle-ears-snacks-loungefly-magnets-and-more-disneyland-merch/"
+        }
+      },
+      {
+        "title": "Peg-Leg Pete shoulder plush re-released on Disney Store",
+        "body": "The Pirates of the Caribbean character item, originally sold last year, is back online for $27.99. It was previously available at both domestic resorts.",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/pirates-of-the-caribbean-peg-leg-pete-shoulder-plush-re-released-online-at-disney-store/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "Character experiences guide for Animal Kingdom now live",
+        "body": "Disney Parks Blog published a complete rundown of every meet-and-greet location in the park, including schedules and tips from the planDisney team. The guide covers characters from DinoLand, Africa, and Asia.",
+        "parkSlug": "animal-kingdom",
+        "ctaLabel": "Read the full guide",
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Character lines at Animal Kingdom tend to peak between 10am–1pm when families arrive. Visiting greeting spots during the first hour after opening or after 3pm usually offers waits under 15 minutes."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "gLBCVciBWa4",
+      "title": "The BEST Italian Restaurant at Disney World- Ravello at Four Seasons Orlando",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-07-23T17:18:05Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/gLBCVciBWa4/mqdefault.jpg",
+      "viewCount": 28402,
+      "url": "https://www.youtube.com/watch?v=gLBCVciBWa4",
+      "summary": "WrightDownMainStreet reviews Ravello, the Italian restaurant at Four Seasons Orlando near Walt Disney World."
+    },
+    {
+      "videoId": "e_f62xwPD7E",
+      "title": "Le Principesse Disney in Macchina 🚗 #disney #frozen #disneyland",
+      "channel": "Just Italian - Michele e Martina",
+      "publishedAt": "2026-07-28T09:11:44Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/e_f62xwPD7E/mqdefault.jpg",
+      "viewCount": 26485,
+      "url": "https://www.youtube.com/watch?v=e_f62xwPD7E",
+      "summary": "Italian creators Michele and Martina share a Disney Princess-themed car video tied to Disneyland and Frozen."
+    },
+    {
+      "videoId": "KpMR4zHUKf4",
+      "title": "🔴 LIVE: Happily Ever After – Magic Kingdom (EPIC 2026 Fireworks), Disney World | Full Show 4K",
+      "channel": "Fun to be Free",
+      "publishedAt": "2026-07-28T04:21:05Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/KpMR4zHUKf4/mqdefault.jpg",
+      "viewCount": 12314,
+      "url": "https://www.youtube.com/watch?v=KpMR4zHUKf4",
+      "summary": "Fun to be Free livestreamed the full Happily Ever After fireworks show from Magic Kingdom in 4K."
+    },
+    {
+      "videoId": "vnpWeQkKa0c",
+      "title": "My heart 🥰 My eyes 😭 #disney #disneyland #love #funny #fyp",
+      "channel": "Roni Koria",
+      "publishedAt": "2026-07-28T05:47:50Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/vnpWeQkKa0c/mqdefault.jpg",
+      "viewCount": 9468,
+      "url": "https://www.youtube.com/watch?v=vnpWeQkKa0c",
+      "summary": "Roni Koria shares an emotional Disneyland moment in this short-form video."
+    },
+    {
+      "videoId": "XxfsOUi87nA",
+      "title": "We Went Soarin' Over America #epcot #disney #disneyworld #vlog ",
+      "channel": "Disinfinity",
+      "publishedAt": "2026-07-28T03:30:06Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/XxfsOUi87nA/mqdefault.jpg",
+      "viewCount": 6456,
+      "url": "https://www.youtube.com/watch?v=XxfsOUi87nA",
+      "summary": "Disinfinity vlogs their experience on Soarin' at EPCOT in Walt Disney World."
+    },
+    {
+      "videoId": "dZOXNk7SDgM",
+      "title": "Disney always touches our hearts #fyp #funny #moment #foryourpage #disneyland #usa #disney #love",
+      "channel": "Wallie Tintler",
+      "publishedAt": "2026-07-28T05:58:05Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/dZOXNk7SDgM/mqdefault.jpg",
+      "viewCount": 5779,
+      "url": "https://www.youtube.com/watch?v=dZOXNk7SDgM",
+      "summary": "Wallie Tintler captures a heartfelt Disneyland moment in this short video."
+    },
+    {
+      "videoId": "FTpohQ4BBlU",
+      "title": "My heart 🥰My eyes 😭#disney #disneyland #foryou #love",
+      "channel": "Thúy Nguyễn",
+      "publishedAt": "2026-07-28T06:12:56Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/FTpohQ4BBlU/mqdefault.jpg",
+      "viewCount": 2702,
+      "url": "https://www.youtube.com/watch?v=FTpohQ4BBlU",
+      "summary": "Thúy Nguyễn shares an emotional Disney park experience in this brief clip."
+    },
+    {
+      "videoId": "Q0N1SJSh0RQ",
+      "title": "The Little Mermaid at Disneyland #disney #disneyland #parade #fyp",
+      "channel": "S M",
+      "publishedAt": "2026-07-28T04:07:25Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Q0N1SJSh0RQ/mqdefault.jpg",
+      "viewCount": 1207,
+      "url": "https://www.youtube.com/watch?v=Q0N1SJSh0RQ",
+      "summary": "S M captures The Little Mermaid during a Disneyland parade appearance."
+    },
+    {
+      "videoId": "qcCymWZmUck",
+      "title": "Fun moments at Disneyland #disney #disneyland #kids #funny",
+      "channel": "Brian Fisher",
+      "publishedAt": "2026-07-28T10:34:25Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/qcCymWZmUck/mqdefault.jpg",
+      "viewCount": 1144,
+      "url": "https://www.youtube.com/watch?v=qcCymWZmUck",
+      "summary": "Brian Fisher shares lighthearted family moments from a Disneyland visit."
+    },
+    {
+      "videoId": "_b54O4zIxLo",
+      "title": "Disneyland Paris - Wir frühstücken mit Disney-Prinzessinnen im Regal View Restaurant! 🥐🏰",
+      "channel": "danielsparksandmore",
+      "publishedAt": "2026-07-28T04:09:56Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/_b54O4zIxLo/mqdefault.jpg",
+      "viewCount": 1111,
+      "url": "https://www.youtube.com/watch?v=_b54O4zIxLo",
+      "summary": "Danielsparksandmore documents a character breakfast with Disney princesses at Regal View Restaurant in Disneyland Paris."
+    }
+  ],
+  "updatedAt": "2026-07-28T12:31:20.049Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-07-28T12:31:20.049Z",
+    "tokens": {
+      "input": 12053,
+      "output": 5541,
+      "costUsd": 0.1193
+    }
+  }
+}
