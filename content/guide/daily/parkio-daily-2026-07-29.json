@@ -1,0 +1,330 @@
+{
+  "title": "Parkio Daily for July 29, 2026",
+  "slug": "parkio-daily-2026-07-29",
+  "date": "2026-07-29",
+  "teaser": "Zootopia pre-show debuts at Animal Kingdom; new Napoleon wrasse swims into The Seas; Indiana Jones closes Sept 8 at Disneyland.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Test Track",
+        "parkSlug": "epcot",
+        "note": "Low waits mid-morning before festival crowds arrive"
+      },
+      {
+        "name": "Big Thunder Mountain",
+        "parkSlug": "magic-kingdom",
+        "note": "Steady moderate waits; skip the afternoon peak"
+      },
+      {
+        "name": "Avatar Flight of Passage",
+        "parkSlug": "animal-kingdom",
+        "note": "First hour or evening offer shortest queues"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [
+      {
+        "title": "Zootopia ride adds Mayor Winddancer pre-show at Animal Kingdom",
+        "body": "The Zootopia: Better Zoogether attraction now features a new pre-show with Mayor Brian Winddancer, voiced by Patrick Warburton, from Zootopia 2. The addition went live today at Disney's Animal Kingdom.",
+        "parkSlug": "animal-kingdom",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/first-look-at-new-zootopia-better-zoogether-mayor-winddancer-pre-show/"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "Zootopia typically draws heavier crowds early afternoon. Riding before 11am or after 5pm tends to keep waits manageable, usually under 30 minutes."
+        }
+      },
+      {
+        "title": "Citywide water outage hits Anaheim, affecting Disneyland operations",
+        "body": "A municipal water failure in Anaheim is causing operational disruptions at Disneyland today. The scope of the outage and its impact on attractions and services is still unfolding.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/07/disneyland-hit-with-citywide-water-failure-chaos-follows-el1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Restroom and dining service may be limited throughout the park today. Check the Disneyland app for real-time closures before committing to long waits or meal reservations."
+        }
+      }
+    ],
+    "bignews": [
+      {
+        "title": "Indiana Jones Adventure closing September 8 for refurbishment",
+        "body": "Disneyland's iconic Indiana Jones Adventure: Temple of the Forbidden Eye will shut down starting September 8 for an extended refurbishment. No reopening date has been announced.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/07/indiana-jones-adventure-disneyland-closure-cj1/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "If Indiana Jones is a must-do, visit before early September. Late August typically sees lighter crowds ahead of Labor Day weekend."
+        }
+      },
+      {
+        "title": "Animal Kingdom Lodge refurbishments starting next month",
+        "body": "Walt Disney World has added multiple refurbishment projects at both Jambo House and Kidani Village at Animal Kingdom Lodge. Work begins in August and runs through winter 2027.",
+        "parkSlug": "animal-kingdom",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-world-adds-animal-kingdom-lodge-projects-to-refurbishment-calendar-for-2026-2027/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Construction noise and limited amenities are likely at Animal Kingdom Lodge starting mid-August. Consider booking elsewhere if you're prioritizing a quiet resort experience."
+        }
+      },
+      {
+        "title": "New Napoleon wrasse joins The Seas aquarium at EPCOT",
+        "body": "EPCOT's 5.7-million-gallon SeaBase aquarium has welcomed Toa, a large and colorful Napoleon wrasse. The fish is now visible to guests visiting The Seas with Nemo & Friends.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/meet-toa-the-newest-fish-at-epcots-seabase-aquarium/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "The Seas pavilion usually has short waits throughout the day. Worth a stop mid-afternoon when other EPCOT attractions are busier."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "Mickey's Not-So-Scary Halloween Party food lineup revealed",
+        "body": "Magic Kingdom has unveiled the full menu for this year's Halloween party running August 7 through October 31. The lineup includes themed treats and seasonal dishes available only during event nights.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/disney-eats-mickeys-not-so-scary-halloween-party-foodie-guide/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Party-exclusive snacks tend to sell out by 9pm on peak nights. Hitting Main Street or Liberty Square food carts early in the event usually secures the full selection."
+        }
+      },
+      {
+        "title": "New UK Pavilion plaid collection arrives at EPCOT",
+        "body": "A plaid-themed merchandise line featuring a Spirit Jersey, scarf, and ear headband is now available at the Sportsman's Shoppe in the United Kingdom Pavilion at EPCOT.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/plaid-united-kingdom-pavilion-collection-arrives-in-epcot/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Limited merchandise tends to move fast at World Showcase shops. Morning shoppers before 11am usually find the best inventory and shorter checkout lines."
+        }
+      },
+      {
+        "title": "DVC members can claim exclusive donut in Disney Springs",
+        "body": "Disney Vacation Club members have access to a free specialty donut at a Disney Springs location for a limited time. The offer is exclusive to DVC cardholders.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "AllEars.Net",
+          "url": "https://allears.net/2026/07/28/an-exclusive-snack-is-available-in-disney-world-for-a-limited-time/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Disney Springs bakeries typically restock mid-morning. Claiming the DVC donut before noon likely ensures availability and avoids late-day sellouts."
+        }
+      },
+      {
+        "title": "Mickey's of Glendale returns to D23 with new Imagineering collection",
+        "body": "The fan-favorite Mickey's of Glendale booth will be back at D23: The Ultimate Disney Fan Event in August, offering exclusive Walt Disney Imagineering merchandise.",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/disney-experiences/mickeys-of-glendale-d23-walt-disney-imagineering-collection/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "D23 merchandise lines tend to form before the show floor opens. Arriving at the convention center early on booth-launch days usually improves your odds of snagging limited items."
+        }
+      },
+      {
+        "title": "Southwest offering $59 flights to Orlando for limited time",
+        "body": "Southwest Airlines has launched a sale with flights to Orlando starting at $59 for select dates. The promotional fares are available for a limited booking window.",
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/07/28/southwest-just-dropped-59-flights-to-disney-world-for-a-limited-time/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Fare sales often expire within 48 hours or when inventory runs out. Booking today and targeting off-peak travel dates usually locks in the lowest prices."
+        }
+      },
+      {
+        "title": "RunDisney announces new virtual Halloween event",
+        "body": "A spooky-themed virtual runDisney event has been revealed, allowing participants to complete challenges from home and earn themed medals and rewards.",
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/07/28/disney-just-revealed-a-new-virtual-event/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Virtual race registrations typically fill fastest in the first 24 hours. Signing up today often guarantees your spot and first access to exclusive merchandise bundles."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Disney Worldbuilders documentary coming to Disney+ in August",
+        "body": "A new behind-the-scenes series exploring the creation of Disney park lands and attractions will debut on Disney+ next month, featuring Imagineering teams and their design process.",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/disney-experiences/disney-worldbuilders-details-and-more/"
+        }
+      },
+      {
+        "title": "Orlando International Airport climbs to top 10 busiest in US",
+        "body": "MCO has moved up in national airport rankings, with passenger volume continuing to grow even as travel demand softens at other major hubs.",
+        "source": {
+          "label": "AllEars.Net",
+          "url": "https://allears.net/2026/07/28/confirmed-orlando-international-airport-is-busier-than-ever-before/"
+        }
+      },
+      {
+        "title": "Disney Wish cruise ship returned to port for medical emergency",
+        "body": "The Disney Wish turned back within hours of departure on Monday to handle a guest medical situation, delaying the sailing schedule temporarily.",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/disney-wish-returns-to-port-within-hours-of-leaving-due-to-medical-emergency-in-todays-daily-recap-for-7-28-2026/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "Magic Kingdom crowd calendar: best and worst days through Christmas",
+        "body": "A detailed breakdown of crowd patterns from August through December shows wide variation in park capacity at Magic Kingdom. The guide highlights low-traffic windows during Halloween and Christmas seasons and flags peak days to avoid.",
+        "parkSlug": "magic-kingdom",
+        "ctaLabel": "Read the full crowd calendar",
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Mid-week visits in late September and early November typically see the lightest crowds before holiday peaks. Rope-dropping Tomorrowland or Fantasyland on those days often yields walk-on windows for headliners."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "gLBCVciBWa4",
+      "title": "The BEST Italian Restaurant at Disney World- Ravello at Four Seasons Orlando",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-07-23T17:18:05Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/gLBCVciBWa4/mqdefault.jpg",
+      "viewCount": 29779,
+      "url": "https://www.youtube.com/watch?v=gLBCVciBWa4",
+      "summary": "WrightDownMainStreet reviews Ravello, the Italian restaurant at Four Seasons Orlando near Disney World."
+    },
+    {
+      "videoId": "kQqtL-l0Fo8",
+      "title": "#LIVE Disneyland Out of This World Fun, Rides, Characters, New Merch",
+      "channel": "Main Street Cowgirl",
+      "publishedAt": "2026-07-29T07:28:16Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/kQqtL-l0Fo8/mqdefault.jpg",
+      "viewCount": 10467,
+      "url": "https://www.youtube.com/watch?v=kQqtL-l0Fo8",
+      "summary": "Main Street Cowgirl live-streams a day at Disneyland featuring attractions, character encounters, and the latest merchandise."
+    },
+    {
+      "videoId": "n024AnBD4UM",
+      "title": "Shopping the NEWEST Disney Merch 🛒 (Disneyland Anaheim, CA)",
+      "channel": "Becky plus Eli",
+      "publishedAt": "2026-07-29T06:43:32Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/n024AnBD4UM/mqdefault.jpg",
+      "viewCount": 7031,
+      "url": "https://www.youtube.com/watch?v=n024AnBD4UM",
+      "summary": "Becky plus Eli tour the latest merchandise offerings across Disneyland Resort in Anaheim."
+    },
+    {
+      "videoId": "xDNDlIHkUa4",
+      "title": "My heart 🥰My eyes 😭#disney #disneyland #foryou #love",
+      "channel": "Thúy Nguyễn",
+      "publishedAt": "2026-07-29T08:19:13Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/xDNDlIHkUa4/mqdefault.jpg",
+      "viewCount": 3775,
+      "url": "https://www.youtube.com/watch?v=xDNDlIHkUa4",
+      "summary": "Thúy Nguyễn shares an emotional Disneyland moment in a short-form video."
+    },
+    {
+      "videoId": "oeLfPu-4JFc",
+      "title": "🔴LIVE EPCOT Terrific Tuesday Walt Disney World 7/28/2026",
+      "channel": "Jennifer Caruso",
+      "publishedAt": "2026-07-29T06:38:04Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/oeLfPu-4JFc/mqdefault.jpg",
+      "viewCount": 2231,
+      "url": "https://www.youtube.com/watch?v=oeLfPu-4JFc",
+      "summary": "Jennifer Caruso live-streams from EPCOT on a Tuesday morning, showing park conditions and attractions."
+    },
+    {
+      "videoId": "GDlNrK3cMB8",
+      "title": "Funny Disney Moment #disney #disneyparktour #disneyland #universalparks #disneyparks #disneystore",
+      "channel": "Shanique Hughes",
+      "publishedAt": "2026-07-29T10:07:57Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/GDlNrK3cMB8/mqdefault.jpg",
+      "viewCount": 1821,
+      "url": "https://www.youtube.com/watch?v=GDlNrK3cMB8",
+      "summary": "Shanique Hughes captures a humorous moment during a Disney park visit."
+    },
+    {
+      "videoId": "npNWfehp8rI",
+      "title": "A Brand New Day Begins 🕷️🎬#spiderman #avengers #disneylandparis #avengerscampus #peterparker",
+      "channel": "marina c",
+      "publishedAt": "2026-07-29T07:00:29Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/npNWfehp8rI/mqdefault.jpg",
+      "viewCount": 1141,
+      "url": "https://www.youtube.com/watch?v=npNWfehp8rI",
+      "summary": "Marina c showcases Spider-Man and Avengers Campus at Disneyland Paris during morning hours."
+    },
+    {
+      "videoId": "FXt4Lb67W0g",
+      "title": "A Little Disney Magic Everywhere You Look ✨",
+      "channel": "The EDventures",
+      "publishedAt": "2026-07-29T07:10:45Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/FXt4Lb67W0g/mqdefault.jpg",
+      "viewCount": 1087,
+      "url": "https://www.youtube.com/watch?v=FXt4Lb67W0g",
+      "summary": "The EDventures highlights magical details found throughout the Disney parks."
+    },
+    {
+      "videoId": "iZH83S8l6Fo",
+      "title": "Disney Princess experience has officially arrived at Disneyland Paris!",
+      "channel": "Alejandra's Life",
+      "publishedAt": "2026-07-29T10:33:51Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/iZH83S8l6Fo/mqdefault.jpg",
+      "viewCount": 1064,
+      "url": "https://www.youtube.com/watch?v=iZH83S8l6Fo",
+      "summary": "Alejandra's Life covers the debut of the new Disney Princess experience at Disneyland Paris."
+    },
+    {
+      "videoId": "qwIzR68aEkc",
+      "title": "Disney bathroom emergency! #disneyland #anaheim #restrooms #NeilPatrickHarris #becool #emergency",
+      "channel": "ThemeParkTales",
+      "publishedAt": "2026-07-29T07:10:51Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/qwIzR68aEkc/mqdefault.jpg",
+      "viewCount": 1000,
+      "url": "https://www.youtube.com/watch?v=qwIzR68aEkc",
+      "summary": "ThemeParkTales recounts a restroom emergency situation at Disneyland involving Neil Patrick Harris."
+    }
+  ],
+  "updatedAt": "2026-07-29T12:56:24.609Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-07-29T12:56:24.609Z",
+    "tokens": {
+      "input": 12026,
+      "output": 5044,
+      "costUsd": 0.1117
+    }
+  }
+}
