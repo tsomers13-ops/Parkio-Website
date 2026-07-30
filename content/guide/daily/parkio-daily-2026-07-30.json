@@ -1,0 +1,333 @@
+{
+  "title": "Parkio Daily for July 30, 2026",
+  "slug": "parkio-daily-2026-07-30",
+  "date": "2026-07-30",
+  "teaser": "Zootopia show gets new scene; EPCOT's $150 fireworks dinner launches; eight Oogie Boogie dates sold out at California Adventure.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Big Thunder Mountain Railroad",
+        "parkSlug": "magic-kingdom",
+        "note": "Early morning crowds light before heat builds"
+      },
+      {
+        "name": "Test Track",
+        "parkSlug": "epcot",
+        "note": "Brief lull before World Showcase opens at 11"
+      },
+      {
+        "name": "Radiator Springs Racers",
+        "parkSlug": "california-adventure",
+        "note": "Shorter standby window during rope drop rush at Disneyland next door"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [
+      {
+        "title": "Water main break forced Disneyland bathroom closures July 28",
+        "body": "A Harbor Boulevard water main failure led to widespread restroom shutdowns across Disneyland Resort on Tuesday evening. Pressure issues lingered into the night before service returned.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/no-running-water-disneyland-bathrooms-all-forced-to-close-due-to-anaheim-issues-in-todays-daily-recap-for-7-29-2026/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "If you experienced delays Tuesday evening, facilities are operating normally now. Anaheim infrastructure can occasionally affect park operations; keeping a water bottle handy is always smart."
+        }
+      }
+    ],
+    "bignews": [
+      {
+        "title": "EPCOT debuts $150 fireworks dining package in Japan pavilion",
+        "body": "A new multi-course dinner for Luminous Symphony of Us viewing goes on sale at the Japan pavilion. The meal includes reserved fireworks seating on the World Showcase promenade.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/new-150-fireworks-dining-package-coming-to-epcot/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Premium pricing tends to mean smaller crowds at the reserved viewing area. If you're celebrating and want stress-free seating, book early; packages like this often fill within a week of launch."
+        }
+      },
+      {
+        "title": "Zootopia Better Zoogether adds pre-show scene at Animal Kingdom",
+        "body": "A new opening sequence featuring additional characters now plays before the main theater experience. The update arrives less than a year after the attraction debuted.",
+        "parkSlug": "animal-kingdom",
+        "source": {
+          "label": "AllEars",
+          "url": "https://allears.net/2026/07/29/this-disney-world-show-just-got-a-new-scene/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "The pre-show adds roughly three minutes to total runtime. Guests arriving just before showtime may miss the new content; plan to enter the queue five minutes earlier than usual."
+        }
+      },
+      {
+        "title": "Eight Oogie Boogie Bash dates now sold out at California Adventure",
+        "body": "Two more Halloween party nights sold out as of July 29, bringing the total unavailable evenings to eight. The after-hours event runs select nights through October.",
+        "parkSlug": "california-adventure",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/07/oogie-boogie-bash-eight-total-dates-sold-out-jc1/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Remaining dates are likely to sell within the next two weeks, especially weekends. Weeknight events tend to stay available longer and often feel less packed once inside."
+        }
+      },
+      {
+        "title": "Magic Kingdom restricts select food and merchandise to party ticket holders starting August",
+        "body": "Certain snacks and souvenirs will be exclusive to guests holding Mickey's Not-So-Scary Halloween Party admission beginning next week. Regular day guests will not have access during party hours.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/07/warning-disney-world-restricts-exclusive-food-and-merch-to-higher-paying-guests-sb1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "If you're visiting on a party night without a ticket, plan shopping and specialty treats before 6pm park close. Once the event begins, selection shrinks and lines favor ticket holders."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "Halloween merchandise collections launch across Disney parks",
+        "body": "The 2026 Halloween product line is now available in stores and online, including the new pastel Cutie Ghost series. Nightmare Before Christmas rubber ducks and additional seasonal items hit Walt Disney World shelves this week.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/products/halloween-merchandise-guide-frightfully-fun-finds-for-every-disney-fan/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Signature items like the Cutie Ghost line tend to sell out by mid-August. Shop early in the day at larger stores like World of Disney or Emporium for best selection before collectors clear the shelves."
+        }
+      },
+      {
+        "title": "Mickey's Not-So-Scary Halloween Party food guide released",
+        "body": "The full menu of exclusive treats for this year's after-hours event is now public. Items range from themed snacks to multi-course offerings available only during party nights from August 7 through October 31.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/disney-eats-mickeys-not-so-scary-halloween-party-foodie-guide/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Food booths tend to have shorter lines in the first 90 minutes after the party starts at 7pm. Mobile order where available or hit your must-try items before the 9pm parade draws everyone to Main Street."
+        }
+      },
+      {
+        "title": "EPCOT Canada pavilion sees new construction walls",
+        "body": "Portions of the Canada area are now blocked off for refurbishment work. Several walkthrough sections guests typically access are temporarily closed while crews make updates.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/07/epcot-canada-pavilion-surprising-new-closures-ab1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Construction walls in World Showcase can narrow walkways and create bottlenecks during evening fireworks exits. If you're heading toward the front of the park after Luminous, the UK side may move faster."
+        }
+      },
+      {
+        "title": "Animal Kingdom Lodge announces multiple 2026-2027 refurbishment projects",
+        "body": "Both Jambo House and Kidani Village will undergo overlapping work starting in August and continuing through winter 2027. Specific areas and timelines are posted on the resort calendar.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-world-adds-animal-kingdom-lodge-projects-to-refurbishment-calendar-for-2026-2027/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Resort refurbs often mean early-morning noise, blocked amenities, or reduced dining hours. If you've booked Animal Kingdom Lodge for a quiet stay, confirm which buildings are affected before check-in."
+        }
+      },
+      {
+        "title": "Disney World tests AI search tool for Cast Members",
+        "body": "A pilot program giving employees access to an internal artificial intelligence search system quietly launched this week. The tool is not guest-facing and remains in early testing.",
+        "parkSlug": null,
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/07/cast-members-only-disney-world-quietly-launches-ai-search-test-el1/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Faster Cast Member access to information may eventually lead to quicker answers at Guest Relations or front desks. For now, patience during complex questions is still your best strategy."
+        }
+      },
+      {
+        "title": "Five new Disney souvenir collections drop online in August",
+        "body": "A slate of themed product lines will launch on Disney Store and shopDisney next month. Categories span seasonal, character-driven, and park-exclusive designs.",
+        "parkSlug": null,
+        "source": {
+          "label": "AllEars",
+          "url": "https://allears.net/2026/07/30/5-new-disney-souvenir-collections-announced-for-august-2026/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Online drops often sell out within hours for popular items. Setting a calendar reminder for launch day and checking at midnight Eastern tends to yield the best inventory before bots and collectors swoop in."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Disney Legend Glen Keane airlifted from Arizona mountain after medical scare",
+        "body": "The 72-year-old Oscar-winning animator was safely rescued by helicopter on July 29 after becoming dizzy during a family hike in Paradise Valley. He is recovering.",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/disney-legend-glen-keane-airlifted-from-arizona-mountain-after-medical-emergency/"
+        }
+      },
+      {
+        "title": "Mickey's of Glendale booth returning to D23 fan event with Imagineering collection",
+        "body": "The beloved merchandise pop-up will feature exclusive Walt Disney Imagineering items at this year's D23 convention. The booth has become a favorite among collectors.",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/disney-experiences/mickeys-of-glendale-d23-walt-disney-imagineering-collection/"
+        }
+      },
+      {
+        "title": "Hallmark movie filmed at Disney World set for holiday release",
+        "body": "Actress Lacy Chabert discussed the upcoming Christmas film Holiday Ever After shot on location at Walt Disney World. She called the experience a dream come true in a recent interview.",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/lacy-chabert-says-filming-hallmark-movie-at-disney-world-was-a-dream-come-true/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "New fish joins EPCOT aquarium",
+        "body": "The Seas with Nemo and Friends added a new species to its collection this week. The arrival expands the pavilion's rotating marine life displays.",
+        "parkSlug": "epcot",
+        "ctaLabel": "Visit The Seas",
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Aquarium crowds are lightest right after park open and during evening World Showcase hours when most guests are dining. Mornings offer clearer glass and calmer viewing before school groups arrive."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "JTMBNmPoO2k",
+      "title": "WE ATE DISNEYLAND FOOD FOR 24 HOURS *PREGNANT EDITION*",
+      "channel": "KAED",
+      "publishedAt": "2026-07-30T04:31:28Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/JTMBNmPoO2k/mqdefault.jpg",
+      "viewCount": 46621,
+      "url": "https://www.youtube.com/watch?v=JTMBNmPoO2k",
+      "summary": "A 24-hour Disneyland dining challenge filmed while expecting, covering food spots across the resort."
+    },
+    {
+      "videoId": "gLBCVciBWa4",
+      "title": "The BEST Italian Restaurant at Disney World- Ravello at Four Seasons Orlando",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-07-23T17:18:05Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/gLBCVciBWa4/mqdefault.jpg",
+      "viewCount": 30671,
+      "url": "https://www.youtube.com/watch?v=gLBCVciBWa4",
+      "summary": "A full review of Ravello, the Italian dining option at Four Seasons Resort Orlando."
+    },
+    {
+      "videoId": "AHG82mvvDVg",
+      "title": "Somewhere at Walt Disney World 7/29/26  #live",
+      "channel": "That Crazy Disney Lady",
+      "publishedAt": "2026-07-30T02:48:50Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/AHG82mvvDVg/mqdefault.jpg",
+      "viewCount": 22425,
+      "url": "https://www.youtube.com/watch?v=AHG82mvvDVg",
+      "summary": "A live stream from an undisclosed Walt Disney World location on July 29."
+    },
+    {
+      "videoId": "koVKhZoG_vc",
+      "title": "Character Added to Zootopia Attraction at Animal Kingdom, Disney Believe Cruise Line Ship Update",
+      "channel": "WDW News Today",
+      "publishedAt": "2026-07-30T02:48:02Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/koVKhZoG_vc/mqdefault.jpg",
+      "viewCount": 5771,
+      "url": "https://www.youtube.com/watch?v=koVKhZoG_vc",
+      "summary": "Coverage of the new Zootopia scene at Animal Kingdom plus updates on Disney's cruise line expansion."
+    },
+    {
+      "videoId": "6Nfe9WBwAFI",
+      "title": "My heart 🥰 My eyes 😭 #disney #disneyland #love #funny #fyp",
+      "channel": "Roni Koria",
+      "publishedAt": "2026-07-30T05:51:50Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/6Nfe9WBwAFI/mqdefault.jpg",
+      "viewCount": 3947,
+      "url": "https://www.youtube.com/watch?v=6Nfe9WBwAFI",
+      "summary": "A short Disneyland moment capturing an emotional or humorous guest experience."
+    },
+    {
+      "videoId": "X8NKStDZrt0",
+      "title": "🔴 LIVE @ Walt Disney World's Magic Kingdom Starlight Parade & Happily Ever After Fireworks",
+      "channel": "Sprinkles of Adventures",
+      "publishedAt": "2026-07-30T03:48:19Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/X8NKStDZrt0/mqdefault.jpg",
+      "viewCount": 3481,
+      "url": "https://www.youtube.com/watch?v=X8NKStDZrt0",
+      "summary": "A live broadcast of Magic Kingdom's evening parade and fireworks spectacular."
+    },
+    {
+      "videoId": "447HsZtKGu4",
+      "title": "The Secret Behind Disneyland's Sword!",
+      "channel": "Facts Flow",
+      "publishedAt": "2026-07-30T11:15:01Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/447HsZtKGu4/mqdefault.jpg",
+      "viewCount": 3063,
+      "url": "https://www.youtube.com/watch?v=447HsZtKGu4",
+      "summary": "An explainer video revealing details about the sword in the stone attraction at Disneyland."
+    },
+    {
+      "videoId": "hHq_O1tnGsA",
+      "title": "My heart 🥰My eyes 😭#disney #disneyland #foryou #funny #fyp",
+      "channel": "Wallie Tintler",
+      "publishedAt": "2026-07-30T06:04:43Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/hHq_O1tnGsA/mqdefault.jpg",
+      "viewCount": 3002,
+      "url": "https://www.youtube.com/watch?v=hHq_O1tnGsA",
+      "summary": "A brief clip highlighting an emotional or funny Disneyland visit moment."
+    },
+    {
+      "videoId": "qSVAmaRL3gM",
+      "title": "La parade #disney #love #disneyland",
+      "channel": "Clara.A",
+      "publishedAt": "2026-07-30T08:30:50Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/qSVAmaRL3gM/mqdefault.jpg",
+      "viewCount": 1625,
+      "url": "https://www.youtube.com/watch?v=qSVAmaRL3gM",
+      "summary": "Footage of a Disneyland parade, likely from the daytime or evening entertainment lineup."
+    },
+    {
+      "videoId": "XfsgI8jnNH4",
+      "title": "DISNEYLAND HOTEL #disney #mickeymouse #2026 #new #shortsfeed #summer #familyvlog",
+      "channel": "⭐️𝐇𝐲𝐩𝐞𝐫𝐒𝐭𝐫𝐞𝐚𝐦𝐙⭐️",
+      "publishedAt": "2026-07-30T03:40:40Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/XfsgI8jnNH4/mqdefault.jpg",
+      "viewCount": 1192,
+      "url": "https://www.youtube.com/watch?v=XfsgI8jnNH4",
+      "summary": "A family vlog showcasing a stay at Disneyland Hotel during summer 2026."
+    }
+  ],
+  "updatedAt": "2026-07-30T12:24:22.165Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-07-30T12:24:22.165Z",
+    "tokens": {
+      "input": 11954,
+      "output": 5120,
+      "costUsd": 0.1127
+    }
+  }
+}
