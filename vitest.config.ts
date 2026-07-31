@@ -7,6 +7,9 @@ export default defineConfig({
       "@": path.resolve(__dirname, "."),
     },
   },
+  // Component tests render TSX from components/ — tsconfig keeps
+  // `jsx: "preserve"` for Next, so tell esbuild to compile it.
+  esbuild: { jsx: "automatic" },
   test: {
     environment: "node",
     include: ["tests/**/*.test.ts"],
