@@ -10,6 +10,11 @@ import { Navbar } from "@/components/Navbar";
 import { NewsletterCta } from "@/components/NewsletterCta";
 import { getPark } from "@/lib/data";
 import {
+  safeCssUrl,
+  safeExternalUrl,
+  safeInternalHref,
+} from "@/lib/safeUrl";
+import {
   type GuideBlock,
   type GuideCta,
   type GuidePost,
@@ -484,9 +489,9 @@ function NewsItemRow({
             Check live waits
           </Link>
         )}
-        {item.source && (
+        {item.source && safeExternalUrl(item.source.url) && (
           <a
-            href={item.source.url}
+            href={safeExternalUrl(item.source.url) as string}
             target="_blank"
             rel="noopener nofollow"
             className="text-ink-500 transition hover:text-ink-800"
@@ -621,10 +626,14 @@ function VideosSection({ items }: { items: DailyVideoItem[] }) {
         Most watched Disney videos
       </h2>
       <div className="mt-4 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
-        {items.map((v, i) => (
+        {items.map((v, i) => {
+          const videoUrl = safeExternalUrl(v.url);
+          const thumbnailUrl = safeCssUrl(v.thumbnailUrl);
+          if (!videoUrl) return null;
+          return (
           <a
             key={i}
-            href={v.url}
+            href={videoUrl}
             target="_blank"
             rel="noopener nofollow"
             className="group block overflow-hidden rounded-2xl border border-ink-100 bg-white shadow-soft transition hover:shadow-lift"
@@ -632,9 +641,9 @@ function VideosSection({ items }: { items: DailyVideoItem[] }) {
             <div
               className="relative aspect-video bg-ink-100"
               style={
-                v.thumbnailUrl
+                thumbnailUrl
                   ? {
-                      backgroundImage: `url(${v.thumbnailUrl})`,
+                      backgroundImage: `url("${thumbnailUrl}")`,
                       backgroundSize: "cover",
                       backgroundPosition: "center",
                     }
@@ -659,7 +668,8 @@ function VideosSection({ items }: { items: DailyVideoItem[] }) {
               </p>
             </div>
           </a>
-        ))}
+          );
+        })}
       </div>
     </section>
   );
@@ -897,7 +907,7 @@ function DoThisNow({
         ))}
       </ol>
       <Link
-        href={post.doThisNow.primaryCta.href}
+        href={safeInternalHref(post.doThisNow.primaryCta.href) ?? "/parks"}
         className="group mt-6 inline-flex items-center justify-center gap-2 rounded-full bg-ink-900 px-5 py-3 text-sm font-semibold text-white shadow-soft transition hover:bg-ink-800"
         style={
           parkColor
@@ -922,7 +932,7 @@ function RelatedLinks({ links }: { links: GuideCta[] }) {
         {links.map((link, i) => (
           <Link
             key={i}
-            href={link.href}
+            href={safeInternalHref(link.href) ?? "/parks"}
             className="group flex items-center justify-between gap-3 rounded-2xl border border-ink-100 bg-white px-4 py-3 text-sm font-medium text-ink-800 shadow-soft transition hover:border-ink-200 hover:text-ink-900"
           >
             <span>{link.label}</span>
@@ -946,7 +956,7 @@ function BottomFunnel({ post }: { post: GuidePost }) {
           : "Pick a park and Parkio Picks will rank the best moves right now."}
       </p>
       <Link
-        href={post.doThisNow.primaryCta.href}
+        href={safeInternalHref(post.doThisNow.primaryCta.href) ?? "/parks"}
         className="mt-5 inline-flex items-center gap-2 rounded-full bg-ink-900 px-5 py-3 text-sm font-medium text-white transition hover:bg-ink-800"
       >
         {post.doThisNow.primaryCta.label}

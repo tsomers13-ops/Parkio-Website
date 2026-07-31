@@ -983,13 +983,29 @@ function buildPost({ claudeResult, etDate, slug, niceDate, rankedVideos }) {
  * Helpers — fetch wrappers, env, sleep, cost log
  * ────────────────────────────────────────────────────────────── */
 
+/**
+ * Strip credential-bearing query params before a URL reaches a log line
+ * or an Error message. The YouTube endpoints carry `key=<API key>`.
+ */
+function redactUrl(url) {
+  try {
+    const parsed = new URL(url);
+    for (const param of ["key", "api_key", "apikey", "access_token", "token"]) {
+      if (parsed.searchParams.has(param)) parsed.searchParams.set(param, "REDACTED");
+    }
+    return parsed.toString();
+  } catch {
+    return url;
+  }
+}
+
 async function getText(url, { headers = {}, timeoutMs = 30_000 } = {}) {
   const res = await fetch(url, {
     headers,
     signal: AbortSignal.timeout(timeoutMs),
     redirect: "follow",
   });
-  if (!res.ok) throw new Error(`${url} → HTTP ${res.status}`);
+  if (!res.ok) throw new Error(`${redactUrl(url)} → HTTP ${res.status}`);
   return await res.text();
 }
 
@@ -1001,7 +1017,7 @@ async function getJson(url, { headers = {}, timeoutMs = 30_000 } = {}) {
   });
   if (!res.ok) {
     const detail = (await res.text().catch(() => "")).slice(0, 300);
-    throw new Error(`${url} → HTTP ${res.status}: ${detail}`);
+    throw new Error(`${redactUrl(url)} → HTTP ${res.status}: ${detail}`);
   }
   return await res.json();
 }

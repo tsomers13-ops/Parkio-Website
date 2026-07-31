@@ -27,6 +27,11 @@ function escapeXml(s: string): string {
     .replace(/'/g, "&apos;");
 }
 
+/** CDATA has no escaping mechanism — the only way out of a block is `]]>`. */
+function escapeCdata(s: string): string {
+  return s.replace(/]]>/g, "]]]]><![CDATA[>");
+}
+
 /* ─────────────── story shaping ───────────────
  * Email philosophy (see PARKIO_NEWSLETTER_STRATEGY.md): answer in the
  * email, deepen in the app. Every story carries its actionable
@@ -143,7 +148,7 @@ ${storiesHtml}
       <guid isPermaLink="true">${url}</guid>
       <pubDate>${pubDate}</pubDate>
       <description>${escapeXml(post.teaser)}</description>
-      <content:encoded><![CDATA[${contentHtml}]]></content:encoded>
+      <content:encoded><![CDATA[${escapeCdata(contentHtml)}]]></content:encoded>
     </item>`.trim();
 }
 
