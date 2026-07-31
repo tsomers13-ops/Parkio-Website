@@ -7,25 +7,8 @@ import { ConversionBlock } from "@/components/ConversionBlock";
 import { Footer } from "@/components/Footer";
 import { HomeDailyTeaser } from "@/components/HomeDailyTeaser";
 import { Navbar } from "@/components/Navbar";
+import { ParkLandingLinks } from "@/components/ParkLandingLinks";
 import { getTodayLandingDate } from "@/lib/seoLandingDate";
-
-/**
- * Park-cluster internal-nav links for the "best rides today" hub.
- * Hand-curated (mirrors /wait-times-today) so the slug→landing-page
- * mapping is visible here and the order matches search demand.
- */
-const PARK_LANDINGS: ReadonlyArray<{
-  name: string;
-  resort: string;
-  href: string;
-}> = [
-  { name: "Magic Kingdom", resort: "Walt Disney World", href: "/magic-kingdom-best-rides-today" },
-  { name: "EPCOT", resort: "Walt Disney World", href: "/epcot-best-rides-today" },
-  { name: "Hollywood Studios", resort: "Walt Disney World", href: "/hollywood-studios-best-rides-today" },
-  { name: "Animal Kingdom", resort: "Walt Disney World", href: "/animal-kingdom-best-rides-today" },
-  { name: "Disneyland", resort: "Disneyland Resort", href: "/disneyland-best-rides-today" },
-  { name: "California Adventure", resort: "Disneyland Resort", href: "/california-adventure-best-rides-today" },
-];
 
 /* ─────────────────────────────────────────────────────────────────
  * /best-rides-today
@@ -103,35 +86,7 @@ export default function BestRidesTodayPage() {
         </div>
       </section>
 
-      {/* By-park internal navigation. Six explicit links to the park-
-          specific best-rides-today pages so Google can discover the
-          full cluster in one crawl and visitors can jump straight to
-          the park they're searching for. */}
-      <section className="mx-auto max-w-7xl px-5 sm:px-8">
-        <h2 className="text-sm font-semibold uppercase tracking-widest text-ink-500">
-          Best rides by park
-        </h2>
-        <ul className="mt-4 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
-          {PARK_LANDINGS.map((p) => (
-            <li key={p.href}>
-              <Link
-                href={p.href}
-                className="group flex items-center justify-between rounded-2xl bg-white px-5 py-4 ring-1 ring-ink-100 transition hover:ring-ink-300 hover:shadow-soft"
-              >
-                <div>
-                  <div className="text-base font-semibold text-ink-900">
-                    {p.name}
-                  </div>
-                  <div className="text-xs text-ink-500">{p.resort}</div>
-                </div>
-                <span className="text-ink-400 transition group-hover:translate-x-0.5 group-hover:text-ink-700">
-                  →
-                </span>
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </section>
+      <ParkLandingLinks variant="best-rides" heading="Best rides by park" />
 
       {/* The full per-park top-picks grid — primary content. */}
       <BestRidesAllParksGrid />

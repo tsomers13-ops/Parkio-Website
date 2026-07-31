@@ -4,13 +4,10 @@
  * Cached for 30 minutes.
  */
 
-import { CACHE_TTL, getOrFetch } from "@/lib/cache";
+import { CACHE_TTL } from "@/lib/cache";
 import { getParkConfig } from "@/lib/disneyParkConfig";
 import { normalizeHours } from "@/lib/parkioNormalizer";
-import {
-  getEntitySchedule,
-  type ThemeparksScheduleResponse,
-} from "@/lib/themeparksApi";
+import { fetchSchedule } from "@/lib/upstream";
 import { jsonOk, notFound } from "../../../_lib/respond";
 
 export const runtime = "edge";
@@ -26,16 +23,7 @@ export async function GET(_req: Request, { params }: Params) {
     return notFound(`Unknown park slug: ${params.parkSlug}`);
   }
 
-  let schedule: ThemeparksScheduleResponse | null = null;
-  try {
-    schedule = await getOrFetch(
-      `schedule:${cfg.externalId}`,
-      CACHE_TTL.hours,
-      () => getEntitySchedule(cfg.externalId),
-    );
-  } catch {
-    schedule = null;
-  }
+  const schedule = await fetchSchedule(cfg.externalId);
 
   const payload = normalizeHours(cfg.slug, schedule);
   if (!payload) return notFound(`Unknown park slug: ${params.parkSlug}`);

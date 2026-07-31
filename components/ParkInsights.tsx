@@ -7,6 +7,7 @@ import { isTopRide } from "@/lib/popularity";
 import type { ApiAttraction, Park } from "@/lib/types";
 import { simulatedWait } from "@/lib/utils";
 import { useParkLive } from "./ParkLiveDataProvider";
+import { Chevron } from "@/components/icons";
 
 interface ParkInsightsProps {
   park: Park;
@@ -133,7 +134,7 @@ export function ParkInsights({ park }: ParkInsightsProps) {
                 className="inline-flex items-center gap-2 rounded-full bg-ink-900 px-5 py-2.5 text-sm font-semibold text-white shadow-soft transition hover:bg-ink-800"
               >
                 {insight.cta.label}
-                <Chevron />
+                <Chevron strokeWidth={1.6} />
               </Link>
             </div>
           )}
@@ -145,7 +146,7 @@ export function ParkInsights({ park }: ParkInsightsProps) {
             className="inline-flex items-center gap-2 rounded-full border border-ink-200 bg-white px-5 py-3 text-sm font-medium text-ink-800 shadow-soft transition hover:border-ink-300 hover:bg-ink-50"
           >
             See all parks
-            <Chevron />
+            <Chevron strokeWidth={1.6} />
           </Link>
         </div>
       </div>
@@ -289,20 +290,6 @@ function averageWait(attractions: ApiAttraction[]): number | null {
 }
 
 /* ─────────────────────────── Chrome ─────────────────────────── */
-
-function Chevron() {
-  return (
-    <svg viewBox="0 0 16 16" fill="none" className="h-3.5 w-3.5" aria-hidden>
-      <path
-        d="M6 3l5 5-5 5"
-        stroke="currentColor"
-        strokeWidth="1.6"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-    </svg>
-  );
-}
 
 /**
  * Estimated badge gains a "Predicted from park patterns" supporting

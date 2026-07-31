@@ -8,17 +8,14 @@
  *   - disneyland-resort
  */
 
-import { CACHE_TTL, getOrFetch } from "@/lib/cache";
+import { CACHE_TTL } from "@/lib/cache";
 import {
   DISNEY_PARKS,
   getResortConfig,
 } from "@/lib/disneyParkConfig";
 import { normalizePark } from "@/lib/parkioNormalizer";
-import {
-  getEntitySchedule,
-  type ThemeparksScheduleResponse,
-} from "@/lib/themeparksApi";
 import type { ApiPark, ApiResort } from "@/lib/types";
+import { fetchSchedule } from "@/lib/upstream";
 import { jsonOk, notFound } from "../../_lib/respond";
 
 export const runtime = "edge";
@@ -40,16 +37,7 @@ export async function GET(_req: Request, { params }: Params) {
 
   const parks: ApiPark[] = await Promise.all(
     parkConfigs.map(async (cfg) => {
-      let schedule: ThemeparksScheduleResponse | null = null;
-      try {
-        schedule = await getOrFetch(
-          `schedule:${cfg.externalId}`,
-          CACHE_TTL.hours,
-          () => getEntitySchedule(cfg.externalId),
-        );
-      } catch {
-        schedule = null;
-      }
+      const schedule = await fetchSchedule(cfg.externalId);
       return normalizePark(cfg.slug, schedule) as ApiPark;
     }),
   );

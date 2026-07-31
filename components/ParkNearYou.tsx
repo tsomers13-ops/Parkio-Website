@@ -3,9 +3,10 @@
 import { useMemo } from "react";
 import { isTopRide } from "@/lib/popularity";
 import type { ApiAttractionStatus, Park, Ride } from "@/lib/types";
-import { waitColorClasses, waitTier } from "@/lib/utils";
 import { useMapFocus } from "./MapFocusProvider";
 import { useParkLive } from "./ParkLiveDataProvider";
+import { Chevron } from "@/components/icons";
+import { WaitPill } from "@/components/WaitPill";
 
 interface ParkNearYouProps {
   park: Park;
@@ -197,8 +198,14 @@ export function ParkNearYou({ park, rides }: ParkNearYouProps) {
                       {ride.land}
                     </span>
                   </div>
-                  <WaitPill minutes={wait} />
-                  <Chevron />
+                  <WaitPill
+                    minutes={wait}
+                    className="shrink-0 whitespace-nowrap tabular-nums"
+                  />
+                  <Chevron
+                    className="h-4 w-4 shrink-0 text-ink-300 transition group-hover:text-ink-500"
+                    strokeWidth={1.6}
+                  />
                 </button>
               </li>
             ))}
@@ -214,42 +221,3 @@ export function ParkNearYou({ park, rides }: ParkNearYouProps) {
 // EmptyState / NoMatchesState helpers removed — the section now
 // returns null when there's nothing actionable to show instead of
 // rendering an empty "pick a ride" or "nothing nearby" card.
-
-function WaitPill({ minutes }: { minutes: number | null }) {
-  if (typeof minutes !== "number") {
-    return (
-      <span className="inline-flex shrink-0 items-center gap-1.5 whitespace-nowrap rounded-full bg-ink-100 px-2.5 py-1 text-[11px] font-semibold tabular-nums text-ink-500 ring-1 ring-ink-200">
-        <span className="h-1.5 w-1.5 rounded-full bg-ink-300" />
-        —
-      </span>
-    );
-  }
-  const c = waitColorClasses(waitTier(minutes));
-  return (
-    <span
-      className={`inline-flex shrink-0 items-center gap-1.5 whitespace-nowrap rounded-full px-2.5 py-1 text-[11px] font-semibold tabular-nums ring-1 ${c.bg} ${c.text} ${c.ring}`}
-    >
-      <span className={`h-1.5 w-1.5 rounded-full ${c.dot}`} />
-      {minutes} min
-    </span>
-  );
-}
-
-function Chevron() {
-  return (
-    <svg
-      viewBox="0 0 16 16"
-      fill="none"
-      className="h-4 w-4 shrink-0 text-ink-300 transition group-hover:text-ink-500"
-      aria-hidden
-    >
-      <path
-        d="M6 3l5 5-5 5"
-        stroke="currentColor"
-        strokeWidth="1.6"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-    </svg>
-  );
-}

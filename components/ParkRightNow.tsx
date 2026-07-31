@@ -8,10 +8,12 @@ import {
   partitionAttractions,
 } from "@/lib/popularity";
 import type { ApiAttraction, Park, Ride } from "@/lib/types";
-import { simulatedWait, waitColorClasses, waitTier } from "@/lib/utils";
+import { simulatedWait } from "@/lib/utils";
 import { walkBucketBetween, type WalkBucket } from "@/lib/walk";
 import { useMapFocus } from "./MapFocusProvider";
 import { useParkLive } from "./ParkLiveDataProvider";
+import { LiveEyebrow } from "@/components/LiveBadge";
+import { BigWaitPill } from "@/components/WaitPill";
 
 interface ParkRightNowProps {
   park: Park;
@@ -122,7 +124,7 @@ export function ParkRightNow({ park, rides }: ParkRightNowProps) {
   if (status === "loading") {
     return (
       <Shell>
-        <Eyebrow tone="muted" />
+        <LiveEyebrow label="Right now" live={false} className="text-xs" />
         <div className="mt-3 h-8 w-2/3 animate-pulse rounded-md bg-ink-100" />
         <div className="mt-3 h-4 w-1/2 animate-pulse rounded-md bg-ink-100" />
       </Shell>
@@ -133,7 +135,7 @@ export function ParkRightNow({ park, rides }: ParkRightNowProps) {
   if (!top) {
     return (
       <Shell muted>
-        <Eyebrow tone="muted" />
+        <LiveEyebrow label="Right now" live={false} className="text-xs" />
         <p className="mt-3 text-xl font-semibold tracking-tight text-ink-900 sm:text-2xl">
           Rides aren't running yet.
         </p>
@@ -159,7 +161,11 @@ export function ParkRightNow({ park, rides }: ParkRightNowProps) {
 
   return (
     <Shell muted={isEstimated}>
-      <Eyebrow tone={isEstimated ? "muted" : "live"} />
+      <LiveEyebrow
+        label="Right now"
+        live={!isEstimated}
+        className="text-xs"
+      />
 
       <div className="mt-3 flex items-end justify-between gap-4 sm:gap-6">
         <div className="min-w-0 flex-1">
@@ -279,30 +285,6 @@ function Shell({
 
 /* ─────────────────────────── Eyebrow ─────────────────────────── */
 
-function Eyebrow({ tone }: { tone: "live" | "muted" }) {
-  if (tone === "muted") {
-    return (
-      <div className="flex items-center gap-2">
-        <span className="h-2 w-2 rounded-full bg-ink-300" />
-        <span className="text-xs font-semibold uppercase tracking-widest text-ink-500">
-          Right now
-        </span>
-      </div>
-    );
-  }
-  return (
-    <div className="flex items-center gap-2">
-      <span className="relative flex h-2 w-2">
-        <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-accent-400 opacity-75" />
-        <span className="relative inline-flex h-2 w-2 rounded-full bg-accent-500" />
-      </span>
-      <span className="text-xs font-semibold uppercase tracking-widest text-accent-700">
-        Right now
-      </span>
-    </div>
-  );
-}
-
 /* ─────────────────────────── Walk-time icon ─────────────────────────── */
 
 function WalkIcon() {
@@ -324,49 +306,3 @@ function WalkIcon() {
 }
 
 /* ─────────────────────────── Wait pill (large) ─────────────────────────── */
-
-function BigWaitPill({
-  minutes,
-  estimated = false,
-}: {
-  minutes: number | null;
-  estimated?: boolean;
-}) {
-  if (typeof minutes !== "number") {
-    return (
-      <span className="inline-flex shrink-0 items-center gap-2 whitespace-nowrap rounded-full bg-ink-100 px-3.5 py-2 text-base font-semibold tabular-nums text-ink-500 ring-1 ring-ink-200">
-        <span className="h-2 w-2 rounded-full bg-ink-300" />
-        —
-      </span>
-    );
-  }
-  // When estimated, render in the neutral ink palette (no green/
-  // amber/rose tier color) so the number doesn't visually compete
-  // with real live waits elsewhere on the page. A tiny "(est.)"
-  // suffix removes any ambiguity for a reader who jumps straight
-  // to the wait pill without reading the chips.
-  if (estimated) {
-    return (
-      <span
-        className="inline-flex shrink-0 items-center gap-2 whitespace-nowrap rounded-full bg-ink-100 px-3.5 py-2 text-base font-semibold tabular-nums text-ink-700 ring-1 ring-ink-200"
-        title="Estimated from this ride's typical wait — live data unavailable right now"
-      >
-        <span className="h-2 w-2 rounded-full bg-ink-400" />
-        {minutes} min
-        <span className="text-[11px] font-medium uppercase tracking-wider text-ink-500">
-          est.
-        </span>
-      </span>
-    );
-  }
-  const tier = waitTier(minutes);
-  const c = waitColorClasses(tier);
-  return (
-    <span
-      className={`inline-flex shrink-0 items-center gap-2 whitespace-nowrap rounded-full px-3.5 py-2 text-base font-semibold tabular-nums ring-1 ${c.bg} ${c.text} ${c.ring}`}
-    >
-      <span className={`h-2 w-2 rounded-full ${c.dot}`} />
-      {minutes} min
-    </span>
-  );
-}

@@ -3,13 +3,10 @@
  * Returns a single park's metadata + today's status + today's hours.
  */
 
-import { CACHE_TTL, getOrFetch } from "@/lib/cache";
+import { CACHE_TTL } from "@/lib/cache";
 import { getParkConfig } from "@/lib/disneyParkConfig";
 import { normalizePark } from "@/lib/parkioNormalizer";
-import {
-  getEntitySchedule,
-  type ThemeparksScheduleResponse,
-} from "@/lib/themeparksApi";
+import { fetchSchedule } from "@/lib/upstream";
 import { jsonOk, notFound } from "../../_lib/respond";
 
 export const runtime = "edge";
@@ -25,17 +22,8 @@ export async function GET(_req: Request, { params }: Params) {
     return notFound(`Unknown park slug: ${params.parkSlug}`);
   }
 
-  let schedule: ThemeparksScheduleResponse | null = null;
-  try {
-    schedule = await getOrFetch(
-      `schedule:${cfg.externalId}`,
-      CACHE_TTL.hours,
-      () => getEntitySchedule(cfg.externalId),
-    );
-  } catch {
-    // Fall back to a minimal park record when upstream is down.
-    schedule = null;
-  }
+  // Falls back to a minimal park record when upstream is down.
+  const schedule = await fetchSchedule(cfg.externalId);
 
   const park = normalizePark(cfg.slug, schedule);
   if (!park) return notFound(`Unknown park slug: ${params.parkSlug}`);

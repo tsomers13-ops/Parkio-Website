@@ -25,14 +25,12 @@
  *     schema, write rejection — none of these can break the response.
  */
 
-import { CACHE_TTL, getOrFetch } from "../../../../lib/cache";
+import { jsonOk, notFound } from "../../../../lib/apiResponse";
+import { CACHE_TTL } from "../../../../lib/cache";
 import { getParkConfig } from "../../../../lib/disneyParkConfig";
 import { persistLiveSnapshots } from "../../../../lib/historySnapshots";
 import { normalizeLive } from "../../../../lib/parkioNormalizer";
-import {
-  getEntityLive,
-  type ThemeparksLiveResponse,
-} from "../../../../lib/themeparksApi";
+import { fetchLive } from "../../../../lib/upstream";
 
 /** Bindings configured on the Pages project. Only `DB` is required for snapshots. */
 interface Env {
@@ -58,34 +56,26 @@ export const onRequestGet = async (context: FnContext): Promise<Response> => {
 
   const cfg = getParkConfig(params.parkSlug);
   if (!cfg) {
-    return jsonError(404, `Unknown park slug: ${params.parkSlug}`);
+    return notFound(`Unknown park slug: ${params.parkSlug}`);
   }
 
   // Track whether this request actually pulled fresh upstream data —
-  // the closure in `getOrFetch` only runs on cache miss.
+  // `onFresh` only runs on a cache miss.
   let isFreshFromUpstream = false;
 
-  let live: ThemeparksLiveResponse | null = null;
-  try {
-    live = await getOrFetch(
-      `live:${cfg.externalId}`,
-      CACHE_TTL.live,
-      async () => {
-        isFreshFromUpstream = true;
-        return await getEntityLive(cfg.externalId);
-      },
-    );
-  } catch (err) {
-    // Upstream unavailable — fall through to fallback. We surface a
-    // log line so it's visible in Cloudflare's Functions tail, but the
-    // user-facing response continues with the static attraction list.
-    console.warn(`${SNAPSHOT_LOG_TAG} upstream fetch failed:`, err);
-    live = null;
-  }
+  // Upstream failure falls through to the static attraction list; the
+  // log line surfaces in Cloudflare's Functions tail.
+  const live = await fetchLive(cfg.externalId, {
+    onFresh: () => {
+      isFreshFromUpstream = true;
+    },
+    onError: (err) =>
+      console.warn(`${SNAPSHOT_LOG_TAG} upstream fetch failed:`, err),
+  });
 
   const payload = normalizeLive(cfg.slug, live);
   if (!payload) {
-    return jsonError(404, `Unknown park slug: ${params.parkSlug}`);
+    return notFound(`Unknown park slug: ${params.parkSlug}`);
   }
 
   // History collection — non-blocking, fresh fetches only. Errors
@@ -101,26 +91,3 @@ export const onRequestGet = async (context: FnContext): Promise<Response> => {
 
   return jsonOk(payload, CACHE_TTL.live, CACHE_TTL.live * 4);
 };
-
-/* ─────────────── Response helpers (inlined — Pages Functions can't share `_lib/respond.ts` from /app) ─────────────── */
-
-function jsonOk(
-  body: unknown,
-  sMaxAge: number,
-  staleWhileRevalidate: number,
-): Response {
-  return new Response(JSON.stringify(body), {
-    status: 200,
-    headers: {
-      "Content-Type": "application/json; charset=utf-8",
-      "Cache-Control": `public, s-maxage=${sMaxAge}, stale-while-revalidate=${staleWhileRevalidate}`,
-    },
-  });
-}
-
-function jsonError(status: number, message: string): Response {
-  return new Response(JSON.stringify({ error: message }), {
-    status,
-    headers: { "Content-Type": "application/json; charset=utf-8" },
-  });
-}

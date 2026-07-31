@@ -5,6 +5,7 @@ import {
   APP_STORE_LIVE,
   APP_STORE_URL,
 } from "@/lib/appStore";
+import { AppleGlyph } from "@/components/icons";
 
 interface AppStoreCtaProps {
   /**
@@ -49,7 +50,7 @@ export function AppStoreCta({
         className="group inline-flex items-center gap-2 rounded-full bg-ink-900 px-4 py-2 text-sm font-medium text-white shadow-soft transition hover:bg-ink-800"
         {...externalProps}
       >
-        {APP_LIVE && <AppleGlyph />}
+        {APP_LIVE && <AppleGlyph className="h-4 w-4" />}
         <span>{ctaLabel}</span>
       </Link>
     );
@@ -82,7 +83,7 @@ export function AppStoreCta({
             className="inline-flex shrink-0 items-center gap-2 rounded-full bg-white px-5 py-3 text-sm font-semibold text-ink-900 shadow-lift transition hover:bg-ink-100"
             {...externalProps}
           >
-            {APP_LIVE && <AppleGlyph />}
+            {APP_LIVE && <AppleGlyph className="h-4 w-4" />}
             {ctaLabel}
           </Link>
         </div>
@@ -98,7 +99,7 @@ export function AppStoreCta({
           className="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-white/10 ring-1 ring-white/15"
           aria-hidden
         >
-          <AppleGlyph />
+          <AppleGlyph className="h-4 w-4" />
         </span>
         <div className="min-w-0 flex-1">
           <p className="text-base font-semibold tracking-tight">{h}</p>
@@ -124,19 +125,5 @@ export function AppStoreCta({
         </div>
       </div>
     </div>
-  );
-}
-
-/** Subtle Apple glyph — used inline on App Store buttons. */
-function AppleGlyph() {
-  return (
-    <svg
-      viewBox="0 0 24 24"
-      className="h-4 w-4"
-      fill="currentColor"
-      aria-hidden
-    >
-      <path d="M16.5 12.6c0-2.3 1.9-3.4 2-3.5-1.1-1.6-2.8-1.8-3.4-1.8-1.4-.1-2.8.9-3.5.9-.7 0-1.9-.9-3.1-.9-1.6 0-3.1.9-3.9 2.4-1.7 2.9-.4 7.2 1.2 9.6.8 1.2 1.7 2.5 3 2.5 1.2 0 1.7-.8 3.2-.8 1.5 0 1.9.8 3.2.8 1.3 0 2.2-1.2 3-2.4.9-1.4 1.3-2.7 1.3-2.8-.1 0-2.5-1-2.5-3.7zM14.3 5.6c.7-.8 1.2-2 1.1-3.2-1 0-2.3.7-3 1.5-.6.7-1.2 1.9-1.1 3.1 1.1.1 2.3-.6 3-1.4z" />
-    </svg>
   );
 }

@@ -14,6 +14,7 @@ import { useMapFocus } from "./MapFocusProvider";
 import { useParkLive } from "./ParkLiveDataProvider";
 import { RideDetailPanel } from "./RideDetailPanel";
 import { RideList } from "./RideList";
+import { LiveBadge } from "@/components/LiveBadge";
 
 // Leaflet uses `window` and won't render server-side.
 const LeafletMap = dynamic(() => import("./LeafletMap"), {
@@ -414,7 +415,7 @@ export function ParkMap({ park, rides }: ParkMapProps) {
                 {park.name}
               </div>
             </div>
-            <LiveBadge status={liveStatus} />
+            <LiveBadge status={liveStatus} shape="inline" />
           </div>
 
           <div className="surface-glass inline-flex items-center gap-1.5 rounded-full px-3 py-2 text-sm font-medium text-ink-800 shadow-soft">
@@ -658,40 +659,3 @@ export function ParkMap({ park, rides }: ParkMapProps) {
 }
 
 /* ─────────────────── Live badge ─────────────────── */
-
-function LiveBadge({ status }: { status: "loading" | "live" | "estimates" }) {
-  if (status === "loading") {
-    return (
-      <span
-        className="ml-2 hidden items-center gap-1.5 rounded-full bg-ink-50 px-2 py-1 text-[11px] font-medium text-ink-500 ring-1 ring-ink-200 sm:inline-flex"
-        title="Loading live wait times…"
-      >
-        <span className="h-1.5 w-1.5 rounded-full bg-ink-300" />
-        Loading
-      </span>
-    );
-  }
-  if (status === "estimates") {
-    return (
-      <span
-        className="ml-2 hidden items-center gap-1.5 rounded-full bg-ink-100 px-2 py-1 text-[11px] font-medium text-ink-600 ring-1 ring-ink-200 sm:inline-flex"
-        title="Live data unavailable — showing estimated waits"
-      >
-        <span className="h-1.5 w-1.5 rounded-full bg-ink-400" />
-        Estimated waits
-      </span>
-    );
-  }
-  return (
-    <span
-      className="ml-2 hidden items-center gap-1.5 rounded-full bg-emerald-50 px-2 py-1 text-[11px] font-medium text-emerald-700 ring-1 ring-emerald-200 sm:inline-flex"
-      title="Live wait times from the Parkio API"
-    >
-      <span className="relative flex h-1.5 w-1.5">
-        <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75" />
-        <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-emerald-500" />
-      </span>
-      Live
-    </span>
-  );
-}

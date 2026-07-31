@@ -8,17 +8,14 @@
  *   - dca-radiator-springs
  */
 
-import { CACHE_TTL, getOrFetch } from "@/lib/cache";
+import { CACHE_TTL } from "@/lib/cache";
 import { RIDES } from "@/lib/data";
 import { getParkConfig } from "@/lib/disneyParkConfig";
 import {
   findAttractionBySlug,
   normalizeLive,
 } from "@/lib/parkioNormalizer";
-import {
-  getEntityLive,
-  type ThemeparksLiveResponse,
-} from "@/lib/themeparksApi";
+import { fetchLive } from "@/lib/upstream";
 import { jsonOk, notFound } from "../../_lib/respond";
 
 export const runtime = "edge";
@@ -45,16 +42,7 @@ export async function GET(_req: Request, { params }: Params) {
 
   // Reuse the shared park-level live cache so we don't hammer themeparks.wiki
   // once per ride.
-  let live: ThemeparksLiveResponse | null = null;
-  try {
-    live = await getOrFetch(
-      `live:${parkCfg.externalId}`,
-      CACHE_TTL.live,
-      () => getEntityLive(parkCfg.externalId),
-    );
-  } catch {
-    live = null;
-  }
+  const live = await fetchLive(parkCfg.externalId);
 
   const parkPayload = normalizeLive(parkCfg.slug, live);
   const attraction = parkPayload?.attractions.find(
