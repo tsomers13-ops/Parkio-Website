@@ -202,6 +202,9 @@ export interface DailyPost {
 
 const DAILY_DIR = path.join(process.cwd(), "content", "guide", "daily");
 
+/** Slugs are file names — anything outside this charset can escape DAILY_DIR. */
+const SLUG_PATTERN = /^[a-z0-9][a-z0-9-]{0,127}$/;
+
 function dirExists(p: string): boolean {
   try {
     return fs.statSync(p).isDirectory();
@@ -221,6 +224,7 @@ export function listDailySlugs(): string[] {
 
 /** Read + parse a single daily-briefing file. Returns null on any error. */
 export function getDailyPost(slug: string): DailyPost | null {
+  if (!SLUG_PATTERN.test(slug)) return null;
   if (!dirExists(DAILY_DIR)) return null;
   const file = path.join(DAILY_DIR, `${slug}.json`);
   if (!fs.existsSync(file)) return null;
