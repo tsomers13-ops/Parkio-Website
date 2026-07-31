@@ -14,14 +14,16 @@ const MAP_MAX_Z = 800;
 
 afterEach(cleanup);
 
+function sheetElement(open: boolean, onClose: () => void) {
+  return createElement(BottomSheet, {
+    open,
+    onClose,
+    children: createElement("p", null, "Space Mountain"),
+  });
+}
+
 function renderSheet(open: boolean, onClose = vi.fn()) {
-  const utils = render(
-    createElement(
-      BottomSheet,
-      { open, onClose },
-      createElement("p", null, "Space Mountain"),
-    ),
-  );
+  const utils = render(sheetElement(open, onClose));
   const sheet = utils.container.querySelector(
     '[role="dialog"]',
   ) as HTMLElement;
@@ -67,13 +69,7 @@ describe("BottomSheet", () => {
     const { sheet, rerender } = renderSheet(true);
     await waitFor(() => expect(document.activeElement).toBe(sheet));
 
-    rerender(
-      createElement(
-        BottomSheet,
-        { open: false, onClose: vi.fn() },
-        createElement("p", null, "Space Mountain"),
-      ),
-    );
+    rerender(sheetElement(false, vi.fn()));
     await waitFor(() => expect(document.activeElement).toBe(opener));
     opener.remove();
   });
@@ -88,13 +84,7 @@ describe("BottomSheet", () => {
     fireEvent.click(scrim);
     expect(onClose).toHaveBeenCalledTimes(2);
 
-    rerender(
-      createElement(
-        BottomSheet,
-        { open: false, onClose },
-        createElement("p", null, "Space Mountain"),
-      ),
-    );
+    rerender(sheetElement(false, onClose));
     fireEvent.keyDown(window, { key: "Escape" });
     expect(onClose).toHaveBeenCalledTimes(2);
   });
