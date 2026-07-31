@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
+import { isAbortError, logClientFailure } from "./errors";
 import { fetchParkLive, fetchParksList } from "./parkioClient";
 import type { ApiAttraction, ApiPark, ApiParkLive } from "./types";
 
@@ -67,7 +68,12 @@ export function useAllLive(): AllLiveData {
         const list = await fetchParksList(ctl.signal);
         const liveResponses = await Promise.all(
           list.parks.map((p) =>
-            fetchParkLive(p.slug, ctl.signal).catch(() => null),
+            fetchParkLive(p.slug, ctl.signal).catch((err) => {
+              // One park failing must not drop the other five, but it
+              // still needs to show up somewhere.
+              logClientFailure("useAllLive", `live ${p.slug}`, err);
+              return null;
+            }),
           ),
         );
         if (cancelled || ctl.signal.aborted) return;
@@ -87,8 +93,9 @@ export function useAllLive(): AllLiveData {
         setLastUpdated(list.lastUpdated);
         setStatus(anyLive ? "live" : "estimates");
       } catch (err) {
-        if ((err as Error).name === "AbortError") return;
+        if (isAbortError(err)) return;
         if (cancelled) return;
+        logClientFailure("useAllLive", "parks list", err);
         setStatus("estimates");
       } finally {
         if (cancelled || ctl.signal.aborted) return;

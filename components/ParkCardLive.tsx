@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { logClientFailure } from "@/lib/errors";
 import { fetchParksList } from "@/lib/parkioClient";
 import type { ApiPark } from "@/lib/types";
 import type { Park } from "@/lib/types";
@@ -27,8 +28,10 @@ export function ParkCardLive({ park, initialApi = null }: ParkCardLiveProps) {
         const found = res.parks.find((p) => p.slug === park.id);
         if (found) setApi(found);
       })
-      .catch(() => {
-        // Silent fallback — keep showing the static `park` props.
+      .catch((err) => {
+        // Keep showing the static `park` props, but leave a trace so a
+        // broken /api/parks isn't invisible.
+        logClientFailure("ParkCardLive", `parks list for ${park.id}`, err);
       });
     return () => ctl.abort();
   }, [park.id]);
@@ -84,7 +87,12 @@ function formatHoursWindow(
         .replace(":00", "")
         .replace(" ", "");
     return `${fmt(open)} — ${fmt(close)}`.toUpperCase();
-  } catch {
+  } catch (err) {
+    logClientFailure(
+      "ParkCardLive",
+      `unformattable hours ${openIso}–${closeIso} (${timezone})`,
+      err,
+    );
     return "Today";
   }
 }

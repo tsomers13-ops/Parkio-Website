@@ -42,6 +42,7 @@
 
 import fs from "node:fs";
 import path from "node:path";
+import { describeError } from "./errors";
 import type { ParkId } from "./types";
 
 /* ──────────────────────── Item types ──────────────────────── */
@@ -233,7 +234,14 @@ export function getDailyPost(slug: string): DailyPost | null {
       sections: raw.sections ?? {},
       videos: raw.videos ?? [],
     };
-  } catch {
+  } catch (err) {
+    // A briefing that exists but won't parse is a content bug (a bad
+    // generator run, a truncated commit) — silently dropping it made the
+    // page look like the day simply had no briefing.
+    // eslint-disable-next-line no-console
+    console.error(
+      `[guide] failed to read daily briefing ${slug}: ${describeError(err)}`,
+    );
     return null;
   }
 }

@@ -13,6 +13,7 @@ import {
   DISNEY_PARKS,
   getResortConfig,
 } from "@/lib/disneyParkConfig";
+import { logUpstreamFailure } from "@/lib/errors";
 import { normalizePark } from "@/lib/parkioNormalizer";
 import {
   getEntitySchedule,
@@ -47,7 +48,12 @@ export async function GET(_req: Request, { params }: Params) {
           CACHE_TTL.hours,
           () => getEntitySchedule(cfg.externalId),
         );
-      } catch {
+      } catch (err) {
+        logUpstreamFailure(
+          "api/resorts/[resortSlug]",
+          `schedule ${cfg.slug}`,
+          err,
+        );
         schedule = null;
       }
       return normalizePark(cfg.slug, schedule) as ApiPark;

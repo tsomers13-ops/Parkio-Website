@@ -27,6 +27,7 @@
 
 import { CACHE_TTL, getOrFetch } from "../../../../lib/cache";
 import { getParkConfig } from "../../../../lib/disneyParkConfig";
+import { describeError, logUpstreamFailure } from "../../../../lib/errors";
 import { persistLiveSnapshots } from "../../../../lib/historySnapshots";
 import { normalizeLive } from "../../../../lib/parkioNormalizer";
 import {
@@ -79,7 +80,7 @@ export const onRequestGet = async (context: FnContext): Promise<Response> => {
     // Upstream unavailable — fall through to fallback. We surface a
     // log line so it's visible in Cloudflare's Functions tail, but the
     // user-facing response continues with the static attraction list.
-    console.warn(`${SNAPSHOT_LOG_TAG} upstream fetch failed:`, err);
+    logUpstreamFailure("live", `live ${cfg.slug}`, err);
     live = null;
   }
 
@@ -94,7 +95,9 @@ export const onRequestGet = async (context: FnContext): Promise<Response> => {
   if (isFreshFromUpstream && payload.live) {
     waitUntil(
       persistLiveSnapshots(env, payload).catch((err) => {
-        console.warn(`${SNAPSHOT_LOG_TAG} snapshot writer rejected:`, err);
+        console.warn(
+          `${SNAPSHOT_LOG_TAG} snapshot writer rejected for park=${cfg.slug}: ${describeError(err)}`,
+        );
       }),
     );
   }
