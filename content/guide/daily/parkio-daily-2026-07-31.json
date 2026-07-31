@@ -1,0 +1,334 @@
+{
+  "title": "Parkio Daily for July 31, 2026",
+  "slug": "parkio-daily-2026-07-31",
+  "date": "2026-07-31",
+  "teaser": "Bakari the silverback gorilla now at Animal Kingdom; Hocus Pocus showtimes set; Blue Bayou adds six menu items at Disneyland.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Soarin' Around the World",
+        "parkSlug": "epcot",
+        "note": "Lower waits during dinner hours tonight"
+      },
+      {
+        "name": "Big Thunder Mountain",
+        "parkSlug": "magic-kingdom",
+        "note": "First hour after park open typically best"
+      },
+      {
+        "name": "Radiator Springs Racers",
+        "parkSlug": "california-adventure",
+        "note": "Rope-drop priority at Disneyland Resort"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [],
+    "bignews": [
+      {
+        "title": "Bakari the gorilla joins Animal Kingdom troop",
+        "body": "A 21-year-old male western lowland gorilla named Bakari has arrived at Gorilla Falls Exploration Trail and is settling into his role leading the park's family troop. The move represents a significant addition to the wildlife roster at the conservation-focused park.",
+        "parkSlug": "animal-kingdom",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/meet-bakari-the-gorilla-at-disneys-animal-kingdom/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Gorilla Falls Exploration Trail tends to see lighter foot traffic in the first hour after park open and again after 4pm. Early or late visits often allow better viewing angles for the new troop leader."
+        }
+      },
+      {
+        "title": "Hocus Pocus Villain Spelltacular showtimes announced",
+        "body": "The popular stage show will perform at 9:05pm, 10:35pm, and midnight during Mickey's Not-So-Scary Halloween Party nights this fall. The party runs select nights from August 7 through October 31.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/hocus-pocus-villain-spelltacular-showtimes-confirmed-for-mickeys-not-so-scary-halloween-party-2026/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "The 9:05pm showtime usually draws the heaviest crowds near Cinderella Castle. The midnight performance often has more open viewing spots, especially on weeknight party dates."
+        }
+      },
+      {
+        "title": "Blue Bayou refreshes menu with six new items",
+        "body": "The Disneyland Park dining destination has added a Southern Sunset Old Fashioned, Lacquered Chicken, and four other dishes to its offerings. The online menu has not yet been updated to reflect the changes.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/southern-sunset-old-fashioned-and-lacquered-chicken-among-new-menu-items-at-blue-bayou-restaurant-at-disneyland-park/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Blue Bayou walk-up availability is rare during peak lunch and dinner windows. Same-day reservations sometimes open up between 2–4pm if you check the app repeatedly."
+        }
+      },
+      {
+        "title": "Halloween merchandise collection arriving in stores",
+        "body": "Disney has released a 2026 Halloween merchandise guide featuring new items across parks and Disney Store locations. The Cutie Ghost collection has returned with an updated pastel pink-and-orange color palette, and additional seasonal pins and accessories are now available online.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/products/halloween-merchandise-guide-frightfully-fun-finds-for-every-disney-fan/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Seasonal merchandise tends to sell out fastest at flagship park stores during morning hours. Shopping after 7pm or at resort gift shops often yields better stock and shorter lines."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "Cool Kids' Summer perks now active at four WDW resorts",
+        "body": "Special check-in experiences and family amenities designed for young children are currently offered at four Disney Resorts Collection properties as part of the Cool Kids' Summer promotion. The perks aim to enhance arrival day for families visiting this season.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/hotel-check-in-day-during-disney-world-cool-kids-summer/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Resort check-in lobbies are typically quietest before 1pm and after 8pm. Arriving during these windows often means faster service and more one-on-one time with cast members for activity recommendations."
+        }
+      },
+      {
+        "title": "EPCOT fireworks dining package priced at $150 per guest",
+        "body": "A new multi-course dinner experience in the Japan pavilion now includes reserved viewing for Luminous: Symphony of Us. The upcharge package offers table service followed by a dedicated viewing area on the World Showcase Lagoon.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/new-150-fireworks-dining-package-coming-to-epcot/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Standard lagoon viewing spots near the Canada and Morocco pavilions usually fill 30–45 minutes before showtime but cost nothing. The dining package may appeal if sit-down dinner is already in your plans."
+        }
+      },
+      {
+        "title": "Ninth Oogie Boogie Bash date sells out at California Adventure",
+        "body": "September 13 has joined the list of sold-out after-hours Halloween event nights at Disneyland Resort. Eight other dates had already reached capacity, and remaining nights are expected to fill quickly.",
+        "parkSlug": "california-adventure",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/07/oogie-boogie-bash-september-13-joins-list-of-sold-out-dates-jc1/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Weeknight event dates in late September and early October tend to sell out last. Booking those nights now often provides more breathing room for trip planning than weekend slots."
+        }
+      },
+      {
+        "title": "Tokyo Disney Resort expands paid line-skip service",
+        "body": "Beginning September 1, several attractions at Tokyo Disneyland and DisneySea will move from the free Priority Pass system to paid Disney Premier Access. This marks the end of complimentary skip-the-line options at the resort.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/attractions-moving-from-free-to-paid-skip-the-line-service-at-tokyo-disney-resort/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Guests visiting Tokyo parks before September 1 can still access Priority Pass at no charge. After that cutoff, budgeting for Premier Access or adjusting arrival strategies may be necessary."
+        }
+      },
+      {
+        "title": "Disney Springs location evacuated last night",
+        "body": "A venue at Disney Springs was cleared at 9pm on July 29 for safety reasons. Disney prioritizes guest safety as its first operational principle, and the situation was resolved without reported incidents.",
+        "parkSlug": null,
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/07/at-9-p-m-last-night-disney-springs-location-was-evacuated-th1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Weather-related closures at Disney Springs tend to be brief and localized. Checking the My Disney Experience app before heading over usually shows real-time status for dining and retail locations."
+        }
+      },
+      {
+        "title": "Central Florida storms may close outdoor attractions today",
+        "body": "Afternoon thunderstorms are forecast through the weekend across Walt Disney World, with the highest storm probability between early and mid-afternoon. Outdoor rides and shows typically suspend operations during lightning activity.",
+        "parkSlug": null,
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/07/disney-world-shut-20-attractions-2-parks-central-florida-change-th1/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Indoor attractions like Cosmic Rewind and Rise of the Resistance often see wait-time dips during storms as guests take shelter. Late afternoon rain can create short queues if you stay in the parks."
+        }
+      },
+      {
+        "title": "New Pixar candle holder set available at Disneyland Resort",
+        "body": "A three-piece votive holder set featuring Uku from Luca, Anger from Inside Out, and Jack-Jack from The Incredibles is now for sale. Each holder is crafted from cream-colored stoneware and retails for $44.99.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/votive-candle-holder-set-featuring-uku-anger-and-jack-jack-now-available-at-pixar-place-hotel/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Resort hotel gift shops tend to restock merchandise overnight. Checking early morning often reveals items that sold out at park locations the day before."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Mickey's of Glendale pop-up returns to D23 Expo",
+        "body": "The Imagineering merchandise booth will offer a new Walt Disney Imagineering Collection during D23: The Ultimate Disney Fan Event. The shop has become a fan favorite at past conventions.",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/disney-experiences/mickeys-of-glendale-d23-walt-disney-imagineering-collection/"
+        }
+      },
+      {
+        "title": "Pecos Bill and Cosmic Ray's debut menu updates",
+        "body": "New food items have arrived at two Magic Kingdom quick-service locations. The changes are part of ongoing menu refreshes across Walt Disney World dining.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "WrightDownMainStreet YouTube",
+          "url": "https://www.youtube.com/watch?v=igQCz67yaAg"
+        }
+      },
+      {
+        "title": "Zootopia attraction adding pre-show element",
+        "body": "Zootopia: Better Zoogether at Animal Kingdom will soon feature a new pre-show segment. The attraction opened less than a year ago and Imagineering is making adjustments based on guest feedback.",
+        "parkSlug": "animal-kingdom",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/zootopia-better-zoogether-new-preshow-good-news-one-disney-worlds-worst-attractions/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "Mickey's Not-So-Scary Halloween Party kicks off August 7",
+        "body": "The first after-hours Halloween celebration of the season is one week away at Magic Kingdom. Multiple October nights have already sold out, and party-exclusive food items have been revealed in a detailed guide. Hocus Pocus Villain Spelltacular performs three times per night, and trick-or-treat stations will be scattered throughout the park.",
+        "parkSlug": "magic-kingdom",
+        "ctaLabel": "Review party food guide",
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Party ticket holders can enter Magic Kingdom as early as 4pm on event nights. Arriving during that window usually allows you to ride popular attractions before the official 7pm party start and before day guests exit."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "igQCz67yaAg",
+      "title": "Every NEW Food in Magic Kingdom- Pecos Bill, Cosmic Ray's & More | Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-07-30T17:46:51Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/igQCz67yaAg/mqdefault.jpg",
+      "viewCount": 23742,
+      "url": "https://www.youtube.com/watch?v=igQCz67yaAg",
+      "summary": "A tour of updated menu items now available at Pecos Bill and Cosmic Ray's quick-service restaurants in Magic Kingdom."
+    },
+    {
+      "videoId": "LOI3vZNoaLQ",
+      "title": "🔴 Live: Thursday Stream at Disneyland! Paint the Night Parade, Wondrous Journeys & Rides - 07/30/26",
+      "channel": "Koda Bear the Explorer ",
+      "publishedAt": "2026-07-31T07:02:34Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/LOI3vZNoaLQ/mqdefault.jpg",
+      "viewCount": 20164,
+      "url": "https://www.youtube.com/watch?v=LOI3vZNoaLQ",
+      "summary": "A live stream from Disneyland featuring Paint the Night Parade, Wondrous Journeys fireworks, and ride coverage."
+    },
+    {
+      "videoId": "L4xqvdnnxsk",
+      "title": "🔴 LIVE: EPIC Magic Kingdom Rides, Shows, Parades & Happily Ever After at Disney World | 4K",
+      "channel": "Fun to be Free",
+      "publishedAt": "2026-07-31T04:38:48Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/L4xqvdnnxsk/mqdefault.jpg",
+      "viewCount": 12858,
+      "url": "https://www.youtube.com/watch?v=L4xqvdnnxsk",
+      "summary": "Live 4K coverage of Magic Kingdom attractions, entertainment, and the Happily Ever After nighttime spectacular."
+    },
+    {
+      "videoId": "n-VyhxDUa7g",
+      "title": "My heart 🥰My eyes 😭#disney #disneyland #foryou #funny #fyp",
+      "channel": "Wallie Tintler",
+      "publishedAt": "2026-07-31T05:47:38Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/n-VyhxDUa7g/mqdefault.jpg",
+      "viewCount": 7385,
+      "url": "https://www.youtube.com/watch?v=n-VyhxDUa7g",
+      "summary": "A short, humorous Disneyland moment capturing a guest reaction or park experience."
+    },
+    {
+      "videoId": "4VLXucxw42A",
+      "title": "🔴LIVE 🔴 EPCOT Rides, Strolls, Fireworks | Walt Disney World 4K",
+      "channel": "Park Pass TV",
+      "publishedAt": "2026-07-31T11:30:26Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/4VLXucxw42A/mqdefault.jpg",
+      "viewCount": 7044,
+      "url": "https://www.youtube.com/watch?v=4VLXucxw42A",
+      "summary": "A live 4K stream from EPCOT showcasing attractions, World Showcase walks, and evening fireworks."
+    },
+    {
+      "videoId": "aXVd430PAEA",
+      "title": "#LIVE Disneyland A Dream Is A Wish, Rides, Characters, New Merch",
+      "channel": "Main Street Cowgirl",
+      "publishedAt": "2026-07-31T07:41:01Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/aXVd430PAEA/mqdefault.jpg",
+      "viewCount": 7040,
+      "url": "https://www.youtube.com/watch?v=aXVd430PAEA",
+      "summary": "Live stream from Disneyland featuring character meet-and-greets, attraction experiences, and newly released merchandise."
+    },
+    {
+      "videoId": "V0-XahXs3sg",
+      "title": "Secret Behind Disneyland's Sword!",
+      "channel": "DPFF9997",
+      "publishedAt": "2026-07-31T11:47:01Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/V0-XahXs3sg/mqdefault.jpg",
+      "viewCount": 2957,
+      "url": "https://www.youtube.com/watch?v=V0-XahXs3sg",
+      "summary": "A look at a hidden detail or story behind one of Disneyland's iconic sword props or attractions."
+    },
+    {
+      "videoId": "pk__CnM42rw",
+      "title": "My heart 🥰 My eyes 😭 #disney #disneyland #love #funny #fyp",
+      "channel": "Roni Koria",
+      "publishedAt": "2026-07-31T06:00:02Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/pk__CnM42rw/mqdefault.jpg",
+      "viewCount": 2737,
+      "url": "https://www.youtube.com/watch?v=pk__CnM42rw",
+      "summary": "A lighthearted, emotional Disneyland clip highlighting a touching or humorous guest moment."
+    },
+    {
+      "videoId": "LIyVS2BVOV0",
+      "title": "Funny Disney Moments #disney #disneyparktour #disneyland #universalparks #disneyparks #disneystore",
+      "channel": "Shanique Hughes",
+      "publishedAt": "2026-07-31T09:36:27Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/LIyVS2BVOV0/mqdefault.jpg",
+      "viewCount": 2407,
+      "url": "https://www.youtube.com/watch?v=LIyVS2BVOV0",
+      "summary": "A compilation of humorous encounters and unexpected moments captured across Disney theme parks."
+    },
+    {
+      "videoId": "oa7xNlPBFKs",
+      "title": "Gaston's SECRET Hair Gel #disneyland #funny #disney #disneycharacter",
+      "channel": "Sunshine Daily",
+      "publishedAt": "2026-07-31T05:05:38Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/oa7xNlPBFKs/mqdefault.jpg",
+      "viewCount": 1182,
+      "url": "https://www.youtube.com/watch?v=oa7xNlPBFKs",
+      "summary": "A comedic short featuring a Gaston character interaction at Disneyland, likely involving a hair-related joke."
+    }
+  ],
+  "updatedAt": "2026-07-31T12:51:38.561Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-07-31T12:51:38.561Z",
+    "tokens": {
+      "input": 12160,
+      "output": 5335,
+      "costUsd": 0.1165
+    }
+  }
+}
