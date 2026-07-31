@@ -23,7 +23,6 @@ function upstream(waitTime: number): ThemeparksLiveResponse {
         id: SPACE_MOUNTAIN_EXTERNAL_ID,
         name: "Space Mountain",
         entityType: "ATTRACTION",
-        parkId: MK_EXTERNAL_ID,
         status: "OPERATING",
         lastUpdated: "2026-05-04T18:00:00Z",
         queue: { STANDBY: { waitTime } },
