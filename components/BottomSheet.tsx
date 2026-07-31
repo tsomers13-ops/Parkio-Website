@@ -16,6 +16,7 @@ export function BottomSheet({ open, onClose, children }: BottomSheetProps) {
   const [dragY, setDragY] = useState(0);
   const startY = useRef<number | null>(null);
   const sheetRef = useRef<HTMLDivElement | null>(null);
+  const lastFocused = useRef<HTMLElement | null>(null);
 
   // Close on Escape
   useEffect(() => {
@@ -25,6 +26,27 @@ export function BottomSheet({ open, onClose, children }: BottomSheetProps) {
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
   }, [open, onClose]);
+
+  // Move focus into the sheet on open and hand it back to whatever
+  // opened it (usually a map pin) on close, so keyboard users don't
+  // land back at the top of the document.
+  useEffect(() => {
+    if (open) {
+      lastFocused.current = document.activeElement as HTMLElement | null;
+      sheetRef.current?.focus({ preventScroll: true });
+      return;
+    }
+    const previous = lastFocused.current;
+    lastFocused.current = null;
+    if (previous?.isConnected) {
+      previous.focus({ preventScroll: true });
+    }
+    // Nothing focusable to return to — don't strand focus on a sheet
+    // that's now aria-hidden.
+    if (sheetRef.current?.contains(document.activeElement)) {
+      sheetRef.current.blur();
+    }
+  }, [open]);
 
   function onPointerDown(e: React.PointerEvent) {
     startY.current = e.clientY;
@@ -49,7 +71,7 @@ export function BottomSheet({ open, onClose, children }: BottomSheetProps) {
       <div
         aria-hidden
         onClick={onClose}
-        className={`fixed inset-0 z-40 bg-ink-900/20 backdrop-blur-[1px] transition-opacity duration-300 ${
+        className={`fixed inset-0 z-[850] bg-ink-900/20 backdrop-blur-[1px] transition-opacity duration-300 ${
           open
             ? "pointer-events-auto opacity-100"
             : "pointer-events-none opacity-0"
@@ -61,7 +83,17 @@ export function BottomSheet({ open, onClose, children }: BottomSheetProps) {
         ref={sheetRef}
         role="dialog"
         aria-modal="true"
-        className={`fixed inset-x-0 bottom-0 z-50 mx-auto max-w-2xl transition-transform duration-300`}
+        aria-hidden={!open}
+        tabIndex={-1}
+        // Leaflet's panes run 200–700 and ParkMap's floating controls
+        // sit at 800, all inside the same stacking context as this
+        // sheet. Anything lower is painted over by the map, which is
+        // what made the sheet look like it never opened — it was
+        // on-screen but behind the tiles and pins. Matches the
+        // z-[850]/z-[900] pairing <RideList> already uses.
+        className={`fixed inset-x-0 bottom-0 z-[900] mx-auto max-w-2xl outline-none transition-transform duration-300 ${
+          open ? "pointer-events-auto" : "pointer-events-none"
+        }`}
         style={{
           transform: open
             ? `translateY(${dragY}px)`
