@@ -10,9 +10,9 @@ is a silent no-op when the D1 binding isn't present.
 
 A row per attraction is appended to the `wait_snapshots` table **only
 when the live API actually pulls fresh data from themeparks.wiki**
-(i.e., on a cache miss). Cached responses never write. The route
-returns immediately; the DB write happens in the background via
-`ctx.waitUntil`.
+(i.e., on a cache miss). Cached responses never write. The write is a
+single batched D1 round trip issued from the route handler before it
+responds — at most once per park per 5-minute TTL.
 
 The schema is in [`migrations/0001_wait_snapshots.sql`](../migrations/0001_wait_snapshots.sql):
 
@@ -175,16 +175,15 @@ comes:
 
 ### Hot path safety
 
-The writer uses `ctx.waitUntil` which only delays the **isolate's
-shutdown**, not the user's response. Even if D1 is offline or slow,
-the user-facing latency is unchanged. The route handler also wraps
-the snapshot scheduling in try/catch so failures in the binding
-lookup itself can't bubble up.
+Only cache misses write, so at most one batch per park per 5 minutes
+reaches D1 — cached responses never touch it. `persistLiveSnapshots`
+swallows its own errors, so an offline or slow D1 can degrade that
+one request's latency but can never fail it.
 
-If `@cloudflare/next-on-pages` ever breaks the `getRequestContext`
-shape, the writer fails closed (no throw, no write). The dynamic
-import + try/catch ensures local `next dev` runs without ever
-attempting a snapshot.
+The binding is read off `process.env.DB`, which
+`@cloudflare/next-on-pages` populates from the Pages bindings. When
+it's absent — local `next dev`, or a Vercel deploy — the writer
+no-ops.
 
 ### Privacy / public exposure
 

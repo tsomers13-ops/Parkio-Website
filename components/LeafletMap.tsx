@@ -11,6 +11,13 @@ import type { Park, Ride } from "@/lib/types";
 import { statusLabel, waitTier } from "@/lib/utils";
 import type { RideDisplay } from "./ParkMap";
 
+/**
+ * Deepest zoom the map allows. Kept in one place because the map and
+ * its tile layer MUST agree: a tile layer whose maxZoom is lower than
+ * the map's makes Leaflet unload the basemap past that level.
+ */
+const MAX_ZOOM = 19;
+
 interface LeafletMapProps {
   park: Park;
   rides: Ride[];
@@ -55,7 +62,7 @@ export default function LeafletMap({
       center={center}
       zoom={park.zoom}
       minZoom={14}
-      maxZoom={19}
+      maxZoom={MAX_ZOOM}
       zoomControl={false}
       attributionControl={true}
       // Wheel zoom is OFF so the cursor-over-map wheel scrolls the
@@ -76,6 +83,12 @@ export default function LeafletMap({
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a> &copy; <a href="https://carto.com/attributions">CARTO</a>'
         url="https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png"
         subdomains="abcd"
+        // Must cover the map's own maxZoom. Leaflet's GridLayer default
+        // is 18, and it drops every tile once the map zooms past a
+        // layer's maxZoom — which blanked the basemap (markers stayed)
+        // at zoom 19 until the user zoomed back out. CARTO's voyager
+        // rastertiles are served natively through zoom 20.
+        maxZoom={MAX_ZOOM}
       />
 
       <ClusterMarkers
