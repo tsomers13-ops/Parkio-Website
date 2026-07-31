@@ -11,6 +11,7 @@
 import { CACHE_TTL, getOrFetch } from "@/lib/cache";
 import { RIDES } from "@/lib/data";
 import { getParkConfig } from "@/lib/disneyParkConfig";
+import { logUpstreamFailure } from "@/lib/errors";
 import {
   findAttractionBySlug,
   normalizeLive,
@@ -52,7 +53,12 @@ export async function GET(_req: Request, { params }: Params) {
       CACHE_TTL.live,
       () => getEntityLive(parkCfg.externalId),
     );
-  } catch {
+  } catch (err) {
+    logUpstreamFailure(
+      "api/attractions/[attractionSlug]",
+      `live ${parkCfg.slug}`,
+      err,
+    );
     live = null;
   }
 

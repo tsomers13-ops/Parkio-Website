@@ -5,6 +5,7 @@
 
 import { CACHE_TTL, getOrFetch } from "@/lib/cache";
 import { getParkConfig } from "@/lib/disneyParkConfig";
+import { logUpstreamFailure } from "@/lib/errors";
 import { normalizePark } from "@/lib/parkioNormalizer";
 import {
   getEntitySchedule,
@@ -32,8 +33,9 @@ export async function GET(_req: Request, { params }: Params) {
       CACHE_TTL.hours,
       () => getEntitySchedule(cfg.externalId),
     );
-  } catch {
+  } catch (err) {
     // Fall back to a minimal park record when upstream is down.
+    logUpstreamFailure("api/parks/[parkSlug]", `schedule ${cfg.slug}`, err);
     schedule = null;
   }
 

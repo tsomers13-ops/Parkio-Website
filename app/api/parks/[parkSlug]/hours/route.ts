@@ -6,6 +6,7 @@
 
 import { CACHE_TTL, getOrFetch } from "@/lib/cache";
 import { getParkConfig } from "@/lib/disneyParkConfig";
+import { logUpstreamFailure } from "@/lib/errors";
 import { normalizeHours } from "@/lib/parkioNormalizer";
 import {
   getEntitySchedule,
@@ -33,7 +34,12 @@ export async function GET(_req: Request, { params }: Params) {
       CACHE_TTL.hours,
       () => getEntitySchedule(cfg.externalId),
     );
-  } catch {
+  } catch (err) {
+    logUpstreamFailure(
+      "api/parks/[parkSlug]/hours",
+      `schedule ${cfg.slug}`,
+      err,
+    );
     schedule = null;
   }
 

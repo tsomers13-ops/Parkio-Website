@@ -84,28 +84,81 @@ export interface ThemeparksEntityResponse {
   parentId?: string;
 }
 
+/**
+ * Upper bound on a single upstream round trip. Without it a hung
+ * themeparks.wiki connection would hold an edge invocation (and the
+ * user's request) open until the platform kills it, instead of failing
+ * fast into each route's fallback path.
+ */
+const REQUEST_TIMEOUT_MS = 8_000;
+
 class ThemeparksError extends Error {
   constructor(
+    /** HTTP status, or 0 when the request never produced a response. */
     public readonly status: number,
     public readonly endpoint: string,
     message: string,
+    options?: { cause?: unknown },
   ) {
-    super(message);
+    super(message, options);
     this.name = "ThemeparksError";
   }
 }
 
+/**
+ * Combines the caller's abort signal (if any) with our own timeout so
+ * either can cancel the request. `AbortSignal.any` is available in every
+ * runtime we target; the manual fallback keeps older Node happy.
+ */
+function withTimeout(signal: AbortSignal | undefined): AbortSignal {
+  const timeout = AbortSignal.timeout(REQUEST_TIMEOUT_MS);
+  if (!signal) return timeout;
+  if (typeof AbortSignal.any === "function") {
+    return AbortSignal.any([signal, timeout]);
+  }
+  const ctl = new AbortController();
+  const abort = () => ctl.abort();
+  signal.addEventListener("abort", abort, { once: true });
+  timeout.addEventListener("abort", abort, { once: true });
+  return ctl.signal;
+}
+
 async function getJson<T>(path: string, signal?: AbortSignal): Promise<T> {
   const url = `${BASE_URL}${path}`;
-  const res = await fetch(url, {
-    cache: "no-store",
-    signal,
-    headers: { Accept: "application/json" },
-  });
+
+  let res: Response;
+  try {
+    res = await fetch(url, {
+      cache: "no-store",
+      signal: withTimeout(signal),
+      headers: { Accept: "application/json" },
+    });
+  } catch (err) {
+    // Caller-initiated aborts stay as-is so callers can tell them apart
+    // from a genuine upstream failure.
+    if (signal?.aborted) throw err;
+    throw new ThemeparksError(
+      0,
+      path,
+      `Upstream request to ${path} failed before a response`,
+      { cause: err },
+    );
+  }
+
   if (!res.ok) {
     throw new ThemeparksError(res.status, path, `Upstream ${res.status} on ${path}`);
   }
-  return (await res.json()) as T;
+
+  try {
+    return (await res.json()) as T;
+  } catch (err) {
+    throw new ThemeparksError(
+      res.status,
+      path,
+      `Upstream returned a non-JSON body on ${path}`,
+      { cause: err },
+    );
+  }
 }
 
 /** GET /entity/{id} — basic entity metadata. */

@@ -9,6 +9,7 @@ import {
   useRef,
   useState,
 } from "react";
+import { isAbortError, logClientFailure } from "@/lib/errors";
 import { fetchPark, fetchParkLive } from "@/lib/parkioClient";
 import type { ApiPark, ApiParkLive } from "@/lib/types";
 
@@ -92,9 +93,10 @@ export function ParkLiveDataProvider({ parkSlug, children }: ProviderProps) {
       setLastUpdated(liveRes.lastUpdated);
       setStatus(liveRes.live ? "live" : "estimates");
     } catch (err) {
-      if ((err as Error).name === "AbortError") return;
+      if (isAbortError(err)) return;
       if (cancelledRef.current) return;
       // Don't blow away cached data — just mark this fetch as failed.
+      logClientFailure("ParkLiveDataProvider", `refresh ${parkSlug}`, err);
       setStatus("estimates");
     }
   }, [parkSlug]);
