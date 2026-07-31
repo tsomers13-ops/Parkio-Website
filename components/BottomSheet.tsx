@@ -67,11 +67,13 @@ export function BottomSheet({ open, onClose, children }: BottomSheetProps) {
 
   return (
     <>
-      {/* Scrim */}
+      {/* Scrim — sits between Leaflet's panes (≤700) and the map's
+          floating controls (800), so the map itself is inert while the
+          sheet is open but zoom / recenter / list stay clickable. */}
       <div
         aria-hidden
         onClick={onClose}
-        className={`fixed inset-0 z-[850] bg-ink-900/20 backdrop-blur-[1px] transition-opacity duration-300 ${
+        className={`fixed inset-0 z-[750] bg-ink-900/20 backdrop-blur-[1px] transition-opacity duration-300 ${
           open
             ? "pointer-events-auto opacity-100"
             : "pointer-events-none opacity-0"
@@ -83,14 +85,15 @@ export function BottomSheet({ open, onClose, children }: BottomSheetProps) {
         ref={sheetRef}
         role="dialog"
         aria-modal="true"
+        aria-label="Attraction details"
         aria-hidden={!open}
         tabIndex={-1}
         // Leaflet's panes run 200–700 and ParkMap's floating controls
         // sit at 800, all inside the same stacking context as this
         // sheet. Anything lower is painted over by the map, which is
         // what made the sheet look like it never opened — it was
-        // on-screen but behind the tiles and pins. Matches the
-        // z-[850]/z-[900] pairing <RideList> already uses.
+        // on-screen but behind the tiles and pins. 900 matches the
+        // panel layer <RideList> already uses.
         className={`fixed inset-x-0 bottom-0 z-[900] mx-auto max-w-2xl outline-none transition-transform duration-300 ${
           open ? "pointer-events-auto" : "pointer-events-none"
         }`}

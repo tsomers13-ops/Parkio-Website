@@ -10,7 +10,8 @@ import { BottomSheet } from "@/components/BottomSheet";
  * controls at 800, all in the same stacking context as the sheet.
  * Anything at or below that buried the sheet behind the map.
  */
-const MAP_MAX_Z = 800;
+const LEAFLET_TOP_PANE_Z = 700; // popup-pane, the highest Leaflet pane
+const MAP_CONTROL_Z = 800; // zoom / recenter / list buttons
 
 afterEach(cleanup);
 
@@ -41,10 +42,20 @@ function zIndexOf(el: HTMLElement) {
 
 describe("BottomSheet", () => {
   it("stacks above every Leaflet pane and map control", () => {
-    const { sheet, scrim } = renderSheet(true);
-    expect(zIndexOf(sheet)).toBeGreaterThan(MAP_MAX_Z);
-    expect(zIndexOf(scrim)).toBeGreaterThan(MAP_MAX_Z);
-    expect(zIndexOf(sheet)).toBeGreaterThan(zIndexOf(scrim));
+    const { sheet } = renderSheet(true);
+    expect(zIndexOf(sheet)).toBeGreaterThan(MAP_CONTROL_Z);
+  });
+
+  it("blocks the map with the scrim while leaving the controls clickable", () => {
+    const { scrim } = renderSheet(true);
+    expect(zIndexOf(scrim)).toBeGreaterThan(LEAFLET_TOP_PANE_Z);
+    expect(zIndexOf(scrim)).toBeLessThan(MAP_CONTROL_Z);
+  });
+
+  it("labels itself as a dialog", () => {
+    const { sheet } = renderSheet(true);
+    expect(sheet.getAttribute("role")).toBe("dialog");
+    expect(sheet.getAttribute("aria-label")).toBeTruthy();
   });
 
   it("pins itself to the viewport rather than the page flow", () => {
