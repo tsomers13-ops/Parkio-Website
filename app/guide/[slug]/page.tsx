@@ -34,6 +34,7 @@ import {
   sectionEyebrow,
   sectionTitle,
 } from "@/lib/guideDaily";
+import { Chevron } from "@/components/icons";
 
 interface GuideDetailProps {
   params: { slug: string };
@@ -670,21 +671,6 @@ function VideosSection({ items }: { items: DailyVideoItem[] }) {
 function pickFirst<T>(present: T[], priorities: T[]): T | null {
   for (const p of priorities) if (present.includes(p)) return p;
   return null;
-}
-
-function Chevron() {
-  return (
-    <svg viewBox="0 0 16 16" className="h-3.5 w-3.5" aria-hidden>
-      <path
-        d="M6 3l5 5-5 5"
-        stroke="currentColor"
-        strokeWidth="1.8"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        fill="none"
-      />
-    </svg>
-  );
 }
 
 function BackChevron() {

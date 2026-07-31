@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Chevron } from "@/components/icons";
 
 /**
  * Parent-focused section. The pain point: missing the 3:15 PM
@@ -179,20 +180,5 @@ function SoonRow({
         <p className="text-[12px] text-ink-500 tabular-nums">{time}</p>
       </div>
     </li>
-  );
-}
-
-function Chevron() {
-  return (
-    <svg viewBox="0 0 16 16" className="h-3.5 w-3.5" aria-hidden>
-      <path
-        d="M6 3l5 5-5 5"
-        stroke="currentColor"
-        strokeWidth="1.8"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        fill="none"
-      />
-    </svg>
   );
 }

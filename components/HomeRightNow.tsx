@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Chevron } from "@/components/icons";
 
 interface PreviewRide {
   name: string;
@@ -169,20 +170,5 @@ function PreviewCard({ ride }: { ride: PreviewRide }) {
         </span>
       </div>
     </Link>
-  );
-}
-
-function Chevron() {
-  return (
-    <svg viewBox="0 0 16 16" className="h-3.5 w-3.5" aria-hidden>
-      <path
-        d="M6 3l5 5-5 5"
-        stroke="currentColor"
-        strokeWidth="1.8"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        fill="none"
-      />
-    </svg>
   );
 }

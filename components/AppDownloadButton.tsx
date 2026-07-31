@@ -5,6 +5,7 @@ import {
   APP_STORE_LIVE,
   APP_STORE_URL,
 } from "@/lib/appStore";
+import { AppleGlyph } from "@/components/icons";
 
 type Tone = "dark" | "light" | "ghost";
 type Size = "md" | "lg";
@@ -72,17 +73,10 @@ export function AppDownloadButton({
       className={`inline-flex items-center justify-center rounded-full font-semibold transition active:scale-[0.98] ${sizeClasses} ${toneClasses} ${className ?? ""}`}
       {...externalProps}
     >
-      {APP_STORE_LIVE && <AppleGlyph size={size} />}
+      {APP_STORE_LIVE && (
+        <AppleGlyph className={size === "lg" ? "h-5 w-5" : "h-4 w-4"} />
+      )}
       <span>{label}</span>
     </Link>
-  );
-}
-
-function AppleGlyph({ size }: { size: Size }) {
-  const cls = size === "lg" ? "h-5 w-5" : "h-4 w-4";
-  return (
-    <svg viewBox="0 0 24 24" className={cls} fill="currentColor" aria-hidden>
-      <path d="M16.5 12.6c0-2.3 1.9-3.4 2-3.5-1.1-1.6-2.8-1.8-3.4-1.8-1.4-.1-2.8.9-3.5.9-.7 0-1.9-.9-3.1-.9-1.6 0-3.1.9-3.9 2.4-1.7 2.9-.4 7.2 1.2 9.6.8 1.2 1.7 2.5 3 2.5 1.2 0 1.7-.8 3.2-.8 1.5 0 1.9.8 3.2.8 1.3 0 2.2-1.2 3-2.4.9-1.4 1.3-2.7 1.3-2.8-.1 0-2.5-1-2.5-3.7zM14.3 5.6c.7-.8 1.2-2 1.1-3.2-1 0-2.3.7-3 1.5-.6.7-1.2 1.9-1.1 3.1 1.1.1 2.3-.6 3-1.4z" />
-    </svg>
   );
 }

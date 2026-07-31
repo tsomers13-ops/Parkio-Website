@@ -11,6 +11,8 @@ import type { ApiAttraction, Park } from "@/lib/types";
 import { simulatedWait, waitColorClasses, waitTier } from "@/lib/utils";
 import { useMapFocus } from "./MapFocusProvider";
 import { useParkLive } from "./ParkLiveDataProvider";
+import { LiveEyebrow } from "@/components/LiveBadge";
+import { BigWaitPill } from "@/components/WaitPill";
 
 interface ParkNextMoveProps {
   park: Park;
@@ -195,7 +197,12 @@ export function ParkNextMove({ park }: ParkNextMoveProps) {
         {/* Header */}
         <div className="flex flex-wrap items-end justify-between gap-3">
           <div className="max-w-2xl">
-            <Eyebrow estimated={isEstimated} />
+            <LiveEyebrow
+              label={
+                isEstimated ? "Your next move" : "Your next move · live"
+              }
+              live={!isEstimated}
+            />
             <h2 className="mt-2 text-3xl font-semibold tracking-tight text-ink-900 sm:text-4xl">
               Your next move
             </h2>
@@ -375,30 +382,6 @@ function pickReason({
 
 /* ─────────────────────────── Chrome ─────────────────────────── */
 
-function Eyebrow({ estimated }: { estimated: boolean }) {
-  if (estimated) {
-    return (
-      <div className="flex items-center gap-2">
-        <span className="h-2 w-2 rounded-full bg-ink-300" />
-        <span className="text-[11px] font-semibold uppercase tracking-widest text-ink-500">
-          Your next move
-        </span>
-      </div>
-    );
-  }
-  return (
-    <div className="flex items-center gap-2">
-      <span className="relative flex h-2 w-2">
-        <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-accent-400 opacity-75" />
-        <span className="relative inline-flex h-2 w-2 rounded-full bg-accent-500" />
-      </span>
-      <span className="text-[11px] font-semibold uppercase tracking-widest text-accent-700">
-        Your next move · live
-      </span>
-    </div>
-  );
-}
-
 function EstimatedBadge() {
   return (
     <span
@@ -414,42 +397,6 @@ function EstimatedBadge() {
           Predicted from park patterns
         </span>
       </span>
-    </span>
-  );
-}
-
-function BigWaitPill({
-  minutes,
-  estimated,
-}: {
-  minutes: number | null;
-  estimated: boolean;
-}) {
-  if (typeof minutes !== "number") {
-    return (
-      <span className="inline-flex shrink-0 items-center gap-2 whitespace-nowrap rounded-full bg-ink-100 px-3.5 py-2 text-base font-semibold tabular-nums text-ink-500 ring-1 ring-ink-200">
-        <span className="h-2 w-2 rounded-full bg-ink-300" />—
-      </span>
-    );
-  }
-  if (estimated) {
-    return (
-      <span className="inline-flex shrink-0 items-center gap-2 whitespace-nowrap rounded-full bg-ink-100 px-3.5 py-2 text-base font-semibold tabular-nums text-ink-700 ring-1 ring-ink-200">
-        <span className="h-2 w-2 rounded-full bg-ink-400" />
-        {minutes} min
-        <span className="text-[11px] font-medium uppercase tracking-wider text-ink-500">
-          est.
-        </span>
-      </span>
-    );
-  }
-  const c = waitColorClasses(waitTier(minutes));
-  return (
-    <span
-      className={`inline-flex shrink-0 items-center gap-2 whitespace-nowrap rounded-full px-3.5 py-2 text-base font-semibold tabular-nums ring-1 ${c.bg} ${c.text} ${c.ring}`}
-    >
-      <span className={`h-2 w-2 rounded-full ${c.dot}`} />
-      {minutes} min
     </span>
   );
 }

@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useAllLive, type AggregatedRide } from "@/lib/useAllLive";
 import { waitColorClasses, waitTier } from "@/lib/utils";
+import { LiveBadge } from "@/components/LiveBadge";
 
 export function LiveRightNow() {
   const { status, shortestWaits, longestWaits, averageWait, openParkCount } =
@@ -161,36 +162,5 @@ function RideRow({
         {wait} min
       </span>
     </li>
-  );
-}
-
-function LiveBadge({ status }: { status: "loading" | "live" | "estimates" }) {
-  if (status === "loading") {
-    return (
-      <span className="inline-flex items-center gap-1.5 rounded-full bg-ink-50 px-3 py-1.5 text-[11px] font-medium text-ink-500 ring-1 ring-ink-200">
-        <span className="h-1.5 w-1.5 rounded-full bg-ink-300" />
-        Loading
-      </span>
-    );
-  }
-  if (status === "estimates") {
-    return (
-      <span
-        className="inline-flex items-center gap-1.5 rounded-full bg-ink-100 px-3 py-1.5 text-[11px] font-medium text-ink-600 ring-1 ring-ink-200"
-        title="Live data unavailable — showing estimated waits"
-      >
-        <span className="h-1.5 w-1.5 rounded-full bg-ink-400" />
-        Estimated waits
-      </span>
-    );
-  }
-  return (
-    <span className="inline-flex items-center gap-1.5 rounded-full bg-emerald-50 px-3 py-1.5 text-[11px] font-medium text-emerald-700 ring-1 ring-emerald-200">
-      <span className="relative flex h-1.5 w-1.5">
-        <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75" />
-        <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-emerald-500" />
-      </span>
-      Live · refreshes every minute
-    </span>
   );
 }

@@ -11,7 +11,8 @@ import type {
   ApiParkLive,
 } from "@/lib/types";
 import type { Ride } from "@/lib/types";
-import { simulatedWait, waitColorClasses, waitTier } from "@/lib/utils";
+import { simulatedWait } from "@/lib/utils";
+import { WaitPill } from "@/components/WaitPill";
 
 export function WaitsAllParks() {
   const { status, parks, liveByPark } = useAllLive();
@@ -246,19 +247,6 @@ function ParkBlock({
         </Link>
       </div>
     </article>
-  );
-}
-
-function WaitPill({ minutes }: { minutes: number }) {
-  const tier = waitTier(minutes);
-  const c = waitColorClasses(tier);
-  return (
-    <span
-      className={`inline-flex items-center gap-1.5 rounded-full px-2.5 py-1 text-[11px] font-semibold ring-1 ${c.bg} ${c.text} ${c.ring}`}
-    >
-      <span className={`h-1.5 w-1.5 rounded-full ${c.dot}`} />
-      {minutes} min
-    </span>
   );
 }
 

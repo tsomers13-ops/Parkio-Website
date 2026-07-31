@@ -5,6 +5,7 @@ import {
   APP_STORE_LIVE,
   APP_STORE_URL,
 } from "@/lib/appStore";
+import { AppleGlyph, Chevron } from "@/components/icons";
 
 type Variant = "picks" | "waits" | "app";
 
@@ -131,21 +132,6 @@ export function ConversionBlock({ variant }: ConversionBlockProps) {
   );
 }
 
-function Chevron() {
-  return (
-    <svg viewBox="0 0 16 16" className="h-3.5 w-3.5" aria-hidden>
-      <path
-        d="M6 3l5 5-5 5"
-        stroke="currentColor"
-        strokeWidth="1.8"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        fill="none"
-      />
-    </svg>
-  );
-}
-
 /**
  * Inline App Store button. Reads the App Store URL from
  * `lib/appStore` (single source of truth across the site) and tags
@@ -161,7 +147,7 @@ function AppStoreInlineCta() {
     >
       {APP_STORE_LIVE ? (
         <>
-          <AppleGlyph />
+          <AppleGlyph className="h-4 w-4" />
           Download Parkio
         </>
       ) : (
@@ -171,13 +157,5 @@ function AppStoreInlineCta() {
         </>
       )}
     </Link>
-  );
-}
-
-function AppleGlyph() {
-  return (
-    <svg viewBox="0 0 24 24" className="h-4 w-4" fill="currentColor" aria-hidden>
-      <path d="M16.5 12.6c0-2.3 1.9-3.4 2-3.5-1.1-1.6-2.8-1.8-3.4-1.8-1.4-.1-2.8.9-3.5.9-.7 0-1.9-.9-3.1-.9-1.6 0-3.1.9-3.9 2.4-1.7 2.9-.4 7.2 1.2 9.6.8 1.2 1.7 2.5 3 2.5 1.2 0 1.7-.8 3.2-.8 1.5 0 1.9.8 3.2.8 1.3 0 2.2-1.2 3-2.4.9-1.4 1.3-2.7 1.3-2.8-.1 0-2.5-1-2.5-3.7zM14.3 5.6c.7-.8 1.2-2 1.1-3.2-1 0-2.3.7-3 1.5-.6.7-1.2 1.9-1.1 3.1 1.1.1 2.3-.6 3-1.4z" />
-    </svg>
   );
 }
