@@ -1,0 +1,323 @@
+{
+  "title": "Parkio Daily for August 1, 2026",
+  "slug": "parkio-daily-2026-08-01",
+  "date": "2026-08-01",
+  "teaser": "Haunted Mansion reopens today with original 1971 colors; World Princess Week treats debut Aug 18; Jeff Vahle retires after 36 years.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Big Thunder Mountain Railroad",
+        "parkSlug": "magic-kingdom",
+        "note": "Lower waits early morning with Haunted Mansion reopening drawing crowds"
+      },
+      {
+        "name": "Test Track",
+        "parkSlug": "epcot",
+        "note": "Historically lighter crowds on Friday mornings"
+      },
+      {
+        "name": "Flight of Passage",
+        "parkSlug": "animal-kingdom",
+        "note": "First hour typically offers shortest waits of the day"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [
+      {
+        "title": "Haunted Mansion reopens today with original 1971 color scheme restored",
+        "body": "The exterior work on Magic Kingdom's Haunted Mansion wrapped overnight. The attraction now displays its opening-day palette after a multi-week restoration project.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/breaking-scrim-removed-from-the-haunted-mansion-in-magic-kingdom-opening-day-color-scheme-restored-in-todays-daily-recap-for-7-31-2026/"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "The reopening tends to draw curious guests throughout the day. Visiting before 11am or after 7pm usually offers shorter waits, as midday crowds often swell with first-time viewers."
+        }
+      }
+    ],
+    "bignews": [
+      {
+        "title": "Jeff Vahle completes 36-year Disney career, final day as Walt Disney World president",
+        "body": "Vahle's tenure ended yesterday after announcing his retirement earlier this summer. Disney has not yet named a successor to lead the Florida resort.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/end-of-era-last-day-for-disney-world-president-jeff-vahle-after-36-years/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Leadership transitions rarely affect day-to-day park operations. Guests should see no immediate service changes, though long-term strategy may shift over the coming months."
+        }
+      },
+      {
+        "title": "World Princess Week treats arrive August 18 across Walt Disney World",
+        "body": "Disney confirmed a dozen princess-themed snacks launching mid-month at Magic Kingdom, EPCOT, Hollywood Studios, and resort locations. The collection includes items inspired by Rapunzel, Tiana, and other characters.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/new-princess-treats-debut-at-walt-disney-world-for-world-princess-week/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Limited-time treats often sell out by early afternoon at flagship quick-service spots. Visiting locations like Gaston's Tavern or Sunshine Seasons before noon typically improves availability."
+        }
+      },
+      {
+        "title": "Bakari the silverback gorilla settling into Animal Kingdom's Gorilla Falls Exploration Trail",
+        "body": "The 21-year-old male western lowland gorilla is gradually taking his role as leader of the park's family troop. Disney describes the arrival as a milestone for the animal care program.",
+        "parkSlug": "animal-kingdom",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/meet-bakari-the-gorilla-at-disneys-animal-kingdom/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Gorilla Falls tends to be quieter during the late morning and early afternoon heat. Visiting around 10am or 2pm often allows closer viewing with smaller groups of guests."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "Mickey's Not-So-Scary Halloween Party unveils darker cast member costumes for 2026",
+        "body": "Party staff will wear new black uniforms starting August 7, a departure from previous years' festive orange and purple. Social media reaction has been mixed, with some guests calling the look less celebratory.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/first-look-new-mickeys-not-so-scary-halloween-party-cast-member-costumes-draw-negative-reactions/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Costume changes do not impact party content or value. Guests attending for treats, character meets, and entertainment should see no difference in their experience."
+        }
+      },
+      {
+        "title": "Annual Passholder exclusive merchandise confirmed for Halloween party dates",
+        "body": "Disney revealed a black shirt with passholder branding available only during Mickey's Not-So-Scary Halloween Party. The item joins other AP-only offerings at the seasonal event.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/07/first-annual-passholder-merchandise-revealed-for-mickeys-not-so-scary-halloween-party/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Exclusive party merchandise often sells out within the first few event nights. Passholders attending early dates typically have the widest size selection at Big Top Souvenirs and Emporium."
+        }
+      },
+      {
+        "title": "Disneyland adds nine attraction refurbishments to fall schedule",
+        "body": "The park updated its closure calendar with projects beginning after summer season ends. Multiple rides across both Disneyland and California Adventure will close for maintenance in the coming months.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/9-refurbishment-dates-added-to-disneyland-calendar-for-offseason/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Offseason refurbishments typically concentrate in September and October. Guests planning trips for late August often enjoy fuller ride lineups before maintenance windows begin."
+        }
+      },
+      {
+        "title": "September 16 Halloween party date sells out at Magic Kingdom",
+        "body": "Disney confirmed another sold-out night for Mickey's Not-So-Scary Halloween Party. The mid-September date joins several others at capacity for 2026.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/07/mickeys-not-so-scary-halloween-party-sold-out-emd1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Sold-out party nights close Magic Kingdom to regular guests at 6pm. Visitors without party tickets should plan to finish by early evening or park-hop to EPCOT, which typically stays open later."
+        }
+      },
+      {
+        "title": "Disneyland Plaza Inn character breakfast closure delayed one week to mid-August",
+        "body": "The 1965 location will now close later than originally scheduled. Disney provided additional details on the refurbishment work planned for the Main Street restaurant.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/07/disneyland-closure-delayed-plaza-inn-emd1/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "The extra week gives guests more time to book Minnie and Friends breakfast. Same-day walk-ups occasionally open after 9am, though reservations made in advance tend to secure preferred seating."
+        }
+      },
+      {
+        "title": "Disney and Starbucks unveil fall merchandise collection",
+        "body": "The seasonal line debuted this week with tumblers, mugs, and accessories available at Starbucks locations inside Disney Springs and the parks. Items feature autumn and Halloween motifs.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/breaking-scrim-removed-from-the-haunted-mansion-in-magic-kingdom-opening-day-color-scheme-restored-in-todays-daily-recap-for-7-31-2026/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Seasonal Starbucks items often sell out quickly at Magic Kingdom's Main Street location. Disney Springs stores usually restock more frequently and offer better availability during peak hours."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Pocahontas-themed guest rooms revealed at Disney's Lakeshore Lodge",
+        "body": "New murals showcasing the character now decorate renovated accommodations at the resort. The update is part of an ongoing character-inspired makeover across select Disney hotel properties.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/breaking-scrim-removed-from-the-haunted-mansion-in-magic-kingdom-opening-day-color-scheme-restored-in-todays-daily-recap-for-7-31-2026/"
+        }
+      },
+      {
+        "title": "Saratoga Springs restaurant closing in one month for refurbishment",
+        "body": "A dining location at the resort will temporarily shut down in late August for renovations. Disney has not released a reopening date or details on the scope of work.",
+        "parkSlug": null,
+        "source": {
+          "label": "AllEars.Net",
+          "url": "https://allears.net/2026/07/31/this-disney-world-restaurant-will-close-in-one-month/"
+        }
+      },
+      {
+        "title": "Behind the Attraction Season 3 now streaming on Disney Plus",
+        "body": "The new episodes focus on Disney Cruise Line, exploring the storytelling and design behind the fleet. The two-part special is available to subscribers now.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/disney-experiences/stream-episodes-of-behind-the-attraction/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "Cool Kids Summer hotel perks end soon at four Walt Disney World resorts",
+        "body": "Special welcome experiences and family amenities for young children continue through August at select Disney Resorts Collection properties. The seasonal program wraps as schools return to session.",
+        "parkSlug": null,
+        "ctaLabel": "Check resort details",
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Families with preschoolers booking stays before late August may still access the program. Resort check-in tends to be faster on weekdays, leaving more time to explore pool areas and activities."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "Hoyd11acC0A",
+      "title": "My Disney Collection | Rare Disney Memorabilia, Original Animation & Life Update | Walt Disney World",
+      "channel": "Paging Mr. Morrow",
+      "publishedAt": "2026-07-31T19:57:49Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Hoyd11acC0A/mqdefault.jpg",
+      "viewCount": 37413,
+      "url": "https://www.youtube.com/watch?v=Hoyd11acC0A",
+      "summary": "Paging Mr. Morrow shares a tour of rare Disney memorabilia and original animation pieces from his personal collection, plus a life update."
+    },
+    {
+      "videoId": "zUAWVczSD58",
+      "title": "🔴Live Magic Kingdom Friday Rides Parades and Fireworks at Walt Disney World 7/31/2026",
+      "channel": "RON ON THE GO",
+      "publishedAt": "2026-08-01T03:48:45Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/zUAWVczSD58/mqdefault.jpg",
+      "viewCount": 35637,
+      "url": "https://www.youtube.com/watch?v=zUAWVczSD58",
+      "summary": "A live stream from Magic Kingdom covering rides, parades, and the Happily Ever After fireworks show on Friday evening."
+    },
+    {
+      "videoId": "igQCz67yaAg",
+      "title": "Every NEW Food in Magic Kingdom- Pecos Bill, Cosmic Ray's & More | Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-07-30T17:46:51Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/igQCz67yaAg/mqdefault.jpg",
+      "viewCount": 34516,
+      "url": "https://www.youtube.com/watch?v=igQCz67yaAg",
+      "summary": "WrightDownMainStreet reviews new menu items at Pecos Bill, Cosmic Ray's, and other Magic Kingdom quick-service locations."
+    },
+    {
+      "videoId": "PHTkjVkwuho",
+      "title": "🔴Live: Friday Night Live at Magic Kingdom - 7-31-26 - Walt Disney World Live Stream",
+      "channel": "ResortTV1",
+      "publishedAt": "2026-08-01T03:29:50Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/PHTkjVkwuho/mqdefault.jpg",
+      "viewCount": 34462,
+      "url": "https://www.youtube.com/watch?v=PHTkjVkwuho",
+      "summary": "ResortTV1 broadcasts live from Magic Kingdom on Friday night, covering park atmosphere and entertainment."
+    },
+    {
+      "videoId": "fAsUBTD_SqM",
+      "title": "🔴 Live: Fantasmic Friday Stream at Disneyland! Fantasmic, Fireworks & Paint the Night - 07/31/26",
+      "channel": "Koda Bear the Explorer ",
+      "publishedAt": "2026-08-01T07:43:50Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/fAsUBTD_SqM/mqdefault.jpg",
+      "viewCount": 32201,
+      "url": "https://www.youtube.com/watch?v=fAsUBTD_SqM",
+      "summary": "Koda Bear streams Fantasmic, fireworks, and Paint the Night parade live from Disneyland on Friday evening."
+    },
+    {
+      "videoId": "ZCGACcva_CI",
+      "title": "🔴 LIVE: Disney World – YOU Pick! Happily Ever After, Fantasmic or Disney Fireworks [Full Show 4K]",
+      "channel": "Fun to be Free",
+      "publishedAt": "2026-08-01T04:41:26Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/ZCGACcva_CI/mqdefault.jpg",
+      "viewCount": 8623,
+      "url": "https://www.youtube.com/watch?v=ZCGACcva_CI",
+      "summary": "Fun to be Free offers a viewer-choice live stream of nighttime spectaculars across Walt Disney World in 4K."
+    },
+    {
+      "videoId": "KzMAnuazi4w",
+      "title": "🔴 LIVE @ Walt Disney World's Magic Kingdom Starlight Parade & Happily Ever After Fireworks",
+      "channel": "Sprinkles of Adventures",
+      "publishedAt": "2026-08-01T03:51:41Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/KzMAnuazi4w/mqdefault.jpg",
+      "viewCount": 2319,
+      "url": "https://www.youtube.com/watch?v=KzMAnuazi4w",
+      "summary": "Sprinkles of Adventures streams the Starlight Parade and Happily Ever After fireworks live from Magic Kingdom."
+    },
+    {
+      "videoId": "BiVwhPQMyqc",
+      "title": "NEW Disneyland Merch Update! Starbucks Fall, Disney Villains & more Halloween",
+      "channel": "The Mangerino Adventures",
+      "publishedAt": "2026-08-01T02:30:03Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/BiVwhPQMyqc/mqdefault.jpg",
+      "viewCount": 1672,
+      "url": "https://www.youtube.com/watch?v=BiVwhPQMyqc",
+      "summary": "The Mangerino Adventures showcases new fall and Halloween merchandise at Disneyland, including Starbucks items and Disney Villains collections."
+    },
+    {
+      "videoId": "FQeVMz8d25Y",
+      "title": "En disney con mi Carreola #disney #viral #disneyland",
+      "channel": "Play in Piero kids",
+      "publishedAt": "2026-08-01T04:51:42Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/FQeVMz8d25Y/mqdefault.jpg",
+      "viewCount": 1216,
+      "url": "https://www.youtube.com/watch?v=FQeVMz8d25Y",
+      "summary": "Play in Piero kids shares a visit to Disney parks with a stroller, offering family-friendly perspectives."
+    },
+    {
+      "videoId": "Fpb6e3vb-5Q",
+      "title": "#disney #disneyland #disneycruise #disneyprincess #princess #disneyworld #disneyplus #disneywonder",
+      "channel": "ねでさんぽ〜Take a walk with Nede🐿〜",
+      "publishedAt": "2026-08-01T06:45:01Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Fpb6e3vb-5Q/mqdefault.jpg",
+      "viewCount": 1075,
+      "url": "https://www.youtube.com/watch?v=Fpb6e3vb-5Q",
+      "summary": "Nede shares Disney-related content covering parks, princesses, and Disney Cruise Line experiences."
+    }
+  ],
+  "updatedAt": "2026-08-01T11:56:32.559Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-08-01T11:56:32.559Z",
+    "tokens": {
+      "input": 12093,
+      "output": 5072,
+      "costUsd": 0.1124
+    }
+  }
+}
