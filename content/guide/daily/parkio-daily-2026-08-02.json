@@ -1,0 +1,362 @@
+{
+  "title": "Parkio Daily for August 2, 2026",
+  "slug": "parkio-daily-2026-08-02",
+  "date": "2026-08-02",
+  "teaser": "Tiana's log sank midride; FØØD by Swedish Chef menu revealed; 12 Princess Week treats debut; Haunted Mansion closures start this week at two parks.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Test Track",
+        "parkSlug": "epcot",
+        "note": "EPCOT saw the longest waits this week; early arrival pays off"
+      },
+      {
+        "name": "Big Thunder Mountain Railroad",
+        "parkSlug": "magic-kingdom",
+        "note": "Extra early entry returns for party season; rope-drop window is your friend"
+      },
+      {
+        "name": "Rock 'n' Roller Coaster",
+        "parkSlug": "hollywood-studios",
+        "note": "Muppets takeover brings crowds; Swedish Chef kiosk opens nearby"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [
+      {
+        "title": "Tiana's Bayou Adventure evacuated after log begins sinking",
+        "body": "A family was rescued from the Magic Kingdom attraction midride Wednesday when their log started taking on water. Guests were escorted through backstage areas after the incident, which adds to a series of technical issues reported on the ride since its opening.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/08/tianas-bayou-adventure-log-sinking-disney-world-jc1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Tiana's has seen recurring downtime since launch. If it shows a posted wait under 30 minutes midday, that may signal technical delays rather than low demand. Mobile order lunch nearby and watch the app before committing time to the queue."
+        }
+      },
+      {
+        "title": "Muppet Labs novelty flask pulled hours after Hollywood Studios debut",
+        "body": "Disney removed the specialty flask from sale the same day it launched with the Pink Lemonade purchase option near Rock 'n' Roller Coaster. The item is not currently available and no return date has been announced.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/the-muppet-labs-novelty-flask-pulled-at-hollywood-studios-just-hours-after-arrival-not-currently-available-to-purchase/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Limited-edition Muppets items tend to vanish fast when restocked. If you want collectibles from the takeover, check merchandise locations near Commissary Lane first thing in the morning rather than waiting until afternoon."
+        }
+      }
+    ],
+    "bignews": [
+      {
+        "title": "FØØD by Swedish Chef full menu revealed for Hollywood Studios kiosk",
+        "body": "The new snack stand outside the Muppets-themed Rock 'n' Roller Coaster now serves dishes, drinks, and desserts inspired by the chaotic chef. The kiosk sits steps from the attraction entrance and offers quick-service bites throughout the day.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/full-menu-for-food-by-swedish-chef-dining-kiosk-by-muppets-rock-n-roller-coaster/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "New food kiosks often sell out signature items by mid-afternoon in the first few weeks. Swing by FØØD before noon if you want to try the full menu without disappointment."
+        }
+      },
+      {
+        "title": "Twelve Princess-inspired treats arrive for World Princess Week",
+        "body": "Disney World dropped a limited-time dessert lineup across multiple parks celebrating princess characters. The treats join returning favorites and brand-new recipes available only through the week-long event.",
+        "parkSlug": null,
+        "source": {
+          "label": "AllEars",
+          "url": "https://allears.net/2026/08/01/disney-world-just-dropped-12-princess-inspired-treats/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Specialty sweets tied to short promotions usually disappear once stock runs dry. If a particular treat is a must-have, grab it within the first two days rather than gambling on weekend availability."
+        }
+      },
+      {
+        "title": "Haunted Mansion to close at Disneyland and Tokyo Disney within days",
+        "body": "Both versions of the classic dark ride will shut down this week for seasonal overlays and maintenance. Disneyland's closure begins September 8, while Tokyo's starts earlier. The attractions will reopen with holiday themes in the coming months.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/08/haunted-mansion-disneyland-tokyo-closure-cj1/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Mansion closures often push crowds toward Pirates and Matterhorn in the final days before shutdown. Visiting August 3–7 gives you a quieter window for those neighboring attractions before the pre-closure rush hits."
+        }
+      },
+      {
+        "title": "Bakari the silverback gorilla settles into Animal Kingdom habitat",
+        "body": "The 21-year-old western lowland gorilla has arrived on Gorilla Falls Exploration Trail and is gradually taking his role as troop leader. Bakari's presence marks a significant milestone for the park's conservation program.",
+        "parkSlug": "animal-kingdom",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/meet-bakari-the-gorilla-at-disneys-animal-kingdom/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "New animal arrivals often draw spotters early in the day when gorillas are most active. Visiting the trail within the first two hours of park opening usually offers the longest, clearest viewing windows before midday heat and crowds."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "Magic Kingdom announces extra early entry for party season",
+        "body": "The park is extending morning hours on select dates as Mickey's Not-So-Scary Halloween Party kicks off August 7. The additional time gives resort guests a head start on popular attractions before regular park opening.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/extra-early-entry-returns-to-magic-kingdom-for-2026-party-season/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Party nights historically mean shorter daytime operating hours and heavier afternoon crowds as day guests compress their plans. On party dates, aim to finish headliners by 2pm and shift to resort pools or Disney Springs for the evening."
+        }
+      },
+      {
+        "title": "Oogie Boogie Bash dessert party details released for California Adventure",
+        "body": "Disney shared the menu and booking information for the exclusive Halloween event add-on. The premium experience pairs treats with preferred viewing for the seasonal entertainment at the Anaheim park.",
+        "parkSlug": "california-adventure",
+        "source": {
+          "label": "AllEars",
+          "url": "https://allears.net/2026/08/01/disney-just-dropped-details-about-this-exclusive-halloween-dessert-party/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Dessert parties for limited-ticket events tend to sell out within 48 hours of announcement. If you want guaranteed seating and treats, book today rather than waiting until closer to your event date."
+        }
+      },
+      {
+        "title": "Gideon's Bakehouse unveils three August flavors at Disney Springs",
+        "body": "The cult-favorite bakery rotated in new cookie offerings for the month. August flavors join the permanent lineup at the Disney Springs location, with virtual queue access recommended for weekend visits.",
+        "parkSlug": null,
+        "source": {
+          "label": "AllEars",
+          "url": "https://allears.net/2026/08/01/3-flavors-just-dropped-at-gideons-bakehouse-for-august/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Gideon's new flavor launches usually mean hour-plus waits on Friday and Saturday evenings. Weekday mornings, especially Tuesday through Thursday before noon, tend to offer the shortest lines and fullest flavor selection."
+        }
+      },
+      {
+        "title": "EPCOT roof demolition underway at World Showcase pavilion",
+        "body": "Crews are removing sections of an iconic rooftop structure at one of the park's country pavilions. The work is part of ongoing updates to World Showcase architecture and is visible from the promenade.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/08/epcot-roof-stripped-disney-world-cj1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Construction noise in World Showcase tends to peak during morning hours when crews are most active. If you're planning a quiet meal or shopping in the affected pavilion, late afternoon or evening visits usually offer a calmer backdrop."
+        }
+      },
+      {
+        "title": "Four Disney World hotels add more construction to project schedules",
+        "body": "Additional refurbishment work has been added to timelines at four resort properties in the coming weeks. The expanded projects may affect guest access to certain amenities and common areas during stays.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/08/01/disney-world-added-more-hotel-construction-projects-and-no-one-is-surprised/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Resort construction often means early-morning noise and limited pool or dining hours. Before booking, check your resort's refurbishment calendar and consider properties without active work if uninterrupted downtime is a priority."
+        }
+      },
+      {
+        "title": "Disneyland Frontierland area closure confirmed for September 8",
+        "body": "A section of Frontierland will shut down starting early next month. The closure affects pathways and select attractions as part of the land's ongoing transformation tied to future expansion plans.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/08/disneyland-confirms-frontierland-area-closure-effective-september-8th-el1/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Major land closures typically redirect foot traffic toward Fantasyland and Tomorrowland. Visiting in the days immediately before September 8 may offer your last chance to experience Frontierland without detours or extended waits elsewhere."
+        }
+      },
+      {
+        "title": "New Pandora charms featuring Pumpkin Stitch and Doom Buggy now on sale",
+        "body": "The jewelry collection expanded with Halloween-themed designs, including a seasonal Stitch and a Haunted Mansion ride vehicle. The charms are available at Walt Disney World retail locations and online at the Disney Store.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/pumpkin-stitch-doom-buggy-and-more-pandora-charms-now-available-at-walt-disney-world-online/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Limited-edition Pandora drops often sell out in-park before online inventory runs dry. If you want to try on sizing or see the finish in person, visit Uptown Jewelers on Main Street USA early in the day before popular designs go out of stock."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Bluey and Bingo window decal debuts at Disneyland Resort",
+        "body": "The Australian siblings join the merchandise lineup on a new car decal featuring Mickey and Minnie ears. The item is priced at eleven dollars and available at Fantasy Faire Gifts near it's a small world.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/bluey-bingo-window-decal-at-disneyland-resort/"
+        }
+      },
+      {
+        "title": "Behind the Attraction Season 3 streams on Disney Plus",
+        "body": "The new two-episode special shifts focus to Disney Cruise Line, exploring storytelling and innovation aboard the fleet. All episodes are available now on the streaming service.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/disney-experiences/stream-episodes-of-behind-the-attraction/"
+        }
+      },
+      {
+        "title": "Mickey's of Glendale to return at D23 with Imagineering collection",
+        "body": "The fan-favorite booth will offer exclusive Walt Disney Imagineering merchandise at this year's D23: The Ultimate Disney Fan Event. Details on the collection were shared earlier this week.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/disney-experiences/mickeys-of-glendale-d23-walt-disney-imagineering-collection/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "Test Track logged Disney World's longest wait this week",
+        "body": "The EPCOT attraction topped the wait-time charts across all four parks in recent days, edging out Magic Kingdom and Hollywood Studios headliners. The spike follows seasonal crowd patterns and ongoing refurbishments elsewhere in Future World.",
+        "parkSlug": "epcot",
+        "ctaLabel": "Plan your EPCOT day",
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Test Track waits tend to drop sharply during the dinner hour when festival booths pull guests toward World Showcase. Riding between 6pm and 8pm often cuts your wait in half compared to midday peaks."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "Hoyd11acC0A",
+      "title": "My Disney Collection | Rare Disney Memorabilia, Original Animation & Life Update | Walt Disney World",
+      "channel": "Paging Mr. Morrow",
+      "publishedAt": "2026-07-31T19:57:49Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Hoyd11acC0A/mqdefault.jpg",
+      "viewCount": 62279,
+      "url": "https://www.youtube.com/watch?v=Hoyd11acC0A",
+      "summary": "Paging Mr. Morrow shares rare Disney collectibles and original animation pieces from his personal collection, along with a personal life update."
+    },
+    {
+      "videoId": "igQCz67yaAg",
+      "title": "Every NEW Food in Magic Kingdom- Pecos Bill, Cosmic Ray's & More | Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-07-30T17:46:51Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/igQCz67yaAg/mqdefault.jpg",
+      "viewCount": 41031,
+      "url": "https://www.youtube.com/watch?v=igQCz67yaAg",
+      "summary": "WrightDownMainStreet tours new menu items at Magic Kingdom quick-service locations including Pecos Bill and Cosmic Ray's Starlight Cafe."
+    },
+    {
+      "videoId": "Bvvz3ybKFWI",
+      "title": "LIVE from Magic Kingdom! Disney's NEW Starlight Parade, Happily Ever After Fireworks & Rides",
+      "channel": "Living in DIZ",
+      "publishedAt": "2026-08-02T04:25:54Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Bvvz3ybKFWI/mqdefault.jpg",
+      "viewCount": 7529,
+      "url": "https://www.youtube.com/watch?v=Bvvz3ybKFWI",
+      "summary": "Living in DIZ streams live from Magic Kingdom, covering the new Starlight Parade, Happily Ever After fireworks, and rides throughout the park."
+    },
+    {
+      "videoId": "Xx4TIeSJp8o",
+      "title": "🔴 LIVE Disney World Orlando - Epcot Center  -  Hollywood Studios - Guardians of the Galaxy",
+      "channel": "Now Is The Time",
+      "publishedAt": "2026-08-02T05:26:39Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Xx4TIeSJp8o/mqdefault.jpg",
+      "viewCount": 6830,
+      "url": "https://www.youtube.com/watch?v=Xx4TIeSJp8o",
+      "summary": "Now Is The Time broadcasts live from EPCOT and Hollywood Studios, featuring Guardians of the Galaxy: Cosmic Rewind."
+    },
+    {
+      "videoId": "eKoZ7f8Ungw",
+      "title": "🔴 LIVE: Magic Kingdom! | Be Our Guest Restaurant! | Disney World 2026",
+      "channel": "The Weekly Hop",
+      "publishedAt": "2026-08-02T04:56:36Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/eKoZ7f8Ungw/mqdefault.jpg",
+      "viewCount": 2352,
+      "url": "https://www.youtube.com/watch?v=eKoZ7f8Ungw",
+      "summary": "The Weekly Hop streams from Magic Kingdom with a visit to Be Our Guest Restaurant in Fantasyland."
+    },
+    {
+      "videoId": "CcTE_K52Qjg",
+      "title": "Waiting for the DISNEYLAND CASTLE SHOW #disney #disneyland #disneyparks #disneyworld #hkdl",
+      "channel": "NextPageTV",
+      "publishedAt": "2026-08-02T03:00:04Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/CcTE_K52Qjg/mqdefault.jpg",
+      "viewCount": 1931,
+      "url": "https://www.youtube.com/watch?v=CcTE_K52Qjg",
+      "summary": "NextPageTV captures the wait and anticipation before a castle show at Disneyland."
+    },
+    {
+      "videoId": "0zrn11b3XVA",
+      "title": "Is this one of Disneys best attractions? 👀 #disney #disneyland",
+      "channel": "Rides & slides ",
+      "publishedAt": "2026-08-02T08:05:49Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/0zrn11b3XVA/mqdefault.jpg",
+      "viewCount": 1522,
+      "url": "https://www.youtube.com/watch?v=0zrn11b3XVA",
+      "summary": "Rides & slides explores whether a particular Disneyland attraction ranks among Disney's best offerings."
+    },
+    {
+      "videoId": "xvC154pZRbk",
+      "title": "Te amo Disney 😭 @Disney #disney #disneyshanghai #disneyland",
+      "channel": "Viajes Romano",
+      "publishedAt": "2026-08-02T02:25:11Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/xvC154pZRbk/mqdefault.jpg",
+      "viewCount": 1396,
+      "url": "https://www.youtube.com/watch?v=xvC154pZRbk",
+      "summary": "Viajes Romano shares an emotional moment at Shanghai Disney Resort."
+    },
+    {
+      "videoId": "8W954w6fAOc",
+      "title": "Russell #disney #disneyland",
+      "channel": "Hitch Ko79",
+      "publishedAt": "2026-08-02T09:06:34Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/8W954w6fAOc/mqdefault.jpg",
+      "viewCount": 1064,
+      "url": "https://www.youtube.com/watch?v=8W954w6fAOc",
+      "summary": "Hitch Ko79 features Russell, the Wilderness Explorer from Up, at a Disney park."
+    },
+    {
+      "videoId": "rhpAh5VLikk",
+      "title": "Disney's Insane Scale? 😳🎡 #shorts⁠",
+      "channel": "canne info",
+      "publishedAt": "2026-08-02T03:36:23Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/rhpAh5VLikk/mqdefault.jpg",
+      "viewCount": 1021,
+      "url": "https://www.youtube.com/watch?v=rhpAh5VLikk",
+      "summary": "Canne info examines the massive scale of Disney parks in a short-form video."
+    }
+  ],
+  "updatedAt": "2026-08-02T11:54:50.039Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-08-02T11:54:50.039Z",
+    "tokens": {
+      "input": 12025,
+      "output": 5814,
+      "costUsd": 0.1233
+    }
+  }
+}
