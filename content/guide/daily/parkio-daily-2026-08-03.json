@@ -1,0 +1,336 @@
+{
+  "title": "Parkio Daily for August 3, 2026",
+  "slug": "parkio-daily-2026-08-03",
+  "date": "2026-08-03",
+  "teaser": "Six Ravens soft opens today at Disney Springs with virtual queue; Animal Kingdom bus depot extension now complete; Bakari the gorilla settles in.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Living with the Land",
+        "parkSlug": "epcot",
+        "note": "Classic boat ride, short waits all day"
+      },
+      {
+        "name": "Spaceship Earth",
+        "parkSlug": "epcot",
+        "note": "Low crowds, walk-on most hours"
+      },
+      {
+        "name": "Carousel of Progress",
+        "parkSlug": "magic-kingdom",
+        "note": "Air-conditioned break, rarely busy"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [
+      {
+        "title": "Six Ravens Opens Today at Disney Springs",
+        "body": "The new savory restaurant from Gideon's Bakehouse begins its soft opening today. The team will activate a virtual queue once standby lines grow long, and purchase limits will apply to signature items called Coffyns.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/six-ravens-at-disney-springs-will-use-a-virtual-queue-when-line-gets-long-enforce-purchase-limits-on-coffyns/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Soft openings tend to draw smaller crowds early in the day. Arriving at Disney Springs before 11am likely gives you the best shot at skipping the virtual queue entirely."
+        }
+      }
+    ],
+    "bignews": [
+      {
+        "title": "Animal Kingdom Bus Depot Extension Now Open",
+        "body": "Four new bus stops have been added at the end of an existing row, serving transfers to Magic Kingdom, Hollywood Studios, EPCOT, and other resort areas. Construction that began in late 2025 is now complete.",
+        "parkSlug": "animal-kingdom",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/disneys-animal-kingdom-bus-depot-extension-opens/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Bus queues at Animal Kingdom tend to swell after park close. The new stops may ease congestion, but rope-drop arrivals and mid-afternoon departures usually keep wait times shortest."
+        }
+      },
+      {
+        "title": "Bakari the Gorilla Joins Animal Kingdom",
+        "body": "A 21-year-old male western lowland gorilla has arrived at Gorilla Falls Exploration Trail and is taking on the role of troop leader. Bakari's presence marks a new chapter for the park's gorilla family.",
+        "parkSlug": "animal-kingdom",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/meet-bakari-the-gorilla-at-disneys-animal-kingdom/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Morning viewing windows along the trail often offer the most active animal behavior. Visiting Gorilla Falls before 11am tends to give you clearer sightlines and better photo opportunities."
+        }
+      },
+      {
+        "title": "Tropical Americas Construction Progresses at Animal Kingdom",
+        "body": "A massive entrance gate and carousel queue structure are now visible at the former DinoLand U.S.A. site. The new land replaces the park's dinosaur area and represents one of the largest expansions in Walt Disney World history.",
+        "parkSlug": "animal-kingdom",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/08/tropical-americas-at-animal-kingdom-making-huge-progress-with-opening-date-announcement-looming-rl1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Construction activity tends to generate noise and visual barriers near the old DinoLand entrance. Routing your afternoon around Discovery Island and Pandora usually offers a quieter experience until work wraps for the day."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "Mickey's Not-So-Scary Halloween Party Food Revealed",
+        "body": "The official menu for this year's Halloween party at Magic Kingdom is now public, featuring seasonal treats available on event nights from August 7 through October 31.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/disney-eats-mickeys-not-so-scary-halloween-party-foodie-guide/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Party-exclusive snacks often sell out by mid-event. Grabbing your favorites in the first hour after gates open to ticketed guests tends to guarantee availability and shorter lines at carts."
+        }
+      },
+      {
+        "title": "Cool Kids' Summer Hotel Experiences Running Now",
+        "body": "Four Walt Disney World resorts are offering special check-in activities and amenities designed for families with young children as part of the Cool Kids' Summer promotion.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/hotel-check-in-day-during-disney-world-cool-kids-summer/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Hotel experiences tend to be most accessible on arrival day before park visits. Scheduling your first afternoon at the resort pool or activity area often makes check-in day feel less rushed."
+        }
+      },
+      {
+        "title": "Ale & Compass Breakfast Menu Changes at Yacht Club",
+        "body": "The restaurant at Disney's Yacht Club Resort has rolled out a revised breakfast menu with new items and pricing.",
+        "parkSlug": null,
+        "source": {
+          "label": "WrightDownMainStreet (YouTube)",
+          "url": "https://www.youtube.com/watch?v=DyYvTN5Do08"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Yacht Club is a short walk to EPCOT's International Gateway. Booking breakfast here before a World Showcase rope-drop often saves time versus in-park dining and secures early touring momentum."
+        }
+      },
+      {
+        "title": "New Menu Items Arrive at Magic Kingdom Quick-Service",
+        "body": "Pecos Bill and Cosmic Ray's have introduced updated food offerings across their counter-service menus.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "WrightDownMainStreet (YouTube)",
+          "url": "https://www.youtube.com/watch?v=igQCz67yaAg"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Both restaurants tend to hit peak crowds between noon and 2pm. Ordering through mobile before 11:30am or after 3pm usually cuts your pickup wait to under five minutes."
+        }
+      },
+      {
+        "title": "Halloween Cutie Ghost Collection Returns in Pastel",
+        "body": "The popular phantom design is back at Disney Store with a new pink-and-orange color palette for the 2026 Halloween season.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/products/new-halloween-cutie-ghost-collection-arrives-at-disney-store/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Last year's Cutie Ghost items sold out within days at park locations. Ordering online now or visiting World of Disney at Disney Springs before mid-morning tends to secure stock before it vanishes."
+        }
+      },
+      {
+        "title": "Spider-Man Merchandise Expands at Disneyland",
+        "body": "New apparel and toys themed to the web-slinger—including a Spider-Bot and zip-up hoodie—are now available at Disneyland Resort and online at Disney Store.",
+        "parkSlug": "california-adventure",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/spider-man-themed-spider-bot-uno-and-more-marvel-merchandise-now-available-at-disneyland/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Limited-edition Marvel items tend to move fastest at the WEB Suppliers shop in Avengers Campus. Stopping by within the first hour of park opening usually offers the widest selection."
+        }
+      },
+      {
+        "title": "Magic Kingdom Cast Costumes Change for Halloween Party",
+        "body": "New cast member outfits will debut at Mickey's Not-So-Scary Halloween Party this season, replacing previous designs.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/new-boring-cast-member-costumes-2026-mickeys-not-so-scary-halloween-party-magic-kingdom/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Character photo ops and parade viewing tend to be the main draws for party guests. Arriving early for your top-priority meet-and-greet usually beats the 9pm crowd surge."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Indiana Jones Adventure May Reopen Soon at Tokyo DisneySea",
+        "body": "A cryptic social media post from Tokyo Disney Resort shows Indy's fedora and hints at the return of the attraction, possibly with major updates.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/cryptic-social-media-post-teases-return-of-indiana-jones-adventure-at-tokyo-disneysea-hints-at-major-changes/"
+        }
+      },
+      {
+        "title": "Living with the Land Receives Restoration Work at EPCOT",
+        "body": "Disney is working to restore elements of the classic greenhouse boat ride that have gone missing over the years.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/08/gone-missing-disney-world-attempts-to-restore-classic-epcot-ride-bwb1/"
+        }
+      },
+      {
+        "title": "Behind the Attraction Season 3 Now Streaming",
+        "body": "Two new episodes focused on Disney Cruise Line are available on Disney+, exploring the storytelling and innovation behind the ships.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/disney-experiences/stream-episodes-of-behind-the-attraction/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "Extra Early Entry Expands at Magic Kingdom During Party Season",
+        "body": "Walt Disney World is extending park hours and offering additional early-entry windows at Magic Kingdom as Mickey's Not-So-Scary Halloween Party kicks off. The move gives resort guests more time to ride popular attractions before event crowds arrive.",
+        "parkSlug": "magic-kingdom",
+        "ctaLabel": "Plan your morning",
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Party nights usually mean shorter regular operating hours. Maximizing the extra early-entry window—typically 30 minutes before posted opening—often lets you knock out TRON, Seven Dwarfs, and Space Mountain with minimal waits before the day crowd builds."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "Hoyd11acC0A",
+      "title": "My Disney Collection | Rare Disney Memorabilia, Original Animation & Life Update | Walt Disney World",
+      "channel": "Paging Mr. Morrow",
+      "publishedAt": "2026-07-31T19:57:49Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Hoyd11acC0A/mqdefault.jpg",
+      "viewCount": 75758,
+      "url": "https://www.youtube.com/watch?v=Hoyd11acC0A",
+      "summary": "Paging Mr. Morrow shares a tour of rare Disney collectibles and original animation pieces, along with a personal life update."
+    },
+    {
+      "videoId": "igQCz67yaAg",
+      "title": "Every NEW Food in Magic Kingdom- Pecos Bill, Cosmic Ray's & More | Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-07-30T17:46:51Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/igQCz67yaAg/mqdefault.jpg",
+      "viewCount": 45465,
+      "url": "https://www.youtube.com/watch?v=igQCz67yaAg",
+      "summary": "A rundown of new menu items now available at Pecos Bill, Cosmic Ray's, and other Magic Kingdom quick-service locations."
+    },
+    {
+      "videoId": "DyYvTN5Do08",
+      "title": "This Disney World Breakfast Changed Forever- Ale & Compass NEW Menu! Yacht Club Resort",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-08-02T15:57:06Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/DyYvTN5Do08/mqdefault.jpg",
+      "viewCount": 21784,
+      "url": "https://www.youtube.com/watch?v=DyYvTN5Do08",
+      "summary": "WrightDownMainStreet reviews the updated breakfast menu at Ale & Compass in Disney's Yacht Club Resort."
+    },
+    {
+      "videoId": "o-7OdbMyPwk",
+      "title": "LIVE! Experience Walt Disney World on a Mobility Scooter!",
+      "channel": "Skootah Adventures ",
+      "publishedAt": "2026-08-03T04:52:25Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/o-7OdbMyPwk/mqdefault.jpg",
+      "viewCount": 8095,
+      "url": "https://www.youtube.com/watch?v=o-7OdbMyPwk",
+      "summary": "A live stream showcasing the Walt Disney World experience while using a mobility scooter."
+    },
+    {
+      "videoId": "TyOv7pDCfss",
+      "title": "Yacht Club Resort | Disney's Best? #disney #disneyworld #vlog #disneyvacation ",
+      "channel": "Disinfinity",
+      "publishedAt": "2026-08-03T04:05:18Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/TyOv7pDCfss/mqdefault.jpg",
+      "viewCount": 4687,
+      "url": "https://www.youtube.com/watch?v=TyOv7pDCfss",
+      "summary": "Disinfinity explores Disney's Yacht Club Resort and weighs whether it stands out as one of the property's best hotels."
+    },
+    {
+      "videoId": "upGLqyzaOeM",
+      "title": "My heart 🥰My eyes 😭#disney #disneyland #foryou #love",
+      "channel": "Hernanez Ackert",
+      "publishedAt": "2026-08-03T10:30:30Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/upGLqyzaOeM/mqdefault.jpg",
+      "viewCount": 3026,
+      "url": "https://www.youtube.com/watch?v=upGLqyzaOeM",
+      "summary": "A short Disneyland moment highlighting an emotional or heartwarming experience at the park."
+    },
+    {
+      "videoId": "FrPLbsVm-Fc",
+      "title": "My heart 🥰My eyes 😭#disney #disneyland #foryou #love",
+      "channel": "Ratdh",
+      "publishedAt": "2026-08-03T10:20:21Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/FrPLbsVm-Fc/mqdefault.jpg",
+      "viewCount": 2057,
+      "url": "https://www.youtube.com/watch?v=FrPLbsVm-Fc",
+      "summary": "Another brief clip capturing a sentimental Disneyland visit."
+    },
+    {
+      "videoId": "8TWDtrdsSTc",
+      "title": "#challenge #cute #disney #disneyparks #funny #goofy #toys #toycollector #disneyland #barbie #minnie",
+      "channel": "bleak_banters",
+      "publishedAt": "2026-08-03T08:05:04Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/8TWDtrdsSTc/mqdefault.jpg",
+      "viewCount": 1440,
+      "url": "https://www.youtube.com/watch?v=8TWDtrdsSTc",
+      "summary": "A lighthearted challenge or toy-collecting showcase tied to Disney characters and Disneyland."
+    },
+    {
+      "videoId": "PIkYX76nc-U",
+      "title": "BIG ANNOUNCEMENT! New Disney Trip Incoming! 🏰🚢 #disneytrip #disneyparks #disneyvacation #disney",
+      "channel": "Ohana Antics",
+      "publishedAt": "2026-08-03T06:10:48Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/PIkYX76nc-U/mqdefault.jpg",
+      "viewCount": 1241,
+      "url": "https://www.youtube.com/watch?v=PIkYX76nc-U",
+      "summary": "Ohana Antics announces an upcoming Disney vacation or trip plan."
+    },
+    {
+      "videoId": "Fdkau5k2IgY",
+      "title": "Funny Disney Moments #disney #disneyparktour #disneyland # #universalparks #disneystore #disneyparks",
+      "channel": "Shanique Hughes",
+      "publishedAt": "2026-08-03T09:45:29Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Fdkau5k2IgY/mqdefault.jpg",
+      "viewCount": 954,
+      "url": "https://www.youtube.com/watch?v=Fdkau5k2IgY",
+      "summary": "A compilation of humorous moments captured during a Disneyland or Disney park visit."
+    }
+  ],
+  "updatedAt": "2026-08-03T13:33:57.997Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-08-03T13:33:57.997Z",
+    "tokens": {
+      "input": 12021,
+      "output": 5094,
+      "costUsd": 0.1125
+    }
+  }
+}
