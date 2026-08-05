@@ -1,0 +1,327 @@
+{
+  "title": "Parkio Daily for August 5, 2026",
+  "slug": "parkio-daily-2026-08-05",
+  "date": "2026-08-05",
+  "teaser": "Disney confirms attendance climbed this quarter; Indiana Jones returns to Tokyo DisneySea Nov 30; Mickey Shorts Theater goes dark mid-August.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Test Track",
+        "parkSlug": "epcot",
+        "note": "Lighter waits reported early mornings"
+      },
+      {
+        "name": "Flight of Passage",
+        "parkSlug": "animal-kingdom",
+        "note": "Rope-drop window under 30 minutes"
+      },
+      {
+        "name": "Rise of the Resistance",
+        "parkSlug": "hollywood-studios",
+        "note": "Late evening queues often shorter"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [
+      {
+        "title": "Disney reports theme park attendance climbed in third quarter",
+        "body": "The Walt Disney Company announced stronger attendance across its parks in today's fiscal Q3 2026 earnings report, alongside record streaming profit and box office success from Toy Story 5.",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/disney-reports-strong-third-quarter-results-as-theme-park-attendance-toy-story-5-and-streaming-drive-growth/"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "Higher attendance often means longer waits park-wide, especially mid-morning through early afternoon. Arrive at rope drop or return after dinner for shorter lines."
+        }
+      },
+      {
+        "title": "Indiana Jones Adventure returns to Tokyo DisneySea November 30",
+        "body": "After fifteen months of closure, the Enhanced Motion Vehicle attraction reopens with new effects. The ride has been dark since August 2025.",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/breaking-indiana-jones-adventure-temple-of-the-crystal-skull-return-date-and-new-effects-announced/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Tokyo DisneySea fans should plan visits after late November to experience the refreshed attraction. Opening week tends to draw heavy crowds, so mid-December may offer lighter waits."
+        }
+      }
+    ],
+    "bignews": [
+      {
+        "title": "Vacation Fun at Mickey Shorts Theater closes temporarily",
+        "body": "The show will go dark for an unspecified period starting mid-August at Disney's Hollywood Studios. No end date has been announced.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/vacation-fun-at-mickey-shorts-theater-temporarily-closing/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Skip Animation Courtyard if you were counting on this air-conditioned break. Plan cooling stops at Baseline Tap House or Backlot Express instead during afternoon heat."
+        }
+      },
+      {
+        "title": "Lakeshore Lodge restaurants and fireworks deck revealed",
+        "body": "Disney shared concept art for three dining venues, a Pocahontas-themed lobby, and an upper-level fireworks terrace at the new Magic Kingdom-area resort opening summer 2027.",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-world-reveals-restaurants-lovely-lobby-fireworks-deck-for-lakeshore-lodge-resort/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "The fireworks deck may become a must-book dining reservation once the resort opens. Guests planning 2027 trips should monitor reservation windows closely starting early next year."
+        }
+      },
+      {
+        "title": "Disney moves Consumer Products division from Experiences to Entertainment",
+        "body": "The company announced a restructure to create tighter alignment across franchises and extend IP relevance, according to a joint memo from division leadership.",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/breaking-disney-moving-consumer-products-division-from-experiences-to-entertainment/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Merchandise strategy may shift toward stronger franchise tie-ins in parks. Guests hunting limited-edition items should check flagship stores like World of Disney early in the day."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "Annual Passholder perks return with free Muppets magnet",
+        "body": "Walt Disney World announced a light extension of AP Appreciation Days for late summer and early fall, including a complimentary magnet at Hollywood Studios.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/free-muppets-magnet-more-perks-plus-disney-world-annual-pass-discount-predictions/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Passholders should grab the magnet early in the day at designated locations. Limited-run giveaways often run out by mid-afternoon on busy weekends."
+        }
+      },
+      {
+        "title": "Two exclusive Mickey's Not-So-Scary Halloween Party souvenirs confirmed for Passholders",
+        "body": "Disney announced special merchandise items available only to Annual Passholders attending the 2026 Halloween party events at Magic Kingdom.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "AllEars.Net",
+          "url": "https://allears.net/2026/08/04/confirmed-souvenirs-for-an-exclusive-group-coming-to-mickeys-not-so-scary-halloween-party/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Exclusive party merch tends to sell out before midnight on popular event nights. Passholders should hit merchandise locations right after rope drop at 7pm."
+        }
+      },
+      {
+        "title": "BoardWalk Village Green closes August 10",
+        "body": "The popular resort green space will be temporarily unavailable starting next week. No reopening timeline has been shared.",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/08/disney-world-closing-popular-resort-area-starting-august-10-el1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Guests staying at BoardWalk should plan outdoor relaxation time at the dock or Crescent Lake pathway instead. The green space often offers the quietest spot for families with small children."
+        }
+      },
+      {
+        "title": "Two Disneyland attractions close temporarily",
+        "body": "Disney quietly announced brief closures for a pair of rides at the Anaheim resort. Specific attractions and dates were not detailed in available sources.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "AllEars.Net",
+          "url": "https://allears.net/2026/08/04/disney-quietly-announces-2-attraction-closures/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Check the Disneyland app this morning for updated refurbishment schedules. Plan backup experiences in the same land to avoid walking across the park if a favorite ride is down."
+        }
+      },
+      {
+        "title": "Disney and TikTok announce content-sharing partnership",
+        "body": "The deal allows creators to access hundreds of Disney, Pixar, Marvel, and Star Wars assets for use in TikTok videos under a new global agreement.",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/disney-and-tiktok-partner-to-bring-creator-content-to-disney/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Guests creating park content may see new official assets appear in TikTok's editing tools soon. This could make it easier to share trip highlights with licensed music and clips."
+        }
+      },
+      {
+        "title": "Disneyland overhauls pin-release queue system to reduce line-cutting",
+        "body": "A new ticketing process debuts for Tuesday pin drops at the resort, aimed at curbing conflicts and improving flow during weekly releases.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/08/new-ticketing-system-for-guests-buying-pins-on-tuesdays-at-disneyland-jc1/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Pin collectors should arrive early on Tuesdays to secure a ticket under the new system. The first hour typically offers the widest selection before popular designs sell out."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Disney Worldbuilders documentary premieres August 20 on Disney+",
+        "body": "Filmmaker Leslie Iwerks profiles top creatives and their work shaping Disney parks expansion in the new behind-the-scenes film.",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-worldbuilders-film-gives-fans-new-look-behind-the-scenes-at-expansion-with-top-creative-minds/"
+        }
+      },
+      {
+        "title": "Dapper Day 2027 dates announced for Disneyland",
+        "body": "The popular fan event returns to the Anaheim resort in April 2027, with exact weekend dates now confirmed.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "AllEars.Net",
+          "url": "https://allears.net/2026/08/04/why-disney-adults-are-marking-their-calendars-for-april-2027/"
+        }
+      },
+      {
+        "title": "Free LEGO set promotion running at Disney Store",
+        "body": "Guests can claim a complimentary LEGO souvenir for a limited time at participating Disney Store locations.",
+        "source": {
+          "label": "AllEars.Net",
+          "url": "https://allears.net/2026/08/04/you-can-get-a-free-souvenir-from-the-disney-store-for-a-limited-time/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "Meet Disney Imagineering legends at Contemporary Resort October 2–3",
+        "body": "Tony Baxter, Bob Weis, and other veteran Imagineers headline Wayback WED, a two-day event hosted by WDWNT celebrating the creators behind classic attractions and lands.",
+        "ctaLabel": "Learn more",
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Fans of park history should book early for this rare chance to meet the minds behind beloved experiences. Events like this often sell out weeks in advance, especially for autograph sessions."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "Hoyd11acC0A",
+      "title": "My Disney Collection | Rare Disney Memorabilia, Original Animation & Life Update | Walt Disney World",
+      "channel": "Paging Mr. Morrow",
+      "publishedAt": "2026-07-31T19:57:49Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Hoyd11acC0A/mqdefault.jpg",
+      "viewCount": 87049,
+      "url": "https://www.youtube.com/watch?v=Hoyd11acC0A",
+      "summary": "Paging Mr. Morrow shares rare Disney memorabilia and original animation pieces from his personal collection, along with a life update."
+    },
+    {
+      "videoId": "igQCz67yaAg",
+      "title": "Every NEW Food in Magic Kingdom- Pecos Bill, Cosmic Ray's & More | Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-07-30T17:46:51Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/igQCz67yaAg/mqdefault.jpg",
+      "viewCount": 51308,
+      "url": "https://www.youtube.com/watch?v=igQCz67yaAg",
+      "summary": "WrightDownMainStreet tours new menu items at Magic Kingdom quick-service spots including Pecos Bill and Cosmic Ray's Starlight Cafe."
+    },
+    {
+      "videoId": "xOJakvUTMaM",
+      "title": "I Tried The Entire Menu- Six Ravens is Now Open at Disney Springs! Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-08-04T15:57:54Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/xOJakvUTMaM/mqdefault.jpg",
+      "viewCount": 49032,
+      "url": "https://www.youtube.com/watch?v=xOJakvUTMaM",
+      "summary": "WrightDownMainStreet samples every dish at the newly opened Six Ravens restaurant in Disney Springs."
+    },
+    {
+      "videoId": "99suXL5daUM",
+      "title": "🔴Live: Tranquil Tuesday - Is Halloween Here Early at Magic Kingdom? - 8-4-26 - Walt Disney World",
+      "channel": "ResortTV1",
+      "publishedAt": "2026-08-05T01:28:45Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/99suXL5daUM/mqdefault.jpg",
+      "viewCount": 32730,
+      "url": "https://www.youtube.com/watch?v=99suXL5daUM",
+      "summary": "ResortTV1 livestreams from Magic Kingdom on August 4, checking whether Halloween decorations have started appearing early."
+    },
+    {
+      "videoId": "DyYvTN5Do08",
+      "title": "This Disney World Breakfast Changed Forever- Ale & Compass NEW Menu! Yacht Club Resort",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-08-02T15:57:06Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/DyYvTN5Do08/mqdefault.jpg",
+      "viewCount": 29139,
+      "url": "https://www.youtube.com/watch?v=DyYvTN5Do08",
+      "summary": "WrightDownMainStreet reviews the updated breakfast menu at Ale & Compass restaurant in Disney's Yacht Club Resort."
+    },
+    {
+      "videoId": "Z-FIPzoYzJc",
+      "title": "🔴 LIVE: 🎃 Mickey's Not So Scary Halloween Party Prep — Magic Kingdom RIGHT NOW",
+      "channel": "Fun to be Free",
+      "publishedAt": "2026-08-05T03:55:43Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Z-FIPzoYzJc/mqdefault.jpg",
+      "viewCount": 13660,
+      "url": "https://www.youtube.com/watch?v=Z-FIPzoYzJc",
+      "summary": "Fun to be Free livestreams Magic Kingdom as the park prepares for Mickey's Not So Scary Halloween Party."
+    },
+    {
+      "videoId": "oD9i3F9JZ3w",
+      "title": "La 1ère attraction 100% sous l'eau à ouvert ! #disney #disneyland #rollercoaster",
+      "channel": "Animaux de la rue",
+      "publishedAt": "2026-08-05T07:20:38Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/oD9i3F9JZ3w/mqdefault.jpg",
+      "viewCount": 3235,
+      "url": "https://www.youtube.com/watch?v=oD9i3F9JZ3w",
+      "summary": "Animaux de la rue covers a new underwater attraction opening at a Disney park."
+    },
+    {
+      "videoId": "gP09bHXBKkU",
+      "title": "Funny Disneyland #fyp #disney #disneyland #funny #kids",
+      "channel": "Le Nguyen",
+      "publishedAt": "2026-08-05T03:33:40Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/gP09bHXBKkU/mqdefault.jpg",
+      "viewCount": 2257,
+      "url": "https://www.youtube.com/watch?v=gP09bHXBKkU",
+      "summary": "Le Nguyen shares a lighthearted Disneyland moment featuring kids at the park."
+    },
+    {
+      "videoId": "Z5CZlU_YLZQ",
+      "title": "Stepping inside Beast's Castle at Tokyo Disneyland 🏰🌹✨ #disney #beautyandthebeast #japan #travel",
+      "channel": "candidberry",
+      "publishedAt": "2026-08-05T04:22:26Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Z5CZlU_YLZQ/mqdefault.jpg",
+      "viewCount": 2196,
+      "url": "https://www.youtube.com/watch?v=Z5CZlU_YLZQ",
+      "summary": "Candidberry takes viewers inside the Beauty and the Beast attraction at Tokyo Disneyland."
+    },
+    {
+      "videoId": "QlPceqUaxnI",
+      "title": "My heart 🥰My eyes 😭#disney #disneyland #foryou #love",
+      "channel": "Khoát Nguyễn văn",
+      "publishedAt": "2026-08-05T02:49:16Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/QlPceqUaxnI/mqdefault.jpg",
+      "viewCount": 2024,
+      "url": "https://www.youtube.com/watch?v=QlPceqUaxnI",
+      "summary": "Khoát Nguyễn văn shares an emotional Disneyland moment."
+    }
+  ],
+  "updatedAt": "2026-08-05T12:48:20.294Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-08-05T12:48:20.294Z",
+    "tokens": {
+      "input": 10538,
+      "output": 4947,
+      "costUsd": 0.1058
+    }
+  }
+}
