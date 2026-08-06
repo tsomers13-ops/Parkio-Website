@@ -1,0 +1,314 @@
+{
+  "title": "Parkio Daily for August 6, 2026",
+  "slug": "parkio-daily-2026-08-06",
+  "date": "2026-08-06",
+  "teaser": "Magic Kingdom Halloween décor is up; another Mickey's Not So Scary date sold out. Diamond Horseshoe gets a new dining concept.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Test Track",
+        "parkSlug": "epcot",
+        "note": "Early-morning waits still low before festival crowds arrive"
+      },
+      {
+        "name": "Big Thunder Mountain",
+        "parkSlug": "magic-kingdom",
+        "note": "Solid choice before Frontierland fills up mid-morning"
+      },
+      {
+        "name": "Rise of the Resistance",
+        "parkSlug": "hollywood-studios",
+        "note": "Rope-drop window tends to keep waits under 30 minutes"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [],
+    "bignews": [
+      {
+        "title": "Diamond Horseshoe switching to pop-up dining concept",
+        "body": "Magic Kingdom's Diamond Horseshoe restaurant in Frontierland is ending its long-running family-style meal service and launching a new pop-up food and drinks concept. The change will begin shortly after the Cool Kids' Summer promotion wraps up.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/new-pop-up-dining-concept-coming-to-magic-kingdoms-most-infamous-saloon/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "The new format may offer walk-up options instead of reservations. Worth checking for lighter fare and drinks if Liberty Tree Tavern is fully booked."
+        }
+      },
+      {
+        "title": "September 8 Mickey's Not So Scary Halloween Party now sold out",
+        "body": "A second September date for Mickey's Not So Scary Halloween Party has reached capacity. September 8 joins September 4 and four August dates that are no longer available for purchase.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/another-september-date-sold-out-for-mickeys-not-so-scary-halloween-party/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Early-September tickets are moving fast. If you're planning to attend this year, purchasing for remaining dates this week may keep more options open."
+        }
+      },
+      {
+        "title": "Magic Kingdom now fully decorated for Halloween season",
+        "body": "Main Street USA is outfitted with fall bunting, pumpkin wreaths, and décor running from Town Square to Cinderella Castle. The rollout comes ahead of the earliest-ever Mickey's Not So Scary Halloween Party debut.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/halloween-is-here-magic-kingdom-gets-decked-out-ahead-of-disney-worlds-earliest-ever-mnsshp/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Photo ops along Main Street tend to be less congested before 10am and after 7pm. Lighting on the pumpkin wreaths makes evening shots particularly strong."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "EPCOT Food and Wine Festival merchandise revealed",
+        "body": "Disney has released its first look at souvenir items for the upcoming EPCOT International Food and Wine Festival. The annual event merchandise typically launches alongside the festival's opening week.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/08/05/disney-reveals-first-look-at-epcot-food-wine-festival-souvenirs/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Festival-exclusive items often sell out in the first weekend. Mouse Gear and the festival merchandise kiosks usually stock the widest selection early in the day."
+        }
+      },
+      {
+        "title": "Adventureland Bazaar under refurbishment at Disneyland",
+        "body": "Adventureland Bazaar is now surrounded by scaffolding and beige scrim for an exterior refurbishment. The shop remains accessible behind construction walls.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/adventureland-bazaar-covered-in-scaffolding-scrim-at-disneyland/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Construction noise and visual clutter may affect nearby seating and pathways. If you're shopping in Adventureland, mornings before 11am tend to be quieter."
+        }
+      },
+      {
+        "title": "Lakeshore Lodge fireworks deck and dining details unveiled",
+        "body": "Disney has shared new concept art for Lakeshore Lodge, including an upper-level terrace for fireworks viewing, multiple dining venues, and a reimagined lobby. The Magic Kingdom-area resort opens Summer 2027.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-world-reveals-restaurants-lovely-lobby-fireworks-deck-for-lakeshore-lodge-resort/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "The fireworks deck may offer a premium alternative to in-park viewing. Worth monitoring for reservation windows if you're planning a 2027 trip around Magic Kingdom nighttime shows."
+        }
+      },
+      {
+        "title": "Disney World Q3 attendance up 3 percent, resort occupancy climbs 5 percent",
+        "body": "The Walt Disney Company's third-quarter earnings report highlighted a strong performance at Walt Disney World, with park attendance rising 3 percent and resort hotel occupancy gaining 5 percent year-over-year.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-worlds-stand-out-quarter-fuels-3-park-attendance-increase-5-resort-occupancy-gain/"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "Higher attendance often translates to longer waits at headline attractions. Prioritizing rope drop and late evenings usually helps avoid peak congestion windows."
+        }
+      },
+      {
+        "title": "Six Ravens restaurant now open at Disney Springs",
+        "body": "The new Six Ravens dining location has launched at Disney Springs, drawing attention from YouTube creators and early visitors. The venue adds a fresh option to the Town Center area.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "YouTube",
+          "url": "https://www.youtube.com/watch?v=4Idcuvo6-SI"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Opening-week buzz may lead to longer waits for walk-ups. Reservations or mid-afternoon arrival windows often offer smoother seating."
+        }
+      },
+      {
+        "title": "Cinderella Castle piggy bank features old pink color scheme",
+        "body": "A new Cinderella Castle piggy bank has appeared at Magic Kingdom merchandise locations, but it depicts the castle's former pink color scheme rather than the current gray repaint. The item is priced at $19.99.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/cinderella-castle-piggy-bank-with-old-pink-color-scheme-arrives-at-walt-disney-world/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Nostalgia items tied to the 50th anniversary pink castle tend to sell quickly. If you're a collector, checking Emporium or other flagship shops early may improve availability."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Storyliving by Disney community in North Carolina targets 2028 opening",
+        "body": "Disney has confirmed that its Asteria community in North Carolina's Piedmont region is on track to welcome residents in 2028. The Storyliving project is designed by Walt Disney Imagineers.",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/08/north-carolina-storyliving-by-disney-community-updates-jc1/"
+        }
+      },
+      {
+        "title": "Solar-powered trash cans now at Universal Orlando",
+        "body": "Universal Orlando Resort is rolling out the same solar-powered waste bins that Walt Disney World began installing in June. The units have been spotted at Universal CityWalk.",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/solar-powered-trash-cans-arrive-at-universal-orlando-resort/"
+        }
+      },
+      {
+        "title": "BÉIS luggage brand teases Disney collaboration",
+        "body": "Travel and accessories brand BÉIS posted a teaser on Instagram hinting at an upcoming Disney collection. The image shows an airplane cabin with Mickey and Friends graphics on seat-back screens.",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/beis-teases-disney-luggage-collaboration/"
+        }
+      },
+      {
+        "title": "Halloween Horror Nights 35 food booths arrive at Universal Studios Florida",
+        "body": "Universal Studios Florida has set up themed food and beverage carts for Halloween Horror Nights 35, which begins August 28. Offerings include an Eddie Schmidt beer cart and a Hellraiser food truck.",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/eddie-schmidt-beer-cart-hellraise/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "Ale and Compass breakfast menu overhauled at Yacht Club",
+        "body": "The breakfast service at Ale and Compass in Disney's Yacht Club Resort has rolled out a completely new menu. The changes mark a significant shift from the restaurant's previous morning offerings.",
+        "parkSlug": "epcot",
+        "ctaLabel": "Check current menu",
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "New menus often mean a fresh selection of items before word spreads. If you're staying near EPCOT resorts, an early reservation may let you try standout dishes before they become guest favorites."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "Hoyd11acC0A",
+      "title": "My Disney Collection | Rare Disney Memorabilia, Original Animation & Life Update | Walt Disney World",
+      "channel": "Paging Mr. Morrow",
+      "publishedAt": "2026-07-31T19:57:49Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Hoyd11acC0A/mqdefault.jpg",
+      "viewCount": 89702,
+      "url": "https://www.youtube.com/watch?v=Hoyd11acC0A",
+      "summary": "Paging Mr. Morrow shares a look at rare Disney memorabilia and original animation pieces from his personal collection, along with a personal life update."
+    },
+    {
+      "videoId": "4Idcuvo6-SI",
+      "title": "Disney Springs 2026 | Six Ravens Review, Halloween Merch & NEW Gideon's Cookies | Walt Disney World",
+      "channel": "Paging Mr. Morrow",
+      "publishedAt": "2026-08-05T16:31:08Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/4Idcuvo6-SI/mqdefault.jpg",
+      "viewCount": 67644,
+      "url": "https://www.youtube.com/watch?v=4Idcuvo6-SI",
+      "summary": "A tour of Disney Springs covering the new Six Ravens restaurant, early Halloween merchandise, and fresh offerings at Gideon's Bakehouse."
+    },
+    {
+      "videoId": "xOJakvUTMaM",
+      "title": "I Tried The Entire Menu- Six Ravens is Now Open at Disney Springs! Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-08-04T15:57:54Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/xOJakvUTMaM/mqdefault.jpg",
+      "viewCount": 64626,
+      "url": "https://www.youtube.com/watch?v=xOJakvUTMaM",
+      "summary": "WrightDownMainStreet samples every item on the menu at the newly opened Six Ravens restaurant in Disney Springs."
+    },
+    {
+      "videoId": "igQCz67yaAg",
+      "title": "Every NEW Food in Magic Kingdom- Pecos Bill, Cosmic Ray's & More | Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-07-30T17:46:51Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/igQCz67yaAg/mqdefault.jpg",
+      "viewCount": 52625,
+      "url": "https://www.youtube.com/watch?v=igQCz67yaAg",
+      "summary": "A rundown of new menu items now available at Magic Kingdom quick-service locations including Pecos Bill and Cosmic Ray's."
+    },
+    {
+      "videoId": "y_EIJj4B8-A",
+      "title": "🔴Live Magic Kingdom Wednesday it's my birthday with Parades, Fireworks at Walt Disney World 8/5/2026",
+      "channel": "RON ON THE GO",
+      "publishedAt": "2026-08-06T06:27:28Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/y_EIJj4B8-A/mqdefault.jpg",
+      "viewCount": 51826,
+      "url": "https://www.youtube.com/watch?v=y_EIJj4B8-A",
+      "summary": "A live stream from Magic Kingdom featuring parades and fireworks, broadcast on the creator's birthday."
+    },
+    {
+      "videoId": "DyYvTN5Do08",
+      "title": "This Disney World Breakfast Changed Forever- Ale & Compass NEW Menu! Yacht Club Resort",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-08-02T15:57:06Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/DyYvTN5Do08/mqdefault.jpg",
+      "viewCount": 29791,
+      "url": "https://www.youtube.com/watch?v=DyYvTN5Do08",
+      "summary": "WrightDownMainStreet reviews the overhauled breakfast menu at Ale and Compass restaurant in Disney's Yacht Club Resort."
+    },
+    {
+      "videoId": "maToxPK9LXk",
+      "title": "Racing to Spell EPCOT From Disney Trading Pins 🏃🏼‍♀️🌎 #disneyworld #disney #disneyparks #wdw",
+      "channel": "Summer",
+      "publishedAt": "2026-08-06T02:28:16Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/maToxPK9LXk/mqdefault.jpg",
+      "viewCount": 17630,
+      "url": "https://www.youtube.com/watch?v=maToxPK9LXk",
+      "summary": "A short challenge video featuring a race to collect Disney trading pins that spell out EPCOT."
+    },
+    {
+      "videoId": "87lOsDJg5Rc",
+      "title": "🔴 LIVE: Happily Ever After – Magic Kingdom [EPIC 2026 Fireworks], Disney World | Full Show 4K",
+      "channel": "Fun to be Free",
+      "publishedAt": "2026-08-06T04:38:58Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/87lOsDJg5Rc/mqdefault.jpg",
+      "viewCount": 11505,
+      "url": "https://www.youtube.com/watch?v=87lOsDJg5Rc",
+      "summary": "A 4K live stream of the full Happily Ever After fireworks show at Magic Kingdom."
+    },
+    {
+      "videoId": "jq9-KlQNtew",
+      "title": "🔴 LIVE @ Walt Disney World's Magic Kingdom Starlight Parade & Happily Ever After Fireworks",
+      "channel": "Sprinkles of Adventures",
+      "publishedAt": "2026-08-06T03:11:31Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/jq9-KlQNtew/mqdefault.jpg",
+      "viewCount": 2672,
+      "url": "https://www.youtube.com/watch?v=jq9-KlQNtew",
+      "summary": "A live broadcast from Magic Kingdom covering the Starlight Parade and Happily Ever After fireworks."
+    },
+    {
+      "videoId": "qmOdtdnAVts",
+      "title": "Disney's Hugging Rules #disney #disneyland #love #baby #hug",
+      "channel": "Wacky moments 4",
+      "publishedAt": "2026-08-06T02:17:28Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/qmOdtdnAVts/mqdefault.jpg",
+      "viewCount": 2179,
+      "url": "https://www.youtube.com/watch?v=qmOdtdnAVts",
+      "summary": "A short clip highlighting Disney's character interaction and hugging guidelines for guests."
+    }
+  ],
+  "updatedAt": "2026-08-06T12:51:13.631Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-08-06T12:51:13.631Z",
+    "tokens": {
+      "input": 10520,
+      "output": 4883,
+      "costUsd": 0.1048
+    }
+  }
+}
