@@ -1,0 +1,349 @@
+{
+  "title": "Parkio Daily for August 7, 2026",
+  "slug": "parkio-daily-2026-08-07",
+  "date": "2026-08-07",
+  "teaser": "Pixie Hollow reopens today with limited hours; Magic Kingdom reroutes traffic Sunday; Silly Symphony Swings nears completion.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Soarin'",
+        "parkSlug": "epcot",
+        "note": "Food & Wine crowds typically thin during dinner hour"
+      },
+      {
+        "name": "Haunted Mansion",
+        "parkSlug": "magic-kingdom",
+        "note": "Steady flow while Space Mountain waits spike"
+      },
+      {
+        "name": "Indiana Jones Adventure",
+        "parkSlug": "disneyland",
+        "note": "Morning windows offer shortest waits"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [
+      {
+        "title": "Magic Kingdom traffic reroutes to new Floridian Way section Sunday",
+        "body": "Beginning August 10, guests driving to Magic Kingdom will shift onto a newly finished stretch of Floridian Way as part of the World Drive North expansion. The change is temporary while construction continues.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/08/warning-issued-for-disney-guests-magic-kingdom-confirms-re-routing-beginning-august-10-ab1/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Allow an extra 10–15 minutes if driving to Magic Kingdom Sunday morning while drivers adjust to the new route. Resort boat and monorail arrivals are typically unaffected and may save time."
+        }
+      }
+    ],
+    "bignews": [
+      {
+        "title": "Pixie Hollow reopens today with modified schedule",
+        "body": "Tinker Bell's meet-and-greet spot in Disneyland returns today after a short closure, though the schedule remains limited. No official explanation has been provided for the recent on-and-off availability.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/pixie-hollow-reopening-at-disneyland-soon-with-modified-schedule/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Check the Disneyland app for posted Pixie Hollow hours before heading to Fantasyland. Character meet times can shift day-to-day, and lines tend to form quickly once published."
+        }
+      },
+      {
+        "title": "Silly Symphony Swings refurbishment nearing completion at California Adventure",
+        "body": "The swing ride closed in late April and now shows signs of wrapping up, with Mickey returning to the top of the structure and scrim coming down. No official reopening date has been announced.",
+        "parkSlug": "california-adventure",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/mickey-returns-to-top-of-silly-symphony-swings-scrim-coming-down-at-disney-california-adventure/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Paradise Gardens will likely see lighter crowds while the ride remains offline. Worth using this window for shorter waits at Goofy's Sky School and Toy Story Mania."
+        }
+      },
+      {
+        "title": "Space Mountain hits 175-minute wait at Magic Kingdom",
+        "body": "The Tomorrowland coaster posted one of its longest waits in recent memory Thursday evening, reaching nearly three hours. No indefinite closure has been officially confirmed.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/08/disney-world-magic-kingdom-space-mountain-indefinite-closure-th1/"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "Space Mountain lines tend to spike mid-afternoon and evening. Rope-drop or Lightning Lane are usually the only ways to keep waits under 30 minutes on busy days."
+        }
+      },
+      {
+        "title": "BoardWalk Village Green closes as resort refurbishment expands",
+        "body": "The outdoor lawn area at Disney's BoardWalk Inn joins the growing list of closures tied to the property's multi-year renovation. Work began after Thanksgiving and continues into 2027.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disneys-boardwalk-adds-village-green-closure-to-2026-2027-resort-refurbishments/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Expect construction noise and reduced outdoor seating at BoardWalk through next year. Guests seeking quieter resort evenings may prefer nearby Yacht Club or Beach Club pools and pathways."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "New shade structure takes shape at Disney Springs Waterview Park",
+        "body": "The canopy build-out between Jock Lindsey's Hangar Bar and the waterfront has added stain and copper trim. The structure is part of ongoing improvements to the park's outdoor gathering spaces.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/new-waterview-park-shade-structure-receives-stain-and-copper-trim-at-disney-springs/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Once open, the new shade area will likely offer cooler afternoon seating near the waterfront. Worth checking if you're grabbing takeout from nearby quick-service spots."
+        }
+      },
+      {
+        "title": "Construction equipment appears at Indiana Jones Stunt Spectacular exit",
+        "body": "A mystery vehicle has been spotted near the Hollywood Studios show's exit, likely tied to Project Fedora, the internal name for upcoming work in the area. No details have been officially shared.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/mystery-construction-vehicle-added-to-exit-of-indiana-jones-stunt-spectacular/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Backstage staging areas near the Indy exit can create noise and pedestrian bottlenecks. Exiting toward Star Wars Launch Bay or Grand Avenue tends to be faster during busy showtime hours."
+        }
+      },
+      {
+        "title": "Marketplace Co-Op floor refurbishment continues, Disney Drop Shop moves again",
+        "body": "The Disney Springs store has shifted curtains to another section as crews replace flooring. The Disney Drop Shop, which relocated last month, has returned to its original right-side position near the entrance.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/flooring-refurbishment-continues-in-marketplace-co-op-disney-drop-shop-moves-again/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Sections of Marketplace Co-Op may be harder to browse during construction. If hunting specific items, ask a cast member at the entrance which areas are currently accessible."
+        }
+      },
+      {
+        "title": "Mickey Mouse Signature Home kitchenware collection debuts at Magic Kingdom",
+        "body": "New glassware, mugs, and dishes featuring embossed Mickey designs and geometric patterns are now available. The collection includes items priced from $19.99.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/new-mickey-mouse-signature-home-kitchenware-collection-arrives-at-magic-kingdom/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "New home collections tend to sell out quickly at Emporium and other Main Street shops. Stop by before noon for the best selection of colors and styles."
+        }
+      },
+      {
+        "title": "EPCOT adds Cheers to Cheese experience at CommuniCore during Food & Wine Festival",
+        "body": "The 2026 International Food & Wine Festival brings an interactive cheese-focused activity to CommuniCore Hall, along with new PhotoPass Magic Shots and merchandise.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/new-at-2026-epcot-food-wine-festival-cheers-to-cheese-at-communicore-magic-shots-more/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "CommuniCore tends to be less crowded than World Showcase festival booths, especially in late afternoon. Worth a stop for air-conditioned tastings and photo ops."
+        }
+      },
+      {
+        "title": "Adventureland Bazaar at Disneyland now behind scrim and scaffolding",
+        "body": "The original Adventureland building has been closed off to guests as of August 6. No timeline or scope for the work has been shared.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/08/adventureland-bazaar-scrim-and-scaffolding-disneyland-park-jc1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Adventureland walkways may narrow during construction. Guests with strollers or mobility devices should allow extra time navigating between Indiana Jones and the Tiki Room."
+        }
+      },
+      {
+        "title": "Joffrey's releases Moana-inspired coffee blend online",
+        "body": "The new island-flavored coffee is now available for order through Joffrey's website. It joins the company's lineup of Disney-themed roasts.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/joffreys-coffee-and-tea-releases-coffee-blend-inspired-by-moana-now-available-online/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Limited-edition Disney coffee blends often sell out within a few weeks. Ordering early is usually the safest bet for collectors."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Disney+ orders Spaceship Earth TV pilot inspired by EPCOT attraction",
+        "body": "The streaming service has greenlit a pilot for a series based on the iconic geodesic sphere. No cast, plot, or release timeline has been announced.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-ordered-a-spaceship-earth-tv-show-but-do-we-really-need-it/"
+        }
+      },
+      {
+        "title": "Magic Kingdom Halloween decorations now up ahead of earliest-ever party season",
+        "body": "Pumpkin wreaths, fall bunting, and seasonal decor line Main Street USA as the park preps for the first Mickey's Not-So-Scary Halloween Party of 2026.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/halloween-is-here-magic-kingdom-gets-decked-out-ahead-of-disney-worlds-earliest-ever-mnsshp/"
+        }
+      },
+      {
+        "title": "Hollywood Studios attraction faces another brief closure",
+        "body": "A show at the park will shut down again for a short period. Details on the closure and any guest perks tied to it have not been fully disclosed.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "AllEars.Net",
+          "url": "https://allears.net/2026/08/06/its-official-this-disney-world-attraction-is-closing-again/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "D23 Expo predictions: What Disneyland may (and may not) announce",
+        "body": "Major news is expected for Disneyland and California Adventure during the 2026 D23 Expo, including potential details on new lands, ride reimaginings, and entertainment additions. Speculation ranges from confirmed projects to wishlist wildcards.",
+        "parkSlug": "disneyland",
+        "ctaLabel": "Read the full predictions",
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "D23 announcements often drive surge bookings for Disneyland within 24 hours. If you're planning a 2027 trip, locking in resort dates before the Expo usually locks in lower rates."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "4Idcuvo6-SI",
+      "title": "Disney Springs 2026 | Six Ravens Review, Halloween Merch & NEW Gideon's Cookies | Walt Disney World",
+      "channel": "Paging Mr. Morrow",
+      "publishedAt": "2026-08-05T16:31:08Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/4Idcuvo6-SI/mqdefault.jpg",
+      "viewCount": 92959,
+      "url": "https://www.youtube.com/watch?v=4Idcuvo6-SI",
+      "summary": "Paging Mr. Morrow reviews the new Six Ravens restaurant, checks out early Halloween merchandise, and samples new cookie flavors at Gideon's Bakehouse in Disney Springs."
+    },
+    {
+      "videoId": "Hoyd11acC0A",
+      "title": "My Disney Collection | Rare Disney Memorabilia, Original Animation & Life Update | Walt Disney World",
+      "channel": "Paging Mr. Morrow",
+      "publishedAt": "2026-07-31T19:57:49Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Hoyd11acC0A/mqdefault.jpg",
+      "viewCount": 91637,
+      "url": "https://www.youtube.com/watch?v=Hoyd11acC0A",
+      "summary": "Paging Mr. Morrow shares a look at his personal collection of rare Disney memorabilia and original animation art, along with a life update."
+    },
+    {
+      "videoId": "xOJakvUTMaM",
+      "title": "I Tried The Entire Menu- Six Ravens is Now Open at Disney Springs! Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-08-04T15:57:54Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/xOJakvUTMaM/mqdefault.jpg",
+      "viewCount": 72285,
+      "url": "https://www.youtube.com/watch?v=xOJakvUTMaM",
+      "summary": "WrightDownMainStreet samples every item on the menu at the newly opened Six Ravens restaurant in Disney Springs."
+    },
+    {
+      "videoId": "DyYvTN5Do08",
+      "title": "This Disney World Breakfast Changed Forever- Ale & Compass NEW Menu! Yacht Club Resort",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-08-02T15:57:06Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/DyYvTN5Do08/mqdefault.jpg",
+      "viewCount": 30689,
+      "url": "https://www.youtube.com/watch?v=DyYvTN5Do08",
+      "summary": "WrightDownMainStreet reviews the updated breakfast menu at Ale & Compass restaurant inside Disney's Yacht Club Resort."
+    },
+    {
+      "videoId": "lmYU3z2Zm98",
+      "title": "🔴Live Disney's Hollywood Studios Fantasmic at 9, 10:30pm on Thursdat at Walt Disney World 8/6/2026",
+      "channel": "RON ON THE GO",
+      "publishedAt": "2026-08-07T03:33:07Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/lmYU3z2Zm98/mqdefault.jpg",
+      "viewCount": 27240,
+      "url": "https://www.youtube.com/watch?v=lmYU3z2Zm98",
+      "summary": "RON ON THE GO live streams both Fantasmic performances at Disney's Hollywood Studios on August 6."
+    },
+    {
+      "videoId": "_AOtwdn9Bhw",
+      "title": "🔴LIVE🔴 MAGIC KINGDOM Halloween Party Prep: Fireworks, Rides, Strolls, Parade | Walt Disney World 4K",
+      "channel": "Park Pass TV",
+      "publishedAt": "2026-08-07T03:46:09Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/_AOtwdn9Bhw/mqdefault.jpg",
+      "viewCount": 14603,
+      "url": "https://www.youtube.com/watch?v=_AOtwdn9Bhw",
+      "summary": "Park Pass TV live streams Magic Kingdom as the park prepares for Halloween party season, covering fireworks, rides, and parades."
+    },
+    {
+      "videoId": "EL1SBJo-aW4",
+      "title": "🔴 LIVE: EPIC Magic Kingdom Rides, Shows, Parades + Happily Ever After at Disney World | 4K",
+      "channel": "Fun to be Free",
+      "publishedAt": "2026-08-07T04:33:24Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/EL1SBJo-aW4/mqdefault.jpg",
+      "viewCount": 13067,
+      "url": "https://www.youtube.com/watch?v=EL1SBJo-aW4",
+      "summary": "Fun to be Free live streams a full day at Magic Kingdom featuring rides, shows, parades, and the Happily Ever After fireworks."
+    },
+    {
+      "videoId": "-i0eIaQggCQ",
+      "title": "🔴 LIVE: Choose Our Adventure! | YOU Pick EVERYTHING! | Walt Disney World 2026",
+      "channel": "The Weekly Hop",
+      "publishedAt": "2026-08-07T05:08:41Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/-i0eIaQggCQ/mqdefault.jpg",
+      "viewCount": 6630,
+      "url": "https://www.youtube.com/watch?v=-i0eIaQggCQ",
+      "summary": "The Weekly Hop lets viewers choose their entire Disney World itinerary in real time during this interactive live stream."
+    },
+    {
+      "videoId": "yZvdN2qR_BI",
+      "title": "My heart 🥰 My eyes 😭 #disney #disneyland #love #funny #fyp",
+      "channel": "Roni Koria",
+      "publishedAt": "2026-08-07T05:55:01Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/yZvdN2qR_BI/mqdefault.jpg",
+      "viewCount": 4805,
+      "url": "https://www.youtube.com/watch?v=yZvdN2qR_BI",
+      "summary": "Roni Koria shares a short, emotional Disneyland moment in this social-media-style clip."
+    },
+    {
+      "videoId": "KdZuuQv05Eg",
+      "title": "#disney #rupanzel #disneyland @Disney @DisneyMusicVEVO #trending #trendingshorts #viral @disneyjrla",
+      "channel": "alwayssad",
+      "publishedAt": "2026-08-07T04:30:06Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/KdZuuQv05Eg/mqdefault.jpg",
+      "viewCount": 2216,
+      "url": "https://www.youtube.com/watch?v=KdZuuQv05Eg",
+      "summary": "alwayssad posts a short Disneyland clip featuring a Rapunzel moment."
+    }
+  ],
+  "updatedAt": "2026-08-07T11:38:59.571Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-08-07T11:38:59.571Z",
+    "tokens": {
+      "input": 10464,
+      "output": 5522,
+      "costUsd": 0.1142
+    }
+  }
+}
