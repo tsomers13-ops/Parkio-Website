@@ -1,0 +1,316 @@
+{
+  "title": "Parkio Daily for August 9, 2026",
+  "slug": "parkio-daily-2026-08-09",
+  "date": "2026-08-09",
+  "teaser": "Little Mermaid exterior refurb begins at California Adventure; new Hallmark Christmas pop-up opens at Disney World; wait times spiked this week.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Soarin'",
+        "parkSlug": "epcot",
+        "note": "Lighter crowds early morning before festival guests arrive"
+      },
+      {
+        "name": "Big Thunder Mountain",
+        "parkSlug": "magic-kingdom",
+        "note": "First hour typically offers shortest waits"
+      },
+      {
+        "name": "Radiator Springs Racers",
+        "parkSlug": "california-adventure",
+        "note": "Lower wait times with Little Mermaid construction nearby"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [],
+    "bignews": [
+      {
+        "title": "Little Mermaid exterior repaint underway at California Adventure",
+        "body": "Scaffolding and scrims now surround the outside of Ariel's Undersea Adventure for a repainting project. The attraction remains open throughout the work.",
+        "parkSlug": "california-adventure",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/refurbishment-begins-on-the-little-mermaid-ride-exterior-at-disney-california-adventure/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Construction noise and visual barriers may push guests toward other Paradise Gardens attractions. Ride queues nearby like Silly Symphony Swings often see lighter traffic during exterior work windows."
+        }
+      },
+      {
+        "title": "Hallmark Christmas movie pop-up shop opens at Disney World",
+        "body": "A limited-time retail experience tied to the first Hallmark Christmas film shot on property launches now, featuring exclusive merchandise from the production.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-world-opening-hallmark-christmas-pop-up-shop-for-special-holiday-ever-after-merchandise/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Limited-run items tied to film promotions tend to sell out within the first few days. Early morning or late evening visits often avoid the midday merchandise rush."
+        }
+      },
+      {
+        "title": "Magic Kingdom wait times doubled on one major attraction this week",
+        "body": "Standby queues at an iconic ride surged to twice their typical length over the past seven days as overall park attendance climbed.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/08/08/crowds-at-this-iconic-magic-kingdom-ride-doubled-this-week/"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "Surges like this usually point to either a recent reopening or viral social media attention. Rope-drop or final-hour strategies often yield the shortest waits when a ride trends upward."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "Two new refurbishments added to Disney World closure list",
+        "body": "Disney announced a pair of additional attractions or venues closing for scheduled maintenance starting this week.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/08/08/disney-world-announces-two-more-closures-beginning-this-week/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "New closures can shift guest flow unexpectedly, especially if a headliner goes down. Check the app each morning and adjust touring plans to areas with full lineups."
+        }
+      },
+      {
+        "title": "Solar-powered trash cans with tiger graphics arrive at Animal Kingdom",
+        "body": "New solar bins featuring tiger artwork have been installed along Maharajah Jungle Trek, continuing an initiative that began in June.",
+        "parkSlug": "animal-kingdom",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/solar-powered-tiger-trash-cans-arrive-at-disneys-animal-kingdom/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Imagineering-designed bins can become unexpected photo backdrops for detail-focused guests. The Jungle Trek area tends to be quieter mid-afternoon."
+        }
+      },
+      {
+        "title": "New cast member Halloween costumes debut at Mickey's Not-So-Scary Halloween Party",
+        "body": "Magic Kingdom staff are now wearing redesigned attire for the seasonal event, replacing the previous look after more than a year of planning.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/first-look-at-new-cast-member-costumes-debuting-for-2026-mickeys-not-so-scary-halloween-party/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Costume changes often draw photographer interest early in the season. Party nights in August typically have lower attendance than September or October dates."
+        }
+      },
+      {
+        "title": "Hocus Pocus merchandise now available at Disneyland for Halloween",
+        "body": "Apparel, accessories, and collectibles themed to the film have landed at Disney Showcase, World of Disney, and Fortuosity Shop.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/hocus-pocus-merchandise-arrives-at-disneyland-resort-for-halloween-2026/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Seasonal drops like this often see the widest selection in the first 48 hours. Downtown Disney shops tend to restock faster than in-park locations."
+        }
+      },
+      {
+        "title": "Coco-themed Day of the Dead eats return to California Adventure",
+        "body": "Día de los Muertos menu items inspired by the Pixar film are back for the seasonal celebration at the park.",
+        "parkSlug": "california-adventure",
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/08/08/celebrate-day-of-the-dead-with-new-coco-eats-and-souvenirs/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Limited-time festival offerings often draw lines during lunch and dinner peaks. Mobile order windows outside typical meal hours usually offer faster pickup."
+        }
+      },
+      {
+        "title": "Mickey's Boo-to-You Parade loses final risqué elements after two decades",
+        "body": "The Halloween parade at Magic Kingdom has quietly removed the last of its potentially controversial components from the longtime production.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/last-risque-elements-removed-from-mickeys-boo-to-you-halloween-parade-in-todays-daily-recap-for-8-8-2026/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Parade adjustments mid-season can change viewing appeal. If favorite floats or characters are missing, frontline cast members often have the latest lineup details."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Toy Story and woodland character blind boxes launch at Disney World",
+        "body": "New collectible figures and plush featuring Toy Story characters, Mickey and Friends, Stitch, and Winnie the Pooh are now in stores.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/woodland-plush-toy-story-carousel-and-more-blind-box-figures-now-available-at-walt-disney-world/"
+        }
+      },
+      {
+        "title": "Chef Mickey plush keychains arrive across Disney World",
+        "body": "Chef-themed keychains of Mickey, Goofy, and Donald are now available as bag accessories at select retail locations.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/chef-mickey-and-his-friends-are-your-next-plush-keychain-dongles/"
+        }
+      },
+      {
+        "title": "Jonas Brothers reflect on Disney Channel legacy ahead of Legends ceremony",
+        "body": "Kevin, Joe, and Nick Jonas discussed nearly 20 years of Disney history in a new interview before their official Legends induction.",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/jonas-brothers-reflect-on-disney-channel-stardom-camp-rock-and-becoming-disney-legends/"
+        }
+      },
+      {
+        "title": "Virtual Halloween runDisney races open for registration soon",
+        "body": "Details for a new remote running event with Disney Halloween themes were announced, with sign-ups starting in the coming days.",
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/08/08/disney-announces-details-for-virtual-halloween-rundisney-races/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "Magic Kingdom closes daily at 6pm through October for party nights",
+        "body": "Daytime guests face early park closure on select evenings as Mickey's Not-So-Scary Halloween Party continues its run through the fall. Entry gates shut at 6pm on event dates, with no re-entry for non-ticket holders.",
+        "parkSlug": "magic-kingdom",
+        "ctaLabel": "Check party calendar",
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Early close days often see lighter morning crowds as many guests skip the park entirely. Arriving at rope drop on a party night can yield walk-on windows for headliners before 11am."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "4Idcuvo6-SI",
+      "title": "Disney Springs 2026 | Six Ravens Review, Halloween Merch & NEW Gideon's Cookies | Walt Disney World",
+      "channel": "Paging Mr. Morrow",
+      "publishedAt": "2026-08-05T16:31:08Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/4Idcuvo6-SI/mqdefault.jpg",
+      "viewCount": 112519,
+      "url": "https://www.youtube.com/watch?v=4Idcuvo6-SI",
+      "summary": "A walkthrough of Disney Springs covering the new Six Ravens restaurant, seasonal Halloween merchandise, and the latest cookie offerings at Gideon's Bakehouse."
+    },
+    {
+      "videoId": "xOJakvUTMaM",
+      "title": "I Tried The Entire Menu- Six Ravens is Now Open at Disney Springs! Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-08-04T15:57:54Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/xOJakvUTMaM/mqdefault.jpg",
+      "viewCount": 79790,
+      "url": "https://www.youtube.com/watch?v=xOJakvUTMaM",
+      "summary": "A complete taste test of every item on the Six Ravens menu at its new Disney Springs location."
+    },
+    {
+      "videoId": "FKWC7Xr4e2w",
+      "title": "Mickey's Not-So-Scary Halloween Party 2026 | Full Guide: NEW Food & Characters | Walt Disney World",
+      "channel": "Paging Mr. Morrow",
+      "publishedAt": "2026-08-08T14:22:45Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/FKWC7Xr4e2w/mqdefault.jpg",
+      "viewCount": 77067,
+      "url": "https://www.youtube.com/watch?v=FKWC7Xr4e2w",
+      "summary": "A comprehensive rundown of the 2026 Halloween party at Magic Kingdom, highlighting new food offerings and character appearances."
+    },
+    {
+      "videoId": "DyYvTN5Do08",
+      "title": "This Disney World Breakfast Changed Forever- Ale & Compass NEW Menu! Yacht Club Resort",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-08-02T15:57:06Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/DyYvTN5Do08/mqdefault.jpg",
+      "viewCount": 31904,
+      "url": "https://www.youtube.com/watch?v=DyYvTN5Do08",
+      "summary": "A review of the updated breakfast menu at Ale & Compass restaurant inside Disney's Yacht Club Resort."
+    },
+    {
+      "videoId": "XZEVYwQF2g4",
+      "title": "🔴 Live: Disney's Magic Kingdom Saturday - Walt Disney World 08.08.2026",
+      "channel": "Disney Parks with Love - Janel",
+      "publishedAt": "2026-08-08T18:52:38Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/XZEVYwQF2g4/mqdefault.jpg",
+      "viewCount": 29497,
+      "url": "https://www.youtube.com/watch?v=XZEVYwQF2g4",
+      "summary": "A live stream from Magic Kingdom on Saturday, August 8, showing real-time park conditions and attractions."
+    },
+    {
+      "videoId": "TG47j7WIpLY",
+      "title": "ULTIMATE FOODIE GUIDE: MICKEY'S NOT SO SCARY HALLOWEEN PARTY | Magic Kingdom- Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-08-08T15:01:45Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/TG47j7WIpLY/mqdefault.jpg",
+      "viewCount": 29114,
+      "url": "https://www.youtube.com/watch?v=TG47j7WIpLY",
+      "summary": "A detailed food guide covering all the special menu items available during Mickey's Not-So-Scary Halloween Party at Magic Kingdom."
+    },
+    {
+      "videoId": "4jLXe0MP9m4",
+      "title": "🎉 Mickey & Minnie's 70th Anniversary Looks at DCA Disneyland! ✨ #disney #mickey #minnie #shorts",
+      "channel": "The Magic Continues",
+      "publishedAt": "2026-08-09T06:20:16Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/4jLXe0MP9m4/mqdefault.jpg",
+      "viewCount": 1831,
+      "url": "https://www.youtube.com/watch?v=4jLXe0MP9m4",
+      "summary": "A short clip showing Mickey and Minnie in special anniversary costumes at Disney California Adventure."
+    },
+    {
+      "videoId": "xu3j_zRJkAY",
+      "title": "【速報】日曜でも気温＆チケット高すぎて人数少なめ‼️ディズニーリゾート最新混雑状況【2026.8.9】",
+      "channel": "ジョマジのディズニー研究所",
+      "publishedAt": "2026-08-09T07:13:05Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/xu3j_zRJkAY/mqdefault.jpg",
+      "viewCount": 1744,
+      "url": "https://www.youtube.com/watch?v=xu3j_zRJkAY",
+      "summary": "A crowd update from Tokyo Disney Resort discussing lighter-than-usual Sunday attendance due to heat and ticket pricing."
+    },
+    {
+      "videoId": "JZaqDLWtVVw",
+      "title": "【速報】気温＆値段高すぎて人数少なめ⁉️ディズニーリゾート最新混雑状況【2026.8.9】",
+      "channel": "ジョマジのディズニー研究所",
+      "publishedAt": "2026-08-09T04:30:15Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/JZaqDLWtVVw/mqdefault.jpg",
+      "viewCount": 1370,
+      "url": "https://www.youtube.com/watch?v=JZaqDLWtVVw",
+      "summary": "An early-morning crowd report from Tokyo Disney Resort noting reduced attendance related to temperature and cost."
+    },
+    {
+      "videoId": "kVfhGxDwpEU",
+      "title": "Night Painting Perhaps?? #disneyland #disney #parade",
+      "channel": "Magic Mouse News",
+      "publishedAt": "2026-08-09T05:54:03Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/kVfhGxDwpEU/mqdefault.jpg",
+      "viewCount": 1337,
+      "url": "https://www.youtube.com/watch?v=kVfhGxDwpEU",
+      "summary": "A brief clip suggesting possible nighttime painting or maintenance work related to parades at Disneyland."
+    }
+  ],
+  "updatedAt": "2026-08-09T11:20:59.367Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-08-09T11:20:59.367Z",
+    "tokens": {
+      "input": 9870,
+      "output": 4876,
+      "costUsd": 0.1027
+    }
+  }
+}
