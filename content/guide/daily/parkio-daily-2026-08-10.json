@@ -1,0 +1,371 @@
+{
+  "title": "Parkio Daily for August 10, 2026",
+  "slug": "parkio-daily-2026-08-10",
+  "date": "2026-08-10",
+  "teaser": "Westward Ho demolished in Frontierland; Lotus Blossom Café seating reopens at EPCOT. Halloween snacks arrive across Walt Disney World.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Test Track",
+        "parkSlug": "epcot",
+        "note": "Walk-on waits early morning"
+      },
+      {
+        "name": "Big Thunder Mountain Railroad",
+        "parkSlug": "magic-kingdom",
+        "note": "Lighter crowds post-Westward Ho demo"
+      },
+      {
+        "name": "Flight of Passage",
+        "parkSlug": "animal-kingdom",
+        "note": "Shorter lines before 10am"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [
+      {
+        "title": "Wilderness Lodge guests relocated after second resort malfunction in two months",
+        "body": "Boulder Ridge Villas at Wilderness Lodge is experiencing a major operational issue forcing some guests to be moved to other Disney properties. The malfunction follows another resort-wide problem earlier this summer.",
+        "parkSlug": null,
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/08/disney-guests-evacuated-wilderness-lodge-resort-relocated-after-malfunction-ab1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "If you have a Wilderness Lodge reservation in the next week, call Disney resort services to confirm your room status before heading to the park. Backup plans may save hours of check-in delays."
+        }
+      },
+      {
+        "title": "Space Mountain wait times jump beyond an hour ahead of rumored 2027 closure",
+        "body": "The Tomorrowland coaster is seeing unusually high demand with average waits climbing past 60 minutes. Reports suggest the attraction may close for extended refurbishment in 2027.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/08/space-mountain-struggling-ahead-of-reported-2027-shutdown-bwb1/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Rope-drop Space Mountain within the first 30 minutes of park opening to beat the surge. Mid-afternoon waits are likely to stay elevated through fall."
+        }
+      }
+    ],
+    "bignews": [
+      {
+        "title": "Westward Ho completely demolished after two months in Magic Kingdom",
+        "body": "Frontierland's Westward Ho counter-service location has been fully torn down less than eight weeks after closing. The site is now cleared for future development.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/westward-ho-completely-demolished-at-magic-kingdom-in-todays-daily-recap-for-8-9-2026/?adt_ei=*|EMAIL|*"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "Frontierland has one fewer dining spot through construction. Pecos Bill and Columbia Harbour House tend to see longer lunch lines between 12–2pm; aim for 11am or after 2:30pm."
+        }
+      },
+      {
+        "title": "Lotus Blossom Café second seating area reopens at EPCOT",
+        "body": "The right-side dining room at the China Pavilion quick-service has finished refurbishment and is now back in use. Both seating areas are fully operational.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/other-half-of-lotus-blossom-cafe-dining-area-reopens-at-epcot/?adt_ei=*|EMAIL|*"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "With double the seating, lunch waits at Lotus Blossom typically drop 10–15 minutes. A good quick-service stop in World Showcase during midday festival crowds."
+        }
+      },
+      {
+        "title": "Halloween snacks debut on Disney World menus this week",
+        "body": "Seasonal treats tied to Mickey's Not-So-Scary Halloween Party are now appearing at quick-service and snack carts across all four parks.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/08/09/its-spooky-season-new-halloween-snacks-showed-up-on-disney-world-menus-this-week/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Seasonal items often sell out at flagship locations by mid-afternoon. Grab Halloween treats at Casey's Corner or Sleepy Hollow before noon to avoid stock-outs."
+        }
+      },
+      {
+        "title": "Lightning Lane availability reduced effective immediately at Walt Disney World",
+        "body": "Disney has cut the number of Lightning Lane slots for certain attractions across all four parks. Guests report fewer return-time windows and faster sell-outs for popular rides.",
+        "parkSlug": null,
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/08/walt-disney-world-confirms-lightning-lane-system-cuts-effective-immediately-bwb1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Lightning Lane inventory is tighter today. Book your first selection at 7am sharp if staying on-property; off-site guests should expect limited afternoon options."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "The Little Mermaid ride enters refurbishment at California Adventure",
+        "body": "Ariel's Undersea Adventure began a planned maintenance closure on August 8. No reopening date has been announced yet.",
+        "parkSlug": "california-adventure",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/08/the-little-mermaid-ariels-undersea-adventure-ride-refurbishment-at-disney-california-adventure-jc1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Fantasyland dark rides at California Adventure are limited during this closure. Plan extra time for Monsters Inc. and Toy Story Mania to absorb displaced guests."
+        }
+      },
+      {
+        "title": "Disney secures approval to build fifth Florida theme park",
+        "body": "Walt Disney World has received regulatory clearance for future expansion that could eventually add a fifth gate to the resort. No timeline or concept has been disclosed.",
+        "parkSlug": null,
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/08/confirmed-disney-world-secures-approval-to-build-5th-florida-theme-park-ab1/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Regulatory approvals are years ahead of construction. Current parks remain your focus; no crowd or operational changes are expected in the near term."
+        }
+      },
+      {
+        "title": "Hallmark Christmas pop-up shop opens at Disney World for movie tie-in",
+        "body": "A limited-time retail location selling exclusive Holiday Ever After merchandise launches to coincide with the first Hallmark Christmas movie filmed on Disney property.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-world-opening-hallmark-christmas-pop-up-shop-for-special-holiday-ever-after-merchandise/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Limited-edition Hallmark collaborations tend to sell out within the first week. Swing by Disney Springs early in your trip if you want the exclusive ornaments or apparel."
+        }
+      },
+      {
+        "title": "New cast member costumes debut for Mickey's Not-So-Scary Halloween Party",
+        "body": "Magic Kingdom staff are now wearing redesigned Halloween attire for the 2026 party nights. The costumes are visible during daytime hours as well.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/first-look-at-new-cast-member-costumes-debuting-for-2026-mickeys-not-so-scary-halloween-party/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "The new costumes add a festive touch even on non-party days. Worth a quick photo op near the entrance or at character meet locations in Fantasyland."
+        }
+      },
+      {
+        "title": "Disney transportation routes may face cuts after new policy reduces ridership",
+        "body": "Empty buses and boats are appearing more frequently following the summer ban on using Disney Springs as a free transit hub. Guests expect route consolidation if low ridership continues.",
+        "parkSlug": null,
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/08/disney-world-transportation-ban-could-be-working-too-well-as-guests-expect-cuts-to-buses-and-boats-rl1/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Buses to smaller resorts may see longer intervals if routes are trimmed. Monorail and Skyliner tend to remain more reliable; use those lines when possible during peak hours."
+        }
+      },
+      {
+        "title": "Food and Wine Classic at Swan and Dolphin reveals 2026 menu highlights",
+        "body": "The weekend culinary event at the Walt Disney World Swan and Dolphin Resorts has released its full lineup of 50-plus dishes and drinks for this year's festival.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/menu-highlights-for-2026-food-wine-classic-at-disney-world-swan-dolphin-resorts/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "The Swan and Dolphin festival runs only one weekend. Book tasting packages early; walk-up availability is typically limited after Friday evening."
+        }
+      },
+      {
+        "title": "Disney Springs exclusive drink available for only two days",
+        "body": "A limited-time specialty beverage is being served at a Disney Springs location through August 11. The drink will not return after this weekend.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/08/09/you-have-only-2-days-to-grab-this-exclusive-drink-at-disney-springs/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Two-day exclusives disappear fast at Disney Springs. Stop by tonight or tomorrow morning before the item sells out or the promotion ends."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Pirates of the Caribbean jewelry collection arrives at Walt Disney World",
+        "body": "Themed necklaces and earrings inspired by the classic attraction are now on shelves at select merchandise locations.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/pirates-of-the-caribbean-jewelry-sails-into-walt-disney-world/?adt_ei=*|EMAIL|*"
+        }
+      },
+      {
+        "title": "Minnie and Daisy drink tumblers debut at Walt Disney World",
+        "body": "New reusable drinkware featuring Minnie Mouse and Daisy Duck designs is available at merchandise locations across the resort.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/new-minnie-and-daisy-drink-tumblers-debut-at-walt-disney-world/?adt_ei=*|EMAIL|*"
+        }
+      },
+      {
+        "title": "Disney Princes pin set now on sale at Disneyland Resort and Walt Disney World",
+        "body": "A six-pin collection featuring male leads from classic Disney Princess films is available for 44.99 dollars at both coasts.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/pin-set-featuring-disney-princes-now-available-at-disneyland-resort/?adt_ei=*|EMAIL|*"
+        }
+      },
+      {
+        "title": "Disney Vacation Club Halloween merchandise includes pumpkin ear headband at Disneyland",
+        "body": "DVC members can pick up Halloween-themed apparel, ears, and pins at the Grand Californian's Acorns Gifts and Goods.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/disney-vacation-club-halloween-merchandise-at-disneyland-includes-pumpkin-ear-headband/?adt_ei=*|EMAIL|*"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "Mickey's Not-So-Scary Halloween Party guide: new food and characters for 2026",
+        "body": "The seasonal event at Magic Kingdom features updated menus, character appearances, and parade elements this year. Party nights run select evenings through October with separate admission required.",
+        "parkSlug": "magic-kingdom",
+        "ctaLabel": "Plan your party visit",
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Arrive at least 30 minutes before the official party start to claim parade spots along Main Street. Character lines tend to be shortest in the first hour after the event begins."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "4Idcuvo6-SI",
+      "title": "Disney Springs 2026 | Six Ravens Review, Halloween Merch & NEW Gideon's Cookies | Walt Disney World",
+      "channel": "Paging Mr. Morrow",
+      "publishedAt": "2026-08-05T16:31:08Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/4Idcuvo6-SI/mqdefault.jpg",
+      "viewCount": 118453,
+      "url": "https://www.youtube.com/watch?v=4Idcuvo6-SI",
+      "summary": "Paging Mr. Morrow tours Disney Springs to review Six Ravens restaurant, check out Halloween merchandise, and taste new cookie offerings at Gideon's Bakehouse."
+    },
+    {
+      "videoId": "FKWC7Xr4e2w",
+      "title": "Mickey's Not-So-Scary Halloween Party 2026 | Full Guide: NEW Food & Characters | Walt Disney World",
+      "channel": "Paging Mr. Morrow",
+      "publishedAt": "2026-08-08T14:22:45Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/FKWC7Xr4e2w/mqdefault.jpg",
+      "viewCount": 118250,
+      "url": "https://www.youtube.com/watch?v=FKWC7Xr4e2w",
+      "summary": "A complete walkthrough of this year's Mickey's Not-So-Scary Halloween Party covering new food offerings and character meet-and-greets at Magic Kingdom."
+    },
+    {
+      "videoId": "xOJakvUTMaM",
+      "title": "I Tried The Entire Menu- Six Ravens is Now Open at Disney Springs! Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-08-04T15:57:54Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/xOJakvUTMaM/mqdefault.jpg",
+      "viewCount": 82177,
+      "url": "https://www.youtube.com/watch?v=xOJakvUTMaM",
+      "summary": "WrightDownMainStreet samples every item on the Six Ravens menu at the newly opened Disney Springs restaurant."
+    },
+    {
+      "videoId": "TG47j7WIpLY",
+      "title": "ULTIMATE FOODIE GUIDE: MICKEY'S NOT SO SCARY HALLOWEEN PARTY | Magic Kingdom- Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-08-08T15:01:45Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/TG47j7WIpLY/mqdefault.jpg",
+      "viewCount": 43570,
+      "url": "https://www.youtube.com/watch?v=TG47j7WIpLY",
+      "summary": "A comprehensive food guide for Mickey's Not-So-Scary Halloween Party highlighting the best treats and snacks available during the 2026 event."
+    },
+    {
+      "videoId": "XMbeRhZhAtg",
+      "title": "🔴LIVE 🔴 EPCOT Rides, Strolls, Fireworks | Walt Disney World 4K",
+      "channel": "Park Pass TV",
+      "publishedAt": "2026-08-10T04:15:59Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/XMbeRhZhAtg/mqdefault.jpg",
+      "viewCount": 9318,
+      "url": "https://www.youtube.com/watch?v=XMbeRhZhAtg",
+      "summary": "Park Pass TV streams a live tour of EPCOT attractions, walkways, and the evening fireworks show in 4K video quality."
+    },
+    {
+      "videoId": "W2I3vaOwCY8",
+      "title": "My heart 🥰 My eyes 😭 #disney #disneyland #love #funny #fyp",
+      "channel": "Roni Koria",
+      "publishedAt": "2026-08-10T06:18:35Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/W2I3vaOwCY8/mqdefault.jpg",
+      "viewCount": 4715,
+      "url": "https://www.youtube.com/watch?v=W2I3vaOwCY8",
+      "summary": "Roni Koria shares a short Disneyland moment highlighting an emotional or humorous park experience."
+    },
+    {
+      "videoId": "2jKM8uNAKMM",
+      "title": "Funny Moments At DisneyLand",
+      "channel": "DisneyLand Tv",
+      "publishedAt": "2026-08-10T03:00:10Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/2jKM8uNAKMM/mqdefault.jpg",
+      "viewCount": 2442,
+      "url": "https://www.youtube.com/watch?v=2jKM8uNAKMM",
+      "summary": "DisneyLand Tv compiles humorous guest moments and interactions captured at Disneyland Resort."
+    },
+    {
+      "videoId": "koge_k57qNs",
+      "title": "#disney #disneyland #ootd #disneycaliforniaadventure",
+      "channel": "Angel Alvarez",
+      "publishedAt": "2026-08-10T03:37:14Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/koge_k57qNs/mqdefault.jpg",
+      "viewCount": 1598,
+      "url": "https://www.youtube.com/watch?v=koge_k57qNs",
+      "summary": "Angel Alvarez showcases an outfit-of-the-day look at Disneyland and California Adventure parks."
+    },
+    {
+      "videoId": "GDAF9NJc3rA",
+      "title": "🔥🔥 #epcot #disney #guardianofthegalaxy #rollercoaster",
+      "channel": "Coasters and parks ",
+      "publishedAt": "2026-08-10T01:41:49Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/GDAF9NJc3rA/mqdefault.jpg",
+      "viewCount": 1571,
+      "url": "https://www.youtube.com/watch?v=GDAF9NJc3rA",
+      "summary": "Coasters and parks captures on-ride footage or highlights from Guardians of the Galaxy: Cosmic Rewind at EPCOT."
+    },
+    {
+      "videoId": "LX8tjoijQSw",
+      "title": "Make these yours!!! #handmade #disney #smallbusiness #disneyland",
+      "channel": "Jessica Han",
+      "publishedAt": "2026-08-10T05:10:43Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/LX8tjoijQSw/mqdefault.jpg",
+      "viewCount": 1261,
+      "url": "https://www.youtube.com/watch?v=LX8tjoijQSw",
+      "summary": "Jessica Han promotes handmade Disney-themed items from a small business, likely featuring custom merchandise or accessories."
+    }
+  ],
+  "updatedAt": "2026-08-10T11:42:37.379Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-08-10T11:42:37.379Z",
+    "tokens": {
+      "input": 9706,
+      "output": 5797,
+      "costUsd": 0.1161
+    }
+  }
+}
