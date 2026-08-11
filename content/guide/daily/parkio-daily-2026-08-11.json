@@ -1,0 +1,340 @@
+{
+  "title": "Parkio Daily for August 11, 2026",
+  "slug": "parkio-daily-2026-08-11",
+  "date": "2026-08-11",
+  "teaser": "Magic Kingdom bus pickups moved at Fort Wilderness; Hollywood Studios closes early Oct. 15; new Tomorrowland tee at Disneyland Resort.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Space Mountain",
+        "parkSlug": "magic-kingdom",
+        "note": "Lighter crowds early morning"
+      },
+      {
+        "name": "Soarin'",
+        "parkSlug": "epcot",
+        "note": "Short waits during dinner hours"
+      },
+      {
+        "name": "Radiator Springs Racers",
+        "parkSlug": "california-adventure",
+        "note": "Best after sunset"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [],
+    "bignews": [
+      {
+        "title": "Magic Kingdom bus service rerouted at Fort Wilderness",
+        "body": "Buses to Magic Kingdom and Wilderness Lodge are temporarily picking up at a different stop instead of the usual Settlement Bus Depot. The resort has not announced how long the change will last.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/bus-operational-changes-at-disneys-fort-wilderness-resort/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Guests staying at Fort Wilderness should allow an extra 10–15 minutes for morning rope drop. The alternate pickup location tends to add walking time from most campsites."
+        }
+      },
+      {
+        "title": "Hollywood Studios closing four hours early for private event in October",
+        "body": "The park will close early on a Tuesday in October for a private event. Specific date and details have not been released.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/guest-roasted-for-making-rapunzel-meet-greet-character-uncomfortable-in-color-analysis-video-in-todays-daily-recap-for-8-10-2026/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Check your park calendar before booking October trips. Early closures usually mean reduced attraction capacity and heavier waits in the morning hours."
+        }
+      },
+      {
+        "title": "Trick-or-treating strategy shifts at Mickey's Not-So-Scary Halloween Party",
+        "body": "The optimal window for candy collection at the Halloween party has changed this year. Previous recommendations no longer apply.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/08/10/forget-everything-weve-told-you-in-the-past-about-trick-or-treating-at-mickeys-not-so-scary-halloween-party/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Party attendees may find shorter lines at treat stations during the first parade of the evening. Mid-event windows tend to clear out as guests line up for entertainment."
+        }
+      },
+      {
+        "title": "Disney gift cards no longer accepted at select Walt Disney World locations",
+        "body": "Multiple Walt Disney World locations have stopped accepting Disney gift cards. The company has not clarified which spots are affected or whether the change is permanent.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/08/disney-gift-cards-now-rejected-at-multiple-disney-world-locations-ad1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Guests budgeting with gift cards should confirm acceptance before ordering. Carrying a backup payment method is likely the safest move for now."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "Disneyland 70th anniversary theming wraps up with six closures ahead",
+        "body": "Disneyland has begun removing full-year anniversary decorations after 15 months. Six attraction closures are scheduled to follow the celebration's end.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/08/disneyland-removes-full-year-theming-as-6-closures-follow-ad1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Guests hoping to see anniversary elements should visit soon. Park-wide refurbishments often mean reduced ride capacity and longer waits for open attractions."
+        }
+      },
+      {
+        "title": "Solar-powered trash cans expanding across Walt Disney World",
+        "body": "Smart solar trash and recycling cans are rolling out to more areas of Walt Disney World after an initial test phase. The new units replace older park bins.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/08/disney-world-guests-are-losing-a-familiar-park-feature-as-new-replacements-take-over-bwb1/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "The new bins are typically easier to spot in crowded areas. Guests looking for recycling options will likely find clearer labeling than on older units."
+        }
+      },
+      {
+        "title": "EPCOT store refreshed for Halloween season",
+        "body": "An underrated EPCOT retail location has added Halloween merchandise and decor. The update is part of the park's seasonal rollout.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/08/10/this-underrated-epcot-spot-just-got-even-better/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Seasonal items at smaller EPCOT shops tend to sell out slower than at flagship stores. Midday shopping often avoids the morning rush."
+        }
+      },
+      {
+        "title": "Muppets souvenir cup sold out at Hollywood Studios after one week",
+        "body": "A popular Muppets-themed drink cup has disappeared from Hollywood Studios shelves just days after its debut. The item sold out faster than expected.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/08/10/a-popular-muppets-souvenir-is-gone-but-not-for-the-reason-you-might-think/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Limited-run collectibles at Hollywood Studios often vanish within days. Guests chasing new releases should plan a merchandise stop within the first hour of park opening."
+        }
+      },
+      {
+        "title": "Disney Lakeshore Lodge construction adds bridge and exterior finishes",
+        "body": "A new pedestrian bridge and nature murals are taking shape at Disney Lakeshore Lodge along Bay Lake. The Disney Vacation Club resort remains under construction.",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/new-bridge-constructed-as-more-features-of-disney-lakeshore-lodge-take-shape/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Guests staying near Fort Wilderness or the Contemporary can likely catch views of the new resort from Bay Lake watercraft. Evening boat trips tend to offer the clearest sightlines."
+        }
+      },
+      {
+        "title": "Wait times down despite higher attendance at Walt Disney World",
+        "body": "Recent shoulder season and summer data show shorter attraction waits even as the company reports modest attendance gains. Both trends appear to be accurate.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/wait-times-are-down-but-attendance-is-up-at-disney-world-heres-how-both-can-be-true/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "More guests are spreading out across parks and arriving at off-peak hours. Mid-afternoon and dinner windows often see lighter queues than traditional rope drop rushes."
+        }
+      },
+      {
+        "title": "D23 Parks Panel details released with tempered expectations",
+        "body": "Disney announced the lineup and format for the marquee Parks Panel at D23 Expo, subtly resetting fan hopes for major announcements. The event covers all Disney parks worldwide.",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-reveals-details-about-2026-d23-parks-panel-resets-fan-expectations-for-big-news/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Guests planning 2027 trips may want to hold off on finalizing dates until after D23. New attraction or land announcements tend to shift crowd patterns months in advance."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Tomorrowland Space Mountain shirt arrives at Disneyland Resort",
+        "body": "A sparkly pale blue tee featuring Space Mountain and Tomorrowland branding is now on shelves. The shirt retails for $39.99.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/tomorrowland-t-shirt-launches-at-disneyland-resort/"
+        }
+      },
+      {
+        "title": "Sorcerer Mickey wand holder on sale at Disneyland",
+        "body": "A sculpted display stand for custom crystal wands is available at Cristal d'Orleans in New Orleans Square. The holder is priced at $99.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/sorcerer-mickey-wand-holder-available-at-disneyland/"
+        }
+      },
+      {
+        "title": "Character Spirit Jersey featuring Pixar favorites debuts at Walt Disney World",
+        "body": "A pale blue Spirit Jersey with Remy, Woody, Lightning McQueen, and other animated characters is now in stock at Magic Kingdom. The jersey is $79.99.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/new-character-spirit-jersey-arrives-at-walt-disney-world/"
+        }
+      },
+      {
+        "title": "Disney Cruise Line extends savings offer through spring 2027",
+        "body": "A promotion offering up to $1,500 off select sailings has been expanded to cover late 2026 and spring 2027 voyages. Eligible ships and dates are now available.",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-extends-deal-saving-up-to-1500-on-dcl-sailings-to-spring-2027/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "Six Ravens menu fully revealed at Disney Springs",
+        "body": "The new restaurant at Disney Springs has released its complete menu ahead of opening. Dining reviews highlight standout items and unique culinary touches across 50-plus creations.",
+        "ctaLabel": "Plan your visit",
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "New Disney Springs restaurants typically see walk-up waits of 60–90 minutes during the first few weeks. Booking a reservation or arriving before 5pm often cuts the line."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "FKWC7Xr4e2w",
+      "title": "Mickey's Not-So-Scary Halloween Party 2026 | Full Guide: NEW Food & Characters | Walt Disney World",
+      "channel": "Paging Mr. Morrow",
+      "publishedAt": "2026-08-08T14:22:45Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/FKWC7Xr4e2w/mqdefault.jpg",
+      "viewCount": 138283,
+      "url": "https://www.youtube.com/watch?v=FKWC7Xr4e2w",
+      "summary": "A comprehensive walkthrough of this year's Halloween party at Magic Kingdom, covering new food offerings and character appearances."
+    },
+    {
+      "videoId": "4Idcuvo6-SI",
+      "title": "Disney Springs 2026 | Six Ravens Review, Halloween Merch & NEW Gideon's Cookies | Walt Disney World",
+      "channel": "Paging Mr. Morrow",
+      "publishedAt": "2026-08-05T16:31:08Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/4Idcuvo6-SI/mqdefault.jpg",
+      "viewCount": 122066,
+      "url": "https://www.youtube.com/watch?v=4Idcuvo6-SI",
+      "summary": "A tour of Disney Springs featuring a review of Six Ravens restaurant, seasonal merchandise, and new Gideon's cookie flavors."
+    },
+    {
+      "videoId": "xOJakvUTMaM",
+      "title": "I Tried The Entire Menu- Six Ravens is Now Open at Disney Springs! Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-08-04T15:57:54Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/xOJakvUTMaM/mqdefault.jpg",
+      "viewCount": 83507,
+      "url": "https://www.youtube.com/watch?v=xOJakvUTMaM",
+      "summary": "A full menu taste test at the newly opened Six Ravens restaurant in Disney Springs."
+    },
+    {
+      "videoId": "TG47j7WIpLY",
+      "title": "ULTIMATE FOODIE GUIDE: MICKEY'S NOT SO SCARY HALLOWEEN PARTY | Magic Kingdom- Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-08-08T15:01:45Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/TG47j7WIpLY/mqdefault.jpg",
+      "viewCount": 50450,
+      "url": "https://www.youtube.com/watch?v=TG47j7WIpLY",
+      "summary": "A guide to all the food options available during this year's Mickey's Not-So-Scary Halloween Party at Magic Kingdom."
+    },
+    {
+      "videoId": "acFDvgMvI3c",
+      "title": "🔴Live Magic Kingdom Monday with Rides, Parades, Fireworks at Walt Disney World 8/10/2026",
+      "channel": "RON ON THE GO",
+      "publishedAt": "2026-08-11T03:51:32Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/acFDvgMvI3c/mqdefault.jpg",
+      "viewCount": 36190,
+      "url": "https://www.youtube.com/watch?v=acFDvgMvI3c",
+      "summary": "A live stream from Magic Kingdom covering attractions, parades, and the evening fireworks show."
+    },
+    {
+      "videoId": "2zKdkM-cceQ",
+      "title": "\"너 때문에 온 거 아니고 디즈니 보러 왔어\" 강남X이상화의 현실 부부 케미  #기안84 #강남 #이상화 #디즈니",
+      "channel": "날예능",
+      "publishedAt": "2026-08-11T03:00:18Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/2zKdkM-cceQ/mqdefault.jpg",
+      "viewCount": 32860,
+      "url": "https://www.youtube.com/watch?v=2zKdkM-cceQ",
+      "summary": "Korean entertainment content featuring celebrity guests visiting a Disney park."
+    },
+    {
+      "videoId": "4ClsICYlqO4",
+      "title": "My heart 🥰 My eyes 😭 #disney #disneyland #love #funny #fyp",
+      "channel": "Roni Koria",
+      "publishedAt": "2026-08-11T05:47:31Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/4ClsICYlqO4/mqdefault.jpg",
+      "viewCount": 3705,
+      "url": "https://www.youtube.com/watch?v=4ClsICYlqO4",
+      "summary": "A short-form video capturing a humorous or emotional moment at Disneyland."
+    },
+    {
+      "videoId": "ie0AOimrqjg",
+      "title": "Funny Disney Moments #disneyland #disneyparktour #disney #disneystore #disneyparks #universalparks",
+      "channel": "Shanique Hughes",
+      "publishedAt": "2026-08-11T09:48:00Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/ie0AOimrqjg/mqdefault.jpg",
+      "viewCount": 2213,
+      "url": "https://www.youtube.com/watch?v=ie0AOimrqjg",
+      "summary": "A compilation of entertaining moments captured during a Disneyland park visit."
+    },
+    {
+      "videoId": "svxuf4wTaAc",
+      "title": "CARS LAND COMES TO LIFE AT NIGHT😍 just like the movie ❤️✨ #disney #disneyland",
+      "channel": "Dahna Alvarenga",
+      "publishedAt": "2026-08-11T03:43:34Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/svxuf4wTaAc/mqdefault.jpg",
+      "viewCount": 1828,
+      "url": "https://www.youtube.com/watch?v=svxuf4wTaAc",
+      "summary": "Nighttime footage showcasing the lighting and atmosphere of Cars Land at Disney California Adventure."
+    },
+    {
+      "videoId": "zRZi8vnVt2Y",
+      "title": "Obuna bõling🤍 #reeeeeeeeeeeek #blackpink #kpop #disney #disneyland #disneyprincess",
+      "channel": "Oy_Nuri365",
+      "publishedAt": "2026-08-11T04:29:48Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/zRZi8vnVt2Y/mqdefault.jpg",
+      "viewCount": 1249,
+      "url": "https://www.youtube.com/watch?v=zRZi8vnVt2Y",
+      "summary": "A short video combining K-pop music with Disney content and princess themes."
+    }
+  ],
+  "updatedAt": "2026-08-11T11:38:01.967Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-08-11T11:38:01.967Z",
+    "tokens": {
+      "input": 9947,
+      "output": 5241,
+      "costUsd": 0.1085
+    }
+  }
+}
