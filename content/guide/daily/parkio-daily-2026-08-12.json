@@ -1,0 +1,344 @@
+{
+  "title": "Parkio Daily for August 12, 2026",
+  "slug": "parkio-daily-2026-08-12",
+  "date": "2026-08-12",
+  "teaser": "Halloween kicks off at Disney Springs today; Magic Kingdom party tickets selling fast. D23 model teases new Cars Land details.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Space Mountain",
+        "parkSlug": "magic-kingdom",
+        "note": "Early morning windows tend to stay under 20 minutes before crowds arrive"
+      },
+      {
+        "name": "Soarin'",
+        "parkSlug": "epcot",
+        "note": "Mid-morning waits usually lighter before lunch rush begins"
+      },
+      {
+        "name": "Rock 'n' Roller Coaster",
+        "parkSlug": "hollywood-studios",
+        "note": "Rope drop access often yields walk-on conditions first hour"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [],
+    "bignews": [
+      {
+        "title": "Halloween season begins today at Disney Springs",
+        "body": "Fall festivities and Halloween décor launched today at Disney Springs, running through November 9. Jock Lindsey's Hangar Bar reopened with its seasonal Halloween transformation and new themed menu items.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/discover-whats-new-this-fall-at-disney-springs/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Halloween menus and merchandise tend to see heaviest crowds during evening hours. Visiting Jock Lindsey's or shopping for seasonal items before 2pm usually offers shorter waits and better stock availability."
+        }
+      },
+      {
+        "title": "D23 Expo to showcase detailed Cars Land model this week",
+        "body": "A large-scale model of Piston Peak National Park, the new Cars-themed land coming to Magic Kingdom, will debut on the D23 show floor starting August 15. Imagineering released a time-lapse video confirming the build.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/model-of-piston-peak-cars-land-at-magic-kingdom-coming-to-the-2026-d23-expo/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "D23 presentations often drive same-day park traffic spikes as fans celebrate announcements. If visiting Magic Kingdom this weekend, rope drop and late evening tend to offer the best wait-time relief."
+        }
+      },
+      {
+        "title": "More Mickey's Not-So-Scary Halloween Party dates sold out",
+        "body": "Additional fall dates for Magic Kingdom's after-hours Halloween event have reached capacity, with only one Tuesday in the season still offering tickets. Pricing for remaining dates has increased as availability tightens.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/08/sold-out-dates-mickeys-halloween-magic-kingdom-emd1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Last-minute party tickets tend to climb in price and disappear within days. If planning to attend, booking the final Tuesday slot now usually offers the best value before it sells out completely."
+        }
+      },
+      {
+        "title": "Free Muppets magnet promotion arrives at Hollywood Studios",
+        "body": "Walt Disney World launched a new set of perks for passholders this week, including a complimentary Muppets-themed magnet available at Hollywood Studios. The promotion extends through early fall as part of an unofficial annual pass appreciation period.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/free-muppets-magnet-more-perks-plus-disney-world-annual-pass-discount-predictions/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Freebies like this tend to run out within the first few days at high-traffic locations. Picking up the magnet during morning Extra Magic Hours usually improves your odds of snagging one before stock depletes."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "Miguel statue coming to Coco ride entrance at California Adventure",
+        "body": "New concept art for the upcoming Coco attraction reveals a statue of Miguel at the entrance archway of Casa Museo de la Familia. The artwork appeared on merchandise previewed ahead of D23.",
+        "parkSlug": "california-adventure",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/miguel-statue-coming-to-disney-california-adventure-for-coco-ride/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "New ride construction zones often draw curious guests during park hours. If touring California Adventure this week, the Pacific Wharf area may see higher foot traffic as visitors check progress; morning visits tend to offer clearer sightlines."
+        }
+      },
+      {
+        "title": "Tropical Americas construction accelerates at Animal Kingdom",
+        "body": "Major visible progress has been made on the Tropical Americas land at Animal Kingdom over the past month, with construction milestones suggesting a potential opening window reveal at D23 this week.",
+        "parkSlug": "animal-kingdom",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/when-will-tropical-americas-open-at-animal-kingdom/"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "Construction activity in DinoLand tends to push daytime crowds toward Asia and Africa. Expedition Everest and Kilimanjaro Safaris often see elevated waits between 11am and 3pm; tackling them at rope drop usually cuts wait times in half."
+        }
+      },
+      {
+        "title": "Disney and Formula E announce multi-year streaming deal",
+        "body": "Formula E races and exclusive programming will begin streaming on Disney Plus and ESPN Plus later this year under a newly announced multi-year partnership.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/formula-e-streaming-on-disney-and-espn-later-this-year/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "ESPN Wide World of Sports Complex occasionally hosts motorsport-related exhibits during major ESPN deals. Checking the complex calendar before your trip may reveal rare fan experiences or displays not advertised widely."
+        }
+      },
+      {
+        "title": "Disneyland Halloween food lineup revealed for August 21 start",
+        "body": "Disneyland Resort published its complete Halloween Time food guide, with seasonal treats and themed menu items arriving across both parks from August 21 through October 31.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/dlr/disney-eats-foodie-guide-to-halloween-at-disneyland-resort/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Opening week of seasonal food tends to see long lines at quick-service spots. Visiting mobile-order-enabled locations during off-peak hours—typically 2pm to 4pm—usually reduces wait times by ten minutes or more."
+        }
+      },
+      {
+        "title": "Hollywood Studios October low-crowd date announced",
+        "body": "One day in October will see unusually low crowds at Hollywood Studios due to an early 5pm closure for a private event. The date represents the lightest projected attendance of the fall season.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/best-day-low-crowds-disneys-hollywood-studios-october-2026/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Short park hours often deter casual guests, leaving morning and midday windows wide open. Arriving at rope drop and tackling headliners before noon typically yields the shortest waits of the entire month."
+        }
+      },
+      {
+        "title": "Limited signed Joe Rohde books coming to Disney Store after D23",
+        "body": "A small number of signed copies of Disney Imagineer Joe Rohde's book will be available for purchase online at Disney Store following the conclusion of D23 Expo on August 15.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/limited-number-of-signed-copies-of-joe-rhodes-book-coming-soon-to-disney-store/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Limited Disney Store drops tend to sell out within hours of going live. Setting a calendar reminder for the expected post-D23 release window usually improves your odds of securing a copy before inventory disappears."
+        }
+      },
+      {
+        "title": "Mickey's of Glendale booth returns to D23 with Imagineering merchandise",
+        "body": "The fan-favorite Mickey's of Glendale retail booth will return to D23 Expo this year, offering exclusive Walt Disney Imagineering-themed collectibles and souvenirs available only at the event.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/disney-experiences/mickeys-of-glendale-d23-walt-disney-imagineering-collection/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Imagineering merch at D23 often sells out before the expo ends. Visiting the Mickey's of Glendale booth on opening day—ideally within the first two hours—tends to offer the widest selection and shortest checkout lines."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Disney x BÉIS travel collection launches",
+        "body": "A 28-piece collaboration between Disney and travel brand BÉIS debuted, featuring Mickey-inspired luggage, bags, and accessories designed for park trips and vacations.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/products/travel-in-style-with-the-new-disney-x-beis-collection/"
+        }
+      },
+      {
+        "title": "Warrior Games returning to ESPN Wide World of Sports in 2027",
+        "body": "The annual adaptive sports competition for wounded military service members will return to Walt Disney World in August 2027, marking another year of the event at the ESPN complex.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/the-warrior-games-return-to-walt-disney-world/"
+        }
+      },
+      {
+        "title": "Horizons presentation streaming live on Disney Plus August 15",
+        "body": "The D23 Expo's Horizons: A Carousel of Progress showcase will stream live on Disney Plus on Saturday, allowing at-home viewers to watch major Disney Parks announcements as they happen.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/disney-experiences/what-to-expect-d23-horizons-a-carousel-of-progress/"
+        }
+      },
+      {
+        "title": "Hallmark Disney World Christmas movie premiere date set",
+        "body": "The release date for a new Hallmark Christmas movie filmed at Walt Disney World has been officially announced, with the feature set to air later this year.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/08/11/new-disney-world-hallmark-movie-release-date-announced/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "Construction blocks part of EPCOT's World Celebration Gardens",
+        "body": "A section of the World Celebration Gardens in EPCOT is currently fenced off, likely for ongoing work related to the park's troubled light-up pavement installation that has faced repeated issues since opening.",
+        "parkSlug": "epcot",
+        "ctaLabel": "Plan your EPCOT visit",
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Construction walls in World Celebration tend to create bottlenecks during evening fireworks exit. Using the International Gateway or alternate pathways after Luminous typically shaves five to ten minutes off your walk to the parking lot."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "FKWC7Xr4e2w",
+      "title": "Mickey's Not-So-Scary Halloween Party 2026 | Full Guide: NEW Food & Characters | Walt Disney World",
+      "channel": "Paging Mr. Morrow",
+      "publishedAt": "2026-08-08T14:22:45Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/FKWC7Xr4e2w/mqdefault.jpg",
+      "viewCount": 152395,
+      "url": "https://www.youtube.com/watch?v=FKWC7Xr4e2w",
+      "summary": "Paging Mr. Morrow walks through the 2026 Halloween party at Magic Kingdom, covering new food offerings and character meet opportunities."
+    },
+    {
+      "videoId": "4Idcuvo6-SI",
+      "title": "Disney Springs 2026 | Six Ravens Review, Halloween Merch & NEW Gideon's Cookies | Walt Disney World",
+      "channel": "Paging Mr. Morrow",
+      "publishedAt": "2026-08-05T16:31:08Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/4Idcuvo6-SI/mqdefault.jpg",
+      "viewCount": 125211,
+      "url": "https://www.youtube.com/watch?v=4Idcuvo6-SI",
+      "summary": "Paging Mr. Morrow tours Disney Springs, reviewing Six Ravens dining, Halloween merchandise, and new cookie flavors at Gideon's Bakehouse."
+    },
+    {
+      "videoId": "TG47j7WIpLY",
+      "title": "ULTIMATE FOODIE GUIDE: MICKEY'S NOT SO SCARY HALLOWEEN PARTY | Magic Kingdom- Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-08-08T15:01:45Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/TG47j7WIpLY/mqdefault.jpg",
+      "viewCount": 55817,
+      "url": "https://www.youtube.com/watch?v=TG47j7WIpLY",
+      "summary": "WrightDownMainStreet provides a comprehensive food guide for the 2026 Mickey's Not-So-Scary Halloween Party at Magic Kingdom."
+    },
+    {
+      "videoId": "uu7M2JIkTT4",
+      "title": "🔴 Live: Tuesday Stream at Disneyland! Fantasmic, Fireworks, World of Color & Parade - 08/11/26",
+      "channel": "Koda Bear the Explorer ",
+      "publishedAt": "2026-08-12T07:47:36Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/uu7M2JIkTT4/mqdefault.jpg",
+      "viewCount": 28064,
+      "url": "https://www.youtube.com/watch?v=uu7M2JIkTT4",
+      "summary": "Koda Bear the Explorer livestreams evening entertainment at Disneyland, including Fantasmic, fireworks, World of Color, and the parade."
+    },
+    {
+      "videoId": "Xc4PTod01-E",
+      "title": "These Unscripted Disney Park Interactions Are Absolute Gold #disney #disneyland #funnyshorts #fyp",
+      "channel": "Lesley Hale",
+      "publishedAt": "2026-08-12T01:05:54Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Xc4PTod01-E/mqdefault.jpg",
+      "viewCount": 27169,
+      "url": "https://www.youtube.com/watch?v=Xc4PTod01-E",
+      "summary": "Lesley Hale shares a compilation of spontaneous, unscripted moments with cast members and characters at Disneyland."
+    },
+    {
+      "videoId": "GaSWuELaYcQ",
+      "title": "🔴 LIVE: Halloween at Magic Kingdom | Boo-to-You Parade & Spectaculars | 8.11.26",
+      "channel": "The Disney With Sean Show",
+      "publishedAt": "2026-08-12T02:47:19Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/GaSWuELaYcQ/mqdefault.jpg",
+      "viewCount": 15030,
+      "url": "https://www.youtube.com/watch?v=GaSWuELaYcQ",
+      "summary": "The Disney With Sean Show livestreams Halloween entertainment at Magic Kingdom, featuring the Boo-to-You Parade and nighttime spectaculars."
+    },
+    {
+      "videoId": "z4capdW2XaM",
+      "title": "🔴 LIVE: Disney World – EPIC EPCOT Luminous, Disney Parks | Full Show 4K",
+      "channel": "Fun to be Free",
+      "publishedAt": "2026-08-12T02:24:47Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/z4capdW2XaM/mqdefault.jpg",
+      "viewCount": 7043,
+      "url": "https://www.youtube.com/watch?v=z4capdW2XaM",
+      "summary": "Fun to be Free presents a full 4K livestream of EPCOT's Luminous nighttime spectacular from start to finish."
+    },
+    {
+      "videoId": "q2BO2VBVTJ8",
+      "title": "My heart 🥰 My eyes 😭 #disney #disneyland #love #funny #fyp",
+      "channel": "Roni Koria",
+      "publishedAt": "2026-08-12T05:55:20Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/q2BO2VBVTJ8/mqdefault.jpg",
+      "viewCount": 3118,
+      "url": "https://www.youtube.com/watch?v=q2BO2VBVTJ8",
+      "summary": "Roni Koria shares an emotional and humorous moment captured during a Disneyland visit."
+    },
+    {
+      "videoId": "L8ThnKcWOpI",
+      "title": "#disney #christmas #disneyland #mickeymouse #jiskeaanesemukammalho #love #song",
+      "channel": "SANDIPANN DAS",
+      "publishedAt": "2026-08-12T02:24:00Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/L8ThnKcWOpI/mqdefault.jpg",
+      "viewCount": 2271,
+      "url": "https://www.youtube.com/watch?v=L8ThnKcWOpI",
+      "summary": "SANDIPANN DAS pairs Disneyland Christmas footage with a musical soundtrack."
+    },
+    {
+      "videoId": "vLBoXOxp_NI",
+      "title": "Villains and Spooky Season at Disney Parks #disneyparks #disneyland #disneyworld",
+      "channel": "The Geeky Waffle",
+      "publishedAt": "2026-08-12T04:14:23Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/vLBoXOxp_NI/mqdefault.jpg",
+      "viewCount": 1664,
+      "url": "https://www.youtube.com/watch?v=vLBoXOxp_NI",
+      "summary": "The Geeky Waffle highlights villain appearances and spooky season decorations across Disney Parks."
+    }
+  ],
+  "updatedAt": "2026-08-12T11:39:52.298Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-08-12T11:39:52.298Z",
+    "tokens": {
+      "input": 11390,
+      "output": 5490,
+      "costUsd": 0.1165
+    }
+  }
+}
