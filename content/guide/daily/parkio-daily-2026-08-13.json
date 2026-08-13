@@ -1,0 +1,336 @@
+{
+  "title": "Parkio Daily for August 13, 2026",
+  "slug": "parkio-daily-2026-08-13",
+  "date": "2026-08-13",
+  "teaser": "Fantasmic moves 30 minutes earlier starting Aug 23; China pavilion work closes section at EPCOT; Yzma joins Oogie Boogie Bash character lineup.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Space Mountain",
+        "parkSlug": "magic-kingdom",
+        "note": "Early morning windows offer shortest waits"
+      },
+      {
+        "name": "Soarin'",
+        "parkSlug": "epcot",
+        "note": "Dinner hour typically sees lighter crowds"
+      },
+      {
+        "name": "Slinky Dog Dash",
+        "parkSlug": "hollywood-studios",
+        "note": "Rope drop remains your best bet"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [
+      {
+        "title": "Fantasmic showtime moves earlier starting August 23",
+        "body": "Hollywood Studios shifts both Fantasmic performances forward by 30 minutes beginning August 23. The change affects all nights with scheduled shows.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/08/disney-confirms-long-anticipated-changes-to-iconic-fantasmic-show-effective-august-23-ab1/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "The earlier window usually lets guests exit before the peak parking lot rush. Worth planning dinner reservations around the first show if you want to beat tram lines."
+        }
+      },
+      {
+        "title": "Section of China pavilion already closed again at EPCOT",
+        "body": "Days after reopening from refurbishment, part of the China pavilion went dark overnight. Rolling planters now block guest access to the affected area.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/08/epcot-world-showcase-china-pavilion-area-already-closed-again-jc1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "The pavilion's shopping and dining remain open, but expect detours through World Showcase. Reroute your loop if you're heading toward Norway or Germany to save steps."
+        }
+      }
+    ],
+    "bignews": [
+      {
+        "title": "Tokyo Disneyland names new Tomorrowland attractions",
+        "body": "Space Mountain Earthrise and Sugar Rush: Sweet Rescue are the official names for Tokyo's two upcoming Tomorrowland attractions, part of a redesigned land opening in 2027.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/first-look-at-new-space-mountain-lighting-at-tokyo-disneyland-2/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "If you're planning a Tokyo trip for 2027, the new Tomorrowland will likely draw heavy crowds at debut. Visiting in shoulder months after opening tends to offer better access."
+        }
+      },
+      {
+        "title": "Yzma joins Oogie Boogie Bash character lineup",
+        "body": "The villain from Emperor's New Groove will appear at this year's Oogie Boogie Bash at California Adventure, joining the Halloween party's character roster.",
+        "parkSlug": "california-adventure",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/dlr/disney-characters-at-oogie-boogie-bash/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Rare character meets typically draw lines early in the party. Heading to Yzma's location right after entry usually saves 20-plus minutes of queuing."
+        }
+      },
+      {
+        "title": "PizzeRizzo electrical work permit filed at Hollywood Studios",
+        "body": "Imagineering contracted audiovisual vendor Solotech for electrical work inside the shuttered PizzeRizzo building, part of the ongoing Monstropolis conversion.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/disney/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Construction noise near Grand Avenue tends to spike mid-morning. If you're dining at Baseline Tap House or PizzeRizzo's neighbors, lunch or late afternoon visits are usually quieter."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "Halloween food and décor arrive at Disney Springs",
+        "body": "Fall-themed treats, entertainment, and seasonal décor run August 11 through November 9. Jock Lindsey's Hangar Bar returns with its Halloween overlay and new menu items through the same period.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/jock-lindseys-halloween-hangar-bar-frightful-first-look/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Jock Lindsey's Halloween menu items often sell out by late evening on weekends. Arriving before 5pm on weekdays typically ensures full availability."
+        }
+      },
+      {
+        "title": "D23 Expo previews S.E.A. presence and Imagineering merch",
+        "body": "The Society of Explorers and Adventurers will appear in the Imagineering Pavilion at D23, August 14-16. Mickey's of Glendale returns with exclusive Walt Disney Imagineering merchandise.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/disney-experiences/the-society-of-explorers-and-adventurers-at-d23-event-2026/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "D23-exclusive merch at Mickey's of Glendale tends to move fast on opening day. Attendees who line up before the show floor opens usually have the widest selection."
+        }
+      },
+      {
+        "title": "Orlando airport issues travel warning for next 48 hours",
+        "body": "Orlando International Airport alerted travelers to potential disruptions over the next two days. Guests flying to Disney World should confirm flight status before heading to MCO.",
+        "parkSlug": null,
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/08/mco-weather-alert-disney-world-vacations-emd1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Weather delays at MCO often cascade into evening. If you're arriving today or tomorrow, building an extra hour into your park plans may help avoid missed Lightning Lane windows."
+        }
+      },
+      {
+        "title": "Nightmare Before Christmas collection launches at Bath & Body Works",
+        "body": "Disney and Bath & Body Works released a new collaboration featuring two fragrances inspired by characters from Tim Burton's Nightmare Before Christmas.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/products/tim-burtons-the-nightmare-before-christmas-collection-bath-and-body-works/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Limited-run Disney collaborations at Bath & Body Works often see stock shortages within a week. Ordering online early or visiting a store today tends to guarantee availability."
+        }
+      },
+      {
+        "title": "Disney Dogs pajama set now at Disneyland Resort",
+        "body": "A new adult pajama set featuring Disney dog characters is available at Disneyland merchandise locations for $64.99.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/pajama-set-featuring-disney-dogs-now-available-at-disneyland-resort/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Character apparel in popular sizes usually depletes by mid-afternoon at flagship shops. Stopping at Emporium or World of Disney before 11am often ensures your size is in stock."
+        }
+      },
+      {
+        "title": "Animal Kingdom Lodge ear headband added to resort collection",
+        "body": "A new Minnie ear headband matching the Animal Kingdom Lodge collection arrived at Zawadi Marketplace, priced at $36.99.",
+        "parkSlug": "animal-kingdom",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/new-disneys-animal-kingdom-lodge-ear-headband-arrives-at-disney-world/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Resort-exclusive ears often restock slowly. If you're staying at Animal Kingdom Lodge, grabbing them on your first day tends to beat sellout risk."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Warrior Games returning to ESPN Wide World of Sports in 2027",
+        "body": "The annual adaptive sports competition for wounded, ill, and injured service members will return to Walt Disney World in August 2027.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/the-warrior-games-return-to-walt-disney-world/"
+        }
+      },
+      {
+        "title": "Halloween food guide published for Disneyland Resort",
+        "body": "Disney released a preview of limited-time Halloween eats available at Disneyland Resort from August 21 through October 31.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/dlr/disney-eats-foodie-guide-to-halloween-at-disneyland-resort/"
+        }
+      },
+      {
+        "title": "Tokyo Disney Resort unveils Halloween 2026 merchandise",
+        "body": "The resort shared its Halloween merchandise lineup for the 2026 season, which begins September 15. Collections feature ghosts, pumpkins, and seasonal designs.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/tokyo-disney-resort-2026-halloween-merchandise-features-ghosts-pumpkins-and-more/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "Mickey's Not-So-Scary Halloween Party adds new food and characters",
+        "body": "Magic Kingdom's Halloween party introduces updated menu items and character appearances for the 2026 season. The event runs select nights through October 31.",
+        "parkSlug": "magic-kingdom",
+        "ctaLabel": "Plan your party visit",
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Tuesday and Sunday party nights usually see lighter crowds than Fridays. Booking early-week dates often means shorter treat trail waits and better parade viewing spots."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "FKWC7Xr4e2w",
+      "title": "Mickey's Not-So-Scary Halloween Party 2026 | Full Guide: NEW Food & Characters | Walt Disney World",
+      "channel": "Paging Mr. Morrow",
+      "publishedAt": "2026-08-08T14:22:45Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/FKWC7Xr4e2w/mqdefault.jpg",
+      "viewCount": 163487,
+      "url": "https://www.youtube.com/watch?v=FKWC7Xr4e2w",
+      "summary": "A complete walkthrough of the 2026 Halloween party at Magic Kingdom, covering new food offerings and character meet-and-greets."
+    },
+    {
+      "videoId": "TG47j7WIpLY",
+      "title": "ULTIMATE FOODIE GUIDE: MICKEY'S NOT SO SCARY HALLOWEEN PARTY | Magic Kingdom- Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-08-08T15:01:45Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/TG47j7WIpLY/mqdefault.jpg",
+      "viewCount": 59380,
+      "url": "https://www.youtube.com/watch?v=TG47j7WIpLY",
+      "summary": "A comprehensive food tour of this year's Mickey's Not-So-Scary Halloween Party menu at Magic Kingdom."
+    },
+    {
+      "videoId": "qm_pQA78dRQ",
+      "title": "🔴Live: Disneyland resort Wednesday for rides, shows and everything else 8/12/2026",
+      "channel": "RON ON THE GO",
+      "publishedAt": "2026-08-13T06:30:20Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/qm_pQA78dRQ/mqdefault.jpg",
+      "viewCount": 33562,
+      "url": "https://www.youtube.com/watch?v=qm_pQA78dRQ",
+      "summary": "Live stream from Disneyland Resort covering attractions, entertainment, and park atmosphere on August 12."
+    },
+    {
+      "videoId": "qS_kdypa1K0",
+      "title": "NEW Halloween Food at Disney Springs: Jock Lindsey's Halloween Bar | Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-08-12T15:58:27Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/qS_kdypa1K0/mqdefault.jpg",
+      "viewCount": 26892,
+      "url": "https://www.youtube.com/watch?v=qS_kdypa1K0",
+      "summary": "A look at the seasonal Halloween menu items now available at Jock Lindsey's Hangar Bar in Disney Springs."
+    },
+    {
+      "videoId": "s1fgwiZSEVE",
+      "title": "🔴 Live: Magic Kingdom Rides, Fireworks & Starlight Wednesday | Disney World Live Stream 8.12.2026",
+      "channel": "Daily FastPass",
+      "publishedAt": "2026-08-13T03:20:07Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/s1fgwiZSEVE/mqdefault.jpg",
+      "viewCount": 11548,
+      "url": "https://www.youtube.com/watch?v=s1fgwiZSEVE",
+      "summary": "Live broadcast from Magic Kingdom featuring attractions and the evening fireworks spectacular on August 12."
+    },
+    {
+      "videoId": "hs88dyqze0Y",
+      "title": "🔴 LIVE: Happily Ever After — EPIC Nighttime Spectacular, Disney World | [Full Show 4K]",
+      "channel": "Fun to be Free",
+      "publishedAt": "2026-08-13T04:23:51Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/hs88dyqze0Y/mqdefault.jpg",
+      "viewCount": 11030,
+      "url": "https://www.youtube.com/watch?v=hs88dyqze0Y",
+      "summary": "Full 4K broadcast of the Happily Ever After fireworks show at Magic Kingdom."
+    },
+    {
+      "videoId": "76xtHDq_BOQ",
+      "title": "Toy Story!!! #toystory #disney #disneyland #woody #buzz #jessie",
+      "channel": "disneyxsiempre",
+      "publishedAt": "2026-08-13T04:39:22Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/76xtHDq_BOQ/mqdefault.jpg",
+      "viewCount": 2781,
+      "url": "https://www.youtube.com/watch?v=76xtHDq_BOQ",
+      "summary": "Short video featuring Toy Story characters at a Disney park."
+    },
+    {
+      "videoId": "c5Iy11dRzRE",
+      "title": "Spooky silhouette at Disneyland ! Do this on your next visit !! #disneyhalloween #disney #disneyland",
+      "channel": "DisneyNpucks",
+      "publishedAt": "2026-08-13T03:09:12Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/c5Iy11dRzRE/mqdefault.jpg",
+      "viewCount": 2284,
+      "url": "https://www.youtube.com/watch?v=c5Iy11dRzRE",
+      "summary": "A Halloween photo tip for creating spooky silhouettes at Disneyland."
+    },
+    {
+      "videoId": "neWiLYsVnkA",
+      "title": "Peterpan responds to being harassed by an autistic woman#peterpan #disney #disneyland",
+      "channel": "Celebrity gossip",
+      "publishedAt": "2026-08-13T02:47:47Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/neWiLYsVnkA/mqdefault.jpg",
+      "viewCount": 2186,
+      "url": "https://www.youtube.com/watch?v=neWiLYsVnkA",
+      "summary": "Video showing an interaction with a Peter Pan character at a Disney park."
+    },
+    {
+      "videoId": "wBPUQGl2umg",
+      "title": "frozen #disney #disneyland #disneyprincess #elsa #frozen #frozen2 #princess #anna #olaf #mainananak",
+      "channel": "bermainbersamachiko",
+      "publishedAt": "2026-08-13T09:22:58Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/wBPUQGl2umg/mqdefault.jpg",
+      "viewCount": 1527,
+      "url": "https://www.youtube.com/watch?v=wBPUQGl2umg",
+      "summary": "Short clip featuring Frozen characters at a Disney park."
+    }
+  ],
+  "updatedAt": "2026-08-13T11:39:34.550Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-08-13T11:39:34.550Z",
+    "tokens": {
+      "input": 11347,
+      "output": 5023,
+      "costUsd": 0.1094
+    }
+  }
+}
