@@ -1,0 +1,358 @@
+{
+  "title": "Parkio Daily for August 14, 2026",
+  "slug": "parkio-daily-2026-08-14",
+  "date": "2026-08-14",
+  "teaser": "D23 unveils Villains Land models, Piston Peak details, and Monstropolis creatures; Mickey's Not-So-Scary sells out another date.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Big Thunder Mountain Railroad",
+        "parkSlug": "magic-kingdom",
+        "note": "Frontierland changes coming soon—ride the original while you can"
+      },
+      {
+        "name": "Haunted Mansion",
+        "parkSlug": "disneyland",
+        "note": "Closed for Nightmare Before Christmas overlay—reopens late August"
+      },
+      {
+        "name": "Test Track",
+        "parkSlug": "epcot",
+        "note": "Extended Evening Hours return to Animal Kingdom, making EPCOT a better low-wait choice tonight"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [
+      {
+        "title": "Haunted Mansion closes at Disneyland for annual Nightmare Before Christmas overlay",
+        "body": "The original Haunted Mansion in New Orleans Square shut down yesterday after 57 years of continuous operation to begin installing the seasonal Tim Burton transformation. The overlay typically debuts in late August and runs through early January.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/08/after-57-years-disneyland-closes-original-haunted-mansion-attraction-jc1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Haunted Mansion will likely remain closed for two weeks. Plan Nightmare Before Christmas visits after the late-August debut, when waits tend to spike on weekends but stay manageable weekday mornings."
+        }
+      }
+    ],
+    "bignews": [
+      {
+        "title": "D23 reveals physical models and new creatures for Monstropolis at Hollywood Studios",
+        "body": "Disney displayed detailed models and character designs for the Monsters Inc. land replacing Animation Courtyard. New monster characters were shown alongside the Doors Coaster attraction layout, suggesting the project may open earlier than expected in 2027.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/08/13/disney-shows-off-new-monsters-coming-to-monstropolis-in-hollywood-studios/"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "Animation Courtyard closures will likely funnel foot traffic toward Toy Story Land and Galaxy's Edge through 2027. Star Tours and Tower of Terror tend to absorb overflow crowds best during midday."
+        }
+      },
+      {
+        "title": "First Villains Land tree models shown for Magic Kingdom expansion",
+        "body": "Two themed tree sculptures were unveiled at D23, offering the first tangible look at the visual style being developed for the Magic Kingdom Villains Land announced in 2024. The land remains in early design phases with no opening timeline announced.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/two-themed-tree-maquettes-for-villains-land-on-display-at-d23/?adt_ei=*|EMAIL|*"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Villains Land will likely sit beyond Big Thunder Mountain. Current Frontierland attractions may see nostalgia-driven wait spikes over the next year as construction ramps up—ride early or late to avoid them."
+        }
+      },
+      {
+        "title": "Piston Peak National Park scale model shows full Cars-themed Frontierland replacement",
+        "body": "Walt Disney Imagineering displayed the complete model for Piston Peak, the Cars area replacing Rivers of America and Tom Sawyer Island at Magic Kingdom. The layout includes rockwork, waterfalls, and structures inspired by Planes: Fire and Rescue.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/first-look-piston-peak-national-park-model-revealed-at-d23/?adt_ei=*|EMAIL|*"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Liberty Square and Frontierland will likely see extended closures starting late 2026. Haunted Mansion and Big Thunder waits may climb as construction walls go up—ride both before fall if possible."
+        }
+      },
+      {
+        "title": "Carousel of Progress concept art shows updated final act for Magic Kingdom",
+        "body": "New concept art revealed at D23 depicts a refreshed future scene for the Tomorrowland attraction. The update will modernize the final act while preserving the show's core structure and Sherman Brothers score.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/08/13/disney-releases-sneak-peek-at-carousel-of-progress-makeover/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Carousel of Progress may close for refurbishment within the next year. Catch the current version now if you want to compare—the theater typically offers walk-on access after 2pm."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "Avengers Campus expansion models show two new attractions for California Adventure",
+        "body": "Disney unveiled physical models for Avengers Infinity Defense and Stark Flight Lab, both coming to the Marvel area at California Adventure. Infinity Defense will feature King Thanos as the villain in a multiverse story.",
+        "parkSlug": "california-adventure",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/photos-models-for-avengers-campus-attractions-on-display-at-d23/?adt_ei=*|EMAIL|*"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "Avengers Campus already draws heavy crowds through midday. The announcement will likely increase interest in Web Slingers and the character meet spots—visit before 10am or after 6pm to avoid peak waits."
+        }
+      },
+      {
+        "title": "Coco ride maquette of Héctor Rivera on display at D23",
+        "body": "A detailed sculpture of Héctor Rivera was shown at the expo with the quote \"His family was his world,\" suggesting the character will play a central role in the new Coco attraction replacing Paradise Gardens at California Adventure.",
+        "parkSlug": "california-adventure",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/will-hector-rivera-be-the-star-of-the-new-coco-ride-at-california-adventure-maquette-on-display-for-d23/?adt_ei=*|EMAIL|*"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Paradise Gardens Theater and surrounding restaurants will likely close within the next year for Coco construction. Catch any shows or grab bites there soon before the area transforms."
+        }
+      },
+      {
+        "title": "Animal Kingdom expansion reveals three new rides for Pueblo Esperanza land",
+        "body": "D23 attendees saw early looks at three attractions planned for the Tropical Americas area at Animal Kingdom. The expansion, previously announced, will add significant ride capacity to the park's lineup.",
+        "parkSlug": "animal-kingdom",
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/08/13/new-look-at-3-rides-coming-to-disneys-animal-kingdom-expansion/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Animal Kingdom currently closes earliest among the four parks. Extended Evening Hours have returned there unexpectedly—deluxe resort guests can ride Flight of Passage and Everest with minimal waits after 7pm."
+        }
+      },
+      {
+        "title": "Avatar Land model shown for California Adventure expansion",
+        "body": "Disney displayed the first physical model for the Avatar-themed area coming to California Adventure, offering a look at the land's layout and景观 elements. No opening date was provided.",
+        "parkSlug": "california-adventure",
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/08/13/we-finally-have-a-look-at-disneys-new-avatar-land/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "California Adventure's Hollywood Land will likely see construction impacts soon. Monsters Inc. and Animation Academy may close ahead of the Avatar build—visit those low-wait attractions now if they're on your list."
+        }
+      },
+      {
+        "title": "Space Mountain Earthrise vehicles and interior concept art revealed for Tokyo Disneyland",
+        "body": "D23 showcased the coaster trains and new interior renderings for the all-new Space Mountain replacing the original at Tokyo Disneyland. The ride system mirrors Cosmic Rewind but with unique theming and architecture.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/ride-vehicles-models-new-concept-art-revealed-for-space-mountain-earthrise-at-tokyo-disney/?adt_ei=*|EMAIL|*"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Tokyo Disneyland's Space Mountain closure signals similar updates may eventually come stateside. Florida and California versions remain walk-on friendly after 8pm most nights—ride them while they're unchanged."
+        }
+      },
+      {
+        "title": "Another Mickey's Not-So-Scary Halloween Party date sells out at Magic Kingdom",
+        "body": "As of August 13, one more party night has reached capacity and guests will be turned away at the gate. Eight total dates are now sold out for the seasonal after-hours event running select nights through October 31.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/08/mickeys-not-so-scary-halloween-party-at-disney-world-sold-out-dates-as-of-august-13-jc1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Magic Kingdom typically closes early on party nights, even for day guests. Check the calendar before booking—non-party days in September and October often offer longer operating hours and lower daytime crowds."
+        }
+      },
+      {
+        "title": "Extended Evening Hours return to Animal Kingdom unexpectedly",
+        "body": "Walt Disney World has shifted the deluxe resort perk away from Magic Kingdom and back to Animal Kingdom on select upcoming dates. The move surprised guests, as Animal Kingdom is often the least popular choice for the late-night benefit during summer heat.",
+        "parkSlug": "animal-kingdom",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/extended-evening-hours-returns-to-everyones-least-favorite-option-at-disney-world/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Animal Kingdom's Extended Evening Hours may feel less valuable in August heat, but Flight of Passage and Everest typically post sub-20-minute waits after 8pm. Deluxe guests should take advantage if staying late is comfortable."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Disney and Formula 1 announce Cars 20th anniversary collaboration",
+        "body": "Disney and Pixar's Cars franchise is joining the Disney and Formula 1 partnership to mark the film's 20th anniversary. The collaboration was announced this week but details on park activations or merchandise remain unclear.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/products/disney-and-pixars-cars-joins-the-disney-and-formula-1-collaboration/"
+        }
+      },
+      {
+        "title": "Halloween merchandise guide published by Disney Parks Blog",
+        "body": "Disney released a comprehensive look at 2026 Halloween products available across parks and online. The guide covers costumes, home decor, and seasonal collectibles for fans planning fall visits.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/products/halloween-merchandise-guide-frightfully-fun-finds-for-every-disney-fan/"
+        }
+      },
+      {
+        "title": "Macy's and Disney debut 2026 holiday collection",
+        "body": "The annual Disney and Macy's holiday collaboration launched this week, featuring apparel, home goods, and gifts. The release coincides with planning for the 100th Macy's Thanksgiving Day Parade, where Disney will have a presence.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/products/new-macys-and-disney-holiday-collection-now-available/"
+        }
+      },
+      {
+        "title": "Fall season begins at Disney Springs with decor and entertainment",
+        "body": "Disney Springs kicked off fall and Halloween programming on August 11, running through November 9. Seasonal ambiance, live entertainment, and themed food offerings are now available at the shopping and dining district.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/discover-whats-new-this-fall-at-disney-springs/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "D23 hints at possible Figment announcement with Neil Patrick Harris photo",
+        "body": "Disney Experiences Chairman Thomas Mazloum and actor Neil Patrick Harris were photographed in front of the D23 showcase stage, leading to speculation Harris may be announced as the new Dreamfinder for a Journey Into Imagination update at EPCOT. An Imagineering panel on the Society of Explorers and Adventurers is scheduled for today.",
+        "parkSlug": "epcot",
+        "ctaLabel": "Watch for D23 news",
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Journey Into Imagination currently runs as a walk-on nearly all day. If a refurbishment is announced this weekend, the attraction may close within months—ride it now to compare the before and after."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "FKWC7Xr4e2w",
+      "title": "Mickey's Not-So-Scary Halloween Party 2026 | Full Guide: NEW Food & Characters | Walt Disney World",
+      "channel": "Paging Mr. Morrow",
+      "publishedAt": "2026-08-08T14:22:45Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/FKWC7Xr4e2w/mqdefault.jpg",
+      "viewCount": 171124,
+      "url": "https://www.youtube.com/watch?v=FKWC7Xr4e2w",
+      "summary": "Comprehensive walkthrough of this year's Halloween party at Magic Kingdom, covering new food items and character meet-and-greets."
+    },
+    {
+      "videoId": "TG47j7WIpLY",
+      "title": "ULTIMATE FOODIE GUIDE: MICKEY'S NOT SO SCARY HALLOWEEN PARTY | Magic Kingdom- Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-08-08T15:01:45Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/TG47j7WIpLY/mqdefault.jpg",
+      "viewCount": 61578,
+      "url": "https://www.youtube.com/watch?v=TG47j7WIpLY",
+      "summary": "Detailed tour of all the specialty food offerings available during the 2026 Mickey's Not-So-Scary Halloween Party."
+    },
+    {
+      "videoId": "qS_kdypa1K0",
+      "title": "NEW Halloween Food at Disney Springs: Jock Lindsey's Halloween Bar | Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-08-12T15:58:27Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/qS_kdypa1K0/mqdefault.jpg",
+      "viewCount": 36617,
+      "url": "https://www.youtube.com/watch?v=qS_kdypa1K0",
+      "summary": "Review of the seasonal Halloween menu items now available at Jock Lindsey's Hangar Bar in Disney Springs."
+    },
+    {
+      "videoId": "wCbn5Rbogu4",
+      "title": "Disney Princess: The Ultimate Concert Celebration - D23 Day at the Disneyland Resort",
+      "channel": "Laughing Place",
+      "publishedAt": "2026-08-14T04:55:44Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/wCbn5Rbogu4/mqdefault.jpg",
+      "viewCount": 8839,
+      "url": "https://www.youtube.com/watch?v=wCbn5Rbogu4",
+      "summary": "Coverage of the Disney Princess concert held at Disneyland Resort as part of D23 event festivities."
+    },
+    {
+      "videoId": "dxDqPtkn7R4",
+      "title": "My heart 🥰 My eyes 😭 #disney #disneyland #love #funny #fyp",
+      "channel": "Roni Koria",
+      "publishedAt": "2026-08-14T05:54:44Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/dxDqPtkn7R4/mqdefault.jpg",
+      "viewCount": 4465,
+      "url": "https://www.youtube.com/watch?v=dxDqPtkn7R4",
+      "summary": "Short-form Disneyland content capturing an emotional or humorous park moment."
+    },
+    {
+      "videoId": "pbvXTFS_AjQ",
+      "title": "A MILLION SPLASHES OF COLOUR #shorts #fyp #dlp #disneylandparis #disneyland #disneyparks #disney",
+      "channel": "THOMISNEYVISION",
+      "publishedAt": "2026-08-14T06:00:08Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/pbvXTFS_AjQ/mqdefault.jpg",
+      "viewCount": 1464,
+      "url": "https://www.youtube.com/watch?v=pbvXTFS_AjQ",
+      "summary": "Quick visual showcase from Disneyland Paris highlighting colorful park scenery or entertainment."
+    },
+    {
+      "videoId": "OYQYGmOZDCI",
+      "title": "Post shift Disney vlog #dayinmylife #disneyland #dailyvlog #momlife",
+      "channel": "ErikaScrubLife",
+      "publishedAt": "2026-08-14T05:53:56Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/OYQYGmOZDCI/mqdefault.jpg",
+      "viewCount": 1332,
+      "url": "https://www.youtube.com/watch?v=OYQYGmOZDCI",
+      "summary": "Personal vlog documenting a Disneyland visit after a work shift, blending daily life with park time."
+    },
+    {
+      "videoId": "XZjzyM-gojA",
+      "title": "The Disney Princess Concert Crowds are CRAZY!! 😫😫 #disneyland #disneyparks #d23",
+      "channel": "Magical Goth Vibes",
+      "publishedAt": "2026-08-14T03:56:36Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/XZjzyM-gojA/mqdefault.jpg",
+      "viewCount": 1316,
+      "url": "https://www.youtube.com/watch?v=XZjzyM-gojA",
+      "summary": "Short clip showing the large crowds gathered at Disneyland for the D23 Disney Princess concert event."
+    },
+    {
+      "videoId": "TTngUJvdiMU",
+      "title": "ディズニー新事実判明で常識激変!? #ディズニー #ディズニーランド #ディズニーシー #disney #スペースマウンテン",
+      "channel": "BKのディズニーChannel",
+      "publishedAt": "2026-08-14T10:00:33Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/TTngUJvdiMU/mqdefault.jpg",
+      "viewCount": 1014,
+      "url": "https://www.youtube.com/watch?v=TTngUJvdiMU",
+      "summary": "Japanese-language Disney content discussing new information related to Space Mountain attractions."
+    },
+    {
+      "videoId": "SllDg9nUATw",
+      "title": "Seeing the Disney princesses together  🤩💖 #disneyland #disney #d23",
+      "channel": "Spill Sesh: After Hours",
+      "publishedAt": "2026-08-14T06:42:07Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/SllDg9nUATw/mqdefault.jpg",
+      "viewCount": 1009,
+      "url": "https://www.youtube.com/watch?v=SllDg9nUATw",
+      "summary": "Brief look at Disney Princesses appearing together at a Disneyland D23 event."
+    }
+  ],
+  "updatedAt": "2026-08-14T11:38:01.550Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-08-14T11:38:01.550Z",
+    "tokens": {
+      "input": 11419,
+      "output": 5903,
+      "costUsd": 0.1228
+    }
+  }
+}
