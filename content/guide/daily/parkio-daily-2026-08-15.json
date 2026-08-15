@@ -1,0 +1,331 @@
+{
+  "title": "Parkio Daily for August 15, 2026",
+  "slug": "parkio-daily-2026-08-15",
+  "date": "2026-08-15",
+  "teaser": "Indiana Jones temple facade debuts at D23; Animal Kingdom Tropical Americas opens 2027. Mickey's Not-So-Scary Halloween Party runs tonight.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Space Mountain",
+        "parkSlug": "magic-kingdom",
+        "note": "Early-morning waits under 15 minutes typical before 10am"
+      },
+      {
+        "name": "Test Track",
+        "parkSlug": "epcot",
+        "note": "Walk-on windows often appear mid-afternoon"
+      },
+      {
+        "name": "Rise of the Resistance",
+        "parkSlug": "hollywood-studios",
+        "note": "Lightning Lane still your best bet; standby climbs fast after rope drop"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [],
+    "bignews": [
+      {
+        "title": "First look at Indiana Jones ride temple facade revealed at D23",
+        "body": "D23 attendees can now see a detailed model of the temple exterior for the Indiana Jones Adventure replacing DINOSAUR at Animal Kingdom, along with construction photos and interior glimpses. The Tropical Americas land housing the ride, Encanto attraction, and carousel opens in 2027.",
+        "parkSlug": "animal-kingdom",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/first-look-inside-new-indiana-jones-ride-at-disneys-animal-kingdom-temple-facade-model-revealed-in-todays-daily-recap-for-8-14-2026/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "DINOSAUR closed in February; the Indiana Jones replacement likely draws heavier crowds to Animal Kingdom when it opens next year. Safari and Expedition Everest tend to see spillover waits during construction phases."
+        }
+      },
+      {
+        "title": "Piston Peak Cars Land model shows full scale of Magic Kingdom expansion",
+        "body": "A large-scale model at D23 reveals the scope of the Piston Peak National Park area replacing Rivers of America and Tom Sawyer Island. The Cars-themed land features detailed rockwork, attractions, and natural scenery scheduled to open within the next few years.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/photos-video-piston-peak-national-park-cars-land-model-magic-kingdom-rivers-america-replacement/"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "Rivers of America and Liberty Square tend to see heavier foot traffic as construction walls go up. Frontierland quick-service spots often fill faster during midday; grabbing lunch before 11:30am usually shortens waits."
+        }
+      },
+      {
+        "title": "Coco boat ride concept art hints at story set after movie events",
+        "body": "New concept art displayed at D23 suggests the Coco attraction being built behind Pixar Pier at Disney California Adventure may take place after the original film's timeline. The boat ride is part of the Pixar expansion backstage.",
+        "parkSlug": "california-adventure",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/new-d23-expo-concept-art-offers-clue-that-coco-boat-ride-is-sequel-to-movie/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Pixar Pier merchandise tied to new attractions often sells out quickly at opening. Once the ride debuts, arriving at rope drop typically gives you shortest waits for the first week."
+        }
+      },
+      {
+        "title": "Avengers Campus expansion model shows Stark Flight Lab and Infinity Defense attractions",
+        "body": "D23 attendees can view a model of the two new rides being added to Avengers Campus at Disney California Adventure. Stark Flight Lab and Avengers Infinity Defense are currently under construction backstage and will double the land's size.",
+        "parkSlug": "california-adventure",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/marvel-expansion-model-is-only-disappointment-of-d23/"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "Current Avengers Campus attractions like WEB SLINGERS tend to see longer waits when expansion news breaks. Riding within the first operating hour usually keeps standby under 30 minutes."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "Avatar land model and boat vehicle confirmed for California Adventure",
+        "body": "A new model at D23 shows the Pandora land replacing Hollywood Backlot at Disney California Adventure, complete with a boat ride vehicle on display. The Avatar expansion remains on track for future completion.",
+        "parkSlug": "california-adventure",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/new-model-boat-confirms-avatar-attraction-is-still-coming-to-disney-california-adventure-at-disneyland/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Hollywood Backlot construction walls can create bottlenecks near Monsters Inc. during peak hours. Walking the Buena Vista Street perimeter route usually saves 5–10 minutes versus cutting through."
+        }
+      },
+      {
+        "title": "Mickey's Not-So-Scary Halloween Party runs tonight with new food and characters",
+        "body": "The seasonal after-hours event at Magic Kingdom features updated menu items and character meet-and-greets exclusive to party nights. Tickets are sold separately and the park closes early to day guests.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "YouTube",
+          "url": "https://www.youtube.com/watch?v=FKWC7Xr4e2w"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Magic Kingdom closes at 6pm on party nights; day guests often leave by 4pm to avoid the sweep. Riding Seven Dwarfs or Tron between 3–5pm can yield shorter waits than morning."
+        }
+      },
+      {
+        "title": "Jock Lindsey's Halloween Bar debuts seasonal menu at Disney Springs",
+        "body": "The Indiana Jones-themed bar at Disney Springs has rolled out Halloween-inspired food and drinks for the season. The limited-time offerings are available now through fall.",
+        "parkSlug": null,
+        "source": {
+          "label": "YouTube",
+          "url": "https://www.youtube.com/watch?v=qS_kdypa1K0"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Disney Springs bars tend to fill up after 7pm on weekends. Arriving before 6pm usually means shorter waits for tables and quicker bar service."
+        }
+      },
+      {
+        "title": "D23 Expo attendees explore Imagineering pavilion with global project models",
+        "body": "The Imagineering Horizons pavilion at D23 in Anaheim showcases models and concept art for upcoming Disney park projects worldwide. The exhibit runs through the weekend at the convention center.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/disney-experiences/first-look-inside-the-imagineering-horizons-pavilion-at-d23-event-2026/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "D23 announcements often drive same-week merchandise sales at park locations tied to revealed projects. Checking Emporium or World of Disney early in the day may help you snag limited items before sellouts."
+        }
+      },
+      {
+        "title": "Society of Explorers and Adventurers teased for Matterhorn connection",
+        "body": "During D23, Disney hinted at the S.E.A. backstory potentially expanding to Disneyland's Matterhorn Bobsleds, though details remain vague. The storytelling society already ties together attractions across multiple parks.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/society-explorers-adventurers-coming-matterhorn-maybe-disneyland/"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "Matterhorn wait times often spike mid-morning and after parades. Riding within the first 90 minutes of park opening or after 8pm typically shortens standby to under 25 minutes."
+        }
+      },
+      {
+        "title": "Halloween merchandise guide highlights seasonal items across Disney stores",
+        "body": "Disney has released a curated list of Halloween-themed products available at parks, Disney Springs, and shopDisney. The collection includes apparel, home goods, and collectibles for the fall season.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/products/halloween-merchandise-guide-frightfully-fun-finds-for-every-disney-fan/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Popular Halloween ears and spirit jerseys often sell out at Emporium and World of Disney by mid-afternoon on weekends. Arriving at rope drop or shopping online early usually improves availability."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Macy's and Disney unveil 2026 holiday collection",
+        "body": "The annual collaboration between Macy's and Disney has launched its holiday-themed product line. The collection is available now at Macy's stores and online.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/products/new-macys-and-disney-holiday-collection-now-available/"
+        }
+      },
+      {
+        "title": "Disney Lorcana panel at D23 reveals new card game details",
+        "body": "The Disney Lorcana trading card game showcased upcoming sets and announcements during a Friday panel at D23. Fans attending the expo received first looks at new characters and mechanics.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/products/reveals-and-announcements-from-the-disney-lorcana-panel-at-d23-2026/"
+        }
+      },
+      {
+        "title": "Droid Depot profile highlights custom droid building at both resorts",
+        "body": "Disney Parks Blog published a feature on Droid Depot, the Star Wars experience where guests build custom astromech or protocol droids. The shop operates at both Disneyland and Walt Disney World.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/disney-experiences/droid-depot-at-disneyland-and-disney-world/"
+        }
+      },
+      {
+        "title": "Disney expands employee health center network",
+        "body": "The company announced an expansion of on-site health centers for cast members. The initiative aims to improve access to medical services for Disney employees.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/disney-experiences/disney-expands-its-employee-health-center-network/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "Tropical Americas models show Encanto, Indiana Jones, and carousel scenes",
+        "body": "D23's Imagineering booth features detailed models of the three attractions coming to Animal Kingdom's Tropical Americas land in 2027. Visitors can see ride vehicles, animatronics, and show scene layouts for the Encanto dark ride, Indiana Jones Adventure, and critter carousel.",
+        "parkSlug": "animal-kingdom",
+        "ctaLabel": "Plan your 2027 visit",
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Animal Kingdom tends to see lighter crowds than Magic Kingdom and EPCOT in the fall and winter months. Booking a trip for January or February 2027 often means shorter waits across the park as the new land prepares to open."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "FKWC7Xr4e2w",
+      "title": "Mickey's Not-So-Scary Halloween Party 2026 | Full Guide: NEW Food & Characters | Walt Disney World",
+      "channel": "Paging Mr. Morrow",
+      "publishedAt": "2026-08-08T14:22:45Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/FKWC7Xr4e2w/mqdefault.jpg",
+      "viewCount": 177646,
+      "url": "https://www.youtube.com/watch?v=FKWC7Xr4e2w",
+      "summary": "Paging Mr. Morrow walks through the 2026 Mickey's Not-So-Scary Halloween Party, covering new food offerings and character meet-and-greets at Magic Kingdom."
+    },
+    {
+      "videoId": "TG47j7WIpLY",
+      "title": "ULTIMATE FOODIE GUIDE: MICKEY'S NOT SO SCARY HALLOWEEN PARTY | Magic Kingdom- Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-08-08T15:01:45Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/TG47j7WIpLY/mqdefault.jpg",
+      "viewCount": 63230,
+      "url": "https://www.youtube.com/watch?v=TG47j7WIpLY",
+      "summary": "WrightDownMainStreet reviews all the food available at this year's Mickey's Not-So-Scary Halloween Party event at Magic Kingdom."
+    },
+    {
+      "videoId": "qS_kdypa1K0",
+      "title": "NEW Halloween Food at Disney Springs: Jock Lindsey's Halloween Bar | Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-08-12T15:58:27Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/qS_kdypa1K0/mqdefault.jpg",
+      "viewCount": 40962,
+      "url": "https://www.youtube.com/watch?v=qS_kdypa1K0",
+      "summary": "WrightDownMainStreet samples the seasonal Halloween menu items now available at Jock Lindsey's Hangar Bar in Disney Springs."
+    },
+    {
+      "videoId": "6TyZGWUEiBY",
+      "title": "🔴Live: Friday Night Live at Disney's Hollywood Studios - 8-14-26 - Walt Disney World Live Stream",
+      "channel": "ResortTV1",
+      "publishedAt": "2026-08-15T03:28:04Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/6TyZGWUEiBY/mqdefault.jpg",
+      "viewCount": 31833,
+      "url": "https://www.youtube.com/watch?v=6TyZGWUEiBY",
+      "summary": "ResortTV1 broadcasts live from Disney's Hollywood Studios on Friday evening, August 14, 2026."
+    },
+    {
+      "videoId": "p6FyK4YBUIU",
+      "title": "hunting for the rare princess minnie ears at disneyland 🔍🍀✨ @DisneyParks @DisneyAUNZ @Disney",
+      "channel": "SAM TODD",
+      "publishedAt": "2026-08-15T02:09:28Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/p6FyK4YBUIU/mqdefault.jpg",
+      "viewCount": 23190,
+      "url": "https://www.youtube.com/watch?v=p6FyK4YBUIU",
+      "summary": "SAM TODD searches Disneyland for hard-to-find Princess Minnie Mouse ears merchandise."
+    },
+    {
+      "videoId": "0iSpUDkYrAw",
+      "title": "🎃 Mickey's Not So Scary Halloween Party LIVE from Magic Kingdom 🔴",
+      "channel": "In The Park Daze",
+      "publishedAt": "2026-08-15T03:49:16Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/0iSpUDkYrAw/mqdefault.jpg",
+      "viewCount": 5328,
+      "url": "https://www.youtube.com/watch?v=0iSpUDkYrAw",
+      "summary": "In The Park Daze streams live coverage of Mickey's Not-So-Scary Halloween Party from Magic Kingdom."
+    },
+    {
+      "videoId": "tvpop53ZQyM",
+      "title": "가이드도 실패한다는 디지니 스피어 트랩",
+      "channel": "이채알",
+      "publishedAt": "2026-08-15T03:37:34Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/tvpop53ZQyM/mqdefault.jpg",
+      "viewCount": 4139,
+      "url": "https://www.youtube.com/watch?v=tvpop53ZQyM",
+      "summary": "이채알 discusses common visitor mistakes at a Disney park location."
+    },
+    {
+      "videoId": "d5u7ujUMQRw",
+      "title": "INDE NAVARRETTE IS OUR MCU ROGUE X-Men 2028 Movie Cast Disney D23 Expo Marvel News #fyp #shorts",
+      "channel": "gabey",
+      "publishedAt": "2026-08-15T04:15:50Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/d5u7ujUMQRw/mqdefault.jpg",
+      "viewCount": 3874,
+      "url": "https://www.youtube.com/watch?v=d5u7ujUMQRw",
+      "summary": "Gabey shares D23 news about the X-Men film cast announcement from Marvel Studios."
+    },
+    {
+      "videoId": "KAqdMWwsFYA",
+      "title": "Funny Disney Moments #disney #disneyland #love #funny #fyp",
+      "channel": "Roni Koria",
+      "publishedAt": "2026-08-15T06:03:18Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/KAqdMWwsFYA/mqdefault.jpg",
+      "viewCount": 2715,
+      "url": "https://www.youtube.com/watch?v=KAqdMWwsFYA",
+      "summary": "Roni Koria compiles humorous moments captured at Disney parks."
+    },
+    {
+      "videoId": "DXj8C8dUfEI",
+      "title": "The magic comes alive! ✨🎉 Which Disney character would you want to see in the parade? 👇❤️",
+      "channel": "🫅 PrincessRumi",
+      "publishedAt": "2026-08-15T04:27:31Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/DXj8C8dUfEI/mqdefault.jpg",
+      "viewCount": 1897,
+      "url": "https://www.youtube.com/watch?v=DXj8C8dUfEI",
+      "summary": "PrincessRumi features Disney parade footage and asks viewers about their favorite characters."
+    }
+  ],
+  "updatedAt": "2026-08-15T11:11:48.277Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-08-15T11:11:48.277Z",
+    "tokens": {
+      "input": 11353,
+      "output": 5301,
+      "costUsd": 0.1136
+    }
+  }
+}
