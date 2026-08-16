@@ -1,0 +1,359 @@
+{
+  "title": "Parkio Daily for August 16, 2026",
+  "slug": "parkio-daily-2026-08-16",
+  "date": "2026-08-16",
+  "teaser": "Dreamfinder returns to EPCOT's Imagination ride; Monstropolis opens in phases starting 2027; D23 reveals Villains Land attractions.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Expedition Everest",
+        "parkSlug": "animal-kingdom",
+        "note": "Yeti animatronic refurbishment announced — ride while it's still Disco Yeti mode"
+      },
+      {
+        "name": "Journey Into Imagination",
+        "parkSlug": "epcot",
+        "note": "Dreamfinder reimagining coming — current version ending soon"
+      },
+      {
+        "name": "Carousel of Progress",
+        "parkSlug": "magic-kingdom",
+        "note": "Closed for updates, new voices, reopening soon"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [
+      {
+        "title": "Dreamfinder returns to Journey Into Imagination at EPCOT",
+        "body": "Disney announced a full reimagining of Journey Into Imagination with Figment that will bring back Dreamfinder, who last appeared in the attraction in 1998. The project was revealed as a surprise finale at the D23 Parks panel.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/figment-dreamfinder-imagination-epcot/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "The current Imagination pavilion tends to be a walk-on most of the day. Experience the existing version soon before the reimagining begins — likely within the next year based on D23 timing."
+        }
+      },
+      {
+        "title": "Monstropolis opens in phases starting 2027 at Hollywood Studios",
+        "body": "Parts of the Monsters Inc. land will open to guests in 2027, though the suspended door coaster will follow later. Disney confirmed Harryhausen's restaurant and select shops will debut first.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/breaking-monstropolis-opens-in-2027-in-phases-at-disneys-hollywood-studios/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Partial land openings tend to draw lighter crowds than full debuts. Visit Monstropolis in early 2027 for dining and atmosphere before the coaster adds heavier wait times later."
+        }
+      },
+      {
+        "title": "Expedition Everest Yeti animatronic getting repaired",
+        "body": "Disney revealed the broken Yeti figure inside Expedition Everest will finally be restored to full motion after years in static strobe-light mode. No timeline was provided.",
+        "parkSlug": "animal-kingdom",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disco-yeti-is-dying-at-expedition-everest-long-live-working-audio-animatronics-at-animal-kingdom/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "The refurbishment likely means a future closure for Everest. Ride during your next Animal Kingdom visit before the repair work begins — closures for major animatronic work often stretch weeks or months."
+        }
+      }
+    ],
+    "bignews": [
+      {
+        "title": "Villains Land named and two attractions revealed for Magic Kingdom",
+        "body": "The expansion behind Big Thunder will be called Villains Land and will include a dark ride and a major thrill attraction. Disney shared concept art featuring Maleficent, the Evil Queen, and other classic antagonists.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/villains-land-rides-details-and-more-walt-disney-world/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Magic Kingdom's northern expansion area tends to be less crowded than Tomorrowland or Fantasyland during soft openings. When Villains Land debuts, mornings in that zone may offer shorter waits for several months."
+        }
+      },
+      {
+        "title": "Tomorrowland at Disneyland getting full reimagining",
+        "body": "Disney confirmed a complete redesign of Tomorrowland at Disneyland Park, inspired by Walt's original optimistic vision. The project includes new attractions and open spaces, but no timeline or ride details were shared.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/dlr/tomorrowland-disneyland-reimagined/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Tomorrowland closures often start with Autopia or smaller venues. If you have a Disneyland trip planned for late 2026 or 2027, prioritize Space Mountain and Star Tours early in case phased construction begins."
+        }
+      },
+      {
+        "title": "Two Cars rides revealed for Piston Peak expansion at Magic Kingdom",
+        "body": "Disney named the two Frontierland attractions coming to Piston Peak: Miss Fritter's Daredevil Spin and Ridge Run Rally. The expansion replaces Tom Sawyer Island and Rivers of America.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-reveals-two-cars-rides-in-piston-peak-at-magic-kingdom-miss-fritters-daredevil-spin-ridge-run-rally/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Frontierland usually sees lower crowds after 7pm when families shift to fireworks viewing. When Piston Peak opens, late-evening rides on both attractions may offer walk-on windows before park close."
+        }
+      },
+      {
+        "title": "Harryhausen's restaurant detailed for Monstropolis with sushi-chef octopus animatronic",
+        "body": "The table-service restaurant replacing Mama Melrose's will feature a monster octopus named Harryhausen preparing sushi. Disney promised a menu unlike anything else at the resort.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/disney-announces-details-on-harryhausens-including-sushi-slinging-octopus/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "New Disney restaurants tend to book out 60 days in advance during the first six months. Set a calendar reminder to grab reservations the morning they open — likely early 2027 — or try walk-up lists during off-peak lunch hours."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "Spaceship Earth at EPCOT confirmed for reimagining",
+        "body": "Disney officially announced a redesign of the iconic Spaceship Earth attraction. No details on scope, timeline, or storyline changes were provided during the D23 panel.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/spaceship-earth-at-epcot-is-finally-being-reimagined/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Spaceship Earth usually has short waits in the late afternoon and during evening fireworks. Ride the current version multiple times over the next few months if you're nostalgic — major refurbs often change or remove classic scenes."
+        }
+      },
+      {
+        "title": "Encanto ride and carousel named for Tropical Americas at Animal Kingdom",
+        "body": "Disney revealed the official name and additional interior details for the Encanto attraction and critter carousel coming to the Tropical Americas land. Concept art shows the ride building under construction.",
+        "parkSlug": "animal-kingdom",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-world-shares-new-details-concept-art-for-carousel-encanto-ride-but-no-opening-dates/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Tropical Americas is expected to draw families with young kids. The carousel may offer short waits if you arrive during the first operating hour or late afternoon when families break for dinner."
+        }
+      },
+      {
+        "title": "Monsters Inc. door coaster load area and launch shown in new concept video",
+        "body": "Disney shared rendered footage of the suspended coaster's loading station and launch sequence. The ride will send guests through the monster world's door vault system.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/first-look-load-area-and-launch-into-monsters-inc-door-coaster/"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "New coasters at Hollywood Studios tend to pull guests away from Tower of Terror and Rock 'n' Roller Coaster. When the door coaster opens, mornings at Sunset Boulevard may see lighter waits for 30–60 days."
+        }
+      },
+      {
+        "title": "Carousel of Progress reopening with new voices and updated final scene",
+        "body": "Magic Kingdom's classic attraction will return with new voice actors for the mother and father roles and a refreshed finale. Disney announced the reopening date during the D23 showcase.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/08/disney-reveals-new-voices-and-opening-date-for-carousel-of-progress-at-magic-kingdom-rl1/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Carousel of Progress usually absorbs crowds during afternoon thunderstorms and peak heat. The updated version may draw larger audiences in the first few weeks — visit mid-morning for shorter theater waits."
+        }
+      },
+      {
+        "title": "Disneyland Paris announces new daytime parade for 2028",
+        "body": "A new daily parade led by Mickey Mouse will debut at Disneyland Park in 2028, the first original daytime parade at the resort since 2017. Disney described it as an anchor of the daytime entertainment lineup.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/disneyland-paris-announces-new-daytime-parade-coming-in-2028/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Parades tend to clear out attraction queues for 30–45 minutes. When the new parade launches in 2028, use showtime windows to ride popular Disneyland Paris attractions like Big Thunder and Phantom Manor with minimal waits."
+        }
+      },
+      {
+        "title": "Lion King ride details shared for Disneyland Paris",
+        "body": "Disney revealed that the upcoming Lion King attraction at Disneyland Paris will feature iconic songs and scenes from the film. The ride is part of the park's ongoing expansion.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/dlp/new-details-for-lion-king-ride-coming-to-disneyland-paris/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Disneyland Paris tends to have lower international visitation during spring and fall. If you're planning a trip for the Lion King opening, late April or early October usually offers lighter park attendance than summer."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Avatar land at Disneyland delayed as Tomorrowland project moves up timeline",
+        "body": "Disney shuffled its California construction calendar, prioritizing the Tomorrowland reimagining while pushing back the Avatar expansion at Disney California Adventure. The Eastern Gateway and Avengers Campus projects continue on schedule.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-changes-project-timeline-for-disneyland-adding-tomorrowland-delaying-avatar/"
+        }
+      },
+      {
+        "title": "Disney Believe cruise ship sailing in late 2027",
+        "body": "Disney Cruise Line announced the Disney Believe will set sail in late 2027 with new dining venues and entertainment inspired by Disney storytelling. The ship is the latest addition to the expanding fleet.",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/dcl/meet-the-disney-believe-the-next-disney-cruise-line-ship/"
+        }
+      },
+      {
+        "title": "New class of Disney Cruise Line ships revealed",
+        "body": "Disney shared a first look at an entirely new ship class coming after the Wish-class vessels. Details on design, capacity, and itineraries will be announced later.",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/dcl/disney-cruise-line-new-class-of-ships/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "D23 panel delivers biggest parks announcement slate in years",
+        "body": "Disney's Horizons showcase revealed project updates across every U.S. park, with major expansions confirmed for Magic Kingdom, EPCOT, Hollywood Studios, Animal Kingdom, and both Disneyland Resort parks. The two-hour presentation covered attractions, dining, entertainment, and cruise ships.",
+        "ctaLabel": "Read the full recap",
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Construction announcements often signal upcoming closures and detours. If you have a trip booked for late 2026 or 2027, check Disney's refurbishment calendar monthly — Tomorrowland, Imagination, and Frontierland work may begin sooner than expected."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "qS_kdypa1K0",
+      "title": "NEW Halloween Food at Disney Springs: Jock Lindsey's Halloween Bar | Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-08-12T15:58:27Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/qS_kdypa1K0/mqdefault.jpg",
+      "viewCount": 44066,
+      "url": "https://www.youtube.com/watch?v=qS_kdypa1K0",
+      "summary": "WrightDownMainStreet tours the new Halloween-themed food and drink offerings at Jock Lindsey's Hangar Bar in Disney Springs."
+    },
+    {
+      "videoId": "blZX_vTHVEs",
+      "title": "Ill be there #disneyland #peterpan #toni #disneyworld #disneyadult #disney #kpopedit #newjeans",
+      "channel": "Dew Asia",
+      "publishedAt": "2026-08-16T04:00:34Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/blZX_vTHVEs/mqdefault.jpg",
+      "viewCount": 42196,
+      "url": "https://www.youtube.com/watch?v=blZX_vTHVEs",
+      "summary": "Dew Asia shares a short Disneyland moment featuring Peter Pan with a K-pop music edit."
+    },
+    {
+      "videoId": "2swnksPjcA0",
+      "title": "🔴 Live: 2026 D23 Disney Parks Panel - Horizons: A Carousel of Progress 7pm at Honda Center - 8/15/26",
+      "channel": "Koda Bear the Explorer ",
+      "publishedAt": "2026-08-16T05:56:09Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/2swnksPjcA0/mqdefault.jpg",
+      "viewCount": 34433,
+      "url": "https://www.youtube.com/watch?v=2swnksPjcA0",
+      "summary": "Koda Bear the Explorer livestreams the full D23 Disney Parks panel from the Honda Center showcasing new attractions and expansions."
+    },
+    {
+      "videoId": "4b5kxgqUCPA",
+      "title": "🔴 Live D23 Parks panel at Honda center 8/15/2026",
+      "channel": "RON ON THE GO",
+      "publishedAt": "2026-08-16T04:47:18Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/4b5kxgqUCPA/mqdefault.jpg",
+      "viewCount": 29594,
+      "url": "https://www.youtube.com/watch?v=4b5kxgqUCPA",
+      "summary": "RON ON THE GO provides live coverage of the D23 Parks panel with real-time reactions to the announcements."
+    },
+    {
+      "videoId": "otho02CXF_g",
+      "title": "\"Disney Animatronic\" | Neil Patrick Harris | 2026 Disney Experiences Showcase Opening Number #D23",
+      "channel": "Disney Parks",
+      "publishedAt": "2026-08-16T05:39:10Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/otho02CXF_g/mqdefault.jpg",
+      "viewCount": 9594,
+      "url": "https://www.youtube.com/watch?v=otho02CXF_g",
+      "summary": "Disney Parks shares Neil Patrick Harris performing the opening musical number for the D23 Experiences showcase."
+    },
+    {
+      "videoId": "5mmHswBgb9Q",
+      "title": "【速報】いよいよ、お盆休み最終日‼️ディズニーリゾート最新混雑状況【2026.8.16】",
+      "channel": "ジョマジのディズニー研究所",
+      "publishedAt": "2026-08-16T04:42:44Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/5mmHswBgb9Q/mqdefault.jpg",
+      "viewCount": 2984,
+      "url": "https://www.youtube.com/watch?v=5mmHswBgb9Q",
+      "summary": "ジョマジのディズニー研究所 reports on Tokyo Disney Resort crowd levels on the final day of the Obon holiday weekend."
+    },
+    {
+      "videoId": "7S-1ysgcUrY",
+      "title": "Space Mountain is Back at Disneyland Paris - Between the Earth and the Moon a new adventure begins!",
+      "channel": "DLP Welcome",
+      "publishedAt": "2026-08-16T06:10:11Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/7S-1ysgcUrY/mqdefault.jpg",
+      "viewCount": 2197,
+      "url": "https://www.youtube.com/watch?v=7S-1ysgcUrY",
+      "summary": "DLP Welcome covers the reopening of Space Mountain at Disneyland Paris following its latest refurbishment."
+    },
+    {
+      "videoId": "vr7U1tA8hO4",
+      "title": "酷企鵝光天化日搶包包，土土生氣啦！  #迪士尼 #三麗甌 #酷企鵝 #萌娃",
+      "channel": "奈奈皮的很",
+      "publishedAt": "2026-08-16T04:00:32Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/vr7U1tA8hO4/mqdefault.jpg",
+      "viewCount": 1980,
+      "url": "https://www.youtube.com/watch?v=vr7U1tA8hO4",
+      "summary": "奈奈皮的很 shares a playful character interaction featuring a Sanrio character at a Disney park."
+    },
+    {
+      "videoId": "9u_sJ_heYCc",
+      "title": "🚨 LIVE REACTION: Horizons – D23 Disney Parks & Experiences Showcase | Day 2 Recap!",
+      "channel": "Erik With The Land",
+      "publishedAt": "2026-08-16T05:17:10Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/9u_sJ_heYCc/mqdefault.jpg",
+      "viewCount": 1933,
+      "url": "https://www.youtube.com/watch?v=9u_sJ_heYCc",
+      "summary": "Erik With The Land provides a live reaction stream recapping all the major announcements from day two of the D23 Parks showcase."
+    },
+    {
+      "videoId": "4T0tNdc-SEY",
+      "title": "Disney enthüllt seine Zukunft auf der D23 – und Disneyland Paris? Die große Ernüchterung… 🫠✨",
+      "channel": "danielsparksandmore",
+      "publishedAt": "2026-08-16T05:11:17Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/4T0tNdc-SEY/mqdefault.jpg",
+      "viewCount": 1760,
+      "url": "https://www.youtube.com/watch?v=4T0tNdc-SEY",
+      "summary": "danielsparksandmore discusses D23 announcements with a focus on what was revealed for Disneyland Paris."
+    }
+  ],
+  "updatedAt": "2026-08-16T11:12:30.630Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-08-16T11:12:30.630Z",
+    "tokens": {
+      "input": 11383,
+      "output": 5917,
+      "costUsd": 0.1229
+    }
+  }
+}
