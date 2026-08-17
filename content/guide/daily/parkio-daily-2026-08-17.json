@@ -1,0 +1,365 @@
+{
+  "title": "Parkio Daily for August 17, 2026",
+  "slug": "parkio-daily-2026-08-17",
+  "date": "2026-08-17",
+  "teaser": "Dreamfinder returns to Journey Into Imagination with Figment; Monstropolis opens 2027 at Hollywood Studios; Tomorrowland gets major Disneyland overhaul.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Tiana's Bayou Adventure",
+        "parkSlug": "disneyland",
+        "note": "Operations paused mid-day after guest safety incident; check app before heading over"
+      },
+      {
+        "name": "Soarin'",
+        "parkSlug": "epcot",
+        "note": "Low waits during dinner hour; walk-on windows likely 6–7pm"
+      },
+      {
+        "name": "Big Thunder Mountain Railroad",
+        "parkSlug": "magic-kingdom",
+        "note": "Mornings still your best bet; waits climb after 11am"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [
+      {
+        "title": "Disneyland removes family from Tiana's Bayou Adventure after child stands before drop",
+        "body": "A child stood up moments before the 50-foot drop on Tiana's Bayou Adventure at Disneyland, the third such incident this summer. Cast members stopped the ride and removed the family from the attraction.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/08/child-tries-to-jump-out-of-tianas-bayou-adventure-gets-family-banned-from-disneyland-jc1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Tiana's may experience brief operational pauses today as crews review safety protocols. If you're heading to Bayou Country, check the app for real-time status before walking over."
+        }
+      },
+      {
+        "title": "Orlando enters seventh day under heat health advisory",
+        "body": "Central Florida remains under a sustained heat advisory affecting all Orlando-area theme parks. Officials recommend limiting outdoor exposure during peak afternoon hours.",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/08/stay-home-7-day-health-advisory-issued-for-orlando-theme-parks-ad1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Plan indoor attractions and air-conditioned breaks between 1–4pm today. Carry water and take shade breaks every hour; heat exhaustion risk remains high across all four parks."
+        }
+      }
+    ],
+    "bignews": [
+      {
+        "title": "Dreamfinder and Figment reunite in Journey Into Imagination overhaul at EPCOT",
+        "body": "Disney confirmed Journey Into Imagination will be reimagined to bring back Dreamfinder alongside Figment. The beloved pairing returns to the attraction after decades apart, though no opening timeline was shared.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/figment-dreamfinder-imagination-epcot/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Ride the current version while you can; closure date isn't set, but refurbishments of this scale tend to start within 12–18 months. Mornings usually offer the shortest waits."
+        }
+      },
+      {
+        "title": "Monstropolis at Hollywood Studios moves up to 2027 opening",
+        "body": "The Monsters Inc. land will begin opening in 2027, ahead of schedule. Archie's Scare Pig Pizza will replace PizzeRizzo, and new ride details were shared at D23.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/monsters-inc-land-monstropolis-walt-disney-world/"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "Construction activity near Sunset Boulevard tends to peak mid-morning. Plan quieter experiences like Muppet*Vision or Star Tours during that window to avoid the noise."
+        }
+      },
+      {
+        "title": "Tomorrowland at Disneyland to receive full reimagining",
+        "body": "Disneyland announced a complete overhaul of Tomorrowland during the D23 presentation. The project was revealed as a surprise addition to the resort's expansion slate, though specifics and timelines remain unannounced.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/dlr/tomorrowland-disneyland-reimagined/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Tomorrowland attractions may see nostalgia-driven crowds in the coming weeks. Ride Space Mountain and Matterhorn early—wait times tend to double after 10:30am on busy days."
+        }
+      },
+      {
+        "title": "Villains Land coming to Magic Kingdom with multiple attractions",
+        "body": "Disney shared new details about the upcoming Villains Land expansion at Magic Kingdom during D23. The land will feature multiple attractions, though no opening date was announced.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/villains-land-rides-details-and-more-walt-disney-world/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Villain meet-and-greets across Magic Kingdom often see lighter lines mid-afternoon. If you're hunting character interactions, try the 2–4pm window before dinner crowds arrive."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "Pandora project at California Adventure delayed to prioritize Tomorrowland",
+        "body": "The Avatar-themed land planned for Disney California Adventure has been pushed back to make room for the new Tomorrowland reimagining at Disneyland. No revised timeline for Pandora was provided.",
+        "parkSlug": "california-adventure",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/pandora-at-disney-california-adventure-pushed-back-in-favor-of-new-tomorrowland-project-in-todays-daily-recap-for-8-16-2026/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "California Adventure construction won't ramp up for at least another year. Expect lighter crowds near Paradise Gardens through fall 2026; Soarin' waits may stay manageable."
+        }
+      },
+      {
+        "title": "Spaceship Earth reimagining confirmed for EPCOT",
+        "body": "Disney announced during D23 that Spaceship Earth will finally receive a reimagining. No timeline or specific changes were revealed during the presentation.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/spaceship-earth-at-epcot-is-finally-being-reimagined/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Spaceship Earth typically has short waits during evening hours. Ride it after 7pm to avoid daytime crowds and enjoy cooler temperatures for the walk up."
+        }
+      },
+      {
+        "title": "Encanto attraction and carousel officially named for Animal Kingdom's Tropical Americas",
+        "body": "Disney revealed the official name and new concept art for the Encanto ride and critter carousel coming to Animal Kingdom's Tropical Americas expansion. Opening dates were not shared.",
+        "parkSlug": "animal-kingdom",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-world-shares-new-details-concept-art-for-carousel-encanto-ride-but-no-opening-dates/"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "Dinoland construction fencing tends to funnel guests toward Pandora in the morning. If Avatar waits spike, try Asia-side attractions like Expedition Everest before 11am."
+        }
+      },
+      {
+        "title": "Bob Iger honored with window on Main Street U.S.A. at Disneyland",
+        "body": "Disney CEO Bob Iger received a dedication window on Main Street U.S.A. at Disneyland during D23 weekend festivities.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/dlr/a-great-big-beautiful-tomorrow-bob-iger-honored-with-a-window-on-main-street-u-s-a/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Main Street windows draw photo crowds early in the day. Visit after rope drop or during parades to grab a clear shot without the scrum."
+        }
+      },
+      {
+        "title": "New Halloween food debuts at Magic Kingdom and Disney Springs",
+        "body": "Seasonal Halloween-themed food and beverage items arrived at Magic Kingdom and Jock Lindsey's Hangar Bar in Disney Springs this week.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "YouTube",
+          "url": "https://www.youtube.com/watch?v=WtBmUddr7q0"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Specialty food often sells out by mid-afternoon on weekends. Hit Jock Lindsey's or Liberty Square before 2pm to avoid disappointment on limited-run items."
+        }
+      },
+      {
+        "title": "Tiana and Tinker Bell toy sets now available at Magic Kingdom",
+        "body": "New Once Upon a Story playsets featuring Tiana and Tinker Bell dolls with accessories arrived at Magic Kingdom retail locations. Each set retails for $39.99.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/tiana-and-tinker-bell-toy-sets-now-available-at-walt-disney-world/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "High-demand toys tend to vanish from Emporium shelves by lunchtime. Stop at Once Upon a Toy in Disney Springs if Magic Kingdom stocks run low."
+        }
+      },
+      {
+        "title": "Disney Cruise Line reveals new ship class at D23",
+        "body": "Disney Cruise Line shared the first look at an all-new class of ships during the D23 Experiences showcase. Details on itineraries and launch dates were not provided.",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/dcl/disney-cruise-line-new-class-of-ships/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Cruise announcements often trigger booking surges within 48 hours. If you're planning a sailing, check availability today before cabins fill up at introductory rates."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Masquerade mask mug arrives at Port Orleans French Quarter",
+        "body": "A new Mardi Gras-themed mug featuring a maroon and gold masquerade mask is now available at Disney's Port Orleans Resort French Quarter for $19.99.",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/masquerade-mask-mug-arrives-at-disneys-port-orleans-resort-french-quarter/"
+        }
+      },
+      {
+        "title": "Disney x SkinnyDip apparel collection launches at Disneyland with typo",
+        "body": "A new Disney collaboration with London-based brand SkinnyDip brought hoodies and sweatshirts to Disneyland. One design features a misspelled character name from The Fox and the Hound.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/disney-x-skinnydip-apparel-collection-featuring-fox-and-the-hound-disney-princesses-and-more-now-available-at-disneyland/"
+        }
+      },
+      {
+        "title": "Updated Trader Sam's shaker cup and anniversary glass available at Polynesian",
+        "body": "A refreshed bronze shaker cup and a 15th anniversary glass debuted at Trader Sam's inside Disney's Polynesian Village Resort. The shaker retails for $24.99.",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/updated-trader-sams-shaker-cup-and-15th-anniversary-glass-arrive-at-walt-disney-world/"
+        }
+      },
+      {
+        "title": "Thirteen new Disney Legends honored at D23 ceremony",
+        "body": "Thirteen celebrities and contributors were inducted as Disney Legends during the D23 ceremony on Sunday.",
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/08/16/its-official-these-13-celebrities-just-became-disney-legends/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "D23 buzz likely to drive heavier crowds at both coasts this week",
+        "body": "Major announcements about Dreamfinder, Monstropolis, Villains Land, and Tomorrowland during D23 weekend tend to spark increased park attendance in the days that follow. Expect elevated wait times across Magic Kingdom, EPCOT, and Disneyland through midweek as fans celebrate the news.",
+        "ctaLabel": "Plan your day",
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "Post-D23 energy usually peaks Monday through Wednesday. Rope-drop popular attractions like TRON, Guardians, and Space Mountain to stay ahead of the surge; waits often climb 20–30 minutes higher than normal by late morning."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "qS_kdypa1K0",
+      "title": "NEW Halloween Food at Disney Springs: Jock Lindsey's Halloween Bar | Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-08-12T15:58:27Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/qS_kdypa1K0/mqdefault.jpg",
+      "viewCount": 46318,
+      "url": "https://www.youtube.com/watch?v=qS_kdypa1K0",
+      "summary": "WrightDownMainStreet tours the new Halloween-themed food and drink offerings at Jock Lindsey's Hangar Bar in Disney Springs."
+    },
+    {
+      "videoId": "7seW8yNlu8M",
+      "title": "Disneyland 2026 | D23 Weekend, Bonnie's 1st Visit & Honda Center | D23 The Ultimate Disney Fan Event",
+      "channel": "Paging Mr. Morrow",
+      "publishedAt": "2026-08-17T00:18:27Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/7seW8yNlu8M/mqdefault.jpg",
+      "viewCount": 31538,
+      "url": "https://www.youtube.com/watch?v=7seW8yNlu8M",
+      "summary": "Paging Mr. Morrow covers D23 weekend at Disneyland, featuring a first-time visitor and events at the Honda Center."
+    },
+    {
+      "videoId": "SjX14__u8aY",
+      "title": "#peterpan #disneylandcalifornia #disneyadult #disney #disneyland #disneyworld",
+      "channel": "Dew Asia",
+      "publishedAt": "2026-08-17T05:00:35Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/SjX14__u8aY/mqdefault.jpg",
+      "viewCount": 28806,
+      "url": "https://www.youtube.com/watch?v=SjX14__u8aY",
+      "summary": "Dew Asia shares a short clip related to Peter Pan at Disneyland California."
+    },
+    {
+      "videoId": "WtBmUddr7q0",
+      "title": "Every NEW Halloween Food in Magic Kingdom | Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-08-16T15:02:46Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/WtBmUddr7q0/mqdefault.jpg",
+      "viewCount": 22942,
+      "url": "https://www.youtube.com/watch?v=WtBmUddr7q0",
+      "summary": "WrightDownMainStreet reviews all the new Halloween food items available at Magic Kingdom."
+    },
+    {
+      "videoId": "WHXhORQKDUk",
+      "title": "🔴 LIVE: Disney Quest! | Magic Kingdom, Animal Kingdom, EPCOT & Hollywood Studios + Fantasmic! 2026",
+      "channel": "The Weekly Hop",
+      "publishedAt": "2026-08-17T04:10:20Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/WHXhORQKDUk/mqdefault.jpg",
+      "viewCount": 8871,
+      "url": "https://www.youtube.com/watch?v=WHXhORQKDUk",
+      "summary": "The Weekly Hop livestreams from all four Walt Disney World parks, including coverage of Fantasmic."
+    },
+    {
+      "videoId": "TZI2cCcTfao",
+      "title": "Walt Disney World Adventure LIVE: On a Mobility Scooter! #D23 #DisneyLIVE",
+      "channel": "Skootah Adventures ",
+      "publishedAt": "2026-08-17T04:07:13Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/TZI2cCcTfao/mqdefault.jpg",
+      "viewCount": 5837,
+      "url": "https://www.youtube.com/watch?v=TZI2cCcTfao",
+      "summary": "Skootah Adventures livestreams a Walt Disney World visit from a mobility scooter during D23 weekend."
+    },
+    {
+      "videoId": "yc2Shbp3mhQ",
+      "title": "Did Dollywood Just BEAT DISNEY?! Magic Kingdom Expansion UNDERWHELMS at D23, NightFlight AMAZES!",
+      "channel": "WDW Pro",
+      "publishedAt": "2026-08-17T03:05:23Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/yc2Shbp3mhQ/mqdefault.jpg",
+      "viewCount": 3278,
+      "url": "https://www.youtube.com/watch?v=yc2Shbp3mhQ",
+      "summary": "WDW Pro compares Dollywood's new NightFlight announcement to Magic Kingdom's D23 reveals, offering commentary on both parks."
+    },
+    {
+      "videoId": "BT2fYmECfJk",
+      "title": "Disney Believe Moana Statue & Tinker Bell Bow Revealed at D23 🚢",
+      "channel": "Attractions Magazine",
+      "publishedAt": "2026-08-17T03:00:32Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/BT2fYmECfJk/mqdefault.jpg",
+      "viewCount": 1898,
+      "url": "https://www.youtube.com/watch?v=BT2fYmECfJk",
+      "summary": "Attractions Magazine covers the reveal of a Moana statue and Tinker Bell bow design for the Disney Believe cruise ship at D23."
+    },
+    {
+      "videoId": "Cpl1POcnlbo",
+      "title": "On Pixar Pier at DCA. Love this merch! #disneyland #disneytravel #disney",
+      "channel": "It's By Brooke",
+      "publishedAt": "2026-08-17T03:04:27Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Cpl1POcnlbo/mqdefault.jpg",
+      "viewCount": 1436,
+      "url": "https://www.youtube.com/watch?v=Cpl1POcnlbo",
+      "summary": "It's By Brooke showcases merchandise available at Pixar Pier in Disney California Adventure."
+    },
+    {
+      "videoId": "3b2N53tE4VU",
+      "title": "My heart 🥰 My eyes 😭#disney #disneyland #foryou",
+      "channel": "DJ RAGHU BHAI 750 ",
+      "publishedAt": "2026-08-17T05:45:35Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/3b2N53tE4VU/mqdefault.jpg",
+      "viewCount": 1193,
+      "url": "https://www.youtube.com/watch?v=3b2N53tE4VU",
+      "summary": "DJ RAGHU BHAI 750 shares an emotional moment at Disneyland."
+    }
+  ],
+  "updatedAt": "2026-08-17T11:17:17.949Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-08-17T11:17:17.949Z",
+    "tokens": {
+      "input": 11318,
+      "output": 5851,
+      "costUsd": 0.1217
+    }
+  }
+}
