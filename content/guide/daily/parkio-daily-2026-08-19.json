@@ -1,0 +1,358 @@
+{
+  "title": "Parkio Daily for August 19, 2026",
+  "slug": "parkio-daily-2026-08-19",
+  "date": "2026-08-19",
+  "teaser": "D23 wrapped: Dreamfinder returns to EPCOT, Tomorrowland gets reimagined, and Oogie Boogie Bash debuts tonight with new villains.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Space Mountain",
+        "parkSlug": "magic-kingdom",
+        "note": "Early morning waits typically lowest before 10am"
+      },
+      {
+        "name": "Test Track",
+        "parkSlug": "epcot",
+        "note": "Crowds lighter during evening hours"
+      },
+      {
+        "name": "Rise of the Resistance",
+        "parkSlug": "hollywood-studios",
+        "note": "Rope drop usually offers shortest waits"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [
+      {
+        "title": "Oogie Boogie Bash begins tonight at California Adventure",
+        "body": "Disney California Adventure launches its 2026 Halloween event this evening with new additions including villain meet opportunities with Yzma from The Emperor's New Groove and Madame Leota's Swinging Wake replacing the previous parade.",
+        "parkSlug": "california-adventure",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/full-list-of-treat-trail-locations-villains-at-disneys-oogie-boogie-bash-2026/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Tickets remain available for tonight's kickoff. Rare villain meet spots tend to build lines by 8pm, so arriving at event start usually offers shorter waits for character encounters."
+        }
+      }
+    ],
+    "bignews": [
+      {
+        "title": "Dreamfinder reunites with Figment in EPCOT attraction reimagining",
+        "body": "Walt Disney World confirmed a full reimagining of Journey Into Imagination at EPCOT that will bring back Dreamfinder alongside Figment. The D23 announcement marks the return of the original Imagineering character after decades away from the pavilion.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/figment-dreamfinder-imagination-epcot/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "The current Journey Into Imagination typically operates as a walk-on throughout the day. Worth experiencing before the reimagining begins, likely in the next 12–18 months based on typical Disney timelines."
+        }
+      },
+      {
+        "title": "Tomorrowland at Disneyland Park set for complete reimagining",
+        "body": "Disneyland announced a full reimagining of Tomorrowland during the D23 Experiences Showcase. Details on specific attractions and timeline were not disclosed, though the project represents one of the largest single-land overhauls in park history.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/dlr/tomorrowland-disneyland-reimagined/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Current Tomorrowland attractions like Space Mountain and Star Tours will likely continue operating during phased construction. Guests interested in the area's current state should visit within the next year before changes begin."
+        }
+      },
+      {
+        "title": "EPCOT removes problematic in-ground lighting from World Celebration Gardens",
+        "body": "Crews have permanently torn out the embedded light strips from World Celebration Gardens pavement after ongoing maintenance issues. The fixtures, installed during the multi-year transformation, frequently malfunctioned and created trip hazards.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/epcots-problematic-in-ground-lighting-being-permanently-removed-in-todays-daily-recap-for-8-18-2026/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Active construction zones in World Celebration may create pedestrian bottlenecks during peak hours. Walking through the area tends to move faster before 11am or after 7pm."
+        }
+      },
+      {
+        "title": "Bob Iger receives window dedication on Main Street USA",
+        "body": "Disney honored CEO Bob Iger with a window on Main Street USA at Disneyland during D23 weekend. The tradition recognizes individuals who made significant contributions to Disney parks history.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/dlr/a-great-big-beautiful-tomorrow-bob-iger-honored-with-a-window-on-main-street-u-s-a/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "New window installations typically draw small crowds of fans looking for photo opportunities. Main Street is usually less congested for viewing during early morning or late evening hours."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "Walt Disney World expands Airport Luggage Transfer to moderate resorts",
+        "body": "The complimentary baggage handling service between Orlando International Airport and Disney hotels now includes at least one moderate resort. The program previously covered only value-tier properties since its 2025 relaunch.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-world-starts-to-expands-free-airport-luggage-transfer-beyond-value-resorts/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Luggage transfer typically adds 3–4 hours between airport arrival and bag delivery to your room. Guests with early park reservations may prefer carrying essentials and sending larger bags through the service."
+        }
+      },
+      {
+        "title": "Play Disney Parks app shutting down after nearly a decade",
+        "body": "Disney announced the retirement of the Play Disney Parks mobile app, which offered interactive games and wait-time activities at both Walt Disney World and Disneyland. The closure affects experiences like Batuu Bounty Hunters and DuckTales World Showcase Adventure.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/its-game-over-for-play-disney-parks/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Guests relying on Play Disney Parks for queue entertainment should download alternative apps or bring portable activities. The My Disney Experience app remains the primary tool for reservations and wait times."
+        }
+      },
+      {
+        "title": "Disneyland entrance merchandise kiosk closes for refurbishment",
+        "body": "Construction walls now surround a merchandise kiosk near the main Disneyland Park entrance. Multiple removal permits filed suggest demolition work tied to broader entrance area changes.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/08/disneyland-entrance-merchandise-kiosk-apparent-refurbishment-jc1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Entrance construction may create congestion during peak arrival windows between 9–11am. Arriving before park opening or after noon usually offers clearer pathways through security and ticketing."
+        }
+      },
+      {
+        "title": "Coco boat ride story details and concept art revealed",
+        "body": "Disney shared new narrative elements and artwork for the upcoming Coco attraction being built behind Pixar Pier at California Adventure. The boat ride will explore the Land of the Dead with an original story set in the film's universe.",
+        "parkSlug": "california-adventure",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-reveals-new-coco-boat-ride-story-details-concept-art-plus-opening-speculation/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Major new attractions typically draw heavy crowds for 6–12 months post-opening. Guests visiting California Adventure in the next year can likely explore Pixar Pier with shorter waits before the Coco ride debuts."
+        }
+      },
+      {
+        "title": "Disney Cruise Line previews new ship class debuting 2029",
+        "body": "The D23 Experiences Showcase offered the first look at Disney Cruise Line's next generation of vessels, described as a sweet-spot class launching in 2029. The ships will slot between the existing fleet sizes.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/first-look-at-disney-cruise-lines-nextgen-sweet-spot-ship-class/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Inaugural cruise sailings on new ships often book quickly once reservations open. Guests interested in 2029 voyages should monitor Disney Cruise Line announcements in early 2027 for booking windows."
+        }
+      },
+      {
+        "title": "Walt Disney World adds three Good to Go Days for Annual Passholders",
+        "body": "Disney extended the reservation-free window for passholders through August 31 by adding three additional dates. The expansion gives Annual Passholders more flexibility for late-summer park visits.",
+        "parkSlug": null,
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/08/walt-disney-world-quietly-expands-passholder-perks-through-late-august-ab1/"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "Good to Go Days typically see higher passholder attendance at all four parks. Non-passholders visiting on these dates may encounter slightly longer waits, especially during morning and evening hours."
+        }
+      },
+      {
+        "title": "Lakeshore Lodge construction shows themed otter structures taking shape",
+        "body": "Disney Vacation Club's upcoming Lakeshore Lodge resort reveals its nature-inspired character with oversized otter-themed play structures now visible at the pool complex. Exterior finishes and landscaping continue across the property.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/lakeshore-lodge-pool-complex-takes-shape-with-themed-oversized-otter-structures/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "DVC resorts often open booking windows 11–14 months before opening day. Guests interested in Lakeshore Lodge should watch for official opening dates and reservation availability announcements in coming months."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "World Princess Week merchandise launches across Disney platforms",
+        "body": "Disney released a collection of princess-themed products and collaborations to celebrate World Princess Week. Items are available online and at select park retail locations.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/products/live-your-fairytale-with-new-products-for-world-princess-week/"
+        }
+      },
+      {
+        "title": "D23 2026 exclusive merchandise now available on Disney Store",
+        "body": "Limited-edition products from this year's D23 Expo are now sold online following the event's conclusion in Anaheim. The collection includes apparel, collectibles, and accessories tied to announcements made during the showcase.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/products/now-live-on-disney-store-d23-2026-products/"
+        }
+      },
+      {
+        "title": "Fox and the Hound 45th anniversary merchandise arrives with typo",
+        "body": "Walt Disney World released apparel celebrating The Fox and the Hound's milestone, but a character name is misspelled in the new SkinnyDip collaboration line. The collection is available at select shops.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/typo-found-in-fox-and-the-hound-apparel-45th-anniversary-merchandise-now-available-at-walt-disney-world/"
+        }
+      },
+      {
+        "title": "Pastel Walt Disney World spirit jersey now at Magic Kingdom",
+        "body": "A new purple pastel spirit jersey featuring the resort's branding is available for purchase at Magic Kingdom retail locations while supplies last. The adult-sized shirt is priced at seventy-nine dollars.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/walt-disney-world-pastel-spirit-jersey-now-available-at-magic-kingdom/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "Mickey's Not So Scary Halloween Party runs tonight at Magic Kingdom",
+        "body": "The separately-ticketed Halloween event continues this evening with trick-or-treating, character cavalcades, and the Boo-to-You parade. Party hours begin at 7pm with special entertainment running throughout the night.",
+        "parkSlug": "magic-kingdom",
+        "ctaLabel": "Check party calendar",
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Party ticket holders can enter Magic Kingdom as early as 4pm. Arriving during this window typically offers 2–3 hours of shorter daytime attraction waits before evening entertainment begins."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "7seW8yNlu8M",
+      "title": "Disneyland 2026 | D23 Weekend, Bonnie's 1st Visit & Honda Center | D23 The Ultimate Disney Fan Event",
+      "channel": "Paging Mr. Morrow",
+      "publishedAt": "2026-08-17T00:18:27Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/7seW8yNlu8M/mqdefault.jpg",
+      "viewCount": 90003,
+      "url": "https://www.youtube.com/watch?v=7seW8yNlu8M",
+      "summary": "Paging Mr. Morrow covers D23 weekend at Disneyland with highlights from the fan event and a first-time visitor's experience."
+    },
+    {
+      "videoId": "F3UUbqsd_ZE",
+      "title": "🔴Live 2026 Mickey's Not So Scary Halloween Party at the Magic Kingdom Walt Disney World 8/18/2026",
+      "channel": "RON ON THE GO",
+      "publishedAt": "2026-08-19T04:45:03Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/F3UUbqsd_ZE/mqdefault.jpg",
+      "viewCount": 80469,
+      "url": "https://www.youtube.com/watch?v=F3UUbqsd_ZE",
+      "summary": "RON ON THE GO livestreams Mickey's Not So Scary Halloween Party from Magic Kingdom on August 18."
+    },
+    {
+      "videoId": "qS_kdypa1K0",
+      "title": "NEW Halloween Food at Disney Springs: Jock Lindsey's Halloween Bar | Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-08-12T15:58:27Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/qS_kdypa1K0/mqdefault.jpg",
+      "viewCount": 48571,
+      "url": "https://www.youtube.com/watch?v=qS_kdypa1K0",
+      "summary": "WrightDownMainStreet showcases new Halloween-themed food and drinks at Jock Lindsey's Hangar Bar in Disney Springs."
+    },
+    {
+      "videoId": "WtBmUddr7q0",
+      "title": "Every NEW Halloween Food in Magic Kingdom | Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-08-16T15:02:46Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/WtBmUddr7q0/mqdefault.jpg",
+      "viewCount": 35141,
+      "url": "https://www.youtube.com/watch?v=WtBmUddr7q0",
+      "summary": "WrightDownMainStreet reviews all the new Halloween food offerings available across Magic Kingdom."
+    },
+    {
+      "videoId": "5GTsr9mhWbs",
+      "title": "🔴Live: Tranquil Tuesday - Magic Kingdom Monorail Resorts - 8-18-26 - Walt Disney World Live Stream",
+      "channel": "ResortTV1",
+      "publishedAt": "2026-08-19T01:32:40Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/5GTsr9mhWbs/mqdefault.jpg",
+      "viewCount": 19304,
+      "url": "https://www.youtube.com/watch?v=5GTsr9mhWbs",
+      "summary": "ResortTV1 livestreams a tour of Magic Kingdom's monorail resort hotels on August 18."
+    },
+    {
+      "videoId": "AUgeqzq5KpI",
+      "title": "Last days of Paint the Jight with Tinkerbell! #disney #disneyland #shorts",
+      "channel": "Uso Scooter Chris",
+      "publishedAt": "2026-08-19T05:56:01Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/AUgeqzq5KpI/mqdefault.jpg",
+      "viewCount": 1215,
+      "url": "https://www.youtube.com/watch?v=AUgeqzq5KpI",
+      "summary": "Uso Scooter Chris captures the final performances of a Tinkerbell nighttime show at Disneyland."
+    },
+    {
+      "videoId": "GpnsojG3T08",
+      "title": "I can't help that the Parks keep raising prices. lol #disney #disneyparks #d23 #disneyland #japan",
+      "channel": "DreamingUpDemming",
+      "publishedAt": "2026-08-19T01:52:23Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/GpnsojG3T08/mqdefault.jpg",
+      "viewCount": 1179,
+      "url": "https://www.youtube.com/watch?v=GpnsojG3T08",
+      "summary": "DreamingUpDemming comments on Disney park pricing trends in a short video."
+    },
+    {
+      "videoId": "zV3SAknosQg",
+      "title": "Disney parade vibes !! #shorts #disney #disneyland #disneyparks #themeparks #disneyaddict",
+      "channel": "TinaRosethemeparklife ",
+      "publishedAt": "2026-08-19T04:25:32Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/zV3SAknosQg/mqdefault.jpg",
+      "viewCount": 1167,
+      "url": "https://www.youtube.com/watch?v=zV3SAknosQg",
+      "summary": "TinaRosethemeparklife shares short clips from a Disney park parade."
+    },
+    {
+      "videoId": "xY-jxZOQJ-A",
+      "title": "Dansen met Andrea Rieu in Dancing with the Dolls! - 01-08-2026 - Zomer Efteling",
+      "channel": "Jeroen Twee",
+      "publishedAt": "2026-08-19T05:00:07Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/xY-jxZOQJ-A/mqdefault.jpg",
+      "viewCount": 1141,
+      "url": "https://www.youtube.com/watch?v=xY-jxZOQJ-A",
+      "summary": "Jeroen Twee documents a dancing performance at Efteling theme park featuring Andrea Rieu."
+    },
+    {
+      "videoId": "fp-9ojnPWT4",
+      "title": "EPCOT wasn't done entertaining us! #disney #disneyshorts #epcot",
+      "channel": "miles to Magic",
+      "publishedAt": "2026-08-19T03:29:54Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/fp-9ojnPWT4/mqdefault.jpg",
+      "viewCount": 1094,
+      "url": "https://www.youtube.com/watch?v=fp-9ojnPWT4",
+      "summary": "Miles to Magic shares a brief moment of entertainment at EPCOT."
+    }
+  ],
+  "updatedAt": "2026-08-19T11:16:56.321Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-08-19T11:16:56.321Z",
+    "tokens": {
+      "input": 11311,
+      "output": 5690,
+      "costUsd": 0.1193
+    }
+  }
+}
