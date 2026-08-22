@@ -1,0 +1,341 @@
+{
+  "title": "Parkio Daily for August 22, 2026",
+  "slug": "parkio-daily-2026-08-22",
+  "date": "2026-08-22",
+  "teaser": "Big Top Souvenirs reopens soon at Magic Kingdom; Tower of Terror closes Sept 28 for refurbishment; Halloween Time now live at Disneyland.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Space Mountain",
+        "parkSlug": "magic-kingdom",
+        "note": "Early morning still seeing sub-25 minute waits"
+      },
+      {
+        "name": "Haunted Mansion",
+        "parkSlug": "disneyland",
+        "note": "Nightmare Before Christmas overlay now active"
+      },
+      {
+        "name": "Radiator Springs Racers",
+        "parkSlug": "california-adventure",
+        "note": "Haul-O-Ween decorations add seasonal charm"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [
+      {
+        "title": "Tower of Terror closing September 28 for refurbishment",
+        "body": "The Twilight Zone Tower of Terror at Hollywood Studios will shutter on September 28 for a scheduled refurbishment. Guests have just over five weeks to experience the drop tower dark ride before the closure begins.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/08/disney-tower-of-terror-closure-date-cj1/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "The next month offers a clean window to ride without competing against re-opening hype later. Waits tend to spike in the final week before a closure, so mid-September mornings usually offer the smoothest experience."
+        }
+      }
+    ],
+    "bignews": [
+      {
+        "title": "Big Top Souvenirs reopening soon at Magic Kingdom with expanded food menu",
+        "body": "After a six-month refurbishment, Big Top Souvenirs in Storybook Circus will reopen with new menu items alongside its merchandise offerings. The location closed in early 2026 and is set to welcome guests back in the coming days.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/big-top-souvenirs-sets-reopening-date-new-menu-items-at-magic-kingdo/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "New food locations tend to draw curious crowds in the first week. Stopping by mid-morning or late afternoon usually avoids the lunch rush and gives you time to browse both snacks and souvenirs without congestion."
+        }
+      },
+      {
+        "title": "EPCOT Food & Wine Festival menu revealed ahead of August 27 start",
+        "body": "The full lineup of food and beverage offerings for the 2026 EPCOT International Food & Wine Festival is now public, with the event kicking off August 27 and running through November. Festival marketplaces span World Showcase and beyond.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/disney-eats-epcot-international-food-and-wine-festival-foodie-guide/"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "Opening weekend of the festival typically draws the heaviest foot traffic around World Showcase. Visiting EPCOT on a weekday morning before 11am or after 7pm often yields shorter lines at popular booths and attractions alike."
+        }
+      },
+      {
+        "title": "Silly Symphony Swings at California Adventure reopens August 28",
+        "body": "The swing ride at Paradise Gardens Park will return from refurbishment on August 28. Scrim and scaffolding have come down, signaling completion of the project that kept the attraction offline for several weeks.",
+        "parkSlug": "california-adventure",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/silly-symphony-swings-reopening-date-revealed-scrim-scaffolding-come-down/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Reopening day often brings a surge of guests eager to ride. Visiting later in the week—especially during evening hours—usually offers walk-on or minimal waits as the novelty settles."
+        }
+      },
+      {
+        "title": "Halloween Time officially begins at Disneyland and California Adventure",
+        "body": "Seasonal overlays, décor, and character meet-and-greets are now active across both Anaheim parks. Haunted Mansion Holiday has returned, and Cars Land features Haul-O-Ween theming for the fall season.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/dlr/halloween-characters-to-spot-at-disneyland/"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "Opening days of seasonal overlays tend to pack Fantasyland and New Orleans Square by mid-morning. Rope-drop or post-dinner hours usually deliver shorter queues for Haunted Mansion Holiday and other Halloween attractions."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "Refillable mug charms debut at Walt Disney World",
+        "body": "Character-themed charms designed to clip onto the handle of resort refillable mugs are now available for five dollars each. The accessories help families distinguish their cups and have been selling quickly at select locations.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-worlds-fast-selling-5-character-cup-charms-could-be-the-next-big-merchandise-craze/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Popular character designs tend to sell out by early afternoon at flagship shops. Grabbing your preferred charm during morning Extra Magic Hours or right at park opening usually ensures the widest selection."
+        }
+      },
+      {
+        "title": "Yacht and Beach Club refurbishment work progresses ahead of 2027 finish",
+        "body": "Construction crews have made significant headway on multi-year renovation projects at both EPCOT-area resorts. Work spans guest rooms, common areas, and outdoor spaces, with a target completion in 2027.",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-world-makes-major-progress-on-multi-year-yacht-beach-club-construction-projects/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Mid-morning construction noise can carry into pool and lobby areas. Scheduling quieter activities—dining reservations, park time—during those hours and returning to the resort in late afternoon often avoids the loudest stretches."
+        }
+      },
+      {
+        "title": "Winnie the Pooh honey bottle now sold at Magic Kingdom",
+        "body": "A bear-shaped bottle filled with pure honey has arrived at select merchandise locations in the park. The item joins a recently released Winnie the Pooh tea collection and retails for eight dollars.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/winnie-the-pooh-pure-honey-bottle-now-available-at-magic-kingdom/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Novelty food items like this tend to move fast at Fantasyland and Main Street shops. Stopping by before 10am or during the evening parade usually means better stock and shorter checkout lines."
+        }
+      },
+      {
+        "title": "Alice in Wonderland 75th anniversary medallions debut at Disneyland",
+        "body": "New collectible medallions celebrating the film's milestone are dispensed from a touchscreen machine at World of Disney in Downtown Disney. The colorful designs mark the first high-quality pressed coins in this series.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/alice-in-wonderland-75th-anniversary-collectible-medallions-spotted-at-disneyland-resort/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Medallion machines can run out of popular designs by afternoon, especially on weekends. Visiting Downtown Disney in the morning or late evening usually improves your odds of finding all variants in stock."
+        }
+      },
+      {
+        "title": "Heinz condiment dispensers now live at Disneyland Resort",
+        "body": "Following a multi-year partnership announcement between Disney and Kraft Heinz, ten Kraft Heinz brands are rolling out across both U.S. resorts. Disneyland has begun installation; Walt Disney World rollout is expected soon.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/08/heinz-condiment-dispensers-arrive-at-disneyland-disney-world-still-waiting/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "New condiment stations can take a few days to stock fully at every quick-service spot. Checking flagship locations like Plaza Inn or Flo's V8 Cafe first usually ensures you'll find what you need without hunting."
+        }
+      },
+      {
+        "title": "Haunted Mansion Stoney Clover Lane collection arrives at Walt Disney World",
+        "body": "A new line of bags and accessories inspired by the classic attraction is now available at select shops across the resort. The collaboration features signature Stoney Clover Lane customization patches and details.",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/disney-introducing-employee-stock-purchases-changing-health-insurance-plans-in-todays-daily-recap-for-8-21-2026/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Limited-edition collaborations like Stoney Clover Lane tend to sell out within days at popular stores. Shopping online via the Shop Disney Parks app or visiting Disney Springs before noon often secures your pick before inventory dwindles."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Paint the Night parade ends Disneyland run",
+        "body": "The electrical parade concluded its limited engagement at Disneyland following the D23 weekend. No immediate return date has been announced, though the show remains a fan favorite for future seasonal events.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/disney-introducing-employee-stock-purchases-changing-health-insurance-plans-in-todays-daily-recap-for-8-21-2026/"
+        }
+      },
+      {
+        "title": "Space Mountain From the Earth to the Moon returns to Disneyland Paris",
+        "body": "The 1995 version of the attraction is making a comeback at the Paris park, delighting fans who remember the original Jules Verne-inspired theming. The announcement generated significant excitement during D23 weekend.",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/space-mountain-from-earth-moon-disneyland-paris-biggest-news-disney-fans/"
+        }
+      },
+      {
+        "title": "Walt Disney World website receives cleaner redesign",
+        "body": "The resort has rolled out major updates to its digital booking and planning platforms. Changes simplify navigation and streamline vacation planning, with additional features expected in coming months.",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-world-debuts-cleaner-new-website/"
+        }
+      },
+      {
+        "title": "Spike the Bee Little Golden Book set for spring 2027 release",
+        "body": "A new children's book featuring EPCOT's Flower & Garden Festival mascot will arrive next year, timed to the 2027 festival season. The title joins Disney's extensive Little Golden Book catalog.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/first-look-at-spike-the-bee-little-golden-book-releasing-next-year/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "Mickey's Not-So-Scary Halloween Party kicks off at Magic Kingdom",
+        "body": "The separately ticketed evening event is now running select nights through November, featuring exclusive character meets, the Boo To You parade, and Halloween-themed treats. Advance tickets are still available for many dates, though popular evenings are selling out.",
+        "parkSlug": "magic-kingdom",
+        "ctaLabel": "Check ticket availability",
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Weeknight parties in September and early October usually draw lighter crowds than Friday or weekend dates. Arriving right at the 7pm start often lets you hit signature experiences like the Hocus Pocus Villain Spelltacular before lines build after 8:30pm."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "7seW8yNlu8M",
+      "title": "Disneyland 2026 | D23 Weekend, Bonnie's 1st Visit & Honda Center | D23 The Ultimate Disney Fan Event",
+      "channel": "Paging Mr. Morrow",
+      "publishedAt": "2026-08-17T00:18:27Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/7seW8yNlu8M/mqdefault.jpg",
+      "viewCount": 110199,
+      "url": "https://www.youtube.com/watch?v=7seW8yNlu8M",
+      "summary": "Paging Mr. Morrow covers D23 weekend at Disneyland, including a first-time visit and event highlights at the Honda Center."
+    },
+    {
+      "videoId": "tB_KKGMJeLo",
+      "title": "🔴Live 2026 Mickey's Not So Scary Halloween Party at the Magic Kingdom Walt Disney World 8/21/2026",
+      "channel": "RON ON THE GO",
+      "publishedAt": "2026-08-22T04:49:37Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/tB_KKGMJeLo/mqdefault.jpg",
+      "viewCount": 51656,
+      "url": "https://www.youtube.com/watch?v=tB_KKGMJeLo",
+      "summary": "Ron On The Go livestreams Mickey's Not-So-Scary Halloween Party from Magic Kingdom on August 21."
+    },
+    {
+      "videoId": "WtBmUddr7q0",
+      "title": "Every NEW Halloween Food in Magic Kingdom | Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-08-16T15:02:46Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/WtBmUddr7q0/mqdefault.jpg",
+      "viewCount": 41724,
+      "url": "https://www.youtube.com/watch?v=WtBmUddr7q0",
+      "summary": "WrightDownMainStreet showcases all the new Halloween-themed food offerings available at Magic Kingdom this season."
+    },
+    {
+      "videoId": "mvfUgfOOZdk",
+      "title": "🔴Live  Walt Disney World Orlando - Magic Kingdom Park  - Mickeys Not So Scary Halloween Party",
+      "channel": "Now Is The Time",
+      "publishedAt": "2026-08-22T05:14:53Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/mvfUgfOOZdk/mqdefault.jpg",
+      "viewCount": 6716,
+      "url": "https://www.youtube.com/watch?v=mvfUgfOOZdk",
+      "summary": "Now Is The Time delivers a live stream from Mickey's Not-So-Scary Halloween Party at Magic Kingdom."
+    },
+    {
+      "videoId": "nnLVBetVWvg",
+      "title": "You won't stop laughing at these Disneyland character clips#disney #disneyland #comedy #funny #fyp",
+      "channel": "Lesley Hale",
+      "publishedAt": "2026-08-22T01:20:54Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/nnLVBetVWvg/mqdefault.jpg",
+      "viewCount": 5154,
+      "url": "https://www.youtube.com/watch?v=nnLVBetVWvg",
+      "summary": "Lesley Hale shares humorous character interaction clips from Disneyland."
+    },
+    {
+      "videoId": "PxyA38fy6-I",
+      "title": "Disney Parks Scooter Problem, Peter Pan Fan REACTS, WDW Adds Trigger Warnings? TPP LIVE!",
+      "channel": "That Park Place",
+      "publishedAt": "2026-08-21T18:34:04Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/PxyA38fy6-I/mqdefault.jpg",
+      "viewCount": 3770,
+      "url": "https://www.youtube.com/watch?v=PxyA38fy6-I",
+      "summary": "That Park Place discusses Disney Parks mobility scooter issues, Peter Pan fan reactions, and potential trigger warnings at Walt Disney World."
+    },
+    {
+      "videoId": "dVzf7A-M3Dg",
+      "title": "Eating the VIRAL breakfast burrito at Disney's California Adventure 🌯🎡 #disneyland #disneyfood",
+      "channel": "Regina & John - 28th & Main",
+      "publishedAt": "2026-08-22T03:20:56Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/dVzf7A-M3Dg/mqdefault.jpg",
+      "viewCount": 1378,
+      "url": "https://www.youtube.com/watch?v=dVzf7A-M3Dg",
+      "summary": "Regina and John try the popular breakfast burrito at Disney California Adventure."
+    },
+    {
+      "videoId": "XEtCZNBshkc",
+      "title": "ToonTown #familyvlog #pov #rollercoaster #disney #Disneyland #fun",
+      "channel": "LUCKY'S DIY GARAGE",
+      "publishedAt": "2026-08-22T02:54:30Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/XEtCZNBshkc/mqdefault.jpg",
+      "viewCount": 1371,
+      "url": "https://www.youtube.com/watch?v=XEtCZNBshkc",
+      "summary": "Lucky's DIY Garage shares a family vlog and ride POV from ToonTown at Disneyland."
+    },
+    {
+      "videoId": "67Kf9ATioGM",
+      "title": "🦆 A Little Disney Moment #HongKongDisneyland #DisneyExplorersLodge #disney #disneyland",
+      "channel": "WhereStarGoes",
+      "publishedAt": "2026-08-22T04:10:10Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/67Kf9ATioGM/mqdefault.jpg",
+      "viewCount": 1234,
+      "url": "https://www.youtube.com/watch?v=67Kf9ATioGM",
+      "summary": "WhereStarGoes captures a moment at Hong Kong Disneyland's Disney Explorers Lodge."
+    },
+    {
+      "videoId": "WH5_KYHt6UQ",
+      "title": "Who gets it? Unexpected iconic disney moments 😂# #funny #baby #foryou #disney #disneyland",
+      "channel": "HappySlacker ",
+      "publishedAt": "2026-08-22T01:47:15Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/WH5_KYHt6UQ/mqdefault.jpg",
+      "viewCount": 1155,
+      "url": "https://www.youtube.com/watch?v=WH5_KYHt6UQ",
+      "summary": "HappySlacker shares funny and unexpected moments from Disney parks."
+    }
+  ],
+  "updatedAt": "2026-08-22T11:12:41.945Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-08-22T11:12:41.945Z",
+    "tokens": {
+      "input": 11218,
+      "output": 5574,
+      "costUsd": 0.1173
+    }
+  }
+}
