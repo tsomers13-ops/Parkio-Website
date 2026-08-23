@@ -1,0 +1,332 @@
+{
+  "title": "Parkio Daily for August 23, 2026",
+  "slug": "parkio-daily-2026-08-23",
+  "date": "2026-08-23",
+  "teaser": "Mickey debuts new Halloween costumes at Disneyland; EPCOT's Food & Wine Festival opens Aug 27 with exclusive early sneak at new menu items.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Remy's Ratatouille Adventure",
+        "parkSlug": "epcot",
+        "note": "Low waits mid-morning before World Showcase crowds arrive"
+      },
+      {
+        "name": "Big Thunder Mountain Railroad",
+        "parkSlug": "magic-kingdom",
+        "note": "Lighter than usual with Halloween party evenings drawing crowds later"
+      },
+      {
+        "name": "Radiator Springs Racers",
+        "parkSlug": "california-adventure",
+        "note": "Early entry advantage before Plaza de la Familia show traffic builds"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [],
+    "bignews": [
+      {
+        "title": "Mickey and Friends debut fresh Halloween costumes at Disneyland",
+        "body": "The core Disney characters are now greeting guests in Town Square wearing new harlequin-inspired outfits in orange and black for the 2026 Halloween season. The design marks a shift from last year's red superhero masks.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/photos-mickey-and-friends-debut-new-costumes-2026-halloween-disneyland/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Town Square meet-and-greets tend to fill up by late morning on weekends. Arriving at rope drop usually gives you shorter waits and better photo lighting before noon."
+        }
+      },
+      {
+        "title": "EPCOT Food & Wine Festival menu revealed ahead of August 27 opening",
+        "body": "Disney has published the full lineup of festival dishes and drinks arriving at World Showcase booths next week. The event runs through mid-November with returning favorites and new items across multiple pavilions.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/disney-eats-epcot-international-food-and-wine-festival-foodie-guide/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Opening weekend festival booths often experience ingredient shortages by evening. Visiting Wednesday through Friday mornings after launch typically offers full menus and shorter lines."
+        }
+      },
+      {
+        "title": "Primeval World dinosaur diorama reopens on Disneyland Railroad",
+        "body": "The classic animatronic display between Tomorrowland and Main Street stations is operating again after an extended closure. Fresh technical work has improved the prehistoric figures.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/08/primeval-world-disneyland-railroad-dinosaurs-return-emd1/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "The railroad typically offers walk-on boarding during early afternoon hours when most guests are focused on attractions. A full loop takes about 20 minutes and provides a rest break."
+        }
+      },
+      {
+        "title": "Plaza de la Familia returns with live Coco storytelling show",
+        "body": "Disney California Adventure has launched its Day of the Dead celebration in Paradise Gardens. The Storytellers performance features hosts Alma and Ramone presenting music and narrative from the film.",
+        "parkSlug": "california-adventure",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/photos-video-storytellers-of-plaza-de-la-familia-coco-disney-california-adventure/"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "Paradise Gardens showtime crowds often spill into nearby pathways during performances. Plan dining or attraction visits in other lands during the 20 minutes before and after scheduled shows."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "D23-exclusive Star Wars merchandise now for sale at Disneyland's Batuu",
+        "body": "Limited-edition lightsaber hilts, a polar mouse droid, and additional collector items from this month's expo have arrived at Galaxy's Edge shops while supplies last. The same products are also available at Walt Disney World.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/d23-exclusive-lightsaber-hilt-set-polar-mouse-droid-and-more-star-wars-merchandise-in-todays-daily-recap-for-8-22-2026/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Batuu merchandise sellouts often happen within 48 hours for limited releases. Visiting Dok-Ondar's or the Resistance Supply shops at park opening tends to yield the widest selection."
+        }
+      },
+      {
+        "title": "The Muppet Show 50th anniversary collection arrives in parks",
+        "body": "New apparel and collectibles celebrating five decades of the variety series are now stocked at Disneyland and Walt Disney World retail locations. Designs feature classic characters and show branding.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/the-muppet-show-50th-merchandise-arrives-at-walt-disney-world-2/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Anniversary collections typically see quickest turnover at high-traffic stores like Emporium or World of Disney. Smaller boutique shops often restock slower but face less competition."
+        }
+      },
+      {
+        "title": "EPCOT Germany pavilion adds new touches to model train display",
+        "body": "Imagineering and park technical teams have installed fresh details and Easter eggs in the beloved miniature railroad, including subtle nods to classic EPCOT attractions. Photos show enhanced scenery elements.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/new-magic-in-germany-train-garden-brings-back-dreamfinder-to-epcot-early/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "The Germany pavilion train garden is easiest to view during late morning before lunch crowds pack the surrounding courtyard. Weekday visits usually offer better sightlines than weekends."
+        }
+      },
+      {
+        "title": "Pixar 40th anniversary merchandise expands beyond D23",
+        "body": "Commemorative mugs and apparel originally sold at the Anaheim expo are now available at Disneyland Resort stores and online. The collection honors four decades of the animation studio.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/d23-exclusive-pixar-40th-anniversary-merchandise-now-available-at-disneyland-resort/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Post-event D23 merchandise often sells out within a week at park locations. Ordering online or visiting smaller resort gift shops early in your trip tends to improve availability."
+        }
+      },
+      {
+        "title": "Superhero Mickey flowerbed returns to Disneyland entrance",
+        "body": "The main gate topiary has been redesigned for fall with Mickey sporting a bright green mask instead of last year's red version. The display stands out among seasonal plantings.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/superhero-mickey-flowerbed-returns-to-disneyland-for-halloween-2026/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "The entrance plaza is least crowded for photos during the first 30 minutes after opening and the final hour before close. Midday foot traffic often blocks clear shots."
+        }
+      },
+      {
+        "title": "Disney Signature Home park-themed blankets debut at Disneyland Resort",
+        "body": "Plush fleece throws featuring iconic park elements like trash cans and ride vehicles are now sold at resort shops. The collection offers a playful take on Disney design details.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/disney-signature-home-throw-blankets-now-available-at-disneyland-resort/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Home goods like blankets tend to occupy shelf space longer than apparel or pins. Visiting during your last park day often ensures the item is still in stock without carrying it all trip."
+        }
+      },
+      {
+        "title": "Hollywood Studios Brown Derby Lounge construction progresses",
+        "body": "A new overhead framework is visible at the outdoor lounge adjacent to the signature restaurant. The structure will eventually provide shade and weather protection for the expanded seating area.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/d23-exclusive-lightsaber-hilt-set-polar-mouse-droid-and-more-star-wars-merchandise-in-todays-daily-recap-for-8-22-2026/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Construction zones near Sunset Boulevard often generate midday noise and foot-traffic bottlenecks. Dining or shopping in other park zones during peak construction hours usually offers a quieter experience."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Yacht and Beach Club boat dock remains closed",
+        "body": "Water transportation service from the resort to EPCOT and Hollywood Studios is still unavailable. Guests are using alternate transport including walking paths and buses.",
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/08/22/a-popular-disney-world-resort-perk-is-still-unavailable/"
+        }
+      },
+      {
+        "title": "Character cup charms selling fast at Walt Disney World",
+        "body": "The new refillable mug accessories that clip into cup handles have become a popular collectible. Priced at five dollars, the charms add personalization and help families distinguish their mugs.",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-worlds-fast-selling-5-character-cup-charms-could-be-the-next-big-merchandise-craze/"
+        }
+      },
+      {
+        "title": "Cast members share behind-the-scenes Halloween setup at Walt Disney World",
+        "body": "Disney posted a feature highlighting the overnight transformation work that brings fall decorations to the resort. Photos and stories show the scale of seasonal change across properties.",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/how-cast-members-create-halloween-magic-at-walt-disney-world/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "Disneyland Halloween characters now greeting in themed locations",
+        "body": "The official parks blog has published a guide to where guests can find Mickey, Minnie, and other characters in their fall outfits throughout the resort. Meet-and-greet spots are spread across both parks during daytime hours.",
+        "parkSlug": "disneyland",
+        "ctaLabel": "View character guide",
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Character queues tend to be shortest in the hour after park opening and again during parade or show times when crowds shift. Targeting off-peak windows often cuts wait times in half."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "7seW8yNlu8M",
+      "title": "Disneyland 2026 | D23 Weekend, Bonnie's 1st Visit & Honda Center | D23 The Ultimate Disney Fan Event",
+      "channel": "Paging Mr. Morrow",
+      "publishedAt": "2026-08-17T00:18:27Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/7seW8yNlu8M/mqdefault.jpg",
+      "viewCount": 115066,
+      "url": "https://www.youtube.com/watch?v=7seW8yNlu8M",
+      "summary": "Paging Mr. Morrow covers D23 weekend activities at Disneyland alongside a first-time guest visit and an event at Honda Center."
+    },
+    {
+      "videoId": "WtBmUddr7q0",
+      "title": "Every NEW Halloween Food in Magic Kingdom | Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-08-16T15:02:46Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/WtBmUddr7q0/mqdefault.jpg",
+      "viewCount": 43495,
+      "url": "https://www.youtube.com/watch?v=WtBmUddr7q0",
+      "summary": "WrightDownMainStreet showcases all of the new seasonal food offerings available for Halloween at Magic Kingdom this year."
+    },
+    {
+      "videoId": "olBFLP10Eo8",
+      "title": "🔴 LIVE  Epcot Center  - Disney World Orlando. -  Ratatouille and Living with the Land",
+      "channel": "Now Is The Time",
+      "publishedAt": "2026-08-23T02:03:58Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/olBFLP10Eo8/mqdefault.jpg",
+      "viewCount": 6844,
+      "url": "https://www.youtube.com/watch?v=olBFLP10Eo8",
+      "summary": "Now Is The Time streams a live tour of EPCOT featuring rides on Ratatouille and Living with the Land."
+    },
+    {
+      "videoId": "i3QtAnaXEw8",
+      "title": "LIVE from Magic Kingdom! Disney's NEW Starlight Parade, Happily Ever After Fireworks & Rides",
+      "channel": "Living in DIZ",
+      "publishedAt": "2026-08-23T04:46:31Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/i3QtAnaXEw8/mqdefault.jpg",
+      "viewCount": 6652,
+      "url": "https://www.youtube.com/watch?v=i3QtAnaXEw8",
+      "summary": "Living in DIZ broadcasts live from Magic Kingdom covering the new Starlight Parade, Happily Ever After fireworks, and various attractions."
+    },
+    {
+      "videoId": "M7Goirer4zQ",
+      "title": "🔴LIVE: Disney 4 Park Challenge at Walt Disney World!",
+      "channel": "Men of Main Street Podcast",
+      "publishedAt": "2026-08-23T04:30:44Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/M7Goirer4zQ/mqdefault.jpg",
+      "viewCount": 4190,
+      "url": "https://www.youtube.com/watch?v=M7Goirer4zQ",
+      "summary": "Men of Main Street Podcast attempts to visit all four Walt Disney World theme parks in a single day during a live stream."
+    },
+    {
+      "videoId": "1Pi-QFweKn0",
+      "title": "【速報】震度5の地震発生で大混乱⁉️今日のディズニーリゾート1周の旅【2026.8.23】",
+      "channel": "じょま散歩",
+      "publishedAt": "2026-08-23T02:52:03Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/1Pi-QFweKn0/mqdefault.jpg",
+      "viewCount": 3329,
+      "url": "https://www.youtube.com/watch?v=1Pi-QFweKn0",
+      "summary": "This Japanese channel documents a visit to Tokyo Disney Resort following a magnitude 5 earthquake, showing how the parks responded."
+    },
+    {
+      "videoId": "yL-1MeY56tg",
+      "title": "【速報】震度5の地震発生で混雑に変化⁉️ディズニーリゾート最新混雑状況【2026.8.23】",
+      "channel": "ジョマジのディズニー研究所",
+      "publishedAt": "2026-08-23T02:02:08Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/yL-1MeY56tg/mqdefault.jpg",
+      "viewCount": 3157,
+      "url": "https://www.youtube.com/watch?v=yL-1MeY56tg",
+      "summary": "A Japanese Disney channel reports on crowd pattern changes at Tokyo Disney Resort after the magnitude 5 earthquake event."
+    },
+    {
+      "videoId": "at20IN-Hn4Y",
+      "title": "Show Disney #roilion #lionking #simba #mufasa #hakuna_matata #timão #pumba #thejunglebook #dream",
+      "channel": "paristem",
+      "publishedAt": "2026-08-23T02:11:36Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/at20IN-Hn4Y/mqdefault.jpg",
+      "viewCount": 1278,
+      "url": "https://www.youtube.com/watch?v=at20IN-Hn4Y",
+      "summary": "Paristem shares footage from a Disney Lion King stage show featuring the film's beloved characters and songs."
+    },
+    {
+      "videoId": "aHpXpjvDHVQ",
+      "title": "Follow me at pixie_pr1ncess #disneymom #disney #disneyland #d23 #katseye #hercules",
+      "channel": "Brittany Gatewood",
+      "publishedAt": "2026-08-23T06:59:37Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/aHpXpjvDHVQ/mqdefault.jpg",
+      "viewCount": 1216,
+      "url": "https://www.youtube.com/watch?v=aHpXpjvDHVQ",
+      "summary": "Brittany Gatewood shares Disneyland and D23 experiences with mentions of Hercules and other Disney content on her social channels."
+    },
+    {
+      "videoId": "6Ru0aj_B6C4",
+      "title": "Disney Vlog Out Now!! #disney #disneyland #vacation #vlog #creator #fyp #funny",
+      "channel": "DoodleVlogz",
+      "publishedAt": "2026-08-23T01:54:28Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/6Ru0aj_B6C4/mqdefault.jpg",
+      "viewCount": 1168,
+      "url": "https://www.youtube.com/watch?v=6Ru0aj_B6C4",
+      "summary": "DoodleVlogz announces a new Disneyland vacation vlog covering their recent trip to the resort."
+    }
+  ],
+  "updatedAt": "2026-08-23T11:13:09.593Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-08-23T11:13:09.593Z",
+    "tokens": {
+      "input": 11253,
+      "output": 5323,
+      "costUsd": 0.1136
+    }
+  }
+}
