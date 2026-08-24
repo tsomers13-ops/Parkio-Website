@@ -1,0 +1,335 @@
+{
+  "title": "Parkio Daily for August 24, 2026",
+  "slug": "parkio-daily-2026-08-24",
+  "date": "2026-08-24",
+  "teaser": "Fantasmic! runs without fireworks at Disneyland; EPCOT Food & Wine menus drop; Tropical Americas construction advances at Animal Kingdom.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Slinky Dog Dash",
+        "parkSlug": "hollywood-studios",
+        "note": "Short waits early morning before heat builds"
+      },
+      {
+        "name": "Space Mountain",
+        "parkSlug": "magic-kingdom",
+        "note": "Walk-ons likely during dinner hour"
+      },
+      {
+        "name": "Soarin'",
+        "parkSlug": "epcot",
+        "note": "Lines drop after 6pm as festival crowds disperse"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [],
+    "bignews": [
+      {
+        "title": "EPCOT Food & Wine Festival menus now available",
+        "body": "The full lineup of Global Marketplace dishes for this year's Food & Wine Festival has been released. The event runs August 27 through November, featuring returning favorites and new items across dozens of outdoor kitchens.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/disney-eats-epcot-international-food-and-wine-festival-foodie-guide/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Opening weekend tends to draw the largest crowds at Global Marketplaces. Visiting after Labor Day often means shorter food lines and easier outdoor seating."
+        }
+      },
+      {
+        "title": "Fantasmic! continues without pyrotechnics at Disneyland",
+        "body": "The Rivers of America nighttime show has run without fireworks since Wednesday, marking the latest technical issue since the 2023 dragon fire. No return date for full pyrotechnic effects has been announced.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/a-nightmare-fantasmic-several-nights-with-no-fireworks-compound-disgraceful-maintenance-issues-at-disneyland/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "If fireworks are a priority, consider skipping Fantasmic! until technical issues resolve. Check showtimes for other entertainment options in Disneyland that evening."
+        }
+      },
+      {
+        "title": "Halloween characters now meeting guests at Disneyland",
+        "body": "Halloween Time character appearances have started across Disneyland and California Adventure, with themed costumes for Mickey and friends plus seasonal favorites appearing throughout both parks.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/dlr/halloween-characters-to-spot-at-disneyland/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Character meet lines tend to be shortest in the first hour after park opening. Mornings often offer the best photo lighting and fewer guests competing for time."
+        }
+      },
+      {
+        "title": "Tropical Americas construction progresses at Animal Kingdom",
+        "body": "Fresh roof framing and themed rockwork have been added to the former DinoLand U.S.A. area as crews continue building the Pueblo Esperanza village that will anchor the new land.",
+        "parkSlug": "animal-kingdom",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/fresh-roof-framing-more-rockwork-added-at-tropical-americas-in-disneys-animal-kingdom/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Construction noise tends to carry across the Asia pathway during midday. If seeking quieter areas, the Oasis and Discovery Island trails usually remain calmer."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "World Princess Week Spirit Jerseys arrive at Disneyland",
+        "body": "New Spirit Jerseys celebrating Disney princesses across different eras are now on shelves at Disneyland Resort. The collection features Cinderella, Belle, Aurora, and other classic characters in themed designs.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/cinderella-belle-aurora-more-princess-week-spirit-jerseys-arrive-at-disneyland/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Limited-release apparel often sells out at flagship stores by noon. Visiting Emporium or World of Disney early tends to yield the best size selection."
+        }
+      },
+      {
+        "title": "D23 Small Kingdom figures now available at Disneyland Resort",
+        "body": "Light-up replica models of Disneyland landmarks, including the Fire Department building, are in stock after debuting at D23. The collectible figures are also available online at Disney Store while supplies last.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/small-kingdom-figures-from-d23-2026-now-available-at-disneyland-resort/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "High-demand collectibles from D23 tend to move quickly. Purchasing early in the day or online often avoids disappointment if in-park stock runs low."
+        }
+      },
+      {
+        "title": "New Marvel merchandise arrives in Avengers Campus",
+        "body": "Spider-Man, Iron Man, Groot, and other Marvel characters are featured on fresh apparel, accessories, and collectibles now available at California Adventure's Avengers Campus shops.",
+        "parkSlug": "california-adventure",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/spider-man-iron-man-groot-more-merchandise-arrives-at-disneyland-resort/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Avengers Campus stores tend to be busiest mid-afternoon when Web Slingers wait peak. Shopping during morning or evening hours usually means shorter checkout lines."
+        }
+      },
+      {
+        "title": "Twelve Disney World restaurant menus updated this week",
+        "body": "A dozen Walt Disney World dining locations have rolled out menu changes, adding new items and removing others. The updates span table service and quick service spots across all four parks and resorts.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/08/23/12-disney-world-restaurants-changed-this-week/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Menu changes often mean new signature dishes are available for a limited time. Checking restaurant boards upon arrival helps spot items that may rotate out quickly."
+        }
+      },
+      {
+        "title": "Disney ornament collection expands at Walt Disney World",
+        "body": "New holiday ornaments featuring Tinker Bell, Dumbo, Mickey and Pluto, and Mickey balloons are now on sale at select Walt Disney World gift shops. The designs are available year-round.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/tinker-bell-dumbo-mickey-and-pluto-and-mickey-balloon-ornaments-arrive-at-walt-disney-world/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Ornament collectors often find the widest selection at resort gift shops in the evening when park stores are busier. Stock levels tend to be more consistent outside the four parks."
+        }
+      },
+      {
+        "title": "Halloween decorations now up at Walt Disney World",
+        "body": "Cast Members have completed overnight installation of fall and Halloween theming across Walt Disney World Resort. Pumpkins, autumn garlands, and seasonal props are visible throughout all four parks and resort hotel lobbies.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/how-cast-members-create-halloween-magic-at-walt-disney-world/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Photo spots featuring new Halloween decor tend to be least crowded during early morning hours. Main Street U.S.A. and the EPCOT entrance plaza often offer the most elaborate backdrops."
+        }
+      },
+      {
+        "title": "Space-themed kids backpack debuts at Disneyland",
+        "body": "A new backpack for children featuring Mickey Mouse, Donald Duck, and Pluto in astronaut suits is available at Disneyland. The light gray bag includes a clear circular window on the front showing Mickey on the moon.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/astronaut-mickey-donald-pluto-featured-on-space-themed-backpack-at-disneyland/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Kids apparel and accessories often see the highest demand during peak family travel periods. Purchasing early in your visit usually ensures availability before sizes run out."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Disney Vacation Club members receive Halloween perk",
+        "body": "DVC has announced a special Halloween benefit for members. Details on the exclusive offering are available through the member portal.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/08/23/disney-vacation-club-members-get-a-special-halloween-perk/"
+        }
+      },
+      {
+        "title": "Disney World repainting projects continue across property",
+        "body": "Multiple attractions and facilities are receiving fresh paint as part of ongoing maintenance work. The projects span all four theme parks and represent a broader effort to refresh aging surfaces.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-world-is-on-a-roll-with-repainting-projects-lately/"
+        }
+      },
+      {
+        "title": "Hurly Burly Jazz Club construction progresses at Jellyrolls location",
+        "body": "Another section of the former Jellyrolls facade at Disney's BoardWalk has been repainted as renovation work advances. The blue-and-white stripes are being replaced with a darker, wavy design for the incoming venue.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/a-nightmare-fantasmic-several-nights-with-no-fireworks-compound-disgraceful-maintenance-issues-at-disneyland-in-todays-daily-recap-for-8-23-2026/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "Food & Wine Cheese Crawl returns with new twist",
+        "body": "Emile's Fromage Montage, the festival's popular cheese-focused scavenger hunt, is back for 2026 with adjustments that may increase difficulty. Guests complete the crawl by sampling cheese dishes at designated Global Marketplaces and collecting stamps.",
+        "parkSlug": "epcot",
+        "ctaLabel": "Plan your cheese crawl route",
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Completing the Cheese Crawl on weekdays tends to mean shorter lines at each booth. Starting near World Showcase opening and working counterclockwise often keeps you ahead of the midday rush."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "cMjS2vF519o",
+      "title": "🔴 Live: Oogie Boogie Bash Halloween Party at Disneyland California Adventure  - 08/23/26",
+      "channel": "Koda Bear the Explorer ",
+      "publishedAt": "2026-08-24T06:51:50Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/cMjS2vF519o/mqdefault.jpg",
+      "viewCount": 72572,
+      "url": "https://www.youtube.com/watch?v=cMjS2vF519o",
+      "summary": "A live stream from the Oogie Boogie Bash Halloween party at California Adventure on August 23, showcasing the after-hours event."
+    },
+    {
+      "videoId": "M8g-GIuYaWk",
+      "title": "LIVE! EPIC Walt Disney World Park Hopping On a Mobility Scooter! #DisneyWorldLiveStream #DISNEYECV",
+      "channel": "Skootah Adventures ",
+      "publishedAt": "2026-08-24T02:26:32Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/M8g-GIuYaWk/mqdefault.jpg",
+      "viewCount": 7832,
+      "url": "https://www.youtube.com/watch?v=M8g-GIuYaWk",
+      "summary": "A live park-hopping tour of Walt Disney World using a mobility scooter, demonstrating accessibility across multiple parks."
+    },
+    {
+      "videoId": "lM5NRlpqJxE",
+      "title": "\\ ボン・ヴォヤージュ /8月24日販売状況を紹介！",
+      "channel": "みい🎀",
+      "publishedAt": "2026-08-24T03:42:14Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/lM5NRlpqJxE/mqdefault.jpg",
+      "viewCount": 3340,
+      "url": "https://www.youtube.com/watch?v=lM5NRlpqJxE",
+      "summary": "An overview of merchandise availability at the Bon Voyage shop on August 24."
+    },
+    {
+      "videoId": "wlN2V0-KI_c",
+      "title": "Disney love #disney #disneyland #love",
+      "channel": "Wacky moments 4",
+      "publishedAt": "2026-08-24T02:38:03Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/wlN2V0-KI_c/mqdefault.jpg",
+      "viewCount": 2496,
+      "url": "https://www.youtube.com/watch?v=wlN2V0-KI_c",
+      "summary": "A short video celebrating Disneyland moments and experiences."
+    },
+    {
+      "videoId": "vzadEgGKWsE",
+      "title": "7月30日発売ディズニー新グッズを紹介！ #ディズニー #ディズニーランド #ディズニーシー",
+      "channel": "ぽきちゃんねる",
+      "publishedAt": "2026-08-24T05:22:54Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/vzadEgGKWsE/mqdefault.jpg",
+      "viewCount": 2164,
+      "url": "https://www.youtube.com/watch?v=vzadEgGKWsE",
+      "summary": "A showcase of new Disney merchandise released on July 30 at Tokyo Disney Resort."
+    },
+    {
+      "videoId": "CdSPY2OfFCg",
+      "title": "Slinky Dog Dash at Hollywood Studios Florida #rollercoaster #themepark #disney #fypシ",
+      "channel": "Epic Park Adventures",
+      "publishedAt": "2026-08-24T02:50:24Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/CdSPY2OfFCg/mqdefault.jpg",
+      "viewCount": 1955,
+      "url": "https://www.youtube.com/watch?v=CdSPY2OfFCg",
+      "summary": "A ride-through of Slinky Dog Dash at Hollywood Studios."
+    },
+    {
+      "videoId": "jnONEkoLcdI",
+      "title": "Funny Disney Moments #disney #disneystore #disneyland #disneyparktour #disneyparks #universalparks",
+      "channel": "Shanique Hughes",
+      "publishedAt": "2026-08-24T10:11:48Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/jnONEkoLcdI/mqdefault.jpg",
+      "viewCount": 1853,
+      "url": "https://www.youtube.com/watch?v=jnONEkoLcdI",
+      "summary": "A compilation of humorous moments captured at Disney parks."
+    },
+    {
+      "videoId": "AIap7-2CMh8",
+      "title": "【速報】地震発生後1日経過で人数増加⁉️ディズニーリゾート最新混雑状況【2026.8.24】",
+      "channel": "ジョマジのディズニー研究所",
+      "publishedAt": "2026-08-24T03:20:42Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/AIap7-2CMh8/mqdefault.jpg",
+      "viewCount": 1833,
+      "url": "https://www.youtube.com/watch?v=AIap7-2CMh8",
+      "summary": "A crowd update for Tokyo Disney Resort on August 24, following a recent earthquake event."
+    },
+    {
+      "videoId": "mtzYHQkw5fI",
+      "title": "ジャングルクルーズのグッズ開封！ #ディズニー #ディズニーランド #ジャングルクルーズ",
+      "channel": "ぽきちゃんねる",
+      "publishedAt": "2026-08-24T05:31:51Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/mtzYHQkw5fI/mqdefault.jpg",
+      "viewCount": 1300,
+      "url": "https://www.youtube.com/watch?v=mtzYHQkw5fI",
+      "summary": "An unboxing of Jungle Cruise merchandise from Tokyo Disneyland."
+    },
+    {
+      "videoId": "UC4aphawYbc",
+      "title": "GROTE DISNEYLAND PARIJS SHOPLOG !! 🧚🛍️",
+      "channel": "Noëll van Dreven",
+      "publishedAt": "2026-08-24T03:00:29Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/UC4aphawYbc/mqdefault.jpg",
+      "viewCount": 1278,
+      "url": "https://www.youtube.com/watch?v=UC4aphawYbc",
+      "summary": "A shopping haul video from Disneyland Paris showing recent merchandise purchases."
+    }
+  ],
+  "updatedAt": "2026-08-24T11:19:07.993Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-08-24T11:19:07.993Z",
+    "tokens": {
+      "input": 11360,
+      "output": 5229,
+      "costUsd": 0.1125
+    }
+  }
+}
