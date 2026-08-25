@@ -1,0 +1,363 @@
+{
+  "title": "Parkio Daily for August 25, 2026",
+  "slug": "parkio-daily-2026-08-25",
+  "date": "2026-08-25",
+  "teaser": "WDW's 55th anniversary logo debuts; Disneyland breaks ground on Eastern Gateway parking; Disney Cruise Line teases NYC return today.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Space Mountain",
+        "parkSlug": "magic-kingdom",
+        "note": "Early morning waits typically shortest before 10am"
+      },
+      {
+        "name": "Soarin'",
+        "parkSlug": "epcot",
+        "note": "Food & Wine prep may reduce afternoon crowds"
+      },
+      {
+        "name": "The Little Mermaid",
+        "parkSlug": "california-adventure",
+        "note": "Refurb continues behind themed scrim, ride still open"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [
+      {
+        "title": "Disney Cruise Line reveals six coordinates ahead of major announcement today",
+        "body": "DCL posted teaser coordinates including New York City and signals a big reveal set for August 25. The cryptic clues point to homeport announcements, likely confirming NYC's return to the sailing schedule.",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-cruise-line-shares-cryptic-clue-pointing-to-new-york-return-other-news/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "If NYC is confirmed, booking windows for popular Northeast sailings tend to fill within 48 hours. Check DCL's site early this afternoon if you're planning a 2027 cruise."
+        }
+      },
+      {
+        "title": "Disneyland breaks ground on Eastern Gateway parking expansion",
+        "body": "The resort held a groundbreaking ceremony for the new Eastern Gateway lot on August 24, marking the start of its largest parking infrastructure project in years. The expansion will reshape guest arrival flow across the Anaheim property.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/08/disneyland-resort-breaks-ground-on-historic-california-theme-park-expansion-jc1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Construction traffic may create longer entry delays near Harbor Boulevard over the next several months. Arriving before 8:30am or using the Toy Story lot can usually bypass the worst backups."
+        }
+      }
+    ],
+    "bignews": [
+      {
+        "title": "Walt Disney World's 55th anniversary logo and merchandise unveiled",
+        "body": "The resort's October milestone now has an official logo and product line, visible in stores starting this week. The design features a platinum-and-gold color scheme honoring the 1971 opening.",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/first-look-at-walt-disney-world-55th-anniversary-logo-merchandise-in-todays-daily-recap-for-8-24-2026/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Anniversary merchandise historically sells out fast at Emporium and Creations Shop. Visiting either location before 11am today may give you first pick of the new collection."
+        }
+      },
+      {
+        "title": "2027 Disneyland vacation packages open for booking August 26",
+        "body": "The resort confirmed that next year's hotel and ticket bundles go on sale tomorrow. Guests can reserve stays at all three Disneyland Resort hotels for dates through late 2027.",
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/08/24/just-announced-book-your-2027-disneyland-vacation-packages-starting-tomorrow/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Booking in the first 24 hours usually secures better room categories and preferred dates. If you're planning a 2027 trip, logging in early tomorrow morning often gives you the widest selection."
+        }
+      },
+      {
+        "title": "More Halloween Party dates sell out at Magic Kingdom",
+        "body": "Disney confirmed additional sold-out nights for Mickey's Not-So-Scary Halloween Party as of August 24, further limiting full-park access through October 31. Non-party evenings are now the only option for regular admission on many fall dates.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/08/mickeys-not-so-scary-halloween-party-at-disney-world-sold-out-as-of-august-24-jc1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "On party nights, day guests face a 6pm or 7pm exit. Checking the calendar before buying tickets can prevent a truncated visit—non-party days usually offer 10+ hours in the park."
+        }
+      },
+      {
+        "title": "EPCOT Food & Wine Festival menu released ahead of August 27 opening",
+        "body": "Disney published the complete foodie guide for this year's festival, which begins in two days. The lineup includes new booths and returning favorites across World Showcase and beyond.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/disney-eats-epcot-international-food-and-wine-festival-foodie-guide/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Opening weekend crowds at popular booths like Canada and France tend to spike after noon. Arriving at World Showcase when it opens at 11am often means shorter lines and fresher inventory."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "Frontier Trading Post closes at Magic Kingdom due to flooding",
+        "body": "The Frontierland shop shut down August 24 after water damage was visible inside. Cast members are stationed outside turning guests away, and no reopening timeline has been shared.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/08/video-reveals-extent-of-flooding-inside-closed-magic-kingdom-location-bwb1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "If you need Frontierland merchandise, Big Al's and the Prairie Outpost carry similar items. Flooding repairs can take days, so plan alternate shopping stops in that area of the park."
+        }
+      },
+      {
+        "title": "LEVEL99 at Disney Springs swaps hints for full instructions",
+        "body": "The interactive challenge venue now offers guests the option to receive complete instructions instead of vague hints for each game room. The change went live this week across all experiences.",
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/08/24/level99-just-made-a-major-change-at-disney-world/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "If you've avoided LEVEL99 because the puzzles felt too cryptic, the new instruction mode may improve your win rate. First-time visitors often finish more challenges when they choose this option."
+        }
+      },
+      {
+        "title": "The Little Mermaid at California Adventure gets themed construction scrim",
+        "body": "A printed facade matching the ride's exterior now covers portions of the building while refurbishment continues. The attraction remains open despite the ongoing work.",
+        "parkSlug": "california-adventure",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/themed-scrim-added-to-the-little-mermaid-ariels-undersea-adventure-at-disneyland/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Refurb projects can introduce brief closures or slowdowns. Riding early in the day—before 10am—typically avoids any unscheduled downtime tied to construction activity."
+        }
+      },
+      {
+        "title": "Disneyland Hotel sorcerer's hat sculpture receives new DH medallion",
+        "body": "A bright white circular logo bearing the initials DH was installed near the center of the iconic hat structure along the hotel walkway. The change refreshes a longstanding landmark on the property.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/dh-medallion-replaces-disneyland-hotel-logo-on-sorcerers-hat-sculpture/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "The updated sculpture is a fresh photo opportunity near the Disneyland Hotel entrance. Lighting is usually best in the early morning before direct sun washes out the medallion detail."
+        }
+      },
+      {
+        "title": "Peter Pan float removed from Disneyland Paris daytime parade",
+        "body": "The character and his companions vanished from Disney Stars on Parade effective August 24. The park has not explained the absence or indicated when Peter Pan might return to the show.",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/08/disney-stars-on-parade-peter-pan-float-missing-disneyland-paris-jc1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "If you're visiting Disneyland Paris specifically to see Peter Pan in the parade, confirm current lineup details at Guest Relations before staking out a viewing spot."
+        }
+      },
+      {
+        "title": "Universal Studios Florida entrance archways covered during refurbishment",
+        "body": "Large scrims now hide the iconic 36-year-old entry arches as work continues. Universal has not announced the scope or duration of the project.",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/08/iconic-universal-studios-archways-being-covered-after-36-years-in-orlando-ab1/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "If you want classic archway photos, consider visiting CityWalk early in the day when construction crews may not yet be active. Scrim installations often pause before 9am."
+        }
+      },
+      {
+        "title": "Hollywood Studios completes streetscape refresh near Brown Derby",
+        "body": "A familiar corner of the park near the restaurant received new pavement, theming, and landscaping after 37 years. The area is now fully reopened to guests.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/08/disney-world-officially-replaces-iconic-hollywood-studios-area-after-37-years-ab1/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "The updated streetscape offers a quieter, freshly themed spot for photos away from Toy Story Land crowds. Mid-afternoon shade makes it ideal for a rest break."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Adventureland section blocked at Disneyland Paris",
+        "body": "New construction walls appeared August 24, limiting access to part of the land. No details on the project or timeline have been released.",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/08/disneyland-paris-installs-construction-walls-in-adventureland-jc1/"
+        }
+      },
+      {
+        "title": "Fall-themed Cinderella Castle sweatshirt debuts at Magic Kingdom",
+        "body": "A mint-blue crewneck with line-art castle illustration is now available for 59.99 dollars. The design features muted autumn tones and a gold oval frame.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/fall-themed-cinderella-castle-sweatshirt-comes-to-magic-kingdom/"
+        }
+      },
+      {
+        "title": "New character coin machine installed at Disneyland",
+        "body": "A cream, red, blue, and gold machine offering Mickey, Minnie, Pluto, and Goofy medallions is now in the park. Each coin costs 10 dollars.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/new-coin-machine-featuring-mickey-minnie-and-more-added-at-disneyland/"
+        }
+      },
+      {
+        "title": "Universal Orlando cuts September park hours",
+        "body": "Both parks will close earlier than typical for several nights in September despite Halloween Horror Nights traffic. The updated calendar is now live.",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/08/universal-orlando-confirms-unexpected-reductions-will-close-parks-hours-early-bwb1/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "Indiana Jones queue concept art and Tsukán snake model revealed for Animal Kingdom",
+        "body": "Disney and former Imagineer Joe Rohde shared new details on the Tropical Americas attraction, including background mythology and a physical model of the giant serpent. The land will not feature live animals, focusing instead on immersive theming and storytelling.",
+        "parkSlug": "animal-kingdom",
+        "ctaLabel": "Read more on Disney Tourist Blog",
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Tropical Americas is still years away, but today's reveal offers the clearest picture yet of what to expect. Fans of detailed queue design may want to bookmark these images for future trip planning."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "9nY7GunQmhY",
+      "title": "🔴Live Magic Kingdom Monday with Rides, Parades, Fireworks at Walt Disney World 8/24/2026",
+      "channel": "RON ON THE GO",
+      "publishedAt": "2026-08-25T03:55:52Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/9nY7GunQmhY/mqdefault.jpg",
+      "viewCount": 44025,
+      "url": "https://www.youtube.com/watch?v=9nY7GunQmhY",
+      "summary": "A live stream from Magic Kingdom covering attractions, parades, and nighttime fireworks on August 24."
+    },
+    {
+      "videoId": "6o8B3y-zyVQ",
+      "title": "Epcot Shopping/Rides/Fireworks   8/24/26 #live",
+      "channel": "That Crazy Disney Lady",
+      "publishedAt": "2026-08-25T01:58:10Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/6o8B3y-zyVQ/mqdefault.jpg",
+      "viewCount": 20780,
+      "url": "https://www.youtube.com/watch?v=6o8B3y-zyVQ",
+      "summary": "Live EPCOT coverage including shopping, rides, and the evening fireworks show from August 24."
+    },
+    {
+      "videoId": "VVUz82HnylI",
+      "title": "Ranking EVERY Restaurant in Animal Kingdom From Worst to Best",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-08-24T15:51:02Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/VVUz82HnylI/mqdefault.jpg",
+      "viewCount": 18733,
+      "url": "https://www.youtube.com/watch?v=VVUz82HnylI",
+      "summary": "A comprehensive ranking of all dining locations at Disney's Animal Kingdom, from lowest to highest rated."
+    },
+    {
+      "videoId": "bMGI97zmCp8",
+      "title": "RANKING: top 5 DISNEYLAND moments 🏰😂",
+      "channel": "The Top 5 Room",
+      "publishedAt": "2026-08-25T04:05:11Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/bMGI97zmCp8/mqdefault.jpg",
+      "viewCount": 5334,
+      "url": "https://www.youtube.com/watch?v=bMGI97zmCp8",
+      "summary": "A countdown of five memorable Disneyland experiences, ranked by the creators of The Top 5 Room."
+    },
+    {
+      "videoId": "mzQVxTItJJY",
+      "title": "Toddler Meets Mickey Mouse for the FIRST TIME | Pure Disney Magic#disney #disneyland #funny #fyp",
+      "channel": "Fun Clips",
+      "publishedAt": "2026-08-25T01:13:47Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/mzQVxTItJJY/mqdefault.jpg",
+      "viewCount": 5094,
+      "url": "https://www.youtube.com/watch?v=mzQVxTItJJY",
+      "summary": "A toddler's first Mickey Mouse character meet captured on video at Disneyland."
+    },
+    {
+      "videoId": "9M3jeK7VX5g",
+      "title": "@MarkRober  had his eye on Walt Disney Imagineering since he was a kid🔭🏰 #D23 #Disneyland",
+      "channel": "Disney Parks",
+      "publishedAt": "2026-08-25T01:02:03Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/9M3jeK7VX5g/mqdefault.jpg",
+      "viewCount": 4455,
+      "url": "https://www.youtube.com/watch?v=9M3jeK7VX5g",
+      "summary": "Mark Rober discusses his childhood interest in Imagineering during D23 at Disneyland."
+    },
+    {
+      "videoId": "ulLuT7YN0eU",
+      "title": "The Redhead is BACK?? #piratesofthecaribbean #disney #disneyland",
+      "channel": "Disney Cicerone",
+      "publishedAt": "2026-08-25T03:10:07Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/ulLuT7YN0eU/mqdefault.jpg",
+      "viewCount": 2579,
+      "url": "https://www.youtube.com/watch?v=ulLuT7YN0eU",
+      "summary": "A look at reported changes involving the Redhead character at Pirates of the Caribbean in Disneyland."
+    },
+    {
+      "videoId": "fAje5AJcj38",
+      "title": "🔴 LIVE AT DISNEY | WALKING AROUND DISNEYLAND and DCA",
+      "channel": "iamCHRISRODGERS",
+      "publishedAt": "2026-08-25T06:51:32Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/fAje5AJcj38/mqdefault.jpg",
+      "viewCount": 2524,
+      "url": "https://www.youtube.com/watch?v=fAje5AJcj38",
+      "summary": "A live walking tour of both Disneyland Park and Disney California Adventure."
+    },
+    {
+      "videoId": "KKKmwh2Q1T4",
+      "title": "ต้องทำอย่างไร? ##DiSNEYLAND8th #dhammanetworks #SiaanAdAstra #Disney #Disneyland",
+      "channel": "DiSNEYLAND8th :: ดิสนียาธิกะ! ลูกคุณหนู Mickey",
+      "publishedAt": "2026-08-25T04:40:57Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/KKKmwh2Q1T4/mqdefault.jpg",
+      "viewCount": 1365,
+      "url": "https://www.youtube.com/watch?v=KKKmwh2Q1T4",
+      "summary": "A Disneyland-related video from a Thai-language channel discussing park experiences."
+    },
+    {
+      "videoId": "mwTARFVi93U",
+      "title": "Dream meet cute#disney #kids #baby #love #cute #funny #foryou #babylove #disneyland",
+      "channel": "HappySlacker ",
+      "publishedAt": "2026-08-25T01:46:25Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/mwTARFVi93U/mqdefault.jpg",
+      "viewCount": 1355,
+      "url": "https://www.youtube.com/watch?v=mwTARFVi93U",
+      "summary": "A short video capturing a baby or toddler encounter at Disneyland."
+    }
+  ],
+  "updatedAt": "2026-08-25T11:18:32.979Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-08-25T11:18:32.979Z",
+    "tokens": {
+      "input": 11189,
+      "output": 5743,
+      "costUsd": 0.1197
+    }
+  }
+}
