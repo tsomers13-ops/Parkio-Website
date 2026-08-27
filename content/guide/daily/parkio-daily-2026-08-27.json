@@ -1,0 +1,349 @@
+{
+  "title": "Parkio Daily for August 27, 2026",
+  "slug": "parkio-daily-2026-08-27",
+  "date": "2026-08-27",
+  "teaser": "Food & Wine opens today at EPCOT; Lakeshore Lodge bookings start October 1st; Spaceship Earth signage work begins.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Remy's Ratatouille Adventure",
+        "parkSlug": "epcot",
+        "note": "Festival crowds tend to cluster near World Showcase later; morning queues stay lighter"
+      },
+      {
+        "name": "Big Thunder Mountain Railroad",
+        "parkSlug": "magic-kingdom",
+        "note": "Ferryboat dock construction may shift arrival patterns; rope-drop advantage likely stronger"
+      },
+      {
+        "name": "Radiator Springs Racers",
+        "parkSlug": "california-adventure",
+        "note": "Halloween overlays drawing attention to Cars Land; early waits typically shortest"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [
+      {
+        "title": "EPCOT Food & Wine Festival opens today for 30th anniversary run",
+        "body": "The 2026 International Food & Wine Festival kicks off this morning at EPCOT, running through mid-November. Booths across World Showcase are serving new items alongside returning favorites like Canadian cheese soup and Hawaii's $6 lunch plates.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "World Showcase pathways tend to clog between 11am and 3pm on opening day. Touring Future World attractions first usually keeps waits manageable, then circling back to booths after dinner often yields shorter lines."
+        }
+      },
+      {
+        "title": "Lakeshore Lodge reservations open October 1st, resort opens spring 2027",
+        "body": "Disney's Lakeshore Lodge on Bay Lake will accept bookings starting October 1, 2026, for a spring 2027 opening. The nature-inspired resort will feature hotel rooms, villas, and Club Level options.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/lakeshore-lodge-disney-world-updates/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "October 1st booking windows for new resorts tend to fill fast for spring break and Easter weeks. Logging in at reservation open (typically 6am ET) usually offers the widest room-category selection."
+        }
+      }
+    ],
+    "bignews": [
+      {
+        "title": "Spaceship Earth signage permit filed ahead of major reimagining",
+        "body": "Walt Disney Imagineering has filed a permit to install new signage at Spaceship Earth, the first construction filing since the attraction's major overhaul was announced at D23 Expo 2026.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/permit-filed-for-spaceship-earth-signage-at-epcot/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Signage work often precedes phased closures. Riding Spaceship Earth in the next few weeks may offer the last look at the current version before refurbishment announcements typically follow permits."
+        }
+      },
+      {
+        "title": "Disneyland holidays return November 13th through January 6th",
+        "body": "The Disneyland Resort holiday season will run from November 13, 2026, through January 6, 2027, featuring seasonal décor, entertainment, and character meet-and-greets across both parks.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/dlr/guide-to-holidays-at-the-disneyland-resort/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "The first two weeks in November (before the 13th) tend to offer lower waits without holiday crowds. Visiting November 10–12 usually delivers fall weather and lighter queues before seasonal surges."
+        }
+      },
+      {
+        "title": "New ferryboat dock takes shape at Magic Kingdom entrance",
+        "body": "Timber pillars are now installed at the construction site for Magic Kingdom's replacement ferryboat dock, part of a multi-year entrance improvement project underway since early 2026.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/08/timber-pillars-installed-at-site-of-future-ferry-boat-dock-at-magic-kingdom-jc1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Ferry capacity may be reduced during phased construction. Monorail or bus routes from resorts often deliver faster park entry when dock work limits boat service."
+        }
+      },
+      {
+        "title": "Contemporary Resort exterior refurbishment enters crane phase",
+        "body": "A crane has arrived at Disney's Contemporary Resort, signaling the start of a new phase in the 55-year-old hotel's ongoing exterior renovation project.",
+        "parkSlug": null,
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/08/crane-arrives-at-site-of-exterior-refurbishment-of-disneys-contemporary-resort-jc1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Crane activity tends to generate noise and limit sightlines from north-facing rooms. Requesting south-facing or upper-floor accommodations often reduces construction impact during daytime hours."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "Talking Remy shoulder plush debuts at EPCOT",
+        "body": "A new interactive Remy shoulder plush featuring the Ratatouille chef in his white hat is now available at Creations Shop for $34.99, timed with the Food & Wine Festival opening.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/talking-remy-shoulder-plush-now-available-at-walt-disney-world/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Festival-exclusive merchandise tends to move fastest in the first 48 hours. Visiting Creations Shop at park open or after 7pm usually avoids mid-day checkout lines."
+        }
+      },
+      {
+        "title": "Haunted Cozy Cone sipper returns to Cars Land for Halloween",
+        "body": "The light-up Cozy Cone Motel sipper with a spooky grin is back at Disney California Adventure for Halloween 2026, priced at $29.79 in Cars Land.",
+        "parkSlug": "california-adventure",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/light-up-haunted-cozy-cone-sipper-returns-to-cars-land-for-halloween-2026/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Seasonal sippers often sell out by mid-September in popular lands. Grabbing one during morning hours in Cars Land typically ensures stock availability before afternoon rushes."
+        }
+      },
+      {
+        "title": "InterAmerica Stage contracted for Antonio's Fiesta de Encanto ride",
+        "body": "A new permit shows Disney has hired theatrical company InterAmerica Stage for general construction work on Antonio's Fiesta de Encanto, part of the Tropical Americas expansion at Animal Kingdom.",
+        "parkSlug": "animal-kingdom",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/disney-hires-theater-company-for-antonios-fiesta-de-encanto-ride-at-animal-kingdom/"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "Construction activity in DinoLand USA tends to funnel guests toward Pandora and Africa earlier in the day. Touring those lands after 2pm often yields lighter queues as crowds disperse."
+        }
+      },
+      {
+        "title": "Adventureland music returns at Disneyland Paris after nine years",
+        "body": "The original 1992 Adventureland soundtrack is back at Disneyland Paris, replacing the Pirates of the Caribbean film music that had played in the land since 2017.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/pirates-of-the-caribbean-movie-music-replaced-with-original-adventureland-loop-at-disneyland-paris/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Audio changes often signal broader land refreshes. Visiting Adventureland soon may offer a preview of additional updates typically rolled out after soundtrack swaps."
+        }
+      },
+      {
+        "title": "Exclusive Chef Remy glass figure available at EPCOT festival",
+        "body": "Arribas Brothers is selling a Food & Wine Festival-exclusive Remy glass figure for $349, featuring clear glass body and pink accents, available only during the 2026 event.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/2026-epcot-food-wine-festival-exclusive-chef-remy-glass-figure-now-available/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Limited-edition glasswork at Arribas tends to sell out within days of festival launches. Stopping by the shop in World Showcase early this week usually secures availability before inventory dwindles."
+        }
+      },
+      {
+        "title": "Walt Disney World announces 55th anniversary D23 events and merchandise",
+        "body": "Disney has revealed 55th anniversary celebrations for Walt Disney World including special D23 events at Carousel of Progress and a lunch with Joe Rohde, plus commemorative merchandise.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-world-celebrating-55th-anniversary-at-carousel-of-progress-d23-event-lunch-with-joe-rohde/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "D23 anniversary events typically sell out within hours of announcement. Booking immediately when registration opens often secures spots before waitlists form."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "DVC members receive 20% off plus $250 credit on new cruise sailings",
+        "body": "Disney Vacation Club members can save 20% and receive a $250 shipboard credit on select fall 2027 and spring 2028 Disney Cruise Line itineraries announced this week.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/dvc-members-save-20-off-250-credit-on-new-disney-cruise-line-sailings-in-fall-2027-to-spring-2028/"
+        }
+      },
+      {
+        "title": "Disneyland resort discounts announced for late 2026 holidays",
+        "body": "Room discounts for Halloween and Christmas 2026 are now available for the general public at Disneyland Resort hotels, with Annual Passholder and Disney Visa offers likely to follow.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/deals-for-late-2026-on-hotels-of-disneyland-resort/"
+        }
+      },
+      {
+        "title": "Tropical Storm Dolly forecast: what Disney World guests should know",
+        "body": "A tropical weather system named Dolly is being monitored near Florida. Disney World continues normal operations; guests should check the My Disney Experience app for any weather-related attraction closures.",
+        "parkSlug": null,
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/08/tropical-storm-dolly-what-disney-world-guests-need-to-know-el1/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "S'mores treats across Walt Disney World put creative spins on the classic",
+        "body": "From graham cracker, chocolate, and marshmallow bases, Disney chefs have crafted unique s'mores variations available at quick-service and table-service locations across all four Walt Disney World parks.",
+        "parkSlug": null,
+        "ctaLabel": "Explore s'mores options",
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Specialty desserts tend to be freshest in the first service hour at quick-service windows. Grabbing s'mores treats right after lunch or dinner service starts usually delivers better presentation and temperature."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "VVUz82HnylI",
+      "title": "Ranking EVERY Restaurant in Animal Kingdom From Worst to Best",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-08-24T15:51:02Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/VVUz82HnylI/mqdefault.jpg",
+      "viewCount": 30793,
+      "url": "https://www.youtube.com/watch?v=VVUz82HnylI",
+      "summary": "WrightDownMainStreet ranks all Animal Kingdom dining locations from least to most recommended."
+    },
+    {
+      "videoId": "bxEtg-_fcKY",
+      "title": "🔴Live: Opening Day of Epcot International Food & Wine Festival - 8-27-26 - Disney World Live Stream",
+      "channel": "ResortTV1",
+      "publishedAt": "2026-08-27T16:23:23Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/bxEtg-_fcKY/mqdefault.jpg",
+      "viewCount": 23525,
+      "url": "https://www.youtube.com/watch?v=bxEtg-_fcKY",
+      "summary": "ResortTV1 live-streams the opening day of the 2026 EPCOT International Food & Wine Festival."
+    },
+    {
+      "videoId": "u3uARG9lRkw",
+      "title": "Miguel, Jessie and Woody at Disneyland!  #disney #parade #shorts",
+      "channel": "Wish Upon a Disney! - Susan Silva",
+      "publishedAt": "2026-08-27T15:00:38Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/u3uARG9lRkw/mqdefault.jpg",
+      "viewCount": 5210,
+      "url": "https://www.youtube.com/watch?v=u3uARG9lRkw",
+      "summary": "Wish Upon a Disney captures Miguel, Jessie, and Woody characters appearing in a Disneyland parade."
+    },
+    {
+      "videoId": "lC_YptRZY9c",
+      "title": "he's working hard 😅 cxleb Disney Parks",
+      "channel": "Carol Chaves",
+      "publishedAt": "2026-08-27T17:36:42Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/lC_YptRZY9c/mqdefault.jpg",
+      "viewCount": 2150,
+      "url": "https://www.youtube.com/watch?v=lC_YptRZY9c",
+      "summary": "Carol Chaves shares a clip of a cast member at work in the Disney Parks."
+    },
+    {
+      "videoId": "QeMkq2I67E8",
+      "title": "Pouring rain in Disney Parks",
+      "channel": "Lexi Hidalgo",
+      "publishedAt": "2026-08-27T15:50:41Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/QeMkq2I67E8/mqdefault.jpg",
+      "viewCount": 1065,
+      "url": "https://www.youtube.com/watch?v=QeMkq2I67E8",
+      "summary": "Lexi Hidalgo captures heavy rain conditions at a Disney park location."
+    },
+    {
+      "videoId": "92tnIjduer0",
+      "title": "Meeting WOODY at Disneyland Paris TOY STORY PLAY LAND #disney 🦖🎡🎢😊 #disneyride",
+      "channel": "Jack Life ",
+      "publishedAt": "2026-08-27T14:44:21Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/92tnIjduer0/mqdefault.jpg",
+      "viewCount": 1015,
+      "url": "https://www.youtube.com/watch?v=92tnIjduer0",
+      "summary": "Jack Life films a Woody character meet-and-greet at Toy Story Play Land in Disneyland Paris."
+    },
+    {
+      "videoId": "9MwHuV5Aaoc",
+      "title": "To my younger self, we made it here!😭🙌🏻✨ #hongkongdisneyland #hkdisneyland #disneyland #disney",
+      "channel": "Empeds Casul",
+      "publishedAt": "2026-08-27T14:35:50Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/9MwHuV5Aaoc/mqdefault.jpg",
+      "viewCount": 983,
+      "url": "https://www.youtube.com/watch?v=9MwHuV5Aaoc",
+      "summary": "Empeds Casul shares an emotional visit to Hong Kong Disneyland."
+    },
+    {
+      "videoId": "I68fx-fB0Sc",
+      "title": "post finals disney dayyyyy 🫰🏼🏰🎆  #disneyland #tiktoktrend",
+      "channel": "ynna kho ",
+      "publishedAt": "2026-08-27T19:03:47Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/I68fx-fB0Sc/mqdefault.jpg",
+      "viewCount": 981,
+      "url": "https://www.youtube.com/watch?v=I68fx-fB0Sc",
+      "summary": "Ynna kho celebrates finishing finals with a Disneyland visit."
+    },
+    {
+      "videoId": "WBUWWnsp_TQ",
+      "title": "Snow White and the Seven Dwarfs #disney #disneyland #amusementpark #ride #anaheim #california #fun",
+      "channel": "Wink's Wild Ride ",
+      "publishedAt": "2026-08-27T14:58:50Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/WBUWWnsp_TQ/mqdefault.jpg",
+      "viewCount": 961,
+      "url": "https://www.youtube.com/watch?v=WBUWWnsp_TQ",
+      "summary": "Wink's Wild Ride features footage of the Snow White and the Seven Dwarfs attraction at Disneyland."
+    },
+    {
+      "videoId": "EAfk2E-TzsM",
+      "title": "【8月27日新商品入荷⭐️】ボンボヤージュに新商品が追加されたよ☝️✨/ひとりディズニー/ボンボヤージュ #ディズニー #ディズニーランド #ディズニーシー #25周年",
+      "channel": "よりみちびろぐ",
+      "publishedAt": "2026-08-27T14:00:19Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/EAfk2E-TzsM/mqdefault.jpg",
+      "viewCount": 940,
+      "url": "https://www.youtube.com/watch?v=EAfk2E-TzsM",
+      "summary": "Yorimichiblog showcases new merchandise arrivals at Bon Voyage store on August 27th."
+    }
+  ],
+  "updatedAt": "2026-08-27T20:52:38.323Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-08-27T20:52:38.323Z",
+    "tokens": {
+      "input": 11642,
+      "output": 5579,
+      "costUsd": 0.1186
+    }
+  }
+}
