@@ -1,0 +1,344 @@
+{
+  "title": "Parkio Daily for August 28, 2026",
+  "slug": "parkio-daily-2026-08-28",
+  "date": "2026-08-28",
+  "teaser": "Food & Wine kicks off at EPCOT; Lakeshore Lodge previews announced for DVC members; 24 Halloween party dates now sold out at Magic Kingdom.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Soarin'",
+        "parkSlug": "epcot",
+        "note": "Festival crowds tend to thin during dinner; walk-on windows often open 6–7pm"
+      },
+      {
+        "name": "Space Mountain",
+        "parkSlug": "magic-kingdom",
+        "note": "Park empties early before Halloween party; waits drop sharply after 4pm"
+      },
+      {
+        "name": "Guardians of the Galaxy: Cosmic Rewind",
+        "parkSlug": "epcot",
+        "note": "Queue typically lighter mid-afternoon; aim for 2–4pm window"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [],
+    "bignews": [
+      {
+        "title": "EPCOT's 2026 Food & Wine Festival opens today through November 21",
+        "body": "The annual tasting event launched yesterday with dozens of global marketplaces, exclusive menu items, and live entertainment. Festival passports and snack credit redemptions are active across World Showcase.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/full-guide-to-the-2026-epcot-international-food-wine-festival/"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "World Showcase pathways tend to bottleneck between booths after 5pm on weekends. Visiting weekday mornings or after 8pm usually offers easier navigation and shorter lines at popular kiosks."
+        }
+      },
+      {
+        "title": "DVC members can book exclusive Lakeshore Lodge preview stays in June 2027",
+        "body": "Disney announced a First Wave experience allowing Vacation Club members to reserve three nights at the new Bay Lake resort from June 24–27, 2027, before the official opening. General reservations open later this year.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/lakeshore-lodge-announces-exclusive-first-wave-experience-for-disney-vacation-club-members/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Preview events typically showcase dining and amenities before crowds arrive. If you're a DVC member considering this, booking early in the window often secures preferred room views before inventory tightens."
+        }
+      },
+      {
+        "title": "24 dates now sold out for Mickey's Not So Scary Halloween Party",
+        "body": "Magic Kingdom's after-hours Halloween event has sold out two dozen nights through October, leaving only 14 available dates over the next two months. Tickets remain for select weeknights.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/two-dozen-dates-sold-out-for-2026-mickeys-not-so-scary-halloween-party-act-asap-if-youre-undecided/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Party nights close the park to day guests by 6pm, cutting touring time. If you're visiting without a party ticket, avoiding these evenings tends to give you fuller operating hours and easier FastPass availability."
+        }
+      },
+      {
+        "title": "Turf Club Lounge at Saratoga Springs reopens with new menu",
+        "body": "The refurbished lounge returns to service after a months-long closure, featuring updated dishes and cocktails. The Bar & Grill side of the restaurant now has a confirmed closing date.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-world-reveals-turf-club-lounge-reopening-date-new-dishes-drinks/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Newly reopened dining venues often have lighter reservation books in the first few weeks. Checking availability tonight or tomorrow morning may surface walk-in slots that fill up later."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "Imagineering video series debuts with architecture deep dive",
+        "body": "Disney released the first episode of We Call It Imagineering, a behind-the-scenes series exploring design and innovation across parks. The inaugural installment focuses on park architecture and storytelling.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/disney-experiences/go-behind-the-scenes-in-imagineering-video-series/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "The series highlights details guests often miss. Reviewing episodes before your visit can surface photo ops and hidden design elements worth seeking out, especially in newer lands like Galaxy's Edge."
+        }
+      },
+      {
+        "title": "Fake palm trees will animate Encanto casita at Animal Kingdom",
+        "body": "Imagineers revealed that both real and artificial palms will be used to bring the Madrigal family home to life in the upcoming Tropical Americas expansion. The mix allows for dynamic effects tied to the attraction's story.",
+        "parkSlug": "animal-kingdom",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/imagineers-reveal-fake-palm-trees-will-bring-encanto-casita-to-life-at-disneys-animal-kingdom/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "The Encanto area is still in construction, but keeping an eye on project walls near DinoLand U.S.A. often reveals early theming and concept art that preview what's ahead."
+        }
+      },
+      {
+        "title": "Space Mountain historic audio feature returns to Disneyland after 17 years",
+        "body": "The Anaheim park confirmed the return of a classic onboard soundtrack element absent since 2009. The updated audio experience will accompany the next refurbishment cycle.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/08/official-after-17-year-absence-disney-confirms-return-of-historic-space-mountain-feature-sb1/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Audio enhancements often debut during soft reopening phases. Riding early in the morning on reopening day typically offers the smoothest experience before word spreads and waits climb."
+        }
+      },
+      {
+        "title": "Disneyland Resort announces community joy initiative in Anaheim",
+        "body": "The resort unveiled plans to extend its mission beyond park gates with new programs aimed at Orange County families and children. The effort builds on decades of local outreach.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/dlr/disneyland-creates-the-happiest-day-in-anaheim/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Community programs sometimes include special events or pop-up character appearances in Downtown Disney. Checking the Disneyland app or guest services kiosks can surface surprise meetups during your visit."
+        }
+      },
+      {
+        "title": "Severe storms flood EPCOT pathways and trigger Living with the Land dome leaks",
+        "body": "Heavy Central Florida rain temporarily closed outdoor attractions for the second time this week and caused water intrusion inside the Land pavilion greenhouse. Operations resumed after weather cleared.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/08/living-with-the-land-dome-leaks-and-epcot-flooding-after-massive-storms-hit-central-florida-rl1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "August afternoon storms are common. Indoor attractions like Spaceship Earth and Soarin' tend to spike in wait time between 2–4pm when rain hits. Touring these earlier or after 6pm usually avoids the surge."
+        }
+      },
+      {
+        "title": "Raglan Road's Great Irish Hooley returns to Disney Springs Labor Day weekend",
+        "body": "The annual Irish music and dance festival takes over the restaurant and outdoor stages September 1–4, featuring live performers and specialty food and drink offerings.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/08/28/why-disney-fans-are-running-to-disney-springs-labor-day-weekend/"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "The Hooley draws large evening crowds to the Landing area. Parking at Disney Springs tends to fill faster after 5pm that weekend; arriving before 4pm or using resort transportation often saves time."
+        }
+      },
+      {
+        "title": "Blue Ribbon Corn Dogs debuts deep-fried jalapeño popper on a stick",
+        "body": "The BoardWalk quick-service location added a new spicy appetizer to its menu. Early reviews note significant heat levels.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/review-deep-fried-jalapeno-popper-from-blue-ribbon-corn-dogs/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "BoardWalk dining typically sees lighter foot traffic before 11am and after 8pm. Stopping by during those windows often means shorter waits and fresher items just out of the fryer."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Disney Cruise Line adds callback option to reduce phone wait times",
+        "body": "Starting August 31, the reservation contact center will offer automatic callbacks during high-volume periods instead of holding on the line.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/disney-cruise-line-to-offer-auto-call-back-during-busy-periods/"
+        }
+      },
+      {
+        "title": "Oogie Boogie Bash runs select nights through October 31 at California Adventure",
+        "body": "The after-hours Halloween event features exclusive entertainment, treat trails, and character meet-and-greets. Tickets are sold separately.",
+        "parkSlug": "california-adventure",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/dlr/oogie-boogie-bash-everything-you-need-to-know/"
+        }
+      },
+      {
+        "title": "Disneyland Paris shortens operating hours beginning in September",
+        "body": "The resort confirmed earlier closing times for weekdays next month, reducing daily touring windows but extending evening magic hours for select hotel guests.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/08/disneyland-paris-park-hours-cut-september-emd1/"
+        }
+      },
+      {
+        "title": "Refreshment Outpost returns favorites and new drinks for Food & Wine",
+        "body": "The EPCOT kiosk brought back popular bites from prior years alongside four new cocktails and mocktails. One signature dish received a flavor update.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/08/28/review-one-of-our-favorite-food-wine-treats-is-back-at-epcot/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "Holidays at Disneyland Resort begin November 13 with décor, entertainment, and treats",
+        "body": "The seasonal celebration runs through January 6, 2027, featuring festive overlays, parade updates, and exclusive holiday menus. Full event details and ticketing information are now available on the Disneyland app and website.",
+        "parkSlug": "disneyland",
+        "ctaLabel": "View holiday guide",
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "The first two weeks of the holiday season typically offer lighter crowds than Thanksgiving week or late December. Booking early November visits often means shorter waits for seasonal overlays like Haunted Mansion Holiday and easier dining reservations."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "ejn9EybnpWg",
+      "title": "Going to 4 Disney Parks in 4 Hours",
+      "channel": "Jenny Hoyos",
+      "publishedAt": "2026-08-28T17:19:19Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/ejn9EybnpWg/mqdefault.jpg",
+      "viewCount": 63967,
+      "url": "https://www.youtube.com/watch?v=ejn9EybnpWg",
+      "summary": "Jenny Hoyos attempts a rapid park-hopping challenge across four Disney parks in a four-hour window."
+    },
+    {
+      "videoId": "VVUz82HnylI",
+      "title": "Ranking EVERY Restaurant in Animal Kingdom From Worst to Best",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-08-24T15:51:02Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/VVUz82HnylI/mqdefault.jpg",
+      "viewCount": 33906,
+      "url": "https://www.youtube.com/watch?v=VVUz82HnylI",
+      "summary": "WrightDownMainStreet ranks every dining location at Disney's Animal Kingdom from least to most recommended."
+    },
+    {
+      "videoId": "C2aJpJJboKE",
+      "title": "Disney Parkitecture | A Deep Dive Into the Architecture at Disney Parks",
+      "channel": "Walt Disney Imagineering",
+      "publishedAt": "2026-08-28T17:00:21Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/C2aJpJJboKE/mqdefault.jpg",
+      "viewCount": 13500,
+      "url": "https://www.youtube.com/watch?v=C2aJpJJboKE",
+      "summary": "Walt Disney Imagineering explores the architectural design principles and storytelling behind Disney park structures."
+    },
+    {
+      "videoId": "-bMRgqyXk8M",
+      "title": "🔴 LIVE: EPCOT! Guardians, Soarin' Across America & More Food & Wine Festival Walt Disney World Live!",
+      "channel": "Theme Park Giant",
+      "publishedAt": "2026-08-28T16:31:52Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/-bMRgqyXk8M/mqdefault.jpg",
+      "viewCount": 9070,
+      "url": "https://www.youtube.com/watch?v=-bMRgqyXk8M",
+      "summary": "Theme Park Giant livestreams from EPCOT during the Food & Wine Festival, featuring Guardians of the Galaxy and Soarin' attractions."
+    },
+    {
+      "videoId": "f1L81xN3p88",
+      "title": "EPCOT FOOD & WINE FESTIVAL- ULTIMATE FOODIE GUIDE | Trying 35+ Foods!",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-08-28T16:52:25Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/f1L81xN3p88/mqdefault.jpg",
+      "viewCount": 7631,
+      "url": "https://www.youtube.com/watch?v=f1L81xN3p88",
+      "summary": "WrightDownMainStreet samples over 35 menu items across the 2026 EPCOT Food & Wine Festival marketplace booths."
+    },
+    {
+      "videoId": "p5vgpaI3qiA",
+      "title": "🔴LIVE: YOU Pick! Magic Kingdom — The Park Is EMPTY Before Mickey's Not So Scary Halloween Party | 4K",
+      "channel": "Fun to be Free",
+      "publishedAt": "2026-08-28T16:42:07Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/p5vgpaI3qiA/mqdefault_live.jpg",
+      "viewCount": 3780,
+      "url": "https://www.youtube.com/watch?v=p5vgpaI3qiA",
+      "summary": "Fun to be Free livestreams from a quiet Magic Kingdom during daytime hours before a Halloween party evening."
+    },
+    {
+      "videoId": "QQSiD7VC-U8",
+      "title": "The tiny palm tree secret in Disney's new lands 🌴 #disneyparks",
+      "channel": "Guide2WDW",
+      "publishedAt": "2026-08-28T20:01:51Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/QQSiD7VC-U8/mqdefault.jpg",
+      "viewCount": 1396,
+      "url": "https://www.youtube.com/watch?v=QQSiD7VC-U8",
+      "summary": "Guide2WDW highlights a hidden palm tree design detail used in recent Disney park expansions."
+    },
+    {
+      "videoId": "qohB-HDAbsM",
+      "title": "Broke at Disney. Rich in life!  #disney  #disneyland  #shorts",
+      "channel": "Kelly in the Parks",
+      "publishedAt": "2026-08-28T16:13:16Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/qohB-HDAbsM/mqdefault.jpg",
+      "viewCount": 1329,
+      "url": "https://www.youtube.com/watch?v=qohB-HDAbsM",
+      "summary": "Kelly in the Parks shares a short reflection on the value of Disney park experiences beyond the cost."
+    },
+    {
+      "videoId": "pZuIrhxnQDM",
+      "title": "Disneyland Paris - Disney Stars On Parade - #disneylandparis #parade #disney #disneyland #dlp",
+      "channel": "patrick isaac",
+      "publishedAt": "2026-08-28T16:25:15Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/pZuIrhxnQDM/mqdefault.jpg",
+      "viewCount": 960,
+      "url": "https://www.youtube.com/watch?v=pZuIrhxnQDM",
+      "summary": "Patrick Isaac captures footage of the Disney Stars On Parade procession at Disneyland Paris."
+    },
+    {
+      "videoId": "1_uGFddNrAM",
+      "title": "It's always crazy at the Disney Parks! 😂😂",
+      "channel": "Johnny Metro ",
+      "publishedAt": "2026-08-28T17:52:46Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/1_uGFddNrAM/mqdefault.jpg",
+      "viewCount": 909,
+      "url": "https://www.youtube.com/watch?v=1_uGFddNrAM",
+      "summary": "Johnny Metro shares humorous moments and unexpected scenes from a recent Disney park visit."
+    }
+  ],
+  "updatedAt": "2026-08-28T21:18:18.267Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-08-28T21:18:18.267Z",
+    "tokens": {
+      "input": 11365,
+      "output": 5379,
+      "costUsd": 0.1148
+    }
+  }
+}
