@@ -1,0 +1,344 @@
+{
+  "title": "Parkio Daily for August 29, 2026",
+  "slug": "parkio-daily-2026-08-29",
+  "date": "2026-08-29",
+  "teaser": "Yachtsman Steakhouse reopens today; EPCOT cheese exhibit debuts next month; Magic Kingdom fireworks shift next week.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Test Track",
+        "parkSlug": "epcot",
+        "note": "Food & Wine crowds push toward World Showcase; Future World stays lighter"
+      },
+      {
+        "name": "Big Thunder Mountain",
+        "parkSlug": "magic-kingdom",
+        "note": "Frontierland waits lower with major construction in progress"
+      },
+      {
+        "name": "Mickey & Minnie's Runaway Railway",
+        "parkSlug": "hollywood-studios",
+        "note": "Morning entry windows still strong before Skyliner station work begins"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [],
+    "bignews": [
+      {
+        "title": "Yachtsman Steakhouse reopens after three-month refurbishment",
+        "body": "The signature steakhouse at Yacht Club Resort is back in service as of yesterday following a closure that began in May. Two new menu items join the lineup, though specific dishes have not been disclosed.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/yachtsman-steakhouse-reopens-at-yacht-club-resort-adds-two-new-menu-items/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Same-day reservations often pop up during the first week after a restaurant reopens. Check the app around 11am and 3pm today for cancellations."
+        }
+      },
+      {
+        "title": "Magic Kingdom fireworks show will adjust next week",
+        "body": "A change to the nightly fireworks presentation at Magic Kingdom is scheduled to take effect in the coming days. The nature and scope of the adjustment have not been detailed.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/08/29/fireworks-change-hits-magic-kingdom-next-week/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Fireworks changes usually bring lighter Hub crowds the first few nights as guests wait to see what's different. Plan your viewing spots farther back or along the parade route for easier access."
+        }
+      },
+      {
+        "title": "EPCOT Food & Wine Festival adds cheese exhibit in September",
+        "body": "A dedicated cheese showcase will debut next month at the ongoing festival. The exhibit will feature tasting opportunities and educational elements focused on artisan cheesemaking.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/08/29/new-food-wine-festival-exhibit-coming-to-epcot-next-month/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Festival exhibits usually open mid-morning and tend to have shorter lines before 11am or after 4pm. Plan a loop through World Showcase outside peak lunch hours."
+        }
+      },
+      {
+        "title": "D23 Gold members can now save on Disneyland tickets and Lightning Lane",
+        "body": "An exclusive discount for D23 Gold subscribers went live covering both gate admission and paid skip-the-line access at Disneyland Resort. The offer applies to select ticket types and date windows.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/08/29/new-exclusive-discount-released-for-disneyland-tickets/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Discount windows often block out peak holidays. If you're planning a fall trip, compare savings now versus waiting for a broader public sale closer to Thanksgiving."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "Turf Club Lounge at Saratoga Springs reopens with new menu next month",
+        "body": "The refurbished lounge will return to service in September with updated food and cocktail offerings. The Bar & Grill side of the venue will close to allow final work on the shared space.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-world-reveals-turf-club-lounge-reopening-date-new-dishes-drinks/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Resort lounges typically have walk-up availability during the first week after opening. Arrive before 6pm to avoid dinner-hour waits."
+        }
+      },
+      {
+        "title": "Construction permit filed for Disney Skyliner station at Hollywood Studios",
+        "body": "Buena Vista Construction has been authorized to perform labor, material, and electrical work at the Studios Skyliner stop. No closure dates or service interruptions have been announced.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/construction-permit-filed-for-disney-skyliners-hollywood-studios-station/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Permit filings often precede overnight or early-morning work. If you're relying on the Skyliner for rope drop, have a backup bus plan in case service starts late."
+        }
+      },
+      {
+        "title": "BoardWalk Inn village green reopens with new turf",
+        "body": "The lawn area at Disney's BoardWalk Inn is back in guest use after a two-and-a-half-week closure for artificial turf installation. The space is available for games and relaxation.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/fresh-turf-laid-at-disneys-boardwalk-inn/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "The green is a quiet spot for kids to burn energy between EPCOT and dinner. Lawn games are available at the front desk if you ask."
+        }
+      },
+      {
+        "title": "Jellyrolls replacement adds awning and interior progress at BoardWalk",
+        "body": "The former dueling piano bar space continues its transformation into The Hurly-Burly Jazz Club. A new awning is now in place and interior renovations are underway.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/awning-installed-interior-work-happening-at-former-jellyrolls-in-disneys-boardwalk/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Construction noise from the BoardWalk can drift toward EPCOT's International Gateway during the day. Plan your World Showcase entry through the front gate if you're sensitive to background sound."
+        }
+      },
+      {
+        "title": "Pirates of the Caribbean adds reference to original Redhead character",
+        "body": "A nod to the Redhead figure from the 1967 version of the attraction has been incorporated into the Disneyland ride. The reference honors Marc Davis's original design work.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/reference-to-original-redhead-character-added-in-pirates-of-the-caribbean-at-disneyland-resort/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Changes to classic dark rides often draw curious repeat riders. Expect Pirates standby waits to climb 10–15 minutes higher than usual through Labor Day weekend."
+        }
+      },
+      {
+        "title": "Imagineers lowered Piston Peak structures to protect Magic Kingdom sightlines",
+        "body": "Design teams reduced the height of Cars Land buildings during planning to keep them from appearing over the berm when viewed from inside the park. The adjustment preserves guest immersion in Frontierland and Liberty Square.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/cars-piston-peak-national-park-structures-were-shortened-by-imagineers-to-keep-magic-kingdom-sightlines-clear-in-todays-daily-recap-for-8-28-2026/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Construction walls will start coming down in phases next year. If sightlines matter to you, photograph your favorite views from Liberty Square and the riverfront before winter."
+        }
+      },
+      {
+        "title": "Jack Skellington and Sally meet-and-greet sees immediate changes to reduce waits",
+        "body": "Disney adjusted operations for the Nightmare Before Christmas character encounter at Mickey's Not-So-Scary Halloween Party after extended queues became a recurring issue. The modification aims to improve guest flow.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/08/disney-world-meet-and-greet-change-issues-park-th1/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Character lines at Halloween parties tend to be shortest in the first 90 minutes after gates open or during the parade. Hit Jack and Sally before 8pm or after the first Boo-to-You showing."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Lakeshore Lodge preview stays announced for DVC members in 2027",
+        "body": "Walt Disney World revealed a multi-night pre-opening event called First Wave for Disney Vacation Club members ahead of the resort's official debut. Pricing and booking details are available through DVC channels.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/lakeshore-lodge-resort-pre-opening-preview-stays-dvc-members/"
+        }
+      },
+      {
+        "title": "Haunted Mansion x Stoney Clover Lane collection now available",
+        "body": "A new line of bags, pouches, and accessories featuring Haunted Mansion artwork dropped online and in select retail locations. The collaboration pairs the attraction's gothic aesthetic with Stoney Clover's customizable design platform.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/08/29/new-haunted-mansion-x-stoney-clover-collection-released/"
+        }
+      },
+      {
+        "title": "Raglan Road's Great Irish Hooley returns Labor Day weekend",
+        "body": "The annual music and food celebration is back at Disney Springs this Saturday and Sunday. Live performances, specialty dishes, and extended outdoor seating are part of the event.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/08/28/why-disney-fans-are-running-to-disney-springs-labor-day-weekend/"
+        }
+      },
+      {
+        "title": "Emergency permit filed for Haunted Mansion at Magic Kingdom",
+        "body": "A construction authorization was submitted following what sources describe as a renovation-related issue at the 1971 attraction. No public closure timeline has been shared.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/08/haunted-mansion-construction-permit-magic-kingdom-emd1/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "Holidays at Disneyland Resort start November 13",
+        "body": "The seasonal overlay runs through January 6, 2027, and includes Haunted Mansion Holiday, seasonal entertainment, and festive décor across both parks. Details on parade schedules, character appearances, and food offerings are now available in the official guide.",
+        "parkSlug": "disneyland",
+        "ctaLabel": "View the full holiday guide",
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "The first two weeks of the holiday season usually offer lighter crowds than Thanksgiving week. Book mid-November if you want decorated parks without peak-season waits."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "2TrV1O8KkdI",
+      "title": "🔴Live 2026 Mickey's Not So Scary Halloween Party at the Magic Kingdom Walt Disney World 8/28/2026",
+      "channel": "RON ON THE GO",
+      "publishedAt": "2026-08-29T04:47:37Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/2TrV1O8KkdI/mqdefault.jpg",
+      "viewCount": 71121,
+      "url": "https://www.youtube.com/watch?v=2TrV1O8KkdI",
+      "summary": "A live stream from last night's Mickey's Not So Scary Halloween Party captures entertainment, character meets, and crowd conditions across Magic Kingdom."
+    },
+    {
+      "videoId": "f1L81xN3p88",
+      "title": "EPCOT FOOD & WINE FESTIVAL- ULTIMATE FOODIE GUIDE | Trying 35+ Foods!",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-08-28T16:52:25Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/f1L81xN3p88/mqdefault.jpg",
+      "viewCount": 46169,
+      "url": "https://www.youtube.com/watch?v=f1L81xN3p88",
+      "summary": "A comprehensive tour of Food & Wine Festival offerings with reviews of more than 35 dishes from marketplace kiosks around World Showcase."
+    },
+    {
+      "videoId": "bEtFrTUzmH8",
+      "title": "🔴 Live: Fantasmic Friday Stream at Disneyland! Halloween Scream, and Rides - 08/28/26",
+      "channel": "Koda Bear the Explorer ",
+      "publishedAt": "2026-08-29T06:55:40Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/bEtFrTUzmH8/mqdefault.jpg",
+      "viewCount": 35812,
+      "url": "https://www.youtube.com/watch?v=bEtFrTUzmH8",
+      "summary": "A Friday night live stream from Disneyland covers Fantasmic, Halloween Screams fireworks, and evening attraction wait times."
+    },
+    {
+      "videoId": "VVUz82HnylI",
+      "title": "Ranking EVERY Restaurant in Animal Kingdom From Worst to Best",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-08-24T15:51:02Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/VVUz82HnylI/mqdefault.jpg",
+      "viewCount": 34647,
+      "url": "https://www.youtube.com/watch?v=VVUz82HnylI",
+      "summary": "A ranking video evaluates every table-service and quick-service dining location at Disney's Animal Kingdom."
+    },
+    {
+      "videoId": "rQBUp8iuFc0",
+      "title": "Those touching moments at Disney #disney #disneyland #love",
+      "channel": "Ratdh",
+      "publishedAt": "2026-08-29T09:44:49Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/rQBUp8iuFc0/mqdefault.jpg",
+      "viewCount": 6578,
+      "url": "https://www.youtube.com/watch?v=rQBUp8iuFc0",
+      "summary": "A short compilation highlights emotional guest moments at Disneyland Resort."
+    },
+    {
+      "videoId": "Q8FNhT6yC-Y",
+      "title": "Mickey Mouse is blown away! #disney",
+      "channel": "Disney Parks with Love - Janel",
+      "publishedAt": "2026-08-29T09:27:08Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Q8FNhT6yC-Y/mqdefault.jpg",
+      "viewCount": 1387,
+      "url": "https://www.youtube.com/watch?v=Q8FNhT6yC-Y",
+      "summary": "A brief clip shows Mickey Mouse reacting to wind or a surprise during a character appearance."
+    },
+    {
+      "videoId": "oRft_vZG0_Y",
+      "title": "Disneyland Has an Alice in Wonderland Ride You CAN'T Find Anywhere Else! 🤯#disneyland",
+      "channel": "That Magical Fam",
+      "publishedAt": "2026-08-29T14:00:04Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/oRft_vZG0_Y/mqdefault.jpg",
+      "viewCount": 1375,
+      "url": "https://www.youtube.com/watch?v=oRft_vZG0_Y",
+      "summary": "A look at the Alice in Wonderland dark ride exclusive to Disneyland, which does not exist at other Disney parks."
+    },
+    {
+      "videoId": "iOaDZ232i7A",
+      "title": "Ce jour où Michael Jackson a été vu à Disneyland paris ! #michaeljackson#disneylandparis #disney",
+      "channel": "Immersion Parks",
+      "publishedAt": "2026-08-29T08:13:38Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/iOaDZ232i7A/mqdefault.jpg",
+      "viewCount": 1294,
+      "url": "https://www.youtube.com/watch?v=iOaDZ232i7A",
+      "summary": "A French-language video recounts the day Michael Jackson visited Disneyland Paris."
+    },
+    {
+      "videoId": "FDMUeor3JkQ",
+      "title": "The countdown has gone from 1095 days down to 29! 3 weeks in Orlando for DISNEY and UNIVERSAL!",
+      "channel": "Altadventures-q3b",
+      "publishedAt": "2026-08-29T07:37:02Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/FDMUeor3JkQ/mqdefault.jpg",
+      "viewCount": 1231,
+      "url": "https://www.youtube.com/watch?v=FDMUeor3JkQ",
+      "summary": "A trip countdown update for a three-week Orlando vacation covering Disney and Universal parks."
+    },
+    {
+      "videoId": "5xJLMfKCG6U",
+      "title": "station de Guardians of the Galaxy #shorts #shortvideo #youtubeshorts #marvel #disney #epcot #pov",
+      "channel": "S2H",
+      "publishedAt": "2026-08-29T06:20:19Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/5xJLMfKCG6U/mqdefault.jpg",
+      "viewCount": 1227,
+      "url": "https://www.youtube.com/watch?v=5xJLMfKCG6U",
+      "summary": "A point-of-view short showing the loading station at Guardians of the Galaxy: Cosmic Rewind in EPCOT."
+    }
+  ],
+  "updatedAt": "2026-08-29T15:23:59.851Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-08-29T15:23:59.851Z",
+    "tokens": {
+      "input": 11317,
+      "output": 5380,
+      "costUsd": 0.1147
+    }
+  }
+}
