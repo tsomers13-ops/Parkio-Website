@@ -1,0 +1,329 @@
+{
+  "title": "Parkio Daily for August 30, 2026",
+  "slug": "parkio-daily-2026-08-30",
+  "date": "2026-08-30",
+  "teaser": "Disney wait times fell last week; new pathway links Cars Land and Avengers Campus; Hollywood Studios Skyliner station work begins.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Soarin'",
+        "parkSlug": "epcot",
+        "note": "Dinner hour windows often drop to walk-on"
+      },
+      {
+        "name": "Radiator Springs Racers",
+        "parkSlug": "california-adventure",
+        "note": "New pathway open, test morning access"
+      },
+      {
+        "name": "Space Mountain",
+        "parkSlug": "magic-kingdom",
+        "note": "First hour typically under 20 minutes"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [],
+    "bignews": [
+      {
+        "title": "New pathway between Cars Land and Avengers Campus now open",
+        "body": "Disney California Adventure reopened the direct route connecting the two lands on August 29 after closing it in April 2025 for construction work. Guests can now travel between Radiator Springs and the Avengers headquarters without looping through the main park hub.",
+        "parkSlug": "california-adventure",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/new-passageway-between-cars-land-and-avengers-campus-opens-at-disney-california-adventure/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "The new route tends to save 8–10 minutes of walking between lands. Early-morning guests often find the shortest Radiator Springs waits by entering through Avengers Campus before the main gate crowd reaches Cars Land."
+        }
+      },
+      {
+        "title": "Skyliner construction work filed for Hollywood Studios station",
+        "body": "Disney recently submitted a permit for upcoming construction at the Disney Skyliner station serving Hollywood Studios. No timeline or scope details have been released, but the filing signals maintenance or expansion work ahead at the transportation hub.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/construction-permit-filed-for-disney-skyliners-hollywood-studios-station-in-todays-daily-recap-for-8-29-2026/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Construction noise and staging areas tend to cluster near transportation hubs during initial phases. If you're staying at a Skyliner resort, bus service to Hollywood Studios may offer a quieter alternative during mid-morning hours."
+        }
+      },
+      {
+        "title": "Disney World wait times dropped last week as summer winds down",
+        "body": "Average standby queues across all four Walt Disney World parks decreased over the past seven days, continuing a trend seen in late August as school returns reduce visitor volume. The decline marks the start of the traditional fall slowdown.",
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/08/29/disney-world-wait-times-actually-decreased-last-week/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "September weekdays typically offer the lightest crowds of the year. Guests visiting in the next two weeks often see walk-on windows for mid-tier attractions like Haunted Mansion and Pirates by mid-afternoon."
+        }
+      },
+      {
+        "title": "New $150 EPCOT fireworks dining package now bookable",
+        "body": "Walt Disney World launched reservations for a multi-course meal in the Japan pavilion paired with reserved viewing for Luminous: Symphony of Us. The package seats guests for dinner before the nighttime show on World Showcase Lagoon.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/new-150-fireworks-dining-package-coming-to-epcot/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Dining packages typically book out 30–45 days ahead during Food and Wine Festival weeks. If you're planning an EPCOT evening in late September, reservations made today often secure better viewing spots than walk-up areas near France or Canada."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "Imagineering series reveals height adjustments for Villains Land and Piston Peak",
+        "body": "The latest episode of We Call It Imagineering showed design updates for the upcoming Magic Kingdom villains expansion and the Cars-themed area at Hollywood Studios. Imagineers discussed architecture revisions, including scaled-back building heights in both lands to preserve park sightlines.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/imagineers-revise-heights-in-piston-peak-villains-land-reveal-dark-avenue-details-in-monstropolis-more/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Construction viewing areas near Big Thunder Mountain and the Studios' Animation Courtyard tend to offer the clearest sightlines into land preparation work. Guests interested in behind-the-scenes progress often find the best photo angles during late-afternoon Golden Hour light."
+        }
+      },
+      {
+        "title": "Mickey's Not-So-Scary Halloween Party has same-day tickets available",
+        "body": "Magic Kingdom's after-hours Halloween event still shows availability for several nights this fall, a departure from the usual advance sellout pattern. Same-day tickets remain on sale for select dates through October.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/08/same-day-tickets-for-mickeys-not-so-scary-halloween-party-raise-questions-on-magic-kingdoms-pricing-rl1/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Last-minute ticket availability usually signals lighter party attendance. If you're in Orlando this week and can visit on short notice, same-day purchases often mean shorter character meet lines and easier treat-trail access than peak sold-out nights."
+        }
+      },
+      {
+        "title": "Disney Springs location closing permanently September 13",
+        "body": "An unnamed venue at Disney Springs will shutter on September 13, with no replacement tenant announced. The closure was confirmed by Disney Springs but details on the outgoing business have not been released.",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/08/disney-springs-confirms-sudden-september-13-closure-no-replacement-listed-ad1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Final-week operating hours at closing venues tend to be unpredictable, with early shutdowns or reduced service common. If you're planning a Disney Springs visit before mid-September, confirm operating hours the morning of your trip."
+        }
+      },
+      {
+        "title": "Disneyland holiday season kicks off November 13",
+        "body": "The Disneyland Resort's Holidays celebration returns November 13 and runs through January 6, 2027. Expect seasonal overlays, festive décor, and holiday-themed entertainment across both parks and Downtown Disney.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/dlr/guide-to-holidays-at-the-disneyland-resort/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "The first three weeks of the holiday season typically draw lighter crowds than Thanksgiving or Christmas weeks. Guests booking mid-November visits often enjoy full seasonal décor with shorter queues for holiday overlays like Haunted Mansion Holiday."
+        }
+      },
+      {
+        "title": "Formula 1 x Pixar Cars merchandise now available online",
+        "body": "Disney and Formula 1's collaboration expanded with a Pixar Cars collection that launched online at the F1 shop. The line features apparel and accessories blending racing iconography with characters from the animated franchise.",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/formula-1-x-pixars-cars-merchandise-collection-now-available-online/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Limited-edition crossover collections tend to sell out quickly in both online and park retail locations. If you're visiting Cars Land this week, checking the Ramone's House of Body Art shop early in the day often yields the widest size and item selection."
+        }
+      },
+      {
+        "title": "New villain-themed football jerseys arrive at Walt Disney World",
+        "body": "Headless Horseman, Maleficent, and Darth Maul jerseys are now on shelves across Walt Disney World resort shops. The villain series joins Disney's ongoing sports merchandise expansion.",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/headless-horseman-maleficent-and-darth-maul-jerseys-arrive-at-walt-disney-world/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Character-themed apparel tied to football season typically moves fastest at Magic Kingdom and Hollywood Studios flagship stores. Guests hunting specific sizes often find better stock at resort gift shops like the Grand Floridian or Contemporary before 10 a.m."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Oogie Boogie Bash underway at California Adventure through October 31",
+        "body": "Disney's separately ticketed Halloween event at California Adventure is running select nights with exclusive entertainment, trick-or-treat trails, and character encounters. The after-hours party continues through the end of October.",
+        "parkSlug": "california-adventure",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/dlr/oogie-boogie-bash-everything-you-need-to-know/"
+        }
+      },
+      {
+        "title": "EPCOT Food and Wine Festival cocktails and snacks now available",
+        "body": "The annual festival is serving dozens of small-plate dishes and specialty drinks across World Showcase and Future World marketplace booths. New this year are offerings at the United Kingdom Beer Cart and Norway cart.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/08/30/review-this-majorly-underrated-epcot-food-and-wine-drink-will-be-on-our-minds-for-weeks/"
+        }
+      },
+      {
+        "title": "Grand Floridian splash pad refurbishment wrapping up",
+        "body": "The Alice in Wonderland-themed water play area at Disney's Grand Floridian Resort has been closed for updates and appears to be nearing completion. The Deluxe resort's family amenity has been offline for ongoing work.",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/08/disneys-grand-floridian-resort-and-spa-splash-pad-refurbishment-update-jc1/"
+        }
+      },
+      {
+        "title": "Disneyland Resort celebrates Make-A-Wish week",
+        "body": "Families from across Europe joined princesses and received special experiences at Disneyland Paris during World Princess Week. The resort hosted Make-A-Wish children for meet-and-greets and royal-themed activities.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/make-a-wish-children-celebrated-at-disneyland-paris-during-world-princess-week/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "Free mimosa brunch at Disney Springs",
+        "body": "One Disney Springs restaurant offers complimentary mimosas with its weekend brunch service, making it the only venue in the shopping and dining district to include a free cocktail with the meal. The deal runs during standard brunch hours.",
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/08/30/the-only-disney-springs-brunch-that-comes-with-a-free-mimosa/"
+        },
+        "ctaLabel": "Find the full brunch menu",
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Weekend brunch reservations at Disney Springs tend to fill up by Thursday evening. Walk-up availability often opens after 1:30 p.m. when the first seating wave clears, but mimosa stock can run low during peak service windows."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "f1L81xN3p88",
+      "title": "EPCOT FOOD & WINE FESTIVAL- ULTIMATE FOODIE GUIDE | Trying 35+ Foods!",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-08-28T16:52:25Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/f1L81xN3p88/mqdefault.jpg",
+      "viewCount": 72082,
+      "url": "https://www.youtube.com/watch?v=f1L81xN3p88",
+      "summary": "WrightDownMainStreet samples more than 35 food and drink offerings from this year's EPCOT Food and Wine Festival marketplace booths."
+    },
+    {
+      "videoId": "VVUz82HnylI",
+      "title": "Ranking EVERY Restaurant in Animal Kingdom From Worst to Best",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-08-24T15:51:02Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/VVUz82HnylI/mqdefault.jpg",
+      "viewCount": 35828,
+      "url": "https://www.youtube.com/watch?v=VVUz82HnylI",
+      "summary": "WrightDownMainStreet ranks every dining location at Animal Kingdom, from quick-service counters to signature table-service restaurants."
+    },
+    {
+      "videoId": "xxvUEU6_8-U",
+      "title": "Halloween Horror Nights 2026 | Full Guide: Inside ALL 10 Houses & Zones | Universal Studios Florida",
+      "channel": "Paging Mr. Morrow",
+      "publishedAt": "2026-08-30T13:00:08Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/xxvUEU6_8-U/mqdefault.jpg",
+      "viewCount": 3987,
+      "url": "https://www.youtube.com/watch?v=xxvUEU6_8-U",
+      "summary": "Paging Mr. Morrow walks through all ten haunted houses and scare zones at Universal Studios Florida's 2026 Halloween Horror Nights event."
+    },
+    {
+      "videoId": "JjiqYMzHU-E",
+      "title": "WALT DISNEY WORLD TRAVEL DAY VLOG!✈️Virgin Atlantic Premium Economy & Yacht and Beach Club check in",
+      "channel": "Megan Tayler",
+      "publishedAt": "2026-08-30T09:00:27Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/JjiqYMzHU-E/mqdefault.jpg",
+      "viewCount": 1588,
+      "url": "https://www.youtube.com/watch?v=JjiqYMzHU-E",
+      "summary": "Megan Tayler vlogs her travel day to Walt Disney World, including Virgin Atlantic Premium Economy and check-in at Yacht and Beach Club Resort."
+    },
+    {
+      "videoId": "oILZztQAduQ",
+      "title": "Stitch in A Million Splashes of Colours 🌈✨️!! #disney #disneylandparis #parade #stitch #disneyparks",
+      "channel": "Quiet Magic Walks",
+      "publishedAt": "2026-08-30T09:00:52Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/oILZztQAduQ/mqdefault.jpg",
+      "viewCount": 1322,
+      "url": "https://www.youtube.com/watch?v=oILZztQAduQ",
+      "summary": "Quiet Magic Walks captures Stitch appearing in the A Million Splashes of Colours parade at Disneyland Paris."
+    },
+    {
+      "videoId": "htS_RwVcqeY",
+      "title": "Am I the only one? 👀🤣 #disneylandparis #disney #funnycouple #disneyland #disneyworld",
+      "channel": "Dreampark Diaries ",
+      "publishedAt": "2026-08-30T08:21:27Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/htS_RwVcqeY/mqdefault.jpg",
+      "viewCount": 1290,
+      "url": "https://www.youtube.com/watch?v=htS_RwVcqeY",
+      "summary": "Dreampark Diaries shares a humorous couples moment from their Disneyland Paris visit."
+    },
+    {
+      "videoId": "gawlmBgkwMs",
+      "title": "#disney #disneyland #disneylandparis #disneymeme",
+      "channel": "Itswesleyplays",
+      "publishedAt": "2026-08-30T07:30:33Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/gawlmBgkwMs/mqdefault.jpg",
+      "viewCount": 1268,
+      "url": "https://www.youtube.com/watch?v=gawlmBgkwMs",
+      "summary": "Itswesleyplays posts a Disney meme related to Disneyland Paris."
+    },
+    {
+      "videoId": "Cc_UKshKfJg",
+      "title": "turning red 熊抱青春記# #hkdisney #香港迪士尼 #香港迪士尼樂園 #hongkongdisneyland #turningred #disney #disneyland",
+      "channel": "wingwing daddy",
+      "publishedAt": "2026-08-30T08:42:20Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Cc_UKshKfJg/mqdefault.jpg",
+      "viewCount": 1255,
+      "url": "https://www.youtube.com/watch?v=Cc_UKshKfJg",
+      "summary": "Wingwing daddy shares Turning Red character content from Hong Kong Disneyland."
+    },
+    {
+      "videoId": "esgv-0tXJSc",
+      "title": "Cette scène a DISPARU de Disneyland Paris... et personne n'en parle 😱 #disney #insolite #endroits",
+      "channel": "Willyyaam",
+      "publishedAt": "2026-08-30T10:53:58Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/esgv-0tXJSc/mqdefault.jpg",
+      "viewCount": 1246,
+      "url": "https://www.youtube.com/watch?v=esgv-0tXJSc",
+      "summary": "Willyyaam discusses a scene or element that has disappeared from Disneyland Paris without much public notice."
+    },
+    {
+      "videoId": "RhquOBrMi_E",
+      "title": "Funny Disney Moments",
+      "channel": "DisneyLand Tv",
+      "publishedAt": "2026-08-30T10:00:11Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/RhquOBrMi_E/mqdefault.jpg",
+      "viewCount": 1219,
+      "url": "https://www.youtube.com/watch?v=RhquOBrMi_E",
+      "summary": "DisneyLand Tv compiles humorous moments captured at Disney parks."
+    }
+  ],
+  "updatedAt": "2026-08-30T15:08:22.232Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-08-30T15:08:22.232Z",
+    "tokens": {
+      "input": 11225,
+      "output": 5475,
+      "costUsd": 0.1158
+    }
+  }
+}
