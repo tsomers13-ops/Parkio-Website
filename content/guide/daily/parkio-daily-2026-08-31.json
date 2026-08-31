@@ -1,0 +1,335 @@
+{
+  "title": "Parkio Daily for August 31, 2026",
+  "slug": "parkio-daily-2026-08-31",
+  "date": "2026-08-31",
+  "teaser": "Diamond Horseshoe pop-up opens Oct 4; WDW Railroad closing Sept 28; Magic Kingdom 55th pins and merch arrive today.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Soarin'",
+        "parkSlug": "epcot",
+        "note": "Food & Wine crowds usually thin early morning"
+      },
+      {
+        "name": "Space Mountain",
+        "parkSlug": "magic-kingdom",
+        "note": "Hit before Tomorrowland fills mid-morning"
+      },
+      {
+        "name": "Radiator Springs Racers",
+        "parkSlug": "california-adventure",
+        "note": "Oogie Boogie Bash prep keeps daytime waits lower"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [],
+    "bignews": [
+      {
+        "title": "Diamond Horseshoe pop-up opens October 4",
+        "body": "Magic Kingdom's Liberty Square venue debuts a new limited-time dining concept starting October 4, with reservations opening September 29. The full menu features Western-themed dishes in the historic horseshoe theater space.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/disney-eats-the-diamond-horseshoe-pop-up-menu/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Reservations for new dining concepts tend to fill within the first few days. Set a reminder for September 29 and book early morning slots if you want to try the menu during your visit."
+        }
+      },
+      {
+        "title": "Walt Disney World Railroad closing September 28",
+        "body": "The already-shortened railroad loop between Main Street and Fantasyland will shut down for refurbishment on September 28. The closure follows more than a year of limited operation after Frontierland track removal.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/08/31/closure-announced-for-iconic-magic-kingdom-ride/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "If you're visiting late September, plan to walk between lands rather than counting on the train. The Fantasyland-to-Main Street trek can add 10–15 minutes to your route during peak afternoon hours."
+        }
+      },
+      {
+        "title": "Magic Kingdom 55th anniversary merchandise arrives",
+        "body": "Pins, gift cards, and commemorative items celebrating Magic Kingdom's October 1 anniversary are now available across the park. Collections include limited-edition and limited-release designs featuring Cinderella Castle.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/walt-disney-world-55th-anniversary-pins-coming-soon/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Anniversary merchandise typically sells out fastest at Emporium on Main Street. Side locations like Big Top Souvenirs often have better stock through mid-morning if you're shopping after rope drop."
+        }
+      },
+      {
+        "title": "Tiana's Bayou Adventure and Railroad refurbs may overlap",
+        "body": "Walt Disney World has confirmed maintenance windows for both Tiana's Bayou Adventure and the Railroad later this fall. The closures could coincide during busy holiday weeks, removing two major attractions simultaneously.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/08/disney-world-confirms-2-refurbishments-that-could-collide-at-magic-kingdom-bwb1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "If you're booking Thanksgiving or Christmas travel, check refurbishment schedules before finalizing. Losing both attractions can shift crowds heavily toward Frontierland's remaining rides during peak hours."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "Disneyland ticket booth demolition expands",
+        "body": "Four additional ticket booths at Disneyland Resort have been fully demolished, leaving only rubble and lampposts visible behind construction walls. The removal follows earlier booth teardowns this year.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/four-disneyland-resort-ticket-booths-completely-demolished/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "With fewer physical booths, mobile ticket entry and app-based reservations are likely your fastest path through the gate. Guests relying on walk-up purchases may face longer queues at remaining windows."
+        }
+      },
+      {
+        "title": "Gingerbread ornament experience debuts at EPCOT Germany",
+        "body": "Arribas Brothers launched a create-your-own gingerbread cookie ornament station at the Glaskunst kiosk in the Germany pavilion. One ornament with four toppings costs thirty-nine dollars, with additional toppings at five dollars each.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/create-your-own-gingerbread-cookie-ornament-in-germany-pavilion-at-epcot/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Hands-on craft experiences in World Showcase tend to draw lines after lunch. Stopping by Germany before noon usually means a shorter wait and cooler weather for decorating."
+        }
+      },
+      {
+        "title": "Haunted Mansion Holiday 25th anniversary pins released",
+        "body": "Disneyland's September pin lineup includes designs celebrating the 25th anniversary of Haunted Mansion Holiday, plus Muppets Haunted Mansion and other seasonal releases. Most pins drop throughout the month in limited-edition and limited-release batches.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/september-2026-disneyland-pin-releases-include-haunted-mansion-holiday-25th-anniversary-and-more/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Anniversary pins for major attractions often sell out on release day. Check pin shops in New Orleans Square first thing in the morning if you collect limited editions."
+        }
+      },
+      {
+        "title": "Disney Springs hotel deals start at one-twenty-five per night",
+        "body": "Walt Disney World released discounts for Disney Springs Resort Area Hotels, with rates starting at one hundred twenty-five dollars per night for travel now through late 2026, including Halloween and Christmas windows.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-world-room-deals-starting-at-125-night-at-disney-springs-resort-hotels-for-now-to-late-2026/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Disney Springs hotels offer shuttle access to parks without the on-property price tag. Booking mid-week dates in late September or early November typically yields the deepest availability at promo rates."
+        }
+      },
+      {
+        "title": "Wolfgang Puck Bar & Grill closing mid-September",
+        "body": "Wolfgang Puck's final restaurant at Walt Disney World will permanently close in mid-September after nearly three decades on property. The closure marks the end of the celebrity chef's presence at the resort.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/after-three-decades-wolfgang-pucks-last-disney-world-restaurant-is-closing-for-good/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "If you're planning a Disney Springs dining reservation in September, double-check that your chosen restaurant is still operating. Last-minute closures can leave limited same-day options during busy weekends."
+        }
+      },
+      {
+        "title": "Imagineering video series launches",
+        "body": "Disney Parks Blog premiered a new behind-the-scenes video series called We Call It Imagineering, showcasing how Imagineers design and build future lands, attractions, and entertainment experiences. The series is inspired by Walt Disney's original Disneyland specials.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/disney-experiences/go-behind-the-scenes-in-imagineering-video-series/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Watching the series before your trip can reveal Easter eggs and design details you might otherwise miss in new lands. Knowing what Imagineers hid in queue theming often makes standby waits more enjoyable."
+        }
+      },
+      {
+        "title": "Bluey bubble wand and new Halloween merch available",
+        "body": "A pool-themed Bluey bubble wand featuring the character in a sprinkle donut tube is now on shelves at Magic Kingdom for thirty-nine ninety-nine. Separately, new Halloween collections have dropped across the resort.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/08/pool-time-bluey-bubble-wand-now-available-at-walt-disney-world/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Character toys tied to current TV trends tend to vanish from shelves quickly. If your kid is a Bluey fan, grab the wand early in your trip rather than waiting until your last park day."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Lakeshore Lodge construction updates continue",
+        "body": "Disney Parks Blog is publishing a series called Letters from Lakeshore, documenting the progress of the proposed nature-inspired resort on the south shores of Bay Lake at Walt Disney World. The latest post shares design and construction milestones.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/lakeshore-lodge-disney-world-updates/"
+        }
+      },
+      {
+        "title": "Disneyland Holidays guide published for 2026",
+        "body": "Disneyland Resort released its full guide to holiday season festivities, running November 13 through January 6. The guide covers décor, entertainment, and seasonal food offerings across both parks.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/dlr/guide-to-holidays-at-the-disneyland-resort/"
+        }
+      },
+      {
+        "title": "Mickey's Not-So-Scary ticket demand drops",
+        "body": "Walt Disney World has seen reduced sellout rates for Mickey's Not-So-Scary Halloween Party nights in 2026 compared to recent years. More dates remain available closer to the event than in 2024 or 2025.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/08/official-demand-drops-at-walt-disney-world-for-the-first-time-since-2022-ab1/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "EPCOT Food & Wine Festival in full swing",
+        "body": "The annual EPCOT International Food & Wine Festival continues with dozens of global marketplace booths serving small plates, desserts, and drinks. Early arrivals and weekday visits typically offer the shortest lines at popular kiosks.",
+        "parkSlug": "epcot",
+        "ctaLabel": "Plan your tasting route",
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Festival booth lines tend to peak between noon and 3pm. Arriving at World Showcase when it opens at 11am or circling back after 7pm usually cuts wait times in half at high-demand stops like Canada and Japan."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "f1L81xN3p88",
+      "title": "EPCOT FOOD & WINE FESTIVAL- ULTIMATE FOODIE GUIDE | Trying 35+ Foods!",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-08-28T16:52:25Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/f1L81xN3p88/mqdefault.jpg",
+      "viewCount": 90133,
+      "url": "https://www.youtube.com/watch?v=f1L81xN3p88",
+      "summary": "WrightDownMainStreet samples more than 35 dishes across EPCOT's Food & Wine Festival, offering a comprehensive tasting tour of this year's marketplace offerings."
+    },
+    {
+      "videoId": "xxvUEU6_8-U",
+      "title": "Halloween Horror Nights 2026 | Full Guide: Inside ALL 10 Houses & Zones | Universal Studios Florida",
+      "channel": "Paging Mr. Morrow",
+      "publishedAt": "2026-08-30T13:00:08Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/xxvUEU6_8-U/mqdefault.jpg",
+      "viewCount": 78210,
+      "url": "https://www.youtube.com/watch?v=xxvUEU6_8-U",
+      "summary": "Paging Mr. Morrow walks through all ten haunted houses and scare zones at Universal Studios Florida's Halloween Horror Nights 2026 event."
+    },
+    {
+      "videoId": "2slhS1J35gc",
+      "title": "Personagens SECRETOS que NINGUÉM vê na DISNEY 😱 #shorts",
+      "channel": "PAIN SHORTS",
+      "publishedAt": "2026-08-31T13:05:24Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/2slhS1J35gc/mqdefault.jpg",
+      "viewCount": 11126,
+      "url": "https://www.youtube.com/watch?v=2slhS1J35gc",
+      "summary": "PAIN SHORTS highlights rare or lesser-known Disney characters that guests might not typically encounter during a park visit."
+    },
+    {
+      "videoId": "a0na4R9qsuw",
+      "title": "makan es creamm #kuliner #disney #food #disneyland",
+      "channel": "Fajar Family",
+      "publishedAt": "2026-08-31T14:30:37Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/a0na4R9qsuw/mqdefault.jpg",
+      "viewCount": 1825,
+      "url": "https://www.youtube.com/watch?v=a0na4R9qsuw",
+      "summary": "Fajar Family samples ice cream treats at Disneyland, showcasing the dessert offerings available in the park."
+    },
+    {
+      "videoId": "4qCuo8opND0",
+      "title": "Dit is zo magisch! ✨✨",
+      "channel": "Robertandjoey",
+      "publishedAt": "2026-08-31T15:30:34Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/4qCuo8opND0/mqdefault.jpg",
+      "viewCount": 1625,
+      "url": "https://www.youtube.com/watch?v=4qCuo8opND0",
+      "summary": "Robertandjoey captures a magical moment at a Disney park, sharing the experience with viewers."
+    },
+    {
+      "videoId": "HOv9_YIUjEo",
+      "title": "Disney Removed This Dangerous Stunt",
+      "channel": "Project Beyond Archive",
+      "publishedAt": "2026-08-31T13:00:47Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/HOv9_YIUjEo/mqdefault.jpg",
+      "viewCount": 1312,
+      "url": "https://www.youtube.com/watch?v=HOv9_YIUjEo",
+      "summary": "Project Beyond Archive discusses a stunt or show element that Disney removed from its parks due to safety concerns."
+    },
+    {
+      "videoId": "mTZRepc9thE",
+      "title": "It's nice to stop and take a breather #disneyparks #disneyland #dca #disney",
+      "channel": "The Magic Village",
+      "publishedAt": "2026-08-31T11:48:32Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/mTZRepc9thE/mqdefault.jpg",
+      "viewCount": 1163,
+      "url": "https://www.youtube.com/watch?v=mTZRepc9thE",
+      "summary": "The Magic Village highlights a quiet spot at Disneyland or California Adventure where guests can relax during a busy park day."
+    },
+    {
+      "videoId": "lPpptK5hdKE",
+      "title": "Walking Into Epcot Just Hits Different ✨🌐",
+      "channel": "Journeys With Sam ",
+      "publishedAt": "2026-08-31T11:18:38Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/lPpptK5hdKE/mqdefault.jpg",
+      "viewCount": 1146,
+      "url": "https://www.youtube.com/watch?v=lPpptK5hdKE",
+      "summary": "Journeys With Sam captures the experience of entering EPCOT and the distinctive atmosphere of the park."
+    },
+    {
+      "videoId": "k_7YEZ_MyAU",
+      "title": "Two things Shrek CAN do at Disneyland. #shorts #disney",
+      "channel": "Guring Shorts",
+      "publishedAt": "2026-08-31T13:00:20Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/k_7YEZ_MyAU/mqdefault.jpg",
+      "viewCount": 1129,
+      "url": "https://www.youtube.com/watch?v=k_7YEZ_MyAU",
+      "summary": "Guring Shorts shares humorous observations about what Shrek characters can do when visiting Disneyland."
+    },
+    {
+      "videoId": "QhZlhjooTjg",
+      "title": "When you tell Syndrome you love capes #disney #oogieboogiebash #disneymagic #disneyland #halloween",
+      "channel": "Waltz On Main",
+      "publishedAt": "2026-08-31T13:06:45Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/QhZlhjooTjg/mqdefault.jpg",
+      "viewCount": 1060,
+      "url": "https://www.youtube.com/watch?v=QhZlhjooTjg",
+      "summary": "Waltz On Main records an interaction with Syndrome from The Incredibles at Disneyland's Oogie Boogie Bash Halloween event."
+    }
+  ],
+  "updatedAt": "2026-08-31T17:46:41.591Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-08-31T17:46:41.591Z",
+    "tokens": {
+      "input": 11058,
+      "output": 5274,
+      "costUsd": 0.1123
+    }
+  }
+}
