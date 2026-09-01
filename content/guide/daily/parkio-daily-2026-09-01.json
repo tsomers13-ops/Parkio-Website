@@ -1,0 +1,358 @@
+{
+  "title": "Parkio Daily for September 1, 2026",
+  "slug": "parkio-daily-2026-09-01",
+  "date": "2026-09-01",
+  "teaser": "Slinky Dog Dash stays down day two; Railroad closes all October; Hurly-Burly menu unveiled for BoardWalk debut.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Test Track",
+        "parkSlug": "epcot",
+        "note": "EPCOT Food & Wine crowds push guests toward Future World"
+      },
+      {
+        "name": "Flight of Passage",
+        "parkSlug": "animal-kingdom",
+        "note": "Early morning window before midday heat"
+      },
+      {
+        "name": "Space Mountain",
+        "parkSlug": "magic-kingdom",
+        "note": "Railroad closure may shift traffic away from Tomorrowland"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [
+      {
+        "title": "Slinky Dog Dash remains closed for second consecutive day",
+        "body": "The Toy Story Land coaster did not open Monday and stayed offline over an hour past park opening Tuesday morning with no reopening timeline posted.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/09/slinky-dog-dash-experiencing-unexpected-downtime-at-disneys-hollywood-studios/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Hollywood Studios loses its second-highest capacity family ride. Toy Story Mania and Alien Swirling Saucers may see waits climb 15–25 minutes above normal through midday if Slinky stays down."
+        }
+      }
+    ],
+    "bignews": [
+      {
+        "title": "Walt Disney World Railroad will close for full month in October",
+        "body": "The Magic Kingdom steam train will go offline for roughly four weeks during October 2026 for refurbishment work, its first extended downtime since reopening after the TRON construction pause.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/walt-disney-world-railroad-closing-for-month-long-refurbishment-in-fall-2026/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Guests relying on the Railroad for transportation between Frontierland and Main Street will need to walk the full loop. October crowds tend to spike for fall breaks, so plan extra time for cross-park movement."
+        }
+      },
+      {
+        "title": "Hurly-Burly jazz club menu revealed ahead of October 1 opening",
+        "body": "The new BoardWalk venue replacing JellyRolls will offer small plates, entrees, and craft cocktails in a historic seaside theater setting when it debuts next month.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/disney-eats-first-look-at-hurly-burly-menu-at-disneys-boardwalk/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Opening week at new BoardWalk dining tends to draw curious locals and resort guests. Reservations may be easier to snag in the first 48 hours before word spreads widely."
+        }
+      },
+      {
+        "title": "Diamond Horseshoe pop-up launches October 4 with reservations opening September 29",
+        "body": "Magic Kingdom's Liberty Square table-service location will debut a new limited-time menu concept just days after the park's 55th anniversary, with bookings going live this month.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/disney-eats-the-diamond-horseshoe-pop-up-menu/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Reservations open at 6am Eastern on September 29. Logging in at the exact minute often secures prime lunch slots before the 60-day window fills for resort guests."
+        }
+      },
+      {
+        "title": "Tiana's Bayou Adventure enters first refurbishment in early November",
+        "body": "The Magic Kingdom attraction will close for maintenance starting in November and reopen before Christmas, addressing technical issues that have surfaced since its summer debut.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/tianas-bayou-adventures-badly-needed-refurbishment-could-set-up-a-bigger-magic-kingdom-project/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Guests visiting in September and October likely get the most reliable show effects before the downtime. Wait times may climb slightly as word spreads about the upcoming closure."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "Mickey and Minnie debut National Parks costumes at EPCOT's DVC lounge",
+        "body": "The characters now meet Disney Vacation Club members in ranger-inspired outfits at the ImaginAtrium, a year-round exclusive meet-and-greet inside the park.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/09/photos-mickey-and-minnies-national-park-outfits-at-exclusive-dvc-meet-and-greet-in-epcot/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "DVC members can access the lounge during Membership Magic Beyond events. The meet-and-greet typically runs shorter lines than regular character spots in World Showcase."
+        }
+      },
+      {
+        "title": "Beach Club Villas lobby begins refurbishment work",
+        "body": "Disney's Beach Club Villas has started construction on its lobby area, joining several other resorts undergoing updates across the property.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/09/01/refurbishment-hits-another-disney-world-hotel/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Lobby construction often means limited seating and rerouted check-in areas. Guests staying at Beach Club may want to use mobile check-in and head straight to their room to skip congestion."
+        }
+      },
+      {
+        "title": "Hollywood Brown Derby nears end of 37-year-old restaurant refurbishment",
+        "body": "The signature table-service location at Hollywood Studios is close to completing its multi-week renovation, with guests reporting near-finished interiors.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/08/hollywood-brown-derby-refurbishment-almost-complete-at-disneys-hollywood-studios-jc1/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Reopening week at Brown Derby often features eager servers and freshly cleaned dining rooms. Reservations may open up as the completion date firms up in the next few days."
+        }
+      },
+      {
+        "title": "Mickey balloon Spirit Jersey arrives at Walt Disney World",
+        "body": "A new pastel purple Spirit Jersey featuring glitter Mickey balloons and fireworks is now available across resort merchandise locations for 84.99 dollars.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/09/mickey-balloon-spirit-jersey-arrives-at-walt-disney-world/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Popular Spirit Jersey designs tend to sell out in flagship stores by early afternoon. World of Disney at Disney Springs and Emporium on Main Street restock most reliably in the morning."
+        }
+      },
+      {
+        "title": "Six new construction permits filed across Disney World parks and resorts",
+        "body": "Disney has submitted half a dozen permits covering work at multiple locations, though specific project details remain unannounced.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/09/01/6-new-permits-filed-across-disney-world-parks-resorts/"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "Permit activity often precedes visible construction walls within 4–8 weeks. Guests visiting in October may encounter new work zones that shift walkway traffic or dining access."
+        }
+      },
+      {
+        "title": "Disneyland holidays return November 13 through January 6",
+        "body": "The resort confirmed its full holiday season lineup with festive overlays, entertainment, and decor running from mid-November into the new year.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/dlr/guide-to-holidays-at-the-disneyland-resort/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "The first week of the season usually offers shorter waits for holiday overlays like Haunted Mansion Holiday before Thanksgiving crowds arrive. Early November bookings are likely still available."
+        }
+      },
+      {
+        "title": "Disney Elf on the Shelf collection launches on Amazon",
+        "body": "The collaboration between Disney and Elf on the Shelf is now available online, with some items already showing limited stock.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/09/01/start-celebrating-the-holidays-with-this-new-disney-x-elf-on-the-shelf-collection/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Holiday merchandise collaborations tend to disappear before Thanksgiving. Ordering today may avoid the rush as social media shares spread through parent groups."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Live-action Moana sets digital and physical release dates",
+        "body": "The film will be available for digital purchase September 8 and on Blu-ray and DVD October 6 after underperforming at the box office.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/09/live-action-moana-digital-home-video-release-dates/"
+        }
+      },
+      {
+        "title": "Imagineering video series offers behind-the-scenes look at park design",
+        "body": "We Call It Imagineering is a new series inspired by Walt Disney's original specials, showcasing how future attractions and lands are developed.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/disney-experiences/go-behind-the-scenes-in-imagineering-video-series/"
+        }
+      },
+      {
+        "title": "Disney Cruise Line reveals fall 2027 and spring 2028 itineraries",
+        "body": "New sailings include the Disney Wish heading to New York, with bookings now open for trips more than a year out.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/dcl/disney-cruise-line-fall-2027-and-spring-2028-itineraries-announced/"
+        }
+      },
+      {
+        "title": "Online Disney Store closing in Australia, New Zealand, and Southeast Asia",
+        "body": "DisneyStore.com.au and DisneyStore.asia will cease operations after September 30, with orders placed through that date still fulfilled.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/09/online-disney-store-closing-for-australia-new-zealand-and-select-countries-in-southeast-asia/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "EPCOT Food & Wine Festival opens with 35-plus marketplace booths",
+        "body": "The annual fall event kicked off over the weekend with dozens of global marketplaces, live entertainment, and specialty tastings running through mid-November.",
+        "parkSlug": "epcot",
+        "ctaLabel": "See the full booth list",
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "World Showcase walkways tend to bottleneck between 12pm and 3pm as guests graze booth to booth. Arriving before 11am or after 6pm usually offers faster movement and shorter tasting lines."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "f1L81xN3p88",
+      "title": "EPCOT FOOD & WINE FESTIVAL- ULTIMATE FOODIE GUIDE | Trying 35+ Foods!",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-08-28T16:52:25Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/f1L81xN3p88/mqdefault.jpg",
+      "viewCount": 100244,
+      "url": "https://www.youtube.com/watch?v=f1L81xN3p88",
+      "summary": "WrightDownMainStreet samples more than 35 dishes across the EPCOT Food & Wine Festival marketplace booths."
+    },
+    {
+      "videoId": "xxvUEU6_8-U",
+      "title": "Halloween Horror Nights 2026 | Full Guide: Inside ALL 10 Houses & Zones | Universal Studios Florida",
+      "channel": "Paging Mr. Morrow",
+      "publishedAt": "2026-08-30T13:00:08Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/xxvUEU6_8-U/mqdefault.jpg",
+      "viewCount": 98681,
+      "url": "https://www.youtube.com/watch?v=xxvUEU6_8-U",
+      "summary": "Paging Mr. Morrow walks through all 10 haunted houses and scare zones at Universal Studios Florida's Halloween Horror Nights 2026."
+    },
+    {
+      "videoId": "qCRoLSXwIKM",
+      "title": "🔴 LIVE: Magic Kingdom Happily Ever After Full Show 4K — EPIC Disney World 2026",
+      "channel": "Fun to be Free",
+      "publishedAt": "2026-09-01T03:09:23Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/qCRoLSXwIKM/mqdefault.jpg",
+      "viewCount": 11278,
+      "url": "https://www.youtube.com/watch?v=qCRoLSXwIKM",
+      "summary": "Fun to be Free live-streams the full Happily Ever After fireworks show from Magic Kingdom in 4K resolution."
+    },
+    {
+      "videoId": "3VmPBDXgQus",
+      "title": "Những bộ đồ bạn nên tránh khi đến Disneyland😳",
+      "channel": "Góc Nhiều Chuyện",
+      "publishedAt": "2026-09-01T09:00:09Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/3VmPBDXgQus/mqdefault.jpg",
+      "viewCount": 5445,
+      "url": "https://www.youtube.com/watch?v=3VmPBDXgQus",
+      "summary": "Góc Nhiều Chuyện discusses outfits to avoid wearing when visiting Disneyland."
+    },
+    {
+      "videoId": "RzAqcD7YYXY",
+      "title": "The Sword in the Stone Has a Secret!#shorts",
+      "channel": "BlueMyst",
+      "publishedAt": "2026-09-01T11:00:04Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/RzAqcD7YYXY/mqdefault.jpg",
+      "viewCount": 2172,
+      "url": "https://www.youtube.com/watch?v=RzAqcD7YYXY",
+      "summary": "BlueMyst shares a hidden detail about the Sword in the Stone attraction at a Disney park."
+    },
+    {
+      "videoId": "aMeBUHfhhPY",
+      "title": "HELP 😭🙏🏼(CREDS TO OG OWNER‼️) #awesome #cool #disney #disneyland #disneyworld #repost #notmine",
+      "channel": "Div1ne",
+      "publishedAt": "2026-09-01T09:21:56Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/aMeBUHfhhPY/mqdefault.jpg",
+      "viewCount": 1695,
+      "url": "https://www.youtube.com/watch?v=aMeBUHfhhPY",
+      "summary": "Div1ne shares reposted Disney park content from another creator."
+    },
+    {
+      "videoId": "KOoea9ji-6Y",
+      "title": "Live: Animal  Kingdom- Disney World",
+      "channel": "Florida Mark",
+      "publishedAt": "2026-09-01T05:46:19Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/KOoea9ji-6Y/mqdefault.jpg",
+      "viewCount": 1421,
+      "url": "https://www.youtube.com/watch?v=KOoea9ji-6Y",
+      "summary": "Florida Mark live-streams a visit to Disney's Animal Kingdom theme park."
+    },
+    {
+      "videoId": "RUGhPUl67JM",
+      "title": "Kinda a big deal🏰💖✨️ !#disneyland #waltdisneyworld  #shorts",
+      "channel": "Kelly in the Parks",
+      "publishedAt": "2026-09-01T05:01:45Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/RUGhPUl67JM/mqdefault.jpg",
+      "viewCount": 1282,
+      "url": "https://www.youtube.com/watch?v=RUGhPUl67JM",
+      "summary": "Kelly in the Parks highlights something notable at Disneyland or Walt Disney World."
+    },
+    {
+      "videoId": "A4rEe4hXgJ8",
+      "title": "Disneyland #disney #disneyland #disneylandhongkong #family #familyvlog",
+      "channel": "Larrin Briel",
+      "publishedAt": "2026-09-01T07:09:34Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/A4rEe4hXgJ8/mqdefault.jpg",
+      "viewCount": 1224,
+      "url": "https://www.youtube.com/watch?v=A4rEe4hXgJ8",
+      "summary": "Larrin Briel shares a family vlog from Hong Kong Disneyland."
+    },
+    {
+      "videoId": "viOeWBGpaOY",
+      "title": "Disneyland Việt Nam 🇻🇳 #disney #phuquoc #vietnam #castle #mickeymouse #beautiful",
+      "channel": "Bông hoa nhí đây ",
+      "publishedAt": "2026-09-01T06:20:59Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/viOeWBGpaOY/mqdefault.jpg",
+      "viewCount": 1045,
+      "url": "https://www.youtube.com/watch?v=viOeWBGpaOY",
+      "summary": "Bông hoa nhí đây showcases a Disney-themed location in Phu Quoc, Vietnam."
+    }
+  ],
+  "updatedAt": "2026-09-01T15:19:27.281Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-09-01T15:19:27.281Z",
+    "tokens": {
+      "input": 11356,
+      "output": 5469,
+      "costUsd": 0.1161
+    }
+  }
+}
