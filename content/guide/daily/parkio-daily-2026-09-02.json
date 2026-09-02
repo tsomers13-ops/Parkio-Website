@@ -1,0 +1,336 @@
+{
+  "title": "Parkio Daily for September 2, 2026",
+  "slug": "parkio-daily-2026-09-02",
+  "date": "2026-09-02",
+  "teaser": "Slinky Dog Dash enters day three of unscheduled closure; new Grand Floridian entrance opens soon; Diamond Horseshoe pop-up debuts October 4.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Test Track",
+        "parkSlug": "epcot",
+        "note": "Food & Wine crowds usually shift to World Showcase by late morning"
+      },
+      {
+        "name": "Flight of Passage",
+        "parkSlug": "animal-kingdom",
+        "note": "Typically lighter on Wednesdays before lunch"
+      },
+      {
+        "name": "Rise of the Resistance",
+        "parkSlug": "hollywood-studios",
+        "note": "With Slinky Dog closed, crowds may redistribute here"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [
+      {
+        "title": "Slinky Dog Dash remains closed for third consecutive day",
+        "body": "The Toy Story Land coaster has not opened since Monday, August 31, marking an extended unscheduled downtime with no reopening estimate yet posted.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/09/slinky-dog-dash-closed-for-third-day-in-a-row-at-disneys-hollywood-studios/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Toy Story Land mornings may actually be lighter without Slinky pulling crowds. Consider hitting Tower of Terror or Rock 'n' Roller Coaster first, then checking Slinky status around mid-morning before committing your afternoon plans."
+        }
+      }
+    ],
+    "bignews": [
+      {
+        "title": "Diamond Horseshoe pop-up opens October 4 with limited-time menu",
+        "body": "The Liberty Square venue debuts a new seasonal dining experience starting October 4. Reservations open September 29.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/disney-eats-the-diamond-horseshoe-pop-up-menu/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Pop-up reservations at Magic Kingdom tend to fill within hours of opening. Set a reminder for September 29 at 6am ET if you want a table during your October visit."
+        }
+      },
+      {
+        "title": "Hurly-Burly bar opens October 1 at BoardWalk with specialty cocktails",
+        "body": "The new walk-up cocktail window and lounge debuts inside the reimagined BoardWalk theater space on the resort's 55th anniversary. Full menu features craft drinks and small bites.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/disney-eats-first-look-at-hurly-burly-menu-at-disneys-boardwalk/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "BoardWalk parking tends to fill by early evening on weekends. If visiting Hurly-Burly during its opening weeks, arrive before 5pm or use resort transportation from EPCOT resorts to avoid lot closures."
+        }
+      },
+      {
+        "title": "New Grand Floridian entrance opening soon via reconfigured Floridian Way",
+        "body": "A redesigned roadway entrance with new roundabouts will redirect traffic flow to the resort. The updated entry is expected to open within days.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/09/new-entrance-to-disneys-grand-floridian-resort-opening-soon/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "First-time visitors to Grand Floridian should allow an extra five minutes during the transition period while GPS systems update. The new roundabouts may cause brief confusion for ride-share pickups this week."
+        }
+      },
+      {
+        "title": "Hollywood Studios tests fireworks from previously unused launch site",
+        "body": "Crews conducted an overnight fireworks test from a site that had been abandoned. The purpose of the test has not been disclosed.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/09/disneys-hollywood-studios-tests-abandoned-fireworks-launch-site/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "If Hollywood Studios adds fireworks, evening crowd patterns will likely shift toward Sunset Boulevard and the park's hub. Early tests often signal changes within a few months rather than immediate rollout."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "Walt Disney World Railroad closing for month-long refurbishment in October",
+        "body": "The Magic Kingdom train will shut down for maintenance covering most of October 2026, affecting transportation around the park.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/walt-disney-world-railroad-closing-for-month-long-refurbishment-in-fall-2026/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Without the railroad, walking from Fantasyland to Frontierland takes most guests 12–15 minutes. Plan bathroom and rest breaks accordingly, especially with young kids who tire faster on foot."
+        }
+      },
+      {
+        "title": "Skyliner closing for maintenance in Winter 2028",
+        "body": "Disney announced routine refurbishment dates for the gondola system in early 2028. Guests staying at Skyliner resorts during the closure will rely on bus service.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/09/02/new-closure-announced-for-disney-world-skyliner/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Book Art of Animation, Pop Century, or Caribbean Beach only if you're comfortable with 20–30 minute bus rides to EPCOT and Hollywood Studios. Skyliner downtime often coincides with slower seasons, but buses can still bunch during park opening and closing."
+        }
+      },
+      {
+        "title": "Art of Animation room refurbishment begins mid-June 2027, runs over one year",
+        "body": "The value resort's first major hard-goods update will start in summer 2027 and continue into 2028. Specific room sections affected have not been detailed.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/09/dates-announced-for-major-room-refurbishment-at-disneys-art-of-animation-resort/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Construction noise and equipment staging tend to peak during the first three months of resort refurbishments. If you're booking Art of Animation for late June through August 2027, consider requesting a room far from active work zones at check-in."
+        }
+      },
+      {
+        "title": "Prospect, new male African painted dog, joins Animal Kingdom savanna",
+        "body": "The park welcomed a new painted dog visible during Kilimanjaro Safaris. Prospect marks a recent addition to the conservation program.",
+        "parkSlug": "animal-kingdom",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/09/prospect-african-painted-dog-joins-the-pack-at-disneys-animal-kingdom/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Animals on the savanna are most active in the first hour after park opening and the last two hours before close. Ride Kilimanjaro Safaris early or late today for the best chance to spot Prospect interacting with the pack."
+        }
+      },
+      {
+        "title": "Mickey's Not-So-Scary Halloween Party nears sellout with seven dates remaining",
+        "body": "Most September and October party nights are now sold out. Only seven tickets remain available for the rest of the 2026 season.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/09/disney-worlds-halloween-party-nears-sellout-with-just-7-dates-left-bwb1/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "The final available party dates tend to be weeknights in late October. If you're flexible, those nights often feel less crowded than peak September weekends, even though tickets are scarce."
+        }
+      },
+      {
+        "title": "Lightning Lane Premier Pass removed from Magic Kingdom for Labor Day weekend",
+        "body": "Disney dropped the premium skip-the-line product from sale at Magic Kingdom during the holiday weekend, reflecting lighter-than-expected crowds.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/09/disney-world-gives-in-drops-costly-lightning-lane-passes-for-labor-day-weekend-th1/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "When Premier Pass disappears from sale, standby lines usually stay manageable throughout the day. If you're visiting Magic Kingdom this weekend, standard Lightning Lane Multi Pass will likely cover your needs without the premium tier."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Disneyland holiday season runs November 13 through January 6",
+        "body": "Both Disneyland and California Adventure will feature seasonal decor, entertainment, and food offerings during the extended holiday window.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/dlr/guide-to-holidays-at-the-disneyland-resort/"
+        }
+      },
+      {
+        "title": "Oogie Boogie Bash runs select nights through October 31",
+        "body": "The separately ticketed Halloween event at California Adventure continues on select evenings with themed treat trails, entertainment, and character experiences.",
+        "parkSlug": "california-adventure",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/dlr/oogie-boogie-bash-everything-you-need-to-know/"
+        }
+      },
+      {
+        "title": "Nautical Steamboat Willie ear headband debuts at Yacht Club Resort",
+        "body": "The new accessory features red imitation leather and gold Mickey icon details, matching previously released nautical merchandise.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/09/nautical-steamboat-willie-ear-headband-debuts-at-disneys-yacht-club-resort/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "EPCOT Food & Wine Festival offers 35-plus global marketplace booths",
+        "body": "The annual festival continues through mid-November with small plates, beverages, and live entertainment across World Showcase. Popular items tend to sell out by early evening on weekends.",
+        "parkSlug": "epcot",
+        "ctaLabel": "See the full booth list",
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Marketplace lines are shortest in the first 90 minutes after World Showcase opens at 11am. Hit your must-try booths before 12:30pm, then circle back for seconds during the dinner hour when lines thin again."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "xxvUEU6_8-U",
+      "title": "Halloween Horror Nights 2026 | Full Guide: Inside ALL 10 Houses & Zones | Universal Studios Florida",
+      "channel": "Paging Mr. Morrow",
+      "publishedAt": "2026-08-30T13:00:08Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/xxvUEU6_8-U/mqdefault.jpg",
+      "viewCount": 110039,
+      "url": "https://www.youtube.com/watch?v=xxvUEU6_8-U",
+      "summary": "A comprehensive walkthrough of all ten haunted houses and scare zones at this year's Halloween Horror Nights event at Universal Studios Florida."
+    },
+    {
+      "videoId": "f1L81xN3p88",
+      "title": "EPCOT FOOD & WINE FESTIVAL- ULTIMATE FOODIE GUIDE | Trying 35+ Foods!",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-08-28T16:52:25Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/f1L81xN3p88/mqdefault.jpg",
+      "viewCount": 109718,
+      "url": "https://www.youtube.com/watch?v=f1L81xN3p88",
+      "summary": "A taste-test tour of more than 35 food items available at EPCOT's Food & Wine Festival marketplace booths."
+    },
+    {
+      "videoId": "gv4xWyAEraE",
+      "title": "🔴Live 2026 Mickey's Not So Scary Halloween Party at the Magic Kingdom Walt Disney World 9/1/2026",
+      "channel": "RON ON THE GO",
+      "publishedAt": "2026-09-02T04:49:49Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/gv4xWyAEraE/mqdefault.jpg",
+      "viewCount": 74739,
+      "url": "https://www.youtube.com/watch?v=gv4xWyAEraE",
+      "summary": "A live stream from inside Mickey's Not-So-Scary Halloween Party at Magic Kingdom on September 1, 2026."
+    },
+    {
+      "videoId": "rENhat3j7G8",
+      "title": "Those touching moments at Disney #disney #disneyland #love",
+      "channel": "Nenescu Tsakovsky",
+      "publishedAt": "2026-09-02T09:21:22Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/rENhat3j7G8/mqdefault.jpg",
+      "viewCount": 7299,
+      "url": "https://www.youtube.com/watch?v=rENhat3j7G8",
+      "summary": "A short video highlighting emotional and heartwarming guest moments captured at Disney parks."
+    },
+    {
+      "videoId": "dY29z5_ljVI",
+      "title": "Why Disney Trash Cans Are Exactly 30 Steps Apart! 🗑️#fact",
+      "channel": "NMH FACTS",
+      "publishedAt": "2026-09-02T12:35:25Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/dY29z5_ljVI/mqdefault.jpg",
+      "viewCount": 6636,
+      "url": "https://www.youtube.com/watch?v=dY29z5_ljVI",
+      "summary": "A trivia video explaining the reasoning behind Disney's strategic trash can placement throughout its theme parks."
+    },
+    {
+      "videoId": "pwqx1zuIKkA",
+      "title": "#LIVE Disneyland How Crowded Will it Be, Rides, Characters, Merch",
+      "channel": "Main Street Cowgirl",
+      "publishedAt": "2026-09-02T05:49:55Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/pwqx1zuIKkA/mqdefault.jpg",
+      "viewCount": 6630,
+      "url": "https://www.youtube.com/watch?v=pwqx1zuIKkA",
+      "summary": "A live stream from Disneyland covering current crowd levels, attraction availability, character meet-and-greets, and merchandise."
+    },
+    {
+      "videoId": "o-iMuuYN7wg",
+      "title": "Tuesday night live at Disneyland! Disney fun is creepin around every corner!",
+      "channel": "Disney Secret Kingdom",
+      "publishedAt": "2026-09-02T05:22:58Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/o-iMuuYN7wg/mqdefault.jpg",
+      "viewCount": 5248,
+      "url": "https://www.youtube.com/watch?v=o-iMuuYN7wg",
+      "summary": "A Tuesday evening live broadcast from Disneyland showcasing Halloween-themed decorations and park atmosphere."
+    },
+    {
+      "videoId": "udLdQK2EbV0",
+      "title": "LIVE - Today at Disneyland  #live #livestream #disney #disneyparks #disneyland",
+      "channel": "FocalWorld (Jim)",
+      "publishedAt": "2026-09-02T06:21:17Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/udLdQK2EbV0/mqdefault.jpg",
+      "viewCount": 1728,
+      "url": "https://www.youtube.com/watch?v=udLdQK2EbV0",
+      "summary": "A live stream providing real-time coverage of activities and attractions at Disneyland."
+    },
+    {
+      "videoId": "9dYPcBgvwbA",
+      "title": "How people be walking at Disney #disney #disneyworld #disneyland",
+      "channel": "M&E Travels",
+      "publishedAt": "2026-09-02T11:36:58Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/9dYPcBgvwbA/mqdefault.jpg",
+      "viewCount": 1657,
+      "url": "https://www.youtube.com/watch?v=9dYPcBgvwbA",
+      "summary": "A humorous short video about different walking styles and behaviors observed among Disney park guests."
+    },
+    {
+      "videoId": "Uc4rjckToPM",
+      "title": "#disney #disneyland #disneylandresort #disneyparks #themepark #autopia",
+      "channel": "Juul's World",
+      "publishedAt": "2026-09-02T07:13:13Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Uc4rjckToPM/mqdefault.jpg",
+      "viewCount": 1198,
+      "url": "https://www.youtube.com/watch?v=Uc4rjckToPM",
+      "summary": "A short video featuring the Autopia attraction at Disneyland Resort."
+    }
+  ],
+  "updatedAt": "2026-09-02T14:49:15.049Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-09-02T14:49:15.049Z",
+    "tokens": {
+      "input": 11233,
+      "output": 5169,
+      "costUsd": 0.1112
+    }
+  }
+}
