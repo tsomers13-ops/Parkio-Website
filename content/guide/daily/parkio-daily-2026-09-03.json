@@ -1,0 +1,336 @@
+{
+  "title": "Parkio Daily for September 3, 2026",
+  "slug": "parkio-daily-2026-09-03",
+  "date": "2026-09-03",
+  "teaser": "Slinky Dog Dash reopens after three days down; crowds unusually light across all four WDW parks heading into Labor Day.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Slinky Dog Dash",
+        "parkSlug": "hollywood-studios",
+        "note": "Just reopened after 3-day closure; waits trending low"
+      },
+      {
+        "name": "Test Track",
+        "parkSlug": "epcot",
+        "note": "Food & Wine crowds thin during dinner hour"
+      },
+      {
+        "name": "Big Thunder Mountain",
+        "parkSlug": "magic-kingdom",
+        "note": "Walk-on windows reported late morning"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [
+      {
+        "title": "Slinky Dog Dash back online after three-day shutdown",
+        "body": "The Toy Story Land coaster reopened this morning at Hollywood Studios following an unplanned closure that began Friday and stretched through Tuesday. The ride returned with Early Entry access.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/09/slinky-dog-dash-reopens-after-multi-day-closure-at-disneys-hollywood-studios/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Rope-drop waits tend to be softer the first day back from extended downtime. Riding during Early Entry or first hour usually keeps you under 25 minutes."
+        }
+      }
+    ],
+    "bignews": [
+      {
+        "title": "Grand Floridian Café sets November 2 reopening",
+        "body": "Dinner reservations are now bookable starting November 2, indicating the table-service restaurant will wrap its multi-month refurbishment that began in July.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/09/reopening-date-for-disneys-grand-floridian-cafe-after-multi-month-refurbishment/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "First-week reservations at newly reopened restaurants tend to fill quickly. Booking now usually offers better evening timeslots than waiting closer to travel dates."
+        }
+      },
+      {
+        "title": "Mickey's Very Merry Christmas Party dining opens for resort guests",
+        "body": "Guests staying at Walt Disney World Resort hotels can now book party-night dining and dessert parties up to 60 days in advance. General public access follows later.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/09/mickeys-very-merry-christmas-party-dining-reservations-dessert-parties-open-for-hotel-guests/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Dessert-party viewing spots tend to sell out within 48 hours of hotel-guest windows opening. Booking today usually secures preferred event dates before general availability."
+        }
+      },
+      {
+        "title": "Art of Animation room refurbishment timeline announced",
+        "body": "The value resort's first major hard-goods update will begin summer 2027 and run into 2028, with phased closures by room type. Exact building schedules are still being finalized.",
+        "parkSlug": "animal-kingdom",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/dates-set-for-disneys-art-of-animation-resort-first-major-year-plus-room-refurbishment-in-2027-2028/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Refurbishment noise and visual disruption tend to peak during demo phases. Guests booking mid-2027 onward may want to confirm building status or choose a different resort."
+        }
+      },
+      {
+        "title": "Hurly-Burly menu preview shows BoardWalk vaudeville theme",
+        "body": "The new table-service restaurant opening October 1 at Disney's BoardWalk will feature a menu inspired by historic seaside theater dining. The official Disney Parks Blog shared first-look details.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/disney-eats-first-look-at-hurly-burly-menu-at-disneys-boardwalk/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "New restaurant reservations tend to open 60 days out and fill within hours for opening week. Monitoring reservation availability daily usually yields last-minute cancellations."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "Crowds unusually light across Walt Disney World before Labor Day",
+        "body": "Multiple reports confirm walk-on waits at major attractions across all four parks this week, with pathways noticeably emptier than typical late-summer patterns. The trend held through Wednesday.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/09/disney-world-sees-historically-low-wait-times-heading-into-labor-day-weekend-rl1/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Low-crowd windows tend to evaporate once weekend guests arrive. Riding headliners before Friday check-in waves usually offers the shortest waits of the holiday stretch."
+        }
+      },
+      {
+        "title": "Diamond Horseshoe pop-up menu revealed ahead of October 4 debut",
+        "body": "The limited-time dining experience at Magic Kingdom's Liberty Square venue will offer reservations starting September 29. The official menu showcases Western-inspired fare.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/disney-eats-the-diamond-horseshoe-pop-up-menu/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Pop-up dining reservations tend to book solid within 24 hours of opening. Setting a 6am alarm on September 29 usually improves chances for preferred timeslots."
+        }
+      },
+      {
+        "title": "Her Universe villain athletic dresses arrive at Hollywood Studios",
+        "body": "New athletic-style dresses featuring the Evil Queen, Maleficent, Queen of Hearts, and Cruella de Vil are now available at Once Upon a Time shop. The line debuted this week.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/09/evil-queen-cruella-de-vil-more-disney-villains-featured-on-her-universe-athletic-dresses-at-walt-disney-world/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Limited-run apparel at flagship shops tends to sell out by midday on popular sizes. Stopping by within the first two operating hours usually offers fullest selection."
+        }
+      },
+      {
+        "title": "Magic Kingdom fireworks shifting to holiday show in November",
+        "body": "The park's nightly pyrotechnic spectacular will transition from the regular program to a seasonal holiday version starting in November. Exact switchover date has not been confirmed.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/09/03/fireworks-change-is-hitting-magic-kingdom-in-november/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "The first week of holiday overlays tends to draw heavier evening crowds. Watching during early November weeknights usually offers better viewing spots than weekends."
+        }
+      },
+      {
+        "title": "Hollywood Studios tests fireworks launch site after six-year gap",
+        "body": "Disney conducted a test firing Wednesday night from the purpose-built Star Wars launch pad that has sat unused since March 2020. No announcement has been made about a new nighttime show.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-world-tests-star-wars-fireworks-launch-site-at-hollywood-studios-after-6-year-absence/"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "Park-closing crowds tend to surge when a new nighttime show is announced. Booking dining or Lightning Lane passes before an official debut usually avoids the initial rush."
+        }
+      },
+      {
+        "title": "Disney partners with Frontier on new theme park game",
+        "body": "The developer behind RollerCoaster Tycoon 3, Planet Coaster, and Planet Zoo is collaborating with Disney on an unannounced video game. No release window or platform details have been shared.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/09/disney-partners-with-developers-of-rollercoaster-tycoon-3-planet-coaster-and-planet-zoo-on-new-game/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Tycoon-style park sims tend to renew interest in real-park visits among lapsed guests. Early announcements usually precede merchandise tie-ins by several months."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Disneyland holiday season guide published for 2026",
+        "body": "The official Disney Parks Blog shared the full rundown of seasonal overlays, entertainment, and dining for Holidays at the Disneyland Resort, running November 13 through January 6.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/dlr/guide-to-holidays-at-the-disneyland-resort/"
+        }
+      },
+      {
+        "title": "Lightning McQueen appears at Italian Grand Prix with new livery",
+        "body": "As part of Disney's Formula 1 partnership, the Cars character is on-site at the Gran Premio d'Italia in Monza this weekend, marking the 20th anniversary of the franchise with a special paint scheme.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/09/lightning-mcqueen-will-make-appearance-at-formula-1-gran-premio-ditalia-2026/"
+        }
+      },
+      {
+        "title": "Rare Skyliner route change affects Riviera Resort guests",
+        "body": "A temporary operational adjustment has altered the usual transfer pattern for guests traveling from Disney's Riviera Resort. The change is expected to be short-term.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/09/03/the-rare-skyliner-route-change-you-need-to-know-about-if-youre-staying-at-disneys-riviera-resort/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "EPCOT After Hours offers near-empty park for $155",
+        "body": "The limited-capacity evening event grants three hours of low-wait access to World Showcase and Future World attractions after regular close. Select dates remain available through fall.",
+        "parkSlug": "epcot",
+        "ctaLabel": "Check availability",
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "After Hours events tend to show walk-on waits for Test Track and Frozen within 30 minutes of start time. Arriving right at event kick-off usually maximizes ride count before fatigue sets in."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "xxvUEU6_8-U",
+      "title": "Halloween Horror Nights 2026 | Full Guide: Inside ALL 10 Houses & Zones | Universal Studios Florida",
+      "channel": "Paging Mr. Morrow",
+      "publishedAt": "2026-08-30T13:00:08Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/xxvUEU6_8-U/mqdefault.jpg",
+      "viewCount": 119657,
+      "url": "https://www.youtube.com/watch?v=xxvUEU6_8-U",
+      "summary": "Paging Mr. Morrow walks through all ten haunted houses and scare zones at Universal Studios Florida's 2026 Halloween Horror Nights event."
+    },
+    {
+      "videoId": "f1L81xN3p88",
+      "title": "EPCOT FOOD & WINE FESTIVAL- ULTIMATE FOODIE GUIDE | Trying 35+ Foods!",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-08-28T16:52:25Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/f1L81xN3p88/mqdefault.jpg",
+      "viewCount": 115036,
+      "url": "https://www.youtube.com/watch?v=f1L81xN3p88",
+      "summary": "WrightDownMainStreet samples more than 35 dishes across EPCOT's Food & Wine Festival marketplace booths and shares ratings."
+    },
+    {
+      "videoId": "LDXvq15o1ZA",
+      "title": "🔴 Live Epcot Wednesday for rides and Luminous at 9pm, story time at Walt Disney World 9/2/2026",
+      "channel": "RON ON THE GO",
+      "publishedAt": "2026-09-03T02:09:03Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/LDXvq15o1ZA/mqdefault.jpg",
+      "viewCount": 37144,
+      "url": "https://www.youtube.com/watch?v=LDXvq15o1ZA",
+      "summary": "RON ON THE GO livestreams an evening at EPCOT featuring attractions and the 9pm Luminous nighttime spectacular."
+    },
+    {
+      "videoId": "ov5aa27jjLQ",
+      "title": "＼ボン・ヴォヤージュ／9月3日販売状況を紹介！",
+      "channel": "みい🎀",
+      "publishedAt": "2026-09-03T04:04:45Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/ov5aa27jjLQ/mqdefault.jpg",
+      "viewCount": 9880,
+      "url": "https://www.youtube.com/watch?v=ov5aa27jjLQ",
+      "summary": "Mii reviews merchandise availability at Bon Voyage, the Tokyo Disney Resort shop, on September 3."
+    },
+    {
+      "videoId": "8sCUIYQvpL0",
+      "title": "#disney #rareaesthetic #disneyworld #disneyland",
+      "channel": "Wavy Wrld",
+      "publishedAt": "2026-09-03T10:00:09Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/8sCUIYQvpL0/mqdefault.jpg",
+      "viewCount": 6980,
+      "url": "https://www.youtube.com/watch?v=8sCUIYQvpL0",
+      "summary": "Wavy Wrld shares short-form content showcasing Disney parks aesthetics and visuals."
+    },
+    {
+      "videoId": "Wc1owjcE3Bw",
+      "title": "Nobody is at Walt Disney World Right Now! Hollywood Studios Low Crowds & Dinner at EPCOT ",
+      "channel": "Theme Park Obsession",
+      "publishedAt": "2026-09-03T01:10:38Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Wc1owjcE3Bw/mqdefault.jpg",
+      "viewCount": 4834,
+      "url": "https://www.youtube.com/watch?v=Wc1owjcE3Bw",
+      "summary": "Theme Park Obsession documents unusually low crowd levels at Hollywood Studios and an EPCOT dinner during the current low-attendance period."
+    },
+    {
+      "videoId": "BeP47T5QeaY",
+      "title": "When children see their favorite characters at Disneyland. #disney #disneyland#fyp#baby#foryoupage",
+      "channel": "Caez Spiney",
+      "publishedAt": "2026-09-03T11:48:01Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/BeP47T5QeaY/mqdefault.jpg",
+      "viewCount": 1820,
+      "url": "https://www.youtube.com/watch?v=BeP47T5QeaY",
+      "summary": "Caez Spiney captures children's reactions to meeting Disney characters at Disneyland."
+    },
+    {
+      "videoId": "DmTV-ciQ32o",
+      "title": "Disney Parks Floating Festival - Disney Dreamlight Valley",
+      "channel": "KwingsLetsPlays",
+      "publishedAt": "2026-09-03T06:22:12Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/DmTV-ciQ32o/mqdefault.jpg",
+      "viewCount": 1617,
+      "url": "https://www.youtube.com/watch?v=DmTV-ciQ32o",
+      "summary": "KwingsLetsPlays explores the Disney Parks Floating Festival event inside the Disney Dreamlight Valley video game."
+    },
+    {
+      "videoId": "gV6HvrjIjDA",
+      "title": "Disney's Headless Horseman Rides Through Magic Kingdom. 🎃#DisneyWorld #Halloween",
+      "channel": "Thomas",
+      "publishedAt": "2026-09-03T03:20:51Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/gV6HvrjIjDA/mqdefault.jpg",
+      "viewCount": 1451,
+      "url": "https://www.youtube.com/watch?v=gV6HvrjIjDA",
+      "summary": "Thomas films the Headless Horseman character galloping through Magic Kingdom as part of Halloween festivities."
+    },
+    {
+      "videoId": "OYGHpPR_S74",
+      "title": "Disneyland Mela With Mummy😍 #shorts #trending #minivlog #mela #disney #villagelife #shopping",
+      "channel": "Miss. Agree 🧿",
+      "publishedAt": "2026-09-03T05:32:29Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/OYGHpPR_S74/mqdefault.jpg",
+      "viewCount": 1276,
+      "url": "https://www.youtube.com/watch?v=OYGHpPR_S74",
+      "summary": "Miss. Agree shares a short vlog of a shopping outing with her mother at a local fair or market."
+    }
+  ],
+  "updatedAt": "2026-09-03T14:49:11.185Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-09-03T14:49:11.185Z",
+    "tokens": {
+      "input": 11409,
+      "output": 5278,
+      "costUsd": 0.1134
+    }
+  }
+}
