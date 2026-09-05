@@ -1,0 +1,371 @@
+{
+  "title": "Parkio Daily for September 5, 2026",
+  "slug": "parkio-daily-2026-09-05",
+  "date": "2026-09-05",
+  "teaser": "Slinky Dog Dash reopens after four days down; Sunshine Churros kiosks close today at Disney Springs.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Space Mountain",
+        "parkSlug": "magic-kingdom",
+        "note": "Labor Day weekend crowds staying light"
+      },
+      {
+        "name": "Test Track",
+        "parkSlug": "epcot",
+        "note": "Food & Wine crowds thin before lunch"
+      },
+      {
+        "name": "Slinky Dog Dash",
+        "parkSlug": "hollywood-studios",
+        "note": "Back online after multi-day closure"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [
+      {
+        "title": "Slinky Dog Dash Reopens After Four-Day Closure",
+        "body": "The Toy Story Land coaster returned to operation September 4 following an unplanned downtime that began over the holiday weekend. The attraction ran briefly during Early Entry before closing again for repairs.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/slinky-dog-dash-reopens-again-after-4-day-unplanned-ride-closure-minus-30-minutes/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Multi-day closures often push pent-up demand to the first few reopening days. Rope-drop arrival or late evening usually offers shorter waits than midday windows."
+        }
+      },
+      {
+        "title": "Sunshine Churros Kiosks Close at Disney Springs",
+        "body": "Both Sunshine Churros locations at Disney Springs shut down today, September 5, removing a low-cost snack option for guests. No replacement tenant has been announced.",
+        "parkSlug": null,
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/09/disney-springs-sunshine-churros-closing-emd1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "With both stands gone, budget snack options are fewer at Disney Springs. The Marketplace kiosks near World of Disney may see heavier crowds for grab-and-go bites."
+        }
+      }
+    ],
+    "bignews": [
+      {
+        "title": "Gordon Ramsay Restaurant Opens at Downtown Disney",
+        "body": "Gordon Ramsay at The Carnaby debuts at Disneyland's Downtown Disney District, offering British-inspired dishes from the celebrity chef. The 1960s London-themed dining room is now accepting walk-ups and reservations.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/dlr/gordon-ramsay-at-the-carnaby-coming-to-downtown-disney/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "New signature restaurants typically book solid for the first few weeks. Walk-up availability is likeliest at off-peak lunch hours before 1 p.m."
+        }
+      },
+      {
+        "title": "New Fall Treats Roll Out Across Walt Disney World",
+        "body": "Over three dozen new snacks and drinks launch this fall, including whimsical waffles, churro concoctions, and seasonal shakes at parks and resort food courts. Items debut throughout September and October.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-world-adds-dozens-of-new-dishes-in-fall-2026-whimsical-waffles-churro-concoctions-more/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Limited-time menu items often sell out at flagship quick-service spots during peak meal windows. Arriving before 11:30 a.m. or after 2 p.m. usually improves selection."
+        }
+      },
+      {
+        "title": "Hurly-Burly Menu Revealed for October 1 Opening",
+        "body": "Disney's BoardWalk vaudeville-themed restaurant Hurly-Burly will serve elevated American fare when it debuts next month. The historic theater-style venue replaces the former ESPN Club space.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/disney-eats-first-look-at-hurly-burly-menu-at-disneys-boardwalk/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Opening week reservations at new BoardWalk restaurants tend to fill within hours. Checking availability mid-afternoon on weekdays may surface last-minute cancellations."
+        }
+      },
+      {
+        "title": "Diamond Horseshoe Pop-Up Announced for October 4",
+        "body": "A limited-time dining experience arrives at Magic Kingdom's Diamond Horseshoe in Liberty Square. Reservations open September 29 for the temporary menu takeover.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/disney-eats-the-diamond-horseshoe-pop-up-menu/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Pop-up reservations at Liberty Square venues usually get snatched up within the first 48 hours of availability. Logging in at 6 a.m. Eastern on the 29th often secures a slot."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "Scat Cat's Club Closes for Multi-Month Refurbishment",
+        "body": "Both the restaurant and lounge sides of Scat Cat's Club at Port Orleans French Quarter shut down for extended renovations later this fall. Beignets will temporarily relocate to Sassagoula Floatworks in the resort lobby.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/port-orleans-resort-relocating-beignets-during-multi-month-scat-cats-club-closures/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Beignet lines at the lobby counter may stretch during peak breakfast hours. Arriving before 8 a.m. or after 10:30 a.m. usually avoids the longest waits."
+        }
+      },
+      {
+        "title": "Disney Vacation Club Bans Reservation Walking",
+        "body": "DVC has updated modification rules to block the practice of repeatedly changing reservation dates to secure high-demand stays. The crackdown targets members who exploit booking loopholes.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/new-dvc-rule-bans-controversial-reservation-walking/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Members planning point-heavy stays during peak seasons should book as early as the 11-month window allows. Last-minute modifications may now trigger account flags or point forfeitures."
+        }
+      },
+      {
+        "title": "Swan and Dolphin Food & Wine Classic Adds New Experience",
+        "body": "The annual tasting event at the Swan and Dolphin resorts introduces a fresh culinary component for the upcoming fall festival. Details on pricing and dates are expected soon.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/09/04/something-new-is-coming-to-the-swan-and-dolphin-food-and-wine-classic-in-disney-world/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "The Swan and Dolphin festival typically draws lighter crowds than EPCOT's International Food & Wine. Attending on weekday evenings often means shorter lines at tasting booths."
+        }
+      },
+      {
+        "title": "Pick-Up and Drop-Off Spaces Added at Hollywood Studios Lot",
+        "body": "The Minnie section of the Hollywood Studios parking lot now features newly painted disabled and guest pick-up zones. Restriping work wrapped up this week.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/09/guest-pick-up-drop-off-spaces-added-to-parking-lot-outside-of-disneys-hollywood-studios/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "New drop-off lanes may ease congestion during morning rope-drop windows. Rideshare pickups after park close tend to move faster when using designated zones rather than general lot aisles."
+        }
+      },
+      {
+        "title": "More Character Statues Appear at Hollywood Studios Lot",
+        "body": "Additional Disney character sculptures have been quietly installed in the Walt Disney Studios courtyard ahead of the upcoming attraction opening. Imagineering continues to add theming elements throughout the area.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/09/more-disney-characters-added-to-hollywood-studios-before-new-attraction-opens-el1/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Character photo spots in the courtyard tend to be quietest in the first hour after park opening or during evening shows. Midday sun can create harsh shadows for pictures."
+        }
+      },
+      {
+        "title": "Fox and the Hound Loungefly Debuts at Magic Kingdom",
+        "body": "A new mini backpack featuring Tod and Copper in a floral pattern is now available at select Magic Kingdom shops for eighty dollars. The Loungefly design showcases the classic duo at play.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/09/fox-and-the-hound-loungefly-arrives-at-walt-disney-world/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Limited-edition Loungefly bags often sell out within days at Magic Kingdom's Emporium. Checking inventory before noon typically offers the widest selection before afternoon restocks."
+        }
+      },
+      {
+        "title": "Disney x Formula 1 Collection Launches Online",
+        "body": "New Cars-themed Formula 1 merchandise including jackets and shirts is now for sale at DisneyStore.com. The collaboration continues Disney's multi-year partnership with F1.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/09/new-disney-x-formula-1-collection-featuring-jackets-shirt-and-more-available-online-at-disney-store/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Online Disney Store drops often see popular sizes sell out within 24 to 48 hours. Ordering early in the launch window usually secures first-choice items before restocks delay shipping."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Labor Day Weekend Crowds Lighter Than Expected",
+        "body": "Walt Disney World is seeing below-average attendance over the holiday weekend, with shorter wait times reported across all four parks. The pattern mirrors recent September trends of softer demand.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/why-labor-day-weekend-will-be-dead-at-disney-world/"
+        }
+      },
+      {
+        "title": "DVC Membership Magic Beyond Members to Receive MagicBand Slider",
+        "body": "Disney Vacation Club members enrolled in the 2026 Membership Magic Beyond program will soon receive a white-themed MagicBand slider in the mail as part of their benefits package.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/09/disney-vacation-club-members-a-part-of-membership-magic-beyond-will-receive-magicband-slider/"
+        }
+      },
+      {
+        "title": "Disney Store Limited Time Opens in New Jersey",
+        "body": "A new Disney Store Limited Time location celebrated its grand opening at Westfield Garden State Plaza in Paramus. The temporary shop joins the chain's rotating pop-up strategy.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/products/grand-opening-of-disney-store-limited-time-in-new-jersey/"
+        }
+      },
+      {
+        "title": "Pixar Place Hotel Gets Halloween Decor Makeover",
+        "body": "The Disneyland-area hotel now features seasonal artwork showcasing Monsters Inc. characters in Halloween costumes. The temporary decorations include hidden details throughout the lobby and guest corridors.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/dlr/disney-artist-pixar-place-hotel-halloween-makeover/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "EPCOT Food & Wine Festival Hits Peak Weekend Crowds",
+        "body": "The International Food & Wine Festival continues through November, with Friday and Saturday evenings drawing the heaviest foot traffic around World Showcase. Live entertainment and special tastings fill the schedule daily.",
+        "parkSlug": "epcot",
+        "ctaLabel": "Plan your visit",
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Festival kiosks in World Showcase tend to see the longest lines between 6 and 8 p.m. on weekends. Arriving before 5 p.m. or after 8:30 p.m. usually cuts wait times in half at popular booths."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "xxvUEU6_8-U",
+      "title": "Halloween Horror Nights 2026 | Full Guide: Inside ALL 10 Houses & Zones | Universal Studios Florida",
+      "channel": "Paging Mr. Morrow",
+      "publishedAt": "2026-08-30T13:00:08Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/xxvUEU6_8-U/mqdefault.jpg",
+      "viewCount": 136440,
+      "url": "https://www.youtube.com/watch?v=xxvUEU6_8-U",
+      "summary": "Paging Mr. Morrow tours all ten haunted houses and scare zones at Universal Studios Florida's Halloween Horror Nights 2026 event."
+    },
+    {
+      "videoId": "px51KCXaxVE",
+      "title": "🔴Live: Friday Night Live at Epcot Food & Wine Festival - 9-4-26 - Walt Disney World Live Stream",
+      "channel": "ResortTV1",
+      "publishedAt": "2026-09-05T04:55:58Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/px51KCXaxVE/mqdefault.jpg",
+      "viewCount": 31281,
+      "url": "https://www.youtube.com/watch?v=px51KCXaxVE",
+      "summary": "ResortTV1 live-streams Friday evening crowds and tastings at EPCOT's Food & Wine Festival on September 4, 2026."
+    },
+    {
+      "videoId": "SsCSvJn7Cis",
+      "title": "🔴 LIVE: EPIC Disney World Walking Tour 4K – YOU Pick the Park!",
+      "channel": "Fun to be Free",
+      "publishedAt": "2026-09-05T02:37:30Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/SsCSvJn7Cis/mqdefault.jpg",
+      "viewCount": 13715,
+      "url": "https://www.youtube.com/watch?v=SsCSvJn7Cis",
+      "summary": "Fun to be Free offers a live 4K walking tour of Walt Disney World, letting viewers choose which park to explore."
+    },
+    {
+      "videoId": "7TvtYulebEY",
+      "title": "🔴 LIVE - Magic Kingdom Mickey's Not So Scary Halloween Party Live Stream 09.04.2026",
+      "channel": "Ear To Ear Magic",
+      "publishedAt": "2026-09-05T04:52:43Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/7TvtYulebEY/mqdefault.jpg",
+      "viewCount": 9395,
+      "url": "https://www.youtube.com/watch?v=7TvtYulebEY",
+      "summary": "Ear To Ear Magic streams Mickey's Not So Scary Halloween Party live from Magic Kingdom on September 4."
+    },
+    {
+      "videoId": "-OjImof2oaA",
+      "title": "It's a small world but make it creepy at Disneyland 😭 #disneyland #hongkongdisneyland #disney",
+      "channel": "Empeds Casul",
+      "publishedAt": "2026-09-05T10:00:14Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/-OjImof2oaA/mqdefault.jpg",
+      "viewCount": 1496,
+      "url": "https://www.youtube.com/watch?v=-OjImof2oaA",
+      "summary": "Empeds Casul shares a short clip highlighting the eerie side of It's a Small World at Hong Kong Disneyland."
+    },
+    {
+      "videoId": "1fSccoUzn20",
+      "title": "#disney #disneyland #disneyprincess",
+      "channel": "Shooting Staar Media",
+      "publishedAt": "2026-09-05T06:15:41Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/1fSccoUzn20/mqdefault.jpg",
+      "viewCount": 1439,
+      "url": "https://www.youtube.com/watch?v=1fSccoUzn20",
+      "summary": "Shooting Staar Media posts a Disneyland clip featuring Disney princesses."
+    },
+    {
+      "videoId": "sjY4M4qvAxg",
+      "title": "||EPCOT Monorail POV Ride | Relaxing Disney World Views 🌸🚝||#shorts",
+      "channel": "EarthlyTrails",
+      "publishedAt": "2026-09-05T06:27:01Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/sjY4M4qvAxg/mqdefault.jpg",
+      "viewCount": 1306,
+      "url": "https://www.youtube.com/watch?v=sjY4M4qvAxg",
+      "summary": "EarthlyTrails captures a point-of-view monorail ride into EPCOT in a relaxing short video."
+    },
+    {
+      "videoId": "-nOqjINqONA",
+      "title": "#disney #disneyland #disneyprincess",
+      "channel": "Shooting Staar Media",
+      "publishedAt": "2026-09-05T05:54:11Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/-nOqjINqONA/mqdefault.jpg",
+      "viewCount": 1268,
+      "url": "https://www.youtube.com/watch?v=-nOqjINqONA",
+      "summary": "Shooting Staar Media shares another Disneyland moment with Disney princesses."
+    },
+    {
+      "videoId": "cKAf8uRntbE",
+      "title": "The map is in here🧠 #disney #disneyland #disneylandparis #travel",
+      "channel": "Charlotte",
+      "publishedAt": "2026-09-05T07:52:25Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/cKAf8uRntbE/mqdefault.jpg",
+      "viewCount": 1257,
+      "url": "https://www.youtube.com/watch?v=cKAf8uRntbE",
+      "summary": "Charlotte offers a quick travel tip about navigating Disneyland Paris."
+    },
+    {
+      "videoId": "5-ArvKSt33A",
+      "title": "#disney #disneyland",
+      "channel": "Sean young",
+      "publishedAt": "2026-09-05T03:32:10Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/5-ArvKSt33A/mqdefault.jpg",
+      "viewCount": 1233,
+      "url": "https://www.youtube.com/watch?v=5-ArvKSt33A",
+      "summary": "Sean young posts a short Disneyland clip."
+    }
+  ],
+  "updatedAt": "2026-09-05T13:37:43.037Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-09-05T13:37:43.037Z",
+    "tokens": {
+      "input": 11293,
+      "output": 5745,
+      "costUsd": 0.1201
+    }
+  }
+}
