@@ -1,0 +1,344 @@
+{
+  "title": "Parkio Daily for September 7, 2026",
+  "slug": "parkio-daily-2026-09-07",
+  "date": "2026-09-07",
+  "teaser": "Two no-reservation days added for passholders; Coral Reef reopens Nov 6; Monstropolis construction accelerates in Hollywood Studios.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "TRON Lightcycle Run",
+        "parkSlug": "magic-kingdom",
+        "note": "Early morning waits typically under 25 minutes"
+      },
+      {
+        "name": "Test Track",
+        "parkSlug": "epcot",
+        "note": "Dinner hour tends to bring walk-on windows"
+      },
+      {
+        "name": "Slinky Dog Dash",
+        "parkSlug": "hollywood-studios",
+        "note": "First hour of Early Entry usually keeps waits shortest"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [],
+    "bignews": [
+      {
+        "title": "Two more no-reservation days open for Annual Passholders",
+        "body": "Walt Disney World added September 8 and September 10 as Good to Go days, letting passholders visit any park without a reservation. Both are weekdays and apply to all four theme parks.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/09/two-more-september-good-to-go-days-added-for-walt-disney-world-annual-passholders/"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "Weekday Good to Go dates usually bring moderate passholder traffic. Tuesday and Thursday afternoons in September often see lighter overall attendance than weekends, so rope-drop strategies tend to work well for headliners."
+        }
+      },
+      {
+        "title": "Coral Reef Restaurant reopens November 6 at EPCOT",
+        "body": "The SeaBase dining room returns in early November after a lengthy refurbishment, ahead of the Festival of the Holidays kickoff. Reservations are expected to open soon.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/coral-reef-restaurant-reopening-before-2026-epcot-festival-of-holidays/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Early-November reservations for table-service spots tend to fill quickly once bookings open. Securing a Coral Reef slot at the 60-day mark usually offers your best shot at peak dinner windows with aquarium views."
+        }
+      },
+      {
+        "title": "Animal Kingdom shifts Early Entry checkpoints deeper into park",
+        "body": "The last holdout among Walt Disney World parks now matches the new procedure used at Magic Kingdom, EPCOT, and Hollywood Studios, eliminating secondary rope-drop holds and moving guests farther in during Early Entry.",
+        "parkSlug": "animal-kingdom",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/new-animal-kingdom-park-opening-change-early-entry-access-rope-drop/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "The revised flow usually lets Early Entry guests reach Flight of Passage and Expedition Everest faster. Arriving 45 minutes before official open and heading straight to Pandora or Asia tends to maximize your window before standby crowds build."
+        }
+      },
+      {
+        "title": "Monstropolis construction accelerates in Hollywood Studios",
+        "body": "Vertical work on facades and show buildings is moving quickly in the Monsters Inc. expansion area. Additional decorative animal figures have also appeared around the construction perimeter.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/09/07/i-cant-stop-staring-at-these-new-monstropolis-construction-updates-in-hollywood-studios/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Mid-morning construction noise near Grand Avenue and the Animation Courtyard area tends to be loudest. Planning sit-down meals or indoor shows in that zone before 10 AM or after 2 PM usually avoids the heaviest equipment sounds."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "Diamond Horseshoe pop-up opens October 4 at Magic Kingdom",
+        "body": "A limited-time dining concept launches in Liberty Square with reservations opening September 29. The venue will offer a new menu inside the historic theater space.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/disney-eats-the-diamond-horseshoe-pop-up-menu/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Pop-up reservations for Liberty Square dining tend to fill within 48 hours of opening. Setting a 6 AM alarm on September 29 usually secures a table for the first week, before walk-up crowds discover the menu."
+        }
+      },
+      {
+        "title": "Hurly-Burly debuts on BoardWalk October 1",
+        "body": "The new vaudeville-themed restaurant opens at Disney's BoardWalk Resort with a full menu revealed. The historic seaside theater setting will host the dining experience.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/disney-eats-first-look-at-hurly-burly-menu-at-disneys-boardwalk/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "BoardWalk dining openings usually see heavy demand in the first two weeks. Booking within the first 60-day window or arriving for walk-up seating right at 4 PM on weekdays tends to offer the best availability before evening crowds arrive."
+        }
+      },
+      {
+        "title": "Gordon Ramsay at The Carnaby coming to Downtown Disney",
+        "body": "A British-themed restaurant from Chef Gordon Ramsay will bring 1960s London flair and signature dishes to the Disneyland Resort shopping district. Opening details are forthcoming.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/dlr/gordon-ramsay-at-the-carnaby-coming-to-downtown-disney/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Celebrity-chef restaurants in Downtown Disney usually draw heavy foot traffic in the first month. Arriving before 5 PM on weekdays or making advance reservations as soon as they open tends to avoid two-hour waits at peak dinner service."
+        }
+      },
+      {
+        "title": "Indiana Jones temple facade rises at Animal Kingdom",
+        "body": "Exterior work on the Myth of the Jade Serpent attraction is progressing rapidly alongside the Encanto-themed ride in Tropical Americas. A 2027 debut is expected for both projects.",
+        "parkSlug": "animal-kingdom",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/temple-takes-shape-for-indiana-jones-myth-of-jade-serpent-at-animal-kingdom-ahead-of-likely-2027-debut/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Construction viewing tends to be clearest from DinoLand pathways in mid-afternoon light. Guests interested in progress photos usually find the least obstructed angles between 2–4 PM before evening shadows lengthen."
+        }
+      },
+      {
+        "title": "Adventureland ride closing with no reopening date announced",
+        "body": "A popular Magic Kingdom attraction is set for a lengthy refurbishment with no confirmed return timeline. The ride often requires extended maintenance periods.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/09/07/a-popular-disney-ride-is-about-to-close-with-no-reopening-date-in-sight/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Closures without return dates usually indicate multi-month refurbishments. If the ride matters to your itinerary, visiting before the announced closure date and riding during Early Entry or evening hours tends to minimize wait impact."
+        }
+      },
+      {
+        "title": "Six Ravens at Disney Springs debuts souvenir mug",
+        "body": "The savory Gideon's Bakehouse concept now offers a collectible 16-ounce mug featuring the restaurant's logo. Guests can choose the mug with any beer order.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/09/six-ravens-by-gideons-bakehouse-debuts-new-souvenir-mug-at-disney-springs/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Souvenir drinkware from limited-concept restaurants tends to sell out or disappear when promotions end. Visiting Six Ravens before the dinner rush and asking about mug availability usually ensures stock before evening crowds deplete inventory."
+        }
+      },
+      {
+        "title": "Steakhouse 71 closed unexpectedly September 6",
+        "body": "The Contemporary Resort restaurant canceled dinner reservations without advance notice, leaving guests scrambling. Disney has not yet disclosed the cause of the sudden closure.",
+        "parkSlug": null,
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/09/disney-world-reveals-cause-of-unpredicted-september-6-closure-ad1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Unexpected restaurant closures often stem from equipment failures or staffing emergencies. Confirming your reservation by phone the morning of your meal and having a backup dining option ready tends to reduce disappointment if last-minute cancellations occur."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Lightning McQueen Dinoco Crocs launch mid-September",
+        "body": "Adult-sized light-blue clogs featuring Lightning McQueen's face will be available online at Disney Store and Crocs for $74.99 starting mid-month.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/09/lightning-mcqueen-dinoco-crocs-coming-soon-to-disney-store-online/"
+        }
+      },
+      {
+        "title": "New Disney Racers series arrives at Walt Disney World",
+        "body": "Die-cast cars inspired by Mr. Toad, TRON, and classic attractions are now sold at Riverside Depot and other locations. The series debuted on DisneyStore.com last month.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/09/new-series-of-disney-racers-inspired-by-mr-toad-tron-and-classic-attractions-at-walt-disney-world/"
+        }
+      },
+      {
+        "title": "Pinley mobile pin-trading trash can debuts",
+        "body": "A green push-cart trash can with a mounted pin board and oversized Cast Member nametag is now roaming Walt Disney World for guest pin trades.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/09/meet-pinley-the-mobile-pin-trading-trash-can-at-walt-disney-world/"
+        }
+      },
+      {
+        "title": "Pixar Place Hotel gets Monsters Inc. Halloween decor",
+        "body": "Mike, Sulley, and other characters from the film now appear in Halloween costumes throughout the Disneyland Resort hotel, with seasonal artwork added to common areas.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/dlr/disney-artist-pixar-place-hotel-halloween-makeover/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "Hollywood Studios gift shop restores vintage cash register",
+        "body": "The Darkroom brought back a full-sized wooden checkout station, though one register remains missing. The change follows recent cosmetic updates in the shop near the park entrance.",
+        "parkSlug": "hollywood-studios",
+        "ctaLabel": "Visit The Darkroom",
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Nostalgic details like vintage registers tend to disappear quickly if guest interest wanes. Stopping by The Darkroom during your morning entry or late-afternoon stroll usually offers good photo opportunities before evening crowds pack the checkout area."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "oowAKwPESFg",
+      "title": "🔴 Live: Oogie Boogie Bash Halloween Party at Disneyland California Adventure  - 09/06/26",
+      "channel": "Koda Bear the Explorer ",
+      "publishedAt": "2026-09-07T06:36:21Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/oowAKwPESFg/mqdefault.jpg",
+      "viewCount": 82759,
+      "url": "https://www.youtube.com/watch?v=oowAKwPESFg",
+      "summary": "A live stream from the Oogie Boogie Bash Halloween party at California Adventure on September 6, showing entertainment and atmosphere throughout the event."
+    },
+    {
+      "videoId": "PybrJFVqji4",
+      "title": "🔴Live Magic Kingdom Sunday with Rides, Parades, Fireworks at Walt Disney World 9/6/2026",
+      "channel": "RON ON THE GO",
+      "publishedAt": "2026-09-07T02:29:40Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/PybrJFVqji4/mqdefault.jpg",
+      "viewCount": 79843,
+      "url": "https://www.youtube.com/watch?v=PybrJFVqji4",
+      "summary": "A Sunday live stream from Magic Kingdom covering rides, parades, and the evening fireworks show on September 6."
+    },
+    {
+      "videoId": "g8qa8sdSFjY",
+      "title": "Lost in the magic together! ✨ #disney #disneylifestylers #disneylandparis #rapunzel #disneyland",
+      "channel": "Nouckie °o°",
+      "publishedAt": "2026-09-07T08:34:32Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/g8qa8sdSFjY/mqdefault.jpg",
+      "viewCount": 1888,
+      "url": "https://www.youtube.com/watch?v=g8qa8sdSFjY",
+      "summary": "A short video from Disneyland Paris featuring a Rapunzel meet-and-greet or character moment."
+    },
+    {
+      "videoId": "ur5d7IMivVc",
+      "title": "Les princesses Disney #disney #disneyland",
+      "channel": "Clara.A",
+      "publishedAt": "2026-09-07T07:18:09Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/ur5d7IMivVc/mqdefault.jpg",
+      "viewCount": 1326,
+      "url": "https://www.youtube.com/watch?v=ur5d7IMivVc",
+      "summary": "A clip showcasing Disney princesses at a Disneyland park."
+    },
+    {
+      "videoId": "HZHjmYFfFPg",
+      "title": "#king #queen #disney #disneyland #tokyo #japan #travel #fun #happy #love #shorts #viral #video #reel",
+      "channel": "Buchingchingay",
+      "publishedAt": "2026-09-07T10:00:38Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/HZHjmYFfFPg/mqdefault.jpg",
+      "viewCount": 1295,
+      "url": "https://www.youtube.com/watch?v=HZHjmYFfFPg",
+      "summary": "A short travel video from Tokyo Disneyland highlighting a visit or character encounter."
+    },
+    {
+      "videoId": "qoaOqcU3aYI",
+      "title": "🏰 Ada Disney-themed train di Shanghai Pudong Airport! 🚆✨ #shanghaipudong #shanghai #disneyland",
+      "channel": "The Danesh Story",
+      "publishedAt": "2026-09-07T11:59:40Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/qoaOqcU3aYI/mqdefault.jpg",
+      "viewCount": 1267,
+      "url": "https://www.youtube.com/watch?v=qoaOqcU3aYI",
+      "summary": "A video showing a Disney-themed train at Shanghai Pudong Airport, likely connecting to Shanghai Disneyland."
+    },
+    {
+      "videoId": "LYpJMYNHDG4",
+      "title": "Paris Disney Land has to be done 🎠#disneyland #thebodells #disney #surprising #fulltimetravel",
+      "channel": "The Bodell's ",
+      "publishedAt": "2026-09-07T06:28:23Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/LYpJMYNHDG4/mqdefault.jpg",
+      "viewCount": 1235,
+      "url": "https://www.youtube.com/watch?v=LYpJMYNHDG4",
+      "summary": "A travel vlog from Disneyland Paris by full-time travelers The Bodell's."
+    },
+    {
+      "videoId": "tI2QzRzoVMg",
+      "title": "Oogie boogie bash 🎃 #disney #disneyland #oogieboogiebash e",
+      "channel": "HealingAngelina",
+      "publishedAt": "2026-09-07T05:16:03Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/tI2QzRzoVMg/mqdefault.jpg",
+      "viewCount": 1189,
+      "url": "https://www.youtube.com/watch?v=tI2QzRzoVMg",
+      "summary": "Highlights from the Oogie Boogie Bash Halloween party at Disneyland."
+    },
+    {
+      "videoId": "dbiPrDAdDm8",
+      "title": "World's LARGEST Pin Event! #disney #disneystore #disneypins #disneyparks #disneyland",
+      "channel": "Mandamouseketeer",
+      "publishedAt": "2026-09-07T12:03:09Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/dbiPrDAdDm8/mqdefault.jpg",
+      "viewCount": 1163,
+      "url": "https://www.youtube.com/watch?v=dbiPrDAdDm8",
+      "summary": "Coverage of a large Disney pin trading event at a Disney location."
+    },
+    {
+      "videoId": "vxk8I_vUYRk",
+      "title": "DJ Ezel gaat van Links naar Rechts! - 01-08-2026 - Zomer Efteling",
+      "channel": "Jeroen Twee",
+      "publishedAt": "2026-09-07T05:00:08Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/vxk8I_vUYRk/mqdefault.jpg",
+      "viewCount": 1135,
+      "url": "https://www.youtube.com/watch?v=vxk8I_vUYRk",
+      "summary": "A video from Efteling theme park in the Netherlands featuring DJ Ezel during summer operations."
+    }
+  ],
+  "updatedAt": "2026-09-07T16:12:47.500Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-09-07T16:12:47.500Z",
+    "tokens": {
+      "input": 11243,
+      "output": 5489,
+      "costUsd": 0.1161
+    }
+  }
+}
