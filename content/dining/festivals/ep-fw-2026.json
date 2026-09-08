@@ -11,12 +11,24 @@
   },
   "provenance": {
     "verifiedAt": "2026-09-08",
+    "verificationMethod": "rendered-dom",
     "sourceUrls": [
+      "https://disneyworld.disney.go.com/dining/epcot/block-hans/menus/all-day/",
+      "https://disneyworld.disney.go.com/dining/epcot/communicore-hall-show-kitchen/menus/all-day/",
+      "https://disneyworld.disney.go.com/dining/epcot/connections-cafe/menus/all-day/",
       "https://disneyworld.disney.go.com/dining/epcot/connections-eatery/menus/all-day/",
+      "https://disneyworld.disney.go.com/dining/epcot/espresso-coffee-pastries-american-adventure/menus/all-day/",
+      "https://disneyworld.disney.go.com/dining/epcot/espresso-coffee-pastries-canada/menus/all-day/",
+      "https://disneyworld.disney.go.com/dining/epcot/espresso-coffee-pastries-disney-traders/menus/all-day/",
+      "https://disneyworld.disney.go.com/dining/epcot/espresso-coffee-pastries-world-discovery/menus/all-day/",
+      "https://disneyworld.disney.go.com/dining/epcot/festival-favorites/menus/all-day/",
+      "https://disneyworld.disney.go.com/dining/epcot/funnel-cake/menus/all-day/",
+      "https://disneyworld.disney.go.com/dining/epcot/la-poutinerie/menus/all-day/",
       "https://disneyworld.disney.go.com/dining/epcot/marketplace-australia/menus/all-day/",
       "https://disneyworld.disney.go.com/dining/epcot/marketplace-belgium/menus/all-day/",
       "https://disneyworld.disney.go.com/dining/epcot/marketplace-bramblewood-bites/menus/all-day/",
       "https://disneyworld.disney.go.com/dining/epcot/marketplace-brazil/menus/all-day/",
+      "https://disneyworld.disney.go.com/dining/epcot/marketplace-brew-wing-at-epcot-experience/menus/all-day/",
       "https://disneyworld.disney.go.com/dining/epcot/marketplace-canada/menus/all-day/",
       "https://disneyworld.disney.go.com/dining/epcot/marketplace-china/menus/all-day/",
       "https://disneyworld.disney.go.com/dining/epcot/marketplace-coastal-eats/menus/all-day/",
@@ -38,15 +50,19 @@
       "https://disneyworld.disney.go.com/dining/epcot/marketplace-spain/menus/all-day/",
       "https://disneyworld.disney.go.com/dining/epcot/marketplace-the-alps/menus/all-day/",
       "https://disneyworld.disney.go.com/dining/epcot/marketplace-the-fry-basket/menus/all-day/",
+      "https://disneyworld.disney.go.com/dining/epcot/popcorn-at-canada-pavilion/menus/all-day/",
       "https://disneyworld.disney.go.com/dining/epcot/refreshment-outpost/menus/all-day/",
+      "https://disneyworld.disney.go.com/dining/epcot/regal-eagle-smokehouse/menus/all-day/",
+      "https://disneyworld.disney.go.com/dining/epcot/sommerfest/menus/all-day/",
       "https://disneyworld.disney.go.com/dining/epcot/sunshine-seasons/menus/all-day/",
+      "https://disneyworld.disney.go.com/dining/epcot/swirled-showcase/menus/all-day/",
       "https://disneyworld.disney.go.com/dining/epcot/tangierine-cafe/menus/all-day/",
-      "https://disneyparksblog.com/wdw/epcot-international-food-and-wine-festival-delicious-dates-and-details/",
-      "https://disneyparksblog.com/wdw/disney-eats-epcot-international-food-and-wine-festival-foodie-guide/",
-      "https://disneyworld.disney.go.com/dining/epcot/food-wine-festival-global-marketplaces-allergy-friendly/menus/"
+      "https://disneyworld.disney.go.com/dining/epcot/uk-beer-cart/menus/all-day/",
+      "https://disneyworld.disney.go.com/dining/epcot/food-wine-marketplaces/",
+      "https://disneyparksblog.com/wdw/epcot-international-food-and-wine-festival-delicious-dates-and-details/"
     ],
-    "boothCount": 34,
-    "menuItemCount": 176
+    "boothCount": 45,
+    "menuItemCount": 241
   },
   "booths": [
     {
@@ -58,8 +74,8 @@
       "sourceUrl": "https://disneyworld.disney.go.com/dining/epcot/marketplace-australia/menus/all-day/",
       "menu": [
         {
-          "id": "ep-fw-2026-australia-shrimp-skewer",
-          "name": "Grilled Bushberry-spiced Shrimp Skewer with Sweet-and-Sour Vegetables and Coconut-Chili Sauce",
+          "id": "ep-fw-2026-australia-grilled-bushberry-spiced-shrimp-skewer",
+          "name": "Grilled Bushberry-spiced Shrimp Skewer",
           "itemKind": "food",
           "price": {
             "display": "$6.99",
@@ -67,8 +83,8 @@
           }
         },
         {
-          "id": "ep-fw-2026-australia-lamb-chop",
-          "name": "Roasted Lamb Chop with Mint Pesto and Crushed Salt and Vinegar Potato Chips (30th Anniversary Legacy Item)",
+          "id": "ep-fw-2026-australia-roasted-lamb-chop",
+          "name": "Roasted Lamb Chop*",
           "itemKind": "food",
           "price": {
             "display": "$8.79",
@@ -76,8 +92,8 @@
           }
         },
         {
-          "id": "ep-fw-2026-australia-pavlova",
-          "name": "Mixed Berry Pavlova with Crunchy Meringue Shell, Macerated Berries, and Whipped Cream",
+          "id": "ep-fw-2026-australia-mixed-berry-pavlova",
+          "name": "Mixed Berry Pavlova",
           "itemKind": "food",
           "price": {
             "display": "$4.79",
@@ -85,7 +101,7 @@
           }
         },
         {
-          "id": "ep-fw-2026-australia-yalumba-viognier",
+          "id": "ep-fw-2026-australia-yalumba-the-y-series-viognier-angaston",
           "name": "Yalumba 'The Y Series' Viognier, Angaston",
           "itemKind": "alcoholicBeverage",
           "price": {
@@ -94,7 +110,7 @@
           }
         },
         {
-          "id": "ep-fw-2026-australia-bulletin-place-sauv-blanc",
+          "id": "ep-fw-2026-australia-bulletin-place-sauvignon-blanc-riverina",
           "name": "Bulletin Place Sauvignon Blanc, Riverina",
           "itemKind": "alcoholicBeverage",
           "price": {
@@ -103,7 +119,7 @@
           }
         },
         {
-          "id": "ep-fw-2026-australia-fowles-shiraz",
+          "id": "ep-fw-2026-australia-fowles-farm-to-table-shiraz-upton-hills",
           "name": "Fowles Farm to Table Shiraz, Upton Hills",
           "itemKind": "alcoholicBeverage",
           "price": {
@@ -112,8 +128,8 @@
           }
         },
         {
-          "id": "ep-fw-2026-australia-wine-flight",
-          "name": "Wine Flight",
+          "id": "ep-fw-2026-australia-wine-flight-also-available",
+          "name": "Wine Flight also available",
           "itemKind": "alcoholicBeverage",
           "price": {
             "display": "$7.50",
@@ -132,7 +148,7 @@
       "menu": [
         {
           "id": "ep-fw-2026-belgium-beer-braised-beef",
-          "name": "Beer-braised Beef served with Smoked Gouda Mashed Potatoes",
+          "name": "Beer-braised Beef",
           "itemKind": "food",
           "price": {
             "display": "$6.79",
@@ -141,7 +157,7 @@
         },
         {
           "id": "ep-fw-2026-belgium-belgian-waffle",
-          "name": "Belgian Waffle with Cookie Butter and Whipped Cream topped with Speculoos Cookie Pieces (30th Anniversary Legacy Item)",
+          "name": "Belgian Waffle",
           "itemKind": "food",
           "price": {
             "display": "$5.49",
@@ -150,7 +166,7 @@
         },
         {
           "id": "ep-fw-2026-belgium-chilled-belgian-coffee",
-          "name": "Chilled Belgian Coffee (non-alcoholic)",
+          "name": "Chilled Belgian Coffee",
           "itemKind": "nonAlcoholicBeverage",
           "price": {
             "display": "$5.29",
@@ -158,7 +174,7 @@
           }
         },
         {
-          "id": "ep-fw-2026-belgium-piraat",
+          "id": "ep-fw-2026-belgium-van-steenberge-piraat-7-strong-ale-ertvelde",
           "name": "Van Steenberge Piraat 7 Strong Ale, Ertvelde",
           "itemKind": "alcoholicBeverage",
           "price": {
@@ -166,7 +182,7 @@
           }
         },
         {
-          "id": "ep-fw-2026-belgium-st-bernardus",
+          "id": "ep-fw-2026-belgium-brouwerij-st-bernardus-watou-blond-ale-watou",
           "name": "Brouwerij St. Bernardus Watou Blond Ale, Watou",
           "itemKind": "alcoholicBeverage",
           "price": {
@@ -174,7 +190,7 @@
           }
         },
         {
-          "id": "ep-fw-2026-belgium-duchesse",
+          "id": "ep-fw-2026-belgium-brouwerij-verhaeghe-duchesse-red-sweet-tart-cherry-ale-vicht",
           "name": "Brouwerij Verhaeghe Duchesse Red Sweet & Tart Cherry Ale, Vichte",
           "itemKind": "alcoholicBeverage",
           "price": {
@@ -191,12 +207,41 @@
           }
         },
         {
-          "id": "ep-fw-2026-belgium-coffee-liqueur",
-          "name": "Chilled Belgian Coffee with ChocoLat Deluxe Salted Caramel Chocolate Liqueur",
+          "id": "ep-fw-2026-belgium-chilled-belgian-coffee-2",
+          "name": "Chilled Belgian Coffee",
           "itemKind": "alcoholicBeverage",
           "price": {
             "display": "$12.50",
             "amountUSD": 12.5
+          }
+        }
+      ]
+    },
+    {
+      "id": "ep-fw-2026-block-and-hans",
+      "festivalId": "ep-fw-2026",
+      "name": "Block & Hans",
+      "kind": "festivalBooth",
+      "locationText": "EPCOT, World Showcase",
+      "venueCanonicalId": "EPCOT|World Showcase|Block & Hans",
+      "sourceUrl": "https://disneyworld.disney.go.com/dining/epcot/block-hans/menus/all-day/",
+      "menu": [
+        {
+          "id": "ep-fw-2026-block-and-hans-spicy-strawberry-mango-smoothie",
+          "name": "Spicy Strawberry-Mango Smoothie",
+          "itemKind": "nonAlcoholicBeverage",
+          "price": {
+            "display": "$6.29",
+            "amountUSD": 6.29
+          }
+        },
+        {
+          "id": "ep-fw-2026-block-and-hans-spicy-strawberry-mango-smoothie-2",
+          "name": "Spicy Strawberry-Mango Smoothie",
+          "itemKind": "alcoholicBeverage",
+          "price": {
+            "display": "$16.50",
+            "amountUSD": 16.5
           }
         }
       ]
@@ -210,7 +255,7 @@
       "sourceUrl": "https://disneyworld.disney.go.com/dining/epcot/marketplace-bramblewood-bites/menus/all-day/",
       "menu": [
         {
-          "id": "ep-fw-2026-bramblewood-bites-pork-tenderloin",
+          "id": "ep-fw-2026-bramblewood-bites-grilled-cider-brined-pork-tenderloin",
           "name": "Grilled Cider-brined Pork Tenderloin*",
           "itemKind": "food",
           "price": {
@@ -219,7 +264,7 @@
           }
         },
         {
-          "id": "ep-fw-2026-bramblewood-bites-river-trout",
+          "id": "ep-fw-2026-bramblewood-bites-cast-iron-seared-river-trout",
           "name": "Cast Iron-seared River Trout",
           "itemKind": "food",
           "price": {
@@ -237,7 +282,7 @@
           }
         },
         {
-          "id": "ep-fw-2026-bramblewood-bites-crooked-can-banana-bread",
+          "id": "ep-fw-2026-bramblewood-bites-crooked-can-brewing-company-banana-bread-german-style-wheat-",
           "name": "Crooked Can Brewing Company Banana Bread German Style Wheat Beer, Winter Garden, FL",
           "itemKind": "alcoholicBeverage",
           "price": {
@@ -245,7 +290,7 @@
           }
         },
         {
-          "id": "ep-fw-2026-bramblewood-bites-spiced-apple-old-fashioned",
+          "id": "ep-fw-2026-bramblewood-bites-spiced-apple-rum-old-fashioned",
           "name": "Spiced Apple Rum Old Fashioned",
           "itemKind": "alcoholicBeverage",
           "price": {
@@ -273,7 +318,7 @@
           }
         },
         {
-          "id": "ep-fw-2026-brazil-moqueca",
+          "id": "ep-fw-2026-brazil-moqueca-de-camarao",
           "name": "Moqueca de Camarão",
           "itemKind": "food",
           "price": {
@@ -282,7 +327,7 @@
           }
         },
         {
-          "id": "ep-fw-2026-brazil-brewdog",
+          "id": "ep-fw-2026-brazil-brewdog-brewing-company-peach-mango-wheat-ale-canal-winchest",
           "name": "BrewDog Brewing Company Peach Mango Wheat Ale, Canal Winchester, OH",
           "itemKind": "alcoholicBeverage",
           "price": {
@@ -291,7 +336,7 @@
         },
         {
           "id": "ep-fw-2026-brazil-frozen-caipirinha",
-          "name": "Frozen Caipirinha with Cachaça Spirit",
+          "name": "Frozen Caipirinha",
           "itemKind": "alcoholicBeverage",
           "price": {
             "display": "$12.50",
@@ -301,13 +346,149 @@
       ]
     },
     {
-      "id": "ep-fw-2026-brew-wing-lab",
+      "id": "ep-fw-2026-brew-wing-lab-at-the-odyssey",
       "festivalId": "ep-fw-2026",
-      "name": "Brew-Wing Lab at the Odyssey",
+      "name": "Brew-Wing Lab at The Odyssey",
       "kind": "festivalBooth",
       "locationText": "EPCOT, World Celebration",
-      "sourceNote": "Disney allergy-friendly marketplace listing and Foodie Guide. No per-booth all-day menu page resolved.",
-      "menu": []
+      "sourceUrl": "https://disneyworld.disney.go.com/dining/epcot/marketplace-brew-wing-at-epcot-experience/menus/all-day/",
+      "menu": [
+        {
+          "id": "ep-fw-2026-brew-wing-lab-at-the-odyssey-garlic-parmesan",
+          "name": "Garlic-Parmesan",
+          "price": {
+            "display": "$7.79",
+            "amountUSD": 7.79
+          }
+        },
+        {
+          "id": "ep-fw-2026-brew-wing-lab-at-the-odyssey-buffalo-dill-pickle",
+          "name": "Buffalo-Dill Pickle",
+          "price": {
+            "display": "$7.79",
+            "amountUSD": 7.79
+          }
+        },
+        {
+          "id": "ep-fw-2026-brew-wing-lab-at-the-odyssey-korean-barbecue",
+          "name": "Korean Barbecue",
+          "price": {
+            "display": "$7.79",
+            "amountUSD": 7.79
+          }
+        },
+        {
+          "id": "ep-fw-2026-brew-wing-lab-at-the-odyssey-unnecessarily-spicy-yet-extremely-tasty-carolina-reaper-pepp",
+          "name": "Unnecessarily Spicy Yet Extremely Tasty Carolina Reaper Pepper-Curry",
+          "price": {
+            "display": "$7.79",
+            "amountUSD": 7.79
+          }
+        },
+        {
+          "id": "ep-fw-2026-brew-wing-lab-at-the-odyssey-sweet-chile-lime-plant-based-chicken-strips",
+          "name": "Sweet Chile-Lime Plant-based Chicken Strips",
+          "itemKind": "food",
+          "price": {
+            "display": "$7.79",
+            "amountUSD": 7.79
+          },
+          "plantBased": true
+        },
+        {
+          "id": "ep-fw-2026-brew-wing-lab-at-the-odyssey-fried-pickle-spears",
+          "name": "Fried Pickle Spears",
+          "itemKind": "food",
+          "price": {
+            "display": "$5.79",
+            "amountUSD": 5.79
+          }
+        },
+        {
+          "id": "ep-fw-2026-brew-wing-lab-at-the-odyssey-frozen-pomegranate-raspberry-tea",
+          "name": "Frozen Pomegranate & Raspberry Tea",
+          "itemKind": "nonAlcoholicBeverage",
+          "price": {
+            "display": "$5.19",
+            "amountUSD": 5.19
+          }
+        },
+        {
+          "id": "ep-fw-2026-brew-wing-lab-at-the-odyssey-pickle-milk-shake",
+          "name": "Pickle Milk Shake",
+          "itemKind": "nonAlcoholicBeverage",
+          "price": {
+            "display": "$6.49",
+            "amountUSD": 6.49
+          }
+        },
+        {
+          "id": "ep-fw-2026-brew-wing-lab-at-the-odyssey-civil-society-brewing-everyday-im-wafflen-ipa-jupiter-fl",
+          "name": "Civil Society Brewing Everyday I’m Waffle’n IPA, Jupiter, FL",
+          "itemKind": "alcoholicBeverage",
+          "price": {
+            "display": "$6.00 to $9.75"
+          }
+        },
+        {
+          "id": "ep-fw-2026-brew-wing-lab-at-the-odyssey-bold-rock-apple-crumble-hard-cider-nellysford-va",
+          "name": "Bold Rock Apple Crumble Hard Cider, Nellysford, VA",
+          "itemKind": "alcoholicBeverage",
+          "price": {
+            "display": "$6.00 to $9.75"
+          }
+        },
+        {
+          "id": "ep-fw-2026-brew-wing-lab-at-the-odyssey-3-daughters-brewing-peanut-butter-blondie-blonde-ale-st-pete",
+          "name": "3 Daughters Brewing Peanut Butter Blondie Blonde Ale, St. Petersburg, FL",
+          "itemKind": "alcoholicBeverage",
+          "price": {
+            "display": "$6.00 to $9.75"
+          }
+        },
+        {
+          "id": "ep-fw-2026-brew-wing-lab-at-the-odyssey-ciderboys-cherry-jubilee-hard-cider-stevens-point-wi",
+          "name": "Ciderboys Cherry Jubilee Hard Cider, Stevens Point, WI",
+          "itemKind": "alcoholicBeverage",
+          "price": {
+            "display": "$6.00 to $9.75"
+          }
+        },
+        {
+          "id": "ep-fw-2026-brew-wing-lab-at-the-odyssey-playalinda-brewing-co-pumpkin-cheesecake-blonde-stout-titusv",
+          "name": "Playalinda Brewing Co. Pumpkin Cheesecake Blonde Stout, Titusville, FL",
+          "itemKind": "alcoholicBeverage",
+          "price": {
+            "display": "$6.00 to $9.75"
+          }
+        },
+        {
+          "id": "ep-fw-2026-brew-wing-lab-at-the-odyssey-ciderboys-pumpkin-spice-hard-cider-stevens-pointe-wi",
+          "name": "Ciderboys Pumpkin Spice Hard Cider, Stevens Pointe, WI",
+          "itemKind": "alcoholicBeverage",
+          "price": {
+            "display": "$6.00 to $9.75"
+          }
+        },
+        {
+          "id": "ep-fw-2026-brew-wing-lab-at-the-odyssey-beer-flight",
+          "name": "Beer Flight",
+          "itemKind": "alcoholicBeverage",
+          "price": {
+            "display": "$12.75",
+            "amountUSD": 12.75
+          }
+        },
+        {
+          "id": "ep-fw-2026-brew-wing-lab-at-the-odyssey-hard-cider-flight",
+          "name": "Hard Cider Flight",
+          "itemKind": "alcoholicBeverage",
+          "price": {
+            "display": "$12.75",
+            "amountUSD": 12.75
+          }
+        }
+      ]
     },
     {
       "id": "ep-fw-2026-canada",
@@ -318,8 +499,8 @@
       "sourceUrl": "https://disneyworld.disney.go.com/dining/epcot/marketplace-canada/menus/all-day/",
       "menu": [
         {
-          "id": "ep-fw-2026-canada-cheddar-bacon-soup",
-          "name": "Cheddar and Bacon Soup served with a Pretzel Roll (30th Anniversary Legacy Item)",
+          "id": "ep-fw-2026-canada-cheddar-and-bacon-soup",
+          "name": "Cheddar and Bacon Soup",
           "itemKind": "food",
           "price": {
             "display": "$6.29",
@@ -328,7 +509,7 @@
         },
         {
           "id": "ep-fw-2026-canada-filet-mignon",
-          "name": "Filet Mignon with Mushrooms and Mashed Potatoes (30th Anniversary Legacy Item)",
+          "name": "Filet Mignon*",
           "itemKind": "food",
           "price": {
             "display": "$10.49",
@@ -336,7 +517,7 @@
           }
         },
         {
-          "id": "ep-fw-2026-canada-collective-arts",
+          "id": "ep-fw-2026-canada-collective-arts-brewing-festbier-hamilton-on",
           "name": "Collective Arts Brewing Festbier, Hamilton, ON",
           "itemKind": "alcoholicBeverage",
           "price": {
@@ -344,12 +525,32 @@
           }
         },
         {
-          "id": "ep-fw-2026-canada-chateau-des-charmes",
+          "id": "ep-fw-2026-canada-chateau-des-charmes-petales-rouge-niagara-on-the-lake-on",
           "name": "Château des Charmes Pétales Rouge, Niagara-on-the-Lake, ON",
           "itemKind": "alcoholicBeverage",
           "price": {
             "display": "$9.50",
             "amountUSD": 9.5
+          }
+        }
+      ]
+    },
+    {
+      "id": "ep-fw-2026-canada-popcorn-cart",
+      "festivalId": "ep-fw-2026",
+      "name": "Canada Popcorn Cart",
+      "kind": "festivalBooth",
+      "locationText": "EPCOT, World Showcase",
+      "sourceUrl": "https://disneyworld.disney.go.com/dining/epcot/popcorn-at-canada-pavilion/menus/all-day/",
+      "sourceNote": "Official Food & Wine host page. Not present in the 62-venue permanent dataset.",
+      "menu": [
+        {
+          "id": "ep-fw-2026-canada-popcorn-cart-northern-ruby",
+          "name": "Northern Ruby",
+          "itemKind": "alcoholicBeverage",
+          "price": {
+            "display": "$17.50",
+            "amountUSD": 17.5
           }
         }
       ]
@@ -372,7 +573,7 @@
           }
         },
         {
-          "id": "ep-fw-2026-china-duck-bao-bun",
+          "id": "ep-fw-2026-china-smoked-duck-bao-bun",
           "name": "Smoked Duck Bao Bun",
           "itemKind": "food",
           "price": {
@@ -381,7 +582,7 @@
           }
         },
         {
-          "id": "ep-fw-2026-china-zhajiang-noodles",
+          "id": "ep-fw-2026-china-beijing-zhajiang-noodles",
           "name": "Beijing Zhajiang Noodles",
           "itemKind": "food",
           "price": {
@@ -390,7 +591,7 @@
           }
         },
         {
-          "id": "ep-fw-2026-china-bubble-tea",
+          "id": "ep-fw-2026-china-mango-peach-bubble-tea",
           "name": "Mango-Peach Bubble Tea",
           "itemKind": "nonAlcoholicBeverage",
           "price": {
@@ -399,7 +600,7 @@
           }
         },
         {
-          "id": "ep-fw-2026-china-honghe-rice-lager",
+          "id": "ep-fw-2026-china-honghe-rice-lager-draft-beer-littleton-nh",
           "name": "Honghe Rice Lager Draft Beer, Littleton, NH",
           "itemKind": "alcoholicBeverage",
           "price": {
@@ -425,7 +626,7 @@
           }
         },
         {
-          "id": "ep-fw-2026-china-frozen-strawberry-jasmine",
+          "id": "ep-fw-2026-china-frozen-strawberry-jasmine-cocktail",
           "name": "Frozen Strawberry-Jasmine Cocktail",
           "itemKind": "alcoholicBeverage",
           "price": {
@@ -441,12 +642,11 @@
       "name": "Coastal Eats",
       "kind": "festivalBooth",
       "locationText": "EPCOT, World Discovery",
-      "startsOn": "2026-10-02",
       "sourceUrl": "https://disneyworld.disney.go.com/dining/epcot/marketplace-coastal-eats/menus/all-day/",
       "menu": [
         {
           "id": "ep-fw-2026-coastal-eats-crab-cake",
-          "name": "Crab Cake with Tropical Fruit Chutney, Mustard Sauce, and Micro Celery",
+          "name": "Crab Cake",
           "itemKind": "food",
           "price": {
             "display": "$7.49",
@@ -455,7 +655,7 @@
         },
         {
           "id": "ep-fw-2026-coastal-eats-seafood-pot-pie",
-          "name": "Seafood Pot Pie with Shrimp, Scallops, and Lobster Bisque topped with Puff Pastry",
+          "name": "Seafood Pot Pie",
           "itemKind": "food",
           "price": {
             "display": "$7.49",
@@ -463,7 +663,7 @@
           }
         },
         {
-          "id": "ep-fw-2026-coastal-eats-rileys-lookout",
+          "id": "ep-fw-2026-coastal-eats-rileys-lookout-sauvignon-blanc-marlborough-new-zealand",
           "name": "Rileys Lookout Sauvignon Blanc, Marlborough, New Zealand",
           "itemKind": "alcoholicBeverage",
           "price": {
@@ -472,7 +672,7 @@
           }
         },
         {
-          "id": "ep-fw-2026-coastal-eats-pomegranate-codder",
+          "id": "ep-fw-2026-coastal-eats-boyd-blair-pomegranate-codder-glenshaw-pa",
           "name": "Boyd & Blair Pomegranate Codder, Glenshaw, PA",
           "itemKind": "alcoholicBeverage",
           "price": {
@@ -488,8 +688,19 @@
       "name": "Connections Café",
       "kind": "festivalBooth",
       "locationText": "EPCOT, World Celebration",
-      "sourceNote": "Disney Parks Blog Foodie Guide. Not present in the 62-venue permanent dataset, so recorded as a standalone seasonal record rather than a permanent-venue host.",
-      "menu": []
+      "sourceUrl": "https://disneyworld.disney.go.com/dining/epcot/connections-cafe/menus/all-day/",
+      "sourceNote": "Official Food & Wine host page. Not present in the 62-venue permanent dataset — see the permanent-Dining backlog note in PARKIO_ACTIVE_CONTEXT.md.",
+      "menu": [
+        {
+          "id": "ep-fw-2026-connections-cafe-pistachio-chocolate-mochi-doughnut",
+          "name": "Pistachio-Chocolate Mochi Doughnut",
+          "itemKind": "food",
+          "price": {
+            "display": "$5.29",
+            "amountUSD": 5.29
+          }
+        }
+      ]
     },
     {
       "id": "ep-fw-2026-connections-eatery",
@@ -501,18 +712,16 @@
       "sourceUrl": "https://disneyworld.disney.go.com/dining/epcot/connections-eatery/menus/all-day/",
       "menu": [
         {
-          "id": "ep-fw-2026-connections-eatery-braai-chicken-pizza",
-          "name": "BBQ Braai Chicken Pizza with Tamarind BBQ, Arugula, Onions, and Piri Piri Sauce",
-          "itemKind": "food",
+          "id": "ep-fw-2026-connections-eatery-bbq-braai-chicken-pizza",
+          "name": "BBQ Braai Chicken Pizza",
           "price": {
             "display": "$12.29",
             "amountUSD": 12.29
           }
         },
         {
-          "id": "ep-fw-2026-connections-eatery-baumkuchen",
+          "id": "ep-fw-2026-connections-eatery-caramel-apple-cheesecake-baumkuchen",
           "name": "Caramel-Apple Cheesecake Baumkuchen",
-          "itemKind": "food",
           "price": {
             "display": "$6.49",
             "amountUSD": 6.49
@@ -520,7 +729,7 @@
         },
         {
           "id": "ep-fw-2026-connections-eatery-frozen-waffle-old-fashioned",
-          "name": "Frozen Waffle Old Fashioned (Maker's Mark Kentucky Straight Bourbon Whisky, Maple Syrup, Butterscotch Syrup, and Angostura Bitters topped with a Liege Waffle and Cherry)",
+          "name": "Frozen Waffle Old Fashioned",
           "itemKind": "alcoholicBeverage",
           "price": {
             "display": "$17.50",
@@ -539,8 +748,8 @@
       "sourceUrl": "https://disneyworld.disney.go.com/dining/epcot/marketplace-earth-eats/menus/all-day/",
       "menu": [
         {
-          "id": "ep-fw-2026-earth-eats-short-rib",
-          "name": "Red Wine-braised Beef Short Rib with Goat Cheese Polenta, Tomato Ragù, Shaved Pecorino Cheese, and Petit Herbs (Emile's Fromage Montage Offering)",
+          "id": "ep-fw-2026-earth-eats-red-wine-braised-beef-short-rib",
+          "name": "Red Wine-braised Beef Short Rib",
           "itemKind": "food",
           "price": {
             "display": "$8.49",
@@ -548,8 +757,8 @@
           }
         },
         {
-          "id": "ep-fw-2026-earth-eats-olive-oil-cake",
-          "name": "Lemon-Almond-Olive Oil Cake with Whipped Greek Yogurt Panna Cotta",
+          "id": "ep-fw-2026-earth-eats-lemon-almond-olive-oil-cake",
+          "name": "Lemon-Almond-Olive Oil Cake",
           "itemKind": "food",
           "price": {
             "display": "$4.49",
@@ -557,8 +766,8 @@
           }
         },
         {
-          "id": "ep-fw-2026-earth-eats-aguas-frescas",
-          "name": "Minute Maid® Aguas Frescas – Strawberry Hibiscus (non-alcoholic)",
+          "id": "ep-fw-2026-earth-eats-minute-maid-aguas-frescas-strawberry-hibiscus",
+          "name": "Minute Maid® Aguas Frescas – Strawberry Hibiscus",
           "itemKind": "nonAlcoholicBeverage",
           "price": {
             "display": "$4.79",
@@ -566,7 +775,7 @@
           }
         },
         {
-          "id": "ep-fw-2026-earth-eats-harken-chardonnay",
+          "id": "ep-fw-2026-earth-eats-harken-barrel-fermented-chardonnay-parlier-ca",
           "name": "Harken Barrel Fermented Chardonnay, Parlier, CA",
           "itemKind": "alcoholicBeverage",
           "price": {
@@ -581,9 +790,89 @@
       "festivalId": "ep-fw-2026",
       "name": "Festival Favorites",
       "kind": "festivalBooth",
-      "locationText": "EPCOT",
-      "sourceNote": "Disney allergy-friendly marketplace listing and Foodie Guide. No per-booth all-day menu page resolved.",
-      "menu": []
+      "locationText": "EPCOT, World Celebration",
+      "startsOn": "2026-09-09",
+      "sourceUrl": "https://disneyworld.disney.go.com/dining/epcot/festival-favorites/menus/all-day/",
+      "menu": [
+        {
+          "id": "ep-fw-2026-festival-favorites-potato-pierogi",
+          "name": "Potato Pierogi",
+          "itemKind": "food",
+          "price": {
+            "display": "$5.99",
+            "amountUSD": 5.99
+          }
+        },
+        {
+          "id": "ep-fw-2026-festival-favorites-bo-ssam-pork-belly-lettuce-wraps",
+          "name": "Bo Ssam Pork Belly Lettuce Wraps",
+          "itemKind": "food",
+          "price": {
+            "display": "$6.19",
+            "amountUSD": 6.19
+          }
+        },
+        {
+          "id": "ep-fw-2026-festival-favorites-pumpkin-cheesecake-mousse-trifle",
+          "name": "Pumpkin Cheesecake Mousse Trifle",
+          "itemKind": "food",
+          "price": {
+            "display": "$5.29",
+            "amountUSD": 5.29
+          }
+        },
+        {
+          "id": "ep-fw-2026-festival-favorites-frozen-s-mores",
+          "name": "Frozen S'mores",
+          "itemKind": "nonAlcoholicBeverage",
+          "price": {
+            "display": "$5.29",
+            "amountUSD": 5.29
+          }
+        },
+        {
+          "id": "ep-fw-2026-festival-favorites-schofferhofer-grapefruit-hefeweizen-mainz-germany",
+          "name": "Schöfferhofer Grapefruit Hefeweizen, Mainz, Germany",
+          "itemKind": "alcoholicBeverage",
+          "price": {
+            "display": "$6.00 to $9.75"
+          }
+        },
+        {
+          "id": "ep-fw-2026-festival-favorites-parish-brewing-co-sips-cabernet-franc-strawberry-berliner-we",
+          "name": "Parish Brewing Co. SIPS Cabernet Franc Strawberry Berliner Weisse, Broussard, LA",
+          "itemKind": "alcoholicBeverage",
+          "price": {
+            "display": "$6.00 to $9.75"
+          }
+        },
+        {
+          "id": "ep-fw-2026-festival-favorites-3-daughters-brewing-beach-blonde-ale-st-petersburg-fl",
+          "name": "3 Daughters Brewing Beach Blonde Ale, St. Petersburg, FL",
+          "itemKind": "alcoholicBeverage",
+          "price": {
+            "display": "$6.00 to $9.75"
+          }
+        },
+        {
+          "id": "ep-fw-2026-festival-favorites-beer-flight",
+          "name": "Beer Flight",
+          "itemKind": "alcoholicBeverage",
+          "price": {
+            "display": "$12.75",
+            "amountUSD": 12.75
+          }
+        },
+        {
+          "id": "ep-fw-2026-festival-favorites-frozen-apple-blossom",
+          "name": "Frozen Apple Blossom",
+          "itemKind": "alcoholicBeverage",
+          "price": {
+            "display": "$16.50",
+            "amountUSD": 16.5
+          }
+        }
+      ]
     },
     {
       "id": "ep-fw-2026-flavors-from-fire",
@@ -594,7 +883,7 @@
       "sourceUrl": "https://disneyworld.disney.go.com/dining/epcot/marketplace-flavors-from-fire/menus/all-day/",
       "menu": [
         {
-          "id": "ep-fw-2026-flavors-from-fire-beef-skewer",
+          "id": "ep-fw-2026-flavors-from-fire-rodizio-style-grilled-beef-skewer",
           "name": "Rodizio-style Grilled Beef Skewer*",
           "itemKind": "food",
           "price": {
@@ -603,7 +892,7 @@
           }
         },
         {
-          "id": "ep-fw-2026-flavors-from-fire-corned-beef",
+          "id": "ep-fw-2026-flavors-from-fire-smoked-corned-beef",
           "name": "Smoked Corned Beef",
           "itemKind": "food",
           "price": {
@@ -612,7 +901,7 @@
           }
         },
         {
-          "id": "ep-fw-2026-flavors-from-fire-bread-pudding",
+          "id": "ep-fw-2026-flavors-from-fire-smoked-chocolate-bread-pudding",
           "name": "Smoked Chocolate Bread Pudding",
           "itemKind": "food",
           "price": {
@@ -621,7 +910,7 @@
           }
         },
         {
-          "id": "ep-fw-2026-flavors-from-fire-left-hand-sawtooth",
+          "id": "ep-fw-2026-flavors-from-fire-left-hand-brewing-co-sawtooth-amber-ale-longmont-co",
           "name": "Left Hand Brewing Co. Sawtooth Amber Ale, Longmont, CO",
           "itemKind": "alcoholicBeverage",
           "price": {
@@ -629,7 +918,7 @@
           }
         },
         {
-          "id": "ep-fw-2026-flavors-from-fire-1000-stories",
+          "id": "ep-fw-2026-flavors-from-fire-1000-stories-bourbon-barrel-aged-zinfandel-lodi-ca",
           "name": "1000 Stories Bourbon Barrel-aged Zinfandel, Lodi, CA",
           "itemKind": "alcoholicBeverage",
           "price": {
@@ -657,8 +946,8 @@
       "sourceUrl": "https://disneyworld.disney.go.com/dining/epcot/marketplace-forest-and-field/menus/all-day/",
       "menu": [
         {
-          "id": "ep-fw-2026-forest-and-field-black-bean-chili",
-          "name": "Spicy Black Bean-Mushroom Chili with Plant-based Sour Cream, Plant-based Cheddar, and Cornbread Croutons (plant-based)",
+          "id": "ep-fw-2026-forest-and-field-spicy-black-bean-mushroom-chili",
+          "name": "Spicy Black Bean-Mushroom Chili",
           "itemKind": "food",
           "price": {
             "display": "$5.99",
@@ -667,8 +956,8 @@
           "plantBased": true
         },
         {
-          "id": "ep-fw-2026-forest-and-field-pumpkin-ravioli",
-          "name": "Pumpkin-Mascarpone Ravioli with Brown Butter Vinaigrette, Pecorino Cheese, Pomegranate Seeds, and Hazelnut Praline",
+          "id": "ep-fw-2026-forest-and-field-pumpkin-mascarpone-ravioli",
+          "name": "Pumpkin-Mascarpone Ravioli",
           "itemKind": "food",
           "price": {
             "display": "$5.49",
@@ -676,8 +965,8 @@
           }
         },
         {
-          "id": "ep-fw-2026-forest-and-field-schiacciata",
-          "name": "Schiacciata Sandwich Mortadella, Prosciutto Ham, Sun-dried Peppers, Arugula, Stracciatella Cheese, Fall Squash Mostarda, and Pistachio Pesto on Warm Focaccia",
+          "id": "ep-fw-2026-forest-and-field-schiacciata-sandwich",
+          "name": "Schiacciata Sandwich",
           "itemKind": "food",
           "price": {
             "display": "$6.29",
@@ -685,7 +974,7 @@
           }
         },
         {
-          "id": "ep-fw-2026-forest-and-field-ommegang-stout",
+          "id": "ep-fw-2026-forest-and-field-brewery-ommegang-all-hallows-treat-imperial-chocolate-peanut",
           "name": "Brewery Ommegang All Hallows Treat Imperial Chocolate Peanut Butter Stout, Cooperstown, NY",
           "itemKind": "alcoholicBeverage",
           "price": {
@@ -693,7 +982,7 @@
           }
         },
         {
-          "id": "ep-fw-2026-forest-and-field-hugel-pinot-noir",
+          "id": "ep-fw-2026-forest-and-field-famille-hugel-classic-pinot-noir-alsace-france",
           "name": "Famille Hugel Classic Pinot Noir, Alsace, France",
           "itemKind": "alcoholicBeverage",
           "price": {
@@ -702,7 +991,7 @@
           }
         },
         {
-          "id": "ep-fw-2026-forest-and-field-daou-chardonnay",
+          "id": "ep-fw-2026-forest-and-field-daou-vineyards-chardonnay-paso-robles-ca",
           "name": "Daou Vineyards Chardonnay, Paso Robles, CA",
           "itemKind": "alcoholicBeverage",
           "price": {
@@ -721,7 +1010,7 @@
       "sourceUrl": "https://disneyworld.disney.go.com/dining/epcot/marketplace-france/menus/all-day/",
       "menu": [
         {
-          "id": "ep-fw-2026-france-brioche-aux-epices",
+          "id": "ep-fw-2026-france-brioche-aux-epices-avec-une-garniture-mornay-de-trois-fromag",
           "name": "Brioche aux Epices avec une Garniture Mornay de Trois Fromages",
           "itemKind": "food",
           "price": {
@@ -730,8 +1019,8 @@
           }
         },
         {
-          "id": "ep-fw-2026-france-trio-escargots",
-          "name": "Trio d'Escargots, Garniture a l'ail et au Persil",
+          "id": "ep-fw-2026-france-trio-descargots-garniture-a-lail-et-au-persil",
+          "name": "Trio d’Escargots, Garniture a l’ail et au Persil",
           "itemKind": "food",
           "price": {
             "display": "$9.25",
@@ -739,7 +1028,7 @@
           }
         },
         {
-          "id": "ep-fw-2026-france-boeuf-braise",
+          "id": "ep-fw-2026-france-boeuf-braise-vin-rouge-et-echalottes-gateau-de-pomes-de-terr",
           "name": "Boeuf Braise vin Rouge et Echalottes, Gâteau de Pomes de Terre",
           "itemKind": "food",
           "price": {
@@ -748,7 +1037,7 @@
           }
         },
         {
-          "id": "ep-fw-2026-france-creme-brulee-pistache",
+          "id": "ep-fw-2026-france-creme-brulee-pistache-confiture-de-fruits-rouges",
           "name": "Crème Brûlée Pistache, Confiture de Fruits Rouges",
           "itemKind": "food",
           "price": {
@@ -757,7 +1046,7 @@
           }
         },
         {
-          "id": "ep-fw-2026-france-plaimont-colombard",
+          "id": "ep-fw-2026-france-plaimont-elia-colombard-cotes-de-gascogne",
           "name": "Plaimont ELIA Colombard, Côtes de Gascogne",
           "itemKind": "alcoholicBeverage",
           "price": {
@@ -766,7 +1055,7 @@
           }
         },
         {
-          "id": "ep-fw-2026-france-la-roche-prestige",
+          "id": "ep-fw-2026-france-la-roche-prestige-cuvee",
           "name": "La Roche Prestige Cuvée",
           "itemKind": "alcoholicBeverage",
           "price": {
@@ -781,6 +1070,26 @@
           "price": {
             "display": "$15.50",
             "amountUSD": 15.5
+          }
+        }
+      ]
+    },
+    {
+      "id": "ep-fw-2026-funnel-cake",
+      "festivalId": "ep-fw-2026",
+      "name": "Funnel Cake",
+      "kind": "festivalBooth",
+      "locationText": "EPCOT, World Showcase",
+      "sourceUrl": "https://disneyworld.disney.go.com/dining/epcot/funnel-cake/menus/all-day/",
+      "sourceNote": "Official Food & Wine host page. Not present in the 62-venue permanent dataset.",
+      "menu": [
+        {
+          "id": "ep-fw-2026-funnel-cake-pumpkin-pie-funnel-cake",
+          "name": "Pumpkin Pie Funnel Cake",
+          "itemKind": "food",
+          "price": {
+            "display": "$12.50",
+            "amountUSD": 12.5
           }
         }
       ]
@@ -821,7 +1130,7 @@
           }
         },
         {
-          "id": "ep-fw-2026-germany-schofferhofer",
+          "id": "ep-fw-2026-germany-schofferhofer-orange-spritz-hefeweizen-mainz",
           "name": "Schöfferhofer Orange Spritz Hefeweizen, Mainz",
           "itemKind": "alcoholicBeverage",
           "price": {
@@ -829,7 +1138,7 @@
           }
         },
         {
-          "id": "ep-fw-2026-germany-weihenstephaner",
+          "id": "ep-fw-2026-germany-weihenstephaner-festbier-freising",
           "name": "Weihenstephaner Festbier, Freising",
           "itemKind": "alcoholicBeverage",
           "price": {
@@ -837,7 +1146,7 @@
           }
         },
         {
-          "id": "ep-fw-2026-germany-von-trapp",
+          "id": "ep-fw-2026-germany-von-trapp-brewing-oktoberfest-marzen-style-lager-stowe-vt",
           "name": "von Trapp Brewing Oktoberfest Märzen-style Lager, Stowe, VT",
           "itemKind": "alcoholicBeverage",
           "price": {
@@ -854,7 +1163,7 @@
           }
         },
         {
-          "id": "ep-fw-2026-germany-selbach-oster",
+          "id": "ep-fw-2026-germany-selbach-oster-riesling-mosel",
           "name": "Selbach-Oster Riesling, Mosel",
           "itemKind": "alcoholicBeverage",
           "price": {
@@ -883,7 +1192,7 @@
         },
         {
           "id": "ep-fw-2026-greece-griddled-cheese",
-          "name": "Griddled Cheese with Pistachios and Honey (Emile's Fromage Montage Offering)",
+          "name": "Griddled Cheese",
           "itemKind": "food",
           "price": {
             "display": "$5.49",
@@ -891,8 +1200,8 @@
           }
         },
         {
-          "id": "ep-fw-2026-greece-chicken-souvlaki",
-          "name": "Chicken Souvlaki Gyro with Shaved Lettuce, Tomato-Cucumber Relish, and Tzatziki on Warm Pita (30th Anniversary Legacy Item)",
+          "id": "ep-fw-2026-greece-chicken-souvlaki-gyro",
+          "name": "Chicken Souvlaki Gyro",
           "itemKind": "food",
           "price": {
             "display": "$6.99",
@@ -900,7 +1209,7 @@
           }
         },
         {
-          "id": "ep-fw-2026-greece-mylonas-assyrtiko",
+          "id": "ep-fw-2026-greece-mylonas-winery-assyrtiko-dry-white-attiki",
           "name": "Mylonas Winery Assyrtiko Dry White, Attiki",
           "itemKind": "alcoholicBeverage",
           "price": {
@@ -909,7 +1218,7 @@
           }
         },
         {
-          "id": "ep-fw-2026-greece-zoe-rose",
+          "id": "ep-fw-2026-greece-zoe-rose-peloponnese",
           "name": "Zoe Rosé, Peloponnese",
           "itemKind": "alcoholicBeverage",
           "price": {
@@ -918,7 +1227,7 @@
           }
         },
         {
-          "id": "ep-fw-2026-greece-kir-yianni",
+          "id": "ep-fw-2026-greece-kir-yianni-naoussa-xinomavro-dry-red-naoussa",
           "name": "Kir-Yianni Naoussa Xinomavro Dry Red, Naoussa",
           "itemKind": "alcoholicBeverage",
           "price": {
@@ -937,7 +1246,7 @@
         },
         {
           "id": "ep-fw-2026-greece-greek-melon-limeade",
-          "name": "Greek Melon Limeade (Kleos Mastiha Spirit, Artonic Melon Apéritif, Pearl Vodka, and Lime Sour Mix)",
+          "name": "Greek Melon Limeade",
           "itemKind": "alcoholicBeverage",
           "price": {
             "display": "$12.00",
@@ -955,7 +1264,7 @@
       "sourceUrl": "https://disneyworld.disney.go.com/dining/epcot/marketplace-gyozas-of-the-galaxy/menus/all-day/",
       "menu": [
         {
-          "id": "ep-fw-2026-gyozas-of-the-galaxy-pesto-dumplings",
+          "id": "ep-fw-2026-gyozas-of-the-galaxy-basil-pesto-chicken-dumplings",
           "name": "Basil Pesto Chicken Dumplings",
           "itemKind": "food",
           "price": {
@@ -964,7 +1273,7 @@
           }
         },
         {
-          "id": "ep-fw-2026-gyozas-of-the-galaxy-street-corn-dumplings",
+          "id": "ep-fw-2026-gyozas-of-the-galaxy-street-corn-style-dumplings",
           "name": "Street Corn-style Dumplings",
           "itemKind": "food",
           "price": {
@@ -974,7 +1283,7 @@
         },
         {
           "id": "ep-fw-2026-gyozas-of-the-galaxy-edamame-dumplings",
-          "name": "Edamame Dumplings (plant-based)",
+          "name": "Edamame Dumplings",
           "itemKind": "food",
           "price": {
             "display": "$5.29",
@@ -983,8 +1292,8 @@
           "plantBased": true
         },
         {
-          "id": "ep-fw-2026-gyozas-of-the-galaxy-pinot-gris",
-          "name": "Willamette Valley Vineyards Pinot Gris",
+          "id": "ep-fw-2026-gyozas-of-the-galaxy-willamette-valley-vineyards-pinot-gris-willamette-valley-or",
+          "name": "Willamette Valley Vineyards Pinot Gris, Willamette Valley, OR",
           "itemKind": "alcoholicBeverage",
           "price": {
             "display": "$7.50",
@@ -996,13 +1305,13 @@
     {
       "id": "ep-fw-2026-hawaii",
       "festivalId": "ep-fw-2026",
-      "name": "Hawaii",
+      "name": "Hawai'i",
       "kind": "festivalBooth",
       "locationText": "EPCOT, World Showcase",
       "sourceUrl": "https://disneyworld.disney.go.com/dining/epcot/marketplace-hawaii/menus/all-day/",
       "menu": [
         {
-          "id": "ep-fw-2026-hawaii-pork-slider",
+          "id": "ep-fw-2026-hawaii-slow-roasted-pork-slider",
           "name": "Slow-roasted Pork Slider",
           "itemKind": "food",
           "price": {
@@ -1011,7 +1320,7 @@
           }
         },
         {
-          "id": "ep-fw-2026-hawaii-rice-bowl",
+          "id": "ep-fw-2026-hawaii-hawaiian-rice-bowl",
           "name": "Hawaiian Rice Bowl",
           "itemKind": "food",
           "price": {
@@ -1029,15 +1338,15 @@
           }
         },
         {
-          "id": "ep-fw-2026-hawaii-leid-back-ipa",
-          "name": "Florida Avenue Brewing Co Lei'd Back Double IPA, Tampa, FL",
+          "id": "ep-fw-2026-hawaii-florida-avenue-brewing-co-leid-back-double-ipa-tampa-fl",
+          "name": "Florida Avenue Brewing Co Lei’d Back Double IPA, Tampa, FL",
           "itemKind": "alcoholicBeverage",
           "price": {
             "display": "$6.00 to $9.75"
           }
         },
         {
-          "id": "ep-fw-2026-hawaii-sparkling-pineapple",
+          "id": "ep-fw-2026-hawaii-florida-orange-groves-winery-sparkling-pineapple-wine-st-pet",
           "name": "Florida Orange Groves Winery Sparkling Pineapple Wine, St. Petersburg, FL",
           "itemKind": "alcoholicBeverage",
           "price": {
@@ -1047,7 +1356,7 @@
         },
         {
           "id": "ep-fw-2026-hawaii-oahu-sunrise",
-          "name": "O'ahu Sunrise",
+          "name": "O’ahu Sunrise",
           "itemKind": "alcoholicBeverage",
           "price": {
             "display": "$14.50",
@@ -1065,8 +1374,8 @@
       "sourceUrl": "https://disneyworld.disney.go.com/dining/epcot/marketplace-hops-and-barley/menus/all-day/",
       "menu": [
         {
-          "id": "ep-fw-2026-hops-and-barley-seafood-roll",
-          "name": "Gulf Coast-style Seafood Roll with Warm-Water Lobster, Rock Shrimp, Lobster Bisque, and Sherry Crème Fraîche on a Toasted Brioche Bun (30th Anniversary Legacy Item)",
+          "id": "ep-fw-2026-hops-and-barley-gulf-coast-style-seafood-roll",
+          "name": "Gulf Coast-style Seafood Roll",
           "itemKind": "food",
           "price": {
             "display": "$8.99",
@@ -1074,8 +1383,8 @@
           }
         },
         {
-          "id": "ep-fw-2026-hops-and-barley-brisket-melt",
-          "name": "Smoked Brisket and Cheddar Melt: Chopped Smoked Brisket, Caramelized Onions, Tangy Barbecue, and Cheddar Sauce on a Potato Roll",
+          "id": "ep-fw-2026-hops-and-barley-smoked-brisket-and-cheddar-melt",
+          "name": "Smoked Brisket and Cheddar Melt",
           "itemKind": "food",
           "price": {
             "display": "$6.49",
@@ -1083,8 +1392,8 @@
           }
         },
         {
-          "id": "ep-fw-2026-hops-and-barley-chocolate-pudding-cake",
-          "name": "Freshly Baked Chocolate Pudding Cake with Kentucky Bourbon Caramel",
+          "id": "ep-fw-2026-hops-and-barley-freshly-baked-chocolate-pudding-cake",
+          "name": "Freshly Baked Chocolate Pudding Cake",
           "itemKind": "food",
           "price": {
             "display": "$4.99",
@@ -1092,7 +1401,7 @@
           }
         },
         {
-          "id": "ep-fw-2026-hops-and-barley-harpoon-southie",
+          "id": "ep-fw-2026-hops-and-barley-harpoon-brewery-southie-lager-boston-ma",
           "name": "Harpoon Brewery Southie Lager, Boston, MA",
           "itemKind": "alcoholicBeverage",
           "price": {
@@ -1100,7 +1409,7 @@
           }
         },
         {
-          "id": "ep-fw-2026-hops-and-barley-sam-adams-brick-red",
+          "id": "ep-fw-2026-hops-and-barley-samuel-adams-boston-brick-red-irish-red-ale-boston-ma",
           "name": "Samuel Adams Boston Brick Red Irish Red Ale, Boston, MA",
           "itemKind": "alcoholicBeverage",
           "price": {
@@ -1108,7 +1417,7 @@
           }
         },
         {
-          "id": "ep-fw-2026-hops-and-barley-allagash-haunted-house",
+          "id": "ep-fw-2026-hops-and-barley-allagash-brewing-company-haunted-house-hoppy-dark-ale-portla",
           "name": "Allagash Brewing Company Haunted House Hoppy Dark Ale, Portland, ME",
           "itemKind": "alcoholicBeverage",
           "price": {
@@ -1132,11 +1441,12 @@
       "name": "India",
       "kind": "festivalBooth",
       "locationText": "EPCOT, World Showcase",
+      "startsOn": "2026-10-02",
       "sourceUrl": "https://disneyworld.disney.go.com/dining/epcot/marketplace-india/menus/all-day/",
       "menu": [
         {
-          "id": "ep-fw-2026-india-samosas",
-          "name": "Potato-Pea Samosas with Plant-based Coriander-Lime Cream (plant-based) (30th Anniversary Legacy Item)",
+          "id": "ep-fw-2026-india-potato-pea-samosas",
+          "name": "Potato-Pea Samosas",
           "itemKind": "food",
           "price": {
             "display": "$5.49",
@@ -1145,8 +1455,8 @@
           "plantBased": true
         },
         {
-          "id": "ep-fw-2026-india-tikka-masala",
-          "name": "Chicken Tikka Masala with Fennel-spiced Yogurt and Naan Bread (30th Anniversary Legacy Item)",
+          "id": "ep-fw-2026-india-chicken-tikka-masala",
+          "name": "Chicken Tikka Masala",
           "itemKind": "food",
           "price": {
             "display": "$6.49",
@@ -1155,7 +1465,7 @@
         },
         {
           "id": "ep-fw-2026-india-mango-lassi",
-          "name": "Mango Lassi (non-alcoholic)",
+          "name": "Mango Lassi",
           "itemKind": "nonAlcoholicBeverage",
           "price": {
             "display": "$5.29",
@@ -1163,7 +1473,7 @@
           }
         },
         {
-          "id": "ep-fw-2026-india-taj-mahal",
+          "id": "ep-fw-2026-india-united-breweries-taj-mahal-premium-lager-bengaluru",
           "name": "United Breweries Taj Mahal Premium Lager, Bengaluru",
           "itemKind": "alcoholicBeverage",
           "price": {
@@ -1171,7 +1481,7 @@
           }
         },
         {
-          "id": "ep-fw-2026-india-sula-tropicale",
+          "id": "ep-fw-2026-india-sula-tropicale-brut-sparkling-wine-nashik-valley",
           "name": "Sula Tropicale Brut Sparkling Wine, Nashik Valley",
           "itemKind": "alcoholicBeverage",
           "price": {
@@ -1180,7 +1490,7 @@
           }
         },
         {
-          "id": "ep-fw-2026-india-mango-lassi-rum",
+          "id": "ep-fw-2026-india-mango-lassi-with-camikara-8-year-old-cask-aged-rum",
           "name": "Mango Lassi with Camikara 8-Year-Old Cask Aged Rum",
           "itemKind": "alcoholicBeverage",
           "price": {
@@ -1208,7 +1518,7 @@
           }
         },
         {
-          "id": "ep-fw-2026-italy-pollo-marsala",
+          "id": "ep-fw-2026-italy-pollo-al-marsala",
           "name": "Pollo al Marsala",
           "itemKind": "food",
           "price": {
@@ -1217,7 +1527,7 @@
           }
         },
         {
-          "id": "ep-fw-2026-italy-panna-cotta",
+          "id": "ep-fw-2026-italy-almond-panna-cotta",
           "name": "Almond Panna Cotta",
           "itemKind": "food",
           "price": {
@@ -1226,7 +1536,7 @@
           }
         },
         {
-          "id": "ep-fw-2026-italy-peroni",
+          "id": "ep-fw-2026-italy-peroni-pilsner",
           "name": "Peroni Pilsner",
           "itemKind": "alcoholicBeverage",
           "price": {
@@ -1243,8 +1553,8 @@
           }
         },
         {
-          "id": "ep-fw-2026-italy-saracco-moscato",
-          "name": "Saracco Moscato d'Asti",
+          "id": "ep-fw-2026-italy-saracco-moscato-dasti",
+          "name": "Saracco Moscato d’Asti",
           "itemKind": "alcoholicBeverage",
           "price": {
             "display": "$13.00",
@@ -1252,7 +1562,7 @@
           }
         },
         {
-          "id": "ep-fw-2026-italy-guidi-luca-red",
+          "id": "ep-fw-2026-italy-cantine-guidi-selezione-privata-luca-red-blend-tuscany",
           "name": "Cantine Guidi Selezione Privata Luca Red Blend, Tuscany",
           "itemKind": "alcoholicBeverage",
           "price": {
@@ -1261,7 +1571,7 @@
           }
         },
         {
-          "id": "ep-fw-2026-italy-villa-matilde-falanghina",
+          "id": "ep-fw-2026-italy-villa-matilde-falanghina-campania-igp-white-wine-campania",
           "name": "Villa Matilde Falanghina Campania IGP White Wine, Campania",
           "itemKind": "alcoholicBeverage",
           "price": {
@@ -1270,7 +1580,7 @@
           }
         },
         {
-          "id": "ep-fw-2026-italy-red-sangria",
+          "id": "ep-fw-2026-italy-italian-red-sangria",
           "name": "Italian Red Sangria",
           "itemKind": "alcoholicBeverage",
           "price": {
@@ -1288,7 +1598,7 @@
           }
         },
         {
-          "id": "ep-fw-2026-italy-blood-orange-margarita",
+          "id": "ep-fw-2026-italy-italian-inspired-blood-orange-margarita",
           "name": "Italian-inspired Blood Orange Margarita",
           "itemKind": "alcoholicBeverage",
           "price": {
@@ -1307,7 +1617,7 @@
       "sourceUrl": "https://disneyworld.disney.go.com/dining/epcot/marketplace-japan/menus/all-day/",
       "menu": [
         {
-          "id": "ep-fw-2026-japan-spicy-temaki",
+          "id": "ep-fw-2026-japan-spicy-temaki-hand-roll",
           "name": "Spicy Temaki Hand Roll*",
           "itemKind": "food",
           "price": {
@@ -1316,7 +1626,7 @@
           }
         },
         {
-          "id": "ep-fw-2026-japan-wagyu-temaki",
+          "id": "ep-fw-2026-japan-beef-wagyu-temaki-hand-roll",
           "name": "Beef Wagyu Temaki Hand Roll",
           "itemKind": "food",
           "price": {
@@ -1334,7 +1644,7 @@
           }
         },
         {
-          "id": "ep-fw-2026-japan-fruit-pearl",
+          "id": "ep-fw-2026-japan-mango-apple-fruit-pearl",
           "name": "Mango-Apple Fruit Pearl",
           "itemKind": "nonAlcoholicBeverage",
           "price": {
@@ -1343,7 +1653,7 @@
           }
         },
         {
-          "id": "ep-fw-2026-japan-fruit-pearl-chips",
+          "id": "ep-fw-2026-japan-mango-apple-fruit-pearl-paired-with-wasabi-soy-sauce-flavore",
           "name": "Mango-Apple Fruit Pearl paired with Wasabi-Soy Sauce flavored Potato Chips",
           "itemKind": "nonAlcoholicBeverage",
           "price": {
@@ -1360,7 +1670,7 @@
           }
         },
         {
-          "id": "ep-fw-2026-japan-sapporo-reserve-chips",
+          "id": "ep-fw-2026-japan-sapporo-reserve-paired-with-wasabi-soy-sauce-flavored-potato",
           "name": "Sapporo Reserve paired with Wasabi-Soy Sauce flavored Potato Chips",
           "itemKind": "alcoholicBeverage",
           "price": {
@@ -1388,6 +1698,160 @@
       ]
     },
     {
+      "id": "ep-fw-2026-joffreys-american-adventure",
+      "festivalId": "ep-fw-2026",
+      "name": "Joffrey's Coffee & Tea Company® in The American Adventure at EPCOT",
+      "kind": "festivalBooth",
+      "locationText": "EPCOT, World Showcase",
+      "sourceUrl": "https://disneyworld.disney.go.com/dining/epcot/espresso-coffee-pastries-american-adventure/menus/all-day/",
+      "sourceNote": "Official Food & Wine host page. Not present in the 62-venue permanent dataset.",
+      "menu": [
+        {
+          "id": "ep-fw-2026-joffreys-american-adventure-affogato-alle-mandorle-cold-brew",
+          "name": "Affogato alle Mandorle Cold Brew",
+          "itemKind": "nonAlcoholicBeverage",
+          "price": {
+            "display": "$7.49",
+            "amountUSD": 7.49
+          }
+        },
+        {
+          "id": "ep-fw-2026-joffreys-american-adventure-affogato-alle-mandorle-cold-brew-2",
+          "name": "Affogato alle Mandorle Cold Brew",
+          "itemKind": "alcoholicBeverage",
+          "price": {
+            "display": "$15.99",
+            "amountUSD": 15.99
+          }
+        }
+      ]
+    },
+    {
+      "id": "ep-fw-2026-joffreys-canada",
+      "festivalId": "ep-fw-2026",
+      "name": "Joffrey's Coffee & Tea Company® in Canada at EPCOT",
+      "kind": "festivalBooth",
+      "locationText": "EPCOT, World Showcase",
+      "sourceUrl": "https://disneyworld.disney.go.com/dining/epcot/espresso-coffee-pastries-canada/menus/all-day/",
+      "sourceNote": "Official Food & Wine host page. Not present in the 62-venue permanent dataset.",
+      "menu": [
+        {
+          "id": "ep-fw-2026-joffreys-canada-notte-di-caramello-cold-brew",
+          "name": "Notte di Caramello Cold Brew",
+          "itemKind": "nonAlcoholicBeverage",
+          "price": {
+            "display": "$7.49",
+            "amountUSD": 7.49
+          }
+        },
+        {
+          "id": "ep-fw-2026-joffreys-canada-notte-di-caramello-cold-brew-2",
+          "name": "Notte di Caramello Cold Brew",
+          "itemKind": "alcoholicBeverage",
+          "price": {
+            "display": "$15.99",
+            "amountUSD": 15.99
+          }
+        }
+      ]
+    },
+    {
+      "id": "ep-fw-2026-joffreys-showcase-plaza",
+      "festivalId": "ep-fw-2026",
+      "name": "Joffrey's Coffee & Tea Company® in Showcase Plaza at EPCOT",
+      "kind": "festivalBooth",
+      "locationText": "EPCOT, World Showcase",
+      "sourceUrl": "https://disneyworld.disney.go.com/dining/epcot/espresso-coffee-pastries-disney-traders/menus/all-day/",
+      "sourceNote": "Official Food & Wine host page. Not present in the 62-venue permanent dataset.",
+      "menu": [
+        {
+          "id": "ep-fw-2026-joffreys-showcase-plaza-dolce-affogato-cold-brew",
+          "name": "Dolce Affogato Cold Brew",
+          "itemKind": "nonAlcoholicBeverage",
+          "price": {
+            "display": "$7.49",
+            "amountUSD": 7.49
+          }
+        },
+        {
+          "id": "ep-fw-2026-joffreys-showcase-plaza-dolce-affogato-cold-brew-2",
+          "name": "Dolce Affogato Cold Brew",
+          "itemKind": "alcoholicBeverage",
+          "price": {
+            "display": "$15.99",
+            "amountUSD": 15.99
+          }
+        }
+      ]
+    },
+    {
+      "id": "ep-fw-2026-joffreys-world-discovery",
+      "festivalId": "ep-fw-2026",
+      "name": "Joffrey's Coffee & Tea Company® in World Discovery at EPCOT",
+      "kind": "festivalBooth",
+      "locationText": "EPCOT, World Discovery",
+      "sourceUrl": "https://disneyworld.disney.go.com/dining/epcot/espresso-coffee-pastries-world-discovery/menus/all-day/",
+      "sourceNote": "Official Food & Wine host page. Not present in the 62-venue permanent dataset.",
+      "menu": [
+        {
+          "id": "ep-fw-2026-joffreys-world-discovery-affogato-di-marshmallow-cold-brew",
+          "name": "Affogato di Marshmallow Cold Brew",
+          "itemKind": "nonAlcoholicBeverage",
+          "price": {
+            "display": "$7.49",
+            "amountUSD": 7.49
+          }
+        },
+        {
+          "id": "ep-fw-2026-joffreys-world-discovery-affogato-di-marshmallow-cold-brew-2",
+          "name": "Affogato di Marshmallow Cold Brew",
+          "itemKind": "alcoholicBeverage",
+          "price": {
+            "display": "$15.99",
+            "amountUSD": 15.99
+          }
+        }
+      ]
+    },
+    {
+      "id": "ep-fw-2026-la-poutinerie",
+      "festivalId": "ep-fw-2026",
+      "name": "La Poutinerie",
+      "kind": "festivalBooth",
+      "locationText": "EPCOT, World Showcase",
+      "venueCanonicalId": "EPCOT|World Showcase|La Poutinerie",
+      "sourceUrl": "https://disneyworld.disney.go.com/dining/epcot/la-poutinerie/menus/all-day/",
+      "menu": [
+        {
+          "id": "ep-fw-2026-la-poutinerie-seoul-south-korea-bo-ssam-pork-poutine",
+          "name": "Seoul, South Korea: Bo Ssam Pork Poutine",
+          "itemKind": "food",
+          "price": {
+            "display": "$11.99",
+            "amountUSD": 11.99
+          }
+        },
+        {
+          "id": "ep-fw-2026-la-poutinerie-spiced-apple-slushy",
+          "name": "Spiced Apple Slushy",
+          "itemKind": "nonAlcoholicBeverage",
+          "price": {
+            "display": "$6.29",
+            "amountUSD": 6.29
+          }
+        },
+        {
+          "id": "ep-fw-2026-la-poutinerie-spiced-apple-mule",
+          "name": "Spiced Apple Mule",
+          "itemKind": "alcoholicBeverage",
+          "price": {
+            "display": "$14.50",
+            "amountUSD": 14.5
+          }
+        }
+      ]
+    },
+    {
       "id": "ep-fw-2026-mexico",
       "festivalId": "ep-fw-2026",
       "name": "Mexico",
@@ -1396,7 +1860,7 @@
       "sourceUrl": "https://disneyworld.disney.go.com/dining/epcot/marketplace-mexico/menus/all-day/",
       "menu": [
         {
-          "id": "ep-fw-2026-mexico-tostada-osso-buco",
+          "id": "ep-fw-2026-mexico-tostada-de-osso-buco",
           "name": "Tostada de Osso Buco",
           "itemKind": "food",
           "price": {
@@ -1405,7 +1869,7 @@
           }
         },
         {
-          "id": "ep-fw-2026-mexico-taco-camaron",
+          "id": "ep-fw-2026-mexico-taco-de-camaron",
           "name": "Taco de Camaron",
           "itemKind": "food",
           "price": {
@@ -1414,7 +1878,7 @@
           }
         },
         {
-          "id": "ep-fw-2026-mexico-paleta-moras",
+          "id": "ep-fw-2026-mexico-paleta-de-moras",
           "name": "Paleta de Moras",
           "itemKind": "food",
           "price": {
@@ -1440,8 +1904,8 @@
           }
         },
         {
-          "id": "ep-fw-2026-mexico-fruta-pasion",
-          "name": "Fruta de la Pasión",
+          "id": "ep-fw-2026-mexico-fruta-de-la-pasin",
+          "name": "Fruta de la Pasiόn",
           "itemKind": "alcoholicBeverage",
           "price": {
             "display": "$13.75",
@@ -1459,8 +1923,8 @@
       "sourceUrl": "https://disneyworld.disney.go.com/dining/epcot/marketplace-milled-and-mulled/menus/all-day/",
       "menu": [
         {
-          "id": "ep-fw-2026-milled-and-mulled-butternut-bisque",
-          "name": "Butternut Squash and Ginger Bisque with Cinnamon Cream, Toasted Pumpkin Seeds, and Pumpkin Seed Oil",
+          "id": "ep-fw-2026-milled-and-mulled-butternut-squash-and-ginger-bisque",
+          "name": "Butternut Squash and Ginger Bisque",
           "itemKind": "food",
           "price": {
             "display": "$5.49",
@@ -1468,8 +1932,8 @@
           }
         },
         {
-          "id": "ep-fw-2026-milled-and-mulled-carrot-cake",
-          "name": "Freshly Baked Carrot Cake with Walnuts and Cream Cheese Icing (30th Anniversary Legacy Item)",
+          "id": "ep-fw-2026-milled-and-mulled-freshly-baked-carrot-cake",
+          "name": "Freshly Baked Carrot Cake",
           "itemKind": "food",
           "price": {
             "display": "$4.99",
@@ -1477,8 +1941,8 @@
           }
         },
         {
-          "id": "ep-fw-2026-milled-and-mulled-churros-sundae",
-          "name": "Apple-Cinnamon and Caramel Mini Churros Sundae with Vanilla Bean Gelato",
+          "id": "ep-fw-2026-milled-and-mulled-apple-cinnamon-and-caramel-mini-churros-sundae",
+          "name": "Apple-Cinnamon and Caramel Mini Churros Sundae",
           "itemKind": "food",
           "price": {
             "display": "$5.29",
@@ -1486,7 +1950,7 @@
           }
         },
         {
-          "id": "ep-fw-2026-milled-and-mulled-southern-tier-sweater",
+          "id": "ep-fw-2026-milled-and-mulled-southern-tier-brewing-company-sweater-weather-vanilla-toffee",
           "name": "Southern Tier Brewing Company Sweater Weather Vanilla Toffee Amber Ale, Lakewood, NY",
           "itemKind": "alcoholicBeverage",
           "price": {
@@ -1494,7 +1958,7 @@
           }
         },
         {
-          "id": "ep-fw-2026-milled-and-mulled-3-daughters-strudel",
+          "id": "ep-fw-2026-milled-and-mulled-3-daughters-brewing-apple-strudel-hard-cider-st-petersburg-f",
           "name": "3 Daughters Brewing Apple Strudel Hard Cider, St. Petersburg, FL",
           "itemKind": "alcoholicBeverage",
           "price": {
@@ -1513,8 +1977,8 @@
       "sourceUrl": "https://disneyworld.disney.go.com/dining/epcot/refreshment-outpost/menus/all-day/",
       "menu": [
         {
-          "id": "ep-fw-2026-refreshment-outpost-berbere-beef-stew",
-          "name": "Berbere-spiced Beef Stew with Sweet Potato Mealie Pap and Kachumbari Slaw",
+          "id": "ep-fw-2026-refreshment-outpost-berbere-spiced-beef-stew",
+          "name": "Berbere-spiced Beef Stew",
           "itemKind": "food",
           "price": {
             "display": "$6.79",
@@ -1522,8 +1986,8 @@
           }
         },
         {
-          "id": "ep-fw-2026-refreshment-outpost-mealie-pap",
-          "name": "Sweet Potato Mealie Pap with a Stew of Beans, Peppers, Carrots, and Tomatoes (plant-based) (30th Anniversary Legacy Item)",
+          "id": "ep-fw-2026-refreshment-outpost-sweet-potato-mealie-pap",
+          "name": "Sweet Potato Mealie Pap",
           "itemKind": "food",
           "price": {
             "display": "$5.79",
@@ -1532,8 +1996,8 @@
           "plantBased": true
         },
         {
-          "id": "ep-fw-2026-refreshment-outpost-chocolate-mousse",
-          "name": "South African Cream Liqueur Chocolate Mousse with White Chocolate Ganache and Chocolate-covered Popping Candy",
+          "id": "ep-fw-2026-refreshment-outpost-south-african-cream-liqueur-chocolate-mousse",
+          "name": "South African Cream Liqueur Chocolate Mousse",
           "itemKind": "food",
           "price": {
             "display": "$6.29",
@@ -1541,7 +2005,7 @@
           }
         },
         {
-          "id": "ep-fw-2026-refreshment-outpost-breckenridge-peach",
+          "id": "ep-fw-2026-refreshment-outpost-breckenridge-brewery-palisade-peach-wheat-ale-breckenridge-c",
           "name": "Breckenridge Brewery Palisade Peach Wheat Ale, Breckenridge, CO",
           "itemKind": "alcoholicBeverage",
           "price": {
@@ -1550,7 +2014,7 @@
           }
         },
         {
-          "id": "ep-fw-2026-refreshment-outpost-cinnamon-donut-cider",
+          "id": "ep-fw-2026-refreshment-outpost-3-daughters-brewing-cinnamon-donut-hard-cider-st-petersburg-",
           "name": "3 Daughters Brewing Cinnamon Donut Hard Cider, St. Petersburg, FL",
           "itemKind": "alcoholicBeverage",
           "price": {
@@ -1559,7 +2023,7 @@
           }
         },
         {
-          "id": "ep-fw-2026-refreshment-outpost-cherry-cola-cider",
+          "id": "ep-fw-2026-refreshment-outpost-coppertail-brewing-co-cherry-cola-hard-cider-tampa-fl",
           "name": "Coppertail Brewing Co. Cherry Cola Hard Cider, Tampa, FL",
           "itemKind": "alcoholicBeverage",
           "price": {
@@ -1569,11 +2033,40 @@
         },
         {
           "id": "ep-fw-2026-refreshment-outpost-midnight-safari",
-          "name": "Midnight Safari (Mansas African Whisky, G.E. Massenez Crème de Cassis de Dijon Liqueur, and Sour Mix garnished with Blackberry and Mint)",
+          "name": "Midnight Safari",
           "itemKind": "alcoholicBeverage",
           "price": {
             "display": "$17.50",
             "amountUSD": 17.5
+          }
+        }
+      ]
+    },
+    {
+      "id": "ep-fw-2026-regal-eagle",
+      "festivalId": "ep-fw-2026",
+      "name": "Regal Eagle Smokehouse: Craft Drafts & Barbecue",
+      "kind": "festivalBooth",
+      "locationText": "EPCOT, World Showcase",
+      "venueCanonicalId": "EPCOT|World Showcase|Regal Eagle Smokehouse",
+      "sourceUrl": "https://disneyworld.disney.go.com/dining/epcot/regal-eagle-smokehouse/menus/all-day/",
+      "menu": [
+        {
+          "id": "ep-fw-2026-regal-eagle-blackberry-buckle",
+          "name": "Blackberry Buckle",
+          "itemKind": "food",
+          "price": {
+            "display": "$4.79",
+            "amountUSD": 4.79
+          }
+        },
+        {
+          "id": "ep-fw-2026-regal-eagle-pumpkin-pie-milk-shake",
+          "name": "Pumpkin Pie Milk Shake",
+          "itemKind": "nonAlcoholicBeverage",
+          "price": {
+            "display": "$6.79",
+            "amountUSD": 6.79
           }
         }
       ]
@@ -1587,8 +2080,8 @@
       "sourceUrl": "https://disneyworld.disney.go.com/dining/epcot/marketplace-shimmering-sips/menus/all-day/",
       "menu": [
         {
-          "id": "ep-fw-2026-shimmering-sips-strawberry-trifle",
-          "name": "Strawberry Champagne Trifle (plant-based)",
+          "id": "ep-fw-2026-shimmering-sips-strawberry-champagne-trifle",
+          "name": "Strawberry Champagne Trifle",
           "itemKind": "food",
           "price": {
             "display": "$5.79",
@@ -1635,6 +2128,35 @@
       ]
     },
     {
+      "id": "ep-fw-2026-sommerfest",
+      "festivalId": "ep-fw-2026",
+      "name": "Sommerfest",
+      "kind": "festivalBooth",
+      "locationText": "EPCOT, World Showcase",
+      "venueCanonicalId": "EPCOT|World Showcase|Sommerfest",
+      "sourceUrl": "https://disneyworld.disney.go.com/dining/epcot/sommerfest/menus/all-day/",
+      "menu": [
+        {
+          "id": "ep-fw-2026-sommerfest-zwiebelkuchen",
+          "name": "Zwiebelkuchen",
+          "itemKind": "food",
+          "price": {
+            "display": "$9.79",
+            "amountUSD": 9.79
+          }
+        },
+        {
+          "id": "ep-fw-2026-sommerfest-cinnamon-pretzel-cold-brew",
+          "name": "Cinnamon Pretzel Cold Brew",
+          "itemKind": "nonAlcoholicBeverage",
+          "price": {
+            "display": "$6.49",
+            "amountUSD": 6.49
+          }
+        }
+      ]
+    },
+    {
       "id": "ep-fw-2026-spain",
       "festivalId": "ep-fw-2026",
       "name": "Spain",
@@ -1643,7 +2165,7 @@
       "sourceUrl": "https://disneyworld.disney.go.com/dining/epcot/marketplace-spain/menus/all-day/",
       "menu": [
         {
-          "id": "ep-fw-2026-spain-croquetas",
+          "id": "ep-fw-2026-spain-croquetas-de-jamon",
           "name": "Croquetas de Jamón",
           "itemKind": "food",
           "price": {
@@ -1670,7 +2192,7 @@
           }
         },
         {
-          "id": "ep-fw-2026-spain-volver-garnacha",
+          "id": "ep-fw-2026-spain-volver-quinta-del-67-garnacha-tintorera-alicante",
           "name": "Volver Quinta del '67 Garnacha, Tintorera, Alicante",
           "itemKind": "alcoholicBeverage",
           "price": {
@@ -1699,7 +2221,7 @@
       "sourceUrl": "https://disneyworld.disney.go.com/dining/epcot/sunshine-seasons/menus/all-day/",
       "menu": [
         {
-          "id": "ep-fw-2026-sunshine-seasons-celebration-macaron",
+          "id": "ep-fw-2026-sunshine-seasons-mickey-shaped-celebration-macaron",
           "name": "Mickey-shaped Celebration Macaron",
           "itemKind": "food",
           "price": {
@@ -1709,7 +2231,7 @@
         },
         {
           "id": "ep-fw-2026-sunshine-seasons-remy-milk-shake",
-          "name": "Remy Milk Shake: Strawberry-Cheesecake Milk Shake topped with a Cookie, Mini Cheesecake, White Chocolate Eiffel Tower, and a Strawberry",
+          "name": "Remy Milk Shake",
           "itemKind": "nonAlcoholicBeverage",
           "price": {
             "display": "$11.49",
@@ -1723,9 +2245,91 @@
       "festivalId": "ep-fw-2026",
       "name": "Swirled Showcase",
       "kind": "festivalBooth",
-      "locationText": "EPCOT",
-      "sourceNote": "Disney allergy-friendly marketplace listing. No per-booth all-day menu page resolved.",
-      "menu": []
+      "locationText": "EPCOT, World Celebration",
+      "sourceUrl": "https://disneyworld.disney.go.com/dining/epcot/swirled-showcase/menus/all-day/",
+      "menu": [
+        {
+          "id": "ep-fw-2026-swirled-showcase-liquid-nitrogen-almond-truffle-mousse",
+          "name": "Liquid Nitrogen Almond Truffle Mousse",
+          "itemKind": "food",
+          "price": {
+            "display": "$5.49",
+            "amountUSD": 5.49
+          }
+        },
+        {
+          "id": "ep-fw-2026-swirled-showcase-soft-serve-in-a-waffle-cone",
+          "name": "Soft-serve in a Waffle Cone",
+          "itemKind": "food",
+          "price": {
+            "display": "$6.29",
+            "amountUSD": 6.29
+          }
+        },
+        {
+          "id": "ep-fw-2026-swirled-showcase-frozen-szarlotka",
+          "name": "Frozen Szarlotka",
+          "itemKind": "nonAlcoholicBeverage",
+          "price": {
+            "display": "$6.79",
+            "amountUSD": 6.79
+          }
+        },
+        {
+          "id": "ep-fw-2026-swirled-showcase-ice-cream-float",
+          "name": "Ice Cream Float",
+          "itemKind": "nonAlcoholicBeverage",
+          "price": {
+            "display": "$6.79",
+            "amountUSD": 6.79
+          }
+        },
+        {
+          "id": "ep-fw-2026-swirled-showcase-fruli-strawberry-belgian-white-beer-melle-belgium",
+          "name": "Früli Strawberry Belgian White Beer, Melle, Belgium",
+          "itemKind": "alcoholicBeverage",
+          "price": {
+            "display": "$12.50",
+            "amountUSD": 12.5
+          }
+        },
+        {
+          "id": "ep-fw-2026-swirled-showcase-strawberry-beer-float",
+          "name": "Strawberry Beer Float",
+          "itemKind": "alcoholicBeverage",
+          "price": {
+            "display": "$13.25",
+            "amountUSD": 13.25
+          }
+        },
+        {
+          "id": "ep-fw-2026-swirled-showcase-banfi-rosa-regale-sparkling-red-piedmont-italy",
+          "name": "Banfi Rosa Regale Sparkling Red, Piedmont, Italy",
+          "itemKind": "alcoholicBeverage",
+          "price": {
+            "display": "$15.00",
+            "amountUSD": 15.0
+          }
+        },
+        {
+          "id": "ep-fw-2026-swirled-showcase-frozen-szarlotka-2",
+          "name": "Frozen Szarlotka",
+          "itemKind": "alcoholicBeverage",
+          "price": {
+            "display": "$13.00",
+            "amountUSD": 13.0
+          }
+        },
+        {
+          "id": "ep-fw-2026-swirled-showcase-irish-milk-shake",
+          "name": "Irish Milk Shake",
+          "itemKind": "alcoholicBeverage",
+          "price": {
+            "display": "$13.00",
+            "amountUSD": 13.0
+          }
+        }
+      ]
     },
     {
       "id": "ep-fw-2026-tangierine-cafe",
@@ -1737,8 +2341,8 @@
       "sourceUrl": "https://disneyworld.disney.go.com/dining/epcot/tangierine-cafe/menus/all-day/",
       "menu": [
         {
-          "id": "ep-fw-2026-tangierine-cafe-falafel-wrap",
-          "name": "Plant-based Falafel Wrap with Tomato-Cucumber Relish and Garlic Sauce served on Warm Moroccan Flatbread",
+          "id": "ep-fw-2026-tangierine-cafe-plant-based-falafel-wrap",
+          "name": "Plant-based Falafel Wrap",
           "itemKind": "food",
           "price": {
             "display": "$6.29",
@@ -1747,8 +2351,8 @@
           "plantBased": true
         },
         {
-          "id": "ep-fw-2026-tangierine-cafe-chermoula-chicken-bowl",
-          "name": "Chermoula Chicken Hummus Bowl with Apricot Chutney and Grilled Shishito Peppers served with Pita",
+          "id": "ep-fw-2026-tangierine-cafe-chermoula-chicken-hummus-bowl",
+          "name": "Chermoula Chicken Hummus Bowl",
           "itemKind": "food",
           "price": {
             "display": "$6.79",
@@ -1756,8 +2360,8 @@
           }
         },
         {
-          "id": "ep-fw-2026-tangierine-cafe-flank-steak-bowl",
-          "name": "Spiced Flank Steak Hummus Bowl with Harissa Yogurt and Roasted Peppers served with Pita",
+          "id": "ep-fw-2026-tangierine-cafe-spiced-flank-steak-hummus-bowl",
+          "name": "Spiced Flank Steak Hummus Bowl*",
           "itemKind": "food",
           "price": {
             "display": "$7.29",
@@ -1765,8 +2369,8 @@
           }
         },
         {
-          "id": "ep-fw-2026-tangierine-cafe-cauliflower-bowl",
-          "name": "Ras el Hanout Cauliflower Bowl with Chickpea Salad, Golden Raisin Relish, and Parsley served with Pita",
+          "id": "ep-fw-2026-tangierine-cafe-ras-el-hanout-cauliflower-bowl",
+          "name": "Ras el Hanout Cauliflower Bowl",
           "itemKind": "food",
           "price": {
             "display": "$6.49",
@@ -1775,7 +2379,7 @@
           "plantBased": true
         },
         {
-          "id": "ep-fw-2026-tangierine-cafe-pistachio-cookie",
+          "id": "ep-fw-2026-tangierine-cafe-chocolate-pistachio-cookie",
           "name": "Chocolate-Pistachio Cookie",
           "itemKind": "food",
           "price": {
@@ -1784,7 +2388,7 @@
           }
         },
         {
-          "id": "ep-fw-2026-tangierine-cafe-carib-honey-fig",
+          "id": "ep-fw-2026-tangierine-cafe-carib-brewery-honey-fig-dream-hard-cider-cape-canaveral-fl",
           "name": "Carib Brewery Honey & Fig Dream Hard Cider, Cape Canaveral, FL",
           "itemKind": "alcoholicBeverage",
           "price": {
@@ -1792,7 +2396,7 @@
           }
         },
         {
-          "id": "ep-fw-2026-tangierine-cafe-keel-golden-apple",
+          "id": "ep-fw-2026-tangierine-cafe-keel-farms-golden-apple-chai-hard-cider-plant-city-fl",
           "name": "Keel Farms Golden Apple Chai Hard Cider, Plant City, FL",
           "itemKind": "alcoholicBeverage",
           "price": {
@@ -1800,7 +2404,7 @@
           }
         },
         {
-          "id": "ep-fw-2026-tangierine-cafe-keel-goji-berry",
+          "id": "ep-fw-2026-tangierine-cafe-keel-farms-goji-berry-citrus-hard-cider-plant-city-fl",
           "name": "Keel Farms Goji Berry Citrus Hard Cider, Plant City, FL",
           "itemKind": "alcoholicBeverage",
           "price": {
@@ -1808,7 +2412,7 @@
           }
         },
         {
-          "id": "ep-fw-2026-tangierine-cafe-cider-flight",
+          "id": "ep-fw-2026-tangierine-cafe-hard-cider-flight",
           "name": "Hard Cider Flight",
           "itemKind": "alcoholicBeverage",
           "price": {
@@ -1833,11 +2437,12 @@
       "name": "The Alps",
       "kind": "festivalBooth",
       "locationText": "EPCOT, World Showcase",
+      "startsOn": "2026-10-02",
       "sourceUrl": "https://disneyworld.disney.go.com/dining/epcot/marketplace-the-alps/menus/all-day/",
       "menu": [
         {
-          "id": "ep-fw-2026-the-alps-raclette",
-          "name": "Warm Raclette Swiss Cheese on a Baguette with Jambon and Apple-Mustard Relish (Emile's Fromage Montage Offering) (30th Anniversary Legacy Item)",
+          "id": "ep-fw-2026-the-alps-warm-raclette-swiss-cheese",
+          "name": "Warm Raclette Swiss Cheese",
           "itemKind": "food",
           "price": {
             "display": "$6.79",
@@ -1846,7 +2451,7 @@
         },
         {
           "id": "ep-fw-2026-the-alps-tartiflette",
-          "name": "Tartiflette: Potatoes Gratin, Caramelized Onions, Bacon, Thyme, Crème Fraîche, and Brie (Emile's Fromage Montage Offering)",
+          "name": "Tartiflette",
           "itemKind": "food",
           "price": {
             "display": "$5.49",
@@ -1855,7 +2460,7 @@
         },
         {
           "id": "ep-fw-2026-the-alps-kirschwasser-torte",
-          "name": "Kirschwasser Torte with Cherry-Brandy Buttercream, Fondant, Sugared Almonds, and Cherry Compote",
+          "name": "Kirschwasser Torte",
           "itemKind": "food",
           "price": {
             "display": "$5.49",
@@ -1863,7 +2468,7 @@
           }
         },
         {
-          "id": "ep-fw-2026-the-alps-salomon-riesling",
+          "id": "ep-fw-2026-the-alps-salomon-undhof-stein-kremstal-dac-riesling-stein-a-d-donau-a",
           "name": "Salomon Undhof Stein Kremstal DAC Riesling, Stein a.d. Donau, Austria",
           "itemKind": "alcoholicBeverage",
           "price": {
@@ -1872,7 +2477,7 @@
           }
         },
         {
-          "id": "ep-fw-2026-the-alps-loimer-gruner",
+          "id": "ep-fw-2026-the-alps-loimer-lois-gruner-veltliner-niederosterreich-austria",
           "name": "Loimer Lois Grüner Veltliner, Niederösterreich, Austria",
           "itemKind": "alcoholicBeverage",
           "price": {
@@ -1881,7 +2486,7 @@
           }
         },
         {
-          "id": "ep-fw-2026-the-alps-schlumberger-brut",
+          "id": "ep-fw-2026-the-alps-schlumberger-klassik-brut-weinviertel-austria",
           "name": "Schlumberger Klassik Brut, Weinviertel, Austria",
           "itemKind": "alcoholicBeverage",
           "price": {
@@ -1890,8 +2495,8 @@
           }
         },
         {
-          "id": "ep-fw-2026-the-alps-wine-flight",
-          "name": "Wine Flight",
+          "id": "ep-fw-2026-the-alps-wine-flight-also-available",
+          "name": "Wine Flight also available",
           "itemKind": "alcoholicBeverage",
           "price": {
             "display": "$8.50",
@@ -1909,8 +2514,8 @@
       "sourceUrl": "https://disneyworld.disney.go.com/dining/epcot/marketplace-the-fry-basket/menus/all-day/",
       "menu": [
         {
-          "id": "ep-fw-2026-the-fry-basket-yuca-fries",
-          "name": "Adobo Yuca Fries with Plant-based Garlic-Cilantro Aïoli (plant-based)",
+          "id": "ep-fw-2026-the-fry-basket-adobo-yuca-fries",
+          "name": "Adobo Yuca Fries",
           "itemKind": "food",
           "price": {
             "display": "$5.79",
@@ -1920,7 +2525,7 @@
         },
         {
           "id": "ep-fw-2026-the-fry-basket-fry-flight",
-          "name": "Fry Flight: Sea Salt-Malt Vinegar Fries / Truffle-Parmesan Fries with Black Garlic-Truffle Aïoli / Sweet Potato Casserole Fries with Cinnamon Sugar, Candied Pecans, and Marshmallow Cream",
+          "name": "Fry Flight",
           "itemKind": "food",
           "price": {
             "display": "$7.99",
@@ -1928,7 +2533,7 @@
           }
         },
         {
-          "id": "ep-fw-2026-the-fry-basket-barrel-of-monks",
+          "id": "ep-fw-2026-the-fry-basket-barrel-of-monks-blood-orange-bliss-sour-ale-boca-raton-fl",
           "name": "Barrel of Monks Blood Orange Bliss Sour Ale, Boca Raton, FL",
           "itemKind": "alcoholicBeverage",
           "price": {
@@ -1936,7 +2541,7 @@
           }
         },
         {
-          "id": "ep-fw-2026-the-fry-basket-grapefruit-mule",
+          "id": "ep-fw-2026-the-fry-basket-boyd-blair-grapefruit-mule-glenshaw-pa",
           "name": "Boyd & Blair Grapefruit Mule, Glenshaw, PA",
           "itemKind": "alcoholicBeverage",
           "price": {
@@ -1949,13 +2554,122 @@
     {
       "id": "ep-fw-2026-the-wedge",
       "festivalId": "ep-fw-2026",
-      "name": "The Wedge Hosted by Dairy Does More",
+      "name": "The Wedge Hosted by Dairy Does More™",
       "kind": "festivalBooth",
-      "locationText": "EPCOT, CommuniCore Hall",
+      "locationText": "EPCOT, World Celebration",
       "startsOn": "2026-09-18",
-      "endsOn": "2026-11-08",
-      "sourceNote": "Disney Parks Blog Foodie Guide (name, location, run dates); Disney allergy-friendly marketplace listing (existence). No per-booth all-day menu page resolved.",
-      "menu": []
+      "sourceUrl": "https://disneyworld.disney.go.com/dining/epcot/communicore-hall-show-kitchen/menus/all-day/",
+      "menu": [
+        {
+          "id": "ep-fw-2026-the-wedge-crab-and-corn-macaroni-and-cheese",
+          "name": "Crab and Corn Macaroni and Cheese",
+          "itemKind": "food",
+          "price": {
+            "display": "$7.19",
+            "amountUSD": 7.19
+          }
+        },
+        {
+          "id": "ep-fw-2026-the-wedge-three-cheese-macaroni-and-cheese",
+          "name": "Three-Cheese Macaroni and Cheese",
+          "itemKind": "food",
+          "price": {
+            "display": "$5.49",
+            "amountUSD": 5.49
+          }
+        },
+        {
+          "id": "ep-fw-2026-the-wedge-cheesesteak-macaroni-and-cheese",
+          "name": "Cheesesteak Macaroni and Cheese",
+          "itemKind": "food",
+          "price": {
+            "display": "$6.49",
+            "amountUSD": 6.49
+          }
+        },
+        {
+          "id": "ep-fw-2026-the-wedge-selection-of-cheeses",
+          "name": "Selection of Cheeses",
+          "itemKind": "food",
+          "price": {
+            "display": "$7.29",
+            "amountUSD": 7.29
+          }
+        },
+        {
+          "id": "ep-fw-2026-the-wedge-cannoli-milk-shake",
+          "name": "Cannoli Milk Shake",
+          "itemKind": "nonAlcoholicBeverage",
+          "price": {
+            "display": "$5.49",
+            "amountUSD": 5.49
+          }
+        },
+        {
+          "id": "ep-fw-2026-the-wedge-bodegas-avancia-old-vines-godello-valdeorras-spain",
+          "name": "Bodegas Avancia Old Vines Godello, Valdeorras, Spain",
+          "itemKind": "alcoholicBeverage",
+          "price": {
+            "display": "$8.50",
+            "amountUSD": 8.5
+          }
+        },
+        {
+          "id": "ep-fw-2026-the-wedge-las-jaras-superbloom-rose-sebastopol-ca",
+          "name": "Las Jaras Superbloom Rosé, Sebastopol, CA",
+          "itemKind": "alcoholicBeverage",
+          "price": {
+            "display": "$8.50",
+            "amountUSD": 8.5
+          }
+        },
+        {
+          "id": "ep-fw-2026-the-wedge-caymus-vineyards-cabernet-sauvignon-napa-valley-ca",
+          "name": "Caymus Vineyards Cabernet Sauvignon, Napa Valley, CA",
+          "itemKind": "alcoholicBeverage",
+          "price": {
+            "display": "$13.00",
+            "amountUSD": 13.0
+          }
+        },
+        {
+          "id": "ep-fw-2026-the-wedge-wine-flight",
+          "name": "Wine Flight",
+          "itemKind": "alcoholicBeverage",
+          "price": {
+            "display": "$12.50",
+            "amountUSD": 12.5
+          }
+        },
+        {
+          "id": "ep-fw-2026-the-wedge-wine-and-cheese-pairing",
+          "name": "Wine and Cheese Pairing",
+          "price": {
+            "display": "$17.50",
+            "amountUSD": 17.5
+          }
+        }
+      ]
+    },
+    {
+      "id": "ep-fw-2026-uk-beer-cart",
+      "festivalId": "ep-fw-2026",
+      "name": "UK Beer Cart",
+      "kind": "festivalBooth",
+      "locationText": "EPCOT, World Showcase",
+      "venueCanonicalId": "EPCOT|World Showcase|UK Beer Cart",
+      "sourceUrl": "https://disneyworld.disney.go.com/dining/epcot/uk-beer-cart/menus/all-day/",
+      "menu": [
+        {
+          "id": "ep-fw-2026-uk-beer-cart-sparkling-cucumber-gin-cocktail",
+          "name": "Sparkling Cucumber-Gin Cocktail",
+          "itemKind": "alcoholicBeverage",
+          "price": {
+            "display": "$17.50",
+            "amountUSD": 17.5
+          }
+        }
+      ]
     }
   ]
 }

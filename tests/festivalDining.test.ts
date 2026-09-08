@@ -65,7 +65,7 @@ describe("permanent venue hosts", () => {
   const hosts = doc.booths.filter((b) => b.venueCanonicalId);
 
   it("links hosted offerings to real permanent venues", () => {
-    expect(hosts).toHaveLength(4);
+    expect(hosts).toHaveLength(9);
     for (const host of hosts) expect(permanentIds.has(host.venueCanonicalId!)).toBe(true);
   });
 
@@ -87,11 +87,20 @@ describe("lifecycle", () => {
     expect(boothWindow(doc, inherited)).toEqual(["2026-08-27", "2026-11-21"]);
   });
 
-  it("honours booth-level overrides", () => {
-    const earthEats = doc.booths.find((b) => b.name === "Earth Eats")!;
-    expect(boothWindow(doc, earthEats)).toEqual(["2026-10-02", "2026-11-21"]);
+  it("honours booth-level overrides verified from Disney page titles", () => {
+    const expected: Record<string, string> = {
+      "Earth Eats": "2026-10-02",
+      India: "2026-10-02",
+      "The Alps": "2026-10-02",
+      "Festival Favorites": "2026-09-09",
+    };
+    for (const [name, startsOn] of Object.entries(expected)) {
+      const booth = doc.booths.find((b) => b.name === name)!;
+      expect(boothWindow(doc, booth), name).toEqual([startsOn, "2026-11-21"]);
+    }
     const wedge = doc.booths.find((b) => b.name.startsWith("The Wedge"))!;
-    expect(boothWindow(doc, wedge)).toEqual(["2026-09-18", "2026-11-08"]);
+    expect(boothWindow(doc, wedge)).toEqual(["2026-09-18", "2026-11-21"]);
+    expect(doc.booths.filter((b) => b.startsOn || b.endsOn)).toHaveLength(5);
   });
 
   it("classifies upcoming, active and expired from dates alone", () => {
@@ -120,9 +129,9 @@ describe("lifecycle", () => {
 describe("menu", () => {
   const items = doc.booths.flatMap((b) => b.menu);
 
-  it("captures 176 items across the booths with published menus", () => {
-    expect(items).toHaveLength(176);
-    expect(doc.booths.filter((b) => b.menu.length === 0)).toHaveLength(5);
+  it("captures 241 items and leaves no booth without a menu", () => {
+    expect(items).toHaveLength(241);
+    expect(doc.booths.filter((b) => b.menu.length === 0)).toHaveLength(0);
   });
 
   it("always keeps the exact printed price and only parses clean single amounts", () => {
@@ -191,11 +200,22 @@ describe("menu", () => {
     expect(validateFestival(bad, permanentIds).some((e) => e.includes("menuItemCount"))).toBe(true);
   });
 
-  it("requires a sourceNote when a verified booth has no published menu", () => {
-    const bad = clone();
-    const empty = bad.booths.find((b) => b.menu.length === 0)!;
-    delete (empty as { sourceNote?: string }).sourceNote;
-    expect(validateFestival(bad, permanentIds).some((e) => e.includes("sourceNote"))).toBe(true);
+  it("rejects amountUSD on a price range, and requires it on a single amount", () => {
+    const ranged = clone();
+    const target = ranged.booths.flatMap((b) => b.menu).find((i) => i.price?.display.includes(" to "))!;
+    target.price!.amountUSD = 6;
+    expect(validateFestival(ranged, permanentIds).some((e) => e.includes("non-single price display"))).toBe(true);
+
+    const stripped = clone();
+    const single = stripped.booths.flatMap((b) => b.menu).find((i) => i.price?.amountUSD !== undefined)!;
+    delete single.price!.amountUSD;
+    expect(validateFestival(stripped, permanentIds).some((e) => e.includes("should carry amountUSD"))).toBe(true);
+  });
+
+  it("records every booth with a resolvable official source URL", () => {
+    for (const booth of doc.booths) {
+      expect(booth.sourceUrl, booth.id).toMatch(/^https:\/\/disneyworld\.disney\.go\.com\/dining\/epcot\//);
+    }
   });
 });
 

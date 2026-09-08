@@ -33,6 +33,24 @@ npm run dining:festival:status     # upcoming / active / expired + staleness
 Validation is **deterministic and clock-free** so a passing build stays passing
 as time advances; anything time-dependent lives in `status`.
 
+## Verification method
+
+Disney's menu pages are client-rendered: the raw HTML contains **no menu text**,
+and the marketplace index truncates under plain retrieval. Menus must therefore
+be read from the **rendered DOM** (`.menu-group` → `.menu-item` → name /
+description / price), never from an AI summary of the page — a summary
+concatenates the description into the item name and silently truncates.
+
+The authoritative inventory comes from the **rendered** marketplace index at
+`/dining/epcot/food-wine-marketplaces/`, which links every participating
+location. Endpoint-name probing may suggest candidates, but a candidate counts
+only when a Disney-owned page confirms it.
+
+Disney encodes lifecycle in the page **title**, e.g.
+`Marketplace - India - Opening October 2`. Check titles when verifying dates.
+
+`provenance.verificationMethod` records how the current data was captured.
+
 ## Sourcing rules
 
 - Disney-owned sources only. The per-booth `…/marketplace-{booth}/menus/all-day/`

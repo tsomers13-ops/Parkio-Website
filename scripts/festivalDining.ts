@@ -163,10 +163,21 @@ export function validateFestival(doc: FestivalDocument, permanentIds: Set<string
         errors.push(`${iw}: unsupported itemKind '${item.itemKind}'`);
       }
       if (item.price !== undefined) {
-        if (!item.price.display?.trim()) errors.push(`${iw}: price present but display empty`);
+        const display = item.price.display;
+        if (!display?.trim()) errors.push(`${iw}: price present but display empty`);
         if (item.price.amountUSD !== undefined &&
             (!Number.isFinite(item.price.amountUSD) || item.price.amountUSD < 0)) {
           errors.push(`${iw}: amountUSD must be finite and >= 0`);
+        }
+        // Gate 2E: Disney publishes ranges such as "$6.00 to $9.75". Collapsing
+        // one into a single number would invent a price, so amountUSD is only
+        // legal when the display is exactly one clean amount.
+        const single = /^\$\d+(?:\.\d{2})?$/.test(display ?? "");
+        if (!single && item.price.amountUSD !== undefined) {
+          errors.push(`${iw}: amountUSD set for non-single price display '${display}'`);
+        }
+        if (single && item.price.amountUSD === undefined) {
+          errors.push(`${iw}: single price display '${display}' should carry amountUSD`);
         }
       }
       if (item.plantBased !== undefined && typeof item.plantBased !== "boolean") {
