@@ -1,0 +1,885 @@
+{
+  "schemaVersion": 1,
+  "sourceRepository": "tsomers13-ops/parkio",
+  "sourceCommit": "116ae4acca0a14ca2df3f2a73594a3333b7e5be4",
+  "sourceDirty": false,
+  "entityCount": 62,
+  "venues": [
+    {
+      "canonicalId": "EPCOT|World Showcase|Akershus Royal Banquet Hall",
+      "slug": "ep-akershus",
+      "parkId": "epcot",
+      "name": "Akershus Royal Banquet Hall",
+      "land": "World Showcase",
+      "type": "tableService",
+      "latitude": 28.370588,
+      "longitude": -81.546728,
+      "externalId": "eb6a60d7-b354-47a1-a091-0beb11b24188"
+    },
+    {
+      "canonicalId": "EPCOT|World Showcase|Biergarten Restaurant",
+      "slug": "ep-biergarten",
+      "parkId": "epcot",
+      "name": "Biergarten Restaurant",
+      "land": "World Showcase",
+      "type": "tableService",
+      "latitude": 28.368153,
+      "longitude": -81.546819,
+      "externalId": "c9e1d1f6-021f-43f2-a14b-3e67f65adbc4"
+    },
+    {
+      "canonicalId": "EPCOT|World Showcase|Block & Hans",
+      "slug": "ep-block-and-hans",
+      "parkId": "epcot",
+      "name": "Block & Hans",
+      "land": "World Showcase",
+      "type": "snackStand",
+      "latitude": 28.367977,
+      "longitude": -81.549929,
+      "externalId": "25ec84ef-112f-424d-9fe0-5fc1fa9620a9"
+    },
+    {
+      "canonicalId": "EPCOT|World Showcase|Chefs de France",
+      "slug": "ep-chefs-de-france",
+      "parkId": "epcot",
+      "name": "Chefs de France",
+      "land": "World Showcase",
+      "type": "tableService",
+      "latitude": 28.368954,
+      "longitude": -81.552639,
+      "externalId": "4807262a-ad16-4d43-a0d7-64b24603ef36"
+    },
+    {
+      "canonicalId": "EPCOT|World Showcase|Choza de Margarita",
+      "slug": "ep-choza-de-margarita",
+      "parkId": "epcot",
+      "name": "Choza de Margarita",
+      "land": "World Showcase",
+      "type": "snackStand",
+      "latitude": 28.371548,
+      "longitude": -81.547713,
+      "externalId": "419df435-6213-4d65-b0fc-8c0ad8379e11"
+    },
+    {
+      "canonicalId": "EPCOT|World Celebration|Connections Eatery",
+      "slug": "ep-connections-eatery",
+      "parkId": "epcot",
+      "name": "Connections Eatery",
+      "land": "World Celebration",
+      "type": "quickService",
+      "latitude": 28.3743400792775,
+      "longitude": -81.5484700507225,
+      "externalId": "c7444c22-4b35-4a9e-9cca-56ecc05376cc"
+    },
+    {
+      "canonicalId": "EPCOT|World Showcase|Fife & Drum Tavern",
+      "slug": "ep-fife-and-drum",
+      "parkId": "epcot",
+      "name": "Fife & Drum Tavern",
+      "land": "World Showcase",
+      "type": "snackStand",
+      "latitude": 28.367929,
+      "longitude": -81.549122,
+      "externalId": "0e673d4b-eee4-4735-ab65-be39bcd28d11"
+    },
+    {
+      "canonicalId": "EPCOT|World Nature|Garden Grill Restaurant",
+      "slug": "ep-garden-grill",
+      "parkId": "epcot",
+      "name": "Garden Grill Restaurant",
+      "land": "World Nature",
+      "type": "tableService",
+      "latitude": 28.374039,
+      "longitude": -81.552324,
+      "externalId": "d4179c4c-eb08-4559-aa7c-f9802fda641b"
+    },
+    {
+      "canonicalId": "EPCOT|World Celebration|GEO-82",
+      "slug": "ep-geo-82",
+      "parkId": "epcot",
+      "name": "GEO-82",
+      "land": "World Celebration",
+      "type": "lounge",
+      "latitude": 28.37466514737089,
+      "longitude": -81.5496073600167,
+      "externalId": "95ab66f4-4e47-4f76-875f-45ae70831e2f"
+    },
+    {
+      "canonicalId": "EPCOT|World Celebration|GRAB-N-GOOF",
+      "slug": "ep-grab-n-goof",
+      "parkId": "epcot",
+      "name": "GRAB-N-GOOF",
+      "land": "World Celebration",
+      "type": "snackStand",
+      "latitude": 28.3736946934633,
+      "longitude": -81.54990394851295,
+      "externalId": "302d424d-3c56-40e7-9785-fba2f62e5854"
+    },
+    {
+      "canonicalId": "EPCOT|World Showcase|Karamell-Küche",
+      "slug": "ep-karamell-kuche",
+      "parkId": "epcot",
+      "name": "Karamell-Küche",
+      "land": "World Showcase",
+      "type": "snackStand",
+      "latitude": 28.368364,
+      "longitude": -81.546953,
+      "externalId": "85352291-58dd-4dd9-86d3-cba21cebb684"
+    },
+    {
+      "canonicalId": "EPCOT|World Showcase|Katsura Grill",
+      "slug": "ep-katsura-grill",
+      "parkId": "epcot",
+      "name": "Katsura Grill",
+      "land": "World Showcase",
+      "type": "quickService",
+      "editorial": {
+        "dietaryFlags": [
+          "Kids Menu",
+          "Vegetarian"
+        ],
+        "indoorSeating": false,
+        "kidFriendly": true,
+        "mobileOrderAvailable": false,
+        "parkioScore": 8,
+        "priceTier": 2,
+        "shortVerdict": "Best QS in World Showcase. Peaceful garden seating; don't skip the udon.",
+        "signatureItems": [
+          "Udon Noodle Bowl",
+          "Gyoza",
+          "Green Tea Soft Serve"
+        ]
+      }
+    },
+    {
+      "canonicalId": "EPCOT|World Showcase|La Cantina de San Angel",
+      "slug": "ep-la-cantina",
+      "parkId": "epcot",
+      "name": "La Cantina de San Angel",
+      "land": "World Showcase",
+      "type": "quickService",
+      "editorial": {
+        "dietaryFlags": [
+          "Kids Menu",
+          "Vegetarian"
+        ],
+        "indoorSeating": false,
+        "kidFriendly": true,
+        "mobileOrderAvailable": false,
+        "parkioScore": 7,
+        "priceTier": 2,
+        "shortVerdict": "Lagoon-side QS. The tacos are decent; the view of IllumiNations is the real menu item.",
+        "signatureItems": [
+          "Tacos",
+          "Empanadas",
+          "Nachos"
+        ]
+      }
+    },
+    {
+      "canonicalId": "EPCOT|World Showcase|La Cava del Tequila",
+      "slug": "ep-la-cava",
+      "parkId": "epcot",
+      "name": "La Cava del Tequila",
+      "land": "World Showcase",
+      "type": "lounge",
+      "latitude": 28.37158,
+      "longitude": -81.547299,
+      "externalId": "736b2e6c-daaf-45c4-ba9e-fb60d7cf92d6"
+    },
+    {
+      "canonicalId": "EPCOT|World Showcase|La Crêperie de Paris",
+      "slug": "ep-la-creperie",
+      "parkId": "epcot",
+      "name": "La Crêperie de Paris",
+      "land": "World Showcase",
+      "type": "tableService",
+      "latitude": 28.368536,
+      "longitude": -81.553597,
+      "externalId": "fc64aa10-290f-472e-9fab-4d649f53ab2d"
+    },
+    {
+      "canonicalId": "EPCOT|World Showcase|La Hacienda de San Angel",
+      "slug": "ep-la-hacienda",
+      "parkId": "epcot",
+      "name": "La Hacienda de San Angel",
+      "land": "World Showcase",
+      "type": "tableService",
+      "latitude": 28.371221,
+      "longitude": -81.547532,
+      "externalId": "5b7cf10a-763b-45ba-9049-87140270826f"
+    },
+    {
+      "canonicalId": "EPCOT|World Showcase|La Poutinerie",
+      "slug": "ep-la-poutinerie",
+      "parkId": "epcot",
+      "name": "La Poutinerie",
+      "land": "World Showcase",
+      "type": "snackStand",
+      "latitude": 28.371749,
+      "longitude": -81.550556,
+      "externalId": "195fac06-ab2f-4655-8af7-b27adcdad54e"
+    },
+    {
+      "canonicalId": "EPCOT|World Showcase|L'Artisan des Glaces",
+      "slug": "ep-lartisan-des-glaces",
+      "parkId": "epcot",
+      "name": "L'Artisan des Glaces",
+      "land": "World Showcase",
+      "type": "snackStand",
+      "editorial": {
+        "dietaryFlags": [
+          "Vegetarian"
+        ],
+        "indoorSeating": true,
+        "kidFriendly": true,
+        "mobileOrderAvailable": false,
+        "parkioScore": 9,
+        "priceTier": 2,
+        "shortVerdict": "Best dessert in EPCOT. The ice cream macaron sandwich is the park's top snack.",
+        "signatureItems": [
+          "Ice Cream Macaron Sandwich",
+          "Sorbet"
+        ]
+      }
+    },
+    {
+      "canonicalId": "EPCOT|World Showcase|Le Cellier Steakhouse",
+      "slug": "ep-le-cellier",
+      "parkId": "epcot",
+      "name": "Le Cellier Steakhouse",
+      "land": "World Showcase",
+      "type": "tableService",
+      "latitude": 28.371657,
+      "longitude": -81.551512,
+      "externalId": "3206e3a6-cbc3-4960-9700-163764bc47d6"
+    },
+    {
+      "canonicalId": "EPCOT|World Showcase|Les Halles Boulangerie-Patisserie",
+      "slug": "ep-les-halles",
+      "parkId": "epcot",
+      "name": "Les Halles Boulangerie-Patisserie",
+      "land": "World Showcase",
+      "type": "snackStand",
+      "editorial": {
+        "dietaryFlags": [
+          "Vegetarian"
+        ],
+        "indoorSeating": true,
+        "kidFriendly": true,
+        "mobileOrderAvailable": false,
+        "parkioScore": 9,
+        "priceTier": 2,
+        "shortVerdict": "Best bakery in any Disney park. The croissants are legitimately excellent.",
+        "signatureItems": [
+          "Butter Croissant",
+          "Napoleon Pastry",
+          "Quiche Lorraine"
+        ]
+      }
+    },
+    {
+      "canonicalId": "EPCOT|World Showcase|Les Vins des Chefs de France",
+      "slug": "ep-les-vins-de-france",
+      "parkId": "epcot",
+      "name": "Les Vins des Chefs de France",
+      "land": "World Showcase",
+      "type": "lounge",
+      "latitude": 28.369018,
+      "longitude": -81.552363,
+      "externalId": "1cf38b60-d075-495b-a92f-5a6a59d9e3db"
+    },
+    {
+      "canonicalId": "EPCOT|World Showcase|Monsieur Paul",
+      "slug": "ep-monsieur-paul",
+      "parkId": "epcot",
+      "name": "Monsieur Paul",
+      "land": "World Showcase",
+      "type": "tableService",
+      "latitude": 28.368868,
+      "longitude": -81.55273,
+      "externalId": "93843fb0-ee5a-49c6-91a8-40a042e93865"
+    },
+    {
+      "canonicalId": "EPCOT|World Showcase|Nine Dragons Restaurant",
+      "slug": "ep-nine-dragons",
+      "parkId": "epcot",
+      "name": "Nine Dragons Restaurant",
+      "land": "World Showcase",
+      "type": "tableService",
+      "latitude": 28.370056,
+      "longitude": -81.546688,
+      "externalId": "e8dccc86-cfb4-44c3-9a90-e95b88edbd21"
+    },
+    {
+      "canonicalId": "EPCOT|World Showcase|Refreshment Outpost",
+      "slug": "ep-refreshment-outpost",
+      "parkId": "epcot",
+      "name": "Refreshment Outpost",
+      "land": "World Showcase",
+      "type": "snackStand",
+      "latitude": 28.369237,
+      "longitude": -81.546334,
+      "externalId": "58404f45-7e74-4c0c-b037-b903fa1066d2"
+    },
+    {
+      "canonicalId": "EPCOT|World Showcase|Regal Eagle Smokehouse",
+      "slug": "ep-regal-eagle",
+      "parkId": "epcot",
+      "name": "Regal Eagle Smokehouse",
+      "land": "World Showcase",
+      "type": "quickService",
+      "latitude": 28.367579,
+      "longitude": -81.549003,
+      "externalId": "ce284609-9d86-444e-af5a-6c0adb68b0aa",
+      "editorial": {
+        "dietaryFlags": [
+          "Kids Menu"
+        ],
+        "indoorSeating": true,
+        "kidFriendly": true,
+        "mobileOrderAvailable": true,
+        "parkioScore": 7,
+        "priceTier": 2,
+        "shortVerdict": "Solid BBQ for a theme park. Large portions; kids love the mac & cheese.",
+        "signatureItems": [
+          "St. Louis Ribs",
+          "Pulled Pork Sandwich",
+          "Mac & Cheese"
+        ]
+      }
+    },
+    {
+      "canonicalId": "EPCOT|World Showcase|Rose & Crown Dining Room",
+      "slug": "ep-rose-and-crown",
+      "parkId": "epcot",
+      "name": "Rose & Crown Dining Room",
+      "land": "World Showcase",
+      "type": "tableService",
+      "latitude": 28.370508,
+      "longitude": -81.551684,
+      "externalId": "6ecdbfc8-85c2-436d-893b-6db0f437b74a"
+    },
+    {
+      "canonicalId": "EPCOT|World Showcase|Rose & Crown Pub",
+      "slug": "ep-rose-and-crown-pub",
+      "parkId": "epcot",
+      "name": "Rose & Crown Pub",
+      "land": "World Showcase",
+      "type": "lounge",
+      "latitude": 28.370508,
+      "longitude": -81.551742,
+      "externalId": "91e9cda9-b39f-4a24-b63e-57bc1ba612f5"
+    },
+    {
+      "canonicalId": "EPCOT|World Showcase|San Angel Inn Restaurante",
+      "slug": "ep-san-angel-inn",
+      "parkId": "epcot",
+      "name": "San Angel Inn Restaurante",
+      "land": "World Showcase",
+      "type": "tableService",
+      "latitude": 28.371612,
+      "longitude": -81.547258,
+      "externalId": "07263f57-0431-4da2-a8b6-77d2965a6f83"
+    },
+    {
+      "canonicalId": "EPCOT|World Showcase|Shiki-Sai: Sushi Izakaya",
+      "slug": "ep-shiki-sai",
+      "parkId": "epcot",
+      "name": "Shiki-Sai: Sushi Izakaya",
+      "land": "World Showcase",
+      "type": "tableService",
+      "latitude": 28.367709,
+      "longitude": -81.550701,
+      "externalId": "48e7f9f2-ddc3-4ced-8d11-a5cd968085c2"
+    },
+    {
+      "canonicalId": "EPCOT|World Showcase|Sommerfest",
+      "slug": "ep-sommerfest",
+      "parkId": "epcot",
+      "name": "Sommerfest",
+      "land": "World Showcase",
+      "type": "quickService",
+      "latitude": 28.368123,
+      "longitude": -81.546902,
+      "externalId": "3f3ef6db-69de-418a-8861-f541309cdb01"
+    },
+    {
+      "canonicalId": "EPCOT|World Discovery|Space 220 Restaurant",
+      "slug": "ep-space-220",
+      "parkId": "epcot",
+      "name": "Space 220 Restaurant",
+      "land": "World Discovery",
+      "type": "tableService",
+      "latitude": 28.373777,
+      "longitude": -81.547056,
+      "externalId": "b772df79-1fca-4c0a-a2f3-88b22e63e7c3"
+    },
+    {
+      "canonicalId": "EPCOT|World Discovery|Space 220 Lounge",
+      "slug": "ep-space-220-lounge",
+      "parkId": "epcot",
+      "name": "Space 220 Lounge",
+      "land": "World Discovery",
+      "type": "lounge",
+      "externalId": "15107c34-65a3-473c-aaeb-655b508f529d"
+    },
+    {
+      "canonicalId": "EPCOT|World Showcase|Spice Road Table",
+      "slug": "ep-spice-road-table",
+      "parkId": "epcot",
+      "name": "Spice Road Table",
+      "land": "World Showcase",
+      "type": "tableService",
+      "latitude": 28.368468,
+      "longitude": -81.551645,
+      "externalId": "dbf4a977-a7b5-41db-a9b7-ecad65f9aa0f"
+    },
+    {
+      "canonicalId": "EPCOT|World Nature|Sunshine Seasons",
+      "slug": "ep-sunshine-seasons",
+      "parkId": "epcot",
+      "name": "Sunshine Seasons",
+      "land": "World Nature",
+      "type": "quickService",
+      "editorial": {
+        "dietaryFlags": [
+          "Gluten-Friendly",
+          "Kids Menu",
+          "Vegetarian"
+        ],
+        "indoorSeating": true,
+        "kidFriendly": true,
+        "mobileOrderAvailable": true,
+        "parkioScore": 8,
+        "priceTier": 2,
+        "shortVerdict": "Best quick service in EPCOT. Massive variety; the salmon is legitimately good.",
+        "signatureItems": [
+          "Oak-Grilled Salmon",
+          "Rotisserie Chicken",
+          "Sushi Rolls"
+        ]
+      }
+    },
+    {
+      "canonicalId": "EPCOT|World Showcase|Takumi-Tei",
+      "slug": "ep-takumi-tei",
+      "parkId": "epcot",
+      "name": "Takumi-Tei",
+      "land": "World Showcase",
+      "type": "tableService",
+      "latitude": 28.367848,
+      "longitude": -81.550833,
+      "externalId": "8410885a-115d-4a5f-9cd5-08d0e659a603"
+    },
+    {
+      "canonicalId": "EPCOT|World Showcase|Tangierine Café",
+      "slug": "ep-tangierine-cafe",
+      "parkId": "epcot",
+      "name": "Tangierine Café",
+      "land": "World Showcase",
+      "type": "quickService",
+      "latitude": 28.368301,
+      "longitude": -81.551841,
+      "externalId": "74f13ee5-8e10-41a7-a19d-38e9c9582652",
+      "editorial": {
+        "dietaryFlags": [
+          "Gluten-Friendly",
+          "Vegetarian"
+        ],
+        "indoorSeating": true,
+        "kidFriendly": true,
+        "mobileOrderAvailable": false,
+        "parkioScore": 8,
+        "priceTier": 2,
+        "shortVerdict": "Underrated gem. Generous portions and the best hummus in any park.",
+        "signatureItems": [
+          "Chicken Shawarma Platter",
+          "Hummus & Pita",
+          "Lamb Wrap"
+        ]
+      }
+    },
+    {
+      "canonicalId": "EPCOT|World Showcase|Teppan Edo",
+      "slug": "ep-teppan-edo",
+      "parkId": "epcot",
+      "name": "Teppan Edo",
+      "land": "World Showcase",
+      "type": "tableService",
+      "latitude": 28.367674,
+      "longitude": -81.550701,
+      "externalId": "17d51899-7d6d-4cd7-93bb-4064a47d501b"
+    },
+    {
+      "canonicalId": "EPCOT|World Showcase|Tutto Gusto Wine Cellar",
+      "slug": "ep-tutto-gusto",
+      "parkId": "epcot",
+      "name": "Tutto Gusto Wine Cellar",
+      "land": "World Showcase",
+      "type": "lounge",
+      "latitude": 28.367506,
+      "longitude": -81.548144,
+      "externalId": "802b79b0-6491-434d-b4b5-145387d62172"
+    },
+    {
+      "canonicalId": "EPCOT|World Showcase|Tutto Italia Ristorante",
+      "slug": "ep-tutto-italia",
+      "parkId": "epcot",
+      "name": "Tutto Italia Ristorante",
+      "land": "World Showcase",
+      "type": "tableService",
+      "latitude": 28.367627,
+      "longitude": -81.548052,
+      "externalId": "e14e439d-d1aa-4f3a-90e9-60c524bd0b5a"
+    },
+    {
+      "canonicalId": "EPCOT|World Showcase|UK Beer Cart",
+      "slug": "ep-uk-beer-cart",
+      "parkId": "epcot",
+      "name": "UK Beer Cart",
+      "land": "World Showcase",
+      "type": "snackStand",
+      "latitude": 28.370601,
+      "longitude": -81.551648,
+      "externalId": "c63e29ac-f57f-4cd0-b998-799a2849dfa1"
+    },
+    {
+      "canonicalId": "EPCOT|World Showcase|Via Napoli Ristorante e Pizzeria",
+      "slug": "ep-via-napoli",
+      "parkId": "epcot",
+      "name": "Via Napoli Ristorante e Pizzeria",
+      "land": "World Showcase",
+      "type": "tableService",
+      "latitude": 28.367354,
+      "longitude": -81.548192,
+      "externalId": "b83b6dc9-9573-4e15-ab00-9ed8a2334770"
+    },
+    {
+      "canonicalId": "EPCOT|World Showcase|Yorkshire County Fish Shop",
+      "slug": "ep-yorkshire-fish-shop",
+      "parkId": "epcot",
+      "name": "Yorkshire County Fish Shop",
+      "land": "World Showcase",
+      "type": "quickService",
+      "latitude": 28.370281,
+      "longitude": -81.551772,
+      "externalId": "67186665-6756-4c29-9010-6efc222b2d9b"
+    },
+    {
+      "canonicalId": "Hollywood Studios|Echo Lake|50's Prime Time Cafe",
+      "slug": "hs-50s-prime-time",
+      "parkId": "hollywood-studios",
+      "name": "50's Prime Time Cafe",
+      "land": "Echo Lake",
+      "type": "tableService",
+      "latitude": 28.357444,
+      "longitude": -81.558881,
+      "externalId": "c600282c-227b-4ffc-b1ee-b5987609ee4f"
+    },
+    {
+      "canonicalId": "Hollywood Studios|Commissary Lane|ABC Commissary",
+      "slug": "hs-abc-commissary",
+      "parkId": "hollywood-studios",
+      "name": "ABC Commissary",
+      "land": "Commissary Lane",
+      "type": "quickService",
+      "latitude": 28.356062,
+      "longitude": -81.559872,
+      "externalId": "1ae86482-6627-4229-814d-0f1ccebb20d4"
+    },
+    {
+      "canonicalId": "Hollywood Studios|Echo Lake|Backlot Express",
+      "slug": "hs-backlot-express",
+      "parkId": "hollywood-studios",
+      "name": "Backlot Express",
+      "land": "Echo Lake",
+      "type": "quickService",
+      "latitude": 28.35589,
+      "longitude": -81.558388,
+      "externalId": "83edcec8-7ff2-495e-9f61-fe596aa92447",
+      "editorial": {
+        "dietaryFlags": [
+          "Kids Menu"
+        ],
+        "indoorSeating": true,
+        "kidFriendly": true,
+        "mobileOrderAvailable": true,
+        "parkioScore": 6,
+        "priceTier": 1,
+        "shortVerdict": "Reliable and fast. Good backup when Woody's Lunch Box line is too long.",
+        "signatureItems": [
+          "Cheeseburger",
+          "Chicken Tenders"
+        ]
+      }
+    },
+    {
+      "canonicalId": "Hollywood Studios|Grand Avenue|BaseLine Tap House",
+      "slug": "hs-baseline-tap-house",
+      "parkId": "hollywood-studios",
+      "name": "BaseLine Tap House",
+      "land": "Grand Avenue",
+      "type": "lounge",
+      "latitude": 28.355696,
+      "longitude": -81.559565,
+      "externalId": "07fc0229-4e50-419a-ba10-0ce07cc54a53"
+    },
+    {
+      "canonicalId": "Hollywood Studios|Hollywood Boulevard|The Hollywood Brown Derby",
+      "slug": "hs-brown-derby",
+      "parkId": "hollywood-studios",
+      "name": "The Hollywood Brown Derby",
+      "land": "Hollywood Boulevard",
+      "type": "tableService",
+      "latitude": 28.357648,
+      "longitude": -81.560297,
+      "externalId": "917783a5-da9c-4c55-ac51-0ac1f8253131"
+    },
+    {
+      "canonicalId": "Hollywood Studios|Hollywood Boulevard|The Hollywood Brown Derby Lounge",
+      "slug": "hs-brown-derby-lounge",
+      "parkId": "hollywood-studios",
+      "name": "The Hollywood Brown Derby Lounge",
+      "land": "Hollywood Boulevard",
+      "type": "lounge",
+      "latitude": 28.3576436192,
+      "longitude": -81.5601785481,
+      "externalId": "d2af9650-9f91-45ef-98be-de44b4b44c32",
+      "editorial": {
+        "dietaryFlags": [
+          "Vegetarian"
+        ],
+        "indoorSeating": false,
+        "kidFriendly": false,
+        "mobileOrderAvailable": false,
+        "parkioScore": 8,
+        "priceTier": 3,
+        "shortVerdict": "Walk-up bar bites from a signature restaurant. Order the Cobb salad and grapefruit cake.",
+        "signatureItems": [
+          "Cobb Salad",
+          "Grapefruit Cake",
+          "Brown Derby Old Fashioned"
+        ]
+      }
+    },
+    {
+      "canonicalId": "Hollywood Studios|Sunset Boulevard|Catalina Eddie's",
+      "slug": "hs-catalina-eddies",
+      "parkId": "hollywood-studios",
+      "name": "Catalina Eddie's",
+      "land": "Sunset Boulevard",
+      "type": "quickService",
+      "latitude": 28.358915,
+      "longitude": -81.560278,
+      "externalId": "a595b641-4472-4d2b-92b5-5a0e31785193"
+    },
+    {
+      "canonicalId": "Hollywood Studios|Star Wars: Galaxy's Edge|Docking Bay 7 Food and Cargo",
+      "slug": "hs-docking-bay-7",
+      "parkId": "hollywood-studios",
+      "name": "Docking Bay 7 Food and Cargo",
+      "land": "Star Wars: Galaxy's Edge",
+      "type": "quickService",
+      "latitude": 28.354088,
+      "longitude": -81.561643,
+      "externalId": "451855cc-d19e-40c3-838a-33c8fefe4af8",
+      "editorial": {
+        "dietaryFlags": [
+          "Kids Menu"
+        ],
+        "indoorSeating": true,
+        "kidFriendly": true,
+        "mobileOrderAvailable": true,
+        "parkioScore": 8,
+        "priceTier": 2,
+        "shortVerdict": "Most immersive dining in Galaxy's Edge. Food quality punches above QS price.",
+        "signatureItems": [
+          "Fried Endorian Tip-Yip",
+          "Smoked Kaadu Ribs",
+          "Outpost Mix"
+        ]
+      }
+    },
+    {
+      "canonicalId": "Hollywood Studios|Echo Lake|Dockside Diner",
+      "slug": "hs-dockside-diner",
+      "parkId": "hollywood-studios",
+      "name": "Dockside Diner",
+      "land": "Echo Lake",
+      "type": "snackStand",
+      "latitude": 28.3570985,
+      "longitude": -81.559552,
+      "externalId": "e2e6cccf-acf4-48f4-bbfb-47b712714583"
+    },
+    {
+      "canonicalId": "Hollywood Studios|Sunset Boulevard|Fairfax Fare",
+      "slug": "hs-fairfax-fare",
+      "parkId": "hollywood-studios",
+      "name": "Fairfax Fare",
+      "land": "Sunset Boulevard",
+      "type": "quickService",
+      "latitude": 28.3590392579,
+      "longitude": -81.5600222899,
+      "externalId": "904887b2-82b5-426c-b2b0-0b5d6977ff94"
+    },
+    {
+      "canonicalId": "Hollywood Studios|Echo Lake|Hollywood & Vine",
+      "slug": "hs-hollywood-and-vine",
+      "parkId": "hollywood-studios",
+      "name": "Hollywood & Vine",
+      "land": "Echo Lake",
+      "type": "tableService",
+      "latitude": 28.357611,
+      "longitude": -81.558975,
+      "externalId": "7bf05bdc-8279-427b-8a6d-50fc62ef31cb"
+    },
+    {
+      "canonicalId": "Hollywood Studios|Star Wars: Galaxy's Edge|Kat Saka's Kettle",
+      "slug": "hs-kat-sakas-kettle",
+      "parkId": "hollywood-studios",
+      "name": "Kat Saka's Kettle",
+      "land": "Star Wars: Galaxy's Edge",
+      "type": "snackStand",
+      "latitude": 28.35432,
+      "longitude": -81.561467,
+      "externalId": "43891eb1-27bb-429e-b6b9-430b54f57858"
+    },
+    {
+      "canonicalId": "Hollywood Studios|Star Wars: Galaxy's Edge|Milk Stand",
+      "slug": "hs-milk-stand",
+      "parkId": "hollywood-studios",
+      "name": "Milk Stand",
+      "land": "Star Wars: Galaxy's Edge",
+      "type": "snackStand",
+      "latitude": 28.354311,
+      "longitude": -81.562296,
+      "externalId": "6a696644-26ba-496e-8e2b-efbaad615785"
+    },
+    {
+      "canonicalId": "Hollywood Studios|Star Wars: Galaxy's Edge|Oga's Cantina",
+      "slug": "hs-ogas-cantina",
+      "parkId": "hollywood-studios",
+      "name": "Oga's Cantina",
+      "land": "Star Wars: Galaxy's Edge",
+      "type": "lounge",
+      "latitude": 28.354095,
+      "longitude": -81.562075,
+      "externalId": "f020b5e3-d26d-4339-83f9-0f1f858a0e40",
+      "editorial": {
+        "dietaryFlags": [
+          "Vegetarian"
+        ],
+        "indoorSeating": true,
+        "kidFriendly": true,
+        "mobileOrderAvailable": false,
+        "parkioScore": 9,
+        "priceTier": 3,
+        "shortVerdict": "The most fun 45 minutes in WDW. Order the Fuzzy Tauntaun. Book in advance.",
+        "signatureItems": [
+          "Fuzzy Tauntaun",
+          "Bespin Fizz",
+          "Blue Milk"
+        ]
+      }
+    },
+    {
+      "canonicalId": "Hollywood Studios|Star Wars: Galaxy's Edge|Ronto Roasters",
+      "slug": "hs-ronto-roasters",
+      "parkId": "hollywood-studios",
+      "name": "Ronto Roasters",
+      "land": "Star Wars: Galaxy's Edge",
+      "type": "quickService",
+      "latitude": 28.354341,
+      "longitude": -81.561652,
+      "externalId": "4ea1129c-749c-4be8-a0f9-9700740213fc",
+      "editorial": {
+        "dietaryFlags": [
+          "Kids Menu"
+        ],
+        "indoorSeating": false,
+        "kidFriendly": true,
+        "mobileOrderAvailable": false,
+        "parkioScore": 9,
+        "priceTier": 2,
+        "shortVerdict": "The Ronto Wrap is the best handheld in any Disney park. Get here early.",
+        "signatureItems": [
+          "Ronto Wrap",
+          "Meiloorun Fruit Juice"
+        ]
+      }
+    },
+    {
+      "canonicalId": "Hollywood Studios|Sunset Boulevard|Rosie's All-American Cafe",
+      "slug": "hs-rosies",
+      "parkId": "hollywood-studios",
+      "name": "Rosie's All-American Cafe",
+      "land": "Sunset Boulevard",
+      "type": "quickService",
+      "latitude": 28.358821,
+      "longitude": -81.560268,
+      "externalId": "a8804f66-ed5c-4daa-99a1-bcddd2f1fca6"
+    },
+    {
+      "canonicalId": "Hollywood Studios|Toy Story Land|Roundup Rodeo BBQ",
+      "slug": "hs-roundup-rodeo",
+      "parkId": "hollywood-studios",
+      "name": "Roundup Rodeo BBQ",
+      "land": "Toy Story Land",
+      "type": "tableService",
+      "latitude": 28.356832,
+      "longitude": -81.56201,
+      "externalId": "7a73a6df-4d33-4648-b3e3-57985f84f0ae"
+    },
+    {
+      "canonicalId": "Hollywood Studios|Commissary Lane|Sci-Fi Dine-In Theater Restaurant",
+      "slug": "hs-sci-fi-dine-in",
+      "parkId": "hollywood-studios",
+      "name": "Sci-Fi Dine-In Theater Restaurant",
+      "land": "Commissary Lane",
+      "type": "tableService",
+      "latitude": 28.3559,
+      "longitude": -81.559495,
+      "externalId": "d9dbd260-9e34-406d-abb7-19f9d733e577"
+    },
+    {
+      "canonicalId": "Hollywood Studios|Echo Lake|Tune-In Lounge",
+      "slug": "hs-tune-in-lounge",
+      "parkId": "hollywood-studios",
+      "name": "Tune-In Lounge",
+      "land": "Echo Lake",
+      "type": "lounge",
+      "latitude": 28.357482,
+      "longitude": -81.558808,
+      "externalId": "0beccd84-7a6d-454a-94d3-c8a3265e7e8d"
+    },
+    {
+      "canonicalId": "Hollywood Studios|Toy Story Land|Woody's Lunch Box",
+      "slug": "hs-woodys-lunch-box",
+      "parkId": "hollywood-studios",
+      "name": "Woody's Lunch Box",
+      "land": "Toy Story Land",
+      "type": "quickService",
+      "latitude": 28.355747,
+      "longitude": -81.562185,
+      "externalId": "07b8c193-a185-4559-a403-4d950c3b386d",
+      "editorial": {
+        "dietaryFlags": [
+          "Kids Menu",
+          "Vegetarian"
+        ],
+        "indoorSeating": false,
+        "kidFriendly": true,
+        "mobileOrderAvailable": true,
+        "parkioScore": 9,
+        "priceTier": 1,
+        "shortVerdict": "Best quick service in DHS. The totchos are a must; lines move fast.",
+        "signatureItems": [
+          "Totchos (Loaded Tater Tots)",
+          "S'more French Toast Sandwich",
+          "Lunch Box Tart"
+        ]
+      }
+    }
+  ]
+}
