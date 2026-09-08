@@ -4,7 +4,7 @@ import { useMemo } from "react";
 import { RIDES } from "@/lib/data";
 import { useAllLive } from "@/lib/useAllLive";
 import type { ApiPark, ApiParkLive } from "@/lib/types";
-import { simulatedWait } from "@/lib/utils";
+import { typicalWait } from "@/lib/waitState";
 
 /**
  * /parks page "Today's overview" tiles.
@@ -93,7 +93,7 @@ function computeOverview(
     );
     if (parkRides.length === 0) continue;
 
-    const estWaits = parkRides.map((r) => simulatedWait(r));
+    const estWaits = parkRides.map((r) => typicalWait(r));
     const sum = estWaits.reduce((s, w) => s + w, 0);
     perParkAvg.push({
       slug: park.slug,

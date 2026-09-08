@@ -5,7 +5,7 @@ import { useMemo } from "react";
 import { RIDES } from "@/lib/data";
 import { isTopRide } from "@/lib/popularity";
 import type { ApiAttraction, Park } from "@/lib/types";
-import { simulatedWait } from "@/lib/utils";
+import { typicalWait } from "@/lib/waitState";
 import { useParkLive } from "./ParkLiveDataProvider";
 
 interface ParkInsightsProps {
@@ -67,7 +67,7 @@ export function ParkInsights({ park }: ParkInsightsProps) {
       parkSlug: park.id,
       name: r.name,
       status: "OPERATING",
-      waitMinutes: simulatedWait(r),
+      waitMinutes: typicalWait(r),
       coordinates: { lat: r.lat, lng: r.lng },
       lastUpdated: fallbackTimestamp,
     }));

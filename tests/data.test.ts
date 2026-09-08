@@ -79,3 +79,32 @@ describe("dataset integrity", () => {
     }
   });
 });
+
+describe("Rock 'n' Roller Coaster canonical record", () => {
+  const ride = RIDES.find((r) => r.id === "hs-rocknroller");
+
+  it("carries the current canonical attraction name", () => {
+    expect(ride?.name).toBe("Rock 'n' Roller Coaster Starring The Muppets");
+  });
+
+  it("no longer carries the stale Aerosmith description", () => {
+    expect(ride?.description).toBeTruthy();
+    expect(ride?.description).not.toMatch(/aerosmith/i);
+  });
+
+  it("preserves every stable identifier and factual field across the rename", () => {
+    // The slug is the public URL and the live-data join key — a rename
+    // must never move it.
+    expect(ride?.id).toBe("hs-rocknroller");
+    expect(ride?.externalId).toBe("e516f303-e82d-4fd3-8fbf-8e6ab624cf89");
+    expect(ride?.parkId).toBe("hollywood-studios");
+    expect(ride?.land).toBe("Sunset Boulevard");
+    expect(ride?.category).toBe("thrill");
+    expect(ride?.height).toBe('48" (122 cm) minimum');
+    expect(ride?.lightningLane).toBe(true);
+    expect(ride?.baseWait).toBe(65);
+    expect(ride?.trend).toBe("up");
+    expect(ride?.lat).toBeCloseTo(28.359712, 6);
+    expect(ride?.lng).toBeCloseTo(-81.56059, 5);
+  });
+});

@@ -8,7 +8,8 @@ import {
   partitionAttractions,
 } from "@/lib/popularity";
 import type { ApiAttraction, Park, Ride } from "@/lib/types";
-import { simulatedWait, waitColorClasses, waitTier } from "@/lib/utils";
+import { waitColorClasses, waitTier } from "@/lib/utils";
+import { typicalWait } from "@/lib/waitState";
 import { walkBucketBetween, type WalkBucket } from "@/lib/walk";
 import { useMapFocus } from "./MapFocusProvider";
 import { useParkLive } from "./ParkLiveDataProvider";
@@ -54,8 +55,8 @@ export function ParkRightNow({ park, rides }: ParkRightNowProps) {
     }
 
     // Estimated fallback — synthesize ApiAttraction-shaped rows from
-    // the static RIDES list using `simulatedWait` (same simulation
-    // ParkMap uses for UNKNOWN attractions). Blocks rides the partial
+    // the static RIDES list using deterministic typical waits (the same
+    // planning estimate ParkMap uses). Blocks rides the partial
     // payload has explicitly marked CLOSED/DOWN/REFURBISHMENT so we
     // never recommend a ride that's actually not running. Runs even
     // when `live === null` (e.g. provider's catch path on a failed
@@ -82,7 +83,7 @@ export function ParkRightNow({ park, rides }: ParkRightNowProps) {
       parkSlug: park.id,
       name: r.name,
       status: "OPERATING",
-      waitMinutes: simulatedWait(r),
+      waitMinutes: typicalWait(r),
       coordinates: { lat: r.lat, lng: r.lng },
       lastUpdated: fallbackTimestamp,
     }));
@@ -118,7 +119,7 @@ export function ParkRightNow({ park, rides }: ParkRightNowProps) {
   /* ─── Loading skeleton — only during the true initial fetch.
        After that, even if `live` is still null (failed fetch), the
        estimated-fallback path above produces a usable `top` from
-       static RIDES + simulatedWait. No more lock-in. ─── */
+       static RIDES + typical waits. No more lock-in. ─── */
   if (status === "loading") {
     return (
       <Shell>

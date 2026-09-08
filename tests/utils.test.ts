@@ -1,32 +1,13 @@
 import { describe, expect, it } from "vitest";
 
-import type { Ride } from "@/lib/types";
 import {
   crowdColor,
+  crowdLabel,
   formatTime,
-  simulatedWait,
   statusLabel,
   waitColorClasses,
   waitTier,
 } from "@/lib/utils";
-
-function ride(overrides: Partial<Ride> = {}): Ride {
-  return {
-    id: "mk-pirates",
-    parkId: "magic-kingdom",
-    name: "Pirates of the Caribbean",
-    land: "Adventureland",
-    category: "family",
-    description: "Yo ho.",
-    lat: 28.4183,
-    lng: -81.5849,
-    baseWait: 35,
-    trend: "flat",
-    lightningLane: true,
-    externalId: "ext-pirates",
-    ...overrides,
-  };
-}
 
 describe("waitTier", () => {
   it("buckets at the tier boundaries", () => {
@@ -61,49 +42,18 @@ describe("crowdColor", () => {
   });
 });
 
-describe("simulatedWait", () => {
-  it("is deterministic for the same ride and 30s time slice", () => {
-    const r = ride();
-    const sliceStart = 1_699_999_980_000; // exact multiple of 30_000
-    expect(simulatedWait(r, sliceStart)).toBe(
-      simulatedWait(r, sliceStart + 29_999),
-    );
-    expect(simulatedWait(r, sliceStart)).not.toBe(
-      simulatedWait(r, sliceStart + 30_000),
-    );
+describe("crowdLabel", () => {
+  it("frames static crowd data as typical, never as a live reading", () => {
+    expect(crowdLabel("Low")).toBe("Typically quiet");
+    expect(crowdLabel("Moderate")).toBe("Typically moderate");
+    expect(crowdLabel("High")).toBe("Typically busy");
   });
 
-  it("varies across rides", () => {
-    const now = 1_700_000_000_000;
-    const waits = new Set(
-      ["a", "b", "c", "d", "e", "f"].map((id) =>
-        simulatedWait(ride({ id }), now),
-      ),
-    );
-    expect(waits.size).toBeGreaterThan(1);
-  });
-
-  it("always returns a multiple of 5 that is at least 5", () => {
-    for (let i = 0; i < 200; i++) {
-      const value = simulatedWait(ride({ id: `ride-${i}` }), i * 30_000);
-      expect(value % 5).toBe(0);
-      expect(value).toBeGreaterThanOrEqual(5);
-    }
-  });
-
-  it("clamps a tiny base wait to the 5-minute floor", () => {
-    for (let i = 0; i < 50; i++) {
-      expect(
-        simulatedWait(ride({ id: `low-${i}`, baseWait: 0 }), i * 30_000),
-      ).toBeGreaterThanOrEqual(5);
-    }
-  });
-
-  it("stays within the swing window of the base wait", () => {
-    for (let i = 0; i < 100; i++) {
-      const value = simulatedWait(ride({ id: `swing-${i}` }), i * 30_000);
-      expect(value).toBeGreaterThanOrEqual(35 - 20);
-      expect(value).toBeLessThanOrEqual(35 + 20);
+  it("never implies a current measurement", () => {
+    for (const level of ["Low", "Moderate", "High"] as const) {
+      const label = crowdLabel(level);
+      expect(label.startsWith("Typically")).toBe(true);
+      expect(label).not.toMatch(/right now|current|live|today/i);
     }
   });
 });
