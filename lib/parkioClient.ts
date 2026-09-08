@@ -10,6 +10,7 @@
  */
 
 import type {
+  ApiAttraction,
   ApiPark,
   ApiParkHours,
   ApiParkLive,
@@ -81,6 +82,21 @@ export function fetchParkHours(
 ): Promise<ApiParkHours> {
   return getJson<ApiParkHours>(
     `/api/parks/${encodeURIComponent(slug)}/hours`,
+    signal,
+  );
+}
+
+/**
+ * Narrowest live request for a single attraction. Backed by
+ * /api/attractions/[attractionSlug], which reuses the park-level live
+ * cache server-side, so an attraction page costs no extra upstream call.
+ */
+export function fetchAttraction(
+  slug: string,
+  signal?: AbortSignal,
+): Promise<ApiAttraction> {
+  return getJson<ApiAttraction>(
+    `/api/attractions/${encodeURIComponent(slug)}`,
     signal,
   );
 }

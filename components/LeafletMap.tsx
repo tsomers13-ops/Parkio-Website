@@ -7,8 +7,10 @@ import "leaflet.markercluster/dist/MarkerCluster.css";
 import "leaflet.markercluster/dist/MarkerCluster.Default.css";
 import { useEffect, useMemo, useRef } from "react";
 import { MapContainer, TileLayer, useMap } from "react-leaflet";
+import { basemapConfig } from "@/lib/basemap";
 import type { Park, Ride } from "@/lib/types";
-import { statusLabel, waitTier } from "@/lib/utils";
+import { waitTier } from "@/lib/utils";
+import { deriveWaitState, waitStateCompactLabel } from "@/lib/waitState";
 import type { RideDisplay } from "./ParkMap";
 
 /**
@@ -57,6 +59,9 @@ export default function LeafletMap({
     [park.lat, park.lng],
   );
 
+  // null when NEXT_PUBLIC_CARTO_API_KEY is absent — see lib/basemap.ts.
+  const basemap = useMemo(() => basemapConfig(), []);
+
   return (
     <MapContainer
       center={center}
@@ -79,17 +84,26 @@ export default function LeafletMap({
     >
       <MapHandle parkId={park.id} center={center} zoom={park.zoom} rides={rides} />
 
-      <TileLayer
-        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a> &copy; <a href="https://carto.com/attributions">CARTO</a>'
-        url="https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png"
-        subdomains="abcd"
-        // Must cover the map's own maxZoom. Leaflet's GridLayer default
-        // is 18, and it drops every tile once the map zooms past a
-        // layer's maxZoom — which blanked the basemap (markers stayed)
-        // at zoom 19 until the user zoomed back out. CARTO's voyager
-        // rastertiles are served natively through zoom 20.
-        maxZoom={MAX_ZOOM}
-      />
+      {/* Basemap tiles. When CARTO isn't configured we render NO tile
+          layer rather than the unauthenticated URL — that URL returns a
+          watermarked "API KEY REQUIRED" image with HTTP 200, so falling
+          back to it would ship a broken-looking map that passes every
+          health check. See lib/basemap.ts and <BasemapNotice />. */}
+      {basemap && (
+        <TileLayer
+          attribution={basemap.attribution}
+          url={basemap.url}
+          subdomains={basemap.subdomains}
+          // Must cover the map's own maxZoom. Leaflet's GridLayer default
+          // is 18, and it drops every tile once the map zooms past a
+          // layer's maxZoom — which blanked the basemap (markers stayed)
+          // at zoom 19 until the user zoomed back out. CARTO's voyager
+          // rastertiles are served natively through zoom 20.
+          maxZoom={MAX_ZOOM}
+        />
+      )}
+
+      {!basemap && <BasemapNotice />}
 
       <ClusterMarkers
         rides={rides}
@@ -266,11 +280,7 @@ function ClusterMarkers({
     if (!group) return;
     group.clearLayers();
     for (const ride of rides) {
-      const display = displays.get(ride.id) ?? {
-        wait: ride.baseWait,
-        status: "OPERATING" as const,
-        isLive: false,
-      };
+      const display = displays.get(ride.id) ?? deriveWaitState(ride);
       const selected = ride.id === selectedId;
       const highlighted = ride.id === highlightId;
       const marker = L.marker([ride.lat, ride.lng], {
@@ -301,21 +311,24 @@ function makeRideIcon(
     : "ring-1 ring-ink-200 shadow-md";
   const highlightClass = highlighted ? "parkio-pin-pulse" : "";
 
+  // Pin content follows the shared wait-state model. The colour-coded
+  // dot is reserved for a real posted wait — a Parkio estimate gets a
+  // hollow marker and a "~" so it can never be mistaken for one.
   let pillContent: string;
-  if (display.status !== "OPERATING" && display.status !== "UNKNOWN") {
-    // Gray pill with status text — Down / Closed / Refurb
+  if (display.kind === "unavailable") {
     pillContent = `
       <span class="inline-block h-2 w-2 rounded-full bg-ink-300"></span>
-      <span class="text-[11px] font-semibold tracking-tight text-ink-500">${statusLabel(display.status)}</span>
+      <span class="text-[11px] font-semibold tracking-tight text-ink-500">${escapeHtml(
+        waitStateCompactLabel(display),
+      )}</span>
     `;
-  } else if (display.wait === null) {
-    // Operating but no standby data right now — show an em-dash placeholder.
+  } else if (display.kind === "typical") {
     pillContent = `
-      <span class="inline-block h-2 w-2 rounded-full bg-ink-300"></span>
-      <span class="text-[11px] font-semibold tracking-tight text-ink-500">—</span>
+      <span class="inline-block h-2 w-2 rounded-full border border-ink-300 bg-white"></span>
+      <span class="text-[11px] font-medium tracking-tight text-ink-500">~${display.wait}m</span>
     `;
   } else {
-    const tier = waitTier(display.wait);
+    const tier = waitTier(display.wait as number);
     const dotClass =
       tier === "low"
         ? "bg-emerald-500"
@@ -363,4 +376,40 @@ function escapeHtml(s: string): string {
     .replace(/>/g, "&gt;")
     .replace(/"/g, "&quot;")
     .replace(/'/g, "&#39;");
+}
+
+/* ─────────────────── Basemap-unavailable notice ─────────────────── */
+
+/**
+ * Shown in place of tiles when no CARTO key is configured.
+ *
+ * Deliberately explicit rather than silent: the unauthenticated CARTO URL
+ * returns HTTP 200 with a watermarked image, so a "working" map is
+ * exactly what a misconfiguration would otherwise look like. Markers and
+ * every interaction continue to work over the blank canvas, and the rest
+ * of the park page is unaffected.
+ */
+function BasemapNotice() {
+  if (process.env.NODE_ENV !== "production") {
+    // eslint-disable-next-line no-console
+    console.error(
+      "[basemap] NEXT_PUBLIC_CARTO_API_KEY is not set — map imagery is disabled. " +
+        "Request a free key at https://carto.com/basemaps/apikey/ and set it in " +
+        "the Cloudflare Pages environment variables.",
+    );
+  }
+
+  return (
+    <div className="pointer-events-none absolute inset-0 z-[400] flex items-start justify-center pt-24">
+      <p
+        role="status"
+        className="pointer-events-auto mx-4 rounded-2xl border border-ink-200 bg-white/95 px-4 py-3 text-center text-sm font-medium text-ink-700 shadow-soft backdrop-blur"
+      >
+        Map imagery is unavailable — the basemap isn&apos;t configured.
+        <span className="mt-1 block text-xs font-normal text-ink-500">
+          Attraction locations and wait times below are unaffected.
+        </span>
+      </p>
+    </div>
+  );
 }

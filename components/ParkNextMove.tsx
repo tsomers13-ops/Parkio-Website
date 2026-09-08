@@ -8,7 +8,8 @@ import {
   partitionAttractions,
 } from "@/lib/popularity";
 import type { ApiAttraction, Park } from "@/lib/types";
-import { simulatedWait, waitColorClasses, waitTier } from "@/lib/utils";
+import { waitColorClasses, waitTier } from "@/lib/utils";
+import { typicalWait } from "@/lib/waitState";
 import { useMapFocus } from "./MapFocusProvider";
 import { useParkLive } from "./ParkLiveDataProvider";
 
@@ -38,7 +39,7 @@ interface ParkNextMoveProps {
  *   Tier 2 — lowest-wait OPERATING + numeric attractions from live
  *            (real data, just not categorized — useful when nothing
  *            fits the curated tiers)
- *   Tier 3 — synthesized from static RIDES + simulatedWait, headliners
+ *   Tier 3 — synthesized from static RIDES + typical waits, headliners
  *            first then by simulated wait ascending (used when live
  *            is null or all-UNKNOWN — failed fetch, pre-opening, etc.)
  *
@@ -114,7 +115,7 @@ export function ParkNextMove({ park }: ParkNextMoveProps) {
       }
     }
 
-    // ─── Tier 3: synthesized from static RIDES + simulatedWait ───
+    // ─── Tier 3: synthesized from static RIDES + typical waits ───
     const blocked = new Set<string>();
     for (const a of live?.attractions ?? []) {
       if (
@@ -134,12 +135,12 @@ export function ParkNextMove({ park }: ParkNextMoveProps) {
       parkSlug: park.id,
       name: r.name,
       status: "OPERATING",
-      waitMinutes: simulatedWait(r),
+      waitMinutes: typicalWait(r),
       coordinates: { lat: r.lat, lng: r.lng },
       lastUpdated: fallbackTimestamp,
     }));
     // Headliners first (so the One-tap recommendation surfaces a top
-    // ride when nothing else differentiates picks), then by simulated
+    // ride when nothing else differentiates picks), then by typical
     // wait ascending so a guest can grab a quick win.
     synthesized.sort((a, b) => {
       const ah = isTopRide(park.id, a.slug) ? 1 : 0;

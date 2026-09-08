@@ -1,8 +1,4 @@
-import type {
-  ApiAttractionStatus,
-  CrowdLevel,
-  Ride,
-} from "./types";
+import type { ApiAttractionStatus, CrowdLevel } from "./types";
 
 export type WaitTier = "low" | "mid" | "high";
 
@@ -41,6 +37,24 @@ export function waitColorClasses(tier: WaitTier) {
   }
 }
 
+/**
+ * Guest-facing wording for a park's crowd level.
+ *
+ * `Park.crowd` is static Parkio editorial — it is not measured, and it
+ * does not change during the day. The "Typically" framing keeps it useful
+ * for planning without implying a live reading.
+ */
+export function crowdLabel(level: CrowdLevel): string {
+  switch (level) {
+    case "Low":
+      return "Typically quiet";
+    case "Moderate":
+      return "Typically moderate";
+    case "High":
+      return "Typically busy";
+  }
+}
+
 export function crowdColor(level: CrowdLevel) {
   switch (level) {
     case "Low":
@@ -62,37 +76,6 @@ export function crowdColor(level: CrowdLevel) {
         dot: "bg-rose-500",
       };
   }
-}
-
-/**
- * Deterministic-ish "live" wait time around the ride's base wait.
- * Used as a fallback when the live API is unreachable or for rides
- * that don't have an externalId.
- */
-export function simulatedWait(ride: Ride, now: number = Date.now()): number {
-  const seed = hashString(ride.id);
-  const slice = Math.floor(now / 30_000);
-  const noise = pseudoRandom(seed + slice);
-  const swing = 18; // +/- minutes
-  const offset = Math.round((noise - 0.5) * swing * 2);
-  const adjusted = ride.baseWait + offset;
-  return Math.max(5, Math.round(adjusted / 5) * 5);
-}
-
-function hashString(s: string): number {
-  let h = 2166136261;
-  for (let i = 0; i < s.length; i++) {
-    h ^= s.charCodeAt(i);
-    h = Math.imul(h, 16777619);
-  }
-  return h >>> 0;
-}
-
-function pseudoRandom(seed: number): number {
-  let t = seed + 0x6d2b79f5;
-  t = Math.imul(t ^ (t >>> 15), t | 1);
-  t ^= t + Math.imul(t ^ (t >>> 7), t | 61);
-  return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
 }
 
 export function formatTime(d: Date = new Date()): string {

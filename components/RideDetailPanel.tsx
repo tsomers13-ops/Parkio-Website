@@ -1,7 +1,12 @@
 "use client";
 
 import type { Ride } from "@/lib/types";
-import { statusLabel, waitColorClasses, waitTier } from "@/lib/utils";
+import {
+  heightLabel,
+  lightningLaneLabel,
+} from "@/components/attraction/AttractionFacts";
+import { waitColorClasses, waitTier } from "@/lib/utils";
+import { waitStateLabel } from "@/lib/waitState";
 import type { RideDisplay } from "./ParkMap";
 
 interface RideDetailPanelProps {
@@ -16,9 +21,8 @@ export function RideDetailPanel({
   onClose,
 }: RideDetailPanelProps) {
   const wait = display.wait;
-  const isOperating = display.status === "OPERATING";
-  const hasWait = typeof wait === "number";
-  // Use a neutral tier when wait is null so the card stays the same shape.
+  // Colour-code only a real posted wait. A Parkio estimate stays neutral
+  // so it never borrows the visual authority of live data.
   const tier = waitTier(wait ?? 0);
   const c = waitColorClasses(tier);
 
@@ -74,16 +78,34 @@ export function RideDetailPanel({
       </div>
 
       <div className="mt-5 grid grid-cols-3 gap-3">
-        {isOperating && hasWait ? (
+        {display.kind === "live" ? (
           <div className={`rounded-2xl px-3 py-3 ring-1 ${c.bg} ${c.ring}`}>
             <div className={`text-[10px] font-medium uppercase tracking-widest ${c.text} opacity-80`}>
-              Wait
+              Wait now
             </div>
             <div className={`mt-0.5 text-xl font-semibold ${c.text}`}>
               {wait} min
             </div>
+            <div className="mt-1 text-[10px] text-ink-500">
+              Posted by the park.
+            </div>
           </div>
-        ) : isOperating ? (
+        ) : display.kind === "typical" ? (
+          <div
+            className="rounded-2xl bg-ink-50 px-3 py-3 ring-1 ring-dashed ring-ink-200"
+            title="Parkio planning estimate — not a posted wait time"
+          >
+            <div className="text-[10px] font-medium uppercase tracking-widest text-ink-600 opacity-80">
+              Typical wait
+            </div>
+            <div className="mt-0.5 text-xl font-semibold text-ink-700">
+              ~{wait} min
+            </div>
+            <div className="mt-1 text-[10px] text-ink-500">
+              Parkio estimate — no posted wait right now.
+            </div>
+          </div>
+        ) : display.status === "OPERATING" ? (
           <div
             className="rounded-2xl bg-ink-100 px-3 py-3 ring-1 ring-ink-200"
             title="Wait time not currently reported"
@@ -104,7 +126,7 @@ export function RideDetailPanel({
               Status
             </div>
             <div className="mt-0.5 text-xl font-semibold text-ink-700">
-              {statusLabel(display.status)}
+              {waitStateLabel(display)}
             </div>
           </div>
         )}
@@ -129,26 +151,26 @@ export function RideDetailPanel({
             Lightning Lane
           </div>
           <div className="mt-0.5 text-xl font-semibold">
-            {ride.lightningLane ? "Available" : "Not offered"}
+            {lightningLaneLabel(ride.lightningLane)}
           </div>
         </div>
       </div>
 
-      {ride.height && (
-        <div className="mt-4 inline-flex items-center gap-2 rounded-full bg-ink-100 px-3 py-1.5 text-xs font-medium text-ink-700">
-          <svg viewBox="0 0 16 16" className="h-3.5 w-3.5" aria-hidden>
-            <path
-              d="M3 14V2M5 4H3M5 7H3M5 10H3M5 13H3M9 14V2l4 6-4 6z"
-              stroke="currentColor"
-              strokeWidth="1.4"
-              fill="none"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-          </svg>
-          {ride.height}
-        </div>
-      )}
+      {/* Wording comes from the shared presenter so the sheet and the
+          attraction page can never disagree about a height requirement. */}
+      <div className="mt-4 inline-flex items-center gap-2 rounded-full bg-ink-100 px-3 py-1.5 text-xs font-medium text-ink-700">
+        <svg viewBox="0 0 16 16" className="h-3.5 w-3.5" aria-hidden>
+          <path
+            d="M3 14V2M5 4H3M5 7H3M5 10H3M5 13H3M9 14V2l4 6-4 6z"
+            stroke="currentColor"
+            strokeWidth="1.4"
+            fill="none"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+        </svg>
+        {heightLabel(ride.height)}
+      </div>
 
       <p className="mt-5 text-sm leading-relaxed text-ink-600">
         {ride.description}

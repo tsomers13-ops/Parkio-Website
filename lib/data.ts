@@ -625,10 +625,10 @@ export const RIDES: Ride[] = [
   {
     id: "hs-rocknroller",
     parkId: "hollywood-studios",
-    name: "Rock 'n' Roller Coaster",
+    name: "Rock 'n' Roller Coaster Starring The Muppets",
     land: "Sunset Boulevard",
     category: "thrill",
-    description: "Launched coaster scored to Aerosmith. 0–60 in 2.8 seconds.",
+    description: "High-speed launched indoor coaster. 0–60 in 2.8 seconds.",
     lat: 28.359712,
     lng: -81.56059,
     baseWait: 65,

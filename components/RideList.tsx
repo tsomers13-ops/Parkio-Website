@@ -2,7 +2,8 @@
 
 import { useEffect, useMemo, useState } from "react";
 import type { Ride } from "@/lib/types";
-import { statusLabel, waitColorClasses, waitTier } from "@/lib/utils";
+import { waitColorClasses, waitTier } from "@/lib/utils";
+import { waitStateLabel } from "@/lib/waitState";
 import type { RideDisplay } from "./ParkMap";
 
 interface RideListProps {
@@ -199,26 +200,27 @@ function RidePill({ display }: { display: RideDisplay | undefined }) {
       </span>
     );
   }
-  if (display.status !== "OPERATING") {
+  if (display.kind === "unavailable") {
     return (
-      <span className="inline-flex items-center gap-1.5 rounded-full bg-ink-100 px-2.5 py-1 text-[11px] font-semibold text-ink-600 ring-1 ring-ink-200">
+      <span className="inline-flex items-center gap-1.5 rounded-full bg-ink-100 px-2.5 py-1 text-[11px] font-semibold text-ink-500 ring-1 ring-ink-200">
         <span className="h-1.5 w-1.5 rounded-full bg-ink-300" />
-        {statusLabel(display.status)}
+        {waitStateLabel(display)}
       </span>
     );
   }
-  if (display.wait === null) {
+  if (display.kind === "typical") {
+    // Hollow dot + "~" so a Parkio estimate never reads like a posted wait.
     return (
       <span
-        className="inline-flex items-center gap-1.5 rounded-full bg-ink-50 px-2.5 py-1 text-[11px] font-semibold text-ink-500 ring-1 ring-ink-200"
-        title="Wait time not reported"
+        className="inline-flex items-center gap-1.5 rounded-full bg-ink-50 px-2.5 py-1 text-[11px] font-medium text-ink-500 ring-1 ring-ink-200"
+        title="Parkio planning estimate — not a posted wait time"
       >
-        <span className="h-1.5 w-1.5 rounded-full bg-ink-300" />
-        No wait posted
+        <span className="h-1.5 w-1.5 rounded-full border border-ink-300 bg-white" />
+        ~{display.wait} min
       </span>
     );
   }
-  const tier = waitTier(display.wait);
+  const tier = waitTier(display.wait as number);
   const c = waitColorClasses(tier);
   return (
     <span

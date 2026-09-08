@@ -11,7 +11,8 @@ import type {
   ApiParkLive,
 } from "@/lib/types";
 import type { Ride } from "@/lib/types";
-import { simulatedWait, waitColorClasses, waitTier } from "@/lib/utils";
+import { waitColorClasses, waitTier } from "@/lib/utils";
+import { typicalWait } from "@/lib/waitState";
 
 export function WaitsAllParks() {
   const { status, parks, liveByPark } = useAllLive();
@@ -52,7 +53,7 @@ export function WaitsAllParks() {
  *                   AND a numeric waitMinutes. Shows the top-6 real
  *                   operating waits.
  *   - "estimated" — no real live data. Falls back to deterministic
- *                   `simulatedWait()` over the static RIDES list (the
+ *                   deterministic typical waits over the static RIDES list (the
  *                   same simulation `ParkMap` uses for UNKNOWN status
  *                   attractions), so the cards stay visually aligned
  *                   with what the map shows. Renders the top-6
@@ -136,9 +137,9 @@ function ParkBlock({
 
   // Build the rows we'll render in the body. Live mode pulls from
   // real OPERATING attractions; estimated mode pulls from the static
-  // RIDES list using `simulatedWait` — the same simulation ParkMap
-  // uses for UNKNOWN-status attractions, so the two surfaces tell
-  // the same visual story.
+  // RIDES list using deterministic typical waits — the same planning
+  // estimate ParkMap uses for UNKNOWN-status attractions, so the two
+  // surfaces tell the same story.
   const rows = useMemo<WaitRow[]>(() => {
     if (mode === "closed") return [];
     if (mode === "live") {
@@ -160,7 +161,7 @@ function ParkBlock({
       .map((r) => ({
         id: r.id,
         name: r.name,
-        waitMinutes: simulatedWait(r),
+        waitMinutes: typicalWait(r),
         isLive: false,
       }))
       .sort((a, b) => b.waitMinutes - a.waitMinutes)

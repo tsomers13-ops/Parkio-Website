@@ -30,7 +30,7 @@ const HEADLINER_BONUS = 15;
 /** How much weight proximity carries vs. wait time + popularity. */
 const PROXIMITY_WEIGHT = 40;
 
-/** Rides with waits above this fall out of "Near you" entirely. */
+/** Rides with waits above this fall out of the nearby list entirely. */
 const NEAR_YOU_WAIT_CEILING_MIN = 60;
 
 /** Maximum picks shown in the section. */
@@ -80,7 +80,7 @@ function nearYouScore(
 /* ──────────────────────── Component ──────────────────────── */
 
 /**
- * "Near you" section — surfaces 3-5 nearby low-wait rides ranked by
+ * "Near this ride" section — surfaces 3-5 nearby low-wait rides ranked by
  * a combined wait+popularity+proximity score, anchored to the user's
  * most recently selected ride (a proxy for real GPS until that lands).
  *
@@ -152,13 +152,13 @@ export function ParkNearYou({ park, rides }: ParkNearYouProps) {
   return (
     <section
       className="border-y border-ink-100 bg-white"
-      aria-label="Near you"
+      aria-label="Near this ride"
     >
       <div className="mx-auto max-w-7xl px-5 py-10 sm:px-8 sm:py-12">
         <div className="flex flex-wrap items-end justify-between gap-3">
           <div className="max-w-2xl">
             <p className="text-xs font-semibold uppercase tracking-widest text-ink-500">
-              Near you
+              Near this ride
             </p>
             <h2 className="mt-2 text-2xl font-semibold tracking-tight text-ink-900 sm:text-3xl">
               What's close to your last stop

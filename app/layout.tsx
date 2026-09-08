@@ -61,7 +61,8 @@ export const viewport: Viewport = {
   themeColor: "#ffffff",
   width: "device-width",
   initialScale: 1,
-  maximumScale: 1,
+  // No maximumScale / userScalable restriction: capping zoom at 1 blocks
+  // pinch-to-zoom, which people with low vision rely on (WCAG 1.4.4).
 };
 
 export default function RootLayout({

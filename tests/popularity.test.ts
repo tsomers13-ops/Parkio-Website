@@ -1,5 +1,6 @@
 import { describe, expect, it } from "vitest";
 
+import { RIDES } from "@/lib/data";
 import type { ApiAttraction } from "@/lib/types";
 import {
   GEM_MAX_WAIT_MIN,
@@ -202,6 +203,22 @@ describe("partitionAttractions", () => {
     );
     for (const a of attractions) {
       expect(covered.has(a.slug), a.slug).toBe(true);
+    }
+  });
+});
+
+describe("curated headliner references", () => {
+  it("still resolves after the Rock 'n' Roller Coaster rename", () => {
+    // Curation keys on the stable id, never the display name — so a
+    // factual rename must not orphan a headliner.
+    expect(isTopRide("hollywood-studios", "hs-rocknroller")).toBe(true);
+  });
+
+  it("only names rides that exist in their own park", () => {
+    for (const ride of RIDES) {
+      if (isTopRide(ride.parkId, ride.id)) {
+        expect(RIDES.some((r) => r.id === ride.id)).toBe(true);
+      }
     }
   });
 });

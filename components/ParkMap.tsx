@@ -8,7 +8,7 @@ import type {
   Park,
   Ride,
 } from "@/lib/types";
-import { simulatedWait } from "@/lib/utils";
+import { deriveWaitState, type WaitState } from "@/lib/waitState";
 import { BottomSheet } from "./BottomSheet";
 import { useMapFocus } from "./MapFocusProvider";
 import { useParkLive } from "./ParkLiveDataProvider";
@@ -25,21 +25,30 @@ const LeafletMap = dynamic(() => import("./LeafletMap"), {
  * What we render for each ride. Combines API data (when available)
  * with a deterministic simulated fallback so the map always feels alive.
  */
-export interface RideDisplay {
-  /** Wait minutes when known; null = no wait time available right now. */
-  wait: number | null;
-  /** Status: OPERATING / DOWN / CLOSED / REFURBISHMENT / UNKNOWN. */
-  status: ApiAttractionStatus;
-  /** True when the wait/status came from /api/parks/[slug]/live; false = simulated. */
-  isLive: boolean;
-}
+/**
+ * Per-ride display state. Re-exported under the historical name so the
+ * map, list and detail sheet keep a single shared shape; the rules now
+ * live in lib/waitState.ts.
+ */
+export type RideDisplay = WaitState;
 
 interface ParkMapProps {
   park: Park;
   rides: Ride[];
+  /**
+   * Height of the map surface. Defaults to the full-viewport hero the
+   * SEO landing pages still use; the park planning page passes a shorter
+   * value so the map reads as a tool inside the page rather than taking
+   * the page over.
+   */
+  heightClassName?: string;
 }
 
-export function ParkMap({ park, rides }: ParkMapProps) {
+export function ParkMap({
+  park,
+  rides,
+  heightClassName = "min-h-[100dvh]",
+}: ParkMapProps) {
   // All live data now flows from the page-level provider — no per-component
   // fetching, no duplicate requests across ParkMap / ParkInsights /
   // ParkNextMove / ParkRightNow.
@@ -223,56 +232,17 @@ export function ParkMap({ park, rides }: ParkMapProps) {
   }, [liveApi]);
 
   /**
-   * Per-ride display state. Resolves to one of:
-   *
-   *   - real wait (live, OPERATING + waitMinutes is a number)
-   *   - status pill (live, status DOWN/CLOSED/REFURBISHMENT)
-   *   - "no wait time" (live, OPERATING but waitMinutes is null)
-   *   - simulated fallback (no live data yet OR live but UNKNOWN)
+   * Per-ride display state, derived once here and shared with the pin
+   * renderer, the list and the bottom sheet so all three tell the same
+   * story about how trustworthy a number is.
    */
   const displays = useMemo(() => {
     const map = new Map<string, RideDisplay>();
     for (const r of rides) {
-      const live = liveBySlug.get(r.id);
-      if (live) {
-        if (live.status === "OPERATING") {
-          if (typeof live.waitMinutes === "number") {
-            map.set(r.id, {
-              wait: live.waitMinutes,
-              status: "OPERATING",
-              isLive: true,
-            });
-          } else {
-            // Operating but no standby data right now.
-            map.set(r.id, { wait: null, status: "OPERATING", isLive: true });
-          }
-        } else if (live.status === "UNKNOWN") {
-          // API admits it doesn't know — fall back to simulated so the
-          // map still feels alive.
-          map.set(r.id, {
-            wait: simulatedWait(r, now),
-            status: "OPERATING",
-            isLive: false,
-          });
-        } else {
-          // DOWN / CLOSED / REFURBISHMENT
-          map.set(r.id, {
-            wait: null,
-            status: live.status,
-            isLive: true,
-          });
-        }
-      } else {
-        // No row in the live response yet (still loading or attraction not in the upstream).
-        map.set(r.id, {
-          wait: simulatedWait(r, now),
-          status: "OPERATING",
-          isLive: false,
-        });
-      }
+      map.set(r.id, deriveWaitState(r, liveBySlug.get(r.id)));
     }
     return map;
-  }, [rides, liveBySlug, now]);
+  }, [rides, liveBySlug]);
 
   const selectedRide = useMemo(
     () => rides.find((r) => r.id === selectedId) ?? null,
@@ -369,12 +339,14 @@ export function ParkMap({ park, rides }: ParkMapProps) {
   }
 
   return (
-    <div className="relative min-h-[100dvh] w-full overflow-hidden bg-ink-50">
-      {/* Top bar — back-to-parks link removed; that affordance now
-          lives in the page-level <MapNavOverlay /> (top-left, fixed,
-          always visible). The remaining elements (center info pill
-          with park name + hours + live status, and the clock pill on
-          the right) are unchanged. */}
+    <div
+      className={`relative w-full overflow-hidden bg-ink-50 ${heightClassName}`}
+    >
+      {/* Top bar — no back-to-parks link here. On the planning page the
+          global <Navbar /> provides navigation; the SEO landing pages
+          keep their own surrounding chrome. The remaining elements
+          (center info pill with park name + hours + live status, and
+          the clock pill on the right) are unchanged. */}
       <div className="pointer-events-none absolute inset-x-0 top-0 z-[800] px-4 pt-4 sm:px-6 sm:pt-6">
         <div className="pointer-events-auto mx-auto flex max-w-3xl items-center justify-between gap-3">
           {/* Invisible left spacer — preserves the original three-slot
@@ -643,11 +615,7 @@ export function ParkMap({ park, rides }: ParkMapProps) {
           <RideDetailPanel
             ride={selectedRide}
             display={
-              displays.get(selectedRide.id) ?? {
-                wait: selectedRide.baseWait,
-                status: "OPERATING",
-                isLive: false,
-              }
+              displays.get(selectedRide.id) ?? deriveWaitState(selectedRide)
             }
             onClose={() => setSelectedId(null)}
           />

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import type { Park } from "@/lib/types";
-import { crowdColor } from "@/lib/utils";
+import { crowdColor, crowdLabel } from "@/lib/utils";
 
 export function ParkCard({ park }: { park: Park }) {
   const crowd = crowdColor(park.crowd);
@@ -49,11 +49,13 @@ export function ParkCard({ park }: { park: Park }) {
 
         <div className="mt-4 flex items-center justify-between">
           <div className="flex items-center gap-2">
+            {/* Static Parkio editorial, not a live reading — so the
+                status-style dot is deliberately absent here and the
+                wording is explicitly typical-case. */}
             <span
-              className={`inline-flex items-center gap-1.5 rounded-full px-2.5 py-1 text-[11px] font-medium ${crowd.bg} ${crowd.text}`}
+              className={`inline-flex items-center rounded-full px-2.5 py-1 text-[11px] font-medium ${crowd.bg} ${crowd.text}`}
             >
-              <span className={`h-1.5 w-1.5 rounded-full ${crowd.dot}`} />
-              {park.crowd} crowd
+              {crowdLabel(park.crowd)}
             </span>
             <span className="text-[11px] text-ink-500">{park.hours}</span>
           </div>
