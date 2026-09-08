@@ -11,7 +11,9 @@
     "test:watch": "vitest",
     "test:coverage": "vitest run --coverage",
     "dining:generate": "vite-node scripts/generateDining.ts --",
-    "dining:verify": "vite-node scripts/verifyDining.ts --"
+    "dining:verify": "vite-node scripts/verifyDining.ts --",
+    "dining:festival:validate": "vite-node scripts/validateFestivalDining.ts",
+    "dining:festival:status": "vite-node scripts/festivalDiningStatus.ts"
   },
   "dependencies": {
     "leaflet": "^1.9.4",
