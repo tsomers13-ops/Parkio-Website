@@ -137,6 +137,25 @@ supported paths: Vercel (zero-config) or Cloudflare Pages with the
 
 ## QA checklist (run before each deploy)
 
+### If the change adds or materially changes a route
+
+`npm run build` passing does **not** mean Cloudflare will build. The adapter
+rejects route shapes Next happily prerenders — that failed every production
+build of the dining discovery gate while every local check was green. So for
+any route change, run all three:
+
+```bash
+npm run build            # Next build
+npm run build:cloudflare # pinned Cloudflare adapter — the real deploy command
+git checkout -- package-lock.json   # the adapter mutates the lockfile; restore it
+```
+
+Then smoke-test the new routes with `npm run start`: expected 200s, and a 404
+for every path that should not exist (wrong park, unknown slug, unsupported
+park). A route that only 404s correctly at build time can behave differently
+once it runs at the edge.
+
+
 A 5-minute pass on the live preview URL. Most items are click-through.
 
 ### Pages load

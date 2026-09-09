@@ -13,7 +13,8 @@
     "dining:generate": "vite-node scripts/generateDining.ts --",
     "dining:verify": "vite-node scripts/verifyDining.ts --",
     "dining:festival:validate": "vite-node scripts/validateFestivalDining.ts",
-    "dining:festival:status": "vite-node scripts/festivalDiningStatus.ts"
+    "dining:festival:status": "vite-node scripts/festivalDiningStatus.ts",
+    "build:cloudflare": "npx @cloudflare/next-on-pages@1.13.16"
   },
   "dependencies": {
     "leaflet": "^1.9.4",

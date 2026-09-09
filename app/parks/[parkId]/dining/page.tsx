@@ -32,6 +32,10 @@ interface ParkDiningPageProps {
 }
 
 export const dynamicParams = false;
+// Required by @cloudflare/next-on-pages: the adapter rejects this route shape
+// without it, which failed every production build of Gate 4. The sibling
+// [slug] route builds without it and is deliberately left alone.
+export const runtime = "edge";
 
 export function generateStaticParams() {
   return diningParkStaticParams();
