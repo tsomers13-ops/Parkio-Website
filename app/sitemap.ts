@@ -3,6 +3,8 @@ import {
   attractionCanonicalPath,
   attractionStaticParams,
 } from "@/lib/attractionRoute";
+import { getIndexablePermanentDining } from "@/lib/dining";
+import { diningCanonicalPath, diningParkStaticParams, parkDiningPath } from "@/lib/diningRoute";
 import { DISNEY_PARKS } from "@/lib/disneyParkConfig";
 import { listGuidePosts } from "@/lib/guide";
 import { listDailyPosts } from "@/lib/guideDaily";
@@ -44,6 +46,27 @@ function url(path: string): string {
  */
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
+
+  /**
+   * Dining. Two discovery pages plus only the venue pages that clear the
+   * Gate 3 content floor — the 49 below it are routable but noindex, so
+   * listing them here would contradict their own robots directive. Festival
+   * booths have no detail routes by policy and never appear.
+   */
+  const diningRoutes: MetadataRoute.Sitemap = [
+    ...diningParkStaticParams().map(({ parkId }) => ({
+      url: url(parkDiningPath(parkId)),
+      lastModified: now,
+      changeFrequency: "weekly" as const,
+      priority: 0.8,
+    })),
+    ...getIndexablePermanentDining().map((venue) => ({
+      url: url(diningCanonicalPath(venue.parkId, venue.slug)),
+      lastModified: now,
+      changeFrequency: "monthly" as const,
+      priority: 0.6,
+    })),
+  ];
 
   const staticRoutes: MetadataRoute.Sitemap = [
     { url: url("/"), lastModified: now, changeFrequency: "weekly", priority: 1 },
@@ -118,6 +141,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...staticRoutes,
     ...parkRoutes,
     ...attractionRoutes,
+    ...diningRoutes,
     ...dailyRoutes,
     ...guideRoutes,
   ];

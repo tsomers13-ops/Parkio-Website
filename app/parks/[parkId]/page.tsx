@@ -12,6 +12,7 @@ import { ParkPageAppCta } from "@/components/ParkPageAppCta";
 import { ParkRightNow } from "@/components/ParkRightNow";
 import { AttractionsByLand } from "@/components/park/AttractionsByLand";
 import { InParkDisclosure } from "@/components/park/InParkDisclosure";
+import { ParkDiningModule } from "@/components/park/ParkDiningModule";
 import { ParkIdentityHeader } from "@/components/park/ParkIdentityHeader";
 import { ParkJumpActions } from "@/components/park/ParkJumpActions";
 import { ParkPlanningOverview } from "@/components/park/ParkPlanningOverview";
@@ -82,6 +83,7 @@ export default function ParkPage({ params }: ParkPageProps) {
         <ParkPlanningOverview park={park} />
         <StartWithThese park={park} />
         <AttractionsByLand park={park} />
+        <ParkDiningModule park={park} />
 
         {/* ── In the park (secondary, closed by default) ─────────── */}
         <InParkDisclosure>

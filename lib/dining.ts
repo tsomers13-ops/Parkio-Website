@@ -18,6 +18,7 @@ import type {
   PermanentDiningVenue,
 } from "./diningTypes";
 import { DINING_PARK_IDS } from "./diningTypes";
+import { planningLand } from "./lands";
 import {
   getActiveFestivalDiningForPark,
   getSeasonalDiningForPark,
@@ -86,6 +87,31 @@ export function getPermanentDiningBySlug(
   const venue = VENUES.find((v) => v.slug === slug);
   if (!venue) return null;
   return venue.parkId === parkId ? venue : null;
+}
+
+/** A planning area and the venues in it. */
+export interface DiningAreaGroup {
+  name: string;
+  venues: PermanentDiningVenue[];
+}
+
+/**
+ * Group a park's venues by planning area, reusing the same normalisation the
+ * attraction list uses so EPCOT's "World Showcase — Japan" collapses to
+ * "World Showcase" for grouping while the card still shows the pavilion.
+ * Groups appear in first-seen order (venues are already land-then-name sorted).
+ */
+export function groupPermanentDiningByArea(
+  venues: readonly PermanentDiningVenue[],
+): DiningAreaGroup[] {
+  const groups = new Map<string, PermanentDiningVenue[]>();
+  for (const venue of venues) {
+    const area = planningLand(venue.land);
+    const bucket = groups.get(area);
+    if (bucket) bucket.push(venue);
+    else groups.set(area, [venue]);
+  }
+  return [...groups.entries()].map(([name, list]) => ({ name, venues: list }));
 }
 
 // ── Content floor ───────────────────────────────────────────────────────────
