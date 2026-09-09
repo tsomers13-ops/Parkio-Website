@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { DiningJsonLd } from "@/components/dining/DiningJsonLd";
+import { GuestRatingSection } from "@/components/dining/GuestRatingSection";
 import { amenityChips, Chip, priceTierLabel } from "@/components/dining/DiningFacts";
 import { Footer } from "@/components/Footer";
 import { Navbar } from "@/components/Navbar";
@@ -90,6 +91,11 @@ export default function DiningVenuePage({ params }: DiningVenuePageProps) {
               {diningTypeLabel(venue.type)} · {venue.land} · {park.name}
             </p>
           </header>
+
+          {/* Community ratings sit above Parkio's own editorial take, and the
+              two are separate blocks with explicit labels — a guest must never
+              mistake a 4.4/5 guest average for Parkio's 8.7/10 assessment. */}
+          <GuestRatingSection venueKey={venue.venueKey} venueName={venue.name} />
 
           {editorial && (
             <section aria-labelledby="parkio-take" className="mt-8 rounded-2xl border border-accent-100 bg-accent-50/60 px-5 py-5">
