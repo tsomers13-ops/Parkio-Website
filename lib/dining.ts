@@ -11,6 +11,7 @@
  */
 
 import permanentSource from "./generated/dining.json";
+import { DINING_VENUE_KEYS } from "./diningVenueKeys";
 import type {
   DiningItem,
   DiningParkId,
@@ -35,12 +36,29 @@ interface PermanentDocument {
 
 const DOC = permanentSource as unknown as PermanentDocument;
 
-const VENUES: PermanentDiningVenue[] = DOC.venues.map((venue) => ({
-  ...venue,
-  kind: "permanent" as const,
-  parkId: venue.parkId as DiningParkId,
-  type: venue.type as DiningType,
-}));
+/**
+ * Attach the Website-owned immutable key to every venue.
+ *
+ * Fails closed at module load: a venue with no minted venueKey is a coverage
+ * gap, and shipping it would mean ratings filed against an identity we do not
+ * control. There is deliberately no fallback to slug or canonicalId.
+ */
+const VENUES: PermanentDiningVenue[] = DOC.venues.map((venue) => {
+  const venueKey = DINING_VENUE_KEYS[venue.canonicalId];
+  if (!venueKey) {
+    throw new Error(
+      `Dining venue "${venue.canonicalId}" has no minted venueKey. ` +
+        "Add one to lib/diningVenueKeys.ts — never derive it from the slug.",
+    );
+  }
+  return {
+    ...venue,
+    kind: "permanent" as const,
+    venueKey,
+    parkId: venue.parkId as DiningParkId,
+    type: venue.type as DiningType,
+  };
+});
 
 export function isDiningParkId(parkId: string): parkId is DiningParkId {
   return (DINING_PARK_IDS as readonly string[]).includes(parkId);
@@ -112,6 +130,38 @@ export function groupPermanentDiningByArea(
     else groups.set(area, [venue]);
   }
   return [...groups.entries()].map(([name, list]) => ({ name, venues: list }));
+}
+
+// ── Immutable identity lookups ──────────────────────────────────────────────
+
+const BY_VENUE_KEY = new Map(VENUES.map((venue) => [venue.venueKey, venue]));
+
+/**
+ * Resolve a venue by its immutable key.
+ *
+ * Strict by design: only a minted venueKey resolves. A canonicalId, slug,
+ * externalId, festival booth id or attraction id returns null rather than
+ * quietly falling through to another identity space — a rating must never be
+ * filed against something we did not intend.
+ */
+export function getPermanentDiningByVenueKey(
+  venueKey: string,
+): PermanentDiningVenue | null {
+  return BY_VENUE_KEY.get(venueKey) ?? null;
+}
+
+export function isKnownDiningVenueKey(venueKey: unknown): venueKey is string {
+  return typeof venueKey === "string" && BY_VENUE_KEY.has(venueKey);
+}
+
+/** The immutable key for a current canonicalId, or null when unknown. */
+export function getVenueKeyForCanonicalId(canonicalId: string): string | null {
+  return DINING_VENUE_KEYS[canonicalId] ?? null;
+}
+
+/** Every minted key. Ratings validation checks membership against this set. */
+export function allDiningVenueKeys(): string[] {
+  return VENUES.map((venue) => venue.venueKey);
 }
 
 // ── Content floor ───────────────────────────────────────────────────────────

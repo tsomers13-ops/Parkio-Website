@@ -93,3 +93,78 @@ description for a factual-only venue.
 headings. Alcoholic items are shown as menu facts, never hidden and never
 ranked or recommended. Seven items sit under headings that state no category
 and stay unclassified rather than being guessed.
+
+
+---
+
+# Community ratings foundation (Priority 9 Gate 1)
+
+## Three identifiers, three jobs
+
+| Identifier | Owner | Job | Stable? |
+| --- | --- | --- | --- |
+| `canonicalId` | iOS | current cross-source join (`Park\|Land\|Name`) | **no** — moves on rename or land change |
+| `slug` | Website | public URL | immutable *by policy*, but a URL |
+| `venueKey` | Website | **durable data identity** | **yes** — never changes |
+| `externalId` | ThemeParks.wiki | live-data join | external |
+
+A **rating is filed against `venueKey`**, never `canonicalId` (which would orphan
+every rating the first time Disney renames a restaurant) and never `slug`
+(a URL is not an identity).
+
+`venueKey` lives in [`lib/diningVenueKeys.ts`](../lib/diningVenueKeys.ts), keyed
+by `canonicalId`. If a venue's `canonicalId` ever changes, **that mapping is
+re-pointed and the `venueKey` stays put** — which is exactly what keeps the
+ratings attached.
+
+A `venueKey` may share text with today's slug; both were minted from the same
+convention. It is never **derived** from the slug at runtime, and
+`lib/dining.ts` throws at module load if any venue lacks a minted key rather
+than falling back to one.
+
+## Whole stars, enforced twice
+
+`migrations/0002_dining_ratings.sql` uses:
+
+```sql
+CHECK (typeof(overall) = 'integer' AND overall BETWEEN 1 AND 5)
+```
+
+The `typeof()` guard is load-bearing. SQLite INTEGER affinity does **not**
+reject a REAL, so the obvious `INTEGER CHECK (overall BETWEEN 1 AND 5)`
+silently **accepts `1.5`, `4.5` and `'4.5'`** and stores them as REAL — proven
+against sqlite3 before the migration was written. The API layer validates
+independently, so neither layer is trusted alone.
+
+`hidden` rows stay in the table for audit and contribute to **no** aggregate.
+UPSERT on `(venue_key, rater_id)` preserves `id` and `created_at` and advances
+`updated_at`, so a guest revises rather than stacks.
+
+## Environment isolation
+
+| Environment | Database | Isolation |
+| --- | --- | --- |
+| Production | `parkio-history` | ratings migration **not applied** until Gate 2 |
+| Preview | `parkio-history-preview` | separate database id — verified in the dashboard |
+
+The two database ids differ, which is what makes it safe to test ratings on
+Preview. Never run a ratings migration against Production during a foundation
+gate, and never substitute Production when Preview access fails.
+
+## Identity abstraction
+
+Persistence stores only `raterId` and does not care where it came from. A
+future Web signed anonymous cookie and a future iOS installation identity both
+resolve to one, so iOS can reuse this backend unchanged.
+
+## Failure policy
+
+- **Read** fails soft: if D1 is unavailable the Dining page still renders and
+  Guest Rating is simply unavailable.
+- **Write** fails hard: a submission that cannot be persisted returns an
+  explicit failure. **Never** report a fake success.
+
+## Cache (recommended for Gate 2)
+
+Public aggregate `GET`: short edge cache, ~60s — new ratings appear quickly
+without hammering D1. Personal `/me` read and all writes: `no-store`.

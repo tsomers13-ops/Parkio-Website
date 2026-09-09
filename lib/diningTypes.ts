@@ -48,6 +48,12 @@ export interface PermanentDiningVenue {
   kind: "permanent";
   /** iOS stableID. Internal join key — never a public URL. */
   canonicalId: string;
+  /**
+   * Website-owned immutable identity. The durable key a Community Rating is
+   * filed against — it outlives renames, land changes and URL changes.
+   * Infrastructure identity only: never rendered, never used as SEO copy.
+   */
+  venueKey: string;
   /** Website-owned public slug. */
   slug: string;
   parkId: DiningParkId;
