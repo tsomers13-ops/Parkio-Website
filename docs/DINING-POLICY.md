@@ -168,3 +168,80 @@ resolve to one, so iOS can reuse this backend unchanged.
 
 Public aggregate `GET`: short edge cache, ~60s — new ratings appear quickly
 without hammering D1. Personal `/me` read and all writes: `no-store`.
+
+
+---
+
+# Community ratings API (Priority 9 Gate 2)
+
+## Routes
+
+| Route | Method | Cache | Identity |
+| --- | --- | --- | --- |
+| `/api/dining/[venueKey]/ratings` | GET | `s-maxage=60, swr=120` | never minted |
+| `/api/dining/[venueKey]/ratings` | POST | `no-store` | minted if absent |
+| `/api/dining/[venueKey]/ratings/me` | GET | `no-store` | never minted |
+
+All three are `runtime = "edge"`. **The path identity is `venueKey` only** — a
+`slug`, `canonicalId`, `externalId`, festival booth id or attraction id all
+404 before the database is touched.
+
+## Anonymous identity
+
+Cookie **`parkio_rater`**, value `<raterId>.<HMAC-SHA256>`:
+
+- `raterId` is 128 bits from `crypto.getRandomValues` — never `Math.random()`,
+  and never derived from IP, user agent, timestamp or venue.
+- Signed with `RATINGS_IDENTITY_SECRET` via Web Crypto, verified in constant
+  time. An unsigned UUID would let anyone mint identities by hand.
+- `HttpOnly`, `SameSite=Lax`, `Path=/`, `Secure` (except plain-http localhost),
+  `Max-Age` 400 days.
+- Carries no personal data, no venue and no timestamp.
+
+**Reads never mint an identity.** A visitor who browses dining and never rates
+anything is never given a cookie; only POST mints one. Every cookie failure —
+absent, malformed, wrong shape, bad signature — returns the same result, so a
+prober learns nothing about which check failed.
+
+## Secret
+
+`RATINGS_IDENTITY_SECRET` must be configured **separately in Preview and
+Production, with different values**. It is never logged, never returned, never
+committed, and never sent to the browser. **If it is missing, writes fail** —
+signing with a fallback would make every rating forgeable.
+
+## Write protection
+
+`SameSite=Lax` on the cookie, plus an explicit `Origin` allowlist
+(`parkio.info`, `*.parkio.pages.dev`, localhost) — the Host header is never
+trusted. POST additionally requires `Content-Type: application/json` (so a
+cross-site form post cannot reach it) and caps the body at 1 KB. No wildcard
+CORS on writes. That is the whole CSRF model; a library would add weight
+without adding protection here.
+
+The client cannot set `raterId`, `status`, `created_at` or `updated_at` — the
+route rejects unknown properties outright, and timestamps are server-generated.
+`venueKey` comes from the path, never the body.
+
+## Failure semantics
+
+**Zero ratings and unavailable ratings are different facts.** A read that
+cannot reach D1 returns **503 `ratings_unavailable`**, never a fabricated
+`ratingCount: 0`. Callers render the page without the ratings block — the page
+still works. A write that fails returns **503** and never reports a success it
+did not achieve. Database errors are swallowed rather than echoed, so no schema
+detail reaches the internet.
+
+## Rate limiting
+
+Recommended as a Cloudflare dashboard rule rather than an IP table in our code:
+limit `POST /api/dining/*/ratings` to roughly **10 requests per minute per IP**.
+Cloudflare enforces it at the edge and we store no IP addresses. Turnstile stays
+off; it is the next escalation if real scripted abuse appears.
+
+## Deployment order
+
+Preview first, Production last: code → local validation → Preview API → real
+Preview D1 validation → security review → regression → **Production migration**
+→ Production API deploy → canary → cleanup. Never deploy a write-capable
+Production API before the Production schema exists.
