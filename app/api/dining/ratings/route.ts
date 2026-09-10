@@ -8,10 +8,15 @@
  * Public and read-only. It mints no identity, reads no cookie, returns no
  * personal rating, and does not touch the write path — a guest browsing the
  * Dining list stays as anonymous as one browsing the homepage.
+ *
+ * Each entry also carries the trust signal from lib/ratingsRanking.ts. Those
+ * fields are additive and dormant: no surface orders by them yet, and the
+ * guest-facing numbers are still the raw average and count.
  */
 
 import { parseBulkVenueKeys } from "@/lib/ratingsBulk";
 import { getRatingsDb, readBulkAggregates } from "@/lib/ratingsDb";
+import { calculateCommunityRanking } from "@/lib/ratingsRanking";
 import { badRequest, jsonError, jsonOk } from "../../_lib/respond";
 
 export const runtime = "edge";
@@ -32,6 +37,16 @@ export async function GET(req: Request) {
     return jsonError(503, "ratings_unavailable", "Ratings are temporarily unavailable.");
   }
 
+  // Trust is computed here, from the same shared function the single-venue
+  // aggregate uses, so the two endpoints can never disagree — and so no
+  // client is ever tempted to reimplement the policy locally.
+  const ratings = Object.fromEntries(
+    Object.entries(result.ratings).map(([venueKey, entry]) => [
+      venueKey,
+      { ...entry, ...calculateCommunityRanking(entry.overallAverage, entry.ratingCount) },
+    ]),
+  );
+
   // No Set-Cookie: reading public numbers must never create an identity.
-  return jsonOk({ ratings: result.ratings }, AGGREGATE_S_MAXAGE, AGGREGATE_SWR);
+  return jsonOk({ ratings }, AGGREGATE_S_MAXAGE, AGGREGATE_SWR);
 }

@@ -135,7 +135,10 @@ describe("aggregate GET", () => {
     const res = await GET(get(), { params: { venueKey: VENUE } });
     expect(res.status).toBe(200);
     const body = await res.json();
-    expect(body).toEqual({
+    // toMatchObject, not toEqual: the response also carries the additive
+    // trust fields. What this test is about is that a zero state is an
+    // explicit set of nulls and zeroes, never a fabricated 0.0.
+    expect(body).toMatchObject({
       venueKey: VENUE,
       ratingCount: 0,
       overallAverage: null,
@@ -146,6 +149,8 @@ describe("aggregate GET", () => {
       qualityAverage: null,
       qualityCount: 0,
     });
+    // An unrated venue is not rankable, and its score is absent rather than 0.
+    expect(body).toMatchObject({ rankingEligible: false, rankingScore: null });
   });
 
   it("never sets an identity cookie", async () => {

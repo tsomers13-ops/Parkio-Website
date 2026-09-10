@@ -124,9 +124,11 @@ describe("GET /api/dining/ratings/", () => {
     expect(res.status).toBe(200);
     const body = (await res.json()) as { ratings: Record<string, unknown> };
 
-    expect(body.ratings[EP_A]).toEqual({ ratingCount: 2, overallAverage: 4.5 });
-    expect(body.ratings[EP_B]).toEqual({ ratingCount: 1, overallAverage: 3 });
-    expect(body.ratings[EP_C]).toEqual({ ratingCount: 0, overallAverage: null });
+    // toMatchObject: entries also carry the additive trust fields. Below the
+    // five-rating threshold none of these is rankable.
+    expect(body.ratings[EP_A]).toMatchObject({ ratingCount: 2, overallAverage: 4.5 });
+    expect(body.ratings[EP_B]).toMatchObject({ ratingCount: 1, overallAverage: 3 });
+    expect(body.ratings[EP_C]).toMatchObject({ ratingCount: 0, overallAverage: null });
   });
 
   it("is publicly cacheable, matching the single-venue aggregate", async () => {
@@ -151,7 +153,11 @@ describe("GET /api/dining/ratings/", () => {
     expect(raw).not.toMatch(/status|active|hidden/i);
     expect(raw).not.toMatch(/created_at|updated_at|createdAt|updatedAt/i);
     expect(raw).not.toMatch(/taste|value|quality/i);
-    expect(JSON.parse(raw).ratings[EP_A]).toEqual({ ratingCount: 1, overallAverage: 5 });
+    expect(JSON.parse(raw).ratings[EP_A]).toMatchObject({ ratingCount: 1, overallAverage: 5 });
+    // Still nothing beyond the public numbers and the trust signal.
+    expect(Object.keys(JSON.parse(raw).ratings[EP_A]).sort()).toEqual([
+      "overallAverage", "rankingEligible", "rankingScore", "ratingCount",
+    ]);
   });
 
   it("rejects a missing venueKeys parameter", async () => {

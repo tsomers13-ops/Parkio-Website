@@ -30,6 +30,7 @@ import {
   readBearerCredential,
   verifyNativeCredential,
 } from "@/lib/ratingsNativeIdentity";
+import { calculateCommunityRanking } from "@/lib/ratingsRanking";
 import {
   MAX_RATING_BODY_BYTES,
   isAllowedWriteOrigin,
@@ -74,8 +75,15 @@ export async function GET(_req: Request, { params }: Params) {
   const result = await readAggregate(getRatingsDb(), venue.venueKey);
   if (result.status === "unavailable") return ratingsUnavailable();
 
+  // Same shared trust function as the bulk endpoint. Additive and dormant:
+  // the guest-facing block still renders the raw average and count.
+  const ranking = calculateCommunityRanking(
+    result.aggregate.overallAverage,
+    result.aggregate.ratingCount,
+  );
+
   // No Set-Cookie here: reading public numbers must never create an identity.
-  return jsonOk(result.aggregate, AGGREGATE_S_MAXAGE, AGGREGATE_SWR);
+  return jsonOk({ ...result.aggregate, ...ranking }, AGGREGATE_S_MAXAGE, AGGREGATE_SWR);
 }
 
 export async function POST(req: Request, { params }: Params) {
