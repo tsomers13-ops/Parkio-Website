@@ -4,11 +4,17 @@
  *
  * Identity is anonymous and signed. A read never mints one — only a write
  * does, so a visitor who never rates anything is never given a cookie.
+ *
+ * Two identity transports, one identity model. A browser is identified by its
+ * signed HttpOnly cookie; a native client by a bearer credential it was issued
+ * from /api/identity/anonymous/. Both resolve to the same opaque raterId and
+ * write the same rows, so web and iOS ratings form one community.
  */
 
 import {
   getRatingsDb,
   readAggregate,
+  readMyRating,
   upsertRating,
 } from "@/lib/ratingsDb";
 import {
@@ -20,6 +26,10 @@ import {
   serializeRaterCookie,
   verifyRaterCookie,
 } from "@/lib/ratingsIdentity";
+import {
+  readBearerCredential,
+  verifyNativeCredential,
+} from "@/lib/ratingsNativeIdentity";
 import {
   MAX_RATING_BODY_BYTES,
   isAllowedWriteOrigin,
@@ -72,7 +82,18 @@ export async function POST(req: Request, { params }: Params) {
   const venue = validateRatingVenueKey(params.venueKey);
   if (!venue.ok) return notFound(`Unknown dining venue: ${params.venueKey}`);
 
-  if (!isAllowedWriteOrigin(req.headers.get("origin"))) {
+  // A bearer credential means this is a native client. Nothing attaches that
+  // header ambiently, so there is no confused deputy to protect against and
+  // no Origin to check — the credential itself is the proof.
+  //
+  // A browser sends no Authorization header, so it takes the original path
+  // unchanged: same guard, same position, same status codes. Presenting a
+  // junk credential is therefore not a way to opt out of the Origin check —
+  // it commits the caller to the native path, which rejects it below.
+  const bearer = readBearerCredential(req);
+  const isNativeRequest = bearer !== null;
+
+  if (!isNativeRequest && !isAllowedWriteOrigin(req.headers.get("origin"))) {
     return jsonError(403, "forbidden_origin", "Cross-site submissions are not allowed.");
   }
   if (!isJsonContentType(req.headers.get("content-type"))) {
@@ -102,8 +123,28 @@ export async function POST(req: Request, { params }: Params) {
   const db = getRatingsDb();
   if (!db) return ratingsUnavailable();
 
-  const existing = await verifyRaterCookie(readCookie(req, RATER_COOKIE_NAME), secret);
-  const raterId = existing ?? createRaterId();
+  // `created` drives 201-vs-200 and, for browsers, whether to mint a cookie.
+  let raterId: string;
+  let created: boolean;
+  let mintCookie = false;
+
+  if (isNativeRequest) {
+    const nativeRater = await verifyNativeCredential(bearer, secret);
+    if (!nativeRater) {
+      return jsonError(401, "invalid_credential", "Rating identity is not valid.");
+    }
+    raterId = nativeRater;
+    // A native credential always exists, so it says nothing about whether
+    // this guest has rated this venue before. Ask the row instead.
+    const mine = await readMyRating(db, venue.venueKey, raterId);
+    if (mine.status === "unavailable") return ratingsUnavailable();
+    created = mine.rating === null;
+  } else {
+    const existing = await verifyRaterCookie(readCookie(req, RATER_COOKIE_NAME), secret);
+    raterId = existing ?? createRaterId();
+    created = existing === null;
+    mintCookie = existing === null;
+  }
 
   try {
     await upsertRating(db, venue.venueKey, raterId, parsed.value, new Date());
@@ -124,8 +165,10 @@ export async function POST(req: Request, { params }: Params) {
     aggregate: aggregate.status === "ok" ? aggregate.aggregate : null,
   };
 
-  const response = noStore(body, existing ? 200 : 201);
-  if (!existing) {
+  const response = noStore(body, created ? 201 : 200);
+  // Never on the native path: a native client stores its credential in the
+  // Keychain and must not be handed a browser cookie as well.
+  if (mintCookie) {
     const isSecure = new URL(req.url).protocol === "https:";
     response.headers.append(
       "Set-Cookie",
