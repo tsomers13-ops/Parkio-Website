@@ -1,0 +1,362 @@
+{
+  "title": "Parkio Daily for September 10, 2026",
+  "slug": "parkio-daily-2026-09-10",
+  "date": "2026-09-10",
+  "teaser": "Disney drops 2027 festival dates, After Hours pricing, and room discounts up to 35% today; Olaf Draws debuts with virtual queue at Studios.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Tomorrowland Speedway",
+        "parkSlug": "magic-kingdom",
+        "note": "New driver license machines just installed"
+      },
+      {
+        "name": "Indiana Jones Adventure",
+        "parkSlug": "disneyland",
+        "note": "Closed indefinitely for repairs"
+      },
+      {
+        "name": "The Magic of Disney Animation",
+        "parkSlug": "hollywood-studios",
+        "note": "Character meet-and-greets now open"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [
+      {
+        "title": "Olaf Draws requires in-person virtual queue signup at Studios",
+        "body": "The new Olaf Draws experience at The Magic of Disney Animation requires guests to join the virtual queue in person at the attraction, not via the app. Standard virtual queue windows apply once the experience opens.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/09/olaf-draws-at-disneys-hollywood-studios-will-use-virtual-queue-must-sign-up-in-person/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Rope-drop guests at Studios tend to have better odds securing a return time. The in-person requirement usually means the first queue fills within 30 minutes of park open on busy days."
+        }
+      },
+      {
+        "title": "Indiana Jones Adventure closed indefinitely at Disneyland",
+        "body": "The Temple of the Forbidden Eye has shut down for an unscheduled closure with no reopening date announced. The enhanced motion vehicle system requires maintenance work.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/09/disneyland-closes-indiana-jones-attraction-indefinitely-el1/"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "Adventureland wait times at Disneyland often spike 15–20 minutes when a headliner closes. Matterhorn and Space Mountain tend to absorb the overflow before noon."
+        }
+      }
+    ],
+    "bignews": [
+      {
+        "title": "Disney announces 2027 EPCOT Festival of the Arts dates",
+        "body": "The festival celebrating its 10th anniversary runs January 15 through March 1, 2027, with Disney Lorcana returning as the presenting sponsor. Additional programming details will be released later this year.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/epcot-international-festival-of-the-arts-dates-and-offerings/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Festival of the Arts typically draws lighter crowds than Food and Wine. Weekday mornings in late January often offer walk-on waits for Test Track and Frozen before 11am."
+        }
+      },
+      {
+        "title": "EPCOT Flower and Garden Festival set for March 10–May 31, 2027",
+        "body": "The springtime festival returns with character topiaries, garden displays, and outdoor kitchens. Disney has begun releasing programming and menu previews ahead of the 83-day run.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/epcot-international-flower-and-garden-festival-dates-and-details/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Outdoor kitchen lines tend to be shortest during morning hours before noon. Arriving at World Showcase by 11am usually gives you first pick of menu items before sellouts begin."
+        }
+      },
+      {
+        "title": "After Hours returns to three parks in 2027 with higher pricing",
+        "body": "Disney announced 2027 After Hours dates for Magic Kingdom, EPCOT, and Hollywood Studios. Tickets now exceed two hundred dollars per person, with advance purchase discounts available for select nights from January through July.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/disney-after-hours-dates-tickets-tips/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "After Hours crowds are typically lightest on weeknights in January and February. The three-hour window often delivers true walk-on waits for Seven Dwarfs and Slinky Dog during the first 90 minutes."
+        }
+      },
+      {
+        "title": "Annual Passholders can save up to 35 percent on rooms in early 2027",
+        "body": "Disney released Passholder hotel discounts ranging from 20 to 35 percent off for select nights from January 3 through April 29, 2027. Savings vary by resort category and availability is limited.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/09/annual-passholders-can-save-up-to-35-on-walt-disney-world-hotel-stays-in-early-2027/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Discount inventory tends to disappear fastest for Deluxe resorts in late March. Booking within 48 hours of release usually offers the widest selection before spring break windows fill."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "New driver license machines installed at Tomorrowland Speedway",
+        "body": "Guests can now create personalized Certified Driver of Tomorrow licenses at kiosks outside the Speedway attraction. The interactive screens guide visitors through a digital license creation process.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/09/become-a-certified-driver-of-tomorrow-with-new-driver-license-machines-at-magic-kingdom/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "The booths tend to draw lines between 10am and 2pm when Tomorrowland is busiest. Stopping by before 9:30am or after 4pm usually means shorter waits for the experience."
+        }
+      },
+      {
+        "title": "General public room discounts up to 25 percent released for spring 2027",
+        "body": "Disney opened booking for resort discounts covering January through April 30, 2027, with savings up to 25 percent depending on resort tier. The offer applies to select nights and room categories.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/save-up-to-25-off-disney-world-resort-room-deal-for-january-to-spring-break-2027/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Early February and late April typically offer the deepest discounts outside holiday windows. Booking midweek arrivals often unlocks better rates than weekend check-ins."
+        }
+      },
+      {
+        "title": "Disney Visa cardholders get up to 30 percent off hotels in 2027",
+        "body": "A new cardmember-exclusive discount offers savings up to 30 percent on Walt Disney World resort rooms for travel from January through April 2027. Eligible Visa holders can book online or by phone.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/up-to-30-off-disney-world-resort-room-discounts-for-disney-visa-in-winter-spring-2027/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Visa offers often stack with free dining when it returns. Waiting until mid-October to book may unlock combined savings if Disney releases a dining promo for the same dates."
+        }
+      },
+      {
+        "title": "Magic of Disney Animation opens character meet-and-greets at Studios",
+        "body": "The reimagined Animation Courtyard debuts Off the Page meet-and-greets alongside the new Olaf Draws experience. Free-roaming character play continues in the courtyard outside the main building.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/character-free-play-will-continue-in-courtyard-after-magic-of-disney-animation-debuts-at-dhs/"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "The Animation Courtyard tends to see peak traffic between 11am and 2pm. Visiting before 10am or after 4pm often means shorter waits for both scheduled meets and spontaneous character interactions."
+        }
+      },
+      {
+        "title": "Disney Wonders store opens September 22 at Disneyland Paris",
+        "body": "The new immersive boutique replaces the final Disney Store location in France at Disney Village. Paris announced the opening date for the reimagined shopping experience this week.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/09/opening-date-announced-for-new-disney-wonders-store-at-disneyland-paris/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Opening-week merchandise at new Disney stores often sells out within days. Guests visiting Paris in late September may want to prioritize Disney Village early in their trip for best selection."
+        }
+      },
+      {
+        "title": "Candlelight Processional narrator lineup announced for 2026",
+        "body": "Disney released the celebrity narrator schedule for the 55th year of Candlelight Processional at EPCOT, running during the Festival of the Holidays. The tradition enters its 32nd year at the park.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/epcot-holiday-traditions-and-candlelight-processional-narrators-announced/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Dining packages for popular narrators tend to book within hours of release. Securing a reservation the morning packages go live usually offers the best shot at preferred showtimes and narrators."
+        }
+      },
+      {
+        "title": "Grand Floridian bus walkway railing work begins with screening",
+        "body": "Rolling planters and tarps now line the walkway to the bus area at Grand Floridian Resort while crews replace railings. The visual barriers conceal ongoing construction along the main guest path.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/09/rolling-planters-and-tarps-installed-along-grand-floridian-bus-walkway-for-railing-replacement/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Construction noise at resort walkways tends to peak between 9am and 3pm. Guests staying at Grand Floridian may prefer using the monorail or boat transportation during midday hours for a quieter experience."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Halloween costume guide released by Disney",
+        "body": "Disney published a 2026 costume roundup for families planning Halloween outfits, featuring character options across Disney, Pixar, Marvel, and Star Wars franchises.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/products/disney-halloween-costumes/"
+        }
+      },
+      {
+        "title": "Holiday merchandise preview shows gift options for 2026",
+        "body": "The parks blog shared an early look at seasonal products arriving in stores this fall, covering gift ideas across apparel, home goods, and collectibles for the upcoming holiday season.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/products/holiday-merchandise-guide-must-haves-for-everyone-on-your-list/"
+        }
+      },
+      {
+        "title": "Disney College Program cast member dies after lightning strike",
+        "body": "A participant in the Disney College Program was found unresponsive near Celebration on Tuesday evening following a lightning strike. Matthew Eric Jenkins of Michigan was pronounced dead at the scene.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/09/disney-college-program-cast-member-dies-after-lightning-strike/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "Spring 2027 brings four major EPCOT festivals and after-hours events",
+        "body": "Disney announced today that Festival of the Arts kicks off January 15, followed by Flower and Garden from March 10 through May 31. After Hours events return to three parks with expanded schedules, and new spring hotel discounts are now bookable for early 2027 travel.",
+        "parkSlug": "epcot",
+        "ctaLabel": "View EPCOT calendar",
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "January through early March typically offers the best balance of festival access and lower overall crowds. Booking now for late January often locks in discounted rooms before spring break demand drives prices higher."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "B_dQt9Jq9pI",
+      "title": "🔴 Live: World of Color Wednesday Stream at Disneyland! - 09/09/26",
+      "channel": "Koda Bear the Explorer ",
+      "publishedAt": "2026-09-10T06:50:07Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/B_dQt9Jq9pI/mqdefault.jpg",
+      "viewCount": 36473,
+      "url": "https://www.youtube.com/watch?v=B_dQt9Jq9pI",
+      "summary": "Koda Bear broadcasts a live stream of World of Color from Disney California Adventure on a Wednesday evening."
+    },
+    {
+      "videoId": "hVgvJm5ee8Y",
+      "title": "＼ボン・ヴォヤージュ／9月10日販売状況を紹介！",
+      "channel": "みい🎀",
+      "publishedAt": "2026-09-10T02:47:45Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/hVgvJm5ee8Y/mqdefault.jpg",
+      "viewCount": 6210,
+      "url": "https://www.youtube.com/watch?v=hVgvJm5ee8Y",
+      "summary": "A September 10 merchandise availability update from Bon Voyage, the Disney store at Tokyo Disney Resort."
+    },
+    {
+      "videoId": "McHh8T0KqWI",
+      "title": "The cutest Anna & Elsa parade moment up close 🥹❄️",
+      "channel": "Mark and Sandie in Motion",
+      "publishedAt": "2026-09-10T10:30:21Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/McHh8T0KqWI/mqdefault.jpg",
+      "viewCount": 2834,
+      "url": "https://www.youtube.com/watch?v=McHh8T0KqWI",
+      "summary": "Mark and Sandie capture an up-close parade moment featuring Anna and Elsa characters."
+    },
+    {
+      "videoId": "XrmKHBLcjIU",
+      "title": "The beautiful Disney moments between kids and characters❤️#disney #kids #disneyland #baby#happy",
+      "channel": "Caez Spiney",
+      "publishedAt": "2026-09-10T11:33:19Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/XrmKHBLcjIU/mqdefault.jpg",
+      "viewCount": 2178,
+      "url": "https://www.youtube.com/watch?v=XrmKHBLcjIU",
+      "summary": "A compilation video showing heartwarming interactions between children and Disney characters at the parks."
+    },
+    {
+      "videoId": "ePq_QEqJMvc",
+      "title": "Off the Page! Character Meet & Greets - The Magic of Disney Animation",
+      "channel": "WDWNT POV",
+      "publishedAt": "2026-09-10T02:26:18Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/ePq_QEqJMvc/mqdefault.jpg",
+      "viewCount": 1681,
+      "url": "https://www.youtube.com/watch?v=ePq_QEqJMvc",
+      "summary": "WDWNT provides a point-of-view walkthrough of the new Off the Page character meet-and-greets at The Magic of Disney Animation."
+    },
+    {
+      "videoId": "LS-POTZsyp8",
+      "title": "How many times can Goofy jump through the hoopla hoop? #disney",
+      "channel": "Disney Parks with Love - Janel",
+      "publishedAt": "2026-09-10T09:54:42Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/LS-POTZsyp8/mqdefault.jpg",
+      "viewCount": 1369,
+      "url": "https://www.youtube.com/watch?v=LS-POTZsyp8",
+      "summary": "Janel films Goofy performing a hula hoop routine at a Disney park."
+    },
+    {
+      "videoId": "6lmBC_oEDAc",
+      "title": "Pinocchio 💙 #disney #disneyland #dance",
+      "channel": "Clara.A",
+      "publishedAt": "2026-09-10T06:34:33Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/6lmBC_oEDAc/mqdefault.jpg",
+      "viewCount": 1219,
+      "url": "https://www.youtube.com/watch?v=6lmBC_oEDAc",
+      "summary": "Clara captures Pinocchio dancing or performing at Disneyland."
+    },
+    {
+      "videoId": "cGe40-9hr5c",
+      "title": "🪼🪼#unicorn #disney #disneyland #artwork #mermaid #fun #fypシ #drawwithme #blue #princess #subscribe",
+      "channel": "Saiba",
+      "publishedAt": "2026-09-10T03:48:07Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/cGe40-9hr5c/mqdefault.jpg",
+      "viewCount": 1133,
+      "url": "https://www.youtube.com/watch?v=cGe40-9hr5c",
+      "summary": "Saiba shares Disney-themed artwork featuring mermaids, unicorns, and princess characters."
+    },
+    {
+      "videoId": "29bdeQ2lF44",
+      "title": "Truly our home away from home. ♥️ #disney #epcot #livingwiththeland",
+      "channel": "Castle View News",
+      "publishedAt": "2026-09-10T03:09:32Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/29bdeQ2lF44/mqdefault.jpg",
+      "viewCount": 1119,
+      "url": "https://www.youtube.com/watch?v=29bdeQ2lF44",
+      "summary": "Castle View News shares footage from the Living with the Land attraction at EPCOT."
+    },
+    {
+      "videoId": "U7VlpzxpFDM",
+      "title": "Disneyland Paris - A Million Splashes Of Colour - #disneylandparis #disney #disneyland #parade #dlp",
+      "channel": "patrick isaac",
+      "publishedAt": "2026-09-10T06:25:10Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/U7VlpzxpFDM/mqdefault.jpg",
+      "viewCount": 1112,
+      "url": "https://www.youtube.com/watch?v=U7VlpzxpFDM",
+      "summary": "Patrick Isaac films the A Million Splashes of Colour parade at Disneyland Paris."
+    }
+  ],
+  "updatedAt": "2026-09-10T14:43:09.557Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-09-10T14:43:09.557Z",
+    "tokens": {
+      "input": 11221,
+      "output": 5691,
+      "costUsd": 0.119
+    }
+  }
+}
