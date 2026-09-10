@@ -13,6 +13,7 @@ import {
   AGGREGATE_RATINGS_SQL,
   SELECT_MY_RATING_SQL,
   UPSERT_RATING_SQL,
+  bulkAggregateRatingsSql,
   ratingTimestamp,
 } from "./ratingsSql";
 import {
@@ -25,6 +26,8 @@ import {
 interface D1PreparedStatement {
   bind(...values: unknown[]): D1PreparedStatement;
   first<T = unknown>(): Promise<T | null>;
+  /** Multi-row read. Used only by the bulk discovery aggregate. */
+  all<T = unknown>(): Promise<{ results?: T[] }>;
   run(): Promise<unknown>;
 }
 export interface RatingsDatabase {
@@ -170,4 +173,73 @@ export async function upsertRating(
       timestamp,
     )
     .run();
+}
+
+// ── Bulk discovery aggregate ────────────────────────────────────────────────
+
+/**
+ * What a discovery card needs, and nothing else.
+ *
+ * No raterId, no per-dimension breakdown, no timestamps, no row status — a
+ * public card shows a number and a count, so that is all this carries.
+ */
+export interface BulkAggregateEntry {
+  ratingCount: number;
+  overallAverage: number | null;
+}
+
+export type BulkAggregateResult =
+  | { status: "ok"; ratings: Record<string, BulkAggregateEntry> }
+  | { status: "unavailable" };
+
+interface BulkAggregateRow {
+  venue_key: string;
+  rating_count: number | null;
+  overall_average: number | null;
+}
+
+/**
+ * Overall aggregates for many venues in a single round trip.
+ *
+ * This exists so a discovery page never issues one request per card. The
+ * whole park is one statement.
+ *
+ * Every requested key comes back, including venues nobody has rated — those
+ * are a genuine `ratingCount: 0`, which the UI omits from the card. A total
+ * read failure is `unavailable` instead, and the UI omits the line for a
+ * different reason. Collapsing the two would let an outage masquerade as
+ * "nobody likes this place".
+ */
+export async function readBulkAggregates(
+  db: RatingsDatabase | null,
+  venueKeys: string[],
+): Promise<BulkAggregateResult> {
+  if (!db) return { status: "unavailable" };
+  if (venueKeys.length === 0) return { status: "ok", ratings: {} };
+
+  // Start every requested key at a real zero, then let the rated ones
+  // overwrite it. GROUP BY simply omits venues with no rows.
+  const ratings: Record<string, BulkAggregateEntry> = {};
+  for (const key of venueKeys) ratings[key] = { ratingCount: 0, overallAverage: null };
+
+  try {
+    const result = await db
+      .prepare(bulkAggregateRatingsSql(venueKeys.length))
+      .bind(...venueKeys)
+      .all<BulkAggregateRow>();
+
+    for (const row of result.results ?? []) {
+      // Defensive: only keys we actually asked for may appear in the response.
+      if (!Object.prototype.hasOwnProperty.call(ratings, row.venue_key)) continue;
+      ratings[row.venue_key] = {
+        ratingCount: row.rating_count ?? 0,
+        overallAverage: row.overall_average ?? null,
+      };
+    }
+    return { status: "ok", ratings };
+  } catch {
+    // Same reasoning as readAggregate: never leak a database message, and
+    // never degrade into a fabricated zero.
+    return { status: "unavailable" };
+  }
 }

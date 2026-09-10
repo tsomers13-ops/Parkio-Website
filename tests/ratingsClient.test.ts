@@ -1,8 +1,11 @@
 import { describe, expect, it, vi } from "vitest";
 
 import {
+  bulkRatingsUrl,
   fetchAggregate,
+  fetchBulkRatings,
   fetchMyRating,
+  guestRatingLabel,
   ratingCountLabel,
   ratingsAggregateUrl,
   ratingsMeUrl,
@@ -136,5 +139,91 @@ describe("count language", () => {
     expect(ratingCountLabel(0)).toBe("0 ratings");
     expect(ratingCountLabel(2)).toBe("2 ratings");
     expect(ratingCountLabel(127)).toBe("127 ratings");
+  });
+});
+
+// ── Bulk discovery aggregates ───────────────────────────────────────────────
+
+describe("bulkRatingsUrl", () => {
+  it("keeps the trailing slash before the query string", () => {
+    expect(bulkRatingsUrl(["ep-le-cellier"])).toBe(
+      "/api/dining/ratings/?venueKeys=ep-le-cellier",
+    );
+  });
+
+  it("joins keys with commas in the order given", () => {
+    expect(bulkRatingsUrl(["ep-a", "ep-b", "hs-c"])).toBe(
+      "/api/dining/ratings/?venueKeys=ep-a,ep-b,hs-c",
+    );
+  });
+
+  it("encodes each key rather than trusting it into the URL", () => {
+    expect(bulkRatingsUrl(["a&b=c"])).toBe("/api/dining/ratings/?venueKeys=a%26b%3Dc");
+  });
+
+  it("produces a stable URL for the same park, so the edge cache is usable", () => {
+    const keys = ["ep-a", "ep-b"];
+    expect(bulkRatingsUrl(keys)).toBe(bulkRatingsUrl([...keys]));
+  });
+});
+
+describe("fetchBulkRatings", () => {
+  const okFetch = (body: unknown) =>
+    (async () => ({ ok: true, status: 200, json: async () => body })) as unknown as typeof fetch;
+
+  it("returns the ratings map on success", async () => {
+    const load = await fetchBulkRatings(
+      ["ep-a"],
+      okFetch({ ratings: { "ep-a": { ratingCount: 3, overallAverage: 4.5 } } }),
+    );
+    expect(load).toEqual({
+      status: "ok",
+      ratings: { "ep-a": { ratingCount: 3, overallAverage: 4.5 } },
+    });
+  });
+
+  it("short-circuits an empty request without calling the network", async () => {
+    let called = false;
+    const spy = (async () => {
+      called = true;
+      return { ok: true, status: 200, json: async () => ({}) };
+    }) as unknown as typeof fetch;
+    expect(await fetchBulkRatings([], spy)).toEqual({ status: "ok", ratings: {} });
+    expect(called).toBe(false);
+  });
+
+  it("reports unavailable on a non-OK response", async () => {
+    const failing = (async () => ({ ok: false, status: 503, json: async () => ({}) })) as unknown as typeof fetch;
+    expect(await fetchBulkRatings(["ep-a"], failing)).toEqual({ status: "unavailable" });
+  });
+
+  it("reports unavailable when the request throws", async () => {
+    const throwing = (async () => {
+      throw new TypeError("network");
+    }) as unknown as typeof fetch;
+    expect(await fetchBulkRatings(["ep-a"], throwing)).toEqual({ status: "unavailable" });
+  });
+
+  it("reports unavailable on a body with no ratings map", async () => {
+    expect(await fetchBulkRatings(["ep-a"], okFetch({ nope: true }))).toEqual({
+      status: "unavailable",
+    });
+  });
+
+  it("never invents a zero when the service fails", async () => {
+    const failing = (async () => ({ ok: false, status: 500, json: async () => ({}) })) as unknown as typeof fetch;
+    const load = await fetchBulkRatings(["ep-a"], failing);
+    expect(load.status).toBe("unavailable");
+    expect(load).not.toHaveProperty("ratings");
+  });
+});
+
+describe("guestRatingLabel", () => {
+  it("states the scale and the sample size", () => {
+    expect(guestRatingLabel(4.6, 328)).toBe("Guest rating 4.6 out of 5 from 328 ratings");
+  });
+
+  it("keeps one decimal on a whole average", () => {
+    expect(guestRatingLabel(5, 1)).toBe("Guest rating 5.0 out of 5 from 1 rating");
   });
 });

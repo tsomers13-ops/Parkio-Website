@@ -1,9 +1,10 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { DiningVenueCard } from "@/components/dining/DiningVenueCard";
 import { FestivalBoothCard, type BoothView } from "@/components/dining/FestivalBoothCard";
 import { DINING_TYPES, diningTypeLabel, type DiningType, type PermanentDiningVenue } from "@/lib/diningTypes";
+import { fetchBulkRatings, type BulkRatingEntry } from "@/lib/ratingsClient";
 
 /**
  * The Dining decision surface.
@@ -11,6 +12,12 @@ import { DINING_TYPES, diningTypeLabel, type DiningType, type PermanentDiningVen
  * All lifecycle work is already done server-side — this component receives
  * resolved booth views and never computes a date. It only filters and
  * searches what it was given.
+ *
+ * Community ratings are the one thing loaded at runtime. The page itself is
+ * statically generated, so ratings fetched at build time would be frozen at
+ * build time — they have to arrive in the browser. They arrive in exactly one
+ * request for the whole park, held here and handed down, so no card fetches
+ * anything and filtering never touches the network.
  */
 
 type Mode = "all" | "permanent" | "festival";
@@ -72,6 +79,37 @@ export function ParkDiningExplorer({ parkName, venueGroups, boothViews, festival
   const [typeFilter, setTypeFilter] = useState<TypeFilter>("all");
   const [menuFilter, setMenuFilter] = useState<MenuFilter>("all");
   const [query, setQuery] = useState("");
+  const [ratings, setRatings] = useState<Record<string, BulkRatingEntry>>({});
+
+  /**
+   * Every permanent venue in the park, in a stable order — deliberately NOT
+   * the filtered set. Two reasons: the request must not change when someone
+   * types in the search box, and a stable key list means every visitor to
+   * this park requests the same URL, so the edge cache is actually useful.
+   */
+  const venueKeysParam = useMemo(
+    () => venueGroups.flatMap((group) => group.venues.map((venue) => venue.venueKey)).join(","),
+    [venueGroups],
+  );
+
+  /**
+   * One request per park, keyed on the venue list rather than on filters, so
+   * changing service type or search never refetches.
+   *
+   * On failure `ratings` stays empty and every card simply omits its rating
+   * line. Dining discovery does not depend on this succeeding.
+   */
+  useEffect(() => {
+    if (venueKeysParam === "") return;
+    let cancelled = false;
+    void fetchBulkRatings(venueKeysParam.split(",")).then((load) => {
+      if (cancelled || load.status !== "ok") return;
+      setRatings(load.ratings);
+    });
+    return () => {
+      cancelled = true;
+    };
+  }, [venueKeysParam]);
 
   const q = norm(query.trim());
 
@@ -203,7 +241,7 @@ export function ParkDiningExplorer({ parkName, venueGroups, boothViews, festival
                   <ul className="mt-4 grid grid-cols-1 gap-3 lg:grid-cols-2">
                     {group.venues.map((venue) => (
                       <li key={venue.slug}>
-                        <DiningVenueCard venue={venue} />
+                        <DiningVenueCard venue={venue} rating={ratings[venue.venueKey]} />
                       </li>
                     ))}
                   </ul>

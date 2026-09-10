@@ -112,3 +112,63 @@ export async function submitRating(
 export function ratingCountLabel(count: number): string {
   return `${count} ${count === 1 ? "rating" : "ratings"}`;
 }
+
+// ── Bulk discovery aggregates ───────────────────────────────────────────────
+
+/** One card's worth of community signal. */
+export interface BulkRatingEntry {
+  ratingCount: number;
+  overallAverage: number | null;
+}
+
+/**
+ * Bulk aggregate URL.
+ *
+ * Trailing slash before the query string, for the same reason as every other
+ * ratings URL. Keys are sent in the caller's order and that order is stable
+ * per park, so every visitor to EPCOT Dining requests the same URL and the
+ * edge cache actually gets used.
+ */
+export function bulkRatingsUrl(venueKeys: string[]): string {
+  const keys = venueKeys.map((key) => encodeURIComponent(key)).join(",");
+  return `/api/dining/ratings/?venueKeys=${keys}`;
+}
+
+export type BulkRatingsLoad =
+  | { status: "ok"; ratings: Record<string, BulkRatingEntry> }
+  | { status: "unavailable" };
+
+/**
+ * One request for a whole discovery page.
+ *
+ * Any failure — network, 503, malformed body — resolves to `unavailable`, and
+ * discovery then renders with no rating lines at all. Ratings are enhancement
+ * data: the page must never depend on them.
+ */
+export async function fetchBulkRatings(
+  venueKeys: string[],
+  fetchImpl: typeof fetch = fetch,
+): Promise<BulkRatingsLoad> {
+  if (venueKeys.length === 0) return { status: "ok", ratings: {} };
+  try {
+    const res = await fetchImpl(bulkRatingsUrl(venueKeys), {
+      headers: { accept: "application/json" },
+    });
+    if (!res.ok) return { status: "unavailable" };
+    const body = (await res.json()) as { ratings?: Record<string, BulkRatingEntry> };
+    if (!body || typeof body !== "object" || !body.ratings) return { status: "unavailable" };
+    return { status: "ok", ratings: body.ratings };
+  } catch {
+    return { status: "unavailable" };
+  }
+}
+
+/**
+ * Screen-reader sentence for a card's rating.
+ *
+ * "★ 4.6" alone is meaningless without sight of the star, so the accessible
+ * name states the scale and the sample size in words.
+ */
+export function guestRatingLabel(average: number, count: number): string {
+  return `Guest rating ${average.toFixed(1)} out of 5 from ${ratingCountLabel(count)}`;
+}

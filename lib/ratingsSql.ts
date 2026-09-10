@@ -62,3 +62,44 @@ WHERE venue_key = ? AND rater_id = ?
 export function ratingTimestamp(now: Date): string {
   return `${now.toISOString().slice(0, 19)}Z`;
 }
+
+/**
+ * Ceiling on one bulk aggregate read.
+ *
+ * 62 is the entire permanent Dining universe today, so this is roughly 1.6x
+ * headroom — enough that adding venues never needs a code change, small
+ * enough that the SQL stays a bounded statement rather than an open door.
+ */
+export const MAX_BULK_VENUE_KEYS = 100;
+
+/**
+ * Public overall aggregate for many venues in ONE statement.
+ *
+ * Discovery cards need only the overall average and its count; Taste, Value
+ * and Quality stay on the detail page, so they are deliberately not selected
+ * here rather than fetched and thrown away.
+ *
+ * The only thing interpolated is a run of `?` placeholders derived from the
+ * COUNT of keys — never a key itself. Values are bound by the caller. The
+ * cap is enforced here too, so an unbounded IN list cannot be built even by a
+ * caller that forgot to check.
+ *
+ * GROUP BY returns a row only for venues that have ratings; callers fill the
+ * silent ones in as a real zero. That keeps "nobody rated this" (a fact) and
+ * "we could not read the table" (an outage) separable all the way up.
+ */
+export function bulkAggregateRatingsSql(keyCount: number): string {
+  if (!Number.isInteger(keyCount) || keyCount < 1 || keyCount > MAX_BULK_VENUE_KEYS) {
+    throw new RangeError(`keyCount must be an integer 1-${MAX_BULK_VENUE_KEYS}`);
+  }
+  const placeholders = Array.from({ length: keyCount }, () => "?").join(", ");
+  return `
+SELECT
+  venue_key       AS venue_key,
+  COUNT(overall)  AS rating_count,
+  AVG(overall)    AS overall_average
+FROM dining_ratings
+WHERE status = 'active' AND venue_key IN (${placeholders})
+GROUP BY venue_key
+`.trim();
+}

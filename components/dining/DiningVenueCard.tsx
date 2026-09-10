@@ -1,8 +1,10 @@
 import Link from "next/link";
 import { amenityChips, Chip, priceTierLabel } from "@/components/dining/DiningFacts";
+import { GuestRatingBadge } from "@/components/dining/GuestRatingBadge";
 import { diningCanonicalPath } from "@/lib/diningRoute";
 import { diningTypeLabel, type PermanentDiningVenue } from "@/lib/diningTypes";
 import { pavilionName } from "@/lib/lands";
+import type { BulkRatingEntry } from "@/lib/ratingsClient";
 
 /**
  * One permanent venue.
@@ -11,8 +13,23 @@ import { pavilionName } from "@/lib/lands";
  * editorial. A venue Parkio has reviewed gains extra facts and a quiet
  * "Parkio pick" marker — the difference reads as "this one has extra
  * guidance", never as "that one is missing data".
+ *
+ * `rating` is community data loaded at runtime, so it is optional and every
+ * card renders correctly without it. It is deliberately a prop rather than
+ * something this component fetches: 42 self-fetching cards would be 42
+ * requests. See ParkDiningExplorer, which loads the whole park at once.
+ *
+ * Editorial is not a prerequisite. A factual-only venue can carry a Guest
+ * Rating with no Parkio pick, score or verdict — community data is exactly
+ * what those thinner venues lack.
  */
-export function DiningVenueCard({ venue }: { venue: PermanentDiningVenue }) {
+export function DiningVenueCard({
+  venue,
+  rating,
+}: {
+  venue: PermanentDiningVenue;
+  rating?: BulkRatingEntry | null;
+}) {
   const pavilion = pavilionName(venue.land);
   const price = priceTierLabel(venue.editorial?.priceTier);
   const amenities = amenityChips(venue.editorial);
@@ -44,6 +61,8 @@ export function DiningVenueCard({ venue }: { venue: PermanentDiningVenue }) {
           <Chip key={chip}>{chip}</Chip>
         ))}
       </span>
+
+      <GuestRatingBadge rating={rating} />
 
       {verdict && (
         <span className="mt-3 block text-sm leading-relaxed text-ink-600">{verdict}</span>
