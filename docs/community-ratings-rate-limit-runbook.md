@@ -200,3 +200,45 @@ which of these exist and how they are expressed:
    starting recommendations above.
 
 Do not treat the numbers in this document as applied configuration.
+
+---
+
+## Correction (Gate 8B.1): the expressions above cannot be created on this plan
+
+The zone is **parkio.info on the Free Website plan**. Free-plan rate limiting
+rules are far more restricted than the expressions recorded earlier in this
+runbook assume, and those expressions **cannot be entered as written**:
+
+| Free plan allows | This runbook's earlier expressions needed |
+| --- | --- |
+| 1 rule total | 2 rules (mint + rating write) |
+| Counting period: 10 s only | 60 s |
+| Mitigation timeout: 10 s max | 60 s |
+| Matchable fields: Path, Verified Bot | `http.request.method`, `starts_with`, `ends_with` |
+| Counting characteristic: IP only | IP (this part was fine) |
+
+The decisive one is the field list. Without `http.request.method` a rule cannot
+be scoped to POST, so a path rule on `/api/dining/*/ratings/` would also
+throttle the **public GET aggregate** that Dining discovery depends on. The
+mint path is POST-only, so a path rule there would be harmless — but only one
+rule exists to spend, and a 10 s window with a 10 s mitigation is not the
+approved 5-per-60-s policy.
+
+Separately, and unchanged from the earlier finding: zone rules on parkio.info
+never reach `parkio.pages.dev` or `*.parkio.pages.dev`, because that zone
+belongs to Cloudflare and not to this account.
+
+**Do not paste the earlier expressions.** They are retained above only as the
+record of what was proposed before the plan was known.
+
+### What replaced them
+
+Host authorization moved into the Worker instead — see `lib/ratingsWriteHost.ts`.
+That closes the hostname bypass for every deployment carrying the code, and
+needs no plan feature. It is not a rate limiter and does not pretend to be one.
+
+Rate limiting remains **unimplemented**. The Workers Rate Limiting binding is
+GA but is **not a supported Pages Functions binding** and `ratelimits` is not a
+supported key in a Pages Wrangler configuration file, so the approved policy
+cannot be built inside this Pages project at all. The open options are recorded
+in PARKIO_ACTIVE_CONTEXT.md under Gate 8B.1; they require a product decision.
