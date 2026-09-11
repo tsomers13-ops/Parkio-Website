@@ -24,7 +24,15 @@ let db: string;
 let GET: (req: Request, ctx: { params: { venueKey: string } }) => Promise<Response>;
 let POST: (req: Request, ctx: { params: { venueKey: string } }) => Promise<Response>;
 let ME: (req: Request, ctx: { params: { venueKey: string } }) => Promise<Response>;
-let ISSUE: () => Promise<Response>;
+let mintPost: (req: Request) => Promise<Response>;
+
+/**
+ * The mint handler as Next actually calls it: with a Request. It is
+ * host-authorized, so the hostname is part of a realistic invocation and not
+ * an incidental detail — see tests/ratingsWriteHost.test.ts for the policy.
+ */
+const ISSUE = () =>
+  mintPost(new Request("https://parkio.info/api/identity/anonymous", { method: "POST" }));
 
 function sql(query: string): string {
   return execFileSync("sqlite3", [db, query], { encoding: "utf8" }).trim();
@@ -127,7 +135,7 @@ beforeAll(async () => {
   GET = main.GET as typeof GET;
   POST = main.POST as typeof POST;
   ME = me.GET as typeof ME;
-  ISSUE = identity.POST as typeof ISSUE;
+  mintPost = identity.POST as typeof mintPost;
 });
 
 afterAll(() => {

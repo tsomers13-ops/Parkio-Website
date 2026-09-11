@@ -31,6 +31,7 @@ import {
   verifyNativeCredential,
 } from "@/lib/ratingsNativeIdentity";
 import { calculateCommunityRanking } from "@/lib/ratingsRanking";
+import { isAllowedCommunityWriteRequest } from "@/lib/ratingsWriteHost";
 import {
   MAX_RATING_BODY_BYTES,
   isAllowedWriteOrigin,
@@ -87,6 +88,18 @@ export async function GET(_req: Request, { params }: Params) {
 }
 
 export async function POST(req: Request, { params }: Params) {
+  // First, before anything else looks at the request. Cloudflare Pages serves
+  // this same Worker on parkio.pages.dev and on an immutable alias for every
+  // past deployment, all bound to the same Production database. Only
+  // parkio.info carries Production write authority; every other hostname is
+  // refused here, ahead of identity, validation and D1.
+  //
+  // Ahead of the venue check too, so an unauthorized host is not told which
+  // venue keys exist.
+  if (!isAllowedCommunityWriteRequest(req)) {
+    return jsonError(403, "forbidden_host", "Ratings cannot be submitted from this host.");
+  }
+
   const venue = validateRatingVenueKey(params.venueKey);
   if (!venue.ok) return notFound(`Unknown dining venue: ${params.venueKey}`);
 

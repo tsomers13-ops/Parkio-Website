@@ -17,11 +17,19 @@
 
 import { issueNativeCredential } from "@/lib/ratingsNativeIdentity";
 import { readIdentitySecret } from "@/lib/ratingsIdentity";
+import { isAllowedCommunityWriteRequest } from "@/lib/ratingsWriteHost";
 import { jsonError } from "../../_lib/respond";
 
 export const runtime = "edge";
 
-export async function POST() {
+export async function POST(req: Request) {
+  // Minting is the cheapest way to manufacture rating identities at scale, so
+  // it is host-authorized exactly like the rating write itself. A refused host
+  // mints nothing, signs nothing and learns nothing about the secret.
+  if (!isAllowedCommunityWriteRequest(req)) {
+    return jsonError(403, "forbidden_host", "Identities cannot be minted from this host.");
+  }
+
   const secret = readIdentitySecret();
   // Without the secret we cannot mint a trustworthy identity, and signing
   // with a fallback would make every rating forgeable.
