@@ -1,0 +1,336 @@
+{
+  "title": "Parkio Daily for Friday, September 11, 2026",
+  "slug": "parkio-daily-2026-09-11",
+  "date": "2026-09-11",
+  "teaser": "Magic of Disney Animation soft opens today at Hollywood Studios; rare characters now roaming inside. EPCOT preps cheese exhibit for Food & Wine.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Space Mountain",
+        "parkSlug": "magic-kingdom",
+        "note": "Short waits early morning"
+      },
+      {
+        "name": "Test Track",
+        "parkSlug": "epcot",
+        "note": "Moderate crowds, steady lines"
+      },
+      {
+        "name": "Slinky Dog Dash",
+        "parkSlug": "hollywood-studios",
+        "note": "Animation Courtyard drawing guests away"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [
+      {
+        "title": "Magic of Disney Animation Soft Opens Today",
+        "body": "The new walk-through experience officially set for September 14 has begun admitting guests today at Hollywood Studios. Operating hours mirror the full opening schedule, running 9am to 9pm.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/09/breaking-the-magic-of-disney-animation-soft-opens-at-disneys-hollywood-studios/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Soft openings typically draw lighter crowds than official debuts. Visiting Animation Courtyard this morning or afternoon likely offers shorter waits and fewer bottlenecks than next week."
+        }
+      },
+      {
+        "title": "Alice Character Meet Debuts in Animation Playground",
+        "body": "Alice from Wonderland is hosting impromptu meet and greets inside the new Drawn to Wonderland indoor play area at The Magic of Disney Animation. This marks her first appearance in the courtyard's character rotation.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/09/breaking-alice-in-wonderland-meet-greet-character-appearing-in-magic-of-disney-animation-playground/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Alice meet and greets are rare at Hollywood Studios. The indoor playground setup tends to keep lines shorter than outdoor character spots; worth a stop if you're already visiting the new experience."
+        }
+      }
+    ],
+    "bignews": [
+      {
+        "title": "Tropical Americas Opening Timeline Removed from Website",
+        "body": "Disney has updated the Animal Kingdom expansion description online, stripping out any mention of the previously announced 2027 opening window. The project remains confirmed but now carries no public timeline.",
+        "parkSlug": "animal-kingdom",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/09/disney-college-program-cast-member-dies-after-lightning-strike-in-todays-daily-recap-for-9-10-2026/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Without a firm timeline, planning a 2027 trip around this expansion is risky. Focus your Animal Kingdom day on existing attractions; any preview or soft opening will likely be announced with short notice."
+        }
+      },
+      {
+        "title": "2027 Festival Dates Announced for EPCOT",
+        "body": "Festival of the Arts runs January 9 through March 1, longer than prior years. Flower and Garden follows March 10 to May 31, a shorter window than recent editions. After Hours events return to Magic Kingdom, EPCOT, and Hollywood Studios starting January.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/epcot-international-festival-of-the-arts-dates-and-offerings/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Festival of the Arts in late February typically sees lighter crowds than March spring break weeks. Booking early in that window often means shorter kiosk lines and easier World Showcase loops."
+        }
+      },
+      {
+        "title": "Logo Mania Merchandise Collection Arrives",
+        "body": "A new apparel and accessory line celebrating Disney attractions, lands, and transportation launched across parks. Six colorful designs let guests showcase favorite rides and park elements.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/products/new-disney-parks-merch-logo-mania/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Themed collections usually sell out fastest at flagship shops in each park. Hitting Emporium at Magic Kingdom or World of Disney at Disney Springs before noon tends to offer the best selection."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "Rare Characters Now Roaming Animation Courtyard",
+        "body": "With main meet and greet characters moving inside The Magic of Disney Animation, other less common faces have begun appearing outdoors in Animation Courtyard to keep the area lively.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/09/update-different-roaming-characters-debut-at-opening-of-the-magic-of-disney-animation/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Roaming characters typically appear mid-morning through early afternoon. Swinging by Animation Courtyard around 10am or 2pm often catches a rotation before they take breaks."
+        }
+      },
+      {
+        "title": "Interactive Cheese Exhibit Coming to Food and Wine Festival",
+        "body": "Communicore Hall exterior now features decorations previewing a new hands-on cheese history display debuting at the 2026 EPCOT International Food and Wine Festival.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/09/communicore-hall-exterior-decorated-for-interactive-cheese-exhibit-coming-to-epcot-international-food-wine-festival/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Interactive festival exhibits usually draw peak crowds mid-afternoon. Visiting Communicore Hall before 11am or after 5pm tends to offer shorter waits and a quieter browsing experience."
+        }
+      },
+      {
+        "title": "Disneyland Offers Rare PIN Code Park Hopper Discount",
+        "body": "Select guests received a PIN code offering up to 165 dollars off one-day Disneyland Park Hopper tickets, valid now through Christmas 2026. The discount is invitation-only and not publicly available.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/pin-code-deal-single-day-disneyland-park-hopper-ticket-halloween-christmas-2026/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "PIN code recipients often see best savings on weekdays outside holiday windows. Redeeming in late September or early December typically avoids peak pricing and heavy crowds."
+        }
+      },
+      {
+        "title": "Disney Visa Cardmember Room Discounts Announced for 2027",
+        "body": "Cardholders can save up to 30 percent on resort stays from January through April 2027. The offer targets winter and early spring travel before peak spring break weeks.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/up-to-30-off-disney-world-resort-room-discounts-for-disney-visa-in-winter-spring-2027/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Late January and early February usually see the lightest crowds of the discount window. Booking deluxe resorts during that stretch often combines the best per-night savings with shorter park lines."
+        }
+      },
+      {
+        "title": "Bibbidi Blush and Midnight Magic Athleisure Now Online",
+        "body": "Disney Store added new adult athletic wear in pink, black, and olive green colorways. The collections include socks, tops, and accessories with playful Disney Parks branding.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/09/bibbidi-blush-midnight-magic-park-day-matcha-athleisure-collections-now-available-online/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Online launches typically sell popular sizes within a few days. Ordering today or tomorrow tends to secure your preferred fit before restocks become necessary."
+        }
+      },
+      {
+        "title": "Halloween Costumes Now Available from Disney",
+        "body": "New family and group costume options launched across Disney Store and park retail. The collection targets early planners looking to coordinate outfits for October events.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/products/disney-halloween-costumes/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Costume inventory usually thins by late September as party dates approach. Securing sizes now tends to avoid sold-out frustration closer to Halloween."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "2027 After Hours Tickets Go on Sale",
+        "body": "Special low-crowd evening events return to Magic Kingdom, EPCOT, and Hollywood Studios starting January. Pricing and dates are now public for guests booking early 2027 trips.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/2027-after-hours-at-disney-world-party-dates-ticket-costs-ride-roster-price-increases-discounts/"
+        }
+      },
+      {
+        "title": "Holiday Merchandise Guide Published",
+        "body": "Disney Parks Blog released its seasonal shopping preview, highlighting gift ideas and themed items arriving for the 2026 holiday season across resorts and retail locations.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/products/holiday-merchandise-guide-must-haves-for-everyone-on-your-list/"
+        }
+      },
+      {
+        "title": "Disneyland Paris Previews Halloween and Holiday Seasons",
+        "body": "The resort shared details for Disney Halloween Festival running September 26 through November 1, plus Christmas celebrations from November 7 through January 6.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/dlp/guide-to-halloween-at-disneyland-paris/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "Spring 2027 Walt Disney World Offers Now Bookable",
+        "body": "Room discounts up to 250 dollars per night and package deals are available for January through July 2027. The window includes Festival of the Arts, Flower and Garden, and the return of After Hours events. Booking early tends to lock in lower nightly rates before inventory tightens.",
+        "parkSlug": null,
+        "ctaLabel": "View spring offers",
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Early February and late April typically see the best discount percentages and lightest crowds within the offer window. Securing reservations now often beats price increases closer to travel dates."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "yjViVpY_pRk",
+      "title": "Ranking Disneyland Moments 🏰✨ #shorts",
+      "channel": "Visualora",
+      "publishedAt": "2026-09-11T05:16:20Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/yjViVpY_pRk/mqdefault.jpg",
+      "viewCount": 23583,
+      "url": "https://www.youtube.com/watch?v=yjViVpY_pRk",
+      "summary": "Visualora ranks favorite Disneyland experiences in a short-form video celebrating iconic park moments."
+    },
+    {
+      "videoId": "MxbvjxW-z4A",
+      "title": "🔴Live Magic Kingdom Friday morning with Rides, Parades at Walt Disney World 9/11/2026",
+      "channel": "RON ON THE GO",
+      "publishedAt": "2026-09-11T04:25:46Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/MxbvjxW-z4A/mqdefault_live.jpg",
+      "viewCount": 2640,
+      "url": "https://www.youtube.com/watch?v=MxbvjxW-z4A",
+      "summary": "Ron streams live from Magic Kingdom this Friday morning, covering rides and parades in real time."
+    },
+    {
+      "videoId": "S4QMzRHEgA0",
+      "title": "Disney Alaska Cruise 2026 | My Full Cruise - Dog Sledding, Wild Bears & Glaciers: Disney Cruise Line",
+      "channel": "Paging Mr. Morrow",
+      "publishedAt": "2026-09-11T13:01:06Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/S4QMzRHEgA0/mqdefault.jpg",
+      "viewCount": 2423,
+      "url": "https://www.youtube.com/watch?v=S4QMzRHEgA0",
+      "summary": "Paging Mr. Morrow recaps a 2026 Disney Cruise Line Alaska sailing, including dog sledding, wildlife, and glacier excursions."
+    },
+    {
+      "videoId": "QFWKVSIFil8",
+      "title": "guess the ride ? 🤣🤣🤣 cxleb Disney Parks #disneyworld #tianasbayouadventure #rollercoaster #funny",
+      "channel": "Carol Chaves",
+      "publishedAt": "2026-09-11T04:36:38Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/QFWKVSIFil8/mqdefault.jpg",
+      "viewCount": 1925,
+      "url": "https://www.youtube.com/watch?v=QFWKVSIFil8",
+      "summary": "Carol Chaves posts a humorous Disney Parks ride guessing game featuring Tiana's Bayou Adventure."
+    },
+    {
+      "videoId": "DnwQiV5-DzU",
+      "title": "LIVE at EPCOT for Disney Vacation Club Moonlight Magic with a special firework presentation",
+      "channel": "Iggy On the Spot",
+      "publishedAt": "2026-09-11T04:41:00Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/DnwQiV5-DzU/mqdefault.jpg",
+      "viewCount": 1783,
+      "url": "https://www.youtube.com/watch?v=DnwQiV5-DzU",
+      "summary": "Iggy streams live from a Disney Vacation Club Moonlight Magic event at EPCOT, featuring exclusive fireworks."
+    },
+    {
+      "videoId": "k-9bQPS_Raw",
+      "title": "Winner Picks Dinner: Disney California Adventure | Disneyland",
+      "channel": "Mammoth Club",
+      "publishedAt": "2026-09-11T13:00:13Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/k-9bQPS_Raw/mqdefault.jpg",
+      "viewCount": 1734,
+      "url": "https://www.youtube.com/watch?v=k-9bQPS_Raw",
+      "summary": "Mammoth Club plays a game where the winner chooses dinner at Disney California Adventure."
+    },
+    {
+      "videoId": "Cd9ET1--Va8",
+      "title": "Incroyable sensation❤️‍🔥 #disney #disneyland #disneylandparis",
+      "channel": "Cars9551",
+      "publishedAt": "2026-09-11T06:29:38Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Cd9ET1--Va8/mqdefault.jpg",
+      "viewCount": 1370,
+      "url": "https://www.youtube.com/watch?v=Cd9ET1--Va8",
+      "summary": "Cars9551 shares a Disneyland Paris moment highlighting an incredible ride or park sensation."
+    },
+    {
+      "videoId": "kzpfp1y0OnY",
+      "title": "Just when you feel your Disneyland outfit is nothing special…",
+      "channel": "Satami Japan Tour",
+      "publishedAt": "2026-09-11T05:00:17Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/kzpfp1y0OnY/mqdefault.jpg",
+      "viewCount": 1336,
+      "url": "https://www.youtube.com/watch?v=kzpfp1y0OnY",
+      "summary": "Satami Japan Tour reflects on Disneyland outfit inspiration and park fashion moments."
+    },
+    {
+      "videoId": "3Wn9viv-5x0",
+      "title": "Water Dye #disneyhistory #disneyland #disney #disneyparks #themepark #disneyworld #history",
+      "channel": "Industrai",
+      "publishedAt": "2026-09-11T05:53:04Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/3Wn9viv-5x0/mqdefault.jpg",
+      "viewCount": 1235,
+      "url": "https://www.youtube.com/watch?v=3Wn9viv-5x0",
+      "summary": "Industrai explores Disney Parks history, focusing on the use of water dye in attractions and landscaping."
+    },
+    {
+      "videoId": "UGXZegNFtDo",
+      "title": "La cavalcade des Princesses Raiponce",
+      "channel": "Disneymylife8",
+      "publishedAt": "2026-09-11T06:36:37Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/UGXZegNFtDo/mqdefault.jpg",
+      "viewCount": 1199,
+      "url": "https://www.youtube.com/watch?v=UGXZegNFtDo",
+      "summary": "Disneymylife8 captures a Rapunzel princess cavalcade at Disneyland Paris."
+    }
+  ],
+  "updatedAt": "2026-09-11T14:42:38.811Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-09-11T14:42:38.811Z",
+    "tokens": {
+      "input": 11250,
+      "output": 5144,
+      "costUsd": 0.1109
+    }
+  }
+}
