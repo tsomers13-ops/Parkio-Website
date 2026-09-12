@@ -226,10 +226,31 @@ the environment is `production` — asserted by test, not assumed.
 
 ## 4. Requirement 3 — Production host and Origin policies stay restricted
 
-| Layer | Production allows | Refuses |
-|---|---|---|
-| `lib/ratingsWriteHost.ts` | `parkio.info`, `www.parkio.info` (exact) | pages.dev, workers.dev, canary, localhost, lookalikes |
-| `lib/ratingsOrigin.ts` | `https://parkio.info`, `https://www.parkio.info` | everything else cross-site |
+| Layer | Environment-gated? | Production allows | Refuses |
+|---|---|---|---|
+| `lib/ratingsWriteHost.ts` | **Yes** | `parkio.info`, `www.parkio.info` (exact) | pages.dev, workers.dev, canary, localhost, lookalikes |
+| `lib/ratingsOrigin.ts` | **No — see below** | production origins **plus** `*.parkio.pages.dev`, `parkio-preview.*.workers.dev`, localhost | other cross-site origins |
+
+> **Correction (Gate 8B.9).** An earlier version of this table claimed the Origin
+> guard allows only the two production origins in Production. **That is wrong.**
+> `isAllowedWriteOrigin(origin)` takes no environment argument, so its
+> preview branches are live in Production too — verified by direct probe:
+> `isAllowedWriteOrigin("https://abc.parkio.pages.dev")` returns `true`
+> regardless of `PARKIO_COMMUNITY_WRITE_ENV`.
+>
+> The Gate 8B.8 commit message said the fix "widened only the non-production
+> sets". That is true of the **host** guard and **not** of the Origin guard,
+> which has no per-environment set to widen.
+>
+> **Assessed impact: IMPORTANT, not a blocker.** The host guard runs first and
+> still requires the request to arrive at `parkio.info`. `Origin` is a header,
+> trivially set by any non-browser client, so it was never a boundary against a
+> scripted attacker; its real job is browser CSRF, and the rater cookie is
+> `SameSite=Lax`, which already blocks cross-site cookie attachment. The native
+> bearer path skips the Origin check by design in any case. So this is a
+> defence-in-depth inconsistency and a documentation error, not an exploitable
+> hole — but it should be gated for consistency before or shortly after cutover,
+> and the claim must not be repeated as written.
 
 The Gate 8B.8 fix widened only the **non-production** sets. Tests assert a
 workers.dev host is refused under `production`, `development` and `unknown`, and
@@ -238,6 +259,12 @@ comparison, never substring or suffix.
 
 Note the canary hostname `parkio-worker-canary.parkio.info` is **not** in the
 production allow-list and must never be added. Its refusal is the point.
+
+**`www.parkio.info` needs no handling.** Checked 2026-09-12: it has **no DNS
+record** and does not resolve, while the apex resolves and serves. It is present
+in both allow-lists but is inert, and the Production config attaches only the
+apex as a Custom Domain. If `www` is ever introduced it needs its own Custom
+Domain entry; until then, do not add one.
 
 Post-cutover, non-mutating:
 
@@ -315,13 +342,37 @@ Each is a hard stop. None is advisory.
 | 4 | `wrangler secret put RATINGS_IDENTITY_SECRET` (Production value) | yes |
 | 5 | **Canary validation** — full checklist in §8. Non-mutating only | read-only |
 | 6 | Gates G1–G5. Any failure stops here | — |
-| 7 | **Route swap**: one reviewed hunk (§1b). Re-run `--dry-run` and the config diff (G6), then deploy. Remove `parkio.info` from the Pages project | **yes — this is the cutover** |
+| 7 | **Route swap** — see §7a. Pages must release `parkio.info` **first**; the two cannot hold it simultaneously. Brief outage window | **yes — this is the cutover** |
 | 8 | Post-cutover checks (Req 1 burst, Req 3 guards, static parity). Watch `wrangler tail` | yes |
 | 9 | Remove the canary custom domain and its DNS record. Soak **≥ 7 days**, Pages retained and no longer deployed to. Re-verify Access weekly. Exercise Worker-version rollback once (G8) | yes |
 | 10 | **Delete the Pages project** — closes §3b permanently | **NO — destructive, separately authorised** |
 
 Steps 1–9 are reversible. Step 10 is not, and **no authorisation for it is
 requested here.**
+
+### 7a. Step 7 in detail — ordering is forced by Cloudflare, and there is an outage window
+
+**Correction (Gate 8B.9).** The earlier wording — "add `parkio.info` as a Worker
+Custom Domain; remove it from Pages" — is the wrong order and is not possible.
+Cloudflare documents that you **cannot create a Custom Domain on a hostname with
+an existing DNS record**, and the Pages custom domain owns exactly such a record.
+The attach is rejected, not queued, and not silently overwritten.
+
+So the real order is forced, and it has a gap in it:
+
+1. Pages → `parkio` → Custom domains → **remove `parkio.info`**.
+2. Deploy the Worker with the cutover-form config (`routes: parkio.info`), or add
+   the Custom Domain in the dashboard.
+3. Wait for the certificate to issue and the record to become active.
+
+**Between 1 and 3, `parkio.info` does not serve.** That window is short — DNS is
+Cloudflare-managed and the certificate is usually already provisioned for the
+zone — but it is real and must not be described as zero-downtime. Schedule it at
+low traffic, and have step 1 of §9 ready to reverse it.
+
+Mitigation that shortens the window: the canary (Steps 3–6) has already proven
+the exact artifact, so step 2 is a configuration change on a Worker known to be
+healthy, not a first deploy.
 
 ---
 
@@ -405,8 +456,11 @@ the live-waits check; everything else in this checklist stays valid.
 2. No Pages deployment has been deleted.
 3. Production `RATINGS_IDENTITY_SECRET` unchanged, so credentials validate on
    either platform.
-4. `@cloudflare/next-on-pages` and `build:cloudflare` still in the repo — they
-   are, deliberately.
+4. **The published Pages deployment still exists.** Note this is *not* a
+   "can we rebuild Pages" prerequisite: `build:cloudflare` is retained but does
+   **not** work on this branch (next-on-pages fails ERESOLVE against React 19 —
+   Gate 8B.5). Phase 1 rollback depends on the already-published deployment
+   remaining published. Deleting Pages deployments therefore removes rollback.
 
 ### Procedure
 
@@ -503,6 +557,150 @@ npx wrangler deployments list --config wrangler.production.jsonc
   minutes, and the historical aliases would not come back (which is the point).
 - Rollback to a version predating a binding change may fail if the binding no
   longer exists. Keep binding changes and code changes in separate deploys.
+
+---
+
+## 10a. Daily content deployment — BLOCKER, previously absent
+
+**This was missing from the plan entirely and is the most serious gap found in
+the Gate 8B.9 review.**
+
+Today, Parkio's site updates through a chain that has no Worker in it:
+
+```
+11:00 UTC  .github/workflows/parkio-daily.yml
+             -> scripts/parkio-daily/build.mjs writes content/guide/daily/*.json
+             -> commits and pushes to main
+             -> Cloudflare Pages GitHub integration builds and publishes
+```
+
+Verified: the daily workflow contains **zero** deploy steps — no `wrangler`, no
+`deploy`, no `pages` command. Publication is entirely the Pages GitHub
+integration (the project shows `Git Provider: Yes`).
+
+**After cutover, `parkio.info` is served by the Worker, and nothing deploys the
+Worker.** The daily job would keep committing content and keep passing, while
+the live site silently stopped updating. A green workflow and a stale site is
+the worst shape this failure could take.
+
+### Required before cutover
+
+A Production deploy workflow must exist and be proven. Sketch:
+
+```yaml
+name: Workers Production
+on:
+  push:
+    branches: [main]          # includes the daily content commits
+  workflow_dispatch:
+concurrency:
+  group: workers-production   # never two cutovers at once
+  cancel-in-progress: false
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: "22", cache: npm }   # OpenNext + Wrangler 4 need 22+
+      - run: npm ci
+      - run: npm run cf:types                       # --include-runtime=false
+      - run: npm test
+      - run: npx tsc --noEmit
+      - run: npm run build
+      - run: npx opennextjs-cloudflare build
+      - run: npx opennextjs-cloudflare populateCache remote   # REQUIRED; without it SSG routes 404
+      - run: npx wrangler deploy --config wrangler.production.jsonc
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+```
+
+### Points that must be settled, not assumed
+
+- **Repository secrets.** `CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID` must
+  exist in the repo with Workers Scripts: Edit and D1: Edit. They are not needed
+  today, because Pages deploys via the Git integration.
+- **Build duration.** The daily job is under 3 minutes; the Worker build adds a
+  full Next build plus OpenNext plus cache population. Budget ~5–10 minutes and
+  raise `timeout-minutes` accordingly.
+- **`populateCache remote` must run on every deploy.** Omit it once and every
+  prerendered route 404s. This is the single most dangerous omission in the
+  pipeline.
+- **Deploy-on-main means the daily bot can ship code.** Once the branch merges,
+  any commit to main — including an automated content commit — deploys the
+  Worker. The test/tsc gates above are what stand between a bad commit and
+  Production. Do not remove them for speed.
+- **Ordering with Pages.** While Pages is retained for rollback, main commits
+  will also trigger Pages builds. Those builds will **fail** after the merge (see
+  §10b), which is expected and harmless — the previously published deployment
+  stays live and remains the rollback target.
+- **Rollback behaviour.** A failed Production deploy leaves the previous Worker
+  version serving. Rollback is §9 (pre-deletion) or §10 (post-deletion).
+
+**Until this workflow exists and has been exercised, cutover must not proceed.**
+
+---
+
+## 10b. Branch and merge strategy — previously absent
+
+Also missing from the plan. The Worker implementation lives on
+`priority-9-gate-8b8-opennext-preview`; `main` is still the Pages baseline at
+`ce1ed15`.
+
+### Correction: `build:cloudflare` is retained but does **not** work
+
+Earlier documents said `@cloudflare/next-on-pages` and `build:cloudflare` are
+"retained for exactly this reason", implying Pages can be rebuilt from this
+branch. **It cannot.** Gate 8B.5 proved that next-on-pages runs its own
+`npm install` and fails `ERESOLVE` against React 19, which this branch requires.
+
+So the accurate statement is: **Pages rollback depends on the already-published
+Pages deployment remaining published**, not on any ability to rebuild it. That
+makes "do not delete Pages deployments" a hard prerequisite rather than a
+precaution. The script is kept only so `main` before the merge still builds.
+
+### Recommended sequence
+
+| # | Action | Why |
+|---|---|---|
+| 1 | **Tag `ce1ed15`** — e.g. `pages-production-baseline` | There are currently **no tags in the repo**. Without one, the last-known-good Pages commit is only findable by memory |
+| 2 | Add the Production deploy workflow (§10a) to the branch | Must exist before main can deploy the Worker |
+| 3 | Build and validate the Production Worker **from the branch**, using the canary | Proves the artifact before main changes |
+| 4 | Merge to `main` **after** canary validation passes, **before** the route swap | The route swap should cut over to a Worker built from main, so subsequent daily commits deploy the same lineage |
+| 5 | Route swap (§7a) | Cutover |
+| 6 | Keep the Pages project and its published deployment untouched through soak | It is the only Phase 1 rollback |
+
+**`main` stops being the Pages baseline at step 4.** From then on the Pages
+project is a frozen artifact, not a buildable branch — which is precisely why
+step 1 matters.
+
+### Not to be done during this gate
+
+No merge, no tag, no push. Step 1 is a recommendation for the cutover gate.
+
+---
+
+## 10c. GO / NO-GO checklist
+
+Every line must be GO. Any NO-GO stops the cutover.
+
+| # | Item | Evidence required |
+|---|---|---|
+| 1 | Production Worker config correct | `--dry-run` prints all five bindings; leakage grep silent |
+| 2 | Production D1 bound | `env.DB (parkio-history)`; canary aggregate counts equal a direct D1 read |
+| 3 | Production secret continuity | Production value installed on the `parkio` Worker; **not** the Preview value; a copy exists outside Cloudflare |
+| 4 | Hostname policy | Production allows only `parkio.info` / `www.parkio.info`; canary write refused `forbidden_host` |
+| 5 | Origin policy | Understood and documented — **not** environment-gated (§4). Accepted or fixed, but not misstated |
+| 6 | Static cache | All nine route families 200 with `x-nextjs-cache: HIT` |
+| 7 | API health | Validation matrix green, no successful Production rating write |
+| 8 | iOS compatibility | No iOS change required; hostname, paths and secret unchanged |
+| 9 | Limiter bindings | Both present at 5/60 and 10/60, namespaces 1001/1002 |
+| 10 | **Daily deploy workflow** | **Exists, has run green, and publishes the Worker (§10a)** |
+| 11 | Pages rollback | Project and published deployment intact; `ce1ed15` tagged |
+| 12 | Monitoring | 5xx, 429, CPU, D1 error alerting in place for soak |
+| 13 | Access protection | Historical aliases return a Cloudflare Access 302 |
+| 14 | Zero synthetic Production ratings | `dining_ratings` = 0 immediately before and after cutover |
 
 ---
 
