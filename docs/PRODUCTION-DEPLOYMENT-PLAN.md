@@ -446,6 +446,103 @@ the live-waits check; everything else in this checklist stays valid.
 
 ---
 
+## 8a. Post-cutover validation matrix (Step 8)
+
+**Added in the Gate 8B.9 second pass.** The plan previously reduced Step 8 to one
+table cell — "Req 1 burst, Req 3 guards, static parity" — with the detail
+scattered. That was not a runnable checklist. This is.
+
+Run against `https://parkio.info` **immediately after the route swap**, in this
+order. Every row is non-mutating for `dining_ratings`.
+
+### Static and cache parity
+
+| # | Path | Expect | Side effect | Rollback significance |
+|---|---|---|---|---|
+| S1 | `/` | 200, `x-nextjs-cache: HIT`, `s-maxage=31536000` | none | **Critical** — a MISS here means prerender output is not being served; roll back |
+| S2 | one `/guide/<slug>/` | 200, HIT | none | Critical — SSG family broken |
+| S3 | one `/parks/<park>/` | 200, HIT | none | Critical |
+| S4 | one `/parks/<park>/attractions/<slug>/` | 200, HIT | none | Critical |
+| S5 | `/parks/epcot/dining/` | 200, HIT | none | Critical |
+| S6 | `/parks/epcot/dining/ep-le-cellier/` | 200, HIT, correct `<title>` | none | Critical |
+| S7 | `/feed.xml` | 200, valid RSS | none | High — breaks the email pipeline |
+| S8 | `/icon/`, `/opengraph-image/` | 200 `image/png` | none | Medium — metadata only |
+| S9 | one CSS and one JS asset | 200 | none | Critical — a failure here breaks every page |
+
+A single MISS on S1–S6 is enough to roll back: it means `populateCache` did not
+run or did not upload, and every page is being server-rendered uncached.
+
+### Public GET APIs
+
+| # | Endpoint | Method | Expect | Side effect | Rollback significance |
+|---|---|---|---|---|---|
+| A1 | `/api/dining/ratings/?venueKeys=…` | GET | 200, `public, s-maxage=60, stale-while-revalidate=120` | none | **Critical** — Dining discovery depends on it |
+| A2 | `/api/dining/{venueKey}/ratings/` | GET | 200, counts equal a direct D1 read | none | Critical — proves the Production D1 binding |
+| A3 | `/api/dining/{venueKey}/ratings/me/` | GET, no cookie | 200, `rating: null` | none, no `Set-Cookie` | High — a `Set-Cookie` here is a defect |
+| A4 | `/api/parks/{slug}/live/` | GET | 200 | **appends `wait_snapshots` on a cache miss** — see §8b | Medium |
+| A5 | `/definitely-not-a-page/` | GET | 404 | none | Low |
+
+A2 is the load-bearing one: equality with a direct D1 read is what proves the
+Worker is bound to Production D1 and not to something else.
+
+### Safe-negative POSTs — all must be refused before D1
+
+| # | Endpoint | Request | Expect | Side effect | Rollback significance |
+|---|---|---|---|---|---|
+| N1 | `…/ratings/` | POST, no Origin | 403 `forbidden_origin` | none | **Critical** — a 2xx means CSRF protection is gone |
+| N2 | `…/ratings/` | POST, `Origin: https://attacker.example` | 403 `forbidden_origin` | none | Critical |
+| N3 | `…/ratings/` | POST, `Authorization: Bearer v1.dead…beef.bogus` | 401 `invalid_credential` | none | Critical — a 2xx means signature verification is broken |
+| N4 | `…/ratings/` | POST via `parkio.pages.dev` | 403 `forbidden_host` | none | Critical — the pages.dev bypass is open |
+| N5 | `/api/identity/anonymous/` | POST ×8 back-to-back | run of 201s then 429 with `cache-control: no-store` | mints credentials, **no D1 row** | High — see G4, "no 429" is inconclusive |
+
+**No successful rating POST is performed at any point.** N1–N4 are guaranteed
+pre-mutation failures. N5 is the only Production write-path call, it is stateless,
+and it is kept to a single burst.
+
+### Immediately after the matrix
+
+```sql
+SELECT COUNT(*) FROM dining_ratings;   -- MUST still be 0
+```
+
+Non-zero means something wrote a rating. Stop and investigate before proceeding
+to soak.
+
+---
+
+## 8b. Wait-snapshot accounting across cutover
+
+**Added in the Gate 8B.9 second pass.** `wait_snapshots` is the one table that
+legitimately grows during validation, so validation-induced rows must be
+distinguishable from organic traffic rather than merely tolerated.
+
+`/api/parks/{slug}/live/` appends a row per attraction on a cache miss (5-minute
+in-memory TTL per isolate). Organic traffic already does this continuously —
+5125 rows as of 2026-09-11, newest `2026-09-11T09:58:29Z`.
+
+Record at three points:
+
+```sql
+SELECT COUNT(*) AS n, MAX(taken_at) AS newest FROM wait_snapshots;
+```
+
+| When | Purpose |
+|---|---|
+| Before canary Step 5 | baseline |
+| After canary Step 5 | canary-attributable growth (canary hits Production D1) |
+| Before and after Step 8 (A4) | cutover-attributable growth |
+
+Expected growth per live call is **one row per attraction in that park** (11 for
+EPCOT, 19 for Magic Kingdom, as measured). Anything materially larger means the
+cache is not working and the route is writing on every request — worth
+investigating, though not itself a rollback trigger.
+
+`dining_ratings`, by contrast, must be **exactly 0** at every checkpoint. Those
+two tables are held to different standards deliberately, and the difference
+should not be blurred.
+
+---
+
 ## 9. Rollback — Phase 1: during the soak, before Pages deletion
 
 **Available only while the Pages project still exists (Steps 7–9).**
@@ -560,7 +657,65 @@ npx wrangler deployments list --config wrangler.production.jsonc
 
 ---
 
-## 10a. Daily content deployment — BLOCKER, previously absent
+## 11. Soak plan and monitoring
+
+**Added in the Gate 8B.9 second pass.** Soak previously existed only as words in
+one table cell. What to watch was never written down, which makes "soak passed"
+unfalsifiable.
+
+**Duration: ≥ 7 days**, covering a full weekly traffic cycle and at least seven
+`parkio-daily` runs — the daily job is the thing most likely to break silently
+after cutover, so it must be observed succeeding end-to-end more than once.
+
+Pages stays intact and is no longer deployed to. **Do not delete Pages during
+soak.**
+
+### What to monitor, and what should trigger action
+
+| Signal | Source | Healthy | Investigate | Roll back |
+|---|---|---|---|---|
+| HTTP 5xx | Worker observability | ~0 | any sustained | >1% of requests |
+| API error rate | `wrangler tail`, 5xx on `/api/*` | ~0 | isolated | sustained on any endpoint |
+| **429s** | tail, filtered on `rate_limited` | rare, bursty | steady low rate | broad 429s on normal traffic |
+| Worker CPU | observability | well under 10 ms on cached paths | approaching 10 ms | sustained limit errors |
+| Worker requests | observability | tracks prior Pages traffic | large drop = routing problem | — |
+| Static cache | spot-check `x-nextjs-cache` | HIT | intermittent MISS | broad MISS |
+| D1 errors | tail | none | any | sustained |
+| Rating writes | `SELECT COUNT(*) FROM dining_ratings` | grows only from real guests | unexplained jumps | — |
+| Identity mint failures | tail on `identity_unavailable` | none | any (suggests secret problem) | sustained |
+| Live wait route | §8b counts | steady organic growth | flat (ingestion stopped) | — |
+| **Daily content** | site shows today's guide | present each morning | **missing once** | — |
+| User-visible regressions | manual spot-check | none | any | material |
+
+### 429 alerting
+
+Worth adding for Production specifically, because the limiter is approximate and
+a misconfiguration is otherwise silent in both directions:
+
+- **Zero 429s across the whole soak** is suspicious, not reassuring — it may mean
+  the binding is absent and the code is failing open (both fail-open cases are
+  documented and deliberate). Confirm with a deliberate burst rather than
+  assuming.
+- **429s on ordinary traffic** means the threshold is biting real guests.
+  Investigate before considering a threshold change; thresholds are fixed by the
+  accepted Gate 8B criteria and must not be lowered casually.
+
+### Exit criteria
+
+Soak passes only when all of the following hold:
+
+1. No rollback triggered.
+2. `parkio-daily` has run green **and** its content is visible on the live site,
+   at least 7 times.
+3. Worker-version rollback exercised once and verified (G8).
+4. Production secret confirmed recoverable from outside Cloudflare (§10 Phase 2).
+5. Access on `*.parkio.pages.dev` re-verified weekly.
+
+Only then may Pages deletion be **proposed** — it remains separately authorised.
+
+---
+
+## 12. Daily content deployment — BLOCKER, previously absent
 
 **This was missing from the plan entirely and is the most serious gap found in
 the Gate 8B.9 review.**
@@ -633,7 +788,7 @@ jobs:
   Production. Do not remove them for speed.
 - **Ordering with Pages.** While Pages is retained for rollback, main commits
   will also trigger Pages builds. Those builds will **fail** after the merge (see
-  §10b), which is expected and harmless — the previously published deployment
+  §13), which is expected and harmless — the previously published deployment
   stays live and remains the rollback target.
 - **Rollback behaviour.** A failed Production deploy leaves the previous Worker
   version serving. Rollback is §9 (pre-deletion) or §10 (post-deletion).
@@ -642,7 +797,7 @@ jobs:
 
 ---
 
-## 10b. Branch and merge strategy — previously absent
+## 13. Branch and merge strategy — previously absent
 
 Also missing from the plan. The Worker implementation lives on
 `priority-9-gate-8b8-opennext-preview`; `main` is still the Pages baseline at
@@ -665,7 +820,7 @@ precaution. The script is kept only so `main` before the merge still builds.
 | # | Action | Why |
 |---|---|---|
 | 1 | **Tag `ce1ed15`** — e.g. `pages-production-baseline` | There are currently **no tags in the repo**. Without one, the last-known-good Pages commit is only findable by memory |
-| 2 | Add the Production deploy workflow (§10a) to the branch | Must exist before main can deploy the Worker |
+| 2 | Add the Production deploy workflow (§12) to the branch | Must exist before main can deploy the Worker |
 | 3 | Build and validate the Production Worker **from the branch**, using the canary | Proves the artifact before main changes |
 | 4 | Merge to `main` **after** canary validation passes, **before** the route swap | The route swap should cut over to a Worker built from main, so subsequent daily commits deploy the same lineage |
 | 5 | Route swap (§7a) | Cutover |
@@ -681,7 +836,7 @@ No merge, no tag, no push. Step 1 is a recommendation for the cutover gate.
 
 ---
 
-## 10c. GO / NO-GO checklist
+## 14. GO / NO-GO checklist
 
 Every line must be GO. Any NO-GO stops the cutover.
 
@@ -696,7 +851,7 @@ Every line must be GO. Any NO-GO stops the cutover.
 | 7 | API health | Validation matrix green, no successful Production rating write |
 | 8 | iOS compatibility | No iOS change required; hostname, paths and secret unchanged |
 | 9 | Limiter bindings | Both present at 5/60 and 10/60, namespaces 1001/1002 |
-| 10 | **Daily deploy workflow** | **Exists, has run green, and publishes the Worker (§10a)** |
+| 10 | **Daily deploy workflow** | **Exists, has run green, and publishes the Worker (§12)** |
 | 11 | Pages rollback | Project and published deployment intact; `ce1ed15` tagged |
 | 12 | Monitoring | 5xx, 429, CPU, D1 error alerting in place for soak |
 | 13 | Access protection | Historical aliases return a Cloudflare Access 302 |
@@ -704,7 +859,7 @@ Every line must be GO. Any NO-GO stops the cutover.
 
 ---
 
-## 11. Remaining irreversible actions
+## 15. Remaining irreversible actions
 
 Exactly one: **Step 10, deleting the Pages project.**
 
@@ -716,7 +871,7 @@ reversible by the procedures above.
 
 ---
 
-## 12. What this plan does not claim
+## 16. What this plan does not claim
 
 - Deterministic rate limiting. See the runbook: approximate burst protection,
   per-Cloudflare-location, permissive and eventually consistent.
