@@ -1,6 +1,11 @@
 # Cloudflare Pages → Workers migration (OpenNext)
 
-Status: **Preview implemented, Production NOT cut over.**
+Status: **Preview deployed and validated. Production NOT cut over.**
+
+Preview Worker: `parkio-preview` at https://parkio-preview.tsomers13.workers.dev,
+bound to `parkio-history-preview`. Rate limiting is live there with **approximate
+burst semantics** — see the rate-limit runbook. Before any Production move, read
+[PRODUCTION-DEPLOYMENT-PLAN.md](./PRODUCTION-DEPLOYMENT-PLAN.md).
 
 `parkio.info` is still served by Cloudflare Pages. That deployment is the
 rollback target and must not be touched until a separately authorised cutover.
@@ -60,6 +65,16 @@ use (28 TypeScript errors with them, 0 without). Use `npm run cf:types`.
 
 OpenNext and Wrangler 4 need Node 22 or later. The Pages build stays on
 `NODE_VERSION=20` and is unaffected.
+
+### Preview hostnames must be allowed explicitly
+
+Deploying Preview as a *Worker* rather than a Pages preview alias broke both
+host-authorisation layers, because each allowed `*.parkio.pages.dev` and
+localhost only. Fixed in `51ee64e`: `lib/ratingsWriteHost.ts` and
+`lib/ratingsOrigin.ts` now also allow `parkio-preview.<subdomain>.workers.dev`,
+**in the non-production policy only**, matching on both a `parkio-preview.`
+prefix and a `.workers.dev` suffix so the shared workers.dev namespace is not
+trusted wholesale. If Preview is ever renamed, update both files together.
 
 ### React 19 and react-leaflet 5
 

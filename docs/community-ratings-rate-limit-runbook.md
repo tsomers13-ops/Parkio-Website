@@ -328,3 +328,77 @@ accounting system". A distributed attacker gets one allowance per Cloudflare
 location. What it does prevent is a single script minting identities or
 rewriting ratings without limit. It remains friction, not an abuse control, and
 Gate 8A's shrinkage remains a statistics control.
+
+---
+
+## Accepted semantics (Gate 8B.8, Option A) — READ THIS BEFORE JUDGING THE LIMITER
+
+The approved policy is **approximate burst protection**, not deterministic
+enforcement. This was decided after measuring the real limiter on a deployed
+Worker, not from documentation.
+
+### What the targets mean
+
+| Binding | Target | Nature |
+|---|---|---|
+| `IDENTITY_MINT_LIMITER` | **~5 requests / 60 s / source key** | approximate |
+| `RATING_WRITE_LIMITER` | **~10 requests / 60 s / source key** | approximate |
+
+Thresholds stay as they are. Do not lower them.
+
+### What is guaranteed
+
+Rapid back-to-back abuse produces the specified response:
+
+```
+HTTP 429
+Cache-Control: no-store
+Content-Type: application/json
+{"error":"rate_limited","message":"Too many requests. Please slow down.","status":429}
+```
+
+### What is explicitly NOT claimed
+
+**Do not describe this as deterministic enforcement, and do not claim that
+requests spaced across the window are blocked.** They frequently are not.
+
+Measured on `parkio-preview` (2026-09-12), same source IP throughout:
+
+| Traffic shape | Outcome |
+|---|---|
+| 8 mints back-to-back, one connection | **5 × 201 then 3 × 429** — matches the target |
+| 14 writes back-to-back, one connection | **11 × 200 then 3 × 429** — one over nominal |
+| 7 mints spaced ~1 s apart | **0 blocked** |
+| 13 writes spaced ~1 s apart | **0 blocked** |
+| 40 concurrent mints | only **2 blocked** |
+
+Small overshoot is accepted. Cloudflare documents the binding as "permissive,
+eventually consistent, and intentionally designed to not be used as an accurate
+accounting system", and it is also **per-Cloudflare-location**, so a
+distributed attacker receives one allowance per location.
+
+The code was verified correct before accepting this: a temporary diagnostic
+read through `wrangler tail` confirmed `binding=present`, all four bindings on
+the Cloudflare context, and `CF-Connecting-IP` present. The imprecision is the
+platform's, not the application's. **That diagnostic has been removed.**
+
+### Therefore
+
+This is **friction against casual and scripted abuse**, layered with:
+
+- the hostname guard (`lib/ratingsWriteHost.ts`),
+- browser Origin validation and native bearer verification,
+- `UNIQUE (venue_key, rater_id)`, so repeat writes UPSERT rather than inflate,
+- Gate 8A's Bayesian shrinkage, which is a **statistics** control.
+
+None of these is an abuse control on its own, and the set does not stop a
+determined distributed attacker. Say so plainly rather than implying otherwise.
+
+### Invariants that must survive any future change
+
+- Separate limiter namespaces (Preview 2001/2002, Production 1001/1002).
+- **GETs are never rate limited** — verified 12/12 bulk and 8/8 single aggregate
+  reads returned 200 while the write limiter was exhausted.
+- Preview and Production D1 remain isolated.
+- No D1, KV or Durable Object counter.
+- No raw IP persisted, logged or returned.
