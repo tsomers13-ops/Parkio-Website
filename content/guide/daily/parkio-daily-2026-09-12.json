@@ -1,0 +1,336 @@
+{
+  "title": "Parkio Daily for September 12, 2026",
+  "slug": "parkio-daily-2026-09-12",
+  "date": "2026-09-12",
+  "teaser": "Magic of Disney Animation soft-opens at Hollywood Studios; Mexico Pavilion getting fresh paint; new Olaf attraction uses unusual virtual queue system.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Big Thunder Mountain Railroad",
+        "parkSlug": "magic-kingdom",
+        "note": "Morning crowds still light in Frontierland"
+      },
+      {
+        "name": "Test Track",
+        "parkSlug": "epcot",
+        "note": "Short waits before noon typical"
+      },
+      {
+        "name": "Rise of the Resistance",
+        "parkSlug": "hollywood-studios",
+        "note": "Lines build fast with Animation opening"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [
+      {
+        "title": "Magic of Disney Animation soft-opens three days early",
+        "body": "The new walk-through attraction at Hollywood Studios began technical rehearsals Friday morning ahead of its scheduled Monday debut. Guests can now explore the reimagined Animation Courtyard experience featuring Disney Animation characters.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/surprise-soft-opening-for-magic-of-disney-animation-attraction-at-hollywood-studios/"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "Sunset Boulevard tends to see heavier traffic during soft openings as word spreads. Visiting the Animation Courtyard before 11am or after 4pm usually offers shorter entry waits."
+        }
+      }
+    ],
+    "bignews": [
+      {
+        "title": "Olaf Draws virtual queue takes unconventional approach",
+        "body": "Disney confirmed the new character experience will use a virtual queue when demand is high, but it won't follow the typical 7am rush format. The system will deploy dynamically throughout the day to manage crowds without requiring the standard fast-finger strategy.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-worlds-new-olaf-draws-uses-unconventional-virtual-queue-to-control-crowds-when-busy/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Check for queue availability mid-morning and early afternoon when the system typically opens new windows. Arriving at park open often lets you experience it without needing a return time."
+        }
+      },
+      {
+        "title": "Tropical Americas loses 2027 opening window at Animal Kingdom",
+        "body": "Walt Disney World quietly removed the 2027 debut date from its calendar and coming soon pages for the land replacing DinoLand U.S.A. No new timeline has been announced for the three-attraction expansion.",
+        "parkSlug": "animal-kingdom",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-world-quietly-drops-2027-opening-for-tropical-americas-at-animal-kingdom/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "DinoLand attractions remain operational but may close with little notice as construction timelines shift. Prioritize Dinosaur and TriceraTop Spin on your next visit if they're favorites."
+        }
+      },
+      {
+        "title": "EPCOT's Mexico Pavilion pyramid getting vibrant refresh",
+        "body": "Scaffolding surrounds the iconic Mesoamerican structure as workers restore colorful accents to the exterior. The pyramid is receiving fresh paint to brighten one of World Showcase's most recognizable landmarks.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/09/mexico-pavilion-pyramid-becoming-brighter-as-repainting-continues-at-epcot/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Gran Fiesta Tour and La Cava del Tequila remain fully accessible during the work. Visit now to see the transformation in progress before scaffolding comes down."
+        }
+      },
+      {
+        "title": "Spring 2027 festival dates and ticket offers now available",
+        "body": "EPCOT's Festival of the Arts runs January 17 through February 23, 2027, while Flower and Garden returns March 10 through May 31. Disney also released booking details for After Hours events and spring vacation packages starting today.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/walt-disney-world-spring-offers-and-returning-events/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Festival opening weekends typically draw lighter crowds than mid-run dates. Booking the first two weeks of each event often means shorter lines at food booths and better availability for workshops."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "Logo Mania merchandise collection debuts across parks",
+        "body": "A new colorful line celebrating favorite attractions, lands, and Disney transportation is now available. The collection lets guests showcase specific parts of their park days with themed apparel and accessories.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/products/new-disney-parks-merch-logo-mania/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Limited-run collections like this tend to sell out at flagship stores by mid-afternoon. Stopping at Emporium or World of Disney before noon usually offers the best size and style selection."
+        }
+      },
+      {
+        "title": "Enchanted Ensemble mystery pin pouch arrives at Disneyland",
+        "body": "The orange mystery pin collection featuring Disney character-inspired designs is now available at Disneyland after debuting at Walt Disney World. Each pouch includes an assortment of limited-edition pins for collectors.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/09/new-enchanted-ensemble-mystery-pin-arrives-at-disneyland/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Pin releases typically last only a few days at high-traffic shops. Visiting Main Street or World of Disney early in your trip increases the odds of finding them before stock runs out."
+        }
+      },
+      {
+        "title": "New pin board inserts available at Walt Disney World",
+        "body": "DisneyPINS Official Pin Traders Gear has released fresh pin board inserts for display. The new designs are now in stock at select merchandise locations across the resort.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/09/new-disney-pin-board-inserts-available-at-walt-disney-world/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Pin collecting accessories move quickly during festival seasons when trading activity peaks. Check Pin Traders at EPCOT or the BoardWalk for best availability."
+        }
+      },
+      {
+        "title": "Cool Kids Summer maps rebranded to Fun for Families",
+        "body": "EPCOT has replaced its seasonal summer maps with a new green Fun for Families with Kids design. The updated version removes paper Mickey ear graphics and features solo Elsa artwork on the cover.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/09/2026-cool-kids-summer-maps-changed-to-fun-for-families-with-kids-with-a-few-changes-at-epcot/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Grab the new map at Guest Relations or park entrance for family-friendly activity suggestions. These guides often highlight lesser-known character spots and interactive play areas that keep wait times low."
+        }
+      },
+      {
+        "title": "Frontier Airlines adds Orlando routes starting at $99",
+        "body": "New nonstop flights to Orlando International Airport are launching with promotional fares. The expanded service brings additional travel options for guests planning Walt Disney World vacations.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/09/11/new-nonstop-flights-are-coming-to-orlando-for-as-low-as-99/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Booking early-morning arrivals often lets you reach the parks by noon and claim a few attractions before dinner. Evening departures maximize your final park day without rushing to the airport."
+        }
+      },
+      {
+        "title": "Bulk candy stations debut at Downtown Disney",
+        "body": "A new self-serve candy experience is now open at the Disneyland shopping district. Guests can fill containers with a variety of sweets and pay by weight.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/09/11/this-new-disney-snack-is-a-candy-lovers-dream/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Candy stations tend to draw families in the late afternoon. Stopping by mid-morning or just before closing usually means quicker service and fresher selection."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Tabasco replaced across Walt Disney World dining locations",
+        "body": "The condiment is being swapped for a different hot sauce brand at all resort restaurants. The change is rolling out system-wide this week.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/09/tabasco-being-removed-and-replaced-across-all-walt-disney-world-restaurants-in-todays-daily-recap-for-9-11-2026/"
+        }
+      },
+      {
+        "title": "Mickey icon home goods and Disney succulents now online",
+        "body": "Disney Store has added new kitchen runners with embroidered Mickey patterns and character-inspired succulent holders to its web shop. The maroon table runner retails for $59.99.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/09/mickey-icon-home-goods-disney-succulents-available-online/"
+        }
+      },
+      {
+        "title": "Space Mountain Earthrise exterior lights on at Tokyo Disneyland",
+        "body": "Purple lighting now traces the edges and spires of the attraction under construction in Tomorrowland. The refurbished ride is scheduled to open in 2027.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/09/exterior-lights-are-on-at-space-mountain-earthrise-at-tokyo-disneyland/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "Your move for Hollywood Studios today",
+        "body": "The soft opening of Magic of Disney Animation is drawing curious crowds to the Animation Courtyard. Rope-drop strategy should prioritize Rise of the Resistance or Slinky Dog Dash, then swing by the new walk-through mid-morning when lines settle. Sunset Boulevard construction noise tends to peak before lunch, so save table-service dining or shaded breaks for that window. The new Olaf experience may activate its virtual queue if foot traffic climbs—check the app by 10am to stay ahead.",
+        "parkSlug": "hollywood-studios",
+        "ctaLabel": "Plan your day",
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Arriving at park open lets you hit two headliners before Animation Courtyard fills. Mid-afternoon often sees a lull when families take breaks, making it a smart window for walk-ons at lower-tier attractions."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "S4QMzRHEgA0",
+      "title": "Disney Alaska Cruise 2026 | My Full Cruise - Dog Sledding, Wild Bears & Glaciers: Disney Cruise Line",
+      "channel": "Paging Mr. Morrow",
+      "publishedAt": "2026-09-11T13:01:06Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/S4QMzRHEgA0/mqdefault.jpg",
+      "viewCount": 90490,
+      "url": "https://www.youtube.com/watch?v=S4QMzRHEgA0",
+      "summary": "Paging Mr. Morrow documents a complete Disney Alaska cruise experience aboard the Disney Wonder, featuring excursions like dog sledding and wildlife viewing."
+    },
+    {
+      "videoId": "pSiSxXdiG3Y",
+      "title": "My FIRST Disney Alaska Cruise! Boarding The Disney Wonder & Glacier Day | Disney Cruise Line",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-09-11T15:57:10Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/pSiSxXdiG3Y/mqdefault.jpg",
+      "viewCount": 24438,
+      "url": "https://www.youtube.com/watch?v=pSiSxXdiG3Y",
+      "summary": "WrightDownMainStreet shares their first Alaska cruise on the Disney Wonder, covering embarkation and a day viewing glaciers."
+    },
+    {
+      "videoId": "tmcuVinw9SY",
+      "title": "LIVE Disneyland Anaheim - 1955 to Today – Walking in Walt Disney's Footsteps 🏰",
+      "channel": "Now Is The Time",
+      "publishedAt": "2026-09-12T07:31:20Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/tmcuVinw9SY/mqdefault.jpg",
+      "viewCount": 9864,
+      "url": "https://www.youtube.com/watch?v=tmcuVinw9SY",
+      "summary": "Now Is The Time offers a live stream walking tour of Disneyland, exploring locations connected to Walt Disney's original vision from 1955 to present day."
+    },
+    {
+      "videoId": "p-OY2pfjkNU",
+      "title": "Les secrets de Phantom Manor à Disney",
+      "channel": "Léonard 🎢",
+      "publishedAt": "2026-09-12T06:00:13Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/p-OY2pfjkNU/mqdefault.jpg",
+      "viewCount": 3956,
+      "url": "https://www.youtube.com/watch?v=p-OY2pfjkNU",
+      "summary": "Léonard explores hidden details and backstory of Phantom Manor at Disneyland Paris in this French-language video."
+    },
+    {
+      "videoId": "JgWfaRXHWfs",
+      "title": "Диснейленд ВАШЕЙ мечты! Главный анонс для фанатов симуляторов! 🏰🎢 #индиигры #steam #обзоригр",
+      "channel": "Vulpis",
+      "publishedAt": "2026-09-12T06:00:22Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/JgWfaRXHWfs/mqdefault.jpg",
+      "viewCount": 1188,
+      "url": "https://www.youtube.com/watch?v=JgWfaRXHWfs",
+      "summary": "Vulpis announces a new Disneyland-themed simulation game for Steam in this Russian-language gaming overview."
+    },
+    {
+      "videoId": "SqNqtlUZm_8",
+      "title": "Come Meet Elsa & Anna With Us at Disneyland! ✨❄️#frozen #disney #elsa #anna #parade #memories",
+      "channel": "Mohammed and Maryam World",
+      "publishedAt": "2026-09-12T05:09:11Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/SqNqtlUZm_8/mqdefault.jpg",
+      "viewCount": 1184,
+      "url": "https://www.youtube.com/watch?v=SqNqtlUZm_8",
+      "summary": "Mohammed and Maryam World shares a Disneyland character meet and greet experience with Elsa and Anna from Frozen."
+    },
+    {
+      "videoId": "8-GJm-jT9-w",
+      "title": "An APPLE for a Spell #evilqueenelegance #disneyvillains #snowwhite #funny #disney #disneyland",
+      "channel": "Sunshine Daily",
+      "publishedAt": "2026-09-12T04:57:50Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/8-GJm-jT9-w/mqdefault.jpg",
+      "viewCount": 1157,
+      "url": "https://www.youtube.com/watch?v=8-GJm-jT9-w",
+      "summary": "Sunshine Daily captures a humorous Evil Queen character interaction at Disneyland involving the iconic poisoned apple."
+    },
+    {
+      "videoId": "VIFfGlHbKu0",
+      "title": "#disney #disneyland #usa #disneyparks #disneyadventure #california #adventure #disneyworld #viral",
+      "channel": "N Rishhh",
+      "publishedAt": "2026-09-12T04:57:16Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/VIFfGlHbKu0/mqdefault.jpg",
+      "viewCount": 1079,
+      "url": "https://www.youtube.com/watch?v=VIFfGlHbKu0",
+      "summary": "N Rishhh shares general Disneyland and California Adventure park footage in this short-form video."
+    },
+    {
+      "videoId": "kVZsOsKEQ5A",
+      "title": "Just a girl in a world of magic. 🏰 #disney #disneyland #disneylandparis",
+      "channel": "Mylifestyleforyou",
+      "publishedAt": "2026-09-12T05:28:16Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/kVZsOsKEQ5A/mqdefault.jpg",
+      "viewCount": 1019,
+      "url": "https://www.youtube.com/watch?v=kVZsOsKEQ5A",
+      "summary": "Mylifestyleforyou offers a personal vlog-style look at a Disneyland Paris visit."
+    },
+    {
+      "videoId": "KM0iTEx8Ors",
+      "title": "A million splashes of colour #shorts #pourtoi #fyp #dancer #disneylandparis #disneyland #disney",
+      "channel": "THOMISNEYVISION",
+      "publishedAt": "2026-09-12T07:40:20Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/KM0iTEx8Ors/mqdefault.jpg",
+      "viewCount": 915,
+      "url": "https://www.youtube.com/watch?v=KM0iTEx8Ors",
+      "summary": "THOMISNEYVISION showcases Disneyland Paris entertainment and dancer performances in this colorful short video."
+    }
+  ],
+  "updatedAt": "2026-09-12T13:49:39.133Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-09-12T13:49:39.133Z",
+    "tokens": {
+      "input": 11146,
+      "output": 5353,
+      "costUsd": 0.1137
+    }
+  }
+}
