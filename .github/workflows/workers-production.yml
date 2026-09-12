@@ -1,0 +1,149 @@
+name: Workers Production
+
+# THE canonical Production deployment path. Both normal application changes
+# and Parkio Daily content publish through this one workflow — there is no
+# second way to deploy Production, deliberately.
+#
+# Two entry points, and they cannot both fire for the same commit:
+#
+#   1. push to main        — human merges and direct pushes.
+#   2. workflow_call       — invoked by parkio-daily.yml after it commits.
+#
+# Why both are needed: GitHub does not run workflows for pushes made with the
+# default GITHUB_TOKEN ("events triggered by the GITHUB_TOKEN will not create a
+# new workflow run"). parkio-daily.yml pushes with GITHUB_TOKEN, so entry point
+# 1 never fires for daily content. Without entry point 2 the daily job would
+# keep committing and keep reporting success while the live site went stale.
+#
+# Why there are no duplicate deploys: for exactly the same reason. A daily
+# commit reaches Production only through the explicit call, and a human push
+# only through the push trigger.
+#
+# NOTE: this workflow is inert until parkio.info is cut over to the Worker.
+# Until then it deploys the Production Worker on its canary hostname only,
+# because wrangler.production.jsonc is in its staging form. Cutover is a
+# separate, separately authorised change.
+
+on:
+  push:
+    branches: [main]
+    paths-ignore:
+      # Documentation-only commits do not need a Production deploy.
+      - "docs/**"
+      - "**/*.md"
+  workflow_call:
+    inputs:
+      sha:
+        description: Exact commit to build and deploy.
+        required: true
+        type: string
+    secrets:
+      CLOUDFLARE_API_TOKEN:
+        required: true
+      CLOUDFLARE_ACCOUNT_ID:
+        required: true
+  workflow_dispatch:
+
+# One Production deploy at a time. cancel-in-progress means a newer main
+# commit supersedes an older in-flight deploy, so the newest valid commit
+# wins rather than an older build landing last. A cancelled run leaves the
+# previously deployed Worker version serving: `wrangler deploy` only becomes
+# live once the upload completes, so a partial upload never takes traffic.
+concurrency:
+  group: workers-production
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    name: Build and deploy Production Worker
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    # Requires a `production` GitHub Environment. See the plan: it is where
+    # required reviewers and the Cloudflare secrets live.
+    environment: production
+    permissions:
+      contents: read
+
+    steps:
+      - name: Check out the exact commit
+        uses: actions/checkout@v4
+        with:
+          # Deploy the committed SHA, never a moving ref. For workflow_call the
+          # caller passes the SHA it just pushed, so what deploys is exactly
+          # what was committed.
+          ref: ${{ inputs.sha || github.sha }}
+
+      - name: Refuse to deploy anything that is not on main
+        # Belt and braces against workflow_dispatch from a feature branch.
+        run: |
+          git fetch origin main --depth=50
+          if ! git merge-base --is-ancestor HEAD origin/main; then
+            echo "::error::HEAD $(git rev-parse HEAD) is not an ancestor of origin/main. Refusing to deploy Production."
+            exit 1
+          fi
+          echo "Deploying $(git rev-parse --short HEAD), confirmed on main."
+
+      - name: Set up Node 22
+        # OpenNext and Wrangler 4 require Node 22+. The retained Pages build
+        # used NODE_VERSION=20 and is unaffected.
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+
+      - name: Install
+        run: npm ci
+
+      - name: Generate Cloudflare types
+        # --include-runtime=false on purpose: the full Workers runtime globals
+        # collide with the DOM lib the component tests rely on (28 tsc errors
+        # with them, 0 without).
+        run: npm run cf:types
+
+      - name: Unit tests
+        run: npm test
+
+      - name: TypeScript
+        run: npx tsc --noEmit
+
+      - name: Next build
+        run: npm run build
+
+      - name: OpenNext build
+        run: npx opennextjs-cloudflare build
+
+      - name: Populate prerender cache
+        # REQUIRED. The static-assets incremental cache reads prerendered pages
+        # back from Workers Static Assets; skip this and every SSG route 404s.
+        run: npx opennextjs-cloudflare populateCache remote
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+
+      - name: Verify the Production config before deploying
+        # Fails the run if Preview identifiers ever reach the Production config.
+        # Comments are stripped first: the file's own commentary mentions
+        # Preview, and matching raw text would false-positive.
+        run: |
+          sed 's://.*::' wrangler.production.jsonc > /tmp/prod.clean.json
+          if grep -qE '3c3c7bf8|parkio-history-preview|"preview"|200[12]|parkio-preview' /tmp/prod.clean.json; then
+            echo "::error::Preview identifier found in wrangler.production.jsonc. Refusing to deploy."
+            exit 1
+          fi
+          grep -q '82b972d1-be63-4c0d-bbbb-8437860ebcd0' /tmp/prod.clean.json \
+            || { echo "::error::Production D1 id missing."; exit 1; }
+          echo "Production config verified."
+
+      - name: Deploy Production Worker
+        # --config is mandatory. Without it wrangler would pick up the
+        # repo-root Preview config.
+        run: npx wrangler deploy --config wrangler.production.jsonc
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+
+      - name: Summary
+        if: always()
+        run: |
+          echo "### Production Worker deploy: ${{ job.status }}" >> "$GITHUB_STEP_SUMMARY"
+          echo "Commit: \`$(git rev-parse --short HEAD)\`" >> "$GITHUB_STEP_SUMMARY"

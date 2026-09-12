@@ -553,7 +553,9 @@ should not be blurred.
 2. No Pages deployment has been deleted.
 3. Production `RATINGS_IDENTITY_SECRET` unchanged, so credentials validate on
    either platform.
-4. **The published Pages deployment still exists.** Note this is *not* a
+4. **The published Pages deployment still exists.** Tag
+   `pages-production-pre-workers` (`6fb57fa`) is a *source-code* recovery point,
+   **not** this prerequisite — see §13. Note this is *not* a
    "can we rebuild Pages" prerequisite: `build:cloudflare` is retained but does
    **not** work on this branch (next-on-pages fails ERESOLVE against React 19 —
    Gate 8B.5). Phase 1 rollback depends on the already-published deployment
@@ -715,126 +717,158 @@ Only then may Pages deletion be **proposed** — it remains separately authorise
 
 ---
 
-## 12. Daily content deployment — BLOCKER, previously absent
+## 12. Production deployment pipeline — IMPLEMENTED (Gate 8B.9A)
 
-**This was missing from the plan entirely and is the most serious gap found in
-the Gate 8B.9 review.**
+Previously a blocker: nothing would have deployed the Worker after cutover, so
+the daily job would have kept committing and kept reporting success over a
+progressively staler site. Now built.
 
-Today, Parkio's site updates through a chain that has no Worker in it:
+### The mechanism that made this necessary
 
-```
-11:00 UTC  .github/workflows/parkio-daily.yml
-             -> scripts/parkio-daily/build.mjs writes content/guide/daily/*.json
-             -> commits and pushes to main
-             -> Cloudflare Pages GitHub integration builds and publishes
-```
+GitHub does not run workflows for pushes made with the default `GITHUB_TOKEN` —
+*"events triggered by the `GITHUB_TOKEN` will not create a new workflow run"*.
+`parkio-daily.yml` pushes with exactly that token. So a plain `on: push` deploy
+workflow would **never fire for daily content**. This was verified against the
+GitHub documentation rather than assumed, because the failure it produces is
+silent.
 
-Verified: the daily workflow contains **zero** deploy steps — no `wrangler`, no
-`deploy`, no `pages` command. Publication is entirely the Pages GitHub
-integration (the project shows `Git Provider: Yes`).
+### Canonical path: `.github/workflows/workers-production.yml`
 
-**After cutover, `parkio.info` is served by the Worker, and nothing deploys the
-Worker.** The daily job would keep committing content and keep passing, while
-the live site silently stopped updating. A green workflow and a stale site is
-the worst shape this failure could take.
+**One** workflow deploys Production. Both normal application changes and daily
+content go through it — there is deliberately no second way.
 
-### Required before cutover
+| Entry point | Fires for | Why it cannot double-fire |
+|---|---|---|
+| `on: push: branches: [main]` | human merges and direct pushes | GITHUB_TOKEN pushes do not raise `push` |
+| `on: workflow_call` | invoked by `parkio-daily.yml` | only the daily job calls it |
+| `on: workflow_dispatch` | manual re-run | operator-initiated |
 
-A Production deploy workflow must exist and be proven. Sketch:
+`paths-ignore` skips `docs/**` and `**/*.md`, so documentation commits do not
+deploy.
+
+Build chain, in order: Node **22** → `npm ci` → `npm run cf:types` → `npm test`
+→ `npx tsc --noEmit` → `npm run build` → `opennextjs-cloudflare build` →
+**`populateCache remote`** → config verification → `wrangler deploy --config
+wrangler.production.jsonc`.
+
+Two guards that are not decoration:
+
+- **Ancestry check.** The run fails unless `HEAD` is an ancestor of
+  `origin/main`, so `workflow_dispatch` from a feature branch cannot deploy
+  Production.
+- **Config verification.** Comments are stripped, then the file is searched for
+  Preview identifiers (`3c3c7bf8`, `parkio-history-preview`, `"preview"`,
+  `2001/2002`, `parkio-preview`) and required to contain the Production D1 id.
+  Any hit fails the run before `wrangler deploy`. Stripping comments first
+  matters: the config's own commentary mentions Preview, and matching raw text
+  false-positives — which it did on the first attempt.
+
+### Exact SHA, never a moving ref
+
+`actions/checkout` uses `inputs.sha || github.sha`. For the daily path the
+caller passes the SHA it just pushed, so what deploys is exactly what was
+committed — not whatever `main` happens to be by the time the runner starts.
+
+### Daily integration: `.github/workflows/parkio-daily.yml`
+
+The `build` job now exposes `pushed` and `sha` outputs. A second job:
 
 ```yaml
-name: Workers Production
-on:
-  push:
-    branches: [main]          # includes the daily content commits
-  workflow_dispatch:
-concurrency:
-  group: workers-production   # never two cutovers at once
-  cancel-in-progress: false
-jobs:
-  deploy:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with: { node-version: "22", cache: npm }   # OpenNext + Wrangler 4 need 22+
-      - run: npm ci
-      - run: npm run cf:types                       # --include-runtime=false
-      - run: npm test
-      - run: npx tsc --noEmit
-      - run: npm run build
-      - run: npx opennextjs-cloudflare build
-      - run: npx opennextjs-cloudflare populateCache remote   # REQUIRED; without it SSG routes 404
-      - run: npx wrangler deploy --config wrangler.production.jsonc
-        env:
-          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+deploy:
+  needs: build
+  if: needs.build.outputs.pushed == 'true'
+  uses: ./.github/workflows/workers-production.yml
+  with:  { sha: ${{ needs.build.outputs.sha }} }
+  secrets: { CLOUDFLARE_API_TOKEN: ..., CLOUDFLARE_ACCOUNT_ID: ... }
 ```
 
-### Points that must be settled, not assumed
+A no-change day sets `pushed=false` and deploys nothing.
 
-- **Repository secrets.** `CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID` must
-  exist in the repo with Workers Scripts: Edit and D1: Edit. They are not needed
-  today, because Pages deploys via the Git integration.
-- **Build duration.** The daily job is under 3 minutes; the Worker build adds a
-  full Next build plus OpenNext plus cache population. Budget ~5–10 minutes and
-  raise `timeout-minutes` accordingly.
-- **`populateCache remote` must run on every deploy.** Omit it once and every
-  prerendered route 404s. This is the single most dangerous omission in the
-  pipeline.
-- **Deploy-on-main means the daily bot can ship code.** Once the branch merges,
-  any commit to main — including an automated content commit — deploys the
-  Worker. The test/tsc gates above are what stand between a bad commit and
-  Production. Do not remove them for speed.
-- **Ordering with Pages.** While Pages is retained for rollback, main commits
-  will also trigger Pages builds. Those builds will **fail** after the merge (see
-  §13), which is expected and harmless — the previously published deployment
-  stays live and remains the rollback target.
-- **Rollback behaviour.** A failed Production deploy leaves the previous Worker
-  version serving. Rollback is §9 (pre-deletion) or §10 (post-deletion).
+### Failure behaviour
 
-**Until this workflow exists and has been exercised, cutover must not proceed.**
+The deploy is a job **inside the daily run**, not a detached trigger. If the
+deploy fails the daily run goes **red**. The previous shape — content committed,
+publication silently absent, workflow green — is no longer reachable.
 
----
+A failed deploy leaves the previously deployed Worker version serving.
 
-## 13. Branch and merge strategy — previously absent
+### Concurrency
 
-Also missing from the plan. The Worker implementation lives on
-`priority-9-gate-8b8-opennext-preview`; `main` is still the Pages baseline at
-`ce1ed15`.
+`group: workers-production`, `cancel-in-progress: true`. A newer main commit
+supersedes an older in-flight deploy, so the newest valid commit wins rather
+than an older build landing last. Cancelling mid-run is safe: `wrangler deploy`
+only becomes live once the upload completes, so a partial upload never takes
+traffic.
 
-### Correction: `build:cloudflare` is retained but does **not** work
+### Required GitHub configuration — NOT yet in place
 
-Earlier documents said `@cloudflare/next-on-pages` and `build:cloudflare` are
-"retained for exactly this reason", implying Pages can be rebuilt from this
-branch. **It cannot.** Gate 8B.5 proved that next-on-pages runs its own
-`npm install` and fails `ERESOLVE` against React 19, which this branch requires.
+These are dashboard actions and are **not** complete:
 
-So the accurate statement is: **Pages rollback depends on the already-published
-Pages deployment remaining published**, not on any ability to rebuild it. That
-makes "do not delete Pages deployments" a hard prerequisite rather than a
-precaution. The script is kept only so `main` before the merge still builds.
+| Item | Detail |
+|---|---|
+| Secret `CLOUDFLARE_API_TOKEN` | Minimum scopes: **Workers Scripts: Edit** (deploy), **Workers R2/D1 as used → D1: Edit** (populateCache/bindings), **Account Settings: Read** (account resolution). Not the Wrangler OAuth token — mint a scoped API token |
+| Secret `CLOUDFLARE_ACCOUNT_ID` | `5b406b870dcc68d52096953409183716` (not a secret in the strict sense; kept as one for symmetry) |
+| Environment `production` | Referenced by the deploy job. Create it, attach both secrets, and add required reviewers so a Production deploy needs human approval |
 
-### Recommended sequence
+Until the environment and secrets exist the workflow will fail at the deploy
+step — visibly, which is the correct failure mode.
+
+## 13. Rollback baseline and branch strategy — TAG CREATED (Gate 8B.9A)
+
+### The baseline was not where the plan said it was
+
+Earlier documents named **`ce1ed15`** as the Pages rollback baseline. By the
+time of tagging that was **a day stale**, and tagging it blindly would have
+created a recovery point that did not match what was live.
+
+Verified against the running site rather than against a previous prompt:
+
+| Evidence | Result |
+|---|---|
+| `origin/main` | **`6fb57fa`** "Parkio Daily — 2026-09-12" |
+| Live `parkio.info/guide/` | lists **`parkio-daily-2026-09-12`** |
+| `/guide/parkio-daily-2026-09-12/` | **200** |
+| That content file in `ce1ed15` | **absent** |
+| That content file in `6fb57fa` | present |
+
+So the published Pages deployment is built from `6fb57fa`.
+
+### The tag
+
+```
+pages-production-pre-workers  ->  6fb57fa
+```
+
+Annotated, not lightweight. Created with no force, into a repository that
+previously had **zero tags**. **Pushed to origin** and confirmed present there,
+so it survives loss of this machine. The branch itself remains unpushed.
+
+The annotation records what the tag is and — more usefully — what it is not.
+
+### The baseline moves daily
+
+`parkio-daily.yml` advances `main` every morning, so the "current Pages
+baseline" is a moving target until cutover. **Immediately before cutover, cut a
+fresh tag at whatever `main` is then.** Add a new tag; never force-move this
+one. This tag captures the Pages-era dependency state, which is what matters for
+a disaster rebuild, and that does not change daily.
+
+### Merge sequence
 
 | # | Action | Why |
 |---|---|---|
-| 1 | **Tag `ce1ed15`** — e.g. `pages-production-baseline` | There are currently **no tags in the repo**. Without one, the last-known-good Pages commit is only findable by memory |
-| 2 | Add the Production deploy workflow (§12) to the branch | Must exist before main can deploy the Worker |
-| 3 | Build and validate the Production Worker **from the branch**, using the canary | Proves the artifact before main changes |
-| 4 | Merge to `main` **after** canary validation passes, **before** the route swap | The route swap should cut over to a Worker built from main, so subsequent daily commits deploy the same lineage |
-| 5 | Route swap (§7a) | Cutover |
-| 6 | Keep the Pages project and its published deployment untouched through soak | It is the only Phase 1 rollback |
+| 1 | ✅ Tag the verified baseline | **Done** |
+| 2 | ✅ Add the Production deploy workflow | **Done** — must exist before main can deploy the Worker |
+| 3 | Create the `production` environment and secrets | Dashboard; workflow fails visibly without them |
+| 4 | Validate the Production Worker **from the branch** via the canary | Proves the artifact before `main` changes |
+| 5 | Merge to `main` after canary validation, before the route swap | So the cutover serves a Worker built from `main`, and later daily commits deploy the same lineage |
+| 6 | Route swap (§7a) | Cutover |
+| 7 | Keep the Pages project and its published deployment untouched through soak | The only Phase 1 rollback |
 
-**`main` stops being the Pages baseline at step 4.** From then on the Pages
-project is a frozen artifact, not a buildable branch — which is precisely why
-step 1 matters.
-
-### Not to be done during this gate
-
-No merge, no tag, no push. Step 1 is a recommendation for the cutover gate.
-
----
+**`main` stops being the Pages baseline at step 5.** From then the Pages project
+is a frozen artifact: after the merge its builds will **fail**, because
+next-on-pages cannot resolve against React 19. That is expected and harmless —
+the previously published deployment stays live and remains the rollback target.
 
 ## 14. GO / NO-GO checklist
 
@@ -851,8 +885,8 @@ Every line must be GO. Any NO-GO stops the cutover.
 | 7 | API health | Validation matrix green, no successful Production rating write |
 | 8 | iOS compatibility | No iOS change required; hostname, paths and secret unchanged |
 | 9 | Limiter bindings | Both present at 5/60 and 10/60, namespaces 1001/1002 |
-| 10 | **Daily deploy workflow** | **Exists, has run green, and publishes the Worker (§12)** |
-| 11 | Pages rollback | Project and published deployment intact; `ce1ed15` tagged |
+| 10 | **Daily deploy workflow** | Workflow **exists** (§12). Still required: `production` environment + both secrets created, and **one green end-to-end run** proving a main commit reaches the Worker |
+| 11 | Pages rollback | Project and published deployment intact; baseline tagged — `pages-production-pre-workers` → `6fb57fa`, pushed. **Re-tag at whatever `main` is immediately before cutover** |
 | 12 | Monitoring | 5xx, 429, CPU, D1 error alerting in place for soak |
 | 13 | Access protection | Historical aliases return a Cloudflare Access 302 |
 | 14 | Zero synthetic Production ratings | `dining_ratings` = 0 immediately before and after cutover |

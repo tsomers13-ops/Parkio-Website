@@ -1,0 +1,68 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+
+  // PRODUCTION Worker. Deployed ONLY with an explicit
+  //   --config wrangler.production.jsonc
+  // The repo-root wrangler.jsonc is Preview, so a bare `wrangler deploy`
+  // cannot reach Production by habit or by a forgotten flag.
+  //
+  // STAGING FORM: `routes` carries the CANARY hostname only. parkio.info
+  // appears nowhere in this file, which is what makes an accidental
+  // attachment impossible during staging rather than merely discouraged.
+  // The cutover is one reviewed hunk swapping the route — see
+  // docs/PRODUCTION-DEPLOYMENT-PLAN.md sections 1b and 7a.
+  "name": "parkio",
+  "main": ".open-next/worker.js",
+  "compatibility_date": "2026-09-11",
+  "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
+
+  "assets": {
+    "directory": ".open-next/assets",
+    "binding": "ASSETS"
+  },
+
+  // No alternate route to Production write authority.
+  "workers_dev": false,
+  "preview_urls": false,
+
+  "observability": { "enabled": true },
+
+  "routes": [
+    { "pattern": "parkio-worker-canary.parkio.info", "custom_domain": true }
+  ],
+
+  // PRODUCTION D1. Same database Pages binds today, by id — the migration
+  // is a hosting change, not a data change.
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "parkio-history",
+      "database_id": "82b972d1-be63-4c0d-bbbb-8437860ebcd0"
+    }
+  ],
+
+  // Drives lib/ratingsWriteHost.ts: production allows parkio.info and
+  // www.parkio.info exactly, and nothing else. Set from the first canary
+  // deploy so the canary is refused by the real policy.
+  "vars": { "PARKIO_COMMUNITY_WRITE_ENV": "production" },
+
+  // Distinct from Preview (2001/2002) so Preview traffic can never consume
+  // Production allowance.
+  "ratelimits": [
+    {
+      "name": "IDENTITY_MINT_LIMITER",
+      "namespace_id": "1001",
+      "simple": { "limit": 5, "period": 60 }
+    },
+    {
+      "name": "RATING_WRITE_LIMITER",
+      "namespace_id": "1002",
+      "simple": { "limit": 10, "period": 60 }
+    }
+  ]
+
+  // RATINGS_IDENTITY_SECRET is deliberately absent: installed once by hand
+  // with the EXISTING Production value via
+  //   npx wrangler secret put RATINGS_IDENTITY_SECRET --config wrangler.production.jsonc
+  // Continuity of that value is what keeps issued iOS credentials valid.
+}
