@@ -181,6 +181,30 @@ describe("host policy per environment", () => {
     expect(isAllowedCommunityWriteHost("parkio.pages.dev.attacker.example", "preview")).toBe(false);
   });
 
+  it("allows the Preview Worker's own workers.dev hostname in Preview", () => {
+    // Gate 8B.8: the deployed Preview Worker is served on
+    // parkio-preview.<subdomain>.workers.dev, which no earlier policy matched.
+    expect(isAllowedCommunityWriteHost("parkio-preview.tsomers13.workers.dev", "preview")).toBe(true);
+    expect(isAllowedCommunityWriteHost("parkio-preview.someone-else.workers.dev", "preview")).toBe(true);
+  });
+
+  it("does not accept arbitrary Workers on the shared workers.dev namespace", () => {
+    // A bare ".workers.dev" suffix test would hand write authority to anyone
+    // who can deploy a Worker. Both halves of the pattern are required.
+    expect(isAllowedCommunityWriteHost("attacker.workers.dev", "preview")).toBe(false);
+    expect(isAllowedCommunityWriteHost("evil.tsomers13.workers.dev", "preview")).toBe(false);
+    expect(isAllowedCommunityWriteHost("parkio-preview.attacker.example", "preview")).toBe(false);
+    expect(isAllowedCommunityWriteHost("notparkio-preview.tsomers13.workers.dev", "preview")).toBe(false);
+  });
+
+  it("refuses workers.dev hosts in Production, however they are shaped", () => {
+    // The fix must not have widened Production by a single hostname.
+    expect(isAllowedCommunityWriteHost("parkio-preview.tsomers13.workers.dev", "production")).toBe(false);
+    expect(isAllowedCommunityWriteHost("parkio.tsomers13.workers.dev", "production")).toBe(false);
+    expect(isAllowedCommunityWriteHost("parkio-preview.tsomers13.workers.dev", "development")).toBe(false);
+    expect(isAllowedCommunityWriteHost("parkio-preview.tsomers13.workers.dev", "unknown")).toBe(false);
+  });
+
   it("allows any Preview alias in Preview without naming one", () => {
     expect(isAllowedCommunityWriteHost("9ca196f7.parkio.pages.dev", "preview")).toBe(true);
     expect(isAllowedCommunityWriteHost("feature-branch.parkio.pages.dev", "preview")).toBe(true);

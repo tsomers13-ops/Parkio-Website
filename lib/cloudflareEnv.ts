@@ -52,3 +52,4 @@ export function getRateLimiter(
   const binding = getCloudflareContextEnv()?.[name];
   return binding && typeof binding.limit === "function" ? binding : null;
 }
+

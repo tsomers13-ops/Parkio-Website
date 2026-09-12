@@ -104,6 +104,7 @@ describe("write origin policy", () => {
       "https://parkio.info",
       "https://www.parkio.info",
       "https://abc123.parkio.pages.dev",
+      "https://parkio-preview.tsomers13.workers.dev",
       "http://localhost:3000",
     ]) {
       expect(isAllowedWriteOrigin(origin), origin).toBe(true);
@@ -120,6 +121,12 @@ describe("write origin policy", () => {
       "https://parkio-info.com",
       "http://parkio.info",
       "https://evil.parkio.pages.dev.attacker.com",
+      // Gate 8B.8: the Preview Worker origin is allowed, but only with BOTH
+      // halves of the pattern — never any Worker on the shared namespace.
+      "https://attacker.workers.dev",
+      "https://evil.tsomers13.workers.dev",
+      "https://notparkio-preview.tsomers13.workers.dev",
+      "http://parkio-preview.tsomers13.workers.dev",
       "not-a-url",
     ]) {
       expect(isAllowedWriteOrigin(origin as string | null), String(origin)).toBe(false);
