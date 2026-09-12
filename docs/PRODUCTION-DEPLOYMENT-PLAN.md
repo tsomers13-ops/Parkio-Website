@@ -6,41 +6,52 @@ Production is Cloudflare Pages, serving `parkio.info`. The Preview Worker
 `parkio-preview` is deployed and validated (Gate 8B.8). This plan covers what
 must be proven before `parkio.info` moves, and how to undo it.
 
-Rollback commit: **`ce1ed15`** (last Pages-deployed Production commit).
-Implementation: branch `priority-9-gate-8b8-opennext-preview` at **`51ee64e`**.
+- Rollback commit (last Pages-deployed Production commit): **`ce1ed15`**
+- Implementation branch: `priority-9-gate-8b8-opennext-preview`
+- The branch ships as **one unit** — OpenNext + Next 15 + React 19 + rate
+  limiting were validated together in Preview and are not split for rollout.
+
+Revision note: this supersedes the first draft, which contained a contradictory
+staging sequence, an invalid rollback command, and a stale characterisation of
+Cloudflare Access. Those are corrected below.
 
 ---
 
-## Configuration: a separate file, not an environment block
+## 1. Configuration: one Production file, deployed only with `--config`
 
-Production gets its own **`wrangler.production.jsonc`**, deployed only with an
-explicit `--config` flag:
+Production gets its own **`wrangler.production.jsonc`**, never the repo-root
+`wrangler.jsonc` (which is Preview). Every Production command carries the flag:
 
 ```bash
 npx wrangler deploy --config wrangler.production.jsonc
 ```
 
-The reason is blunt: `wrangler.jsonc` in the repo root is the **Preview** config.
-Keeping Production in a separate file means a bare, habitual `wrangler deploy`
-can only ever touch Preview. An `env.production` block in one file would make a
-forgotten flag deploy Production by accident.
+The reason is blunt: a bare, habitual `wrangler deploy` must be incapable of
+touching Production. An `env.production` block inside the shared file would make
+a forgotten flag deploy Production by accident.
 
-Proposed contents — every difference from Preview is deliberate:
+### 1a. Staging form — canary hostname only
+
+This is the file as it exists for Steps 3–6. **`parkio.info` appears nowhere in
+it.** That absence is the mechanism that makes an accidental attachment
+impossible: there is no command in the staging steps that names the live
+hostname, so none can attach it.
 
 ```jsonc
 {
-  "name": "parkio",                        // NOT parkio-preview
+  "name": "parkio",
   "main": ".open-next/worker.js",
   "compatibility_date": "2026-09-11",
   "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
   "assets": { "directory": ".open-next/assets", "binding": "ASSETS" },
 
-  "workers_dev": false,                    // no *.workers.dev route to Production
-  "preview_urls": false,                   // no versioned preview URLs
+  "workers_dev": false,
+  "preview_urls": false,
   "observability": { "enabled": true },
 
+  // STAGING: canary hostname ONLY. Swapped in one reviewed change at Step 7.
   "routes": [
-    { "pattern": "parkio.info", "custom_domain": true }
+    { "pattern": "parkio-worker-canary.parkio.info", "custom_domain": true }
   ],
 
   "d1_databases": [
@@ -60,6 +71,13 @@ Proposed contents — every difference from Preview is deliberate:
 }
 ```
 
+`PARKIO_COMMUNITY_WRITE_ENV` is **`production` from the very first canary
+deploy** and never anything else. This is deliberate and is what makes the
+canary meaningful: the Production host policy allows only `parkio.info` and
+`www.parkio.info`, so **every sensitive write through the canary must fail
+`forbidden_host`**. The canary exercises the real artifact under the real
+policy, and proves the policy by being refused.
+
 `RATINGS_IDENTITY_SECRET` is **not** in this file. It is installed once, by
 hand, with the **Production** value:
 
@@ -71,11 +89,33 @@ Using the existing Production value is what keeps already-issued iOS Keychain
 credentials valid: the signature is `HMAC(secret, "parkio-native-v1:" + raterId)`
 and nothing about hosting enters it.
 
+### 1b. Cutover form — the single reviewed change
+
+At Step 7, exactly one hunk changes:
+
+```diff
+   "routes": [
+-    { "pattern": "parkio-worker-canary.parkio.info", "custom_domain": true }
++    { "pattern": "parkio.info", "custom_domain": true }
+   ],
+```
+
+Nothing else in the file may change in that commit. The diff is reviewed before
+the deploy, not after.
+
+### 1c. DNS side effects, stated honestly
+
+A Workers Custom Domain on a zone Cloudflare already manages creates a proxied
+DNS record for that hostname. So Step 3 **does add** a `parkio-worker-canary`
+record to the `parkio.info` zone. That is an additive, reversible change to a
+new subdomain; it does not alter the apex record, which continues to point at
+Pages until Step 7. Removing the canary at Step 9 removes that record.
+
 ---
 
-## Requirement 1 — limiter bindings are attached to Production
+## 2. Requirement 1 — limiter bindings are attached to Production
 
-**Proof before cutover**, from wrangler itself rather than from the config file:
+**Before any deploy**, from wrangler itself rather than from reading the file:
 
 ```bash
 npx wrangler deploy --dry-run --config wrangler.production.jsonc
@@ -91,8 +131,14 @@ env.ASSETS                                     Assets
 env.PARKIO_COMMUNITY_WRITE_ENV ("production")  Environment Variable
 ```
 
-**Proof after cutover**, on the live Worker — a back-to-back burst, because
-approximate semantics only bite on bursts (see the runbook):
+**On the canary** (Step 5), the mint limiter can be exercised safely because
+minting writes no D1 row — but note the host guard refuses minting on the canary
+too, so the observable there is `forbidden_host`, not a 429. Binding *presence*
+on the canary is therefore proved by the dry-run and by `wrangler tail`, not by
+a canary 429.
+
+**After cutover** (Step 8), on the live hostname, a back-to-back burst — because
+approximate semantics only bite on bursts (see the rate-limit runbook):
 
 ```bash
 U=""; for i in $(seq 1 8); do U="$U https://parkio.info/api/identity/anonymous/"; done
@@ -100,61 +146,77 @@ curl -s -D - -o /dev/null -X POST $U | grep -E '^HTTP/2|^cache-control'
 ```
 
 Accept: a run of 201s then 429s, each 429 carrying `cache-control: no-store` and
-the specified JSON. **Do not** accept "no 429 seen" as proof of anything — it is
-the ambiguous case, and means retry as a tighter burst.
+the specified JSON.
 
-Rating writes cannot be burst-tested in Production without writing real ratings.
-Verify that binding by dry-run and by `wrangler tail` showing 429s in real
-traffic, **not** by manufacturing Production ratings.
+> **"No 429 observed" is inconclusive.** It is not proof that rate limiting is
+> broken, and it is not proof that it works. Retry as a tighter burst on one
+> connection. Only a 429 with the correct contract is evidence.
+
+Rating writes are **not** burst-tested in Production: that would manufacture real
+ratings. Verify that binding by dry-run plus `wrangler tail` showing 429s in
+organic traffic.
 
 ---
 
-## Requirement 2 — writes cannot bypass enforcement via pages.dev
+## 3. Requirement 2 — writes cannot bypass enforcement via pages.dev
 
-This is the weakest link and must not be overstated. Three distinct hostname
-classes, with genuinely different answers:
+Three hostname classes with genuinely different answers. Evidence below was
+re-verified read-only on **2026-09-12** with non-mutating POSTs (no Origin, so
+nothing is writable even if a request landed).
 
-### 2a. `parkio.pages.dev` (the apex) — CLOSED
+### 3a. `parkio.pages.dev` (the apex) — CLOSED by the application
 
-The apex always serves the Pages project's **latest** deployment. That is
-`ce1ed15`, which already contains the hostname guard from `2c32a22`. Under
-`PARKIO_COMMUNITY_WRITE_ENV` absent-or-production, a `parkio.pages.dev` host is
-refused.
+The apex serves the Pages project's **latest** deployment, which is `ce1ed15`
+and already contains the hostname guard from `2c32a22`.
 
-Verify (non-mutating, no Origin so nothing can be written):
+Measured: `POST https://parkio.pages.dev/api/dining/ep-le-cellier/ratings/` →
+**`403 {"error":"forbidden_host",...}`**, with **no Access headers**. The Access
+wildcard `*.parkio.pages.dev` does **not** cover the apex; the application guard
+is what protects it, and it does.
 
-```bash
-curl -s -X POST https://parkio.pages.dev/api/dining/ep-le-cellier/ratings/ \
-  -H 'content-type: application/json' -d '{"overall":5}'
-# expect: {"error":"forbidden_host",...}
-```
+**Condition:** stop deploying to Pages after cutover. A future Pages build from a
+branch lacking the guard would reopen this.
 
-**Condition: stop deploying to Pages after cutover.** If a Pages build ever runs
-again from a branch lacking the guard, this reopens.
+### 3b. Historical `<hash>.parkio.pages.dev` — currently blocked by Access
 
-### 2b. Historical `<hash>.parkio.pages.dev` — NOT closed by code
+**Corrected from the previous draft.** The earlier text implied these aliases are
+presently open to unauthenticated attackers. **That is not accurate.**
 
-Deployments published before `2c32a22` contain no hostname guard, carry a baked
-Production D1 binding, and **will not have the limiter either**. New application
-code cannot reach them. This is the same exposure Gate 8B.3 examined.
+Current Access configuration (read-only audit):
 
-Mitigation, in order of strength:
+- **One** active Access application: **`parkio - Cloudflare Pages`**
+- Destination: **`*.parkio.pages.dev`**
+- **One** `allow` policy, restricted to **`tsomers13@gmail.com`**
 
-1. **Cloudflare Access on `*.parkio.pages.dev`.** Measured on 2026-09-11:
-   `9ca196f7.parkio.pages.dev` returned **302 → cloudflareaccess.com** with
-   `www-authenticate: Cloudflare-Access` on 9 of 9 consecutive probes, and
-   arbitrary non-existent hashes were intercepted too — so it matches on
-   hostname pattern, not a deployment registry. **Re-verify immediately before
-   cutover**, because an earlier probe that same day returned `forbidden_origin`
-   and that discrepancy was never explained.
-2. **Delete the Pages project** after soak. This is the only complete closure:
-   it removes the apex and every historical alias at once, permanently.
+Measured 2026-09-12, anonymous and non-mutating:
 
-**State plainly in any status report: until the Pages project is deleted,
-historical deployment aliases remain a potential unenforced write path.** Do not
-claim Requirement 2 is fully satisfied before that step.
+| Hostname | Result |
+|---|---|
+| `9ca196f7.parkio.pages.dev` | **302 → cloudflareaccess.com**, `www-authenticate: Cloudflare-Access` |
+| `c9597fdf.parkio.pages.dev` | **302 → cloudflareaccess.com** |
+| `00000000.parkio.pages.dev` (nonexistent) | **302 → cloudflareaccess.com** |
+| `parkio.pages.dev` (apex) | 403 `forbidden_host` — application guard, no Access |
 
-### 2c. `*.workers.dev` — CLOSED by construction
+The nonexistent-hostname result is the important one: Access matches on the
+**hostname pattern**, not a registry of deployments, so aliases that do not yet
+exist are covered too.
+
+**Accurate statement:** Access currently blocks unauthenticated public access to
+historical aliases. The residual exposure is a **dependency on configuration**,
+not an open door — if that Access application were disabled, deleted, or its
+policy widened, deployments predating `2c32a22` would again be reachable with a
+baked Production D1 binding and no hostname guard and no limiter.
+
+Deleting the Pages project removes those routes entirely and ends the dependency
+on Access. That is Step 10 and is separately authorised.
+
+**Re-verification is required immediately before cutover and at least weekly
+throughout the soak**, using exactly the probes above. An earlier probe on
+2026-09-11 returned `forbidden_origin` instead of an Access challenge and that
+discrepancy was never explained — treat Access as something to re-check, not
+something to assume.
+
+### 3c. `*.workers.dev` — CLOSED by construction
 
 `workers_dev: false` and `preview_urls: false` mean Production has no workers.dev
 route at all. Independently, the host policy refuses a workers.dev host whenever
@@ -162,13 +224,11 @@ the environment is `production` — asserted by test, not assumed.
 
 ---
 
-## Requirement 3 — Production host and Origin policies stay restricted
-
-Both files already encode this; the cutover must not relax either.
+## 4. Requirement 3 — Production host and Origin policies stay restricted
 
 | Layer | Production allows | Refuses |
 |---|---|---|
-| `lib/ratingsWriteHost.ts` | `parkio.info`, `www.parkio.info` (exact) | pages.dev, workers.dev, localhost, lookalikes |
+| `lib/ratingsWriteHost.ts` | `parkio.info`, `www.parkio.info` (exact) | pages.dev, workers.dev, canary, localhost, lookalikes |
 | `lib/ratingsOrigin.ts` | `https://parkio.info`, `https://www.parkio.info` | everything else cross-site |
 
 The Gate 8B.8 fix widened only the **non-production** sets. Tests assert a
@@ -176,24 +236,20 @@ workers.dev host is refused under `production`, `development` and `unknown`, and
 that `parkio.info.attacker.example` and `attacker-parkio.info` fail — exact
 comparison, never substring or suffix.
 
-Pre-cutover check: `PARKIO_COMMUNITY_WRITE_ENV` must be `production` in
-`wrangler.production.jsonc`. Absent would also resolve to production (the
-deliberate fail-closed default), but be explicit.
+Note the canary hostname `parkio-worker-canary.parkio.info` is **not** in the
+production allow-list and must never be added. Its refusal is the point.
 
 Post-cutover, non-mutating:
 
 ```bash
-# no Origin -> application-layer refusal, not an Access challenge
 curl -s -X POST https://parkio.info/api/dining/ep-le-cellier/ratings/ \
   -H 'content-type: application/json' -d '{"overall":5}'
 # expect: {"error":"forbidden_origin",...}
 
-# foreign Origin
 curl -s -X POST https://parkio.info/api/dining/ep-le-cellier/ratings/ \
   -H 'content-type: application/json' -H 'origin: https://attacker.example' -d '{"overall":5}'
 # expect: {"error":"forbidden_origin",...}
 
-# invalid bearer -> 401, never a fallback to the cookie path
 curl -s -X POST https://parkio.info/api/dining/ep-le-cellier/ratings/ \
   -H 'content-type: application/json' \
   -H 'authorization: Bearer v1.deadbeefdeadbeefdeadbeefdeadbeef.bogus' -d '{"overall":5}'
@@ -202,108 +258,273 @@ curl -s -X POST https://parkio.info/api/dining/ep-le-cellier/ratings/ \
 
 ---
 
-## Requirement 4 — nothing from Preview reaches Production
-
-Because Production uses a separate config file, leakage would have to be typed
-in by hand. Verify each explicitly:
+## 5. Requirement 4 — nothing from Preview reaches Production
 
 | Preview value | Must NOT appear in Production |
 |---|---|
-| Secret | the Preview `RATINGS_IDENTITY_SECRET` (generated 2026-09-12, `openssl rand -base64 48`) |
+| Secret | the Preview `RATINGS_IDENTITY_SECRET` (generated 2026-09-12) |
 | D1 | `parkio-history-preview` / `3c3c7bf8-9ad9-44b6-94e8-9b5d663d4cf8` |
 | Var | `PARKIO_COMMUNITY_WRITE_ENV=preview` |
 | Namespaces | `2001` / `2002` |
-| Hostname allowance | `parkio-preview.*.workers.dev` (inert at runtime, since it is preview-only) |
+| Hostname allowance | `parkio-preview.*.workers.dev` |
 | Worker name | `parkio-preview` |
 
-Mechanical pre-flight — must print nothing:
+Mechanical pre-flight — **must print nothing**:
 
 ```bash
-grep -nE '3c3c7bf8|parkio-history-preview|"preview"|200[12]|parkio-preview' wrangler.production.jsonc
+grep -nE '3c3c7bf8|parkio-history-preview|"preview"|200[12]|parkio-preview' \
+  wrangler.production.jsonc
 ```
 
-And the secret must be installed to the `parkio` Worker only. Confirm by name,
-never by value:
+Secret installed to the `parkio` Worker only; confirm by name, never by value:
 
 ```bash
 npx wrangler secret list --config wrangler.production.jsonc   # expect RATINGS_IDENTITY_SECRET
-npx wrangler secret list                                       # Preview, separate secret
+npx wrangler secret list                                       # Preview, separate store
 ```
 
-The two Workers share no secret store, so the Preview value cannot be read by
-Production even by mistake.
+The two Workers have separate secret stores, so the Preview value cannot be read
+by Production even by mistake.
 
 ---
 
-## Requirement 5 — rollback restores Pages without touching Production D1
+## 6. Go / no-go gates
 
-Rollback is a hostname move, not a data operation. **Both platforms bind the
-same `parkio-history` database by id**, so no rating, no wait snapshot and no
-schema is involved in rolling back. Nothing to restore, nothing to migrate.
+Each is a hard stop. None is advisory.
 
-Preconditions, all of which must hold before cutover is allowed:
-
-1. The Pages project **still exists** with its Production deployment intact.
-2. No Pages deployment has been deleted.
-3. Production `RATINGS_IDENTITY_SECRET` is unchanged, so credentials keep
-   validating on either platform.
-4. `@cloudflare/next-on-pages` and the `build:cloudflare` script are still in
-   the repo (they are, deliberately).
-
-Procedure — minutes, not hours:
-
-```bash
-# 1. detach the custom domain from the Worker
-npx wrangler domains remove parkio.info --config wrangler.production.jsonc   # confirm exact syntax at the time
-
-# 2. re-attach parkio.info to the Pages project (dashboard: Pages > parkio > Custom domains)
-
-# 3. verify
-curl -s -o /dev/null -w '%{http_code}\n' https://parkio.info/                      # 200
-curl -s https://parkio.info/api/dining/ratings/?venueKeys=ep-le-cellier            # 200
-curl -s -X POST https://parkio.info/api/dining/ep-le-cellier/ratings/ \
-  -H 'content-type: application/json' -d '{"overall":5}'                           # forbidden_origin
-```
-
-Then confirm Production D1 is untouched:
-
-```sql
-SELECT COUNT(*) FROM dining_ratings;    -- expect the same value as before rollback
-SELECT COUNT(*) FROM wait_snapshots;    -- expect monotonic growth only
-```
-
-**Rollback trigger:** any failure in the post-cutover checks above, D1 write
-errors, elevated Worker errors, or a static-content regression (a content page
-returning something other than 200 with `x-nextjs-cache: HIT`).
-
-**Cost of rollback:** losing the limiter until the next attempt. That is
-acceptable — it is where Production sits today.
+| # | Gate | Stop condition |
+|---|---|---|
+| G1 | Canary validation complete | Any canary check fails → **do not swap the route** |
+| G2 | Sensitive writes on canary | **Any successful sensitive write on the canary is an immediate STOP.** It means the Production host policy is not what this plan assumes. Do not proceed, do not swap; investigate |
+| G3 | Preview leakage | Any Preview identifier, D1 id, namespace, hostname allowance, Worker name or secret name in the Production configuration is an **immediate STOP** |
+| G4 | Rate-limit evidence | **"No 429 observed" is inconclusive** — never record it as a pass. Only a 429 with the correct JSON and `cache-control: no-store` counts |
+| G5 | Access re-verified | Historical aliases must return a Cloudflare Access 302 immediately before cutover |
+| G6 | Config diff | The route swap commit must contain **only** the `routes` hunk |
+| G7 | Pages deletion | Separately authorised, destructive, after the soak, and after Gate G8 |
+| G8 | Worker rollback tested | Worker-version rollback must have been **exercised at least once**, and build/config artifacts proven recoverable, **before** Pages deletion may be authorised |
 
 ---
 
-## Ordered cutover sequence
+## 7. Ordered cutover sequence
 
 | # | Step | Reversible? |
 |---|---|---|
-| 1 | Re-verify Cloudflare Access on `*.parkio.pages.dev` | read-only |
-| 2 | Create `wrangler.production.jsonc`; run `--dry-run`; check Requirement 1 and the Requirement 4 grep | yes |
-| 3 | Deploy the `parkio` Worker **with no route** — `workers_dev: false`, no `routes` | yes |
+| 1 | Re-verify Access on `*.parkio.pages.dev` (G5) | read-only |
+| 2 | Create `wrangler.production.jsonc` in **staging form** (canary route only). Run `--dry-run` (Req 1) and the leakage grep (G3) | yes |
+| 3 | Deploy the `parkio` Worker on the **canary hostname only**. Adds a `parkio-worker-canary` DNS record; apex untouched | yes |
 | 4 | `wrangler secret put RATINGS_IDENTITY_SECRET` (Production value) | yes |
-| 5 | Validate the Worker on a temporary route, non-mutating only | yes |
-| 6 | Add `parkio.info` as a Worker Custom Domain; remove it from Pages | **yes, this is the cutover** |
-| 7 | Run all post-cutover checks; watch `wrangler tail` | yes |
-| 8 | Soak **≥ 7 days**. Keep Pages. Stop deploying to Pages | yes |
-| 9 | Delete the Pages project — closes Requirement 2b | **NO — destructive, last** |
+| 5 | **Canary validation** — full checklist in §8. Non-mutating only | read-only |
+| 6 | Gates G1–G5. Any failure stops here | — |
+| 7 | **Route swap**: one reviewed hunk (§1b). Re-run `--dry-run` and the config diff (G6), then deploy. Remove `parkio.info` from the Pages project | **yes — this is the cutover** |
+| 8 | Post-cutover checks (Req 1 burst, Req 3 guards, static parity). Watch `wrangler tail` | yes |
+| 9 | Remove the canary custom domain and its DNS record. Soak **≥ 7 days**, Pages retained and no longer deployed to. Re-verify Access weekly. Exercise Worker-version rollback once (G8) | yes |
+| 10 | **Delete the Pages project** — closes §3b permanently | **NO — destructive, separately authorised** |
 
-Step 9 is the only irreversible step and needs its own authorisation.
+Steps 1–9 are reversible. Step 10 is not, and **no authorisation for it is
+requested here.**
 
 ---
 
-## What this plan does not claim
+## 8. Canary validation checklist (Step 5)
 
-- Deterministic rate limiting. See the runbook: approximate burst protection.
-- That historical pages.dev aliases are closed before step 9.
-- That the limiter stops a distributed attacker. It is per-Cloudflare-location.
+Against `https://parkio-worker-canary.parkio.info`. This validates the **exact
+Production Worker artifact** — same bundle, same bindings, same Production D1,
+same Production secret — on a hostname that carries no write authority.
+
+**No check writes a rating.** `dining_ratings` is read-only for the entire step.
+One exception is called out below and is not a rating: `/api/parks/{slug}/live/`
+appends wait snapshots on a cache miss, exactly as live Pages traffic already
+does. Record counts before and after so the growth is attributable.
+
+### Static assets and SSR
+
+| Check | Expect |
+|---|---|
+| `/` | 200, `x-nextjs-cache: HIT` |
+| one guide page | 200, HIT |
+| one park landing page | 200, HIT |
+| one attraction detail page | 200, HIT |
+| `/parks/epcot/dining/` | 200, HIT |
+| `/parks/epcot/dining/ep-le-cellier/` | 200, HIT, correct `<title>` |
+| `/feed.xml` | 200, valid RSS |
+| `/icon/`, `/opengraph-image/` | 200 `image/png` |
+| CSS/JS/font assets | 200 |
+| `/definitely-not-a-page/` | 404 |
+
+### Public GET APIs against Production D1
+
+| Check | Expect |
+|---|---|
+| `GET /api/dining/ratings/?venueKeys=…` | 200; counts match Production D1 exactly |
+| `GET /api/dining/{venueKey}/ratings/` | 200 |
+| `GET /api/dining/{venueKey}/ratings/me/` | 200, `rating: null` without a cookie |
+| `GET /api/parks/epcot/live/` | 200 |
+| Cache headers on aggregates | `public, s-maxage=60, stale-while-revalidate=120` |
+
+Cross-check the aggregate counts against a direct D1 read. Equality proves the
+canary is bound to Production D1 and reading it correctly.
+
+### Sensitive writes — must all be refused
+
+| Check | Expect |
+|---|---|
+| `POST /api/identity/anonymous/` | **403 `forbidden_host`** |
+| `POST …/ratings/` with canary Origin | **403 `forbidden_host`** |
+| `POST …/ratings/` no Origin | **403 `forbidden_host`** |
+| `POST …/ratings/` with a valid Production bearer | **403 `forbidden_host`** |
+
+> **G2: any 2xx here is an immediate stop.** The host guard runs before Origin,
+> bearer and validation, so a success means the Production policy is not what
+> this plan assumes.
+
+### Bindings, observability, data safety
+
+| Check | Expect |
+|---|---|
+| `wrangler tail` during the above | requests visible; no secret and no raw IP in output |
+| Production `dining_ratings` before/after Step 5 | **unchanged** |
+| Production `wait_snapshots` before/after | unchanged except organic growth from live Pages traffic |
+| Worker startup time / CPU in tail | within Free-plan 10 ms per invocation on cached paths |
+
+The `/api/parks/{slug}/live/` exception, in full: on a cache miss it appends to
+**Production** `wait_snapshots` — the same table live Pages traffic already
+writes, via the same request-path writer. It is benign and indistinguishable
+from organic ingestion. It is disclosed here rather than buried because "the
+canary is read-only" would otherwise be untrue. If even that is unwanted, skip
+the live-waits check; everything else in this checklist stays valid.
+
+---
+
+## 9. Rollback — Phase 1: during the soak, before Pages deletion
+
+**Available only while the Pages project still exists (Steps 7–9).**
+
+### Prerequisites
+
+1. The Pages project exists with its Production deployment intact.
+2. No Pages deployment has been deleted.
+3. Production `RATINGS_IDENTITY_SECRET` unchanged, so credentials validate on
+   either platform.
+4. `@cloudflare/next-on-pages` and `build:cloudflare` still in the repo — they
+   are, deliberately.
+
+### Procedure
+
+There is **no `wrangler domains` command** — the previous draft was wrong about
+this. Workers Custom Domains are declared in `routes` and managed in the
+dashboard. Do both, in this order:
+
+1. **Dashboard** — Workers & Pages → `parkio` → Settings → Domains & Routes →
+   remove the `parkio.info` custom domain. This is the authoritative action.
+2. **Dashboard** — Pages → `parkio` → Custom domains → re-add `parkio.info`.
+3. **Repo** — revert the Step 7 route hunk so a later deploy cannot re-attach it.
+
+### Verification
+
+```bash
+curl -s -o /dev/null -w '%{http_code}\n' https://parkio.info/                    # 200
+curl -s https://parkio.info/api/dining/ratings/?venueKeys=ep-le-cellier          # 200
+curl -s -X POST https://parkio.info/api/dining/ep-le-cellier/ratings/ \
+  -H 'content-type: application/json' -d '{"overall":5}'                          # forbidden_origin
+```
+
+```sql
+SELECT COUNT(*) FROM dining_ratings;    -- unchanged from before rollback
+SELECT COUNT(*) FROM wait_snapshots;    -- monotonic growth only
+```
+
+### Limitations
+
+- **No data operation is involved.** Both platforms bind the same
+  `parkio-history` database by id, so there is nothing to migrate or restore.
+- DNS/edge propagation means a brief window where either platform may answer.
+- Cost of rollback: losing the limiter until the next attempt — which is where
+  Production sits today, so acceptable.
+
+---
+
+## 10. Rollback — Phase 2: after Pages deletion
+
+**Once Step 10 is executed, Phase 1 no longer exists.** There is no Pages project
+to move the hostname back to. Do not plan around it, and do not describe Pages
+rollback as available after Step 10.
+
+The only immediate rollback is to a **known-good previous Worker version**.
+
+### Prerequisites — all required *before* Pages deletion is authorised (G8)
+
+1. **Worker-version rollback exercised at least once** during the soak, on the
+   live Worker, and verified. Not read about — performed.
+2. The known-good version id recorded, from:
+   ```bash
+   npx wrangler versions list --config wrangler.production.jsonc
+   ```
+3. **Build artifacts recoverable**: the exact commit rebuilds reproducibly —
+   `npm ci` from the committed lockfile, `npm run build`,
+   `opennextjs-cloudflare build`, `populateCache`.
+4. **Configuration recoverable**: `wrangler.production.jsonc` is committed.
+5. **Secret recoverable**: the Production `RATINGS_IDENTITY_SECRET` value is held
+   somewhere outside Cloudflare. Wrangler cannot read a secret back — if the only
+   copy is in the Worker, a rebuild-from-scratch cannot restore it and every
+   existing iOS credential breaks. Confirm this before Step 10.
+
+### Procedure
+
+```bash
+npx wrangler versions list --config wrangler.production.jsonc
+npx wrangler rollback <version-id> --config wrangler.production.jsonc
+```
+
+Or a full redeploy from the known-good commit if the version is unavailable:
+
+```bash
+git checkout <known-good-commit>
+npm ci && npm run cf:types && npm run build
+npx opennextjs-cloudflare build && npx opennextjs-cloudflare populateCache remote
+npx wrangler deploy --config wrangler.production.jsonc
+```
+
+### Verification
+
+Same checks as Phase 1, plus confirm the served version:
+
+```bash
+npx wrangler deployments list --config wrangler.production.jsonc
+```
+
+### Limitations — state these plainly
+
+- **Rolls back code only.** The custom domain, DNS and D1 are unchanged.
+- **Cannot recover from a D1 data problem.** Worker rollback does not restore
+  data; D1 point-in-time recovery is a separate mechanism and is not covered by
+  this plan.
+- **Cannot undo Pages deletion.** Recreating the project would mean a new
+  project, new deployments, and a fresh custom-domain attach — hours, not
+  minutes, and the historical aliases would not come back (which is the point).
+- Rollback to a version predating a binding change may fail if the binding no
+  longer exists. Keep binding changes and code changes in separate deploys.
+
+---
+
+## 11. Remaining irreversible actions
+
+Exactly one: **Step 10, deleting the Pages project.**
+
+It is gated behind G7 and G8, occurs after the soak, and **is not authorised by
+this document.** No authorisation for it is being requested here.
+
+Everything else — canary deploy, secret install, route swap, canary removal — is
+reversible by the procedures above.
+
+---
+
+## 12. What this plan does not claim
+
+- Deterministic rate limiting. See the runbook: approximate burst protection,
+  per-Cloudflare-location, permissive and eventually consistent.
+- That historical pages.dev aliases are open today — **they are not**; Access
+  currently challenges them. What remains is a dependency on that configuration.
+- That the limiter stops a distributed attacker.
 - That Preview validation predicts Production load. Preview saw single-client
-  traffic; Workers Free allows 10 ms CPU per invocation and full SSR is only
-  reached on cache misses, so CPU should be watched during soak.
+  traffic; watch CPU during soak.
+- That any of this has been executed. It has not.

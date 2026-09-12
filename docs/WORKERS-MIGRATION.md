@@ -118,17 +118,30 @@ correct: it is a separate signing domain.
 Pre-migration Production commit: **`ce1ed15`**.
 
 Nothing has been detached or deleted. Production continues to deploy from the
-Pages GitHub integration. To roll back, do nothing — or revert this branch.
-`@cloudflare/next-on-pages` and `build:cloudflare` are retained for exactly
-this reason and should only be removed after cutover and soak.
+Pages GitHub integration, so today rollback is "do nothing — or revert this
+branch". `@cloudflare/next-on-pages` and `build:cloudflare` are retained for
+exactly that reason.
 
-## Deployment order (future cutover, not yet authorised)
+**After cutover this changes, and it changes twice.** Rollback has two distinct
+phases with different capabilities:
 
-1. Deploy and validate the Preview Worker.
-2. Create the Production Worker with `workers_dev: false`, namespaces 1001/1002,
-   Production D1, and the Production secret.
-3. Validate it on its own hostname before it is canonical.
-4. Detach `parkio.info` from Pages, attach to the Worker.
-5. Soak at least 7 days. Keep the Pages project.
-6. Only then retire Pages — which is what finally removes the historical
-   `<hash>.parkio.pages.dev` aliases.
+- **Before Pages deletion** — move `parkio.info` back to the intact Pages
+  project. No data operation; both platforms bind the same `parkio-history` by
+  id.
+- **After Pages deletion** — Pages rollback **no longer exists**. The only
+  immediate rollback is to a known-good Worker version via `wrangler rollback`.
+
+Both procedures, their prerequisites and their limitations are in
+[PRODUCTION-DEPLOYMENT-PLAN.md](./PRODUCTION-DEPLOYMENT-PLAN.md) §9 and §10. Do
+not plan a rollback from this file.
+
+## Deployment order
+
+**Superseded.** The authoritative, gated sequence — including the
+`parkio-worker-canary.parkio.info` staging hostname, the go/no-go gates, and the
+single reviewed route swap — lives in
+[PRODUCTION-DEPLOYMENT-PLAN.md](./PRODUCTION-DEPLOYMENT-PLAN.md) §7.
+
+Keeping a second summary here would be a second source of truth, and the two
+would drift. Deleting the Pages project remains the only irreversible step, is
+separately authorised, and is not authorised today.
