@@ -813,6 +813,68 @@ These are dashboard actions and are **not** complete:
 Until the environment and secrets exist the workflow will fail at the deploy
 step — visibly, which is the correct failure mode.
 
+### Gate 8B.9B audit — measured 2026-09-12, all three prerequisites OPEN
+
+Checked against the live GitHub repository, not assumed:
+
+| Prerequisite | State |
+|---|---|
+| GitHub Environment `production` | **DOES NOT EXIST** — `GET repos/.../environments/production` returns 404, and the repository has **no environments at all** |
+| Secret `CLOUDFLARE_API_TOKEN` | **ABSENT** — repo secrets are only `ANTHROPIC_API_KEY`, `YOUTUBE_API_KEY` |
+| Secret `CLOUDFLARE_ACCOUNT_ID` | **ABSENT** |
+| Workflow visible to GitHub | **NO** — `workers-production.yml` 404s on `main`; GitHub lists only *Parkio Daily*. The implementation branch has never been pushed |
+
+The last row is easy to overlook and blocks the proof on its own: a workflow
+that exists only in a local working tree cannot produce a green Actions run.
+`workflow_dispatch` additionally requires the workflow file to be present on the
+repository's **default branch** before it can be dispatched at all.
+
+So proving the pipeline end-to-end requires, in order:
+
+1. Create the `production` environment with required reviewers.
+2. Add both secrets to it — a **scoped Cloudflare API token**, never the
+   Wrangler OAuth token.
+3. Get the workflow onto a ref GitHub can run: push the branch, and merge to
+   `main` for `workflow_dispatch` to be available.
+
+Step 3 interacts with §13: merging is what makes `main` stop being the Pages
+baseline, so it should follow the sequence there rather than be done ad hoc to
+satisfy a test.
+
+### Production identity secret — retrievability is the real risk
+
+Verified by name only, never by value:
+
+```
+$ wrangler pages secret list --project-name parkio
+The "production" environment of your Pages project "parkio" has access to the
+following secrets:
+  - RATINGS_IDENTITY_SECRET: Value Encrypted
+```
+
+The secret **is** configured on Pages. It is also **"Value Encrypted"**, meaning
+Cloudflare will not return it — not to wrangler, not to the dashboard, not to
+the account owner.
+
+**Consequence, and it is a genuine cutover blocker unless resolved:** the
+Production Worker needs *this exact value*. If no copy exists outside
+Cloudflare, it cannot be transferred, and deploying a Production-configured
+Worker with a freshly generated secret would invalidate **every** native
+credential already issued — each iOS install holds a Keychain credential signed
+with the current value, and those users would silently lose their rating
+identity with no way to recover it.
+
+This must be answered before a Production-configured Worker is deployed at all,
+including on the canary:
+
+- **If an external copy exists** (password manager, secure note): transfer it
+  with `wrangler secret put RATINGS_IDENTITY_SECRET --config wrangler.production.jsonc`
+  and continuity is preserved.
+- **If no copy exists**: STOP. The options are a deliberate, accepted
+  credential-invalidation event — which needs its own decision and probably an
+  iOS-side story — or abandoning secret continuity as a goal. Neither should be
+  chosen by default, and neither is in scope here.
+
 ## 13. Rollback baseline and branch strategy — TAG CREATED (Gate 8B.9A)
 
 ### The baseline was not where the plan said it was
