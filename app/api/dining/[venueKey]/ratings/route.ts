@@ -31,6 +31,7 @@ import {
   verifyNativeCredential,
 } from "@/lib/ratingsNativeIdentity";
 import { calculateCommunityRanking } from "@/lib/ratingsRanking";
+import { checkRateLimit } from "@/lib/ratingsRateLimit";
 import { isAllowedCommunityWriteRequest } from "@/lib/ratingsWriteHost";
 import {
   MAX_RATING_BODY_BYTES,
@@ -38,16 +39,15 @@ import {
   isJsonContentType,
 } from "@/lib/ratingsOrigin";
 import { validateRatingInput, validateRatingVenueKey } from "@/lib/ratingsValidation";
-import { badRequest, jsonError, jsonOk, notFound } from "../../../_lib/respond";
+import { badRequest, jsonError, jsonOk, notFound, tooManyRequests } from "../../../_lib/respond";
 
-export const runtime = "edge";
 
 /** Short edge cache: new ratings surface quickly without hammering D1. */
 const AGGREGATE_S_MAXAGE = 60;
 const AGGREGATE_SWR = 120;
 
 interface Params {
-  params: { venueKey: string };
+  params: Promise<{ venueKey: string }>;
 }
 
 function noStore(data: unknown, status = 200): Response {
@@ -69,7 +69,8 @@ function ratingsUnavailable(): Response {
   return jsonError(503, "ratings_unavailable", "Ratings are temporarily unavailable.");
 }
 
-export async function GET(_req: Request, { params }: Params) {
+export async function GET(_req: Request, props: Params) {
+  const params = await props.params;
   const venue = validateRatingVenueKey(params.venueKey);
   if (!venue.ok) return notFound(`Unknown dining venue: ${params.venueKey}`);
 
@@ -87,7 +88,8 @@ export async function GET(_req: Request, { params }: Params) {
   return jsonOk({ ...result.aggregate, ...ranking }, AGGREGATE_S_MAXAGE, AGGREGATE_SWR);
 }
 
-export async function POST(req: Request, { params }: Params) {
+export async function POST(req: Request, props: Params) {
+  const params = await props.params;
   // First, before anything else looks at the request. Cloudflare Pages serves
   // this same Worker on parkio.pages.dev and on an immutable alias for every
   // past deployment, all bound to the same Production database. Only
@@ -98,6 +100,14 @@ export async function POST(req: Request, { params }: Params) {
   // venue keys exist.
   if (!isAllowedCommunityWriteRequest(req)) {
     return jsonError(403, "forbidden_host", "Ratings cannot be submitted from this host.");
+  }
+
+  // Second, before any authentication. An unauthenticated script must not get
+  // unlimited free attempts just because the Origin check would reject it —
+  // rejected traffic still consumes the source-IP allowance. Counting after
+  // authentication would make the limiter trivially bypassable.
+  if (!(await checkRateLimit(req, "RATING_WRITE_LIMITER")).allowed) {
+    return tooManyRequests();
   }
 
   const venue = validateRatingVenueKey(params.venueKey);

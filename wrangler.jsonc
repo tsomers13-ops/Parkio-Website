@@ -1,0 +1,55 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+
+  // PREVIEW WORKER. Deliberately NOT named `parkio`: this configuration must
+  // never be mistaken for, or deployed over, Production. parkio.info stays on
+  // Cloudflare Pages until a separate authorised cutover.
+  "name": "parkio-preview",
+  "main": ".open-next/worker.js",
+  "compatibility_date": "2026-09-11",
+  "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
+
+  "assets": {
+    "directory": ".open-next/assets",
+    "binding": "ASSETS"
+  },
+
+  // Preview needs a reachable hostname for validation, so workers.dev is on
+  // HERE ONLY. Production will ship `"workers_dev": false` so parkio.info is
+  // the single route to Production write authority.
+  "workers_dev": true,
+  "preview_urls": false,
+
+  "observability": { "enabled": true },
+
+  // PREVIEW D1 — parkio-history-preview. Never the Production database.
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "parkio-history-preview",
+      "database_id": "3c3c7bf8-9ad9-44b6-94e8-9b5d663d4cf8"
+    }
+  ],
+
+  // Drives lib/ratingsWriteHost.ts. `preview` allows *.workers.dev and
+  // *.parkio.pages.dev hosts plus localhost, and deliberately does NOT grant
+  // parkio.info write authority.
+  "vars": {
+    "PARKIO_COMMUNITY_WRITE_ENV": "preview"
+  },
+
+  // Separate namespaces from the future Production Worker (which will use
+  // 1001/1002) so Preview traffic can never consume Production allowance.
+  "ratelimits": [
+    {
+      "name": "IDENTITY_MINT_LIMITER",
+      "namespace_id": "2001",
+      "simple": { "limit": 5, "period": 60 }
+    },
+    {
+      "name": "RATING_WRITE_LIMITER",
+      "namespace_id": "2002",
+      "simple": { "limit": 10, "period": 60 }
+    }
+  ]
+}

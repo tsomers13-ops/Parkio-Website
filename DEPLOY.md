@@ -1,5 +1,12 @@
 # Deploying the Parkio website
 
+> **Production today: Cloudflare Pages (Path B below).** A Workers migration
+> using `@opennextjs/cloudflare` is implemented on a branch and validated in
+> Preview — see [docs/WORKERS-MIGRATION.md](./docs/WORKERS-MIGRATION.md).
+> `parkio.info` has **not** been cut over, and the Pages deployment is the
+> rollback target. Do not remove `@cloudflare/next-on-pages` or the
+> `build:cloudflare` script until after cutover and soak.
+
 The Parkio site is the production target right now. iOS work is paused
 until the website is fully ready (see the README's Future section).
 

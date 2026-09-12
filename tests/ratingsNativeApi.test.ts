@@ -21,9 +21,9 @@ const ORIGIN = "https://parkio.info";
 
 let dir: string;
 let db: string;
-let GET: (req: Request, ctx: { params: { venueKey: string } }) => Promise<Response>;
-let POST: (req: Request, ctx: { params: { venueKey: string } }) => Promise<Response>;
-let ME: (req: Request, ctx: { params: { venueKey: string } }) => Promise<Response>;
+let GET: (req: Request, ctx: { params: Promise<{ venueKey: string }> }) => Promise<Response>;
+let POST: (req: Request, ctx: { params: Promise<{ venueKey: string }> }) => Promise<Response>;
+let ME: (req: Request, ctx: { params: Promise<{ venueKey: string }> }) => Promise<Response>;
 let mintPost: (req: Request) => Promise<Response>;
 
 /**
@@ -202,7 +202,7 @@ describe("POST /api/identity/anonymous/", () => {
 describe("native rating submission", () => {
   it("creates a rating with 201 and no Origin header at all", async () => {
     const credential = await issueCredential();
-    const res = await POST(nativePost(credential, { overall: 4 }), { params: { venueKey: VENUE } });
+    const res = await POST(nativePost(credential, { overall: 4 }), { params: Promise.resolve({ venueKey: VENUE }) });
 
     expect(res.status).toBe(201);
     expect(sql("SELECT COUNT(*) FROM dining_ratings;")).toBe("1");
@@ -210,15 +210,15 @@ describe("native rating submission", () => {
 
   it("never hands a native client a cookie", async () => {
     const credential = await issueCredential();
-    const res = await POST(nativePost(credential, { overall: 4 }), { params: { venueKey: VENUE } });
+    const res = await POST(nativePost(credential, { overall: 4 }), { params: Promise.resolve({ venueKey: VENUE }) });
     expect(res.headers.get("set-cookie")).toBeNull();
   });
 
   it("updates with 200 and does not stack the count", async () => {
     const credential = await issueCredential();
-    await POST(nativePost(credential, { overall: 4 }), { params: { venueKey: VENUE } });
+    await POST(nativePost(credential, { overall: 4 }), { params: Promise.resolve({ venueKey: VENUE }) });
     const second = await POST(nativePost(credential, { overall: 2, taste: 5 }), {
-      params: { venueKey: VENUE },
+      params: Promise.resolve({ venueKey: VENUE }),
     });
 
     expect(second.status).toBe(200);
@@ -229,7 +229,7 @@ describe("native rating submission", () => {
 
   it("omits unanswered dimensions rather than zeroing them", async () => {
     const credential = await issueCredential();
-    await POST(nativePost(credential, { overall: 3, value: 4 }), { params: { venueKey: VENUE } });
+    await POST(nativePost(credential, { overall: 3, value: 4 }), { params: Promise.resolve({ venueKey: VENUE }) });
     expect(sql(`SELECT COALESCE(taste, 'NULL') FROM dining_ratings;`)).toBe("NULL");
     expect(sql(`SELECT value FROM dining_ratings;`)).toBe("4");
   });
@@ -237,11 +237,11 @@ describe("native rating submission", () => {
   it("gives two native identities two rows, one aggregate", async () => {
     const a = await issueCredential();
     const b = await issueCredential();
-    await POST(nativePost(a, { overall: 5 }), { params: { venueKey: VENUE } });
-    await POST(nativePost(b, { overall: 3 }), { params: { venueKey: VENUE } });
+    await POST(nativePost(a, { overall: 5 }), { params: Promise.resolve({ venueKey: VENUE }) });
+    await POST(nativePost(b, { overall: 3 }), { params: Promise.resolve({ venueKey: VENUE }) });
 
     expect(sql("SELECT COUNT(*) FROM dining_ratings;")).toBe("2");
-    const res = await GET(new Request("https://parkio.info/x"), { params: { venueKey: VENUE } });
+    const res = await GET(new Request("https://parkio.info/x"), { params: Promise.resolve({ venueKey: VENUE }) });
     const body = (await res.json()) as { ratingCount: number; overallAverage: number };
     expect(body.ratingCount).toBe(2);
     expect(body.overallAverage).toBe(4);
@@ -251,10 +251,10 @@ describe("native rating submission", () => {
     // This is the whole point of the gate: a website rating and an app rating
     // land in the same aggregate, not in separate per-platform counters.
     const credential = await issueCredential();
-    await POST(nativePost(credential, { overall: 5 }), { params: { venueKey: VENUE } });
-    await POST(browserPost({ overall: 3 }), { params: { venueKey: VENUE } });
+    await POST(nativePost(credential, { overall: 5 }), { params: Promise.resolve({ venueKey: VENUE }) });
+    await POST(browserPost({ overall: 3 }), { params: Promise.resolve({ venueKey: VENUE }) });
 
-    const res = await GET(new Request("https://parkio.info/x"), { params: { venueKey: VENUE } });
+    const res = await GET(new Request("https://parkio.info/x"), { params: Promise.resolve({ venueKey: VENUE }) });
     const body = (await res.json()) as { ratingCount: number; overallAverage: number };
     expect(body.ratingCount).toBe(2);
     expect(body.overallAverage).toBe(4);
@@ -263,7 +263,7 @@ describe("native rating submission", () => {
 
   it("rejects an invalid credential with 401 and writes nothing", async () => {
     const res = await POST(nativePost("v1.deadbeef.nope", { overall: 4 }), {
-      params: { venueKey: VENUE },
+      params: Promise.resolve({ venueKey: VENUE }),
     });
     expect(res.status).toBe(401);
     expect(sql("SELECT COUNT(*) FROM dining_ratings;")).toBe("0");
@@ -272,14 +272,14 @@ describe("native rating submission", () => {
   it("rejects a credential signed with the wrong secret", async () => {
     const credential = await issueCredential();
     setEnv({ RATINGS_IDENTITY_SECRET: "rotated-secret" });
-    const res = await POST(nativePost(credential, { overall: 4 }), { params: { venueKey: VENUE } });
+    const res = await POST(nativePost(credential, { overall: 4 }), { params: Promise.resolve({ venueKey: VENUE }) });
     expect(res.status).toBe(401);
   });
 
   it("still validates whole stars", async () => {
     const credential = await issueCredential();
     for (const bad of [{ overall: 0 }, { overall: 6 }, { overall: 4.5 }, { overall: "4" }]) {
-      const res = await POST(nativePost(credential, bad), { params: { venueKey: VENUE } });
+      const res = await POST(nativePost(credential, bad), { params: Promise.resolve({ venueKey: VENUE }) });
       expect(res.status).toBe(400);
     }
     expect(sql("SELECT COUNT(*) FROM dining_ratings;")).toBe("0");
@@ -288,7 +288,7 @@ describe("native rating submission", () => {
   it("still rejects extra fields", async () => {
     const credential = await issueCredential();
     const res = await POST(nativePost(credential, { overall: 4, status: "active" }), {
-      params: { venueKey: VENUE },
+      params: Promise.resolve({ venueKey: VENUE }),
     });
     expect(res.status).toBe(400);
   });
@@ -297,7 +297,7 @@ describe("native rating submission", () => {
     const credential = await issueCredential();
     for (const venue of ["ep-fw-2026-brazil", "test-track", "not-a-venue"]) {
       const res = await POST(nativePost(credential, { overall: 4 }, venue), {
-        params: { venueKey: venue },
+        params: Promise.resolve({ venueKey: venue }),
       });
       expect(res.status).toBe(404);
     }
@@ -305,7 +305,7 @@ describe("native rating submission", () => {
 
   it("leaks neither the secret nor the rater id", async () => {
     const credential = await issueCredential();
-    const res = await POST(nativePost(credential, { overall: 4 }), { params: { venueKey: VENUE } });
+    const res = await POST(nativePost(credential, { overall: 4 }), { params: Promise.resolve({ venueKey: VENUE }) });
     const raw = await res.text();
     const raterId = sql("SELECT rater_id FROM dining_ratings;");
 
@@ -320,9 +320,9 @@ describe("native rating submission", () => {
 describe("native personal read", () => {
   it("returns the guest's own rating", async () => {
     const credential = await issueCredential();
-    await POST(nativePost(credential, { overall: 4, taste: 5 }), { params: { venueKey: VENUE } });
+    await POST(nativePost(credential, { overall: 4, taste: 5 }), { params: Promise.resolve({ venueKey: VENUE }) });
 
-    const res = await ME(nativeGet(credential), { params: { venueKey: VENUE } });
+    const res = await ME(nativeGet(credential), { params: Promise.resolve({ venueKey: VENUE }) });
     const body = (await res.json()) as {
       rating: Record<string, unknown> | null;
     };
@@ -336,32 +336,32 @@ describe("native personal read", () => {
 
   it("returns null before the guest has rated", async () => {
     const credential = await issueCredential();
-    const res = await ME(nativeGet(credential), { params: { venueKey: VENUE } });
+    const res = await ME(nativeGet(credential), { params: Promise.resolve({ venueKey: VENUE }) });
     expect((await res.json()).rating).toBeNull();
   });
 
   it("does not see another identity's rating", async () => {
     const a = await issueCredential();
     const b = await issueCredential();
-    await POST(nativePost(a, { overall: 5 }), { params: { venueKey: VENUE } });
+    await POST(nativePost(a, { overall: 5 }), { params: Promise.resolve({ venueKey: VENUE }) });
 
-    const res = await ME(nativeGet(b), { params: { venueKey: VENUE } });
+    const res = await ME(nativeGet(b), { params: Promise.resolve({ venueKey: VENUE }) });
     expect((await res.json()).rating).toBeNull();
   });
 
   it("rejects an invalid credential rather than saying 'no rating'", async () => {
-    const res = await ME(nativeGet("v1.deadbeef.nope"), { params: { venueKey: VENUE } });
+    const res = await ME(nativeGet("v1.deadbeef.nope"), { params: Promise.resolve({ venueKey: VENUE }) });
     expect(res.status).toBe(401);
   });
 
   it("mints no identity", async () => {
     const credential = await issueCredential();
-    const res = await ME(nativeGet(credential), { params: { venueKey: VENUE } });
+    const res = await ME(nativeGet(credential), { params: Promise.resolve({ venueKey: VENUE }) });
     expect(res.headers.get("set-cookie")).toBeNull();
   });
 
   it("still answers 'no rating' to a caller with no identity at all", async () => {
-    const res = await ME(nativeGet(null), { params: { venueKey: VENUE } });
+    const res = await ME(nativeGet(null), { params: Promise.resolve({ venueKey: VENUE }) });
     expect(res.status).toBe(200);
     expect((await res.json()).rating).toBeNull();
   });
@@ -377,7 +377,7 @@ describe("browser path is unchanged", () => {
         headers: { origin: "https://evil.example", "content-type": "application/json" },
         body: JSON.stringify({ overall: 4 }),
       }),
-      { params: { venueKey: VENUE } },
+      { params: Promise.resolve({ venueKey: VENUE }) },
     );
     expect(res.status).toBe(403);
   });
@@ -389,7 +389,7 @@ describe("browser path is unchanged", () => {
         headers: { "content-type": "application/json" },
         body: JSON.stringify({ overall: 4 }),
       }),
-      { params: { venueKey: VENUE } },
+      { params: Promise.resolve({ venueKey: VENUE }) },
     );
     expect(res.status).toBe(403);
   });
@@ -403,44 +403,44 @@ describe("browser path is unchanged", () => {
         headers: { authorization: "Bearer not-a-real-credential", "content-type": "application/json" },
         body: JSON.stringify({ overall: 4 }),
       }),
-      { params: { venueKey: VENUE } },
+      { params: Promise.resolve({ venueKey: VENUE }) },
     );
     expect(res.status).toBe(401);
     expect(sql("SELECT COUNT(*) FROM dining_ratings;")).toBe("0");
   });
 
   it("still mints a cookie on a browser's first rating", async () => {
-    const res = await POST(browserPost({ overall: 4 }), { params: { venueKey: VENUE } });
+    const res = await POST(browserPost({ overall: 4 }), { params: Promise.resolve({ venueKey: VENUE }) });
     expect(res.status).toBe(201);
     expect(res.headers.get("set-cookie")).toContain(RATER_COOKIE_NAME);
     expect(res.headers.get("set-cookie")).toContain("HttpOnly");
   });
 
   it("still updates without a second cookie", async () => {
-    const first = await POST(browserPost({ overall: 4 }), { params: { venueKey: VENUE } });
+    const first = await POST(browserPost({ overall: 4 }), { params: Promise.resolve({ venueKey: VENUE }) });
     const cookie = first.headers.get("set-cookie")!.split(";")[0].split("=")[1];
 
-    const second = await POST(browserPost({ overall: 2 }, cookie), { params: { venueKey: VENUE } });
+    const second = await POST(browserPost({ overall: 2 }, cookie), { params: Promise.resolve({ venueKey: VENUE }) });
     expect(second.status).toBe(200);
     expect(second.headers.get("set-cookie")).toBeNull();
     expect(sql("SELECT COUNT(*) FROM dining_ratings;")).toBe("1");
   });
 
   it("still reads a browser's own rating by cookie", async () => {
-    const first = await POST(browserPost({ overall: 4 }), { params: { venueKey: VENUE } });
+    const first = await POST(browserPost({ overall: 4 }), { params: Promise.resolve({ venueKey: VENUE }) });
     const cookie = first.headers.get("set-cookie")!.split(";")[0].split("=")[1];
 
     const res = await ME(
       new Request(`https://parkio.info/api/dining/${VENUE}/ratings/me`, {
         headers: { cookie: `${RATER_COOKIE_NAME}=${cookie}` },
       }),
-      { params: { venueKey: VENUE } },
+      { params: Promise.resolve({ venueKey: VENUE }) },
     );
     expect((await res.json()).rating.overall).toBe(4);
   });
 
   it("still keeps the public aggregate unauthenticated and cookie-free", async () => {
-    const res = await GET(new Request("https://parkio.info/x"), { params: { venueKey: VENUE } });
+    const res = await GET(new Request("https://parkio.info/x"), { params: Promise.resolve({ venueKey: VENUE }) });
     expect(res.status).toBe(200);
     expect(res.headers.get("set-cookie")).toBeNull();
     expect(res.headers.get("cache-control")).toContain("s-maxage=60");

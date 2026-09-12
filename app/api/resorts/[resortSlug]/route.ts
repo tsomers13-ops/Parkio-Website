@@ -21,14 +21,14 @@ import {
 import type { ApiPark, ApiResort } from "@/lib/types";
 import { jsonOk, notFound } from "../../_lib/respond";
 
-export const runtime = "edge";
 export const revalidate = 120; // includes per-park status
 
 interface Params {
-  params: { resortSlug: string };
+  params: Promise<{ resortSlug: string }>;
 }
 
-export async function GET(_req: Request, { params }: Params) {
+export async function GET(_req: Request, props: Params) {
+  const params = await props.params;
   const resort = getResortConfig(params.resortSlug);
   if (!resort) {
     return notFound(`Unknown resort slug: ${params.resortSlug}`);

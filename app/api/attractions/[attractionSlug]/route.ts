@@ -21,14 +21,14 @@ import {
 } from "@/lib/themeparksApi";
 import { jsonOk, notFound } from "../../_lib/respond";
 
-export const runtime = "edge";
 export const revalidate = 300;
 
 interface Params {
-  params: { attractionSlug: string };
+  params: Promise<{ attractionSlug: string }>;
 }
 
-export async function GET(_req: Request, { params }: Params) {
+export async function GET(_req: Request, props: Params) {
+  const params = await props.params;
   const ride = RIDES.find((r) => r.id === params.attractionSlug);
   if (!ride) {
     const fallback = findAttractionBySlug(params.attractionSlug);

@@ -28,20 +28,17 @@ import {
 } from "@/lib/seasonalDining";
 
 interface ParkDiningPageProps {
-  params: { parkId: string };
+  params: Promise<{ parkId: string }>;
 }
 
 export const dynamicParams = false;
-// Required by @cloudflare/next-on-pages: the adapter rejects this route shape
-// without it, which failed every production build of Gate 4. The sibling
-// [slug] route builds without it and is deliberately left alone.
-export const runtime = "edge";
 
 export function generateStaticParams() {
   return diningParkStaticParams();
 }
 
-export function generateMetadata({ params }: ParkDiningPageProps): Metadata {
+export async function generateMetadata(props: ParkDiningPageProps): Promise<Metadata> {
+  const params = await props.params;
   const park = getPark(params.parkId);
   if (!park || !isDiningParkId(params.parkId)) {
     return { title: "Dining not found", robots: { index: false } };
@@ -61,7 +58,8 @@ export function generateMetadata({ params }: ParkDiningPageProps): Metadata {
  * against the park-local date and handed to the client as settled state, so
  * no component re-derives a date and expired locations never reach the page.
  */
-export default function ParkDiningPage({ params }: ParkDiningPageProps) {
+export default async function ParkDiningPage(props: ParkDiningPageProps) {
+  const params = await props.params;
   const park = getPark(params.parkId);
   if (!park || !isDiningParkId(params.parkId)) notFound();
 

@@ -23,10 +23,9 @@ import {
 import { validateRatingVenueKey } from "@/lib/ratingsValidation";
 import { jsonError, notFound } from "../../../../_lib/respond";
 
-export const runtime = "edge";
 
 interface Params {
-  params: { venueKey: string };
+  params: Promise<{ venueKey: string }>;
 }
 
 function noStore(data: unknown): Response {
@@ -39,7 +38,8 @@ function noStore(data: unknown): Response {
   });
 }
 
-export async function GET(req: Request, { params }: Params) {
+export async function GET(req: Request, props: Params) {
+  const params = await props.params;
   const venue = validateRatingVenueKey(params.venueKey);
   if (!venue.ok) return notFound(`Unknown dining venue: ${params.venueKey}`);
 

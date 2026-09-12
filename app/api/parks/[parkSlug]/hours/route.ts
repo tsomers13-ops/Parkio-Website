@@ -13,14 +13,14 @@ import {
 } from "@/lib/themeparksApi";
 import { jsonOk, notFound } from "../../../_lib/respond";
 
-export const runtime = "edge";
 export const revalidate = 1800;
 
 interface Params {
-  params: { parkSlug: string };
+  params: Promise<{ parkSlug: string }>;
 }
 
-export async function GET(_req: Request, { params }: Params) {
+export async function GET(_req: Request, props: Params) {
+  const params = await props.params;
   const cfg = getParkConfig(params.parkSlug);
   if (!cfg) {
     return notFound(`Unknown park slug: ${params.parkSlug}`);

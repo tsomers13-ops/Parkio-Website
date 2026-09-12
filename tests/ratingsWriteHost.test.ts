@@ -28,8 +28,8 @@ const VALID_BODY = { overall: 5, taste: 5, value: 4, quality: 5 };
 
 let dir: string;
 let db: string;
-let POST: (req: Request, ctx: { params: { venueKey: string } }) => Promise<Response>;
-let GET: (req: Request, ctx: { params: { venueKey: string } }) => Promise<Response>;
+let POST: (req: Request, ctx: { params: Promise<{ venueKey: string }> }) => Promise<Response>;
+let GET: (req: Request, ctx: { params: Promise<{ venueKey: string }> }) => Promise<Response>;
 let MINT: (req: Request) => Promise<Response>;
 
 function sql(query: string): string {
@@ -209,13 +209,13 @@ describe("host policy per environment", () => {
 
 describe("rating write, host gate through the real handler", () => {
   it("lets parkio.info through the host gate and into the normal path", async () => {
-    const res = await POST(postTo("parkio.info"), { params: { venueKey: VENUE } });
+    const res = await POST(postTo("parkio.info"), { params: Promise.resolve({ venueKey: VENUE }) });
     expect(res.status).toBe(201);
     expect(ratingRows()).toBe(1);
   });
 
   it("lets www.parkio.info through as well", async () => {
-    const res = await POST(postTo("www.parkio.info"), { params: { venueKey: VENUE } });
+    const res = await POST(postTo("www.parkio.info"), { params: Promise.resolve({ venueKey: VENUE }) });
     expect(res.status).toBe(201);
     expect(ratingRows()).toBe(1);
   });
@@ -229,7 +229,7 @@ describe("rating write, host gate through the real handler", () => {
     "attacker-parkio.info",
   ]) {
     it(`refuses ${host} with 403 and writes nothing`, async () => {
-      const res = await POST(postTo(host), { params: { venueKey: VENUE } });
+      const res = await POST(postTo(host), { params: Promise.resolve({ venueKey: VENUE }) });
       expect(res.status).toBe(403);
       expect((await res.json()).error).toBe("forbidden_host");
       expect(ratingRows()).toBe(0);
@@ -238,7 +238,7 @@ describe("rating write, host gate through the real handler", () => {
 
   it("refuses an unauthorized host before revealing whether a venue exists", async () => {
     const res = await POST(postTo("parkio.pages.dev", "not-a-real-venue"), {
-      params: { venueKey: "not-a-real-venue" },
+      params: Promise.resolve({ venueKey: "not-a-real-venue" }),
     });
     // 403, not 404: the host gate runs first, so venue keys are not probeable
     // from a hostname that has no write authority.
@@ -252,7 +252,7 @@ describe("rating write, host gate through the real handler", () => {
       headers: { origin: "https://parkio.info", "content-type": "application/json" },
       body: JSON.stringify(VALID_BODY),
     });
-    expect((await POST(upper, { params: { venueKey: VENUE } })).status).toBe(201);
+    expect((await POST(upper, { params: Promise.resolve({ venueKey: VENUE }) })).status).toBe(201);
 
     sql("DELETE FROM dining_ratings;");
     const ported = new Request(`https://parkio.info:443/api/dining/${VENUE}/ratings`, {
@@ -260,7 +260,7 @@ describe("rating write, host gate through the real handler", () => {
       headers: { origin: "https://parkio.info", "content-type": "application/json" },
       body: JSON.stringify(VALID_BODY),
     });
-    expect((await POST(ported, { params: { venueKey: VENUE } })).status).toBe(201);
+    expect((await POST(ported, { params: Promise.resolve({ venueKey: VENUE }) })).status).toBe(201);
 
     sql("DELETE FROM dining_ratings;");
     const upperAlias = new Request(`https://ABC123.PARKIO.PAGES.DEV/api/dining/${VENUE}/ratings`, {
@@ -268,20 +268,20 @@ describe("rating write, host gate through the real handler", () => {
       headers: { origin: "https://abc123.parkio.pages.dev", "content-type": "application/json" },
       body: JSON.stringify(VALID_BODY),
     });
-    expect((await POST(upperAlias, { params: { venueKey: VENUE } })).status).toBe(403);
+    expect((await POST(upperAlias, { params: Promise.resolve({ venueKey: VENUE }) })).status).toBe(403);
     expect(ratingRows()).toBe(0);
   });
 
   it("refuses every host when the environment is unknown", async () => {
     setEnv({ [COMMUNITY_WRITE_ENV_VAR]: "staging" });
-    const res = await POST(postTo("parkio.info"), { params: { venueKey: VENUE } });
+    const res = await POST(postTo("parkio.info"), { params: Promise.resolve({ venueKey: VENUE }) });
     expect(res.status).toBe(403);
     expect(ratingRows()).toBe(0);
   });
 
   it("accepts a Preview alias only when the environment says Preview", async () => {
     setEnv({ [COMMUNITY_WRITE_ENV_VAR]: "preview" });
-    const res = await POST(postTo("9ca196f7.parkio.pages.dev"), { params: { venueKey: VENUE } });
+    const res = await POST(postTo("9ca196f7.parkio.pages.dev"), { params: Promise.resolve({ venueKey: VENUE }) });
     expect(res.status).toBe(201);
     expect(ratingRows()).toBe(1);
   });
@@ -312,22 +312,22 @@ describe("identity mint, host gate through the real handler", () => {
 
 describe("public reads are untouched", () => {
   it("serves the aggregate GET through pages.dev exactly as before", async () => {
-    await POST(postTo("parkio.info"), { params: { venueKey: VENUE } });
+    await POST(postTo("parkio.info"), { params: Promise.resolve({ venueKey: VENUE }) });
 
-    const viaPages = await GET(getFrom("parkio.pages.dev"), { params: { venueKey: VENUE } });
+    const viaPages = await GET(getFrom("parkio.pages.dev"), { params: Promise.resolve({ venueKey: VENUE }) });
     expect(viaPages.status).toBe(200);
     const body = await viaPages.json();
     expect(body.ratingCount).toBe(1);
 
     const viaAlias = await GET(getFrom("9ca196f7.parkio.pages.dev"), {
-      params: { venueKey: VENUE },
+      params: Promise.resolve({ venueKey: VENUE }),
     });
     expect(viaAlias.status).toBe(200);
     expect((await viaAlias.json()).ratingCount).toBe(1);
   });
 
   it("serves the aggregate GET through an arbitrary host, the POST guard being POST-only", async () => {
-    const res = await GET(getFrom("attacker.example"), { params: { venueKey: VENUE } });
+    const res = await GET(getFrom("attacker.example"), { params: Promise.resolve({ venueKey: VENUE }) });
     expect(res.status).toBe(200);
   });
 });

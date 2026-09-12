@@ -18,7 +18,7 @@ import { diningTypeLabel } from "@/lib/diningTypes";
 import { pavilionName } from "@/lib/lands";
 
 interface DiningVenuePageProps {
-  params: { parkId: string; slug: string };
+  params: Promise<{ parkId: string; slug: string }>;
 }
 
 export const dynamicParams = false;
@@ -27,7 +27,8 @@ export function generateStaticParams() {
   return diningStaticParams();
 }
 
-export function generateMetadata({ params }: DiningVenuePageProps): Metadata {
+export async function generateMetadata(props: DiningVenuePageProps): Promise<Metadata> {
+  const params = await props.params;
   const resolved = resolveDiningVenue(params.parkId, params.slug);
   if (!resolved) return { title: "Dining not found", robots: { index: false } };
 
@@ -51,7 +52,8 @@ export function generateMetadata({ params }: DiningVenuePageProps): Metadata {
  * Parkio actually has and nothing else — no empty rows, no "unknown", and no
  * mention of indexing policy, which is internal.
  */
-export default function DiningVenuePage({ params }: DiningVenuePageProps) {
+export default async function DiningVenuePage(props: DiningVenuePageProps) {
+  const params = await props.params;
   const resolved = resolveDiningVenue(params.parkId, params.slug);
   if (!resolved) notFound();
 

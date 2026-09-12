@@ -235,8 +235,16 @@ describe("GET /api/dining/ratings/", () => {
     expect((route as Record<string, unknown>).DELETE).toBeUndefined();
   });
 
-  it("runs on the edge runtime, like the rest of the dining routes", async () => {
-    const route = await import("@/app/api/dining/ratings/route");
-    expect((route as { runtime?: string }).runtime).toBe("edge");
+  it("declares no explicit runtime, like the rest of the dining routes", async () => {
+    // Was `runtime === "edge"`. That encoded the @cloudflare/next-on-pages
+    // platform choice; the Workers build runs on the Node.js runtime. The
+    // invariant worth protecting is that the bulk route and its siblings
+    // agree — not which runtime they happen to use.
+    const bulk = await import("@/app/api/dining/ratings/route");
+    const single = await import("@/app/api/dining/[venueKey]/ratings/route");
+    const mine = await import("@/app/api/dining/[venueKey]/ratings/me/route");
+    for (const route of [bulk, single, mine]) {
+      expect((route as { runtime?: string }).runtime).toBeUndefined();
+    }
   });
 });
