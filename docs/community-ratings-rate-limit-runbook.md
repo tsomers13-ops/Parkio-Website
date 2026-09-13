@@ -242,3 +242,163 @@ GA but is **not a supported Pages Functions binding** and `ratelimits` is not a
 supported key in a Pages Wrangler configuration file, so the approved policy
 cannot be built inside this Pages project at all. The open options are recorded
 in PARKIO_ACTIVE_CONTEXT.md under Gate 8B.1; they require a product decision.
+
+---
+
+## Implemented (Gate 8B.8): Worker rate limiting, Preview
+
+Rate limiting is no longer a proposal. It is implemented in application code
+against Cloudflare's Workers Rate Limiting bindings, and validated locally
+against the real binding.
+
+This supersedes everything above about WAF Rules expressions. **No zone rule is
+used, and none should be created** — the Free-plan limitations recorded earlier
+are why.
+
+### Thresholds
+
+| Binding | Limit | Scope | Namespace (Preview) | Namespace (Production) |
+|---|---|---|---|---|
+| `IDENTITY_MINT_LIMITER` | 5 / 60 s | source IP | 2001 | 1001 |
+| `RATING_WRITE_LIMITER` | 10 / 60 s | source IP | 2002 | 1002 |
+
+Separate namespaces, so exhausting one cannot starve the other, and Preview
+traffic can never consume Production allowance.
+
+### Ordering
+
+```
+hostname guard → source-IP rate limiter → Origin/bearer → validation → D1
+```
+
+The limiter sits **before** authentication deliberately: an unauthenticated
+script must not get unlimited free attempts merely because the Origin check
+would reject it. Rejected traffic still consumes allowance.
+
+The hostname guard runs **before** the limiter, so a request from a
+non-authorised host is refused without spending anyone's allowance.
+
+**GETs are never rate limited.** Neither aggregate endpoint calls the limiter —
+the single-venue GET and `/api/dining/ratings/` (bulk) are untouched, verified
+by test and by 15 consecutive live reads while the write limiter was exhausted.
+
+### Source IP handling
+
+The key is `CF-Connecting-IP`, used transiently as a limiter key and nowhere
+else. It is **never** written to D1, never logged by Parkio, and never returned
+in a response. There is no column that could hold one. No KV, no Durable
+Object, no D1 counter table, no fingerprinting.
+
+`X-Forwarded-For` and similar client-supplied headers are deliberately ignored —
+a spoofable key is worse than no key, because it hands an attacker a fresh
+allowance per request.
+
+### Two documented fail-open cases
+
+Both are deliberate availability choices about a control that is only friction:
+
+- **No limiter binding** (local development, the Pages build, tests). Failing
+  closed would break ratings everywhere the binding is absent, protecting
+  nothing.
+- **`CF-Connecting-IP` absent.** Cloudflare sets it on every request reaching a
+  Worker, so absence means we are not behind Cloudflare. Failing closed would
+  turn an edge-layer change into a total write outage.
+
+A limiter *error* also fails open: an outage in the limiter must not take
+ratings down.
+
+Authorization is never skipped in either case — the hostname guard runs before,
+and Origin/bearer/validation run after.
+
+### Error contract
+
+```
+HTTP 429
+Cache-Control: no-store
+{"error":"rate_limited","message":"Too many requests. Please slow down.","status":429}
+```
+
+Same shape as every other API error, so clients need only recognise the status.
+
+### What this does and does not buy
+
+Cloudflare's limiter is **per-location** and self-described as "permissive,
+eventually consistent, and intentionally designed to not be used as an accurate
+accounting system". A distributed attacker gets one allowance per Cloudflare
+location. What it does prevent is a single script minting identities or
+rewriting ratings without limit. It remains friction, not an abuse control, and
+Gate 8A's shrinkage remains a statistics control.
+
+---
+
+## Accepted semantics (Gate 8B.8, Option A) — READ THIS BEFORE JUDGING THE LIMITER
+
+The approved policy is **approximate burst protection**, not deterministic
+enforcement. This was decided after measuring the real limiter on a deployed
+Worker, not from documentation.
+
+### What the targets mean
+
+| Binding | Target | Nature |
+|---|---|---|
+| `IDENTITY_MINT_LIMITER` | **~5 requests / 60 s / source key** | approximate |
+| `RATING_WRITE_LIMITER` | **~10 requests / 60 s / source key** | approximate |
+
+Thresholds stay as they are. Do not lower them.
+
+### What is guaranteed
+
+Rapid back-to-back abuse produces the specified response:
+
+```
+HTTP 429
+Cache-Control: no-store
+Content-Type: application/json
+{"error":"rate_limited","message":"Too many requests. Please slow down.","status":429}
+```
+
+### What is explicitly NOT claimed
+
+**Do not describe this as deterministic enforcement, and do not claim that
+requests spaced across the window are blocked.** They frequently are not.
+
+Measured on `parkio-preview` (2026-09-12), same source IP throughout:
+
+| Traffic shape | Outcome |
+|---|---|
+| 8 mints back-to-back, one connection | **5 × 201 then 3 × 429** — matches the target |
+| 14 writes back-to-back, one connection | **11 × 200 then 3 × 429** — one over nominal |
+| 7 mints spaced ~1 s apart | **0 blocked** |
+| 13 writes spaced ~1 s apart | **0 blocked** |
+| 40 concurrent mints | only **2 blocked** |
+
+Small overshoot is accepted. Cloudflare documents the binding as "permissive,
+eventually consistent, and intentionally designed to not be used as an accurate
+accounting system", and it is also **per-Cloudflare-location**, so a
+distributed attacker receives one allowance per location.
+
+The code was verified correct before accepting this: a temporary diagnostic
+read through `wrangler tail` confirmed `binding=present`, all four bindings on
+the Cloudflare context, and `CF-Connecting-IP` present. The imprecision is the
+platform's, not the application's. **That diagnostic has been removed.**
+
+### Therefore
+
+This is **friction against casual and scripted abuse**, layered with:
+
+- the hostname guard (`lib/ratingsWriteHost.ts`),
+- browser Origin validation and native bearer verification,
+- `UNIQUE (venue_key, rater_id)`, so repeat writes UPSERT rather than inflate,
+- Gate 8A's Bayesian shrinkage, which is a **statistics** control.
+
+None of these is an abuse control on its own, and the set does not stop a
+determined distributed attacker. Say so plainly rather than implying otherwise.
+
+### Invariants that must survive any future change
+
+- Separate limiter namespaces (Preview 2001/2002, Production 1001/1002).
+- **GETs are never rate limited** — verified 12/12 bulk and 8/8 single aggregate
+  reads returned 200 while the write limiter was exhausted.
+- Preview and Production D1 remain isolated.
+- No D1, KV or Durable Object counter.
+- No raw IP persisted, logged or returned.

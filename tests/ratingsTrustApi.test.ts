@@ -19,7 +19,7 @@ const OTHER = "ep-regal-eagle";
 
 let dir: string;
 let db: string;
-let GET_ONE: (req: Request, ctx: { params: { venueKey: string } }) => Promise<Response>;
+let GET_ONE: (req: Request, ctx: { params: Promise<{ venueKey: string }> }) => Promise<Response>;
 let GET_BULK: (req: Request) => Promise<Response>;
 
 function sql(query: string): string {
@@ -217,7 +217,7 @@ describe("bulk aggregate trust fields", () => {
 describe("single aggregate trust fields", () => {
   it("carries the same fields as bulk", async () => {
     insertMany(VENUE, 5, 5);
-    const one = (await (await GET_ONE(oneUrl(), { params: { venueKey: VENUE } })).json()) as
+    const one = (await (await GET_ONE(oneUrl(), { params: Promise.resolve({ venueKey: VENUE }) })).json()) as
       Record<string, unknown>;
     const bulk = (await (await GET_BULK(bulkUrl(`?venueKeys=${VENUE}`))).json()) as {
       ratings: Record<string, Record<string, unknown>>;
@@ -230,7 +230,7 @@ describe("single aggregate trust fields", () => {
 
   it("preserves every pre-existing field", async () => {
     insertMany(VENUE, 4, 5);
-    const body = (await (await GET_ONE(oneUrl(), { params: { venueKey: VENUE } })).json()) as
+    const body = (await (await GET_ONE(oneUrl(), { params: Promise.resolve({ venueKey: VENUE }) })).json()) as
       Record<string, unknown>;
 
     for (const key of [
@@ -245,7 +245,7 @@ describe("single aggregate trust fields", () => {
   });
 
   it("still 404s an unknown venue", async () => {
-    const res = await GET_ONE(oneUrl("nope"), { params: { venueKey: "nope" } });
+    const res = await GET_ONE(oneUrl("nope"), { params: Promise.resolve({ venueKey: "nope" }) });
     expect(res.status).toBe(404);
   });
 });

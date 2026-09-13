@@ -17,10 +17,10 @@
 
 import { issueNativeCredential } from "@/lib/ratingsNativeIdentity";
 import { readIdentitySecret } from "@/lib/ratingsIdentity";
+import { checkRateLimit } from "@/lib/ratingsRateLimit";
 import { isAllowedCommunityWriteRequest } from "@/lib/ratingsWriteHost";
-import { jsonError } from "../../_lib/respond";
+import { jsonError, tooManyRequests } from "../../_lib/respond";
 
-export const runtime = "edge";
 
 export async function POST(req: Request) {
   // Minting is the cheapest way to manufacture rating identities at scale, so
@@ -28,6 +28,13 @@ export async function POST(req: Request) {
   // mints nothing, signs nothing and learns nothing about the secret.
   if (!isAllowedCommunityWriteRequest(req)) {
     return jsonError(403, "forbidden_host", "Identities cannot be minted from this host.");
+  }
+
+  // Minting is the cheapest way to manufacture identities at scale, and it has
+  // no authentication of its own — the host gate and this limiter are the only
+  // two controls in front of it.
+  if (!(await checkRateLimit(req, "IDENTITY_MINT_LIMITER")).allowed) {
+    return tooManyRequests();
   }
 
   const secret = readIdentitySecret();

@@ -42,3 +42,11 @@ export function notFound(message: string): Response {
 export function badRequest(message: string): Response {
   return jsonError(400, "bad_request", message);
 }
+
+/**
+ * Rate-limited. Same error shape as every other API failure, so clients need
+ * no new parsing — only a new status to recognise.
+ */
+export function tooManyRequests(): Response {
+  return jsonError(429, "rate_limited", "Too many requests. Please slow down.");
+}

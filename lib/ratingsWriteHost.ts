@@ -44,6 +44,27 @@ const LOCAL_WRITE_HOSTS: readonly string[] = ["localhost", "127.0.0.1", "[::1]"]
 const PAGES_ALIAS_SUFFIX = ".parkio.pages.dev";
 
 /**
+ * The Preview Worker's own hostname, e.g.
+ * parkio-preview.<account-subdomain>.workers.dev.
+ *
+ * Matched as prefix AND suffix rather than a bare ".workers.dev" test, which
+ * would accept anybody's Worker on the shared workers.dev namespace. The
+ * account subdomain is deliberately not hardcoded, so this keeps working if the
+ * account subdomain changes.
+ *
+ * Preview only. Production write authority stays exactly parkio.info, and a
+ * workers.dev host is refused there — see the tests.
+ */
+const PREVIEW_WORKER_HOST_PREFIX = "parkio-preview.";
+const PREVIEW_WORKER_HOST_SUFFIX = ".workers.dev";
+
+function isPreviewWorkerHost(host: string): boolean {
+  return (
+    host.startsWith(PREVIEW_WORKER_HOST_PREFIX) && host.endsWith(PREVIEW_WORKER_HOST_SUFFIX)
+  );
+}
+
+/**
  * An unrecognized value is an unknown environment and gets no write
  * authority at all. An absent value is not unknown — it is an environment
  * that predates this variable, and it is treated as Production.
@@ -75,10 +96,15 @@ export function isAllowedCommunityWriteHost(
     case "production":
       return PRODUCTION_WRITE_HOSTS.includes(host);
     case "preview":
-      // Any Preview alias, so no single deployment hostname is baked in.
-      // Deliberately NOT the production hosts: Preview must not be able to
-      // exercise Production write authority.
-      return host.endsWith(PAGES_ALIAS_SUFFIX) || LOCAL_WRITE_HOSTS.includes(host);
+      // Any Preview alias, so no single deployment hostname is baked in: a
+      // Pages preview alias, the Preview Worker's own workers.dev hostname, or
+      // localhost. Deliberately NOT the production hosts — Preview must never
+      // be able to exercise Production write authority.
+      return (
+        host.endsWith(PAGES_ALIAS_SUFFIX) ||
+        isPreviewWorkerHost(host) ||
+        LOCAL_WRITE_HOSTS.includes(host)
+      );
     case "development":
       return LOCAL_WRITE_HOSTS.includes(host);
     case "unknown":

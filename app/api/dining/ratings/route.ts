@@ -19,7 +19,6 @@ import { getRatingsDb, readBulkAggregates } from "@/lib/ratingsDb";
 import { calculateCommunityRanking } from "@/lib/ratingsRanking";
 import { badRequest, jsonError, jsonOk } from "../../_lib/respond";
 
-export const runtime = "edge";
 
 /** Matches the single-venue aggregate: cards tolerate a minute of staleness. */
 const AGGREGATE_S_MAXAGE = 60;

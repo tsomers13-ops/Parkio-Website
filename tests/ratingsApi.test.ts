@@ -19,9 +19,9 @@ const ORIGIN = "https://parkio.info";
 
 let dir: string;
 let db: string;
-let GET: (req: Request, ctx: { params: { venueKey: string } }) => Promise<Response>;
-let POST: (req: Request, ctx: { params: { venueKey: string } }) => Promise<Response>;
-let ME: (req: Request, ctx: { params: { venueKey: string } }) => Promise<Response>;
+let GET: (req: Request, ctx: { params: Promise<{ venueKey: string }> }) => Promise<Response>;
+let POST: (req: Request, ctx: { params: Promise<{ venueKey: string }> }) => Promise<Response>;
+let ME: (req: Request, ctx: { params: Promise<{ venueKey: string }> }) => Promise<Response>;
 
 function sql(query: string): string {
   return execFileSync("sqlite3", [db, query], { encoding: "utf8" }).trim();
@@ -132,7 +132,7 @@ beforeEach(() => {
 
 describe("aggregate GET", () => {
   it("returns an explicit zero state, not a fabricated one", async () => {
-    const res = await GET(get(), { params: { venueKey: VENUE } });
+    const res = await GET(get(), { params: Promise.resolve({ venueKey: VENUE }) });
     expect(res.status).toBe(200);
     const body = await res.json();
     // toMatchObject, not toEqual: the response also carries the additive
@@ -154,25 +154,25 @@ describe("aggregate GET", () => {
   });
 
   it("never sets an identity cookie", async () => {
-    const res = await GET(get(), { params: { venueKey: VENUE } });
+    const res = await GET(get(), { params: Promise.resolve({ venueKey: VENUE }) });
     expect(res.headers.get("set-cookie")).toBeNull();
   });
 
   it("carries a short edge cache", async () => {
-    const res = await GET(get(), { params: { venueKey: VENUE } });
+    const res = await GET(get(), { params: Promise.resolve({ venueKey: VENUE }) });
     expect(res.headers.get("cache-control")).toContain("s-maxage=60");
   });
 
   it("404s unknown venues, canonicalIds and festival ids", async () => {
     for (const bad of ["ep-nope", "EPCOT|World Showcase|Le Cellier Steakhouse", "ep-fw-2026-italy", "hs-rise"]) {
-      const res = await GET(get(bad), { params: { venueKey: bad } });
+      const res = await GET(get(bad), { params: Promise.resolve({ venueKey: bad }) });
       expect(res.status, bad).toBe(404);
     }
   });
 
   it("reports unavailable rather than zero when the database fails", async () => {
     setEnv({ DB: makeDb(true) });
-    const res = await GET(get(), { params: { venueKey: VENUE } });
+    const res = await GET(get(), { params: Promise.resolve({ venueKey: VENUE }) });
     expect(res.status).toBe(503);
     const body = await res.json();
     expect(body.error).toBe("ratings_unavailable");
@@ -182,7 +182,7 @@ describe("aggregate GET", () => {
 
 describe("POST", () => {
   it("stores a rating and mints a signed identity", async () => {
-    const res = await POST(post({ overall: 4, taste: 5 }), { params: { venueKey: VENUE } });
+    const res = await POST(post({ overall: 4, taste: 5 }), { params: Promise.resolve({ venueKey: VENUE }) });
     expect(res.status).toBe(201);
     const cookie = res.headers.get("set-cookie")!;
     expect(cookie).toContain(`${RATER_COOKIE_NAME}=`);
@@ -199,12 +199,12 @@ describe("POST", () => {
   });
 
   it("upserts on resubmission instead of stacking, preserving created_at", async () => {
-    const first = await POST(post({ overall: 4 }), { params: { venueKey: VENUE } });
+    const first = await POST(post({ overall: 4 }), { params: Promise.resolve({ venueKey: VENUE }) });
     const cookie = first.headers.get("set-cookie")!.split(";")[0];
     const created = sql("SELECT created_at FROM dining_ratings;");
 
     const second = await POST(post({ overall: 2, value: 3 }, { headers: { cookie } }), {
-      params: { venueKey: VENUE },
+      params: Promise.resolve({ venueKey: VENUE }),
     });
     expect(second.status).toBe(200);
     expect(second.headers.get("set-cookie")).toBeNull();
@@ -217,7 +217,7 @@ describe("POST", () => {
   });
 
   it("never leaks identity internals in the response", async () => {
-    const res = await POST(post({ overall: 5 }), { params: { venueKey: VENUE } });
+    const res = await POST(post({ overall: 5 }), { params: Promise.resolve({ venueKey: VENUE }) });
     const text = await res.text();
     const raterId = sql("SELECT rater_id FROM dining_ratings;");
     expect(text).not.toContain(raterId);
@@ -230,7 +230,7 @@ describe("POST", () => {
   it("ignores client attempts to control identity, status or timestamps", async () => {
     const res = await POST(
       post({ overall: 3, raterId: "attacker", status: "hidden", created_at: "1999-01-01T00:00:00Z" }),
-      { params: { venueKey: VENUE } },
+      { params: Promise.resolve({ venueKey: VENUE }) },
     );
     expect(res.status).toBe(400);
     expect(sql("SELECT COUNT(*) FROM dining_ratings;")).toBe("0");
@@ -239,7 +239,7 @@ describe("POST", () => {
   it("rejects a tampered cookie by minting a fresh identity rather than trusting it", async () => {
     const forged = `${"a".repeat(32)}.deadbeef`;
     const res = await POST(post({ overall: 5 }, { headers: { cookie: `${RATER_COOKIE_NAME}=${forged}` } }), {
-      params: { venueKey: VENUE },
+      params: Promise.resolve({ venueKey: VENUE }),
     });
     expect(res.status).toBe(201);
     expect(res.headers.get("set-cookie")).toContain(RATER_COOKIE_NAME);
@@ -248,7 +248,7 @@ describe("POST", () => {
 
   it("rejects cross-site origins", async () => {
     for (const origin of ["https://evil.com", "https://parkio.info.evil.com"]) {
-      const res = await POST(post({ overall: 4 }, { headers: { origin } }), { params: { venueKey: VENUE } });
+      const res = await POST(post({ overall: 4 }, { headers: { origin } }), { params: Promise.resolve({ venueKey: VENUE }) });
       expect(res.status, origin).toBe(403);
     }
     const noOrigin = new Request(`https://parkio.info/api/dining/${VENUE}/ratings`, {
@@ -256,27 +256,27 @@ describe("POST", () => {
       headers: { "content-type": "application/json" },
       body: JSON.stringify({ overall: 4 }),
     });
-    expect((await POST(noOrigin, { params: { venueKey: VENUE } })).status).toBe(403);
+    expect((await POST(noOrigin, { params: Promise.resolve({ venueKey: VENUE }) })).status).toBe(403);
     expect(sql("SELECT COUNT(*) FROM dining_ratings;")).toBe("0");
   });
 
   it("rejects non-JSON content types", async () => {
     for (const ct of ["text/plain", "application/x-www-form-urlencoded"]) {
       const res = await POST(post({ overall: 4 }, { headers: { "content-type": ct } }), {
-        params: { venueKey: VENUE },
+        params: Promise.resolve({ venueKey: VENUE }),
       });
       expect(res.status, ct).toBe(415);
     }
   });
 
   it("rejects oversized and malformed bodies", async () => {
-    expect((await POST(post("x".repeat(2000)), { params: { venueKey: VENUE } })).status).toBe(413);
-    expect((await POST(post("{not json"), { params: { venueKey: VENUE } })).status).toBe(400);
+    expect((await POST(post("x".repeat(2000)), { params: Promise.resolve({ venueKey: VENUE }) })).status).toBe(413);
+    expect((await POST(post("{not json"), { params: Promise.resolve({ venueKey: VENUE }) })).status).toBe(400);
   });
 
   it("rejects every invalid rating value", async () => {
     for (const bad of [{}, { taste: 4 }, { overall: 0 }, { overall: 6 }, { overall: -1 }, { overall: 4.5 }, { overall: "4" }, { overall: true }, { overall: null }, { overall: 4, taste: 0 }, { overall: 4, nope: 1 }]) {
-      const res = await POST(post(bad), { params: { venueKey: VENUE } });
+      const res = await POST(post(bad), { params: Promise.resolve({ venueKey: VENUE }) });
       expect(res.status, JSON.stringify(bad)).toBe(400);
     }
     expect(sql("SELECT COUNT(*) FROM dining_ratings;")).toBe("0");
@@ -289,35 +289,35 @@ describe("POST", () => {
         headers: { origin: ORIGIN, "content-type": "application/json" },
         body: JSON.stringify({ overall: 4 }),
       });
-      expect((await POST(req, { params: { venueKey: bad } })).status, bad).toBe(404);
+      expect((await POST(req, { params: Promise.resolve({ venueKey: bad }) })).status, bad).toBe(404);
     }
   });
 
   it("fails explicitly when the database write fails — never a fake success", async () => {
     setEnv({ DB: makeDb(true) });
-    const res = await POST(post({ overall: 4 }), { params: { venueKey: VENUE } });
+    const res = await POST(post({ overall: 4 }), { params: Promise.resolve({ venueKey: VENUE }) });
     expect(res.status).toBe(503);
     expect((await res.json()).error).toMatch(/ratings_(write_failed|unavailable)/);
   });
 
   it("refuses to write when the signing secret is missing", async () => {
     setEnv({ RATINGS_IDENTITY_SECRET: undefined });
-    const res = await POST(post({ overall: 4 }), { params: { venueKey: VENUE } });
+    const res = await POST(post({ overall: 4 }), { params: Promise.resolve({ venueKey: VENUE }) });
     expect(res.status).toBe(503);
     expect(sql("SELECT COUNT(*) FROM dining_ratings;")).toBe("0");
   });
 
   it("keeps hidden rows out of the aggregate", async () => {
-    await POST(post({ overall: 5 }), { params: { venueKey: VENUE } });
+    await POST(post({ overall: 5 }), { params: Promise.resolve({ venueKey: VENUE }) });
     sql("UPDATE dining_ratings SET status='hidden';");
-    const res = await GET(get(), { params: { venueKey: VENUE } });
+    const res = await GET(get(), { params: Promise.resolve({ venueKey: VENUE }) });
     expect((await res.json()).ratingCount).toBe(0);
   });
 });
 
 describe("GET /me", () => {
   it("reports no rating and sets no cookie for an anonymous visitor", async () => {
-    const res = await ME(get(), { params: { venueKey: VENUE } });
+    const res = await ME(get(), { params: Promise.resolve({ venueKey: VENUE }) });
     expect(res.status).toBe(200);
     expect(res.headers.get("set-cookie")).toBeNull();
     expect(res.headers.get("cache-control")).toBe("no-store");
@@ -325,9 +325,9 @@ describe("GET /me", () => {
   });
 
   it("returns the guest's own rating after they submit one", async () => {
-    const submitted = await POST(post({ overall: 4, quality: 5 }), { params: { venueKey: VENUE } });
+    const submitted = await POST(post({ overall: 4, quality: 5 }), { params: Promise.resolve({ venueKey: VENUE }) });
     const cookie = submitted.headers.get("set-cookie")!.split(";")[0];
-    const res = await ME(get(VENUE, { cookie }), { params: { venueKey: VENUE } });
+    const res = await ME(get(VENUE, { cookie }), { params: Promise.resolve({ venueKey: VENUE }) });
     const body = await res.json();
     expect(body.rating.overall).toBe(4);
     expect(body.rating.quality).toBe(5);
@@ -336,16 +336,16 @@ describe("GET /me", () => {
   });
 
   it("treats a tampered cookie as no rating, without saying why", async () => {
-    await POST(post({ overall: 4 }), { params: { venueKey: VENUE } });
+    await POST(post({ overall: 4 }), { params: Promise.resolve({ venueKey: VENUE }) });
     const forged = `${RATER_COOKIE_NAME}=${"b".repeat(32)}.forged`;
-    const res = await ME(get(VENUE, { cookie: forged }), { params: { venueKey: VENUE } });
+    const res = await ME(get(VENUE, { cookie: forged }), { params: Promise.resolve({ venueKey: VENUE }) });
     expect(await res.json()).toEqual({ venueKey: VENUE, rating: null });
     expect(res.headers.get("set-cookie")).toBeNull();
   });
 
   it("404s unknown and festival venues", async () => {
     for (const bad of ["ep-nope", "ep-fw-2026-italy"]) {
-      expect((await ME(get(bad), { params: { venueKey: bad } })).status, bad).toBe(404);
+      expect((await ME(get(bad), { params: Promise.resolve({ venueKey: bad }) })).status, bad).toBe(404);
     }
   });
 });

@@ -17,6 +17,7 @@
 
 import { CACHE_TTL, getOrFetch } from "@/lib/cache";
 import { getParkConfig } from "@/lib/disneyParkConfig";
+import { getCloudflareContextEnv } from "@/lib/cloudflareEnv";
 import { persistLiveSnapshots, type SnapshotEnv } from "@/lib/historySnapshots";
 import { normalizeLive } from "@/lib/parkioNormalizer";
 import {
@@ -25,14 +26,14 @@ import {
 } from "@/lib/themeparksApi";
 import { jsonOk, notFound } from "../../../_lib/respond";
 
-export const runtime = "edge";
 export const revalidate = 300;
 
 interface Params {
-  params: { parkSlug: string };
+  params: Promise<{ parkSlug: string }>;
 }
 
-export async function GET(_req: Request, { params }: Params) {
+export async function GET(_req: Request, props: Params) {
+  const params = await props.params;
   const cfg = getParkConfig(params.parkSlug);
   if (!cfg) {
     return notFound(`Unknown park slug: ${params.parkSlug}`);
@@ -70,7 +71,11 @@ export async function GET(_req: Request, { params }: Params) {
  * / on Vercel — where `persistLiveSnapshots` no-ops.
  */
 function snapshotEnv(): SnapshotEnv | undefined {
-  const env = (globalThis as { process?: { env?: Record<string, unknown> } })
-    .process?.env;
+  // Same split as lib/ratingsDb.ts: the D1 binding is an object, so on Workers
+  // it comes from the request context; process.env stays as the fallback so
+  // next dev and the Pages build are unaffected.
+  const env =
+    (getCloudflareContextEnv() as Record<string, unknown> | null) ??
+    (globalThis as { process?: { env?: Record<string, unknown> } }).process?.env;
   return env?.DB ? { DB: env.DB } : undefined;
 }

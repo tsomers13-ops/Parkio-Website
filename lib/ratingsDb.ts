@@ -9,6 +9,7 @@
  * guest and must not collapse into a fabricated zero.
  */
 
+import { getCloudflareContextEnv } from "./cloudflareEnv";
 import {
   AGGREGATE_RATINGS_SQL,
   SELECT_MY_RATING_SQL,
@@ -39,11 +40,18 @@ export interface RatingsEnv {
 }
 
 /**
- * The D1 binding. `@cloudflare/next-on-pages` exposes Pages bindings on
- * `process.env`, so `DB` is present in Preview/Production and absent locally.
+ * The D1 binding.
+ *
+ * On Workers (`@opennextjs/cloudflare`) bindings live on the request context —
+ * `process.env` stringifies values, so a D1 object cannot survive it. The
+ * `process.env` lookup is kept as a fallback so `next dev` and the existing
+ * Pages build behave exactly as before. Absent in both places locally, where
+ * every caller degrades to "ratings unavailable" rather than a fabricated zero.
  */
 export function getRatingsDb(): RatingsDatabase | null {
-  const env = (globalThis as { process?: { env?: Record<string, unknown> } }).process?.env;
+  const env =
+    (getCloudflareContextEnv() as Record<string, unknown> | null) ??
+    (globalThis as { process?: { env?: Record<string, unknown> } }).process?.env;
   const db = env?.DB;
   return db && typeof (db as RatingsDatabase).prepare === "function"
     ? (db as RatingsDatabase)

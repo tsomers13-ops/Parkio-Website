@@ -1,6 +1,5 @@
 import { ImageResponse } from "next/og";
 
-export const runtime = "edge";
 
 export const alt =
   "Parkio — Skip the lines. Own your day. Live Disney wait times.";

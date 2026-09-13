@@ -36,7 +36,7 @@ import {
 } from "@/lib/guideDaily";
 
 interface GuideDetailProps {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }
 
 export const dynamicParams = false;
@@ -48,7 +48,8 @@ export function generateStaticParams() {
   return Array.from(slugs).map((slug) => ({ slug }));
 }
 
-export function generateMetadata({ params }: GuideDetailProps): Metadata {
+export async function generateMetadata(props: GuideDetailProps): Promise<Metadata> {
+  const params = await props.params;
   const daily = getDailyPost(params.slug);
   if (daily) return dailyMetadata(daily);
   const evergreen = getGuidePost(params.slug);
@@ -56,7 +57,8 @@ export function generateMetadata({ params }: GuideDetailProps): Metadata {
   return { title: "Guide" };
 }
 
-export default function GuideDetailPage({ params }: GuideDetailProps) {
+export default async function GuideDetailPage(props: GuideDetailProps) {
+  const params = await props.params;
   const daily = getDailyPost(params.slug);
   if (daily) return <DailyBriefing post={daily} />;
   const evergreen = getGuidePost(params.slug);

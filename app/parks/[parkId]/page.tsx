@@ -21,7 +21,7 @@ import { PARKS, getPark, getRidesForPark } from "@/lib/data";
 import type { ParkId } from "@/lib/types";
 
 interface ParkPageProps {
-  params: { parkId: string };
+  params: Promise<{ parkId: string }>;
 }
 
 export const dynamicParams = false;
@@ -30,7 +30,8 @@ export function generateStaticParams() {
   return PARKS.map((p) => ({ parkId: p.id }));
 }
 
-export function generateMetadata({ params }: ParkPageProps) {
+export async function generateMetadata(props: ParkPageProps) {
+  const params = await props.params;
   const park = getPark(params.parkId);
   if (!park) return { title: "Park" };
   return {
@@ -62,7 +63,8 @@ export function generateMetadata({ params }: ParkPageProps) {
  * "In the park now?" disclosure. Nothing about how those components
  * decide anything was touched — only where they live.
  */
-export default function ParkPage({ params }: ParkPageProps) {
+export default async function ParkPage(props: ParkPageProps) {
+  const params = await props.params;
   const park = getPark(params.parkId);
   if (!park) notFound();
 

@@ -1,0 +1,66 @@
+name: Workers Preview
+
+# Builds and deploys the OpenNext Preview Worker (`parkio-preview`).
+#
+# This workflow deliberately does NOT touch Production. parkio.info is served
+# by Cloudflare Pages via the existing Pages GitHub integration, and that
+# remains the rollback target until a separately authorised cutover.
+#
+# Requires repository secrets CLOUDFLARE_API_TOKEN and CLOUDFLARE_ACCOUNT_ID,
+# plus a Preview-only RATINGS_IDENTITY_SECRET set on the Worker with
+# `wrangler secret put` (never committed, never echoed).
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - "priority-9-gate-8b8-opennext-preview"
+
+concurrency:
+  group: workers-preview
+  cancel-in-progress: false
+
+jobs:
+  preview:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      # vinext is gone, but OpenNext + Wrangler 4 still need Node 22+.
+      # The Pages build stays on NODE_VERSION=20 and is unaffected.
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+
+      - run: npm ci
+
+      - name: Unit tests
+        run: npm test
+
+      - name: Generate Cloudflare types
+        # --include-runtime=false on purpose: the full Workers runtime globals
+        # collide with the DOM lib the component tests rely on.
+        run: npm run cf:types
+
+      - name: TypeScript
+        run: npx tsc --noEmit
+
+      - name: Next build
+        run: npm run build
+
+      - name: OpenNext build and cache population
+        # populateCache is REQUIRED. Without it every prerendered route 404s.
+        run: |
+          npx opennextjs-cloudflare build
+          npx opennextjs-cloudflare populateCache remote
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+
+      - name: Deploy Preview Worker
+        run: npx wrangler deploy
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}

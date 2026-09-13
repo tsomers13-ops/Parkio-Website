@@ -14,6 +14,29 @@ const PRODUCTION_ORIGINS = ["https://parkio.info", "https://www.parkio.info"];
 /** Cloudflare Pages preview deployments, e.g. https://abc123.parkio.pages.dev */
 const PREVIEW_HOST_SUFFIX = ".parkio.pages.dev";
 
+/**
+ * The Preview Worker's own origin, e.g.
+ * https://parkio-preview.<account-subdomain>.workers.dev.
+ *
+ * Prefix AND suffix are both required: a bare ".workers.dev" test would trust
+ * any Worker on the shared namespace. The account subdomain is not hardcoded.
+ *
+ * This widens only the non-production set. Production write authority is still
+ * exactly the two PRODUCTION_ORIGINS above, and the hostname guard in
+ * lib/ratingsWriteHost.ts independently refuses a workers.dev host whenever
+ * PARKIO_COMMUNITY_WRITE_ENV is production.
+ */
+const PREVIEW_WORKER_HOST_PREFIX = "parkio-preview.";
+const PREVIEW_WORKER_HOST_SUFFIX = ".workers.dev";
+
+function isPreviewWorkerOrigin(url: URL): boolean {
+  return (
+    url.protocol === "https:" &&
+    url.hostname.startsWith(PREVIEW_WORKER_HOST_PREFIX) &&
+    url.hostname.endsWith(PREVIEW_WORKER_HOST_SUFFIX)
+  );
+}
+
 function isLocalhost(url: URL): boolean {
   return url.hostname === "localhost" || url.hostname === "127.0.0.1";
 }
@@ -29,6 +52,7 @@ export function isAllowedWriteOrigin(origin: string | null | undefined): boolean
   }
   if (PRODUCTION_ORIGINS.includes(url.origin)) return true;
   if (url.protocol === "https:" && url.hostname.endsWith(PREVIEW_HOST_SUFFIX)) return true;
+  if (isPreviewWorkerOrigin(url)) return true;
   if (isLocalhost(url)) return true;
   return false;
 }

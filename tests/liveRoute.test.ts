@@ -33,7 +33,7 @@ function upstream(waitTime: number): ThemeparksLiveResponse {
 
 function request(parkSlug: string) {
   return GET(new Request(`https://parkio.info/api/parks/${parkSlug}/live/`), {
-    params: { parkSlug },
+    params: Promise.resolve({ parkSlug }),
   });
 }
 

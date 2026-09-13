@@ -18,7 +18,7 @@ import {
 } from "@/lib/attractionRoute";
 
 interface AttractionPageProps {
-  params: { parkId: string; slug: string };
+  params: Promise<{ parkId: string; slug: string }>;
 }
 
 // Every canonical attraction is known at build time, so anything outside
@@ -29,7 +29,8 @@ export function generateStaticParams() {
   return attractionStaticParams();
 }
 
-export function generateMetadata({ params }: AttractionPageProps): Metadata {
+export async function generateMetadata(props: AttractionPageProps): Promise<Metadata> {
+  const params = await props.params;
   // Same ownership validation the page uses — a cross-park pair must not
   // emit metadata describing the attraction under the wrong park.
   const resolved = resolveAttraction(params.parkId, params.slug);
@@ -59,7 +60,8 @@ export function generateMetadata({ params }: AttractionPageProps): Metadata {
  *
  * Structured data and sitemap entries land in a later slice.
  */
-export default function AttractionPage({ params }: AttractionPageProps) {
+export default async function AttractionPage(props: AttractionPageProps) {
+  const params = await props.params;
   const resolved = resolveAttraction(params.parkId, params.slug);
   if (!resolved) notFound();
 
