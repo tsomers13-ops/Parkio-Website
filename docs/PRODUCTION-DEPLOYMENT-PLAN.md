@@ -969,6 +969,77 @@ is a frozen artifact: after the merge its builds will **fail**, because
 next-on-pages cannot resolve against React 19. That is expected and harmless —
 the previously published deployment stays live and remains the rollback target.
 
+## 13a. The merge is a migration-window action, not a preparatory one
+
+**Proven 2026-09-13. This corrects §13, which called the post-merge Pages build
+failure "expected and harmless". It is harmless for rollback and NOT harmless
+for content freshness.**
+
+### The constraint
+
+Cloudflare Pages builds `main` with `npx @cloudflare/next-on-pages@1`. This
+branch carries **React 19 / Next 15.5.25**, and next-on-pages runs its own
+`npm install`, which fails `ERESOLVE` against React 19 — proved in Gate 8B.5.
+
+So the moment the Workers branch merges to `main`:
+
+| Effect | Severity |
+|---|---|
+| Pages builds on `main` start failing | expected |
+| The last successful Pages deployment keeps serving `parkio.info` | **site stays up** |
+| **Parkio Daily content stops reaching Production** | **the real cost** |
+
+The Worker does not cover the gap: until cutover it is canary-only and not
+attached to `parkio.info`. The site would silently freeze on whatever daily
+guide was last published, for the whole merge-to-cutover interval.
+
+### Consequence for sequencing
+
+**The merge must happen only inside the planned migration window.** It is not a
+preparatory step that can be done days ahead — doing so freezes production
+content for the entire gap.
+
+Treat `merge → CI canary → validation → cutover` as **one controlled same-day
+window**, targeted in **hours, not days**. It is a migration window, not an
+open-ended soak; the 7-day soak (§11) begins *after* cutover, not after merge.
+
+"Same-day" is a scheduling constraint, **not** authorisation to cut over. The
+hostname cutover remains a separately authorised gate.
+
+### Ordered sequence for the window
+
+| # | Action | Abort condition |
+|---|---|---|
+| a | Confirm the latest Parkio Daily content **has published to Pages** and is visible on `parkio.info` | If today's guide is missing, fix that first — do not merge over a broken publish |
+| b | Re-run production preflight (branch, HEAD, origin/main, tag, Pages live, D1 counts) | Any mismatch → stop |
+| c | Merge the Workers branch to `main` (normal merge, no force) | — |
+| d | Let the `workers-production` workflow trigger on the push | If it does not fire, stop and diagnose before anything else |
+| e | Required reviewer approves the `production` environment deployment | — |
+| f | Production Worker canary deploy completes | Deploy failure → stop; Pages still serves |
+| g | Validate: static parity, API behaviour, bindings, rate limiting, D1 safety, Worker Secret B | — |
+| h | **If validation FAILS** → STOP. Do **not** attach `parkio.info`. Pages remains the serving baseline | — |
+| i | If validation PASSES → Gate 8B.9B may pass | — |
+| j | `parkio.info` cutover requires the **next explicit gate**. Not part of this window's authorisation | — |
+
+### Timing rule — buffer, not brinkmanship
+
+Do **not** schedule the first-ever Production CI run minutes before the hostname
+change. That run has never executed against real credentials, and it needs room
+for: environment approval, the deploy itself, debugging if it fails, canary
+validation, and an unhurried abort decision.
+
+The model is **same-day window with buffer**, not *first CI run immediately
+before a DNS change*. A first run that fails under time pressure is how a
+migration turns into an incident.
+
+### Explicitly not authorised
+
+No temporary `pages-production` branch and no dual-publish system. It was
+considered and rejected: it adds a moving part during the riskiest window, and
+content would freeze anyway unless the daily job pushed to both branches.
+
+---
+
 ## 14. GO / NO-GO checklist
 
 Every line must be GO. Any NO-GO stops the cutover.
@@ -984,7 +1055,7 @@ Every line must be GO. Any NO-GO stops the cutover.
 | 7 | API health | Validation matrix green, no successful Production rating write |
 | 8 | iOS compatibility | No iOS change required; hostname, paths and secret unchanged |
 | 9 | Limiter bindings | Both present at 5/60 and 10/60, namespaces 1001/1002 |
-| 10 | **Daily deploy workflow** | Workflow **exists** (§12). Still required: `production` environment + both secrets created, and **one green end-to-end run** proving a main commit reaches the Worker |
+| 10 | **Daily deploy workflow** | Workflow **exists** (§12). `production` environment ✅ and both CI secrets ✅. Still required: **one green end-to-end run**, which can only happen inside the migration window (§13a) because it needs the merge |
 | 11 | Pages rollback | Project and published deployment intact; baseline tagged — `pages-production-pre-workers` → `6fb57fa`, pushed. **Re-tag at whatever `main` is immediately before cutover** |
 | 12 | Monitoring | 5xx, 429, CPU, D1 error alerting in place for soak |
 | 13 | Access protection | Historical aliases return a Cloudflare Access 302 |
