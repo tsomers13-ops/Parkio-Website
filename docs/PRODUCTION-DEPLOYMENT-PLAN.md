@@ -813,7 +813,44 @@ These are dashboard actions and are **not** complete:
 Until the environment and secrets exist the workflow will fail at the deploy
 step — visibly, which is the correct failure mode.
 
-### Gate 8B.9B audit — measured 2026-09-12, all three prerequisites OPEN
+### Gate 8B.9B progress — measured 2026-09-12
+
+| Prerequisite | State |
+|---|---|
+| GitHub Environment `production` | ✅ **CREATED** — `required_reviewers` (repo owner) + `branch_policy` restricted to **`main` only** |
+| Secret `CLOUDFLARE_ACCOUNT_ID` | ✅ **SET** on the environment. It is an identifier, not a credential — it grants nothing alone |
+| Secret `CLOUDFLARE_API_TOKEN` | ❌ **ABSENT** — must be created manually, see below |
+| Workflow visible to GitHub | ❌ **NO** — `workers-production.yml` exists only on the unpushed branch |
+
+### Creating the Cloudflare API token — manual, and deliberately not automated
+
+This cannot be done from here, and should not be: minting it through the
+Wrangler OAuth session would both reuse a credential the plan forbids reusing
+and put a live token through this session. Create it by hand:
+
+1. Cloudflare dashboard → **My Profile → API Tokens → Create Token → Custom token**
+2. Permissions — the minimum this pipeline needs:
+   - **Account → Workers Scripts → Edit** (deploy the Worker)
+   - **Account → D1 → Edit** (the `DB` binding, and `populateCache remote`)
+   - **Account → Account Settings → Read** (account resolution)
+3. Account Resources → Include → the Parkio account (`5b406b87…`)
+4. No Zone permissions are required for the canary. A Zone → DNS → Edit
+   permission becomes necessary only at cutover, when the Custom Domain is
+   attached — add it then, not now.
+5. Add it as an **environment** secret named `CLOUDFLARE_API_TOKEN` under
+   `production` (not a repository secret — the environment gate is the point).
+
+### The Production Worker identity secret
+
+Per Gate 8B.9C the Worker will get a **new** secret, generated at install time
+and never printed. **The Pages secret is left untouched**, which is what keeps
+Phase 1 rollback working: Pages keeps Secret A, the Worker uses Secret B, and
+both clients self-heal across the boundary.
+
+It is deliberately **not** generated yet. Generating a secret before there is a
+Worker to install it on would leave it sitting somewhere with no purpose.
+
+### Superseded audit note
 
 Checked against the live GitHub repository, not assumed:
 
