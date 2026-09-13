@@ -1,0 +1,318 @@
+{
+  "title": "Parkio Daily for September 13, 2026",
+  "slug": "parkio-daily-2026-09-13",
+  "date": "2026-09-13",
+  "teaser": "Animation Courtyard debuts tomorrow at Hollywood Studios; new athleisure lines land at parks; Radiator Springs Curios closed for work.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Space Mountain",
+        "parkSlug": "magic-kingdom",
+        "note": "Early morning windows tend to stay under 25 minutes"
+      },
+      {
+        "name": "Soarin'",
+        "parkSlug": "epcot",
+        "note": "Food & Wine crowds shift to World Showcase later; ride now"
+      },
+      {
+        "name": "Radiator Springs Racers",
+        "parkSlug": "california-adventure",
+        "note": "Morning waits usually half of afternoon peaks"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [
+      {
+        "title": "Animation Courtyard opens tomorrow with nighttime lighting",
+        "body": "The Magic of Disney Animation's new Animation Courtyard at Hollywood Studios goes live September 14, with fresh lighting already glowing after dark. The courtyard brings character encounters and themed spaces to the park's animation zone.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/09/photos-nighttime-tour-of-animation-courtyard-at-the-magic-of-disney-animation-in-disneys-hollywood-studios/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "First-day crowds for Animation Courtyard tend to peak mid-morning through lunch. Visiting late afternoon or after sunset usually offers shorter character lines and better photo lighting."
+        }
+      }
+    ],
+    "bignews": [
+      {
+        "title": "Logo Mania merchandise collection arrives across Disney parks",
+        "body": "A new colorful line celebrating favorite attractions, lands, and transportation modes is now at Walt Disney World and Disneyland. The Logo Mania collection features six design themes focused on iconic park elements.",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/products/new-disney-parks-merch-logo-mania/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "New merchandise lines often sell out fastest at flagship stores like Emporium and World of Disney. Stopping early in your park day usually improves selection before popular sizes disappear."
+        }
+      },
+      {
+        "title": "Bibbidi Blush and Park Day Matcha athleisure now in stores",
+        "body": "Three new athleisure collections in pink, black, and olive green tones landed at both Walt Disney World and Disneyland this week. The apparel and accessories were previously online-only.",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/09/bibbidi-blush-midnight-magic-park-day-matcha-athleisure-collections-arrive-at-walt-disney-world-and-disneyland-resort/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "In-park athleisure tends to move quickly in common sizes. Browsing during rope drop or late evening usually beats midday crowds at merchandise locations."
+        }
+      },
+      {
+        "title": "EPCOT requiring physical ID for all alcohol purchases",
+        "body": "Food & Wine Festival guests must present a physical government-issued ID to buy drinks at any EPCOT kiosk or restaurant. Digital IDs and phone-based versions are not accepted, effective immediately.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/09/epcot-food-wine-festival-id-rules-emd1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Forgetting your physical ID means skipping festival drinks entirely. Tuck it in your bag before leaving your hotel to avoid disappointment at World Showcase kiosks."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "Radiator Springs Curios closed for refurbishment work",
+        "body": "The Cars-themed shop at Disney California Adventure is behind scrim and wooden walls for temporary work. No reopening timeline has been announced.",
+        "parkSlug": "california-adventure",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/09/radiator-springs-curios-temporarily-closed-at-disney-california-adventure/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Cars Land merchandise is also available at nearby Ramone's House of Body Art. Guests hunting specific souvenirs may want to check that location while Curios is down."
+        }
+      },
+      {
+        "title": "Disneyland Monorail facing more frequent safety closures",
+        "body": "The 67-year-old transportation system has been pausing service more often lately due to updated safety regulations. Interruptions affect the route between Tomorrowland and Downtown Disney.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/09/disneylands-67-year-old-monorail-forced-to-close-under-safety-rules-ad1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Relying on the monorail for park hopping or hotel returns may backfire during unplanned closures. Walking or using the Disneyland Railroad as backup usually saves time."
+        }
+      },
+      {
+        "title": "2027 EPCOT festivals and spring offers now bookable",
+        "body": "Festival of the Arts runs January through February, Flower & Garden stretches March 10 to May 31, and special spring resort packages went on sale September 10. Disney After Hours dates are also locked for next year.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/walt-disney-world-spring-offers-and-returning-events/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Booking early spring trips during Flower & Garden often secures lower resort rates before festival crowds push up demand. Locking reservations now may beat late-winter price jumps."
+        }
+      },
+      {
+        "title": "Disney Vacation Club bans reservation walking practice",
+        "body": "A new modification rule blocks DVC members from repeatedly shifting check-in dates to hold prime booking windows. The change targets misuse of the points system at Walt Disney World and Disneyland resorts.",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/new-dvc-rule-bans-controversial-reservation-walking/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "DVC members counting on flexible date changes may find fewer last-minute options under the tighter policy. Planning firm travel windows ahead of booking tends to avoid modification headaches."
+        }
+      },
+      {
+        "title": "Nightmare Before Christmas Loungefly exclusives debut online",
+        "body": "A Sally-themed card holder and figural crossbody bag featuring deadly nightshade designs are available only through Loungefly's website. Both pieces are listed as web exclusives.",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/09/exclusive-the-nightmare-before-christmas-loungefly-designs-bring-sallys-deadly-ingredients-to-life/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Online-exclusive Loungefly releases often sell out within days of launch. Ordering early in the morning or late evening may catch restocks before inventory disappears."
+        }
+      },
+      {
+        "title": "New emergency alarms triggered partial evacuation at Disneyland",
+        "body": "Lights and alarms sounded recently in New Orleans Square, prompting Cast Members to move guests away from certain areas. The incident interrupted the normally calm section near Pirates of the Caribbean.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/09/disneyland-orders-partial-evacuation-as-emergency-alarms-sound-across-park-ad1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Emergency evacuations can close nearby attractions and dining for 30 minutes or longer. Following Cast Member directions quickly usually gets you back to your plans faster than lingering."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Seth Rogen hints Figment movie may not be dead",
+        "body": "The actor broke four years of silence on the EPCOT-inspired film project, offering a tease that development might still be alive. The comment follows D23's recent announcement of a Figment ride reimagining.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/seth-rogen-addresses-figment-film-for-first-time-in-4-years/"
+        }
+      },
+      {
+        "title": "Ryman Arts hosting Disneyland Handcrafted screening and panel",
+        "body": "The event at Bowers Museum in Santa Ana includes the documentary film followed by a discussion with producers and Imagineers on September 27 from 3–6 p.m.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/09/ryman-arts-hosting-disneyland-handcrafted-screening-panel-with-producers-and-imagineers/"
+        }
+      },
+      {
+        "title": "Lovebug season peaks across Walt Disney World",
+        "body": "The Florida insect phenomenon is in full swing this month, creating extra nuisances for outdoor queues and walkways. Peak lovebug months typically run through early fall.",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/love-bugs-at-disney-world/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "Space 220 remains EPCOT's toughest reservation five years in",
+        "body": "The sky-high dining experience still eclipses even the newer GEO-82 Lounge for booking difficulty. The restaurant delivers counter-service pricing with a unique atmospheric backdrop that keeps demand at record levels.",
+        "parkSlug": "epcot",
+        "ctaLabel": "Read full review",
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Space 220 reservations tend to open up during the 24-hour cancellation window. Checking availability the night before or morning of your visit may catch last-minute drops."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "S4QMzRHEgA0",
+      "title": "Disney Alaska Cruise 2026 | My Full Cruise - Dog Sledding, Wild Bears & Glaciers: Disney Cruise Line",
+      "channel": "Paging Mr. Morrow",
+      "publishedAt": "2026-09-11T13:01:06Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/S4QMzRHEgA0/mqdefault.jpg",
+      "viewCount": 140246,
+      "url": "https://www.youtube.com/watch?v=S4QMzRHEgA0",
+      "summary": "Paging Mr. Morrow takes viewers through a complete Disney Alaska cruise experience featuring dog sledding excursions, wildlife encounters, and glacier viewing."
+    },
+    {
+      "videoId": "nC2ZcEFUQWc",
+      "title": "🔴 Live: Saturday Stream at Disneyland! Halloween Screams Fireworks and Rides - 09/12/26",
+      "channel": "Koda Bear the Explorer ",
+      "publishedAt": "2026-09-13T06:54:55Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/nC2ZcEFUQWc/mqdefault.jpg",
+      "viewCount": 85317,
+      "url": "https://www.youtube.com/watch?v=nC2ZcEFUQWc",
+      "summary": "Koda Bear streams live from Disneyland during Halloween season, covering the Halloween Screams fireworks show and various attractions."
+    },
+    {
+      "videoId": "pSiSxXdiG3Y",
+      "title": "My FIRST Disney Alaska Cruise! Boarding The Disney Wonder & Glacier Day | Disney Cruise Line",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-09-11T15:57:10Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/pSiSxXdiG3Y/mqdefault.jpg",
+      "viewCount": 41450,
+      "url": "https://www.youtube.com/watch?v=pSiSxXdiG3Y",
+      "summary": "WrightDownMainStreet documents their first Disney Alaska cruise aboard the Disney Wonder, including embarkation and glacier viewing day."
+    },
+    {
+      "videoId": "k28Fg_eoJH4",
+      "title": "【待ちたくないならここ行って！ランド編】",
+      "channel": "むしこ【子連れディズニーの周り方🌿】",
+      "publishedAt": "2026-09-13T10:00:17Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/k28Fg_eoJH4/mqdefault.jpg",
+      "viewCount": 2448,
+      "url": "https://www.youtube.com/watch?v=k28Fg_eoJH4",
+      "summary": "A Japanese-language guide focusing on attractions and strategies for families visiting Tokyo Disneyland with shorter wait times."
+    },
+    {
+      "videoId": "EUvHu56CDk8",
+      "title": "ใครจะไปลบล้างกรรมไม่ได้เลย! #DiSNEYLAND8th #dhammanetworks #SiaanAdAstra #Disney #Disneyland",
+      "channel": "DiSNEYLAND8th | We are TYPE V | MULTIVERSE IS HERE",
+      "publishedAt": "2026-09-13T06:10:22Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/EUvHu56CDk8/mqdefault.jpg",
+      "viewCount": 1350,
+      "url": "https://www.youtube.com/watch?v=EUvHu56CDk8",
+      "summary": "DiSNEYLAND8th shares Disneyland content with philosophical commentary in Thai, blending park experiences with broader themes."
+    },
+    {
+      "videoId": "1g9VDoAJFg8",
+      "title": "where i went in Japan #disney #disneyland #vlog #travel",
+      "channel": "Amiga Song",
+      "publishedAt": "2026-09-13T05:50:49Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/1g9VDoAJFg8/mqdefault.jpg",
+      "viewCount": 1282,
+      "url": "https://www.youtube.com/watch?v=1g9VDoAJFg8",
+      "summary": "Amiga Song's travel vlog covers Disney destinations visited during a trip to Japan."
+    },
+    {
+      "videoId": "hQI1foysMss",
+      "title": "I'm just listening to my therapists advice #disney #disneyland #disneytips #disneyeveryday",
+      "channel": "Lily Rose",
+      "publishedAt": "2026-09-13T04:59:49Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/hQI1foysMss/mqdefault.jpg",
+      "viewCount": 1213,
+      "url": "https://www.youtube.com/watch?v=hQI1foysMss",
+      "summary": "Lily Rose shares Disneyland tips and everyday Disney content framed around following therapeutic advice."
+    },
+    {
+      "videoId": "MQOsI6SANTM",
+      "title": "Abrindo Lorcana na Main Street da Disneyland Paris! 🏰 #lorcana #disney #disneyland #opening",
+      "channel": "2 Inkers",
+      "publishedAt": "2026-09-13T08:33:27Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/MQOsI6SANTM/mqdefault.jpg",
+      "viewCount": 882,
+      "url": "https://www.youtube.com/watch?v=MQOsI6SANTM",
+      "summary": "2 Inkers opens Disney Lorcana trading card packs on Main Street at Disneyland Paris."
+    },
+    {
+      "videoId": "YEahE9WWQNY",
+      "title": "More new Bluey merch #disney #disneyland #fyp #new #bluey",
+      "channel": "Happy Wife Happy Life",
+      "publishedAt": "2026-09-13T07:10:46Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/YEahE9WWQNY/mqdefault.jpg",
+      "viewCount": 817,
+      "url": "https://www.youtube.com/watch?v=YEahE9WWQNY",
+      "summary": "Happy Wife Happy Life showcases new Bluey merchandise available at Disneyland."
+    },
+    {
+      "videoId": "CQYAsXBZTc4",
+      "title": "#music #disney #disneyland #youtubeshorts #like #follow #subscribe #youtube #viral #trending",
+      "channel": "ميمز mimz",
+      "publishedAt": "2026-09-13T11:42:34Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/CQYAsXBZTc4/mqdefault.jpg",
+      "viewCount": 799,
+      "url": "https://www.youtube.com/watch?v=CQYAsXBZTc4",
+      "summary": "A short-form music video featuring Disney and Disneyland themes from ميمز mimz."
+    }
+  ],
+  "updatedAt": "2026-09-13T14:45:19.425Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-09-13T14:45:19.425Z",
+    "tokens": {
+      "input": 10508,
+      "output": 5019,
+      "costUsd": 0.1068
+    }
+  }
+}
