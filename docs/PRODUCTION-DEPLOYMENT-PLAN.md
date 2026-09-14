@@ -30,12 +30,17 @@ The reason is blunt: a bare, habitual `wrangler deploy` must be incapable of
 touching Production. An `env.production` block inside the shared file would make
 a forgotten flag deploy Production by accident.
 
-### 1a. Staging form — canary hostname only
+### 1a. Canary form — routeless, workers.dev only
+
+**REVISED at Gate 8B.9B after the first canary deploy failed. The original form
+declared a `parkio-worker-canary.parkio.info` Custom Domain; see §12a for the
+root cause and why that design was wrong.**
 
 This is the file as it exists for Steps 3–6. **`parkio.info` appears nowhere in
-it.** That absence is the mechanism that makes an accidental attachment
-impossible: there is no command in the staging steps that names the live
-hostname, so none can attach it.
+it, and neither does any route at all.** That absence is the mechanism that
+makes an accidental attachment impossible: there is no command in the canary
+steps that names any hostname in the zone, so none can attach one — and the CI
+token holds no zone permission with which to try.
 
 ```jsonc
 {
@@ -45,14 +50,12 @@ hostname, so none can attach it.
   "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
   "assets": { "directory": ".open-next/assets", "binding": "ASSETS" },
 
-  "workers_dev": false,
+  // CANARY: account-level workers.dev subdomain. No zone permission required.
+  "workers_dev": true,
   "preview_urls": false,
   "observability": { "enabled": true },
 
-  // STAGING: canary hostname ONLY. Swapped in one reviewed change at Step 7.
-  "routes": [
-    { "pattern": "parkio-worker-canary.parkio.info", "custom_domain": true }
-  ],
+  // DELIBERATELY NO ROUTES — see §12a.
 
   "d1_databases": [
     { "binding": "DB",
@@ -71,12 +74,42 @@ hostname, so none can attach it.
 }
 ```
 
+The canary is served at the account-level workers.dev subdomain,
+`parkio.<subdomain>.workers.dev`. That surface is created by the Workers Scripts
+permission the CI token already holds. **No Workers Routes permission, no DNS
+permission, no zone permission of any kind is involved** — and consequently CI
+has no ability whatsoever to alter `parkio.info` routing during the canary. Zone
+permissions are deferred to the cutover gate (Step 7), where they are genuinely
+unavoidable and are authorised separately.
+
 `PARKIO_COMMUNITY_WRITE_ENV` is **`production` from the very first canary
 deploy** and never anything else. This is deliberate and is what makes the
 canary meaningful: the Production host policy allows only `parkio.info` and
 `www.parkio.info`, so **every sensitive write through the canary must fail
 `forbidden_host`**. The canary exercises the real artifact under the real
 policy, and proves the policy by being refused.
+
+#### Is a public workers.dev canary safe?
+
+Stated plainly, because the canary is Production-configured and publicly
+reachable:
+
+- **Writes: no exposure.** `PARKIO_COMMUNITY_WRITE_ENV=production` means
+  `lib/ratingsWriteHost.ts` allows only `parkio.info` and `www.parkio.info`. A
+  workers.dev host is refused **403 `forbidden_host`** before Origin checking,
+  bearer verification, payload validation or any D1 access. 31 hermetic tests
+  cover this, and it was observed live on Preview. G2 makes any successful
+  sensitive write on the canary an immediate STOP.
+- **Reads: duplicate of already-public data.** The canary serves the same
+  Production D1 aggregates that are already public at `parkio.info`. No data is
+  disclosed that was not already public.
+- **Exposure window is short.** `workers_dev` returns to `false` in the same
+  reviewed change that adds the `parkio.info` route at Step 7.
+
+What this canary does **not** exercise is the Custom Domain attach path. That is
+accepted: the attach is exercised at cutover regardless, under the cutover
+gate's own review, and buying early coverage of it is not worth granting CI
+zone-write capability a gate early.
 
 `RATINGS_IDENTITY_SECRET` is **not** in this file. It is installed once, by
 hand, with the **Production** value:
@@ -94,22 +127,39 @@ and nothing about hosting enters it.
 At Step 7, exactly one hunk changes:
 
 ```diff
-   "routes": [
--    { "pattern": "parkio-worker-canary.parkio.info", "custom_domain": true }
+-  "workers_dev": true,
++  "workers_dev": false,
+   "preview_urls": false,
++
++  "routes": [
 +    { "pattern": "parkio.info", "custom_domain": true }
-   ],
++  ],
 ```
 
 Nothing else in the file may change in that commit. The diff is reviewed before
 the deploy, not after.
 
+That commit is also the point at which the CI token gains
+**Zone → Workers Routes → Read** and **Zone → DNS → Edit**, scoped to
+`parkio.info`. Those permissions are **not** granted before it. Adding the route
+and granting the permission that makes it deployable are the same reviewed,
+separately-authorised action.
+
 ### 1c. DNS side effects, stated honestly
 
-A Workers Custom Domain on a zone Cloudflare already manages creates a proxied
-DNS record for that hostname. So Step 3 **does add** a `parkio-worker-canary`
-record to the `parkio.info` zone. That is an additive, reversible change to a
-new subdomain; it does not alter the apex record, which continues to point at
-Pages until Step 7. Removing the canary at Step 9 removes that record.
+**The canary makes no DNS change at all.** It has no route and no Custom Domain,
+so no record is created in the `parkio.info` zone during Steps 3–6, and the apex
+continues to point at Pages untouched. This is a change from the original plan,
+which added a `parkio-worker-canary` record — see §12a.
+
+The first and only DNS change in this migration is at **Step 7**: attaching the
+`parkio.info` Custom Domain repoints the apex from Pages to the Worker. That is
+the cutover, it is irreversible-in-practice for the duration of propagation, and
+it is listed in §15 as such.
+
+Because the canary creates no record, Step 9 has no canary DNS record to remove;
+it only flips `workers_dev` back to `false`, which is already done as part of the
+Step 7 change.
 
 ---
 
@@ -257,8 +307,11 @@ workers.dev host is refused under `production`, `development` and `unknown`, and
 that `parkio.info.attacker.example` and `attacker-parkio.info` fail — exact
 comparison, never substring or suffix.
 
-Note the canary hostname `parkio-worker-canary.parkio.info` is **not** in the
-production allow-list and must never be added. Its refusal is the point.
+Note the canary host — now the account-level `parkio.<subdomain>.workers.dev`,
+see §1a — is **not** in the production allow-list and must never be added. Its
+refusal is the point. The same was true of the original
+`parkio-worker-canary.parkio.info` design and remains true of any future canary
+hostname.
 
 **`www.parkio.info` needs no handling.** Checked 2026-09-12: it has **no DNS
 record** and does not resolve, while the apex resolves and serves. It is present
@@ -337,14 +390,14 @@ Each is a hard stop. None is advisory.
 | # | Step | Reversible? |
 |---|---|---|
 | 1 | Re-verify Access on `*.parkio.pages.dev` (G5) | read-only |
-| 2 | Create `wrangler.production.jsonc` in **staging form** (canary route only). Run `--dry-run` (Req 1) and the leakage grep (G3) | yes |
-| 3 | Deploy the `parkio` Worker on the **canary hostname only**. Adds a `parkio-worker-canary` DNS record; apex untouched | yes |
+| 2 | Create `wrangler.production.jsonc` in **canary form** (§1a: routeless, `workers_dev: true`). Run `--dry-run` (Req 1) and the leakage grep (G3) | yes |
+| 3 | Deploy the `parkio` Worker to **workers.dev only**. **No DNS record is created and no zone API is called**; apex untouched | yes |
 | 4 | `wrangler secret put RATINGS_IDENTITY_SECRET` (Production value) | yes |
 | 5 | **Canary validation** — full checklist in §8. Non-mutating only | read-only |
 | 6 | Gates G1–G5. Any failure stops here | — |
 | 7 | **Route swap** — see §7a. Pages must release `parkio.info` **first**; the two cannot hold it simultaneously. Brief outage window | **yes — this is the cutover** |
 | 8 | Post-cutover checks (Req 1 burst, Req 3 guards, static parity). Watch `wrangler tail` | yes |
-| 9 | Remove the canary custom domain and its DNS record. Soak **≥ 7 days**, Pages retained and no longer deployed to. Re-verify Access weekly. Exercise Worker-version rollback once (G8) | yes |
+| 9 | Canary surface is already off (`workers_dev: false` was flipped in the Step 7 change); no DNS record to remove. Soak **≥ 7 days**, Pages retained and no longer deployed to. Re-verify Access weekly. Exercise Worker-version rollback once (G8) | yes |
 | 10 | **Delete the Pages project** — closes §3b permanently | **NO — destructive, separately authorised** |
 
 Steps 1–9 are reversible. Step 10 is not, and **no authorisation for it is
@@ -378,7 +431,8 @@ healthy, not a first deploy.
 
 ## 8. Canary validation checklist (Step 5)
 
-Against `https://parkio-worker-canary.parkio.info`. This validates the **exact
+Against the workers.dev canary URL, `https://parkio.<subdomain>.workers.dev`
+(§1a). This validates the **exact
 Production Worker artifact** — same bundle, same bindings, same Production D1,
 same Production secret — on a hostname that carries no write authority.
 
@@ -834,30 +888,31 @@ and put a live token through this session. Create it by hand:
    - **Account → D1 → Edit** (the `DB` binding, and `populateCache remote`)
    - **Account → Account Settings → Read** (account resolution)
 3. Account Resources → Include → the Parkio account (`5b406b87…`)
-4. **Zone permissions ARE required — corrected 2026-09-14.** An earlier version
-   of this plan said "no Zone permissions are required for the canary; add
-   Zone → DNS → Edit only at cutover". **That was wrong**, and it cost a failed
-   CI run. The canary config declares a Custom Domain
-   (`parkio-worker-canary.parkio.info`), and attaching *that* is itself a zone
-   operation. Measured failure:
+4. **No Zone permissions — corrected twice, final position 2026-09-14.**
 
-   ```
-   A request to the Cloudflare API (/zones/<parkio.info zone>/workers/routes) failed.
-   Authentication error [code: 10000]
-   ```
+   This item has been wrong once in each direction; the history matters because
+   both errors are easy to repeat.
 
-   The Worker uploaded fine — bindings and all — and then the route attach was
-   refused. Required additions, scoped to the **parkio.info** zone only:
-   - **Zone → Workers Routes → Edit**
-   - **Zone → DNS → Edit** (a Custom Domain creates a proxied DNS record)
+   - **Original claim:** "no Zone permissions are required for the canary."
+     **Wrong** as written, because the canary config at the time declared a
+     Custom Domain (`parkio-worker-canary.parkio.info`), and wrangler calls the
+     zone API for any configured route. It cost a failed CI run — see §12a.
+   - **First correction:** "add Zone → Workers Routes → Edit and Zone → DNS →
+     Edit now." **Technically sufficient but strategically wrong** — it treated
+     the Custom Domain as fixed and widened the token to fit it, when the
+     cheaper fix was to drop the Custom Domain.
+   - **Final position (implemented):** the canary is **routeless** and served on
+     workers.dev (§1a). With no configured route, wrangler's `activeZones` set
+     is empty and **the zone API is never called**. The token therefore needs
+     **no Workers Routes permission, no DNS permission, and no zone permission
+     of any kind** for Steps 3–6.
 
-   Note the trade this makes explicit: previously the token *could not* touch
-   the zone at all. With these added, the thing preventing `parkio.info` from
-   being attached is no longer the token but **the config** — which names only
-   the canary hostname, is version-controlled, is asserted by the pre-deploy
-   verification step, and sits behind the reviewer gate. That is a real
-   reduction in defence-in-depth and should be a conscious acceptance, not a
-   silent one.
+   This is the deliberate security position: **Production CI has no capability
+   to change `parkio.info` routing during Gate 8B.9B.** Not "is configured not
+   to" — *cannot*. Defence-in-depth is preserved rather than traded away, and
+   the zone permissions are deferred to the Step 7 cutover change (§1b), where
+   they are genuinely unavoidable and are authorised separately.
+
 5. Add it as an **environment** secret named `CLOUDFLARE_API_TOKEN` under
    `production` (not a repository secret — the environment gate is the point).
 
@@ -932,6 +987,115 @@ including on the canary:
   credential-invalidation event — which needs its own decision and probably an
   iOS-side story — or abandoning secret continuity as a goal. Neither should be
   chosen by default, and neither is in scope here.
+
+## 12a. Incident — first canary deploy failed at the Cloudflare authorisation boundary (Gate 8B.9B, 2026-09-14)
+
+GitHub Actions run **34763782305** (`Workers Production`) failed. This section
+records what happened, what state it left behind, and the design change made in
+response. Recorded because the failure was caused by a planning error in this
+document, and the correction changes §1a, §1b, §1c, §7 and §8.
+
+### Root cause
+
+The canary configuration declared a Custom Domain:
+
+```jsonc
+"routes": [
+  { "pattern": "parkio-worker-canary.parkio.info", "custom_domain": true }
+]
+```
+
+`workers_dev: false` and `preview_urls: false` were correct and no `parkio.info`
+route was present — but **a canary Custom Domain is still a Custom Domain**, and
+its hostname resolves into the `parkio.info` zone.
+
+Wrangler (4.131.1) resolves configured route hostnames into an `activeZones`
+set, then **lists** existing routes per zone to reconcile before creating
+anything:
+
+```js
+for (const [zone, host] of activeZones) {
+  for (const { pattern, script } of await fetchListResult(…, `/zones/${zone}/workers/routes`)) {
+    allRoutes.set(pattern, script);
+    if (script === scriptName) alreadyDeployedRoutes.add(pattern);
+```
+
+That list exists to warn when a route is already bound to another Worker. It is
+the call that failed:
+
+```
+A request to the Cloudflare API (/zones/<parkio.info zone>/workers/routes) failed.
+Authentication error [code: 10000]
+```
+
+The token was correctly scoped to account-level Workers/D1 permissions only. The
+error is not a token defect — it is the config asking for a capability the plan
+had deliberately withheld.
+
+Worth recording for the cutover: Custom Domains themselves are **account**-scoped
+(`/accounts/{id}/workers/domains`). Only the reconciliation *list* is
+zone-scoped, and the DNS record a Custom Domain creates needs Zone → DNS → Edit.
+
+### Partial-deployment state — the deploy was NOT atomic
+
+Exit code 1 is misleading. The upload succeeded and only the route attach
+failed, leaving:
+
+| Item | State after the failed run |
+|---|---|
+| Worker `parkio` | **EXISTS** — id `5df85dfb2e9f4bf8a3182d6f5dfa5d24`, created `2026-09-14T15:23:22Z` |
+| Version | `b4e4a480-1c18-4da2-aa3d-2fa1e9a245c6`, 100 %, Source: Upload |
+| Bindings | all five present and correct — `DB (parkio-history)`, both limiters, `ASSETS`, `PARKIO_COMMUNITY_WRITE_ENV = "production"` |
+| Secrets | **`[]`** — Secret B was never installed |
+| Route | **none** |
+| `parkio-worker-canary.parkio.info` | **000** — no DNS record; the Custom Domain was never created |
+| `parkio.tsomers13.workers.dev` | **404** — `workers_dev` was `false` |
+
+So a live, Production-configured Worker version existed and was **completely
+unreachable**. Harmless, but real, and not what "failed deployment" implies.
+
+Production safety was verified unaffected: `parkio.info` **200** on Pages, that
+day's guide **200**, Production `dining_ratings` **0**, `wait_snapshots` **5125**
+(newest `2026-09-11T09:58:29Z`, unchanged), Preview `dining_ratings` **0**, no
+Worker attached to `parkio.info`, Pages Secret A untouched.
+
+### Corrected design
+
+Two options were considered.
+
+| | Option 1 — routeless workers.dev canary | Option 2 — grant the zone permissions |
+|---|---|---|
+| Canary surface | `parkio.<subdomain>.workers.dev` | `parkio-worker-canary.parkio.info` |
+| Token change | **none** | + Zone → Workers Routes → Read, + Zone → DNS → Edit |
+| CI can alter `parkio.info` routing? | **No — no capability** | Yes, from that point on |
+| Exercises the Custom Domain attach? | No | Yes |
+
+**Option 1 was chosen and implemented.** The only thing Option 2 buys is early
+coverage of the Custom Domain attach path, which is exercised at cutover
+regardless. It is not worth granting CI zone-write capability a gate early.
+
+### Zone permissions are intentionally deferred
+
+This is the standing position, not a temporary workaround:
+
+- During Gate 8B.9B the Production CI token holds **no zone permission**, so it
+  is **incapable** of changing `parkio.info` routing or DNS.
+- The zone permissions (**Zone → Workers Routes → Read**, **Zone → DNS →
+  Edit**, scoped to `parkio.info`) are granted only as part of the **Step 7
+  cutover change** (§1b), which is separately reviewed and separately
+  authorised.
+- The same reviewed commit adds the `parkio.info` route and flips `workers_dev`
+  back to `false`. Granting the capability and using it are one action, not two
+  separated in time.
+
+### What this cost, and what it did not
+
+It cost one failed CI run and a design revision. It did not touch Production:
+no DNS change, no Pages change, no D1 write, no secret installed, no traffic
+served by the Worker. The failure occurred at exactly the boundary the
+permission model was built to defend, which is the boundary working.
+
+---
 
 ## 13. Rollback baseline and branch strategy — TAG CREATED (Gate 8B.9A)
 
@@ -1077,10 +1241,11 @@ Every line must be GO. Any NO-GO stops the cutover.
 | 8 | iOS compatibility | No iOS change required; hostname, paths and secret unchanged |
 | 9 | Limiter bindings | Both present at 5/60 and 10/60, namespaces 1001/1002 |
 | 10 | **Daily deploy workflow** | Workflow **exists** (§12). `production` environment ✅ and both CI secrets ✅. Still required: **one green end-to-end run**, which can only happen inside the migration window (§13a) because it needs the merge |
-| 11 | Pages rollback | Project and published deployment intact; baseline tagged — `pages-production-pre-workers` → `6fb57fa`, pushed. **Re-tag at whatever `main` is immediately before cutover** |
+| 11 | Pages rollback | Project and published deployment intact. **Operative baseline: `pages-production-final-pre-workers-20260913` → `d40d845`**, pushed, never force-moved. (`pages-production-pre-workers` → `6fb57fa` is retained as historical only — it was stale against the live site; see §13) |
 | 12 | Monitoring | 5xx, 429, CPU, D1 error alerting in place for soak |
 | 13 | Access protection | Historical aliases return a Cloudflare Access 302 |
 | 14 | Zero synthetic Production ratings | `dining_ratings` = 0 immediately before and after cutover |
+| 15 | **CI zone capability** | Before cutover, the Production CI token holds **no zone permission** — it cannot alter `parkio.info` routing or DNS (§12a). The zone permissions are added only in the Step 7 change, under separate authorisation |
 
 ---
 
@@ -1091,8 +1256,10 @@ Exactly one: **Step 10, deleting the Pages project.**
 It is gated behind G7 and G8, occurs after the soak, and **is not authorised by
 this document.** No authorisation for it is being requested here.
 
-Everything else — canary deploy, secret install, route swap, canary removal — is
-reversible by the procedures above.
+Everything else — canary deploy, secret install, route swap — is reversible by
+the procedures above. (There is no separate "canary removal" step any more: the
+canary is routeless and its workers.dev surface is switched off by the same
+Step 7 change that adds the route — §1b.)
 
 ---
 

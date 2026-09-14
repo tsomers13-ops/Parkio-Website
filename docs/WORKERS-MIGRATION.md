@@ -107,7 +107,7 @@ rejects edge runtime combined with `generateStaticParams`, and removing it made
 | D1 | `parkio-history-preview` — **never** Production |
 | `PARKIO_COMMUNITY_WRITE_ENV` | `preview` |
 | Rate-limit namespaces | 2001 / 2002 (Production will use 1001 / 1002) |
-| `workers_dev` | `true` **for Preview only**; Production ships `false` |
+| `workers_dev` | `true` for Preview, and `true` for the **Production canary** (routeless, no zone permission needed — see the plan §1a/§12a). Production ships `false` from the cutover change onward |
 | Secret | a Preview-only `RATINGS_IDENTITY_SECRET`, never the Production value |
 
 Production iOS credentials are not expected to validate against Preview. That is
@@ -138,8 +138,8 @@ not plan a rollback from this file.
 ## Deployment order
 
 **Superseded.** The authoritative, gated sequence — including the
-`parkio-worker-canary.parkio.info` staging hostname, the go/no-go gates, and the
-single reviewed route swap — lives in
+routeless workers.dev canary, the go/no-go gates, and the single reviewed route
+swap — lives in
 [PRODUCTION-DEPLOYMENT-PLAN.md](./PRODUCTION-DEPLOYMENT-PLAN.md) §7.
 
 Keeping a second summary here would be a second source of truth, and the two

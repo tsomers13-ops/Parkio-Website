@@ -21,15 +21,43 @@
     "binding": "ASSETS"
   },
 
-  // No alternate route to Production write authority.
-  "workers_dev": false,
+  // CANARY STAGE: workers.dev is ON so the Production artifact has an HTTP
+  // surface to validate against. This is the account-level subdomain
+  // (parkio.<subdomain>.workers.dev) and needs NO zone permission, which is the
+  // whole point — see the routes note below.
+  //
+  // Safe despite being public and Production-configured: with
+  // PARKIO_COMMUNITY_WRITE_ENV=production the hostname guard allows only
+  // parkio.info and www.parkio.info, so every sensitive write from a
+  // workers.dev host is refused 403 forbidden_host before Origin, bearer,
+  // validation or D1. Reads serve the same aggregates already public on
+  // parkio.info, so there is no new disclosure.
+  //
+  // FLIP TO false AT CUTOVER, in the same reviewed change that adds the
+  // parkio.info route.
+  "workers_dev": true,
   "preview_urls": false,
 
   "observability": { "enabled": true },
 
-  "routes": [
-    { "pattern": "parkio-worker-canary.parkio.info", "custom_domain": true }
-  ],
+  // DELIBERATELY NO ROUTES.
+  //
+  // The canary previously declared a custom domain,
+  // parkio-worker-canary.parkio.info. That hostname resolves into the
+  // parkio.info zone, so wrangler added the zone to activeZones and called
+  // GET /zones/{zone}/workers/routes to reconcile existing routes before
+  // creating anything — which the CI token cannot do, by design. Run
+  // 34763782305 uploaded the Worker fine and then failed there.
+  //
+  // With no routes at all, activeZones is empty and wrangler never touches the
+  // zone API. That keeps the CI token free of any Workers Routes or DNS
+  // permission, so it has no ability to alter parkio.info routing. Those
+  // permissions are deferred to the separate cutover gate, where they are
+  // genuinely unavoidable.
+  //
+  // At cutover this becomes:
+  //   "routes": [{ "pattern": "parkio.info", "custom_domain": true }]
+  // alongside "workers_dev": false.
 
   // PRODUCTION D1. Same database Pages binds today, by id — the migration
   // is a hosting change, not a data change.
