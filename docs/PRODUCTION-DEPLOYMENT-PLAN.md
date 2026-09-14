@@ -834,9 +834,30 @@ and put a live token through this session. Create it by hand:
    - **Account → D1 → Edit** (the `DB` binding, and `populateCache remote`)
    - **Account → Account Settings → Read** (account resolution)
 3. Account Resources → Include → the Parkio account (`5b406b87…`)
-4. No Zone permissions are required for the canary. A Zone → DNS → Edit
-   permission becomes necessary only at cutover, when the Custom Domain is
-   attached — add it then, not now.
+4. **Zone permissions ARE required — corrected 2026-09-14.** An earlier version
+   of this plan said "no Zone permissions are required for the canary; add
+   Zone → DNS → Edit only at cutover". **That was wrong**, and it cost a failed
+   CI run. The canary config declares a Custom Domain
+   (`parkio-worker-canary.parkio.info`), and attaching *that* is itself a zone
+   operation. Measured failure:
+
+   ```
+   A request to the Cloudflare API (/zones/<parkio.info zone>/workers/routes) failed.
+   Authentication error [code: 10000]
+   ```
+
+   The Worker uploaded fine — bindings and all — and then the route attach was
+   refused. Required additions, scoped to the **parkio.info** zone only:
+   - **Zone → Workers Routes → Edit**
+   - **Zone → DNS → Edit** (a Custom Domain creates a proxied DNS record)
+
+   Note the trade this makes explicit: previously the token *could not* touch
+   the zone at all. With these added, the thing preventing `parkio.info` from
+   being attached is no longer the token but **the config** — which names only
+   the canary hostname, is version-controlled, is asserted by the pre-deploy
+   verification step, and sits behind the reviewer gate. That is a real
+   reduction in defence-in-depth and should be a conscious acceptance, not a
+   silent one.
 5. Add it as an **environment** secret named `CLOUDFLARE_API_TOKEN` under
    `production` (not a repository secret — the environment gate is the point).
 
