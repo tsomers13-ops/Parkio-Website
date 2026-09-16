@@ -1276,6 +1276,95 @@ Workers build. Pages and Workers do not share configuration.
 
 ---
 
+## 13c. Pages automatic production deployments are DISABLED (2026-09-16)
+
+Cloudflare Pages no longer deploys `parkio.info` automatically. This was
+changed by hand in the dashboard on 2026-09-16 and is deliberate.
+
+### What is set
+
+| Setting | Value |
+|---|---|
+| Production branch | `main` |
+| **Automatic deployments** | **Disabled** |
+| Git repository | still connected |
+| Build watch paths | `*` (unchanged) |
+| Deploy hooks | none defined |
+| Build configuration | unchanged |
+
+Verified directly in the Cloudflare dashboard. Nothing else was touched: no
+DNS, no custom domain, no build command, no existing deployment.
+
+### Why
+
+Between the OpenNext merge (`8ca5b1a`) and 2026-09-16 every push to `main`
+produced a Production Pages build — eight pushes, eight builds, one to one,
+with no approval step anywhere in the path. All eight failed, because `main`
+no longer builds through `next-on-pages` (Pages Build Failure RCA, 2026-09-16).
+
+That failure was the only thing standing between a push and a production
+publish. That is not a safety control, it is a coincidence, and it was
+pointing the wrong way: the *more* successfully someone repaired the Pages
+build, the *closer* production came to being replaced without review.
+
+The replacement would not have looked like a failure either. Current `main`
+expects the Workers Rate Limiting bindings, which Pages Functions cannot
+provide, and `lib/ratingsRateLimit.ts` **fails open** when a limiter binding
+is absent:
+
+```ts
+{ allowed: true; reason: "within_limit" | "no_binding" | "no_client_ip" }
+```
+
+A green Pages build would therefore have published a site that serves
+correctly and has **no rate limiting at all** on the two Community write
+paths. A silent loss of a security control, announced by nothing, and
+arriving through the one deployment path with no approval gate. The Worker
+path, by contrast, requires GitHub `production` environment approval.
+
+### Pinned rollback target
+
+**Deployment `0587f64e-d5a5-4fc0-b95c-575d3b3d527a` → `d40d845`**
+(Parkio Daily 2026-09-13) is the known-good production deployment and the
+pinned rollback target. It is what `parkio.info` serves today. It must not
+be deleted while Pages remains the serving platform.
+
+This is the same commit as the operative baseline tag in §13 and row 11 of
+the §14 checklist — `pages-production-final-pre-workers-20260913`.
+
+### What Pages is, and is not, from here
+
+- Pages is **no longer an active build target.** Nothing is expected to build
+  there, and a failing Pages build is no longer a defect to chase.
+- Pages **remains the production serving and rollback platform**, temporarily.
+  It serves `parkio.info` and holds the deployment history.
+- **Worker/OpenNext is the intended future production architecture.**
+- The **Workers migration remains frozen** until separately authorised. This
+  change does not unfreeze it, start it, or shorten it.
+
+### Consequences to expect
+
+Content committed to `main` no longer reaches `parkio.info` at all. As of
+this change the Daily editions for 2026-09-14, 09-15 and 09-16 are committed
+and rendering on the Worker canary but absent from production. That is the
+accepted trade: stale content is recoverable, an unreviewed production
+publish is not.
+
+The stranded set is wider than Daily content — it includes the ratings rate
+limit layer and the rewritten API routes. Note that `ParkioAPI` resolves to
+`https://parkio.info` in Release builds, so the shipping iOS app talks to the
+pinned `d40d845` API until production moves.
+
+### Re-enabling
+
+Turning Pages automatic production deployments back on **requires an explicit
+architecture decision**, not a convenience fix. It would mean either
+reversing the OpenNext direction or accepting ratings without rate limiting.
+Neither is a deployment-settings change, and neither should be made by
+whoever next finds the toggle.
+
+---
+
 ## 14. GO / NO-GO checklist
 
 Every line must be GO. Any NO-GO stops the cutover.
