@@ -64,6 +64,18 @@ jobs:
     permissions:
       contents: read
 
+    # Job scope on purpose. `opennextjs-cloudflare build` re-runs the Next
+    # compile, so at least two steps need this; NEXT_PUBLIC_* is inlined at
+    # build time, so a value that arrives after compilation is worthless.
+    # Setting it once here covers every current and future build step rather
+    # than repeating an `env:` block per step and eventually missing one.
+    #
+    # Public browser credential (CARTO documents it in client-side Leaflet
+    # examples) — it ships in the bundle by design. It is a GitHub secret so
+    # the value is not committed, not so it stays hidden from visitors.
+    env:
+      NEXT_PUBLIC_CARTO_API_KEY: ${{ secrets.NEXT_PUBLIC_CARTO_API_KEY }}
+
     steps:
       - name: Check out the exact commit
         uses: actions/checkout@v4
@@ -105,6 +117,26 @@ jobs:
 
       - name: TypeScript
         run: npx tsc --noEmit
+
+      - name: Require basemap configuration
+        # Fail closed, and fail early. Without this the build succeeds and
+        # deploys a bundle whose every park map renders "the basemap isn't
+        # configured" — exactly what shipped to the canary, with a green
+        # pipeline and a green test suite the whole way.
+        #
+        # Asserted here rather than by grepping compiled output: this is a
+        # configuration precondition, it costs nothing, and it fails in seconds
+        # instead of after a full Next + OpenNext build.
+        #
+        # -z on the trimmed value mirrors basemapConfig()'s own `trim()`, so
+        # whitespace fails here exactly as it would at runtime. The value is
+        # never echoed; only its presence is reported.
+        run: |
+          if [ -z "$(printf %s "${NEXT_PUBLIC_CARTO_API_KEY:-}" | tr -d '[:space:]')" ]; then
+            echo "::error::NEXT_PUBLIC_CARTO_API_KEY is not set. Next inlines NEXT_PUBLIC_* at build time, so this build would ship a Worker with no basemap on any park. Set it as a repository/environment secret and re-run."
+            exit 1
+          fi
+          echo "NEXT_PUBLIC_CARTO_API_KEY is configured (value not shown)."
 
       - name: Next build
         run: npm run build
