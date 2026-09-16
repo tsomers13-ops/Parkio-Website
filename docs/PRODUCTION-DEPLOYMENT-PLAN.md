@@ -1225,6 +1225,57 @@ content would freeze anyway unless the daily job pushed to both branches.
 
 ---
 
+## 13b. MANDATORY PRE-CUTOVER CHECK — basemap build configuration
+
+**Added 2026-09-15 after a UAT defect on the Worker canary.**
+
+`NEXT_PUBLIC_CARTO_API_KEY` **must be present at build time for any
+Workers/OpenNext production build.**
+
+### Why a healthy runtime does not save you
+
+`NEXT_PUBLIC_*` is **inlined by Next at compile time**. It is not read at
+runtime. Whatever is present when the build runs is baked into that bundle
+permanently — so setting the variable on the Worker afterwards, or having it
+correct in Cloudflare Pages, does nothing for a bundle that was compiled
+without it. There is no runtime recovery.
+
+### What went wrong
+
+`workers-production.yml` was created during the migration without this
+variable. Cloudflare Pages supplies it from its own project environment, so
+`parkio.info` was always fine — but **every Worker canary bundle ever built had
+no basemap on any of the six parks**. `lib/basemap.ts` behaved exactly as
+designed: it returns `null` rather than falling back to CARTO's
+unauthenticated URL, because that URL returns HTTP 200 with "API KEY REQUIRED"
+composited into the tile, which would have shipped a watermarked map past every
+health check.
+
+**Had the cutover succeeded, `parkio.info` would have lost its basemap the
+moment it switched, with a green pipeline and a green 815-test suite.** The
+failed cutover is the only reason this did not reach production.
+
+### The check, before any future hostname cutover
+
+1. The Workers deploy job sets `NEXT_PUBLIC_CARTO_API_KEY` at **job scope** —
+   `opennextjs-cloudflare build` re-runs the Next compile, so per-step `env:`
+   blocks are easy to get half-right.
+2. The **"Require basemap configuration"** guard runs before any build and
+   fails closed on absent/empty/whitespace values, mirroring
+   `basemapConfig()`'s own `trim()`.
+3. **The canary must demonstrate a working basemap on all six parks** — Magic
+   Kingdom, EPCOT, Hollywood Studios, Animal Kingdom, Disneyland, California
+   Adventure — before the hostname is touched. Not a spot check: this defect
+   was uniform across every park, so one park proves all six.
+
+### Generalise the lesson
+
+Any `NEXT_PUBLIC_*` the app depends on has this shape. Before cutover, confirm
+every such variable the Pages environment supplies is also supplied to the
+Workers build. Pages and Workers do not share configuration.
+
+---
+
 ## 14. GO / NO-GO checklist
 
 Every line must be GO. Any NO-GO stops the cutover.
