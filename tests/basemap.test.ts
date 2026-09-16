@@ -1,5 +1,5 @@
 import { readFileSync } from "node:fs";
-import { describe, expect, it } from "vitest";
+import { afterEach, beforeEach, describe, expect, it } from "vitest";
 
 import {
   BASEMAP_ATTRIBUTION,
@@ -46,6 +46,24 @@ describe("basemapConfig with a credential", () => {
 });
 
 describe("basemapConfig without a credential", () => {
+  // `key` defaults to process.env.NEXT_PUBLIC_CARTO_API_KEY, and a JavaScript
+  // default parameter applies to an explicitly-passed `undefined` as well as a
+  // missing argument. So `basemapConfig(undefined)` reads the ambient
+  // environment rather than standing for "no credential", and this block only
+  // passed while CI happened to have no key set. Once the deployment workflow
+  // began supplying one, it failed — correctly. Clearing the variable is what
+  // actually exercises the unconfigured path.
+  const saved = process.env.NEXT_PUBLIC_CARTO_API_KEY;
+
+  beforeEach(() => {
+    delete process.env.NEXT_PUBLIC_CARTO_API_KEY;
+  });
+
+  afterEach(() => {
+    if (saved === undefined) delete process.env.NEXT_PUBLIC_CARTO_API_KEY;
+    else process.env.NEXT_PUBLIC_CARTO_API_KEY = saved;
+  });
+
   it("returns null rather than a watermarked fallback", () => {
     expect(basemapConfig(undefined)).toBeNull();
     expect(basemapConfig("")).toBeNull();
