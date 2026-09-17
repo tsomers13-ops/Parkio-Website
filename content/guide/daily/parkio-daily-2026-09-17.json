@@ -1,0 +1,344 @@
+{
+  "title": "Parkio Daily for September 17, 2026",
+  "slug": "parkio-daily-2026-09-17",
+  "date": "2026-09-17",
+  "teaser": "Lilypad from Toy Story 5 hits Alien Swirling Saucers Sept 25; Disney cuts beach wheelchairs at water parks; Carol debuts at Casey's Corner piano.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Test Track",
+        "parkSlug": "epcot",
+        "note": "Morning lull before lunch crowds hit World Showcase"
+      },
+      {
+        "name": "Big Thunder Mountain Railroad",
+        "parkSlug": "magic-kingdom",
+        "note": "Mid-morning window before Frontierland peaks"
+      },
+      {
+        "name": "Incredicoaster",
+        "parkSlug": "california-adventure",
+        "note": "Lower waits typical before noon at Pixar Pier"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [],
+    "bignews": [
+      {
+        "title": "Lilypad from Toy Story 5 joins Alien Swirling Saucers September 25",
+        "body": "Hollywood Studios is adding a new character overlay to the spinning ride in Toy Story Land. Lilypad, the newest toy from the latest Pixar film, will be featured starting Friday, September 25.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/lilypad-new-music-toy-story-land-disney-world/"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "New character overlays typically draw heavier morning crowds to Toy Story Land. Rope-dropping Slinky Dog Dash or Tower of Terror before 10am on opening day tends to avoid the Lilypad rush."
+        }
+      },
+      {
+        "title": "Disney removes beach wheelchairs from Typhoon Lagoon and Blizzard Beach",
+        "body": "The resort has reportedly stopped offering beach-style wheelchairs at both water parks. Guests previously relied on these specialized chairs to navigate sand and pool areas.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/09/disney-reportedly-stops-offering-beach-wheelchairs-at-typhoon-lagoon-blizzard-beach/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Guests needing beach wheelchair access should call ahead to confirm alternative mobility options. Standard wheelchairs may struggle on sand surfaces near wave pools and lazy rivers."
+        }
+      },
+      {
+        "title": "Carol Stein takes over piano at Casey's Corner after 36 years",
+        "body": "The longtime cast member known as the Hat Lady has moved from her previous role to the Main Street U.S.A. hot dog restaurant. She brings decades of Disney musical experience to the high-energy location.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/meet-the-new-caseys-corner-pianist-bringing-joy-to-magic-kingdom/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Carol's performances tend to draw crowds by mid-afternoon. Stopping by Casey's Corner during the morning parade or just after park opening usually means better seating and shorter food lines."
+        }
+      },
+      {
+        "title": "DuckTales World Showcase Adventure confirmed to return despite Play app shutdown",
+        "body": "EPCOT's interactive game will come back after refurbishment even though the Play Disney Parks app has been discontinued. Disney confirmed the experience is being reworked for a different platform.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-world-confirms-ducktales-world-showcase-adventure-will-return-despite-demise-of-play-app/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "World Showcase Adventures are most enjoyable during off-peak hours when pavilions are less crowded. Tackling the game between 10am-noon or after 7pm typically allows easier interaction with kiosks and story elements."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "Disney files patent for wheelchair-accessible ride vehicles that skip transfers",
+        "body": "A new system called Rider Inclusive Transport Aide would allow guests using wheelchairs and ECVs to board attractions without moving to a separate seat. The patent was published September 17 but filed in March 2025.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/09/disney-patent-reveals-ride-vehicle-system-to-load-wheelchairs-ecvs-without-transferring/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Patents typically take years to reach parks, but this signals long-term accessibility improvements. Guests needing mobility assistance today should still plan for standard transfer procedures at most attractions."
+        }
+      },
+      {
+        "title": "Jazzy Holidays dining experience at Jollywood Nights now accepting reservations",
+        "body": "The Hollywood Brown Derby add-on returns for the holiday event season at Hollywood Studios, with bookings opening September 17. Pricing reaches up to 199 dollars per guest.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/09/17/reservations-are-now-open-for-an-exclusive-disney-world-holiday-dining-experience/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Premium event dining typically sells out within days of opening. Booking today or tomorrow usually secures preferred dates before the most popular nights disappear."
+        }
+      },
+      {
+        "title": "Hurly-Burly lounge at BoardWalk confirms operating hours",
+        "body": "Disney has released the schedule for the new bar opening on the BoardWalk. The venue will offer drinks and light bites in the reimagined entertainment district.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/09/17/disney-confirms-hours-for-new-lounge-coming-to-the-boardwalk/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "New BoardWalk venues tend to draw heavy resort guest traffic during evening hours. Arriving before 6pm or after 9pm often means shorter waits for seating and quicker bar service."
+        }
+      },
+      {
+        "title": "Rainforest Cafe at Disneyland Paris closing by end of 2026",
+        "body": "The Disney Village restaurant will shut down permanently within the next few months as part of the shopping district's ongoing transformation. The closure was confirmed in a resort press release.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/09/confirmed-rainforest-cafe-at-disneyland-paris-is-closing-by-end-of-2026/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Dining locations in active construction zones often face longer waits and limited menus. Guests visiting Disney Village this fall should plan backup restaurant options in case service is disrupted."
+        }
+      },
+      {
+        "title": "Guardians of the Galaxy ride celebrates September 21 with special Earth, Wind and Fire tie-in",
+        "body": "EPCOT's Cosmic Rewind is highlighting the date made famous by the band's song. The attraction already features the group's music in its rotating soundtrack.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/september-21-guardians-of-the-galaxy-cosmic-rewind/"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "Themed celebration days often pull heavier crowds to specific attractions. Riding Guardians during Early Entry or after 7pm on September 21 usually avoids the midday surge tied to social media buzz."
+        }
+      },
+      {
+        "title": "Together We Are Magia celebration runs through October 15 at Disney World",
+        "body": "Hispanic and Latin American Heritage Month brings cultural experiences, food offerings, and entertainment across the resort. Special programming continues for the next month.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/celebrate-hispanic-and-latin-american-heritage-month-at-disney-world/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Heritage month festivities often include limited-time food and merchandise that disappears quickly. Visiting EPCOT's World Showcase or Disney Springs early in the celebration window typically ensures the best selection before items sell out."
+        }
+      },
+      {
+        "title": "Disney announces spring 2027 offers and returning festivals at Walt Disney World",
+        "body": "The resort opened bookings for next year's seasonal promotions, including discounted room rates and ticket packages. Popular after-hours events are also back on the calendar.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/walt-disney-world-spring-offers-and-returning-events/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Spring travel offers usually provide the year's best value outside of fall. Booking within the first week of availability often locks in lower prices before room inventory tightens at preferred resorts."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Disney Wonders shop opening next week at Disneyland Paris Village",
+        "body": "The new retail destination is part of the ongoing transformation of the shopping and dining district. It marks the near-completion of the North Block renovation phase.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/dlp/disney-village-at-disneyland-paris/"
+        }
+      },
+      {
+        "title": "Logo Mania merchandise collection features colorful attraction branding",
+        "body": "The new line showcases logos from popular rides, lands, and transportation across Disney parks. Six different designs celebrate guest favorites with bold graphics.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/products/new-disney-parks-merch-logo-mania/"
+        }
+      },
+      {
+        "title": "Crowned Athletics launches Halloween-themed apparel collections",
+        "body": "The athletic brand has released seasonal designs just in time for fall. The collection is now available at Disney retail locations and online.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/products/new-crowned-athletics-halloween-collections/"
+        }
+      },
+      {
+        "title": "Disney and SkinnyDip collaboration arrives at Disney Store Online",
+        "body": "The partnership features castle, bow, and princess designs on apparel and accessories. Products launched September 17 on the official Disney Store website.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/09/disney-skinnydip-collection-featuring-castles-bow-princesses-now-available-at-disney-store-online/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "Contemporary Resort monorail tote now on sale across Walt Disney World",
+        "body": "The beige bag shows the front of the iconic monorail on both sides and sells for 49.99 dollars. It captures the resort's signature transportation in a functional design that fits the park bag size policy.",
+        "parkSlug": null,
+        "ctaLabel": "Shop resort merchandise",
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Resort-specific merchandise often sells out faster than generic park items, especially at flagship hotels. Stopping by the Contemporary gift shop during morning checkout or evening hours usually means better stock and shorter lines than midday rushes."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "S4QMzRHEgA0",
+      "title": "Disney Alaska Cruise 2026 | My Full Cruise - Dog Sledding, Wild Bears & Glaciers: Disney Cruise Line",
+      "channel": "Paging Mr. Morrow",
+      "publishedAt": "2026-09-11T13:01:06Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/S4QMzRHEgA0/mqdefault.jpg",
+      "viewCount": 230896,
+      "url": "https://www.youtube.com/watch?v=S4QMzRHEgA0",
+      "summary": "Paging Mr. Morrow recaps a full Disney Wonder Alaska cruise with highlights including dog sledding excursions, wildlife sightings, and glacier viewing."
+    },
+    {
+      "videoId": "pSiSxXdiG3Y",
+      "title": "My FIRST Disney Alaska Cruise! Boarding The Disney Wonder & Glacier Day | Disney Cruise Line",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-09-11T15:57:10Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/pSiSxXdiG3Y/mqdefault.jpg",
+      "viewCount": 67304,
+      "url": "https://www.youtube.com/watch?v=pSiSxXdiG3Y",
+      "summary": "WrightDownMainStreet documents their first Alaska cruise aboard the Disney Wonder, covering embarkation and a glacier viewing day."
+    },
+    {
+      "videoId": "NXfMfdftskM",
+      "title": "🔴 Live: World of Color Wednesday Stream at Disneyland! - 09/16/26",
+      "channel": "Koda Bear the Explorer ",
+      "publishedAt": "2026-09-17T06:49:25Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/NXfMfdftskM/mqdefault.jpg",
+      "viewCount": 62027,
+      "url": "https://www.youtube.com/watch?v=NXfMfdftskM",
+      "summary": "Koda Bear the Explorer livestreams the World of Color nighttime spectacular from Disney California Adventure on Wednesday evening."
+    },
+    {
+      "videoId": "kR_iVjVnzFs",
+      "title": "BEST Food & Excursions on Your Alaska Cruise: Skagway, Ketchikan, Icy Strait point | Disney Cruise",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-09-14T15:58:38Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/kR_iVjVnzFs/mqdefault.jpg",
+      "viewCount": 42765,
+      "url": "https://www.youtube.com/watch?v=kR_iVjVnzFs",
+      "summary": "WrightDownMainStreet reviews top dining options and shore excursions at three Alaska cruise ports on a Disney sailing."
+    },
+    {
+      "videoId": "rtmszKDZziI",
+      "title": "🔴 LIVE: EPIC Happily Ever After Fireworks Full Show 4K — YOU Pick! | Magic Kingdom Disney World 2026",
+      "channel": "Fun to be Free",
+      "publishedAt": "2026-09-17T03:17:29Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/rtmszKDZziI/mqdefault.jpg",
+      "viewCount": 14468,
+      "url": "https://www.youtube.com/watch?v=rtmszKDZziI",
+      "summary": "Fun to be Free livestreams the Happily Ever After fireworks in 4K from Magic Kingdom with viewer participation."
+    },
+    {
+      "videoId": "lXT5Gv6IL_k",
+      "title": "🔴 LIVE – Disneyland  |  70th Tapestry (of Happiness) + 7 Rides!",
+      "channel": "Kevin Sue Magic",
+      "publishedAt": "2026-09-17T07:29:34Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/lXT5Gv6IL_k/mqdefault.jpg",
+      "viewCount": 7536,
+      "url": "https://www.youtube.com/watch?v=lXT5Gv6IL_k",
+      "summary": "Kevin Sue Magic livestreams from Disneyland, covering the 70th anniversary Tapestry of Happiness show and multiple attraction rides."
+    },
+    {
+      "videoId": "NiHdak5wRxk",
+      "title": "Happy Disneyland.#disney #disneyland #funnyvideo #funny #fyp",
+      "channel": "Spread Happiness",
+      "publishedAt": "2026-09-17T09:34:10Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/NiHdak5wRxk/mqdefault.jpg",
+      "viewCount": 5254,
+      "url": "https://www.youtube.com/watch?v=NiHdak5wRxk",
+      "summary": "Spread Happiness shares a short, lighthearted video from Disneyland tagged as funny content."
+    },
+    {
+      "videoId": "-jCpL4e83fI",
+      "title": "LIVE - Today at Disneyland - Wednesday  #live #livestream #disney #disneyparks #disneyland",
+      "channel": "FocalWorld (Jim)",
+      "publishedAt": "2026-09-17T07:02:43Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/-jCpL4e83fI/mqdefault.jpg",
+      "viewCount": 4615,
+      "url": "https://www.youtube.com/watch?v=-jCpL4e83fI",
+      "summary": "FocalWorld Jim livestreams a Wednesday morning visit to Disneyland, offering real-time park updates."
+    },
+    {
+      "videoId": "dZBGAMK_Hso",
+      "title": "Cewek Ini Berhasil Cabut Pedang Disney, Ternyata…#disney #disneyland #permainan #faktamenarik#shorts",
+      "channel": "faktamanja",
+      "publishedAt": "2026-09-17T11:00:10Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/dZBGAMK_Hso/mqdefault.jpg",
+      "viewCount": 4450,
+      "url": "https://www.youtube.com/watch?v=dZBGAMK_Hso",
+      "summary": "Faktamanja posts a short video about a visitor pulling the sword at a Disney park."
+    },
+    {
+      "videoId": "BiOBgQM0sWQ",
+      "title": "Be ready for Disney by 8am… 🎀🥐🇫🇷✨ #disney #disneyland #disneylandparis #avengers #themepark",
+      "channel": "Emilyy",
+      "publishedAt": "2026-09-17T06:20:14Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/BiOBgQM0sWQ/mqdefault.jpg",
+      "viewCount": 2987,
+      "url": "https://www.youtube.com/watch?v=BiOBgQM0sWQ",
+      "summary": "Emilyy shares a morning routine for arriving at Disneyland Paris by 8am opening."
+    }
+  ],
+  "updatedAt": "2026-09-17T15:23:03.956Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-09-17T15:23:03.956Z",
+    "tokens": {
+      "input": 11268,
+      "output": 5400,
+      "costUsd": 0.1148
+    }
+  }
+}
