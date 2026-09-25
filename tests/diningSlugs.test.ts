@@ -15,13 +15,14 @@ const entries = Object.entries(DINING_SLUGS);
 const bySlugPrefix = (prefix: string) => entries.filter(([, slug]) => slug.startsWith(prefix));
 
 describe("dining slug manifest", () => {
-  it("publishes exactly the 62-venue Priority 8 pilot", () => {
-    expect(entries).toHaveLength(62);
+  it("publishes exactly the 93-venue pilot", () => {
+    expect(entries).toHaveLength(93);
   });
 
-  it("covers EPCOT 42 and Hollywood Studios 20", () => {
+  it("covers EPCOT 42, Hollywood Studios 20, and Magic Kingdom 31", () => {
     expect(bySlugPrefix("ep-")).toHaveLength(42);
     expect(bySlugPrefix("hs-")).toHaveLength(20);
+    expect(bySlugPrefix("mk-")).toHaveLength(31);
   });
 
   it("assigns a unique slug to every venue", () => {
@@ -71,10 +72,10 @@ describe("dining slug manifest", () => {
   });
 
   it("returns undefined for an unpublished venue", () => {
-    expect(diningSlugFor("Magic Kingdom|Fantasyland|Be Our Guest Restaurant")).toBeUndefined();
+    expect(diningSlugFor("Animal Kingdom|Discovery Island|Flame Tree Barbecue")).toBeUndefined();
   });
 
-  it("declares the two pilot parks", () => {
-    expect([...DINING_PILOT_PARK_IDS]).toEqual(["epcot", "hollywood-studios"]);
+  it("declares the three pilot parks", () => {
+    expect([...DINING_PILOT_PARK_IDS]).toEqual(["epcot", "hollywood-studios", "magic-kingdom"]);
   });
 });

@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "sourceRepository": "tsomers13-ops/parkio",
-  "sourceCommit": "116ae4acca0a14ca2df3f2a73594a3333b7e5be4",
+  "sourceCommit": "1b36ccad3645ee1a972d59afeec822d88359ff9b",
   "sourceDirty": false,
-  "entityCount": 62,
+  "entityCount": 93,
   "venues": [
     {
       "canonicalId": "EPCOT|World Showcase|Akershus Royal Banquet Hall",
@@ -880,6 +880,331 @@
           "Lunch Box Tart"
         ]
       }
+    },
+    {
+      "canonicalId": "Magic Kingdom|Adventureland|Aloha Isle",
+      "slug": "mk-aloha-isle",
+      "parkId": "magic-kingdom",
+      "name": "Aloha Isle",
+      "land": "Adventureland",
+      "type": "snackStand"
+    },
+    {
+      "canonicalId": "Magic Kingdom|Tomorrowland|AstroFizz Hosted by Coca-Cola",
+      "slug": "mk-astrofizz",
+      "parkId": "magic-kingdom",
+      "name": "AstroFizz Hosted by Coca-Cola",
+      "land": "Tomorrowland",
+      "type": "snackStand"
+    },
+    {
+      "canonicalId": "Magic Kingdom|Tomorrowland|Auntie Gravity's Galactic Goodies",
+      "slug": "mk-auntie-gravitys",
+      "parkId": "magic-kingdom",
+      "name": "Auntie Gravity's Galactic Goodies",
+      "land": "Tomorrowland",
+      "type": "snackStand"
+    },
+    {
+      "canonicalId": "Magic Kingdom|Fantasyland|Be Our Guest Restaurant",
+      "slug": "mk-be-our-guest",
+      "parkId": "magic-kingdom",
+      "name": "Be Our Guest Restaurant",
+      "land": "Fantasyland",
+      "type": "tableService",
+      "editorial": {
+        "dietaryFlags": [
+          "Kids Menu",
+          "Vegetarian"
+        ],
+        "indoorSeating": true,
+        "kidFriendly": true,
+        "mobileOrderAvailable": false,
+        "parkioScore": 8,
+        "priceTier": 3,
+        "shortVerdict": "The most immersive dining room in MK. Book dinner or walk up for lunch.",
+        "signatureItems": [
+          "French Onion Soup",
+          "The Grey Stuff"
+        ]
+      }
+    },
+    {
+      "canonicalId": "Magic Kingdom|Adventureland|The Beak and Barrel",
+      "slug": "mk-beak-and-barrel",
+      "parkId": "magic-kingdom",
+      "name": "The Beak and Barrel",
+      "land": "Adventureland",
+      "type": "lounge"
+    },
+    {
+      "canonicalId": "Magic Kingdom|Main Street, U.S.A.|Casey's Corner",
+      "slug": "mk-caseys-corner",
+      "parkId": "magic-kingdom",
+      "name": "Casey's Corner",
+      "land": "Main Street, U.S.A.",
+      "type": "quickService"
+    },
+    {
+      "canonicalId": "Magic Kingdom|Fantasyland|Cheshire Café",
+      "slug": "mk-cheshire-cafe",
+      "parkId": "magic-kingdom",
+      "name": "Cheshire Café",
+      "land": "Fantasyland",
+      "type": "snackStand"
+    },
+    {
+      "canonicalId": "Magic Kingdom|Fantasyland|Cinderella's Royal Table",
+      "slug": "mk-cinderellas-royal-table",
+      "parkId": "magic-kingdom",
+      "name": "Cinderella's Royal Table",
+      "land": "Fantasyland",
+      "type": "tableService"
+    },
+    {
+      "canonicalId": "Magic Kingdom|Tomorrowland|Cosmic Ray's Starlight Café",
+      "slug": "mk-cosmic-rays",
+      "parkId": "magic-kingdom",
+      "name": "Cosmic Ray's Starlight Café",
+      "land": "Tomorrowland",
+      "type": "quickService",
+      "editorial": {
+        "dietaryFlags": [
+          "Kids Menu"
+        ],
+        "indoorSeating": true,
+        "kidFriendly": true,
+        "mobileOrderAvailable": true,
+        "parkioScore": 6,
+        "priceTier": 1,
+        "shortVerdict": "Largest QS in MK. Reliable backup when everywhere else is slammed.",
+        "signatureItems": [
+          "Rotisserie Chicken",
+          "Half Pound Burger"
+        ]
+      }
+    },
+    {
+      "canonicalId": "Magic Kingdom|Main Street, U.S.A.|The Crystal Palace",
+      "slug": "mk-crystal-palace",
+      "parkId": "magic-kingdom",
+      "name": "The Crystal Palace",
+      "land": "Main Street, U.S.A.",
+      "type": "tableService"
+    },
+    {
+      "canonicalId": "Magic Kingdom|Liberty Square|The Diamond Horseshoe",
+      "slug": "mk-diamond-horseshoe",
+      "parkId": "magic-kingdom",
+      "name": "The Diamond Horseshoe",
+      "land": "Liberty Square",
+      "type": "quickService"
+    },
+    {
+      "canonicalId": "Magic Kingdom|Tomorrowland|Energy Bytes",
+      "slug": "mk-energy-bytes",
+      "parkId": "magic-kingdom",
+      "name": "Energy Bytes",
+      "land": "Tomorrowland",
+      "type": "snackStand"
+    },
+    {
+      "canonicalId": "Magic Kingdom|Fantasyland|The Friar's Nook",
+      "slug": "mk-friars-nook",
+      "parkId": "magic-kingdom",
+      "name": "The Friar's Nook",
+      "land": "Fantasyland",
+      "type": "quickService"
+    },
+    {
+      "canonicalId": "Magic Kingdom|Fantasyland|Gaston's Tavern",
+      "slug": "mk-gastons-tavern",
+      "parkId": "magic-kingdom",
+      "name": "Gaston's Tavern",
+      "land": "Fantasyland",
+      "type": "snackStand",
+      "editorial": {
+        "dietaryFlags": [
+          "Vegetarian"
+        ],
+        "indoorSeating": false,
+        "kidFriendly": true,
+        "mobileOrderAvailable": false,
+        "parkioScore": 9,
+        "priceTier": 1,
+        "shortVerdict": "Best themed snack in MK. Cinnamon roll is unmissable.",
+        "signatureItems": [
+          "LeFou's Brew",
+          "Giant Cinnamon Roll"
+        ]
+      }
+    },
+    {
+      "canonicalId": "Magic Kingdom|Frontierland|Golden Oak Outpost",
+      "slug": "mk-golden-oak-outpost",
+      "parkId": "magic-kingdom",
+      "name": "Golden Oak Outpost",
+      "land": "Frontierland",
+      "type": "quickService"
+    },
+    {
+      "canonicalId": "Magic Kingdom|Tomorrowland|Joffrey's Coffee & Tea Company",
+      "slug": "mk-joffreys",
+      "parkId": "magic-kingdom",
+      "name": "Joffrey's Coffee & Tea Company",
+      "land": "Tomorrowland",
+      "type": "snackStand"
+    },
+    {
+      "canonicalId": "Magic Kingdom|Liberty Square|Liberty Tree Tavern",
+      "slug": "mk-liberty-tree-tavern",
+      "parkId": "magic-kingdom",
+      "name": "Liberty Tree Tavern",
+      "land": "Liberty Square",
+      "type": "tableService"
+    },
+    {
+      "canonicalId": "Magic Kingdom|Tomorrowland|The Lunching Pad",
+      "slug": "mk-lunching-pad",
+      "parkId": "magic-kingdom",
+      "name": "The Lunching Pad",
+      "land": "Tomorrowland",
+      "type": "snackStand"
+    },
+    {
+      "canonicalId": "Magic Kingdom|Main Street, U.S.A.|Main Street Bakery",
+      "slug": "mk-main-street-bakery",
+      "parkId": "magic-kingdom",
+      "name": "Main Street Bakery",
+      "land": "Main Street, U.S.A.",
+      "type": "quickService"
+    },
+    {
+      "canonicalId": "Magic Kingdom|Frontierland|Pecos Bill Tall Tale Inn and Cafe",
+      "slug": "mk-pecos-bill",
+      "parkId": "magic-kingdom",
+      "name": "Pecos Bill Tall Tale Inn and Cafe",
+      "land": "Frontierland",
+      "type": "quickService"
+    },
+    {
+      "canonicalId": "Magic Kingdom|Fantasyland|Pinocchio Village Haus",
+      "slug": "mk-pinocchio-village-haus",
+      "parkId": "magic-kingdom",
+      "name": "Pinocchio Village Haus",
+      "land": "Fantasyland",
+      "type": "quickService",
+      "editorial": {
+        "dietaryFlags": [
+          "Kids Menu",
+          "Vegetarian"
+        ],
+        "indoorSeating": true,
+        "kidFriendly": true,
+        "mobileOrderAvailable": true,
+        "parkioScore": 7,
+        "priceTier": 2,
+        "shortVerdict": "Watch riders emerge from it's a small world while you eat. Great location.",
+        "signatureItems": [
+          "Flatbread Pizza",
+          "Pasta Bolognese"
+        ]
+      }
+    },
+    {
+      "canonicalId": "Magic Kingdom|Main Street, U.S.A.|Plaza Ice Cream Parlor",
+      "slug": "mk-plaza-ice-cream-parlor",
+      "parkId": "magic-kingdom",
+      "name": "Plaza Ice Cream Parlor",
+      "land": "Main Street, U.S.A.",
+      "type": "snackStand"
+    },
+    {
+      "canonicalId": "Magic Kingdom|Main Street, U.S.A.|The Plaza Restaurant",
+      "slug": "mk-plaza-restaurant",
+      "parkId": "magic-kingdom",
+      "name": "The Plaza Restaurant",
+      "land": "Main Street, U.S.A.",
+      "type": "tableService"
+    },
+    {
+      "canonicalId": "Magic Kingdom|Fantasyland|Prince Eric's Village Market",
+      "slug": "mk-prince-erics-village-market",
+      "parkId": "magic-kingdom",
+      "name": "Prince Eric's Village Market",
+      "land": "Fantasyland",
+      "type": "snackStand"
+    },
+    {
+      "canonicalId": "Magic Kingdom|Adventureland|Jungle Navigation Co. LTD Skipper Canteen",
+      "slug": "mk-skipper-canteen",
+      "parkId": "magic-kingdom",
+      "name": "Jungle Navigation Co. LTD Skipper Canteen",
+      "land": "Adventureland",
+      "type": "tableService"
+    },
+    {
+      "canonicalId": "Magic Kingdom|Liberty Square|Sleepy Hollow",
+      "slug": "mk-sleepy-hollow",
+      "parkId": "magic-kingdom",
+      "name": "Sleepy Hollow",
+      "land": "Liberty Square",
+      "type": "snackStand",
+      "editorial": {
+        "dietaryFlags": [
+          "Vegetarian"
+        ],
+        "indoorSeating": false,
+        "kidFriendly": true,
+        "mobileOrderAvailable": false,
+        "parkioScore": 7,
+        "priceTier": 1,
+        "shortVerdict": "Grab a fresh funnel cake and eat by the waterfront. Peak afternoon snack.",
+        "signatureItems": [
+          "Funnel Cake",
+          "Waffle Sandwich"
+        ]
+      }
+    },
+    {
+      "canonicalId": "Magic Kingdom|Adventureland|Spring Roll Snack Cart",
+      "slug": "mk-spring-roll-cart",
+      "parkId": "magic-kingdom",
+      "name": "Spring Roll Snack Cart",
+      "land": "Adventureland",
+      "type": "snackStand"
+    },
+    {
+      "canonicalId": "Magic Kingdom|Fantasyland|Storybook Treats",
+      "slug": "mk-storybook-treats",
+      "parkId": "magic-kingdom",
+      "name": "Storybook Treats",
+      "land": "Fantasyland",
+      "type": "snackStand"
+    },
+    {
+      "canonicalId": "Magic Kingdom|Adventureland|Sunshine Tree Terrace",
+      "slug": "mk-sunshine-tree-terrace",
+      "parkId": "magic-kingdom",
+      "name": "Sunshine Tree Terrace",
+      "land": "Adventureland",
+      "type": "snackStand"
+    },
+    {
+      "canonicalId": "Magic Kingdom|Tomorrowland|Fireworks Dessert Parties at Tomorrowland Terrace Restaurant",
+      "slug": "mk-tomorrowland-terrace-dessert-party",
+      "parkId": "magic-kingdom",
+      "name": "Fireworks Dessert Parties at Tomorrowland Terrace Restaurant",
+      "land": "Tomorrowland",
+      "type": "tableService"
+    },
+    {
+      "canonicalId": "Magic Kingdom|Main Street, U.S.A.|Tony's Town Square Restaurant",
+      "slug": "mk-tonys-town-square",
+      "parkId": "magic-kingdom",
+      "name": "Tony's Town Square Restaurant",
+      "land": "Main Street, U.S.A.",
+      "type": "tableService"
     }
   ]
 }

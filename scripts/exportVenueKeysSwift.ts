@@ -103,7 +103,7 @@ ${rows}
 
 writeFileSync(output, swift, "utf8");
 
-// A JSON sidecar the iOS exporter cross-checks against the real 86 venues.
+// A JSON sidecar the iOS exporter cross-checks against the real venue catalog.
 // It lives under Tools/, outside the synchronized Parkio/ folder, so it is
 // never bundled into the shipping app.
 writeFileSync(

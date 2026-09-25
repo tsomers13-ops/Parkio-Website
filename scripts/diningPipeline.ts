@@ -31,6 +31,13 @@ export const DIETARY_FLAGS = [
   "Nut-Free", "Halal", "Kids Menu",
 ] as const;
 
+/** Required venueKey/slug prefix per pilot park — keeps park identity legible in the key itself. */
+const SLUG_PREFIX_BY_PARK_ID: Readonly<Record<string, string>> = {
+  "epcot": "ep-",
+  "hollywood-studios": "hs-",
+  "magic-kingdom": "mk-",
+};
+
 // ── Source (exporter) shapes ────────────────────────────────────────────────
 
 export interface SourceEditorial {
@@ -167,8 +174,8 @@ export function buildDataset(
 
   // 1. Manifest shape --------------------------------------------------------
   const manifestEntries = Object.entries(DINING_SLUGS);
-  if (manifestEntries.length !== 62) {
-    errors.push(`manifest has ${manifestEntries.length} entries, expected 62`);
+  if (manifestEntries.length !== 93) {
+    errors.push(`manifest has ${manifestEntries.length} entries, expected 93`);
   }
 
   const seenSlugs = new Map<string, string>();
@@ -188,8 +195,10 @@ export function buildDataset(
     if (!pilot.has(venue.parkId)) {
       errors.push(`manifest: '${canonicalId}' is in ${venue.parkId}, outside the pilot`);
     }
-    const expectedPrefix = venue.parkId === "epcot" ? "ep-" : "hs-";
-    if (!slug.startsWith(expectedPrefix)) {
+    const expectedPrefix = SLUG_PREFIX_BY_PARK_ID[venue.parkId];
+    if (!expectedPrefix) {
+      errors.push(`manifest: '${canonicalId}' has no known slug prefix for park ${venue.parkId}`);
+    } else if (!slug.startsWith(expectedPrefix)) {
       errors.push(`manifest: slug '${slug}' prefix does not match park ${venue.parkId}`);
     }
   }
