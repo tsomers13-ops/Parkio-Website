@@ -42,6 +42,8 @@ on:
         required: true
       CLOUDFLARE_ACCOUNT_ID:
         required: true
+      NEXT_PUBLIC_CARTO_API_KEY:
+        required: true
   workflow_dispatch:
 
 # One Production deploy at a time. cancel-in-progress means a newer main
