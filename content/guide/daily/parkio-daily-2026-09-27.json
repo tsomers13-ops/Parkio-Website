@@ -2,60 +2,60 @@
   "title": "Parkio Daily for September 27, 2026",
   "slug": "parkio-daily-2026-09-27",
   "date": "2026-09-27",
-  "teaser": "Animal Kingdom drops rope-drop holding areas today; Vacation Fun still closed despite scheduled reopening at Hollywood Studios.",
+  "teaser": "Railroad closes tomorrow for a month; Bluey meet-and-greet now open at Disneyland; Turf Club reopens Tuesday at Saratoga Springs.",
   "rightNow": {
     "headline": "Best rides right now",
     "rides": [
       {
-        "name": "Avatar Flight of Passage",
-        "parkSlug": "animal-kingdom",
-        "note": "New entry procedures mean shorter waits early morning"
-      },
-      {
         "name": "Test Track",
         "parkSlug": "epcot",
-        "note": "Food & Wine crowds concentrate at booths, not rides"
+        "note": "Food & Wine crowds usually gather mid-morning; early entry keeps waits low"
       },
       {
-        "name": "Big Thunder Mountain",
-        "parkSlug": "magic-kingdom",
-        "note": "Diamond Horseshoe pop-up pulls guests to Frontierland next week"
+        "name": "Flight of Passage",
+        "parkSlug": "animal-kingdom",
+        "note": "Sunday mornings tend to offer the shortest waits of the week"
+      },
+      {
+        "name": "Rise of the Resistance",
+        "parkSlug": "hollywood-studios",
+        "note": "Vacation Fun reopened yesterday; Studios likely sees lighter crowds today"
       }
     ]
   },
   "sections": {
     "breaking": [
       {
-        "title": "Vacation Fun remains closed despite scheduled reopening",
-        "body": "The Mickey and Minnie animated short at Hollywood Studios did not reopen today as planned after its 49-day closure for Annual Passholder magnet distribution. No new reopening date has been announced.",
-        "parkSlug": "hollywood-studios",
+        "title": "Walt Disney World Railroad closes tomorrow for month-long refurbishment",
+        "body": "The iconic steam train around Magic Kingdom will shut down September 28 and remain closed for more than a month while Disney performs scheduled maintenance.",
+        "parkSlug": "magic-kingdom",
         "source": {
-          "label": "WDWNT",
-          "url": "https://wdwnt.com/2026/09/vacation-fun-fails-to-reopen-as-scheduled-at-disneys-hollywood-studios-after-passholder-magnet-distribution/"
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/09/disney-world-railroad-shuts-down-tomorrow-for-month-long-magic-kingdom-closure-bwb1/"
         },
         "parkioInsight": {
           "category": "avoid-risk",
-          "text": "Guests counting on this air-conditioned rest spot may want to plan alternate breaks. The Animation Courtyard typically offers quieter seating areas nearby."
+          "text": "The Railroad often serves as a mid-day break from crowds and a quick transport to Frontierland. Plan walking routes in advance or use the ferry if you need a rest from Main Street foot traffic."
         }
       },
       {
-        "title": "Animal Kingdom eliminates rope-drop holding areas",
-        "body": "Starting today, guests may enter most lands before official park opening rather than waiting in designated holding zones. The change aims to smooth morning entry flow.",
-        "parkSlug": "animal-kingdom",
+        "title": "Park reservations sold out yesterday for Magic Kingdom, EPCOT, and Hollywood Studios",
+        "body": "Annual Passholders hit capacity limits on Saturday September 26 across three of the four Orlando parks, marking an unusually busy late-September weekend.",
+        "parkSlug": "magic-kingdom",
         "source": {
-          "label": "WDWNT",
-          "url": "https://wdwnt.com/2026/09/holding-areas-removed-as-disneys-animal-kingdom-changes-rope-drop-procedures/"
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-world-runs-out-of-park-reservations-on-red-flag-crowd-day/"
         },
         "parkioInsight": {
-          "category": "timing-advantage",
-          "text": "Arriving 30 minutes before opening now lets you walk deeper into the park. Head straight to Pandora or Asia to claim a position near your first attraction before the official start."
+          "category": "crowd-impact",
+          "text": "Today may see lingering overflow crowds, especially at Magic Kingdom and EPCOT. Rope-drop and late evening hours usually offer the best window for popular attractions when weekend crowds carry over."
         }
       }
     ],
     "bignews": [
       {
-        "title": "Bluey and Bingo debut at Disneyland Resort",
-        "body": "The Australian blue heeler puppies are now meeting guests at Disneyland following Disney's global partnership with BBC Studios and Ludo Studio. Character interactions began this weekend.",
+        "title": "Bluey and Bingo character meet-and-greet debuts at Disneyland Resort",
+        "body": "The blue heeler pups are now greeting guests in person as part of a partnership between Disney Experiences and BBC Studios. The appearance marks Bluey's first physical presence at a Disney park.",
         "parkSlug": "disneyland",
         "source": {
           "label": "Disney Parks Blog",
@@ -63,66 +63,24 @@
         },
         "parkioInsight": {
           "category": "opportunity",
-          "text": "Character meet lines for new arrivals often grow by mid-morning. Visiting within the first two hours of park opening tends to yield shorter waits."
+          "text": "Character meet queues for new debuts tend to peak mid-morning through early afternoon. Arriving at park open or after 5 p.m. often cuts wait times significantly."
         }
       },
       {
         "title": "Turf Club Bar and Grill reopens September 30 at Saratoga Springs",
-        "body": "The restaurant returns with a menu inspired by turn-of-the-century Upstate New York racing culture. Preview details show updated entrees and bar offerings.",
-        "parkSlug": null,
+        "body": "The resort restaurant returns with a menu inspired by turn-of-the-century Upstate New York racing culture after an extended closure.",
         "source": {
           "label": "Disney Parks Blog",
           "url": "https://disneyparksblog.com/wdw/turf-club-reopening/"
         },
         "parkioInsight": {
           "category": "opportunity",
-          "text": "Newly reopened dining locations typically accept walk-ins more easily in the first few days. Reservations are likely advisable by mid-October."
+          "text": "Reopening weeks usually see lighter reservation competition than flagship resort dining. Checking availability Tuesday morning may yield same-day or next-day tables."
         }
       },
       {
-        "title": "Silverback gorilla Bakari joining female troop within weeks",
-        "body": "Disney confirmed the 21-year-old male will soon be introduced to three female gorillas in public view at Animal Kingdom. Barriers separating the group are scheduled for removal shortly.",
-        "parkSlug": "animal-kingdom",
-        "source": {
-          "label": "WDWNT",
-          "url": "https://wdwnt.com/2026/09/silverback-gorilla-bakari-weeks-away-from-joining-female-troop-at-disneys-animal-kingdom/"
-        },
-        "parkioInsight": {
-          "category": "opportunity",
-          "text": "The Gorilla Falls trail may see heavier foot traffic once the integration happens. Morning visits usually offer clearer viewing windows before midday crowds."
-        }
-      },
-      {
-        "title": "Diamond Horseshoe pop-up restaurant opens October 4",
-        "body": "Magic Kingdom's Frontierland venue will host a new limited-time dining experience starting next week. Menu and reservation details are expected soon.",
-        "parkSlug": "magic-kingdom",
-        "source": {
-          "label": "Disney Food Blog",
-          "url": "https://www.disneyfoodblog.com/2026/09/27/a-new-pop-up-restaurant-is-opening-in-magic-kingdom-in-one-week/"
-        },
-        "parkioInsight": {
-          "category": "crowd-impact",
-          "text": "Frontierland dining tends to draw longer lines during lunch hours. Booking early slots or late afternoon windows often improves seating availability."
-        }
-      }
-    ],
-    "topstories": [
-      {
-        "title": "Tropical Americas archway wrapped in construction mesh",
-        "body": "The entrance structure for Animal Kingdom's upcoming land is now covered in scaffolding and protective mesh as work progresses. The archway marks the gateway to the Encanto and Indiana Jones-themed areas.",
-        "parkSlug": "animal-kingdom",
-        "source": {
-          "label": "WDWNT",
-          "url": "https://wdwnt.com/2026/09/tropical-americas-archway-takes-next-step-in-construction-at-animal-kingdom-wrapped-in-mesh/"
-        },
-        "parkioInsight": {
-          "category": "avoid-risk",
-          "text": "Construction noise and equipment may be noticeable near DinoLand during midday hours. Scheduling quieter experiences like animal trails earlier in the day tends to reduce disruption."
-        }
-      },
-      {
-        "title": "Carousel of Progress preview on display at Hollywood Studios",
-        "body": "Walt Disney Presents now showcases costume pieces and updated diorama elements from the Magic Kingdom attraction's ongoing reimagination. The exhibit sits beside the Ariel meet-and-greet.",
+        "title": "Carousel of Progress preview exhibit opens at Hollywood Studios",
+        "body": "Walt Disney Imagineering has installed costume pieces and a new diorama from the attraction's upcoming overhaul inside the Walt Disney Presents gallery, visible now ahead of the Tomorrowland reopening.",
         "parkSlug": "hollywood-studios",
         "source": {
           "label": "Inside the Magic",
@@ -130,100 +88,134 @@
         },
         "parkioInsight": {
           "category": "opportunity",
-          "text": "Walt Disney Presents typically sees lighter traffic after 3pm. A late-afternoon stop lets you view the preview without competing with morning touring crowds."
+          "text": "The gallery sits near the Animation Courtyard and tends to stay quiet even on busy park days. A quick stop fits naturally between Lightning Lane return windows or meal reservations."
         }
-      },
+      }
+    ],
+    "topstories": [
       {
-        "title": "Halloween food offerings now available across Walt Disney World",
-        "body": "Seasonal treats including the Boneyard dessert and other themed items are on menus through October 31. The culinary team has introduced multiple new recipes for the holiday season.",
-        "parkSlug": null,
+        "title": "Halloween food offerings now available across Walt Disney World through October 31",
+        "body": "Themed treats including the Boneyard Sundae and other seasonal snacks have launched parkwide as part of the resort's Halloween celebration.",
         "source": {
           "label": "Disney Parks Blog",
           "url": "https://disneyparksblog.com/wdw/disney-eats-foodie-guide-to-halloween-at-walt-disney-world-resort/"
         },
         "parkioInsight": {
           "category": "opportunity",
-          "text": "Limited-time menu items often sell out by dinner at quick-service locations. Ordering during early lunch windows usually improves availability."
+          "text": "Limited-time Halloween items often sell out at high-traffic quick-service spots by mid-afternoon. Mobile ordering before 11 a.m. usually secures popular options before inventory runs low."
         }
       },
       {
-        "title": "Disney files patent for AI ride-monitoring system",
-        "body": "A new filing describes technology that would detect mechanical issues on attractions using artificial intelligence rather than relying solely on cast member observation. The system aims to catch problems earlier.",
-        "parkSlug": null,
-        "source": {
-          "label": "Disney Food Blog",
-          "url": "https://www.disneyfoodblog.com/2026/09/27/disney-world-just-filed-a-new-patent-to-fix-one-of-the-biggest-park-problems/"
-        },
-        "parkioInsight": {
-          "category": "timing-advantage",
-          "text": "If implemented, this could reduce unexpected mid-day closures. Checking the app for ride status right before queuing remains the best way to avoid downtime surprises."
-        }
-      },
-      {
-        "title": "Alien Swirling Saucers debuts Taylor Swift soundtrack overlay",
-        "body": "Hollywood Studios renamed the Toy Story Land spinner Lilypad's Jams on September 25 with a new audio track featuring Swift's music. The temporary retheme replaces the original alien theme.",
+        "title": "Vacation Fun short film with Mickey and Minnie reopens after 49-day closure",
+        "body": "The animated attraction at Hollywood Studios returned this week following a nearly two-month refurbishment, offering guests a quiet air-conditioned break once again.",
         "parkSlug": "hollywood-studios",
         "source": {
           "label": "Inside the Magic",
-          "url": "https://insidethemagic.net/2026/09/disney-re-brands-toy-story-attraction-replaces-with-legend-taylor-swift-ad1/"
-        },
-        "parkioInsight": {
-          "category": "crowd-impact",
-          "text": "Overlays on smaller attractions often draw curious guests early. Wait times for Swirling Saucers may spike during morning hours; late afternoon usually sees shorter queues."
-        }
-      },
-      {
-        "title": "Brightline continues Florida service despite bankruptcy filing",
-        "body": "The high-speed rail connecting Orlando Airport to Miami is restructuring debt in Chapter 11 but trains remain operational. Plans for a future Walt Disney World station are under review.",
-        "parkSlug": null,
-        "source": {
-          "label": "Disney Tourist Blog",
-          "url": "https://www.disneytouristblog.com/brightlines-bankruptcy-wont-stop-trains-in-florida-but-what-about-disney-worlds-future-station/"
+          "url": "https://insidethemagic.net/2026/09/disney-world-ends-49-day-closure-mickey-and-minnie-finally-return-ad1/"
         },
         "parkioInsight": {
           "category": "timing-advantage",
-          "text": "Guests planning airport transfers via Brightline can continue booking. Monitoring official updates may reveal changes to the Disney station timeline."
+          "text": "This walk-through theater rarely sees a wait and works well as a midday cooldown spot when outdoor queue lines heat up. Ideal between 1 and 4 p.m. when park temperatures peak."
+        }
+      },
+      {
+        "title": "Nineteen Disney World restaurants updated menus this week",
+        "body": "Chefs de France, Wine Bar George, and 17 other dining locations across the resort rolled out revised dishes and pricing adjustments in the past seven days.",
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/09/27/chefs-de-france-wine-bar-george-and-17-more-disney-world-restaurants-changed-this-week/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Menu updates often introduce limited-availability specials before they appear on the app. Asking your server about new items at the table sometimes uncovers options not yet listed online."
+        }
+      },
+      {
+        "title": "Construction visible on new backstage building at Magic Kingdom raises parade expansion questions",
+        "body": "A large structure taking shape behind the scenes has prompted speculation that Disney may be preparing to expand parade operations or storage capacity at the park.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/09/report-disney-planning-major-parade-expansions-at-magic-kingdom-amid-crowd-issues-ab1/"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "Parade viewing spots along Main Street and Frontierland typically fill 30 to 45 minutes before showtime. Staking a curb position early remains the most reliable way to secure a front-row view during busy weekends."
+        }
+      },
+      {
+        "title": "Disney files patent for AI system to detect ride mechanical failures",
+        "body": "The proposed technology would monitor attraction sounds and performance data to flag potential breakdowns before they become visible, reducing unplanned downtime.",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/09/disney-develops-ai-watchdog-for-theme-park-ride-failures-ad1/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Rides that reopen after brief technical closures often see a 10- to 15-minute window of lighter crowds as guests migrate elsewhere. Checking the app for recent reopenings can sometimes yield walk-on opportunities."
+        }
+      },
+      {
+        "title": "Disney confirms Annual Passholder park reservation system remains in effect indefinitely",
+        "body": "The requirement for APs to book park reservations in advance will continue with no announced end date, despite earlier speculation about a phaseout.",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/09/walt-disney-world-confirms-controversial-policy-return-in-effect-indefinitely-ab1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Holiday weekends and special-event days tend to hit reservation caps earliest. Booking park days as soon as your travel dates are firm usually prevents last-minute availability issues."
+        }
+      },
+      {
+        "title": "Walt Disney World announces new UCF Athletics helmet sponsorship partnership",
+        "body": "The resort has debuted a football helmet branding deal with the University of Central Florida, expanding its local sports marketing presence.",
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/09/27/disney-world-just-made-another-football-partnership-and-were-here-for-it/"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "UCF home game weekends sometimes drive higher hotel occupancy and park attendance from visiting fans. Checking the university's schedule before booking can help avoid unexpected crowd spikes."
         }
       }
     ],
     "icymi": [
       {
-        "title": "Park reservations sold out September 26 for passholders",
-        "body": "Magic Kingdom, EPCOT, and Hollywood Studios hit capacity for Annual Passholders on Saturday. The weekend was flagged as a high-crowd period.",
-        "parkSlug": null,
+        "title": "EPCOT Food and Wine Festival continues through mid-November",
+        "body": "The annual fall event is in full swing with dozens of global marketplaces offering seasonal dishes and beverages across World Showcase and beyond.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "Paging Mr. Morrow (YouTube)",
+          "url": "https://www.youtube.com/watch?v=LmPxnCAQa5g"
+        }
+      },
+      {
+        "title": "Hurly Burly opens at Disney's Boardwalk with new food and entertainment",
+        "body": "The latest addition to the Boardwalk resort lineup features fresh menu items and live performances aimed at evening guests.",
+        "source": {
+          "label": "WrightDownMainStreet (YouTube)",
+          "url": "https://www.youtube.com/watch?v=S2CMAmsW3yQ"
+        }
+      },
+      {
+        "title": "Mickey's Very Merry Christmas Party ticket sales underway for November and December dates",
+        "body": "Magic Kingdom's separately ticketed holiday event returns this year with parade, fireworks, and exclusive character meet-and-greets.",
+        "parkSlug": "magic-kingdom",
         "source": {
           "label": "Disney Tourist Blog",
-          "url": "https://www.disneytouristblog.com/disney-world-runs-out-of-park-reservations-on-red-flag-crowd-day/"
-        }
-      },
-      {
-        "title": "Pressed penny machines added at Disney Springs",
-        "body": "New designs featuring Mickey, Stitch, Pooh, and other characters are available at Disney's Pin Traders. Eight designs cost five dollars or one dollar each.",
-        "parkSlug": null,
-        "source": {
-          "label": "WDWNT",
-          "url": "https://wdwnt.com/2026/09/pressed-pennies-featuring-mickey-and-friends-stitch-pooh-and-more-at-disney-springs/"
-        }
-      },
-      {
-        "title": "Jon Watts tapped to direct new Star Wars trilogy",
-        "body": "The Spider-Man filmmaker and Skeleton Crew creator will helm the first film in Lucasfilm's upcoming trilogy. Production timelines have not been announced.",
-        "parkSlug": null,
-        "source": {
-          "label": "Inside the Magic",
-          "url": "https://insidethemagic.net/2026/09/spiderman-director-jon-watts-to-helm-first-film-in-new-star-wars-trilogy-for-lucasfilm-and-disney-rl1/"
+          "url": "https://www.disneytouristblog.com/mickeys-very-merry-christmas-party-review-tips/"
         }
       }
     ],
     "spotlight": [
       {
-        "title": "EPCOT Food and Wine Festival offers 15 tasting portions under 100 dollars",
-        "body": "Recent sampling tours show a wide range of global dishes available at booths throughout World Showcase. Festival runs through mid-November with rotating menus and live entertainment.",
-        "parkSlug": "epcot",
-        "ctaLabel": "Browse festival menus",
+        "title": "Expect price increases across tickets, parking, and Annual Passes in early October",
+        "body": "Walt Disney World and Disneyland historically raise rates at the start of the new fiscal year, and that window opens in the coming weeks. Past years have seen simultaneous adjustments to admission, tours, and premium add-ons.",
+        "ctaLabel": "Review current pricing",
         "parkioInsight": {
           "category": "timing-advantage",
-          "text": "Booth lines tend to shorten after 7pm when many guests shift to dinner reservations. Visiting popular kiosks during that window often cuts wait times in half."
+          "text": "Purchasing tickets or renewing an Annual Pass before the fiscal year rollover often locks in current pricing. Buying within the next week may save between 5 and 10 percent compared to post-increase rates."
         }
       }
     ]
@@ -235,9 +227,9 @@
       "channel": "Paging Mr. Morrow",
       "publishedAt": "2026-09-25T14:57:08Z",
       "thumbnailUrl": "https://i.ytimg.com/vi/LmPxnCAQa5g/mqdefault.jpg",
-      "viewCount": 105582,
+      "viewCount": 112877,
       "url": "https://www.youtube.com/watch?v=LmPxnCAQa5g",
-      "summary": "Paging Mr. Morrow samples 15 festival offerings at EPCOT for under one hundred dollars and reviews the updated menu items."
+      "summary": "Paging Mr. Morrow samples 15 different menu items from the 2026 EPCOT Food and Wine Festival while staying under a $100 budget."
     },
     {
       "videoId": "3AD0SNIHgoM",
@@ -245,9 +237,19 @@
       "channel": "WrightDownMainStreet",
       "publishedAt": "2026-09-21T16:00:01Z",
       "thumbnailUrl": "https://i.ytimg.com/vi/3AD0SNIHgoM/mqdefault.jpg",
-      "viewCount": 68057,
+      "viewCount": 68837,
       "url": "https://www.youtube.com/watch?v=3AD0SNIHgoM",
-      "summary": "WrightDownMainStreet explores the updated menu at Cake Bake Shop and evaluates whether the offerings justify the price."
+      "summary": "WrightDownMainStreet reviews the updated menu at the Cake Bake Shop and evaluates whether the offerings justify the price."
+    },
+    {
+      "videoId": "kXMAiP3lFQk",
+      "title": "🔴 Live: Disney Halloween Festival at Disneyland Paris! Mickey's Halloween Celebration - 09/27/26",
+      "channel": "Koda Bear the Explorer ",
+      "publishedAt": "2026-09-27T22:29:22Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/kXMAiP3lFQk/mqdefault.jpg",
+      "viewCount": 45143,
+      "url": "https://www.youtube.com/watch?v=kXMAiP3lFQk",
+      "summary": "Koda Bear the Explorer livestreams Mickey's Halloween Celebration at Disneyland Paris on September 27, 2026."
     },
     {
       "videoId": "S2CMAmsW3yQ",
@@ -255,82 +257,72 @@
       "channel": "WrightDownMainStreet",
       "publishedAt": "2026-09-26T15:00:00Z",
       "thumbnailUrl": "https://i.ytimg.com/vi/S2CMAmsW3yQ/mqdefault.jpg",
-      "viewCount": 38997,
+      "viewCount": 43792,
       "url": "https://www.youtube.com/watch?v=S2CMAmsW3yQ",
-      "summary": "An early tour of Hurly Burly at Disney's Boardwalk showcasing the venue's food, drink menu, and entertainment options."
+      "summary": "WrightDownMainStreet offers a first look at the newly opened Hurly Burly venue at Disney's Boardwalk, showcasing the food, drink, and entertainment lineup."
     },
     {
-      "videoId": "Sj26YDWZ-XU",
-      "title": "Las cosas más absurdas que hicieron en Disneyland",
-      "channel": "garczin",
-      "publishedAt": "2026-09-27T15:30:56Z",
-      "thumbnailUrl": "https://i.ytimg.com/vi/Sj26YDWZ-XU/mqdefault.jpg",
-      "viewCount": 16947,
-      "url": "https://www.youtube.com/watch?v=Sj26YDWZ-XU",
-      "summary": "Spanish-language video highlighting unusual or memorable moments from a Disneyland visit."
-    },
-    {
-      "videoId": "dSG-tDewMBM",
-      "title": "Walt Disney World Vlog | Day 4 | Hollywood Studios & Disney Springs | August 2026 | Adam Hattan",
-      "channel": "Adam Hattan",
-      "publishedAt": "2026-09-27T16:00:33Z",
-      "thumbnailUrl": "https://i.ytimg.com/vi/dSG-tDewMBM/mqdefault.jpg",
-      "viewCount": 5302,
-      "url": "https://www.youtube.com/watch?v=dSG-tDewMBM",
-      "summary": "Day four of Adam Hattan's Walt Disney World vacation covering Hollywood Studios and Disney Springs."
-    },
-    {
-      "videoId": "qROeIgzaKCI",
-      "title": "Acessórios Mais Comprados na Disney! 😳 #disney #disneyland #shorts",
+      "videoId": "sbYCvt1EByw",
+      "title": "Regras da Disney que Fazem Sentido! 😳 #disney #disneyland #shorts",
       "channel": "Lipe Shorts",
-      "publishedAt": "2026-09-27T16:18:32Z",
-      "thumbnailUrl": "https://i.ytimg.com/vi/qROeIgzaKCI/mqdefault.jpg",
-      "viewCount": 4093,
-      "url": "https://www.youtube.com/watch?v=qROeIgzaKCI",
-      "summary": "A short video in Portuguese highlighting popular Disney merchandise and accessories."
+      "publishedAt": "2026-09-27T20:28:07Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/sbYCvt1EByw/mqdefault.jpg",
+      "viewCount": 20392,
+      "url": "https://www.youtube.com/watch?v=sbYCvt1EByw",
+      "summary": "Lipe Shorts highlights Disney park rules that make sense in a short-form video."
     },
     {
-      "videoId": "l0Qdh77eLcU",
-      "title": "0,01% des fans Disneyland connaissent ça ! #disney #disneyland #disneylandparis",
-      "channel": "Animaux de la rue",
-      "publishedAt": "2026-09-27T15:09:53Z",
-      "thumbnailUrl": "https://i.ytimg.com/vi/l0Qdh77eLcU/mqdefault.jpg",
-      "viewCount": 1300,
-      "url": "https://www.youtube.com/watch?v=l0Qdh77eLcU",
-      "summary": "French-language short showcasing a little-known fact or feature at Disneyland Paris."
+      "videoId": "IrY2A1Cajj4",
+      "title": "🔴 LIVE: Magic Kingdom Morning Walk at Disney World | Main Street, Cinderella Castle & Sunday Magic",
+      "channel": "The Disney With Sean Show",
+      "publishedAt": "2026-09-27T16:47:08Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/IrY2A1Cajj4/mqdefault.jpg",
+      "viewCount": 17868,
+      "url": "https://www.youtube.com/watch?v=IrY2A1Cajj4",
+      "summary": "The Disney With Sean Show livestreams a Sunday morning walk through Magic Kingdom featuring Main Street and Cinderella Castle."
     },
     {
-      "videoId": "M1ucIzMGaP8",
-      "title": "Disney Has a Secret Button for This Sword",
-      "channel": "Oddly Entertaining ",
-      "publishedAt": "2026-09-27T16:14:21Z",
-      "thumbnailUrl": "https://i.ytimg.com/vi/M1ucIzMGaP8/mqdefault.jpg",
-      "viewCount": 1223,
-      "url": "https://www.youtube.com/watch?v=M1ucIzMGaP8",
-      "summary": "Oddly Entertaining reveals a hidden feature related to a sword prop at a Disney park."
+      "videoId": "pfFVzrEN6TM",
+      "title": "🔴 Live: Disney's Magic Kingdom  - Walt Disney World 09.27.2026",
+      "channel": "Disney Parks with Love - Janel",
+      "publishedAt": "2026-09-27T22:21:43Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/pfFVzrEN6TM/mqdefault.jpg",
+      "viewCount": 15503,
+      "url": "https://www.youtube.com/watch?v=pfFVzrEN6TM",
+      "summary": "Disney Parks with Love livestreams from Magic Kingdom on the evening of September 27, 2026."
     },
     {
-      "videoId": "ewb04T7LnoY",
-      "title": "MICKEY MINNIE #disney #halloween #new #disneyland #paris #love #mickeymouse #fyp #viral #video",
-      "channel": "MJDANSPARIS CHANNEL",
-      "publishedAt": "2026-09-27T15:58:33Z",
-      "thumbnailUrl": "https://i.ytimg.com/vi/ewb04T7LnoY/mqdefault.jpg",
-      "viewCount": 1037,
-      "url": "https://www.youtube.com/watch?v=ewb04T7LnoY",
-      "summary": "Halloween-themed short featuring Mickey and Minnie at Disneyland Paris."
+      "videoId": "UW304MBRKlU",
+      "title": "that one disney adult talking about peter pan",
+      "channel": "ButterFaces",
+      "publishedAt": "2026-09-27T18:45:06Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/UW304MBRKlU/mqdefault.jpg",
+      "viewCount": 14726,
+      "url": "https://www.youtube.com/watch?v=UW304MBRKlU",
+      "summary": "ButterFaces shares commentary about Peter Pan from a Disney adult perspective."
     },
     {
-      "videoId": "Dfz1ugFOOWs",
-      "title": "❄️ FROZEN at Disneyland Paris! 🏰✨ | Disney Parade 4K #Shorts #4k #harrypotter #gopro #disney #travel",
-      "channel": "WanderlustFamilyAttraction ",
-      "publishedAt": "2026-09-27T13:59:20Z",
-      "thumbnailUrl": "https://i.ytimg.com/vi/Dfz1ugFOOWs/mqdefault.jpg",
-      "viewCount": 1028,
-      "url": "https://www.youtube.com/watch?v=Dfz1ugFOOWs",
-      "summary": "4K footage of a Frozen-themed parade at Disneyland Paris captured by WanderlustFamilyAttraction."
+      "videoId": "2EwJBD7L5kI",
+      "title": "🔴LIVE: Disney's Animal Kingdom | Disney World Livestream | 9/27/2026",
+      "channel": "DIS Our Dream",
+      "publishedAt": "2026-09-27T16:56:01Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/2EwJBD7L5kI/mqdefault.jpg",
+      "viewCount": 7218,
+      "url": "https://www.youtube.com/watch?v=2EwJBD7L5kI",
+      "summary": "DIS Our Dream livestreams from Animal Kingdom on September 27, 2026."
+    },
+    {
+      "videoId": "ambsmTT3h_A",
+      "title": "The End Of Nightlife At Walt Disney World…",
+      "channel": "JoJo's World",
+      "publishedAt": "2026-09-27T18:37:09Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/ambsmTT3h_A/mqdefault.jpg",
+      "viewCount": 3219,
+      "url": "https://www.youtube.com/watch?v=ambsmTT3h_A",
+      "summary": "JoJo's World discusses recent changes to nightlife offerings at Walt Disney World."
     }
   ],
-  "updatedAt": "2026-09-27T18:16:35.305Z",
+  "updatedAt": "2026-09-27T23:33:33.272Z",
   "type": "daily-briefing",
   "meta": {
     "aiGenerated": true,
@@ -339,11 +331,11 @@
       "themeparks.wiki destinations",
       "YouTube Data API v3 (top 10 last 48h)"
     ],
-    "generatedAt": "2026-09-27T18:16:35.305Z",
+    "generatedAt": "2026-09-27T23:33:33.272Z",
     "tokens": {
-      "input": 11356,
-      "output": 5337,
-      "costUsd": 0.1141
+      "input": 9813,
+      "output": 5259,
+      "costUsd": 0.1083
     }
   }
 }

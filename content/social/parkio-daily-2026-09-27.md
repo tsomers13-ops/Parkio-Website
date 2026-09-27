@@ -5,23 +5,23 @@ _Generated from the daily briefing. Zero AI cost — just reformatted. Paste-and
 ## 1. Short / Reel / TikTok (post to all three)
 
 ```
-HOOK (0–2s): Ride it before it's gone — Vacation Fun remains closed despite scheduled reopening
-BEAT (3–20s): The Mickey and Minnie animated short at Hollywood Studios did not reopen today as planned after its 49-day closure for Annual Passholder magnet distribution. No new reopening date has been announced.
-TIP (insert ~15s): Guests counting on this air-conditioned rest spot may want to plan alternate breaks. The Animation Courtyard typically offers quieter seating areas nearby.
+HOOK (0–2s): This is coming to Disney — Carousel of Progress preview exhibit opens at Hollywood Studios
+BEAT (3–20s): Walt Disney Imagineering has installed costume pieces and a new diorama from the attraction's upcoming overhaul inside the Walt Disney Presents gallery, visible now ahead of the Tomorrowland reopening.
+TIP (insert ~15s): The gallery sits near the Animation Courtyard and tends to stay quiet even on busy park days. A quick stop fits naturally between Lightning Lane return…
 PAYOFF (20–30s): We track every closure, opening, and change so you never miss it — Parkio Daily, free at parkio.info.
-ON-SCREEN TEXT: Vacation Fun remains closed despite scheduled reopening  |  parkio.info
-CAPTION: Vacation Fun remains closed despite scheduled reopening #DisneyWorld #DisneyParks #Disney #ParkioDaily #HollywoodStudios
+ON-SCREEN TEXT: Carousel of Progress preview exhibit opens at Hollywood…  |  parkio.info
+CAPTION: Carousel of Progress preview exhibit opens at Hollywood Studios #DisneyWorld #DisneyParks #Disney #ParkioDaily #HollywoodStudios
 ```
 
 ## 2. X / Threads
 
 ```
 🏰 Today at Disney:
-• Vacation Fun remains closed despite scheduled reopening
-• Animal Kingdom eliminates rope-drop holding areas
-• Pressed penny machines added at Disney Springs
+• Carousel of Progress preview exhibit opens at Hollywood Studios
+• Vacation Fun short film with Mickey and Minnie reopens after 49-day…
+• Walt Disney World Railroad closes tomorrow for month-long…
 Full briefing → parkio.info
-#DisneyWorld #HollywoodStudios #AnimalKingdom
+#DisneyWorld #HollywoodStudios #MagicKingdom
 ```
 
 ## 3. Instagram — carousel + caption
@@ -29,35 +29,35 @@ Full briefing → parkio.info
 **Carousel slides**
 ```
 SLIDE 1 (cover): Today at Disney — 2026-09-27
-SLIDE 2: 🎬 Vacation Fun remains closed despite scheduled reopening
-   The Mickey and Minnie animated short at Hollywood Studios did not reopen today as planned after its 49-day closure for Annual Passholder magnet…
-SLIDE 3: 🦁 Animal Kingdom eliminates rope-drop holding areas
-   Starting today, guests may enter most lands before official park opening rather than waiting in designated holding zones. The change aims to smooth…
-SLIDE 4: 📍 Pressed penny machines added at Disney Springs
-   New designs featuring Mickey, Stitch, Pooh, and other characters are available at Disney's Pin Traders. Eight designs cost five dollars or one…
-SLIDE 5: 🏰 Bluey and Bingo debut at Disneyland Resort
-   The Australian blue heeler puppies are now meeting guests at Disneyland following Disney's global partnership with BBC Studios and Ludo Studio.…
-SLIDE 6: 📍 Turf Club Bar and Grill reopens September 30 at Saratoga Springs
-   The restaurant returns with a menu inspired by turn-of-the-century Upstate New York racing culture. Preview details show updated entrees and bar…
+SLIDE 2: 🎬 Carousel of Progress preview exhibit opens at Hollywood Studios
+   Walt Disney Imagineering has installed costume pieces and a new diorama from the attraction's upcoming overhaul inside the Walt Disney Presents…
+SLIDE 3: 🎬 Vacation Fun short film with Mickey and Minnie reopens after 49-day…
+   The animated attraction at Hollywood Studios returned this week following a nearly two-month refurbishment, offering guests a quiet air-conditioned…
+SLIDE 4: 🏰 Walt Disney World Railroad closes tomorrow for month-long…
+   The iconic steam train around Magic Kingdom will shut down September 28 and remain closed for more than a month while Disney performs scheduled…
+SLIDE 5: 📍 Turf Club Bar and Grill reopens September 30 at Saratoga Springs
+   The resort restaurant returns with a menu inspired by turn-of-the-century Upstate New York racing culture after an extended closure.
+SLIDE 6: 📍 Expect price increases across tickets, parking, and Annual Passes in…
+   Walt Disney World and Disneyland historically raise rates at the start of the new fiscal year, and that window opens in the coming weeks. Past years…
 SLIDE 7 (CTA): Full briefing every morning → parkio.info
 ```
 
 **Caption**
 ```
-Animal Kingdom drops rope-drop holding areas today; Vacation Fun still closed despite scheduled reopening at Hollywood Studios.
+Railroad closes tomorrow for a month; Bluey meet-and-greet now open at Disneyland; Turf Club reopens Tuesday at Saratoga Springs.
 
 The Disney news that matters, every morning — free at parkio.info. Link in bio.
 
-#HollywoodStudios #AnimalKingdom #Disneyland #DisneyWorld #DisneyParks #Disney #ParkioDaily
+#HollywoodStudios #MagicKingdom #DisneyWorld #DisneyParks #Disney #ParkioDaily
 ```
 
 ## Source stories used (top-ranked by shareability)
 
-- [breaking] Vacation Fun remains closed despite scheduled reopening
-- [breaking] Animal Kingdom eliminates rope-drop holding areas
-- [icymi] Pressed penny machines added at Disney Springs
-- [bignews] Bluey and Bingo debut at Disneyland Resort
+- [bignews] Carousel of Progress preview exhibit opens at Hollywood Studios
+- [topstories] Vacation Fun short film with Mickey and Minnie reopens after 49-day closure
+- [breaking] Walt Disney World Railroad closes tomorrow for month-long refurbishment
 - [bignews] Turf Club Bar and Grill reopens September 30 at Saratoga Springs
+- [spotlight] Expect price increases across tickets, parking, and Annual Passes in early October
 
 ---
 _Built by scripts/parkio-daily/social.mjs from content/guide/daily/parkio-daily-2026-09-27.json._
