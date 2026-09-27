@@ -24,18 +24,19 @@ import {
 const venues = getAllPermanentDining();
 
 describe("venueKey coverage", () => {
-  it("mints exactly one key for each of the 62 permanent venues", () => {
-    expect(Object.keys(DINING_VENUE_KEYS)).toHaveLength(62);
-    expect(venues).toHaveLength(62);
-    expect(allDiningVenueKeys()).toHaveLength(62);
+  it("mints exactly one key for each of the 93 permanent venues", () => {
+    expect(Object.keys(DINING_VENUE_KEYS)).toHaveLength(93);
+    expect(venues).toHaveLength(93);
+    expect(allDiningVenueKeys()).toHaveLength(93);
     expect(venues.filter((v) => v.parkId === "epcot")).toHaveLength(42);
     expect(venues.filter((v) => v.parkId === "hollywood-studios")).toHaveLength(20);
+    expect(venues.filter((v) => v.parkId === "magic-kingdom")).toHaveLength(31);
   });
 
   it("keeps canonicalIds, venueKeys and slugs each unique", () => {
-    expect(new Set(venues.map((v) => v.canonicalId)).size).toBe(62);
-    expect(new Set(venues.map((v) => v.venueKey)).size).toBe(62);
-    expect(new Set(venues.map((v) => v.slug)).size).toBe(62);
+    expect(new Set(venues.map((v) => v.canonicalId)).size).toBe(93);
+    expect(new Set(venues.map((v) => v.venueKey)).size).toBe(93);
+    expect(new Set(venues.map((v) => v.slug)).size).toBe(93);
   });
 
   it("gives every venue a syntactically valid key", () => {
@@ -100,7 +101,7 @@ describe("venueKey immutability", () => {
       // The manifest must contain literal assignments, not slug arithmetic.
       Object.entries(DINING_VENUE_KEYS).length,
     );
-    expect(source).toBe("62");
+    expect(source).toBe("93");
     // A venue whose slug changed would still resolve to the same key, because
     // nothing reads `venue.slug` to produce `venue.venueKey`.
     const venue = venues.find((v) => v.venueKey === "ep-le-cellier")!;

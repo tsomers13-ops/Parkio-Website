@@ -16,19 +16,19 @@
 //      unique Website-wide, and never colliding with an attraction slug.
 //    - Slugs are IMMUTABLE once published. Changing one breaks a live URL and
 //      is a deliberate migration, not an edit.
-//    - Presence in this manifest is what makes a venue routable. Priority 8
-//      ships the EPCOT + Hollywood Studios pilot only; the remaining 24
-//      venues are intentionally absent and therefore not published.
-//    - A Dining venue in EPCOT or Hollywood Studios with no entry here is a
-//      hard generation failure, so a new iOS venue cannot ship without a
+//    - Presence in this manifest is what makes a venue routable. The pilot
+//      ships EPCOT + Hollywood Studios + Magic Kingdom only; venues in any
+//      other park are intentionally absent and therefore not published.
+//    - A Dining venue in a pilot park with no entry here is a hard
+//      generation failure, so a new iOS venue cannot ship without a
 //      deliberate slug decision.
 //
 
 /** Public Dining slug syntax: park prefix, lowercase, hyphen-separated. */
-export const DINING_SLUG_PATTERN = /^(?:ep|hs)-[a-z0-9]+(?:-[a-z0-9]+)*$/;
+export const DINING_SLUG_PATTERN = /^(?:ep|hs|mk)-[a-z0-9]+(?:-[a-z0-9]+)*$/;
 
-/** Parks included in the Priority 8 Dining pilot. */
-export const DINING_PILOT_PARK_IDS = ["epcot", "hollywood-studios"] as const;
+/** Parks included in the Dining pilot. */
+export const DINING_PILOT_PARK_IDS = ["epcot", "hollywood-studios", "magic-kingdom"] as const;
 
 /** canonicalId (iOS stableID — internal only) -> public Website slug. */
 export const DINING_SLUGS: Readonly<Record<string, string>> = {
@@ -98,6 +98,39 @@ export const DINING_SLUGS: Readonly<Record<string, string>> = {
   "Hollywood Studios|Commissary Lane|Sci-Fi Dine-In Theater Restaurant": "hs-sci-fi-dine-in",
   "Hollywood Studios|Echo Lake|Tune-In Lounge": "hs-tune-in-lounge",
   "Hollywood Studios|Toy Story Land|Woody's Lunch Box": "hs-woodys-lunch-box",
+
+  // ── Magic Kingdom (31) ─────────────────────────────────────
+  "Magic Kingdom|Adventureland|Aloha Isle": "mk-aloha-isle",
+  "Magic Kingdom|Tomorrowland|AstroFizz Hosted by Coca-Cola": "mk-astrofizz",
+  "Magic Kingdom|Tomorrowland|Auntie Gravity's Galactic Goodies": "mk-auntie-gravitys",
+  "Magic Kingdom|Fantasyland|Be Our Guest Restaurant": "mk-be-our-guest",
+  "Magic Kingdom|Main Street, U.S.A.|Casey's Corner": "mk-caseys-corner",
+  "Magic Kingdom|Fantasyland|Cheshire Café": "mk-cheshire-cafe",
+  "Magic Kingdom|Fantasyland|Cinderella's Royal Table": "mk-cinderellas-royal-table",
+  "Magic Kingdom|Tomorrowland|Cosmic Ray's Starlight Café": "mk-cosmic-rays",
+  "Magic Kingdom|Tomorrowland|Energy Bytes": "mk-energy-bytes",
+  "Magic Kingdom|Tomorrowland|Fireworks Dessert Parties at Tomorrowland Terrace Restaurant": "mk-tomorrowland-terrace-dessert-party",
+  "Magic Kingdom|Fantasyland|Gaston's Tavern": "mk-gastons-tavern",
+  "Magic Kingdom|Frontierland|Golden Oak Outpost": "mk-golden-oak-outpost",
+  "Magic Kingdom|Tomorrowland|Joffrey's Coffee & Tea Company": "mk-joffreys",
+  "Magic Kingdom|Adventureland|Jungle Navigation Co. LTD Skipper Canteen": "mk-skipper-canteen",
+  "Magic Kingdom|Liberty Square|Liberty Tree Tavern": "mk-liberty-tree-tavern",
+  "Magic Kingdom|Main Street, U.S.A.|Main Street Bakery": "mk-main-street-bakery",
+  "Magic Kingdom|Frontierland|Pecos Bill Tall Tale Inn and Cafe": "mk-pecos-bill",
+  "Magic Kingdom|Fantasyland|Pinocchio Village Haus": "mk-pinocchio-village-haus",
+  "Magic Kingdom|Main Street, U.S.A.|Plaza Ice Cream Parlor": "mk-plaza-ice-cream-parlor",
+  "Magic Kingdom|Fantasyland|Prince Eric's Village Market": "mk-prince-erics-village-market",
+  "Magic Kingdom|Liberty Square|Sleepy Hollow": "mk-sleepy-hollow",
+  "Magic Kingdom|Adventureland|Spring Roll Snack Cart": "mk-spring-roll-cart",
+  "Magic Kingdom|Fantasyland|Storybook Treats": "mk-storybook-treats",
+  "Magic Kingdom|Adventureland|Sunshine Tree Terrace": "mk-sunshine-tree-terrace",
+  "Magic Kingdom|Adventureland|The Beak and Barrel": "mk-beak-and-barrel",
+  "Magic Kingdom|Main Street, U.S.A.|The Crystal Palace": "mk-crystal-palace",
+  "Magic Kingdom|Liberty Square|The Diamond Horseshoe": "mk-diamond-horseshoe",
+  "Magic Kingdom|Fantasyland|The Friar's Nook": "mk-friars-nook",
+  "Magic Kingdom|Tomorrowland|The Lunching Pad": "mk-lunching-pad",
+  "Magic Kingdom|Main Street, U.S.A.|The Plaza Restaurant": "mk-plaza-restaurant",
+  "Magic Kingdom|Main Street, U.S.A.|Tony's Town Square Restaurant": "mk-tonys-town-square",
 };
 
 /** Every slug published by the manifest. */
