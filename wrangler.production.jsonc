@@ -35,8 +35,12 @@
   //
   // FLIP TO false AT CUTOVER, in the same reviewed change that adds the
   // parkio.info route.
-  "workers_dev": true,
+  "workers_dev": false,
   "preview_urls": false,
+
+  "routes": [
+    { "pattern": "parkio.info", "custom_domain": true }
+  ],
 
   "observability": { "enabled": true },
 
