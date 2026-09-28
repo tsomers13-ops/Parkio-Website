@@ -1,0 +1,371 @@
+{
+  "title": "Parkio Daily for September 28, 2026",
+  "slug": "parkio-daily-2026-09-28",
+  "date": "2026-09-28",
+  "teaser": "Tiana's Bayou Adventure closed with drained water; Big Thunder also down. Joffrey's pours $1 coffee tomorrow. Bakso the tiger leaves Animal Kingdom soon.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Space Mountain",
+        "parkSlug": "magic-kingdom",
+        "note": "Frontierland closures pushing guests elsewhere"
+      },
+      {
+        "name": "Test Track",
+        "parkSlug": "epcot",
+        "note": "Food & Wine crowds thin mid-morning"
+      },
+      {
+        "name": "Flight of Passage",
+        "parkSlug": "animal-kingdom",
+        "note": "Lower waits before Bakso viewing surge"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [
+      {
+        "title": "Tiana's Bayou Adventure down with water drained at Magic Kingdom",
+        "body": "The ride closed around 10:11 a.m. today for unknown reasons. An hour later, observers noticed the attraction's water had been mostly drained, suggesting technical work beyond a routine pause.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/09/tianas-bayou-adventure-at-magic-kingdom-facing-extended-downtime-big-thunder-mountain-railroad-also-closed/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Frontierland is likely to feel congested with both Tiana's and Big Thunder offline. Rope-drop Space Mountain or Haunted Mansion instead, then circle back after lunch if reopening updates appear."
+        }
+      },
+      {
+        "title": "Big Thunder Mountain Railroad also closed today",
+        "body": "The coaster went offline today for reasons not yet disclosed by Disney. No reopening estimate has been posted.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/09/tianas-bayou-adventure-at-magic-kingdom-facing-extended-downtime-big-thunder-mountain-railroad-also-closed/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "With both Frontierland headliners dark, wait times at Seven Dwarfs and Peter Pan tend to spike. Prioritize those rides in the first operating hour or save them for late evening."
+        }
+      }
+    ],
+    "bignews": [
+      {
+        "title": "Joffrey's offering $1 coffee across Walt Disney World tomorrow",
+        "body": "All Joffrey's locations will sell 16 oz. hot coffee and 24 oz. iced coffee for one dollar on Tuesday, September 29, in celebration of National Coffee Day.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/09/joffreys-offering-1-coffee-across-walt-disney-world-on-national-coffee-day/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Lines at Joffrey's kiosks usually peak between 9–10 a.m. Grabbing your dollar cup right at park open or mid-afternoon typically saves five to ten minutes in queue."
+        }
+      },
+      {
+        "title": "Bakso the tiger leaving Animal Kingdom soon",
+        "body": "The Sumatran tiger, who turned two today, will relocate to a new habitat outside Walt Disney World in the coming weeks. Guests have limited time to see him on the Maharajah Jungle Trek.",
+        "parkSlug": "animal-kingdom",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/bakso-the-tiger-birthday-at-disneys-animal-kingdom/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Viewing windows on the trek tend to be busiest late morning. Visiting before 10 a.m. or after 4 p.m. often offers clearer sightlines and a quieter experience with Bakso before his transfer."
+        }
+      },
+      {
+        "title": "Walt Disney World Railroad enters month-long refurbishment",
+        "body": "The Magic Kingdom train closed today and will remain unavailable through late October, according to the park calendar.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/09/walt-disney-world-railroad-pulled-entirely-from-magic-kingdom-operations-ad1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Without the railroad shortcut, walking from Main Street to Fantasyland adds roughly eight minutes. Budget extra time between lands or use the ferry to shorten the loop if feet are tired."
+        }
+      },
+      {
+        "title": "Turf Club Bar and Grill reopens Tuesday at Saratoga Springs",
+        "body": "The restaurant returns September 30 with a menu inspired by turn-of-the-century Upstate New York racing culture. Reservations are now available.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/turf-club-reopening/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Opening-week slots at newly reopened restaurants usually fill within 48 hours. Booking dinner for later this week now may secure a table before walk-up waits climb."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "Disney Store raises ear headband prices online",
+        "body": "All standard ear headbands now cost $39.99, up from $36.99. In-park price increases typically follow in October.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/09/disney-store-increases-price-of-all-standard-ear-headbands-online/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "If a specific headband style is on your list, ordering online today locks the current price before potential in-park increases next month. Delivery usually takes three to five business days."
+        }
+      },
+      {
+        "title": "EPCOT hours shortened for 2026 Festival of the Holidays",
+        "body": "The park will close earlier than in prior years during the November and December festival, according to the newly posted calendar.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-world-quietly-sets-earlier-epcot-closing-for-2026-christmas-season/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Shorter hours often compress evening crowds. Plan World Showcase dining before 6 p.m. and tackle Remy and Frozen right at rope drop to stay ahead of bottlenecks."
+        }
+      },
+      {
+        "title": "Atlantic Dance Hall closes after 30 years at BoardWalk",
+        "body": "The nightclub wrapped its final weekend September 25–27. A new concept called Hurly Burly is set to replace it with different food, drinks, and entertainment.",
+        "parkSlug": null,
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/09/disney-world-closes-adult-only-section-after-30-years-doors-officially-locked-ad1/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Hurly Burly's opening week usually draws curious crowds. Visiting on a weeknight rather than Friday or Saturday often means shorter waits for tables and a quieter atmosphere."
+        }
+      },
+      {
+        "title": "Citizen pop-up in Magic Kingdom today only",
+        "body": "Uptown Jewelers hosts a one-day showcase featuring limited-edition D23 watches not typically sold in the parks.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/09/one-day-only-citizen-pop-up-in-magic-kingdom-includes-limited-edition-d23-watches/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Pop-up inventory is usually limited. Stopping at Uptown Jewelers before 11 a.m. tends to offer the widest selection before popular styles sell through."
+        }
+      },
+      {
+        "title": "Annual Passholders hit reservation capacity this weekend",
+        "body": "For the first time in weeks, several Walt Disney World parks blocked additional passholder reservations on Saturday and Sunday.",
+        "parkSlug": null,
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/09/disney-world-faces-capacity-restrictions-as-guests-are-turned-away-ab1/"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "Reservation limits often signal heavier attendance. Weekdays this week may offer lighter crowds as weekend visitors clear out; mid-morning arrival typically avoids both rope-drop and lunch rushes."
+        }
+      },
+      {
+        "title": "Bluey meet-and-greet continues at Disneyland",
+        "body": "Bluey and Bingo remain available for character encounters following their resort debut earlier this week.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/dlr/bluey-at-disneyland-resort/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "New character meets tend to draw longest lines in the first two weeks. Arriving at the encounter location within 30 minutes of park open usually keeps wait times under 20 minutes."
+        }
+      },
+      {
+        "title": "Halloween treats available across Walt Disney World through October 31",
+        "body": "Seasonal menu items include the Boneyard Brownie and other themed snacks at quick-service locations parkwide.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/disney-eats-foodie-guide-to-halloween-at-walt-disney-world-resort/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Popular seasonal items sometimes run out by late afternoon at high-traffic counters. Grabbing a Halloween treat mid-morning or after 3 p.m. often avoids both crowds and stockouts."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Magic Kingdom celebrates 55 years on October 1",
+        "body": "The park opened in 1971 and marks its 55th anniversary this week. Commemorative merchandise is available.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/disney-world-55th-anniversary-merch/"
+        }
+      },
+      {
+        "title": "Disney Cruise Line to unveil Disney Believe on October 7",
+        "body": "A livestream will reveal details about the new ship, scheduled to set sail in 2027.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/dcl/what-is-on-disney-believe-ship/"
+        }
+      },
+      {
+        "title": "eet by Maneet Chauhan now on Too Good To Go app",
+        "body": "The Disney Springs restaurant joined the food-waste reduction platform, offering discounted surplus meals.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/09/28/eet-by-maneet-chauhan-now-available-on-too-good-to-go-app/"
+        }
+      },
+      {
+        "title": "Vacation Fun short reopens at Hollywood Studios",
+        "body": "The Mickey and Minnie animated film returned one day later than the park calendar originally listed.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/09/disney-world-attraction-abruptly-misses-reopening-date-returns-24-hours-later-bwb1/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "Disneyland popcorn bucket and sipper guide updated",
+        "body": "The official Disney Parks Blog published a fresh catalog of novelty containers currently available across Disneyland and California Adventure, including Halloween designs.",
+        "parkSlug": "disneyland",
+        "ctaLabel": "View the guide",
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Seasonal buckets and sippers often sell out at flagship popcorn carts by early afternoon. Stopping at a cart in the first two hours of park operation usually ensures the widest selection."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "LmPxnCAQa5g",
+      "title": "Epcot Food & Wine Festival 2026 | Trying 15 Items for Under $100 | NEW Food Menu | Walt Disney World",
+      "channel": "Paging Mr. Morrow",
+      "publishedAt": "2026-09-25T14:57:08Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/LmPxnCAQa5g/mqdefault.jpg",
+      "viewCount": 124857,
+      "url": "https://www.youtube.com/watch?v=LmPxnCAQa5g",
+      "summary": "Paging Mr. Morrow samples 15 dishes at the 2026 EPCOT Food & Wine Festival for under $100, showcasing new menu items."
+    },
+    {
+      "videoId": "S2CMAmsW3yQ",
+      "title": "FIRST LOOK: Hurly Burly at Disney's Boardwalk! New Food, Drinks & Entertainment | Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-09-26T15:00:00Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/S2CMAmsW3yQ/mqdefault.jpg",
+      "viewCount": 51713,
+      "url": "https://www.youtube.com/watch?v=S2CMAmsW3yQ",
+      "summary": "WrightDownMainStreet tours the new Hurly Burly venue at Disney's BoardWalk, highlighting its food, beverage, and entertainment offerings."
+    },
+    {
+      "videoId": "8Arb2SZnSZ8",
+      "title": "🍿 3 Comidas da Disneyland Que Você Precisa Conhecer! 😱 #disney",
+      "channel": "dzshorts",
+      "publishedAt": "2026-09-28T15:00:38Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/8Arb2SZnSZ8/mqdefault.jpg",
+      "viewCount": 8682,
+      "url": "https://www.youtube.com/watch?v=8Arb2SZnSZ8",
+      "summary": "dzshorts spotlights three must-try food items at Disneyland in a quick overview."
+    },
+    {
+      "videoId": "KJW6CvAFTPw",
+      "title": "WHAT I EAT A DISNEYLAND (HALLOWEEN) #food #degustation #halloween #whatieat #disney #disneyland",
+      "channel": "Thomas YAPAS",
+      "publishedAt": "2026-09-28T15:41:56Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/KJW6CvAFTPw/mqdefault.jpg",
+      "viewCount": 5729,
+      "url": "https://www.youtube.com/watch?v=KJW6CvAFTPw",
+      "summary": "Thomas YAPAS shares a day of Halloween-themed food at Disneyland in a tasting-style video."
+    },
+    {
+      "videoId": "Ap1MfMUjYVk",
+      "title": "Disneyland Halloween Time 🎃 Relaxing Fun Merch Monday Rides Shows #livestream",
+      "channel": "PopsDisneyAdventures",
+      "publishedAt": "2026-09-28T12:27:11Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Ap1MfMUjYVk/mqdefault_live.jpg",
+      "viewCount": 4372,
+      "url": "https://www.youtube.com/watch?v=Ap1MfMUjYVk",
+      "summary": "PopsDisneyAdventures livestreams a Monday at Disneyland during Halloween Time, covering merchandise, rides, and shows."
+    },
+    {
+      "videoId": "qzY5SzBop7g",
+      "title": "Why Disney Make Color's That Make Anything Disappear 💀😱 #disney #disneyland #goawaygreen #shorts",
+      "channel": "Mr Nikhil ",
+      "publishedAt": "2026-09-28T14:06:50Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/qzY5SzBop7g/mqdefault.jpg",
+      "viewCount": 3886,
+      "url": "https://www.youtube.com/watch?v=qzY5SzBop7g",
+      "summary": "Mr Nikhil explains Disney's use of 'Go Away Green' and other colors designed to camouflage backstage areas."
+    },
+    {
+      "videoId": "VM-KaYQ_Vek",
+      "title": "Disney Skyliner 2026 Night Ride to EPCOT from Hollywood Studios in 4K | Walt Disney World Florida",
+      "channel": "4K WDW",
+      "publishedAt": "2026-09-28T12:45:01Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/VM-KaYQ_Vek/mqdefault.jpg",
+      "viewCount": 1348,
+      "url": "https://www.youtube.com/watch?v=VM-KaYQ_Vek",
+      "summary": "4K WDW captures a nighttime Skyliner journey from Hollywood Studios to EPCOT in 4K resolution."
+    },
+    {
+      "videoId": "cAMD4LxwaIc",
+      "title": "MAGIC KINGDOM New Merch Search! September 2026 | Walt Disney World | Disney Parks",
+      "channel": "Main Street Orlando",
+      "publishedAt": "2026-09-28T12:00:10Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/cAMD4LxwaIc/mqdefault.jpg",
+      "viewCount": 1161,
+      "url": "https://www.youtube.com/watch?v=cAMD4LxwaIc",
+      "summary": "Main Street Orlando hunts for new September merchandise at Magic Kingdom stores."
+    },
+    {
+      "videoId": "lFoJAVlIA8U",
+      "title": "Disney princesses must adhere to three rules when meeting guests.",
+      "channel": "Rxivk Qvilp",
+      "publishedAt": "2026-09-28T12:09:54Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/lFoJAVlIA8U/mqdefault.jpg",
+      "viewCount": 1002,
+      "url": "https://www.youtube.com/watch?v=lFoJAVlIA8U",
+      "summary": "Rxivk Qvilp outlines three rules Disney princesses follow during character meet-and-greets."
+    },
+    {
+      "videoId": "GgeAADzgTGg",
+      "title": "Halloween à Disneyland Paris va être FOU cette année ! 🎃 #disneylandparis #disney #halloweendisney",
+      "channel": "Loxot Off",
+      "publishedAt": "2026-09-28T14:00:15Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/GgeAADzgTGg/mqdefault.jpg",
+      "viewCount": 988,
+      "url": "https://www.youtube.com/watch?v=GgeAADzgTGg",
+      "summary": "Loxot Off previews the Halloween season at Disneyland Paris, highlighting this year's event."
+    }
+  ],
+  "updatedAt": "2026-09-28T18:19:36.768Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-09-28T18:19:36.768Z",
+    "tokens": {
+      "input": 11261,
+      "output": 5650,
+      "costUsd": 0.1185
+    }
+  }
+}
