@@ -16,6 +16,21 @@ const SITE_URL = "https://parkio.info";
 export const dynamic = "force-static";
 export const revalidate = false;
 
+/**
+ * Backlog safety cutoff — do not remove without a deliberate decision.
+ *
+ * The public feed was stale for weeks while the site ran on Cloudflare
+ * Pages (auto-deploy broken); Sept 14–27 briefings piled up without ever
+ * reaching Beehiiv's RSS-to-Email poll. Flipping the feed back on as-is
+ * would replay that whole backlog as "new" emails the moment Beehiiv next
+ * polls. Any post dated on/before this cutoff is permanently excluded
+ * from `/feed.xml` (guide pages, sitemap, and the homepage teaser are
+ * unaffected — this only trims RSS eligibility). Posts dated after the
+ * cutoff are eligible automatically; no further edits needed here as new
+ * daily briefings ship.
+ */
+const FEED_BACKLOG_CUTOFF = "2026-09-27";
+
 /* ─────────────── helpers ─────────────── */
 
 function escapeXml(s: string): string {
@@ -149,8 +164,13 @@ ${storiesHtml}
 
 /* ─────────────── feed shell ─────────────── */
 
+/** Posts eligible for RSS — everything after the backlog cutoff. */
+function eligibleForFeed(posts: DailyPost[]): DailyPost[] {
+  return posts.filter((post) => post.date > FEED_BACKLOG_CUTOFF);
+}
+
 export function GET(): Response {
-  const posts = listDailyPosts();
+  const posts = eligibleForFeed(listDailyPosts());
   const items = posts.map(renderItem).join("\n    ");
   const lastBuild = new Date().toUTCString();
 
