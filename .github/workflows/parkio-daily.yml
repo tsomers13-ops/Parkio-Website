@@ -22,21 +22,32 @@ on:
   # working; this is how you run a same-day briefing on demand.
   workflow_dispatch:
 
-# Concurrency guard — if a previous run is still going (rare; the
-# build is < 3 min), cancel it so we never end up with two commits
-# racing for the same date file.
+# Concurrency guard — if a previous run is still going (rare; the build is
+# < 3 min), this run queues behind it instead of running concurrently
+# (cancel-in-progress: false means the earlier run is left to finish, never
+# cancelled), so we never end up with two commits racing for the same date
+# file.
 concurrency:
   group: parkio-daily
   cancel-in-progress: false
 
+# This workflow ends at `git push origin HEAD:main`. A push to main does
+# NOT deploy Pages, publish parkio.info, update the live feed, or publish
+# production content in any way — it only updates repository content.
+#
+# Production publication is currently a separate, gated action: parkio.info
+# remains pinned to the known-good Cloudflare Pages deployment, Pages is
+# not an active build target, and Pages' automatic production deployments
+# are disabled. The Worker/OpenNext production migration (workers-
+# production.yml) remains frozen and is untouched by this workflow — it
+# does not invoke, call, dispatch, wait for, or otherwise depend on it.
+#
+# A publication/deployment step here may be reconsidered if the Worker
+# production architecture is separately reopened. See issue #12.
+
 jobs:
   build:
     runs-on: ubuntu-latest
-    outputs:
-      # Consumed by the deploy job below. Without these, a no-op day would
-      # still trigger a Production deploy for no reason.
-      pushed: ${{ steps.commit.outputs.pushed }}
-      sha: ${{ steps.commit.outputs.sha }}
     permissions:
       # Allow the workflow to push the committed JSON back to main.
       # The default GITHUB_TOKEN is scoped per-run, no PAT needed.
@@ -77,9 +88,7 @@ jobs:
         run: node scripts/parkio-daily/social.mjs || echo "social drafts step skipped (non-fatal)"
 
       - name: Commit the new briefing
-        id: commit
         run: |
-          echo "pushed=false" >> "$GITHUB_OUTPUT"
           git config user.name "parkio-daily-bot"
           git config user.email "parkio-daily-bot@users.noreply.github.com"
           git add content/guide/daily/ content/social/
@@ -97,59 +106,4 @@ jobs:
           # is dirty; the dated JSON file won't conflict with other work.
           git pull --rebase --autostash origin main
           git push origin HEAD:main
-          # Hand the exact pushed SHA to the deploy job. Deploying a moving
-          # ref could publish a different commit than the one just verified.
-          {
-            echo "pushed=true"
-            echo "sha=$(git rev-parse HEAD)"
-          } >> "$GITHUB_OUTPUT"
-
-  # Kick off the canary Worker deploy — asynchronously, and does NOT wait for
-  # it to finish.
-  #
-  # This job exists because GitHub does not run workflows for pushes made with
-  # the default GITHUB_TOKEN, so the push above will NOT trigger
-  # workers-production.yml on its own. The Pages GitHub integration is what
-  # actually publishes parkio.info on every push to main, independently of
-  # this job or of GitHub Actions at all — this job only ever reaches the
-  # inert canary Worker (see workers-production.yml's own header comment).
-  #
-  # Issue #12: calling workers-production.yml in-run via `uses:` (a reusable
-  # workflow call) made THIS run's own completion depend on that workflow's
-  # `production`-environment approval. An unapproved/ignored approval left
-  # the run "waiting" indefinitely, and because the top-level `concurrency`
-  # group above covers the whole run, every later scheduled run queued behind
-  # it and older ones were cancelled — no briefing content for days.
-  #
-  # Fired via `gh workflow run` instead: a fire-and-forget dispatch of a
-  # SEPARATE workflow_run, in its own concurrency group (workers-production's
-  # own, unchanged) and its own approval gate (also unchanged). This job
-  # itself has nothing left to wait on, so it — and the whole Parkio Daily
-  # run — completes in seconds regardless of whether anyone ever approves
-  # that separate canary deploy. workers-production.yml, its `environment:
-  # production` requirement, and its required reviewers are untouched.
-  #
-  # Trade-off, accepted: `workflow_dispatch` only accepts a branch/tag `ref`,
-  # not an exact commit SHA, so this deploys whatever `main` points to when
-  # GitHub processes the dispatch (normally the commit `build` just pushed,
-  # seconds earlier) rather than pinning the exact SHA the in-run `uses:`
-  # call used to. Adding a `sha` input to accept here would mean editing
-  # workers-production.yml, which is out of scope for this fix.
-  trigger-deploy:
-    name: Trigger canary Worker deploy (async, non-blocking)
-    needs: build
-    if: needs.build.outputs.pushed == 'true'
-    runs-on: ubuntu-latest
-    timeout-minutes: 2
-    permissions:
-      # Only what's needed to dispatch another workflow — no contents
-      # access, no Cloudflare secrets anywhere near this job.
-      actions: write
-    env:
-      GH_TOKEN: ${{ github.token }}
-    steps:
-      - name: Dispatch workers-production.yml
-        run: |
-          gh workflow run workers-production.yml \
-            --repo "${{ github.repository }}" \
-            --ref main
+          echo "Committed and pushed $(git rev-parse HEAD) to main — repository content only; see the workflow-level comment above regarding production publication."
