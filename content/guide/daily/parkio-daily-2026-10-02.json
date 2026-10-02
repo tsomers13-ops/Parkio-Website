@@ -1,0 +1,344 @@
+{
+  "title": "Parkio Daily for October 2, 2026",
+  "slug": "parkio-daily-2026-10-02",
+  "date": "2026-10-02",
+  "teaser": "Dec 22 Christmas Party sold out; Turf Club reopens at Saratoga Springs; new EPCOT festival booths debut today.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Space Mountain",
+        "parkSlug": "magic-kingdom",
+        "note": "First-hour windows typically stay under 20 min"
+      },
+      {
+        "name": "Soarin'",
+        "parkSlug": "epcot",
+        "note": "Food & Wine festival crowds thin during dinner"
+      },
+      {
+        "name": "Slinky Dog Dash",
+        "parkSlug": "hollywood-studios",
+        "note": "Early entry offers shortest waits of the day"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [],
+    "bignews": [
+      {
+        "title": "December 22 Christmas Party date now sold out",
+        "body": "The final Mickey's Very Merry Christmas Party of 2026, scheduled for Tuesday December 22, has sold out. Other select November and December dates remain available.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/10/last-date-of-mickeys-very-merry-christmas-party-in-2026-now-sold-out/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Alternative party dates earlier in the season typically offer the same entertainment with lighter crowds. Consider booking November dates if flexibility allows."
+        }
+      },
+      {
+        "title": "Turf Club reopens at Saratoga Springs with new menu",
+        "body": "The Turf Club Bar and Grill at Disney's Saratoga Springs Resort has reopened following refurbishment with updated food and drink offerings.",
+        "parkSlug": null,
+        "source": {
+          "label": "YouTube - WrightDownMainStreet",
+          "url": "https://www.youtube.com/watch?v=J2fWbBNGMFc"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Resort dining often sees lighter demand than in-park restaurants. Worth checking walk-up availability for lunch if you're near Disney Springs or Magic Kingdom."
+        }
+      },
+      {
+        "title": "Two new festival booths debut at EPCOT Food and Wine",
+        "body": "Earth Eats and Coastal Eats have opened at the 2026 EPCOT Food and Wine Festival, adding menu options more than a month into the event. Standout dishes include a lemon-almond-olive oil cake and crab cakes with tropical chutney.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/10/review-earth-eats-booth-debuts-at-2026-epcot-food-wine-festival/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "New festival booths often draw lighter lines during their first few days. Visit before 2pm to avoid the dinner rush when booth queues tend to spike."
+        }
+      },
+      {
+        "title": "Lakeshore Lodge announces Branch and Brush lobby lounge",
+        "body": "Disney has revealed Branch and Brush, a new lobby lounge coming to Lakeshore Lodge when the resort opens in July 2027. The waterfront space will overlook Bay Lake. Reservations for the resort open October 8.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-world-announces-branch-brush-lakeshore-lodge-lobby-lounge-with-big-views-of-bay-lake/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Resort booking windows for high-demand properties typically fill within the first 48 hours. October 8 reservations open at 6am Eastern; logging in early often secures preferred room views."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "Magic Kingdom fireworks schedule changes next week",
+        "body": "Adjustments to the Magic Kingdom nighttime fireworks show will begin next week, though specific timing and performance details have not been disclosed.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/10/02/fireworks-changes-hit-magic-kingdom-next-week/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Fireworks schedule shifts often create confusion around Main Street exit timing. Check the My Disney Experience app for updated showtimes each morning to plan your evening exit strategy."
+        }
+      },
+      {
+        "title": "Low-crowd window closing as October begins",
+        "body": "Wait times at Walt Disney World are trending upward as the brief fall off-season ends. Crowd levels are expected to rise with more consistency through the remainder of October.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/off-season-over-october-2026-disney-world/"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "Heavier October crowds typically hit hardest at Magic Kingdom and Hollywood Studios between 10am and 3pm. EPCOT and Animal Kingdom often offer better midday touring conditions."
+        }
+      },
+      {
+        "title": "Bluey and Bingo plush with ear headbands arrive at Animal Kingdom",
+        "body": "New Bluey and Bingo plush toys wearing removable Mickey and Minnie ear headbands are now available at Animal Kingdom, priced at $26.99 each. Coordinating sticker packs are also in stock.",
+        "parkSlug": "animal-kingdom",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/10/bluey-and-bingo-stickers-and-plush-toys-now-available-at-walt-disney-world/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Character merchandise tied to popular franchises tends to sell quickly at flagship locations. Island Mercantile near the park entrance usually restocks overnight; stop by at rope drop if you're collecting."
+        }
+      },
+      {
+        "title": "Gideon's Bakehouse unveils October spooky menu",
+        "body": "Gideon's Bakehouse at Disney Springs has released its October lineup featuring seasonal Halloween-themed cookies and treats.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/10/02/things-are-getting-spooky-at-gideons-bakehouse-in-disney-springs-this-month/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Gideon's virtual queue typically fills within minutes of opening. Join the queue via the app at 10am sharp or visit after 8pm when walk-up availability sometimes opens."
+        }
+      },
+      {
+        "title": "Lakeshore Lodge 3D street mural opens in New York City",
+        "body": "Disney has installed a large-scale 3D street art experience in Manhattan's Flatiron Plaza to promote the upcoming Lakeshore Lodge resort, featuring artwork inspired by the property's Daydream River concept.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/10/disneys-lakeshore-lodge-brings-3d-street-mural-experience-to-new-york-city/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Off-site promotional activations like this rarely impact park operations but signal heightened marketing around the October 8 booking window. Expect Lakeshore reservations to move quickly."
+        }
+      },
+      {
+        "title": "Disney Plus subscribers get ESPN Store discounts",
+        "body": "Disney Plus members can now access exclusive discounts at the ESPN Store online, including college football and NFL merchandise, as part of the expanded Disney Plus Perks program.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/10/disney-subscribers-can-now-save-on-espn-store-merchandise/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Subscriber perks occasionally extend to park merchandise or dining in limited-time offers. Check the Disney Plus app for rotating benefits that may apply during your trip."
+        }
+      },
+      {
+        "title": "Villains mystery headband plush accessories launch online",
+        "body": "Disney Store has released a new series of create-your-own headband plush accessories sold in mystery boxes, featuring characters like Hades, Yzma, and Maleficent. Each box costs $13.99.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/10/mystery-disney-villains-create-your-own-headband-plush-accessories-released-online/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Mystery box merch often arrives in parks weeks after online launch. Ordering now may secure specific characters before in-park availability becomes unpredictable."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Walt Disney World marks 55th anniversary",
+        "body": "October 1 marked the 55th anniversary of Walt Disney World's opening. Disney celebrated by spotlighting upcoming expansions and releasing commemorative merchandise.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-world-celebrates-55th-anniversary-by-looking-forward-to-biggest-expansion-ever/"
+        }
+      },
+      {
+        "title": "Bakso the Sumatran tiger celebrates birthday at Animal Kingdom",
+        "body": "Bakso, a two-year-old Sumatran tiger at Animal Kingdom, recently celebrated a birthday milestone. The tiger has been a guest favorite since arriving as a cub.",
+        "parkSlug": "animal-kingdom",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/bakso-the-tiger-birthday-at-disneys-animal-kingdom/"
+        }
+      },
+      {
+        "title": "Frozen Fan Fest returns this month",
+        "body": "Disney announced the return of Frozen Fan Fest, bringing new products, content, and experiences celebrating the Frozen franchise throughout October.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/disney-experiences/celebrate-the-return-of-frozen-fan-fest/"
+        }
+      },
+      {
+        "title": "Orlando airport tram system completes $253 million upgrade",
+        "body": "Orlando International Airport's automated people mover system has finished a major renovation, improving the arrival experience for Disney-bound travelers.",
+        "parkSlug": null,
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/10/the-first-ride-of-your-disney-vacation-just-got-a-253-million-upgrade-el1/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "Hurly-Burly lounge draws crowds at BoardWalk",
+        "body": "The new Hurly-Burly lounge at Disney's BoardWalk has quickly become a guest favorite since opening last week, offering updated food, drinks, and live entertainment in a reimagined space. Early reports suggest demand is high.",
+        "parkSlug": null,
+        "ctaLabel": "Plan your visit",
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "New lounge openings typically see peak demand in the first two weeks. Visiting on weekday afternoons before 5pm often avoids the dinner rush and offers better seating availability."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "qRByu7hifO4",
+      "title": "🔴 Live: Mickey's Not So Scary Halloween Party at Magic Kingdom in Walt Disney World - 10/01/26",
+      "channel": "Koda Bear the Explorer ",
+      "publishedAt": "2026-10-02T08:36:59Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/qRByu7hifO4/mqdefault.jpg",
+      "viewCount": 79353,
+      "url": "https://www.youtube.com/watch?v=qRByu7hifO4",
+      "summary": "Live stream coverage of Mickey's Not So Scary Halloween Party at Magic Kingdom on October 1."
+    },
+    {
+      "videoId": "S2CMAmsW3yQ",
+      "title": "FIRST LOOK: Hurly Burly at Disney's Boardwalk! New Food, Drinks & Entertainment | Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-09-26T15:00:00Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/S2CMAmsW3yQ/mqdefault.jpg",
+      "viewCount": 70735,
+      "url": "https://www.youtube.com/watch?v=S2CMAmsW3yQ",
+      "summary": "First look tour of the new Hurly-Burly lounge at BoardWalk featuring menu items and entertainment options."
+    },
+    {
+      "videoId": "J2fWbBNGMFc",
+      "title": "Disney World's Turf Club Reopened- New Menu & More! | Saratoga Springs Resort Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-10-01T16:00:51Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/J2fWbBNGMFc/mqdefault.jpg",
+      "viewCount": 30768,
+      "url": "https://www.youtube.com/watch?v=J2fWbBNGMFc",
+      "summary": "Tour of the reopened Turf Club Bar and Grill at Saratoga Springs with details on the updated menu."
+    },
+    {
+      "videoId": "S2EK5MJKEx8",
+      "title": "🔴 LIVE: YOU Pick! The Rides at Disney World – 4K POV | Fun to be Free",
+      "channel": "Fun to be Free",
+      "publishedAt": "2026-10-02T03:14:02Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/S2EK5MJKEx8/mqdefault.jpg",
+      "viewCount": 9624,
+      "url": "https://www.youtube.com/watch?v=S2EK5MJKEx8",
+      "summary": "Interactive live stream where viewers select which Disney World attractions to ride next."
+    },
+    {
+      "videoId": "JmTCw-N-ee4",
+      "title": "Momentos Mais Fofos já Vistos na Disneylândia! 😳 #disney #disneyland #shorts",
+      "channel": "Lipe Shorts",
+      "publishedAt": "2026-10-02T12:30:18Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/JmTCw-N-ee4/mqdefault.jpg",
+      "viewCount": 4035,
+      "url": "https://www.youtube.com/watch?v=JmTCw-N-ee4",
+      "summary": "Short-form compilation of charming moments captured at Disneyland."
+    },
+    {
+      "videoId": "NzRaU2vdGfY",
+      "title": "Disneyland Friday Fun Day Rides Shows #livestream",
+      "channel": "PopsDisneyAdventures",
+      "publishedAt": "2026-10-02T12:28:35Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/NzRaU2vdGfY/mqdefault_live.jpg",
+      "viewCount": 2459,
+      "url": "https://www.youtube.com/watch?v=NzRaU2vdGfY",
+      "summary": "Live stream from Disneyland covering Friday attractions and entertainment."
+    },
+    {
+      "videoId": "QepJ4FOGZM4",
+      "title": "Magic Kingdom on Walt Disney World's 55th Anniversary! Surprises, New Merch, Treehouse & MORE",
+      "channel": "Super Enthused",
+      "publishedAt": "2026-10-02T13:01:09Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/QepJ4FOGZM4/mqdefault.jpg",
+      "viewCount": 2423,
+      "url": "https://www.youtube.com/watch?v=QepJ4FOGZM4",
+      "summary": "Coverage of Magic Kingdom's 55th anniversary celebrations including merchandise and attractions."
+    },
+    {
+      "videoId": "zaS3yL9Q0mM",
+      "title": "The Emperor's New Groove needs more representation in Disney Parks but this one is a little awkward.",
+      "channel": "kaylaknowsdisney",
+      "publishedAt": "2026-10-02T12:06:44Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/zaS3yL9Q0mM/mqdefault.jpg",
+      "viewCount": 1855,
+      "url": "https://www.youtube.com/watch?v=zaS3yL9Q0mM",
+      "summary": "Commentary on Emperor's New Groove representation in Disney theme parks."
+    },
+    {
+      "videoId": "H46YuV93KNs",
+      "title": "【先頭ダンサー・ファシリエダンサーがカッコ良すぎる】ザ・ヴィランズ・ハロウィーン into the Frengy 2026 #shorts #short #ディズニー #ディズニーランド",
+      "channel": "がすとん(旅するアルバイター) ディズニー",
+      "publishedAt": "2026-10-02T11:30:14Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/H46YuV93KNs/mqdefault.jpg",
+      "viewCount": 1570,
+      "url": "https://www.youtube.com/watch?v=H46YuV93KNs",
+      "summary": "Highlights from Tokyo Disneyland's Villains Halloween entertainment featuring lead dancers."
+    },
+    {
+      "videoId": "HITMfH375w0",
+      "title": "It's UP 🤩",
+      "channel": "THE EXPLORER",
+      "publishedAt": "2026-10-02T12:12:16Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/HITMfH375w0/mqdefault.jpg",
+      "viewCount": 1329,
+      "url": "https://www.youtube.com/watch?v=HITMfH375w0",
+      "summary": "Short clip related to Disney's UP movie or themed content."
+    }
+  ],
+  "updatedAt": "2026-10-02T16:25:51.190Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-10-02T16:25:51.190Z",
+    "tokens": {
+      "input": 11297,
+      "output": 5267,
+      "costUsd": 0.1129
+    }
+  }
+}
