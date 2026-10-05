@@ -20,7 +20,7 @@
 //
 
 /** Syntax for a minted venue key: park-prefixed, lowercase, hyphenated. */
-export const VENUE_KEY_PATTERN = /^(?:ep|hs|mk|ak)-[a-z0-9]+(?:-[a-z0-9]+)*$/;
+export const VENUE_KEY_PATTERN = /^(?:ep|hs|mk|ak|dl)-[a-z0-9]+(?:-[a-z0-9]+)*$/;
 
 /**
  * canonicalId (current iOS join identity) -> venueKey (immutable, ours).
@@ -159,6 +159,43 @@ export const DINING_VENUE_KEYS: Readonly<Record<string, string>> = {
   "Animal Kingdom|Pandora|Satu'li Canteen": "ak-satuli-canteen",
   "Animal Kingdom|Pandora|Pongu Pongu": "ak-pongu-pongu",
   "Animal Kingdom|Main Entrance|Rainforest Cafe at Disney's Animal Kingdom": "ak-rainforest-cafe",
+
+  // ── Disneyland (35) ─────────────────────────────────────────
+  "Disneyland|Main Street, U.S.A.|Carnation Café": "dl-carnation-cafe",
+  "Disneyland|Main Street, U.S.A.|Gibson Girl Ice Cream Parlor": "dl-gibson-girl",
+  "Disneyland|Main Street, U.S.A.|Jolly Holiday Bakery Cafe": "dl-jolly-holiday",
+  "Disneyland|Main Street, U.S.A.|Little Red Wagon": "dl-little-red-wagon",
+  "Disneyland|Main Street, U.S.A.|Market House": "dl-market-house",
+  "Disneyland|Main Street, U.S.A.|Refreshment Corner": "dl-refreshment-corner",
+  "Disneyland|Main Street, U.S.A.|Plaza Inn": "dl-plaza-inn",
+  "Disneyland|Adventureland|The Tropical Hideaway": "dl-tropical-hideaway",
+  "Disneyland|Adventureland|Bengal Barbecue": "dl-bengal-barbecue",
+  "Disneyland|Adventureland|South Seas Traders": "dl-south-seas-traders",
+  "Disneyland|Adventureland|Tiki Juice Bar": "dl-tiki-juice-bar",
+  "Disneyland|New Orleans Square|Blue Bayou Restaurant": "dl-blue-bayou",
+  "Disneyland|New Orleans Square|Cafe Orleans": "dl-cafe-orleans",
+  "Disneyland|New Orleans Square|Harbour Galley": "dl-harbour-galley",
+  "Disneyland|New Orleans Square|Mint Julep Bar": "dl-mint-julep-bar",
+  "Disneyland|New Orleans Square|Royal Street Veranda": "dl-royal-street-veranda",
+  "Disneyland|New Orleans Square|Tiana's Palace": "dl-tianas-palace",
+  "Disneyland|Bayou Country|Hungry Bear Barbecue Jamboree": "dl-hungry-bear",
+  "Disneyland|Frontierland|The Golden Horseshoe": "dl-golden-horseshoe",
+  "Disneyland|Frontierland|Rancho del Zocalo Restaurante": "dl-rancho-del-zocalo",
+  "Disneyland|Frontierland|River Belle Terrace": "dl-river-belle-terrace",
+  "Disneyland|Frontierland|Stage Door Café": "dl-stage-door-cafe",
+  "Disneyland|Fantasyland|Edelweiss Snacks": "dl-edelweiss-snacks",
+  "Disneyland|Fantasyland|Maurice's Treats": "dl-maurices-treats",
+  "Disneyland|Fantasyland|Red Rose Taverne": "dl-red-rose-taverne",
+  "Disneyland|Fantasyland|Troubadour Tavern": "dl-troubadour-tavern",
+  "Disneyland|Mickey's Toontown|Café Daisy": "dl-cafe-daisy",
+  "Disneyland|Mickey's Toontown|Good Boy! Grocers": "dl-good-boy-grocers",
+  "Disneyland|Tomorrowland|Galactic Grill": "dl-galactic-grill",
+  "Disneyland|Tomorrowland|Alien Pizza Planet": "dl-alien-pizza-planet",
+  "Disneyland|Star Wars: Galaxy's Edge|Docking Bay 7 Food and Cargo": "dl-docking-bay-7",
+  "Disneyland|Star Wars: Galaxy's Edge|Kat Saka's Kettle": "dl-kat-sakas-kettle",
+  "Disneyland|Star Wars: Galaxy's Edge|Milk Stand": "dl-milk-stand",
+  "Disneyland|Star Wars: Galaxy's Edge|Oga's Cantina at the Disneyland Resort": "dl-ogas-cantina",
+  "Disneyland|Star Wars: Galaxy's Edge|Ronto Roasters": "dl-ronto-roasters",
 };
 
 /** Every minted venue key. */

@@ -15,15 +15,16 @@ const entries = Object.entries(DINING_SLUGS);
 const bySlugPrefix = (prefix: string) => entries.filter(([, slug]) => slug.startsWith(prefix));
 
 describe("dining slug manifest", () => {
-  it("publishes exactly the 120-venue pilot", () => {
-    expect(entries).toHaveLength(120);
+  it("publishes exactly the 155-venue pilot", () => {
+    expect(entries).toHaveLength(155);
   });
 
-  it("covers EPCOT 42, Hollywood Studios 20, Magic Kingdom 31, and Animal Kingdom 27", () => {
+  it("covers EPCOT 42, Hollywood Studios 20, Magic Kingdom 31, Animal Kingdom 27, and Disneyland 35", () => {
     expect(bySlugPrefix("ep-")).toHaveLength(42);
     expect(bySlugPrefix("hs-")).toHaveLength(20);
     expect(bySlugPrefix("mk-")).toHaveLength(31);
     expect(bySlugPrefix("ak-")).toHaveLength(27);
+    expect(bySlugPrefix("dl-")).toHaveLength(35);
   });
 
   it("assigns a unique slug to every venue", () => {
@@ -78,12 +79,13 @@ describe("dining slug manifest", () => {
     expect(diningSlugFor("Animal Kingdom|Asia|Mr. Kamal's")).toBeUndefined();
   });
 
-  it("declares the four pilot parks", () => {
+  it("declares the five pilot parks", () => {
     expect([...DINING_PILOT_PARK_IDS]).toEqual([
       "epcot",
       "hollywood-studios",
       "magic-kingdom",
       "animal-kingdom",
+      "disneyland",
     ]);
   });
 });

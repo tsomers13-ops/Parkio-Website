@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "sourceRepository": "tsomers13-ops/parkio",
-  "sourceCommit": "6e8720ea3bf2ea18fea78ac5e467fdb13e7963a8",
+  "sourceCommit": "96987b3746bf92d9e767d193767b3e8093fc0446",
   "sourceDirty": false,
-  "entityCount": 120,
+  "entityCount": 155,
   "venues": [
     {
       "canonicalId": "Animal Kingdom|Asia|Anandapur Ice Cream Truck",
@@ -345,6 +345,487 @@
       "latitude": 28.35859,
       "longitude": -81.58958,
       "externalId": "cea213d9-bf4f-408a-ac61-768e7709ab7d"
+    },
+    {
+      "canonicalId": "Disneyland|Tomorrowland|Alien Pizza Planet",
+      "slug": "dl-alien-pizza-planet",
+      "parkId": "disneyland",
+      "name": "Alien Pizza Planet",
+      "land": "Tomorrowland",
+      "type": "quickService",
+      "latitude": 33.8117081571,
+      "longitude": -117.9168865347,
+      "externalId": "ce05c344-81fc-4b32-8717-cb1c26c65292"
+    },
+    {
+      "canonicalId": "Disneyland|Adventureland|Bengal Barbecue",
+      "slug": "dl-bengal-barbecue",
+      "parkId": "disneyland",
+      "name": "Bengal Barbecue",
+      "land": "Adventureland",
+      "type": "snackStand",
+      "latitude": 33.811555,
+      "longitude": -117.920299,
+      "externalId": "7bf706cd-0cf5-4640-a079-23a7a46f4f5b",
+      "editorial": {
+        "dietaryFlags": [
+          "Kids Menu"
+        ],
+        "indoorSeating": false,
+        "kidFriendly": true,
+        "mobileOrderAvailable": false,
+        "parkioScore": 8,
+        "priceTier": 2,
+        "shortVerdict": "Best walk-up snack in Disneyland. Grab a beef skewer while waiting for Indiana Jones.",
+        "signatureItems": [
+          "Outback Skewer (Beef)",
+          "Pretzel Bread",
+          "Chicken Skewer"
+        ]
+      }
+    },
+    {
+      "canonicalId": "Disneyland|New Orleans Square|Blue Bayou Restaurant",
+      "slug": "dl-blue-bayou",
+      "parkId": "disneyland",
+      "name": "Blue Bayou Restaurant",
+      "land": "New Orleans Square",
+      "type": "tableService",
+      "latitude": 33.811049,
+      "longitude": -117.921126,
+      "externalId": "4784fd0f-9ba3-4a5d-a4b9-ed33b93c4489",
+      "editorial": {
+        "dietaryFlags": [
+          "Kids Menu",
+          "Vegetarian"
+        ],
+        "indoorSeating": true,
+        "kidFriendly": true,
+        "mobileOrderAvailable": false,
+        "parkioScore": 9,
+        "priceTier": 3,
+        "shortVerdict": "Dine inside Pirates of the Caribbean. The atmosphere alone justifies the ADR.",
+        "signatureItems": [
+          "Jambalaya",
+          "Monte Cristo Sandwich",
+          "Bayou Trio"
+        ]
+      }
+    },
+    {
+      "canonicalId": "Disneyland|Mickey's Toontown|Café Daisy",
+      "slug": "dl-cafe-daisy",
+      "parkId": "disneyland",
+      "name": "Café Daisy",
+      "land": "Mickey's Toontown",
+      "type": "quickService",
+      "latitude": 33.81547,
+      "longitude": -117.918682,
+      "externalId": "f8d61baa-dc1a-4e82-ab6b-f24bdd83e6e1"
+    },
+    {
+      "canonicalId": "Disneyland|New Orleans Square|Cafe Orleans",
+      "slug": "dl-cafe-orleans",
+      "parkId": "disneyland",
+      "name": "Cafe Orleans",
+      "land": "New Orleans Square",
+      "type": "tableService",
+      "latitude": 33.811205,
+      "longitude": -117.921262,
+      "externalId": "3665b38e-3e56-4c84-ad20-3e39672079a1",
+      "editorial": {
+        "dietaryFlags": [
+          "Kids Menu",
+          "Vegetarian"
+        ],
+        "indoorSeating": true,
+        "kidFriendly": true,
+        "mobileOrderAvailable": false,
+        "parkioScore": 8,
+        "priceTier": 3,
+        "shortVerdict": "Better food than Blue Bayou, lower profile. The Monte Cristo is iconic.",
+        "signatureItems": [
+          "Monte Cristo Sandwich",
+          "Pommes Frites",
+          "Beignets"
+        ]
+      }
+    },
+    {
+      "canonicalId": "Disneyland|Main Street, U.S.A.|Carnation Café",
+      "slug": "dl-carnation-cafe",
+      "parkId": "disneyland",
+      "name": "Carnation Café",
+      "land": "Main Street, U.S.A.",
+      "type": "tableService",
+      "latitude": 33.81106,
+      "longitude": -117.919082,
+      "externalId": "c7ce633e-1f6b-4699-98c9-6772bb196b16"
+    },
+    {
+      "canonicalId": "Disneyland|Star Wars: Galaxy's Edge|Docking Bay 7 Food and Cargo",
+      "slug": "dl-docking-bay-7",
+      "parkId": "disneyland",
+      "name": "Docking Bay 7 Food and Cargo",
+      "land": "Star Wars: Galaxy's Edge",
+      "type": "quickService",
+      "latitude": 33.814742,
+      "longitude": -117.921432,
+      "externalId": "8abfd370-4c29-4154-bb96-41e031b78d29"
+    },
+    {
+      "canonicalId": "Disneyland|Fantasyland|Edelweiss Snacks",
+      "slug": "dl-edelweiss-snacks",
+      "parkId": "disneyland",
+      "name": "Edelweiss Snacks",
+      "land": "Fantasyland",
+      "type": "snackStand",
+      "latitude": 33.8137108075,
+      "longitude": -117.9177229106,
+      "externalId": "fbee3a16-4be3-47f3-97a7-70ef09aff088"
+    },
+    {
+      "canonicalId": "Disneyland|Tomorrowland|Galactic Grill",
+      "slug": "dl-galactic-grill",
+      "parkId": "disneyland",
+      "name": "Galactic Grill",
+      "land": "Tomorrowland",
+      "type": "quickService",
+      "latitude": 33.812449,
+      "longitude": -117.917296,
+      "externalId": "e88cbd63-e385-423b-9565-fbe5faeb9050",
+      "editorial": {
+        "dietaryFlags": [
+          "Kids Menu",
+          "Vegetarian"
+        ],
+        "indoorSeating": false,
+        "kidFriendly": true,
+        "mobileOrderAvailable": true,
+        "parkioScore": 6,
+        "priceTier": 1,
+        "shortVerdict": "Quick lunch before Space Mountain or Buzz. Nothing special; fast and convenient.",
+        "signatureItems": [
+          "Poe's Shakshuka",
+          "Space Tacos",
+          "Cosmic Burger"
+        ]
+      }
+    },
+    {
+      "canonicalId": "Disneyland|Main Street, U.S.A.|Gibson Girl Ice Cream Parlor",
+      "slug": "dl-gibson-girl",
+      "parkId": "disneyland",
+      "name": "Gibson Girl Ice Cream Parlor",
+      "land": "Main Street, U.S.A.",
+      "type": "quickService",
+      "latitude": 33.8111392429,
+      "longitude": -117.9190407415,
+      "externalId": "2215958d-c6b0-4513-912c-706dbf3e46e9"
+    },
+    {
+      "canonicalId": "Disneyland|Frontierland|The Golden Horseshoe",
+      "slug": "dl-golden-horseshoe",
+      "parkId": "disneyland",
+      "name": "The Golden Horseshoe",
+      "land": "Frontierland",
+      "type": "quickService"
+    },
+    {
+      "canonicalId": "Disneyland|Mickey's Toontown|Good Boy! Grocers",
+      "slug": "dl-good-boy-grocers",
+      "parkId": "disneyland",
+      "name": "Good Boy! Grocers",
+      "land": "Mickey's Toontown",
+      "type": "snackStand"
+    },
+    {
+      "canonicalId": "Disneyland|New Orleans Square|Harbour Galley",
+      "slug": "dl-harbour-galley",
+      "parkId": "disneyland",
+      "name": "Harbour Galley",
+      "land": "New Orleans Square",
+      "type": "quickService",
+      "latitude": 33.8120188925,
+      "longitude": -117.921936614,
+      "externalId": "92f45ae9-5e6d-4923-88d4-7f676c2d10b2"
+    },
+    {
+      "canonicalId": "Disneyland|Bayou Country|Hungry Bear Barbecue Jamboree",
+      "slug": "dl-hungry-bear",
+      "parkId": "disneyland",
+      "name": "Hungry Bear Barbecue Jamboree",
+      "land": "Bayou Country",
+      "type": "quickService",
+      "latitude": 33.812554,
+      "longitude": -117.922435,
+      "externalId": "fb686e53-e10d-4cd5-836c-7a4a93207361",
+      "editorial": {
+        "dietaryFlags": [
+          "Kids Menu"
+        ],
+        "indoorSeating": false,
+        "kidFriendly": true,
+        "mobileOrderAvailable": true,
+        "parkioScore": 7,
+        "priceTier": 1,
+        "shortVerdict": "Hidden gem. Waterfront outdoor seating, consistently short lines, surprisingly good.",
+        "signatureItems": [
+          "Funnel Cake Fries",
+          "Fried Chicken Sandwich"
+        ]
+      }
+    },
+    {
+      "canonicalId": "Disneyland|Main Street, U.S.A.|Jolly Holiday Bakery Cafe",
+      "slug": "dl-jolly-holiday",
+      "parkId": "disneyland",
+      "name": "Jolly Holiday Bakery Cafe",
+      "land": "Main Street, U.S.A.",
+      "type": "quickService",
+      "latitude": 33.8117051187,
+      "longitude": -117.9193308949,
+      "externalId": "d295c224-299f-4fda-9d14-1d7780401929"
+    },
+    {
+      "canonicalId": "Disneyland|Star Wars: Galaxy's Edge|Kat Saka's Kettle",
+      "slug": "dl-kat-sakas-kettle",
+      "parkId": "disneyland",
+      "name": "Kat Saka's Kettle",
+      "land": "Star Wars: Galaxy's Edge",
+      "type": "snackStand"
+    },
+    {
+      "canonicalId": "Disneyland|Main Street, U.S.A.|Little Red Wagon",
+      "slug": "dl-little-red-wagon",
+      "parkId": "disneyland",
+      "name": "Little Red Wagon",
+      "land": "Main Street, U.S.A.",
+      "type": "quickService",
+      "latitude": 33.8114840141,
+      "longitude": -117.9186756938,
+      "externalId": "1cdd0f00-de40-4f7f-bf1b-014926d51aca"
+    },
+    {
+      "canonicalId": "Disneyland|Main Street, U.S.A.|Market House",
+      "slug": "dl-market-house",
+      "parkId": "disneyland",
+      "name": "Market House",
+      "land": "Main Street, U.S.A.",
+      "type": "quickService"
+    },
+    {
+      "canonicalId": "Disneyland|Fantasyland|Maurice's Treats",
+      "slug": "dl-maurices-treats",
+      "parkId": "disneyland",
+      "name": "Maurice's Treats",
+      "land": "Fantasyland",
+      "type": "quickService"
+    },
+    {
+      "canonicalId": "Disneyland|Star Wars: Galaxy's Edge|Milk Stand",
+      "slug": "dl-milk-stand",
+      "parkId": "disneyland",
+      "name": "Milk Stand",
+      "land": "Star Wars: Galaxy's Edge",
+      "type": "snackStand",
+      "latitude": 33.814428,
+      "longitude": -117.92069,
+      "externalId": "94453dec-3f16-43a6-94c9-be55144606b8"
+    },
+    {
+      "canonicalId": "Disneyland|New Orleans Square|Mint Julep Bar",
+      "slug": "dl-mint-julep-bar",
+      "parkId": "disneyland",
+      "name": "Mint Julep Bar",
+      "land": "New Orleans Square",
+      "type": "snackStand",
+      "latitude": 33.811176,
+      "longitude": -117.921656,
+      "externalId": "2e0d0726-07c7-42f6-b839-68a56a41e268"
+    },
+    {
+      "canonicalId": "Disneyland|Star Wars: Galaxy's Edge|Oga's Cantina at the Disneyland Resort",
+      "slug": "dl-ogas-cantina",
+      "parkId": "disneyland",
+      "name": "Oga's Cantina at the Disneyland Resort",
+      "land": "Star Wars: Galaxy's Edge",
+      "type": "lounge",
+      "latitude": 33.814717,
+      "longitude": -117.920943,
+      "externalId": "eb29424b-42ed-41a2-891c-d4c9494eab12"
+    },
+    {
+      "canonicalId": "Disneyland|Main Street, U.S.A.|Plaza Inn",
+      "slug": "dl-plaza-inn",
+      "parkId": "disneyland",
+      "name": "Plaza Inn",
+      "land": "Main Street, U.S.A.",
+      "type": "quickService",
+      "latitude": 33.8117514713,
+      "longitude": -117.918622265,
+      "externalId": "8deb6338-b65f-467c-9dd3-56ed8c02c355"
+    },
+    {
+      "canonicalId": "Disneyland|Frontierland|Rancho del Zocalo Restaurante",
+      "slug": "dl-rancho-del-zocalo",
+      "parkId": "disneyland",
+      "name": "Rancho del Zocalo Restaurante",
+      "land": "Frontierland",
+      "type": "quickService",
+      "editorial": {
+        "dietaryFlags": [
+          "Kids Menu",
+          "Vegetarian"
+        ],
+        "indoorSeating": true,
+        "kidFriendly": true,
+        "mobileOrderAvailable": true,
+        "parkioScore": 7,
+        "priceTier": 2,
+        "shortVerdict": "Solid Mexican QS with generous portions. Convenient before or after Big Thunder.",
+        "signatureItems": [
+          "Carne Asada Plate",
+          "Fish Tacos",
+          "Cheese Enchiladas"
+        ]
+      }
+    },
+    {
+      "canonicalId": "Disneyland|Fantasyland|Red Rose Taverne",
+      "slug": "dl-red-rose-taverne",
+      "parkId": "disneyland",
+      "name": "Red Rose Taverne",
+      "land": "Fantasyland",
+      "type": "quickService",
+      "latitude": 33.8134853951,
+      "longitude": -117.9194486939,
+      "externalId": "1db8443f-624c-4d95-967c-1766a52b24ec"
+    },
+    {
+      "canonicalId": "Disneyland|Main Street, U.S.A.|Refreshment Corner",
+      "slug": "dl-refreshment-corner",
+      "parkId": "disneyland",
+      "name": "Refreshment Corner",
+      "land": "Main Street, U.S.A.",
+      "type": "quickService",
+      "latitude": 33.8114464994,
+      "longitude": -117.9190483181,
+      "externalId": "27ab9530-4fd5-4e9c-a5b1-d553fed56655"
+    },
+    {
+      "canonicalId": "Disneyland|Frontierland|River Belle Terrace",
+      "slug": "dl-river-belle-terrace",
+      "parkId": "disneyland",
+      "name": "River Belle Terrace",
+      "land": "Frontierland",
+      "type": "tableService",
+      "latitude": 33.8116150928,
+      "longitude": -117.9205917872,
+      "externalId": "057872ed-3f27-496f-80e2-edd3639ba084"
+    },
+    {
+      "canonicalId": "Disneyland|Star Wars: Galaxy's Edge|Ronto Roasters",
+      "slug": "dl-ronto-roasters",
+      "parkId": "disneyland",
+      "name": "Ronto Roasters",
+      "land": "Star Wars: Galaxy's Edge",
+      "type": "quickService",
+      "latitude": 33.814424,
+      "longitude": -117.921484,
+      "externalId": "1822fb68-5f64-4329-b7e2-d4065f7159ac"
+    },
+    {
+      "canonicalId": "Disneyland|New Orleans Square|Royal Street Veranda",
+      "slug": "dl-royal-street-veranda",
+      "parkId": "disneyland",
+      "name": "Royal Street Veranda",
+      "land": "New Orleans Square",
+      "type": "quickService",
+      "latitude": 33.8112279116,
+      "longitude": -117.9209163877,
+      "externalId": "d2feb649-41ea-4097-a45b-10cfb48d13aa"
+    },
+    {
+      "canonicalId": "Disneyland|Adventureland|South Seas Traders",
+      "slug": "dl-south-seas-traders",
+      "parkId": "disneyland",
+      "name": "South Seas Traders",
+      "land": "Adventureland",
+      "type": "snackStand"
+    },
+    {
+      "canonicalId": "Disneyland|Frontierland|Stage Door Café",
+      "slug": "dl-stage-door-cafe",
+      "parkId": "disneyland",
+      "name": "Stage Door Café",
+      "land": "Frontierland",
+      "type": "quickService",
+      "latitude": 33.811889,
+      "longitude": -117.9203,
+      "externalId": "fae2515c-777b-4f37-b647-06383c1904d3"
+    },
+    {
+      "canonicalId": "Disneyland|New Orleans Square|Tiana's Palace",
+      "slug": "dl-tianas-palace",
+      "parkId": "disneyland",
+      "name": "Tiana's Palace",
+      "land": "New Orleans Square",
+      "type": "quickService",
+      "latitude": 33.811266,
+      "longitude": -117.921516,
+      "externalId": "f0f57b5c-5bc5-49d6-8b7f-34e4aa03c2e8"
+    },
+    {
+      "canonicalId": "Disneyland|Adventureland|Tiki Juice Bar",
+      "slug": "dl-tiki-juice-bar",
+      "parkId": "disneyland",
+      "name": "Tiki Juice Bar",
+      "land": "Adventureland",
+      "type": "quickService",
+      "latitude": 33.8118490285,
+      "longitude": -117.9195771195,
+      "externalId": "c48369cc-e341-4066-96b8-3687ccad1e49"
+    },
+    {
+      "canonicalId": "Disneyland|Adventureland|The Tropical Hideaway",
+      "slug": "dl-tropical-hideaway",
+      "parkId": "disneyland",
+      "name": "The Tropical Hideaway",
+      "land": "Adventureland",
+      "type": "snackStand",
+      "latitude": 33.81147,
+      "longitude": -117.91955,
+      "externalId": "3c8d7efa-b0a5-4e2d-811e-9da29d65f2f0",
+      "editorial": {
+        "dietaryFlags": [
+          "Dairy-Free",
+          "Vegan",
+          "Vegetarian"
+        ],
+        "indoorSeating": false,
+        "kidFriendly": true,
+        "mobileOrderAvailable": false,
+        "parkioScore": 9,
+        "priceTier": 1,
+        "shortVerdict": "More Dole Whip flavors than the Tiki Bar and almost always a shorter line.",
+        "signatureItems": [
+          "Dole Whip",
+          "Coconut Soft Serve",
+          "Tropical Float"
+        ]
+      }
+    },
+    {
+      "canonicalId": "Disneyland|Fantasyland|Troubadour Tavern",
+      "slug": "dl-troubadour-tavern",
+      "parkId": "disneyland",
+      "name": "Troubadour Tavern",
+      "land": "Fantasyland",
+      "type": "quickService",
+      "latitude": 33.8145219838,
+      "longitude": -117.9187180102,
+      "externalId": "3a63d923-413a-4512-b873-c690596fb479"
     },
     {
       "canonicalId": "EPCOT|World Showcase|Akershus Royal Banquet Hall",
