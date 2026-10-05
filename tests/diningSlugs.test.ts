@@ -15,14 +15,15 @@ const entries = Object.entries(DINING_SLUGS);
 const bySlugPrefix = (prefix: string) => entries.filter(([, slug]) => slug.startsWith(prefix));
 
 describe("dining slug manifest", () => {
-  it("publishes exactly the 93-venue pilot", () => {
-    expect(entries).toHaveLength(93);
+  it("publishes exactly the 120-venue pilot", () => {
+    expect(entries).toHaveLength(120);
   });
 
-  it("covers EPCOT 42, Hollywood Studios 20, and Magic Kingdom 31", () => {
+  it("covers EPCOT 42, Hollywood Studios 20, Magic Kingdom 31, and Animal Kingdom 27", () => {
     expect(bySlugPrefix("ep-")).toHaveLength(42);
     expect(bySlugPrefix("hs-")).toHaveLength(20);
     expect(bySlugPrefix("mk-")).toHaveLength(31);
+    expect(bySlugPrefix("ak-")).toHaveLength(27);
   });
 
   it("assigns a unique slug to every venue", () => {
@@ -72,10 +73,17 @@ describe("dining slug manifest", () => {
   });
 
   it("returns undefined for an unpublished venue", () => {
-    expect(diningSlugFor("Animal Kingdom|Discovery Island|Flame Tree Barbecue")).toBeUndefined();
+    // Mr. Kamal's was explicitly excluded from the Animal Kingdom expansion
+    // for insufficient first-party evidence — it has no stableID or slug.
+    expect(diningSlugFor("Animal Kingdom|Asia|Mr. Kamal's")).toBeUndefined();
   });
 
-  it("declares the three pilot parks", () => {
-    expect([...DINING_PILOT_PARK_IDS]).toEqual(["epcot", "hollywood-studios", "magic-kingdom"]);
+  it("declares the four pilot parks", () => {
+    expect([...DINING_PILOT_PARK_IDS]).toEqual([
+      "epcot",
+      "hollywood-studios",
+      "magic-kingdom",
+      "animal-kingdom",
+    ]);
   });
 });

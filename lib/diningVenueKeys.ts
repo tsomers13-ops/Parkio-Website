@@ -20,7 +20,7 @@
 //
 
 /** Syntax for a minted venue key: park-prefixed, lowercase, hyphenated. */
-export const VENUE_KEY_PATTERN = /^(?:ep|hs|mk)-[a-z0-9]+(?:-[a-z0-9]+)*$/;
+export const VENUE_KEY_PATTERN = /^(?:ep|hs|mk|ak)-[a-z0-9]+(?:-[a-z0-9]+)*$/;
 
 /**
  * canonicalId (current iOS join identity) -> venueKey (immutable, ours).
@@ -130,6 +130,35 @@ export const DINING_VENUE_KEYS: Readonly<Record<string, string>> = {
   "Magic Kingdom|Tomorrowland|The Lunching Pad": "mk-lunching-pad",
   "Magic Kingdom|Main Street, U.S.A.|The Plaza Restaurant": "mk-plaza-restaurant",
   "Magic Kingdom|Main Street, U.S.A.|Tony's Town Square Restaurant": "mk-tonys-town-square",
+
+  // ── Animal Kingdom (27) ─────────────────────────────────────
+  "Animal Kingdom|Discovery Island|Flame Tree Barbecue": "ak-flame-tree-barbecue",
+  "Animal Kingdom|Discovery Island|Tiffins Restaurant": "ak-tiffins",
+  "Animal Kingdom|Discovery Island|Pizzafari": "ak-pizzafari",
+  "Animal Kingdom|Discovery Island|Creature Comforts": "ak-creature-comforts",
+  "Animal Kingdom|Discovery Island|Nomad Lounge & Cocktail Bar": "ak-nomad-lounge",
+  "Animal Kingdom|Discovery Island|Isle of Java": "ak-isle-of-java",
+  "Animal Kingdom|Discovery Island|Eight Spoon Café": "ak-eight-spoon-cafe",
+  "Animal Kingdom|Discovery Island|The Smiling Crocodile": "ak-smiling-crocodile",
+  "Animal Kingdom|Discovery Island|Terra Treats and Snack Shop": "ak-terra-treats",
+  "Animal Kingdom|Africa|Harambe Market": "ak-harambe-market",
+  "Animal Kingdom|Africa|Tusker House Restaurant": "ak-tusker-house",
+  "Animal Kingdom|Africa|Kusafiri Coffee Shop & Bakery": "ak-kusafiri",
+  "Animal Kingdom|Africa|Dawa Bar": "ak-dawa-bar",
+  "Animal Kingdom|Africa|Tamu Tamu Refreshments": "ak-tamu-tamu",
+  "Animal Kingdom|Africa|Harambe Fruit Market": "ak-harambe-fruit-market",
+  "Animal Kingdom|Africa|Mahindi": "ak-mahindi",
+  "Animal Kingdom|Asia|Yak & Yeti Local Food Cafes": "ak-yak-and-yeti-local-food-cafes",
+  "Animal Kingdom|Asia|Yak & Yeti Restaurant": "ak-yak-and-yeti-restaurant",
+  "Animal Kingdom|Asia|Thirsty River Bar & Trek Snacks": "ak-thirsty-river",
+  "Animal Kingdom|Asia|Yak & Yeti Quality Beverages": "ak-yak-and-yeti-quality-beverages",
+  "Animal Kingdom|Asia|Warung Outpost": "ak-warung-outpost",
+  "Animal Kingdom|Asia|Drinkwallah": "ak-drinkwallah",
+  "Animal Kingdom|Asia|Caravan Road": "ak-caravan-road",
+  "Animal Kingdom|Asia|Anandapur Ice Cream Truck": "ak-anandapur-ice-cream-truck",
+  "Animal Kingdom|Pandora|Satu'li Canteen": "ak-satuli-canteen",
+  "Animal Kingdom|Pandora|Pongu Pongu": "ak-pongu-pongu",
+  "Animal Kingdom|Main Entrance|Rainforest Cafe at Disney's Animal Kingdom": "ak-rainforest-cafe",
 };
 
 /** Every minted venue key. */

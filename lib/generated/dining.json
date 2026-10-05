@@ -1,10 +1,351 @@
 {
   "schemaVersion": 1,
   "sourceRepository": "tsomers13-ops/parkio",
-  "sourceCommit": "b756c9c44a46ad373534aabb4874ae2822adda68",
+  "sourceCommit": "6e8720ea3bf2ea18fea78ac5e467fdb13e7963a8",
   "sourceDirty": false,
-  "entityCount": 93,
+  "entityCount": 120,
   "venues": [
+    {
+      "canonicalId": "Animal Kingdom|Asia|Anandapur Ice Cream Truck",
+      "slug": "ak-anandapur-ice-cream-truck",
+      "parkId": "animal-kingdom",
+      "name": "Anandapur Ice Cream Truck",
+      "land": "Asia",
+      "type": "snackStand"
+    },
+    {
+      "canonicalId": "Animal Kingdom|Asia|Caravan Road",
+      "slug": "ak-caravan-road",
+      "parkId": "animal-kingdom",
+      "name": "Caravan Road",
+      "land": "Asia",
+      "type": "snackStand"
+    },
+    {
+      "canonicalId": "Animal Kingdom|Discovery Island|Creature Comforts",
+      "slug": "ak-creature-comforts",
+      "parkId": "animal-kingdom",
+      "name": "Creature Comforts",
+      "land": "Discovery Island",
+      "type": "quickService"
+    },
+    {
+      "canonicalId": "Animal Kingdom|Africa|Dawa Bar",
+      "slug": "ak-dawa-bar",
+      "parkId": "animal-kingdom",
+      "name": "Dawa Bar",
+      "land": "Africa",
+      "type": "lounge",
+      "latitude": 28.35854,
+      "longitude": -81.59198,
+      "externalId": "1286aad3-bdbe-401b-99ef-4097477c556d"
+    },
+    {
+      "canonicalId": "Animal Kingdom|Asia|Drinkwallah",
+      "slug": "ak-drinkwallah",
+      "parkId": "animal-kingdom",
+      "name": "Drinkwallah",
+      "land": "Asia",
+      "type": "snackStand"
+    },
+    {
+      "canonicalId": "Animal Kingdom|Discovery Island|Eight Spoon Café",
+      "slug": "ak-eight-spoon-cafe",
+      "parkId": "animal-kingdom",
+      "name": "Eight Spoon Café",
+      "land": "Discovery Island",
+      "type": "snackStand"
+    },
+    {
+      "canonicalId": "Animal Kingdom|Discovery Island|Flame Tree Barbecue",
+      "slug": "ak-flame-tree-barbecue",
+      "parkId": "animal-kingdom",
+      "name": "Flame Tree Barbecue",
+      "land": "Discovery Island",
+      "type": "quickService",
+      "latitude": 28.35734,
+      "longitude": -81.58954,
+      "externalId": "6730b8bb-f592-40cd-8e6f-e7788f3f175b",
+      "editorial": {
+        "dietaryFlags": [
+          "Kids Menu"
+        ],
+        "indoorSeating": false,
+        "kidFriendly": true,
+        "mobileOrderAvailable": true,
+        "parkioScore": 8,
+        "priceTier": 2,
+        "shortVerdict": "Beautiful waterfront outdoor seating. Best BBQ in any WDW park.",
+        "signatureItems": [
+          "Ribs & Chicken Combo",
+          "Pulled Pork Sandwich",
+          "Baked Beans"
+        ]
+      }
+    },
+    {
+      "canonicalId": "Animal Kingdom|Africa|Harambe Fruit Market",
+      "slug": "ak-harambe-fruit-market",
+      "parkId": "animal-kingdom",
+      "name": "Harambe Fruit Market",
+      "land": "Africa",
+      "type": "snackStand"
+    },
+    {
+      "canonicalId": "Animal Kingdom|Africa|Harambe Market",
+      "slug": "ak-harambe-market",
+      "parkId": "animal-kingdom",
+      "name": "Harambe Market",
+      "land": "Africa",
+      "type": "quickService",
+      "latitude": 28.359161,
+      "longitude": -81.591369,
+      "externalId": "665cc4c1-1bcd-4e5e-a44d-adb6a6889abc",
+      "editorial": {
+        "dietaryFlags": [
+          "Kids Menu",
+          "Vegetarian"
+        ],
+        "indoorSeating": false,
+        "kidFriendly": true,
+        "mobileOrderAvailable": true,
+        "parkioScore": 7,
+        "priceTier": 2,
+        "shortVerdict": "Themed open-air market. Great atmosphere and the grilled corn is addictive.",
+        "signatureItems": [
+          "Cheeseburger Kotlet",
+          "Chicken Skewers",
+          "Grilled Corn"
+        ]
+      }
+    },
+    {
+      "canonicalId": "Animal Kingdom|Discovery Island|Isle of Java",
+      "slug": "ak-isle-of-java",
+      "parkId": "animal-kingdom",
+      "name": "Isle of Java",
+      "land": "Discovery Island",
+      "type": "snackStand"
+    },
+    {
+      "canonicalId": "Animal Kingdom|Africa|Kusafiri Coffee Shop & Bakery",
+      "slug": "ak-kusafiri",
+      "parkId": "animal-kingdom",
+      "name": "Kusafiri Coffee Shop & Bakery",
+      "land": "Africa",
+      "type": "quickService"
+    },
+    {
+      "canonicalId": "Animal Kingdom|Africa|Mahindi",
+      "slug": "ak-mahindi",
+      "parkId": "animal-kingdom",
+      "name": "Mahindi",
+      "land": "Africa",
+      "type": "snackStand"
+    },
+    {
+      "canonicalId": "Animal Kingdom|Discovery Island|Nomad Lounge & Cocktail Bar",
+      "slug": "ak-nomad-lounge",
+      "parkId": "animal-kingdom",
+      "name": "Nomad Lounge & Cocktail Bar",
+      "land": "Discovery Island",
+      "type": "lounge",
+      "latitude": 28.356719,
+      "longitude": -81.591487,
+      "externalId": "f210842b-8c9b-4088-9f48-6284e9ce389a"
+    },
+    {
+      "canonicalId": "Animal Kingdom|Discovery Island|Pizzafari",
+      "slug": "ak-pizzafari",
+      "parkId": "animal-kingdom",
+      "name": "Pizzafari",
+      "land": "Discovery Island",
+      "type": "quickService",
+      "latitude": 28.3572167558,
+      "longitude": -81.5912854671,
+      "externalId": "625821c3-5bd2-4c08-b449-257f3c81cbde"
+    },
+    {
+      "canonicalId": "Animal Kingdom|Pandora|Pongu Pongu",
+      "slug": "ak-pongu-pongu",
+      "parkId": "animal-kingdom",
+      "name": "Pongu Pongu",
+      "land": "Pandora",
+      "type": "snackStand"
+    },
+    {
+      "canonicalId": "Animal Kingdom|Main Entrance|Rainforest Cafe at Disney's Animal Kingdom",
+      "slug": "ak-rainforest-cafe",
+      "parkId": "animal-kingdom",
+      "name": "Rainforest Cafe at Disney's Animal Kingdom",
+      "land": "Main Entrance",
+      "type": "tableService",
+      "latitude": 28.35478,
+      "longitude": -81.59039,
+      "externalId": "224d803c-cd7a-45d8-bfab-d843f2030983"
+    },
+    {
+      "canonicalId": "Animal Kingdom|Pandora|Satu'li Canteen",
+      "slug": "ak-satuli-canteen",
+      "parkId": "animal-kingdom",
+      "name": "Satu'li Canteen",
+      "land": "Pandora",
+      "type": "quickService",
+      "latitude": 28.3560347386574,
+      "longitude": -81.5924408283262,
+      "externalId": "7aa4f221-7b52-445e-bc27-f7baac4530ad",
+      "editorial": {
+        "dietaryFlags": [
+          "Gluten-Friendly",
+          "Kids Menu",
+          "Vegetarian"
+        ],
+        "indoorSeating": true,
+        "kidFriendly": true,
+        "mobileOrderAvailable": true,
+        "parkioScore": 9,
+        "priceTier": 2,
+        "shortVerdict": "Best quick service in any WDW park. The bowls are fresh, filling, and genuinely good.",
+        "signatureItems": [
+          "Cheeseburger Pod",
+          "Vegetable Curry Bowl",
+          "Blue Milk"
+        ]
+      }
+    },
+    {
+      "canonicalId": "Animal Kingdom|Discovery Island|The Smiling Crocodile",
+      "slug": "ak-smiling-crocodile",
+      "parkId": "animal-kingdom",
+      "name": "The Smiling Crocodile",
+      "land": "Discovery Island",
+      "type": "snackStand",
+      "latitude": 28.3577,
+      "longitude": -81.589802,
+      "externalId": "9a64300c-4861-4bed-9713-b4f49e55e566"
+    },
+    {
+      "canonicalId": "Animal Kingdom|Africa|Tamu Tamu Refreshments",
+      "slug": "ak-tamu-tamu",
+      "parkId": "animal-kingdom",
+      "name": "Tamu Tamu Refreshments",
+      "land": "Africa",
+      "type": "snackStand"
+    },
+    {
+      "canonicalId": "Animal Kingdom|Discovery Island|Terra Treats and Snack Shop",
+      "slug": "ak-terra-treats",
+      "parkId": "animal-kingdom",
+      "name": "Terra Treats and Snack Shop",
+      "land": "Discovery Island",
+      "type": "snackStand"
+    },
+    {
+      "canonicalId": "Animal Kingdom|Asia|Thirsty River Bar & Trek Snacks",
+      "slug": "ak-thirsty-river",
+      "parkId": "animal-kingdom",
+      "name": "Thirsty River Bar & Trek Snacks",
+      "land": "Asia",
+      "type": "lounge",
+      "latitude": 28.358551,
+      "longitude": -81.587646,
+      "externalId": "88d5c6ad-fd4a-4c8b-8ed3-656e3ee3a4eb"
+    },
+    {
+      "canonicalId": "Animal Kingdom|Discovery Island|Tiffins Restaurant",
+      "slug": "ak-tiffins",
+      "parkId": "animal-kingdom",
+      "name": "Tiffins Restaurant",
+      "land": "Discovery Island",
+      "type": "tableService",
+      "latitude": 28.356846,
+      "longitude": -81.591487,
+      "externalId": "e12fb6d6-0985-44e5-bdd3-65ff74433063",
+      "editorial": {
+        "dietaryFlags": [
+          "Gluten-Friendly",
+          "Vegetarian"
+        ],
+        "indoorSeating": true,
+        "kidFriendly": true,
+        "mobileOrderAvailable": false,
+        "parkioScore": 9,
+        "priceTier": 3,
+        "shortVerdict": "Best theme park restaurant you've never tried. Signature quality, zero pretension.",
+        "signatureItems": [
+          "Pan-Seared Grouper",
+          "Braised Short Rib",
+          "Whole-Fried Sustainable Fish"
+        ]
+      }
+    },
+    {
+      "canonicalId": "Animal Kingdom|Africa|Tusker House Restaurant",
+      "slug": "ak-tusker-house",
+      "parkId": "animal-kingdom",
+      "name": "Tusker House Restaurant",
+      "land": "Africa",
+      "type": "tableService",
+      "latitude": 28.3585843066,
+      "longitude": -81.5921041919,
+      "externalId": "d58db4d0-3bad-4655-937b-1cbc9ed0e880"
+    },
+    {
+      "canonicalId": "Animal Kingdom|Asia|Warung Outpost",
+      "slug": "ak-warung-outpost",
+      "parkId": "animal-kingdom",
+      "name": "Warung Outpost",
+      "land": "Asia",
+      "type": "lounge",
+      "latitude": 28.35874,
+      "longitude": -81.590306,
+      "externalId": "f609fcf6-0aef-44ef-b838-f10ff3b8543b"
+    },
+    {
+      "canonicalId": "Animal Kingdom|Asia|Yak & Yeti Local Food Cafes",
+      "slug": "ak-yak-and-yeti-local-food-cafes",
+      "parkId": "animal-kingdom",
+      "name": "Yak & Yeti Local Food Cafes",
+      "land": "Asia",
+      "type": "quickService",
+      "editorial": {
+        "dietaryFlags": [
+          "Kids Menu"
+        ],
+        "indoorSeating": false,
+        "kidFriendly": true,
+        "mobileOrderAvailable": true,
+        "parkioScore": 6,
+        "priceTier": 1,
+        "shortVerdict": "Solid counter service for a midday break. Better value than the sit-down next door.",
+        "signatureItems": [
+          "Fried Chicken Pot Sticker",
+          "Asian Chicken Sandwich"
+        ]
+      }
+    },
+    {
+      "canonicalId": "Animal Kingdom|Asia|Yak & Yeti Quality Beverages",
+      "slug": "ak-yak-and-yeti-quality-beverages",
+      "parkId": "animal-kingdom",
+      "name": "Yak & Yeti Quality Beverages",
+      "land": "Asia",
+      "type": "lounge",
+      "latitude": 28.358803,
+      "longitude": -81.5893,
+      "externalId": "84f51faa-72a3-4491-9449-20a999e5885c"
+    },
+    {
+      "canonicalId": "Animal Kingdom|Asia|Yak & Yeti Restaurant",
+      "slug": "ak-yak-and-yeti-restaurant",
+      "parkId": "animal-kingdom",
+      "name": "Yak & Yeti Restaurant",
+      "land": "Asia",
+      "type": "tableService",
+      "latitude": 28.35859,
+      "longitude": -81.58958,
+      "externalId": "cea213d9-bf4f-408a-ac61-768e7709ab7d"
+    },
     {
       "canonicalId": "EPCOT|World Showcase|Akershus Royal Banquet Hall",
       "slug": "ep-akershus",

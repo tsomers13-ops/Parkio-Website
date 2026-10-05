@@ -16,7 +16,7 @@
 import type { ParkId } from "./types";
 
 /** Parks with Dining coverage today. Not every ParkId qualifies. */
-export const DINING_PARK_IDS = ["epcot", "hollywood-studios", "magic-kingdom"] as const;
+export const DINING_PARK_IDS = ["epcot", "hollywood-studios", "magic-kingdom", "animal-kingdom"] as const;
 export type DiningParkId = (typeof DINING_PARK_IDS)[number];
 
 /** Machine values from the generated dataset. Never mutated for display. */
