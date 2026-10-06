@@ -6,18 +6,26 @@ name: Workers Production
 #
 # Two entry points, and they cannot both fire for the same commit:
 #
-#   1. push to main        — human merges and direct pushes.
+#   1. push of a `production-release-*` tag — an explicit, human-initiated
+#      release action. workflow_dispatch is the same kind of entry point,
+#      triggered manually from the Actions UI/CLI instead of by a tag.
 #   2. workflow_call       — invoked by parkio-daily.yml after it commits.
 #
 # Why both are needed: GitHub does not run workflows for pushes made with the
 # default GITHUB_TOKEN ("events triggered by the GITHUB_TOKEN will not create a
 # new workflow run"). parkio-daily.yml pushes with GITHUB_TOKEN, so entry point
-# 1 never fires for daily content. Without entry point 2 the daily job would
-# keep committing and keep reporting success while the live site went stale.
+# 1 never fires for daily content regardless of its trigger shape. Without
+# entry point 2 the daily job would keep committing and keep reporting success
+# while the live site went stale.
 #
-# Why there are no duplicate deploys: for exactly the same reason. A daily
-# commit reaches Production only through the explicit call, and a human push
-# only through the push trigger.
+# Until 2026-10-06, entry point 1 was `push: branches: [main]`: every ordinary
+# source push to main — including source-only, non-release changes — created a
+# production deployment request, held back only by the `production`
+# environment's required-reviewer gate (a human control, not an architectural
+# one). That was a production-safety defect, not a feature. Fixed by requiring
+# an explicit release tag or manual dispatch instead, so push to main can never
+# itself request a Production deploy. See the Workers Migration Final
+# Readiness Review and its trigger-remediation follow-up.
 #
 # NOTE: this workflow is inert until parkio.info is cut over to the Worker.
 # Until then it deploys the Production Worker on its canary hostname only,
@@ -26,11 +34,8 @@ name: Workers Production
 
 on:
   push:
-    branches: [main]
-    paths-ignore:
-      # Documentation-only commits do not need a Production deploy.
-      - "docs/**"
-      - "**/*.md"
+    tags:
+      - "production-release-*"
   workflow_call:
     inputs:
       sha:
