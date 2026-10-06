@@ -16,19 +16,21 @@
 //      unique Website-wide, and never colliding with an attraction slug.
 //    - Slugs are IMMUTABLE once published. Changing one breaks a live URL and
 //      is a deliberate migration, not an edit.
-//    - Presence in this manifest is what makes a venue routable. The pilot
-//      ships EPCOT + Hollywood Studios + Magic Kingdom only; venues in any
-//      other park are intentionally absent and therefore not published.
+//    - Presence in this manifest is what makes a venue routable. As of the
+//      DCA expansion, the pilot covers all six Dining parks (EPCOT,
+//      Hollywood Studios, Magic Kingdom, Animal Kingdom, Disneyland,
+//      Disney California Adventure); a venue outside this list is
+//      intentionally absent and therefore not published.
 //    - A Dining venue in a pilot park with no entry here is a hard
 //      generation failure, so a new iOS venue cannot ship without a
 //      deliberate slug decision.
 //
 
 /** Public Dining slug syntax: park prefix, lowercase, hyphen-separated. */
-export const DINING_SLUG_PATTERN = /^(?:ep|hs|mk|ak|dl)-[a-z0-9]+(?:-[a-z0-9]+)*$/;
+export const DINING_SLUG_PATTERN = /^(?:ep|hs|mk|ak|dl|dca)-[a-z0-9]+(?:-[a-z0-9]+)*$/;
 
 /** Parks included in the Dining pilot. */
-export const DINING_PILOT_PARK_IDS = ["epcot", "hollywood-studios", "magic-kingdom", "animal-kingdom", "disneyland"] as const;
+export const DINING_PILOT_PARK_IDS = ["epcot", "hollywood-studios", "magic-kingdom", "animal-kingdom", "disneyland", "california-adventure"] as const;
 
 /** canonicalId (iOS stableID — internal only) -> public Website slug. */
 export const DINING_SLUGS: Readonly<Record<string, string>> = {
@@ -197,6 +199,46 @@ export const DINING_SLUGS: Readonly<Record<string, string>> = {
   "Disneyland|Star Wars: Galaxy's Edge|Milk Stand": "dl-milk-stand",
   "Disneyland|Star Wars: Galaxy's Edge|Oga's Cantina at the Disneyland Resort": "dl-ogas-cantina",
   "Disneyland|Star Wars: Galaxy's Edge|Ronto Roasters": "dl-ronto-roasters",
+
+  // ── Disney California Adventure (38) ─────────────────────────
+  "Disney California Adventure|Avengers Campus|Pym Test Kitchen": "dca-pym-test-kitchen",
+  "Disney California Adventure|Avengers Campus|Pym Tasting Lab": "dca-pym-tasting-lab",
+  "Disney California Adventure|Avengers Campus|Shawarma Palace": "dca-shawarma-palace",
+  "Disney California Adventure|Avengers Campus|Terran Treats": "dca-terran-treats",
+  "Disney California Adventure|Cars Land|Flo's V8 Café": "dca-flos-v8-cafe",
+  "Disney California Adventure|Cars Land|Cozy Cone Motel": "dca-cozy-cone-motel",
+  "Disney California Adventure|Cars Land|Fillmore's Taste-In": "dca-fillmores-taste-in",
+  "Disney California Adventure|Pixar Pier|Lamplight Lounge": "dca-lamplight-lounge",
+  "Disney California Adventure|Pixar Pier|Adorable Snowman Frosted Treats": "dca-adorable-snowman",
+  "Disney California Adventure|Pixar Pier|Angry Dogs": "dca-angry-dogs",
+  "Disney California Adventure|Pixar Pier|Jack-Jack Cookie Num Nums": "dca-jack-jack-cookie-num-nums",
+  "Disney California Adventure|Pixar Pier|Poultry Palace": "dca-poultry-palace",
+  "Disney California Adventure|Pixar Pier|Señor Buzz Churros": "dca-senor-buzz-churros",
+  "Disney California Adventure|Paradise Gardens Park|Corn Dog Castle": "dca-corn-dog-castle",
+  "Disney California Adventure|Paradise Gardens Park|Boardwalk Pizza & Pasta": "dca-boardwalk-pizza-and-pasta",
+  "Disney California Adventure|Paradise Gardens Park|Paradise Garden Grill": "dca-paradise-garden-grill",
+  "Disney California Adventure|Paradise Gardens Park|Bayside Brews": "dca-bayside-brews",
+  "Disney California Adventure|Grizzly Peak|Smokejumpers Grill": "dca-smokejumpers-grill",
+  "Disney California Adventure|Buena Vista Street|Carthay Circle Restaurant": "dca-carthay-circle-restaurant",
+  "Disney California Adventure|Buena Vista Street|Carthay Circle Lounge": "dca-carthay-circle-lounge",
+  "Disney California Adventure|Buena Vista Street|Clarabelle's Hand-Scooped Ice Cream": "dca-clarabelles-ice-cream",
+  "Disney California Adventure|Buena Vista Street|Fiddler, Fifer & Practical Cafe": "dca-fiddler-fifer-and-practical-cafe",
+  "Disney California Adventure|Hollywood Land|Award Wieners": "dca-award-wieners",
+  "Disney California Adventure|Hollywood Land|Studio Catering Co.": "dca-studio-catering-co",
+  "Disney California Adventure|Hollywood Land|Hollywood Lounge": "dca-hollywood-lounge",
+  "Disney California Adventure|Hollywood Land|Fairfax Market": "dca-fairfax-market",
+  "Disney California Adventure|Hollywood Land|Schmoozies!": "dca-schmoozies",
+  "Disney California Adventure|San Fransokyo Square|Ghirardelli® Soda Fountain and Chocolate Shop": "dca-ghirardelli",
+  "Disney California Adventure|San Fransokyo Square|Cocina Cucamonga Mexican Grill": "dca-cocina-cucamonga",
+  "Disney California Adventure|San Fransokyo Square|Lucky Fortune Cookery": "dca-lucky-fortune-cookery",
+  "Disney California Adventure|San Fransokyo Square|Aunt Cass Café": "dca-aunt-cass-cafe",
+  "Disney California Adventure|San Fransokyo Square|Port of San Fransokyo Cervecería": "dca-port-of-san-fransokyo",
+  "Disney California Adventure|San Fransokyo Square|Rita's Turbine Blenders": "dca-ritas-turbine-blenders",
+  "Disney California Adventure|San Fransokyo Square|Cappuccino Cart": "dca-cappuccino-cart",
+  "Disney California Adventure|Performance Corridor|Wine Country Trattoria": "dca-wine-country-trattoria",
+  "Disney California Adventure|Performance Corridor|Sonoma Terrace": "dca-sonoma-terrace",
+  "Disney California Adventure|Performance Corridor|Mendocino Terrace": "dca-mendocino-terrace",
+  "Disney California Adventure|Performance Corridor|Magic Key Terrace - Magic Key Holder Dining": "dca-magic-key-terrace",
 };
 
 /** Every slug published by the manifest. */

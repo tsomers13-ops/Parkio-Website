@@ -38,6 +38,7 @@ const SLUG_PREFIX_BY_PARK_ID: Readonly<Record<string, string>> = {
   "magic-kingdom": "mk-",
   "animal-kingdom": "ak-",
   "disneyland": "dl-",
+  "california-adventure": "dca-",
 };
 
 // ── Source (exporter) shapes ────────────────────────────────────────────────
@@ -176,8 +177,8 @@ export function buildDataset(
 
   // 1. Manifest shape --------------------------------------------------------
   const manifestEntries = Object.entries(DINING_SLUGS);
-  if (manifestEntries.length !== 155) {
-    errors.push(`manifest has ${manifestEntries.length} entries, expected 155`);
+  if (manifestEntries.length !== 193) {
+    errors.push(`manifest has ${manifestEntries.length} entries, expected 193`);
   }
 
   const seenSlugs = new Map<string, string>();

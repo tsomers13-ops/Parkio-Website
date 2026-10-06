@@ -30,18 +30,20 @@ describe("dining discovery routing", () => {
       "magic-kingdom",
       "animal-kingdom",
       "disneyland",
+      "california-adventure",
     ]);
   });
 
-  it("routes all 155 permanent venues", () => {
+  it("routes all 193 permanent venues", () => {
     const params = diningStaticParams();
-    expect(params).toHaveLength(155);
+    expect(params).toHaveLength(193);
     expect(params.filter((p) => p.parkId === "epcot")).toHaveLength(42);
     expect(params.filter((p) => p.parkId === "hollywood-studios")).toHaveLength(20);
     expect(params.filter((p) => p.parkId === "magic-kingdom")).toHaveLength(31);
     expect(params.filter((p) => p.parkId === "animal-kingdom")).toHaveLength(27);
     expect(params.filter((p) => p.parkId === "disneyland")).toHaveLength(35);
-    expect(new Set(params.map((p) => `${p.parkId}/${p.slug}`)).size).toBe(155);
+    expect(params.filter((p) => p.parkId === "california-adventure")).toHaveLength(38);
+    expect(new Set(params.map((p) => `${p.parkId}/${p.slug}`)).size).toBe(193);
   });
 
   it("resolves every generated param to a real venue", () => {
@@ -109,7 +111,7 @@ describe("dining grouping and filters", () => {
 
   it("renders factual-only venues with no editorial fields", () => {
     const factualOnly = getAllPermanentDining().filter((v) => v.editorial === undefined);
-    expect(factualOnly).toHaveLength(125);
+    expect(factualOnly).toHaveLength(157);
     for (const venue of factualOnly) {
       expect(venue.name.trim()).not.toBe("");
       expect(diningTypeLabel(venue.type)).toBeTruthy();
@@ -117,9 +119,9 @@ describe("dining grouping and filters", () => {
     }
   });
 
-  it("gives the 30 reviewed venues their editorial payload", () => {
+  it("gives the 36 reviewed venues their editorial payload", () => {
     const reviewed = getAllPermanentDining().filter((v) => v.editorial !== undefined);
-    expect(reviewed).toHaveLength(30);
+    expect(reviewed).toHaveLength(36);
     for (const venue of reviewed) {
       expect(venue.editorial!.shortVerdict.trim()).not.toBe("");
       expect(venue.editorial!.parkioScore).toBeGreaterThan(0);
@@ -173,22 +175,22 @@ describe("indexability and sitemap", () => {
   const diningUrls = entries.filter((e) => e.url.includes("/dining"));
 
   it("indexes exactly the content-floor-qualified venues", () => {
-    expect(getIndexablePermanentDining()).toHaveLength(30);
+    expect(getIndexablePermanentDining()).toHaveLength(36);
     for (const venue of getIndexablePermanentDining()) {
       expect(meetsDiningContentFloor(venue)).toBe(true);
     }
   });
 
-  it("contributes exactly 35 dining URLs: 5 discovery + 30 detail", () => {
-    expect(diningUrls).toHaveLength(35);
+  it("contributes exactly 42 dining URLs: 6 discovery + 36 detail", () => {
+    expect(diningUrls).toHaveLength(42);
     const discovery = diningUrls.filter((e) => e.url.endsWith("/dining/"));
-    expect(discovery).toHaveLength(5);
-    expect(diningUrls.length - discovery.length).toBe(30);
+    expect(discovery).toHaveLength(6);
+    expect(diningUrls.length - discovery.length).toBe(36);
   });
 
   it("omits every thin venue from the sitemap", () => {
     const thin = getAllPermanentDining().filter((v) => !meetsDiningContentFloor(v));
-    expect(thin).toHaveLength(125);
+    expect(thin).toHaveLength(157);
     for (const venue of thin) {
       expect(diningUrls.some((e) => e.url.includes(`/dining/${venue.slug}/`))).toBe(false);
     }

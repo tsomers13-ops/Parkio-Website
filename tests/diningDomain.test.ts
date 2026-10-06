@@ -34,14 +34,15 @@ const booths = getAllFestivalBooths();
 const festival = getFestivals()[0];
 
 describe("permanent dining", () => {
-  it("loads the 155 supported venues", () => {
-    expect(venues).toHaveLength(155);
+  it("loads the 193 supported venues", () => {
+    expect(venues).toHaveLength(193);
     expect(getPermanentDiningForPark("epcot")).toHaveLength(42);
     expect(getPermanentDiningForPark("hollywood-studios")).toHaveLength(20);
     expect(getPermanentDiningForPark("magic-kingdom")).toHaveLength(31);
     expect(getPermanentDiningForPark("animal-kingdom")).toHaveLength(27);
     expect(getPermanentDiningForPark("disneyland")).toHaveLength(35);
-    expect(getPermanentDiningProvenance().entityCount).toBe(155);
+    expect(getPermanentDiningForPark("california-adventure")).toHaveLength(38);
+    expect(getPermanentDiningProvenance().entityCount).toBe(193);
   });
 
   it("tags every venue as permanent", () => {
@@ -69,16 +70,20 @@ describe("permanent dining", () => {
     expect(isDiningParkId("magic-kingdom")).toBe(true);
     expect(isDiningParkId("animal-kingdom")).toBe(true);
     expect(isDiningParkId("disneyland")).toBe(true);
-    expect(isDiningParkId("california-adventure")).toBe(false);
-    expect(getPermanentDiningForPark("california-adventure")).toEqual([]);
-    expect(getPermanentDiningBySlug("california-adventure", "ep-garden-grill")).toBeNull();
+    expect(isDiningParkId("california-adventure")).toBe(true);
+    // All six modeled Dining parks are now covered, so there is no remaining
+    // real ParkId to use as a "not covered" fixture — a synthetic,
+    // never-modeled park id exercises the same code path instead.
+    expect(isDiningParkId("not-a-park")).toBe(false);
+    expect(getPermanentDiningForPark("not-a-park")).toEqual([]);
+    expect(getPermanentDiningBySlug("not-a-park", "ep-garden-grill")).toBeNull();
   });
 
   it("treats missing editorial as a first-class state", () => {
     const withEditorial = venues.filter((v) => v.editorial !== undefined);
     const factualOnly = venues.filter((v) => v.editorial === undefined);
-    expect(withEditorial).toHaveLength(30);
-    expect(factualOnly).toHaveLength(125);
+    expect(withEditorial).toHaveLength(36);
+    expect(factualOnly).toHaveLength(157);
     // Factual-only venues stay complete, usable records — never null-filled.
     for (const venue of factualOnly) {
       expect(venue.name.trim()).not.toBe("");
@@ -88,7 +93,7 @@ describe("permanent dining", () => {
   });
 
   it("treats coordinates as optional and always paired", () => {
-    expect(venues.filter((v) => v.latitude !== undefined)).toHaveLength(98);
+    expect(venues.filter((v) => v.latitude !== undefined)).toHaveLength(126);
     for (const venue of venues) {
       expect(venue.latitude !== undefined).toBe(venue.longitude !== undefined);
     }
@@ -117,14 +122,15 @@ describe("content floor", () => {
     expect(DINING_CONTENT_FLOOR).toBe(3);
   });
 
-  it("passes exactly 30 of 155 venues", () => {
-    expect(pass).toHaveLength(30);
-    expect(fail).toHaveLength(125);
+  it("passes exactly 36 of 193 venues", () => {
+    expect(pass).toHaveLength(36);
+    expect(fail).toHaveLength(157);
     expect(pass.filter((v) => v.parkId === "epcot")).toHaveLength(7);
     expect(pass.filter((v) => v.parkId === "hollywood-studios")).toHaveLength(6);
     expect(pass.filter((v) => v.parkId === "magic-kingdom")).toHaveLength(5);
     expect(pass.filter((v) => v.parkId === "animal-kingdom")).toHaveLength(5);
     expect(pass.filter((v) => v.parkId === "disneyland")).toHaveLength(7);
+    expect(pass.filter((v) => v.parkId === "california-adventure")).toHaveLength(6);
   });
 
   it("sits in an empty band, so no venue is a borderline case", () => {
@@ -135,22 +141,23 @@ describe("content floor", () => {
   });
 
   it("never counts live operational status as evergreen substance", () => {
-    // 80 venues carry coordinate + externalId and nothing else; that is a
+    // 102 venues carry coordinate + externalId and nothing else; that is a
     // directory entry, not an indexable page.
     const directoryOnly = venues.filter(
       (v) => v.editorial === undefined && v.latitude !== undefined && v.externalId,
     );
-    expect(directoryOnly).toHaveLength(80);
+    expect(directoryOnly).toHaveLength(102);
     for (const venue of directoryOnly) expect(diningContentScore(venue)).toBe(2);
   });
 
   it("is deterministic and matches getIndexablePermanentDining", () => {
-    expect(getIndexablePermanentDining()).toHaveLength(30);
+    expect(getIndexablePermanentDining()).toHaveLength(36);
     expect(getIndexablePermanentDining("epcot")).toHaveLength(7);
     expect(getIndexablePermanentDining("hollywood-studios")).toHaveLength(6);
     expect(getIndexablePermanentDining("magic-kingdom")).toHaveLength(5);
     expect(getIndexablePermanentDining("animal-kingdom")).toHaveLength(5);
     expect(getIndexablePermanentDining("disneyland")).toHaveLength(7);
+    expect(getIndexablePermanentDining("california-adventure")).toHaveLength(6);
     expect(venues.map(diningContentScore)).toEqual(venues.map(diningContentScore));
   });
 
@@ -161,12 +168,12 @@ describe("content floor", () => {
       expect(v.routable).toBe(true);
       expect(v.indexable).toBe(v.score >= DINING_CONTENT_FLOOR);
     }
-    expect(venues.filter((v) => diningVisibility(v).indexable)).toHaveLength(30);
+    expect(venues.filter((v) => diningVisibility(v).indexable)).toHaveLength(36);
   });
 
   it("names the exact venues held back from indexing", () => {
     const slugs = fail.map((v) => v.slug).sort();
-    expect(slugs).toHaveLength(125);
+    expect(slugs).toHaveLength(157);
     // Spot-check both ends: the single 1-signal venue and a 2-signal one.
     expect(slugs).toContain("ep-space-220-lounge");
     expect(slugs).toContain("hs-brown-derby");
@@ -352,7 +359,9 @@ describe("combined park dining", () => {
   });
 
   it("returns empty buckets for a park without dining coverage", () => {
-    const dining = getAllDiningForPark("california-adventure", "2026-09-08");
+    // All six modeled Dining parks are now covered, so there is no remaining
+    // real ParkId to use as a "not covered" fixture.
+    const dining = getAllDiningForPark("not-a-park", "2026-09-08");
     expect(dining.permanent).toEqual([]);
     expect(dining.festival).toEqual([]);
   });

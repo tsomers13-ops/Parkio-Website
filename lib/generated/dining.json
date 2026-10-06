@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "sourceRepository": "tsomers13-ops/parkio",
-  "sourceCommit": "96987b3746bf92d9e767d193767b3e8093fc0446",
+  "sourceCommit": "86142baf4eda1245483324f09bc4a8195489d88e",
   "sourceDirty": false,
-  "entityCount": 155,
+  "entityCount": 193,
   "venues": [
     {
       "canonicalId": "Animal Kingdom|Asia|Anandapur Ice Cream Truck",
@@ -345,6 +345,490 @@
       "latitude": 28.35859,
       "longitude": -81.58958,
       "externalId": "cea213d9-bf4f-408a-ac61-768e7709ab7d"
+    },
+    {
+      "canonicalId": "Disney California Adventure|Pixar Pier|Adorable Snowman Frosted Treats",
+      "slug": "dca-adorable-snowman",
+      "parkId": "california-adventure",
+      "name": "Adorable Snowman Frosted Treats",
+      "land": "Pixar Pier",
+      "type": "snackStand",
+      "latitude": 33.8051566775,
+      "longitude": -117.9204788804,
+      "externalId": "e8d7db35-0bc1-42e4-9e6b-a0bc7edbafb1",
+      "editorial": {
+        "dietaryFlags": [
+          "Vegan",
+          "Vegetarian"
+        ],
+        "indoorSeating": false,
+        "kidFriendly": true,
+        "mobileOrderAvailable": false,
+        "parkioScore": 8,
+        "priceTier": 1,
+        "shortVerdict": "Best soft serve in DCA. The lemon flavor is bright and weirdly refreshing.",
+        "signatureItems": [
+          "Lemon Soft Serve",
+          "Citrus Float"
+        ]
+      }
+    },
+    {
+      "canonicalId": "Disney California Adventure|Pixar Pier|Angry Dogs",
+      "slug": "dca-angry-dogs",
+      "parkId": "california-adventure",
+      "name": "Angry Dogs",
+      "land": "Pixar Pier",
+      "type": "snackStand"
+    },
+    {
+      "canonicalId": "Disney California Adventure|San Fransokyo Square|Aunt Cass Café",
+      "slug": "dca-aunt-cass-cafe",
+      "parkId": "california-adventure",
+      "name": "Aunt Cass Café",
+      "land": "San Fransokyo Square",
+      "type": "quickService",
+      "latitude": 33.8058566014,
+      "longitude": -117.9200660233,
+      "externalId": "778f814e-7113-4599-adce-b598a39d6cd9"
+    },
+    {
+      "canonicalId": "Disney California Adventure|Hollywood Land|Award Wieners",
+      "slug": "dca-award-wieners",
+      "parkId": "california-adventure",
+      "name": "Award Wieners",
+      "land": "Hollywood Land",
+      "type": "snackStand",
+      "latitude": 33.807735,
+      "longitude": -117.918127,
+      "externalId": "13dbf6c5-2118-4e2a-8609-a3600bf17d1f"
+    },
+    {
+      "canonicalId": "Disney California Adventure|Paradise Gardens Park|Bayside Brews",
+      "slug": "dca-bayside-brews",
+      "parkId": "california-adventure",
+      "name": "Bayside Brews",
+      "land": "Paradise Gardens Park",
+      "type": "lounge",
+      "latitude": 33.8058437811,
+      "longitude": -117.9228553176,
+      "externalId": "2f9b48bb-ad41-44e6-be57-82e62d154b0e"
+    },
+    {
+      "canonicalId": "Disney California Adventure|Paradise Gardens Park|Boardwalk Pizza & Pasta",
+      "slug": "dca-boardwalk-pizza-and-pasta",
+      "parkId": "california-adventure",
+      "name": "Boardwalk Pizza & Pasta",
+      "land": "Paradise Gardens Park",
+      "type": "quickService",
+      "latitude": 33.8057925204,
+      "longitude": -117.9232147336,
+      "externalId": "0ccdca1c-2e60-4f7c-8395-2adce67e34ba"
+    },
+    {
+      "canonicalId": "Disney California Adventure|San Fransokyo Square|Cappuccino Cart",
+      "slug": "dca-cappuccino-cart",
+      "parkId": "california-adventure",
+      "name": "Cappuccino Cart",
+      "land": "San Fransokyo Square",
+      "type": "snackStand",
+      "latitude": 33.806019,
+      "longitude": -117.920722,
+      "externalId": "0eefcad3-0b3f-4cb9-b91a-9d493af7222a"
+    },
+    {
+      "canonicalId": "Disney California Adventure|Buena Vista Street|Carthay Circle Lounge",
+      "slug": "dca-carthay-circle-lounge",
+      "parkId": "california-adventure",
+      "name": "Carthay Circle Lounge",
+      "land": "Buena Vista Street",
+      "type": "lounge",
+      "latitude": 33.807494,
+      "longitude": -117.919021,
+      "externalId": "1bef32e2-73b4-4de3-bb07-f71c3f301f22"
+    },
+    {
+      "canonicalId": "Disney California Adventure|Buena Vista Street|Carthay Circle Restaurant",
+      "slug": "dca-carthay-circle-restaurant",
+      "parkId": "california-adventure",
+      "name": "Carthay Circle Restaurant",
+      "land": "Buena Vista Street",
+      "type": "tableService",
+      "latitude": 33.807494,
+      "longitude": -117.919021,
+      "externalId": "753b558a-ff18-4ed9-a3c2-70e76b421618"
+    },
+    {
+      "canonicalId": "Disney California Adventure|Buena Vista Street|Clarabelle's Hand-Scooped Ice Cream",
+      "slug": "dca-clarabelles-ice-cream",
+      "parkId": "california-adventure",
+      "name": "Clarabelle's Hand-Scooped Ice Cream",
+      "land": "Buena Vista Street",
+      "type": "snackStand",
+      "latitude": 33.807958,
+      "longitude": -117.9191776264,
+      "externalId": "40217671-2e04-467b-b462-10d97fbca69d"
+    },
+    {
+      "canonicalId": "Disney California Adventure|San Fransokyo Square|Cocina Cucamonga Mexican Grill",
+      "slug": "dca-cocina-cucamonga",
+      "parkId": "california-adventure",
+      "name": "Cocina Cucamonga Mexican Grill",
+      "land": "San Fransokyo Square",
+      "type": "quickService",
+      "latitude": 33.805545,
+      "longitude": -117.920195,
+      "externalId": "33be9d07-5da1-42b4-a8bb-2486209693bc"
+    },
+    {
+      "canonicalId": "Disney California Adventure|Paradise Gardens Park|Corn Dog Castle",
+      "slug": "dca-corn-dog-castle",
+      "parkId": "california-adventure",
+      "name": "Corn Dog Castle",
+      "land": "Paradise Gardens Park",
+      "type": "snackStand",
+      "latitude": 33.8063363272,
+      "longitude": -117.9224435985,
+      "externalId": "c4034870-5e87-4514-832f-9da5506f9cf9",
+      "editorial": {
+        "dietaryFlags": [
+          "Kids Menu"
+        ],
+        "indoorSeating": false,
+        "kidFriendly": true,
+        "mobileOrderAvailable": false,
+        "parkioScore": 9,
+        "priceTier": 1,
+        "shortVerdict": "One of the best corn dogs on the West Coast. The Monte Cristo version is spectacular.",
+        "signatureItems": [
+          "Classic Hand-Dipped Corn Dog",
+          "Monte Cristo Corn Dog"
+        ]
+      }
+    },
+    {
+      "canonicalId": "Disney California Adventure|Cars Land|Cozy Cone Motel",
+      "slug": "dca-cozy-cone-motel",
+      "parkId": "california-adventure",
+      "name": "Cozy Cone Motel",
+      "land": "Cars Land",
+      "type": "quickService",
+      "latitude": 33.805873,
+      "longitude": -117.918645,
+      "externalId": "7025ea53-9d7f-4e7f-a0ad-0ea9523c3c01"
+    },
+    {
+      "canonicalId": "Disney California Adventure|Hollywood Land|Fairfax Market",
+      "slug": "dca-fairfax-market",
+      "parkId": "california-adventure",
+      "name": "Fairfax Market",
+      "land": "Hollywood Land",
+      "type": "snackStand"
+    },
+    {
+      "canonicalId": "Disney California Adventure|Buena Vista Street|Fiddler, Fifer & Practical Cafe",
+      "slug": "dca-fiddler-fifer-and-practical-cafe",
+      "parkId": "california-adventure",
+      "name": "Fiddler, Fifer & Practical Cafe",
+      "land": "Buena Vista Street",
+      "type": "quickService"
+    },
+    {
+      "canonicalId": "Disney California Adventure|Cars Land|Fillmore's Taste-In",
+      "slug": "dca-fillmores-taste-in",
+      "parkId": "california-adventure",
+      "name": "Fillmore's Taste-In",
+      "land": "Cars Land",
+      "type": "snackStand"
+    },
+    {
+      "canonicalId": "Disney California Adventure|Cars Land|Flo's V8 Café",
+      "slug": "dca-flos-v8-cafe",
+      "parkId": "california-adventure",
+      "name": "Flo's V8 Café",
+      "land": "Cars Land",
+      "type": "quickService",
+      "latitude": 33.8055498861,
+      "longitude": -117.9189880233,
+      "externalId": "85201274-b743-41ca-95a1-d575a07811d0",
+      "editorial": {
+        "dietaryFlags": [
+          "Kids Menu",
+          "Vegetarian"
+        ],
+        "indoorSeating": false,
+        "kidFriendly": true,
+        "mobileOrderAvailable": true,
+        "parkioScore": 7,
+        "priceTier": 2,
+        "shortVerdict": "Solid QS with great Cars Land theming. Best seat is outside near the fountain.",
+        "signatureItems": [
+          "Radiator Springs Rotisserie Chicken",
+          "Chili Mac",
+          "Flo's Float"
+        ]
+      }
+    },
+    {
+      "canonicalId": "Disney California Adventure|San Fransokyo Square|Ghirardelli® Soda Fountain and Chocolate Shop",
+      "slug": "dca-ghirardelli",
+      "parkId": "california-adventure",
+      "name": "Ghirardelli® Soda Fountain and Chocolate Shop",
+      "land": "San Fransokyo Square",
+      "type": "quickService"
+    },
+    {
+      "canonicalId": "Disney California Adventure|Hollywood Land|Hollywood Lounge",
+      "slug": "dca-hollywood-lounge",
+      "parkId": "california-adventure",
+      "name": "Hollywood Lounge",
+      "land": "Hollywood Land",
+      "type": "quickService",
+      "latitude": 33.808119,
+      "longitude": -117.917074,
+      "externalId": "8c153230-8203-4351-bc5a-485a67527b55"
+    },
+    {
+      "canonicalId": "Disney California Adventure|Pixar Pier|Jack-Jack Cookie Num Nums",
+      "slug": "dca-jack-jack-cookie-num-nums",
+      "parkId": "california-adventure",
+      "name": "Jack-Jack Cookie Num Nums",
+      "land": "Pixar Pier",
+      "type": "snackStand"
+    },
+    {
+      "canonicalId": "Disney California Adventure|Pixar Pier|Lamplight Lounge",
+      "slug": "dca-lamplight-lounge",
+      "parkId": "california-adventure",
+      "name": "Lamplight Lounge",
+      "land": "Pixar Pier",
+      "type": "lounge",
+      "latitude": 33.8053994053,
+      "longitude": -117.9209410699,
+      "externalId": "1214912c-de6d-4493-9344-c245357f7af6",
+      "editorial": {
+        "dietaryFlags": [
+          "Vegetarian"
+        ],
+        "indoorSeating": true,
+        "kidFriendly": false,
+        "mobileOrderAvailable": false,
+        "parkioScore": 9,
+        "priceTier": 3,
+        "shortVerdict": "Best restaurant in DCA. Walk-up bar menu rivals the full reservation experience.",
+        "signatureItems": [
+          "Lobster Nachos",
+          "Pixar Short Rib Toast",
+          "Passion Fruit Old Fashioned"
+        ]
+      }
+    },
+    {
+      "canonicalId": "Disney California Adventure|San Fransokyo Square|Lucky Fortune Cookery",
+      "slug": "dca-lucky-fortune-cookery",
+      "parkId": "california-adventure",
+      "name": "Lucky Fortune Cookery",
+      "land": "San Fransokyo Square",
+      "type": "quickService",
+      "latitude": 33.8057921835,
+      "longitude": -117.9198476908,
+      "externalId": "38df151c-f563-406f-8dbc-7e824c7afc75"
+    },
+    {
+      "canonicalId": "Disney California Adventure|Performance Corridor|Magic Key Terrace - Magic Key Holder Dining",
+      "slug": "dca-magic-key-terrace",
+      "parkId": "california-adventure",
+      "name": "Magic Key Terrace - Magic Key Holder Dining",
+      "land": "Performance Corridor",
+      "type": "lounge",
+      "latitude": 33.806621,
+      "longitude": -117.919866,
+      "externalId": "a098bd7c-f1a9-4ffb-97db-e85925509f19"
+    },
+    {
+      "canonicalId": "Disney California Adventure|Performance Corridor|Mendocino Terrace",
+      "slug": "dca-mendocino-terrace",
+      "parkId": "california-adventure",
+      "name": "Mendocino Terrace",
+      "land": "Performance Corridor",
+      "type": "lounge",
+      "latitude": 33.806546,
+      "longitude": -117.919842,
+      "externalId": "4ff553fa-008a-4d99-b6b0-30dd69d3453f"
+    },
+    {
+      "canonicalId": "Disney California Adventure|Paradise Gardens Park|Paradise Garden Grill",
+      "slug": "dca-paradise-garden-grill",
+      "parkId": "california-adventure",
+      "name": "Paradise Garden Grill",
+      "land": "Paradise Gardens Park",
+      "type": "quickService",
+      "latitude": 33.8061043985,
+      "longitude": -117.9233857988,
+      "externalId": "f7ff4406-5bd6-4067-9ed1-92ea1efdcc63"
+    },
+    {
+      "canonicalId": "Disney California Adventure|San Fransokyo Square|Port of San Fransokyo Cervecería",
+      "slug": "dca-port-of-san-fransokyo",
+      "parkId": "california-adventure",
+      "name": "Port of San Fransokyo Cervecería",
+      "land": "San Fransokyo Square",
+      "type": "lounge",
+      "latitude": 33.805683,
+      "longitude": -117.920311,
+      "externalId": "884a2e75-ef8a-4676-b65c-67320e732bb1"
+    },
+    {
+      "canonicalId": "Disney California Adventure|Pixar Pier|Poultry Palace",
+      "slug": "dca-poultry-palace",
+      "parkId": "california-adventure",
+      "name": "Poultry Palace",
+      "land": "Pixar Pier",
+      "type": "quickService"
+    },
+    {
+      "canonicalId": "Disney California Adventure|Avengers Campus|Pym Tasting Lab",
+      "slug": "dca-pym-tasting-lab",
+      "parkId": "california-adventure",
+      "name": "Pym Tasting Lab",
+      "land": "Avengers Campus",
+      "type": "lounge",
+      "latitude": 33.806723,
+      "longitude": -117.917516,
+      "externalId": "ca4b4068-02a7-4d98-92a6-f781ad5711d3"
+    },
+    {
+      "canonicalId": "Disney California Adventure|Avengers Campus|Pym Test Kitchen",
+      "slug": "dca-pym-test-kitchen",
+      "parkId": "california-adventure",
+      "name": "Pym Test Kitchen",
+      "land": "Avengers Campus",
+      "type": "quickService",
+      "latitude": 33.806726,
+      "longitude": -117.917696,
+      "externalId": "bbfe672e-075a-477a-b066-1117cf80030c",
+      "editorial": {
+        "dietaryFlags": [
+          "Kids Menu",
+          "Vegetarian"
+        ],
+        "indoorSeating": true,
+        "kidFriendly": true,
+        "mobileOrderAvailable": true,
+        "parkioScore": 8,
+        "priceTier": 2,
+        "shortVerdict": "Best themed QS in DCA. The Pym-ini is a solid sandwich with great presentation.",
+        "signatureItems": [
+          "Pym-ini Sandwich",
+          "Not So Little Chicken Sandwich",
+          "Cosmic Cream Orange Cake"
+        ]
+      }
+    },
+    {
+      "canonicalId": "Disney California Adventure|San Fransokyo Square|Rita's Turbine Blenders",
+      "slug": "dca-ritas-turbine-blenders",
+      "parkId": "california-adventure",
+      "name": "Rita's Turbine Blenders",
+      "land": "San Fransokyo Square",
+      "type": "snackStand",
+      "latitude": 33.805794,
+      "longitude": -117.919981,
+      "externalId": "431e008b-505c-42fd-9db1-a2e4d5feae78"
+    },
+    {
+      "canonicalId": "Disney California Adventure|Hollywood Land|Schmoozies!",
+      "slug": "dca-schmoozies",
+      "parkId": "california-adventure",
+      "name": "Schmoozies!",
+      "land": "Hollywood Land",
+      "type": "snackStand",
+      "latitude": 33.807759,
+      "longitude": -117.917651,
+      "externalId": "167199e4-933e-4647-9154-75b13975eea3"
+    },
+    {
+      "canonicalId": "Disney California Adventure|Pixar Pier|Señor Buzz Churros",
+      "slug": "dca-senor-buzz-churros",
+      "parkId": "california-adventure",
+      "name": "Señor Buzz Churros",
+      "land": "Pixar Pier",
+      "type": "snackStand"
+    },
+    {
+      "canonicalId": "Disney California Adventure|Avengers Campus|Shawarma Palace",
+      "slug": "dca-shawarma-palace",
+      "parkId": "california-adventure",
+      "name": "Shawarma Palace",
+      "land": "Avengers Campus",
+      "type": "quickService"
+    },
+    {
+      "canonicalId": "Disney California Adventure|Grizzly Peak|Smokejumpers Grill",
+      "slug": "dca-smokejumpers-grill",
+      "parkId": "california-adventure",
+      "name": "Smokejumpers Grill",
+      "land": "Grizzly Peak",
+      "type": "quickService",
+      "latitude": 33.8079285397,
+      "longitude": -117.9196943785,
+      "externalId": "5cd413b8-09da-4860-bdea-a88df9fe6c0d",
+      "editorial": {
+        "dietaryFlags": [
+          "Kids Menu"
+        ],
+        "indoorSeating": true,
+        "kidFriendly": true,
+        "mobileOrderAvailable": true,
+        "parkioScore": 6,
+        "priceTier": 1,
+        "shortVerdict": "Reliable burgers near Grizzly River Run. Good spot to eat while your clothes dry.",
+        "signatureItems": [
+          "Smokejumper Burger",
+          "Pulled Pork Sandwich"
+        ]
+      }
+    },
+    {
+      "canonicalId": "Disney California Adventure|Performance Corridor|Sonoma Terrace",
+      "slug": "dca-sonoma-terrace",
+      "parkId": "california-adventure",
+      "name": "Sonoma Terrace",
+      "land": "Performance Corridor",
+      "type": "quickService",
+      "latitude": 33.8063931592,
+      "longitude": -117.9203394055,
+      "externalId": "13bc1b70-3a42-41eb-9cb5-7fa8615af2ca"
+    },
+    {
+      "canonicalId": "Disney California Adventure|Hollywood Land|Studio Catering Co.",
+      "slug": "dca-studio-catering-co",
+      "parkId": "california-adventure",
+      "name": "Studio Catering Co.",
+      "land": "Hollywood Land",
+      "type": "quickService",
+      "latitude": 33.807889,
+      "longitude": -117.916958,
+      "externalId": "ceb71f40-b730-4209-80be-ef89c114dfdf"
+    },
+    {
+      "canonicalId": "Disney California Adventure|Avengers Campus|Terran Treats",
+      "slug": "dca-terran-treats",
+      "parkId": "california-adventure",
+      "name": "Terran Treats",
+      "land": "Avengers Campus",
+      "type": "quickService"
+    },
+    {
+      "canonicalId": "Disney California Adventure|Performance Corridor|Wine Country Trattoria",
+      "slug": "dca-wine-country-trattoria",
+      "parkId": "california-adventure",
+      "name": "Wine Country Trattoria",
+      "land": "Performance Corridor",
+      "type": "tableService",
+      "latitude": 33.806478,
+      "longitude": -117.919877,
+      "externalId": "048f854a-97d8-4295-8b7f-2575605259c6"
     },
     {
       "canonicalId": "Disneyland|Tomorrowland|Alien Pizza Planet",

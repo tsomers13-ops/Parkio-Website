@@ -24,21 +24,22 @@ import {
 const venues = getAllPermanentDining();
 
 describe("venueKey coverage", () => {
-  it("mints exactly one key for each of the 155 permanent venues", () => {
-    expect(Object.keys(DINING_VENUE_KEYS)).toHaveLength(155);
-    expect(venues).toHaveLength(155);
-    expect(allDiningVenueKeys()).toHaveLength(155);
+  it("mints exactly one key for each of the 193 permanent venues", () => {
+    expect(Object.keys(DINING_VENUE_KEYS)).toHaveLength(193);
+    expect(venues).toHaveLength(193);
+    expect(allDiningVenueKeys()).toHaveLength(193);
     expect(venues.filter((v) => v.parkId === "epcot")).toHaveLength(42);
     expect(venues.filter((v) => v.parkId === "hollywood-studios")).toHaveLength(20);
     expect(venues.filter((v) => v.parkId === "magic-kingdom")).toHaveLength(31);
     expect(venues.filter((v) => v.parkId === "animal-kingdom")).toHaveLength(27);
     expect(venues.filter((v) => v.parkId === "disneyland")).toHaveLength(35);
+    expect(venues.filter((v) => v.parkId === "california-adventure")).toHaveLength(38);
   });
 
   it("keeps canonicalIds, venueKeys and slugs each unique", () => {
-    expect(new Set(venues.map((v) => v.canonicalId)).size).toBe(155);
-    expect(new Set(venues.map((v) => v.venueKey)).size).toBe(155);
-    expect(new Set(venues.map((v) => v.slug)).size).toBe(155);
+    expect(new Set(venues.map((v) => v.canonicalId)).size).toBe(193);
+    expect(new Set(venues.map((v) => v.venueKey)).size).toBe(193);
+    expect(new Set(venues.map((v) => v.slug)).size).toBe(193);
   });
 
   it("gives every venue a syntactically valid key", () => {
@@ -103,7 +104,7 @@ describe("venueKey immutability", () => {
       // The manifest must contain literal assignments, not slug arithmetic.
       Object.entries(DINING_VENUE_KEYS).length,
     );
-    expect(source).toBe("155");
+    expect(source).toBe("193");
     // A venue whose slug changed would still resolve to the same key, because
     // nothing reads `venue.slug` to produce `venue.venueKey`.
     const venue = venues.find((v) => v.venueKey === "ep-le-cellier")!;

@@ -220,14 +220,15 @@ describe("menu", () => {
 });
 
 describe("permanent dining isolation", () => {
-  it("leaves the permanent dataset at exactly 155 venues", () => {
-    expect(permanent.entityCount).toBe(155);
-    expect(permanent.venues).toHaveLength(155);
+  it("leaves the permanent dataset at exactly 193 venues", () => {
+    expect(permanent.entityCount).toBe(193);
+    expect(permanent.venues).toHaveLength(193);
     expect(permanent.venues.filter((v) => v.parkId === "epcot")).toHaveLength(42);
     expect(permanent.venues.filter((v) => v.parkId === "hollywood-studios")).toHaveLength(20);
     expect(permanent.venues.filter((v) => v.parkId === "magic-kingdom")).toHaveLength(31);
     expect(permanent.venues.filter((v) => v.parkId === "animal-kingdom")).toHaveLength(27);
     expect(permanent.venues.filter((v) => v.parkId === "disneyland")).toHaveLength(35);
+    expect(permanent.venues.filter((v) => v.parkId === "california-adventure")).toHaveLength(38);
   });
 
   it("never merges festival booths into the permanent venue list", () => {

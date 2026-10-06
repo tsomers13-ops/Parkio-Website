@@ -23,18 +23,26 @@ describe("generated dining dataset", () => {
     expect(Object.keys(dataset).some((key) => /time|date|at$/i.test(key))).toBe(false);
   });
 
-  it("holds the 155-venue pilot: EPCOT 42, Hollywood Studios 20, Magic Kingdom 31, Animal Kingdom 27, Disneyland 35", () => {
-    expect(venues).toHaveLength(155);
+  it("holds the 193-venue pilot: EPCOT 42, Hollywood Studios 20, Magic Kingdom 31, Animal Kingdom 27, Disneyland 35, Disney California Adventure 38", () => {
+    expect(venues).toHaveLength(193);
     expect(inPark("epcot")).toHaveLength(42);
     expect(inPark("hollywood-studios")).toHaveLength(20);
     expect(inPark("magic-kingdom")).toHaveLength(31);
     expect(inPark("animal-kingdom")).toHaveLength(27);
     expect(inPark("disneyland")).toHaveLength(35);
+    expect(inPark("california-adventure")).toHaveLength(38);
   });
 
   it("contains no park outside the pilot", () => {
     const parks = new Set(venues.map((venue) => venue.parkId));
-    expect([...parks].sort()).toEqual(["animal-kingdom", "disneyland", "epcot", "hollywood-studios", "magic-kingdom"]);
+    expect([...parks].sort()).toEqual([
+      "animal-kingdom",
+      "california-adventure",
+      "disneyland",
+      "epcot",
+      "hollywood-studios",
+      "magic-kingdom",
+    ]);
   });
 
   it("uses only supported venue types", () => {
@@ -53,8 +61,8 @@ describe("generated dining dataset", () => {
 
   it("treats editorial as optional and never emits an empty shell", () => {
     const withEditorial = venues.filter((venue) => "editorial" in venue);
-    expect(withEditorial).toHaveLength(30);
-    expect(venues.length - withEditorial.length).toBe(125);
+    expect(withEditorial).toHaveLength(36);
+    expect(venues.length - withEditorial.length).toBe(157);
 
     for (const venue of venues) {
       if (!("editorial" in venue)) continue;
@@ -83,8 +91,8 @@ describe("generated dining dataset", () => {
 
   it("carries valid coordinates where present, and pairs them", () => {
     const located = venues.filter((venue) => "latitude" in venue);
-    expect(located).toHaveLength(98);
-    expect(venues.length - located.length).toBe(57);
+    expect(located).toHaveLength(126);
+    expect(venues.length - located.length).toBe(67);
 
     for (const venue of venues) {
       expect("latitude" in venue).toBe("longitude" in venue);
@@ -99,8 +107,8 @@ describe("generated dining dataset", () => {
 
   it("carries external IDs where present, never in a slug", () => {
     const identified = venues.filter((venue) => "externalId" in venue);
-    expect(identified).toHaveLength(99);
-    expect(venues.length - identified.length).toBe(56);
+    expect(identified).toHaveLength(127);
+    expect(venues.length - identified.length).toBe(66);
     for (const venue of identified) {
       expect(venue.externalId).toMatch(/^[0-9a-f-]{36}$/);
       expect(venue.slug).not.toContain(venue.externalId!);
