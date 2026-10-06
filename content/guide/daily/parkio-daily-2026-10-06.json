@@ -1,0 +1,384 @@
+{
+  "title": "Parkio Daily for Tuesday, October 6, 2026",
+  "slug": "parkio-daily-2026-10-06",
+  "date": "2026-10-06",
+  "teaser": "Rock 'n' Roller Coaster gets Muppets holiday music Nov 4; Guardians adds Christmas tracks Nov 25; Memory Maker prices rise today.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Guardians of the Galaxy: Cosmic Rewind",
+        "parkSlug": "epcot",
+        "note": "Morning waits typically lowest before 11am"
+      },
+      {
+        "name": "Flight of Passage",
+        "parkSlug": "animal-kingdom",
+        "note": "Rope drop usually offers shortest lines"
+      },
+      {
+        "name": "Rock 'n' Roller Coaster",
+        "parkSlug": "hollywood-studios",
+        "note": "Muppets overlay starts Nov 4, worth a pre-holiday visit"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [
+      {
+        "title": "Memory Maker prices increase at Disney World",
+        "body": "PhotoPass Memory Maker service costs more starting today across Walt Disney World Resort.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/10/06/getting-your-disney-world-pictures-just-got-more-expensive/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "If you were planning to purchase Memory Maker for a trip in the next few weeks, buying today before any additional increases may save you money. Pre-purchase typically offers better rates than in-park add-ons."
+        }
+      },
+      {
+        "title": "Select snack prices rise across Disney World",
+        "body": "Several popular snack items now carry higher price tags at Walt Disney World locations.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/10/06/some-of-your-favorite-disney-world-snacks-just-got-more-expensive/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Mobile ordering often locks in prices when you place the order, not at pickup. Worth checking the app early in your park day if prices tend to fluctuate."
+        }
+      },
+      {
+        "title": "Disneyland drops Magic Key no-show penalty policy",
+        "body": "Magic Key holders in California no longer face penalties for missing park reservations, effective immediately.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/10/06/disneyland-is-officially-removing-its-no-show-policy/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "This change may make same-day reservation availability more unpredictable as holders book without commitment. Checking the app for cancellations throughout the morning often yields openings."
+        }
+      }
+    ],
+    "bignews": [
+      {
+        "title": "Rock 'n' Roller Coaster debuts Muppets holiday overlay Nov 4",
+        "body": "The Electric Mayhem band brings seasonal music to the Hollywood Studios coaster from November 4 through January 6 in a limited-time holiday experience.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/rock-n-roller-coaster-muppets-holidays/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "New overlays typically draw heavier crowds in the first week. Visiting during evening hours or mid-December often offers shorter waits once initial interest settles."
+        }
+      },
+      {
+        "title": "Guardians of the Galaxy adds Christmas music starting Nov 25",
+        "body": "EPCOT's Cosmic Rewind coaster will feature holiday soundtrack options from November 25 through January 6 during the Festival of the Holidays.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/new-holiday-tracks-coming-to-guardians-of-the-galaxy/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Seasonal overlays usually create longer waits during peak hours. Riding in the final hour before park close often yields walk-on or single-digit waits even during the holiday period."
+        }
+      },
+      {
+        "title": "Candlelight Processional narrator lineup shifts for 2026",
+        "body": "EPCOT updated its celebrity narrator schedule for the 55th-year Candlelight Processional, removing one performer and adding two new names to the roster.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/epcot-holiday-traditions-and-candlelight-processional-narrators-announced/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Dining packages guarantee seating but book fast for popular narrators. Standby lines for the America Gardens Theatre usually form 90 minutes before showtime; arriving earlier tends to secure better seats."
+        }
+      },
+      {
+        "title": "Jollywood Nights dates and tickets now available for 2026",
+        "body": "Disney's Hollywood Studios separately ticketed holiday event runs select November and December nights, combining old Hollywood theming with festive entertainment.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/disney-jollywood-nights-dates-tickets-and-more/"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "Event nights typically mean earlier daytime closures at Hollywood Studios. Guests without tickets may want to plan that park for non-event days to maximize ride time."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "Mickey's Very Merry Christmas Party 2026 dates announced",
+        "body": "Magic Kingdom's separately ticketed holiday event returns with festive entertainment, parade, and fireworks on select nights throughout November and December.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/mickeys-very-merry-christmas-party-dates-and-festive-details/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Magic Kingdom typically closes early to day guests on party nights, often by 6pm. Visiting the park on non-party days or using morning hours tends to maximize attraction access."
+        }
+      },
+      {
+        "title": "Alien Swirling Saucers adds Toy Story 5 character Lilypad",
+        "body": "The Toy Story Land ride at Hollywood Studios introduces music and theming from the upcoming Pixar film's new character starting September 25.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/lilypad-new-music-toy-story-land-disney-world/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "New character integrations often attract fans early in the day. Riding during lunch hours or late afternoon usually results in shorter waits as families shift to dining."
+        }
+      },
+      {
+        "title": "Disney Believe cruise ship details revealed for late 2027",
+        "body": "Disney Cruise Line shared new information about its next ship, the Disney Believe, which will debut with unique entertainment and dining concepts in late 2027.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/dcl/meet-the-disney-believe-the-next-disney-cruise-line-ship/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Early booking windows for new ships tend to fill quickly, especially for inaugural sailings. Monitoring Disney Cruise Line's site in the coming weeks may reveal reservation dates before wide announcements."
+        }
+      },
+      {
+        "title": "Magic Kingdom fireworks dessert party prices increase",
+        "body": "Premium viewing packages for Happily Ever After now cost more across all Magic Kingdom dessert party offerings.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/10/disney-world-magic-kingdom-fireworks-dessert-party-prices-emd1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "If you've already booked a dessert party for an upcoming trip, your rate is typically locked in. Booking further in advance often avoids price increases for future visits."
+        }
+      },
+      {
+        "title": "Walt Disney Presents at Hollywood Studios adds holiday exhibit",
+        "body": "The attraction on Sunset Boulevard will feature Christmas-themed displays and content starting November 13 through January 6.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/10/disney-world-announces-christmas-festivities-for-walt-disney-presents-at-disneys-hollywood-studios-jc1/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "This air-conditioned exhibit is often overlooked during busy park days. Stopping by during peak afternoon heat or crowded parade times usually offers a quiet, festive break."
+        }
+      },
+      {
+        "title": "Disney World Annual Pass discount ends immediately",
+        "body": "A longtime passholder benefit allowing small savings on select purchases has been discontinued across Walt Disney World.",
+        "parkSlug": null,
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/10/confirmed-disney-world-discontinues-longtime-annual-pass-discount-ab1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "If you rely on passholder perks for dining or merchandise, reviewing current discount lists in the My Disney Experience app helps avoid surprises at checkout."
+        }
+      },
+      {
+        "title": "Peak Christmas 2027 Disney World tickets reach $229",
+        "body": "Single-day ticket prices for Magic Kingdom during late December 2027 hit a new record high, with most November and December dates now over $200.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-world-park-ticket-prices-increase-to-new-all-time-high-of-229-for-christmas-2027/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Early January dates typically see lower ticket prices and lighter crowds once the holiday season ends. Shifting a trip by one or two weeks can often save significantly."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Monstropolis culinary team shares food development sneak peek",
+        "body": "Disney's Hollywood Studios' upcoming Monsters, Inc. land will feature themed dining inspired by the film's monster world, with the culinary team revealing early concept details.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/bringing-the-flavors-of-monstropolis-to-life/"
+        }
+      },
+      {
+        "title": "Loungefly teases Bluey collection launch",
+        "body": "The accessory brand shared a preview of an upcoming Bluey-themed line expected to release soon at Disney retail locations.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/10/06/for-real-life-loungefly-just-teased-a-bluey-collection/"
+        }
+      },
+      {
+        "title": "Amazon Prime Big Deal Days feature Disney discounts",
+        "body": "October's Prime sale event includes price cuts on Disney toys, LEGOs, books, and park-related travel gear.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/best-2026-amazon-prime-day-big-deals-for-disney-fans/"
+        }
+      },
+      {
+        "title": "Disney Springs updates include new Gideon's cookies and pin trading",
+        "body": "The shopping and dining district continues to refresh offerings with seasonal bakery items and expanded pin collector options.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/10/06/9-things-from-disney-springs-you-may-have-missed/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "Holiday overlays bring seasonal changes to three major rides",
+        "body": "Disney World will transform Rock 'n' Roller Coaster, Guardians of the Galaxy: Cosmic Rewind, and Alien Swirling Saucers with holiday music and theming starting in November. Each overlay runs through early January, offering limited-time experiences across Hollywood Studios and EPCOT.",
+        "parkSlug": null,
+        "ctaLabel": "Plan your holiday visit",
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Visiting during the first two weeks of December often balances festive atmosphere with manageable crowds, before peak Christmas week traffic arrives. Midweek days typically see lighter attendance than weekends."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "O4tq2l4pWJ4",
+      "title": "Disney Springs 2026 | New Gideon's Cookies, Pin Trading & Homecomin' Fall Menu | Walt Disney World",
+      "channel": "Paging Mr. Morrow",
+      "publishedAt": "2026-10-03T13:59:41Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/O4tq2l4pWJ4/mqdefault.jpg",
+      "viewCount": 100997,
+      "url": "https://www.youtube.com/watch?v=O4tq2l4pWJ4",
+      "summary": "Paging Mr. Morrow explores recent additions at Disney Springs including new cookie flavors at Gideon's Bakehouse and seasonal menu updates at Homecomin'."
+    },
+    {
+      "videoId": "9HZua13d0uE",
+      "title": "The WORST & BEST New Food at Epcot's Food & Wine Festival | Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-10-04T15:41:47Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/9HZua13d0uE/mqdefault.jpg",
+      "viewCount": 49529,
+      "url": "https://www.youtube.com/watch?v=9HZua13d0uE",
+      "summary": "WrightDownMainStreet reviews the latest food offerings at EPCOT's Food and Wine Festival, highlighting standout dishes and disappointments."
+    },
+    {
+      "videoId": "J2fWbBNGMFc",
+      "title": "Disney World's Turf Club Reopened- New Menu & More! | Saratoga Springs Resort Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-10-01T16:00:51Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/J2fWbBNGMFc/mqdefault.jpg",
+      "viewCount": 45997,
+      "url": "https://www.youtube.com/watch?v=J2fWbBNGMFc",
+      "summary": "The Turf Club at Saratoga Springs Resort has reopened with a refreshed menu and updated dining experience."
+    },
+    {
+      "videoId": "yAZrTEHkVgA",
+      "title": "isso que ACONTECE quando você QUEBRA algo CARO na DISNEY!",
+      "channel": "Aleezin",
+      "publishedAt": "2026-10-06T18:48:08Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/yAZrTEHkVgA/mqdefault.jpg",
+      "viewCount": 34081,
+      "url": "https://www.youtube.com/watch?v=yAZrTEHkVgA",
+      "summary": "Aleezin discusses what happens when guests accidentally break expensive items at Disney parks."
+    },
+    {
+      "videoId": "EIb7-8ToSu4",
+      "title": "🔴 Live: Walt Disney World | MAD HATTER DAY! 🎩 Anything Can Happen! | 10.06.2026",
+      "channel": "Disney Parks with Love - Janel",
+      "publishedAt": "2026-10-06T18:25:55Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/EIb7-8ToSu4/mqdefault.jpg",
+      "viewCount": 18283,
+      "url": "https://www.youtube.com/watch?v=EIb7-8ToSu4",
+      "summary": "A live stream celebrating Mad Hatter Day at Walt Disney World with park exploration and themed fun."
+    },
+    {
+      "videoId": "oT_O9AB-T4Y",
+      "title": "🔴 LIVE: Magic Kingdom Full Day! Every Ride We Can Hit at Walt Disney World",
+      "channel": "Theme Park Giant",
+      "publishedAt": "2026-10-06T18:36:59Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/oT_O9AB-T4Y/mqdefault.jpg",
+      "viewCount": 11221,
+      "url": "https://www.youtube.com/watch?v=oT_O9AB-T4Y",
+      "summary": "Theme Park Giant attempts to experience as many Magic Kingdom attractions as possible during a full park day."
+    },
+    {
+      "videoId": "CuhUPO-Nv0M",
+      "title": "AMO MI MÉXICO MÁGICO 😂 #comedia #disneyland #disney #mexico",
+      "channel": "Yo Soy Gil",
+      "publishedAt": "2026-10-06T19:00:25Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/CuhUPO-Nv0M/mqdefault.jpg",
+      "viewCount": 6737,
+      "url": "https://www.youtube.com/watch?v=CuhUPO-Nv0M",
+      "summary": "A comedy short about Disney experiences with a Mexican cultural perspective from Yo Soy Gil."
+    },
+    {
+      "videoId": "JheG8prvDIU",
+      "title": "BREAKING NEWS Disney Increases Prices (again) FULL BREAKDOWN",
+      "channel": "Park Pass",
+      "publishedAt": "2026-10-06T18:35:38Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/JheG8prvDIU/mqdefault.jpg",
+      "viewCount": 6454,
+      "url": "https://www.youtube.com/watch?v=JheG8prvDIU",
+      "summary": "Park Pass breaks down the latest Disney price increases across tickets, services, and experiences."
+    },
+    {
+      "videoId": "X-tZPw4bJiw",
+      "title": "Top FUNNIEST Disney Moments 😭",
+      "channel": "Laudy Visits",
+      "publishedAt": "2026-10-06T19:37:44Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/X-tZPw4bJiw/mqdefault.jpg",
+      "viewCount": 2790,
+      "url": "https://www.youtube.com/watch?v=X-tZPw4bJiw",
+      "summary": "Laudy Visits compiles humorous moments captured at Disney parks."
+    },
+    {
+      "videoId": "WeLbv39mC2o",
+      "title": "🔴Live Disney's Hollywood Studios Fantasmic at 8, 9:30pm on Tuesday at Walt Disney World 10/6/2026",
+      "channel": "RON ON THE GO",
+      "publishedAt": "2026-10-06T18:09:34Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/WeLbv39mC2o/mqdefault_live.jpg",
+      "viewCount": 2425,
+      "url": "https://www.youtube.com/watch?v=WeLbv39mC2o",
+      "summary": "RON ON THE GO live streams the Fantasmic nighttime spectacular from Hollywood Studios."
+    }
+  ],
+  "updatedAt": "2026-10-06T22:48:09.460Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-10-06T22:48:09.460Z",
+    "tokens": {
+      "input": 9991,
+      "output": 5712,
+      "costUsd": 0.1157
+    }
+  }
+}
