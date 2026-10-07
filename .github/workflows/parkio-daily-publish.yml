@@ -88,37 +88,52 @@ jobs:
         # allowlist, or this fails closed before anything is built.
         run: node scripts/parkio-daily/validatePublishCandidate.mjs "${{ inputs.sha }}"
 
-      - name: Resolve the last human-approved application baseline
+      - name: Set up Node 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+
+      - name: Install
+        # Needed before baseline resolution: that step shells out to
+        # `npx wrangler`, which requires node_modules.
+        run: npm ci
+
+      - name: Resolve the currently approved production baseline
         id: baseline
-        # The Worker is built from [last reviewed production-release-* tag]
-        # + [only the Daily files the previous step just allow-listed] —
-        # NEVER from raw `main`. This is what makes it structurally
-        # impossible for this path to ship any application/infrastructure
-        # change a human reviewer hasn't already approved via the
-        # production-release-* + required-reviewer gate, no matter what
-        # else has landed on main since.
+        # Answers "what application SHA is production ACTUALLY running
+        # right now" — by reading the `workers/tag` annotation Cloudflare
+        # attaches to whichever Worker Version currently holds 100% of
+        # traffic. Deliberately does NOT look at git tags: a tag only
+        # proves a release was requested, not that it was ever deployed,
+        # and it would not reflect a rollback. See
+        # scripts/parkio-daily/resolveApprovedBaseline.mjs for the full
+        # rationale and fail-closed conditions.
+        #
+        # The Worker is then built from [this resolved baseline] + [only
+        # the Daily files the previous step allow-listed] — NEVER from raw
+        # `main`. This is what makes it structurally impossible for this
+        # path to ship any application/infrastructure change a human
+        # reviewer hasn't already approved, no matter what else has landed
+        # on main, and impossible to undo a rollback or promote a release
+        # that was never actually deployed.
         run: |
-          baseline=$(git tag -l 'production-release-*' --sort=-creatordate | head -1)
-          if [ -z "$baseline" ]; then
-            echo "::error::No production-release-* tag found in history. Refusing to guess a baseline."
-            exit 1
-          fi
-          if ! git merge-base --is-ancestor "$baseline" "${{ inputs.sha }}"; then
-            echo "::error::Latest tag $baseline is not an ancestor of ${{ inputs.sha }}. Refusing to publish."
-            exit 1
-          fi
+          baseline="$(node scripts/parkio-daily/resolveApprovedBaseline.mjs)"
           echo "baseline=$baseline" >> "$GITHUB_OUTPUT"
-          echo "Publishing Daily content on top of application baseline: $baseline"
+          echo "Publishing Daily content on top of the currently approved application baseline: $baseline"
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
 
       - name: Compose the publish tree
-        # Full tree-switching checkout (no pathspec) to the baseline tag —
-        # NOT `git checkout <tag> -- .`, which only overwrites paths that
-        # already exist in the target tree and silently leaves behind any
-        # extra file introduced by an unreviewed commit between the
-        # baseline and the candidate. A full checkout with no pathspec
+        # Full tree-switching checkout (no pathspec) to the approved
+        # baseline — NOT `git checkout <sha> -- .`, which only overwrites
+        # paths that already exist in the target tree and silently leaves
+        # behind any extra file introduced by an unreviewed commit between
+        # the baseline and the candidate. A full checkout with no pathspec
         # removes/adds/modifies as needed to match the baseline tree
         # exactly — verified empirically before relying on it here. Only
-        # then do we layer on the specific Daily files the previous step
+        # then do we layer on the specific Daily files the earlier step
         # allow-listed; nothing else from ${{ inputs.sha }} (or from main)
         # is ever pulled in.
         run: |
@@ -131,15 +146,6 @@ jobs:
             echo "Applying $p from ${{ inputs.sha }}"
             git checkout "${{ inputs.sha }}" -- "$p"
           done < /tmp/daily_paths.txt
-
-      - name: Set up Node 22
-        uses: actions/setup-node@v4
-        with:
-          node-version: "22"
-          cache: npm
-
-      - name: Install
-        run: npm ci
 
       - name: Generate Cloudflare types
         run: npm run cf:types
@@ -190,7 +196,13 @@ jobs:
         # same rate-limit namespaces, same custom domain, same secrets
         # reference as the application-release path — this workflow
         # introduces no second Worker and no config drift.
-        run: npx wrangler deploy --config wrangler.production.jsonc
+        #
+        # --tag re-asserts the RESOLVED BASELINE sha (not inputs.sha, the
+        # Daily content commit) — the application version is unchanged by
+        # a Daily publish, so the next Daily run must see the same
+        # baseline again. This is what keeps resolveApprovedBaseline.mjs
+        # stable across repeated Daily publications (scenario B/G).
+        run: npx wrangler deploy --config wrangler.production.jsonc --tag "sha:${{ steps.baseline.outputs.baseline }}"
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
