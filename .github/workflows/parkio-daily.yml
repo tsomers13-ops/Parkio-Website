@@ -107,20 +107,40 @@ jobs:
   # Publish the commit just made.
   #
   # This job exists because GitHub does not run workflows for pushes made with
-  # the default GITHUB_TOKEN, so the push above will NOT trigger
-  # workers-production.yml on its own. Before the Workers cutover the Pages
-  # GitHub integration noticed the commit and published it; afterwards nothing
-  # would, and this workflow would keep reporting success over a stale site.
+  # the default GITHUB_TOKEN, so the push above will NOT trigger any
+  # push-triggered workflow on its own. /feed.xml and the Daily guide pages
+  # are static build artifacts (export const dynamic = "force-static" in
+  # app/feed.xml) — without this job, the commit above would sit invisible
+  # to the public site and to Buttondown's RSS poll until some unrelated
+  # future deploy happened to include it. See the Oct 2 / Oct 6
+  # delayed-newsletter RCA for exactly that failure.
   #
-  # It calls the SAME canonical workflow that normal main pushes use, rather
-  # than duplicating the build chain. If the deploy fails, this job fails, so
-  # the daily run goes red and the publication failure is visible instead of
-  # being masked by a green content commit.
-  deploy:
-    name: Publish to Production Worker
+  # This calls parkio-daily-publish.yml — a separate, narrowly-scoped
+  # workflow — NOT workers-production.yml. The two are deliberately
+  # different workflows with different concurrency groups and different
+  # approval models:
+  #   - workers-production.yml: application releases, triggered only by an
+  #     explicit production-release-* tag or workflow_dispatch, gated by the
+  #     `production` environment's required reviewer. Unchanged by this.
+  #   - parkio-daily-publish.yml: Daily content only, no human approval,
+  #     but mechanically incapable of publishing anything outside the Daily
+  #     content allowlist or anything an application reviewer hasn't
+  #     already approved — see that workflow's own comments and
+  #     scripts/parkio-daily/validatePublishCandidate.mjs for how.
+  # Routing Daily content through the application-release gate is exactly
+  # what caused the delay in the first place; it must never go back to that.
+  publish:
+    name: Publish Daily content
     needs: build
     if: needs.build.outputs.pushed == 'true'
-    uses: ./.github/workflows/workers-production.yml
+    # `${{ secrets.X }}` below resolves in THIS job's own scope before being
+    # forwarded to the called workflow — without this environment declared
+    # here too, these three secrets (which live only in the daily-publish
+    # and production environments, not at repo level) would resolve empty
+    # and get silently forwarded as blank values. Must match the called
+    # workflow's own `environment: daily-publish` job declaration.
+    environment: daily-publish
+    uses: ./.github/workflows/parkio-daily-publish.yml
     with:
       sha: ${{ needs.build.outputs.sha }}
     secrets:
