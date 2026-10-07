@@ -1,0 +1,349 @@
+{
+  "title": "Parkio Daily for October 7, 2026",
+  "slug": "parkio-daily-2026-10-07",
+  "date": "2026-10-07",
+  "teaser": "Holiday overlays hit 9 rides across three parks starting November; Tropical Storm Isaias may bring closures later this week.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Guardians of the Galaxy: Cosmic Rewind",
+        "parkSlug": "epcot",
+        "note": "Holiday overlay starts Nov 25 — ride the regular version now"
+      },
+      {
+        "name": "Rock 'n' Roller Coaster",
+        "parkSlug": "hollywood-studios",
+        "note": "Muppets takeover begins Nov 4 — catch Aerosmith while you can"
+      },
+      {
+        "name": "Alien Swirling Saucers",
+        "parkSlug": "hollywood-studios",
+        "note": "New Toy Story 5 character and music already live"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [
+      {
+        "title": "Tropical Storm Isaias may strengthen into hurricane this week",
+        "body": "Forecasters warn the storm could develop into a hurricane near Florida later this week. Outdoor operations at Disney World may close temporarily if conditions worsen.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/10/07/experts-warn-tropical-storm-isaias-could-become-hurricane-later-this-week/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Monitor official Disney alerts through tomorrow. If you have park tickets for later this week, outdoor attractions may temporarily close and evening shows could cancel on short notice."
+        }
+      }
+    ],
+    "bignews": [
+      {
+        "title": "Nine holiday overlays launching across Magic Kingdom, EPCOT, and Hollywood Studios",
+        "body": "Disney confirmed seasonal changes to nine rides for the 2026 holiday season. Guardians of the Galaxy gets festive tracks starting November 25, Rock 'n' Roller Coaster becomes a Muppets holiday experience November 4, and seven other attractions receive holiday treatments through early January.",
+        "parkSlug": null,
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/10/disney-world-confirms-replacement-for-9-classic-rides-across-3-theme-parks-ab1/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Ride Guardians and Rock 'n' Roller Coaster in their regular versions through early November. Wait times often spike once overlays go live as guests rush to experience the new versions."
+        }
+      },
+      {
+        "title": "Disneyland Magic Key program drops no-show penalties and eases modification rules",
+        "body": "Disneyland eliminated the reservation no-show penalty for Magic Key holders and relaxed modification rules, though the park reservation system remains in place. The changes roll back one of the most criticized post-reopening policies.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disneyland-strikes-no-show-penalty-relaxes-modification-rule-but-retains-reservations/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Passholders can now book park days more freely without worrying about penalties. Reservation availability may tighten on weekends as more holders book without commitment risk."
+        }
+      },
+      {
+        "title": "Jollywood Nights adds new lounge, character ice skating show, and Gertie merchandise",
+        "body": "The 2026 Jollywood Nights event at Hollywood Studios introduces a new lounge in Animation Courtyard, Disney characters joining the Glisten ice skating performance, and Santa-themed Duffy and Dinosaur Gertie merch. Dates run November and December.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/2026-jollywood-nights-christmas-party-new-lounge-disney-characters-in-skating-show-santa-gertie-merch/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "The Animation Courtyard lounge often fills up by mid-evening during special events. Grab a spot early in your party night for a quieter break between stage shows and character meets."
+        }
+      },
+      {
+        "title": "Olivia's Cafe at Old Key West switches from brunch to separate breakfast and lunch menus",
+        "body": "The restaurant discontinued its combined brunch service and now operates distinct breakfast and lunch menus. The change affects dining availability and meal windows at the resort.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/10/07/olivias-cafe-at-disney-world-just-changed-in-a-major-way/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Breakfast seatings tend to be less crowded than midday slots at resort dining. Book an early reservation if you want a quieter meal before heading to the parks."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "Lilypad from Toy Story 5 now featured at Alien Swirling Saucers with new music",
+        "body": "The Toy Story Land ride added the new character Lilypad and updated its soundtrack. The enhancement launched September 25 as part of ongoing updates to the attraction.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/lilypad-new-music-toy-story-land-disney-world/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Toy Story Land typically sees lighter crowds in the first hour after park opening. Ride Slinky Dog Dash first, then loop back to Alien Swirling Saucers for a short wait and the new audio."
+        }
+      },
+      {
+        "title": "Candlelight Processional narrator lineup changes for 2026 EPCOT festival",
+        "body": "Disney adjusted the celebrity narrator schedule for the 55th year of Candlelight Processional, removing one name and adding two new performers. The event runs during the International Festival of the Holidays.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/changes-to-2026-candlelight-processional-celebrity-narrator-lineup-at-disney-world/"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "Opening weekend and high-profile narrator nights tend to fill the America Gardens Theatre 90 minutes early. Arrive by 4:30pm for the first show or book a dining package for guaranteed seating."
+        }
+      },
+      {
+        "title": "Mickey's Very Merry Christmas Party dates and details announced for 2026",
+        "body": "Magic Kingdom released the full schedule and event lineup for this year's after-hours holiday party. Tickets are on sale now for select nights in November and December.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/mickeys-very-merry-christmas-party-dates-and-festive-details/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Tuesdays and Sundays in early December often sell out last and cost less than Friday nights. Book now if you want lower ticket prices and slightly smaller crowds at treat stations."
+        }
+      },
+      {
+        "title": "Disney Believe cruise ship reveals coming this afternoon after three-day scavenger hunt",
+        "body": "Disney Cruise Line is unveiling restaurants, lounges, and stage shows for the Believe ship today following a multi-day clue hunt aboard the Disney Wish. The new ship sets sail in late 2027.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/dcl/get-a-sneak-peek-of-the-disney-believe-if-you-can-solve-these-puzzles/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Bookings for inaugural sailings typically fill within hours of opening. Watch the official announcement this afternoon and have your cruise planner contact ready if you want an early 2027 voyage."
+        }
+      },
+      {
+        "title": "Disney quietly ends a popular Annual Passholder discount",
+        "body": "A longstanding discount benefit for Disney World Annual Passholders was removed without advance notice. The specific perk cut was confirmed this week.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/10/07/disney-quietly-ends-a-popular-annual-passholder-discount/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Double-check your Passholder discounts in the app before making purchases. Some previously discounted categories may now ring up at full price at checkout."
+        }
+      },
+      {
+        "title": "Three Hollywood Studios lands closing early at 6:30pm on select event nights",
+        "body": "Disney will close Toy Story Land and two other lands to day guests starting at 6:30pm on Jollywood Nights dates to prepare for the separately ticketed holiday event.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/10/disney-closes-three-lands-toy-story-land-cj1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Ride Slinky Dog Dash and other affected attractions by early afternoon on party nights. Day guests without event tickets will lose access to those lands well before the park officially closes."
+        }
+      },
+      {
+        "title": "Macy's and Disney 2026 holiday collection now available",
+        "body": "The annual collaboration between Macy's and Disney dropped today with new holiday-themed apparel and home goods. The collection launches ahead of the traditional holiday shopping season.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/products/new-macys-and-disney-holiday-collection-now-available/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Popular sizes and styles in Disney collaborations tend to sell out within days online. Browse the collection today if you want holiday gifts before inventory tightens."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Turf Club restaurant at Saratoga Springs reopened with new menu",
+        "body": "The resort dining location completed its renovation and began welcoming guests again with a refreshed food lineup. The lounge is back in operation at the Disney Vacation Club property.",
+        "parkSlug": null,
+        "source": {
+          "label": "YouTube - WrightDownMainStreet",
+          "url": "https://www.youtube.com/watch?v=J2fWbBNGMFc"
+        }
+      },
+      {
+        "title": "Only value-tier Disney World hotels still offer complimentary airport luggage service",
+        "body": "The baggage transfer perk from Orlando airport is now exclusive to the resort's budget hotel tier. Moderate and deluxe properties no longer include the service.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/10/07/only-disney-worlds-cheapest-hotels-get-this-airport-luggage-perk/"
+        }
+      },
+      {
+        "title": "Florida man arrested backstage at Disney World following undercover operation",
+        "body": "A 37-year-old Lakeland resident was taken into custody in an employee area after a sting involving undercover deputies and social media. The arrest was confirmed by local authorities.",
+        "parkSlug": null,
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/10/florida-man-arrested-at-disney-world-following-undercover-sting-th1/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "Gideon's Bakehouse debuts new cookie flavors at Disney Springs",
+        "body": "The popular bakery added fresh cookie varieties to its rotating menu this week. Lines at the Disney Springs location remain heavy throughout the day as word spreads about the new offerings.",
+        "parkSlug": null,
+        "ctaLabel": "Plan your visit",
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Gideon's tends to have the shortest waits in the first 30 minutes after opening or during dinner hours when guests scatter to restaurants. Midday lines often stretch 60 minutes or longer."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "O4tq2l4pWJ4",
+      "title": "Disney Springs 2026 | New Gideon's Cookies, Pin Trading & Homecomin' Fall Menu | Walt Disney World",
+      "channel": "Paging Mr. Morrow",
+      "publishedAt": "2026-10-03T13:59:41Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/O4tq2l4pWJ4/mqdefault.jpg",
+      "viewCount": 106899,
+      "url": "https://www.youtube.com/watch?v=O4tq2l4pWJ4",
+      "summary": "Paging Mr. Morrow tours Disney Springs to check out new Gideon's cookie flavors, pin trading updates, and the fall menu at Homecomin'."
+    },
+    {
+      "videoId": "9HZua13d0uE",
+      "title": "The WORST & BEST New Food at Epcot's Food & Wine Festival | Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-10-04T15:41:47Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/9HZua13d0uE/mqdefault.jpg",
+      "viewCount": 54809,
+      "url": "https://www.youtube.com/watch?v=9HZua13d0uE",
+      "summary": "WrightDownMainStreet reviews the new dishes at EPCOT's Food and Wine Festival, ranking the best and worst offerings."
+    },
+    {
+      "videoId": "J2fWbBNGMFc",
+      "title": "Disney World's Turf Club Reopened- New Menu & More! | Saratoga Springs Resort Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-10-01T16:00:51Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/J2fWbBNGMFc/mqdefault.jpg",
+      "viewCount": 47079,
+      "url": "https://www.youtube.com/watch?v=J2fWbBNGMFc",
+      "summary": "WrightDownMainStreet explores the newly reopened Turf Club at Saratoga Springs, showcasing the updated menu and dining space."
+    },
+    {
+      "videoId": "6g0d7kNTDEU",
+      "title": "The RETURN To EPCOT's Food & Wine | Disney World, New Booths, All New Food and Drinks, Secret Menu",
+      "channel": "Mammoth Club",
+      "publishedAt": "2026-10-07T13:00:26Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/6g0d7kNTDEU/mqdefault.jpg",
+      "viewCount": 6857,
+      "url": "https://www.youtube.com/watch?v=6g0d7kNTDEU",
+      "summary": "Mammoth Club returns to EPCOT's Food and Wine Festival to try new booths and discover secret menu items."
+    },
+    {
+      "videoId": "Kbrk3NpgSGc",
+      "title": "DISNEY BELIEVE REVEAL: Ultimate Scavenger Hunt at Sea! | Disney Cruise Line",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-10-07T12:12:24Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Kbrk3NpgSGc/mqdefault.jpg",
+      "viewCount": 4011,
+      "url": "https://www.youtube.com/watch?v=Kbrk3NpgSGc",
+      "summary": "WrightDownMainStreet participates in the Disney Believe scavenger hunt aboard the Disney Wish, searching for clues about the new ship."
+    },
+    {
+      "videoId": "BRvCQdT0S7A",
+      "title": "Who left this at Disneyland? #johnnieguilbert #jakewebber #shorts",
+      "channel": "Johnnie Guilbert",
+      "publishedAt": "2026-10-07T16:20:58Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/BRvCQdT0S7A/mqdefault.jpg",
+      "viewCount": 2605,
+      "url": "https://www.youtube.com/watch?v=BRvCQdT0S7A",
+      "summary": "Johnnie Guilbert finds something unusual left behind at Disneyland in this short video."
+    },
+    {
+      "videoId": "5GjpkpuaP14",
+      "title": "Disney's Animal Kingdom Rides & Attractions",
+      "channel": "DFBGuide",
+      "publishedAt": "2026-10-07T14:30:20Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/5GjpkpuaP14/mqdefault.jpg",
+      "viewCount": 2134,
+      "url": "https://www.youtube.com/watch?v=5GjpkpuaP14",
+      "summary": "DFBGuide provides an overview of the rides and attractions available at Disney's Animal Kingdom."
+    },
+    {
+      "videoId": "U-3Qau6HbuE",
+      "title": "DISNEY SPRINGS New Merch Search! October 2026 | Walt Disney World | Disney Parks",
+      "channel": "Main Street Orlando",
+      "publishedAt": "2026-10-07T12:00:24Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/U-3Qau6HbuE/mqdefault.jpg",
+      "viewCount": 1288,
+      "url": "https://www.youtube.com/watch?v=U-3Qau6HbuE",
+      "summary": "Main Street Orlando hunts for new merchandise at Disney Springs in October 2026."
+    },
+    {
+      "videoId": "vQ2TfNQQ1wk",
+      "title": "EPCOT The Land Pavilion 2026 Tour & Walkthrough in 4K | Walt Disney World Florida October 2026",
+      "channel": "4K WDW",
+      "publishedAt": "2026-10-07T12:45:02Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/vQ2TfNQQ1wk/mqdefault.jpg",
+      "viewCount": 972,
+      "url": "https://www.youtube.com/watch?v=vQ2TfNQQ1wk",
+      "summary": "4K WDW offers a detailed 4K tour and walkthrough of The Land Pavilion at EPCOT in October 2026."
+    },
+    {
+      "videoId": "tYcBz15ZgnQ",
+      "title": "Estas son las ultimas novedades de Disney Parks",
+      "channel": "Viajeros en Alta Mar",
+      "publishedAt": "2026-10-07T14:39:00Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/tYcBz15ZgnQ/mqdefault.jpg",
+      "viewCount": 939,
+      "url": "https://www.youtube.com/watch?v=tYcBz15ZgnQ",
+      "summary": "Viajeros en Alta Mar discusses the latest updates and news from Disney Parks in Spanish."
+    }
+  ],
+  "updatedAt": "2026-10-07T17:37:28.554Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-10-07T17:37:28.554Z",
+    "tokens": {
+      "input": 9955,
+      "output": 5529,
+      "costUsd": 0.1128
+    }
+  }
+}
