@@ -67,6 +67,33 @@ describe("resolveActiveVersionId", () => {
     ]);
     expect(result).toEqual({ ok: true, versionId: "v-new" });
   });
+
+  it("is order-independent: resolves the same active version regardless of array order", () => {
+    const chronological = [
+      deployment("v1", 100, "2026-09-28T17:55:00Z"),
+      deployment("v2", 100, "2026-10-01T18:21:00Z"),
+      deployment("v3", 100, "2026-10-01T18:31:00Z"),
+      deployment("v4", 100, "2026-10-07T16:21:00Z"),
+    ];
+    const reversed = [...chronological].reverse();
+    const shuffled = [chronological[2], chronological[0], chronological[3], chronological[1]];
+
+    const fromChronological = resolveActiveVersionId(chronological);
+    const fromReversed = resolveActiveVersionId(reversed);
+    const fromShuffled = resolveActiveVersionId(shuffled);
+
+    expect(fromChronological).toEqual({ ok: true, versionId: "v4" });
+    expect(fromReversed).toEqual(fromChronological);
+    expect(fromShuffled).toEqual(fromChronological);
+  });
+
+  it("fails closed when a deployment is missing created_on, rather than guessing from position", () => {
+    const result = resolveActiveVersionId([
+      deployment("v1", 100, "2026-10-01T00:00:00Z"),
+      { id: "d-bad", versions: [{ version_id: "v2", percentage: 100 }] }, // no created_on
+    ]);
+    expect(result.ok).toBe(false);
+  });
 });
 
 describe("resolveApprovedBaseline — scenario A: normal production release", () => {

@@ -45,16 +45,33 @@ export function resolveActiveVersionId(deploymentsListJson) {
   if (!Array.isArray(deploymentsListJson) || deploymentsListJson.length === 0) {
     return { ok: false, error: "no deployments found for this Worker" };
   }
-  // The API returns deployments oldest-first (confirmed against the real
-  // `parkio` Worker's history); the most recent is the last entry.
-  const latest = deploymentsListJson[deploymentsListJson.length - 1];
+
+  // Order-independent by construction: the array's own order is NOT
+  // documented Cloudflare API behavior (observed oldest-first against the
+  // real `parkio` Worker, but never relied on here — that would be
+  // resolving "the active version" from array position rather than from
+  // actual state). "Most recent" is derived from each entry's own
+  // created_on timestamp instead, so this is correct regardless of how the
+  // API orders the response, now or in the future.
+  for (const d of deploymentsListJson) {
+    if (typeof d?.created_on !== "string" || Number.isNaN(Date.parse(d.created_on))) {
+      return {
+        ok: false,
+        error: "one or more deployments is missing a valid created_on timestamp — refusing to guess ordering",
+      };
+    }
+  }
+  const latest = deploymentsListJson.reduce((a, b) =>
+    Date.parse(a.created_on) >= Date.parse(b.created_on) ? a : b
+  );
+
   const versions = Array.isArray(latest?.versions) ? latest.versions : [];
   const atFullTraffic = versions.filter((v) => v?.percentage === 100);
 
   if (versions.length !== 1 || atFullTraffic.length !== 1) {
     return {
       ok: false,
-      error: `latest deployment has ${versions.length} version(s) splitting traffic — refusing to guess during a gradual rollout`,
+      error: `most recent deployment has ${versions.length} version(s) splitting traffic — refusing to guess during a gradual rollout`,
     };
   }
   return { ok: true, versionId: atFullTraffic[0].version_id };
