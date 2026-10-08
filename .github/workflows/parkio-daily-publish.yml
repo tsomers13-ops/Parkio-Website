@@ -31,13 +31,15 @@ on:
         description: The exact Parkio Daily content commit to publish.
         required: true
         type: string
-    secrets:
-      CLOUDFLARE_API_TOKEN:
-        required: true
-      CLOUDFLARE_ACCOUNT_ID:
-        required: true
-      NEXT_PUBLIC_CARTO_API_KEY:
-        required: true
+    # Deliberately no `secrets:` block here. This job sets its own
+    # `environment: daily-publish` below, which GitHub resolves BEFORE
+    # anything a caller could forward — "If you include environment in the
+    # reusable workflow at the job level, the environment secret will be
+    # used, and not the secret passed from the caller workflow." A caller
+    # also cannot declare `environment:` itself on a job that calls a
+    # reusable workflow (that constraint is what caused this file's own
+    # bug — see parkio-daily.yml's `publish` job), so there would be
+    # nothing a `secrets:` block here could meaningfully receive anyway.
 
 # Own concurrency group — deliberately separate from `workers-production`.
 # A Daily publish must never be cancelled by, nor cancel, an application
@@ -229,6 +231,8 @@ jobs:
       - name: Summary
         if: always()
         run: |
-          echo "### Parkio Daily publish: ${{ job.status }}" >> "$GITHUB_STEP_SUMMARY"
-          echo "Content commit: \`${{ inputs.sha }}\`" >> "$GITHUB_STEP_SUMMARY"
-          echo "Application baseline: \`${{ steps.baseline.outputs.baseline }}\`" >> "$GITHUB_STEP_SUMMARY"
+          {
+            echo "### Parkio Daily publish: ${{ job.status }}"
+            echo "Content commit: \`${{ inputs.sha }}\`"
+            echo "Application baseline: \`${{ steps.baseline.outputs.baseline }}\`"
+          } >> "$GITHUB_STEP_SUMMARY"

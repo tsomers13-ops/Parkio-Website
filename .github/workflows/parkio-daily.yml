@@ -133,17 +133,19 @@ jobs:
     name: Publish Daily content
     needs: build
     if: needs.build.outputs.pushed == 'true'
-    # `${{ secrets.X }}` below resolves in THIS job's own scope before being
-    # forwarded to the called workflow — without this environment declared
-    # here too, these three secrets (which live only in the daily-publish
-    # and production environments, not at repo level) would resolve empty
-    # and get silently forwarded as blank values. Must match the called
-    # workflow's own `environment: daily-publish` job declaration.
-    environment: daily-publish
+    # A job that calls a reusable workflow (`uses:`) cannot itself declare
+    # `environment:` — GitHub Actions rejects the whole workflow FILE at
+    # parse time if it does, surfacing as zero-job "failed" runs on every
+    # push, regardless of this workflow's own triggers. (Discovered the
+    # hard way immediately after merging the first version of this job,
+    # which had `environment: daily-publish` right here.)
+    #
+    # No secrets are forwarded here either, and none are needed: the
+    # called workflow's own job sets `environment: daily-publish` on
+    # itself, which takes precedence for any `${{ secrets.X }}` reference
+    # inside its own steps — confirmed against GitHub's documented
+    # behavior, not assumed. Passing secrets through `on.workflow_call`
+    # here would be redundant at best.
     uses: ./.github/workflows/parkio-daily-publish.yml
     with:
       sha: ${{ needs.build.outputs.sha }}
-    secrets:
-      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-      NEXT_PUBLIC_CARTO_API_KEY: ${{ secrets.NEXT_PUBLIC_CARTO_API_KEY }}
