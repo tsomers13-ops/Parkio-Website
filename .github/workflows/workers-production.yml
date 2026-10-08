@@ -69,7 +69,11 @@ jobs:
     # required reviewers and the Cloudflare secrets live.
     environment: production
     permissions:
-      contents: read
+      # write (not just read) so this job can push to the dedicated
+      # `deploy-lock` branch — the only thing standing between this
+      # workflow's deploy and parkio-daily-publish.yml's deploy racing each
+      # other. See scripts/deploy/productionDeployLock.mjs.
+      contents: write
 
     # Job scope on purpose. `opennextjs-cloudflare build` re-runs the Next
     # compile, so at least two steps need this; NEXT_PUBLIC_* is inlined at
@@ -173,6 +177,13 @@ jobs:
             || { echo "::error::Production D1 id missing."; exit 1; }
           echo "Production config verified."
 
+      - name: Acquire production deploy lock
+        # The only thing preventing this deploy from racing
+        # parkio-daily-publish.yml's deploy of the same Worker. See
+        # scripts/deploy/productionDeployLock.mjs for the full mechanism and
+        # why a bare lease alone would not be enough.
+        run: node scripts/deploy/productionDeployLock.mjs acquire release "${{ github.run_id }}-${{ github.run_attempt }}"
+
       - name: Deploy Production Worker
         # --config is mandatory. Without it wrangler would pick up the
         # repo-root Preview config.
@@ -187,10 +198,23 @@ jobs:
         # rollback (this workflow or a raw `wrangler rollback`) just makes
         # an already-tagged version active again, so this stays correct
         # with no rollback-specific handling needed anywhere.
-        run: npx wrangler deploy --config wrangler.production.jsonc --tag "sha:$(git rev-parse HEAD)"
+        #
+        # Run through productionDeployLock.mjs's `deploy` subcommand, not
+        # directly: it verifies lock ownership immediately before AND
+        # immediately after this call, and enforces a hard, killing timeout
+        # strictly shorter than the lease — the actual prevention mechanism,
+        # not just a time-based assumption. See that script's header comment.
+        run: |
+          DEPLOY_SHA="$(git rev-parse HEAD)"
+          node scripts/deploy/productionDeployLock.mjs deploy "${{ github.run_id }}-${{ github.run_attempt }}" 120000 -- \
+            npx wrangler deploy --config wrangler.production.jsonc --tag "sha:${DEPLOY_SHA}"
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+
+      - name: Release production deploy lock
+        if: always()
+        run: node scripts/deploy/productionDeployLock.mjs release "${{ github.run_id }}-${{ github.run_attempt }}"
 
       - name: Summary
         if: always()
