@@ -176,7 +176,18 @@ jobs:
       - name: Deploy Production Worker
         # --config is mandatory. Without it wrangler would pick up the
         # repo-root Preview config.
-        run: npx wrangler deploy --config wrangler.production.jsonc
+        #
+        # --tag "sha:<commit>" attaches the exact deployed source commit to
+        # this Worker Version as an immutable Cloudflare-native annotation
+        # (workers/tag). This is the ONLY thing parkio-daily-publish.yml's
+        # baseline resolution trusts to answer "what application SHA is
+        # currently approved for production" — never a git tag, which only
+        # proves a release was requested, not that it is what's actually
+        # live. See scripts/parkio-daily/resolveApprovedBaseline.mjs. A
+        # rollback (this workflow or a raw `wrangler rollback`) just makes
+        # an already-tagged version active again, so this stays correct
+        # with no rollback-specific handling needed anywhere.
+        run: npx wrangler deploy --config wrangler.production.jsonc --tag "sha:$(git rev-parse HEAD)"
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}

@@ -1,0 +1,234 @@
+name: Parkio Daily Publish
+
+# Narrowly-scoped, no-human-approval publication path for Parkio Daily
+# content ONLY. Exists because the Daily/feed pages are static build
+# artifacts (export const dynamic = "force-static" in app/feed.xml) — a
+# new day's content is invisible to the public site, and to Buttondown's
+# RSS poll, until a fresh Worker build actually ships. Routing that through
+# the human-reviewed application-release gate (workers-production.yml) left
+# Daily content stuck for days at a time waiting for an approval nobody was
+# routinely giving — see the Oct 2 / Oct 6 delayed-newsletter RCA.
+#
+# This workflow is deliberately NOT a general-purpose deploy path. It can
+# only ever publish the two files scripts/parkio-daily/build.mjs and
+# social.mjs are capable of producing, on top of the most recently
+# human-approved application release — never raw `main`, and never anything
+# an application-release reviewer hasn't already seen. See
+# validatePublishCandidate.mjs and the "Compose the publish tree" step below
+# for how that boundary is enforced, and docs/AUTOMATION.md for the full
+# design rationale.
+#
+# Invoked ONLY via workflow_call, from parkio-daily.yml's `publish` job,
+# which passes the exact commit SHA its own `build` job just created. This
+# workflow never has its own `push` or `schedule` trigger — it cannot be
+# invoked except by that one caller handing it one specific, just-created
+# commit.
+
+on:
+  workflow_call:
+    inputs:
+      sha:
+        description: The exact Parkio Daily content commit to publish.
+        required: true
+        type: string
+    secrets:
+      CLOUDFLARE_API_TOKEN:
+        required: true
+      CLOUDFLARE_ACCOUNT_ID:
+        required: true
+      NEXT_PUBLIC_CARTO_API_KEY:
+        required: true
+
+# Own concurrency group — deliberately separate from `workers-production`.
+# A Daily publish must never be cancelled by, nor cancel, an application
+# release, and vice versa. cancel-in-progress: false: if two Daily
+# schedules somehow overlap, the second queues behind the first rather than
+# being dropped or cancelling it — the earlier commit still gets a chance
+# to publish before the newer one does. A genuinely stuck run fails loudly
+# via timeout-minutes below rather than sitting queued forever the way the
+# old workflow_call-into-workers-production coupling did.
+concurrency:
+  group: parkio-daily-publish
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    name: Publish Parkio Daily content to Production Worker
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    # No `environment: production` here, and therefore no required-reviewer
+    # gate — that is the whole point of this workflow. The Cloudflare
+    # secrets it needs come from the separate `daily-publish` environment
+    # (see docs/AUTOMATION.md's rollout note), which holds copies of the
+    # same three secrets with NO protection rules attached. The `production`
+    # environment itself, its reviewers, and its secrets are completely
+    # untouched by this workflow.
+    environment: daily-publish
+    permissions:
+      contents: read
+
+    env:
+      NEXT_PUBLIC_CARTO_API_KEY: ${{ secrets.NEXT_PUBLIC_CARTO_API_KEY }}
+
+    steps:
+      - name: Check out the exact candidate commit, with full history
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.sha }}
+          # Full history (not a shallow clone) — the security boundary and
+          # baseline-resolution steps below both need to walk ancestry and
+          # diff arbitrary commits.
+          fetch-depth: 0
+
+      - name: Validate this is an authorized Daily content update
+        # The security boundary. Checks the candidate commit's author and
+        # diffs it against its OWN immediate parent (never against `main`,
+        # so human commits already on main before the bot ran are never
+        # implicated) — every changed path must match the Daily content
+        # allowlist, or this fails closed before anything is built.
+        run: node scripts/parkio-daily/validatePublishCandidate.mjs "${{ inputs.sha }}"
+
+      - name: Set up Node 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+
+      - name: Install
+        # Needed before baseline resolution: that step shells out to
+        # `npx wrangler`, which requires node_modules.
+        run: npm ci
+
+      - name: Resolve the currently approved production baseline
+        id: baseline
+        # Answers "what application SHA is production ACTUALLY running
+        # right now" — by reading the `workers/tag` annotation Cloudflare
+        # attaches to whichever Worker Version currently holds 100% of
+        # traffic. Deliberately does NOT look at git tags: a tag only
+        # proves a release was requested, not that it was ever deployed,
+        # and it would not reflect a rollback. See
+        # scripts/parkio-daily/resolveApprovedBaseline.mjs for the full
+        # rationale and fail-closed conditions.
+        #
+        # The Worker is then built from [this resolved baseline] + [only
+        # the Daily files the previous step allow-listed] — NEVER from raw
+        # `main`. This is what makes it structurally impossible for this
+        # path to ship any application/infrastructure change a human
+        # reviewer hasn't already approved, no matter what else has landed
+        # on main, and impossible to undo a rollback or promote a release
+        # that was never actually deployed.
+        run: |
+          baseline="$(node scripts/parkio-daily/resolveApprovedBaseline.mjs)"
+          echo "baseline=$baseline" >> "$GITHUB_OUTPUT"
+          echo "Publishing Daily content on top of the currently approved application baseline: $baseline"
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+
+      - name: Compose the publish tree
+        # Full tree-switching checkout (no pathspec) to the approved
+        # baseline — NOT `git checkout <sha> -- .`, which only overwrites
+        # paths that already exist in the target tree and silently leaves
+        # behind any extra file introduced by an unreviewed commit between
+        # the baseline and the candidate. A full checkout with no pathspec
+        # removes/adds/modifies as needed to match the baseline tree
+        # exactly — verified empirically before relying on it here. Only
+        # then do we layer on the specific Daily files the earlier step
+        # allow-listed; nothing else from ${{ inputs.sha }} (or from main)
+        # is ever pulled in.
+        run: |
+          baseline="${{ steps.baseline.outputs.baseline }}"
+          git checkout "$baseline"
+          [ -z "$(git status --short)" ] || { echo "::error::Working tree not clean after baseline checkout — refusing to proceed."; exit 1; }
+          node scripts/parkio-daily/validatePublishCandidate.mjs "${{ inputs.sha }}" 2>/dev/null \
+            | grep -E '^  content/' | sed 's/^  //' > /tmp/daily_paths.txt
+          while IFS= read -r p; do
+            echo "Applying $p from ${{ inputs.sha }}"
+            git checkout "${{ inputs.sha }}" -- "$p"
+          done < /tmp/daily_paths.txt
+
+      - name: Generate Cloudflare types
+        run: npm run cf:types
+
+      - name: Unit tests
+        run: npm test
+
+      - name: TypeScript
+        run: npx tsc --noEmit
+
+      - name: Require basemap configuration
+        run: |
+          if [ -z "$(printf %s "${NEXT_PUBLIC_CARTO_API_KEY:-}" | tr -d '[:space:]')" ]; then
+            echo "::error::NEXT_PUBLIC_CARTO_API_KEY is not set."
+            exit 1
+          fi
+          echo "NEXT_PUBLIC_CARTO_API_KEY is configured (value not shown)."
+
+      - name: Next build
+        run: npm run build
+
+      - name: OpenNext build
+        run: npx opennextjs-cloudflare build
+
+      - name: Populate prerender cache
+        # REQUIRED, and REQUIRED BEFORE the deploy step below. Skipping or
+        # reordering this is exactly what made every SSG route 404 during
+        # manual preview validation earlier in this project — see the
+        # six-park Worker pre-deploy gate notes.
+        run: npx opennextjs-cloudflare populateCache remote
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+
+      - name: Verify the Production config before deploying
+        run: |
+          sed 's://.*::' wrangler.production.jsonc > /tmp/prod.clean.json
+          if grep -qE '3c3c7bf8|parkio-history-preview|"preview"|200[12]|parkio-preview' /tmp/prod.clean.json; then
+            echo "::error::Preview identifier found in wrangler.production.jsonc. Refusing to deploy."
+            exit 1
+          fi
+          grep -q '82b972d1-be63-4c0d-bbbb-8437860ebcd0' /tmp/prod.clean.json \
+            || { echo "::error::Production D1 id missing."; exit 1; }
+          echo "Production config verified."
+
+      - name: Deploy Production Worker
+        # Same Worker (`parkio`), same wrangler.production.jsonc, same D1,
+        # same rate-limit namespaces, same custom domain, same secrets
+        # reference as the application-release path — this workflow
+        # introduces no second Worker and no config drift.
+        #
+        # --tag re-asserts the RESOLVED BASELINE sha (not inputs.sha, the
+        # Daily content commit) — the application version is unchanged by
+        # a Daily publish, so the next Daily run must see the same
+        # baseline again. This is what keeps resolveApprovedBaseline.mjs
+        # stable across repeated Daily publications (scenario B/G).
+        run: npx wrangler deploy --config wrangler.production.jsonc --tag "sha:${{ steps.baseline.outputs.baseline }}"
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+
+      - name: Verify the publish
+        run: |
+          slug=$(git log -1 --format=%s "${{ inputs.sha }}" | sed -E 's/.*— ([0-9]{4}-[0-9]{2}-[0-9]{2})/\1/')
+          set -e
+          code=$(curl -s -o /dev/null -w '%{http_code}' https://parkio.info/)
+          [ "$code" = "200" ] || { echo "::error::homepage returned $code"; exit 1; }
+          code=$(curl -s -o /dev/null -w '%{http_code}' "https://parkio.info/guide/parkio-daily-${slug}")
+          [ "$code" = "200" ] || { echo "::error::guide/parkio-daily-${slug} returned $code"; exit 1; }
+          feed=$(curl -s https://parkio.info/feed.xml)
+          echo "$feed" | grep -q "parkio-daily-${slug}" \
+            || { echo "::error::feed.xml does not contain today's entry (parkio-daily-${slug})"; exit 1; }
+          echo "$feed" | grep -q "<lastBuildDate>$(date -u +%a,\ %d\ %b\ %Y)" \
+            || echo "::warning::feed.xml lastBuildDate does not show today's date — check manually."
+          code=$(curl -s -o /dev/null -w '%{http_code}' https://parkio.info/parks/magic-kingdom/dining/mk-pecos-bill)
+          [ "$code" = "200" ] || { echo "::error::representative dining page returned $code"; exit 1; }
+          code=$(curl -s -o /dev/null -w '%{http_code}' https://parkio.info/api/dining/mk-pecos-bill/ratings/)
+          [ "$code" = "200" ] || { echo "::error::Community Ratings API returned $code"; exit 1; }
+          echo "Post-publish acceptance passed."
+
+      - name: Summary
+        if: always()
+        run: |
+          echo "### Parkio Daily publish: ${{ job.status }}" >> "$GITHUB_STEP_SUMMARY"
+          echo "Content commit: \`${{ inputs.sha }}\`" >> "$GITHUB_STEP_SUMMARY"
+          echo "Application baseline: \`${{ steps.baseline.outputs.baseline }}\`" >> "$GITHUB_STEP_SUMMARY"
