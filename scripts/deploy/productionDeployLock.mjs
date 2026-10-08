@@ -263,10 +263,25 @@ function realGitInterface() {
         { input: `100644 blob ${blobSha}\t${LOCK_FILE}\n`, encoding: "utf8" }
       ).trim();
       const parentArgs = baseSha ? ["-p", baseSha] : [];
+      // Explicit author/committer env, not global git config: a fresh CI
+      // runner has no configured identity, and `commit-tree` refuses to
+      // create a commit without one ("Author identity unknown"). Found by
+      // live integration testing — the mocked unit tests never exercised
+      // a real `git commit-tree` call, so this was invisible until an
+      // actual CI runner tried it.
       const commitSha = execFileSync(
         "git",
         ["commit-tree", treeSha, ...parentArgs, "-m", `deploy-lock: ${nextState.holder ?? "release"}`],
-        { encoding: "utf8" }
+        {
+          encoding: "utf8",
+          env: {
+            ...process.env,
+            GIT_AUTHOR_NAME: "production-deploy-lock",
+            GIT_AUTHOR_EMAIL: "production-deploy-lock@users.noreply.github.com",
+            GIT_COMMITTER_NAME: "production-deploy-lock",
+            GIT_COMMITTER_EMAIL: "production-deploy-lock@users.noreply.github.com",
+          },
+        }
       ).trim();
       const refSpec = baseSha
         ? `${commitSha}:refs/heads/${LOCK_BRANCH}`
