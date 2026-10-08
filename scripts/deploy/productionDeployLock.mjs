@@ -46,7 +46,7 @@
  * case). It is not mitigated further here.
  */
 
-import { execFileSync } from "node:child_process";
+import { execFileSync, spawn } from "node:child_process";
 import { fileURLToPath } from "node:url";
 
 export const LOCK_BRANCH = "deploy-lock";
@@ -174,13 +174,51 @@ export function assertSafeDeadline(deployTimeoutMs, leaseMs) {
   }
 }
 
-/** Runs the actual deploy command under a hard, killing timeout. Throws if
- * it exceeds deployTimeoutMs (process is sent SIGKILL) or exits non-zero. */
+/**
+ * Runs the actual deploy command under a hard, killing timeout. Throws if
+ * it exceeds deployTimeoutMs or exits non-zero.
+ *
+ * Deliberately NOT execFileSync's built-in `timeout`/`killSignal`: that
+ * only signals the single direct child process. Verified empirically
+ * before relying on this — a command that backgrounds a grandchild (e.g.
+ * `sleep 20 &` inside a shell) left that grandchild running, now
+ * re-parented to PID 1, completely unaffected by the "kill", well past
+ * the timeout. Since wrangler (or anything it shells out to) is not
+ * something we control the internals of, the timeout has to kill the
+ * whole process TREE, not just the one PID we spawned.
+ *
+ * Fix: spawn the child `detached: true` so it gets its own process group,
+ * and on timeout send the kill signal to the whole group via the negative
+ * PID (`process.kill(-pid, signal)`), a POSIX-only mechanism — fine here,
+ * every workflow using this runs on `ubuntu-latest`.
+ */
 export function runDeployCommand(command, args, { deployTimeoutMs = DEFAULT_DEPLOY_TIMEOUT_MS } = {}) {
-  execFileSync(command, args, {
-    stdio: "inherit",
-    timeout: deployTimeoutMs,
-    killSignal: "SIGKILL",
+  return new Promise((resolve, reject) => {
+    const child = spawn(command, args, { stdio: "inherit", detached: true });
+    let timedOut = false;
+    const timer = setTimeout(() => {
+      timedOut = true;
+      try {
+        process.kill(-child.pid, "SIGKILL");
+      } catch {
+        // Group already gone — nothing left to kill.
+      }
+    }, deployTimeoutMs);
+
+    child.on("error", (err) => {
+      clearTimeout(timer);
+      reject(err);
+    });
+    child.on("exit", (code, signal) => {
+      clearTimeout(timer);
+      if (timedOut) {
+        reject(new Error(`command timed out after ${deployTimeoutMs}ms and was killed (signal: ${signal})`));
+      } else if (code !== 0) {
+        reject(new Error(`command exited with code ${code}${signal ? ` (signal: ${signal})` : ""}`));
+      } else {
+        resolve();
+      }
+    });
   });
 }
 
@@ -305,7 +343,7 @@ if (process.argv[1] && process.argv[1] === fileURLToPath(import.meta.url)) {
       process.exit(1);
     }
     try {
-      runDeployCommand(command[0], command.slice(1), { deployTimeoutMs });
+      await runDeployCommand(command[0], command.slice(1), { deployTimeoutMs });
     } catch (err) {
       console.error(`::error::Deploy command failed or was killed after exceeding ${deployTimeoutMs}ms: ${err?.message ?? err}`);
       process.exit(1);

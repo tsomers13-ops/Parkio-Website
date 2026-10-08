@@ -233,9 +233,9 @@ describe("releaseLock", () => {
 });
 
 describe("runDeployCommand — the actual prevention mechanism, not just a documented intent", () => {
-  it("kills a command that runs longer than deployTimeoutMs, rather than waiting for it", () => {
+  it("kills a command that runs longer than deployTimeoutMs, rather than waiting for it", async () => {
     const start = Date.now();
-    expect(() => runDeployCommand("sleep", ["10"], { deployTimeoutMs: 1000 })).toThrow();
+    await expect(runDeployCommand("sleep", ["10"], { deployTimeoutMs: 1000 })).rejects.toThrow();
     const elapsed = Date.now() - start;
     // Generous upper bound — this must be killed promptly, nowhere near the
     // full 10s sleep duration. If this ever regresses to "waits it out",
@@ -243,11 +243,43 @@ describe("runDeployCommand — the actual prevention mechanism, not just a docum
     expect(elapsed).toBeLessThan(5000);
   }, 10_000);
 
-  it("does not throw for a command that finishes comfortably within the timeout", () => {
-    expect(() => runDeployCommand("sleep", ["0.1"], { deployTimeoutMs: 5000 })).not.toThrow();
+  it("does not throw for a command that finishes comfortably within the timeout", async () => {
+    await expect(runDeployCommand("sleep", ["0.1"], { deployTimeoutMs: 5000 })).resolves.toBeUndefined();
   });
 
-  it("throws for a command that exits non-zero even without timing out", () => {
-    expect(() => runDeployCommand("sh", ["-c", "exit 1"], { deployTimeoutMs: 5000 })).toThrow();
+  it("throws for a command that exits non-zero even without timing out", async () => {
+    await expect(runDeployCommand("sh", ["-c", "exit 1"], { deployTimeoutMs: 5000 })).rejects.toThrow();
   });
+
+  it("kills the ENTIRE process tree on timeout, not just the direct child — the exact gap found empirically before this fix existed", async () => {
+    // A command that backgrounds a grandchild and waits on it. Before the
+    // detached-process-group fix, killing only the direct child left this
+    // grandchild running, re-parented to PID 1, unaffected by the "kill" —
+    // confirmed by this exact repro against the OLD implementation first.
+    const marker = `/tmp/deploy-lock-tree-kill-test-${process.pid}-${Date.now()}.pid`;
+    const script = `sleep 15 & child=$!; echo $child > ${marker}; wait $child`;
+    await expect(runDeployCommand("sh", ["-c", script], { deployTimeoutMs: 1000 })).rejects.toThrow();
+
+    const fs = await import("node:fs");
+    const childPid: string | null = fs.existsSync(marker) ? fs.readFileSync(marker, "utf8").trim() : null;
+    expect(childPid).toBeTruthy(); // sanity: the grandchild did actually start before being killed
+    if (!childPid) throw new Error("unreachable: asserted truthy above");
+
+    // Brief grace period for OS-level process reaping after SIGKILL —
+    // avoids a flaky false pass/fail right at the instant of the signal.
+    await new Promise((r) => setTimeout(r, 300));
+
+    const { execFileSync } = await import("node:child_process");
+    let stillAlive = true;
+    try {
+      execFileSync("ps", ["-p", childPid]);
+    } catch {
+      stillAlive = false; // ps exits non-zero once the pid no longer exists — this is the pass case
+    }
+    expect(stillAlive).toBe(false); // the whole tree must be gone, not just the shell we spawned directly
+
+    try {
+      fs.unlinkSync(marker);
+    } catch {}
+  }, 10_000);
 });
