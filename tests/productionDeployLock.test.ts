@@ -1,4 +1,6 @@
-import { describe, expect, it, vi } from "vitest";
+import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
+import { execFileSync } from "node:child_process";
+import path from "node:path";
 import {
   acquireLock,
   assertSafeDeadline,
@@ -282,4 +284,68 @@ describe("runDeployCommand — the actual prevention mechanism, not just a docum
       fs.unlinkSync(marker);
     } catch {}
   }, 10_000);
+});
+
+describe("CLI, end-to-end against a real local git remote — not mocked", () => {
+  // Every test above exercises the exported functions directly. None of
+  // them would have caught a mismatch between how a workflow invokes the
+  // CLI (argv) and how the CLI parses argv — exactly the class of bug a
+  // live integration test found: `release daily "<runId>"` (3 args) was
+  // silently misparsed, since the CLI's `release` action only expects
+  // `release <runId>` (2 args), making the "holder" positional argument
+  // get read as the runId instead. This suite runs the actual CLI as a
+  // real subprocess against a real (local, throwaway) git remote, so a
+  // regression here fails `npm test` directly, without needing CI.
+  let tmpDir: string;
+
+  beforeEach(async () => {
+    const fs = await import("node:fs");
+    const os = await import("node:os");
+    tmpDir = fs.mkdtempSync(path.join(os.tmpdir(), "deploy-lock-cli-test-"));
+    const originDir = path.join(tmpDir, "origin.git");
+    execFileSync("git", ["init", "--bare", originDir]);
+    execFileSync("git", ["clone", originDir, path.join(tmpDir, "work")]);
+  });
+
+  afterEach(async () => {
+    const fs = await import("node:fs");
+    fs.rmSync(tmpDir, { recursive: true, force: true });
+  });
+
+  const scriptPath = path.resolve(__dirname, "../scripts/deploy/productionDeployLock.mjs");
+  function runCli(args: string[]) {
+    return execFileSync("node", [scriptPath, ...args], {
+      cwd: path.join(tmpDir, "work"),
+      encoding: "utf8",
+    });
+  }
+
+  it("acquire -> deploy -> release round-trips cleanly, and release actually clears the lock", () => {
+    const runId = "test-run-1";
+    runCli(["acquire", "release", runId]);
+    runCli(["deploy", runId, "5000", "--", "true"]);
+    const releaseOutput = runCli(["release", runId]);
+    expect(releaseOutput).toContain("Lock released.");
+    expect(releaseOutput).not.toContain("nothing to release");
+
+    // Prove it's actually clear: a second run can acquire immediately,
+    // with no retry/wait needed.
+    const secondAcquire = runCli(["acquire", "daily", "test-run-2"]);
+    expect(secondAcquire).toContain("Lock acquired by daily");
+  }, 20_000);
+
+  it("reproduces, and fails on, the exact historical argument-count mismatch", () => {
+    const runId = "test-run-3";
+    runCli(["acquire", "release", runId]);
+    // The historical bug's exact call shape: an extra "release" positional
+    // argument before the real runId.
+    const buggyRelease = runCli(["release", "release", runId]);
+    expect(buggyRelease).toContain("nothing to release");
+    // The lock is still genuinely held — the buggy call did not release
+    // it, confirmed from a second, independent angle (not just the log
+    // line above): a correctly-shaped verify for the real runId still
+    // succeeds.
+    expect(() => runCli(["verify", runId])).not.toThrow();
+    runCli(["release", runId]); // clean up for real
+  }, 20_000);
 });

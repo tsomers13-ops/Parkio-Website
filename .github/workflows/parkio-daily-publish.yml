@@ -219,7 +219,7 @@ jobs:
           expected="${{ steps.baseline.outputs.baseline }}"
           if [ "$current" != "$expected" ]; then
             echo "::error::Approved baseline changed from $expected to $current while this run was building/waiting. Refusing to deploy an outdated application baseline."
-            node scripts/deploy/productionDeployLock.mjs release daily "${{ github.run_id }}-${{ github.run_attempt }}"
+            node scripts/deploy/productionDeployLock.mjs release "${{ github.run_id }}-${{ github.run_attempt }}"
             exit 1
           fi
           echo "Baseline unchanged: $current"
@@ -252,7 +252,7 @@ jobs:
 
       - name: Release production deploy lock
         if: always()
-        run: node scripts/deploy/productionDeployLock.mjs release daily "${{ github.run_id }}-${{ github.run_attempt }}"
+        run: node scripts/deploy/productionDeployLock.mjs release "${{ github.run_id }}-${{ github.run_attempt }}"
 
       - name: Verify the publish
         run: |
