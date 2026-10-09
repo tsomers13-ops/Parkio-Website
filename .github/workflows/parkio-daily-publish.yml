@@ -67,7 +67,11 @@ jobs:
     # untouched by this workflow.
     environment: daily-publish
     permissions:
-      contents: read
+      # write (not just read) so this job can push to the dedicated
+      # `deploy-lock` branch — the only thing standing between this
+      # workflow's deploy and workers-production.yml's deploy racing each
+      # other. See scripts/deploy/productionDeployLock.mjs.
+      contents: write
 
     env:
       NEXT_PUBLIC_CARTO_API_KEY: ${{ secrets.NEXT_PUBLIC_CARTO_API_KEY }}
@@ -193,6 +197,36 @@ jobs:
             || { echo "::error::Production D1 id missing."; exit 1; }
           echo "Production config verified."
 
+      - name: Acquire production deploy lock
+        # The only thing preventing this deploy from racing
+        # workers-production.yml's deploy of the same Worker. See
+        # scripts/deploy/productionDeployLock.mjs for the full mechanism and
+        # why a bare lease alone would not be enough.
+        run: node scripts/deploy/productionDeployLock.mjs acquire daily "${{ github.run_id }}-${{ github.run_attempt }}"
+
+      - name: Re-verify the approved baseline has not changed while waiting for the lock
+        # Closes the TOCTOU gap a lock alone doesn't: an application release
+        # could have been approved and deployed during the (possibly
+        # several minutes long) build/test/populateCache steps above, or
+        # while this run was waiting to acquire the lock just now. If the
+        # live baseline has moved since the initial resolution, this run
+        # must stop rather than deploy the now-outdated application
+        # baseline it already built against — it does NOT attempt to
+        # rebuild against the new baseline; the next scheduled Daily run
+        # will do that naturally.
+        run: |
+          current="$(node scripts/parkio-daily/resolveApprovedBaseline.mjs)"
+          expected="${{ steps.baseline.outputs.baseline }}"
+          if [ "$current" != "$expected" ]; then
+            echo "::error::Approved baseline changed from $expected to $current while this run was building/waiting. Refusing to deploy an outdated application baseline."
+            node scripts/deploy/productionDeployLock.mjs release "${{ github.run_id }}-${{ github.run_attempt }}"
+            exit 1
+          fi
+          echo "Baseline unchanged: $current"
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+
       - name: Deploy Production Worker
         # Same Worker (`parkio`), same wrangler.production.jsonc, same D1,
         # same rate-limit namespaces, same custom domain, same secrets
@@ -204,10 +238,21 @@ jobs:
         # a Daily publish, so the next Daily run must see the same
         # baseline again. This is what keeps resolveApprovedBaseline.mjs
         # stable across repeated Daily publications (scenario B/G).
-        run: npx wrangler deploy --config wrangler.production.jsonc --tag "sha:${{ steps.baseline.outputs.baseline }}"
+        #
+        # Run through productionDeployLock.mjs's `deploy` subcommand, not
+        # directly: it verifies lock ownership immediately before AND
+        # immediately after this call, and enforces a hard, killing timeout
+        # strictly shorter than the lease — the actual prevention mechanism,
+        # not just a time-based assumption. See that script's header comment.
+        run: node scripts/deploy/productionDeployLock.mjs deploy "${{ github.run_id }}-${{ github.run_attempt }}" 120000 "sha:${{ steps.baseline.outputs.baseline }}" -- \
+          npx wrangler deploy --config wrangler.production.jsonc --tag "sha:${{ steps.baseline.outputs.baseline }}"
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+
+      - name: Release production deploy lock
+        if: always()
+        run: node scripts/deploy/productionDeployLock.mjs release "${{ github.run_id }}-${{ github.run_attempt }}"
 
       - name: Verify the publish
         run: |
