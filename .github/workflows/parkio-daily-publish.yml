@@ -100,9 +100,21 @@ jobs:
         # the site. Skipping it isn't just an optimization: it also
         # avoids an unnecessary acquire/release cycle on the production
         # deploy lock for no reason.
+        #
+        # The actual published/not-published/unknown logic — and the
+        # fail-closed policy for "unknown" — lives in
+        # checkAlreadyPublished.mjs, not here, specifically so it's
+        # unit-testable without a real network call. This step is just
+        # slug extraction + translating that script's exit code/stdout
+        # into the job output.
         run: |
           slug=$(git log -1 --format=%s "${{ inputs.sha }}" | sed -E 's/.*— ([0-9]{4}-[0-9]{2}-[0-9]{2})/\1/')
-          if curl -s https://parkio.info/feed.xml | grep -q "parkio-daily-${slug}"; then
+          if [ -z "$slug" ]; then
+            echo "::error::Could not extract a date slug from the content commit's own message — cannot determine publish status. Failing closed: refusing to deploy."
+            exit 1
+          fi
+          status="$(node scripts/parkio-daily/checkAlreadyPublished.mjs "$slug")"
+          if [ "$status" = "published" ]; then
             echo "parkio-daily-${slug} is already live — publish will be skipped."
             echo "already_live=true" >> "$GITHUB_OUTPUT"
           else
@@ -113,12 +125,22 @@ jobs:
       - name: Summary
         if: always()
         run: |
-          echo "### Parkio Daily publish check: already_live=${{ steps.check.outputs.already_live }}" >> "$GITHUB_STEP_SUMMARY"
+          echo "### Parkio Daily publish check: already_live=${{ steps.check.outputs.already_live || 'UNKNOWN (feed check failed — see job status)' }}" >> "$GITHUB_STEP_SUMMARY"
 
   publish:
     name: Publish Parkio Daily content to Production Worker
     needs: check
-    if: needs.check.outputs.already_live != 'true'
+    # GitHub ANDs in success() automatically here since this expression
+    # calls none of success()/failure()/always()/cancelled() — confirmed
+    # against GitHub's own docs, not assumed — so `check` failing (e.g.
+    # its fail-closed exit 1 on an unreadable feed) already skips this
+    # job on its own. success() is still spelled out explicitly: relying
+    # on that implicit default is a well-documented, easy-to-reintroduce
+    # footgun (e.g. if this condition is ever edited to add always()
+    # without re-deriving this), and the whole point of the check job's
+    # fail-closed design is that a failure here must never be silently
+    # bypassed.
+    if: success() && needs.check.outputs.already_live != 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 20
     # No `environment: production` here, and therefore no required-reviewer
