@@ -154,12 +154,23 @@ jobs:
     permissions:
       contents: write
     #
-    # No secrets are forwarded here either, and none are needed: the
-    # called workflow's own job sets `environment: daily-publish` on
-    # itself, which takes precedence for any `${{ secrets.X }}` reference
-    # inside its own steps — confirmed against GitHub's documented
-    # behavior, not assumed. Passing secrets through `on.workflow_call`
-    # here would be redundant at best.
+    # CORRECTION: the earlier comment here claimed secrets forwarding was
+    # unnecessary because the called job's own `environment: daily-publish`
+    # would take precedence. That is wrong — confirmed by a real dispatch
+    # that failed with every Cloudflare credential empty. Per GitHub's
+    # docs, the callee's `environment:` only determines WHERE a secret is
+    # read from; the caller must still explicitly pass it, named here (not
+    # via `secrets: inherit`, which would also hand this workflow
+    # ANTHROPIC_API_KEY/YOUTUBE_API_KEY from the `build` job above — those
+    # are unrelated to publishing and this stays on the narrower,
+    # explicitly-named path instead). The three names below must exactly
+    # match parkio-daily-publish.yml's own `on.workflow_call.secrets:`
+    # declaration — scripts/deploy/workflowPermissions.mjs's secret audit
+    # checks this statically.
     uses: ./.github/workflows/parkio-daily-publish.yml
     with:
       sha: ${{ needs.build.outputs.sha }}
+    secrets:
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      NEXT_PUBLIC_CARTO_API_KEY: ${{ secrets.NEXT_PUBLIC_CARTO_API_KEY }}

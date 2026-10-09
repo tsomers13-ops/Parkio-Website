@@ -31,15 +31,33 @@ on:
         description: The exact Parkio Daily content commit to publish.
         required: true
         type: string
-    # Deliberately no `secrets:` block here. This job sets its own
-    # `environment: daily-publish` below, which GitHub resolves BEFORE
-    # anything a caller could forward — "If you include environment in the
-    # reusable workflow at the job level, the environment secret will be
-    # used, and not the secret passed from the caller workflow." A caller
-    # also cannot declare `environment:` itself on a job that calls a
-    # reusable workflow (that constraint is what caused this file's own
-    # bug — see parkio-daily.yml's `publish` job), so there would be
-    # nothing a `secrets:` block here could meaningfully receive anyway.
+    # CORRECTION (first real, non-simulated dispatch after PR #18/#19
+    # failed here with every one of these resolving to an empty string):
+    # the earlier assumption — that declaring `environment: daily-publish`
+    # on this job alone was sufficient — was wrong. Per GitHub's own docs
+    # ("Reuse workflows"): declaring the environment on the CALLED job
+    # only establishes WHERE secrets are read from; the CALLER must still
+    # explicitly pass each one, either via `secrets: inherit` or by naming
+    # it here. Naming it is what's done below, deliberately NOT
+    # `secrets: inherit`, to keep this workflow from also gaining access
+    # to unrelated secrets (ANTHROPIC_API_KEY, YOUTUBE_API_KEY) that only
+    # parkio-daily.yml's `build` job needs.
+    #
+    # The caller's `${{ secrets.X }}` expression in ITS OWN `secrets:`
+    # block is not evaluated as a normal value substitution in the
+    # caller's context (which has no environment bound, and couldn't —
+    # `environment:` and `uses:` can't coexist on one job). It passes the
+    # secret's NAME through; the actual value is resolved once execution
+    # reaches `environment: daily-publish` below. See
+    # scripts/deploy/workflowPermissions.mjs's secret-forwarding audit,
+    # which checks this exact contract statically.
+    secrets:
+      CLOUDFLARE_ACCOUNT_ID:
+        required: true
+      CLOUDFLARE_API_TOKEN:
+        required: true
+      NEXT_PUBLIC_CARTO_API_KEY:
+        required: true
 
 # Own concurrency group — deliberately separate from `workers-production`.
 # A Daily publish must never be cancelled by, nor cancel, an application
@@ -77,6 +95,28 @@ jobs:
       NEXT_PUBLIC_CARTO_API_KEY: ${{ secrets.NEXT_PUBLIC_CARTO_API_KEY }}
 
     steps:
+      - name: Verify required Cloudflare credentials are present
+        # Fails in ~1 second, before checkout/build/anything else, if the
+        # environment -> secrets wiring above is ever broken again (e.g.
+        # by a future edit to either this file's `secrets:` contract or
+        # parkio-daily.yml's forwarding) — rather than failing minutes
+        # later with a confusing Cloudflare auth error. Checks presence
+        # only; never prints a value.
+        run: |
+          missing=()
+          [ -z "${CLOUDFLARE_API_TOKEN:-}" ] && missing+=("CLOUDFLARE_API_TOKEN")
+          [ -z "${CLOUDFLARE_ACCOUNT_ID:-}" ] && missing+=("CLOUDFLARE_ACCOUNT_ID")
+          [ -z "${NEXT_PUBLIC_CARTO_API_KEY:-}" ] && missing+=("NEXT_PUBLIC_CARTO_API_KEY")
+          if [ ${#missing[@]} -gt 0 ]; then
+            echo "::error::Missing required credential(s): ${missing[*]}. The daily-publish environment's secrets are not reaching this job — check parkio-daily.yml's secrets: forwarding block and this workflow's on.workflow_call.secrets: contract."
+            exit 1
+          fi
+          echo "All required credentials are present (values not shown)."
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          NEXT_PUBLIC_CARTO_API_KEY: ${{ secrets.NEXT_PUBLIC_CARTO_API_KEY }}
+
       - name: Check out the exact candidate commit, with full history
         uses: actions/checkout@v4
         with:
