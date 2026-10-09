@@ -140,6 +140,20 @@ jobs:
     # hard way immediately after merging the first version of this job,
     # which had `environment: daily-publish` right here.)
     #
+    # permissions IS required here, separately from that constraint: a
+    # reusable workflow can never be granted more permission than its
+    # caller job has, regardless of what the callee's own job declares.
+    # The called workflow's job needs `contents: write` (to push to the
+    # deploy-lock branch — see productionDeployLock.mjs) — without this,
+    # GitHub rejects the whole FILE at dispatch time with "is only allowed
+    # 'contents: read'", before the build job above even runs. Found via a
+    # real, non-simulated dispatch after the lock mechanism was merged —
+    # none of the preview-only integration testing exercised this exact
+    # caller/callee shape, since those tests used standalone workflows
+    # with no reusable-workflow call at all.
+    permissions:
+      contents: write
+    #
     # No secrets are forwarded here either, and none are needed: the
     # called workflow's own job sets `environment: daily-publish` on
     # itself, which takes precedence for any `${{ secrets.X }}` reference
