@@ -41,7 +41,7 @@
  *   ANTHROPIC_API_KEY=… YOUTUBE_API_KEY=… node scripts/parkio-daily/build.mjs
  */
 
-import { writeFileSync, mkdirSync } from "node:fs";
+import { existsSync, writeFileSync, mkdirSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -109,6 +109,22 @@ async function main() {
 
   const { etDate, slug, niceDate } = todaysSlugAndDate();
   console.log(`[parkio-daily] Building briefing for ${etDate} (slug: ${slug})`);
+
+  // Idempotency: a re-dispatch on a day whose briefing already exists
+  // (e.g. a prior run's build succeeded but publish failed downstream,
+  // as happened the first time this ran against the new deploy-lock
+  // workflow) must NOT call Claude again — the output isn't
+  // deterministic, so doing so would silently replace today's already-
+  // committed briefing with a different one on every re-run, which is
+  // exactly the "duplicate/conflicting content" outcome this guards
+  // against. The caller workflow (parkio-daily.yml) is responsible for
+  // still offering this already-written file to publish even when
+  // nothing new was generated — see its "Commit the new briefing" step.
+  const outPath = path.join("content", "guide", "daily", `${slug}.json`);
+  if (existsSync(outPath)) {
+    console.log(`[parkio-daily] ${outPath} already exists — skipping generation (idempotent no-op).`);
+    return;
+  }
 
   // ── Sources ─────────────────────────────────────────────────
   const [parksBlogRss, additionalSources, parksDestinations] =
@@ -191,9 +207,7 @@ async function main() {
   });
 
   // ── Write to disk ──────────────────────────────────────────
-  const outDir = path.join("content", "guide", "daily");
-  mkdirSync(outDir, { recursive: true });
-  const outPath = path.join(outDir, `${slug}.json`);
+  mkdirSync(path.dirname(outPath), { recursive: true });
   writeFileSync(outPath, JSON.stringify(post, null, 2) + "\n", "utf8");
   console.log(`[parkio-daily] Wrote ${outPath}`);
 

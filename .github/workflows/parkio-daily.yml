@@ -68,7 +68,7 @@ jobs:
             echo "::error::Expected $f was not produced by build.mjs."
             exit 1
           fi
-          echo "Found $f — a commit should be created."
+          echo "Found $f — either a new commit will be created, or (if it already existed) the existing commit will be offered to publish."
 
       - name: Generate social drafts
         # Reformats today's briefing into ready-to-post social drafts at
@@ -84,7 +84,26 @@ jobs:
           git config user.email "parkio-daily-bot@users.noreply.github.com"
           git add content/guide/daily/ content/social/
           if git diff --cached --quiet; then
-            echo "No content changes — nothing to commit."
+            # Nothing new from THIS run's own generation — either
+            # build.mjs's idempotency check skipped it because today's
+            # file already existed (a prior run's build succeeded but
+            # publish failed downstream, as happened once already), or
+            # it wrote identical bytes. Either way, don't just silently
+            # do nothing: find the commit that actually added today's
+            # file and still offer IT to the publish job, so already-
+            # generated, never-published content isn't stranded forever.
+            today=$(TZ=America/New_York date +%Y-%m-%d)
+            f="content/guide/daily/parkio-daily-${today}.json"
+            existing_sha="$(git log -1 --format=%H -- "$f")"
+            if [ -n "$existing_sha" ]; then
+              echo "No new content generated — today's briefing already exists at $existing_sha. Offering it to publish."
+              {
+                echo "pushed=true"
+                echo "sha=$existing_sha"
+              } >> "$GITHUB_OUTPUT"
+            else
+              echo "No content changes — nothing to commit."
+            fi
             exit 0
           fi
           today=$(TZ=America/New_York date +%Y-%m-%d)
