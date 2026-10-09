@@ -41,7 +41,7 @@
  *   ANTHROPIC_API_KEY=… YOUTUBE_API_KEY=… node scripts/parkio-daily/build.mjs
  */
 
-import { writeFileSync, mkdirSync } from "node:fs";
+import { existsSync, readFileSync, writeFileSync, mkdirSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -91,6 +91,24 @@ function pathToHref(p) {
   }
 }
 
+/**
+ * Minimal runtime check against the DailyPost schema (lib/guideDaily.ts)
+ * — mirrors exactly that interface's non-optional fields (slug, title,
+ * date, teaser). Used only to decide whether an already-existing file is
+ * safe to REUSE as-is (idempotent skip) or must fail closed instead of
+ * silently being treated as valid. Not a full schema validator — the
+ * app's own getDailyPost() already tolerates missing optional fields by
+ * design; this exists to catch a truncated/corrupt/incomplete write, not
+ * to re-litigate what's optional.
+ */
+function isValidExistingDailyPost(candidate) {
+  if (!candidate || typeof candidate !== "object") return false;
+  for (const field of ["slug", "title", "date", "teaser"]) {
+    if (typeof candidate[field] !== "string" || candidate[field].trim() === "") return false;
+  }
+  return true;
+}
+
 // Export the deterministic helpers so a future test file (or an
 // ad-hoc node -e) can exercise them without hitting the network.
 export {
@@ -102,6 +120,7 @@ export {
   stitchAdditionalSources,
   buildPrompt,
   buildPost,
+  isValidExistingDailyPost,
 };
 
 async function main() {
@@ -109,6 +128,37 @@ async function main() {
 
   const { etDate, slug, niceDate } = todaysSlugAndDate();
   console.log(`[parkio-daily] Building briefing for ${etDate} (slug: ${slug})`);
+
+  // Idempotency: a re-dispatch on a day whose briefing already exists
+  // (e.g. a prior run's build succeeded but publish failed downstream,
+  // as happened the first time this ran against the new deploy-lock
+  // workflow) must NOT call Claude again — the output isn't
+  // deterministic, so doing so would silently replace today's already-
+  // committed briefing with a different one on every re-run, which is
+  // exactly the "duplicate/conflicting content" outcome this guards
+  // against. The caller workflow (parkio-daily.yml) is responsible for
+  // still offering this already-written file to publish even when
+  // nothing new was generated — see its "Commit the new briefing" step.
+  const outPath = path.join("content", "guide", "daily", `${slug}.json`);
+  if (existsSync(outPath)) {
+    let existing;
+    try {
+      existing = JSON.parse(readFileSync(outPath, "utf8"));
+    } catch (err) {
+      console.error(
+        `[parkio-daily] FATAL: ${outPath} already exists but is not valid JSON (${err.message}). Refusing to treat it as reusable, and refusing to overwrite it automatically — fix or remove it manually, then re-run.`,
+      );
+      process.exit(1);
+    }
+    if (!isValidExistingDailyPost(existing)) {
+      console.error(
+        `[parkio-daily] FATAL: ${outPath} already exists but is missing required DailyPost fields (slug/title/date/teaser — see lib/guideDaily.ts). Refusing to treat it as reusable, and refusing to overwrite it automatically — fix or remove it manually, then re-run.`,
+      );
+      process.exit(1);
+    }
+    console.log(`[parkio-daily] ${outPath} already exists and is valid — skipping generation (idempotent no-op).`);
+    return;
+  }
 
   // ── Sources ─────────────────────────────────────────────────
   const [parksBlogRss, additionalSources, parksDestinations] =
@@ -191,9 +241,7 @@ async function main() {
   });
 
   // ── Write to disk ──────────────────────────────────────────
-  const outDir = path.join("content", "guide", "daily");
-  mkdirSync(outDir, { recursive: true });
-  const outPath = path.join(outDir, `${slug}.json`);
+  mkdirSync(path.dirname(outPath), { recursive: true });
   writeFileSync(outPath, JSON.stringify(post, null, 2) + "\n", "utf8");
   console.log(`[parkio-daily] Wrote ${outPath}`);
 
