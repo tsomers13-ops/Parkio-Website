@@ -2,223 +2,248 @@
   "title": "Parkio Daily for October 9, 2026",
   "slug": "parkio-daily-2026-10-09",
   "date": "2026-10-09",
-  "teaser": "Grand Floridian Cafe reopens this month; breakfast spring rolls debut at Magic Kingdom; new Yeti details emerge for Expedition Everest.",
+  "teaser": "Tiana's Bayou Adventure closes Nov 3 for refurb, reopening before Christmas. Jingle Cruise returns same day. Mad Tea Party back Oct 28 at Disneyland.",
   "rightNow": {
     "headline": "Best rides right now",
     "rides": [
       {
-        "name": "Test Track",
+        "name": "Space Mountain",
+        "parkSlug": "magic-kingdom",
+        "note": "Tomorrowland crowds lighter mid-morning"
+      },
+      {
+        "name": "Soarin'",
         "parkSlug": "epcot",
-        "note": "Post-opening crowds usually thin by mid-morning"
+        "note": "Food & Wine festival crowds thinner before 11am"
       },
       {
-        "name": "Flight of Passage",
-        "parkSlug": "animal-kingdom",
-        "note": "Shortest waits tend to appear during early entry"
-      },
-      {
-        "name": "Rise of the Resistance",
-        "parkSlug": "hollywood-studios",
-        "note": "Queue length often drops after 7pm"
+        "name": "Mad Tea Party",
+        "parkSlug": "disneyland",
+        "note": "Still closed until Oct 28"
       }
     ]
   },
   "sections": {
-    "breaking": [],
-    "bignews": [
+    "breaking": [
       {
-        "title": "Grand Floridian Cafe reopening date announced after months-long closure",
-        "body": "Walt Disney World confirmed Grand Floridian Cafe will reopen later this month following a multi-month refurbishment. Reservations are expected to open soon for the fan-favorite table service restaurant.",
-        "parkSlug": null,
+        "title": "Tiana's Bayou Adventure Closing for Month-Long Refurbishment",
+        "body": "Magic Kingdom's newest attraction shuts down November 3 for its first major refurbishment and will reopen before Christmas. The closure addresses ongoing technical issues that have plagued the ride since its June opening.",
+        "parkSlug": "magic-kingdom",
         "source": {
           "label": "Disney Tourist Blog",
-          "url": "https://www.disneytouristblog.com/disney-reveals-reopening-date-for-grand-floridian-cafe-after-multi-month-closure/"
+          "url": "https://www.disneytouristblog.com/tianas-bayou-adventure-gets-christmas-2026-reopening-date-after-refurbishment/"
         },
         "parkioInsight": {
           "category": "timing-advantage",
-          "text": "Booking within the first 48 hours of reservations opening usually offers the widest availability. Prime dinner slots tend to fill within a week for popular Grand Floridian dining."
+          "text": "Riding Tiana before November 3 usually means shorter waits in the final week as guests postpone visits. The week after reopening tends to draw the heaviest crowds, so mid-December may offer better windows."
         }
       },
       {
-        "title": "Disney planning Yeti replacement, not repair, for Expedition Everest",
-        "body": "Former Imagineer Joe Rohde clarified that Walt Disney World will replace the Yeti animatronic inside Expedition Everest rather than repair the original figure. The project was announced at D23 Expo earlier this year.",
-        "parkSlug": "animal-kingdom",
+        "title": "Disney Compensates Guests for Rainy Halloween Party",
+        "body": "Guests who attended recent Mickey's Not-So-Scary Halloween Party nights impacted by Central Florida storms are receiving complimentary one-day park hopper tickets. Several entertainment offerings were canceled due to weather.",
+        "parkSlug": "magic-kingdom",
         "source": {
-          "label": "Disney Tourist Blog",
-          "url": "https://www.disneytouristblog.com/disney-world-will-replace-disco-yeti-not-repair-animatronic-per-legend-joe-rohde/"
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/10/disney-issues-1-day-park-hopper-tickets-to-guests-following-rainy-mickeys-not-so-scary-halloween-party/"
         },
         "parkioInsight": {
           "category": "avoid-risk",
-          "text": "No timeline has been announced, so the current static Yeti will likely remain for months. Riding early in the day tends to reduce wait times regardless of the animatronic status."
+          "text": "Weekend forecasts suggest lingering showers through Sunday. Evening outdoor entertainment at all parks may face last-minute cancellations, so indoor attractions tend to be the safer bet after 5pm."
         }
-      },
+      }
+    ],
+    "bignews": [
       {
-        "title": "Breakfast spring rolls now available at Magic Kingdom",
-        "body": "A new breakfast version of the park's iconic spring rolls has debuted at Magic Kingdom. The morning snack joins the regular savory options already available throughout the day.",
+        "title": "Jingle Cruise Returns to Magic Kingdom November 3",
+        "body": "The seasonal Jungle Cruise overlay debuts the same day Tiana closes, wrapping the classic attraction in holiday decorations and jokes through early January.",
         "parkSlug": "magic-kingdom",
         "source": {
-          "label": "Disney Food Blog",
-          "url": "https://www.disneyfoodblog.com/2026/10/08/will-it-spring-roll-we-tried-the-new-breakfast-version-of-this-iconic-magic-kingdom-snack/"
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/10/return-date-set-for-2026-jingle-cruise-at-magic-kingdom/"
         },
         "parkioInsight": {
           "category": "opportunity",
-          "text": "New food items often sell out before 11am on opening week. Grabbing one during early entry or rope drop usually ensures availability before the lunch crowd arrives."
+          "text": "Opening week of Jingle Cruise typically draws the heaviest waits as annual passholders rush to experience the overlay. Visiting after Thanksgiving often yields shorter lines with the same seasonal experience."
         }
       },
       {
-        "title": "EPCOT fireworks dessert party sees price increase to $194",
-        "body": "The EPCOT fireworks dessert party experience has increased from $179 to $194 per person. The premium viewing package includes desserts and reserved seating for the nightly spectacular.",
-        "parkSlug": "epcot",
+        "title": "Mad Tea Party Reopening October 28 at Disneyland",
+        "body": "The Fantasyland spinner returns after a six-week refurbishment that began September 14. Temporary medieval-themed walls have been in place during the closure.",
+        "parkSlug": "disneyland",
         "source": {
-          "label": "Disney Food Blog",
-          "url": "https://www.disneyfoodblog.com/2026/10/08/this-179-epcot-fireworks-experience-could-now-cost-you-194/"
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/10/reopening-date-set-for-mad-tea-party-at-disneyland/"
         },
         "parkioInsight": {
-          "category": "avoid-risk",
-          "text": "Free viewing spots along World Showcase Lagoon often provide comparable sightlines. Arriving 45 minutes before showtime usually secures a good position without the upcharge."
+          "category": "timing-advantage",
+          "text": "Reopening day usually draws long waits as guests catch up on the attraction. Waiting until the following weekend often means walk-on windows in the late afternoon."
+        }
+      },
+      {
+        "title": "Big Thunder Mountain Opossum Family Returning Soon",
+        "body": "Disney filed a construction permit to restore the fan-favorite animatronic opossum family to Big Thunder Mountain Railroad at Magic Kingdom. The figures went missing after the attraction's 16-month refurbishment ended this summer.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/big-thunder-mountain-railroad-opossum-family-returning-construction-permit-magic-kingdom/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Once the work wraps, spotting the restored opossums tends to be easiest from the left side of the train during the first lift hill. Riding in daylight hours usually offers the best view."
+        }
+      },
+      {
+        "title": "Lightning Lane Premier Pass Sells Out for Weekend",
+        "body": "All four Walt Disney World parks have run out of the premium line-skipping passes for this weekend, signaling heavier-than-usual October crowds arriving in the next 48 hours.",
+        "parkSlug": null,
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/10/disney-world-lightning-lane-premier-pass-sold-out-emd1/"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "Premier Pass sellouts usually indicate standby lines will run 20–30 percent longer than typical Fridays. Arriving at rope drop and targeting headliners in the first 90 minutes tends to keep waits manageable."
         }
       }
     ],
     "topstories": [
       {
-        "title": "Big Thunder Mountain Railroad receives new permit for possum animatronics",
-        "body": "Disney filed a permit to restore possum figures to Big Thunder Mountain Railroad at Magic Kingdom, just months after the attraction reopened from its 16-month refurbishment. The original critters were absent when the coaster returned earlier this year.",
-        "parkSlug": "magic-kingdom",
-        "source": {
-          "label": "Inside the Magic",
-          "url": "https://insidethemagic.net/2026/10/disney-files-new-permit-to-return-possums-to-big-thunder-mountain-railroad-at-magic-kingdom-rl1/"
-        },
-        "parkioInsight": {
-          "category": "timing-advantage",
-          "text": "The work may cause brief downtime over the next few weeks. Riding during the first or last hour of park operation typically avoids maintenance windows."
-        }
-      },
-      {
-        "title": "Marketplace Co-Op back half reopens at Disney Springs after two-month closure",
-        "body": "The rear section of Marketplace Co-Op has reopened at Disney Springs following nearly two months of closure. The merchandise location sells apparel, tech accessories, and housewares.",
-        "parkSlug": null,
-        "source": {
-          "label": "Inside the Magic",
-          "url": "https://insidethemagic.net/2026/10/after-two-months-back-half-of-marketplace-co-op-reopens-at-disney-springs-jc1/"
-        },
-        "parkioInsight": {
-          "category": "opportunity",
-          "text": "Newly reopened shops often stock fresh merchandise that hasn't been picked over. Mid-morning visits on weekdays usually offer the best selection before weekend crowds arrive."
-        }
-      },
-      {
-        "title": "Lakeshore Lodge opens for cash bookings starting July 2027 at $500 per night",
-        "body": "Disney's Lakeshore Lodge is now accepting reservations for stays beginning July 2027, with opening rates starting at $500 per night. The newest Walt Disney World resort is currently excluded from summer discount offers.",
-        "parkSlug": null,
-        "source": {
-          "label": "Disney Tourist Blog",
-          "url": "https://www.disneytouristblog.com/disney-worlds-newest-resort-is-open-to-book-starts-at-500-night-but-you-should-wait-for-deep-discounts/"
-        },
-        "parkioInsight": {
-          "category": "timing-advantage",
-          "text": "New resorts typically see promotional discounts within six months of opening. Waiting for fall 2027 offers often yields 25-30% savings compared to debut pricing."
-        }
-      },
-      {
-        "title": "Disney Bestie Bracelets with crystal emblems arrive at Magic Kingdom",
-        "body": "Adjustable friendship bracelets featuring Disney characters are now sold at Crystal Arts in Magic Kingdom. Each bracelet has a woven cord with a crystal and enamel emblem, starting at $29.",
-        "parkSlug": "magic-kingdom",
-        "source": {
-          "label": "WDWNT",
-          "url": "https://wdwnt.com/2026/10/disney-bestie-bracelets-with-crystal-and-enamel-emblems-come-to-crystal-arts-at-magic-kingdom/"
-        },
-        "parkioInsight": {
-          "category": "opportunity",
-          "text": "Limited-edition jewelry at Crystal Arts tends to sell out within the first week. Shopping during rope drop or late evening usually avoids the midday Main Street crowds."
-        }
-      },
-      {
-        "title": "Bluey toys and plush keychains now stocked at Animal Kingdom",
-        "body": "New Bluey merchandise including Grannies Car with Janet figure and plush keychains has arrived at Island Mercantile in Disney's Animal Kingdom. The Grannies Car toy is priced at $29.99.",
-        "parkSlug": "animal-kingdom",
-        "source": {
-          "label": "WDWNT",
-          "url": "https://wdwnt.com/2026/10/new-bluey-merch-including-grannies-car-and-plush-keychains-now-available-at-disneys-animal-kingdom/"
-        },
-        "parkioInsight": {
-          "category": "opportunity",
-          "text": "Popular character merchandise often moves fastest at park opening and right after the afternoon parade. Island Mercantile restocks tend to happen before 10am on most days."
-        }
-      },
-      {
-        "title": "Holiday R2-H16 droid and fan-designed KP-1 droid debut at Disneyland",
-        "body": "A festive remote-controlled R2-H16 droid in holiday colors and a fan-designed KP-1 Droid Factory figure are now available at Disneyland Park. The R2-H16 is priced at $119.99.",
-        "parkSlug": "disneyland",
-        "source": {
-          "label": "WDWNT",
-          "url": "https://wdwnt.com/2026/10/star-wars-holiday-r2-h16-droid-and-kp-1-fan-designed-droid-arrive-at-disneyland-resort/"
-        },
-        "parkioInsight": {
-          "category": "opportunity",
-          "text": "Star Wars holiday merchandise typically sells out before Thanksgiving week. Visiting Droid Depot or Star Trader within the first few days often secures the best inventory."
-        }
-      },
-      {
-        "title": "Captain America ear headband and Marvel plush accessories launch at California Adventure",
-        "body": "A Captain America-themed ear headband and Marvel character plush accessories are now sold at Disney California Adventure. The headband features blue faux leather with a carbon-fiber pattern and costs $30.99.",
+        "title": "Mystery Pin Vending Machines Debut at Disneyland Resort",
+        "body": "Three new machines offering blind-box collectible pins have been installed in San Fransokyo Maker's Market at California Adventure and two more in Downtown Disney District.",
         "parkSlug": "california-adventure",
         "source": {
           "label": "WDWNT",
-          "url": "https://wdwnt.com/2026/10/captain-america-ear-headband-and-marvel-character-plush-accessories-arrive-at-disneyland-resort/"
+          "url": "https://wdwnt.com/2026/10/disneyland-resort-introduces-mystery-pin-vending-machines/"
         },
         "parkioInsight": {
           "category": "opportunity",
-          "text": "Character headbands in Avengers Campus tend to move quickly on weekends. Shopping during early entry or late evening usually offers better stock than midday."
+          "text": "Vending machine stock tends to refresh overnight. Checking in the first hour after park opening or late evening usually yields the widest selection before popular designs sell out."
+        }
+      },
+      {
+        "title": "New Churro Overdrive Cookies & Cream Snack at Energy Bytes",
+        "body": "The TRON Lightcycle Run kiosk now serves blue mini churros inspired by the attraction, replacing most items removed from the menu this summer.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/10/review-churro-overdrive-cookies-cream-mini-churros-at-energy-bytes-in-magic-kingdom/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Energy Bytes lines tend to spike right after TRON riders exit. Grabbing the snack before riding or during off-peak hours around 2pm usually means shorter waits."
+        }
+      },
+      {
+        "title": "Haunted Mansion Mystery Boxes Arrive at Disney Springs",
+        "body": "Six collectible figurines featuring the Hatbox Ghost and Hitchhiking Ghosts are now available in blind-box packaging for nine dollars each.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/10/haunted-mansion-mystery-boxes-featuring-hatbox-ghost-hitchhiking-ghosts-and-more-arrive-at-disney-springs/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Blind-box collectibles at Disney Springs typically sell fastest in flagship stores during afternoon hours. Visiting World of Disney in the first hour after opening often means fuller stock."
+        }
+      },
+      {
+        "title": "Buzz Lightyear Faces New Construction Work Six Months After Reopening",
+        "body": "Fresh permits were filed for Buzz Lightyear's Space Ranger Spin at Magic Kingdom, months after the attraction completed one of its most extensive refurbishments.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/10/magic-kingdoms-buzz-lightyear-hit-with-fresh-construction-filings-just-months-after-overhaul-sb1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Tomorrowland construction noise tends to be loudest in the late morning. If you're sensitive to noise, riding Buzz or nearby attractions before 10am or after 3pm usually offers a quieter experience."
+        }
+      },
+      {
+        "title": "Darth on a Hearth Holiday Decoration Now Available",
+        "body": "A Star Wars twist on the Elf on the Shelf tradition featuring Darth Vader is now sold across Walt Disney World for thirty dollars.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/10/darth-on-a-hearth-inspired-by-elf-on-the-shelf-arrives-at-walt-disney-world/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Novelty holiday items like this tend to sell out at Hollywood Studios and Galaxy's Edge merchandise locations by mid-November. Grabbing one early in October usually ensures availability."
+        }
+      },
+      {
+        "title": "Mickey's Very Merry Christmas Party Dates Selling Fast",
+        "body": "Another party night has sold out, leaving only one lower-priced date available as the event continues a late start to sellouts compared to prior years.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/10/mickeys-very-merry-christmas-party-loses-another-date-only-one-cheap-night-left-el1/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "The last remaining budget-priced night will likely sell out within days. Booking now or targeting a mid-week December date tends to offer better availability and lighter in-party crowds."
+        }
+      },
+      {
+        "title": "101-Year-Old Medal of Honor Recipient Honored at Disneyland",
+        "body": "Retired Navy Captain E. Royce Williams, the oldest living Korean War Medal of Honor recipient, was named an honorary citizen of Disneyland during a recent visit.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/10/101-year-old-medal-of-honor-recipient-e-royce-williams-named-honorary-citizen-of-disneyland/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Disneyland often hosts veteran recognition ceremonies near the flag retreat on Main Street. Catching the 5pm flag ceremony usually offers a chance to witness similar tributes to service members."
         }
       }
     ],
     "icymi": [
       {
-        "title": "Candlelight Processional narrator lineup announced for EPCOT 2026 holiday season",
-        "body": "Walt Disney World revealed the celebrity narrator roster for the 2026 EPCOT Candlelight Processional, now in its 55th year at the resort. The performance runs during the Festival of the Holidays presented by AdventHealth.",
-        "parkSlug": "epcot",
-        "source": {
-          "label": "Disney Parks Blog",
-          "url": "https://disneyparksblog.com/wdw/epcot-holiday-traditions-and-candlelight-processional-narrators-announced/"
-        }
-      },
-      {
-        "title": "Mickey's Very Merry Christmas Party 2026 dates and details released",
-        "body": "Dates and event details for Mickey's Very Merry Christmas Party at Magic Kingdom are now available for November and December 2026. The separately ticketed event features holiday entertainment, character meets, and seasonal treats.",
+        "title": "Chef Jerry's Journey from EPCOT to Be Our Guest",
+        "body": "Chef de Cuisine Gerardo Quijada Gonzalez now leads Be Our Guest Restaurant at Magic Kingdom after starting his Disney career more than two decades ago in an EPCOT program.",
         "parkSlug": "magic-kingdom",
         "source": {
           "label": "Disney Parks Blog",
-          "url": "https://disneyparksblog.com/wdw/mickeys-very-merry-christmas-party-dates-and-festive-details/"
+          "url": "https://disneyparksblog.com/wdw/chef-jerry-at-be-our-guest/"
         }
       },
       {
-        "title": "Jollywood Nights 2026 dates and tickets now on sale for Hollywood Studios",
-        "body": "Disney's Hollywood Studios has opened tickets for Jollywood Nights, the separately ticketed holiday event running November and December 2026. The event blends old Hollywood glamour with Christmas celebrations.",
-        "parkSlug": "hollywood-studios",
-        "source": {
-          "label": "Disney Parks Blog",
-          "url": "https://disneyparksblog.com/wdw/disney-jollywood-nights-dates-tickets-and-more/"
-        }
-      },
-      {
-        "title": "Disney Believe cruise ship details revealed, sets sail December 2027",
-        "body": "Disney Cruise Line unveiled full details for the Disney Believe, which will embark on its maiden voyage December 18, 2027 from Port Everglades in Fort Lauderdale. The ship promises new venues and entertainment concepts.",
-        "parkSlug": null,
+        "title": "Disney Believe Cruise Ship Details Revealed",
+        "body": "Disney Cruise Line unveiled new venues, dining, and entertainment for the Disney Believe, which sets sail on its maiden voyage December 18, 2027, from Fort Lauderdale.",
         "source": {
           "label": "Disney Parks Blog",
           "url": "https://disneyparksblog.com/dcl/what-is-on-disney-believe-ship/"
+        }
+      },
+      {
+        "title": "Popular EPCOT Restaurant Closing for 2027 Refurbishment",
+        "body": "An unspecified table-service restaurant at EPCOT will close next year for refurbishment, though Disney has not yet announced which venue or the duration of work.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/10/09/this-popular-epcot-restaurant-is-closing-for-refurbishment-in-2027/"
+        }
+      },
+      {
+        "title": "Disney World Files Permits for Park Entrance Updates",
+        "body": "New construction permits were filed for unspecified work at Walt Disney World park entrances, though details about scope and location remain unclear.",
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/10/09/disney-world-files-new-permits-for-park-entrance-updates/"
         }
       }
     ],
     "spotlight": [
       {
-        "title": "Solar-powered trash cans experience first malfunction at Walt Disney World",
-        "body": "The first malfunctioned solar-powered trash receptacle has been spotted at Walt Disney World. Unlike traditional cans that only overflow, the new electronic units have power sources, moving parts, and network connections that can fail.",
-        "parkSlug": null,
-        "ctaLabel": null,
+        "title": "EPCOT Food & Wine Festival Enters Final Weeks",
+        "body": "The International Food & Wine Festival continues through mid-November with dozens of global marketplaces, but crowd patterns shift dramatically as October progresses. Weekday afternoons and early evenings typically offer the best balance of shorter booth lines and cooler temperatures.",
+        "parkSlug": "epcot",
+        "ctaLabel": "Plan your festival visit",
         "parkioInsight": {
-          "category": "avoid-risk",
-          "text": "Traditional trash cans remain widely available throughout all parks. If a solar unit appears full or broken, walking to the next block usually locates a working receptacle within two minutes."
+          "category": "timing-advantage",
+          "text": "Festival booth lines tend to thin out during dinner hours on weekdays, usually between 6–7pm. Arriving then often means walk-up service at popular marketplaces that run 20-minute waits at lunch."
         }
       }
     ]
@@ -230,9 +255,9 @@
       "channel": "Paging Mr. Morrow",
       "publishedAt": "2026-10-03T13:59:41Z",
       "thumbnailUrl": "https://i.ytimg.com/vi/O4tq2l4pWJ4/mqdefault.jpg",
-      "viewCount": 116852,
+      "viewCount": 118267,
       "url": "https://www.youtube.com/watch?v=O4tq2l4pWJ4",
-      "summary": "Paging Mr. Morrow explores new cookie flavors at Gideon's, the latest pin trading options, and Homecomin's updated fall menu at Disney Springs."
+      "summary": "A tour of new offerings at Disney Springs including fresh Gideon's cookie flavors, pin trading updates, and Homecomin's seasonal fall menu."
     },
     {
       "videoId": "9HZua13d0uE",
@@ -240,29 +265,9 @@
       "channel": "WrightDownMainStreet",
       "publishedAt": "2026-10-04T15:41:47Z",
       "thumbnailUrl": "https://i.ytimg.com/vi/9HZua13d0uE/mqdefault.jpg",
-      "viewCount": 61856,
+      "viewCount": 62935,
       "url": "https://www.youtube.com/watch?v=9HZua13d0uE",
-      "summary": "WrightDownMainStreet reviews this year's Food and Wine Festival offerings at EPCOT, ranking the standout dishes and the disappointments."
-    },
-    {
-      "videoId": "xzL3lmNbtmg",
-      "title": "🔴Live Disney's Hollywood Studios Fantasmic at 8, 9:30pm on Thursdat at Walt Disney World 10/8/2026",
-      "channel": "RON ON THE GO",
-      "publishedAt": "2026-10-09T02:29:59Z",
-      "thumbnailUrl": "https://i.ytimg.com/vi/xzL3lmNbtmg/mqdefault.jpg",
-      "viewCount": 32704,
-      "url": "https://www.youtube.com/watch?v=xzL3lmNbtmg",
-      "summary": "RON ON THE GO streams both Fantasmic showings live from Disney's Hollywood Studios on October 8."
-    },
-    {
-      "videoId": "dNWHAZiVmhQ",
-      "title": "Bus Roulette at Walt Disney World 10/8/26 #live",
-      "channel": "That Crazy Disney Lady",
-      "publishedAt": "2026-10-08T21:29:58Z",
-      "thumbnailUrl": "https://i.ytimg.com/vi/dNWHAZiVmhQ/mqdefault.jpg",
-      "viewCount": 24853,
-      "url": "https://www.youtube.com/watch?v=dNWHAZiVmhQ",
-      "summary": "That Crazy Disney Lady takes random Disney transportation buses and explores wherever they lead at Walt Disney World."
+      "summary": "Reviews of standout dishes and disappointing items from EPCOT's Food & Wine Festival global marketplace booths."
     },
     {
       "videoId": "Kbrk3NpgSGc",
@@ -270,62 +275,82 @@
       "channel": "WrightDownMainStreet",
       "publishedAt": "2026-10-07T12:12:24Z",
       "thumbnailUrl": "https://i.ytimg.com/vi/Kbrk3NpgSGc/mqdefault.jpg",
-      "viewCount": 24760,
+      "viewCount": 25834,
       "url": "https://www.youtube.com/watch?v=Kbrk3NpgSGc",
-      "summary": "WrightDownMainStreet participates in a scavenger hunt aboard the Disney Wish to uncover clues about the new Disney Believe ship."
+      "summary": "A scavenger hunt aboard the Disney Wish previewing new venues and experiences coming to the Disney Believe cruise ship."
     },
     {
-      "videoId": "rAPUQinLlOc",
-      "title": "🔴 Live: Rainy Disney Epcot Rides & Fireworks -  Walt Disney World 10.07.2026",
+      "videoId": "nh5dK3LBmFU",
+      "title": "🔴 LIVE: Magic Kingdom Morning Rides! |10.09.2026 Disney World",
       "channel": "Disney Parks with Love - Janel",
-      "publishedAt": "2026-10-09T01:36:57Z",
-      "thumbnailUrl": "https://i.ytimg.com/vi/rAPUQinLlOc/mqdefault.jpg",
-      "viewCount": 21928,
-      "url": "https://www.youtube.com/watch?v=rAPUQinLlOc",
-      "summary": "Disney Parks with Love streams EPCOT attractions and the evening fireworks during rainy weather on October 7."
+      "publishedAt": "2026-10-09T15:34:41Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/nh5dK3LBmFU/mqdefault.jpg",
+      "viewCount": 16934,
+      "url": "https://www.youtube.com/watch?v=nh5dK3LBmFU",
+      "summary": "Live stream from Magic Kingdom during morning hours showing current wait times and attraction experiences."
     },
     {
-      "videoId": "5Nt5lInkCVE",
-      "title": "🔴 Live: Magic Kingdom Rides, Halloween Decorations & Party Prep | Disney World Live Stream 10.8.2026",
-      "channel": "Daily FastPass",
-      "publishedAt": "2026-10-08T22:14:37Z",
-      "thumbnailUrl": "https://i.ytimg.com/vi/5Nt5lInkCVE/mqdefault.jpg",
-      "viewCount": 16493,
-      "url": "https://www.youtube.com/watch?v=5Nt5lInkCVE",
-      "summary": "Daily FastPass streams live from Magic Kingdom, showcasing rides, Halloween decorations, and preparations for the evening party."
+      "videoId": "LG6yZz_Aimo",
+      "title": "Disneyland Halloween Time 🎃 Fun Friday #livestream Rides Shows",
+      "channel": "PopsDisneyAdventures",
+      "publishedAt": "2026-10-09T12:40:08Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/LG6yZz_Aimo/mqdefault_live.jpg",
+      "viewCount": 3119,
+      "url": "https://www.youtube.com/watch?v=LG6yZz_Aimo",
+      "summary": "Live coverage of Disneyland's Halloween Time seasonal offerings including rides and entertainment during a Friday visit."
     },
     {
-      "videoId": "1uQBB9M5OyA",
-      "title": "Por Que o Halloween é Odiado Na Disney? 😳 #shorts #disney #horror",
-      "channel": "Lipe Shorts",
-      "publishedAt": "2026-10-09T02:18:25Z",
-      "thumbnailUrl": "https://i.ytimg.com/vi/1uQBB9M5OyA/mqdefault.jpg",
-      "viewCount": 10027,
-      "url": "https://www.youtube.com/watch?v=1uQBB9M5OyA",
-      "summary": "Lipe Shorts explores why Halloween celebrations at Disney parks generate controversy among some guests."
+      "videoId": "8QFW18WlaWE",
+      "title": "Friday Night Live Stream Announcement - 10-9-26 - Walt Disney World",
+      "channel": "ResortTV1",
+      "publishedAt": "2026-10-09T13:00:25Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/8QFW18WlaWE/mqdefault.jpg",
+      "viewCount": 2412,
+      "url": "https://www.youtube.com/watch?v=8QFW18WlaWE",
+      "summary": "Announcement for an upcoming Friday evening live stream from Walt Disney World."
     },
     {
-      "videoId": "6ksdoxtI_SA",
-      "title": "Walt Disney World just got Severely More Expensive - Disney Believe Cruise Ship Drama!",
-      "channel": "Dev",
-      "publishedAt": "2026-10-09T00:01:56Z",
-      "thumbnailUrl": "https://i.ytimg.com/vi/6ksdoxtI_SA/mqdefault.jpg",
-      "viewCount": 4457,
-      "url": "https://www.youtube.com/watch?v=6ksdoxtI_SA",
-      "summary": "Dev discusses recent Walt Disney World price increases and controversies surrounding the Disney Believe cruise ship announcement."
+      "videoId": "vy_Gf5u1Oos",
+      "title": "Disney Parks Christmas Merch 2026 New Merch Drop! | Disney Springs | Walt Disney World ",
+      "channel": "Main Street Orlando",
+      "publishedAt": "2026-10-09T12:00:00Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/vy_Gf5u1Oos/mqdefault.jpg",
+      "viewCount": 1444,
+      "url": "https://www.youtube.com/watch?v=vy_Gf5u1Oos",
+      "summary": "A look at newly released Christmas merchandise available at Disney Springs locations."
     },
     {
-      "videoId": "LMPfI2xsRRo",
-      "title": "101 Year Old War Hero Becomes a Disneyland Citizen 🏰🇺🇸 #Disneyland",
-      "channel": "Disney Parks",
-      "publishedAt": "2026-10-08T23:30:15Z",
-      "thumbnailUrl": "https://i.ytimg.com/vi/LMPfI2xsRRo/mqdefault.jpg",
-      "viewCount": 4292,
-      "url": "https://www.youtube.com/watch?v=LMPfI2xsRRo",
-      "summary": "Disney Parks honors 101-year-old Medal of Honor recipient Royce Williams with a special recognition at Disneyland Resort."
+      "videoId": "9o2dVfxWj2A",
+      "title": "😋😋Three of Disneyland's most popular treats.😋😋",
+      "channel": "Vcis Fij",
+      "publishedAt": "2026-10-09T11:09:57Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/9o2dVfxWj2A/mqdefault.jpg",
+      "viewCount": 1285,
+      "url": "https://www.youtube.com/watch?v=9o2dVfxWj2A",
+      "summary": "Highlights three fan-favorite snacks available at Disneyland."
+    },
+    {
+      "videoId": "GFcUOjhIpFM",
+      "title": "77 days until Christmas! 🐭🎄❄️ #disney #disneyland #disneyparade #christmas",
+      "channel": "ColorsToysGamesPlay",
+      "publishedAt": "2026-10-09T13:21:29Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/GFcUOjhIpFM/mqdefault.jpg",
+      "viewCount": 1057,
+      "url": "https://www.youtube.com/watch?v=GFcUOjhIpFM",
+      "summary": "A countdown to Christmas featuring Disneyland parade footage and seasonal decorations."
+    },
+    {
+      "videoId": "dJgvOPehHDA",
+      "title": "Let's go!! #halloween # #theatrekid #disney #disneyland #disneyfun",
+      "channel": "Sweet and Stagey Club",
+      "publishedAt": "2026-10-09T11:05:25Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/dJgvOPehHDA/mqdefault.jpg",
+      "viewCount": 1031,
+      "url": "https://www.youtube.com/watch?v=dJgvOPehHDA",
+      "summary": "Halloween-themed content from a Disneyland visit."
     }
   ],
-  "updatedAt": "2026-10-09T04:42:19.536Z",
+  "updatedAt": "2026-10-09T17:22:57.654Z",
   "type": "daily-briefing",
   "meta": {
     "aiGenerated": true,
@@ -334,11 +359,11 @@
       "themeparks.wiki destinations",
       "YouTube Data API v3 (top 10 last 48h)"
     ],
-    "generatedAt": "2026-10-09T04:42:19.536Z",
+    "generatedAt": "2026-10-09T17:22:57.654Z",
     "tokens": {
-      "input": 11475,
-      "output": 5591,
-      "costUsd": 0.1183
+      "input": 11471,
+      "output": 5774,
+      "costUsd": 0.121
     }
   }
 }
