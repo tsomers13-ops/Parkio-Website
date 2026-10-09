@@ -21,6 +21,18 @@
  * that ambient-default assumption is exactly what caused the real bug.
  * Only an EXPLICIT grant on the caller job (or workflow-level default,
  * which still has to be read explicitly from the file) counts.
+ *
+ * Also audits a second, related contract: required SECRETS forwarding.
+ * The very next real dispatch after the permissions bug was fixed hit a
+ * different defect in the same caller/callee relationship — every
+ * Cloudflare credential the called workflow needed resolved to an empty
+ * string, because declaring `environment: daily-publish` on the callee's
+ * job alone does not make its secrets available; the caller must also
+ * explicitly pass them (named, or via `secrets: inherit`) — per GitHub's
+ * own "Reuse workflows" docs. `auditWorkflowSecretForwarding` checks that
+ * every secret the callee's `on.workflow_call.secrets` marks `required`
+ * is either named in the caller's own `secrets:` block or covered by
+ * `secrets: inherit`.
  */
 
 import fs from "node:fs";
@@ -138,6 +150,109 @@ export function auditWorkflowPermissions(docsByPath) {
       const gaps = findPermissionGaps({ callerPath, jobId, permissions: job.permissions }, { path: calleePath, jobs: calleeDoc.jobs });
       for (const gap of gaps) {
         problems.push({ callerPath, jobId, calleePath, ...gap });
+      }
+    }
+  }
+  return problems;
+}
+
+/**
+ * Pure comparison: which of the callee's REQUIRED `workflow_call.secrets`
+ * are not covered by the caller job's own `secrets:` value.
+ *
+ * `secrets: inherit` covers everything. Otherwise the caller's `secrets:`
+ * must be a map naming each required secret — a caller with no `secrets:`
+ * key at all covers nothing, same philosophy as the permissions check
+ * above: never assume an ambient fallback makes it through.
+ *
+ * @param {{secrets?: unknown}} caller
+ * @param {{workflowCallSecrets?: Record<string, {required?: boolean}>}} callee
+ * @returns {string[]} names of required secrets the caller does not forward
+ */
+export function findSecretForwardingGaps(caller, callee) {
+  const required = Object.entries(callee.workflowCallSecrets ?? {})
+    .filter(([, spec]) => spec?.required === true)
+    .map(([name]) => name);
+  if (required.length === 0) return [];
+  if (caller.secrets === "inherit") return [];
+  const provided =
+    caller.secrets && typeof caller.secrets === "object" ? Object.keys(caller.secrets) : [];
+  return required.filter((name) => !provided.includes(name));
+}
+
+const SECRET_REF_PATTERN = /\$\{\{\s*secrets\.([A-Za-z_][A-Za-z0-9_-]*)\s*\}\}/g;
+
+function collectSecretReferences(node, found = new Set()) {
+  if (typeof node === "string") {
+    for (const m of node.matchAll(SECRET_REF_PATTERN)) found.add(m[1]);
+  } else if (Array.isArray(node)) {
+    for (const item of node) collectSecretReferences(item, found);
+  } else if (node && typeof node === "object") {
+    for (const value of Object.values(node)) collectSecretReferences(value, found);
+  }
+  return found;
+}
+
+/**
+ * The check that actually matches the real historical bug, not just a
+ * caller/callee mismatch: a callee job can reference `${{ secrets.X }}`
+ * anywhere in its steps while declaring NO `on.workflow_call.secrets`
+ * entry for X at all. That secret is then categorically unreachable
+ * through the reusable-workflow boundary — resolving to an empty string
+ * — no matter what any caller does, `secrets: inherit` included, because
+ * GitHub only ever passes secrets a reusable workflow has formally
+ * declared it accepts. This is exactly what `parkio-daily-publish.yml`
+ * looked like before this fix: `environment: daily-publish` set, secrets
+ * referenced freely in step `env:` blocks, and no `on.workflow_call.secrets`
+ * block declaring any of them — `findSecretForwardingGaps` alone, which
+ * only compares a DECLARED contract against the caller, would never have
+ * caught that, since there was no contract to compare against.
+ *
+ * @param {{workflowCallSecrets?: Record<string, unknown>, jobs?: Record<string, unknown>}} calleeDoc
+ * @returns {string[]} secret names referenced in the callee's jobs but not declared in on.workflow_call.secrets
+ */
+export function findUndeclaredSecretReferences(calleeDoc) {
+  const declared = new Set(Object.keys(calleeDoc?.workflowCallSecrets ?? {}));
+  const referenced = collectSecretReferences(calleeDoc?.jobs ?? {});
+  return [...referenced].filter((name) => !declared.has(name));
+}
+
+/**
+ * Scans a set of parsed workflow documents for every job that calls a
+ * LOCAL reusable workflow, and reports two distinct defects in the
+ * caller/callee secrets contract:
+ *   - any secret the callee's steps reference but never formally declares
+ *     in `on.workflow_call.secrets` (unreachable no matter what the
+ *     caller does — the actual historical bug);
+ *   - any secret the callee DOES declare as `required` that the caller
+ *     job doesn't forward, by name or via `secrets: inherit` (a
+ *     correctly-declared contract the caller still fails to satisfy).
+ *
+ * @param {Map<string, any>} docsByPath
+ * @returns {Array<{callerPath: string, jobId: string, calleePath: string, secret: (string|null), kind: string, error?: string}>}
+ */
+export function auditWorkflowSecretForwarding(docsByPath) {
+  const problems = [];
+  for (const [callerPath, callerDoc] of docsByPath) {
+    const jobs = callerDoc?.jobs ?? {};
+    for (const [jobId, job] of Object.entries(jobs)) {
+      if (typeof job?.uses !== "string" || !job.uses.startsWith("./")) continue;
+      const calleePath = job.uses.replace(/^\.\//, "");
+      const calleeDoc = docsByPath.get(calleePath);
+      if (!calleeDoc) {
+        problems.push({ callerPath, jobId, calleePath, secret: null, kind: "missing-callee", error: "callee workflow file not found" });
+        continue;
+      }
+      const workflowCallSecrets = calleeDoc?.on?.workflow_call?.secrets ?? {};
+
+      const undeclared = findUndeclaredSecretReferences({ workflowCallSecrets, jobs: calleeDoc.jobs });
+      for (const secret of undeclared) {
+        problems.push({ callerPath, jobId, calleePath, secret, kind: "undeclared-in-callee-contract" });
+      }
+
+      const missing = findSecretForwardingGaps({ secrets: job.secrets }, { workflowCallSecrets });
+      for (const secret of missing) {
+        problems.push({ callerPath, jobId, calleePath, secret, kind: "not-forwarded-by-caller" });
       }
     }
   }
