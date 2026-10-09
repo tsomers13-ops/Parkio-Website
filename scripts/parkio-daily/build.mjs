@@ -41,7 +41,7 @@
  *   ANTHROPIC_API_KEY=… YOUTUBE_API_KEY=… node scripts/parkio-daily/build.mjs
  */
 
-import { existsSync, writeFileSync, mkdirSync } from "node:fs";
+import { existsSync, readFileSync, writeFileSync, mkdirSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -91,6 +91,24 @@ function pathToHref(p) {
   }
 }
 
+/**
+ * Minimal runtime check against the DailyPost schema (lib/guideDaily.ts)
+ * — mirrors exactly that interface's non-optional fields (slug, title,
+ * date, teaser). Used only to decide whether an already-existing file is
+ * safe to REUSE as-is (idempotent skip) or must fail closed instead of
+ * silently being treated as valid. Not a full schema validator — the
+ * app's own getDailyPost() already tolerates missing optional fields by
+ * design; this exists to catch a truncated/corrupt/incomplete write, not
+ * to re-litigate what's optional.
+ */
+function isValidExistingDailyPost(candidate) {
+  if (!candidate || typeof candidate !== "object") return false;
+  for (const field of ["slug", "title", "date", "teaser"]) {
+    if (typeof candidate[field] !== "string" || candidate[field].trim() === "") return false;
+  }
+  return true;
+}
+
 // Export the deterministic helpers so a future test file (or an
 // ad-hoc node -e) can exercise them without hitting the network.
 export {
@@ -102,6 +120,7 @@ export {
   stitchAdditionalSources,
   buildPrompt,
   buildPost,
+  isValidExistingDailyPost,
 };
 
 async function main() {
@@ -122,7 +141,22 @@ async function main() {
   // nothing new was generated — see its "Commit the new briefing" step.
   const outPath = path.join("content", "guide", "daily", `${slug}.json`);
   if (existsSync(outPath)) {
-    console.log(`[parkio-daily] ${outPath} already exists — skipping generation (idempotent no-op).`);
+    let existing;
+    try {
+      existing = JSON.parse(readFileSync(outPath, "utf8"));
+    } catch (err) {
+      console.error(
+        `[parkio-daily] FATAL: ${outPath} already exists but is not valid JSON (${err.message}). Refusing to treat it as reusable, and refusing to overwrite it automatically — fix or remove it manually, then re-run.`,
+      );
+      process.exit(1);
+    }
+    if (!isValidExistingDailyPost(existing)) {
+      console.error(
+        `[parkio-daily] FATAL: ${outPath} already exists but is missing required DailyPost fields (slug/title/date/teaser — see lib/guideDaily.ts). Refusing to treat it as reusable, and refusing to overwrite it automatically — fix or remove it manually, then re-run.`,
+      );
+      process.exit(1);
+    }
+    console.log(`[parkio-daily] ${outPath} already exists and is valid — skipping generation (idempotent no-op).`);
     return;
   }
 

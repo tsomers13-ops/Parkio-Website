@@ -72,8 +72,53 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  check:
+    name: Check whether this content is already published
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    outputs:
+      already_live: ${{ steps.check.outputs.already_live }}
+    # No environment, no secrets, no special permissions — this only
+    # reads the public feed over plain HTTP. Deliberately a separate job
+    # (not just an early step in `publish`) so an already-live day skips
+    # the ENTIRE expensive build/test/deploy job via `needs`+`if` below,
+    # the same pattern parkio-daily.yml itself already uses for
+    # build -> publish, rather than threading a skip condition through
+    # every one of publish's existing steps individually.
+    steps:
+      - name: Check out the exact candidate commit, with full history
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.sha }}
+          fetch-depth: 0
+
+      - name: Check whether today's article is already live
+        id: check
+        # Redeploying an already-live day would build, test, and deploy
+        # again for a result that's already true — same approved
+        # baseline, same Daily content, nothing would actually change on
+        # the site. Skipping it isn't just an optimization: it also
+        # avoids an unnecessary acquire/release cycle on the production
+        # deploy lock for no reason.
+        run: |
+          slug=$(git log -1 --format=%s "${{ inputs.sha }}" | sed -E 's/.*— ([0-9]{4}-[0-9]{2}-[0-9]{2})/\1/')
+          if curl -s https://parkio.info/feed.xml | grep -q "parkio-daily-${slug}"; then
+            echo "parkio-daily-${slug} is already live — publish will be skipped."
+            echo "already_live=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "parkio-daily-${slug} is not live yet — publish will proceed."
+            echo "already_live=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Summary
+        if: always()
+        run: |
+          echo "### Parkio Daily publish check: already_live=${{ steps.check.outputs.already_live }}" >> "$GITHUB_STEP_SUMMARY"
+
   publish:
     name: Publish Parkio Daily content to Production Worker
+    needs: check
+    if: needs.check.outputs.already_live != 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 20
     # No `environment: production` here, and therefore no required-reviewer
