@@ -31,14 +31,23 @@ node scripts/deploy/productionDeployLock.mjs check-tag wrangler.production.jsonc
 
 This reads the Worker's *actual current* deployment and version history
 from Cloudflare (`wrangler deployments list` / `versions list`, both
-read-only) and tells you whether that tag is the one currently serving
-100% of production traffic:
+read-only) and tells you one of three things:
 
-- **`CONFIRMED: ... IS the currently active production deployment.`** — the
-  ambiguous deploy did complete. The outcome was really "success".
-- **`NOT ACTIVE: ... is NOT the currently active production deployment.`**
-  — it never took effect; production is still on whatever was active
-  before. The outcome was really "failure" (safe — nothing changed).
+- **The tag IS the currently active version.** Strong, immediate proof the
+  ambiguous deploy succeeded. Safe to recover as `success` right away.
+- **The tag was uploaded, but is NOT the currently active version.**
+  **This is NOT proof of failure.** An uploaded-but-not-active version
+  could still be activated later — by Cloudflare finishing whatever it was
+  doing when the local process was killed, or by a stray retry. Treating
+  "not active" as "failed" is exactly the mistake this tool exists to
+  avoid: it would let a second deploy start while the first might still
+  land. `recover` will refuse to proceed here without `--force`.
+- **No record of the tag at all.** The strongest signal that the deploy
+  never happened — but still not immediate proof. A single check taken
+  right after the incident cannot rule out a request still in flight on
+  Cloudflare's side. `recover` requires at least 15 minutes
+  (`MIN_RECOVERY_SETTLE_MS`) to have passed since the incident before it
+  will accept this as a `failure` verdict on its own.
 
 You can also just look directly: `npx wrangler deployments list --config
 wrangler.production.jsonc` prints the current deployment in human-readable
@@ -54,8 +63,14 @@ node scripts/deploy/productionDeployLock.mjs recover "sha:<the same deployTag>" 
   exactly — this is a sanity check against recovering the wrong incident.
 - If `CLOUDFLARE_API_TOKEN` / `CLOUDFLARE_ACCOUNT_ID` are set in your shell
   (same credentials CI uses), `recover` automatically repeats the Step 1
-  check itself and **refuses** if it disagrees with what you typed, unless
-  you also pass `--force`.
+  check itself, computes the real elapsed time since the incident from
+  `lock.json`, and **refuses** — without `--force` — whenever:
+  - the live result is `inconclusive` (uploaded, not active) — a `failure`
+    claim is never trusted here, no matter how long you wait;
+  - the live result is `too_soon` (absent, but under 15 minutes since the
+    incident);
+  - the live result flatly disagrees with what you typed (e.g. it's
+    actually active and you typed `failure`).
 - If those credentials are not set, `recover` refuses to proceed blind
   unless you pass `--force` — i.e. verification is required by default,
   with an explicit, visible escape hatch, not a silent one.

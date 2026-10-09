@@ -134,12 +134,54 @@ export function isHeldBy(state, runId, now = Date.now()) {
   return !!state && !isRecoveryRequired(state) && !isExpired(state, now) && state.runId === runId;
 }
 
-/** Pure comparison the `recover`/`check-tag` CLI actions use to turn a live
+/** Conservative lower bound on how long to wait, after an ambiguous event,
+ * before trusting "this tag does not exist in Cloudflare's version history"
+ * as proof the deploy never happened. A single live snapshot taken right
+ * after the kill is NOT enough — the request we lost visibility into may
+ * still be in flight on Cloudflare's side. This is a heuristic margin, not
+ * a guarantee from Cloudflare's docs: comfortably larger than any ordinary
+ * API request/activation latency this system has ever observed, chosen to
+ * make a false "failure" verdict implausible rather than merely unlikely. */
+export const MIN_RECOVERY_SETTLE_MS = 15 * 60 * 1000; // 15 minutes
+
+/**
+ * Pure decision logic the `recover` CLI action uses to turn a live
  * Cloudflare read into a verdict. Separated out from the shelling-out code
  * so this one piece of actual logic is unit-testable without wrangler or
- * credentials. */
-export function describeRecoveryVerdict(liveActiveTag, expectedTag) {
-  return liveActiveTag === expectedTag ? "success" : "failure";
+ * credentials.
+ *
+ * Deliberately FOUR outcomes, not two — collapsing this to a simple
+ * "is the tag active y/n" binary was the exact mistake to avoid: observing
+ * a tag as NOT currently active is not proof it failed. It could be
+ * uploaded and awaiting activation, or Cloudflare could still be
+ * processing the request that was in flight when the local process was
+ * killed. Only the ABSENCE of any record of the tag, sustained for long
+ * enough that any such in-flight processing would almost certainly have
+ * resolved one way or the other by now, counts as a confirmed failure.
+ *
+ *   "success"      — the tag IS the active version right now. Immediate,
+ *                     final proof — this can never be a false positive, so
+ *                     no time gating applies to it.
+ *   "failure"      — no version with this tag exists at all, AND at least
+ *                     MIN_RECOVERY_SETTLE_MS has passed since the
+ *                     ambiguous event.
+ *   "too_soon"     — no version with this tag exists YET, but not enough
+ *                     time has passed to trust that absence — it could
+ *                     still appear.
+ *   "inconclusive" — a version with this tag WAS uploaded, but it is not
+ *                     (yet, or no longer) the active one. This is NOT
+ *                     evidence of failure — an uploaded version could
+ *                     still be activated later (by Cloudflare finishing
+ *                     what it was doing, or by a stray retry) — and must
+ *                     block, not be guessed at.
+ *
+ * @param {{taggedVersionExists: boolean, taggedVersionIsActive: boolean}} liveState
+ * @param {number} elapsedMsSinceAmbiguous
+ */
+export function describeRecoveryVerdict(liveState, elapsedMsSinceAmbiguous) {
+  if (liveState.taggedVersionIsActive) return "success";
+  if (liveState.taggedVersionExists) return "inconclusive";
+  return elapsedMsSinceAmbiguous >= MIN_RECOVERY_SETTLE_MS ? "failure" : "too_soon";
 }
 
 function buildRecoveryState(state, reason, deployTag, now) {
@@ -464,31 +506,48 @@ export function runDeployCommand(command, args, { deployTimeoutMs = DEFAULT_DEPL
 }
 
 /**
- * Reads the Worker's own live deployment/version state from Cloudflare and
- * returns the tag (if any) of whichever version currently has 100% of
- * traffic. Read-only — lists existing deployments/versions, no mutation.
- * Used by `check-tag` (ad-hoc inspection) and `recover` (verification gate).
+ * Reads the Worker's own live deployment/version state from Cloudflare.
+ * Read-only — lists existing deployments/versions, no mutation. Used by
+ * `check-tag` (ad-hoc inspection) and `recover` (verification gate).
+ *
+ * Deliberately answers two separate questions, not one: which version is
+ * currently active (and its tag, if any) — AND, independently, whether
+ * expectedTag was ever uploaded at all, anywhere in the version history,
+ * active or not. Collapsing these into one "is the expected tag active"
+ * boolean is exactly what would make "not active" look like "failed" —
+ * see describeRecoveryVerdict's header comment for why that's wrong.
+ *
  * @param {string} configPath
+ * @param {string} expectedTag
  */
-export function inspectLiveDeploymentTag(configPath) {
+export function inspectLiveDeploymentState(configPath, expectedTag) {
   const deployments = JSON.parse(
     execFileSync("npx", ["wrangler", "deployments", "list", "--config", configPath, "--json"], { encoding: "utf8" })
   );
-  if (!Array.isArray(deployments) || deployments.length === 0) {
-    return { activeVersionId: null, activeTag: null };
+  let activeVersionId = null;
+  if (Array.isArray(deployments) && deployments.length > 0) {
+    const latest = deployments[deployments.length - 1];
+    const activeVersion = (latest.versions || []).find((v) => v.percentage === 100) ?? latest.versions?.[0] ?? null;
+    activeVersionId = activeVersion?.version_id ?? null;
   }
-  const latest = deployments[deployments.length - 1];
-  const activeVersion = (latest.versions || []).find((v) => v.percentage === 100) ?? latest.versions?.[0] ?? null;
-  const activeVersionId = activeVersion?.version_id ?? null;
-  if (!activeVersionId) {
-    return { activeVersionId: null, activeTag: null };
-  }
+
   const versions = JSON.parse(
     execFileSync("npx", ["wrangler", "versions", "list", "--config", configPath, "--json"], { encoding: "utf8" })
   );
-  const versionEntry = (versions || []).find((v) => v.id === activeVersionId);
-  const activeTag = versionEntry?.annotations?.["workers/tag"] ?? null;
-  return { activeVersionId, activeTag };
+  const list = Array.isArray(versions) ? versions : [];
+
+  const activeEntry = activeVersionId ? list.find((v) => v.id === activeVersionId) : null;
+  const activeTag = activeEntry?.annotations?.["workers/tag"] ?? null;
+
+  const taggedEntry = list.find((v) => v.annotations?.["workers/tag"] === expectedTag);
+
+  return {
+    activeVersionId,
+    activeTag,
+    taggedVersionId: taggedEntry?.id ?? null,
+    taggedVersionExists: !!taggedEntry,
+    taggedVersionIsActive: !!taggedEntry && taggedEntry.id === activeVersionId,
+  };
 }
 
 // ---- real git-backed implementation, used by the CLI entry point only ----
@@ -700,15 +759,22 @@ if (process.argv[1] && process.argv[1] === fileURLToPath(import.meta.url)) {
       console.error("usage: productionDeployLock.mjs check-tag <configPath> <expectedTag>");
       process.exit(2);
     }
-    const { activeVersionId, activeTag } = inspectLiveDeploymentTag(configPath);
-    const verdict = describeRecoveryVerdict(activeTag, expectedTag);
-    console.log(`Live active production version: ${activeVersionId ?? "none"} (tag: ${activeTag ?? "none"})`);
-    console.log(`Expected tag: ${expectedTag}`);
-    console.log(
-      verdict === "success"
-        ? "CONFIRMED: the expected tag IS the currently active production deployment."
-        : "NOT ACTIVE: the expected tag is NOT the currently active production deployment."
-    );
+    const liveState = inspectLiveDeploymentState(configPath, expectedTag);
+    console.log(`Currently active production version: ${liveState.activeVersionId ?? "none"} (tag: ${liveState.activeTag ?? "none"})`);
+    console.log(`Tag being checked: ${expectedTag}`);
+    console.log(`A version with this tag exists in Cloudflare's history: ${liveState.taggedVersionExists}`);
+    console.log(`That version is the currently active one: ${liveState.taggedVersionIsActive}`);
+    if (liveState.taggedVersionIsActive) {
+      console.log("=> This tag IS live right now. Strong, immediate evidence the deploy succeeded.");
+    } else if (liveState.taggedVersionExists) {
+      console.log(
+        "=> This tag was uploaded but is NOT currently active. This is NOT proof of failure — it could still be activated later. Do not treat this as safe-to-recover-as-failure; `recover` will refuse it too, without --force."
+      );
+    } else {
+      console.log(
+        `=> No record of this tag at all, as of right now. Only treat this as proof of failure once at least ${Math.round(MIN_RECOVERY_SETTLE_MS / 60000)} minutes have passed since the incident — a single snapshot taken immediately after an ambiguous event is not sufficient on its own, since Cloudflare may still be processing the request we lost visibility into. \`recover\` enforces this automatically.`
+      );
+    }
     process.exit(0);
   } else if (action === "recover") {
     const [, deployTagArg, confirmArg, ...rest] = args;
@@ -735,9 +801,14 @@ if (process.argv[1] && process.argv[1] === fileURLToPath(import.meta.url)) {
     let liveVerdict = null;
     if (process.env.CLOUDFLARE_API_TOKEN && process.env.CLOUDFLARE_ACCOUNT_ID) {
       try {
-        const { activeVersionId, activeTag } = inspectLiveDeploymentTag(configPath);
-        liveVerdict = describeRecoveryVerdict(activeTag, deployTagArg);
-        console.log(`Live check: active version ${activeVersionId ?? "none"}, tag ${activeTag ?? "none"} -> verdict: ${liveVerdict}`);
+        const liveState = inspectLiveDeploymentState(configPath, deployTagArg);
+        const elapsedMs = Date.now() - (state.recovery?.at ?? 0);
+        liveVerdict = describeRecoveryVerdict(liveState, elapsedMs);
+        console.log(
+          `Live check: active version ${liveState.activeVersionId ?? "none"} (tag ${liveState.activeTag ?? "none"}); ` +
+            `tag "${deployTagArg}" exists=${liveState.taggedVersionExists}, is active=${liveState.taggedVersionIsActive}; ` +
+            `elapsed since incident=${Math.round(elapsedMs / 1000)}s -> verdict: ${liveVerdict}`
+        );
       } catch (err) {
         console.error(`::warning::Could not perform live Cloudflare verification: ${err?.message ?? err}`);
       }
@@ -745,13 +816,22 @@ if (process.argv[1] && process.argv[1] === fileURLToPath(import.meta.url)) {
       console.error("::warning::CLOUDFLARE_API_TOKEN/CLOUDFLARE_ACCOUNT_ID not set in this shell — skipping live verification.");
     }
 
-    if (liveVerdict && liveVerdict !== confirmArg && !force) {
+    if (liveVerdict === "inconclusive") {
+      console.error(
+        "::error::Live check is INCONCLUSIVE: a version with this tag was uploaded to Cloudflare but is not (yet, or no longer) the active one. This does NOT prove the deploy failed — it could still activate later. Refusing without --force."
+      );
+      if (!force) process.exit(1);
+    } else if (liveVerdict === "too_soon") {
+      console.error(
+        `::error::Not enough time has passed since the incident to trust an absence as proof of failure (need ${Math.round(MIN_RECOVERY_SETTLE_MS / 60000)} minutes). Wait and retry, or pass --force if you have independent evidence.`
+      );
+      if (!force) process.exit(1);
+    } else if (liveVerdict && liveVerdict !== confirmArg && !force) {
       console.error(
         `::error::Live Cloudflare check says "${liveVerdict}" but you confirmed "${confirmArg}". Refusing to recover — re-check, or pass --force if you are certain the live check is misleading.`
       );
       process.exit(1);
-    }
-    if (!liveVerdict && !force) {
+    } else if (!liveVerdict && !force) {
       console.error(
         "::error::No live verification was possible and --force was not given. Refusing to recover blind — run `check-tag` yourself first, or pass --force once you've verified independently."
       );

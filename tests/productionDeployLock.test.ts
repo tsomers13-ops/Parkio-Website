@@ -4,6 +4,7 @@ import path from "node:path";
 import {
   AmbiguousDeployOutcomeError,
   ConfirmedDeployFailureError,
+  MIN_RECOVERY_SETTLE_MS,
   acquireLock,
   assertSafeDeadline,
   describeRecoveryVerdict,
@@ -110,12 +111,35 @@ describe("assertSafeDeadline", () => {
 });
 
 describe("describeRecoveryVerdict", () => {
-  it("is success when the live active tag matches the expected tag", () => {
-    expect(describeRecoveryVerdict("sha:abc", "sha:abc")).toBe("success");
+  it("is success when the tagged version is the active one — immediate, no time gating needed", () => {
+    expect(describeRecoveryVerdict({ taggedVersionExists: true, taggedVersionIsActive: true }, 0)).toBe("success");
+    // Even with zero elapsed time, a positive observation is final.
   });
-  it("is failure when the live active tag differs (including null, i.e. no deployment found)", () => {
-    expect(describeRecoveryVerdict("sha:old", "sha:abc")).toBe("failure");
-    expect(describeRecoveryVerdict(null, "sha:abc")).toBe("failure");
+
+  it("is INCONCLUSIVE — not failure — when the tag was uploaded but is not currently active, no matter how long has elapsed", () => {
+    // This is the exact mistake requirement #3 of the final review flagged:
+    // 'not active' must never be treated as 'failed'. An uploaded version
+    // could still be activated later.
+    expect(describeRecoveryVerdict({ taggedVersionExists: true, taggedVersionIsActive: false }, 0)).toBe("inconclusive");
+    expect(describeRecoveryVerdict({ taggedVersionExists: true, taggedVersionIsActive: false }, MIN_RECOVERY_SETTLE_MS * 10)).toBe(
+      "inconclusive"
+    );
+  });
+
+  it("is too_soon when the tag doesn't exist yet but not enough time has passed to trust that absence", () => {
+    expect(describeRecoveryVerdict({ taggedVersionExists: false, taggedVersionIsActive: false }, 0)).toBe("too_soon");
+    expect(describeRecoveryVerdict({ taggedVersionExists: false, taggedVersionIsActive: false }, MIN_RECOVERY_SETTLE_MS - 1)).toBe(
+      "too_soon"
+    );
+  });
+
+  it("is failure only once the tag doesn't exist AND enough settling time has passed", () => {
+    expect(describeRecoveryVerdict({ taggedVersionExists: false, taggedVersionIsActive: false }, MIN_RECOVERY_SETTLE_MS)).toBe(
+      "failure"
+    );
+    expect(describeRecoveryVerdict({ taggedVersionExists: false, taggedVersionIsActive: false }, MIN_RECOVERY_SETTLE_MS * 100)).toBe(
+      "failure"
+    );
   });
 });
 
