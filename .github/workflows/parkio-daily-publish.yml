@@ -244,7 +244,7 @@ jobs:
         # immediately after this call, and enforces a hard, killing timeout
         # strictly shorter than the lease — the actual prevention mechanism,
         # not just a time-based assumption. See that script's header comment.
-        run: node scripts/deploy/productionDeployLock.mjs deploy "${{ github.run_id }}-${{ github.run_attempt }}" 120000 -- \
+        run: node scripts/deploy/productionDeployLock.mjs deploy "${{ github.run_id }}-${{ github.run_attempt }}" 120000 "sha:${{ steps.baseline.outputs.baseline }}" -- \
           npx wrangler deploy --config wrangler.production.jsonc --tag "sha:${{ steps.baseline.outputs.baseline }}"
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}

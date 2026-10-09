@@ -206,7 +206,7 @@ jobs:
         # not just a time-based assumption. See that script's header comment.
         run: |
           DEPLOY_SHA="$(git rev-parse HEAD)"
-          node scripts/deploy/productionDeployLock.mjs deploy "${{ github.run_id }}-${{ github.run_attempt }}" 120000 -- \
+          node scripts/deploy/productionDeployLock.mjs deploy "${{ github.run_id }}-${{ github.run_attempt }}" 120000 "sha:${DEPLOY_SHA}" -- \
             npx wrangler deploy --config wrangler.production.jsonc --tag "sha:${DEPLOY_SHA}"
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
