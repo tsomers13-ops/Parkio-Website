@@ -216,19 +216,35 @@ jobs:
         # `tests/**/*.test.ts` — a full checkout here would get swept
         # into both `npx tsc --noEmit` and `npm test` below, duplicating
         # (and potentially conflicting with) the entire app's own
-        # typecheck/test run. Cone-mode sparse-checkout with only these
-        # two directories listed never creates an `app/`, `components/`,
-        # `lib/`, or `tests/` directory under `tooling/` at all, so
-        # neither glob can ever match anything inside it — confirmed
-        # against actions/checkout's own documented cone-mode behavior.
+        # typecheck/test run.
+        #
+        # CORRECTION, found by a real dispatch: cone-mode sparse-checkout
+        # (the action's own default) does NOT give just these two
+        # directories — it also includes every top-level FILE in each
+        # listed directory's own ancestors, all the way up, which here
+        # meant every loose `.ts` file sitting directly in `scripts/`
+        # itself (diningPipeline.ts, verifyDining.ts, etc., unrelated to
+        # Daily publishing) got pulled into `tooling/` too, and WAS
+        # swept into `npx tsc --noEmit` below exactly as this comment
+        # originally (incorrectly) said cone mode would prevent.
+        # Reproduced locally against this real repo: cone mode with
+        # these same two patterns puts those loose .ts files under
+        # `tooling/scripts/`; switching to NON-cone mode with anchored,
+        # trailing-slash patterns (`/scripts/deploy/`,
+        # `/scripts/parkio-daily/`) does not — confirmed empirically,
+        # not assumed, this time: `find scripts -maxdepth 2` after a real
+        # non-cone sparse-checkout with these exact patterns returns only
+        # the two directories and their contents, nothing from `scripts/`
+        # itself and no repo-root files either.
         uses: actions/checkout@v4
         with:
           ref: ${{ inputs.sha }}
           path: tooling
           fetch-depth: 1
+          sparse-checkout-cone-mode: false
           sparse-checkout: |
-            scripts/deploy
-            scripts/parkio-daily
+            /scripts/deploy/
+            /scripts/parkio-daily/
 
       - name: Validate this is an authorized Daily content update
         # The security boundary. Checks the candidate commit's author and
