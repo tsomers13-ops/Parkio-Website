@@ -452,7 +452,24 @@ jobs:
         # immediately after this call, and enforces a hard, killing timeout
         # strictly shorter than the lease — the actual prevention mechanism,
         # not just a time-based assumption. See that script's header comment.
-        run: node tooling/scripts/deploy/productionDeployLock.mjs deploy "${{ github.run_id }}-${{ github.run_attempt }}" 120000 "sha:${{ steps.baseline.outputs.baseline }}" -- \
+        #
+        # No trailing `\` after the two-line command below — found during
+        # the first real end-to-end run of the fully-audited pipeline. This
+        # `run:` value is a plain YAML scalar, and YAML folds a line break
+        # inside a plain scalar into a single space BEFORE bash ever sees
+        # the text; a trailing `\` is kept as a literal character, not
+        # consumed as a continuation marker. With it present, the real
+        # script bash received was one logical line containing `-- \ npx`,
+        # which bash tokenizes as an ESCAPED SPACE (`\ `) glued onto `npx`
+        # — a single malformed argument `" npx"` instead of two separate
+        # tokens `--` and `npx`. That became `command[0]` in
+        # productionDeployLock.mjs's spawn() call, which failed with
+        # `spawn  npx ENOENT` (the double space is the leading-space
+        # artifact) before ever reaching Cloudflare. Confirmed empirically
+        # by parsing this exact file with the `yaml` package and feeding
+        # the result through a real bash process; see
+        # tests/dailyPublishDeployCommandYamlFolding.test.ts.
+        run: node tooling/scripts/deploy/productionDeployLock.mjs deploy "${{ github.run_id }}-${{ github.run_attempt }}" 120000 "sha:${{ steps.baseline.outputs.baseline }}" --
           npx wrangler deploy --config wrangler.production.jsonc --tag "sha:${{ steps.baseline.outputs.baseline }}"
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
