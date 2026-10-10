@@ -463,19 +463,29 @@ jobs:
         run: node tooling/scripts/deploy/productionDeployLock.mjs release "${{ github.run_id }}-${{ github.run_attempt }}"
 
       - name: Verify the publish
+        # -L on every page check below is required, not cosmetic: found
+        # during the full execution-path audit that parkio.info 308s a
+        # bare `/guide/<slug>` or `/parks/.../dining/<venue>` path to its
+        # own trailing-slash form REGARDLESS of whether the page is
+        # actually published — confirmed against BOTH an already-live
+        # page (still 308s without -L) and a genuinely unpublished one
+        # (still 404s even with -L). Without -L, these two checks would
+        # report "failure" on every single successful publish, forever,
+        # since this workflow had never once reached this step live
+        # until after every earlier defect was fixed.
         run: |
           slug=$(git log -1 --format=%s "${{ inputs.sha }}" | sed -E 's/.*— ([0-9]{4}-[0-9]{2}-[0-9]{2})/\1/')
           set -e
           code=$(curl -s -o /dev/null -w '%{http_code}' https://parkio.info/)
           [ "$code" = "200" ] || { echo "::error::homepage returned $code"; exit 1; }
-          code=$(curl -s -o /dev/null -w '%{http_code}' "https://parkio.info/guide/parkio-daily-${slug}")
+          code=$(curl -sL -o /dev/null -w '%{http_code}' "https://parkio.info/guide/parkio-daily-${slug}")
           [ "$code" = "200" ] || { echo "::error::guide/parkio-daily-${slug} returned $code"; exit 1; }
           feed=$(curl -s https://parkio.info/feed.xml)
           echo "$feed" | grep -q "parkio-daily-${slug}" \
             || { echo "::error::feed.xml does not contain today's entry (parkio-daily-${slug})"; exit 1; }
           echo "$feed" | grep -q "<lastBuildDate>$(date -u +%a,\ %d\ %b\ %Y)" \
             || echo "::warning::feed.xml lastBuildDate does not show today's date — check manually."
-          code=$(curl -s -o /dev/null -w '%{http_code}' https://parkio.info/parks/magic-kingdom/dining/mk-pecos-bill)
+          code=$(curl -sL -o /dev/null -w '%{http_code}' https://parkio.info/parks/magic-kingdom/dining/mk-pecos-bill)
           [ "$code" = "200" ] || { echo "::error::representative dining page returned $code"; exit 1; }
           code=$(curl -s -o /dev/null -w '%{http_code}' https://parkio.info/api/dining/mk-pecos-bill/ratings/)
           [ "$code" = "200" ] || { echo "::error::Community Ratings API returned $code"; exit 1; }
