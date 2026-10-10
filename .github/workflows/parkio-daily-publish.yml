@@ -319,8 +319,24 @@ jobs:
           # Verified empirically that this exclusion still catches a
           # genuine stray file anywhere else in the tree.
           [ -z "$(git status --short -- . ':(exclude)tooling')" ] || { echo "::error::Working tree not clean after baseline checkout — refusing to proceed."; exit 1; }
-          node tooling/scripts/parkio-daily/validatePublishCandidate.mjs "${{ inputs.sha }}" 2>/dev/null \
-            | grep -E '^  content/' | sed 's/^  //' > /tmp/daily_paths.txt
+          # Captured via command substitution, NOT piped directly into
+          # grep/sed: GitHub Actions' default shell is `bash -e` WITHOUT
+          # `pipefail`, so a pipeline's exit status is only the LAST
+          # command's (sed, which virtually always succeeds even on
+          # empty input) — a crash in validatePublishCandidate.mjs
+          # itself would otherwise be silently swallowed here, composing
+          # an incomplete publish tree (missing the Daily content
+          # overlay) while still reporting this step as successful. This
+          # exact validator call already succeeded once earlier in this
+          # job ("Validate this is an authorized Daily content update"),
+          # so a failure here should be close to impossible — which is
+          # exactly why it must not be allowed to fail silently if it
+          # ever does.
+          validation_output="$(node tooling/scripts/parkio-daily/validatePublishCandidate.mjs "${{ inputs.sha }}" 2>&1)" || {
+            echo "::error::validatePublishCandidate.mjs failed unexpectedly while composing the publish tree, despite already passing once earlier in this job. Refusing to proceed with a possibly-incomplete tree. Output: $validation_output"
+            exit 1
+          }
+          echo "$validation_output" | grep -E '^  content/' | sed 's/^  //' > /tmp/daily_paths.txt
           while IFS= read -r p; do
             echo "Applying $p from ${{ inputs.sha }}"
             git checkout "${{ inputs.sha }}" -- "$p"
