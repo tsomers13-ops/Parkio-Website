@@ -46,6 +46,27 @@ jobs:
     steps:
       - name: Checkout main
         uses: actions/checkout@v4
+        with:
+          # Full history, not actions/checkout's default shallow
+          # (depth 1) clone. Found by a real dispatch: the "Commit the
+          # new briefing" step below, when today's file already exists,
+          # looks up the commit that last touched it via
+          # `git log -1 -- <path>`. Under a depth-1 shallow clone, that
+          # single available commit is treated as having no parent, so
+          # EVERY file in its tree appears to have been "added" by it —
+          # it incorrectly attributed a long-standing Daily content file
+          # to a same-day, totally unrelated merge commit (a workflow
+          # fix merge, in the real case), which was then correctly
+          # rejected downstream by the security boundary (wrong author,
+          # wrong changed paths) rather than silently publishing the
+          # wrong commit — but it still meant a real, already-generated,
+          # already-valid article could not be published that day.
+          # Reproduced empirically against a real throwaway repo before
+          # relying on this fix: a depth-1 clone returns the shallow
+          # boundary commit for `git log -1 -- <any existing path>`
+          # regardless of when that path last actually changed; a full
+          # clone returns the correct commit.
+          fetch-depth: 0
 
       - name: Set up Node 20
         uses: actions/setup-node@v4
