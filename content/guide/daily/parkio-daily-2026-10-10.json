@@ -1,0 +1,358 @@
+{
+  "title": "Parkio Daily for Saturday, October 10, 2026",
+  "slug": "parkio-daily-2026-10-10",
+  "date": "2026-10-10",
+  "teaser": "Tiana's Bayou Adventure closes early November, reopens before Christmas. Lightning Lane Premier sold out all four parks today.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Test Track",
+        "parkSlug": "epcot",
+        "note": "Food & Wine crowds thin during dinner hour"
+      },
+      {
+        "name": "Big Thunder Mountain",
+        "parkSlug": "magic-kingdom",
+        "note": "Opossum family returns soon"
+      },
+      {
+        "name": "Tower of Terror",
+        "parkSlug": "hollywood-studios",
+        "note": "Scaffolding up but ride open"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [
+      {
+        "title": "Lightning Lane Premier sold out across all four parks today",
+        "body": "The $400+ skip-the-line product is unavailable for purchase at Magic Kingdom, EPCOT, Hollywood Studios, and Animal Kingdom.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/10/10/disney-worlds-400-lightning-lane-is-sold-out-across-all-4-parks/"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "All four parks are likely running heavy today. Standby lines tend to climb when Premier is sold out. Rope drop and late evening usually offer the shortest waits."
+        }
+      },
+      {
+        "title": "Tiana's Bayou Adventure refurbishment starts early November",
+        "body": "The Magic Kingdom attraction will close for its first-ever maintenance period in early November and reopen before Christmas 2026.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/tianas-bayou-adventure-gets-christmas-2026-reopening-date-after-refurbishment/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Ride it this month if you're visiting before the holidays. Early-morning Lightning Lane or rope-drop windows typically see the shortest queues before the closure begins."
+        }
+      }
+    ],
+    "bignews": [
+      {
+        "title": "Monstropolis food preview revealed for Hollywood Studios opening",
+        "body": "Disney shared first-look images of dishes coming to Harryhausen's Restaurant and Archie's Scare Pig Pizza when the Dark Avenue section of Monstropolis debuts in 2027.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-worlds-monstropolis-food-first-look-inside-new-show-replacing-muppetvision/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "This land is opening ahead of schedule. Harryhausen's may draw long waits at lunch and dinner when it opens. Mobile order early to skip in-person lines."
+        }
+      },
+      {
+        "title": "Monsters Inc. Door Coaster track installation underway",
+        "body": "Aerial photos show the suspended coaster track taking shape inside the building at Hollywood Studios, with exterior walls now enclosing the construction site.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/10/walls-begin-enclosing-monsters-inc-door-coaster-as-track-installation-commences/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Construction noise and detours near Grand Avenue tend to be heaviest mid-morning through early afternoon. Plan quieter breaks or dining in other areas of the park during that window."
+        }
+      },
+      {
+        "title": "Orlando Airport automated tram now running between terminals",
+        "body": "A new automated people mover at MCO connects gates, replacing the previous shuttle system and changing the arrival experience for Disney World guests.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/10/10/2-major-changes-hit-orlando-international-airport/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "The tram should speed up connections between terminals. Allow five fewer minutes for inter-terminal transfers than you did before, but monitor signage closely on your first trip."
+        }
+      },
+      {
+        "title": "Big Thunder opossum family returning soon to Magic Kingdom",
+        "body": "New construction permits confirm the fan-favorite opossum animatronics omitted during the 16-month refurbishment will be reinstalled.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/big-thunder-mountain-railroad-opossum-family-returning-construction-permit-magic-kingdom/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "The opossums may return within weeks. Ride Big Thunder during evening hours after the install to see them with lighter crowds and shorter waits."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "New Christmas merchandise debuts at Germany Pavilion",
+        "body": "EPCOT's Germany shop now carries holiday apparel, ornaments, and Mickey and Minnie nutcrackers themed to German Christmas traditions.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/10/mickey-nutcrackers-christmas-germany-pavilion-collection-now-available-at-epcot/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Holiday merchandise at World Showcase tends to sell quickly, especially nutcrackers and ornaments. Stop by Germany Pavilion before noon to secure popular items before stock runs low."
+        }
+      },
+      {
+        "title": "Tower of Terror scaffold painting continues at Hollywood Studios",
+        "body": "Crews are working on the exterior of the Twilight Zone Tower of Terror with scaffolding and ladders in place. The ride remains fully operational with gaps in the scaffolding for sightlines.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/10/ladder-installed-in-front-of-tower-of-terror-sign-more-painting-occurring-at-disneys-hollywood-studios/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "The scaffolding blocks some photo angles from Sunset Boulevard. Shoot from the courtyard near Rock 'n' Roller Coaster for cleaner tower views until the work wraps."
+        }
+      },
+      {
+        "title": "Disney Believe cruise ship details revealed for late 2027 sailing",
+        "body": "Disney Cruise Line announced new venues, dining, and entertainment for the Disney Believe, departing Fort Lauderdale on its maiden voyage December 18, 2027.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/dcl/what-is-on-disney-believe-ship/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Maiden-voyage sailings often sell out first. If you're interested in the Believe's December 2027 departure, book as soon as reservation windows open to secure your preferred stateroom category."
+        }
+      },
+      {
+        "title": "Wearable Key to the World wristbands testing on Disney Treasure",
+        "body": "Guests sailing the Disney Treasure starting today will test NFC wristbands that replace plastic room-key cards, with potential expansion to other ships.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-testing-wearable-key-to-the-world-wristband-on-treasure-in-place-of-cards/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "If the test succeeds, wearable keys may roll out fleetwide. Keep an eye on your sailing confirmation emails if you have a future DCL booking—this could simplify embarkation and onboard purchases."
+        }
+      },
+      {
+        "title": "New S.E.A. character clue hunt launched by Imagineering",
+        "body": "Disney Parks Blog published a multi-day puzzle inviting guests to uncover details about a brand-new Society of Explorers and Adventurers member debuting in the parks.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/disney-experiences/new-sea-character-disney-parks/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "S.E.A. story elements often appear in Adventureland and Mystic Point attractions. Follow the blog puzzle closely if you enjoy scavenger hunts—clues may reference existing park details you can spot in person."
+        }
+      },
+      {
+        "title": "Haunted Mansion blind-box figures now available at both resorts",
+        "body": "New collectible blind boxes featuring the Hatbox Ghost, Hitchhiking Ghosts, and other mansion characters are on shelves at Disneyland Resort and Walt Disney World.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/10/hatbox-ghost-hitchhiking-ghosts-and-more-figures-featured-in-haunted-mansion-blind-boxes-now-available-at-disneyland-resort/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Blind-box collectibles tend to go fast near Halloween. Check the Mansion gift shop or Memento Mori early in the day to improve your chances of finding the full set."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Disney and Macy's unveil 2026 holiday collection",
+        "body": "The seasonal collaboration between Disney and Macy's is now available online and in stores, featuring holiday-themed apparel and home goods.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/products/new-macys-and-disney-holiday-collection-now-available/"
+        }
+      },
+      {
+        "title": "Chef Jerry's journey from College Program to Magic Kingdom Chef de Cuisine",
+        "body": "Disney profiled Gerardo Quijada Gonzalez, who started as an EPCOT College Program participant two decades ago and now leads the kitchen at Be Our Guest Restaurant.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/chef-jerry-at-be-our-guest/"
+        }
+      },
+      {
+        "title": "Disneyland Resort honors 101-year-old Medal of Honor recipient",
+        "body": "Retired Navy Captain E. Royce Williams, a Congressional Medal of Honor recipient, was welcomed to Disneyland Resort as part of Disney's recognition of U.S. service members.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/disney-experiences/disneyland-honors-medal-of-honor-recipient-royce-williams/"
+        }
+      },
+      {
+        "title": "Disney Artist Showcase Scooter collection arrives at Disneyland Hotel",
+        "body": "A new mid-century modern merchandise line by artist Scooter Burroughs is now on sale at Disneyland Hotel, featuring retro designs of Mickey, Minnie, and the resort.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/10/disney-artist-showcase-scooter-collection-now-available-at-disneyland-hotel/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "Disney's Riviera Resort 95% sold out for upcoming weekend",
+        "body": "Disney Vacation Club points inventory at the Riviera is nearly exhausted ahead of one of the busiest weekends of the year, signaling heavy resort-wide demand.",
+        "parkSlug": null,
+        "ctaLabel": "Check resort availability",
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "Resort capacity this tight usually means the parks are packed too. Touring plans that lean on early entry, Lightning Lane, and off-peak meal times tend to perform best on high-demand weekends like this."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "9HZua13d0uE",
+      "title": "The WORST & BEST New Food at Epcot's Food & Wine Festival | Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-10-04T15:41:47Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/9HZua13d0uE/mqdefault.jpg",
+      "viewCount": 66415,
+      "url": "https://www.youtube.com/watch?v=9HZua13d0uE",
+      "summary": "WrightDownMainStreet reviews standout dishes and misses from the latest menu additions at EPCOT's Food & Wine Festival."
+    },
+    {
+      "videoId": "DvJ6LU6Pa_U",
+      "title": "🔴 Live: Fantasmic Friday Stream at Disneyland! Halloween Screams, World of Color & Rides - 10/09/26",
+      "channel": "Koda Bear the Explorer ",
+      "publishedAt": "2026-10-10T07:17:12Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/DvJ6LU6Pa_U/mqdefault.jpg",
+      "viewCount": 48598,
+      "url": "https://www.youtube.com/watch?v=DvJ6LU6Pa_U",
+      "summary": "Koda Bear the Explorer livestreams Disneyland's nighttime spectaculars and attractions on a Friday evening during Halloween season."
+    },
+    {
+      "videoId": "Kbrk3NpgSGc",
+      "title": "DISNEY BELIEVE REVEAL: Ultimate Scavenger Hunt at Sea! | Disney Cruise Line",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-10-07T12:12:24Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Kbrk3NpgSGc/mqdefault.jpg",
+      "viewCount": 28164,
+      "url": "https://www.youtube.com/watch?v=Kbrk3NpgSGc",
+      "summary": "WrightDownMainStreet joins a scavenger hunt aboard the Disney Wish to preview details about the upcoming Disney Believe cruise ship."
+    },
+    {
+      "videoId": "L7nR5Gk6kJE",
+      "title": "Fantasias Mais Difíceis de se Usar na Disney! 😳 #shorts #disney",
+      "channel": "Lipe Shorts",
+      "publishedAt": "2026-10-10T12:30:38Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/L7nR5Gk6kJE/mqdefault.jpg",
+      "viewCount": 12052,
+      "url": "https://www.youtube.com/watch?v=L7nR5Gk6kJE",
+      "summary": "Lipe Shorts highlights some of the most challenging costumes to wear at Disney parks."
+    },
+    {
+      "videoId": "TmtQjdFByn4",
+      "title": "Go WILD at Disney's Animal Kingdom! 🦁🌿 Walt Disney World | Step Into the Story | @DisneyUK",
+      "channel": "Disney UK",
+      "publishedAt": "2026-10-10T09:00:05Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/TmtQjdFByn4/mqdefault.jpg",
+      "viewCount": 2018,
+      "url": "https://www.youtube.com/watch?v=TmtQjdFByn4",
+      "summary": "Disney UK showcases the immersive experiences and wildlife encounters available at Disney's Animal Kingdom."
+    },
+    {
+      "videoId": "NJa7dH8eMzw",
+      "title": "Con cuál os quedáis y por qué Stitch? 😎 #disney",
+      "channel": "dudleyra",
+      "publishedAt": "2026-10-10T10:30:52Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/NJa7dH8eMzw/mqdefault.jpg",
+      "viewCount": 1785,
+      "url": "https://www.youtube.com/watch?v=NJa7dH8eMzw",
+      "summary": "Dudleyra compares Disney character options with a focus on Stitch-themed merchandise or experiences."
+    },
+    {
+      "videoId": "gZwhwlJusTQ",
+      "title": "La saison d'Halloween est ouverte à Disneyland Paris 🤩👻",
+      "channel": "Leparisfoodalex",
+      "publishedAt": "2026-10-10T07:42:27Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/gZwhwlJusTQ/mqdefault.jpg",
+      "viewCount": 1717,
+      "url": "https://www.youtube.com/watch?v=gZwhwlJusTQ",
+      "summary": "Leparisfoodalex explores the Halloween season festivities and offerings at Disneyland Paris."
+    },
+    {
+      "videoId": "6YWeIgS8nQc",
+      "title": "リメンバーミーのフード食べるなら絶対ここに行って！#ディズニー #ハロウィン #ディズニーシー #ディズニーハロウィン #リメンバーミー",
+      "channel": "Sasuke WORLD.",
+      "publishedAt": "2026-10-10T10:00:02Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/6YWeIgS8nQc/mqdefault.jpg",
+      "viewCount": 1487,
+      "url": "https://www.youtube.com/watch?v=6YWeIgS8nQc",
+      "summary": "Sasuke WORLD recommends a must-visit location for Coco-themed food at Tokyo DisneySea during Halloween."
+    },
+    {
+      "videoId": "s2zuqdB-x0I",
+      "title": "Staying magical, always and forever!! ✨🧚",
+      "channel": "Natasha Calland",
+      "publishedAt": "2026-10-10T10:31:32Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/s2zuqdB-x0I/mqdefault.jpg",
+      "viewCount": 1366,
+      "url": "https://www.youtube.com/watch?v=s2zuqdB-x0I",
+      "summary": "Natasha Calland shares a Disney-themed moment celebrating the magic of the parks."
+    },
+    {
+      "videoId": "Exo2XR-cohw",
+      "title": "Disney Believe GRAND REVEAL Cruise! Castaway Cay, Food, Drinks & Halloween on the Disney Wish!!",
+      "channel": "Super Enthused",
+      "publishedAt": "2026-10-10T12:52:54Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Exo2XR-cohw/mqdefault.jpg",
+      "viewCount": 1290,
+      "url": "https://www.youtube.com/watch?v=Exo2XR-cohw",
+      "summary": "Super Enthused covers the Disney Believe reveal cruise experience, including Castaway Cay, dining, and Halloween festivities aboard the Disney Wish."
+    }
+  ],
+  "updatedAt": "2026-10-10T15:05:22.025Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-10-10T15:05:22.025Z",
+    "tokens": {
+      "input": 11447,
+      "output": 5535,
+      "costUsd": 0.1174
+    }
+  }
+}
