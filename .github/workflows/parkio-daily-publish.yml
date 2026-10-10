@@ -246,7 +246,13 @@ jobs:
 
       - name: Install
         # Needed before baseline resolution: that step shells out to
-        # `npx wrangler`, which requires node_modules.
+        # `npx wrangler`, which requires node_modules. This installs
+        # against the Daily content commit's own package-lock.json —
+        # fine for getting wrangler available this early, but NOT
+        # assumed correct for the actual application build later: see
+        # "Reinstall dependencies to match the approved baseline" below,
+        # which re-runs this against whatever lockfile the baseline
+        # checkout leaves in place.
         run: npm ci
 
       - name: Resolve the currently approved production baseline
@@ -303,6 +309,25 @@ jobs:
             echo "Applying $p from ${{ inputs.sha }}"
             git checkout "${{ inputs.sha }}" -- "$p"
           done < /tmp/daily_paths.txt
+
+      - name: Reinstall dependencies to match the approved baseline
+        # The earlier "Install" step ran `npm ci` against the Daily
+        # content commit's package-lock.json, BEFORE this step switched
+        # package.json/package-lock.json to the baseline's own versions
+        # (git checkout reverts them along with everything else tracked).
+        # node_modules/ itself isn't touched by that checkout — git
+        # doesn't manage it — so without this, every build step below
+        # would run against dependencies resolved from the WRONG
+        # revision's lockfile the moment the two ever diverge. They
+        # happen to be identical right now (confirmed: zero diff between
+        # the approved baseline and current main for both package.json
+        # and package-lock.json), but that's a coincidence of timing, not
+        # a guarantee — exactly the same class of "works until it
+        # doesn't" assumption that caused this PR's own root cause.
+        # `npm ci` always does a full clean reinstall (removes
+        # node_modules first), so this is a correct full re-sync, not an
+        # incremental one that could leave stale packages behind.
+        run: npm ci
 
       - name: Generate Cloudflare types
         run: npm run cf:types
