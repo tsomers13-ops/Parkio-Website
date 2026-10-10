@@ -193,13 +193,50 @@ jobs:
           # diff arbitrary commits.
           fetch-depth: 0
 
+      - name: Check out publishing tooling into an isolated directory
+        # "Compose the publish tree" below switches the MAIN working
+        # directory to the approved application baseline — which can
+        # predate any publishing script, exactly as happened here:
+        # productionDeployLock.mjs didn't exist yet at the currently
+        # approved baseline (104e7578), so the first real dispatch after
+        # it was added found the script simply gone, mid-job, with
+        # "Cannot find module". A second, independent checkout at the
+        # SAME content commit, in its own directory, is immune to
+        # whatever the main working directory gets switched to later —
+        # publishing/orchestration tooling always runs from here, at the
+        # current revision, never from whatever the approved baseline
+        # happens to contain. All four scripts referenced via `tooling/`
+        # below use only Node built-ins (no third-party package), so this
+        # checkout deliberately has no npm install step of its own.
+        #
+        # Deliberately sparse — only the two script directories, not a
+        # full second copy of the repo. tsconfig.json's own `include` is
+        # a broad `**/*.ts`/`**/*.tsx` with no exclusion for a `tooling/`
+        # subdirectory, and vitest.config.ts's `include` is a broad
+        # `tests/**/*.test.ts` — a full checkout here would get swept
+        # into both `npx tsc --noEmit` and `npm test` below, duplicating
+        # (and potentially conflicting with) the entire app's own
+        # typecheck/test run. Cone-mode sparse-checkout with only these
+        # two directories listed never creates an `app/`, `components/`,
+        # `lib/`, or `tests/` directory under `tooling/` at all, so
+        # neither glob can ever match anything inside it — confirmed
+        # against actions/checkout's own documented cone-mode behavior.
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.sha }}
+          path: tooling
+          fetch-depth: 1
+          sparse-checkout: |
+            scripts/deploy
+            scripts/parkio-daily
+
       - name: Validate this is an authorized Daily content update
         # The security boundary. Checks the candidate commit's author and
         # diffs it against its OWN immediate parent (never against `main`,
         # so human commits already on main before the bot ran are never
         # implicated) — every changed path must match the Daily content
         # allowlist, or this fails closed before anything is built.
-        run: node scripts/parkio-daily/validatePublishCandidate.mjs "${{ inputs.sha }}"
+        run: node tooling/scripts/parkio-daily/validatePublishCandidate.mjs "${{ inputs.sha }}"
 
       - name: Set up Node 22
         uses: actions/setup-node@v4
@@ -209,7 +246,13 @@ jobs:
 
       - name: Install
         # Needed before baseline resolution: that step shells out to
-        # `npx wrangler`, which requires node_modules.
+        # `npx wrangler`, which requires node_modules. This installs
+        # against the Daily content commit's own package-lock.json —
+        # fine for getting wrangler available this early, but NOT
+        # assumed correct for the actual application build later: see
+        # "Reinstall dependencies to match the approved baseline" below,
+        # which re-runs this against whatever lockfile the baseline
+        # checkout leaves in place.
         run: npm ci
 
       - name: Resolve the currently approved production baseline
@@ -231,7 +274,7 @@ jobs:
         # on main, and impossible to undo a rollback or promote a release
         # that was never actually deployed.
         run: |
-          baseline="$(node scripts/parkio-daily/resolveApprovedBaseline.mjs)"
+          baseline="$(node tooling/scripts/parkio-daily/resolveApprovedBaseline.mjs)"
           echo "baseline=$baseline" >> "$GITHUB_OUTPUT"
           echo "Publishing Daily content on top of the currently approved application baseline: $baseline"
         env:
@@ -252,13 +295,39 @@ jobs:
         run: |
           baseline="${{ steps.baseline.outputs.baseline }}"
           git checkout "$baseline"
-          [ -z "$(git status --short)" ] || { echo "::error::Working tree not clean after baseline checkout — refusing to proceed."; exit 1; }
-          node scripts/parkio-daily/validatePublishCandidate.mjs "${{ inputs.sha }}" 2>/dev/null \
+          # Exclude tooling/ from the cleanliness check: it's a second,
+          # independent checkout (see "Check out publishing tooling into
+          # an isolated directory" above), untracked by this repo's own
+          # git history at any commit, so it always shows as "??" here —
+          # that's expected, not a sign anything is actually wrong.
+          # Verified empirically that this exclusion still catches a
+          # genuine stray file anywhere else in the tree.
+          [ -z "$(git status --short -- . ':(exclude)tooling')" ] || { echo "::error::Working tree not clean after baseline checkout — refusing to proceed."; exit 1; }
+          node tooling/scripts/parkio-daily/validatePublishCandidate.mjs "${{ inputs.sha }}" 2>/dev/null \
             | grep -E '^  content/' | sed 's/^  //' > /tmp/daily_paths.txt
           while IFS= read -r p; do
             echo "Applying $p from ${{ inputs.sha }}"
             git checkout "${{ inputs.sha }}" -- "$p"
           done < /tmp/daily_paths.txt
+
+      - name: Reinstall dependencies to match the approved baseline
+        # The earlier "Install" step ran `npm ci` against the Daily
+        # content commit's package-lock.json, BEFORE this step switched
+        # package.json/package-lock.json to the baseline's own versions
+        # (git checkout reverts them along with everything else tracked).
+        # node_modules/ itself isn't touched by that checkout — git
+        # doesn't manage it — so without this, every build step below
+        # would run against dependencies resolved from the WRONG
+        # revision's lockfile the moment the two ever diverge. They
+        # happen to be identical right now (confirmed: zero diff between
+        # the approved baseline and current main for both package.json
+        # and package-lock.json), but that's a coincidence of timing, not
+        # a guarantee — exactly the same class of "works until it
+        # doesn't" assumption that caused this PR's own root cause.
+        # `npm ci` always does a full clean reinstall (removes
+        # node_modules first), so this is a correct full re-sync, not an
+        # incremental one that could leave stale packages behind.
+        run: npm ci
 
       - name: Generate Cloudflare types
         run: npm run cf:types
@@ -309,7 +378,7 @@ jobs:
         # workers-production.yml's deploy of the same Worker. See
         # scripts/deploy/productionDeployLock.mjs for the full mechanism and
         # why a bare lease alone would not be enough.
-        run: node scripts/deploy/productionDeployLock.mjs acquire daily "${{ github.run_id }}-${{ github.run_attempt }}"
+        run: node tooling/scripts/deploy/productionDeployLock.mjs acquire daily "${{ github.run_id }}-${{ github.run_attempt }}"
 
       - name: Re-verify the approved baseline has not changed while waiting for the lock
         # Closes the TOCTOU gap a lock alone doesn't: an application release
@@ -322,11 +391,11 @@ jobs:
         # rebuild against the new baseline; the next scheduled Daily run
         # will do that naturally.
         run: |
-          current="$(node scripts/parkio-daily/resolveApprovedBaseline.mjs)"
+          current="$(node tooling/scripts/parkio-daily/resolveApprovedBaseline.mjs)"
           expected="${{ steps.baseline.outputs.baseline }}"
           if [ "$current" != "$expected" ]; then
             echo "::error::Approved baseline changed from $expected to $current while this run was building/waiting. Refusing to deploy an outdated application baseline."
-            node scripts/deploy/productionDeployLock.mjs release "${{ github.run_id }}-${{ github.run_attempt }}"
+            node tooling/scripts/deploy/productionDeployLock.mjs release "${{ github.run_id }}-${{ github.run_attempt }}"
             exit 1
           fi
           echo "Baseline unchanged: $current"
@@ -351,7 +420,7 @@ jobs:
         # immediately after this call, and enforces a hard, killing timeout
         # strictly shorter than the lease — the actual prevention mechanism,
         # not just a time-based assumption. See that script's header comment.
-        run: node scripts/deploy/productionDeployLock.mjs deploy "${{ github.run_id }}-${{ github.run_attempt }}" 120000 "sha:${{ steps.baseline.outputs.baseline }}" -- \
+        run: node tooling/scripts/deploy/productionDeployLock.mjs deploy "${{ github.run_id }}-${{ github.run_attempt }}" 120000 "sha:${{ steps.baseline.outputs.baseline }}" -- \
           npx wrangler deploy --config wrangler.production.jsonc --tag "sha:${{ steps.baseline.outputs.baseline }}"
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
@@ -359,7 +428,7 @@ jobs:
 
       - name: Release production deploy lock
         if: always()
-        run: node scripts/deploy/productionDeployLock.mjs release "${{ github.run_id }}-${{ github.run_attempt }}"
+        run: node tooling/scripts/deploy/productionDeployLock.mjs release "${{ github.run_id }}-${{ github.run_attempt }}"
 
       - name: Verify the publish
         run: |
