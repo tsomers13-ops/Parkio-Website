@@ -1,0 +1,371 @@
+{
+  "title": "Parkio Daily for October 11, 2026",
+  "slug": "parkio-daily-2026-10-11",
+  "date": "2026-10-11",
+  "teaser": "Lightning Lane Single Pass hits record highs November 1; Tiana's Bayou Adventure closes early November for fixes; Disney Springs parking maxed out yesterday.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Test Track",
+        "parkSlug": "epcot",
+        "note": "EPCOT tends to see lighter crowds during Food & Wine midday hours"
+      },
+      {
+        "name": "Flight of Passage",
+        "parkSlug": "animal-kingdom",
+        "note": "Animal Kingdom typically offers shorter waits on Columbus Day weekends"
+      },
+      {
+        "name": "Rise of the Resistance",
+        "parkSlug": "hollywood-studios",
+        "note": "Studios crowds shift toward evening shows after 5pm"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [
+      {
+        "title": "Lightning Lane Single Pass prices jump to record highs starting November 1",
+        "body": "Four Walt Disney World attractions now carry new peak Lightning Lane Single Pass prices as of November 1. The increases affect top-demand rides across multiple parks, with some hitting record individual-attraction price points.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/10/lightning-lane-single-pass-attractions-hit-record-high-prices-at-walt-disney-world/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Pre-booking Single Pass after November 1 may push daily line-skip costs higher than expected. Consider Multi-Pass for budget control if you're visiting during peak windows."
+        }
+      },
+      {
+        "title": "Disney Springs parking hit capacity yesterday during holiday weekend",
+        "body": "Road signage turned guests away from Disney Springs on Saturday, October 10, as parking lots reached full capacity during the Columbus Day weekend crush.",
+        "parkSlug": null,
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/10/disney-world-hits-parking-capacity-tourists-turned-away-on-holiday-weekend-ad1/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Springs parking tends to clear after 8pm on holiday weekends. Arriving late evening usually offers easy lot access and shorter restaurant waits."
+        }
+      }
+    ],
+    "bignews": [
+      {
+        "title": "Tiana's Bayou Adventure closing early November for first refurbishment",
+        "body": "The Magic Kingdom water ride will shut down in early November for an extended maintenance period, reopening before Christmas 2026. The closure marks the attraction's first major refurbishment since its spring debut.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/tianas-bayou-adventure-gets-christmas-2026-reopening-date-after-refurbishment/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Ride Tiana before November if you're visiting soon. Post-Christmas crowds often see longer waits, so early December may be your best window after reopening."
+        }
+      },
+      {
+        "title": "Jollywood Nights opening night November 7 already sold out",
+        "body": "The first evening of this year's Hollywood Studios holiday after-hours event has no remaining tickets. Additional dates in November and December are still available for purchase.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/10/jollywood-nights-2026-opening-date-at-walt-disney-world-already-sold-out/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Mid-week November dates tend to sell slower than weekends. Booking a Tuesday or Wednesday slot now often means lighter event crowds and shorter character lines."
+        }
+      },
+      {
+        "title": "Disney Believe cruise ship details unveiled for late 2027 maiden voyage",
+        "body": "Disney Cruise Line revealed full venue and dining details for the Disney Believe, which sets sail December 18, 2027, from Fort Lauderdale. The ship introduces new restaurant concepts and entertainment spaces not found on other DCL vessels.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/dcl/meet-the-disney-believe-the-next-disney-cruise-line-ship/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Maiden voyage bookings typically fill fast once open. Watching for reservation windows now may secure better cabin categories before general availability."
+        }
+      },
+      {
+        "title": "New Food & Wine booth debuts at EPCOT with standout offerings",
+        "body": "A recently opened festival booth at EPCOT is earning praise for its menu lineup. The booth joins the existing Food & Wine marketplace rotation running through mid-November.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/10/11/a-new-food-wine-booth-is-now-one-of-the-best-in-the-park/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "New booths tend to see lighter lines in their first week. Hitting this one before noon or after 7pm usually avoids the dinner-hour rush around World Showcase."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "Old Key West boat service to Disney Springs suspended again",
+        "body": "Water transportation from Disney's Old Key West Resort to Disney Springs is temporarily unavailable. Guests can use bus service as an alternative during the closure.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/10/11/this-transportation-closure-just-made-it-harder-to-get-to-disney-springs/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Bus routes from Old Key West tend to add 10–15 minutes versus boat travel. Budget extra time if you have Springs dining reservations during this closure."
+        }
+      },
+      {
+        "title": "Candlelight Processional dining packages open for booking October 14",
+        "body": "Reservations for EPCOT Candlelight Processional dinner packages go live Monday, October 14. The packages pair guaranteed seating at the holiday show with meals at select World Showcase restaurants.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/10/11/mark-your-calendars-october-14th-is-a-big-day-for-epcot-festival-fans/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Booking within the first hour on October 14 usually offers the widest restaurant and time-slot choices. Popular showtimes near 5pm and 7pm tend to disappear by midday."
+        }
+      },
+      {
+        "title": "New Mickey waffle variations now available across Walt Disney World",
+        "body": "Several restaurants have introduced updated Mickey-shaped waffle recipes featuring new toppings and flavor combinations. The expanded menu items join the classic Mickey waffle offerings.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/10/11/review-we-didnt-think-mickey-waffles-at-disney-world-could-get-any-better-we-were-wrong/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Character breakfast locations tend to serve these first. Booking Chef Mickey's or Cape May before 9am often means fresher batches and shorter buffet lines."
+        }
+      },
+      {
+        "title": "Animal Kingdom Lodge pool refurbishment runs longer than scheduled",
+        "body": "The ongoing pool renovation at Disney's Animal Kingdom Lodge has extended past its original completion target. Part of the work is finished, but additional areas remain under construction.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/10/11/this-disney-world-hotel-refurbishment-is-officially-behind-schedule/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Guests booking Animal Kingdom Lodge in the next few weeks may encounter construction noise and limited pool access. Checking resort status closer to arrival helps avoid surprises."
+        }
+      },
+      {
+        "title": "Jurassic Park River Adventure reopening pushed to mid-December at Universal Orlando",
+        "body": "Universal's Islands of Adventure water ride will now reopen December 17, 2026, instead of the previously announced November 20 date. The extended refurbishment adds nearly a month to the closure.",
+        "parkSlug": null,
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/10/november-cancelation-jurassic-park-no-longer-returning-to-universal-orlando-ad1/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Early December at Islands of Adventure tends to offer lighter crowds before holiday breaks. Visiting the week of December 17 may mean short waits for the reopened ride."
+        }
+      },
+      {
+        "title": "Phone falls from bridge onto It's a Small World boat at Disneyland",
+        "body": "A guest's phone dropped from the outdoor walkway above It's a Small World at Disneyland, landing near passengers in a boat below. No injuries were reported in the incident.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/10/its-a-small-world-disneyland-phone-falling-video-jc1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Securing phones and loose items before boarding outdoor rides tends to prevent similar incidents. Wrist straps or zippered pockets help during queue photo stops."
+        }
+      },
+      {
+        "title": "New Aristocats and Disney Parks sweatshirts arrive at Walt Disney World",
+        "body": "Two Marie-themed sweatshirts featuring Walt Disney World branding are now in stock at resort merchandise locations. The designs include a light blue Marie piece and a pink bow Walt Disney World logo variant.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/10/new-the-aristocats-and-disney-parks-sweatshirts-arrive-at-walt-disney-world/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Character apparel tends to sell fastest at Emporium and World of Disney. Stopping by either location before 11am usually offers full size runs."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Society of Explorers and Adventurers reveals new character through puzzle campaign",
+        "body": "Disney Imagineering launched a multi-week scavenger hunt inviting fans to uncover clues about a previously unknown S.E.A. member. The campaign started in September and continues through this month.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/disney-experiences/new-sea-character-disney-parks/"
+        }
+      },
+      {
+        "title": "Chef Jerry featured in Be Our Guest Restaurant profile",
+        "body": "Disney Parks Blog highlighted Chef de Cuisine Gerardo Jerry Quijada Gonzalez, who started at EPCOT over twenty years ago and now leads the kitchen at Be Our Guest in Magic Kingdom.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/chef-jerry-at-be-our-guest/"
+        }
+      },
+      {
+        "title": "Disney and Bobby Kim launch ongoing vintage tee collaboration",
+        "body": "Disney Store introduced Disney | Bobby Kim, a new collection celebrating classic Disney T-shirt designs with a vintage aesthetic. The line is an ongoing partnership with additional releases planned.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/products/new-bobby-kim-disney-store-collaboration/"
+        }
+      },
+      {
+        "title": "Macy's and Disney 2026 holiday collection now available",
+        "body": "The annual Macy's and Disney holiday merchandise collaboration released this week, featuring seasonal apparel and home goods inspired by Disney characters and New York City themes.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/products/new-macys-and-disney-holiday-collection-now-available/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "Monstropolis food preview shows Harryhausen's menu ahead of 2027 opening",
+        "body": "Walt Disney World offered a first look at the in-universe Monsters, Inc. dining at Harryhausen's Restaurant and Archie's Scare Pig Pizza, both part of the Dark Avenue section of Monstropolis opening next year at Hollywood Studios. The preview showcases themed dishes inspired by the film franchise.",
+        "parkSlug": "hollywood-studios",
+        "ctaLabel": "Read the full menu preview",
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Dark Avenue debuts ahead of the full Monstropolis land in 2027. Early visits in late 2027 may offer shorter waits before summer crowds arrive."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "Kbrk3NpgSGc",
+      "title": "DISNEY BELIEVE REVEAL: Ultimate Scavenger Hunt at Sea! | Disney Cruise Line",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-10-07T12:12:24Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Kbrk3NpgSGc/mqdefault.jpg",
+      "viewCount": 30078,
+      "url": "https://www.youtube.com/watch?v=Kbrk3NpgSGc",
+      "summary": "WrightDownMainStreet explores the Disney Wish on a scavenger hunt to uncover clues about the upcoming Disney Believe cruise ship."
+    },
+    {
+      "videoId": "eS62Cvn2RpY",
+      "title": "As Comidas Mais Procuradas Na Disney! 😳 #shorts #disney",
+      "channel": "Lipe Shorts",
+      "publishedAt": "2026-10-11T12:00:11Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/eS62Cvn2RpY/mqdefault.jpg",
+      "viewCount": 27316,
+      "url": "https://www.youtube.com/watch?v=eS62Cvn2RpY",
+      "summary": "Lipe Shorts highlights the most popular food items guests search for at Disney parks."
+    },
+    {
+      "videoId": "Af-NKquq2Yg",
+      "title": "迪士尼乐园，这些冷知识妈妈一定要知道！1",
+      "channel": "楚楚的超人妈妈",
+      "publishedAt": "2026-10-11T09:48:09Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Af-NKquq2Yg/mqdefault.jpg",
+      "viewCount": 7339,
+      "url": "https://www.youtube.com/watch?v=Af-NKquq2Yg",
+      "summary": "A channel shares lesser-known Disney park tips that parents should know before visiting."
+    },
+    {
+      "videoId": "JwEa1E763Q4",
+      "title": "Esto es todo lo que comimos en Disneyland Paris🏰🫠 #vlog #disney #disneyland #comida",
+      "channel": "danielagartija",
+      "publishedAt": "2026-10-11T08:32:23Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/JwEa1E763Q4/mqdefault.jpg",
+      "viewCount": 4344,
+      "url": "https://www.youtube.com/watch?v=JwEa1E763Q4",
+      "summary": "Danielagartija vlogs about all the food they ate during a Disneyland Paris visit."
+    },
+    {
+      "videoId": "TC0ecrGtkTU",
+      "title": "🔴Live Magic Kingdom Sunday with Rides, Parades, Fireworks at Walt Disney World 10/11/2026",
+      "channel": "RON ON THE GO",
+      "publishedAt": "2026-10-11T08:21:57Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/TC0ecrGtkTU/mqdefault_live.jpg",
+      "viewCount": 4291,
+      "url": "https://www.youtube.com/watch?v=TC0ecrGtkTU",
+      "summary": "RON ON THE GO live streams a full day at Magic Kingdom including rides, parades, and fireworks."
+    },
+    {
+      "videoId": "F7irSwGh5Gk",
+      "title": "La tienda de mis sueños🫠🏰 #vlog #disney #disneyland #tienda",
+      "channel": "danielagartija",
+      "publishedAt": "2026-10-11T11:55:12Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/F7irSwGh5Gk/mqdefault.jpg",
+      "viewCount": 3983,
+      "url": "https://www.youtube.com/watch?v=F7irSwGh5Gk",
+      "summary": "Danielagartija tours a dream Disney store during their Disneyland visit."
+    },
+    {
+      "videoId": "ezfkLfkXF6w",
+      "title": "Walt Disney World Holiday Debrief ✨🏰 Go To with @DisneyUK | WDW UK Planning Tips",
+      "channel": "Disney UK",
+      "publishedAt": "2026-10-11T09:00:04Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/ezfkLfkXF6w/mqdefault.jpg",
+      "viewCount": 2090,
+      "url": "https://www.youtube.com/watch?v=ezfkLfkXF6w",
+      "summary": "Disney UK shares planning tips and a debrief from a Walt Disney World holiday trip."
+    },
+    {
+      "videoId": "VzL_O7tprm4",
+      "title": "C'était pas prévu mais on retourne très bientôt dans les parcs Disney : à ton avis, dans quel pays ?",
+      "channel": "Château Leg0",
+      "publishedAt": "2026-10-11T08:22:28Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/VzL_O7tprm4/mqdefault.jpg",
+      "viewCount": 1905,
+      "url": "https://www.youtube.com/watch?v=VzL_O7tprm4",
+      "summary": "Château Leg0 teases an unplanned upcoming return to a Disney park and asks viewers to guess the location."
+    },
+    {
+      "videoId": "f3X44j9tfDU",
+      "title": "DISNEY SPRINGS New Merch Update! October 2026 | Walt Disney World | Disney Parks",
+      "channel": "Main Street Orlando",
+      "publishedAt": "2026-10-11T12:00:24Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/f3X44j9tfDU/mqdefault.jpg",
+      "viewCount": 1442,
+      "url": "https://www.youtube.com/watch?v=f3X44j9tfDU",
+      "summary": "Main Street Orlando reviews the latest merchandise arrivals at Disney Springs for October 2026."
+    },
+    {
+      "videoId": "JjoHyE6SJjU",
+      "title": "EPCOT 2026 Heavy Rain Walkthrough Experience at Night in 4K | Walt Disney World Florida October 2026",
+      "channel": "4K WDW",
+      "publishedAt": "2026-10-11T12:45:05Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/JjoHyE6SJjU/mqdefault.jpg",
+      "viewCount": 1398,
+      "url": "https://www.youtube.com/watch?v=JjoHyE6SJjU",
+      "summary": "4K WDW captures a nighttime walkthrough of EPCOT during heavy rain in October 2026."
+    }
+  ],
+  "updatedAt": "2026-10-11T16:35:46.077Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-10-11T16:35:46.077Z",
+    "tokens": {
+      "input": 11364,
+      "output": 5732,
+      "costUsd": 0.1201
+    }
+  }
+}
