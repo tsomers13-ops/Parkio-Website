@@ -1,0 +1,46 @@
+name: TEMP — Verify Cloudflare Workers Routes permission
+
+# Temporary, read-only probe. Not part of the Daily publishing pipeline.
+# Exists only to confirm, without ever running a deploy, that the
+# `daily-publish` environment's CLOUDFLARE_API_TOKEN can now pass the
+# exact Cloudflare API call that productionDeployLock.mjs's wrapped
+# `wrangler deploy` failed on in run 38086567485:
+#   GET /zones/{zone}/workers/routes -> "No access to the specified resource."
+# after the token was edited to add Zone -> Workers Routes -> Read.
+#
+# Deliberately removed again right after use — see the git history of
+# this file for the removal commit. Never triggers wrangler, never
+# touches deploy-lock, never writes anything.
+on:
+  workflow_dispatch:
+
+permissions: {}
+
+jobs:
+  probe:
+    name: Read-only Cloudflare Workers Routes check
+    runs-on: ubuntu-latest
+    environment: daily-publish
+    timeout-minutes: 2
+    steps:
+      - name: GET /zones/{zone}/workers/routes (read-only, token never printed)
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+        run: |
+          zone_id="2059fbf24ff914bfc84603de3dab08d1"
+          status=$(curl -s -o /tmp/routes.json -w "%{http_code}" \
+            -H "Authorization: Bearer ${CLOUDFLARE_API_TOKEN}" \
+            "https://api.cloudflare.com/client/v4/zones/${zone_id}/workers/routes")
+          success=$(node -e "try{const d=JSON.parse(require('fs').readFileSync('/tmp/routes.json','utf8'));console.log(d.success===true?'true':'false')}catch{console.log('false')}")
+          route_count=$(node -e "try{const d=JSON.parse(require('fs').readFileSync('/tmp/routes.json','utf8'));console.log(Array.isArray(d.result)?d.result.length:'n/a')}catch{console.log('n/a')}")
+          echo "HTTP status: $status"
+          echo "success: $success"
+          echo "route count in response: $route_count"
+          rm -f /tmp/routes.json
+          if [ "$status" = "200" ] && [ "$success" = "true" ]; then
+            echo "PASS: token can read zone Workers Routes."
+            exit 0
+          else
+            echo "::error::FAIL: token still cannot read zone Workers Routes (status=$status, success=$success)."
+            exit 1
+          fi
