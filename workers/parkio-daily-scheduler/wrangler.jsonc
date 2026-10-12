@@ -14,45 +14,50 @@
   // per real target time are enough to track DST with zero manual edits.
   //   45 10 * * * -> 6:45 AM EDT (UTC-4)
   //   45 11 * * * -> 6:45 AM EST (UTC-5)
-  //   15 11 * * * -> 7:15 AM EDT fallback missed-publication check
-  //   15 12 * * * -> 7:15 AM EST fallback missed-publication check
+  //   15 11 * * * -> 7:15 AM EDT health-check dispatch
+  //   15 12 * * * -> 7:15 AM EST health-check dispatch
   "triggers": {
     "crons": ["45 10 * * *", "45 11 * * *", "15 11 * * *", "15 12 * * *"]
   },
 
   // Durable, concurrency-safe "has today already been dispatched" guard.
   // See src/dispatchGuard.ts.
+  //
+  // new_sqlite_classes, not new_classes: Cloudflare now requires every
+  // new Durable Object namespace to use the SQLite storage backend (the
+  // older key-value-only backend is no longer available for new
+  // namespaces). Found while investigating the Workers Free plan
+  // constraint below — this would have been rejected at actual deploy
+  // time regardless of plan. DispatchGuard's own code needs no change:
+  // the SQLite backend has full parity with the classic storage.get/
+  // put/delete API DispatchGuard already uses (backed internally by a
+  // hidden table), confirmed against Cloudflare's own docs before
+  // relying on it.
   "durable_objects": {
     "bindings": [{ "name": "DISPATCH_GUARD", "class_name": "DispatchGuard" }]
   },
-  "migrations": [{ "tag": "v1", "new_classes": ["DispatchGuard"] }],
+  "migrations": [{ "tag": "v1", "new_sqlite_classes": ["DispatchGuard"] }],
 
-  // Restricts this binding to send to exactly one address, enforced by
-  // Cloudflare itself — independent of anything the Worker's own code
-  // does. Even a future bug or compromise in this Worker could never
-  // send email anywhere except tsomers13@gmail.com. Requires that
-  // address to be added and verified under Email Routing's Destination
-  // Addresses before any real send will succeed (see README.md's
-  // deployment checklist) — the binding itself can still be declared and
-  // deployed before that verification completes.
-  "send_email": [{ "name": "SEND_EMAIL", "destination_address": "tsomers13@gmail.com" }],
-
-  // Non-secret configuration. ALERT_TO_ADDRESS must exactly match the
-  // send_email binding's destination_address above — the binding accepts
-  // mail addressed to that one literal string, and these two values are
-  // never templated against each other, so a mismatch here would make
-  // every real send fail even after verification.
+  // Non-secret configuration.
+  //
+  // No send_email binding, deliberately: Cloudflare Email Sending
+  // requires the Workers Paid plan. Replaced with dispatching a second
+  // GitHub Actions workflow (HEALTH_CHECK_WORKFLOW_FILE) that fails, and
+  // so triggers GitHub's own native failure-notification email, if
+  // today's article isn't actually live — see README.md. This Worker now
+  // has zero email-sending capability of any kind, which is also what
+  // makes it fully compatible with the Workers Free plan: only Cron
+  // Triggers (free) and a SQLite-backed Durable Object (free) are used.
   "vars": {
     "GITHUB_OWNER": "tsomers13-ops",
     "GITHUB_REPO": "Parkio-Website",
-    "GITHUB_WORKFLOW_FILE": "parkio-daily.yml",
     "GITHUB_REF": "main",
+    "GITHUB_WORKFLOW_FILE": "parkio-daily.yml",
+    "HEALTH_CHECK_WORKFLOW_FILE": "parkio-daily-health-check.yml",
     "TARGET_HOUR_ET": "6",
     "TARGET_MINUTE_ET": "45",
-    "FALLBACK_CHECK_HOUR_ET": "7",
-    "FALLBACK_CHECK_MINUTE_ET": "15",
-    "ALERT_FROM_ADDRESS": "alerts@parkio.info",
-    "ALERT_TO_ADDRESS": "tsomers13@gmail.com"
+    "HEALTH_CHECK_HOUR_ET": "7",
+    "HEALTH_CHECK_MINUTE_ET": "15"
   }
 
   // Still deliberately NOT configured here, and NOT created by this PR —
@@ -61,5 +66,6 @@
   // set via
   //   npx wrangler secret put GITHUB_DISPATCH_TOKEN --config wrangler.jsonc
   // (a fine-grained GitHub PAT, scoped to Parkio-Website only, Actions:
-  // Read and write, nothing else).
+  // Read and write, nothing else — now the ONLY credential this Worker
+  // needs of any kind).
 }

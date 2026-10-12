@@ -1,0 +1,58 @@
+name: Parkio Daily Health Check
+
+# Dispatched by the parkio-daily-scheduler Cloudflare Worker at 7:15 AM
+# America/New_York — 30 minutes after the Worker dispatches Parkio Daily
+# itself, giving the pipeline's own ~5-minute runtime room to finish.
+#
+# Deliberately workflow_dispatch only, no schedule: trigger. This exists
+# ONLY to turn "today's article didn't actually go out" into something
+# GitHub can notify a human about. GitHub's own schedule: trigger is what
+# this whole scheduler project replaced because of its 5-6+ hour delays —
+# routing this check through schedule: too would reintroduce exactly that
+# problem for the one thing most worth catching reliably.
+#
+# Deliberately read-only and isolated from the real pipeline: this job
+# never touches productionDeployLock.mjs, never writes content, never
+# deploys anything. It cannot interrupt or duplicate a real publish, by
+# construction — the worst it can do is fail and notify.
+#
+# Reuses scripts/parkio-daily/checkAlreadyPublished.mjs exactly as
+# parkio-daily-publish.yml's own `check` job does — same fail-closed
+# "unknown" handling, no new application logic. That script's own CLI
+# exits 0 for BOTH "published" and "not-published" (because in ITS
+# original context, "not published yet" means "safe to proceed with a
+# deploy" — a success). This workflow's own job is the opposite: "not
+# published BY NOW" should fail. That reinterpretation happens here, in
+# this workflow's own step, not by changing the shared script's meaning
+# for its other caller.
+on:
+  workflow_dispatch:
+
+permissions: {}
+
+jobs:
+  check:
+    name: Confirm today's Parkio Daily article is actually live
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Fail if today's article is not published
+        run: |
+          today=$(TZ=America/New_York date +%Y-%m-%d)
+          if ! status=$(node scripts/parkio-daily/checkAlreadyPublished.mjs "$today" 2>&1); then
+            echo "::error::Could not determine publish status for parkio-daily-${today}: ${status}. Failing closed — treating an inconclusive check as a possible miss."
+            exit 1
+          fi
+          if [ "$status" != "published" ]; then
+            echo "::error::parkio-daily-${today} is not published as of this 7:15 AM ET health check (status: ${status})."
+            exit 1
+          fi
+          echo "parkio-daily-${today} is published. Health check passed."
