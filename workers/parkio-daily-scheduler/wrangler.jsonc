@@ -27,7 +27,21 @@
   },
   "migrations": [{ "tag": "v1", "new_classes": ["DispatchGuard"] }],
 
-  // Non-secret configuration.
+  // Restricts this binding to send to exactly one address, enforced by
+  // Cloudflare itself — independent of anything the Worker's own code
+  // does. Even a future bug or compromise in this Worker could never
+  // send email anywhere except tsomers13@gmail.com. Requires that
+  // address to be added and verified under Email Routing's Destination
+  // Addresses before any real send will succeed (see README.md's
+  // deployment checklist) — the binding itself can still be declared and
+  // deployed before that verification completes.
+  "send_email": [{ "name": "SEND_EMAIL", "destination_address": "tsomers13@gmail.com" }],
+
+  // Non-secret configuration. ALERT_TO_ADDRESS must exactly match the
+  // send_email binding's destination_address above — the binding accepts
+  // mail addressed to that one literal string, and these two values are
+  // never templated against each other, so a mismatch here would make
+  // every real send fail even after verification.
   "vars": {
     "GITHUB_OWNER": "tsomers13-ops",
     "GITHUB_REPO": "Parkio-Website",
@@ -37,21 +51,15 @@
     "TARGET_MINUTE_ET": "45",
     "FALLBACK_CHECK_HOUR_ET": "7",
     "FALLBACK_CHECK_MINUTE_ET": "15",
-    "ALERT_FROM_ADDRESS": "REPLACE_BEFORE_DEPLOY@parkio.info",
-    "ALERT_TO_ADDRESS": "REPLACE_BEFORE_DEPLOY@example.com"
+    "ALERT_FROM_ADDRESS": "alerts@parkio.info",
+    "ALERT_TO_ADDRESS": "tsomers13@gmail.com"
   }
 
-  // The following are deliberately NOT configured here, and NOT created by
-  // this PR — both require a decision + provisioning at actual deploy
-  // time, per the deployment checklist in README.md:
-  //   - Secret `GITHUB_DISPATCH_TOKEN`: set via
-  //       npx wrangler secret put GITHUB_DISPATCH_TOKEN --config wrangler.jsonc
-  //     (a fine-grained GitHub PAT, scoped to Parkio-Website only,
-  //     Actions: Read and write, nothing else).
-  //   - `send_email` binding (named "SEND_EMAIL" in src/index.ts's Env),
-  //     which requires a verified sending address on this account's
-  //     Cloudflare Email Routing setup first. If that path doesn't fit,
-  //     src/alerting.ts's AlertSender interface can take a different
-  //     concrete implementation instead without touching the rest of the
-  //     Worker.
+  // Still deliberately NOT configured here, and NOT created by this PR —
+  // requires a decision + provisioning at actual deploy time, per the
+  // deployment checklist in README.md: secret `GITHUB_DISPATCH_TOKEN`,
+  // set via
+  //   npx wrangler secret put GITHUB_DISPATCH_TOKEN --config wrangler.jsonc
+  // (a fine-grained GitHub PAT, scoped to Parkio-Website only, Actions:
+  // Read and write, nothing else).
 }

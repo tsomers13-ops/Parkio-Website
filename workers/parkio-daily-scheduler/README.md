@@ -248,29 +248,42 @@ unaffected either way.
 actual Cloudflare Durable Object runtime, and the real `send_email`
 binding. Both require the deploy step this PR deliberately does not take.
 
-## Deployment checklist (none of this has been done)
+## Deployment checklist
 
-1. **Decide the alert path.** Confirm the `send_email` binding fits (needs
-   a verified sending address under this account's Cloudflare Email
-   Routing), or swap in a different `AlertSender` implementation.
-2. **Create the GitHub fine-grained PAT:** repository-scoped to
+`ALERT_FROM_ADDRESS` (`alerts@parkio.info`) and `ALERT_TO_ADDRESS`
+(`tsomers13@gmail.com`) are now filled in, and the `send_email` binding
+restricts sending to exactly that one destination address, enforced by
+Cloudflare itself. `wrangler deploy --config wrangler.jsonc --dry-run`
+has been run and succeeds cleanly (confirms the Durable Object binding
+and the `env.SEND_EMAIL (tsomers13@gmail.com)` restriction both resolve
+correctly) — nothing beyond that dry-run has been done.
+
+1. **Onboard and verify the sender domain** (`parkio.info`) under
+   Cloudflare's Email Service → Email Sending. Automatic; Cloudflare adds
+   its own DNS records (MX/SPF/DKIM/DMARC on a `cf-bounce.parkio.info`
+   subdomain), typically verified within 5–15 minutes.
+2. **Add and verify the destination address** (`tsomers13@gmail.com`)
+   under Email Service/Email Routing → Destination Addresses — click the
+   verification link Cloudflare emails to that address.
+3. **Create the GitHub fine-grained PAT:** repository-scoped to
    `Parkio-Website` only, permission `Actions: Read and write`, nothing
    else.
-3. **Fill in** `ALERT_FROM_ADDRESS` / `ALERT_TO_ADDRESS` in
-   `wrangler.jsonc`'s `vars` (currently placeholder values).
-4. `cd workers/parkio-daily-scheduler && npx wrangler deploy --config wrangler.jsonc --dry-run`
-   first, to validate config/build without publishing anything.
-5. `npx wrangler secret put GITHUB_DISPATCH_TOKEN --config wrangler.jsonc`
-   — paste the PAT from step 2. This is the only secret this Worker needs.
-6. `npx wrangler deploy --config wrangler.jsonc` — the real deploy. Only
+4. `npx wrangler secret put GITHUB_DISPATCH_TOKEN --config wrangler.jsonc`
+   — paste the PAT from step 3, run by you, not pasted into any tool
+   output. This is the only secret this Worker needs.
+5. `npx wrangler deploy --config wrangler.jsonc` — the real deploy. Only
    at this point does the Durable Object namespace actually get
-   provisioned and the cron triggers start firing.
-7. Watch the next 6:45 AM ET tick (both sides of the trial): confirm via
+   provisioned and the cron triggers start firing. Steps 1–2 don't block
+   this (confirmed: the dry-run above succeeded before either was done —
+   Email Routing verification is enforced at send time, not deploy time)
+   but should still happen first so the Worker can actually send once
+   live, not fail silently on its first real alert.
+6. Watch the next 6:45 AM ET tick (both sides of the trial): confirm via
    `wrangler tail` or the dashboard that exactly one dispatch call fires
    and `parkio-daily.yml` starts.
-8. Begin the 7-day parallel validation period (GitHub's `schedule:` stays
+7. Begin the 7-day parallel validation period (GitHub's `schedule:` stays
    untouched throughout).
-9. After 7 clean days, in a separate PR: remove the `schedule:` block from
+8. After 7 clean days, in a separate PR: remove the `schedule:` block from
    `parkio-daily.yml`.
 
 ## Rollback
