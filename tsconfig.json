@@ -20,5 +20,10 @@
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
-  "exclude": ["node_modules"]
+  // workers/ holds independently-configured Cloudflare Worker subprojects
+  // (their own tsconfig.json, their own Workers-specific globals like
+  // DurableObjectNamespace/ScheduledEvent) — excluded here so the main
+  // app's tsc/Next.js build never tries to check them against this
+  // tsconfig's DOM-flavored lib, and vice versa.
+  "exclude": ["node_modules", "workers"]
 }
