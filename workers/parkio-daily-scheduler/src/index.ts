@@ -32,7 +32,7 @@ import { isTargetEasternMinute, easternDateKey } from "./easternTime";
 import { dispatchWorkflow, type DispatchConfig } from "./githubDispatch";
 import { DispatchGuard } from "./dispatchGuard";
 import { checkMissedPublication, expectedSlugFor } from "./missedPublicationCheck";
-import { CloudflareEmailAlertSender } from "./alerting";
+import { CloudflareEmailAlertSender, type EmailMessageBuilderLike } from "./alerting";
 
 export { DispatchGuard };
 
@@ -52,7 +52,7 @@ export interface Env {
   ALERT_TO_ADDRESS: string;
   // Optional — only bound once outbound email is actually configured at
   // deploy time (see src/alerting.ts).
-  SEND_EMAIL?: { send(message: unknown): Promise<void> };
+  SEND_EMAIL?: { send(builder: EmailMessageBuilderLike): Promise<unknown> };
 }
 
 const DISPATCH_CRONS = new Set(["45 10 * * *", "45 11 * * *"]);
