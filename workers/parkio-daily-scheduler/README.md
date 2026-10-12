@@ -306,10 +306,16 @@ compute today's actual Eastern date, exactly as before). Passing a date
 guaranteed to never have a real article deterministically and safely
 exercises the failure path, without touching any content, any commit, or
 any production state — it only changes which date string gets checked
-against the live, completely unmodified RSS feed. Verified directly
-against real `bash -e` with both the override path and the no-override
-default path, confirming the default path's behavior is byte-for-byte
-unchanged from before this input existed.
+against the live, completely unmodified RSS feed. The input is validated
+against a strict `^[0-9]{4}-[0-9]{2}-[0-9]{2}$` pattern before use — a
+malformed value (including one shaped like a shell-injection attempt)
+fails cleanly with a clear error rather than being passed through, and in
+any case the value is only ever used quoted (`"$TEST_DATE_OVERRIDE"`,
+`"$today"`), never interpolated into executable text — confirmed directly
+against real `bash -e`, including a deliberately injection-shaped input
+that was safely rejected without executing anything. Also verified the
+no-override default path's behavior is byte-for-byte unchanged from
+before this input existed.
 
 Once deployed (a separate, later, authorized step) and with GitHub
 failure-email notifications enabled per above:
