@@ -1,0 +1,344 @@
+{
+  "title": "Parkio Daily for October 12, 2026",
+  "slug": "parkio-daily-2026-10-12",
+  "date": "2026-10-12",
+  "teaser": "Sleeping Beauty Castle gets snow today; Old Key West boat service closed through Nov 1; Disneyland tickets rising soon.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Big Thunder Mountain Railroad",
+        "parkSlug": "magic-kingdom",
+        "note": "Crowds spreading across parks today"
+      },
+      {
+        "name": "Soarin'",
+        "parkSlug": "epcot",
+        "note": "Lower waits mid-afternoon"
+      },
+      {
+        "name": "Incredicoaster",
+        "parkSlug": "california-adventure",
+        "note": "Castle work drawing guests to other areas"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [],
+    "bignews": [
+      {
+        "title": "Sleeping Beauty Castle holiday snow installed earliest ever",
+        "body": "Crews began adding white and light blue snow overlay to Sleeping Beauty Castle's center tower on October 12, marking the earliest start to holiday decoration installation in Disneyland history. The castle transformation typically begins mid-to-late October.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/10/sleeping-beauty-castle-begins-snow-covered-transformation-earlier-than-ever/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Catching the castle mid-transformation often creates unique photo opportunities before crowds realize the work has started. Early morning tends to offer the clearest sightlines before rope drop guests arrive."
+        }
+      },
+      {
+        "title": "Sassagoula River Cruise suspended at Old Key West through November 1",
+        "body": "Boat service from Disney's Old Key West Resort will be closed October 12 through November 1 due to ongoing river construction. Bus transportation will handle all resort connections during the closure.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/10/sassagoula-river-cruise-at-disneys-old-key-west-closing-again-for-construction/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Bus routes from Old Key West tend to run longer than boat service, especially during park opening and closing windows. Guests staying here may want to budget an extra 15–20 minutes for resort-to-park transfers."
+        }
+      },
+      {
+        "title": "Disneyland ticket prices rising for late 2026 and 2027",
+        "body": "Disneyland has increased prices on select park tickets plus Park Hopper and Lightning Lane add-ons for dates in late 2026 and throughout 2027. Guests have approximately one week to purchase at current rates before the new pricing takes effect.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/better-than-black-friday-sales-disneyland-tickets-at-discount-pre-increase-prices-for-2026-2027/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Locking in tickets this week avoids the price hike for 2027 visits. Multi-day passes and add-ons tend to see the largest increases, so bundles bought now usually offer the best savings."
+        }
+      },
+      {
+        "title": "Typhoon Lagoon drained for refurbishment",
+        "body": "Aerial photos show Disney's Typhoon Lagoon completely drained, with approximately 3 million gallons removed as part of scheduled maintenance work. The 37-year-old water park remains closed with no announced reopening date.",
+        "parkSlug": null,
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/10/disney-world-drains-theme-park-3-million-gallons-removed-ad1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Blizzard Beach is handling all water park demand while Typhoon Lagoon is down. Mornings before 11am typically offer the shortest lines for Summit Plummet and other headliners."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "Nightmare Before Christmas tiki mug coming to Trader Sam's",
+        "body": "A new exclusive Nightmare Before Christmas-themed tiki mug will debut at Trader Sam's Enchanted Tiki Bar at Disneyland Hotel. No release date or pricing has been announced.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/10/12/disney-announces-new-exclusive-tiki-mug-coming-to-trader-sams/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Limited-edition Trader Sam's mugs often sell out within hours of release. Arriving when the bar opens tends to give collectors the best shot at securing new drops before inventory runs low."
+        }
+      },
+      {
+        "title": "Disney Cruise Line testing wearable Key to the World wristbands on Treasure",
+        "body": "Guests aboard the Disney Treasure are participating in a pilot program testing wearable Key to the World wristbands that replace traditional card keys. The test could expand to other ships if successful.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-testing-wearable-key-to-the-world-wristband-on-treasure-in-place-of-cards/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Wearable room keys typically make pool and shore excursion access easier since there's no card to carry. Treasure guests in the test may want to provide feedback that could shape the rollout across the fleet."
+        }
+      },
+      {
+        "title": "Hollywood Studios closing early October 20 for private event",
+        "body": "Disney's Hollywood Studios will close to day guests earlier than usual on October 20 due to a private event buyout. Regular operating hours will resume the following day.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/10/disney-world-confirms-hollywood-studios-park-closure-coming-next-week-th1/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Early-closure days often mean lighter morning crowds as some guests skip the park entirely. Rope drop through early afternoon on October 20 may offer shorter waits for Tower of Terror and Rock 'n' Roller Coaster."
+        }
+      },
+      {
+        "title": "Character Warehouse moving to larger space at Vineland Outlets",
+        "body": "Disney's Character Warehouse outlet store at Orlando Vineland Premium Outlets is relocating to a bigger location within the same shopping center. The move is currently in progress.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/10/disneys-character-warehouse-orlando-vineland-outlets-moving-larger-location/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Store moves often trigger clearance pricing on items that won't transfer to the new location. Checking both the old and new storefronts during the transition may uncover deeper discounts than usual."
+        }
+      },
+      {
+        "title": "Boba beverages launching on select Disney Cruise Line ships",
+        "body": "Disney Cruise Line announced a new lineup of boba drinks coming to Frozone Treats on the Disney Fantasy and Wheezy's Freezies on the Disney Wish, Disney Treasure, and Disney Destiny. Rollout details have not been finalized.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/10/disney-cruise-line-announces-new-boba-beverages-coming-soon-to-select-ships/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Specialty drink launches on cruise ships often draw lines during the first few sailings after debut. Visiting the venue mid-afternoon or late evening typically avoids peak demand windows."
+        }
+      },
+      {
+        "title": "Sleeping Beauty Castle bridge reopens at Disneyland Paris after five months",
+        "body": "The reimagined bridge leading to Sleeping Beauty Castle at Disneyland Paris has officially reopened after closing in May. Updated photos show refreshed details on the iconic pink landmark.",
+        "parkSlug": null,
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/10/disneyland-paris-reveals-updated-sleeping-beauty-castle-bridge-jc1/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Newly refurbished castle areas often draw photo-seekers throughout the day. Early morning or the final hour before park close usually offer clearer bridge access and better lighting for photos."
+        }
+      },
+      {
+        "title": "Fire alarm testing scheduled across Disney World resorts",
+        "body": "Multiple Walt Disney World resort hotels will conduct fire alarm testing with strobe lights and loud ringing tones. Guests have been notified to remain calm during the scheduled tests.",
+        "parkSlug": null,
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/10/disney-world-hours-away-from-resort-wide-alarm-guests-updated-to-remain-calm-ad1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Alarm tests tend to happen during afternoon hours when most guests are in the parks. Families with young children napping at the resort may want to plan pool time or off-property activities during the announced window."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Disney announces 2026 holiday merchandise guide",
+        "body": "Disney Parks Blog released its 2026 holiday merchandise guide featuring gift ideas across apparel, home goods, and collectibles. The lineup is available online and in-park.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/products/holiday-merchandise-guide-must-haves-for-everyone-on-your-list/"
+        }
+      },
+      {
+        "title": "Gustaf Westman collaboration brings sculptural Mickey home decor",
+        "body": "Disney partnered with Swedish designer Gustaf Westman on a new line of home goods featuring playful, sculptural takes on Mickey and Friends. The collection is now available for purchase.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/products/disney-gustaf-westman-home-decor-collab/"
+        }
+      },
+      {
+        "title": "Spaceship Earth TV pilot casts lead actors",
+        "body": "Disney+ ordered a pilot for a series based on EPCOT's Spaceship Earth attraction and has cast Catherine Laga'aia and Deacon Phillippe in the lead roles. The show will follow the attraction's time-travel theme.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/10/tv-series-based-on-epcots-spaceship-earth-gets-lead-actors-for-pilot/"
+        }
+      },
+      {
+        "title": "Disney Believe cruise ship details revealed for December 2027 launch",
+        "body": "Disney Cruise Line shared full details on the Disney Believe, setting sail on its maiden voyage December 18, 2027 from Fort Lauderdale. The ship will feature new dining venues, entertainment, and character experiences.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/dcl/what-is-on-disney-believe-ship/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "Cake Bake Shop launches happy hour with $11 fries",
+        "body": "The Cake Bake Shop at Disney's BoardWalk has introduced a happy hour menu featuring $11 truffle fries alongside other small plates and drink specials. The controversial restaurant continues to draw attention for premium pricing.",
+        "parkSlug": null,
+        "ctaLabel": "View BoardWalk dining",
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Happy hour windows at BoardWalk restaurants tend to pull guests away from EPCOT's World Showcase during the early evening. Walking over around 5pm often means shorter waits for popular countries like Japan and France."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "HdJO4DED3I4",
+      "title": "New York City 2026 | Trying NYC's BEST Pancakes, Donuts & Italian Food | New York Comic Con | Disney",
+      "channel": "Paging Mr. Morrow",
+      "publishedAt": "2026-10-11T16:59:33Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/HdJO4DED3I4/mqdefault.jpg",
+      "viewCount": 71566,
+      "url": "https://www.youtube.com/watch?v=HdJO4DED3I4",
+      "summary": "Paging Mr. Morrow explores New York City food spots and visits New York Comic Con."
+    },
+    {
+      "videoId": "Kbrk3NpgSGc",
+      "title": "DISNEY BELIEVE REVEAL: Ultimate Scavenger Hunt at Sea! | Disney Cruise Line",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-10-07T12:12:24Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Kbrk3NpgSGc/mqdefault.jpg",
+      "viewCount": 31623,
+      "url": "https://www.youtube.com/watch?v=Kbrk3NpgSGc",
+      "summary": "WrightDownMainStreet takes viewers on a scavenger hunt aboard the Disney Believe cruise ship."
+    },
+    {
+      "videoId": "ZmnUMnUq6qQ",
+      "title": "🔴 LIVE: Magic Kingdom Monday | 10.12.2026 Walt Disney World",
+      "channel": "Disney Parks with Love - Janel",
+      "publishedAt": "2026-10-12T19:03:48Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/ZmnUMnUq6qQ/mqdefault.jpg",
+      "viewCount": 29924,
+      "url": "https://www.youtube.com/watch?v=ZmnUMnUq6qQ",
+      "summary": "Live stream from Magic Kingdom on October 12, 2026."
+    },
+    {
+      "videoId": "HuMMkCT6pzE",
+      "title": "Os Personagens da Disney e Suas Características! 😳 #shorts #disney",
+      "channel": "Lipe Shorts",
+      "publishedAt": "2026-10-12T15:08:01Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/HuMMkCT6pzE/mqdefault.jpg",
+      "viewCount": 25683,
+      "url": "https://www.youtube.com/watch?v=HuMMkCT6pzE",
+      "summary": "Short video covering Disney character traits and features."
+    },
+    {
+      "videoId": "jtlZuA9GgSc",
+      "title": "O que Acontece se Alagar na Disneyland?!😱🌊",
+      "channel": "Princesa dos Fatos",
+      "publishedAt": "2026-10-12T15:00:27Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/jtlZuA9GgSc/mqdefault.jpg",
+      "viewCount": 24669,
+      "url": "https://www.youtube.com/watch?v=jtlZuA9GgSc",
+      "summary": "Princesa dos Fatos explores what happens during flooding scenarios at Disneyland."
+    },
+    {
+      "videoId": "VsaFV515A5I",
+      "title": "Disneyland Halloween Time 🎃 Relaxing Rainy Day 🌧  Merch Monday #livestream",
+      "channel": "PopsDisneyAdventures",
+      "publishedAt": "2026-10-12T19:51:34Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/VsaFV515A5I/mqdefault.jpg",
+      "viewCount": 12076,
+      "url": "https://www.youtube.com/watch?v=VsaFV515A5I",
+      "summary": "Live stream showcasing Disneyland Halloween Time merchandise on a rainy day."
+    },
+    {
+      "videoId": "zRa763V8CkY",
+      "title": "NEW in Magic Kingdom- The Diamond Horseshoe Reopened! | Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-10-12T15:30:06Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/zRa763V8CkY/mqdefault.jpg",
+      "viewCount": 7759,
+      "url": "https://www.youtube.com/watch?v=zRa763V8CkY",
+      "summary": "WrightDownMainStreet tours the reopened Diamond Horseshoe venue at Magic Kingdom."
+    },
+    {
+      "videoId": "Li2Fk3usTGo",
+      "title": "Sé loko, não compensa #maduRosa  #makeup #dublagemdeboche #funny #love #disney #disneyland",
+      "channel": "Madu Rosa",
+      "publishedAt": "2026-10-12T17:30:39Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Li2Fk3usTGo/mqdefault.jpg",
+      "viewCount": 6506,
+      "url": "https://www.youtube.com/watch?v=Li2Fk3usTGo",
+      "summary": "Comedy sketch from Madu Rosa featuring Disney-themed humor."
+    },
+    {
+      "videoId": "I5hjB26g8iE",
+      "title": "20 Ways Walt Disney World Is Weird Right Now",
+      "channel": "AllEars.net",
+      "publishedAt": "2026-10-12T14:00:06Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/I5hjB26g8iE/mqdefault.jpg",
+      "viewCount": 4586,
+      "url": "https://www.youtube.com/watch?v=I5hjB26g8iE",
+      "summary": "AllEars.net highlights 20 unusual or unexpected aspects of Walt Disney World currently."
+    },
+    {
+      "videoId": "-OJgW5MvQHA",
+      "title": "Respondendo aquela tia chata #MaduRosa  #makeup #dublagemdeboche #funny #love #disney #disneyland",
+      "channel": "Madu Rosa",
+      "publishedAt": "2026-10-12T16:30:25Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/-OJgW5MvQHA/mqdefault.jpg",
+      "viewCount": 4419,
+      "url": "https://www.youtube.com/watch?v=-OJgW5MvQHA",
+      "summary": "Madu Rosa comedy bit responding to difficult family members with Disney references."
+    }
+  ],
+  "updatedAt": "2026-10-12T20:09:15.422Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-10-12T20:09:15.422Z",
+    "tokens": {
+      "input": 11301,
+      "output": 5382,
+      "costUsd": 0.1146
+    }
+  }
+}
