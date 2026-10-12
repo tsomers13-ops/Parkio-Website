@@ -225,6 +225,14 @@ same philosophy the rest of this pipeline already uses). GitHub's own
 native "email me when a workflow I started fails" feature is what
 delivers the alert — see "Enabling GitHub failure notifications" below.
 
+All five relevant outcomes — published, missing, RSS unreachable
+(non-200), an invalid/unexpected response (200 but not RSS/Atom shaped),
+and the script itself failing to run (network throw) — are already
+proven by the root repo's own `tests/checkAlreadyPublished.test.ts`,
+which this health check reuses unmodified; no new coverage was needed for
+the script's own logic, only for this workflow's own pass/fail
+reinterpretation of it (see "Tests" below).
+
 This is deliberately `workflow_dispatch:`-only, with no `schedule:` of
 its own — routing it through GitHub's native schedule would reintroduce
 the exact multi-hour delay problem this whole project exists to solve,
@@ -283,28 +291,49 @@ something this PR implements.
 
 ### Controlled test plan, proving a failing health check really does notify
 
+**An earlier version of this test plan was flawed, caught during final
+review before merge:** it proposed dispatching the workflow against an
+old commit ref to simulate a missing article. That doesn't work —
+`checkAlreadyPublished.mjs` always computes "today" from the runner's
+real wall clock and always queries the real, current, live feed; neither
+depends on which git ref the *workflow file itself* happens to be checked
+out from. Running against an old ref would have produced the exact same
+result as running against `main`.
+
+**The fix:** the workflow now accepts an optional, test-only
+`test_date_override` input (default: unset, meaning real behavior —
+compute today's actual Eastern date, exactly as before). Passing a date
+guaranteed to never have a real article deterministically and safely
+exercises the failure path, without touching any content, any commit, or
+any production state — it only changes which date string gets checked
+against the live, completely unmodified RSS feed. Verified directly
+against real `bash -e` with both the override path and the no-override
+default path, confirming the default path's behavior is byte-for-byte
+unchanged from before this input existed.
+
 Once deployed (a separate, later, authorized step) and with GitHub
 failure-email notifications enabled per above:
 
 1. Confirm today's article is already live (expected most days).
-2. Manually dispatch `parkio-daily-health-check.yml` once from the
-   Actions tab (`gh workflow run parkio-daily-health-check.yml`) — this
-   should **pass**, proving the happy path works against real,
-   already-published content.
-3. To deliberately prove the failure path end-to-end without waiting for
-   an actual missed day: dispatch it with the repository temporarily
-   checked out at a commit from *before* today's article was generated
-   (`gh workflow run parkio-daily-health-check.yml --ref <old-sha>`) —
-   the script will correctly see no `parkio-daily-<today>` entry in the
-   live feed yet and fail, and that failure should produce exactly one
-   email to `tsomers13@gmail.com` within a few minutes.
+2. Manually dispatch `parkio-daily-health-check.yml` with no input
+   (`gh workflow run parkio-daily-health-check.yml`) — this should
+   **pass**, proving the happy path works against real, already-published
+   content.
+3. Dispatch it again with a deliberately-absent test date
+   (`gh workflow run parkio-daily-health-check.yml -f test_date_override=2099-01-01`)
+   — this should **fail** every time, proving the failure path end to
+   end without depending on real-world timing or touching anything real.
+   That failure should produce exactly one email to `tsomers13@gmail.com`
+   within a few minutes.
 4. Confirm no production side effect of any kind occurred (this workflow
    has no write path, but worth confirming once): production Worker tag
-   unchanged, deploy lock untouched, no content committed.
+   unchanged, deploy lock untouched, no content committed, no repository
+   history touched.
 
-This test uses only the already-existing GitHub Actions run history and
-your own notification settings — no new infrastructure, no new
-credential, nothing deployed beyond the one workflow file.
+This test uses only the already-existing GitHub Actions run history, the
+one safe test-only input above, and your own notification settings — no
+new infrastructure, no new credential, nothing deployed beyond the one
+workflow file, and no modification of any content or commit, ever.
 
 ## Parallel validation period
 

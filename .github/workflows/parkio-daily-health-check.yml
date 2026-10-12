@@ -27,6 +27,19 @@ name: Parkio Daily Health Check
 # for its other caller.
 on:
   workflow_dispatch:
+    inputs:
+      test_date_override:
+        description: >-
+          CONTROLLED TEST ONLY. Overrides the date checked (YYYY-MM-DD).
+          Leave blank for real use — the real 7:15 AM dispatch never sets
+          this, so it always computes today's actual date. Pass a date
+          guaranteed never to have a real article (e.g. 2099-01-01) to
+          deliberately and safely exercise the failure path on demand,
+          without touching any real content, commit, or production
+          state — this only changes which date string gets checked
+          against the live, unmodified RSS feed.
+        required: false
+        type: string
 
 permissions: {}
 
@@ -45,8 +58,15 @@ jobs:
           node-version: "20"
 
       - name: Fail if today's article is not published
+        env:
+          TEST_DATE_OVERRIDE: ${{ inputs.test_date_override }}
         run: |
-          today=$(TZ=America/New_York date +%Y-%m-%d)
+          if [ -n "$TEST_DATE_OVERRIDE" ]; then
+            echo "::warning::Running with test_date_override=${TEST_DATE_OVERRIDE} — this is a deliberate controlled test, not a real health check."
+            today="$TEST_DATE_OVERRIDE"
+          else
+            today=$(TZ=America/New_York date +%Y-%m-%d)
+          fi
           if ! status=$(node scripts/parkio-daily/checkAlreadyPublished.mjs "$today" 2>&1); then
             echo "::error::Could not determine publish status for parkio-daily-${today}: ${status}. Failing closed — treating an inconclusive check as a possible miss."
             exit 1
