@@ -184,14 +184,23 @@ dedupes itself, so a Cloudflare at-least-once re-delivery of this tick
 can't send a second email for the same missed day
 (`test/alertDeduplication.test.ts`).
 
-**Flagging honestly:** the concrete `AlertSender` implementation
-(`CloudflareEmailAlertSender`, using Cloudflare's `send_email` Worker
-binding) is unit-tested against the real `mimetext` library for message
-construction, but the actual binding/account setup (a verified sending
-address under Cloudflare Email Routing) can't be verified end-to-end
-without a real deploy, which this PR doesn't do. If that path turns out
-not to fit, `AlertSender` takes any other concrete sender without
-touching the rest of the Worker.
+**Found and fixed during activation preparation, before any deploy:** an
+earlier version of `CloudflareEmailAlertSender` called the `send_email`
+binding with a raw MIME string built via `mimetext`, passed directly to
+`.send()`. Checked against this package's own installed
+`@cloudflare/workers-types` definitions: `SendEmail.send()` only accepts
+either a legacy `EmailMessage` instance (from `cloudflare:email`,
+constructed `new EmailMessage(from, to, rawMimeString)`) or the
+structured `EmailMessageBuilder` form — a plain `{ from, to, subject,
+text }` object, no MIME construction at all. A bare string matches
+neither overload and would have failed at runtime. Switched to the
+structured form, which is also what Cloudflare's own docs recommend for
+new code — see `src/alerting.ts` and `test/alerting.test.ts`.
+
+The one piece still unverifiable without a real deploy is the
+binding/account setup itself: a verified sending address under Cloudflare
+Email Routing. If that path turns out not to fit, `AlertSender` takes any
+other concrete sender without touching the rest of the Worker.
 
 ## Parallel validation period
 
@@ -213,7 +222,7 @@ final email delivery depends on Buttondown's own poll cadence.
 
 ## Tests
 
-61 tests, all passing (`npm test` from this directory):
+62 tests, all passing (`npm test` from this directory):
 
 | File | Covers |
 |---|---|
@@ -223,7 +232,7 @@ final email delivery depends on Buttondown's own poll cadence.
 | `test/duplicateDispatchPrevention.test.ts` | End-to-end through `handleDispatchTick` across repeated invocations: an ambiguous outcome never retries, a confirmed failure does, success never double-dispatches, a new date always gets its own attempt |
 | `test/missedPublicationCheck.test.ts` | Before/at/after the real 7:15 AM fallback time, present/missing article, correct Eastern (not UTC) calendar date |
 | `test/alertDeduplication.test.ts` | End-to-end through `handleFallbackCheckTick`: exactly one email per missed day even across repeated ticks, no email when the article is live, a new day gets its own alert, and the alert/dispatch dedupes don't contend with each other |
-| `test/alerting.test.ts` | Real `mimetext` MIME construction (caught a real subject-encoding detail — base64/RFC 2047 — that a mock would have hidden) |
+| `test/alerting.test.ts` | The structured `EmailMessageBuilder` call shape (`{from, to, subject, text}`), confirmed against the real `SendEmail.send()` type signature — catching a real bug where an earlier version passed a raw MIME string that matched neither of the binding's actual overloads |
 | `test/credentialHandling.test.ts` | End-to-end: the token appears in exactly one header of one call, never logged, across success, confirmed-failure, AND ambiguous outcomes; a non-target tick never touches `fetch` at all |
 
 Also: `npm run typecheck` is clean, and `workers/` was added to the root
