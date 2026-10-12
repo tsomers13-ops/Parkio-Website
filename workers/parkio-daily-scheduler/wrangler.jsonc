@@ -1,0 +1,57 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+
+  // Config only — nothing here provisions anything until an explicit
+  // `wrangler deploy` is run, which is a separate, later, authorized step.
+  // No workers_dev, no routes: this Worker has no fetch() handler and no
+  // HTTP surface at all, by design (see src/index.ts).
+  "name": "parkio-daily-scheduler",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-10-11",
+  "workers_dev": false,
+
+  // Bracketed EDT/EST pairs — see src/easternTime.ts for why two entries
+  // per real target time are enough to track DST with zero manual edits.
+  //   45 10 * * * -> 6:45 AM EDT (UTC-4)
+  //   45 11 * * * -> 6:45 AM EST (UTC-5)
+  //    0 13 * * * -> 9:00 AM EDT fallback missed-publication check
+  //    0 14 * * * -> 9:00 AM EST fallback missed-publication check
+  "triggers": {
+    "crons": ["45 10 * * *", "45 11 * * *", "0 13 * * *", "0 14 * * *"]
+  },
+
+  // Durable, concurrency-safe "has today already been dispatched" guard.
+  // See src/dispatchGuard.ts.
+  "durable_objects": {
+    "bindings": [{ "name": "DISPATCH_GUARD", "class_name": "DispatchGuard" }]
+  },
+  "migrations": [{ "tag": "v1", "new_classes": ["DispatchGuard"] }],
+
+  // Non-secret configuration.
+  "vars": {
+    "GITHUB_OWNER": "tsomers13-ops",
+    "GITHUB_REPO": "Parkio-Website",
+    "GITHUB_WORKFLOW_FILE": "parkio-daily.yml",
+    "GITHUB_REF": "main",
+    "TARGET_HOUR_ET": "6",
+    "TARGET_MINUTE_ET": "45",
+    "FALLBACK_CHECK_HOUR_ET": "9",
+    "FALLBACK_CHECK_MINUTE_ET": "0",
+    "ALERT_FROM_ADDRESS": "REPLACE_BEFORE_DEPLOY@parkio.info",
+    "ALERT_TO_ADDRESS": "REPLACE_BEFORE_DEPLOY@example.com"
+  }
+
+  // The following are deliberately NOT configured here, and NOT created by
+  // this PR — both require a decision + provisioning at actual deploy
+  // time, per the deployment checklist in README.md:
+  //   - Secret `GITHUB_DISPATCH_TOKEN`: set via
+  //       npx wrangler secret put GITHUB_DISPATCH_TOKEN --config wrangler.jsonc
+  //     (a fine-grained GitHub PAT, scoped to Parkio-Website only,
+  //     Actions: Read and write, nothing else).
+  //   - `send_email` binding (named "SEND_EMAIL" in src/index.ts's Env),
+  //     which requires a verified sending address on this account's
+  //     Cloudflare Email Routing setup first. If that path doesn't fit,
+  //     src/alerting.ts's AlertSender interface can take a different
+  //     concrete implementation instead without touching the rest of the
+  //     Worker.
+}
