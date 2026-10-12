@@ -1,27 +1,27 @@
 import { describe, expect, it } from "vitest";
 import { decideClaim, decideRelease, DispatchGuard, type DurableObjectStorageLike } from "../src/dispatchGuard";
 
-describe("decideClaim — pure duplicate-dispatch logic", () => {
-  it("claims when nothing has been dispatched yet today", () => {
+describe("decideClaim — pure duplicate-claim logic (used for both the dispatch and alert purposes)", () => {
+  it("claims when nothing has been claimed yet today", () => {
     const { result, nextStoredDateKey } = decideClaim(null, "2026-10-12");
-    expect(result).toEqual({ claimed: true, alreadyDispatchedToday: false });
+    expect(result).toEqual({ claimed: true, alreadyClaimedToday: false });
     expect(nextStoredDateKey).toBe("2026-10-12");
   });
 
-  it("refuses a second claim for the SAME date — this is the duplicate-dispatch guard", () => {
+  it("refuses a second claim for the SAME date — this is the duplicate guard", () => {
     const { result, nextStoredDateKey } = decideClaim("2026-10-12", "2026-10-12");
-    expect(result).toEqual({ claimed: false, alreadyDispatchedToday: true });
+    expect(result).toEqual({ claimed: false, alreadyClaimedToday: true });
     expect(nextStoredDateKey).toBe("2026-10-12");
   });
 
   it("claims again once the stored date rolls over to a NEW date", () => {
     const { result, nextStoredDateKey } = decideClaim("2026-10-11", "2026-10-12");
-    expect(result).toEqual({ claimed: true, alreadyDispatchedToday: false });
+    expect(result).toEqual({ claimed: true, alreadyClaimedToday: false });
     expect(nextStoredDateKey).toBe("2026-10-12");
   });
 });
 
-describe("decideRelease — lets a failed dispatch retry later the same day", () => {
+describe("decideRelease — lets a CONFIRMED (never ambiguous) failure retry later the same day", () => {
   it("clears the claim when releasing today's own date", () => {
     expect(decideRelease("2026-10-12", "2026-10-12")).toBeNull();
   });
@@ -33,15 +33,15 @@ describe("decideRelease — lets a failed dispatch retry later the same day", ()
 
 /** In-memory fake standing in for the real Durable Object storage API. */
 class FakeStorage implements DurableObjectStorageLike {
-  private value: string | undefined;
-  async get(_key: string): Promise<string | undefined> {
-    return this.value;
+  private values = new Map<string, string>();
+  async get(key: string): Promise<string | undefined> {
+    return this.values.get(key);
   }
-  async put(_key: string, value: string): Promise<void> {
-    this.value = value;
+  async put(key: string, value: string): Promise<void> {
+    this.values.set(key, value);
   }
-  async delete(_key: string): Promise<void> {
-    this.value = undefined;
+  async delete(key: string): Promise<void> {
+    this.values.delete(key);
   }
 }
 
@@ -50,22 +50,22 @@ describe("DispatchGuard — the DO wrapper persists claims durably", () => {
     const storage = new FakeStorage();
     const guard = new DispatchGuard({ storage });
 
-    const first = await guard.claim("2026-10-12");
+    const first = await guard.claim("dispatch", "2026-10-12");
     expect(first.claimed).toBe(true);
 
-    const second = await guard.claim("2026-10-12");
+    const second = await guard.claim("dispatch", "2026-10-12");
     expect(second.claimed).toBe(false);
-    expect(second.alreadyDispatchedToday).toBe(true);
+    expect(second.alreadyClaimedToday).toBe(true);
   });
 
   it("release lets a subsequent claim for the same date succeed again", async () => {
     const storage = new FakeStorage();
     const guard = new DispatchGuard({ storage });
 
-    await guard.claim("2026-10-12");
-    await guard.release("2026-10-12");
+    await guard.claim("dispatch", "2026-10-12");
+    await guard.release("dispatch", "2026-10-12");
 
-    const retry = await guard.claim("2026-10-12");
+    const retry = await guard.claim("dispatch", "2026-10-12");
     expect(retry.claimed).toBe(true);
   });
 
@@ -73,9 +73,28 @@ describe("DispatchGuard — the DO wrapper persists claims durably", () => {
     const storage = new FakeStorage();
     const guard = new DispatchGuard({ storage });
 
-    await guard.claim("2026-10-11");
-    const today = await guard.claim("2026-10-12");
+    await guard.claim("dispatch", "2026-10-11");
+    const today = await guard.claim("dispatch", "2026-10-12");
     expect(today.claimed).toBe(true);
+  });
+
+  it("the 'dispatch' and 'alert' purposes are fully independent — claiming one never affects the other", async () => {
+    const storage = new FakeStorage();
+    const guard = new DispatchGuard({ storage });
+
+    const dispatchClaim = await guard.claim("dispatch", "2026-10-12");
+    expect(dispatchClaim.claimed).toBe(true);
+
+    // The alert purpose for the SAME date is untouched by the dispatch
+    // claim above — this is what lets the 6:45 AM dispatch and the
+    // 7:15 AM missed-publication alert each have their own independent
+    // once-per-day guarantee against the one shared DO instance.
+    const alertClaim = await guard.claim("alert", "2026-10-12");
+    expect(alertClaim.claimed).toBe(true);
+
+    // And each purpose still independently refuses a second same-day claim.
+    expect((await guard.claim("dispatch", "2026-10-12")).claimed).toBe(false);
+    expect((await guard.claim("alert", "2026-10-12")).claimed).toBe(false);
   });
 });
 
@@ -97,10 +116,12 @@ class SerializedFetchQueue {
   private tail: Promise<unknown> = Promise.resolve();
   constructor(private readonly guard: DispatchGuard) {}
 
-  fetch(url: string): Promise<{ claimed: boolean; alreadyDispatchedToday: boolean }> {
+  fetch(url: string): Promise<{ claimed: boolean; alreadyClaimedToday: boolean }> {
     const run = this.tail.then(() => {
-      const dateKey = new URL(url).searchParams.get("dateKey")!;
-      return this.guard.claim(dateKey);
+      const parsed = new URL(url);
+      const dateKey = parsed.searchParams.get("dateKey")!;
+      const purpose = parsed.searchParams.get("purpose") as "dispatch" | "alert";
+      return this.guard.claim(purpose, dateKey);
     });
     // Chain the queue's tail on this call's settlement (success or
     // failure) so the NEXT queued call always waits for this one, exactly
@@ -116,7 +137,7 @@ describe("DispatchGuard — concurrent invocations", () => {
     const storage = new FakeStorage();
     const guard = new DispatchGuard({ storage });
 
-    const [first, second] = await Promise.all([guard.claim("2026-10-12"), guard.claim("2026-10-12")]);
+    const [first, second] = await Promise.all([guard.claim("dispatch", "2026-10-12"), guard.claim("dispatch", "2026-10-12")]);
     const claimedCount = [first, second].filter((r) => r.claimed).length;
     // Not asserting a specific count here — interleaving timing is an
     // implementation detail of this synthetic fake. The point is only
@@ -126,37 +147,66 @@ describe("DispatchGuard — concurrent invocations", () => {
     expect(claimedCount).toBeGreaterThanOrEqual(1);
   });
 
-  it("through the DO-fetch serialization Cloudflare actually provides, exactly one of two concurrent requests for the same date wins", async () => {
+  it("through the DO-fetch serialization Cloudflare actually provides, exactly one of two concurrent requests for the same date and purpose wins", async () => {
     const storage = new FakeStorage();
     const queue = new SerializedFetchQueue(new DispatchGuard({ storage }));
 
     const [first, second] = await Promise.all([
-      queue.fetch("https://dispatch-guard/claim?dateKey=2026-10-12"),
-      queue.fetch("https://dispatch-guard/claim?dateKey=2026-10-12"),
+      queue.fetch("https://dispatch-guard/claim?purpose=dispatch&dateKey=2026-10-12"),
+      queue.fetch("https://dispatch-guard/claim?purpose=dispatch&dateKey=2026-10-12"),
     ]);
 
     const claimedCount = [first, second].filter((r) => r.claimed).length;
     expect(claimedCount).toBe(1);
   });
 
-  it("through the same serialization, many concurrent requests for the same date still yield exactly one winner", async () => {
+  it("through the same serialization, many concurrent requests for the same date and purpose still yield exactly one winner", async () => {
     const storage = new FakeStorage();
     const queue = new SerializedFetchQueue(new DispatchGuard({ storage }));
 
     const results = await Promise.all(
-      Array.from({ length: 20 }, () => queue.fetch("https://dispatch-guard/claim?dateKey=2026-10-12"))
+      Array.from({ length: 20 }, () => queue.fetch("https://dispatch-guard/claim?purpose=dispatch&dateKey=2026-10-12"))
     );
 
     const claimedCount = results.filter((r) => r.claimed).length;
     expect(claimedCount).toBe(1);
   });
 
+  it("concurrent dispatch AND alert claims for the same date both win independently — the two purposes don't contend with each other even under the same serialized queue", async () => {
+    const storage = new FakeStorage();
+    const queue = new SerializedFetchQueue(new DispatchGuard({ storage }));
+
+    const [dispatchResult, alertResult] = await Promise.all([
+      queue.fetch("https://dispatch-guard/claim?purpose=dispatch&dateKey=2026-10-12"),
+      queue.fetch("https://dispatch-guard/claim?purpose=alert&dateKey=2026-10-12"),
+    ]);
+
+    expect(dispatchResult.claimed).toBe(true);
+    expect(alertResult.claimed).toBe(true);
+  });
+
   it("a genuinely later date still gets its own claim through the same serialized queue", async () => {
     const storage = new FakeStorage();
     const queue = new SerializedFetchQueue(new DispatchGuard({ storage }));
 
-    await queue.fetch("https://dispatch-guard/claim?dateKey=2026-10-11");
-    const next = await queue.fetch("https://dispatch-guard/claim?dateKey=2026-10-12");
+    await queue.fetch("https://dispatch-guard/claim?purpose=dispatch&dateKey=2026-10-11");
+    const next = await queue.fetch("https://dispatch-guard/claim?purpose=dispatch&dateKey=2026-10-12");
     expect(next.claimed).toBe(true);
+  });
+});
+
+describe("DispatchGuard.fetch — HTTP entrypoint validation", () => {
+  it("rejects a request missing purpose with 400, rather than defaulting silently", async () => {
+    const storage = new FakeStorage();
+    const guard = new DispatchGuard({ storage });
+    const res = await guard.fetch(new Request("https://dispatch-guard/claim?dateKey=2026-10-12"));
+    expect(res.status).toBe(400);
+  });
+
+  it("rejects an invalid purpose value with 400", async () => {
+    const storage = new FakeStorage();
+    const guard = new DispatchGuard({ storage });
+    const res = await guard.fetch(new Request("https://dispatch-guard/claim?purpose=nonsense&dateKey=2026-10-12"));
+    expect(res.status).toBe(400);
   });
 });

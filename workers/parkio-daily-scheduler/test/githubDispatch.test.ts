@@ -26,51 +26,59 @@ describe("buildDispatchRequest", () => {
 });
 
 describe("dispatchWorkflow — success path", () => {
-  it("returns ok:true on the first successful attempt, with no retry", async () => {
+  it("returns ok:true, ambiguous:false on a successful response, with exactly one HTTP call", async () => {
     const fetchImpl = vi.fn().mockResolvedValue({ ok: true, status: 204, text: async () => "" });
     const outcome = await dispatchWorkflow(fetchImpl, BASE_CONFIG);
-    expect(outcome).toEqual({ ok: true, status: 204 });
+    expect(outcome).toEqual({ ok: true, status: 204, ambiguous: false });
     expect(fetchImpl).toHaveBeenCalledTimes(1);
   });
 });
 
-describe("dispatchWorkflow — GitHub API failure handling", () => {
-  it("retries exactly once after a non-2xx response, and succeeds if the retry works", async () => {
-    const fetchImpl = vi
-      .fn()
-      .mockResolvedValueOnce({ ok: false, status: 503, text: async () => "Service Unavailable" })
-      .mockResolvedValueOnce({ ok: true, status: 204, text: async () => "" });
+describe("dispatchWorkflow — never retries (the lost-response / duplicate-dispatch risk)", () => {
+  // Found during final review, before any deploy: GitHub's workflow_dispatch
+  // endpoint is not idempotent — each successful POST queues a new real
+  // run. If a POST actually reached GitHub and was processed, but its
+  // response was lost (timeout, dropped connection), retrying would fire
+  // a SECOND real dispatch on top of one that may have silently
+  // succeeded. These tests prove that can no longer happen: exactly one
+  // HTTP attempt is made, always, regardless of outcome.
 
-    const outcome = await dispatchWorkflow(fetchImpl, BASE_CONFIG);
-    expect(outcome).toEqual({ ok: true, status: 204 });
-    expect(fetchImpl).toHaveBeenCalledTimes(2);
-  });
-
-  it("reports failure after both attempts fail, bounded at exactly two calls (no retry storm)", async () => {
+  it("makes exactly ONE call on a confirmed (non-2xx) failure — no retry", async () => {
     const fetchImpl = vi.fn().mockResolvedValue({ ok: false, status: 401, text: async () => "Bad credentials" });
     const outcome = await dispatchWorkflow(fetchImpl, BASE_CONFIG);
     expect(outcome.ok).toBe(false);
+    expect(outcome.ambiguous).toBe(false);
     expect(outcome.status).toBe(401);
     expect(outcome.errorBody).toBe("Bad credentials");
-    expect(fetchImpl).toHaveBeenCalledTimes(2);
+    expect(fetchImpl).toHaveBeenCalledTimes(1);
   });
 
-  it("handles a network-level throw (not just a non-2xx response) the same way, bounded at two attempts", async () => {
+  it("makes exactly ONE call on a network-level throw, and marks the outcome ambiguous", async () => {
     const fetchImpl = vi.fn().mockRejectedValue(new Error("network unreachable"));
     const outcome = await dispatchWorkflow(fetchImpl, BASE_CONFIG);
     expect(outcome.ok).toBe(false);
+    expect(outcome.ambiguous).toBe(true);
     expect(outcome.status).toBe(0);
     expect(outcome.errorBody).toContain("network unreachable");
-    expect(fetchImpl).toHaveBeenCalledTimes(2);
+    expect(fetchImpl).toHaveBeenCalledTimes(1);
   });
 
-  it("recovers from a network throw on attempt 1 if attempt 2 succeeds", async () => {
-    const fetchImpl = vi
-      .fn()
-      .mockRejectedValueOnce(new Error("timeout"))
-      .mockResolvedValueOnce({ ok: true, status: 204, text: async () => "" });
+  it("a timeout-shaped rejection is also ambiguous, not confirmed", async () => {
+    const fetchImpl = vi.fn().mockRejectedValue(new Error("timeout"));
     const outcome = await dispatchWorkflow(fetchImpl, BASE_CONFIG);
-    expect(outcome.ok).toBe(true);
+    expect(outcome.ambiguous).toBe(true);
+    expect(fetchImpl).toHaveBeenCalledTimes(1);
+  });
+
+  it("a 5xx HTTP response IS a received response — not ambiguous, even though it indicates a server-side problem", async () => {
+    // This endpoint responding at all (even with a 5xx body) means a
+    // full request/response cycle completed; GitHub told us plainly that
+    // this specific attempt did not succeed.
+    const fetchImpl = vi.fn().mockResolvedValue({ ok: false, status: 503, text: async () => "Service Unavailable" });
+    const outcome = await dispatchWorkflow(fetchImpl, BASE_CONFIG);
+    expect(outcome.ambiguous).toBe(false);
+    expect(outcome.status).toBe(503);
+    expect(fetchImpl).toHaveBeenCalledTimes(1);
   });
 });
 

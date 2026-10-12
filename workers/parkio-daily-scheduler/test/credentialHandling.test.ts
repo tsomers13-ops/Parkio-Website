@@ -5,15 +5,15 @@ import { DispatchGuard, type DurableObjectStorageLike } from "../src/dispatchGua
 const SECRET_TOKEN = "github_pat_SUPER_SECRET_VALUE_should_never_leak_98765";
 
 class FakeStorage implements DurableObjectStorageLike {
-  private value: string | undefined;
-  async get(): Promise<string | undefined> {
-    return this.value;
+  private values = new Map<string, string>();
+  async get(key: string): Promise<string | undefined> {
+    return this.values.get(key);
   }
-  async put(_key: string, value: string): Promise<void> {
-    this.value = value;
+  async put(key: string, value: string): Promise<void> {
+    this.values.set(key, value);
   }
-  async delete(): Promise<void> {
-    this.value = undefined;
+  async delete(key: string): Promise<void> {
+    this.values.delete(key);
   }
 }
 
@@ -38,8 +38,8 @@ function makeEnv(overrides: Partial<Env> = {}): Env {
     GITHUB_REF: "main",
     TARGET_HOUR_ET: "6",
     TARGET_MINUTE_ET: "45",
-    FALLBACK_CHECK_HOUR_ET: "9",
-    FALLBACK_CHECK_MINUTE_ET: "0",
+    FALLBACK_CHECK_HOUR_ET: "7",
+    FALLBACK_CHECK_MINUTE_ET: "15",
     ALERT_FROM_ADDRESS: "alerts@parkio.info",
     ALERT_TO_ADDRESS: "tsomers13@gmail.com",
     ...overrides,
@@ -86,6 +86,20 @@ describe("credential handling — the GitHub token never appears outside the one
   it("even on a GitHub API failure (token redacted internally), nothing logged contains the raw token", async () => {
     globalThis.fetch = vi.fn(async () => {
       return { ok: false, status: 401, text: async () => `token ${SECRET_TOKEN} rejected` } as Response;
+    }) as unknown as typeof fetch;
+
+    await handleDispatchTick(new Date("2026-07-15T10:45:00Z"), makeEnv());
+
+    for (const spy of consoleSpies) {
+      for (const call of spy.mock.calls) {
+        expect(JSON.stringify(call)).not.toContain(SECRET_TOKEN);
+      }
+    }
+  });
+
+  it("even on an ambiguous (network-throw) outcome, nothing logged contains the raw token", async () => {
+    globalThis.fetch = vi.fn(async () => {
+      throw new Error(`connection reset, token=${SECRET_TOKEN}`);
     }) as unknown as typeof fetch;
 
     await handleDispatchTick(new Date("2026-07-15T10:45:00Z"), makeEnv());

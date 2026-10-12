@@ -14,10 +14,10 @@
   // per real target time are enough to track DST with zero manual edits.
   //   45 10 * * * -> 6:45 AM EDT (UTC-4)
   //   45 11 * * * -> 6:45 AM EST (UTC-5)
-  //    0 13 * * * -> 9:00 AM EDT fallback missed-publication check
-  //    0 14 * * * -> 9:00 AM EST fallback missed-publication check
+  //   15 11 * * * -> 7:15 AM EDT fallback missed-publication check
+  //   15 12 * * * -> 7:15 AM EST fallback missed-publication check
   "triggers": {
-    "crons": ["45 10 * * *", "45 11 * * *", "0 13 * * *", "0 14 * * *"]
+    "crons": ["45 10 * * *", "45 11 * * *", "15 11 * * *", "15 12 * * *"]
   },
 
   // Durable, concurrency-safe "has today already been dispatched" guard.
@@ -35,8 +35,8 @@
     "GITHUB_REF": "main",
     "TARGET_HOUR_ET": "6",
     "TARGET_MINUTE_ET": "45",
-    "FALLBACK_CHECK_HOUR_ET": "9",
-    "FALLBACK_CHECK_MINUTE_ET": "0",
+    "FALLBACK_CHECK_HOUR_ET": "7",
+    "FALLBACK_CHECK_MINUTE_ET": "15",
     "ALERT_FROM_ADDRESS": "REPLACE_BEFORE_DEPLOY@parkio.info",
     "ALERT_TO_ADDRESS": "REPLACE_BEFORE_DEPLOY@example.com"
   }
