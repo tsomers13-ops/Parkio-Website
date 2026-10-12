@@ -34,14 +34,13 @@ function makeEnv(overrides: Partial<Env> = {}): Env {
     DISPATCH_GUARD: makeFakeDispatchGuardNamespace(),
     GITHUB_OWNER: "tsomers13-ops",
     GITHUB_REPO: "Parkio-Website",
-    GITHUB_WORKFLOW_FILE: "parkio-daily.yml",
     GITHUB_REF: "main",
+    GITHUB_WORKFLOW_FILE: "parkio-daily.yml",
+    HEALTH_CHECK_WORKFLOW_FILE: "parkio-daily-health-check.yml",
     TARGET_HOUR_ET: "6",
     TARGET_MINUTE_ET: "45",
-    FALLBACK_CHECK_HOUR_ET: "7",
-    FALLBACK_CHECK_MINUTE_ET: "15",
-    ALERT_FROM_ADDRESS: "alerts@parkio.info",
-    ALERT_TO_ADDRESS: "tsomers13@gmail.com",
+    HEALTH_CHECK_HOUR_ET: "7",
+    HEALTH_CHECK_MINUTE_ET: "15",
     ...overrides,
   };
 }
