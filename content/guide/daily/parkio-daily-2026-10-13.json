@@ -1,0 +1,345 @@
+{
+  "title": "Parkio Daily for October 13, 2026",
+  "slug": "parkio-daily-2026-10-13",
+  "date": "2026-10-13",
+  "teaser": "Diamond Horseshoe reopens at Magic Kingdom; Rock 'n' Roller Coaster Muppets permit filed; Typhoon Lagoon surf pool drained for annual refurb.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Soarin'",
+        "parkSlug": "epcot",
+        "note": "Morning crowds light before 10am"
+      },
+      {
+        "name": "Haunted Mansion",
+        "parkSlug": "magic-kingdom",
+        "note": "Shortest waits first hour"
+      },
+      {
+        "name": "Star Tours",
+        "parkSlug": "hollywood-studios",
+        "note": "Walk-on windows until lunch"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [
+      {
+        "title": "Diamond Horseshoe reopens at Magic Kingdom",
+        "body": "The dining location has returned to service after its closure. The venue is once again offering food service in Liberty Square.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "YouTube",
+          "url": "https://www.youtube.com/watch?v=zRa763V8CkY"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "The location often sees lighter crowds in its first week back. Lunch between 11am and noon tends to offer shorter lines before word spreads."
+        }
+      }
+    ],
+    "bignews": [
+      {
+        "title": "Construction permit filed for Rock 'n' Roller Coaster Muppets conversion",
+        "body": "Walt Disney World submitted paperwork for labor, material, and electrical work on the Hollywood Studios attraction. Buena Vista Construction will handle the project as the ride transitions to its Muppets theme.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/10/walt-disney-world-files-construction-permit-for-rock-n-roller-coaster-starring-the-muppets/"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "Sunset Boulevard tends to draw heavier foot traffic when construction activity is visible. Riding Tower of Terror or catching shows before 11am usually avoids the midday congestion."
+        }
+      },
+      {
+        "title": "Typhoon Lagoon surf pool drained for annual refurbishment",
+        "body": "Aerial photos show the wave pool empty as the water park undergoes its yearly maintenance period. The work is part of Typhoon Lagoon's scheduled closure season.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/10/aerial-photos-show-drained-surf-pool-annual-refurbishment-at-disneys-typhoon-lagoon-in-todays-daily-recap-for-10-12-2026/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "The water park remains closed through its refurbishment window. Blizzard Beach is the only Disney water park option today, and it often sees heavier crowds as a result."
+        }
+      },
+      {
+        "title": "Disney's Character Warehouse moving to larger Orlando outlet location",
+        "body": "The discount merchandise store will relocate within the Vineland Outlets complex soon. An official notice was posted outside the current entrance.",
+        "parkSlug": null,
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/10/disney-announces-closure-of-orlando-florida-location-will-relocate-soon-jc1/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "The current location may see clearance discounts before the move. Visiting in the next few days often surfaces deals before inventory is transferred."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "Six new fall treats debut across Walt Disney World",
+        "body": "The snack lineup includes fresh seasonal items at multiple parks. Full reviews are now available.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/10/12/review-disney-world-just-dropped-6-new-treats-and-were-questioning-their-sanity/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "New snacks often sell out at flagship locations by mid-afternoon. Grabbing treats at counter-service windows before noon tends to avoid stock shortages."
+        }
+      },
+      {
+        "title": "Nightmare Before Christmas tiki mug announced for Trader Sam's",
+        "body": "The exclusive collectible is coming to the Disneyland Hotel bar. The mug joins the venue's rotating seasonal offerings.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/10/12/disney-announces-new-exclusive-tiki-mug-coming-to-trader-sams/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Limited-edition mugs at Trader Sam's often disappear within days of release. Arriving when the bar opens typically offers the best shot at snagging one."
+        }
+      },
+      {
+        "title": "Disneyland ticket prices rising for late 2026 and 2027 dates",
+        "body": "Select admission, Park Hopper, and Lightning Lane add-ons increased in price this week. Tickets purchased before the hike remain valid at the old rate for about one week.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/better-than-black-friday-sales-disneyland-tickets-at-discount-pre-increase-prices-for-2026-2027/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Buying tickets in the next few days locks in pre-increase pricing for future visits. Discount resellers often honor old rates slightly longer than the official window."
+        }
+      },
+      {
+        "title": "Water drained from abandoned Gibbons exhibit at Animal Kingdom",
+        "body": "The habitat near Kali River Rapids is now empty after the animals moved backstage. No official refurbishment timeline has been announced.",
+        "parkSlug": "animal-kingdom",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/10/water-drained-from-abandoned-gibbons-exhibit-at-disneys-animal-kingdom/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "The empty exhibit adds little to the Asia walking trail right now. Guests often skip this section and focus on Maharajah Jungle Trek for active animal viewing."
+        }
+      },
+      {
+        "title": "Enzo's Hideaway hosting special dinner at Disney Springs",
+        "body": "The Italian restaurant announced a limited-time dining event with a curated menu. Reservations are now open.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/10/12/dinners-keep-getting-better-at-disney-springs-and-this-is-proof/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Special menus at Enzo's often book solid within 48 hours. Checking for same-day cancellations around 4pm sometimes opens last-minute tables."
+        }
+      },
+      {
+        "title": "Disney Treasure testing wearable Key to the World wristbands",
+        "body": "Guests aboard the cruise ship are participating in a trial of wearable room keys that replace traditional card-based access. The pilot could expand to other Disney Cruise Line sailings.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-testing-wearable-key-to-the-world-wristband-on-treasure-in-place-of-cards/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Wearable tech rollouts on DCL often preview features for park resorts. Cruisers testing the bands may see similar options at Walt Disney World hotels within the year."
+        }
+      },
+      {
+        "title": "Holiday decorations begin appearing at Disneyland",
+        "body": "Seasonal installations are going up earlier than usual at the California resort. The timing has drawn mixed reactions from guests.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/10/12/its-officially-that-time-of-year-when-everyone-gets-mad-at-disneyland/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Early holiday decor often means lighter crowds before official event kickoffs. Visiting this week typically offers holiday atmosphere without peak-season wait times."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Spaceship Earth TV series casts lead actors for pilot",
+        "body": "The Disney+ show inspired by the EPCOT attraction has named its main cast. The pilot is currently in production.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-ordered-a-spaceship-earth-tv-show-but-do-we-really-need-it/"
+        }
+      },
+      {
+        "title": "Sleeping Beauty Castle bridge refurbishment complete at Disneyland Paris",
+        "body": "The landmark structure reopened after closing in May. Updated photos show the refreshed entrance.",
+        "parkSlug": null,
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/10/disneyland-paris-reveals-updated-sleeping-beauty-castle-bridge-jc1/"
+        }
+      },
+      {
+        "title": "Disney Believe cruise ship reveal shows new venues and dining",
+        "body": "Disney Cruise Line unveiled details about the vessel sailing in late 2027. Sneak peeks include food concepts and onboard experiences.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/dcl/meet-the-disney-believe-the-next-disney-cruise-line-ship/"
+        }
+      },
+      {
+        "title": "Cake Bake Shop adds happy hour with $11 fries at BoardWalk",
+        "body": "The restaurant introduced new pricing for afternoon hours. The fries are part of a limited-time menu.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/cake-bake-happy-hour-brings-11-fries-to-boardwalk/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "2026 holiday merchandise guide drops with gift ideas for every budget",
+        "body": "Disney released its official seasonal shopping lineup, covering toys, apparel, home goods, and collectibles. The guide includes items available both in-park and online, with exclusive pieces launching throughout the season.",
+        "parkSlug": null,
+        "ctaLabel": "See the guide",
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Holiday exclusives often vanish from shelves by Thanksgiving week. Shopping in the next two weeks usually secures first pick of limited-run items before restocks slow down."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "HdJO4DED3I4",
+      "title": "New York City 2026 | Trying NYC's BEST Pancakes, Donuts & Italian Food | New York Comic Con | Disney",
+      "channel": "Paging Mr. Morrow",
+      "publishedAt": "2026-10-11T16:59:33Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/HdJO4DED3I4/mqdefault.jpg",
+      "viewCount": 91222,
+      "url": "https://www.youtube.com/watch?v=HdJO4DED3I4",
+      "summary": "Paging Mr. Morrow explores top food destinations in New York City during Comic Con week, sampling pancakes, donuts, and Italian cuisine."
+    },
+    {
+      "videoId": "oqA_fGJsWGk",
+      "title": "🔴Live Magic Kingdom Monday with Rides, Parades, Fireworks at Walt Disney World 10/12/2026",
+      "channel": "RON ON THE GO",
+      "publishedAt": "2026-10-13T02:53:39Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/oqA_fGJsWGk/mqdefault.jpg",
+      "viewCount": 58839,
+      "url": "https://www.youtube.com/watch?v=oqA_fGJsWGk",
+      "summary": "Live stream from Magic Kingdom covering rides, parades, and nighttime fireworks on a Monday evening."
+    },
+    {
+      "videoId": "zRa763V8CkY",
+      "title": "NEW in Magic Kingdom- The Diamond Horseshoe Reopened! | Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-10-12T15:30:06Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/zRa763V8CkY/mqdefault.jpg",
+      "viewCount": 32991,
+      "url": "https://www.youtube.com/watch?v=zRa763V8CkY",
+      "summary": "Tour of the newly reopened Diamond Horseshoe dining location in Magic Kingdom's Liberty Square."
+    },
+    {
+      "videoId": "Kbrk3NpgSGc",
+      "title": "DISNEY BELIEVE REVEAL: Ultimate Scavenger Hunt at Sea! | Disney Cruise Line",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-10-07T12:12:24Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Kbrk3NpgSGc/mqdefault.jpg",
+      "viewCount": 31889,
+      "url": "https://www.youtube.com/watch?v=Kbrk3NpgSGc",
+      "summary": "Behind-the-scenes look at the Disney Believe cruise ship reveal featuring an onboard scavenger hunt activity."
+    },
+    {
+      "videoId": "QmblLmQwyZg",
+      "title": "¿Qué pasa cuando un niño se queda solo en Disneyland?",
+      "channel": "Se Me Fue La Olla",
+      "publishedAt": "2026-10-13T01:06:20Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/QmblLmQwyZg/mqdefault.jpg",
+      "viewCount": 28356,
+      "url": "https://www.youtube.com/watch?v=QmblLmQwyZg",
+      "summary": "Spanish-language video exploring what happens when a child is alone at Disneyland."
+    },
+    {
+      "videoId": "1wBH2JwCrW4",
+      "title": "Epcot Rides, Shopping, Fireworks 10/12/26  #live",
+      "channel": "That Crazy Disney Lady",
+      "publishedAt": "2026-10-12T23:23:27Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/1wBH2JwCrW4/mqdefault.jpg",
+      "viewCount": 20465,
+      "url": "https://www.youtube.com/watch?v=1wBH2JwCrW4",
+      "summary": "Live stream from EPCOT covering attractions, retail locations, and the evening fireworks spectacular."
+    },
+    {
+      "videoId": "jlH0WPduQ7Q",
+      "title": "How long can we stay in disneyland",
+      "channel": "NoCap Aryan",
+      "publishedAt": "2026-10-13T07:59:33Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/jlH0WPduQ7Q/mqdefault.jpg",
+      "viewCount": 13711,
+      "url": "https://www.youtube.com/watch?v=jlH0WPduQ7Q",
+      "summary": "Challenge video testing how long visitors can remain inside Disneyland during operating hours."
+    },
+    {
+      "videoId": "L2muX6AQoq8",
+      "title": "🔴 LIVE: Disney World — YOU Pick The Rides! Walking Tour 4K | Fun to be Free",
+      "channel": "Fun to be Free",
+      "publishedAt": "2026-10-13T03:05:21Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/L2muX6AQoq8/mqdefault.jpg",
+      "viewCount": 8634,
+      "url": "https://www.youtube.com/watch?v=L2muX6AQoq8",
+      "summary": "Interactive live stream at Disney World where viewers choose which attractions to visit next in 4K."
+    },
+    {
+      "videoId": "jhljTEy9s18",
+      "title": "dana ilysm || #fyp  #fypシ #knightsofguinevere #glitchproductions #kpop #katseye #disney #disneyland",
+      "channel": "𝔡𝔦𝔞𝔫𝔢🦇",
+      "publishedAt": "2026-10-13T01:06:19Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/jhljTEy9s18/mqdefault.jpg",
+      "viewCount": 5862,
+      "url": "https://www.youtube.com/watch?v=jhljTEy9s18",
+      "summary": "Short-form video featuring Disney and Disneyland content with music and pop culture references."
+    },
+    {
+      "videoId": "y7AgRPrB5c8",
+      "title": "🔴 LIVE EPCOT Orlando - Luminous The Symphony of Us  ⭕️  Celebrating Family, Connection & Love ❤️",
+      "channel": "Now Is The Time",
+      "publishedAt": "2026-10-13T02:05:14Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/y7AgRPrB5c8/mqdefault.jpg",
+      "viewCount": 2925,
+      "url": "https://www.youtube.com/watch?v=y7AgRPrB5c8",
+      "summary": "Live broadcast of EPCOT's Luminous nighttime spectacular celebrating connection and family."
+    }
+  ],
+  "updatedAt": "2026-10-13T10:46:40.826Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-10-13T10:46:40.827Z",
+    "tokens": {
+      "input": 11418,
+      "output": 5178,
+      "costUsd": 0.1119
+    }
+  }
+}
