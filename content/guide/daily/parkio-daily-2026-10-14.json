@@ -1,0 +1,362 @@
+{
+  "title": "Parkio Daily for October 14, 2026",
+  "slug": "parkio-daily-2026-10-14",
+  "date": "2026-10-14",
+  "teaser": "EPCOT's UK pavilion closes January 2027; Nomad Lounge adds reservations Nov 8; Six Ravens opens this weekend at Disney Springs.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Big Thunder Mountain Railroad",
+        "parkSlug": "magic-kingdom",
+        "note": "Diamond Horseshoe reopened nearby — crowds may shift to Frontierland mid-morning"
+      },
+      {
+        "name": "Soarin'",
+        "parkSlug": "epcot",
+        "note": "Festival crowds tend to arrive late morning; early windows usually shorter"
+      },
+      {
+        "name": "Radiator Springs Racers",
+        "parkSlug": "california-adventure",
+        "note": "Viva Navidad relocating — slight congestion near Paradise Gardens possible"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [
+      {
+        "title": "EPCOT's UK pavilion closing in January",
+        "body": "Rose & Crown dining room and pub will close for refurbishment starting January 2027, with Disney moving the closure date earlier than initially announced.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/10/disney-world-moves-up-rose-and-crown-closure-at-epcot-jc1/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "UK pavilion dining reservations may be easier to secure over the next few weeks as word spreads. Book soon if you want a farewell visit before the January refurb."
+        }
+      },
+      {
+        "title": "Nomad Lounge accepting reservations starting November 8",
+        "body": "Animal Kingdom's Nomad Lounge will begin taking advance reservations on November 8 and now offers a 49-dollar Annual Passholder food and drink package.",
+        "parkSlug": "animal-kingdom",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-worlds-best-in-park-lounge-adds-49-dining-deal-reservations-dessert-takeout/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Reservations likely fill fast once live. Check at 6am Eastern on November 8 if you want an afternoon drink spot during your Animal Kingdom visit."
+        }
+      }
+    ],
+    "bignews": [
+      {
+        "title": "Six Ravens restaurant opens this weekend at Disney Springs",
+        "body": "The new Six Ravens dining concept by Gideon's Bakehouse holds its grand opening this weekend after soft-opening in August, with a free collectible for early guests.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-worlds-new-six-ravens-restaurant-sets-opening-date-with-free-collectible/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Grand opening freebies tend to go quickly. Arriving at Disney Springs when it opens Saturday or Sunday usually improves your odds of snagging the collectible."
+        }
+      },
+      {
+        "title": "Diamond Horseshoe reopened at Magic Kingdom",
+        "body": "The Diamond Horseshoe venue in Liberty Square has reopened following a refurbishment, offering table service dining again.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "YouTube",
+          "url": "https://www.youtube.com/watch?v=zRa763V8CkY"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Same-day reservations may pop up in the first few days as the kitchen settles in. Check the app around 11am and 4pm for cancellations if you want to try it today."
+        }
+      },
+      {
+        "title": "Viva Navidad street party relocating at California Adventure",
+        "body": "The Viva Navidad celebration moves from the Performance Corridor to a new location for the 2026 Festival of Holidays season at Disney California Adventure.",
+        "parkSlug": "california-adventure",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/10/viva-navidad-street-party-moving-to-new-location-at-disney-california-adventure-in-2026/"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "New performance spots often cause brief bottlenecks as guests adjust. Expect heavier foot traffic near Paradise Gardens during showtimes; plan alternate routes if needed."
+        }
+      },
+      {
+        "title": "Disney Imagination cruise ship name revealed for Japan sailings",
+        "body": "Disney Cruise Line announced the name Disney Imagination for the ship launching from Tokyo in spring 2029, offering two-to-three-night cruises.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/dcl/disney-imagination-name-reveal-japan/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Booking windows for new ships typically open 18–24 months early. If you're planning a 2029 Japan trip, watch for reservations to launch in mid-2027."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "Annual Passholders get 20-percent discount at Disney Store",
+        "body": "A limited-time 20-percent discount for Walt Disney World and Disneyland Annual Passholders is now active at Disney Store locations.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/10/disney-store-announces-limited-time-annual-passholder-20-discount-in-todays-daily-recap-for-10-13-2026/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Limited-time discounts often end without notice. If you're near a Disney Store or Disney Springs today, bring your pass for the best selection before stock thins."
+        }
+      },
+      {
+        "title": "Character meet location changed at Hollywood Studios",
+        "body": "A popular character greeting has moved to a new spot inside Disney's Hollywood Studios, altering guest flow patterns.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/10/13/meeting-this-popular-character-has-changed-at-disneys-hollywood-studios/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "New meet locations sometimes post longer waits as guests search. Check the app or ask a cast member near the old spot to avoid wasting time hunting."
+        }
+      },
+      {
+        "title": "2027 Walt Disney World Marathon medals revealed",
+        "body": "Disney unveiled the medal designs for the 2027 Walt Disney World Marathon weekend races taking place in January.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/10/13/first-look-at-the-2027-walt-disney-world-marathon-medals/"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "Marathon weekend brings heavier morning crowds to Magic Kingdom and EPCOT in mid-January. If visiting then, plan rope-drop earlier than usual or shift focus to Hollywood Studios."
+        }
+      },
+      {
+        "title": "Monstropolis construction updates visible at Hollywood Studios",
+        "body": "New changes are visible at the Monstropolis construction site inside Disney's Hollywood Studios as work continues on the upcoming Monsters Inc. land.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/10/13/weve-got-2-big-monstropolis-updates-in-disney-world/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Construction noise near Animation Courtyard tends to peak late morning. Plan indoor attractions or meal breaks elsewhere if you're sensitive to jackhammer sounds."
+        }
+      },
+      {
+        "title": "Candlelight Processional dining packages now available",
+        "body": "Reservations for 2026 Candlelight Processional dining packages at EPCOT are open, pairing guaranteed show seating with meals at select World Showcase restaurants.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/candlelight-processional-dining-packages-disney-world-prices-restaurants/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Popular narrators and weekend slots typically book within days. If you want guaranteed seating, reserve this week; standby lines for the processional often stretch two hours."
+        }
+      },
+      {
+        "title": "Winnie the Pooh centennial merchandise arrives at Disneyland",
+        "body": "New Pandora charms, rings, and a snow globe celebrating Winnie the Pooh's 100th anniversary are now available at Disneyland Resort.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/10/winnie-the-pooh-pandora-charm-ring-and-snow-globe-at-disneyland-resort/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Anniversary Pandora items often sell out at park locations first. Check World of Disney in Downtown Disney early today if you're collecting the set."
+        }
+      },
+      {
+        "title": "Emperor's New Groove pins debut at Disneyland",
+        "body": "Two new limited-edition pins featuring Kuzco, Kronk, and Pacha from The Emperor's New Groove are now for sale at Disneyland Park.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/10/new-the-emperors-new-groove-pins-arrive-at-disneyland/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Limited pins can vanish within a week at high-traffic shops. Pin traders usually find the best selection at Emporium or Westward Ho before noon."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Disneyland ticket booth demolition continues",
+        "body": "Two additional original ticket booths near the Disneyland main entrance were demolished as part of the ongoing Esplanade expansion project.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/10/two-more-ticket-booths-demolished-at-disneyland-entrance-jc1/"
+        }
+      },
+      {
+        "title": "Disney and Orlando Magic extend Kia Center partnership",
+        "body": "Walt Disney World and the Orlando Magic announced a renewed sponsorship agreement and unveiled a redesigned atrium at the Kia Center arena.",
+        "parkSlug": null,
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/10/walt-disney-world-and-orlando-magic-extend-sponsorship-unveil-redesigned-kia-center-atrium-el1/"
+        }
+      },
+      {
+        "title": "McDonald's releasing Disney villain Boo Buckets",
+        "body": "McDonald's Halloween Boo Buckets return October 20 featuring Disney villains including Ursula and Maleficent instead of traditional Halloween characters.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/10/ursula-maleficent-and-more-disney-villains-featured-in-mcdonalds-halloween-boo-buckets/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "Disney Believe cruise ship details revealed for 2027",
+        "body": "Disney Cruise Line shared new food, entertainment, and venue details for the Disney Believe, launching in late 2027 with innovative onboard experiences.",
+        "parkSlug": null,
+        "ctaLabel": "Watch the reveal",
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "New ship itineraries typically appear 12–15 months ahead. If you're eyeing a 2027 or 2028 cruise, start monitoring availability this winter for the best cabin selection."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "HdJO4DED3I4",
+      "title": "New York City 2026 | Trying NYC's BEST Pancakes, Donuts & Italian Food | New York Comic Con | Disney",
+      "channel": "Paging Mr. Morrow",
+      "publishedAt": "2026-10-11T16:59:33Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/HdJO4DED3I4/mqdefault.jpg",
+      "viewCount": 109340,
+      "url": "https://www.youtube.com/watch?v=HdJO4DED3I4",
+      "summary": "Paging Mr. Morrow explores top pancake, donut, and Italian spots in New York City during Comic Con weekend."
+    },
+    {
+      "videoId": "h5lvJ9UISnY",
+      "title": "🔴 Live: 4K Oogie Boogie Bash Halloween Party at Disneyland California Adventure  - 10/13/26",
+      "channel": "Koda Bear the Explorer ",
+      "publishedAt": "2026-10-14T06:38:12Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/h5lvJ9UISnY/mqdefault.jpg",
+      "viewCount": 74527,
+      "url": "https://www.youtube.com/watch?v=h5lvJ9UISnY",
+      "summary": "A live 4K stream from Oogie Boogie Bash, the Halloween after-hours event at Disney California Adventure."
+    },
+    {
+      "videoId": "zRa763V8CkY",
+      "title": "NEW in Magic Kingdom- The Diamond Horseshoe Reopened! | Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-10-12T15:30:06Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/zRa763V8CkY/mqdefault.jpg",
+      "viewCount": 46791,
+      "url": "https://www.youtube.com/watch?v=zRa763V8CkY",
+      "summary": "WrightDownMainStreet tours the newly reopened Diamond Horseshoe restaurant in Magic Kingdom's Liberty Square."
+    },
+    {
+      "videoId": "X064NR5OoBY",
+      "title": "🔴Live Disney's Hollywood Studios to Boardwalk then Epcot Luminous at Walt Disney World 10/13/2026",
+      "channel": "RON ON THE GO",
+      "publishedAt": "2026-10-14T02:21:09Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/X064NR5OoBY/mqdefault.jpg",
+      "viewCount": 32709,
+      "url": "https://www.youtube.com/watch?v=X064NR5OoBY",
+      "summary": "A live walk from Hollywood Studios to the Boardwalk and on to EPCOT for the Luminous nighttime spectacular."
+    },
+    {
+      "videoId": "Kbrk3NpgSGc",
+      "title": "DISNEY BELIEVE REVEAL: Ultimate Scavenger Hunt at Sea! | Disney Cruise Line",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-10-07T12:12:24Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Kbrk3NpgSGc/mqdefault.jpg",
+      "viewCount": 32286,
+      "url": "https://www.youtube.com/watch?v=Kbrk3NpgSGc",
+      "summary": "WrightDownMainStreet covers the Disney Believe ship reveal, highlighting the onboard scavenger hunt experience."
+    },
+    {
+      "videoId": "3ngJAi4KUzs",
+      "title": "🔴Live: Tranquil Tuesday at Epcot - A Relaxing Evening - 10-13-26 - Walt Disney World Live Stream",
+      "channel": "ResortTV1",
+      "publishedAt": "2026-10-14T02:01:00Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/3ngJAi4KUzs/mqdefault.jpg",
+      "viewCount": 28082,
+      "url": "https://www.youtube.com/watch?v=3ngJAi4KUzs",
+      "summary": "ResortTV1 streams a relaxing evening tour of EPCOT on a quieter Tuesday night."
+    },
+    {
+      "videoId": "uHRZZQUxQV8",
+      "title": "Disney Imagination Ship Revealed! Sailing 2029🚢",
+      "channel": "Disney Parks",
+      "publishedAt": "2026-10-14T03:11:29Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/uHRZZQUxQV8/mqdefault.jpg",
+      "viewCount": 4517,
+      "url": "https://www.youtube.com/watch?v=uHRZZQUxQV8",
+      "summary": "Official Disney Parks announcement of the Disney Imagination cruise ship launching from Tokyo in 2029."
+    },
+    {
+      "videoId": "HFxdFMoSKVk",
+      "title": "🔴 LIVE  Disney World Orlando - Epcot Center -  THE FRAY Concert - Eat to the Beat - Luminous",
+      "channel": "Now Is The Time",
+      "publishedAt": "2026-10-14T02:18:40Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/HFxdFMoSKVk/mqdefault.jpg",
+      "viewCount": 4168,
+      "url": "https://www.youtube.com/watch?v=HFxdFMoSKVk",
+      "summary": "Live coverage of The Fray performing at EPCOT's Eat to the Beat concert series followed by Luminous."
+    },
+    {
+      "videoId": "7p3j20yWvIc",
+      "title": "#disney #disneyworld #disneyland",
+      "channel": "Emiliano Ochoa",
+      "publishedAt": "2026-10-14T00:00:01Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/7p3j20yWvIc/mqdefault.jpg",
+      "viewCount": 3721,
+      "url": "https://www.youtube.com/watch?v=7p3j20yWvIc",
+      "summary": "A short Disney parks video featuring clips from Disney World and Disneyland."
+    },
+    {
+      "videoId": "nVdjebk8OLg",
+      "title": "Epcot Walt Disney World Live Orlando | Hurly Burly | Hotels | IRL Night Walking",
+      "channel": "Jessiedeexx",
+      "publishedAt": "2026-10-14T09:08:54Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/nVdjebk8OLg/mqdefault.jpg",
+      "viewCount": 3267,
+      "url": "https://www.youtube.com/watch?v=nVdjebk8OLg",
+      "summary": "A live nighttime walking tour through EPCOT and nearby resort hotels in Orlando."
+    }
+  ],
+  "updatedAt": "2026-10-14T10:47:47.059Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-10-14T10:47:47.059Z",
+    "tokens": {
+      "input": 11341,
+      "output": 5471,
+      "costUsd": 0.1161
+    }
+  }
+}
