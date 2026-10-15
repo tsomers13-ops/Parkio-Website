@@ -2,6 +2,12 @@ import Link from "next/link";
 import { AppStoreCta } from "@/components/AppStoreCta";
 import { Footer } from "@/components/Footer";
 import { Navbar } from "@/components/Navbar";
+import {
+  BUTTONDOWN_EMBED_READY,
+  BUTTONDOWN_SUBSCRIBE_URL,
+  NEWSLETTER_SUBSCRIBE_CTA_ATTR,
+  buttondownEmbedAction,
+} from "@/lib/buttondown";
 
 export const metadata = {
   title: "Parkio Daily — Daily Disney park briefing in your inbox",
@@ -16,25 +22,6 @@ export const metadata = {
     url: "/newsletter",
   },
 };
-
-/**
- * Beehiiv signup configuration — three-tier ladder.
- *
- * Tier 1 — Inline iframe embed (best UX):
- *   NEXT_PUBLIC_BEEHIIV_EMBED_URL = https://embeds.beehiiv.com/{form-id}
- *   (the `src` from Beehiiv's iframe snippet; optional `?slim=true`)
- *
- * Tier 2 — Link out to Beehiiv's hosted subscribe page (interim):
- *   NEXT_PUBLIC_BEEHIIV_SUBSCRIBE_URL = https://parkio.beehiiv.com/subscribe
- *
- * Tier 3 — Neither set: render the "Parkio Daily coming soon." card.
- *
- * The page never POSTs to a Parkio API route — submission is always
- * handled by Beehiiv directly (in the iframe or on their hosted page).
- */
-const BEEHIIV_EMBED_URL = process.env.NEXT_PUBLIC_BEEHIIV_EMBED_URL ?? "";
-const BEEHIIV_SUBSCRIBE_URL =
-  process.env.NEXT_PUBLIC_BEEHIIV_SUBSCRIBE_URL ?? "";
 
 export default function NewsletterPage() {
   return (
@@ -90,29 +77,12 @@ export default function NewsletterPage() {
               on Parkio.
             </p>
 
-            {BEEHIIV_EMBED_URL ? (
-              <div className="mt-6 overflow-hidden rounded-2xl border border-ink-100 bg-white">
-                {/*
-                  Beehiiv's recommended embed: transparent background,
-                  no frame border, no internal scroll. Height is set
-                  conservatively so the form has room to render before
-                  Beehiiv reports its true height — 480px fits both the
-                  default and `?slim=true` variants without clipping.
-                */}
-                <iframe
-                  src={BEEHIIV_EMBED_URL}
-                  title="Subscribe to Parkio Daily"
-                  className="h-[480px] w-full"
-                  loading="lazy"
-                  scrolling="no"
-                  frameBorder={0}
-                  style={{ background: "transparent" }}
-                />
-              </div>
-            ) : BEEHIIV_SUBSCRIBE_URL ? (
-              <BeehiivHostedCta href={BEEHIIV_SUBSCRIBE_URL} />
+            {BUTTONDOWN_EMBED_READY ? (
+              <ButtondownEmbedForm />
+            ) : BUTTONDOWN_SUBSCRIBE_URL ? (
+              <ButtondownHostedCta href={BUTTONDOWN_SUBSCRIBE_URL} />
             ) : (
-              <BeehiivPlaceholder />
+              <ButtondownPlaceholder />
             )}
           </div>
 
@@ -182,32 +152,100 @@ export default function NewsletterPage() {
 }
 
 /**
- * Tier 2 — hosted Beehiiv subscribe page link-out. Used when the
- * iframe embed URL isn't configured but the publication's hosted
- * subscribe URL is. Opens in a new tab so the visitor doesn't lose
- * Parkio context. Submission happens entirely on Beehiiv — no Parkio
- * API route is involved.
+ * Tier 1 — Buttondown's native embeddable form, submitted directly to
+ * Buttondown's public embed-subscribe endpoint. No Parkio API route,
+ * no API key — this endpoint is designed to be public and
+ * unauthenticated, scoped only to adding an email to one publication's
+ * list.
+ *
+ * `target="_blank"` keeps the visitor on parkio.info: the form POST
+ * (and Buttondown's own confirmation response) opens in a new tab
+ * instead of navigating this page away, satisfying "keep visitors on
+ * the Parkio website during signup" without assuming Buttondown's
+ * endpoint returns a CORS-friendly response a same-page fetch() could
+ * read.
+ *
+ * Markup intentionally minimal (just an email field) to match the
+ * widely-documented standard Buttondown embed pattern. Before treating
+ * this as production-ready, compare it against the literal embed
+ * snippet in Buttondown → Settings → Grow → Embeddable form for this
+ * publication — if that snippet includes a honeypot/anti-spam hidden
+ * field or additional attributes, copy them in verbatim; that snippet
+ * is the authoritative source, not this comment.
  */
-function BeehiivHostedCta({ href }: { href: string }) {
+function ButtondownEmbedForm() {
+  return (
+    <form
+      action={buttondownEmbedAction()}
+      method="post"
+      target="_blank"
+      className="mt-6 rounded-2xl border border-ink-100 bg-white p-6 sm:p-8"
+    >
+      <p className="text-xs font-semibold uppercase tracking-widest text-accent-700">
+        Subscribe via Buttondown
+      </p>
+      <p className="mt-2 text-sm leading-relaxed text-ink-600 sm:text-base">
+        Drop your email below. Submitting opens a quick Buttondown
+        confirmation in a new tab — you can close it and come right back
+        here.
+      </p>
+      <div className="mt-4 flex flex-col gap-3 sm:flex-row sm:items-center">
+        <label htmlFor="newsletter-email" className="sr-only">
+          Email address
+        </label>
+        <input
+          id="newsletter-email"
+          type="email"
+          name="email"
+          required
+          placeholder="you@example.com"
+          autoComplete="email"
+          className="w-full flex-1 rounded-full border border-ink-200 bg-white px-4 py-3 text-sm text-ink-900 shadow-soft outline-none transition focus:border-accent-400 focus:ring-2 focus:ring-accent-100 sm:text-base"
+        />
+        <button
+          type="submit"
+          data-cta={NEWSLETTER_SUBSCRIBE_CTA_ATTR}
+          className="inline-flex items-center justify-center gap-2 rounded-full bg-ink-900 px-6 py-3 text-sm font-semibold text-white shadow-lift transition hover:bg-ink-800 sm:w-auto sm:flex-none"
+        >
+          Subscribe
+        </button>
+      </div>
+      <p className="mt-3 text-xs text-ink-500">
+        Free · No spam · Unsubscribe anytime. Check the new tab (or your
+        inbox) to confirm.
+      </p>
+    </form>
+  );
+}
+
+/**
+ * Tier 2 — hosted Buttondown subscribe page link-out. Used when the
+ * embed form isn't configured but the publication's hosted subscribe
+ * URL is. Opens in a new tab so the visitor doesn't lose Parkio
+ * context. Submission happens entirely on Buttondown — no Parkio API
+ * route is involved.
+ */
+function ButtondownHostedCta({ href }: { href: string }) {
   return (
     <div className="mt-6 rounded-2xl border border-ink-100 bg-white p-6 sm:p-8">
       <p className="text-xs font-semibold uppercase tracking-widest text-accent-700">
-        Subscribe via Beehiiv
+        Subscribe via Buttondown
       </p>
       <p className="mt-2 text-lg font-semibold tracking-tight text-ink-900 sm:text-xl">
         One quick page, then you're done.
       </p>
       <p className="mt-2 text-sm leading-relaxed text-ink-600 sm:text-base">
-        We host the form on Beehiiv directly — drop your email there and
-        the next morning's briefing lands at 6 AM Eastern.
+        We host the form on Buttondown directly — drop your email there
+        and the next morning's briefing lands at 6 AM Eastern.
       </p>
       <a
         href={href}
         target="_blank"
         rel="noopener"
+        data-cta={NEWSLETTER_SUBSCRIBE_CTA_ATTR}
         className="mt-5 inline-flex items-center gap-2 rounded-full bg-ink-900 px-5 py-3 text-sm font-semibold text-white shadow-lift transition hover:bg-ink-800"
       >
-        Subscribe on Beehiiv
+        Subscribe on Buttondown
         <svg viewBox="0 0 16 16" className="h-3.5 w-3.5" aria-hidden>
           {/* External-link arrow — signals the new-tab behavior */}
           <path
@@ -221,18 +259,19 @@ function BeehiivHostedCta({ href }: { href: string }) {
         </svg>
       </a>
       <p className="mt-3 text-xs text-ink-500">
-        Opens parkio.beehiiv.com in a new tab. Free · No spam · Unsubscribe
+        Opens a Buttondown page in a new tab. Free · No spam · Unsubscribe
         anytime.
       </p>
     </div>
   );
 }
 
-function BeehiivPlaceholder() {
-  // Shown only when NEXT_PUBLIC_BEEHIIV_EMBED_URL is missing in the
-  // environment. Deliberately renders NO form — there's no API route
-  // to accept submissions, so the safest fallback is a static card
-  // that funnels visitors into the live product instead.
+function ButtondownPlaceholder() {
+  // Shown only when neither NEXT_PUBLIC_BUTTONDOWN_USERNAME nor
+  // NEXT_PUBLIC_BUTTONDOWN_SUBSCRIBE_URL is set. Deliberately renders
+  // NO form — there's no verified Buttondown identifier to submit to,
+  // so the safest fallback is a static card that funnels visitors into
+  // the live product instead.
   return (
     <div className="mt-6 rounded-2xl border border-ink-100 bg-white p-6 sm:p-8">
       <p className="text-xs font-semibold uppercase tracking-widest text-accent-700">
