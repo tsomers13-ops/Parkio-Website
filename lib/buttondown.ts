@@ -27,15 +27,16 @@
  *      link out to Buttondown's hosted subscribe page.
  *   3. Neither set → configuration-pending placeholder, no form.
  *
- * IMPORTANT before enabling in production: the embed <form> below
- * targets Buttondown's standard public, unauthenticated
- * embed-subscribe endpoint (https://buttondown.email/api/emails/embed-subscribe/{username}),
- * which is the widely-documented pattern and requires no API key. But
- * verify the exact markup (field names, any honeypot/anti-spam hidden
- * field Buttondown's dashboard asks you to include) against the real
- * embed snippet from Buttondown → Settings → Grow → Embeddable form for
- * this specific publication before treating it as production-ready —
- * that snippet is the authoritative source, not this file.
+ * The embed <form> targets Buttondown's documented public,
+ * unauthenticated embed-subscribe endpoint on their buttondown.com
+ * domain (https://buttondown.com/api/emails/embed-subscribe/{username})
+ * — requires no API key. Verified 2026-10-15 directly against Buttondown's
+ * current docs (docs.buttondown.com/building-your-subscriber-base) and
+ * the live https://buttondown.com/somers publication (title "Parkio
+ * Daily", matching description). Their documented snippet also requires
+ * a hidden `embed=1` field alongside the email input — see
+ * BUTTONDOWN_EMBED_HIDDEN_FIELD_NAME/_VALUE below, used by the form in
+ * app/newsletter/page.tsx.
  */
 export const BUTTONDOWN_USERNAME: string =
   process.env.NEXT_PUBLIC_BUTTONDOWN_USERNAME ?? "";
@@ -58,8 +59,18 @@ export const BUTTONDOWN_READY: boolean =
  * Only meaningful when BUTTONDOWN_EMBED_READY is true.
  */
 export function buttondownEmbedAction(): string {
-  return `https://buttondown.email/api/emails/embed-subscribe/${BUTTONDOWN_USERNAME}`;
+  return `https://buttondown.com/api/emails/embed-subscribe/${BUTTONDOWN_USERNAME}`;
 }
+
+/**
+ * Buttondown's documented embed form requires this hidden field
+ * alongside the email input (docs.buttondown.com/building-your-subscriber-base,
+ * "Embedding an HTML form" — every example snippet includes it). Named
+ * constants, not inline JSX literals, so a test can assert on them
+ * directly without re-typing magic strings.
+ */
+export const BUTTONDOWN_EMBED_HIDDEN_FIELD_NAME = "embed" as const;
+export const BUTTONDOWN_EMBED_HIDDEN_FIELD_VALUE = "1" as const;
 
 /**
  * Tracking attribute on the subscribe form's submit button, matching

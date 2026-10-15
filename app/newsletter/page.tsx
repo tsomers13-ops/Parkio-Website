@@ -3,6 +3,8 @@ import { AppStoreCta } from "@/components/AppStoreCta";
 import { Footer } from "@/components/Footer";
 import { Navbar } from "@/components/Navbar";
 import {
+  BUTTONDOWN_EMBED_HIDDEN_FIELD_NAME,
+  BUTTONDOWN_EMBED_HIDDEN_FIELD_VALUE,
   BUTTONDOWN_EMBED_READY,
   BUTTONDOWN_SUBSCRIBE_URL,
   NEWSLETTER_SUBSCRIBE_CTA_ATTR,
@@ -160,18 +162,21 @@ export default function NewsletterPage() {
  *
  * `target="_blank"` keeps the visitor on parkio.info: the form POST
  * (and Buttondown's own confirmation response) opens in a new tab
- * instead of navigating this page away, satisfying "keep visitors on
- * the Parkio website during signup" without assuming Buttondown's
- * endpoint returns a CORS-friendly response a same-page fetch() could
- * read.
+ * instead of navigating this page away. Buttondown's own docs
+ * explicitly warn against submitting this endpoint via fetch() instead
+ * — subscribers sometimes need to follow the response to complete a
+ * CAPTCHA or fix a validation error — so a plain <form> POST (not an
+ * AJAX call) is the documented-correct approach here, not a shortcut.
  *
- * Markup intentionally minimal (just an email field) to match the
- * widely-documented standard Buttondown embed pattern. Before treating
- * this as production-ready, compare it against the literal embed
- * snippet in Buttondown → Settings → Grow → Embeddable form for this
- * publication — if that snippet includes a honeypot/anti-spam hidden
- * field or additional attributes, copy them in verbatim; that snippet
- * is the authoritative source, not this comment.
+ * Markup — action URL, method, the hidden embed=1 field, and the email
+ * field's name — verified 2026-10-15 directly against Buttondown's
+ * current docs (docs.buttondown.com/building-your-subscriber-base,
+ * "Embedding an HTML form") and the live publication at
+ * buttondown.com/somers. Buttondown also offers a pre-styled iframe
+ * embed (`?as_embed=true`) that keeps the visitor fully on-page with
+ * zero new tab — checked and deliberately not used here, since it
+ * can't be restyled to match Parkio's design system from the embedding
+ * page, which this form can.
  */
 function ButtondownEmbedForm() {
   return (
@@ -189,6 +194,11 @@ function ButtondownEmbedForm() {
         confirmation in a new tab — you can close it and come right back
         here.
       </p>
+      <input
+        type="hidden"
+        name={BUTTONDOWN_EMBED_HIDDEN_FIELD_NAME}
+        value={BUTTONDOWN_EMBED_HIDDEN_FIELD_VALUE}
+      />
       <div className="mt-4 flex flex-col gap-3 sm:flex-row sm:items-center">
         <label htmlFor="newsletter-email" className="sr-only">
           Email address
