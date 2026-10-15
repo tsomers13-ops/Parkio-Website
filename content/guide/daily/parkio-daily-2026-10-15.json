@@ -1,0 +1,349 @@
+{
+  "title": "Parkio Daily for October 15, 2026",
+  "slug": "parkio-daily-2026-10-15",
+  "date": "2026-10-15",
+  "teaser": "Test Track's single-rider line closed at EPCOT; Rose & Crown starts long refurb soon; Diamond Horseshoe now open as Magic Kingdom lounge.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Space Mountain",
+        "parkSlug": "magic-kingdom",
+        "note": "Early morning waits typically under 25 minutes"
+      },
+      {
+        "name": "Soarin'",
+        "parkSlug": "epcot",
+        "note": "Test Track changes may shift crowds here"
+      },
+      {
+        "name": "Tower of Terror",
+        "parkSlug": "hollywood-studios",
+        "note": "Lightest waits before 11am"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [
+      {
+        "title": "Test Track closes single-rider line at EPCOT",
+        "body": "Cast members stopped accepting guests in Test Track's single-rider queue yesterday without advance notice. Disney filed an electrical work permit for the attraction and may be testing a permanent shift in operations.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/10/test-track-single-rider-line-closed-at-epcot-jc1/"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "Test Track standby waits will likely run 10–20 minutes longer without the single-rider bypass absorbing capacity. Lightning Lane or rope-drop arrival usually offers the shortest waits today."
+        }
+      },
+      {
+        "title": "Rose & Crown table-service closing for extended refurbishment in 2027",
+        "body": "EPCOT's Rose & Crown Dining Room has added a closure warning for a lengthy refurbishment next year. A summer 2027 reopening date appears in recent construction permits filed by Walt Disney World.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/rose-crown-closing-for-refurbishment-until-later-in-2027-permit-suggests-summer-reopening/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Book Rose & Crown reservations for late 2026 or early 2027 now if you want one last meal before the shutdown. Availability will likely tighten as the closure date nears."
+        }
+      }
+    ],
+    "bignews": [
+      {
+        "title": "Diamond Horseshoe reopens as walk-up lounge in Magic Kingdom",
+        "body": "The Liberty Square venue has returned as a table-service lounge serving drinks and appetizers. Guests can now walk in without reservations during park hours.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/10/14/this-is-the-perfect-time-to-visit-the-new-diamond-horseshoe-lounge-at-magic-kingdom/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Lounge seating tends to fill during parade and fireworks windows. Midafternoon visits between 2–4pm often offer immediate seating and a quieter atmosphere."
+        }
+      },
+      {
+        "title": "Six Ravens opens at Disney Springs this weekend",
+        "body": "The newest table-service restaurant holds its grand opening October 17–18. The venue joins the West Side lineup with a menu focused on contemporary American fare.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/10/14/the-newest-restaurant-at-disney-springs-is-having-its-grand-opening-this-weekend/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Opening-weekend crowds at Disney Springs restaurants often mean long waits even with reservations. Visiting Monday or later in the week usually offers smoother service and shorter entry times."
+        }
+      },
+      {
+        "title": "Disney Imagination cruise ship name revealed for Japan sailings",
+        "body": "Disney Cruise Line announced the ship sailing from Tokyo starting spring 2029 will be called Disney Imagination. The vessel will be the first DCL ship homeported in Japan, operating in partnership with Oriental Land Company.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/dcl/disney-imagination-name-reveal-japan/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Booking windows for inaugural sailings typically open 18–24 months in advance and sell out quickly. Setting alerts for early 2028 reservation dates may help secure cabins."
+        }
+      },
+      {
+        "title": "Grand Floridian's new entrance road opens October 19",
+        "body": "Disney confirmed the resort's rebuilt entrance will debut this weekend, ending months of construction detours. The roadway connects the monorail station and main lobby with improved guest drop-off areas.",
+        "parkSlug": null,
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/10/disney-confirms-new-grand-floridian-entrance-opens-october-19-el1/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Rideshare and bus arrivals at Grand Floridian will likely move faster starting Saturday. Monorail transfers to Magic Kingdom may also see shorter walking times with the new path."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "Winnie the Pooh 100th anniversary merchandise arrives at parks",
+        "body": "New products celebrating the character's centennial launched yesterday across Walt Disney World and Disneyland shops. The collection includes apparel, plush, home goods, and accessories featuring classic Hundred Acre Wood designs.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/products/new-winnie-the-pooh-anniversary-products/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Limited-edition anniversary items often sell out within the first week at flagship stores like Emporium and World of Disney. Shopping before noon today usually offers the widest selection."
+        }
+      },
+      {
+        "title": "Lorcana card release at Disney Springs uses virtual queue Saturday",
+        "body": "The October 18 drop of new Lorcana trading cards will require a virtual queue for entry to participating shops. Disney Springs announced the system to manage expected crowds at the West Side location.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/10/14/new-virtual-queue-announced-for-disney-springs/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Virtual queue slots for high-demand collectibles tend to fill within minutes of opening. Arriving at Disney Springs before 9am Saturday and joining the queue immediately may improve your chances."
+        }
+      },
+      {
+        "title": "Haunted Mansion Holiday trading cards exclusive to Disneyland Magic Key holders",
+        "body": "Disneyland confirmed special Haunted Mansion Holiday collectible cards will only be distributed to Annual Passholders during the seasonal overlay. The limited offering begins this week at the attraction exit.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/10/haunted-mansion-holiday-trading-cards-for-disneyland-magic-key-holders-jc1/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Magic Key holders riding Haunted Mansion in the first few days after the cards debut usually secure the full set before supplies run low. Evening ride windows often have shorter waits."
+        }
+      },
+      {
+        "title": "Grand Californian pool area removes scaffolding after reopening",
+        "body": "The Disneyland resort hotel has cleared construction barriers around its front pool following a refurbishment. Some walls remain in place for ongoing exterior work on the building facade.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/10/disneys-grand-californian-hotel-removes-scaffolding-most-construction-walls-around-reopened-pool/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Resort pool areas tend to be quietest during morning park hours when most guests are at Disneyland or California Adventure. Midday returns often offer better lounge availability."
+        }
+      },
+      {
+        "title": "Disneyland's plaid and velvet Christmas merchandise collection available now",
+        "body": "Holiday-themed apparel and accessories featuring red plaid and velvet fabrics launched at Disneyland shops. The 2026 line includes sweatshirts, ornaments, and home decor with festive patterns.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/10/full-list-with-prices-of-2026-plaid-velvet-christmas-collection-at-disneyland/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Seasonal apparel in popular sizes tends to sell out before Thanksgiving week. Shopping at Emporium or World of Disney early in the collection launch usually ensures the best size and color options."
+        }
+      },
+      {
+        "title": "New character-themed sweatshirts arrive at Disneyland",
+        "body": "Disneyland merchandise locations now stock hoodies and crewnecks featuring The Mandalorian, Scrooge McDuck, and Toy Story Aliens. Prices range from $60 to $70 per item.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/10/cozy-up-with-new-mandalorian-scrooge-mcduck-and-toy-story-aliens-sweatshirts-at-disneyland-resort/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Character apparel linked to current shows or films often moves quickly at main shops. Checking inventory at Star Trader or World of Disney during morning hours may offer better stock availability."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Magic Kingdom adds new baseball cap designs",
+        "body": "Main Street shops now carry Pascal-themed and Pizza Planet-style hats, plus Minnie bow designs. The unstructured caps retail for around $33 each.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/10/perturbed-pascal-minnie-bows-and-pizza-planet-ball-caps-at-walt-disney-world/"
+        }
+      },
+      {
+        "title": "Disney Believe cruise ship details shared for 2027 launch",
+        "body": "Disney Cruise Line released updates on the Disney Believe, set to sail in late 2027. The ship will feature new dining venues and entertainment concepts inspired by recent Disney films and characters.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/dcl/meet-the-disney-believe-the-next-disney-cruise-line-ship/"
+        }
+      },
+      {
+        "title": "Candlelight Processional dining packages booking fast for 2026",
+        "body": "Advance reservations for EPCOT's holiday storytelling event are nearly sold out for late November and December. Some party sizes and restaurant options remain available through periodic cancellations.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/how-to-find-availability-for-sold-out-candlelight-processorial-dining-package-reservations/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "Haunted Mansion Holiday gingerbread house construction underway at Disneyland",
+        "body": "Imagineering shared behind-the-scenes footage of carpenters building the ballroom centerpiece that anchors the seasonal overlay. The structure begins as a wood frame before receiving edible decorations and animatronic elements.",
+        "parkSlug": "disneyland",
+        "ctaLabel": "Watch the build process",
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "The gingerbread display typically draws the heaviest photo crowds during evening hours near the ride exit. Riding Haunted Mansion in the first 90 minutes after park opening usually allows a closer look with fewer guests blocking the view."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "HdJO4DED3I4",
+      "title": "New York City 2026 | Trying NYC's BEST Pancakes, Donuts & Italian Food | New York Comic Con | Disney",
+      "channel": "Paging Mr. Morrow",
+      "publishedAt": "2026-10-11T16:59:33Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/HdJO4DED3I4/mqdefault.jpg",
+      "viewCount": 121121,
+      "url": "https://www.youtube.com/watch?v=HdJO4DED3I4",
+      "summary": "Paging Mr. Morrow explores New York City's top food spots and visits New York Comic Con, with Disney connections featured throughout the trip."
+    },
+    {
+      "videoId": "zRa763V8CkY",
+      "title": "NEW in Magic Kingdom- The Diamond Horseshoe Reopened! | Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-10-12T15:30:06Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/zRa763V8CkY/mqdefault.jpg",
+      "viewCount": 54255,
+      "url": "https://www.youtube.com/watch?v=zRa763V8CkY",
+      "summary": "A walkthrough tour of the newly reopened Diamond Horseshoe lounge at Magic Kingdom, showing the venue's updated layout and offerings."
+    },
+    {
+      "videoId": "YSvTv_RfrOY",
+      "title": "Eating lunch at Space 220! #foodie #disney #lunch #epcot #snacks #disneyworld #vacation",
+      "channel": "Sarah Kraffty",
+      "publishedAt": "2026-10-14T23:57:55Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/YSvTv_RfrOY/mqdefault.jpg",
+      "viewCount": 22082,
+      "url": "https://www.youtube.com/watch?v=YSvTv_RfrOY",
+      "summary": "A quick dining experience at EPCOT's Space 220 restaurant, showcasing lunch menu items and the themed atmosphere."
+    },
+    {
+      "videoId": "aySURGMQDEU",
+      "title": "🔴 LIVE: Happily Ever After Fireworks Full Show 4K | Disney World Orlando Live – Fun to be Free",
+      "channel": "Fun to be Free",
+      "publishedAt": "2026-10-15T03:48:19Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/aySURGMQDEU/mqdefault.jpg",
+      "viewCount": 10844,
+      "url": "https://www.youtube.com/watch?v=aySURGMQDEU",
+      "summary": "A live 4K broadcast of the complete Happily Ever After fireworks show from Magic Kingdom."
+    },
+    {
+      "videoId": "VMInC1JJ_8s",
+      "title": "🔴 LIVE Disney World Orlando -  Animal Kingdom - Park Hop to Hollywood / EPCOT  🎸 STARSHIP",
+      "channel": "Now Is The Time",
+      "publishedAt": "2026-10-15T02:36:22Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/VMInC1JJ_8s/mqdefault.jpg",
+      "viewCount": 8829,
+      "url": "https://www.youtube.com/watch?v=VMInC1JJ_8s",
+      "summary": "A live park-hopping stream starting at Animal Kingdom and moving through Hollywood Studios and EPCOT during an evening visit."
+    },
+    {
+      "videoId": "6TWDxqch4XA",
+      "title": "🔴Live: Food & Wine Night at EPCOT! - Rides & Festival Fun - Disney World Livestream",
+      "channel": "GooToYou!",
+      "publishedAt": "2026-10-15T01:33:31Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/6TWDxqch4XA/mqdefault.jpg",
+      "viewCount": 7786,
+      "url": "https://www.youtube.com/watch?v=6TWDxqch4XA",
+      "summary": "A live evening stream exploring EPCOT's Food & Wine Festival booths and attractions during the special event."
+    },
+    {
+      "videoId": "jnakFkNjjl4",
+      "title": "Fried Chicken Waffle Bowls? Count us In at Hollywood Studios Quickserve: Fairfax Fare",
+      "channel": "Theme Park Comedians",
+      "publishedAt": "2026-10-14T23:00:05Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/jnakFkNjjl4/mqdefault.jpg",
+      "viewCount": 2459,
+      "url": "https://www.youtube.com/watch?v=jnakFkNjjl4",
+      "summary": "A food review of fried chicken waffle bowls and other menu items at Fairfax Fare quick-service in Hollywood Studios."
+    },
+    {
+      "videoId": "LSWYmw7wTlc",
+      "title": "3 strict rules Disney cast members have to follow! #shorts #disney #disneyland",
+      "channel": "Kayzen",
+      "publishedAt": "2026-10-15T01:05:34Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/LSWYmw7wTlc/mqdefault.jpg",
+      "viewCount": 1828,
+      "url": "https://www.youtube.com/watch?v=LSWYmw7wTlc",
+      "summary": "A short video highlighting three specific rules that Disney cast members must follow while working at the parks."
+    },
+    {
+      "videoId": "XUWzHA36GP4",
+      "title": "Disney Princesses Must Follow These STRANGE Rules! 😳👑 #disneyland #disney #shorts #shortvideo",
+      "channel": "Dreamland Moments",
+      "publishedAt": "2026-10-15T03:00:37Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/XUWzHA36GP4/mqdefault.jpg",
+      "viewCount": 1606,
+      "url": "https://www.youtube.com/watch?v=XUWzHA36GP4",
+      "summary": "A brief look at unusual guidelines that Disney princess character performers must observe during park appearances."
+    },
+    {
+      "videoId": "OCzYX6DGzco",
+      "title": "🐶🐶 #MaduRosa  #makeup #dublagemdeboche #funny #love #disney #disneyland",
+      "channel": "Madu Rosa",
+      "publishedAt": "2026-10-14T23:00:06Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/OCzYX6DGzco/mqdefault.jpg",
+      "viewCount": 1531,
+      "url": "https://www.youtube.com/watch?v=OCzYX6DGzco",
+      "summary": "A comedic makeup and voiceover video with Disney and Disneyland themes from creator Madu Rosa."
+    }
+  ],
+  "updatedAt": "2026-10-15T10:47:32.174Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-10-15T10:47:32.174Z",
+    "tokens": {
+      "input": 11192,
+      "output": 5502,
+      "costUsd": 0.1161
+    }
+  }
+}
