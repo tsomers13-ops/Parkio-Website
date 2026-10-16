@@ -84,8 +84,23 @@ jobs:
     # Public browser credential (CARTO documents it in client-side Leaflet
     # examples) — it ships in the bundle by design. It is a GitHub secret so
     # the value is not committed, not so it stays hidden from visitors.
+    #
+    # NEXT_PUBLIC_BUTTONDOWN_USERNAME is a GitHub Actions *variable*
+    # (`vars`), not a secret — the Buttondown username ("somers") is public
+    # (it's the whole second half of the publication's own URL,
+    # buttondown.com/somers) and ships in the bundle the same way CARTO's
+    # key does, so secrecy would add no protection, only one more value to
+    # rotate for no reason. `vars.*` is read from the `production`
+    # Environment configured above (falling back to the repository's vars
+    # if unset there), the same place the secrets above live — see
+    # docs/AUTOMATION.md's "Updating the /newsletter page" section for how
+    # to set it. This is a REPO/GITHUB-level setting, separate from — and
+    # not satisfied by — any environment variable set in the Cloudflare
+    # dashboard: Cloudflare's own dashboard vars are never visible to this
+    # GitHub Actions job, which is a fully different build environment.
     env:
       NEXT_PUBLIC_CARTO_API_KEY: ${{ secrets.NEXT_PUBLIC_CARTO_API_KEY }}
+      NEXT_PUBLIC_BUTTONDOWN_USERNAME: ${{ vars.NEXT_PUBLIC_BUTTONDOWN_USERNAME }}
 
     steps:
       - name: Check out the exact commit
@@ -148,6 +163,24 @@ jobs:
             exit 1
           fi
           echo "NEXT_PUBLIC_CARTO_API_KEY is configured (value not shown)."
+
+      - name: Require Buttondown configuration
+        # Same fail-closed, fail-early reasoning as the basemap check above,
+        # for the same reason it was added: without this, the build and
+        # deploy both succeed, tests stay green, and the newsletter silently
+        # keeps showing its "coming soon" placeholder forever because
+        # BUTTONDOWN_READY (lib/buttondown.ts) is only ever false when this
+        # value never reached the build. Not a secret — see the env: block
+        # above — so the value itself is safe to print, but the check still
+        # only reports presence/absence for a uniform pattern with the
+        # neighboring secret check and to keep this step's output
+        # meaningful even if the variable is later changed to a secret.
+        run: |
+          if [ -z "$(printf %s "${NEXT_PUBLIC_BUTTONDOWN_USERNAME:-}" | tr -d '[:space:]')" ]; then
+            echo "::error::NEXT_PUBLIC_BUTTONDOWN_USERNAME is not set. Next inlines NEXT_PUBLIC_* at build time, so this build would ship a Worker whose /newsletter page silently falls back to its configuration-pending placeholder. Set it as a repository or 'production' environment variable (Settings -> Secrets and variables -> Actions -> Variables) and re-run — see docs/AUTOMATION.md."
+            exit 1
+          fi
+          echo "NEXT_PUBLIC_BUTTONDOWN_USERNAME is configured (value not shown)."
 
       - name: Next build
         run: npm run build
