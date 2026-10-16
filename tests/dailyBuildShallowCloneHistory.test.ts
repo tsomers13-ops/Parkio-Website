@@ -33,7 +33,20 @@ describe("Daily build checkout depth — must not misattribute an existing file 
   beforeEach(() => {
     tmp = fs.mkdtempSync(path.join(os.tmpdir(), "daily-shallow-clone-"));
     origin = path.join(tmp, "origin.git");
-    execFileSync("git", ["init", "--bare", origin]);
+    // -b main pins the bare repo's own HEAD symbolic-ref to "main"
+    // explicitly. Without it, HEAD follows the ambient git installation's
+    // init.defaultBranch — "main" on a dev machine configured that way,
+    // but still the historical "master" on GitHub Actions' Ubuntu
+    // runners. The commits below are always pushed to a ref literally
+    // named "main" (HEAD:main), so an unpinned bare repo whose own HEAD
+    // defaults to "master" ends up pointing at a branch with zero
+    // commits — any later `git clone` of it (with no branch given)
+    // checks out that empty "master" and `git log` fails with "your
+    // current branch 'master' does not have any commits yet", which has
+    // nothing to do with the shallow-vs-full-clone behavior this test
+    // exists to cover. Found via a real GitHub Actions run (38953080532)
+    // where this is exactly what happened.
+    execFileSync("git", ["init", "--bare", "-b", "main", origin]);
 
     const seed = path.join(tmp, "seed");
     execFileSync("git", ["clone", origin, seed]);
