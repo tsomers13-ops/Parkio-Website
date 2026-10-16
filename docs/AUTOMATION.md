@@ -376,20 +376,41 @@ version used:
 
 1. `NEXT_PUBLIC_BUTTONDOWN_USERNAME` set → the page renders a native
    `<form>` posting to Buttondown's public embed-subscribe endpoint
-   (`https://buttondown.email/api/emails/embed-subscribe/{username}`).
+   (`https://buttondown.com/api/emails/embed-subscribe/{username}`).
    No API key — that endpoint is public and unauthenticated by design,
    scoped only to adding an email to this one publication. The form
    targets a new tab (`target="_blank"`) so the visitor's Parkio tab
    never navigates away.
 2. `NEXT_PUBLIC_BUTTONDOWN_SUBSCRIBE_URL` set (and no username) → a
    link-out button to Buttondown's hosted subscribe page instead.
-3. Neither set → a static "coming soon" card, no form. **This is what
-   ships today** — the real Buttondown username was not available
-   when this was implemented (checked everywhere in this repo and its
-   git history; nothing in the codebase ever recorded it), so it was
-   deliberately left unset rather than guessed. Set
-   `NEXT_PUBLIC_BUTTONDOWN_USERNAME` (or `..._SUBSCRIBE_URL`) in
-   Cloudflare Pages to go live — no further code change needed.
+3. Neither set → a static "coming soon" card, no form.
+
+The real publication is confirmed live at `https://buttondown.com/somers`
+("Parkio Daily") — verified directly against it and against Buttondown's
+own current docs (docs.buttondown.com/building-your-subscriber-base).
+Markup (action URL, method, the hidden `embed=1` field, the email
+field's name) was checked against that publication, not guessed.
+
+### Where to actually set `NEXT_PUBLIC_BUTTONDOWN_USERNAME`
+
+**Not Cloudflare Pages** — production is a Cloudflare Worker, deployed
+by `.github/workflows/workers-production.yml` (see "Email delivery
+setup" above for how that differs from Pages). `NEXT_PUBLIC_*` values
+are inlined by Next.js **at build time**, and that build runs inside
+the GitHub Actions job, not inside Cloudflare — so this has to be a
+**GitHub Actions configuration variable**, not anything set in any
+Cloudflare dashboard. A value set there is simply never visible to the
+job that compiles the bundle.
+
+Set it at GitHub → this repo → Settings → Secrets and variables →
+Actions → **Variables** tab (not Secrets — the username is public, the
+same reasoning `NEXT_PUBLIC_CARTO_API_KEY` ships in the bundle by
+design) → either repository-level or scoped to the `production`
+Environment, matching where the Cloudflare secrets already live. The
+workflow reads it as `${{ vars.NEXT_PUBLIC_BUTTONDOWN_USERNAME }}` and
+fails the build closed, before the expensive Next/OpenNext steps run,
+if it's missing — see the "Require Buttondown configuration" step,
+right next to the equivalent basemap-configuration check it mirrors.
 
 Before relying on the embed form in production, compare its markup
 against the literal snippet in Buttondown → Settings → Grow →
