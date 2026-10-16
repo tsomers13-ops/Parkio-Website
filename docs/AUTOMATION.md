@@ -367,13 +367,40 @@ To swap to a different email service later (ConvertKit, Resend with a
 custom poller, etc.): point the new service at `/feed.xml`. No changes
 to the website or n8n required.
 
-## Updating the `/newsletter` page
+## The `/newsletter` page's signup form
 
-The page currently embeds Beehiiv's subscribe form via
-`NEXT_PUBLIC_BEEHIIV_EMBED_URL`. Once Buttondown is the canonical
-delivery service, swap to Buttondown's hosted subscribe form. Add a
-`NEXT_PUBLIC_BUTTONDOWN_EMBED_URL` env var in Cloudflare Pages, and
-update `app/newsletter/page.tsx` to read it.
+`app/newsletter/page.tsx` (config in `lib/buttondown.ts`) submits
+directly to Buttondown — the Beehiiv integration this section used to
+describe was replaced. Three-tier ladder, same shape the Beehiiv
+version used:
+
+1. `NEXT_PUBLIC_BUTTONDOWN_USERNAME` set → the page renders a native
+   `<form>` posting to Buttondown's public embed-subscribe endpoint
+   (`https://buttondown.email/api/emails/embed-subscribe/{username}`).
+   No API key — that endpoint is public and unauthenticated by design,
+   scoped only to adding an email to this one publication. The form
+   targets a new tab (`target="_blank"`) so the visitor's Parkio tab
+   never navigates away.
+2. `NEXT_PUBLIC_BUTTONDOWN_SUBSCRIBE_URL` set (and no username) → a
+   link-out button to Buttondown's hosted subscribe page instead.
+3. Neither set → a static "coming soon" card, no form. **This is what
+   ships today** — the real Buttondown username was not available
+   when this was implemented (checked everywhere in this repo and its
+   git history; nothing in the codebase ever recorded it), so it was
+   deliberately left unset rather than guessed. Set
+   `NEXT_PUBLIC_BUTTONDOWN_USERNAME` (or `..._SUBSCRIBE_URL`) in
+   Cloudflare Pages to go live — no further code change needed.
+
+Before relying on the embed form in production, compare its markup
+against the literal snippet in Buttondown → Settings → Grow →
+Embeddable form for this publication — if Buttondown's own snippet
+includes a honeypot/anti-spam hidden field or other attributes this
+implementation doesn't have, add them from that snippet, which is the
+authoritative source.
+
+This only touches who can *subscribe* — it has no effect on the
+RSS-to-Email delivery pipeline described above, which keeps working
+(or not) exactly as it already does, independent of this page.
 
 ## GitHub setup
 
