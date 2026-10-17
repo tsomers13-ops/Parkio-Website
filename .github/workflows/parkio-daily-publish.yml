@@ -304,10 +304,19 @@ jobs:
         # behind any extra file introduced by an unreviewed commit between
         # the baseline and the candidate. A full checkout with no pathspec
         # removes/adds/modifies as needed to match the baseline tree
-        # exactly — verified empirically before relying on it here. Only
-        # then do we layer on the specific Daily files the earlier step
-        # allow-listed; nothing else from ${{ inputs.sha }} (or from main)
-        # is ever pulled in.
+        # exactly — verified empirically before relying on it here.
+        #
+        # The Daily-file overlay itself is delegated to
+        # composeValidatedHistory.mjs rather than diffing just
+        # ${{ inputs.sha }} against its own parent: that single-commit diff
+        # silently dropped any earlier validated Daily publish that wasn't
+        # itself the latest candidate (a missed-day publish, two
+        # content-only publishes back to back, or a baseline that jumps
+        # forward past several already-validated commits). The helper
+        # walks every commit between the baseline and the candidate and
+        # fails closed on any one of them that mutates a Daily-shaped path
+        # without passing the same author+allowlist validation used
+        # everywhere else in this workflow — see that script's header.
         run: |
           baseline="${{ steps.baseline.outputs.baseline }}"
           git checkout "$baseline"
@@ -319,28 +328,21 @@ jobs:
           # Verified empirically that this exclusion still catches a
           # genuine stray file anywhere else in the tree.
           [ -z "$(git status --short -- . ':(exclude)tooling')" ] || { echo "::error::Working tree not clean after baseline checkout — refusing to proceed."; exit 1; }
-          # Captured via command substitution, NOT piped directly into
-          # grep/sed: GitHub Actions' default shell is `bash -e` WITHOUT
-          # `pipefail`, so a pipeline's exit status is only the LAST
-          # command's (sed, which virtually always succeeds even on
-          # empty input) — a crash in validatePublishCandidate.mjs
-          # itself would otherwise be silently swallowed here, composing
-          # an incomplete publish tree (missing the Daily content
-          # overlay) while still reporting this step as successful. This
-          # exact validator call already succeeded once earlier in this
-          # job ("Validate this is an authorized Daily content update"),
-          # so a failure here should be close to impossible — which is
-          # exactly why it must not be allowed to fail silently if it
-          # ever does.
-          validation_output="$(node tooling/scripts/parkio-daily/validatePublishCandidate.mjs "${{ inputs.sha }}" 2>&1)" || {
-            echo "::error::validatePublishCandidate.mjs failed unexpectedly while composing the publish tree, despite already passing once earlier in this job. Refusing to proceed with a possibly-incomplete tree. Output: $validation_output"
+          # Captured via command substitution, NOT piped directly into a
+          # loop: GitHub Actions' default shell is `bash -e` WITHOUT
+          # `pipefail`, so a failure here must not be allowed to go
+          # unnoticed just because a later command in a pipeline would
+          # still succeed.
+          overlay_output="$(node tooling/scripts/parkio-daily/composeValidatedHistory.mjs "$baseline" "${{ inputs.sha }}" 2>&1)" || {
+            echo "::error::composeValidatedHistory.mjs failed — refusing to proceed with a possibly-incomplete or unvalidated tree. Output: $overlay_output"
             exit 1
           }
-          echo "$validation_output" | grep -E '^  content/' | sed 's/^  //' > /tmp/daily_paths.txt
-          while IFS= read -r p; do
-            echo "Applying $p from ${{ inputs.sha }}"
-            git checkout "${{ inputs.sha }}" -- "$p"
-          done < /tmp/daily_paths.txt
+          echo "$overlay_output" > /tmp/daily_overlay.txt
+          while IFS=' ' read -r sha p; do
+            [ -z "$sha" ] && continue
+            echo "Applying $p from $sha"
+            git checkout "$sha" -- "$p"
+          done < /tmp/daily_overlay.txt
 
       - name: Reinstall dependencies to match the approved baseline
         # The earlier "Install" step ran `npm ci` against the Daily
