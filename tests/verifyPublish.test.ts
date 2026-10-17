@@ -96,6 +96,23 @@ describe("checkPublish", () => {
     ]);
   });
 
+  it("fails on a non-200 feed response even if its body happens to contain the expected slug", async () => {
+    await startServer(true);
+    const result = await checkPublish(SLUG, {
+      siteUrl: baseUrl,
+      now: NOW,
+      fetchFn: async (url, init) => {
+        const response = await fetch(url, init);
+        if (String(url).endsWith("/feed.xml")) {
+          return new Response(await response.text(), { status: 503 });
+        }
+        return response;
+      },
+    });
+    expect(result.ok).toBe(false);
+    expect(result.failures).toContain("feed.xml returned 503");
+  });
+
   it("warns (does not fail) when lastBuildDate doesn't match today, same as the original warning-only check", async () => {
     await startServer(true);
     const wrongDay = new Date("2026-10-16T15:00:00Z");
@@ -204,6 +221,28 @@ describe("verifyPublishWithRetries", () => {
     // converted to ms — proves the real schedule values were used, not
     // just that retrying happened.
     expect(sleepCalls).toEqual([5000, 10000]);
+  });
+
+  it("retries a transient fetch exception instead of aborting the verification loop", async () => {
+    await startFlakyFeedServer(1);
+    let firstRequest = true;
+    const sleepCalls: number[] = [];
+    const result = await verifyPublishWithRetries(SLUG, {
+      siteUrl: baseUrl,
+      now: NOW,
+      schedule: [0, 1],
+      sleepFn: fakeSleep(sleepCalls),
+      log: () => {},
+      fetchFn: async (url, init) => {
+        if (firstRequest) {
+          firstRequest = false;
+          throw new Error("temporary connection failure");
+        }
+        return fetch(url, init);
+      },
+    });
+    expect(result.ok).toBe(true);
+    expect(sleepCalls).toEqual([1000]);
   });
 
   it("exhausts the full retry schedule and still exits as a genuine failure when the content never becomes live", async () => {

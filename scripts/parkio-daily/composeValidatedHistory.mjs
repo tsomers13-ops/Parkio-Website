@@ -86,6 +86,16 @@ function git(args) {
  * of a single commit.
  */
 export function commitsBetween(baseline, candidateSha) {
+  try {
+    execFileSync("git", ["merge-base", "--is-ancestor", baseline, candidateSha], {
+      stdio: "ignore",
+    });
+  } catch {
+    throw new Error(
+      `approved baseline ${baseline} is not an ancestor of candidate ${candidateSha}`,
+    );
+  }
+
   const shas = git(["log", "--format=%H", "--reverse", `${baseline}..${candidateSha}`])
     .split("\n")
     .map((s) => s.trim())

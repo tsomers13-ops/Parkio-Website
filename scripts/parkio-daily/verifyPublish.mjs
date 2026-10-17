@@ -21,6 +21,7 @@
 import { fileURLToPath } from "node:url";
 
 export const RETRY_SCHEDULE_SECONDS = [0, 5, 10, 20, 40];
+export const REQUEST_TIMEOUT_MS = 15_000;
 
 const DEFAULT_SITE_URL = "https://parkio.info";
 
@@ -37,20 +38,38 @@ function defaultSleep(ms) {
  */
 export async function checkPublish(
   slug,
-  { fetchFn = fetch, siteUrl = DEFAULT_SITE_URL, now = new Date() } = {},
+  {
+    fetchFn = fetch,
+    siteUrl = DEFAULT_SITE_URL,
+    now = new Date(),
+    requestTimeoutMs = REQUEST_TIMEOUT_MS,
+  } = {},
 ) {
   const failures = [];
   const warnings = [];
 
-  async function statusOf(urlPath, { follow = false } = {}) {
-    const res = await fetchFn(`${siteUrl}${urlPath}`, {
-      redirect: follow ? "follow" : "manual",
-    });
-    return res.status;
+  function errorMessage(error) {
+    return error instanceof Error ? error.message : String(error);
   }
 
-  const homepageStatus = await statusOf("/");
-  if (homepageStatus !== 200) {
+  async function request(urlPath, { follow = false } = {}) {
+    return fetchFn(`${siteUrl}${urlPath}`, {
+      redirect: follow ? "follow" : "manual",
+      signal: AbortSignal.timeout(requestTimeoutMs),
+    });
+  }
+
+  async function statusOf(label, urlPath, { follow = false } = {}) {
+    try {
+      return (await request(urlPath, { follow })).status;
+    } catch (error) {
+      failures.push(`${label} request failed: ${errorMessage(error)}`);
+      return undefined;
+    }
+  }
+
+  const homepageStatus = await statusOf("homepage", "/");
+  if (homepageStatus !== undefined && homepageStatus !== 200) {
     failures.push(`homepage returned ${homepageStatus}`);
   }
 
@@ -58,33 +77,47 @@ export async function checkPublish(
   // 308-redirects a bare path to its own trailing-slash form regardless
   // of whether the page is actually published. See
   // tests/dailyPublishVerifyFollowsRedirects.test.ts.
-  const guideStatus = await statusOf(`/guide/parkio-daily-${slug}`, { follow: true });
-  if (guideStatus !== 200) {
+  const guideStatus = await statusOf("guide", `/guide/parkio-daily-${slug}`, {
+    follow: true,
+  });
+  if (guideStatus !== undefined && guideStatus !== 200) {
     failures.push(`guide/parkio-daily-${slug} returned ${guideStatus}`);
   }
 
-  const feedRes = await fetchFn(`${siteUrl}/feed.xml`);
-  const feedText = await feedRes.text();
-  if (!feedText.includes(`parkio-daily-${slug}`)) {
-    failures.push(`feed.xml does not contain today's entry (parkio-daily-${slug})`);
-  }
-  // RFC-822 date prefix, e.g. "Sat, 17 Oct 2026" — the same 16 leading
-  // characters toUTCString() always produces for a UTC date, matching
-  // the original `date -u +%a,\ %d\ %b\ %Y` shell invocation exactly.
-  const todayRfc822Prefix = now.toUTCString().slice(0, 16);
-  if (!feedText.includes(`<lastBuildDate>${todayRfc822Prefix}`)) {
-    warnings.push("feed.xml lastBuildDate does not show today's date — check manually.");
+  try {
+    const feedRes = await request("/feed.xml");
+    const feedText = await feedRes.text();
+    if (feedRes.status !== 200) {
+      failures.push(`feed.xml returned ${feedRes.status}`);
+    }
+    if (!feedText.includes(`parkio-daily-${slug}`)) {
+      failures.push(`feed.xml does not contain today's entry (parkio-daily-${slug})`);
+    }
+    // RFC-822 date prefix, e.g. "Sat, 17 Oct 2026" — the same 16 leading
+    // characters toUTCString() always produces for a UTC date, matching
+    // the original `date -u +%a,\ %d\ %b\ %Y` shell invocation exactly.
+    const todayRfc822Prefix = now.toUTCString().slice(0, 16);
+    if (!feedText.includes(`<lastBuildDate>${todayRfc822Prefix}`)) {
+      warnings.push("feed.xml lastBuildDate does not show today's date — check manually.");
+    }
+  } catch (error) {
+    failures.push(`feed.xml request failed: ${errorMessage(error)}`);
   }
 
-  const diningStatus = await statusOf("/parks/magic-kingdom/dining/mk-pecos-bill", {
-    follow: true,
-  });
-  if (diningStatus !== 200) {
+  const diningStatus = await statusOf(
+    "representative dining page",
+    "/parks/magic-kingdom/dining/mk-pecos-bill",
+    { follow: true },
+  );
+  if (diningStatus !== undefined && diningStatus !== 200) {
     failures.push(`representative dining page returned ${diningStatus}`);
   }
 
-  const ratingsStatus = await statusOf("/api/dining/mk-pecos-bill/ratings/");
-  if (ratingsStatus !== 200) {
+  const ratingsStatus = await statusOf(
+    "Community Ratings API",
+    "/api/dining/mk-pecos-bill/ratings/",
+  );
+  if (ratingsStatus !== undefined && ratingsStatus !== 200) {
     failures.push(`Community Ratings API returned ${ratingsStatus}`);
   }
 

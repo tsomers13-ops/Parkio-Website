@@ -126,6 +126,18 @@ describe("composeValidatedHistory — real-git regressions", () => {
     expect(paths).toEqual([dailyPath("2026-10-14")]);
   });
 
+  it("fails closed when the approved baseline is not an ancestor of the candidate", () => {
+    const common = commit("app.txt", "v1\n", "Initial app baseline", HUMAN_ENV);
+    const candidate = commit(dailyPath("2026-10-14"), "{}\n", "Parkio Daily — 2026-10-14", BOT_ENV);
+
+    execFileSync("git", ["checkout", "-b", "diverged", common], { cwd: repo });
+    const divergedBaseline = commit("app.txt", "diverged\n", "Diverged app release", HUMAN_ENV);
+
+    expect(() => withRepoCwd(() => commitsBetween(divergedBaseline, candidate))).toThrow(
+      "is not an ancestor",
+    );
+  });
+
   it("skips ordinary application commits that never touch a Daily-shaped path, instead of failing on them", () => {
     const baseline = commit("app.txt", "v1\n", "Initial app baseline", HUMAN_ENV);
     commit("README.md", "docs change\n", "Update README", HUMAN_ENV);
