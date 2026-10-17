@@ -50,7 +50,7 @@ export const revalidate = false;
  * Eastern calendar date (e.g. 02:00 UTC is still ~10 PM the previous day
  * in America/New_York).
  */
-export function feedFreshnessWindow(
+function feedFreshnessWindow(
   now: Date = new Date(),
 ): { today: string; yesterday: string } {
   // en-CA formats as YYYY-MM-DD directly; the IANA America/New_York
@@ -217,7 +217,7 @@ ${storiesHtml}
  * follows for the full rationale. `now` is injectable for the same
  * testability reason feedFreshnessWindow's is.
  */
-export function eligibleForFeed(
+function eligibleForFeed(
   posts: DailyPost[],
   now: Date = new Date(),
 ): DailyPost[] {
@@ -231,7 +231,7 @@ export function eligibleForFeed(
  * (including strict-parser validation) without touching the filesystem
  * via listDailyPosts().
  */
-export function buildFeedXml(posts: DailyPost[], now: Date = new Date()): string {
+function buildFeedXml(posts: DailyPost[], now: Date = new Date()): string {
   const items = eligibleForFeed(posts, now).map(renderItem).join("\n    ");
   const lastBuild = now.toUTCString();
 

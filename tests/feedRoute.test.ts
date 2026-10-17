@@ -26,9 +26,7 @@ vi.mock("node:fs", () => ({
   },
 }));
 
-const { GET, eligibleForFeed, buildFeedXml, feedFreshnessWindow } = await import(
-  "@/app/feed.xml/route"
-);
+const { GET } = await import("@/app/feed.xml/route");
 
 function post(date: string, overrides: Partial<DailyPost> = {}): DailyPost {
   return {
@@ -52,100 +50,85 @@ function hasParserError(doc: Document): boolean {
   return doc.getElementsByTagName("parsererror").length > 0;
 }
 
+async function feedAt(now: Date, posts: DailyPost[]): Promise<string> {
+  files = Object.fromEntries(
+    posts.map((entry) => [`${entry.slug}.json`, JSON.stringify(entry)]),
+  );
+  vi.useFakeTimers();
+  vi.setSystemTime(now);
+  try {
+    return await GET().text();
+  } finally {
+    vi.useRealTimers();
+  }
+}
+
 beforeEach(() => {
   files = {};
 });
 
 afterEach(() => {
+  vi.useRealTimers();
   vi.restoreAllMocks();
 });
 
-describe("feedFreshnessWindow", () => {
-  it("resolves today/yesterday by America/New_York calendar date during EDT", () => {
+describe("/feed.xml rolling today/yesterday window", () => {
+  it("resolves today/yesterday by America/New_York calendar date during EDT", async () => {
     const now = new Date("2026-10-17T15:00:00Z");
-    expect(feedFreshnessWindow(now)).toEqual({
-      today: "2026-10-17",
-      yesterday: "2026-10-16",
-    });
+    const xml = await feedAt(now, [
+      post("2026-10-17"),
+      post("2026-10-16"),
+      post("2026-10-15"),
+    ]);
+    expect(xml).toContain("parkio-daily-2026-10-17");
+    expect(xml).toContain("parkio-daily-2026-10-16");
+    expect(xml).not.toContain("parkio-daily-2026-10-15");
   });
 
-  it("resolves a UTC instant that falls on the PRIOR Eastern calendar date", () => {
+  it("resolves a UTC instant that falls on the PRIOR Eastern calendar date", async () => {
     // 02:00 UTC is 22:00 the previous day in America/New_York during EDT
     // (UTC-4) — the exact case that would be wrong if this used UTC
     // calendar dates instead of the Eastern ones.
     const now = new Date("2026-10-17T02:00:00Z");
-    expect(feedFreshnessWindow(now)).toEqual({
-      today: "2026-10-16",
-      yesterday: "2026-10-15",
-    });
-  });
-});
-
-describe("eligibleForFeed — rolling today/yesterday window", () => {
-  const now = new Date("2026-10-17T15:00:00Z"); // Eastern today: 2026-10-17
-
-  it("includes a post dated exactly today", () => {
-    const result = eligibleForFeed([post("2026-10-17")], now);
-    expect(result.map((p) => p.date)).toEqual(["2026-10-17"]);
+    const xml = await feedAt(now, [
+      post("2026-10-17"),
+      post("2026-10-16"),
+      post("2026-10-15"),
+      post("2026-10-14"),
+    ]);
+    expect(xml).not.toContain("parkio-daily-2026-10-17");
+    expect(xml).toContain("parkio-daily-2026-10-16");
+    expect(xml).toContain("parkio-daily-2026-10-15");
+    expect(xml).not.toContain("parkio-daily-2026-10-14");
   });
 
-  it("includes a post dated exactly yesterday", () => {
-    const result = eligibleForFeed([post("2026-10-16")], now);
-    expect(result.map((p) => p.date)).toEqual(["2026-10-16"]);
-  });
-
-  it("excludes a post dated the day before yesterday (too old)", () => {
-    const result = eligibleForFeed([post("2026-10-15")], now);
-    expect(result).toEqual([]);
-  });
-
-  it("excludes a week-old post that a later app rebuild re-surfaces", () => {
-    const result = eligibleForFeed([post("2026-10-09")], now);
-    expect(result).toEqual([]);
-  });
-
-  it("keeps today+yesterday together and drops everything else", () => {
-    const result = eligibleForFeed(
-      [post("2026-10-17"), post("2026-10-16"), post("2026-10-15"), post("2026-09-27")],
-      now,
-    );
-    expect(result.map((p) => p.date).sort()).toEqual(["2026-10-16", "2026-10-17"]);
-  });
-
-  it("the window shifts with a UTC instant on the prior Eastern calendar date", () => {
-    // Same real moment family as the feedFreshnessWindow boundary test:
-    // Eastern "today" is 2026-10-16 here, so a post dated 2026-10-17
-    // (tomorrow, not yet eligible) is excluded while 2026-10-16/15 are in.
-    const boundaryNow = new Date("2026-10-17T02:00:00Z");
-    const result = eligibleForFeed(
-      [post("2026-10-17"), post("2026-10-16"), post("2026-10-15"), post("2026-10-14")],
-      boundaryNow,
-    );
-    expect(result.map((p) => p.date).sort()).toEqual(["2026-10-15", "2026-10-16"]);
+  it("excludes a week-old post that a later app rebuild re-surfaces", async () => {
+    const xml = await feedAt(new Date("2026-10-17T15:00:00Z"), [post("2026-10-09")]);
+    expect(xml).not.toContain("parkio-daily-2026-10-09");
   });
 });
 
 describe("buildFeedXml — strict XML validity", () => {
   const now = new Date("2026-10-17T15:00:00Z");
 
-  it("emits a well-formed RSS shell with no parser errors", () => {
-    const xml = buildFeedXml([post("2026-10-17")], now);
+  it("emits a well-formed RSS shell with no parser errors", async () => {
+    const xml = await feedAt(now, [post("2026-10-17")]);
     expect(hasParserError(parseXml(xml))).toBe(false);
   });
 
-  it("escapes &, <, >, quotes, and apostrophes in title/description so the feed still parses", () => {
+  it("escapes &, <, >, quotes, and apostrophes in title/description so the feed still parses", async () => {
     const tricky = post("2026-10-17", {
       title: `Magic Kingdom & EPCOT: "Can't Miss" <Today>`,
       teaser: `Wait times & crowds — don't miss "Pecos Bill" <today>.`,
     });
-    const xml = buildFeedXml([tricky], now);
+    const xml = await feedAt(now, [tricky]);
     const doc = parseXml(xml);
     expect(hasParserError(doc)).toBe(false);
     expect(xml).toContain("&amp;");
     expect(xml).toContain("&lt;Today&gt;");
   });
 
-  it("no longer emits undeclared HTML named entities (e.g. &mdash;, &rarr;) anywhere in the feed", () => {
+  it("no longer emits undeclared HTML named entities (e.g. &mdash;, &rarr;) anywhere in the feed", async () => {
     const withRideNote = post("2026-10-17", {
       rightNow: { rides: [{ name: "Space Mountain", parkSlug: "magic-kingdom", note: "short wait" }] },
       sections: {
@@ -158,7 +141,7 @@ describe("buildFeedXml — strict XML validity", () => {
         ],
       },
     } as Partial<DailyPost>);
-    const xml = buildFeedXml([withRideNote], now);
+    const xml = await feedAt(now, [withRideNote]);
     expect(hasParserError(parseXml(xml))).toBe(false);
     expect(xml).not.toContain("&mdash;");
     expect(xml).not.toContain("&rarr;");
@@ -168,13 +151,13 @@ describe("buildFeedXml — strict XML validity", () => {
     expect(xml).toContain("→");
   });
 
-  it("stays valid with multiple eligible items, each carrying tricky characters", () => {
-    const xml = buildFeedXml(
+  it("stays valid with multiple eligible items, each carrying tricky characters", async () => {
+    const xml = await feedAt(
+      now,
       [
         post("2026-10-17", { title: `Today's "Briefing" & More` }),
         post("2026-10-16", { teaser: `<b>Not real HTML</b> & other stuff` }),
       ],
-      now,
     );
     expect(hasParserError(parseXml(xml))).toBe(false);
   });
