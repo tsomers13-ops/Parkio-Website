@@ -4,6 +4,6 @@
   "runId": "39026117846-1",
   "acquiredAt": 1792234213057,
   "expiresAt": 1792234513057,
-  "deployTag": null,
+  "deployTag": "sha:1ac4b6dbbf9ace4f1dd592e8253179f818224148",
   "recovery": null
 }
