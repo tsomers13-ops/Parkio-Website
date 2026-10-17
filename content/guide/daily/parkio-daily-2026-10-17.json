@@ -1,0 +1,338 @@
+{
+  "title": "Parkio Daily for October 17, 2026",
+  "slug": "parkio-daily-2026-10-17",
+  "date": "2026-10-17",
+  "teaser": "Diamond Horseshoe reopens in Magic Kingdom; 8 new snacks debut; Banana Ball tournament confirmed for spring 2027.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Soarin'",
+        "parkSlug": "epcot",
+        "note": "Low waits before lunch; crowds spike after 1pm"
+      },
+      {
+        "name": "Big Thunder Mountain",
+        "parkSlug": "magic-kingdom",
+        "note": "Early morning window before Fantasyland fills"
+      },
+      {
+        "name": "Indiana Jones Adventure",
+        "parkSlug": "disneyland",
+        "note": "Reopening date just announced"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [],
+    "bignews": [
+      {
+        "title": "Diamond Horseshoe reopens in Magic Kingdom",
+        "body": "The table-service venue inside Liberty Square is now serving guests again after an extended closure. New menu details are expected soon.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "WrightDownMainStreet",
+          "url": "https://www.youtube.com/watch?v=zRa763V8CkY"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Liberty Square dining options are limited. If you need a sit-down meal midday, Diamond Horseshoe may offer same-day availability while other restaurants book solid."
+        }
+      },
+      {
+        "title": "Eight new snacks arrive across Magic Kingdom",
+        "body": "Fresh food items debuted this week at multiple Magic Kingdom quick-service locations. The rollout covers several themed lands.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/10/16/disney-just-dropped-8-new-magic-kingdom-snacks-and-we-have-high-hopes/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "New menu items often sell out by mid-afternoon on launch week. If you want to try the full lineup, hit quick-service windows before 2pm."
+        }
+      },
+      {
+        "title": "Banana Ball tournament returns to Disney World in spring 2027",
+        "body": "The Savannah Bananas and league teams will compete in the second Banana Ball Open at ESPN Wide World of Sports next spring. Dates and ticket info have been released.",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/disney-experiences/banana-ball-coming-to-disney-world/"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "Sports tournaments at Wide World of Sports typically add moderate crowds to resort buses and Disney Springs in the evenings. Plan extra travel time if you're staying on property during the event."
+        }
+      },
+      {
+        "title": "Walt Disney World hits worst crowd levels in six months",
+        "body": "Mid-October attendance is running significantly higher than the slow summer period. Wait times across all four parks are climbing into moderate territory.",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-worlds-worst-crowds-in-6-months-have-hit/"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "Fall break season tends to push waits up park-wide. EPCOT usually absorbs crowds better than Magic Kingdom; consider shifting your flagship park day if your schedule allows."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "New Hollywood Studios food debuts at Sci-Fi Dine-In and Toy Story Land",
+        "body": "Multiple dining locations inside the park rolled out updated menus this week, including changes at quick-service and table-service spots.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "WrightDownMainStreet",
+          "url": "https://www.youtube.com/watch?v=Ti6I3iraGnA"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Sci-Fi Dine-In often has same-day openings for late lunch around 2pm. If you want to try the new menu without an advance reservation, check the app after 1pm."
+        }
+      },
+      {
+        "title": "Indiana Jones Adventure reopening date confirmed at Disneyland",
+        "body": "The attraction will resume operations following its refurbishment period. An exact date was announced this week.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/10/daughter-films-mom-being-removed-from-disney-california-adventure-for-jumping-out-of-ride-in-todays-daily-recap-for-10-16-2026/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Reopening week typically draws heavy morning crowds to Adventureland. Rope-drop the attraction or wait until after 7pm when waits usually drop below 30 minutes."
+        }
+      },
+      {
+        "title": "Cheapest Mickey's Very Merry Christmas Party dates sell out",
+        "body": "Lower-priced party nights in November and early December are no longer available. Higher-tier pricing remains for later dates.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/10/cheapest-mickeys-very-merry-christmas-party-nights-now-sold-out-at-disney-world-el1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "If you're hoping for a budget party ticket, remaining dates tend to sell out within two weeks of the event. Book soon or expect to pay premium pricing closer to Christmas."
+        }
+      },
+      {
+        "title": "Harryhausen's permit filed for Monstropolis at Hollywood Studios",
+        "body": "Imagineering submitted construction paperwork for the themed restaurant tied to the upcoming Monsters Inc. land expansion. Work is expected to begin soon.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/10/daughter-films-mom-being-removed-from-disney-california-adventure-for-jumping-out-of-ride-in-todays-daily-recap-for-10-16-2026/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Construction noise near Sunset Boulevard tends to be loudest mid-morning. If you're planning table-service dining in that area, aim for dinner reservations after 5pm for a quieter experience."
+        }
+      },
+      {
+        "title": "New Disney Springs store opens this week",
+        "body": "A retail location debuted in the shopping district, adding another option for guests looking for merchandise outside the parks.",
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/10/16/a-new-store-just-opened-in-disney-springs-3/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "New stores at Disney Springs often carry limited-release items during their opening week. Worth a stop before lunch if you're hunting for exclusive merchandise."
+        }
+      },
+      {
+        "title": "Blaze Pizza raises prices and trims menu at Disney Springs",
+        "body": "The quick-service restaurant adjusted its offerings and pricing effective immediately. Some previous menu items are no longer available.",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/10/disney-springs-pizza-restaurant-hikes-prices-and-cuts-menu-effective-immediately-el1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Blaze often sees dinner rushes between 5–7pm. If you're planning a quick meal, ordering before 4:30pm or after 8pm usually cuts wait time in half."
+        }
+      },
+      {
+        "title": "Ghirardelli refurbishment removes exterior stained glass at Disney Springs",
+        "body": "Construction crews took down decorative elements from the building facade as the major renovation continues. The location remains closed.",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/10/stained-glass-removed-from-ghirardelli-at-disney-springs-during-refurbishment/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Construction fencing near Ghirardelli narrows walkways during peak afternoon foot traffic. If you're moving between Town Center and the Marketplace, the waterfront path tends to be less congested."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Winnie the Pooh 100th anniversary merchandise now available",
+        "body": "Disney released a collection celebrating the character's centennial, with new products appearing across parks and online. The line includes apparel and accessories.",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/products/new-winnie-the-pooh-anniversary-products/"
+        }
+      },
+      {
+        "title": "Sherri Shepherd revealed as first woman to play Genie in Broadway's Aladdin",
+        "body": "The comedian and talk-show host will make history in the iconic role. First performance details were shared this week.",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/10/first-look-at-sherri-shepherd-in-costume-as-first-woman-to-play-genie-in-aladdin-on-broadway/"
+        }
+      },
+      {
+        "title": "Disney Imagination cruise ship name announced for Japan sailings",
+        "body": "Disney Cruise Line confirmed the vessel name for its first ship operating from Tokyo. Service begins in spring 2029.",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/dcl/disney-imagination-name-reveal-japan/"
+        }
+      },
+      {
+        "title": "Splash Mountain closure date set for Tokyo Disneyland in January",
+        "body": "The final operating version of the attraction will close to guests early next year. It's the last Splash Mountain remaining at any Disney park worldwide.",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/10/disney-final-splash-mountain-closure-cj1/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "Monsters Inc. Halloween wallpapers released by Pixar Place Hotel",
+        "body": "The Disneyland Resort hotel shared free digital downloads featuring Halloween-themed artwork from the Pixar franchise. The collection is available through the end of October.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/dlr/monsters-inc-halloween-wallpapers-and-more-disneyland/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Pixar Place Hotel often stocks exclusive Monsters Inc. merchandise tied to these promotions. If you're on property, check the lobby shop before checkout—limited items typically move fast on weekends."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "HdJO4DED3I4",
+      "title": "New York City 2026 | Trying NYC's BEST Pancakes, Donuts & Italian Food | New York Comic Con | Disney",
+      "channel": "Paging Mr. Morrow",
+      "publishedAt": "2026-10-11T16:59:33Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/HdJO4DED3I4/mqdefault.jpg",
+      "viewCount": 134781,
+      "url": "https://www.youtube.com/watch?v=HdJO4DED3I4",
+      "summary": "Paging Mr. Morrow explores New York City food and Comic Con, covering top pancakes, donuts, and Italian cuisine."
+    },
+    {
+      "videoId": "zRa763V8CkY",
+      "title": "NEW in Magic Kingdom- The Diamond Horseshoe Reopened! | Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-10-12T15:30:06Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/zRa763V8CkY/mqdefault.jpg",
+      "viewCount": 61086,
+      "url": "https://www.youtube.com/watch?v=zRa763V8CkY",
+      "summary": "WrightDownMainStreet tours the newly reopened Diamond Horseshoe restaurant inside Magic Kingdom's Liberty Square."
+    },
+    {
+      "videoId": "ZqaHKE8XqOI",
+      "title": "🔴Live: Mickey's Not So Scary Halloween Party - 10-16-26 - Walt Disney World",
+      "channel": "ResortTV1",
+      "publishedAt": "2026-10-17T04:53:56Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/ZqaHKE8XqOI/mqdefault.jpg",
+      "viewCount": 60943,
+      "url": "https://www.youtube.com/watch?v=ZqaHKE8XqOI",
+      "summary": "ResortTV1 live-streams Mickey's Not So Scary Halloween Party from Magic Kingdom on October 16."
+    },
+    {
+      "videoId": "32b13U3Qt1k",
+      "title": "🔴Live 2026 Mickey's Not So Scary Halloween Party at the Magic Kingdom Walt Disney World 10/16/2026",
+      "channel": "RON ON THE GO",
+      "publishedAt": "2026-10-17T03:54:16Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/32b13U3Qt1k/mqdefault.jpg",
+      "viewCount": 59540,
+      "url": "https://www.youtube.com/watch?v=32b13U3Qt1k",
+      "summary": "RON ON THE GO broadcasts live from the Halloween party at Magic Kingdom on October 16."
+    },
+    {
+      "videoId": "Ti6I3iraGnA",
+      "title": "Every NEW Food in Hollywood Studios- Sci Fi, Toy Story Land & More! | Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-10-16T15:53:03Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Ti6I3iraGnA/mqdefault.jpg",
+      "viewCount": 26567,
+      "url": "https://www.youtube.com/watch?v=Ti6I3iraGnA",
+      "summary": "WrightDownMainStreet reviews the latest menu additions at Hollywood Studios, including Sci-Fi Dine-In and Toy Story Land locations."
+    },
+    {
+      "videoId": "-H2zBlixDtU",
+      "title": "🔴 Live: Magic Kingdom Rope Drop, Rides & Cavalcade Friday | Disney World Live Stream 10.16.2026",
+      "channel": "Daily FastPass",
+      "publishedAt": "2026-10-17T04:02:41Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/-H2zBlixDtU/mqdefault.jpg",
+      "viewCount": 5492,
+      "url": "https://www.youtube.com/watch?v=-H2zBlixDtU",
+      "summary": "Daily FastPass live-streams Magic Kingdom rope drop and morning attractions on October 16."
+    },
+    {
+      "videoId": "h4gEcugFb9I",
+      "title": "✨ NEW Downtown Disney 2026 UPDATES! | Trying NEW Disney Halloween Foods, Shopping & MUCH MORE!",
+      "channel": "Making Magical Adventures",
+      "publishedAt": "2026-10-17T00:12:11Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/h4gEcugFb9I/mqdefault.jpg",
+      "viewCount": 5393,
+      "url": "https://www.youtube.com/watch?v=h4gEcugFb9I",
+      "summary": "Making Magical Adventures explores Downtown Disney updates, including new Halloween food and shopping options."
+    },
+    {
+      "videoId": "4-uOX3tmuBo",
+      "title": "NEW Disney Merch at Disneyland! Monsters, Inc., Pixar Cars & Disney Jewelry",
+      "channel": "The Mangerino Adventures",
+      "publishedAt": "2026-10-17T01:30:23Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/4-uOX3tmuBo/mqdefault.jpg",
+      "viewCount": 2118,
+      "url": "https://www.youtube.com/watch?v=4-uOX3tmuBo",
+      "summary": "The Mangerino Adventures showcases new Disneyland merchandise featuring Monsters Inc., Pixar Cars, and jewelry collections."
+    },
+    {
+      "videoId": "Uu-UAKpn6VA",
+      "title": "We blasted white girl music when Snuck a Speaker onto Disneyland ride! #disneyland  #speaker",
+      "channel": "n8thegr8clips",
+      "publishedAt": "2026-10-17T01:48:36Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Uu-UAKpn6VA/mqdefault.jpg",
+      "viewCount": 1395,
+      "url": "https://www.youtube.com/watch?v=Uu-UAKpn6VA",
+      "summary": "n8thegr8clips documents sneaking a speaker onto a Disneyland attraction."
+    },
+    {
+      "videoId": "WTKQufNB_Go",
+      "title": "Esto es lo prohibido en Disney #disney #disneyland #disneyparks #disneyworld #disneylandparis",
+      "channel": "Magicwpoema",
+      "publishedAt": "2026-10-17T03:21:55Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/WTKQufNB_Go/mqdefault.jpg",
+      "viewCount": 1231,
+      "url": "https://www.youtube.com/watch?v=WTKQufNB_Go",
+      "summary": "Magicwpoema covers prohibited items and behaviors across Disney parks worldwide."
+    }
+  ],
+  "updatedAt": "2026-10-17T10:47:13.059Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-10-17T10:47:13.059Z",
+    "tokens": {
+      "input": 11142,
+      "output": 5085,
+      "costUsd": 0.1097
+    }
+  }
+}
