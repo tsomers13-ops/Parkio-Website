@@ -17,19 +17,66 @@ export const dynamic = "force-static";
 export const revalidate = false;
 
 /**
- * Backlog safety cutoff — do not remove without a deliberate decision.
+ * Rolling freshness window — do not remove without a deliberate decision.
  *
- * The public feed was stale for weeks while the site ran on Cloudflare
- * Pages (auto-deploy broken); Sept 14–27 briefings piled up without ever
- * reaching Beehiiv's RSS-to-Email poll. Flipping the feed back on as-is
- * would replay that whole backlog as "new" emails the moment Beehiiv next
- * polls. Any post dated on/before this cutoff is permanently excluded
- * from `/feed.xml` (guide pages, sitemap, and the homepage teaser are
- * unaffected — this only trims RSS eligibility). Posts dated after the
- * cutoff are eligible automatically; no further edits needed here as new
- * daily briefings ship.
+ * Originally a fixed backlog cutoff date: the public feed was stale for
+ * weeks while the site ran on Cloudflare Pages (auto-deploy broken), and
+ * flipping it back on as-is would have replayed that whole backlog as
+ * "new" emails the moment the RSS-to-Email poll next ran. A fixed cutoff
+ * date only solves that ONCE, though — it does nothing to stop the same
+ * class of problem recurring later. Confirmed 2026-10-17: a "Parkio Daily
+ * — October 9" email was delivered October 17, most likely because an
+ * app rebuild re-surfaced old Daily content files as newly eligible —
+ * this is about that re-surfacing risk in general, not a confirmed claim
+ * about what Buttondown itself did internally.
+ *
+ * Replaced with a rolling window: eligible iff a post's date is today or
+ * yesterday by America/New_York CALENDAR date (the WDW timezone Daily
+ * slugs are already authored in — see docs/AUTOMATION.md's "Operational
+ * notes"). "Yesterday" deliberately tolerates exactly one missed 6 AM
+ * Eastern publish without requiring a human to notice and republish
+ * same-day; anything older — including a week-old file that becomes
+ * newly readable to this route after an unrelated app rebuild — is never
+ * eligible again, with no manual cutoff to remember to update. Guide
+ * pages, sitemap, and the homepage teaser are unaffected — this only
+ * trims RSS eligibility. See eligibleForFeed/feedFreshnessWindow below.
  */
-const FEED_BACKLOG_CUTOFF = "2026-09-27";
+
+/**
+ * Today's and yesterday's date by America/New_York CALENDAR date, as
+ * "YYYY-MM-DD" strings. Pure function of `now` (default: the real current
+ * instant) rather than a bare `new Date()` call inline, so tests can pin
+ * the instant exactly — including a UTC instant that falls on the PRIOR
+ * Eastern calendar date (e.g. 02:00 UTC is still ~10 PM the previous day
+ * in America/New_York).
+ */
+export function feedFreshnessWindow(
+  now: Date = new Date(),
+): { today: string; yesterday: string } {
+  // en-CA formats as YYYY-MM-DD directly; the IANA America/New_York
+  // entry already encodes EDT/EST transitions, so this is correct
+  // across a DST boundary with no date-math of our own.
+  const today = new Intl.DateTimeFormat("en-CA", {
+    timeZone: "America/New_York",
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+  }).format(now);
+
+  // Pure calendar-day subtraction on the already-resolved Eastern date
+  // string — deliberately NOT `now` minus 24h, which would be wrong
+  // exactly at a DST transition (a "day" is 23 or 25 real hours twice a
+  // year). Date.UTC here is just a calendar calculator, not a timezone
+  // conversion: today's Y/M/D components are already the correct Eastern
+  // values, so subtracting one calendar day from them needs no timezone
+  // awareness at all.
+  const [y, m, d] = today.split("-").map(Number);
+  const yesterdayDate = new Date(Date.UTC(y, m - 1, d));
+  yesterdayDate.setUTCDate(yesterdayDate.getUTCDate() - 1);
+  const yesterday = yesterdayDate.toISOString().slice(0, 10);
+
+  return { today, yesterday };
+}
 
 /* ─────────────── helpers ─────────────── */
 
@@ -109,7 +156,7 @@ function renderItem(post: DailyPost): string {
         .map(
           (r) =>
             `<li>${escapeXml(r.name || "")}${
-              r.note ? ` &mdash; ${escapeXml(r.note)}` : ""
+              r.note ? ` — ${escapeXml(r.note)}` : ""
             }</li>`,
         )
         .join("")}</ul>`
@@ -128,7 +175,7 @@ function renderItem(post: DailyPost): string {
         : "";
       const live = `<p style="margin:4px 0 0;font-size:13px"><a href="${parkLink(
         s.parkSlug,
-      )}">See live waits &rarr;</a></p>`;
+      )}">See live waits →</a></p>`;
       return (
         `<div style="margin:0 0 18px">` +
         `<p style="margin:0;font-weight:700">${escapeXml(s.title || "")}</p>` +
@@ -143,9 +190,9 @@ function renderItem(post: DailyPost): string {
 <p>${escapeXml(post.teaser)}</p>
 ${snapshotHtml}
 ${storiesHtml}
-<p><a href="${url}">Read the full briefing on Parkio Daily &rarr;</a></p>
+<p><a href="${url}">Read the full briefing on Parkio Daily →</a></p>
 <p style="font-size:12.5px;color:#888;margin-top:20px;font-style:italic">Crowd patterns can change throughout the day. <a href="https://parkio.info/parks" style="color:#888">Open Parkio for live wait times.</a></p>
-<p style="font-size:13px;color:#888;margin-top:8px">Parkio Daily &mdash; fresh every morning at 6 AM ET.</p>
+<p style="font-size:13px;color:#888;margin-top:8px">Parkio Daily — fresh every morning at 6 AM ET.</p>
   `.trim();
 
   // RSS pubDate must be RFC-822. Anchor each post at ~6 AM ET (10:00 UTC).
@@ -164,30 +211,48 @@ ${storiesHtml}
 
 /* ─────────────── feed shell ─────────────── */
 
-/** Posts eligible for RSS — everything after the backlog cutoff. */
-function eligibleForFeed(posts: DailyPost[]): DailyPost[] {
-  return posts.filter((post) => post.date > FEED_BACKLOG_CUTOFF);
+/**
+ * Posts eligible for RSS — today or yesterday by America/New_York
+ * calendar date. See feedFreshnessWindow above and the comment block it
+ * follows for the full rationale. `now` is injectable for the same
+ * testability reason feedFreshnessWindow's is.
+ */
+export function eligibleForFeed(
+  posts: DailyPost[],
+  now: Date = new Date(),
+): DailyPost[] {
+  const { today, yesterday } = feedFreshnessWindow(now);
+  return posts.filter((post) => post.date === today || post.date === yesterday);
 }
 
-export function GET(): Response {
-  const posts = eligibleForFeed(listDailyPosts());
-  const items = posts.map(renderItem).join("\n    ");
-  const lastBuild = new Date().toUTCString();
+/**
+ * Builds the full feed XML from an arbitrary post list and instant —
+ * split out from GET() so tests can exercise real XML generation
+ * (including strict-parser validation) without touching the filesystem
+ * via listDailyPosts().
+ */
+export function buildFeedXml(posts: DailyPost[], now: Date = new Date()): string {
+  const items = eligibleForFeed(posts, now).map(renderItem).join("\n    ");
+  const lastBuild = now.toUTCString();
 
-  const xml = `<?xml version="1.0" encoding="UTF-8" ?>
+  return `<?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0"
      xmlns:atom="http://www.w3.org/2005/Atom"
      xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Parkio Daily</title>
     <link>${SITE_URL}/guide</link>
-    <description>Disney park briefings &mdash; fresh every morning at 6 AM ET.</description>
+    <description>Disney park briefings — fresh every morning at 6 AM ET.</description>
     <language>en-us</language>
     <lastBuildDate>${lastBuild}</lastBuildDate>
     <atom:link href="${SITE_URL}/feed.xml" rel="self" type="application/rss+xml" />
     ${items}
   </channel>
 </rss>`;
+}
+
+export function GET(): Response {
+  const xml = buildFeedXml(listDailyPosts());
 
   return new Response(xml, {
     headers: {
