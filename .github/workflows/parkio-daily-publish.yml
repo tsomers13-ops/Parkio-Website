@@ -313,10 +313,20 @@ jobs:
         # itself the latest candidate (a missed-day publish, two
         # content-only publishes back to back, or a baseline that jumps
         # forward past several already-validated commits). The helper
-        # walks every commit between the baseline and the candidate and
-        # fails closed on any one of them that mutates a Daily-shaped path
-        # without passing the same author+allowlist validation used
-        # everywhere else in this workflow — see that script's header.
+        # walks only the candidate's first-parent chain since the
+        # baseline — so content a human merge deliberately discarded
+        # (e.g. `-s ours`) is never picked up — fails closed on any
+        # commit that mutates a Daily-shaped path (on either side of a
+        # rename/copy) without passing the same author+allowlist
+        # validation used everywhere else in this workflow, and
+        # cross-checks every resulting apply/remove decision against the
+        # candidate's own final tree before trusting it. See that
+        # script's header for the full rationale.
+        #
+        # Output is one line per operation: "apply <sha> <path>" or
+        # "remove - <path>" — always exactly three space-separated
+        # fields, since every path here is drawn from the existing
+        # no-space Daily content allowlist.
         run: |
           baseline="${{ steps.baseline.outputs.baseline }}"
           git checkout "$baseline"
@@ -338,10 +348,25 @@ jobs:
             exit 1
           }
           echo "$overlay_output" > /tmp/daily_overlay.txt
-          while IFS=' ' read -r sha p; do
-            [ -z "$sha" ] && continue
-            echo "Applying $p from $sha"
-            git checkout "$sha" -- "$p"
+          while IFS=' ' read -r op sha p; do
+            [ -z "$op" ] && continue
+            case "$op" in
+              apply)
+                echo "Applying $p from $sha"
+                git checkout "$sha" -- "$p"
+                ;;
+              remove)
+                echo "Removing $p (validated history shows it was deleted or renamed away)"
+                # --ignore-unmatch: the baseline checkout above may never
+                # have had this path tracked at all, which is a normal,
+                # expected case here, not an error.
+                git rm -f --ignore-unmatch -- "$p"
+                ;;
+              *)
+                echo "::error::composeValidatedHistory.mjs produced an unrecognized operation '$op' for path '$p' — refusing to proceed."
+                exit 1
+                ;;
+            esac
           done < /tmp/daily_overlay.txt
 
       - name: Reinstall dependencies to match the approved baseline

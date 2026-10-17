@@ -4,14 +4,31 @@ import fs from "node:fs";
 import os from "node:os";
 import path from "node:path";
 
-import { commitsBetween, planHistoryOverlay } from "@/scripts/parkio-daily/composeValidatedHistory.mjs";
+import {
+  commitsBetween,
+  planHistoryOverlay,
+  resolvePublishPlan,
+} from "@/scripts/parkio-daily/composeValidatedHistory.mjs";
 
 // Real-git regressions for "Compose the publish tree"'s history-overlay
 // logic — mirrors tests/dailyBuildShallowCloneHistory.test.ts's approach
 // of exercising actual git history rather than mocking it, since the bug
-// class here (which commits a range walk picks up or excludes) is a
-// property of real git ancestry, not something a mocked git client would
-// reproduce faithfully.
+// classes here (which commits a range walk picks up or excludes, and
+// how a rename is reported) are properties of real git semantics, not
+// something a mocked git client would reproduce faithfully.
+//
+// Two independently reproduced trust-logic bugs motivated this file's
+// current shape:
+//   1. Plain ancestry walking (no --first-parent) picks up bot Daily
+//      commits sitting only on a side branch a human `-s ours` merge
+//      deliberately discarded.
+//   2. `git diff --name-only` for a rename reports only the destination
+//      path, never the source — a rename FROM an allowed Daily path TO
+//      a disallowed one was invisible on the source side.
+// resolvePublishPlan() is the full, corrected decision (commit-history
+// validation PLUS a final cross-check against the candidate's own
+// tree) and is what these tests exercise almost throughout, since it's
+// what the CLI — and therefore the workflow — actually calls.
 //
 // commitsBetween()'s internal `git()` helper has no cwd parameter (same
 // shape as validatePublishCandidate.mjs's own git-wired runFromRepo()),
@@ -62,6 +79,10 @@ describe("composeValidatedHistory — real-git regressions", () => {
     return execFileSync("git", ["rev-parse", "HEAD"], { cwd: repo, encoding: "utf8" }).trim();
   }
 
+  function headSha() {
+    return execFileSync("git", ["rev-parse", "HEAD"], { cwd: repo, encoding: "utf8" }).trim();
+  }
+
   function withRepoCwd<T>(fn: () => T): T {
     process.chdir(repo);
     try {
@@ -76,15 +97,13 @@ describe("composeValidatedHistory — real-git regressions", () => {
     commit(dailyPath("2026-10-09"), "{}\n", "Parkio Daily — 2026-10-09", BOT_ENV);
     const candidate = commit(dailyPath("2026-10-10"), "{}\n", "Parkio Daily — 2026-10-10", BOT_ENV);
 
-    const result = withRepoCwd(() => {
-      const commits = commitsBetween(baseline, candidate);
-      return planHistoryOverlay(commits);
-    });
+    const result = withRepoCwd(() => resolvePublishPlan(baseline, candidate));
 
     expect(result.ok).toBe(true);
     if (!result.ok) return;
-    const paths = result.overlay.map((o) => o.path).sort();
-    expect(paths).toEqual([dailyPath("2026-10-09"), dailyPath("2026-10-10")]);
+    const applyPaths = result.overlay.filter((o) => o.op === "apply").map((o) => o.path).sort();
+    expect(applyPaths).toEqual([dailyPath("2026-10-09"), dailyPath("2026-10-10")]);
+    expect(result.overlay.every((o) => o.op === "apply" && o.sha === candidate)).toBe(true);
   });
 
   it("consecutive content-only publishes while the baseline is unchanged: a second run still carries the first day forward", () => {
@@ -92,7 +111,7 @@ describe("composeValidatedHistory — real-git regressions", () => {
     const firstRun = commit(dailyPath("2026-10-11"), "{}\n", "Parkio Daily — 2026-10-11", BOT_ENV);
     const secondRun = commit(dailyPath("2026-10-12"), "{}\n", "Parkio Daily — 2026-10-12", BOT_ENV);
 
-    const firstResult = withRepoCwd(() => planHistoryOverlay(commitsBetween(baseline, firstRun)));
+    const firstResult = withRepoCwd(() => resolvePublishPlan(baseline, firstRun));
     expect(firstResult.ok).toBe(true);
     if (firstResult.ok) {
       expect(firstResult.overlay.map((o) => o.path)).toEqual([dailyPath("2026-10-11")]);
@@ -101,7 +120,7 @@ describe("composeValidatedHistory — real-git regressions", () => {
     // Second publish run against the SAME unmoved baseline (the Worker
     // annotation still points at it) must still include the first day —
     // this is exactly what the single-commit-diff bug dropped.
-    const secondResult = withRepoCwd(() => planHistoryOverlay(commitsBetween(baseline, secondRun)));
+    const secondResult = withRepoCwd(() => resolvePublishPlan(baseline, secondRun));
     expect(secondResult.ok).toBe(true);
     if (secondResult.ok) {
       const paths = secondResult.overlay.map((o) => o.path).sort();
@@ -118,7 +137,7 @@ describe("composeValidatedHistory — real-git regressions", () => {
     const newBaseline = commit("app.txt", "v2\n", "Release: app v2", HUMAN_ENV);
     const candidate = commit(dailyPath("2026-10-14"), "{}\n", "Parkio Daily — 2026-10-14", BOT_ENV);
 
-    const result = withRepoCwd(() => planHistoryOverlay(commitsBetween(newBaseline, candidate)));
+    const result = withRepoCwd(() => resolvePublishPlan(newBaseline, candidate));
 
     expect(result.ok).toBe(true);
     if (!result.ok) return;
@@ -143,7 +162,7 @@ describe("composeValidatedHistory — real-git regressions", () => {
     commit("README.md", "docs change\n", "Update README", HUMAN_ENV);
     const candidate = commit(dailyPath("2026-10-15"), "{}\n", "Parkio Daily — 2026-10-15", BOT_ENV);
 
-    const result = withRepoCwd(() => planHistoryOverlay(commitsBetween(baseline, candidate)));
+    const result = withRepoCwd(() => resolvePublishPlan(baseline, candidate));
 
     expect(result.ok).toBe(true);
     if (!result.ok) return;
@@ -164,10 +183,163 @@ describe("composeValidatedHistory — real-git regressions", () => {
     });
     const candidate = commit(dailyPath("2026-10-17"), "{}\n", "Parkio Daily — 2026-10-17", BOT_ENV);
 
-    const result = withRepoCwd(() => planHistoryOverlay(commitsBetween(baseline, candidate)));
+    const result = withRepoCwd(() => resolvePublishPlan(baseline, candidate));
 
     expect(result.ok).toBe(false);
     if (result.ok) return;
     expect(result.problems.join(" ")).toContain("fails validation");
+  });
+
+  // ─────────────────────── corrective-fix regressions ───────────────────────
+
+  it("BUG #1 — a bot Daily file discarded by a human `-s ours` merge on a side branch is never overlaid", () => {
+    const baseline = commit("app.txt", "v1\n", "Initial app baseline", HUMAN_ENV);
+
+    execFileSync("git", ["checkout", "-b", "side", baseline], { cwd: repo });
+    commit(dailyPath("2026-10-18"), "{}\n", "Parkio Daily — 2026-10-18", BOT_ENV);
+
+    execFileSync("git", ["checkout", "main"], { cwd: repo });
+    execFileSync(
+      "git",
+      ["merge", "--no-ff", "-s", "ours", "-m", "Merge pull request: discard side/2026-10-18", "side"],
+      { cwd: repo, env: { ...process.env, ...HUMAN_ENV } },
+    );
+
+    const candidate = commit(dailyPath("2026-10-19"), "{}\n", "Parkio Daily — 2026-10-19", BOT_ENV);
+
+    const result = withRepoCwd(() => resolvePublishPlan(baseline, candidate));
+
+    expect(result.ok).toBe(true);
+    if (!result.ok) return;
+    const paths = result.overlay.map((o) => o.path);
+    expect(paths).toEqual([dailyPath("2026-10-19")]);
+    expect(paths).not.toContain(dailyPath("2026-10-18"));
+
+    // Sanity: the discarded file really is absent from the candidate's
+    // own tree — confirms the test setup reproduces the described bug
+    // shape, not just that the function returns the expected list.
+    expect(() =>
+      withRepoCwd(() =>
+        execFileSync("git", ["cat-file", "-e", `${candidate}:${dailyPath("2026-10-18")}`], {
+          stdio: "ignore",
+        }),
+      ),
+    ).toThrow();
+  });
+
+  it("BUG #2 — a human R100 rename from an allowlisted Daily file to a disallowed archive path fails closed", () => {
+    // The baseline itself is the bot commit that adds the file, so the
+    // rename commit is the only thing in baseline..candidate.
+    const baseline = commit(dailyPath("2026-10-20"), "{}\n", "Parkio Daily — 2026-10-20", BOT_ENV);
+
+    fs.mkdirSync(path.join(repo, "archive"), { recursive: true });
+    execFileSync("git", ["mv", dailyPath("2026-10-20"), "archive/discarded.json"], { cwd: repo });
+    execFileSync("git", ["commit", "-m", "Archive old Daily content"], {
+      cwd: repo,
+      env: { ...process.env, ...HUMAN_ENV },
+    });
+    const candidate = headSha();
+
+    const result = withRepoCwd(() => resolvePublishPlan(baseline, candidate));
+
+    expect(result.ok).toBe(false);
+    if (result.ok) return;
+    expect(result.problems.join(" ")).toContain("fails validation");
+  });
+
+  it("a human deletion of Daily content fails closed", () => {
+    const baseline = commit("app.txt", "v1\n", "Initial app baseline", HUMAN_ENV);
+    const dayPath = dailyPath("2026-10-21");
+    commit(dayPath, "{}\n", "Parkio Daily — 2026-10-21", BOT_ENV);
+
+    fs.rmSync(path.join(repo, dayPath));
+    execFileSync("git", ["add", "."], { cwd: repo });
+    execFileSync("git", ["commit", "-m", "Revert accidental Daily publish"], {
+      cwd: repo,
+      env: { ...process.env, ...HUMAN_ENV },
+    });
+    const candidate = headSha();
+
+    const result = withRepoCwd(() => resolvePublishPlan(baseline, candidate));
+
+    expect(result.ok).toBe(false);
+  });
+
+  it("a validated bot deletion agrees with the candidate's final tree and cannot resurrect the removed content", () => {
+    const baseline = commit("app.txt", "v1\n", "Initial app baseline", HUMAN_ENV);
+    const dayPath = dailyPath("2026-10-22");
+    commit(dayPath, "{}\n", "Parkio Daily — 2026-10-22", BOT_ENV);
+
+    fs.rmSync(path.join(repo, dayPath));
+    execFileSync("git", ["add", "."], { cwd: repo });
+    execFileSync("git", ["commit", "-m", "Parkio Daily — 2026-10-22 retraction"], {
+      cwd: repo,
+      env: { ...process.env, ...BOT_ENV },
+    });
+    const candidate = headSha();
+
+    const result = withRepoCwd(() => resolvePublishPlan(baseline, candidate));
+
+    expect(result.ok).toBe(true);
+    if (!result.ok) return;
+    // The LATER (delete) event must win over the earlier (add) event for
+    // the same path — the file must never be scheduled for application.
+    expect(result.overlay).toEqual([{ op: "remove", path: dayPath }]);
+  });
+
+  it("a validated bot rename between two allowed Daily paths removes the old path and applies the new one", () => {
+    const baseline = commit("app.txt", "v1\n", "Initial app baseline", HUMAN_ENV);
+    const fromPath = dailyPath("2026-10-23");
+    commit(fromPath, "{}\n", "Parkio Daily — 2026-10-23", BOT_ENV);
+
+    const toPath = dailyPath("2026-10-24");
+    execFileSync("git", ["mv", fromPath, toPath], { cwd: repo });
+    execFileSync("git", ["commit", "-m", "Parkio Daily — 2026-10-24 (relabel)"], {
+      cwd: repo,
+      env: { ...process.env, ...BOT_ENV },
+    });
+    const candidate = headSha();
+
+    const result = withRepoCwd(() => resolvePublishPlan(baseline, candidate));
+
+    expect(result.ok).toBe(true);
+    if (!result.ok) return;
+    const byPath = new Map(result.overlay.map((o) => [o.path, o.op]));
+    expect(byPath.get(fromPath)).toBe("remove");
+    expect(byPath.get(toPath)).toBe("apply");
+  });
+});
+
+describe("planHistoryOverlay — pure unit coverage", () => {
+  it("fails closed on a commit whose only recorded event path is disallowed, even if changedPaths also lists an allowed one from a rename", () => {
+    const result = planHistoryOverlay([
+      {
+        sha: "deadbeef",
+        authorName: "tsomers13-ops",
+        authorEmail: "tsomers13@gmail.com",
+        changedPaths: [
+          "content/guide/daily/parkio-daily-2026-10-25.json",
+          "archive/discarded.json",
+        ],
+        fileEvents: [
+          { type: "remove", path: "content/guide/daily/parkio-daily-2026-10-25.json" },
+          { type: "apply", path: "archive/discarded.json" },
+        ],
+      },
+    ]);
+    expect(result.ok).toBe(false);
+  });
+
+  it("skips a commit whose changedPaths contain no Daily-shaped path at all", () => {
+    const result = planHistoryOverlay([
+      {
+        sha: "cafef00d",
+        authorName: "tsomers13-ops",
+        authorEmail: "tsomers13@gmail.com",
+        changedPaths: ["README.md"],
+        fileEvents: [{ type: "apply", path: "README.md" }],
+      },
+    ]);
+    expect(result).toEqual({ ok: true, overlay: [] });
   });
 });
