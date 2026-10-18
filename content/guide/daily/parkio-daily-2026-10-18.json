@@ -1,0 +1,323 @@
+{
+  "title": "Parkio Daily for October 18, 2026",
+  "slug": "parkio-daily-2026-10-18",
+  "date": "2026-10-18",
+  "teaser": "Diamond Horseshoe reopened at Magic Kingdom; crowds hit six-month high. RSVLTS pop-up uses virtual queue at Disney Springs.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Remy's Ratatouille Adventure",
+        "parkSlug": "epcot",
+        "note": "New shadow effect debuts in queue"
+      },
+      {
+        "name": "Space Mountain",
+        "parkSlug": "magic-kingdom",
+        "note": "Morning windows remain shortest"
+      },
+      {
+        "name": "Slinky Dog Dash",
+        "parkSlug": "hollywood-studios",
+        "note": "Lower waits between 6–7pm"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [],
+    "bignews": [
+      {
+        "title": "Diamond Horseshoe reopens at Magic Kingdom",
+        "body": "The Liberty Square quick-service location is back in operation with a refreshed menu. Lines formed early this week as guests returned to the iconic venue.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "WrightDownMainStreet",
+          "url": "https://www.youtube.com/watch?v=zRa763V8CkY"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Liberty Square dining tends to fill fastest during lunch. Visiting Diamond Horseshoe before 11am or after 2pm usually means shorter waits and better seating."
+        }
+      },
+      {
+        "title": "Crowds reach six-month high across Walt Disney World",
+        "body": "Attendance surged this week to levels not seen since spring break. All four parks are reporting elevated wait times as the slower summer season ends.",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-worlds-worst-crowds-in-6-months-have-hit/"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "Arrive at rope drop and use early entry if staying on property. Headliner waits often exceed 60 minutes by mid-morning now; first-hour touring is your best bet."
+        }
+      },
+      {
+        "title": "Virtual queue required for RSVLTS pop-up at Disney Springs",
+        "body": "The limited-time apparel shop is using a virtual queue system this weekend to manage demand. Full merchandise list includes park-themed shirts and accessories.",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/10/full-list-of-merchandise-available-at-rsvlts-pop-up-in-disney-springs-in-todays-daily-recap-for-10-17-2026/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Virtual queue slots tend to fill within the first hour. Join as soon as you arrive at Disney Springs to avoid missing out on entry altogether."
+        }
+      },
+      {
+        "title": "New animated shadow effect added to Remy's Ratatouille Adventure queue",
+        "body": "Remy and friends now appear as moving shadows in the standby line at EPCOT. The projection effect debuts as part of ongoing enhancements to the France Pavilion attraction.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/10/full-list-of-merchandise-available-at-rsvlts-pop-up-in-disney-springs-in-todays-daily-recap-for-10-17-2026/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "The shadow effect is easiest to spot in the covered portions of the queue. Standby line waits typically drop after 7pm if you want a closer look."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "New food items land across Hollywood Studios",
+        "body": "Sci-Fi Dine-In Theater, Toy Story Land, and additional locations now offer updated menu selections. Changes include seasonal snacks and entree swaps.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "WrightDownMainStreet",
+          "url": "https://www.youtube.com/watch?v=Ti6I3iraGnA"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Sci-Fi typically sees longest waits during lunch. Booking a late-afternoon reservation often means easier walk-up availability and a chance to try the new items."
+        }
+      },
+      {
+        "title": "Banana Ball event returns to Walt Disney World in 2027",
+        "body": "The Savannah Bananas will bring their touring baseball show back to the resort next year. Dates and ticket details were announced via ESPN2 broadcast.",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/disney-experiences/banana-ball-coming-to-disney-world/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Event tickets tend to sell quickly once on sale. Signing up for notifications from the Bananas now may give you an edge when booking opens."
+        }
+      },
+      {
+        "title": "NOAA forecasts above-average rain for Central Florida this winter",
+        "body": "El Niño conditions are expected to bring higher-than-normal precipitation to the Walt Disney World area from December through February. Guests should prepare for wet weather.",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/10/noaa-predicts-above-average-rain-this-winter-at-walt-disney-world/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Pack a poncho and plan indoor attractions during afternoon hours when storms are most likely. Covered queue areas at attractions like Pirates tend to stay drier."
+        }
+      },
+      {
+        "title": "Princess and puppy medallion machine appears at EPCOT",
+        "body": "A new pressed-coin station featuring Disney princesses and their animal companions is now operating at Port of Entry near the park entrance.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/10/full-list-of-merchandise-available-at-rsvlts-pop-up-in-disney-springs-in-todays-daily-recap-for-10-17-2026/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Medallion machines often run out of popular designs by late afternoon. Stopping by Port of Entry on your way in helps avoid sold-out selections."
+        }
+      },
+      {
+        "title": "Concrete tiles replaced at Disney Springs",
+        "body": "Sections of the walkway outside Sephora and Vuori in Town Center now feature colorful block tiles in place of plain gray concrete.",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/10/concrete-block-tiles-replaced-with-more-colorful-ones-at-disney-springs/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "The refresh is most visible in Town Center. Visiting during early evening hours usually means lighter foot traffic for photos and shopping."
+        }
+      },
+      {
+        "title": "Artist merchandise featuring Joey Chou and Jasmine Becket-Griffith now at World Showcase",
+        "body": "New apparel and accessories showcasing work by multiple Disney artists are available in EPCOT's pavilion shops. Designs include original character illustrations.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/10/disney-merch-featuring-joey-chou-darren-wilson-scooter-and-jasmine-becket-griffith-art-now-available-at-walt-disney-world/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Limited-edition artist items tend to sell out quickly at flagship World Showcase shops. Stopping in during morning hours often yields the best selection."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Monsters Inc Halloween wallpapers available for download",
+        "body": "Digital backgrounds inspired by the Pixar Place Hotel overlay at Disneyland Resort are now free to download online. Designs feature Sulley, Mike, and seasonal decor.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/10/monsters-inc-halloween-pixar-place-hotel-wallpapers-now-available-for-download/"
+        }
+      },
+      {
+        "title": "Mickey Mouse and Marvel key switch keychains at Disneyland Resort",
+        "body": "World of Disney in Downtown Disney District is carrying new character-themed keychains priced at fourteen ninety-nine. Designs include four Mickey styles and Marvel superheroes.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/10/new-mickey-mouse-and-marvel-key-switch-keychains-arrive-at-disneyland-resort/"
+        }
+      },
+      {
+        "title": "Disney Parks UNO and Monopoly games now at Disney Store",
+        "body": "Themed editions of classic board games featuring park attractions and landmarks are available online. The lineup includes a deluxe game set.",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/10/new-disney-parks-uno-monopoly-and-deluxe-game-set-arrive-at-disney-store/"
+        }
+      },
+      {
+        "title": "Disney Imagination cruise ship announced for Japan sailings in 2029",
+        "body": "Disney Cruise Line revealed the name of its first vessel to depart from Tokyo. The ship will begin spring itineraries in three years.",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/dcl/disney-imagination-name-reveal-japan/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "Six Ravens restaurant review splits guests on value",
+        "body": "Disney Tourist Blog published a detailed breakdown of the new Gideon's Bakehouse–affiliated restaurant at Disney Springs. The review weighs menu quality against pricing after multiple visits.",
+        "ctaLabel": "Read the full review",
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Six Ravens typically sees lightest demand during weekday lunches. If you want to try the menu without a long wait, mid-afternoon reservations often remain available day-of."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "HdJO4DED3I4",
+      "title": "New York City 2026 | Trying NYC's BEST Pancakes, Donuts & Italian Food | New York Comic Con | Disney",
+      "channel": "Paging Mr. Morrow",
+      "publishedAt": "2026-10-11T16:59:33Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/HdJO4DED3I4/mqdefault.jpg",
+      "viewCount": 138681,
+      "url": "https://www.youtube.com/watch?v=HdJO4DED3I4",
+      "summary": "Paging Mr. Morrow explores top-rated food spots in New York City and covers New York Comic Con events."
+    },
+    {
+      "videoId": "IbPu5hT1Qp8",
+      "title": "Disney's Magic Kingdom 2026 | NEW Food, Christmas Merch & The Diamond Horseshoe | Walt Disney World",
+      "channel": "Paging Mr. Morrow",
+      "publishedAt": "2026-10-17T13:03:15Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/IbPu5hT1Qp8/mqdefault.jpg",
+      "viewCount": 67807,
+      "url": "https://www.youtube.com/watch?v=IbPu5hT1Qp8",
+      "summary": "A tour of Magic Kingdom covering the reopened Diamond Horseshoe, new food offerings, and early Christmas merchandise."
+    },
+    {
+      "videoId": "zRa763V8CkY",
+      "title": "NEW in Magic Kingdom- The Diamond Horseshoe Reopened! | Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-10-12T15:30:06Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/zRa763V8CkY/mqdefault.jpg",
+      "viewCount": 62817,
+      "url": "https://www.youtube.com/watch?v=zRa763V8CkY",
+      "summary": "WrightDownMainStreet visits the newly reopened Diamond Horseshoe restaurant in Liberty Square at Magic Kingdom."
+    },
+    {
+      "videoId": "567wufYiImI",
+      "title": "🔴Live: Saturday Night Park Hopping from Epcot to Magic Kingdom - 10-17-26 - Walt Disney World",
+      "channel": "ResortTV1",
+      "publishedAt": "2026-10-18T04:17:09Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/567wufYiImI/mqdefault.jpg",
+      "viewCount": 43789,
+      "url": "https://www.youtube.com/watch?v=567wufYiImI",
+      "summary": "A live stream following an evening park hop from EPCOT to Magic Kingdom on Saturday night."
+    },
+    {
+      "videoId": "q505n4dGN7Q",
+      "title": "🔴 Live: Saturday HHN Stream at Universal Studios Hollywood! Halloween Horror Nights - 10/17/26",
+      "channel": "Koda Bear the Explorer ",
+      "publishedAt": "2026-10-18T07:10:12Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/q505n4dGN7Q/mqdefault.jpg",
+      "viewCount": 39439,
+      "url": "https://www.youtube.com/watch?v=q505n4dGN7Q",
+      "summary": "Live coverage of Halloween Horror Nights at Universal Studios Hollywood on Saturday evening."
+    },
+    {
+      "videoId": "Ti6I3iraGnA",
+      "title": "Every NEW Food in Hollywood Studios- Sci Fi, Toy Story Land & More! | Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-10-16T15:53:03Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Ti6I3iraGnA/mqdefault.jpg",
+      "viewCount": 38375,
+      "url": "https://www.youtube.com/watch?v=Ti6I3iraGnA",
+      "summary": "A rundown of new menu items across Hollywood Studios, including Sci-Fi Dine-In and Toy Story Land locations."
+    },
+    {
+      "videoId": "pqGOYSeRFzU",
+      "title": "🔴 LIVE: Happily Ever After Fireworks — FULL SHOW 4K Disney World Live Stream (Magic Kingdom 2026)",
+      "channel": "Fun to be Free",
+      "publishedAt": "2026-10-18T03:41:55Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/pqGOYSeRFzU/mqdefault.jpg",
+      "viewCount": 11511,
+      "url": "https://www.youtube.com/watch?v=pqGOYSeRFzU",
+      "summary": "A 4K live stream capturing the full Happily Ever After fireworks show at Magic Kingdom."
+    },
+    {
+      "videoId": "RxCg0QTxg9w",
+      "title": "Disney Workers \"They Shouldn't Have To Struggle To Survive!\"",
+      "channel": "Brickey Vlog",
+      "publishedAt": "2026-10-17T23:39:32Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/RxCg0QTxg9w/mqdefault.jpg",
+      "viewCount": 10556,
+      "url": "https://www.youtube.com/watch?v=RxCg0QTxg9w",
+      "summary": "Brickey Vlog discusses ongoing concerns about Disney cast member wages and working conditions."
+    },
+    {
+      "videoId": "vw9mmbApx6I",
+      "title": "LIVE from Disney's Hollywood Studios! Rides, Food Reviews & Fantasmic Nighttime Show | Living in Diz",
+      "channel": "Living in DIZ",
+      "publishedAt": "2026-10-18T03:05:11Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/vw9mmbApx6I/mqdefault.jpg",
+      "viewCount": 9861,
+      "url": "https://www.youtube.com/watch?v=vw9mmbApx6I",
+      "summary": "A live stream from Hollywood Studios covering attractions, dining, and the Fantasmic show."
+    },
+    {
+      "videoId": "BVqb2jQiU8E",
+      "title": "🔴Live: Day at Magic Kingdom & Animal Kingdom! - Rides & More Disney World Livestream",
+      "channel": "GooToYou!",
+      "publishedAt": "2026-10-18T00:24:53Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/BVqb2jQiU8E/mqdefault.jpg",
+      "viewCount": 8614,
+      "url": "https://www.youtube.com/watch?v=BVqb2jQiU8E",
+      "summary": "GooToYou streams a full day visiting both Magic Kingdom and Animal Kingdom with ride coverage."
+    }
+  ],
+  "updatedAt": "2026-10-18T10:47:09.119Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-10-18T10:47:09.119Z",
+    "tokens": {
+      "input": 11230,
+      "output": 4912,
+      "costUsd": 0.1074
+    }
+  }
+}
