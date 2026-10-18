@@ -157,6 +157,59 @@ describe("composeValidatedHistory — real-git regressions", () => {
     );
   });
 
+  it("fails closed when the approved baseline is an ancestor only via a merge's SECOND parent (ours-discarded), not on the candidate's own first-parent chain", () => {
+    // A real first commit on main, so "main" is an actual ref to branch
+    // from and later return to (an unborn branch has no commit yet to
+    // branch from or check back out to).
+    const root = commit("app.txt", "v1\n", "Initial app baseline", HUMAN_ENV);
+
+    // The baseline branch carries a Daily file main never gets.
+    execFileSync("git", ["checkout", "-b", "approved-baseline", root], { cwd: repo });
+    const baselinePath = dailyPath("2026-10-25");
+    const baseline = commit(baselinePath, "{}\n", "Parkio Daily — 2026-10-25", BOT_ENV);
+
+    // Main makes independent progress that never includes it.
+    execFileSync("git", ["checkout", "main"], { cwd: repo });
+    commit("app.txt", "v2\n", "App progress on main", HUMAN_ENV);
+
+    // `-s ours`: the merge commit's tree equals main's own tree — the
+    // baseline branch's content is discarded, even though the merge
+    // commit (and everything built on it) remains a normal descendant
+    // of `baseline`, i.e. `merge-base --is-ancestor baseline <anything
+    // after this merge>` is true.
+    execFileSync(
+      "git",
+      ["merge", "--no-ff", "-s", "ours", "-m", "Merge pull request: discard approved-baseline", "approved-baseline"],
+      { cwd: repo, env: { ...process.env, ...HUMAN_ENV } },
+    );
+    const candidate = commit(dailyPath("2026-10-26"), "{}\n", "Parkio Daily — 2026-10-26", BOT_ENV);
+
+    // Prove the setup facts so this cannot pass by accident.
+    expect(() =>
+      execFileSync("git", ["merge-base", "--is-ancestor", baseline, candidate], { cwd: repo, stdio: "ignore" }),
+    ).not.toThrow(); // baseline genuinely IS an ancestor...
+    const firstParentChain = execFileSync("git", ["log", "--first-parent", "--format=%H", candidate], {
+      cwd: repo,
+      encoding: "utf8",
+    });
+    expect(firstParentChain).not.toContain(baseline); // ...but not on the first-parent chain.
+    expect(() =>
+      execFileSync("git", ["cat-file", "-e", `${candidate}:${baselinePath}`], { cwd: repo, stdio: "ignore" }),
+    ).toThrow(); // the candidate's own tree genuinely lacks the file.
+    expect(() =>
+      execFileSync("git", ["cat-file", "-e", `${baseline}:${baselinePath}`], { cwd: repo, stdio: "ignore" }),
+    ).not.toThrow(); // baseline's own tree genuinely has it (so "git checkout baseline" would restore it).
+
+    // The actual assertion: both the low-level walk and the full,
+    // git-wired decision must fail closed — never ok:true.
+    expect(() => withRepoCwd(() => commitsBetween(baseline, candidate))).toThrow(
+      "does not lie on its first-parent chain",
+    );
+    expect(() => withRepoCwd(() => resolvePublishPlan(baseline, candidate))).toThrow(
+      "does not lie on its first-parent chain",
+    );
+  });
+
   it("skips ordinary application commits that never touch a Daily-shaped path, instead of failing on them", () => {
     const baseline = commit("app.txt", "v1\n", "Initial app baseline", HUMAN_ENV);
     commit("README.md", "docs change\n", "Update README", HUMAN_ENV);

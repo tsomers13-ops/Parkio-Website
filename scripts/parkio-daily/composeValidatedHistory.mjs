@@ -43,8 +43,31 @@
  *      using `git diff --name-status -M -C -z`, which reports BOTH sides
  *      of a rename or copy, and feeding both into validation.
  *
- * The root fix for both is the same shape: never trust a single
- * derived signal (ancestry OR a one-sided diff) in isolation. Every
+ * SECOND CORRECTIVE FIX: `merge-base --is-ancestor` only proves baseline
+ * is reachable from the candidate via SOME path — it says nothing about
+ * which path. A baseline reachable only as a merge's SECOND parent (the
+ * side an `-s ours` merge discarded) still passes that check, even
+ * though the commit walk above deliberately never visits it. The
+ * workflow's own "git checkout $baseline" step, however, checks out
+ * baseline's LITERAL tree — including any Daily file baseline carries
+ * that the candidate's first-parent lineage never knew about. Because
+ * that file was never touched by anything on the walked range (it
+ * simply predates the range, from the walk's point of view), no commit
+ * fact ever mentions it, planHistoryOverlay() has nothing to say about
+ * it, and resolvePublishPlan()'s final-tree cross-check — which only
+ * inspects paths already present in the plan — never looks at it
+ * either. The baseline checkout leaves it sitting there, undisturbed,
+ * and composition reports ok:true. Fixed by requiring baseline to be
+ * not just *an* ancestor but literally a commit ON the candidate's own
+ * first-parent chain (isOnFirstParentChain() below) — exactly the set
+ * of commits "git checkout $baseline" could ever legitimately be,
+ * given that the walk only ever trusts that chain. This is a distinct
+ * failure mode from plain non-ancestry and is reported with its own
+ * distinct error text; it is checked before the walk is attempted.
+ *
+ * The root fix for all of this is the same shape: never trust a single
+ * derived signal (ancestry OR a one-sided diff OR "reachable at all")
+ * in isolation. Every
  * overlay/removal decision this module produces is additionally
  * cross-checked, in resolvePublishPlan() below, against literal
  * existence (or absence) of each path in the CANDIDATE'S OWN FINAL TREE
@@ -225,6 +248,25 @@ function toChangesAndEvents(entries) {
 }
 
 /**
+ * True iff `commitSha` is literally one of the commits visited when
+ * walking `fromSha`'s history following only first parents — i.e. the
+ * exact set of commits `git checkout fromSha`'s own history-of-record
+ * could ever legitimately rest on. Ordinary ancestry
+ * (`merge-base --is-ancestor`) is satisfied by a commit reachable via
+ * ANY parent edge, including a merge's second parent; this is strictly
+ * narrower and is what distinguishes "baseline is some ancestor" from
+ * "baseline is a commit the first-parent walk below would itself visit."
+ */
+export function isOnFirstParentChain(commitSha, fromSha) {
+  const target = git(["rev-parse", commitSha]);
+  const chain = git(["log", "--first-parent", "--format=%H", fromSha])
+    .split("\n")
+    .map((s) => s.trim())
+    .filter(Boolean);
+  return chain.includes(target);
+}
+
+/**
  * Git-wired fact gathering for every commit on the candidate's
  * first-parent chain, strictly after `baseline`, up to and including
  * `candidateSha`, oldest first. Mirrors validatePublishCandidate.mjs's
@@ -245,6 +287,20 @@ export function commitsBetween(baseline, candidateSha) {
   } catch {
     throw new Error(
       `approved baseline ${baseline} is not an ancestor of candidate ${candidateSha}`,
+    );
+  }
+
+  // Distinct from the ancestry check above: baseline can be a true
+  // ancestor (reachable via a merge's second parent) while still never
+  // being a commit the first-parent walk below would visit — exactly
+  // the topology an `-s ours` merge produces when it discards baseline's
+  // own branch. "git checkout baseline" would still restore baseline's
+  // literal tree, including Daily content the walk below could never
+  // learn about and would therefore never schedule for removal. See the
+  // header comment's "SECOND CORRECTIVE FIX" for the full incident.
+  if (!isOnFirstParentChain(baseline, candidateSha)) {
+    throw new Error(
+      `approved baseline ${baseline} is an ancestor of candidate ${candidateSha} but does not lie on its first-parent chain — refusing to traverse a topology where the baseline's own content may have been discarded by a non-first-parent (e.g. merge --no-ff -s ours) path`,
     );
   }
 
