@@ -1,0 +1,349 @@
+{
+  "title": "Parkio Daily for October 19, 2026",
+  "slug": "parkio-daily-2026-10-19",
+  "date": "2026-10-19",
+  "teaser": "Diamond Horseshoe reopens at Magic Kingdom with new menu; Hollywood Studios extends hours for holiday surge starting November 1.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Guardians of the Galaxy: Cosmic Rewind",
+        "parkSlug": "epcot",
+        "note": "New queue rules enforced today; ride early before afternoon crowds"
+      },
+      {
+        "name": "Tower of Terror",
+        "parkSlug": "hollywood-studios",
+        "note": "Refurbishment work visible but ride operating normally"
+      },
+      {
+        "name": "Space Mountain",
+        "parkSlug": "magic-kingdom",
+        "note": "Short waits this morning; Christmas merch now available nearby"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [
+      {
+        "title": "Cosmic Rewind implements immediate queue policy change",
+        "body": "Cast members at Guardians of the Galaxy: Cosmic Rewind began enforcing a new line-jumping rule today at EPCOT. The attraction continues to see operational adjustments since opening in 2022.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/10/disney-world-cast-members-make-immediate-guest-changes-at-troubled-cosmic-rewind-attraction-in-epcot-th1mmb/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Queue enforcement tends to slow boarding slightly during peak hours. Riding in the first 90 minutes after park open or after 7pm usually sidesteps congestion."
+        }
+      }
+    ],
+    "bignews": [
+      {
+        "title": "Diamond Horseshoe reopens at Magic Kingdom",
+        "body": "The Diamond Horseshoe dining location has reopened at Magic Kingdom after a closure. New food offerings and Christmas merchandise are now available in the area.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "YouTube / WrightDownMainStreet",
+          "url": "https://www.youtube.com/watch?v=zRa763V8CkY"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Reopened dining spots typically see lighter crowds for the first few weeks. Lunch reservations between 11–12:30 often remain available when other venues are booked."
+        }
+      },
+      {
+        "title": "Disney World extends park hours starting November 1",
+        "body": "Magic Kingdom, Animal Kingdom, and Hollywood Studios will operate longer hours beginning November 1 as Disney prepares for the holiday crowd surge. The extensions run through the first week of November.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/10/disney-world-extends-holiday-hours-starting-november-1-as-holiday-rush-begins-rl1/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Extended hours usually create lighter crowds in the final two operating hours. Arriving after 7pm for Hollywood Studios tends to deliver walk-on windows for popular attractions."
+        }
+      },
+      {
+        "title": "Baby manatee arrives at The Seas pavilion",
+        "body": "A new manatee calf is now on view at The Seas with Nemo and Friends at EPCOT. The animal joins the existing manatee rehabilitation program.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/10/18/epcot-has-a-new-baby-animal-you-need-to-see/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Animal viewing areas tend to be quietest mid-afternoon when crowds shift toward World Showcase. Stopping by between 2–4pm often allows unobstructed viewing."
+        }
+      },
+      {
+        "title": "Lightning strike hits It's a Small World during Halloween party",
+        "body": "Severe weather caused a lightning strike near It's a Small World at Magic Kingdom during Mickey's Not-So-Scary Halloween Party. The strike reportedly caused a temporary ride failure.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/10/video-lightning-strikes-its-a-small-world-at-magic-kingdom-causes-ride-failure-bwb1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Weather-related closures often trigger long re-entry queues once rides reopen. If storms are forecast, riding headline attractions before 3pm usually avoids disruption."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "New light-up Coaxium canister merchandise at Galaxy's Edge",
+        "body": "A light-up Coaxium canister souvenir inspired by Millennium Falcon: Smugglers Run is now available at Hollywood Studios. The item replicates cargo from the attraction.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/10/bring-home-your-smugglers-run-cargo-with-a-new-light-up-coaxium-canister-at-disneys-hollywood-studios-in-todays-daily-recap-for-10-18-2026/?adt_ei=*|EMAIL|*"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Limited-edition Galaxy's Edge items tend to sell out by mid-afternoon on weekends. Shopping Dok-Ondar's before 11am usually ensures stock availability."
+        }
+      },
+      {
+        "title": "New Tower of Terror pressed penny machine installed",
+        "body": "An eight-design pressed penny machine featuring Mickey and friends in Halloween scenes has been added to Tower of Terror at Hollywood Studios. The machine uses a touchscreen interface.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/10/new-tower-of-terror-pressed-penny-machine-features-mickey-and-friends-in-frightful-scenes-at-disneys-hollywood-studios/?adt_ei=*|EMAIL|*"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Pressed penny machines near major attractions often run out of quarters by evening. Collecting before 2pm or bringing exact change tends to avoid delays."
+        }
+      },
+      {
+        "title": "Italy pavilion pillar paint work completed",
+        "body": "Protective ropes have been removed from a pillar at EPCOT's Italy pavilion after an apparent paint touch-up. The base showed visible wear before the recent work.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/10/ropes-removed-from-italy-pavilion-pillar-after-apparent-paint-touch-up-at-epcot/?adt_ei=*|EMAIL|*"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "World Showcase construction and refurbishment activity typically wraps by late afternoon. Touring Italy between 5–7pm usually avoids any remaining equipment or barriers."
+        }
+      },
+      {
+        "title": "Banana Ball event coming to Walt Disney World in 2027",
+        "body": "The Savannah Bananas baseball team will bring their Banana Ball format to Walt Disney World in 2027. Dates and venue were announced during a live broadcast on ESPN2.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/disney-experiences/banana-ball-coming-to-disney-world/"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "Special sporting events tend to draw large day-guest crowds to resorts and Disney Springs. Avoiding those areas on event days usually keeps dining and shopping waits manageable."
+        }
+      },
+      {
+        "title": "Villain-themed PhotoPass backdrops added in Disney Springs",
+        "body": "New Disney Villain backdrops for PhotoPass photos are now available at Disney Springs. The Halloween-themed setups allow guests to capture seasonal portraits.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/10/18/were-freaking-out-over-these-new-disney-photopass-spots/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "PhotoPass locations in Disney Springs tend to have short lines before noon on weekdays. Arriving early usually means no wait and better lighting for outdoor shots."
+        }
+      },
+      {
+        "title": "Winnie the Pooh 100th anniversary merchandise launches",
+        "body": "New Winnie the Pooh products celebrating the character's 100th anniversary are now available across Disney parks. The collection marks the centennial of A.A. Milne's original 1926 book.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/products/new-winnie-the-pooh-anniversary-products/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Anniversary collections often see stock shortages at flagship stores by late afternoon. Shopping Emporium or World of Disney before 1pm usually ensures full selection."
+        }
+      },
+      {
+        "title": "Cars 20th anniversary toy cars arrive at Disneyland",
+        "body": "Toy cars celebrating the 20th anniversary of Pixar's Cars film are now on sale at the Disneyland Resort in the Downtown Disney District. Each car is priced at $9.99.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/10/new-cars-20th-anniversary-toy-cars-arrive-at-disneyland-resort/?adt_ei=*|EMAIL|*"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Downtown Disney merchandise locations tend to be less crowded than in-park shops. Stopping by before or after your park day usually avoids checkout lines."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Bluey Loungefly collection now available online",
+        "body": "Loungefly has released a new collection featuring Bluey characters, including backpacks, wallets, mystery pins, and bag charms. Items are available through online retailers.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/10/bluey-loungefly-backpack-wallet-mystery-pins-and-more-now-available-online/?adt_ei=*|EMAIL|*"
+        }
+      },
+      {
+        "title": "Breeze Airlines adds new Orlando route",
+        "body": "Breeze Airways announced a new non-stop flight route to Orlando International Airport beginning next year. The budget carrier continues expanding Florida service.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/10/18/breeze-airlines-adds-new-non-stop-flight-to-orlando-airport/"
+        }
+      },
+      {
+        "title": "Disney Imagination cruise ship to sail from Tokyo in 2029",
+        "body": "Disney Cruise Line revealed that the Disney Imagination will be the first Disney ship to sail from Japan, with departures from Tokyo beginning spring 2029.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/dcl/disney-imagination-name-reveal-japan/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "Hollywood Studios crowds hit six-month high",
+        "body": "Walt Disney World is experiencing its busiest crowds in six months, with Hollywood Studios and Magic Kingdom seeing the heaviest traffic. The surge follows a slow summer and early fall period. EPCOT remains the best option for lower waits today.",
+        "parkSlug": "hollywood-studios",
+        "ctaLabel": "Check live wait times",
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "High-crowd days at Hollywood Studios tend to push waits for Slinky Dog and Rise of the Resistance past 90 minutes by 10am. Rope-dropping those attractions or visiting EPCOT instead usually delivers better touring conditions."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "IbPu5hT1Qp8",
+      "title": "Disney's Magic Kingdom 2026 | NEW Food, Christmas Merch & The Diamond Horseshoe | Walt Disney World",
+      "channel": "Paging Mr. Morrow",
+      "publishedAt": "2026-10-17T13:03:15Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/IbPu5hT1Qp8/mqdefault.jpg",
+      "viewCount": 99556,
+      "url": "https://www.youtube.com/watch?v=IbPu5hT1Qp8",
+      "summary": "Paging Mr. Morrow tours Magic Kingdom to showcase the reopened Diamond Horseshoe, new holiday merchandise, and recently added food offerings."
+    },
+    {
+      "videoId": "zRa763V8CkY",
+      "title": "NEW in Magic Kingdom- The Diamond Horseshoe Reopened! | Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-10-12T15:30:06Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/zRa763V8CkY/mqdefault.jpg",
+      "viewCount": 64559,
+      "url": "https://www.youtube.com/watch?v=zRa763V8CkY",
+      "summary": "WrightDownMainStreet explores the newly reopened Diamond Horseshoe restaurant at Magic Kingdom and previews its updated menu."
+    },
+    {
+      "videoId": "Ti6I3iraGnA",
+      "title": "Every NEW Food in Hollywood Studios- Sci Fi, Toy Story Land & More! | Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-10-16T15:53:03Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Ti6I3iraGnA/mqdefault.jpg",
+      "viewCount": 46598,
+      "url": "https://www.youtube.com/watch?v=Ti6I3iraGnA",
+      "summary": "WrightDownMainStreet reviews all the latest food additions at Hollywood Studios, including items at Sci-Fi Dine-In and Toy Story Land."
+    },
+    {
+      "videoId": "WrYCR_xl5cE",
+      "title": "🔴 LIVE: YOU Pick! BEST Rides at Disney World — 4K POV | Fun to be Free",
+      "channel": "Fun to be Free",
+      "publishedAt": "2026-10-19T04:10:55Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/WrYCR_xl5cE/mqdefault.jpg",
+      "viewCount": 9796,
+      "url": "https://www.youtube.com/watch?v=WrYCR_xl5cE",
+      "summary": "Fun to be Free livestreams from Walt Disney World, letting viewers vote on which rides to experience next in 4K POV."
+    },
+    {
+      "videoId": "3T84fWYz4AE",
+      "title": "🔴LIVE: Magic Kingdom to EPCOT!  Rides, Shows and who knows!",
+      "channel": "Men of Main Street Podcast",
+      "publishedAt": "2026-10-19T00:59:03Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/3T84fWYz4AE/mqdefault.jpg",
+      "viewCount": 5952,
+      "url": "https://www.youtube.com/watch?v=3T84fWYz4AE",
+      "summary": "Men of Main Street Podcast broadcasts live as they park-hop from Magic Kingdom to EPCOT, covering rides and entertainment along the way."
+    },
+    {
+      "videoId": "dWJqCpt0WdM",
+      "title": "Ranking sweet moments in Disney with dogs #funny #pets #funnymoments #cute #disneyland #sweet",
+      "channel": "Bubu ranks ",
+      "publishedAt": "2026-10-19T01:10:33Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/dWJqCpt0WdM/mqdefault.jpg",
+      "viewCount": 3683,
+      "url": "https://www.youtube.com/watch?v=dWJqCpt0WdM",
+      "summary": "Bubu ranks compiles and rates heartwarming moments featuring dogs at Disneyland in a short video."
+    },
+    {
+      "videoId": "vchites_GqI",
+      "title": "SHOP MET MIJ IN DISNEYLAND PARIJS !! 🧚 NIEUWE WINKEL DISNEY WONDERS ✨ DISNEY VILLAGE",
+      "channel": "Noëll van Dreven",
+      "publishedAt": "2026-10-19T03:00:31Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/vchites_GqI/mqdefault.jpg",
+      "viewCount": 1442,
+      "url": "https://www.youtube.com/watch?v=vchites_GqI",
+      "summary": "Noëll van Dreven tours the new Disney Wonders store at Disneyland Paris and showcases merchandise in Disney Village."
+    },
+    {
+      "videoId": "EjyztYcNpdg",
+      "title": "It really be like that #funny #shorts #disney #disneyland #fyp",
+      "channel": "raffwitdashifts",
+      "publishedAt": "2026-10-19T03:36:56Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/EjyztYcNpdg/mqdefault.jpg",
+      "viewCount": 1312,
+      "url": "https://www.youtube.com/watch?v=EjyztYcNpdg",
+      "summary": "Raffwitdashifts shares a humorous short video about typical Disneyland experiences."
+    },
+    {
+      "videoId": "MFgp1TRQis8",
+      "title": "La parade #disney #disneyland",
+      "channel": "Clara.A",
+      "publishedAt": "2026-10-19T07:31:14Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/MFgp1TRQis8/mqdefault.jpg",
+      "viewCount": 1294,
+      "url": "https://www.youtube.com/watch?v=MFgp1TRQis8",
+      "summary": "Clara.A captures footage of a parade at Disneyland Paris."
+    },
+    {
+      "videoId": "eSJney8Vg1E",
+      "title": "Meeting funny characters at Disney #Foryou #Funny #funnyvideos #disney #disneyland",
+      "channel": "Shivley Donley",
+      "publishedAt": "2026-10-19T01:02:07Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/eSJney8Vg1E/mqdefault.jpg",
+      "viewCount": 1291,
+      "url": "https://www.youtube.com/watch?v=eSJney8Vg1E",
+      "summary": "Shivley Donley compiles humorous character meet-and-greet moments at Disney parks."
+    }
+  ],
+  "updatedAt": "2026-10-19T10:47:28.710Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-10-19T10:47:28.710Z",
+    "tokens": {
+      "input": 11228,
+      "output": 5439,
+      "costUsd": 0.1153
+    }
+  }
+}
