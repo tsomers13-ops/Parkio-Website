@@ -1,0 +1,55 @@
+name: PR Validation
+
+on:
+  pull_request:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pr-validation-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    name: Test and build OpenNext Worker
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      NEXT_TELEMETRY_DISABLED: "1"
+
+    steps:
+      - name: Check out pull request
+        uses: actions/checkout@v4
+
+      - name: Set up Node 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+
+      - name: Clean install with npm 10.9.4
+        run: npx --yes npm@10.9.4 ci
+
+      - name: Unit tests
+        run: npm test
+
+      - name: Generate Cloudflare types
+        run: npm run cf:types
+
+      - name: TypeScript
+        run: npx --no-install tsc --noEmit
+
+      - name: Next build
+        run: npm run build
+
+      - name: OpenNext build and local cache
+        run: npm run build:cloudflare
+
+      - name: Worker bundle dry run
+        run: >-
+          npx --no-install wrangler deploy --dry-run
+          --config wrangler.production.jsonc
+          --outdir "$RUNNER_TEMP/parkio-pr-dry-run"
