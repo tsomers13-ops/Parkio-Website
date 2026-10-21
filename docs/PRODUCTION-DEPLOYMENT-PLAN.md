@@ -786,19 +786,20 @@ workflow would **never fire for daily content**. This was verified against the
 GitHub documentation rather than assumed, because the failure it produces is
 silent.
 
-### Canonical path: `.github/workflows/workers-production.yml`
+### Canonical application-release path: `.github/workflows/workers-production.yml`
 
-**One** workflow deploys Production. Both normal application changes and daily
-content go through it — there is deliberately no second way.
+Application changes deploy only after an explicit release action. A merge or
+direct push to `main` does not request a Production deploy. Daily content uses
+the separate, allowlisted `parkio-daily-publish.yml` path and does not promote
+unapproved application code.
 
-| Entry point | Fires for | Why it cannot double-fire |
+| Entry point | Fires for | Release control |
 |---|---|---|
-| `on: push: branches: [main]` | human merges and direct pushes | GITHUB_TOKEN pushes do not raise `push` |
-| `on: workflow_call` | invoked by `parkio-daily.yml` | only the daily job calls it |
-| `on: workflow_dispatch` | manual re-run | operator-initiated |
+| `on: push: tags: [production-release-*]` | an explicitly tagged application release | tag creation is intentional; the protected `production` environment still gates deployment |
+| `on: workflow_dispatch` | an operator-selected application release | operator-initiated; the same protected environment gate applies |
 
-`paths-ignore` skips `docs/**` and `**/*.md`, so documentation commits do not
-deploy.
+Merging the application repair is therefore not enough: the merged SHA must be
+separately promoted through one of these application-release entry points.
 
 Build chain, in order: Node **22** → `npm ci` → `npm run cf:types` → `npm test`
 → `npx tsc --noEmit` → `npm run build` → `opennextjs-cloudflare build` →

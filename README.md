@@ -131,29 +131,26 @@ Full API reference: [API.md](./API.md).
 ## Deployment
 
 See [DEPLOY.md](./DEPLOY.md). The site needs a runtime now (real API
-routes), so the previous static-export setup no longer applies. Two
-supported paths: Vercel (zero-config) or Cloudflare Pages with the
-`@cloudflare/next-on-pages` adapter.
+routes), so the previous static-export and Cloudflare Pages setup no longer
+applies. The Cloudflare path builds a Worker with `@opennextjs/cloudflare`.
 
 ## QA checklist (run before each deploy)
 
 ### If the change adds or materially changes a route
 
-`npm run build` passing does **not** mean Cloudflare will build. The adapter
-rejects route shapes Next happily prerenders — that failed every production
-build of the dining discovery gate while every local check was green. So for
-any route change, run all three:
+`npm run build` passing does **not** mean the OpenNext Worker will build or
+serve the same routes correctly. For any route change, run the local-only
+build and Worker checks:
 
 ```bash
-npm run build            # Next build
-npm run build:cloudflare # pinned Cloudflare adapter — the real deploy command
-git checkout -- package-lock.json   # the adapter mutates the lockfile; restore it
+npm run build             # Next production build
+npm run build:cloudflare  # OpenNext bundle + local prerender-cache population
+npm run workers:preview   # local Worker emulator; never adds --remote or deploys
 ```
 
-Then smoke-test the new routes with `npm run start`: expected 200s, and a 404
+Smoke-test the new routes through the local Worker: expected 200s, and a 404
 for every path that should not exist (wrong park, unknown slug, unsupported
-park). A route that only 404s correctly at build time can behave differently
-once it runs at the edge.
+park). These commands do not upload a Worker or populate a remote cache.
 
 
 A 5-minute pass on the live preview URL. Most items are click-through.
