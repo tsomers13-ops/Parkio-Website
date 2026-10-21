@@ -1,0 +1,338 @@
+{
+  "title": "Parkio Daily for October 21, 2026",
+  "slug": "parkio-daily-2026-10-21",
+  "date": "2026-10-21",
+  "teaser": "Buzz Lightyear facade refresh complete at Disneyland; Polynesian construction extended into 2027; two new Jollywood Nights characters announced.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Space Mountain",
+        "parkSlug": "magic-kingdom",
+        "note": "Early morning windows tend to offer sub-20 minute waits"
+      },
+      {
+        "name": "Soarin'",
+        "parkSlug": "epcot",
+        "note": "Dinner hour typically brings walk-on opportunities"
+      },
+      {
+        "name": "Buzz Lightyear Astro Blasters",
+        "parkSlug": "disneyland",
+        "note": "Fresh facade reveal complete, attraction running normally"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [],
+    "bignews": [
+      {
+        "title": "Buzz Lightyear Astro Blasters exterior refresh complete at Disneyland",
+        "body": "The scrim and construction walls that covered part of the Tomorrowland attraction since early September have been removed, revealing updated facade work.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/10/scrim-removed-outside-of-buzz-lightyear-astro-blasters-at-disneyland/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "The freshened exterior typically draws curious guests mid-morning. Riding before 10am or after dinner usually avoids the curiosity bump."
+        }
+      },
+      {
+        "title": "Polynesian Village Resort construction now expected to run into 2027",
+        "body": "An updated refurbishment bulletin shows work on one of Walt Disney World's largest hotel projects will continue past the holiday season, extending into the new year.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-world-extends-polynesian-village-resort-construction-project-into-2027/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Guests with Polynesian reservations through early 2027 may encounter ongoing noise and visual disruptions. Consider requesting rooms furthest from active work zones when checking in."
+        }
+      },
+      {
+        "title": "Two additional characters confirmed for Jollywood Nights at Hollywood Studios",
+        "body": "Disney quietly announced two new character meet opportunities for the holiday after-hours event, though specific names have not yet been disclosed.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/10/20/disney-just-quietly-announced-2-new-characters-coming-to-jollywood-nights/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "New character debuts at special events tend to draw lines within the first hour. Arriving at event start and heading directly to meet locations usually shortens waits significantly."
+        }
+      },
+      {
+        "title": "Character meet location moving inside Hollywood Studios",
+        "body": "A popular character greeting spot is relocating within the park, though Disney has not yet announced the new position or effective date.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/10/20/a-popular-character-meet-and-greet-is-moving-in-disneys-hollywood-studios/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Character meet relocations often create confusion for a few days. Checking the My Disney Experience app for live character locations this week can save backtracking."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "Brooks reveals 2026 Wine & Dine Half Marathon Weekend running shoes",
+        "body": "The official athletic footwear partner has unveiled commemorative shoe designs for the November race weekend at Walt Disney World.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/10/brooks-disney-reveal-2026-disney-wine-%e2%81%a3-dine-half-marathon-weekend-running-shoes-in-todays-daily-recap-for-10-20-2026/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Limited-edition race merchandise typically sells fastest at the EPCOT expo before race morning. Shopping the first expo session often secures popular sizes."
+        }
+      },
+      {
+        "title": "Winnie the Pooh 100th anniversary products now available across Disney Parks",
+        "body": "A collection celebrating the character's centennial has arrived at locations in Walt Disney World and Disneyland, featuring apparel, accessories, and collectibles.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/products/new-winnie-the-pooh-anniversary-products/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Anniversary merchandise tends to move quickly at flagship shops like Emporium and World of Disney. Stopping by within the first two hours of park opening usually offers the fullest selection."
+        }
+      },
+      {
+        "title": "Veterans Day merchandise collection debuts at Walt Disney World and Disneyland",
+        "body": "Disney's 2026 collection honoring military service members is now available at select resort locations ahead of the November 11 holiday.",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/disney-experiences/new-disney-veterans-day-merchandise-collection/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Patriotic collections often see strong demand from annual passholders and local guests. Visiting on a weekday morning tends to offer better stock and shorter checkout lines."
+        }
+      },
+      {
+        "title": "Crystal Arts releases 2026 advent calendar and ornament trees at Disneyland Resort",
+        "body": "The Arribas Brothers holiday collection, including a $399 house-shaped advent calendar with gold foil details, is now on sale at resort locations.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/10/crystal-arts-2026-advent-calendar-ornament-trees-now-available-at-disneyland-resort/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "High-end holiday collectibles from Crystal Arts are produced in limited quantities. Purchasing within the first week of availability usually ensures selection before sellouts."
+        }
+      },
+      {
+        "title": "40% discount on select 2026-dated merchandise at Disneyland Resort",
+        "body": "Year-specific pins, ornaments, photo frames, and autograph books are now on sale as the calendar year winds down.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/10/40-off-select-2026-merchandise-now-available-at-disneyland-resort/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Year-end clearance sales accelerate as November approaches. Shopping this week typically offers better variety than waiting until December when inventory thins out."
+        }
+      },
+      {
+        "title": "Mickey Fair Isle holiday bags and Minnie ears arrive at Disney Store",
+        "body": "A new seasonal collection featuring traditional Fair Isle patterns has launched, including coordinating accessories and holiday headwear.",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/10/new-mickey-mouse-fair-isle-holiday-bags-and-minnie-mouse-ears-arrive-at-disney-store/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Holiday-themed ears and bags often sell out online within days of launch. Ordering early this week or visiting a Disney Store location in person usually secures items before stock runs low."
+        }
+      },
+      {
+        "title": "Fuzzy sherpa Mickey bucket hats and caps now at Disneyland Resort",
+        "body": "Cold-weather headwear featuring white sherpa fabric and attached Mickey ears has arrived at resort shops ahead of the season shift.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/10/fuzzy-mickey-bucket-hats-caps-and-more-headwear-arrives-at-disneyland-resort/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Seasonal headwear tends to be most available during the first two weeks after debut. Evening temperatures in Southern California can drop into the 50s, making these practical for late park hours."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Carol Choi named Disney Asia Pacific president as Luke Kang retires",
+        "body": "The Walt Disney Company announced that current APAC executive VP Carol Choi will succeed 16-year president Luke Kang at year-end.",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/10/carol-choi-named-the-walt-disney-company-asia-pacific-president-as-luke-kang-retires/"
+        }
+      },
+      {
+        "title": "Banana Ball announces 2027 return to Walt Disney World",
+        "body": "The Savannah Bananas revealed dates and venues for next year's tour during a live ESPN2 broadcast, confirming the sports entertainment event will return to the resort.",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/disney-experiences/banana-ball-coming-to-disney-world/"
+        }
+      },
+      {
+        "title": "Disney Parks Blog introduces S.E.A. member Hazel Hightower",
+        "body": "The Society of Explorers and Adventurers storyline expands with a new character, part of an ongoing narrative across multiple Disney attractions worldwide.",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/disney-experiences/new-sea-character-disney-parks/"
+        }
+      },
+      {
+        "title": "Retired CEO Bob Iger announces new book about second Disney tenure",
+        "body": "Iger's upcoming title, One Last Time, will cover his return as chief executive and extend the ongoing public narrative with former CEO Bob Chapek.",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/retired-disney-ceo-bob-iger-extends-battle-of-bobs-with-book-war/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "New plant-based dish earns strong marks at EPCOT",
+        "body": "Disney Food Blog reviewed a recently added vegan entrée and gave it high praise, noting flavor and presentation that competes well with traditional menu options.",
+        "parkSlug": "epcot",
+        "ctaLabel": "Read the full review",
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Plant-based options at World Showcase pavilions tend to be less ordered than meat-based dishes, often resulting in faster prep times during peak lunch and dinner rushes. Worth trying if you're looking to avoid longer waits at popular quick-service windows."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "IbPu5hT1Qp8",
+      "title": "Disney's Magic Kingdom 2026 | NEW Food, Christmas Merch & The Diamond Horseshoe | Walt Disney World",
+      "channel": "Paging Mr. Morrow",
+      "publishedAt": "2026-10-17T13:03:15Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/IbPu5hT1Qp8/mqdefault.jpg",
+      "viewCount": 128599,
+      "url": "https://www.youtube.com/watch?v=IbPu5hT1Qp8",
+      "summary": "Paging Mr. Morrow tours Magic Kingdom to showcase new food offerings, Christmas merchandise, and updates at The Diamond Horseshoe restaurant."
+    },
+    {
+      "videoId": "Ti6I3iraGnA",
+      "title": "Every NEW Food in Hollywood Studios- Sci Fi, Toy Story Land & More! | Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-10-16T15:53:03Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Ti6I3iraGnA/mqdefault.jpg",
+      "viewCount": 57075,
+      "url": "https://www.youtube.com/watch?v=Ti6I3iraGnA",
+      "summary": "WrightDownMainStreet samples new menu items across Hollywood Studios, including stops at Sci-Fi Dine-In and Toy Story Land locations."
+    },
+    {
+      "videoId": "MaguJunctNw",
+      "title": "Magic Kingdom Rides, Shows, Parade 10/20/26  #live",
+      "channel": "That Crazy Disney Lady",
+      "publishedAt": "2026-10-21T04:47:02Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/MaguJunctNw/mqdefault.jpg",
+      "viewCount": 31973,
+      "url": "https://www.youtube.com/watch?v=MaguJunctNw",
+      "summary": "A live stream from Magic Kingdom covering rides, shows, and parade entertainment on October 20, 2026."
+    },
+    {
+      "videoId": "1_kVYPxoOMQ",
+      "title": "🔴Live: Tranquil Tuesday - Riding Boats around the Magic Kingdom Resorts - 10-20-26",
+      "channel": "ResortTV1",
+      "publishedAt": "2026-10-21T02:02:42Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/1_kVYPxoOMQ/mqdefault.jpg",
+      "viewCount": 30258,
+      "url": "https://www.youtube.com/watch?v=1_kVYPxoOMQ",
+      "summary": "ResortTV1 live streams a boat tour around the Magic Kingdom resort area on a Tuesday evening."
+    },
+    {
+      "videoId": "qMCNaZ2tk-w",
+      "title": "🔴 Live: Tuesday Stream on the Disney Wish - Halloween on the High Seas - 10/20/26",
+      "channel": "Koda Bear the Explorer ",
+      "publishedAt": "2026-10-21T05:32:01Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/qMCNaZ2tk-w/mqdefault.jpg",
+      "viewCount": 17046,
+      "url": "https://www.youtube.com/watch?v=qMCNaZ2tk-w",
+      "summary": "Koda Bear the Explorer streams live from the Disney Wish cruise ship during a Halloween on the High Seas sailing."
+    },
+    {
+      "videoId": "BKfflZtYXTE",
+      "title": "🔴Live Disneyland resort Tuesday for rides, shows and everything else 10/20/2026",
+      "channel": "RON ON THE GO",
+      "publishedAt": "2026-10-21T06:32:49Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/BKfflZtYXTE/mqdefault.jpg",
+      "viewCount": 13948,
+      "url": "https://www.youtube.com/watch?v=BKfflZtYXTE",
+      "summary": "RON ON THE GO live streams a Tuesday at Disneyland Resort, covering rides, shows, and general park activities."
+    },
+    {
+      "videoId": "WJFq8ZpIrcI",
+      "title": "🔴 LIVE: EPIC Happily Ever After Full Show 4K Magic Kingdom – YOU Pick! | Fun to be Free",
+      "channel": "Fun to be Free",
+      "publishedAt": "2026-10-21T03:18:13Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/WJFq8ZpIrcI/mqdefault.jpg",
+      "viewCount": 10976,
+      "url": "https://www.youtube.com/watch?v=WJFq8ZpIrcI",
+      "summary": "Fun to be Free broadcasts the complete Happily Ever After fireworks show in 4K from Magic Kingdom."
+    },
+    {
+      "videoId": "Pkei8-mIqzU",
+      "title": "🔴 Live: Tuesday Stream on the Disney Wish! Pirate's Rockin' Parlay Party & Fireworks - 10/20/26",
+      "channel": "Koda Bear the Explorer ",
+      "publishedAt": "2026-10-21T03:11:19Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Pkei8-mIqzU/mqdefault.jpg",
+      "viewCount": 9724,
+      "url": "https://www.youtube.com/watch?v=Pkei8-mIqzU",
+      "summary": "Koda Bear the Explorer streams the Pirate's Rockin' Parlay Party and fireworks from aboard the Disney Wish."
+    },
+    {
+      "videoId": "MYXKgg2Mpwc",
+      "title": "Pre-Trip Prep: Our Best Disney Tips and Tricks",
+      "channel": "DIS Unlimited",
+      "publishedAt": "2026-10-21T06:06:38Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/MYXKgg2Mpwc/mqdefault.jpg",
+      "viewCount": 2904,
+      "url": "https://www.youtube.com/watch?v=MYXKgg2Mpwc",
+      "summary": "DIS Unlimited shares planning tips and tricks for guests preparing for an upcoming Disney vacation."
+    },
+    {
+      "videoId": "oP_toz6cxsE",
+      "title": "Disney Character Warehouse NEW Finds at BOTH Locations! Lizzie McGuire Loungefly & MORE!",
+      "channel": "Life With Liz",
+      "publishedAt": "2026-10-21T01:50:23Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/oP_toz6cxsE/mqdefault.jpg",
+      "viewCount": 1718,
+      "url": "https://www.youtube.com/watch?v=oP_toz6cxsE",
+      "summary": "Life With Liz showcases new merchandise discoveries at both Disney Character Warehouse outlet locations, including Lizzie McGuire Loungefly items."
+    }
+  ],
+  "updatedAt": "2026-10-21T10:47:29.639Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-10-21T10:47:29.639Z",
+    "tokens": {
+      "input": 11216,
+      "output": 5168,
+      "costUsd": 0.1112
+    }
+  }
+}
