@@ -1,0 +1,327 @@
+{
+  "title": "Parkio Daily for October 22, 2026",
+  "slug": "parkio-daily-2026-10-22",
+  "date": "2026-10-22",
+  "teaser": "EPCOT abandons World Celebration lighting plan; new Animal Kingdom resident arrives; Polynesian construction extended into 2027.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Big Thunder Mountain Railroad",
+        "parkSlug": "magic-kingdom",
+        "note": "Early morning waits typically under 15 minutes"
+      },
+      {
+        "name": "Soarin'",
+        "parkSlug": "epcot",
+        "note": "Usually light crowds during dinner hour"
+      },
+      {
+        "name": "Flight of Passage",
+        "parkSlug": "animal-kingdom",
+        "note": "Shortest waits right at park opening"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [],
+    "bignews": [
+      {
+        "title": "EPCOT removes World Celebration Gardens ground lighting",
+        "body": "Disney has paved over the remaining lighting elements embedded in World Celebration Gardens, ending a three-year technical experiment that debuted when the courtyard opened in December 2023. The futuristic ground fixtures proved difficult to maintain.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/10/disney-paves-over-remaining-epcot-world-celebration-lighting-ending-parks-technical-nightmare-rl1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "World Celebration may see equipment and crews during daytime hours as the work wraps up. The area tends to be quieter for photos early morning before construction activity picks up."
+        }
+      },
+      {
+        "title": "Rare animal joins Animal Kingdom roster",
+        "body": "A new and uncommon resident has arrived at Disney's Animal Kingdom, though the specific species has not been publicly identified. The animal is now settling into the park's collection.",
+        "parkSlug": "animal-kingdom",
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/10/21/a-new-and-rare-resident-just-moved-into-animal-kingdom-and-we-are-freaking-out-about-her/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Cast members near animal habitats often share details about new arrivals during slower afternoon hours. Asking during mid-afternoon tours typically yields the most information."
+        }
+      },
+      {
+        "title": "Polynesian Village construction pushed into 2027",
+        "body": "The extensive refurbishment project at Disney's Polynesian Village Resort will continue beyond the original timeline, now extending into 2027 according to updated guest communications. The resort has been undergoing one of Walt Disney World's longest hotel renovation projects.",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-world-extends-polynesian-village-resort-construction-project-into-2027/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Noise and visual disruption from construction crews tends to be heaviest mid-morning through early afternoon. Booking pool or beach time before 10am or after 4pm usually avoids the loudest periods."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "Disney World app streamlines hotel check-in process",
+        "body": "A new update to the My Disney Experience app simplifies the hotel room request system, making it significantly easier for guests to submit preferences during online check-in.",
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/10/21/this-disney-world-app-change-just-made-checking-into-your-hotel-10x-easier/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Submitting room requests through the app 24 hours before arrival often yields better assignment options. Check-in desk traffic is typically lightest before 11am and after 8pm."
+        }
+      },
+      {
+        "title": "Disneyland adds Steamboat Willie baseball cap",
+        "body": "A vintage-style khaki baseball cap featuring embroidered Steamboat Willie poster art is now available at Disneyland Resort for $32.99. The design includes a black weathered brim.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/10/vintage-steamboat-willie-mickey-mouse-baseball-cap-arrives-at-disneyland-resort/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Vintage-themed merchandise tends to sell out quickly at flagship stores like Emporium. Shopping within the first two hours of park opening usually ensures the best selection."
+        }
+      },
+      {
+        "title": "New Disney woodland character pin set debuts at Magic Kingdom",
+        "body": "A six-pin set featuring forest characters including Bambi, Tod from The Fox and the Hound, Meeko, and Koda is now available in Frontierland at Magic Kingdom for $44.99.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/10/pin-pack-featuring-bambi-tod-meeko-and-more-now-available-at-walt-disney-world-resort/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Pin release items often move fastest at park opening and during evening hours when collector traffic spikes. Mid-afternoon shopping in Frontierland typically offers shorter lines at retail locations."
+        }
+      },
+      {
+        "title": "Little Mermaid attraction construction barriers partially removed",
+        "body": "After two months of refurbishment work, some construction walls around The Little Mermaid – Ariel's Undersea Adventure at Disney California Adventure have been taken down, signaling progress on the project.",
+        "parkSlug": "california-adventure",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/10/the-little-mermaid-ariels-undersea-adventure-refurbishment-update-jc1/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Paradise Gardens Park walkways may still have some construction materials during peak hours. Routing through this area before 10am or during parade times usually avoids the tightest congestion."
+        }
+      },
+      {
+        "title": "Jock Lindsey's Hangar Bar highlights Halloween menu creativity",
+        "body": "The Disney Springs lounge is showcasing its seasonal approach to themed food and drink presentations, with items like Candelabra Eggs and Bone Kebabs designed for Halloween visitors.",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/chef-jock-lindseys-hangar-bar-disney-springs/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Disney Springs lounges tend to fill up between 5pm and 8pm during Halloween season. Arriving before 4:30pm or after 9pm usually means shorter waits for tables."
+        }
+      },
+      {
+        "title": "Mickey charm necklaces arrive at Walt Disney World",
+        "body": "Two new necklaces featuring Mickey Mouse heart and star charms with colorful braided cords are now available at resort shops for $19.99 each. One features a pink cord with gold accents and clear stones.",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/10/mickey-mouse-heart-star-charm-necklaces-arrive-at-walt-disney-world/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Jewelry items at this price point often sell out within days of arrival. Shopping at resort gift shops before noon typically offers better availability than evening hours."
+        }
+      },
+      {
+        "title": "Hollywood Studios mystery fireworks test remains unexplained",
+        "body": "Following a private corporate buyout event for the Gartner IT Symposium, the purpose of early September nighttime pyrotechnic testing at the park's dormant launch site has not been officially addressed.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/10/mystery-disney-world-theme-park-private-company-buy-out-th1/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "If additional fireworks testing resumes, it likely happens after park close. Guests near the park perimeter between 10pm and midnight may catch unannounced technical rehearsals."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Disney and Shutterfly announce photo partnership",
+        "body": "Shutterfly is now the Official Photo Gift Partner across Walt Disney World, Disneyland, Disney Cruise Line, and Aulani, offering guests a streamlined way to turn vacation memories into personalized keepsakes and photo books.",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disneys-new-shutterfly-partnership-is-a-game-changer-for-great-photo-books/"
+        }
+      },
+      {
+        "title": "Hazel Hightower revealed as new S.E.A. member",
+        "body": "Disney Imagineering has concluded its multi-month digital scavenger hunt by introducing Hazel Hightower, daughter of the disgraced Harrison Hightower from Tower of Terror lore, as the newest member of the Society of Explorers and Adventurers.",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/new-s-e-a-member-is-hazel-hightower-daughter-of-disgraced-harrison-hightower-of-tower-of-terror-fame/"
+        }
+      },
+      {
+        "title": "Disneyland Adventure and Fantasyland see new construction barriers",
+        "body": "Multiple walkway areas in both Adventureland and Fantasyland at Disneyland Park are now enclosed by construction walls, with work appearing to impact guest flow and photo opportunities in both lands.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/10/disneyland-paris-closes-adventureland-and-fantasyland-areas-effective-immediately-jc1/"
+        }
+      },
+      {
+        "title": "Veterans Day merchandise collection now available",
+        "body": "Disney has released its 2026 Veterans Day apparel and accessory collection at select Walt Disney World and Disneyland Resort locations, honoring military service members and their families.",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/disney-experiences/new-disney-veterans-day-merchandise-collection/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "Lakeshore Lodge guests confirmed to receive park admission benefit",
+        "body": "Disney has announced that visitors staying at the new Lakeshore Lodge resort opening in 2027 will receive complimentary theme park admission as part of their reservation package. Construction continues around Bay Lake as the property takes shape for its debut year.",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/10/disney-world-confirms-free-admission-perk-for-guests-at-new-2027-resort-bwb1/"
+        },
+        "ctaLabel": "Learn about 2027 resorts",
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Resort booking windows for new properties typically open 12–18 months in advance. Monitoring Disney's reservation system in early 2027 likely offers the widest room category selection before sell-out."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "IbPu5hT1Qp8",
+      "title": "Disney's Magic Kingdom 2026 | NEW Food, Christmas Merch & The Diamond Horseshoe | Walt Disney World",
+      "channel": "Paging Mr. Morrow",
+      "publishedAt": "2026-10-17T13:03:15Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/IbPu5hT1Qp8/mqdefault.jpg",
+      "viewCount": 138862,
+      "url": "https://www.youtube.com/watch?v=IbPu5hT1Qp8",
+      "summary": "Paging Mr. Morrow tours Magic Kingdom to showcase new food offerings, holiday merchandise arrivals, and a visit to The Diamond Horseshoe."
+    },
+    {
+      "videoId": "Ti6I3iraGnA",
+      "title": "Every NEW Food in Hollywood Studios- Sci Fi, Toy Story Land & More! | Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-10-16T15:53:03Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Ti6I3iraGnA/mqdefault.jpg",
+      "viewCount": 61292,
+      "url": "https://www.youtube.com/watch?v=Ti6I3iraGnA",
+      "summary": "WrightDownMainStreet samples the latest menu additions across Hollywood Studios, including stops at Sci-Fi Dine-In and Toy Story Land."
+    },
+    {
+      "videoId": "jLY3gd3q8ZU",
+      "title": "🔴Live Magic Kingdom Wednesday with Rides, Parades, Fireworks at Walt Disney World 10/21/2026",
+      "channel": "RON ON THE GO",
+      "publishedAt": "2026-10-22T02:43:33Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/jLY3gd3q8ZU/mqdefault.jpg",
+      "viewCount": 38210,
+      "url": "https://www.youtube.com/watch?v=jLY3gd3q8ZU",
+      "summary": "RON ON THE GO streams live from Magic Kingdom on October 21, covering attractions, parades, and the evening fireworks show."
+    },
+    {
+      "videoId": "vEtB127kD2E",
+      "title": "Fort Wilderness Campground Golf Carts for Halloween Decorations 10/21/26  #live",
+      "channel": "That Crazy Disney Lady",
+      "publishedAt": "2026-10-22T02:45:27Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/vEtB127kD2E/mqdefault.jpg",
+      "viewCount": 25878,
+      "url": "https://www.youtube.com/watch?v=vEtB127kD2E",
+      "summary": "That Crazy Disney Lady tours Fort Wilderness Campground to highlight guest golf carts decorated for Halloween season."
+    },
+    {
+      "videoId": "w96ojsx_q9w",
+      "title": "🔴 Live: Wednesday Stream on the Disney Wish - Opening Topps Disneyland 70th Cards - 10/21/26",
+      "channel": "Koda Bear the Explorer ",
+      "publishedAt": "2026-10-22T04:40:40Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/w96ojsx_q9w/mqdefault.jpg",
+      "viewCount": 15805,
+      "url": "https://www.youtube.com/watch?v=w96ojsx_q9w",
+      "summary": "Koda Bear the Explorer streams from the Disney Wish cruise ship while opening Topps trading cards celebrating Disneyland's 70th anniversary."
+    },
+    {
+      "videoId": "ldA04MBNr8M",
+      "title": "Disney CEO Previews New Attractions, Bob Iger Discusses Replacing Chapek in Next Book",
+      "channel": "WDW News Today",
+      "publishedAt": "2026-10-22T02:33:29Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/ldA04MBNr8M/mqdefault.jpg",
+      "viewCount": 9985,
+      "url": "https://www.youtube.com/watch?v=ldA04MBNr8M",
+      "summary": "WDW News Today covers the Disney CEO's recent comments on upcoming attractions and Bob Iger's announcement of his new book addressing the leadership transition."
+    },
+    {
+      "videoId": "8fFoSwEvMrE",
+      "title": "10月15日発売ディズニー新グッズを紹介！ #ディズニー #ディズニーランド #ディズニーシー",
+      "channel": "ぽきちゃんねる",
+      "publishedAt": "2026-10-22T07:26:44Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/8fFoSwEvMrE/mqdefault.jpg",
+      "viewCount": 1830,
+      "url": "https://www.youtube.com/watch?v=8fFoSwEvMrE",
+      "summary": "ぽきちゃんねる showcases new Disney merchandise released on October 15 at Tokyo Disneyland and Tokyo DisneySea."
+    },
+    {
+      "videoId": "7r11NLeSTjg",
+      "title": "Meeting Buzz Lightyear 💚💜 - Disney's Hollywood Studios 2026 #shorts #disneyshollywoodstudios",
+      "channel": "Matthew's Vids",
+      "publishedAt": "2026-10-22T03:04:04Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/7r11NLeSTjg/mqdefault.jpg",
+      "viewCount": 1257,
+      "url": "https://www.youtube.com/watch?v=7r11NLeSTjg",
+      "summary": "Matthew's Vids captures a character meet-and-greet with Buzz Lightyear at Hollywood Studios."
+    },
+    {
+      "videoId": "6PAbpCAgbK0",
+      "title": "DISNEYLAND Electrical Parade⚡️🧜‍♀️🎉@BhowBradee #disneyland #disney #parade",
+      "channel": "B-How Bradee",
+      "publishedAt": "2026-10-22T01:28:04Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/6PAbpCAgbK0/mqdefault.jpg",
+      "viewCount": 1227,
+      "url": "https://www.youtube.com/watch?v=6PAbpCAgbK0",
+      "summary": "B-How Bradee films highlights from Disneyland's Main Street Electrical Parade."
+    },
+    {
+      "videoId": "IU2ytE6Vbvo",
+      "title": "✨🏰 Disney Starlight Parade at Magic Kingdom! 💫😍 #shorts",
+      "channel": "Disney Life and Experiences ",
+      "publishedAt": "2026-10-22T01:35:42Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/IU2ytE6Vbvo/mqdefault.jpg",
+      "viewCount": 1209,
+      "url": "https://www.youtube.com/watch?v=IU2ytE6Vbvo",
+      "summary": "Disney Life and Experiences shares a short clip from the Disney Starlight Parade at Magic Kingdom."
+    }
+  ],
+  "updatedAt": "2026-10-22T10:47:45.481Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-10-22T10:47:45.481Z",
+    "tokens": {
+      "input": 11330,
+      "output": 5294,
+      "costUsd": 0.1134
+    }
+  }
+}
