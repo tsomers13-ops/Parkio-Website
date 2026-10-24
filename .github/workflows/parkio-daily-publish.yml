@@ -160,6 +160,21 @@ jobs:
 
     env:
       NEXT_PUBLIC_CARTO_API_KEY: ${{ secrets.NEXT_PUBLIC_CARTO_API_KEY }}
+      # Mirrors workers-production.yml's own env block. Regression fix:
+      # this job runs its own independent `npm run build` (see "Next
+      # build" below) rather than calling workers-production.yml, so it
+      # never inherited that workflow's Buttondown wiring. Next inlines
+      # NEXT_PUBLIC_* at build time, so a Daily publish built without
+      # this silently shipped a Worker whose /newsletter page fell back
+      # to its configuration-pending placeholder — overwriting whatever
+      # the last application release had correctly built, with every
+      # test, typecheck, and deploy step still green. `vars.*`, not
+      # `secrets.*`: this is a GitHub Actions repository VARIABLE
+      # (confirmed set at the repo level, not secret — the username is
+      # public, see lib/buttondown.ts and docs/AUTOMATION.md), so it is
+      # visible here with no `environment:` dependency, unlike the
+      # Cloudflare secrets above.
+      NEXT_PUBLIC_BUTTONDOWN_USERNAME: ${{ vars.NEXT_PUBLIC_BUTTONDOWN_USERNAME }}
 
     steps:
       - name: Verify required Cloudflare credentials are present
@@ -404,6 +419,23 @@ jobs:
             exit 1
           fi
           echo "NEXT_PUBLIC_CARTO_API_KEY is configured (value not shown)."
+
+      - name: Require Buttondown configuration
+        # Same fail-closed, fail-early check as workers-production.yml's
+        # own "Require Buttondown configuration" step. Added as the fix
+        # for the 2026-10-23 regression: this workflow deploys Production
+        # independently of workers-production.yml (see "Deploy Production
+        # Worker" below) and had never carried this guard, so a Daily
+        # publish silently shipped the newsletter page's configuration-
+        # pending placeholder over a working signup form. Not a secret —
+        # see the env: block above — so presence/absence is safe to
+        # report, matching the neighboring basemap check's pattern.
+        run: |
+          if [ -z "$(printf %s "${NEXT_PUBLIC_BUTTONDOWN_USERNAME:-}" | tr -d '[:space:]')" ]; then
+            echo "::error::NEXT_PUBLIC_BUTTONDOWN_USERNAME is not set. Next inlines NEXT_PUBLIC_* at build time, so this build would ship a Worker whose /newsletter page silently falls back to its configuration-pending placeholder. This job runs under the 'daily-publish' environment, not 'production' — set the value as a repository-level variable, or scoped to the 'daily-publish' environment specifically (Settings -> Secrets and variables -> Actions -> Variables); a 'production'-only scoped variable will not be visible here. workers-production.yml deploys separately and needs its own visibility into this same value. See docs/AUTOMATION.md."
+            exit 1
+          fi
+          echo "NEXT_PUBLIC_BUTTONDOWN_USERNAME is configured (value not shown)."
 
       - name: Next build
         run: npm run build
