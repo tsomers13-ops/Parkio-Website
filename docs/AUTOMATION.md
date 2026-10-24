@@ -393,23 +393,48 @@ field's name) was checked against that publication, not guessed.
 
 ### Where to actually set `NEXT_PUBLIC_BUTTONDOWN_USERNAME`
 
-**Not Cloudflare Pages** — production is a Cloudflare Worker, deployed
-by `.github/workflows/workers-production.yml` (see "Email delivery
-setup" above for how that differs from Pages). `NEXT_PUBLIC_*` values
-are inlined by Next.js **at build time**, and that build runs inside
+**Not Cloudflare Pages** — production is a Cloudflare Worker. `NEXT_PUBLIC_*`
+values are inlined by Next.js **at build time**, and that build runs inside
 the GitHub Actions job, not inside Cloudflare — so this has to be a
 **GitHub Actions configuration variable**, not anything set in any
 Cloudflare dashboard. A value set there is simply never visible to the
 job that compiles the bundle.
 
+**Two workflows build and deploy this exact Production Worker, independently
+of each other — both need this wired, or Daily publishing silently erases
+the signup form that the application-release path just shipped:**
+
+- `.github/workflows/workers-production.yml` — the application-release
+  path (release tag / manual dispatch).
+- `.github/workflows/parkio-daily-publish.yml` — the no-human-approval
+  Daily content path, invoked by `parkio-daily.yml` every morning. See
+  that file's own header comment for why it's deliberately a second,
+  independent build/deploy rather than a `workflow_call` into
+  `workers-production.yml`.
+
+This is not a hypothetical: on 2026-10-23, `parkio-daily-publish.yml` had
+never carried this wiring. Every morning's Daily publish rebuilt and
+redeployed the Production Worker without it, re-erasing the newsletter
+signup form back to its configuration-pending placeholder — even on days
+`workers-production.yml` had correctly deployed it working. Both workflows
+now carry the same wiring and the same fail-closed guard (see below), and
+`scripts/deploy/buttondownBuildGuard.mjs` / `tests/buttondownBuildGuard.test.ts`
+statically audit every Production-deploying build job in this repo for
+exactly this gap on every `npm test` run, so it can't silently reappear in
+only one of the two files again.
+
 Set it at GitHub → this repo → Settings → Secrets and variables →
 Actions → **Variables** tab (not Secrets — the username is public, the
 same reasoning `NEXT_PUBLIC_CARTO_API_KEY` ships in the bundle by
-design) → either repository-level or scoped to the `production`
-Environment, matching where the Cloudflare secrets already live. The
-workflow reads it as `${{ vars.NEXT_PUBLIC_BUTTONDOWN_USERNAME }}` and
-fails the build closed, before the expensive Next/OpenNext steps run,
-if it's missing — see the "Require Buttondown configuration" step,
+design). Set at the **repository level** (as it is today — confirmed via
+`gh variable list`) so both workflows see it with no per-environment
+scoping to keep in sync; scoping it to the `production` Environment
+instead would also need it added to `daily-publish`, since
+`parkio-daily-publish.yml`'s `publish` job deliberately runs under the
+unprotected `daily-publish` Environment, not `production`. Each workflow
+reads it as `${{ vars.NEXT_PUBLIC_BUTTONDOWN_USERNAME }}` and fails the
+build closed, before the expensive Next/OpenNext steps run, if it's
+missing — see each file's own "Require Buttondown configuration" step,
 right next to the equivalent basemap-configuration check it mirrors.
 
 Before relying on the embed form in production, compare its markup

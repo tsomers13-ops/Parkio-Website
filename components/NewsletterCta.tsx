@@ -15,9 +15,11 @@ interface NewsletterCtaProps {
 
 /**
  * Newsletter signup call-to-action. Routes to /newsletter where the
- * actual Beehiiv embed lives. We deliberately don't inline a form
- * here — the dedicated page makes Beehiiv's embed code easier to
- * swap in once the user has the form ID.
+ * actual Buttondown signup form lives (see lib/buttondown.ts and
+ * components/NewsletterSignupForm.tsx). We deliberately don't inline a
+ * form here — the dedicated page is the one place that needs to track
+ * Buttondown's configuration state (ready / hosted-link fallback /
+ * coming-soon placeholder).
  */
 export function NewsletterCta({
   variant = "card",

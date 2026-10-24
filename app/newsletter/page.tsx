@@ -2,13 +2,11 @@ import Link from "next/link";
 import { AppStoreCta } from "@/components/AppStoreCta";
 import { Footer } from "@/components/Footer";
 import { Navbar } from "@/components/Navbar";
+import { NewsletterSignupForm } from "@/components/NewsletterSignupForm";
 import {
-  BUTTONDOWN_EMBED_HIDDEN_FIELD_NAME,
-  BUTTONDOWN_EMBED_HIDDEN_FIELD_VALUE,
   BUTTONDOWN_EMBED_READY,
   BUTTONDOWN_SUBSCRIBE_URL,
   NEWSLETTER_SUBSCRIBE_CTA_ATTR,
-  buttondownEmbedAction,
 } from "@/lib/buttondown";
 
 export const metadata = {
@@ -46,8 +44,11 @@ export default function NewsletterPage() {
             <br className="hidden sm:block" />
             your park day.
           </h1>
+          <p className="mt-2 text-base font-semibold text-accent-700">
+            Parkio Daily, every morning.
+          </p>
           <p className="mt-4 text-lg leading-relaxed text-ink-600">
-            Get a daily Disney park briefing every morning at 6 AM.
+            A daily Disney park briefing in your inbox every morning.
             Breaking news, big stories, ICYMI, and the most-watched
             Disney videos of the day — written for app-first guests and
             built around Parkio's live data engine.
@@ -71,16 +72,16 @@ export default function NewsletterPage() {
               Subscribe
             </p>
             <h2 className="mt-1 text-2xl font-semibold tracking-tight text-ink-900 sm:text-3xl">
-              Get tomorrow's briefing.
+              Get every morning's briefing.
             </h2>
             <p className="mt-2 text-sm text-ink-600 sm:text-base">
-              Drop your email. The next morning brief lands at 6 AM
-              Eastern, with a teaser and a one-tap link to the full post
+              Drop your email. Parkio Daily lands in your inbox every
+              morning, with a teaser and a one-tap link to the full post
               on Parkio.
             </p>
 
             {BUTTONDOWN_EMBED_READY ? (
-              <ButtondownEmbedForm />
+              <NewsletterSignupForm />
             ) : BUTTONDOWN_SUBSCRIBE_URL ? (
               <ButtondownHostedCta href={BUTTONDOWN_SUBSCRIBE_URL} />
             ) : (
@@ -154,81 +155,12 @@ export default function NewsletterPage() {
 }
 
 /**
- * Tier 1 — Buttondown's native embeddable form, submitted directly to
- * Buttondown's public embed-subscribe endpoint. No Parkio API route,
- * no API key — this endpoint is designed to be public and
- * unauthenticated, scoped only to adding an email to one publication's
- * list.
+ * Tier 1 — Buttondown's native embeddable form. Lives in its own client
+ * component, components/NewsletterSignupForm.tsx: see that file's header
+ * comment for the markup provenance (verified 2026-10-15 directly against
+ * Buttondown's docs and the live buttondown.com/somers publication) and
+ * for why the actual POST is still a plain <form> submit, not fetch().
  *
- * `target="_blank"` keeps the visitor on parkio.info: the form POST
- * (and Buttondown's own confirmation response) opens in a new tab
- * instead of navigating this page away. Buttondown's own docs
- * explicitly warn against submitting this endpoint via fetch() instead
- * — subscribers sometimes need to follow the response to complete a
- * CAPTCHA or fix a validation error — so a plain <form> POST (not an
- * AJAX call) is the documented-correct approach here, not a shortcut.
- *
- * Markup — action URL, method, the hidden embed=1 field, and the email
- * field's name — verified 2026-10-15 directly against Buttondown's
- * current docs (docs.buttondown.com/building-your-subscriber-base,
- * "Embedding an HTML form") and the live publication at
- * buttondown.com/somers. Buttondown also offers a pre-styled iframe
- * embed (`?as_embed=true`) that keeps the visitor fully on-page with
- * zero new tab — checked and deliberately not used here, since it
- * can't be restyled to match Parkio's design system from the embedding
- * page, which this form can.
- */
-function ButtondownEmbedForm() {
-  return (
-    <form
-      action={buttondownEmbedAction()}
-      method="post"
-      target="_blank"
-      className="mt-6 rounded-2xl border border-ink-100 bg-white p-6 sm:p-8"
-    >
-      <p className="text-xs font-semibold uppercase tracking-widest text-accent-700">
-        Subscribe via Buttondown
-      </p>
-      <p className="mt-2 text-sm leading-relaxed text-ink-600 sm:text-base">
-        Drop your email below. Submitting opens a quick Buttondown
-        confirmation in a new tab — you can close it and come right back
-        here.
-      </p>
-      <input
-        type="hidden"
-        name={BUTTONDOWN_EMBED_HIDDEN_FIELD_NAME}
-        value={BUTTONDOWN_EMBED_HIDDEN_FIELD_VALUE}
-      />
-      <div className="mt-4 flex flex-col gap-3 sm:flex-row sm:items-center">
-        <label htmlFor="newsletter-email" className="sr-only">
-          Email address
-        </label>
-        <input
-          id="newsletter-email"
-          type="email"
-          name="email"
-          required
-          placeholder="you@example.com"
-          autoComplete="email"
-          className="w-full flex-1 rounded-full border border-ink-200 bg-white px-4 py-3 text-sm text-ink-900 shadow-soft outline-none transition focus:border-accent-400 focus:ring-2 focus:ring-accent-100 sm:text-base"
-        />
-        <button
-          type="submit"
-          data-cta={NEWSLETTER_SUBSCRIBE_CTA_ATTR}
-          className="inline-flex items-center justify-center gap-2 rounded-full bg-ink-900 px-6 py-3 text-sm font-semibold text-white shadow-lift transition hover:bg-ink-800 sm:w-auto sm:flex-none"
-        >
-          Subscribe
-        </button>
-      </div>
-      <p className="mt-3 text-xs text-ink-500">
-        Free · No spam · Unsubscribe anytime. Check the new tab (or your
-        inbox) to confirm.
-      </p>
-    </form>
-  );
-}
-
-/**
  * Tier 2 — hosted Buttondown subscribe page link-out. Used when the
  * embed form isn't configured but the publication's hosted subscribe
  * URL is. Opens in a new tab so the visitor doesn't lose Parkio
@@ -246,7 +178,7 @@ function ButtondownHostedCta({ href }: { href: string }) {
       </p>
       <p className="mt-2 text-sm leading-relaxed text-ink-600 sm:text-base">
         We host the form on Buttondown directly — drop your email there
-        and the next morning's briefing lands at 6 AM Eastern.
+        and Parkio Daily lands in your inbox every morning.
       </p>
       <a
         href={href}
@@ -292,7 +224,7 @@ function ButtondownPlaceholder() {
       </p>
       <p className="mt-2 text-sm leading-relaxed text-ink-600 sm:text-base">
         Email signup is being wired up. In the meantime, every briefing
-        publishes here at 6 AM Eastern — bookmark{" "}
+        publishes here each morning — bookmark{" "}
         <Link
           href="/guide"
           className="font-semibold text-accent-700 hover:text-accent-900"
