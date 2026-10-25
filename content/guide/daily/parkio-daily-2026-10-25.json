@@ -1,0 +1,335 @@
+{
+  "title": "Parkio Daily for October 25, 2026",
+  "slug": "parkio-daily-2026-10-25",
+  "date": "2026-10-25",
+  "teaser": "Four Magic Kingdom restaurants debut new menus; Port Orleans Riverside partially closes for work; wait times fell across all parks this week.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Soarin'",
+        "parkSlug": "epcot",
+        "note": "Lower waits during Festival of the Holidays dinner hour"
+      },
+      {
+        "name": "Seven Dwarfs Mine Train",
+        "parkSlug": "magic-kingdom",
+        "note": "Rope-drop window before crowds build"
+      },
+      {
+        "name": "Indiana Jones Adventure",
+        "parkSlug": "disneyland",
+        "note": "Reopened this week with updates"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [],
+    "bignews": [
+      {
+        "title": "Four Magic Kingdom restaurants roll out reimagined menus",
+        "body": "Multiple counter and table service locations across the park are introducing new and updated dishes in an effort to strengthen the food lineup. The changes hit both quick-service and sit-down spots.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/four-magic-kingdom-restaurants-receiving-reimagined-new-menus/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Worth testing the new offerings during off-peak meal windows. Quick-service spots tend to see lighter crowds between 2–4pm when revised menus may still have full availability."
+        }
+      },
+      {
+        "title": "Port Orleans Riverside begins partial closure for construction",
+        "body": "Work has started at the 34-year-old resort, with sections now off-limits to guests. Three general construction permits have been filed for Old Port Royale, the resort's central hub.",
+        "parkSlug": null,
+        "source": {
+          "label": "Inside the Magic / WDWNT",
+          "url": "https://wdwnt.com/2026/10/disney-files-three-permits-for-old-port-royale-at-disneys-caribbean-beach-resort/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Construction noise and restricted access may affect the resort experience. Guests staying here should plan for possible detours and earlier wake-ups if work starts mid-morning."
+        }
+      },
+      {
+        "title": "Wait times dropped across Disney World parks this week",
+        "body": "Most attractions saw lower standby waits compared to recent days, reflecting lighter-than-usual mid-October crowds. The trend held across all four parks.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/10/24/crowd-check-disney-world-wait-times-plummeted-this-week/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Shorter waits tend to carry into the weekend before crowd levels reset. Hitting headliners mid-morning today may yield 15–25 minute windows on rides that often push 60+."
+        }
+      },
+      {
+        "title": "Jordan Fisher completes 2026 Candlelight Processional narrator lineup",
+        "body": "The final open slot for EPCOT's holiday storytelling event now has a name. Fisher joins the previously announced roster for performances during Festival of the Holidays.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/final-celebrity-narrator-added-for-2026-candlelight-processional-at-epcot-completing-full-lineup/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Dining packages for Candlelight Processional tend to sell out quickly once all narrators are announced. Booking soon—especially for popular names—usually improves seating options."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "Indiana Jones Adventure reopens at Disneyland with noticeable changes",
+        "body": "The Adventureland dark ride returned to operation this week after a closure. Guests report updated effects and other modifications inside the Temple of the Forbidden Eye.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/10/indiana-jones-disney-closure-update-cj1/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Reopening windows often draw curious crowds but also showcase fresher show elements. Riding during early-morning or late-evening hours may offer shorter waits and a cleaner look at the updates."
+        }
+      },
+      {
+        "title": "Peter Pan attraction closure announced less than three years after opening",
+        "body": "A newer Peter Pan-themed experience at a Disney park will temporarily shut down for maintenance work. The closure date and duration have been confirmed.",
+        "parkSlug": null,
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/10/disney-new-peter-pan-attraction-closure-cj1/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "If this attraction is on your list, riding before the closure window begins usually avoids the scramble. Check operating hours daily; last-minute schedule shifts are common ahead of refurbs."
+        }
+      },
+      {
+        "title": "Tropical Americas construction progress visible at Animal Kingdom",
+        "body": "Crews continue adding thematic details to the new land, including a decorated column in the carousel queue. The main entrance archway now has more finalized theming elements in place.",
+        "parkSlug": "animal-kingdom",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/10/themed-column-in-tropical-americas-carousel-queue-at-disneys-animal-kingdom/"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "Construction zones tend to funnel foot traffic into narrower pathways, especially near DinoLand. Avoiding that corner of the park during peak afternoon hours often saves time and stress."
+        }
+      },
+      {
+        "title": "Disney Parks improving ride reliability and hourly capacity",
+        "body": "Both Walt Disney World and Disneyland have been working to boost attraction efficiency, reduce unplanned downtime, and increase the number of guests each ride can handle per hour.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-world-and-disneyland-are-quietly-improving-ride-reliability-and-capacity/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Higher throughput often translates to faster-moving queues even when demand stays steady. Targeting popular rides mid-afternoon may yield better results than in past months."
+        }
+      },
+      {
+        "title": "New Music of EPCOT vinyl now available on streaming services",
+        "body": "The two-LP set inspired by the 1983 Official Album of EPCOT Center can now be streamed online. The release celebrates the park's musical legacy with remastered and updated tracks.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-world-dropping-new-music-of-epcot-2lp-vinyl-inspired-by-1983-fan-favorite-album/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "EPCOT nostalgia runs deep. Physical vinyl copies of limited releases tend to sell out quickly at park merchandise locations; stopping by Mouse Gear or Creations Shop early in the day may improve your odds."
+        }
+      },
+      {
+        "title": "El Capitan Theatre screens 4K restoration of Alice in Wonderland",
+        "body": "The Hollywood venue is marking its centennial with a restored version of the 1951 animated classic. Special screenings run for a limited time.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/10/el-capitan-screening-4k-restoration-of-alice-in-wonderland-for-theaters-centennial-celebration/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "El Capitan screenings often include pre-show entertainment and organ music. Arriving 20–30 minutes early usually secures better seating and lets you catch the full experience."
+        }
+      },
+      {
+        "title": "Holiday Lilo & Stitch Loungefly mini backpacks now online",
+        "body": "New seasonal designs featuring Stitch in Santa attire and other festive themes have launched on the Loungefly website. Retail price is $90 per backpack.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/10/holiday-lilo-stitch-loungefly-mini-backpacks-arrive-online/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Popular Loungefly drops tend to sell out within hours online and at park shops. If you want one, ordering now—or hitting World of Disney at rope drop—often beats the rush."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "runDisney Wine & Dine 5K draws criticism over long character lines",
+        "body": "Balloon ladies and extended waits for character meet-and-greets during the 2026 race sparked complaints on social media. Some runners felt the experience was poorly managed.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/10/accused-child-predator-arrested-trying-to-board-disney-cruise-line-ship-in-todays-daily-recap-for-10-24-2026/"
+        }
+      },
+      {
+        "title": "Disney releases 2026 holiday merchandise guide online",
+        "body": "The official blog published a shopping guide for seasonal items, covering toys, apparel, and collectibles. Products are available at parks and shopDisney.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/products/holiday-merchandise-guide-must-haves-for-everyone-on-your-list/"
+        }
+      },
+      {
+        "title": "Neiman Marcus offers $180,000 Star Wars experience in holiday catalog",
+        "body": "The luxury retailer's Fantasy Gifts collection includes an exclusive Lucasfilm tour tied to the 50th anniversary of A New Hope. The package retails for $182,500.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/10/neiman-marcuss-luxe-2026-holiday-offerings-include-180000-star-wars-experience/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "New Magic Kingdom souvenirs and Advent calendars hit shelves this week",
+        "body": "Fresh merchandise dropped across the park, including holiday-themed Advent calendars and seasonal apparel. Some items are also available online, but limited stock may sell out quickly at physical stores.",
+        "parkSlug": "magic-kingdom",
+        "ctaLabel": "Shop early for best selection",
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Flagship shops like Emporium tend to restock overnight, so mornings often offer the widest variety. Popular seasonal items usually disappear by mid-afternoon on weekends."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "PmpdEAhIeb0",
+      "title": "Every NEW Food in Magic Kingdom- Tony's Town Square, Breakfast Spring Rolls & More! | Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-10-22T15:52:18Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/PmpdEAhIeb0/mqdefault.jpg",
+      "viewCount": 51751,
+      "url": "https://www.youtube.com/watch?v=PmpdEAhIeb0",
+      "summary": "WrightDownMainStreet tours the new menu items rolling out across Magic Kingdom, including breakfast spring rolls and updated dishes at Tony's Town Square."
+    },
+    {
+      "videoId": "c-PddtuxDbI",
+      "title": "🔴Live Magic Kingdom Saturday with Rides, Parades, Fireworks at Walt Disney World 10/24/2026",
+      "channel": "RON ON THE GO",
+      "publishedAt": "2026-10-25T04:01:34Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/c-PddtuxDbI/mqdefault.jpg",
+      "viewCount": 34114,
+      "url": "https://www.youtube.com/watch?v=c-PddtuxDbI",
+      "summary": "RON ON THE GO livestreams a full day at Magic Kingdom, covering attractions, parades, and the evening fireworks show."
+    },
+    {
+      "videoId": "FACgAM_oWSo",
+      "title": "bet u weren't expecting that #girls #trend #disney #funny Disney Parks",
+      "channel": "PovGirl8995",
+      "publishedAt": "2026-10-25T00:03:53Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/FACgAM_oWSo/mqdefault.jpg",
+      "viewCount": 11462,
+      "url": "https://www.youtube.com/watch?v=FACgAM_oWSo",
+      "summary": "PovGirl8995 shares a short trending Disney Parks moment with an unexpected twist."
+    },
+    {
+      "videoId": "cMhPmJm3esA",
+      "title": "🔴 LIVE from Disney's Hollywood Studios! 🎬 Park Fun & Live Chat | Mouse Talk",
+      "channel": "Mouse Talk",
+      "publishedAt": "2026-10-25T03:04:47Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/cMhPmJm3esA/mqdefault.jpg",
+      "viewCount": 2205,
+      "url": "https://www.youtube.com/watch?v=cMhPmJm3esA",
+      "summary": "Mouse Talk broadcasts live from Hollywood Studios, exploring the park and chatting with viewers."
+    },
+    {
+      "videoId": "ilwdOjk6Eqs",
+      "title": "EEEKK ITS RACE DAY!!!! Nick Sinatra Disney Parks #halfmarathon #race #disney",
+      "channel": "Jenna Sinatra",
+      "publishedAt": "2026-10-25T07:56:21Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/ilwdOjk6Eqs/mqdefault.jpg",
+      "viewCount": 2139,
+      "url": "https://www.youtube.com/watch?v=ilwdOjk6Eqs",
+      "summary": "Jenna Sinatra captures the excitement of race day at a Disney Parks half marathon event."
+    },
+    {
+      "videoId": "oIT16c0WK3A",
+      "title": "🔴 Live: RunDisney Wine & Dine Half Marathon  - Walt Disney World 10.252026",
+      "channel": "Disney Parks with Love - Janel",
+      "publishedAt": "2026-10-24T23:48:00Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/oIT16c0WK3A/mqdefault.jpg?v=6add43b2",
+      "viewCount": 1831,
+      "url": "https://www.youtube.com/watch?v=oIT16c0WK3A",
+      "summary": "Disney Parks with Love livestreams the runDisney Wine & Dine Half Marathon course at Walt Disney World."
+    },
+    {
+      "videoId": "ZWZnBkb1l9k",
+      "title": "🔴 LIVE EPCOT: SoundUp at Eat to the Beat, Then Luminous! | Disney World Live Stream | 10/24",
+      "channel": "In The Park Daze",
+      "publishedAt": "2026-10-25T02:32:11Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/ZWZnBkb1l9k/mqdefault.jpg",
+      "viewCount": 1649,
+      "url": "https://www.youtube.com/watch?v=ZWZnBkb1l9k",
+      "summary": "In The Park Daze streams live from EPCOT, catching the Eat to the Beat concert series and the Luminous nighttime spectacular."
+    },
+    {
+      "videoId": "sayd5_O3aa4",
+      "title": "#disneyland #disneyadventure #anaheim #california #vacation #oogieboogiebash #halloween #disney",
+      "channel": "Real Natives",
+      "publishedAt": "2026-10-25T01:27:28Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/sayd5_O3aa4/mqdefault.jpg",
+      "viewCount": 1256,
+      "url": "https://www.youtube.com/watch?v=sayd5_O3aa4",
+      "summary": "Real Natives shares highlights from a Disneyland vacation featuring Oogie Boogie Bash and Halloween festivities."
+    },
+    {
+      "videoId": "yIMe05v9VZc",
+      "title": "He offered me a job… and somehow I'm now working for Dr. Facilier. 😭😂",
+      "channel": "Antonmagicaladventure",
+      "publishedAt": "2026-10-25T04:10:43Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/yIMe05v9VZc/mqdefault.jpg",
+      "viewCount": 1189,
+      "url": "https://www.youtube.com/watch?v=yIMe05v9VZc",
+      "summary": "Antonmagicaladventure recounts a humorous encounter with a Dr. Facilier character at the parks."
+    },
+    {
+      "videoId": "4U92OcT3fE4",
+      "title": "my first Disney+ event for CovenAcademy 💜 I can't believe this is my life … such an amazing night",
+      "channel": "Sophia Amato",
+      "publishedAt": "2026-10-25T04:02:38Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/4U92OcT3fE4/mqdefault.jpg",
+      "viewCount": 1134,
+      "url": "https://www.youtube.com/watch?v=4U92OcT3fE4",
+      "summary": "Sophia Amato shares her experience attending a special Disney+ event for CovenAcademy."
+    }
+  ],
+  "updatedAt": "2026-10-25T10:47:30.583Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-10-25T10:47:30.583Z",
+    "tokens": {
+      "input": 11279,
+      "output": 5182,
+      "costUsd": 0.1116
+    }
+  }
+}
