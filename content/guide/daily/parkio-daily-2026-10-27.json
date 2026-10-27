@@ -1,0 +1,331 @@
+{
+  "title": "Parkio Daily for October 27, 2026",
+  "slug": "parkio-daily-2026-10-27",
+  "date": "2026-10-27",
+  "teaser": "Jollywood Nights food revealed, Magic Kingdom closes early Nov 5, plus holiday treats across Walt Disney World.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Space Mountain",
+        "parkSlug": "magic-kingdom",
+        "note": "Tomorrowland typically lighter mid-morning"
+      },
+      {
+        "name": "Test Track",
+        "parkSlug": "epcot",
+        "note": "Food & Wine crowds thin during dinner hour"
+      },
+      {
+        "name": "Slinky Dog Dash",
+        "parkSlug": "hollywood-studios",
+        "note": "First hour of park open usually shortest waits"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [],
+    "bignews": [
+      {
+        "title": "Magic Kingdom closing early November 5",
+        "body": "The park shuts down at 7pm on November 5, between the final Halloween party and the first Christmas party. Under the Sea: Journey of the Little Mermaid also goes down for maintenance that evening.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/10/disney-issues-early-closure-notice-for-magic-kingdom-little-mermaid-ride-next-week-jc1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "If your trip lands November 5, plan a resort day or park-hop elsewhere after 7pm. Magic Kingdom tends to release crowds into EPCOT or Springs, so those destinations may see heavier traffic that evening."
+        }
+      },
+      {
+        "title": "Jollywood Nights food lineup unveiled",
+        "body": "Disney revealed six items for the holiday hard-ticket event at Hollywood Studios, including a Muppets sundae and popcorn soda. The menu was presented in a retro game-show format.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/10/muppets-sundae-popcorn-soda-more-disneys-jollywood-nights-2026-food-revealed/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Specialty snacks at hard-ticket events often sell out by mid-evening. If you have tickets, hit food booths within the first 90 minutes of the party to avoid disappointment."
+        }
+      },
+      {
+        "title": "Christmas daytime food menus published for Walt Disney World",
+        "body": "The official guide covers seasonal snacks, entrees, and drinks at Magic Kingdom, EPCOT, Hollywood Studios, and Animal Kingdom during regular park hours. Items roll out in the coming weeks.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/disney-eats-foodie-guide-to-holidays-at-walt-disney-world-resort/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Holiday treats tend to appear first at EPCOT festival booths, often days before other parks. Check World Showcase early in the week for the freshest selection before word spreads."
+        }
+      },
+      {
+        "title": "Grand theft reported at Hollywood Studios Monday afternoon",
+        "body": "Police were called to the park after 2:30pm October 26 for an incident involving at least 750 dollars in missing property. Guests were unaware during the event.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/10/grand-theft-at-disneys-hollywood-studios-on-monday-afternoon-jc1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Keep valuables secure in lockers or zipped pockets, especially on attraction days when you set bags down. Theft incidents tend to cluster near high-traffic queues and dining plazas."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "New croissant burger debuts at Magic Kingdom",
+        "body": "A 30-dollar burger served on a croissant is now available, likely at Tony's Town Square. The price tag has drawn mixed reactions from park visitors.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/10/26/review-is-disney-worlds-new-croissant-burger-worth-the-30-price-tag/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "High-priced specialty items often disappear from menus within weeks if sales lag. Try it early if you're curious, but know that off-menu counter service items can usually fill you for half the cost."
+        }
+      },
+      {
+        "title": "Monstropolis construction advances with additional theming",
+        "body": "More decorative elements have been installed at the Monsters Inc land under construction at Hollywood Studios. Teeth and other architectural details are now visible from guest pathways.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/10/26/photos-more-teeth-have-arrived-at-monstropolis-in-disney-world/"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "Construction viewing tends to slow foot traffic near Animation Courtyard during mid-morning. If you're heading to Star Wars Launch Bay or Baseline Tap House, budget an extra five minutes for the crowd."
+        }
+      },
+      {
+        "title": "Bluey playhouse now on shelves at Disneyland",
+        "body": "The interactive toy, priced at 89.99, has arrived at Downtown Disney District. It brings the animated series into a collectible playset format.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/10/bluey-playhouse-now-available-at-disneyland/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Licensed character toys often sell out within days at Disney retail locations. If Bluey is on your gift list, stop by Downtown Disney early in your trip before stock runs low."
+        }
+      },
+      {
+        "title": "Exclusive New Year's Eve event returning to Disney World",
+        "body": "A premium ticketed celebration is back for December 31, with booking opening November 11. Details on location and pricing have not been disclosed.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/10/26/an-exclusive-new-years-eve-event-is-back-in-disney-world-in-2026/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Hard-ticket New Year's events typically sell out within hours of going on sale. Set a calendar reminder for November 11 and log in early if you want a spot at the party."
+        }
+      },
+      {
+        "title": "Disney Store Japan and China merchandise coming to U.S. online shop",
+        "body": "International plush collections, including Winnie the Pooh anniversary items and Tsum Tsum releases, will be available on DisneyStore.com with regular updates planned.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/products/disney-store-japan-plush-and-keychains-coming-to-disneystore-com/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Exclusive international items often sell out faster online than in park stores. If you're shopping from home, check the site early in the day when inventory is freshest."
+        }
+      },
+      {
+        "title": "Disneyland Paris shutting down Indiana Jones ride for major refurb",
+        "body": "Indiana Jones and the Temple of Peril closes January 4, 2027, for the most extensive renovation since the Adventureland attraction opened in 1993. No reopening date has been announced.",
+        "parkSlug": null,
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/10/disneyland-paris-extensive-indiana-jones-ride-refurbishment-beginning-in-2027-jc1/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "If Disneyland Paris is on your 2027 calendar, book before early January to catch the ride before it goes dark. Major refurbs at international parks often stretch months longer than initially planned."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Sleeping Beauty Castle closed early for TV filming Monday",
+        "body": "The Disneyland landmark was roped off at 3:05pm October 26, reportedly for holiday television production. Regular access is expected to resume soon.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/10/disneyland-closes-sleeping-beauty-castle-to-guests-at-305-p-m-ad1/"
+        }
+      },
+      {
+        "title": "Aulani warns of beach filming disruption in January",
+        "body": "A national television production will use part of Ko Olina beach January 23–28, 2027. The resort says regular activities and amenities will remain available.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/10/unknown-tv-show-filming-at-aulani-disney-resort-this-january/"
+        }
+      },
+      {
+        "title": "The Simpsons episode to parody Galactic Starcruiser",
+        "body": "An upcoming episode features Bart and Lisa breaking into Krustyland's shuttered Kosmic Kruiser Hotel. YouTuber Jenny Nicholson will guest-star.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/10/the-simpsons-takes-on-disneys-failed-galactic-starcruiser-with-jenny-nicholson-guest-starring/"
+        }
+      },
+      {
+        "title": "Voice actor Eric Bauza passes away at 46",
+        "body": "The Emmy Award-winning performer, known for numerous animated roles, has died. Disney fans recognized his work across multiple projects.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/10/26/emmy-award-winning-voice-actor-eric-bauza-passes-away-at-46/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "Art of Animation Lion King and Little Mermaid room reimagining details surface",
+        "body": "Early plans for refreshed theming in two family suites at the value resort have been disclosed. The update continues Disney's push to modernize older resort inventory with new design palettes.",
+        "parkSlug": null,
+        "ctaLabel": "Check availability",
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Newly refurbished resort rooms often book solid for the first few months after reopening. If you prefer fresh theming over discounts, reserve early once the update is announced officially."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "PmpdEAhIeb0",
+      "title": "Every NEW Food in Magic Kingdom- Tony's Town Square, Breakfast Spring Rolls & More! | Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-10-22T15:52:18Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/PmpdEAhIeb0/mqdefault.jpg",
+      "viewCount": 59619,
+      "url": "https://www.youtube.com/watch?v=PmpdEAhIeb0",
+      "summary": "WrightDownMainStreet walks through the latest food additions at Magic Kingdom, including new offerings at Tony's Town Square and breakfast spring rolls."
+    },
+    {
+      "videoId": "P6LK3teJtsM",
+      "title": "🔴Live Magic Kingdom Monday with Rides, Parades, Fireworks at Walt Disney World 10/26/2026",
+      "channel": "RON ON THE GO",
+      "publishedAt": "2026-10-27T03:00:59Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/P6LK3teJtsM/mqdefault.jpg",
+      "viewCount": 42835,
+      "url": "https://www.youtube.com/watch?v=P6LK3teJtsM",
+      "summary": "A live stream from Magic Kingdom covering rides, parades, and fireworks on Monday, October 26."
+    },
+    {
+      "videoId": "dRy1HjIwaaA",
+      "title": "I Tried Every NEW Food in Epcot | Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-10-25T15:24:01Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/dRy1HjIwaaA/mqdefault.jpg",
+      "viewCount": 41606,
+      "url": "https://www.youtube.com/watch?v=dRy1HjIwaaA",
+      "summary": "WrightDownMainStreet samples all the newest food offerings at EPCOT in a comprehensive tasting tour."
+    },
+    {
+      "videoId": "BZU09h7pMTA",
+      "title": "FIRST LOOK: 2026 Jollywood Nights Food Revealed!",
+      "channel": "Disney Parks",
+      "publishedAt": "2026-10-26T22:11:24Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/BZU09h7pMTA/mqdefault.jpg",
+      "viewCount": 17355,
+      "url": "https://www.youtube.com/watch?v=BZU09h7pMTA",
+      "summary": "The official Disney Parks channel unveils the food menu for the 2026 Jollywood Nights holiday event at Hollywood Studios."
+    },
+    {
+      "videoId": "c_TU5W3pGYc",
+      "title": "Disneyland Halloween Time 🎃 Relaxing Fun Day #livestream Merch Monday",
+      "channel": "PopsDisneyAdventures",
+      "publishedAt": "2026-10-26T20:51:36Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/c_TU5W3pGYc/mqdefault.jpg",
+      "viewCount": 14423,
+      "url": "https://www.youtube.com/watch?v=c_TU5W3pGYc",
+      "summary": "A live stream from Disneyland during Halloween Time, focusing on merchandise and a relaxed park day."
+    },
+    {
+      "videoId": "jmwDycLNQcw",
+      "title": "🔴 Live: Magic Kingdom Monday Night Rides, Parade & Fireworks | Disney World Live Stream 10.26.2026",
+      "channel": "Daily FastPass",
+      "publishedAt": "2026-10-27T02:34:22Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/jmwDycLNQcw/mqdefault.jpg",
+      "viewCount": 9889,
+      "url": "https://www.youtube.com/watch?v=jmwDycLNQcw",
+      "summary": "Daily FastPass streams Monday night at Magic Kingdom, covering rides, the parade, and fireworks."
+    },
+    {
+      "videoId": "phkAXth-Rv0",
+      "title": "🔴 Disney World LIVE: Park Hop Round Trip! | Food & Wine + Starlight Parade & Fireworks!",
+      "channel": "The Weekly Hop",
+      "publishedAt": "2026-10-27T04:05:46Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/phkAXth-Rv0/mqdefault.jpg",
+      "viewCount": 6692,
+      "url": "https://www.youtube.com/watch?v=phkAXth-Rv0",
+      "summary": "A park-hopping live stream featuring Food & Wine Festival coverage plus the Starlight Parade and fireworks."
+    },
+    {
+      "videoId": "cj-su00qkGE",
+      "title": "#reels #disney #viral #funny #disneyland #phonk #youtubeshorts #music #comedy #anime #youtuberchanne",
+      "channel": "SachinDwivedi_7",
+      "publishedAt": "2026-10-27T01:47:33Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/cj-su00qkGE/mqdefault.jpg",
+      "viewCount": 1545,
+      "url": "https://www.youtube.com/watch?v=cj-su00qkGE",
+      "summary": "A short-form Disney-themed video combining music and comedy elements."
+    },
+    {
+      "videoId": "p3Dj6jyODzI",
+      "title": "NEW Disney Merch at Disneyland Resort! Halloween Ends & Christmas Arrives Soon?",
+      "channel": "The Mangerino Adventures",
+      "publishedAt": "2026-10-27T03:30:29Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/p3Dj6jyODzI/mqdefault.jpg",
+      "viewCount": 1173,
+      "url": "https://www.youtube.com/watch?v=p3Dj6jyODzI",
+      "summary": "The Mangerino Adventures explores new merchandise at Disneyland Resort as Halloween ends and Christmas decorations begin appearing."
+    },
+    {
+      "videoId": "4TzLZStJNK8",
+      "title": "Dressing up is part of the experience✨ #disney #disneyland #disneyworld #disneysea #tokyodisneyland",
+      "channel": "ochayday",
+      "publishedAt": "2026-10-27T05:02:26Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/4TzLZStJNK8/mqdefault.jpg",
+      "viewCount": 1096,
+      "url": "https://www.youtube.com/watch?v=4TzLZStJNK8",
+      "summary": "A short video highlighting the tradition of dressing up for Disney parks, featuring Tokyo Disneyland and other locations."
+    }
+  ],
+  "updatedAt": "2026-10-27T10:47:30.171Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-10-27T10:47:30.171Z",
+    "tokens": {
+      "input": 11373,
+      "output": 5142,
+      "costUsd": 0.1112
+    }
+  }
+}
