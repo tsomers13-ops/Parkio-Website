@@ -1,0 +1,322 @@
+{
+  "title": "Parkio Daily for Wednesday, October 28, 2026",
+  "slug": "parkio-daily-2026-10-28",
+  "date": "2026-10-28",
+  "teaser": "Holiday dining opens for booking at Disneyland; new seasonal food now live at Magic Kingdom and EPCOT; Polynesian construction extended through 2027.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Test Track",
+        "parkSlug": "epcot",
+        "note": "Festival crowds usually thin during dinner hour"
+      },
+      {
+        "name": "Space Mountain",
+        "parkSlug": "magic-kingdom",
+        "note": "Early morning waits typically shortest"
+      },
+      {
+        "name": "Radiator Springs Racers",
+        "parkSlug": "california-adventure",
+        "note": "Last week of Halloween events tends to draw lighter midday crowds"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [],
+    "bignews": [
+      {
+        "title": "Polynesian Village construction now extends into 2027",
+        "body": "Walt Disney World updated refurbishment timelines showing the Polynesian Village Resort renovation will continue beyond the holiday season into 2027. The multi-year project affecting guest areas and rooms remains one of the longest hotel construction efforts at the resort.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-world-extends-polynesian-village-resort-construction-project-into-2027/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Construction noise and visual impacts tend to be most noticeable during daytime hours near affected buildings. Guests with bookings this holiday season may want to request rooms farthest from active work zones when checking in."
+        }
+      },
+      {
+        "title": "Disneyland holiday dining reservations now open",
+        "body": "Special seasonal dining experiences at Disneyland Resort are available for booking starting today. Limited-availability holiday meals tend to fill quickly during the Christmas season.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/10/disneyland-guests-urged-to-act-fast-as-rare-holiday-dining-experiences-open-for-booking-sb1/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Holiday dining slots typically disappear within 48 hours of opening. Booking today or tomorrow usually offers the widest selection of dates and times before popular slots are claimed."
+        }
+      },
+      {
+        "title": "Wreck-It Ralph ride opening April 15 at Tokyo Disneyland",
+        "body": "Sugar Rush: Sweet Rescue, the first attraction worldwide based on Wreck-It Ralph, will debut April 15, 2027 in Tomorrowland at Tokyo Disneyland. The interactive ride follows Ralph and Vanellope through the candy-themed racing world.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/tdr/wreck-it-ralph-ride-at-tokyo-disney/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Tokyo Disney typically launches major attractions with exclusive merchandise and photo opportunities. Planning a spring 2027 visit around the opening week often provides access to launch-day events and limited-edition items."
+        }
+      },
+      {
+        "title": "2025 attendance down slightly at Walt Disney World",
+        "body": "The Themed Entertainment Association annual report shows a modest dip in Walt Disney World attendance for 2025, while Universal Orlando gained millions of visitors following the opening of Epic Universe. The data suggests Epic Universe did not lift all Central Florida parks equally.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/no-rising-tide-disney-world-attendance-drops-slightly-as-universal-epic-universe-gets-off-to-slow-start/"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "Lower overall attendance typically means better availability for dining reservations and shorter standby waits during off-peak weeks. Mid-week visits in non-holiday periods may offer especially light crowds through early 2027."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "New holiday food now available across Walt Disney World",
+        "body": "Seasonal snacks, entrees, and drinks debuted this week at Magic Kingdom, EPCOT, Hollywood Studios, and Animal Kingdom. The Christmas menu includes festive desserts and themed beverages for the 2026 holiday season.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/disney-eats-foodie-guide-to-holidays-at-walt-disney-world-resort/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Seasonal items at quick-service locations tend to have the shortest lines early in the morning or after 8pm. Flagship holiday treats often sell out by mid-afternoon on weekends, so visiting during weekday mornings usually improves availability."
+        }
+      },
+      {
+        "title": "Disney cruise boat evacuated after smoke incident",
+        "body": "Guests aboard a Disney park boat were moved to shore over the weekend after the vessel began emitting significant smoke. All passengers were safely evacuated and no injuries were reported.",
+        "parkSlug": null,
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/10/disney-boat-smoke-incident-cj1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Transportation incidents occasionally cause temporary route changes or longer wait times on water routes. Using monorail or Skyliner options during peak hours tends to offer more predictable travel times when boat service is disrupted."
+        }
+      },
+      {
+        "title": "Aulani offering 40 percent discount for spring 2027",
+        "body": "Disney announced savings of up to 40 percent on stays at Aulani, A Disney Resort and Spa in Hawaii for select dates next spring. The discount applies to bookings made now for travel in early 2027.",
+        "parkSlug": null,
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/10/aulani-booking-discounts-spring-2027-jc1/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Spring shoulder season at Aulani typically features milder weather and lighter pools compared to summer peak. Booking during the discount window often locks in the best villa availability before families reserve spring break dates."
+        }
+      },
+      {
+        "title": "Holiday merchandise guide released for 2026 season",
+        "body": "Disney Publishing shared a collection of seasonal gift items available now, spanning toys, apparel, and home goods. The merchandise features holiday themes and characters across multiple Disney brands.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/products/holiday-merchandise-guide-must-haves-for-everyone-on-your-list/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Popular holiday items at park retail locations tend to move quickly once showcased online. Visiting World of Disney or Emporium in the first two weeks of November usually offers the widest in-stock selection before items sell through."
+        }
+      },
+      {
+        "title": "Hanukkah-themed Disney products now available",
+        "body": "Disney released a line of Hanukkah gifts and merchandise including menorahs, apparel, and kitchen items. The collection celebrates the eight-night holiday with Disney character designs.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/products/disney-hanukkah-gifts-and-merch/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Specialty holiday items like Hanukkah merchandise often have limited production runs. Shopping within the first week of availability typically ensures access to full sizing and product variety before stock depletes."
+        }
+      },
+      {
+        "title": "Disney Store Japan and China items coming to U.S. online shop",
+        "body": "Exclusive plush toys and keychains previously available only at Disney Store locations in Japan and China will begin appearing on DisneyStore.com. The site will update regularly with new international arrivals.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/products/disney-store-japan-plush-and-keychains-coming-to-disneystore-com/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "International Disney Store exclusives tend to sell out within hours when first listed online. Checking the site early morning on restock days often provides the best chance to secure limited-run plush and accessories."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Disney Dreamers Academy celebrates 20-year legacy",
+        "body": "Fifty Central Florida students attended a special event last month marking two decades of the Disney Dreamers Academy program. The initiative continues to mentor young people through career workshops and experiences at Walt Disney World.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/legacy-of-disney-dreamers-academy/"
+        }
+      },
+      {
+        "title": "Imagineering profiles highlight Disneyland attractions cast",
+        "body": "Two cast members working on Disneyland attractions shared their experiences bringing rides to life, from helping families recreate childhood memories to witnessing guest reactions. The profiles explore what creating magic means to operations teams.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/dlr/disneyland-cast-members-bringing-attractions-to-life/"
+        }
+      },
+      {
+        "title": "Mickey Mouse appears in North Carolina for Storyliving event",
+        "body": "Mickey Mouse traveled from Walt Disney World to Pittsboro, North Carolina on October 17 to celebrate developments at Asteria, the newest Storyliving by Disney community. The appearance marked a milestone for the residential project.",
+        "parkSlug": null,
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/10/mickey-mouse-appears-in-north-carolina-alongside-storyliving-by-disney-charity-donation-jc1mmb/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "Last week for Halloween events at both U.S. resorts",
+        "body": "Mickey's Not So Scary Halloween Party at Magic Kingdom and Oogie Boogie Bash at California Adventure both wrap their 2026 seasons this week. Final event nights offer exclusive entertainment, character appearances, and treat stations before the properties transition to holiday programming.",
+        "parkSlug": null,
+        "ctaLabel": "View party schedules",
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "Final Halloween party nights tend to draw the heaviest attendance of the season, with popular character meet queues often exceeding 90 minutes. Arriving at rope drop and hitting rare characters first usually maximizes your meet count before lines peak after 9pm."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "PmpdEAhIeb0",
+      "title": "Every NEW Food in Magic Kingdom- Tony's Town Square, Breakfast Spring Rolls & More! | Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-10-22T15:52:18Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/PmpdEAhIeb0/mqdefault.jpg",
+      "viewCount": 62552,
+      "url": "https://www.youtube.com/watch?v=PmpdEAhIeb0",
+      "summary": "WrightDownMainStreet samples new menu items across Magic Kingdom including breakfast offerings and spring rolls at Tony's Town Square."
+    },
+    {
+      "videoId": "O_PIrgaThX8",
+      "title": "🔴Live 2026 Mickey's Not So Scary Halloween Party at the Magic Kingdom Walt Disney World 10/27/2026",
+      "channel": "RON ON THE GO",
+      "publishedAt": "2026-10-28T05:30:55Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/O_PIrgaThX8/mqdefault.jpg",
+      "viewCount": 57576,
+      "url": "https://www.youtube.com/watch?v=O_PIrgaThX8",
+      "summary": "RON ON THE GO livestreams Mickey's Not So Scary Halloween Party from Magic Kingdom on October 27, 2026."
+    },
+    {
+      "videoId": "Y04IKh6ueE8",
+      "title": "🔴 Live: 4K Oogie Boogie Bash Halloween Party at Disneyland California Adventure - 10/27/26",
+      "channel": "Koda Bear the Explorer ",
+      "publishedAt": "2026-10-28T06:55:13Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Y04IKh6ueE8/mqdefault.jpg",
+      "viewCount": 48839,
+      "url": "https://www.youtube.com/watch?v=Y04IKh6ueE8",
+      "summary": "Koda Bear the Explorer broadcasts live in 4K from Oogie Boogie Bash at California Adventure on October 27."
+    },
+    {
+      "videoId": "dRy1HjIwaaA",
+      "title": "I Tried Every NEW Food in Epcot | Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-10-25T15:24:01Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/dRy1HjIwaaA/mqdefault.jpg",
+      "viewCount": 48110,
+      "url": "https://www.youtube.com/watch?v=dRy1HjIwaaA",
+      "summary": "WrightDownMainStreet tastes and reviews all the new food offerings currently available at EPCOT."
+    },
+    {
+      "videoId": "bzZYm6I6GgM",
+      "title": "🔴LIVE EPCOT International Food and Wine Festival Walt Disney World 10/27/2026",
+      "channel": "Jennifer Caruso",
+      "publishedAt": "2026-10-28T01:21:00Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/bzZYm6I6GgM/mqdefault.jpg",
+      "viewCount": 3359,
+      "url": "https://www.youtube.com/watch?v=bzZYm6I6GgM",
+      "summary": "Jennifer Caruso livestreams from the EPCOT International Food and Wine Festival on October 27."
+    },
+    {
+      "videoId": "avauQ7wAx0w",
+      "title": "Tuesday night live at Disneyland! Last week of halloween fun at the park!",
+      "channel": "Disney Secret Kingdom",
+      "publishedAt": "2026-10-28T05:20:58Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/avauQ7wAx0w/mqdefault.jpg",
+      "viewCount": 2913,
+      "url": "https://www.youtube.com/watch?v=avauQ7wAx0w",
+      "summary": "Disney Secret Kingdom streams live from Disneyland during the final week of Halloween activities at the park."
+    },
+    {
+      "videoId": "ThCvXoJ8rvU",
+      "title": "【まだ間に合う】おすすめのディズニーハロウィンフードまとめ🎃🍴 #ディズニー #ディズニーランド #dハロ #ディズニーフード",
+      "channel": "中島姉妹",
+      "publishedAt": "2026-10-28T04:44:59Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/ThCvXoJ8rvU/mqdefault.jpg",
+      "viewCount": 2037,
+      "url": "https://www.youtube.com/watch?v=ThCvXoJ8rvU",
+      "summary": "中島姉妹 highlights recommended Disney Halloween food items still available at Tokyo Disney Resort."
+    },
+    {
+      "videoId": "SkVNeZWXWNc",
+      "title": "CHEAP Disney family friendly activity you cannot skip at Walt Disney World! 🍫🐭 #disneyfoodie",
+      "channel": "Josie Maida",
+      "publishedAt": "2026-10-28T01:22:10Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/SkVNeZWXWNc/mqdefault.jpg",
+      "viewCount": 1400,
+      "url": "https://www.youtube.com/watch?v=SkVNeZWXWNc",
+      "summary": "Josie Maida shares an affordable, family-friendly food activity not to miss at Walt Disney World."
+    },
+    {
+      "videoId": "Qx2o9DkwILA",
+      "title": "Best dining at Disneyland - brunch at Lamplight Lounge #Disneyland #themepark  #disneyparks",
+      "channel": "Juliet and Beyond Shorts",
+      "publishedAt": "2026-10-28T04:30:52Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Qx2o9DkwILA/mqdefault.jpg",
+      "viewCount": 1085,
+      "url": "https://www.youtube.com/watch?v=Qx2o9DkwILA",
+      "summary": "Juliet and Beyond Shorts features brunch at Lamplight Lounge as a top Disneyland dining option."
+    },
+    {
+      "videoId": "Jfmg9UHhmv0",
+      "title": "Don't Think About This Scary Thought You'll Chill! #halloween #disney #vlog",
+      "channel": "Legacy of Leal",
+      "publishedAt": "2026-10-28T05:00:38Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Jfmg9UHhmv0/mqdefault.jpg",
+      "viewCount": 1043,
+      "url": "https://www.youtube.com/watch?v=Jfmg9UHhmv0",
+      "summary": "Legacy of Leal shares a Halloween-themed Disney vlog exploring spooky park moments."
+    }
+  ],
+  "updatedAt": "2026-10-28T10:47:22.574Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-10-28T10:47:22.574Z",
+    "tokens": {
+      "input": 9880,
+      "output": 5084,
+      "costUsd": 0.1059
+    }
+  }
+}
