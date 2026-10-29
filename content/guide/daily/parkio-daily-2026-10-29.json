@@ -1,0 +1,331 @@
+{
+  "title": "Parkio Daily for October 29, 2026",
+  "slug": "parkio-daily-2026-10-29",
+  "date": "2026-10-29",
+  "teaser": "John Stamos replaces The Beach Boys at EPCOT's Eat to the Beat; Space Mountain closes at Disneyland Nov 11; Extended Evening Hours returns to Magic Kingdom in January.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Test Track",
+        "parkSlug": "epcot",
+        "note": "Eat to the Beat concert crowds typically thin out mid-morning; early afternoon windows often drop below 30 minutes."
+      },
+      {
+        "name": "Big Thunder Mountain Railroad",
+        "parkSlug": "magic-kingdom",
+        "note": "Afternoon capacity is strong today; waits in the 2–4pm window tend to stay under 25 minutes."
+      },
+      {
+        "name": "Radiator Springs Racers",
+        "parkSlug": "california-adventure",
+        "note": "Morning crowds are lighter with Space Mountain closure announced; rope-drop windows often see sub-40 minute waits."
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [],
+    "bignews": [
+      {
+        "title": "John Stamos and the California Sound replace The Beach Boys at EPCOT Eat to the Beat",
+        "body": "The Beach Boys have been pulled from the Eat to the Beat concert lineup at EPCOT's Food and Wine Festival. John Stamos and the California Sound will perform in their place for the remaining scheduled dates.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/10/john-stamos-and-the-california-sound-replace-the-beach-boys-in-epcot-eat-to-the-beat-lineup-in-todays-daily-recap-for-10-28-2026/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Concert seating at America Gardens Theatre tends to fill 45 minutes before showtime. Arriving an hour early often secures center-section spots for the new lineup."
+        }
+      },
+      {
+        "title": "Space Mountain at Disneyland closing November 11 for refurbishment",
+        "body": "Disneyland has added Space Mountain to its refurbishment calendar with a closure beginning November 11. The duration has not been announced.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/10/disneyland-is-pulling-space-mountain-from-operations-in-13-days-ad1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Tomorrowland capacity drops sharply with Space Mountain closed. Matterhorn and Indiana Jones typically see 20–30 minute wait increases during major Tomorrowland closures; ride those before 11am."
+        }
+      },
+      {
+        "title": "Extended Evening Hours returns to Magic Kingdom in January 2027",
+        "body": "Walt Disney World confirmed that Extended Evening Hours for Deluxe resort guests will return to Magic Kingdom in early January after spending the party season at Animal Kingdom and Hollywood Studios.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/extended-evening-hours-resort-perk-returns-to-magic-kingdom-in-2027/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Evening Hours at Magic Kingdom historically means Seven Dwarfs and TRON drop to walk-on status after 10pm for eligible guests. Booking January stays now may secure access before broader spring crowds."
+        }
+      },
+      {
+        "title": "Disney Jollywood Nights food menu released for Hollywood Studios holiday event",
+        "body": "Walt Disney World published the complete food and beverage lineup for Jollywood Nights, the separately ticketed holiday event running select nights from November 7 to January 5 at Hollywood Studios.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/foodie-guide-to-disney-jollywood-nights/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Event-exclusive food booths at Hollywood Studios typically see lightest lines in the first 90 minutes after gate opening. Touring attractions first and eating after 9pm often means shorter waits for both."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "Darth Vader meet and greet returns to original Hollywood Studios location",
+        "body": "The Darth Vader character meet has moved back to its original spot near the stage between Star Tours and Commissary Lane, away from the extended queue area where it had been operating.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/10/darth-vader-moves-to-new-location-from-extended-star-tours-the-adventure-continues-queue/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Character meet lines at Hollywood Studios tend to be shortest in the final two hours before park close. Vader waits often drop below 15 minutes after 7pm on typical days."
+        }
+      },
+      {
+        "title": "Walt Disney World introduces new fall frozen drinks and milkshakes",
+        "body": "A lineup of seasonal beverages has debuted across Walt Disney World, including a Peaches and Cream frozen slush and S'mores Gelato Milkshake. The drinks were developed by the resort's beverage team.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/from-idea-to-sip-how-new-drinks-come-to-life-at-walt-disney-world/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Specialty drink kiosks at EPCOT and Magic Kingdom usually see peak lines between noon and 2pm. Ordering before 11am or after 3pm typically cuts wait times in half."
+        }
+      },
+      {
+        "title": "Vacation Fun attraction closure at Hollywood Studios pushed back",
+        "body": "Disney quietly updated the closure timeline for Vacation Fun – An Original Animated Short, the attraction previously scheduled to close this week at Hollywood Studios. The new closure date has not been specified.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/10/disney-world-pdates-closure-timeline-hollywood-studios-park-th1/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Animation Courtyard attractions often see walk-on windows in the late afternoon when crowds shift toward Galaxy's Edge. Catching Vacation Fun between 4–6pm usually avoids any queue."
+        }
+      },
+      {
+        "title": "The Little Mermaid ride facade refurbishment complete at California Adventure",
+        "body": "Disneyland removed scaffolding and scrim from The Little Mermaid – Ariel's Undersea Adventure at California Adventure, revealing the freshly refurbished exterior after two months of construction work.",
+        "parkSlug": "california-adventure",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/10/disneyland-reveals-refurbished-exterior-of-the-little-mermaid-ride-jc1/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Paradise Gardens sees lighter foot traffic in the first hour after rope drop. Riding Mermaid early and grabbing photos of the new facade before 10am often avoids midday crowds."
+        }
+      },
+      {
+        "title": "Magic Kingdom attractions closing early during Thanksgiving week",
+        "body": "Monsters Inc. Laugh Floor will close at 7pm on multiple days during Thanksgiving week at Magic Kingdom, following a similar early-closure announcement for Under the Sea – Journey of the Little Mermaid.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/10/warning-monsters-inc-laugh-floor-closing-early-during-thanksgiving-at-magic-kingdom-jc1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Early closures during holiday weeks typically signal private-event setup. Tomorrowland and Fantasyland waits may spike after 5pm as capacity drops; plan those lands before 4pm."
+        }
+      },
+      {
+        "title": "Disney layoffs affect over 100 cast members across Experiences division",
+        "body": "More than 100 cast members have been laid off across Disney's theme parks, cruise line, and Aulani resort as part of workforce reductions in the Disney Experiences division. Specific park locations were not disclosed.",
+        "parkSlug": null,
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/10/disney-theme-park-layoffs-emd1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Staffing reductions may lead to temporary shortages at quick-service locations and attraction load areas. Mobile-ordering meals and arriving at Lightning Lane windows early often mitigates delays."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Disneyland Paris unveils new compass rose on Sleeping Beauty Castle bridge",
+        "body": "A refurbished bridge at Sleeping Beauty Castle in Disneyland Paris now features a new compass rose design honoring the Three Good Fairies. The bridge reopened after six months of renovation work.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/10/another-look-at-sleeping-beauty-castle-bridge-renovation-in-disneyland-paris/"
+        }
+      },
+      {
+        "title": "Tokyo Disneyland announces April 15 opening for Wreck-It Ralph ride",
+        "body": "Sugar Rush: Sweet Rescue, the world's first Wreck-It Ralph attraction, will open April 15, 2027, at Tokyo Disneyland. The interactive dark ride will be located in Tomorrowland.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/tdr/wreck-it-ralph-ride-at-tokyo-disney/"
+        }
+      },
+      {
+        "title": "Storyliving by Disney releases update on Asteria community in North Carolina",
+        "body": "Disney's Storyliving development in North Carolina introduced The Compass, a new communications platform for the Asteria residential community. The update includes details on the campus design and discovery-themed amenities.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/storyliving/asteria-updates-news-and-more/"
+        }
+      },
+      {
+        "title": "Ride system installed for Up-themed attraction at Disneyland Paris",
+        "body": "The central swing ride mechanism for Wilderness Explorers Sky Swings has been installed at Disney Adventure World in Disneyland Paris. The Up-themed attraction is under construction as part of the new park expansion.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/10/ride-system-installed-for-up-wilderness-explorers-sky-swings-at-disney-adventure-world/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "Limited-edition Belle doll marks 35th anniversary of Beauty and the Beast",
+        "body": "A new limited-edition Belle doll wearing her green village dress will launch soon on the Disney Store website, celebrating the 35th anniversary of Beauty and the Beast. The collectible features detailed costuming and is expected to sell quickly.",
+        "parkSlug": null,
+        "ctaLabel": "Shop Disney Store",
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Limited-edition Disney Store releases typically sell out within hours of launch, often before noon Pacific time. Setting alerts and checking the site at opening usually improves availability."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "PmpdEAhIeb0",
+      "title": "Every NEW Food in Magic Kingdom- Tony's Town Square, Breakfast Spring Rolls & More! | Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-10-22T15:52:18Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/PmpdEAhIeb0/mqdefault.jpg",
+      "viewCount": 64879,
+      "url": "https://www.youtube.com/watch?v=PmpdEAhIeb0",
+      "summary": "WrightDownMainStreet reviews new food offerings at Magic Kingdom, including items at Tony's Town Square and breakfast spring rolls."
+    },
+    {
+      "videoId": "dRy1HjIwaaA",
+      "title": "I Tried Every NEW Food in Epcot | Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-10-25T15:24:01Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/dRy1HjIwaaA/mqdefault.jpg",
+      "viewCount": 52202,
+      "url": "https://www.youtube.com/watch?v=dRy1HjIwaaA",
+      "summary": "A taste-test tour of all the latest food additions at EPCOT by WrightDownMainStreet."
+    },
+    {
+      "videoId": "08XpDNo43DM",
+      "title": "🔴 Live Epcot Wednesday for rides and Luminous at 9pm, story time at Walt Disney World 10/28/2026",
+      "channel": "RON ON THE GO",
+      "publishedAt": "2026-10-29T02:20:39Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/08XpDNo43DM/mqdefault.jpg",
+      "viewCount": 28788,
+      "url": "https://www.youtube.com/watch?v=08XpDNo43DM",
+      "summary": "RON ON THE GO live-streams from EPCOT on Wednesday evening, covering rides and the Luminous nighttime spectacular."
+    },
+    {
+      "videoId": "JAMhugjwuI0",
+      "title": "Somewhere at Walt Disney World/  Viewer's Choice 10/28/26  #live",
+      "channel": "That Crazy Disney Lady",
+      "publishedAt": "2026-10-28T23:42:06Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/JAMhugjwuI0/mqdefault.jpg",
+      "viewCount": 18266,
+      "url": "https://www.youtube.com/watch?v=JAMhugjwuI0",
+      "summary": "That Crazy Disney Lady hosts a viewer-choice live stream from an undisclosed Walt Disney World location."
+    },
+    {
+      "videoId": "BCqZ7sa_ZZ8",
+      "title": "First Monsters Inc. Facade Uncovered, Disney Parks Christmas Parade Details, Jollywood Nights 2026",
+      "channel": "WDW News Today",
+      "publishedAt": "2026-10-28T22:51:48Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/BCqZ7sa_ZZ8/mqdefault.jpg",
+      "viewCount": 14972,
+      "url": "https://www.youtube.com/watch?v=BCqZ7sa_ZZ8",
+      "summary": "WDW News Today covers the newly revealed Monsters Inc. facade, Christmas parade announcements, and Jollywood Nights 2026 details."
+    },
+    {
+      "videoId": "GuKmAIXcVjI",
+      "title": "🔴 LIVE: EPIC Happily Ever After Full Show 4K Magic Kingdom — YOU Pick! | Fun to be Free",
+      "channel": "Fun to be Free",
+      "publishedAt": "2026-10-29T03:30:01Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/GuKmAIXcVjI/mqdefault.jpg",
+      "viewCount": 9199,
+      "url": "https://www.youtube.com/watch?v=GuKmAIXcVjI",
+      "summary": "Fun to be Free live-streams Happily Ever After in 4K from Magic Kingdom with viewer interaction."
+    },
+    {
+      "videoId": "MLPEyLZhqPw",
+      "title": "🔴 Live: Hollywood Studios Rides & Fantasmic! Wednesday Night | Disney World Live Stream 10.28.2026",
+      "channel": "Daily FastPass",
+      "publishedAt": "2026-10-29T02:54:20Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/MLPEyLZhqPw/mqdefault.jpg",
+      "viewCount": 8229,
+      "url": "https://www.youtube.com/watch?v=MLPEyLZhqPw",
+      "summary": "Daily FastPass broadcasts live from Hollywood Studios on Wednesday night, covering rides and the Fantasmic show."
+    },
+    {
+      "videoId": "NcW8RhGTK24",
+      "title": "Why Disney World Feels So Real",
+      "channel": "DisneyMagicDaily",
+      "publishedAt": "2026-10-28T23:34:59Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/NcW8RhGTK24/mqdefault.jpg",
+      "viewCount": 5309,
+      "url": "https://www.youtube.com/watch?v=NcW8RhGTK24",
+      "summary": "DisneyMagicDaily explores the immersive design elements that make Disney World feel authentic and lifelike."
+    },
+    {
+      "videoId": "2vi4y7IT_UA",
+      "title": "【衝撃の光景】ディズニー朝から人が殺到！Dハロ終了まであと3日…現地の混雑がヤバい！【10月29日最新】",
+      "channel": "ジョマジのディズニー研究所",
+      "publishedAt": "2026-10-29T00:30:35Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/2vi4y7IT_UA/mqdefault.jpg",
+      "viewCount": 4398,
+      "url": "https://www.youtube.com/watch?v=2vi4y7IT_UA",
+      "summary": "A Japanese-language report on heavy morning crowds at a Disney park with three days remaining until Halloween season ends."
+    },
+    {
+      "videoId": "UM1eaFON-Wk",
+      "title": "A🌹 for #Tiana 💚#princess#disney #disneyland #character #cute #paris",
+      "channel": "DIA",
+      "publishedAt": "2026-10-29T02:00:38Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/UM1eaFON-Wk/mqdefault.jpg",
+      "viewCount": 1845,
+      "url": "https://www.youtube.com/watch?v=UM1eaFON-Wk",
+      "summary": "A short video featuring a rose presented to Princess Tiana at Disneyland Paris."
+    }
+  ],
+  "updatedAt": "2026-10-29T10:47:13.869Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-10-29T10:47:13.869Z",
+    "tokens": {
+      "input": 11274,
+      "output": 5321,
+      "costUsd": 0.1136
+    }
+  }
+}
