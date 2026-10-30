@@ -1,0 +1,349 @@
+{
+  "title": "Parkio Daily for Friday, October 30, 2026",
+  "slug": "parkio-daily-2026-10-30",
+  "date": "2026-10-30",
+  "teaser": "Railroad reopened early at Magic Kingdom; Animal Kingdom opens an hour later Nov 15; Disney cuts 100+ theme park jobs including Imagineers.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Test Track",
+        "parkSlug": "epcot",
+        "note": "Morning waits typically under 30 minutes before 10am"
+      },
+      {
+        "name": "Flight of Passage",
+        "parkSlug": "animal-kingdom",
+        "note": "Rope drop usually offers shortest waits of the day"
+      },
+      {
+        "name": "Rise of the Resistance",
+        "parkSlug": "hollywood-studios",
+        "note": "Early entry guests often walk on before 9:30am"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [
+      {
+        "title": "Disney lays off 100+ theme park employees",
+        "body": "Walt Disney Imagineering and Disney Live Entertainment are losing between 100 and 200 positions, primarily at the Glendale, California offices. The cuts hit creative and operational teams across the parks division.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/10/full-menus-revealed-for-mickeys-very-merry-christmas-party-2026-at-magic-kingdom-in-todays-daily-recap-for-10-29-2026/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Large-scale staffing reductions can lead to slower service and longer wait times at guest-facing touchpoints. If you notice delays at shops or food locations today, mobile ordering and early meal reservations may help you stay on schedule."
+        }
+      }
+    ],
+    "bignews": [
+      {
+        "title": "Walt Disney World Railroad reopens ahead of schedule",
+        "body": "The Magic Kingdom train circuit opened a day earlier than planned, wrapping up its month-long refurbishment. All three stations are now accessible.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/10/29/the-walt-disney-world-railroad-is-back-but-theres-still-one-big-catch/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "The Railroad offers a crowd-free loop around Magic Kingdom during mid-afternoon heat. Boarding at Frontierland or Fantasyland stations tends to have shorter queues than Main Street, especially between 1–3pm."
+        }
+      },
+      {
+        "title": "Animal Kingdom opening delayed one day in November",
+        "body": "On November 15, Animal Kingdom will open at 9am instead of the usual 8am. All other Walt Disney World parks maintain standard hours that day.",
+        "parkSlug": "animal-kingdom",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/10/disneys-animal-kingdom-will-open-one-hour-later-than-usual-on-one-date-next-month/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "If you're planning a November 15 rope drop at Animal Kingdom, adjust breakfast and transportation timing. The lost early-entry hour can push Flight of Passage waits higher by mid-morning; consider a different park for that day's start."
+        }
+      },
+      {
+        "title": "Mickey's Very Merry Christmas Party menus revealed",
+        "body": "The full food lineup for this year's hard-ticket holiday event includes seasonal snacks, desserts, and complimentary cookies at Magic Kingdom. The party runs select nights November 8 through December 22.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/disney-eats-foodie-guide-to-mickeys-very-merry-christmas-party/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Specialty items at these parties often sell out by 9pm, especially at Main Street Bakery and the Tomorrowland Terrace kiosks. Arriving at 7pm when doors open tends to give you first pick before lines build."
+        }
+      },
+      {
+        "title": "Disneyland shuttle drop-off zone moves November 2",
+        "body": "Third-party and Good Neighbor hotel shuttle buses will use a new drop-off location starting next week. The change affects thousands of guests arriving by bus each day.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/10/disneyland-moves-third-party-and-good-neighbor-shuttle-bus-drop-off-jc1/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "New drop-off points can mean longer walks or different security lines. If your hotel shuttle runs frequently, aim for an earlier arrival window on November 2 and 3 to account for any confusion while staff and guests adjust."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "Christmas decorations arrive at Animal Kingdom",
+        "body": "Holiday décor has been installed across Discovery Island and near the Tree of Life. The park joins Magic Kingdom and EPCOT in rolling out seasonal theming ahead of November events.",
+        "parkSlug": "animal-kingdom",
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/10/29/theyre-here-christmas-decorations-just-landed-at-disneys-animal-kingdom/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Early-season holiday photos at Animal Kingdom tend to draw smaller crowds than Magic Kingdom. Mornings before 10am near the Tree of Life usually offer clearer sight lines and softer lighting for photos."
+        }
+      },
+      {
+        "title": "Jollywood Nights food menus posted",
+        "body": "Hollywood Studios' hard-ticket holiday party, running November 7 through January 5, features Old Hollywood-inspired dishes and desserts. The event includes live entertainment and extended park hours.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/foodie-guide-to-disney-jollywood-nights/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Jollywood Nights typically draws lighter crowds than Magic Kingdom's Christmas party. Sunset Boulevard food kiosks usually have shorter lines after the first stage show at 7:30pm, when guests gather near Echo Lake."
+        }
+      },
+      {
+        "title": "Broken Spell Lounge reopens at Disneyland Hotel",
+        "body": "The Sleeping Beauty-themed bar finished its month-long refurbishment and is now serving guests. The lounge first opened in 2024.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/10/broken-spell-lounge-reopens-at-disneyland-hotel-after-month-long-refurbishment/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Newly reopened lounges often have a honeymoon period with manageable crowds. Visiting between 4–6pm, before dinner reservations fill nearby restaurants, may give you quicker seating and a calmer atmosphere."
+        }
+      },
+      {
+        "title": "Hungry Bear Barbecue Jamboree patio expands",
+        "body": "Disneyland converted lower-level planting beds into additional seating beneath the restaurant's upper deck. The expansion adds outdoor dining capacity in Critter Country.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/10/hungry-bear-barbecue-jamboree-seating-patio-now-open-at-disneyland-resort/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "More seating often means shorter waits to find a table during peak lunch hours. The lower patio may offer shade in the afternoon when the upper deck is in full sun, making 1–2pm dining more comfortable."
+        }
+      },
+      {
+        "title": "Charmed in the Park collection debuts at Magic Kingdom",
+        "body": "The new merchandise line includes bracelets, charms, phone straps, and keychains. Single charms start at ten dollars and can be mixed across the collection.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/10/charmed-in-the-park-bracelets-charms-phone-straps-and-keychains-arrive-at-walt-disney-world/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "New charm collections tend to sell out quickly at Emporium and other high-traffic shops. Visiting Main Street stores during the first hour after park opening often yields the best selection before popular designs disappear."
+        }
+      },
+      {
+        "title": "Three Disney World attractions file construction permits",
+        "body": "New permits were submitted for work at three existing attractions. Details on scope and timeline have not been disclosed.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/10/29/new-construction-permits-filed-for-3-disney-world-attractions/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Construction activity can introduce noise, barriers, or restricted pathways near affected rides. If you notice work walls going up in the coming weeks, check the app for alternate walking routes to minimize backtracking."
+        }
+      },
+      {
+        "title": "Walt Disney World expands airport luggage transfer to three more resorts",
+        "body": "The free baggage handling service between Orlando International Airport and onsite hotels now covers an additional 5,500 rooms at three Moderate Resorts. The program launched earlier this year with select properties.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-worlds-free-airport-luggage-transfer-onsite-perk-adds-three-new-resorts-in-5500-room-expansion/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Free luggage transfer lets you head straight to the parks without schlepping bags. Enroll at your airline's check-in counter if your resort is now eligible; bags typically arrive in your room within three to four hours."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Sir Patrick Stewart passes away at 86",
+        "body": "The Star Trek and X-Men actor died Wednesday at his Los Angeles home following a brief illness. Stewart's career spanned decades of film, television, and theater.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/10/29/sir-patrick-stewart-iconic-star-trek-and-x-men-actor-has-passed-away/"
+        }
+      },
+      {
+        "title": "TikTok Shop Super Brand Day features Disney merchandise",
+        "body": "Disney's inaugural Super Brand Day on TikTok Shop runs November 4–10, offering holiday merchandise through the platform for the first time.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/products/first-tiktok-super-brand-day-featuring-disney-details/"
+        }
+      },
+      {
+        "title": "Disney and NFL gear collection expands",
+        "body": "New Mickey and Friends NFL apparel, including Super Bowl LXI styles, is now available. The collection ties to Disney's 40th anniversary of the Super Bowl victory campaign.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/products/disney-mickey-nfl-merchandise/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "ALDI's Disney Christmas line launches next week",
+        "body": "The grocery chain's holiday collection includes Disney-themed backpacks, ear headbands, and pins, all priced under fifteen dollars. Items arrive in stores during the first week of November.",
+        "parkSlug": null,
+        "ctaLabel": "Shop early for best selection",
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Budget Disney merch at grocery stores tends to disappear within days of launch. Visiting ALDI on Wednesday morning, when most new stock hits shelves, gives you first access before popular items sell out."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "dRy1HjIwaaA",
+      "title": "I Tried Every NEW Food in Epcot | Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-10-25T15:24:01Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/dRy1HjIwaaA/mqdefault.jpg",
+      "viewCount": 55689,
+      "url": "https://www.youtube.com/watch?v=dRy1HjIwaaA",
+      "summary": "WrightDownMainStreet samples and reviews the latest food offerings across EPCOT at Walt Disney World."
+    },
+    {
+      "videoId": "MPgYJWx2H54",
+      "title": "🔴Live Disney's Hollywood Studios Fantasmic at 8, 9:30pm on Thursdat at Walt Disney World 10/29/2026",
+      "channel": "RON ON THE GO",
+      "publishedAt": "2026-10-30T04:17:45Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/MPgYJWx2H54/mqdefault.jpg",
+      "viewCount": 30451,
+      "url": "https://www.youtube.com/watch?v=MPgYJWx2H54",
+      "summary": "RON ON THE GO live-streams both Fantasmic showings at Hollywood Studios on Thursday evening."
+    },
+    {
+      "videoId": "dCK18zg0SFA",
+      "title": "🔴 Live:  Disney Epcot Rides & Fireworks -  Walt Disney World 10.29.2026",
+      "channel": "Disney Parks with Love - Janel",
+      "publishedAt": "2026-10-30T01:29:24Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/dCK18zg0SFA/mqdefault.jpg",
+      "viewCount": 30203,
+      "url": "https://www.youtube.com/watch?v=dCK18zg0SFA",
+      "summary": "Janel live-streams attractions and the nighttime fireworks spectacular at EPCOT."
+    },
+    {
+      "videoId": "vIY-wZP_ZYE",
+      "title": "Disney World Live Stream | The Big EPCOT & Hollywood Studios Loop",
+      "channel": "The Disney With Sean Show",
+      "publishedAt": "2026-10-30T02:17:01Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/vIY-wZP_ZYE/mqdefault.jpg",
+      "viewCount": 14981,
+      "url": "https://www.youtube.com/watch?v=vIY-wZP_ZYE",
+      "summary": "The Disney With Sean Show tours EPCOT and Hollywood Studios in a continuous live stream loop."
+    },
+    {
+      "videoId": "fZC2ClHSqok",
+      "title": "Please tell me if you would buy these  #princess #disneyland #disney #rapunzel #cinderella",
+      "channel": "EnchantedFlares",
+      "publishedAt": "2026-10-30T00:22:26Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/fZC2ClHSqok/mqdefault.jpg",
+      "viewCount": 12632,
+      "url": "https://www.youtube.com/watch?v=fZC2ClHSqok",
+      "summary": "EnchantedFlares showcases Disney princess merchandise and asks viewers for purchase opinions."
+    },
+    {
+      "videoId": "x04Z71ULsG0",
+      "title": "✨ (NEW!) 2026 Disneyland UPDATES! | BEST Foods?!, Closures, NEW Merch + MORE!",
+      "channel": "Making Magical Adventures",
+      "publishedAt": "2026-10-30T00:15:08Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/x04Z71ULsG0/mqdefault.jpg",
+      "viewCount": 6631,
+      "url": "https://www.youtube.com/watch?v=x04Z71ULsG0",
+      "summary": "Making Magical Adventures rounds up the latest Disneyland food, closures, and merchandise updates for 2026."
+    },
+    {
+      "videoId": "kmXZv8rdFL8",
+      "title": "Birthday celebrations for mumma bear at the happiest place on earth! Love you mum ❤️ #birthday",
+      "channel": "Ellie Soufi",
+      "publishedAt": "2026-10-29T23:47:53Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/kmXZv8rdFL8/mqdefault.jpg",
+      "viewCount": 5297,
+      "url": "https://www.youtube.com/watch?v=kmXZv8rdFL8",
+      "summary": "Ellie Soufi shares a personal birthday celebration for her mother at a Disney park."
+    },
+    {
+      "videoId": "jwMplY2yOnU",
+      "title": "【超速報】ディズニーハロウィーン明日で終了！イベント最後の平日なのにこの人の多さ…現地の混雑状況がヤバい！",
+      "channel": "ジョマジのディズニー研究所",
+      "publishedAt": "2026-10-30T00:00:12Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/jwMplY2yOnU/mqdefault.jpg",
+      "viewCount": 3361,
+      "url": "https://www.youtube.com/watch?v=jwMplY2yOnU",
+      "summary": "A Japanese-language report on heavy crowds at a Disney Halloween event ahead of its final day."
+    },
+    {
+      "videoId": "FZyjAghjc6Y",
+      "title": "¡Cosas de Disney que solo existen ahí!",
+      "channel": "Mangatron ESP",
+      "publishedAt": "2026-10-30T00:00:23Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/FZyjAghjc6Y/mqdefault.jpg",
+      "viewCount": 2157,
+      "url": "https://www.youtube.com/watch?v=FZyjAghjc6Y",
+      "summary": "Mangatron ESP highlights unique Disney items and experiences found only at the parks."
+    },
+    {
+      "videoId": "jH8EdL_GlWQ",
+      "title": "Never Step on This Box at Disneyland! 😂",
+      "channel": "Dentuma",
+      "publishedAt": "2026-10-30T05:02:41Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/jH8EdL_GlWQ/mqdefault.jpg",
+      "viewCount": 1738,
+      "url": "https://www.youtube.com/watch?v=jH8EdL_GlWQ",
+      "summary": "Dentuma warns viewers about a specific Disneyland box or obstacle to avoid stepping on."
+    }
+  ],
+  "updatedAt": "2026-10-30T10:46:47.517Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-10-30T10:46:47.517Z",
+    "tokens": {
+      "input": 11352,
+      "output": 5451,
+      "costUsd": 0.1158
+    }
+  }
+}
