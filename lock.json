@@ -1,9 +1,9 @@
 {
-  "status": "unlocked",
-  "holder": null,
-  "runId": null,
-  "acquiredAt": null,
-  "expiresAt": 0,
+  "status": "held",
+  "holder": "daily",
+  "runId": "41194063964-1",
+  "acquiredAt": 1793443840332,
+  "expiresAt": 1793444140332,
   "deployTag": null,
   "recovery": null
 }
