@@ -1,0 +1,326 @@
+{
+  "title": "Parkio Daily for November 1, 2026",
+  "slug": "parkio-daily-2026-11-01",
+  "date": "2026-11-01",
+  "teaser": "Hollywood Studios extends November hours for holiday crowds; Mickey's Very Merry Christmas Party kicks off November 8 with exclusive treats.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Soarin'",
+        "parkSlug": "epcot",
+        "note": "Walk-ons likely during evening hours as Food & Wine winds down"
+      },
+      {
+        "name": "Space Mountain",
+        "parkSlug": "magic-kingdom",
+        "note": "First-hour arrival often yields sub-20-minute waits"
+      },
+      {
+        "name": "Tower of Terror",
+        "parkSlug": "hollywood-studios",
+        "note": "Extended hours mean late-night opportunities with lighter crowds"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [],
+    "bignews": [
+      {
+        "title": "Hollywood Studios extends November hours as holiday crowds arrive",
+        "body": "The park has added late hours throughout November to accommodate Veterans Day travelers and early holiday season visitors. Extended operating windows create more ride capacity during what's historically a busy transition period.",
+        "parkSlug": "hollywood-studios",
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "The final two hours of extended days usually see lighter attraction queues. Plan headliner rides like Tower of Terror and Rock 'n' Roller Coaster for after 8pm when families with young kids tend to leave."
+        }
+      },
+      {
+        "title": "Mickey's Very Merry Christmas Party food lineup revealed ahead of November 8 debut",
+        "body": "Magic Kingdom's holiday hard-ticket event returns with exclusive treats including holiday-themed frozen drinks, cookies, and upcharge seasonal dishes. Full menus are now published for all food locations participating in the event.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/full-menus-for-2026-mickeys-very-merry-christmas-party-at-magic-kingdom/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Party-exclusive snacks tend to run out before the event ends, especially on sold-out nights. Arrive at food booths within the first 90 minutes of the party for the best selection of seasonal items."
+        }
+      },
+      {
+        "title": "Disney Jollywood Nights sells out additional Saturday before event opens",
+        "body": "Another Saturday date is no longer available for the Hollywood Studios holiday event, which runs select nights from November 7 through January 5. Weekend slots continue to disappear weeks ahead of opening night.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/10/disney-jollywood-nights-2026-saturday-dates-sold-out-emd1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "If you're eyeing a Saturday Jollywood Nights ticket, book now rather than waiting. Weeknight dates typically offer better availability and lighter in-event crowds than weekend sellouts."
+        }
+      },
+      {
+        "title": "Shanghai Disneyland announces opening date for new Enchanted Star Hotel",
+        "body": "The resort's third deluxe property will debut three and a half years after construction began. The themed hotel adds high-end capacity to the Shanghai Disney Resort campus.",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-sets-opening-date-for-new-enchanted-star-hotel/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "New hotel openings at international parks often preview design directions for U.S. resorts. Worth watching if you're curious about Disney's next stateside accommodations."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "Disneyland security screening station takes shape with new roofing",
+        "body": "Construction crews have added roofing to the framed security structure near the esplanade entrance. The updated screening facility is part of the broader Eastern Gateway project that will reshape arrival and transportation flow.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/10/aerial-view-update-of-new-security-screening-construction-at-disneyland/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Expect slower entry processing during construction hours, typically mid-morning. Arriving 45 minutes before rope drop usually clears you through before the heaviest backup."
+        }
+      },
+      {
+        "title": "Good Neighbor hotel shuttles shift to new pickup zone as Eastern Gateway work expands",
+        "body": "Starting next month, third-party shuttles and rideshare drop-offs will relocate to accommodate expanded construction near the Disneyland entrance. The change affects guests staying at partner hotels relying on off-site transportation.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disneyland-good-neighbor-hotels-third-party-shuttle-shifting-to-new-spot-as-eastern-gateway-work-expands/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "The new zone likely adds 5–10 minutes to your walk. Budget extra time for morning arrival, especially if you're aiming for rope drop at Disneyland or California Adventure."
+        }
+      },
+      {
+        "title": "Classic Magic Kingdom attraction headed for another closure in 2027",
+        "body": "A ride that recently completed a lengthy refurbishment will go down again next year for additional work. The announcement follows a pattern of extended maintenance windows for several original Magic Kingdom attractions.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/10/disney-world-closing-classic-magic-kingdom-ride-again-after-lengthy-refurbishment-el1/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "If this ride is on your must-do list, plan visits before the 2027 closure window. Check the refurbishment calendar closer to your travel dates to avoid surprises."
+        }
+      },
+      {
+        "title": "Large Pandora jewelry drop brings Disney Princess and Marvel charms to Disneyland",
+        "body": "A new collection of rings, charms, and holiday-themed Pandora pieces has arrived at Disneyland Resort. The release includes a two-piece interlocking castle ring set priced at 230 dollars alongside Marvel-inspired accessories.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/10/big-pandora-merchandise-drop-brings-disney-princess-holiday-and-marvel-charms-to-disneyland/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Limited-edition Pandora releases often sell out within days at flagship shops. Stop by World of Disney in Downtown Disney early in your trip if you're interested."
+        }
+      },
+      {
+        "title": "Reusable elephant bubbles cup debuts at eet by Maneet Chauhan",
+        "body": "The Indian restaurant at Disney Springs now offers a multi-colored reusable cup topped with an elephant figure. The new drinkware joins the location's beverage accessory lineup.",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/10/reusable-elephant-bubbles-cup-now-available-eet-by-maneet-chauhan-at-disney-springs/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Specialty cups at newer Disney Springs venues tend to vanish quickly. If you collect drinkware, grab it on your first Springs visit rather than waiting until your last day."
+        }
+      },
+      {
+        "title": "Glisten's stage installed at Hollywood Studios ahead of Jollywood Nights",
+        "body": "The holiday character's performance platform is now in place at the park, signaling final preparations for the hard-ticket event starting November 7. Stage installation marks one of the last visible setup steps before opening night.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/10/31/disneys-hollywood-studios-just-got-one-step-closer-to-christmas/"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "Stage areas and surrounding walkways often see bottlenecks when shows let out during special events. Plan alternate routes around Hollywood Boulevard if you're navigating the park during Jollywood Nights."
+        }
+      },
+      {
+        "title": "Full menu and prices announced for new Disney California Adventure kiosk",
+        "body": "A freshly opened food spot at California Adventure has published its complete menu with pricing. The kiosk adds another quick-service option to the park's lineup.",
+        "parkSlug": "california-adventure",
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/10/31/full-menu-and-prices-revealed-for-new-disneyland-spot/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "New kiosks typically see their longest lines during the lunch rush. Visit before 11:30am or after 2pm to avoid peak wait times for mobile orders and walk-ups."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Fantasy Springs entrance policy relaxes exclusivity rules after two years",
+        "body": "Tokyo DisneySea's newest land is gradually allowing more guests to use its dedicated exit and entry points. The change addresses a long-standing guest complaint about access restrictions.",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/one-of-out-biggest-disney-parks-pet-peeves-is-finally-getting-fixed/"
+        }
+      },
+      {
+        "title": "Disney partners with AI-powered voice modifier for Star Wars and Marvel characters",
+        "body": "The company has licensed popular franchise characters to Voicemod, a voice-changing software platform. The partnership allows users to apply character voices during streaming and communication.",
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/10/31/news-disney-quietly-partners-with-ai-powered-voice-modifier/"
+        }
+      },
+      {
+        "title": "TikTok Shop launches first Super Brand Day featuring Disney merchandise",
+        "body": "Holiday-themed Disney products will be available on TikTok Shop from November 4 through 10. The inaugural Super Brand Day event introduces a new e-commerce channel for seasonal gift shoppers.",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/products/first-tiktok-super-brand-day-featuring-disney-details/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "Extra Early Entry at Magic Kingdom beats Lightning Lane on party nights",
+        "body": "When Magic Kingdom closes early for Mickey's Very Merry Christmas Party or other hard-ticket events, the 30-minute early entry window for resort guests delivers better value than purchasing Lightning Lanes. Shorter operating hours compress crowds, but the pre-opening period offers near-empty queues for headliners like Space Mountain, TRON, and Seven Dwarfs Mine Train. Combine early entry with a focused rope-drop strategy and you can knock out four to five major attractions before mid-morning congestion builds.",
+        "parkSlug": "magic-kingdom",
+        "ctaLabel": "Plan your party-day strategy",
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Arrive at the park entrance 45 minutes before early entry begins. Heading straight to Tomorrowland or Fantasyland at the opening bell usually yields walk-on windows for the park's toughest tickets."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "VuJ1FEnme9M",
+      "title": "Disney's Hollywood Studios 2026 | Low Crowds, New Food & Monsters Inc. Updates | Walt Disney World",
+      "channel": "Paging Mr. Morrow",
+      "publishedAt": "2026-10-30T19:56:48Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/VuJ1FEnme9M/mqdefault.jpg",
+      "viewCount": 83612,
+      "url": "https://www.youtube.com/watch?v=VuJ1FEnme9M",
+      "summary": "Paging Mr. Morrow tours Hollywood Studios during a low-crowd period, covering new food offerings and construction updates on the Monsters Inc. land."
+    },
+    {
+      "videoId": "dRy1HjIwaaA",
+      "title": "I Tried Every NEW Food in Epcot | Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-10-25T15:24:01Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/dRy1HjIwaaA/mqdefault.jpg",
+      "viewCount": 60013,
+      "url": "https://www.youtube.com/watch?v=dRy1HjIwaaA",
+      "summary": "WrightDownMainStreet samples all the latest food additions at EPCOT, providing a comprehensive taste-test tour of new menu items."
+    },
+    {
+      "videoId": "FVk4U3B-TjM",
+      "title": "🔴 Live: 4K Saturday Halloween Stream at Disneyland! Cavalcade & The Musical World of Coco - 10/31/26",
+      "channel": "Koda Bear the Explorer ",
+      "publishedAt": "2026-11-01T01:39:59Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/FVk4U3B-TjM/mqdefault.jpg",
+      "viewCount": 34935,
+      "url": "https://www.youtube.com/watch?v=FVk4U3B-TjM",
+      "summary": "Koda Bear streams Halloween festivities live from Disneyland in 4K, featuring the Halloween cavalcade and Coco musical performances."
+    },
+    {
+      "videoId": "pP1lptVo_tA",
+      "title": "Disney Land-ல இவ்ளோ Rule இருக்கா #disneyland",
+      "channel": "Facts Central",
+      "publishedAt": "2026-11-01T02:30:38Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/pP1lptVo_tA/mqdefault.jpg",
+      "viewCount": 20584,
+      "url": "https://www.youtube.com/watch?v=pP1lptVo_tA",
+      "summary": "Facts Central covers Disneyland rules and regulations in this short-form video."
+    },
+    {
+      "videoId": "N5Uw9JIyFMQ",
+      "title": "🔴 LIVE: Disney HALLOWEEN 2026 – Mickey Mouse at Magic Kingdom | Halloween Ambience in 4K",
+      "channel": "Fun to be Free",
+      "publishedAt": "2026-10-31T23:35:44Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/N5Uw9JIyFMQ/mqdefault.jpg",
+      "viewCount": 17618,
+      "url": "https://www.youtube.com/watch?v=N5Uw9JIyFMQ",
+      "summary": "Fun to be Free livestreams Halloween atmosphere and Mickey Mouse character appearances at Magic Kingdom in 4K quality."
+    },
+    {
+      "videoId": "Bd6n1qsR2h0",
+      "title": "🔴 Halloween Party at Disney World LIVE! | Hollywood Studios Villains, Spooky Rides & Fantasmic!",
+      "channel": "The Weekly Hop",
+      "publishedAt": "2026-11-01T03:03:27Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Bd6n1qsR2h0/mqdefault.jpg",
+      "viewCount": 10217,
+      "url": "https://www.youtube.com/watch?v=Bd6n1qsR2h0",
+      "summary": "The Weekly Hop livestreams Halloween celebrations at Hollywood Studios, featuring villain encounters, themed attractions, and Fantasmic."
+    },
+    {
+      "videoId": "vHpfCc31PWc",
+      "title": "Halloween im Disneyland Paris: Disney-Zauber oder Enttäuschung? 🎃🫠",
+      "channel": "danielsparksandmore",
+      "publishedAt": "2026-11-01T04:52:53Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/vHpfCc31PWc/mqdefault.jpg",
+      "viewCount": 3874,
+      "url": "https://www.youtube.com/watch?v=vHpfCc31PWc",
+      "summary": "Danielsparksandmore reviews the Halloween season experience at Disneyland Paris, evaluating whether it delivers magic or disappointment."
+    },
+    {
+      "videoId": "el21LCuPnDg",
+      "title": "cool girl disney outfits might be my fav wow #disney #disneyland #disneyoutfit",
+      "channel": "Isa Kristen",
+      "publishedAt": "2026-11-01T02:00:39Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/el21LCuPnDg/mqdefault.jpg",
+      "viewCount": 1637,
+      "url": "https://www.youtube.com/watch?v=el21LCuPnDg",
+      "summary": "Isa Kristen showcases Disney-themed outfit ideas for Disneyland visits."
+    },
+    {
+      "videoId": "92uCJ9DQ_eE",
+      "title": "he's the owner of this house #disney #disneyland #funny #disneysomosmagic",
+      "channel": "Isa Kristen",
+      "publishedAt": "2026-11-01T06:00:15Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/92uCJ9DQ_eE/mqdefault.jpg",
+      "viewCount": 1597,
+      "url": "https://www.youtube.com/watch?v=92uCJ9DQ_eE",
+      "summary": "Isa Kristen shares a humorous moment from Disneyland in this short video."
+    },
+    {
+      "videoId": "g0oEHEg0uV8",
+      "title": "I asked Hades for a Hair Transplant!  🔥😂 #pickytravelers #disney #disneyland #oogieboogiebash",
+      "channel": "Picky Travelers",
+      "publishedAt": "2026-11-01T01:28:32Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/g0oEHEg0uV8/mqdefault.jpg",
+      "viewCount": 1272,
+      "url": "https://www.youtube.com/watch?v=g0oEHEg0uV8",
+      "summary": "Picky Travelers shares a comedic character interaction with Hades at Disneyland's Oogie Boogie Bash."
+    }
+  ],
+  "updatedAt": "2026-11-01T11:47:36.263Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-11-01T11:47:36.263Z",
+    "tokens": {
+      "input": 11204,
+      "output": 5288,
+      "costUsd": 0.1129
+    }
+  }
+}
