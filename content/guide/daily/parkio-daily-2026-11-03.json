@@ -1,0 +1,353 @@
+{
+  "title": "Parkio Daily for November 3, 2026",
+  "slug": "parkio-daily-2026-11-03",
+  "date": "2026-11-03",
+  "teaser": "Grand Floridian Cafe reopens with new menu; Autopia getting electrified track at Disneyland; Rock 'n' Roller Coaster adds Muppets Christmas overlay at Studios.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Test Track",
+        "parkSlug": "epcot",
+        "note": "Food & Wine crowds thinning after morning rush"
+      },
+      {
+        "name": "Big Thunder Mountain",
+        "parkSlug": "magic-kingdom",
+        "note": "Low waits before Christmas decor crowds build"
+      },
+      {
+        "name": "Rise of the Resistance",
+        "parkSlug": "hollywood-studios",
+        "note": "Early morning windows still best bet"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [
+      {
+        "title": "Disney reportedly planning thousands of job cuts",
+        "body": "Bloomberg reports the company is asking managers to cut 20% of annual costs, with theme parks, TV networks, and movie studios affected.",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/11/disney-reportedly-cutting-thousands-of-jobs-managers-asked-to-cut-20-annually/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Operational reductions may lead to longer waits for guest services and slower restaurant turnover in coming months. Consider Mobile Order and Lightning Lane options more heavily if staffing tightens."
+        }
+      }
+    ],
+    "bignews": [
+      {
+        "title": "Grand Floridian Cafe reopens after months-long refurbishment",
+        "body": "The table-service restaurant debuts a new menu and redesigned dining room as the resort's multi-year reimagining nears completion.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/first-look-at-redone-grand-floridian-cafe-as-disney-worlds-flagship-resort-reimagining-wraps-up/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Newly reopened restaurants tend to have easier reservation availability in the first two weeks. Check same-day slots on the app this morning for tonight or tomorrow."
+        }
+      },
+      {
+        "title": "Disneyland's Autopia will use electrified track instead of car batteries",
+        "body": "Disney Legend Bob Gurr confirmed the upcoming overhaul will power vehicles through the track itself rather than onboard batteries, eliminating gasoline engines.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/11/former-imagineer-bob-gurr-updates-details-on-new-autopia-remake-at-disneyland-rl1/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "The ride remains open during design work. If you want the classic gas-engine experience before it's gone, plan Tomorrowland visits now—closure timeline is still unannounced."
+        }
+      },
+      {
+        "title": "Rock 'n' Roller Coaster adds Muppets Christmas overlay",
+        "body": "The newly reimagined Muppets coaster at Hollywood Studios debuts a holiday track list for the 2026 season, its first seasonal overlay.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-world-reveals-new-christmas-ride-overlay-for-muppets-rock-n-roller-coaster/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Seasonal overlays often draw curious repeat riders. Queue length may spike between now and December 22—rope drop or evening hours usually offer shorter waits."
+        }
+      },
+      {
+        "title": "World Drive widening project extended another three years",
+        "body": "The Central Florida Tourism Oversight District filed for additional time to complete the Magic Kingdom roadwork, originally scheduled to finish this December.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/11/cftod-files-for-three-more-years-to-finish-world-drive-widening-walt-disney-world-jc1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Morning and evening traffic delays near Magic Kingdom toll plaza are likely to persist. Budget an extra 15 minutes for parking lot arrival during peak hours."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "Redwood Creek Challenge Trail closed for Santa meet-and-greet prep",
+        "body": "The trail at Disney California Adventure is now roped off as crews set up for St. Nick's arrival during the holiday season.",
+        "parkSlug": "california-adventure",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/11/redwood-creek-challenge-trail-closed-to-prepare-for-santa-claus-at-disney-california-adventure/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Santa character meets tend to draw long waits on opening day. Visiting midweek afternoons after the first weekend usually cuts line time by 20–30 minutes."
+        }
+      },
+      {
+        "title": "Disneyland third-party shuttle drop-off moved effective today",
+        "body": "Good Neighbor hotel shuttles now use a different stop at the resort, affecting thousands of daily arrivals.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/11/disneyland-third-party-good-neighbor-shuttle-bus-stop-change-now-in-effect-jc1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "First-day transportation changes often cause confusion and delays. If using a Good Neighbor shuttle, leave your hotel 15 minutes earlier than usual to account for the new routing."
+        }
+      },
+      {
+        "title": "Jock Lindsey's Hangar Bar debuts holiday food and drink menu",
+        "body": "The Disney Springs lounge rolls out festive provisions, including themed cocktails and seasonal plates, for the 2026 holiday season.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/first-look-at-holidays-at-jock-lindseys-hangar-bar/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Disney Springs bars typically see lighter crowds before 5pm on weekdays. Arriving mid-afternoon often means walk-up seating and shorter waits for specialty drinks."
+        }
+      },
+      {
+        "title": "EPCOT cuts evening showtimes for Impressions de France again",
+        "body": "Starting in 2027, the France pavilion film will screen only in the morning, with Beauty and the Beast Sing-Along playing the rest of the day.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-world-makes-distinctly-unpatriotique-cut-to-impressions-de-france-hours-again/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "If you prefer the original film, catch it during World Showcase opening through early afternoon before the schedule changes. Morning showtimes tend to have emptier theaters."
+        }
+      },
+      {
+        "title": "Disney files new permits for Monstropolis and Tropical Americas",
+        "body": "Recent filings point to continued work on the Hollywood Studios and Animal Kingdom expansions announced earlier this year.",
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/11/02/disney-files-new-permits-for-monstropolis-and-tropical-americas-expansions/"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "Construction noise and pathway narrowing near Animation Courtyard and DinoLand usually peak mid-morning through early afternoon. Plan quieter activities or move to other park areas during those windows."
+        }
+      },
+      {
+        "title": "Disney cracking down on unauthorized resort pool use",
+        "body": "New verification procedures are being enforced across Walt Disney World hotels to prevent pool hopping by non-resort guests.",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-world-quietly-cracks-down-on-unauthorized-pool-use-via-rule-enforcement-verification/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "If you're staying on property, bring your MagicBand or room key to the pool. Lifeguards may ask for proof of stay, and re-entry delays can cost 10–15 minutes during busy afternoons."
+        }
+      },
+      {
+        "title": "Old Key West boat service resumes operations",
+        "body": "The water taxi connecting the resort to Disney Springs has reopened after a temporary closure.",
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/11/02/it-just-got-easier-to-get-to-disneys-old-key-west-resort/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Boats to Disney Springs typically run lighter during the mid-afternoon lull. Taking the 2–4pm window often means shorter waits and roomier decks than evening departures."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Mickey's Very Merry Christmas Party food guide released",
+        "body": "Disney shared the full menu for the separately ticketed holiday event running select nights November 8 through December 22.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/disney-eats-foodie-guide-to-mickeys-very-merry-christmas-party/"
+        }
+      },
+      {
+        "title": "New Disney Once Upon a Bag accessories debut at Magic Kingdom",
+        "body": "A festive Mickey tote and several Disney Princess bag scarves are now available for purchase.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/11/disney-princess-bag-scarves-arrive-alongside-a-new-festive-mickey-tote-at-walt-disney-world/"
+        }
+      },
+      {
+        "title": "Star Wars Black Spire Outpost collection arrives at Disneyland",
+        "body": "The new merchandise line features Mandalorian and Grogu designs across apparel and accessories at Galaxy's Edge.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/11/full-list-with-prices-of-star-wars-galaxys-edge-black-spire-outpost-collection-at-disneyland/"
+        }
+      },
+      {
+        "title": "Electrical Water Pageant receives minor updates",
+        "body": "Disney made small changes to the 55-year-old nighttime show on the Seven Seas Lagoon.",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/11/disney-world-makes-changes-to-55-year-old-electrical-water-pageant-ab1/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "Dapper Dans feature highlights Magic Kingdom's harmony quartet",
+        "body": "A new Disney Parks Blog profile follows the four performers who bring barbershop tradition to Main Street, U.S.A. each day, from warmups to tap routines.",
+        "parkSlug": "magic-kingdom",
+        "ctaLabel": "Read the story",
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "The Dans typically perform multiple sets between park opening and early afternoon. Catching the first set near Town Square often means smaller crowds and better photo angles before midday traffic builds."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "VuJ1FEnme9M",
+      "title": "Disney's Hollywood Studios 2026 | Low Crowds, New Food & Monsters Inc. Updates | Walt Disney World",
+      "channel": "Paging Mr. Morrow",
+      "publishedAt": "2026-10-30T19:56:48Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/VuJ1FEnme9M/mqdefault.jpg",
+      "viewCount": 118248,
+      "url": "https://www.youtube.com/watch?v=VuJ1FEnme9M",
+      "summary": "Paging Mr. Morrow explores Hollywood Studios during a low-crowd day, covering new food options and construction progress on the Monsters Inc. area."
+    },
+    {
+      "videoId": "RaCYeuDcvKk",
+      "title": "🔴 Live: 4K Monday Stream at Disneyland! Mickey's Mix Magic and Rides - 11/02/26",
+      "channel": "Koda Bear the Explorer ",
+      "publishedAt": "2026-11-03T06:56:30Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/RaCYeuDcvKk/mqdefault.jpg",
+      "viewCount": 32296,
+      "url": "https://www.youtube.com/watch?v=RaCYeuDcvKk",
+      "summary": "Koda Bear streams a live Monday evening at Disneyland, featuring Mickey's Mix Magic projection show and ride walkthroughs."
+    },
+    {
+      "videoId": "7lNoFalgEvU",
+      "title": "🔴 Live: Magic Kingdom Christmas Decor, Starlight & Fireworks | Disney World Live Stream 11.2.2026",
+      "channel": "Daily FastPass",
+      "publishedAt": "2026-11-03T03:09:31Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/7lNoFalgEvU/mqdefault.jpg",
+      "viewCount": 29615,
+      "url": "https://www.youtube.com/watch?v=7lNoFalgEvU",
+      "summary": "Daily FastPass livestreams the first night of Christmas decorations at Magic Kingdom, including the Starlight parade and fireworks."
+    },
+    {
+      "videoId": "8OMn4JPlQ1o",
+      "title": "I Tried EVERY Burger at Epic Universe! | Universal Studios Orlando",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-11-01T17:00:01Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/8OMn4JPlQ1o/mqdefault.jpg",
+      "viewCount": 26602,
+      "url": "https://www.youtube.com/watch?v=8OMn4JPlQ1o",
+      "summary": "WrightDownMainStreet samples every burger available at Universal's Epic Universe, ranking and reviewing each option."
+    },
+    {
+      "videoId": "qIPSYQgu26A",
+      "title": "🔴 Disney World LIVE: FIRST LOOK at Christmas at Magic Kingdom! 🎄 Starlight Parade & Fireworks!",
+      "channel": "The Weekly Hop",
+      "publishedAt": "2026-11-03T04:43:51Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/qIPSYQgu26A/mqdefault.jpg",
+      "viewCount": 12838,
+      "url": "https://www.youtube.com/watch?v=qIPSYQgu26A",
+      "summary": "The Weekly Hop offers a first-look livestream of Christmas decorations, the Starlight parade, and fireworks at Magic Kingdom."
+    },
+    {
+      "videoId": "HLm86XSR7GA",
+      "title": "🔴 LIVE Disney World Orlando - EPCOT Center 🎤 Boyz II Men LIVE! -  Eat to the Beat Concert Series",
+      "channel": "Now Is The Time",
+      "publishedAt": "2026-11-03T03:05:46Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/HLm86XSR7GA/mqdefault.jpg",
+      "viewCount": 5690,
+      "url": "https://www.youtube.com/watch?v=HLm86XSR7GA",
+      "summary": "Now Is The Time streams Boyz II Men's live Eat to the Beat concert performance at EPCOT's Food & Wine Festival."
+    },
+    {
+      "videoId": "uY_2JPCMJbY",
+      "title": "🔴 LIVE: An Evening At Epcot With Boyz II Men | Walt Disney World Live Stream 11-2-26",
+      "channel": "Steve's World",
+      "publishedAt": "2026-11-03T04:42:43Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/uY_2JPCMJbY/mqdefault.jpg",
+      "viewCount": 5491,
+      "url": "https://www.youtube.com/watch?v=uY_2JPCMJbY",
+      "summary": "Steve's World broadcasts an evening at EPCOT featuring Boyz II Men's concert as part of the Eat to the Beat series."
+    },
+    {
+      "videoId": "HyzWUBqrAWo",
+      "title": "【衝撃】11月2日ディズニー平日完売の理由",
+      "channel": "Tokyo Yoppy Disney",
+      "publishedAt": "2026-11-03T09:30:12Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/HyzWUBqrAWo/mqdefault.jpg",
+      "viewCount": 4167,
+      "url": "https://www.youtube.com/watch?v=HyzWUBqrAWo",
+      "summary": "Tokyo Yoppy Disney discusses why Tokyo Disney tickets sold out on the weekday of November 2nd."
+    },
+    {
+      "videoId": "BmdNDnSfojE",
+      "title": "Boyz II Men Up Close! Eat to the Beat | Disney World  | 11/2",
+      "channel": "In The Park Daze",
+      "publishedAt": "2026-11-03T02:51:35Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/BmdNDnSfojE/mqdefault.jpg",
+      "viewCount": 2476,
+      "url": "https://www.youtube.com/watch?v=BmdNDnSfojE",
+      "summary": "In The Park Daze captures close-up footage of Boyz II Men performing at EPCOT's Eat to the Beat concert series."
+    },
+    {
+      "videoId": "CPFJfGXbFzQ",
+      "title": "The Conspiracy Theory Behind Disney's Trump Animatronic",
+      "channel": "DisneyMagicDaily",
+      "publishedAt": "2026-11-03T01:05:44Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/CPFJfGXbFzQ/mqdefault.jpg",
+      "viewCount": 2333,
+      "url": "https://www.youtube.com/watch?v=CPFJfGXbFzQ",
+      "summary": "DisneyMagicDaily examines conspiracy theories surrounding the Trump animatronic at the Hall of Presidents attraction."
+    }
+  ],
+  "updatedAt": "2026-11-03T11:47:29.077Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-11-03T11:47:29.077Z",
+    "tokens": {
+      "input": 11259,
+      "output": 5413,
+      "costUsd": 0.115
+    }
+  }
+}
