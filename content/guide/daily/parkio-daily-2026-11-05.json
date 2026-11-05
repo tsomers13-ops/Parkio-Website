@@ -1,0 +1,331 @@
+{
+  "title": "Parkio Daily for November 5, 2026",
+  "slug": "parkio-daily-2026-11-05",
+  "date": "2026-11-05",
+  "teaser": "All 12 November Christmas Party dates sold out; Little Mermaid refurb wraps at DCA; holiday menus drop at both resorts.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "The Little Mermaid – Ariel's Undersea Adventure",
+        "parkSlug": "california-adventure",
+        "note": "Refurb complete, all scaffolding gone"
+      },
+      {
+        "name": "Splash Mountain",
+        "parkSlug": "magic-kingdom",
+        "note": "Opossums restored to animatronic scenes"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [
+      {
+        "title": "All November Christmas Party Nights Now Sold Out at Magic Kingdom",
+        "body": "Sunday, November 29 sold out overnight, marking all 12 November dates for Mickey's Very Merry Christmas Party as unavailable. Only six December dates remain on the calendar, with December 6 also gone as of this week.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/11/magic-kingdom-event-very-merry-november-sold-out-th1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "If you need a party ticket for late November, secondary resale is your only option now. December dates typically sell out closer to the event, so booking within the next few days may keep options open."
+        }
+      }
+    ],
+    "bignews": [
+      {
+        "title": "Little Mermaid Ride Refurb Wraps at Disney California Adventure",
+        "body": "All construction walls and scaffolding are down from The Little Mermaid – Ariel's Undersea Adventure after exterior work that began in August. The attraction is operating normally.",
+        "parkSlug": "california-adventure",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/11/all-scaffolding-construction-walls-removed-from-the-little-mermaid-ariels-undersea-adventure-at-disney-california-adventure/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Paradise Pier tends to feel quieter in the morning after the scaffolding distraction is gone. Riding between rope drop and 10 a.m. often yields sub-15-minute waits."
+        }
+      },
+      {
+        "title": "Disneyland Holiday Food Menus Released for November 13 Start",
+        "body": "Disney published full foodie guides for both Holidays at the Disneyland Resort and Disney Festival of Holidays at California Adventure. Seasonal items run November 13 through January 6, including returning favorites and new dishes inspired by global holiday traditions.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/dlr/disney-eats-foodie-guide-to-holidays-at-the-disneyland-resort/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Festival booths usually see heaviest lines between noon and 3 p.m. Hitting popular items like those at Cozy Cone Motel before 11 a.m. or after 5 p.m. often cuts wait times in half."
+        }
+      },
+      {
+        "title": "Opossums Return to Splash Mountain Animatronic Scene",
+        "body": "The opossum figures are back in their classic hanging positions on Splash Mountain at Magic Kingdom after a period of absence during recent maintenance work.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/11/04/we-shed-a-tear-when-we-saw-this-return-to-a-popular-magic-kingdom-attraction/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Frontierland crowd flow typically eases after 7 p.m. Evening rides on Splash Mountain often let you spot smaller details like the opossums without fighting standby crush."
+        }
+      },
+      {
+        "title": "Mickey's Very Merry Christmas Party Details Released",
+        "body": "Disney shared the 2026 party treat locations, complimentary keepsake ornament design, and photo op lineup for this year's after-hours event, which runs select nights through December 22.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/11/disney-world-reveals-everything-guests-can-get-for-free-at-2026-christmas-party-bwb1/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Treat stations tend to form lines within 30 minutes of party start. Grabbing your ornament and snacks during the parade usually means lighter queues and faster pickup."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "Three Hollywood Studios Attractions Get Holiday Overlays",
+        "body": "Seasonal theming has arrived on three attractions at Hollywood Studios for the 2026 holiday season, marking the start of festive décor across the park.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/11/04/3-attractions-in-hollywood-studios-have-changed-for-the-holidays/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Holiday overlays often draw repeat riders during the first week. Rope-dropping one of the three attractions may give you walk-on access before word spreads online."
+        }
+      },
+      {
+        "title": "Tinker Bell Figure Reinstalled on Disneyland Hotel Sorcerer's Hat",
+        "body": "The Tinker Bell model is back atop the iconic Sorcerer's Hat sculpture at the Disneyland Hotel entrance after recent marquee updates.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/11/photos-tinker-bell-model-returns-to-the-sorcerers-hat-sculpture-at-the-disneyland-hotel/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "The sculpture sits near the northeast hotel corner. Grabbing a photo in early morning light, before check-in crowds arrive around 3 p.m., usually yields cleaner shots."
+        }
+      },
+      {
+        "title": "Jock Lindsey's Hangar Bar Holiday Menu Previewed",
+        "body": "Disney Springs lounge Jock Lindsey's Hangar Bar released its seasonal food and drink lineup, bringing festive theming to the Indiana Jones–inspired space for the 2026 holidays.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/first-look-at-holidays-at-jock-lindseys-hangar-bar/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Hangar Bar tends to fill up after 6 p.m. on weekends. Stopping by between 3 and 5 p.m. often means immediate seating and first crack at limited-run cocktails."
+        }
+      },
+      {
+        "title": "Beauty and the Beast 35th Anniversary Merch Collection Launches",
+        "body": "Disney released a new merchandise line celebrating 35 years of Beauty and the Beast, available online and at select park locations this November.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/products/beauty-and-the-beast-35th-anniversary-merch/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Anniversary collections often see quick sellouts at Emporium and World of Disney. Shopping within the first three days of release and before 11 a.m. usually secures best selection."
+        }
+      },
+      {
+        "title": "A Goofy Movie Pin Series Arrives at Magic Kingdom",
+        "body": "New pins featuring Powerline, Roxanne, and scenes from A Goofy Movie are now available at select Magic Kingdom retail locations.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/11/pins-from-a-goofy-movie-featuring-powerline-roxanne-and-more-now-available-at-magic-kingdom/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Pin releases tend to move fastest at Main Street locations during afternoon shopping surges. Checking the Emporium or Main Street Cinema shop before 10 a.m. often locks in stock."
+        }
+      },
+      {
+        "title": "Jollywood Nights Early Check-In Confirmed at Hollywood Studios",
+        "body": "Disney confirmed guests holding Jollywood Nights tickets may check in starting at 5:30 p.m. on event nights, allowing entry before the official party start.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/11/disney-jollywood-nights-2026-check-in-hollywood-studios-emd1/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "The 5:30 p.m. window typically lets you skip wristband lines that form closer to 7 p.m. Arriving right at 5:30 often means immediate distribution and a head start on event queues."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Mickey Sorcerer Hat Jewelry Debuts at Walt Disney World",
+        "body": "Arribas Brothers introduced a new sterling silver jewelry line inspired by Mickey's sorcerer hat, including necklaces, bracelets, rings, and earrings.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/11/mickey-sorcerer-hat-necklace-bracelet-ring-and-earrings-arrive-at-walt-disney-world/"
+        }
+      },
+      {
+        "title": "Disneyland Resort Hotel Discount Extended Into 2027",
+        "body": "Disney announced savings of up to 30 percent on Disneyland Resort hotel stays for select 2027 dates, available to Disney Visa cardholders, Magic Key passholders, and the general public.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/save-up-to-30-off-on-disneyland-resort-hotels-in-2027/"
+        }
+      },
+      {
+        "title": "World Drive Construction Timeline Pushed to 2029",
+        "body": "Walt Disney World extended the completion date for major World Drive infrastructure work by three years, delaying roadway upgrades that could support a future Magic Kingdom–area resort.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/new-magic-kingdom-hotel-park-entrance-disney-world-drive-floridian-way-construction-delay-2027/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "Dapper Dans Mark Decades of Main Street Harmony",
+        "body": "The Dapper Dans barbershop quartet continues its multi-generational run at Magic Kingdom, warming up voices and tap shoes each morning before greeting guests on Main Street, U.S.A. A new Disney Parks Blog feature highlights the four performers and the long tradition behind the act.",
+        "parkSlug": "magic-kingdom",
+        "ctaLabel": "Read the full story",
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "The Dans typically perform several sets between 10 a.m. and 4 p.m. Catching the first or last set of the day often means smaller crowds and easier photo opportunities near Town Square."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "VuJ1FEnme9M",
+      "title": "Disney's Hollywood Studios 2026 | Low Crowds, New Food & Monsters Inc. Updates | Walt Disney World",
+      "channel": "Paging Mr. Morrow",
+      "publishedAt": "2026-10-30T19:56:48Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/VuJ1FEnme9M/mqdefault.jpg",
+      "viewCount": 134645,
+      "url": "https://www.youtube.com/watch?v=VuJ1FEnme9M",
+      "summary": "Paging Mr. Morrow tours Hollywood Studios during a low-crowd period, covering new food options and the latest Monsters Inc. construction updates."
+    },
+    {
+      "videoId": "8OMn4JPlQ1o",
+      "title": "I Tried EVERY Burger at Epic Universe! | Universal Studios Orlando",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-11-01T17:00:01Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/8OMn4JPlQ1o/mqdefault.jpg",
+      "viewCount": 35399,
+      "url": "https://www.youtube.com/watch?v=8OMn4JPlQ1o",
+      "summary": "WrightDownMainStreet samples every burger available at Universal's Epic Universe in a full taste test and review."
+    },
+    {
+      "videoId": "5t27JRLghRU",
+      "title": "🔴 Live: Magic Kingdom Christmas Decor, Starlight & Fireworks | Disney World Live Stream 11.4.2026",
+      "channel": "Daily FastPass",
+      "publishedAt": "2026-11-05T04:14:28Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/5t27JRLghRU/mqdefault.jpg",
+      "viewCount": 27588,
+      "url": "https://www.youtube.com/watch?v=5t27JRLghRU",
+      "summary": "Daily FastPass livestreams Magic Kingdom's Christmas decorations and evening fireworks show on November 4."
+    },
+    {
+      "videoId": "s12GdwTrRXs",
+      "title": "🔴 LIVE: EPIC Christmas Ambience at Magic Kingdom & Hollywood in 4K | Disney World Live Stream 2026",
+      "channel": "Fun to be Free",
+      "publishedAt": "2026-11-05T04:29:09Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/s12GdwTrRXs/mqdefault.jpg",
+      "viewCount": 13618,
+      "url": "https://www.youtube.com/watch?v=s12GdwTrRXs",
+      "summary": "Fun to be Free captures the holiday atmosphere in 4K across Magic Kingdom and Hollywood Studios during a live stream."
+    },
+    {
+      "videoId": "hglPkvJnng8",
+      "title": "🔴 LIVE - Magic Kingdom Wednesday Disney Live Stream 11.04.2026",
+      "channel": "Ear To Ear Magic",
+      "publishedAt": "2026-11-05T00:20:34Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/hglPkvJnng8/mqdefault.jpg",
+      "viewCount": 8543,
+      "url": "https://www.youtube.com/watch?v=hglPkvJnng8",
+      "summary": "Ear To Ear Magic livestreams a Wednesday visit to Magic Kingdom on November 4."
+    },
+    {
+      "videoId": "Lvlwaey5bp8",
+      "title": "✨ NEW Downtown Disney 2026 UPDATES! | NEW Hot Dog Of The Month, Kingdom Hearts Pin, Shopping & MORE!",
+      "channel": "Making Magical Adventures",
+      "publishedAt": "2026-11-05T01:15:16Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Lvlwaey5bp8/mqdefault.jpg",
+      "viewCount": 4931,
+      "url": "https://www.youtube.com/watch?v=Lvlwaey5bp8",
+      "summary": "Making Magical Adventures highlights new food, pins, and shopping updates at Downtown Disney."
+    },
+    {
+      "videoId": "g0Ddxz08Mdo",
+      "title": "Things Disneyland COPIED From Other Theme Parks 🏰 #disney",
+      "channel": "Dreamland Moments",
+      "publishedAt": "2026-11-05T02:58:14Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/g0Ddxz08Mdo/mqdefault.jpg",
+      "viewCount": 3746,
+      "url": "https://www.youtube.com/watch?v=g0Ddxz08Mdo",
+      "summary": "Dreamland Moments explores theme park concepts that Disneyland borrowed from other attractions and parks."
+    },
+    {
+      "videoId": "tfHTyN0-G7Q",
+      "title": "The Secret World Hidden Beneath Disney's Magic Kingdom",
+      "channel": "DisneyMagicDaily",
+      "publishedAt": "2026-11-05T01:26:23Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/tfHTyN0-G7Q/mqdefault.jpg",
+      "viewCount": 2658,
+      "url": "https://www.youtube.com/watch?v=tfHTyN0-G7Q",
+      "summary": "DisneyMagicDaily examines the utilidor tunnels and behind-the-scenes infrastructure beneath Magic Kingdom."
+    },
+    {
+      "videoId": "NNUibDjDe6k",
+      "title": "How the Election Could Affect Disney Parks",
+      "channel": "Disney Journey with Jim Shull",
+      "publishedAt": "2026-11-05T02:16:43Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/NNUibDjDe6k/mqdefault.jpg",
+      "viewCount": 2334,
+      "url": "https://www.youtube.com/watch?v=NNUibDjDe6k",
+      "summary": "Disney Journey with Jim Shull discusses potential impacts of the recent election on Disney Parks operations and policy."
+    },
+    {
+      "videoId": "azLXmSAYo9s",
+      "title": "🙏❤️‍🩹👄🎀 #disney #휙봐 #휙봐 #funny #쩐다 #colonelkkjϟ #baby #wreckitralph #disneyland #encanto",
+      "channel": "Pabel Hasan",
+      "publishedAt": "2026-11-05T07:10:29Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/azLXmSAYo9s/mqdefault.jpg",
+      "viewCount": 1260,
+      "url": "https://www.youtube.com/watch?v=azLXmSAYo9s",
+      "summary": "Pabel Hasan shares a short comedic clip tagged with Disney and Wreck-It Ralph references."
+    }
+  ],
+  "updatedAt": "2026-11-05T11:47:38.401Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-11-05T11:47:38.401Z",
+    "tokens": {
+      "input": 11318,
+      "output": 5288,
+      "costUsd": 0.1133
+    }
+  }
+}
