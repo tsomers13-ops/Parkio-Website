@@ -1,0 +1,331 @@
+{
+  "title": "Parkio Daily for Thursday, November 6, 2026",
+  "slug": "parkio-daily-2026-11-06",
+  "date": "2026-11-06",
+  "teaser": "Typhoon Lagoon reopens this winter; new Minnie Mouse hotel rooms debut 2027; Grand Floridian Cafe back in service with fresh menu.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Space Mountain",
+        "parkSlug": "magic-kingdom",
+        "note": "Early morning window before Tomorrowland fills"
+      },
+      {
+        "name": "Soarin'",
+        "parkSlug": "epcot",
+        "note": "Light crowds during dinner hour"
+      },
+      {
+        "name": "Rise of the Resistance",
+        "parkSlug": "hollywood-studios",
+        "note": "Queue moves fastest at rope drop"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [],
+    "bignews": [
+      {
+        "title": "Typhoon Lagoon announces winter reopening with seasonal pass",
+        "body": "Disney confirmed Typhoon Lagoon will reopen this winter, with a new Disney Water Park Seasonal Pass offering repeat visits through next year. The water park has been closed for its annual refurbishment.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/typhoon-lagoon-reopening-date-and-ticket-details/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Winter water park visits tend to offer lighter crowds than summer. Rope-drop arrival usually secures lounge chairs near Castaway Creek without the mid-day scramble."
+        }
+      },
+      {
+        "title": "Grand Floridian Cafe reopens with updated breakfast and lunch menu",
+        "body": "The dining location at Disney's Grand Floridian Resort has returned to service after a closure, now serving revamped breakfast and lunch offerings. The cafe operates table-service hours.",
+        "parkSlug": null,
+        "source": {
+          "label": "WrightDownMainStreet",
+          "url": "https://www.youtube.com/watch?v=RTAiIUL65nw"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Newly reopened restaurants often have easier reservation availability in the first few weeks. Check same-day openings on the app around 7am when guests adjust plans."
+        }
+      },
+      {
+        "title": "Star Tours permit filed for unspecified construction work",
+        "body": "Walt Disney World submitted a general construction permit for Star Tours at Hollywood Studios. The filing contracts an engineering design firm but does not detail the scope of work.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/11/disney-files-permit-for-star-tours-construction-at-disneys-hollywood-studios/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Permits often precede construction walls or closures within a few weeks. If Star Tours is a priority, riding sooner rather than later may avoid future downtime."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "Disney hotel to debut Minnie Mouse themed rooms in 2027",
+        "body": "A Walt Disney World resort will transform select guest rooms with Minnie Mouse design elements starting early next year. The refresh follows recent character overlays at other properties.",
+        "parkSlug": null,
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/11/disney-hotel-rooms-minnie-mouse-transformation-cj1/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Character-themed rooms tend to book quickly once announced. Reservations for early 2027 are likely open now; calling Disney directly can sometimes surface inventory the website misses."
+        }
+      },
+      {
+        "title": "Animal Kingdom debuts two new churro flavors blending DOLE Whip",
+        "body": "Disney's Animal Kingdom introduced churros that combine the park's signature fried dough with DOLE Whip flavors, following an internal recipe competition among culinary teams.",
+        "parkSlug": "animal-kingdom",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/how-the-churro-lympics-spawned-two-new-churro-creations/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "New snack rollouts often see lines peak mid-morning at flagship carts. Stopping by around park opening or late afternoon usually cuts wait time for specialty treats."
+        }
+      },
+      {
+        "title": "Holiday R2-H16 droid now available at Hollywood Studios",
+        "body": "A festive Star Wars astromech with Christmas-inspired design and unique personality chip has arrived at Droid Depot on Batuu. The unit retails for $129.99 and features interactive sound effects.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/11/new-holiday-r2-h16-droid-debuts-at-disneys-hollywood-studios/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Limited-edition droids typically sell out within days at Galaxy's Edge. Morning visits to Droid Depot tend to offer the best selection before afternoon stock dwindles."
+        }
+      },
+      {
+        "title": "Under the Sea ride closes nightly at 7pm in Magic Kingdom",
+        "body": "Journey of The Little Mermaid in Fantasyland now ends daily operations at 7pm, while the rest of Magic Kingdom remains open. The early closure is ongoing.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/11/the-little-mermaid-vanishes-from-magic-kingdom-operations-at-7-p-m-ad1/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Rides with shortened hours often see lighter queues in the final operating hour. Arriving in Fantasyland between 5:30–6:30pm may yield walk-on windows before the 7pm close."
+        }
+      },
+      {
+        "title": "Newborn zebra foal debuts on Animal Kingdom Lodge savanna",
+        "body": "A healthy female zebra recently born to mother Aziza is now visible to guests exploring the main savanna area at the resort. The foal marks the latest addition to the lodge's wildlife program.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/11/new-baby-zebra-makes-savanna-debut-at-disneys-animal-kingdom/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Young animals tend to be most active in early morning and late afternoon. Viewing from Arusha or Uzima savanna overlooks around sunrise often offers the clearest sightings."
+        }
+      },
+      {
+        "title": "Dining Plan adds two confirmed changes for 2027 reservations",
+        "body": "Walt Disney World announced modifications to the Disney Dining Plan structure effective next year, affecting how credits are allocated and which restaurants participate.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/11/05/confirmed-2-dining-plan-changes-coming-to-disney-world-in-2027/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Plan adjustments sometimes make current-year packages better value. Booking a 2026 trip before year-end may lock in more favorable credit ratios if changes reduce flexibility."
+        }
+      },
+      {
+        "title": "Jollywood Nights rain policy now public ahead of event debut",
+        "body": "Disney outlined refund and rescheduling rules for the new Hollywood Studios holiday party if weather forces cancellations or shortened hours. The ticketed event runs select nights this season.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/11/05/what-happens-if-it-rains-during-jollywood-nights-at-hollywood-studios/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Special event tickets rarely offer full refunds for partial rain delays. Checking hourly radar before leaving your resort can help decide whether to postpone arrival until storms pass."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Holiday gift card designs and collectible pins released",
+        "body": "Disney launched a seasonal collection of gift cards featuring holiday artwork and character themes. The cards are available at resorts and online, with matching pins sold separately.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/products/new-holiday-limited-edition-disney-gift-card-designs-and-pins/"
+        }
+      },
+      {
+        "title": "Disneyland announces full Festival of Holidays food menu",
+        "body": "California Adventure released the complete lineup of dishes and drinks available at Festival of Holidays marketplace booths, running November 13 through January 6.",
+        "parkSlug": "california-adventure",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/dlr/disney-eats-foodie-guide-to-disney-festival-of-holidays/"
+        }
+      },
+      {
+        "title": "Beauty and the Beast 35th anniversary merchandise collection arrives",
+        "body": "A new product line celebrating three and a half decades of the animated film is now in stores, featuring apparel, home goods, and collectibles across Disney retail locations.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/products/beauty-and-the-beast-35th-anniversary-merch/"
+        }
+      },
+      {
+        "title": "Winnie the Pooh embroidered sweatshirts debut at Disneyland",
+        "body": "White pullover sweatshirts with applique artwork of Pooh and friends are now for sale at Disneyland Resort, priced at $59.99.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/11/winnie-the-pooh-friends-sweatshirts-arrive-at-disneyland-resort/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "Resort booking extension offers discounts through Christmas 2027",
+        "body": "Walt Disney World extended its Future Stay Offer, allowing guests to book placeholder reservations with discounts more than a year in advance. The promotion now covers dates through late December 2027, including peak holiday weeks. The offer typically delivers the largest and simplest savings structure for advance planners, making it easier to lock in lower rates before detailed itineraries are finalized.",
+        "parkSlug": null,
+        "ctaLabel": "View resort deals",
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Booking placeholder reservations early often secures better rates than waiting for standard discounts. Modifications are usually free until final payment, so locking dates now provides flexibility if plans shift."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "VuJ1FEnme9M",
+      "title": "Disney's Hollywood Studios 2026 | Low Crowds, New Food & Monsters Inc. Updates | Walt Disney World",
+      "channel": "Paging Mr. Morrow",
+      "publishedAt": "2026-10-30T19:56:48Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/VuJ1FEnme9M/mqdefault.jpg",
+      "viewCount": 140162,
+      "url": "https://www.youtube.com/watch?v=VuJ1FEnme9M",
+      "summary": "Paging Mr. Morrow explores Hollywood Studios during a low-crowd day, sampling new food offerings and checking on Monsters Inc. construction progress."
+    },
+    {
+      "videoId": "TCskWaYOxPI",
+      "title": "🔴 Live: 4K Thursday Stream at Disneyland! Mickey's Mix Magic and Rides - 11/05/26",
+      "channel": "Koda Bear the Explorer ",
+      "publishedAt": "2026-11-06T06:54:35Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/TCskWaYOxPI/mqdefault.jpg",
+      "viewCount": 40226,
+      "url": "https://www.youtube.com/watch?v=TCskWaYOxPI",
+      "summary": "Koda Bear broadcasts live from Disneyland, featuring Mickey's Mix Magic nighttime show and various park attractions."
+    },
+    {
+      "videoId": "8OMn4JPlQ1o",
+      "title": "I Tried EVERY Burger at Epic Universe! | Universal Studios Orlando",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-11-01T17:00:01Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/8OMn4JPlQ1o/mqdefault.jpg",
+      "viewCount": 37290,
+      "url": "https://www.youtube.com/watch?v=8OMn4JPlQ1o",
+      "summary": "WrightDownMainStreet samples every burger available across Universal's Epic Universe, comparing flavors and value across the new park."
+    },
+    {
+      "videoId": "Lc3yn7meqk8",
+      "title": "🔴 Live: Magic Kingdom with Rides, Parades, &  Fireworks | Walt Disney World 11.5..2026",
+      "channel": "Disney Parks with Love - Janel",
+      "publishedAt": "2026-11-06T03:42:08Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Lc3yn7meqk8/mqdefault.jpg",
+      "viewCount": 29162,
+      "url": "https://www.youtube.com/watch?v=Lc3yn7meqk8",
+      "summary": "Janel streams a full day at Magic Kingdom, covering attractions, daytime parades, and the evening fireworks spectacular."
+    },
+    {
+      "videoId": "RTAiIUL65nw",
+      "title": "Grand Floridian Cafe Reopening & NEW Menu! Breakfast & Lunch Review | Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-11-05T17:00:50Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/RTAiIUL65nw/mqdefault.jpg",
+      "viewCount": 28404,
+      "url": "https://www.youtube.com/watch?v=RTAiIUL65nw",
+      "summary": "WrightDownMainStreet reviews the newly reopened Grand Floridian Cafe, tasting items from the updated breakfast and lunch menus."
+    },
+    {
+      "videoId": "F9kjxuQ70Ic",
+      "title": "🔴 Live: Walt Disney World Park Hop Christmas Decorations Hunt | Disney World Live Stream 11.5.2026",
+      "channel": "Daily FastPass",
+      "publishedAt": "2026-11-06T00:16:27Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/F9kjxuQ70Ic/mqdefault.jpg",
+      "viewCount": 17905,
+      "url": "https://www.youtube.com/watch?v=F9kjxuQ70Ic",
+      "summary": "Daily FastPass broadcasts a live park hop across Walt Disney World, searching for newly installed Christmas decorations at multiple parks."
+    },
+    {
+      "videoId": "iS-UjwqqwOI",
+      "title": "🔴 Disney World Live Stream | EPCOT, BoardWalk & Hollywood Studios",
+      "channel": "The Disney With Sean Show",
+      "publishedAt": "2026-11-06T02:20:17Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/iS-UjwqqwOI/mqdefault.jpg",
+      "viewCount": 15111,
+      "url": "https://www.youtube.com/watch?v=iS-UjwqqwOI",
+      "summary": "Sean streams from EPCOT, BoardWalk, and Hollywood Studios, showcasing evening entertainment and park atmosphere."
+    },
+    {
+      "videoId": "esqQF4dYIZY",
+      "title": "Robots could soon help park guests at Disney properties",
+      "channel": "KTLA 5",
+      "publishedAt": "2026-11-06T00:37:28Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/esqQF4dYIZY/mqdefault.jpg",
+      "viewCount": 6405,
+      "url": "https://www.youtube.com/watch?v=esqQF4dYIZY",
+      "summary": "KTLA 5 reports on potential robotics technology being tested to assist guests at Disney theme park locations."
+    },
+    {
+      "videoId": "eEqZxE3gV40",
+      "title": "🔴LIVE from EPCOT | Thursday Night at Walt Disney World Live Stream",
+      "channel": "Cory Meets World",
+      "publishedAt": "2026-11-06T01:17:33Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/eEqZxE3gV40/mqdefault.jpg",
+      "viewCount": 6390,
+      "url": "https://www.youtube.com/watch?v=eEqZxE3gV40",
+      "summary": "Cory Meets World streams a Thursday evening at EPCOT, exploring World Showcase and Future World attractions."
+    },
+    {
+      "videoId": "uaGs_F-Vxrc",
+      "title": "🔴LIVE: Disney's Hollywood Studios | Dreaming With Our Pals | 11/5/2026",
+      "channel": "DIS Our Dream",
+      "publishedAt": "2026-11-06T00:30:56Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/uaGs_F-Vxrc/mqdefault.jpg",
+      "viewCount": 4812,
+      "url": "https://www.youtube.com/watch?v=uaGs_F-Vxrc",
+      "summary": "DIS Our Dream broadcasts live from Hollywood Studios, touring the park and interacting with viewers during evening hours."
+    }
+  ],
+  "updatedAt": "2026-11-06T11:47:30.442Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-11-06T11:47:30.442Z",
+    "tokens": {
+      "input": 11203,
+      "output": 5081,
+      "costUsd": 0.1098
+    }
+  }
+}
