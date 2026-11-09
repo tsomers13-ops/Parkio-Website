@@ -1,0 +1,309 @@
+{
+  "title": "Parkio Daily for November 9, 2026",
+  "slug": "parkio-daily-2026-11-09",
+  "date": "2026-11-09",
+  "teaser": "Mickey's Very Merry Christmas Party kicked off last night; Typhoon Lagoon reopens this winter with seasonal pass deals.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Space Mountain",
+        "parkSlug": "magic-kingdom",
+        "note": "Lighter crowds early morning before Tomorrowland fills"
+      },
+      {
+        "name": "Test Track",
+        "parkSlug": "epcot",
+        "note": "Minimal wait during dinner hours"
+      },
+      {
+        "name": "Flight of Passage",
+        "parkSlug": "animal-kingdom",
+        "note": "Rope drop remains the best window"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [],
+    "bignews": [
+      {
+        "title": "Typhoon Lagoon returns this winter with new seasonal pass",
+        "body": "Disney's Typhoon Lagoon will reopen this winter season after its annual refurbishment. A new Disney Water Park Seasonal Pass is now available for purchase, allowing unlimited visits to both water parks through the pass validity period.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/typhoon-lagoon-reopening-date-and-ticket-details/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Winter water park visits tend to be less crowded than summer, especially on cooler mornings. Arriving at rope drop usually secures lounge chairs near Castaway Creek without a wait."
+        }
+      },
+      {
+        "title": "Mickey's Very Merry Christmas Party launched November 8",
+        "body": "The separately ticketed holiday event began its 2026 season last night at Magic Kingdom. This year's party features returning favorites including Mickey's Once Upon a Christmastime Parade, Minnie's Wonderful Christmastime Fireworks, and complimentary cookies and hot cocoa at multiple locations.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/11/mickeys-once-upon-a-christmastime-parade-at-mickeys-very-merry-christmas-party-2026/"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "Opening night drew heavy attendance across all lands. Later November dates tend to have lighter crowds than dates closer to Christmas; parade viewing spots typically fill 45 minutes before showtime."
+        }
+      },
+      {
+        "title": "Nomad Lounge now accepts reservations",
+        "body": "The popular Animal Kingdom lounge has shifted from walk-up only to a reservation system. Guests can now book tables in advance instead of waiting for availability on arrival.",
+        "parkSlug": "animal-kingdom",
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/11/08/disney-world-just-changed-how-you-get-a-table-at-nomad-lounge-and-we-were-surprised/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Booking a mid-afternoon reservation often lets you skip the hottest part of the day in air-conditioned comfort. Slots around 3–4pm tend to be easier to snag than dinner windows."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "EPCOT hours trimmed on three January dates",
+        "body": "Walt Disney World has reduced operating hours at EPCOT for three days in January 2027. The adjustments follow typical post-holiday crowd patterns when the park sees lighter attendance.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/11/disney-world-cuts-epcot-operating-hours-on-three-dates-in-january-2027-bwb1/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "January often offers some of the shortest wait times of the year at EPCOT. Even with reduced hours, guests can usually hit major attractions by mid-afternoon with smart touring."
+        }
+      },
+      {
+        "title": "Craft union members voting on potential Disney strike",
+        "body": "The Craft Maintenance Council union has authorized a strike vote for its members working in skilled maintenance and trade roles at Disney. No walkout date has been set pending vote results.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/11/cmc-union-members-to-vote-on-authorizing-strike-against-disney/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Labor actions can occasionally impact attraction availability or park services. Keep an eye on official Disney channels for any operational changes if a strike moves forward."
+        }
+      },
+      {
+        "title": "Frozen Holiday Surprise returns to Magic Kingdom",
+        "body": "The castle projection and fireworks show featuring Anna and Elsa is back for its fourth consecutive holiday season. The brief show lights up Cinderella Castle nightly during the Christmas period.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/11/photos-video-frozen-holiday-surprise-returns-to-magic-kingdom-for-2026-christmas-season/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "The show runs multiple times each night, so catching a later showing often means lighter hub crowds. Viewing from near Casey's Corner usually offers decent sightlines without the center crush."
+        }
+      },
+      {
+        "title": "Grand Floridian Cafe reopens with new menu",
+        "body": "The table-service restaurant at Disney's Grand Floridian Resort has completed its refurbishment and is now serving breakfast and lunch. The updated menu introduces several new items alongside returning favorites.",
+        "parkSlug": null,
+        "source": {
+          "label": "YouTube",
+          "url": "https://www.youtube.com/watch?v=RTAiIUL65nw"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Newly reopened restaurants tend to have better reservation availability in the first few weeks. Breakfast here can be a quieter start before heading to Magic Kingdom via monorail."
+        }
+      },
+      {
+        "title": "Country music concert series announced for Disneyland",
+        "body": "Disneyland has revealed the lineup for an upcoming country music concert series at the California resort. Performance dates and ticketing details were shared in the resort's latest update.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/11/disney-announces-lineup-for-country-music-concert-series-at-disneyland-in-todays-daily-recap-for-11-8-2026/"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "Concert nights often draw larger evening crowds to the park hosting the event. Arriving early and knocking out headliners before showtime usually keeps your wait times manageable."
+        }
+      },
+      {
+        "title": "New churro creations debut at Animal Kingdom",
+        "body": "Two new churro-based treats combining DOLE Whip and other flavors have launched at Disney's Animal Kingdom. The offerings were developed following internal taste tests among culinary teams.",
+        "parkSlug": "animal-kingdom",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/how-the-churro-lympics-spawned-two-new-churro-creations/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Specialty snacks tend to draw lines mid-afternoon. Grabbing them during the lunch hour or just before park close usually cuts your wait to under five minutes."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Universal Studios Hollywood adds $1,000 annual pass tier",
+        "body": "The California theme park has introduced a new premium annual pass option priced at nearly one thousand dollars. The pass offers the highest level of benefits and access in the Universal Hollywood lineup.",
+        "parkSlug": null,
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/11/universal-studios-hollywood-officially-introduces-new-1000-annual-pass-bwb1/"
+        }
+      },
+      {
+        "title": "Disney gift card flash sale underway at Target",
+        "body": "A limited-time discount on Disney gift cards is live at Target stores through next Saturday. The promotion offers one of the better deals available this year ahead of Black Friday.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/best-disney-gift-card-flash-sale-of-2026-is-now-live/"
+        }
+      },
+      {
+        "title": "Holiday gift guides highlight stocking stuffers and bag charms",
+        "body": "Disney has released seasonal shopping guides spotlighting small items including bag charms, blind boxes, and other affordable collectibles. The guides cover merchandise available both in parks and online.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/products/gift-guide-disney-bag-charms-blind-boxes-and-stocking-stuffers/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "Several November Christmas party dates sold out",
+        "body": "Multiple Mickey's Very Merry Christmas Party nights in November have reached capacity and are no longer available for ticket purchase. Guests hoping to attend should book remaining dates quickly, as inventory is limited heading into the holiday season.",
+        "parkSlug": "magic-kingdom",
+        "ctaLabel": "Check party availability",
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Early December weeknights often have better ticket availability than late November or the week before Christmas. Booking now locks in your preferred date before sellouts spread to remaining nights."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "zzaEdq0XCds",
+      "title": "Disney Springs 2026 | Christmas Treats, Holiday Merch & New Gideon's Cookies | Walt Disney World",
+      "channel": "Paging Mr. Morrow",
+      "publishedAt": "2026-11-06T16:58:29Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/zzaEdq0XCds/mqdefault.jpg",
+      "viewCount": 100197,
+      "url": "https://www.youtube.com/watch?v=zzaEdq0XCds",
+      "summary": "Paging Mr. Morrow tours Disney Springs to showcase holiday treats, seasonal merchandise, and the latest cookie flavors from Gideon's Bakehouse."
+    },
+    {
+      "videoId": "DVNwRkhiPDg",
+      "title": "🔴Live: Opening Night - Mickey's Very Merry Christmas Party 2026 - 11-8-26 - Walt Disney World",
+      "channel": "ResortTV1",
+      "publishedAt": "2026-11-09T05:57:25Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/DVNwRkhiPDg/mqdefault.jpg",
+      "viewCount": 82578,
+      "url": "https://www.youtube.com/watch?v=DVNwRkhiPDg",
+      "summary": "ResortTV1 live-streams the opening night of Mickey's Very Merry Christmas Party from Magic Kingdom on November 8, 2026."
+    },
+    {
+      "videoId": "3BV4JpgSRJc",
+      "title": "🔴 Live Mickey's Very Merry Christmas Party 2026 at Magic Kingdom - Walt Disney World 11/8/2026",
+      "channel": "RON ON THE GO",
+      "publishedAt": "2026-11-09T05:42:34Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/3BV4JpgSRJc/mqdefault.jpg",
+      "viewCount": 81470,
+      "url": "https://www.youtube.com/watch?v=3BV4JpgSRJc",
+      "summary": "RON ON THE GO broadcasts live coverage of the 2026 Christmas party's first night at Magic Kingdom."
+    },
+    {
+      "videoId": "RTAiIUL65nw",
+      "title": "Grand Floridian Cafe Reopening & NEW Menu! Breakfast & Lunch Review | Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-11-05T17:00:50Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/RTAiIUL65nw/mqdefault.jpg",
+      "viewCount": 48855,
+      "url": "https://www.youtube.com/watch?v=RTAiIUL65nw",
+      "summary": "WrightDownMainStreet reviews the newly reopened Grand Floridian Cafe and its updated breakfast and lunch offerings."
+    },
+    {
+      "videoId": "Ny6WQt-LGC4",
+      "title": "ULTIMATE FOODIE GUIDE: Jollywood Nights- Hollywood Studios Christmas Party | Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-11-08T14:16:42Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Ny6WQt-LGC4/mqdefault.jpg",
+      "viewCount": 32180,
+      "url": "https://www.youtube.com/watch?v=Ny6WQt-LGC4",
+      "summary": "WrightDownMainStreet presents a comprehensive food guide for Jollywood Nights, the holiday party at Hollywood Studios."
+    },
+    {
+      "videoId": "75X02fmsBHA",
+      "title": "🔴 Live: 4K Sunday Stream at Disneyland! Shows, Rides and More! - 11/08/26",
+      "channel": "Koda Bear the Explorer ",
+      "publishedAt": "2026-11-09T03:13:12Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/75X02fmsBHA/mqdefault.jpg",
+      "viewCount": 26567,
+      "url": "https://www.youtube.com/watch?v=75X02fmsBHA",
+      "summary": "Koda Bear the Explorer streams a Sunday visit to Disneyland, covering attractions and entertainment in 4K quality."
+    },
+    {
+      "videoId": "HgX8ECW8NPM",
+      "title": "🔴LIVE🔴 Mickeys Very Merry Christmas Party | Walt Disney World 4K",
+      "channel": "Park Pass TV",
+      "publishedAt": "2026-11-09T04:57:06Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/HgX8ECW8NPM/mqdefault.jpg",
+      "viewCount": 16652,
+      "url": "https://www.youtube.com/watch?v=HgX8ECW8NPM",
+      "summary": "Park Pass TV offers a live 4K broadcast from Mickey's Very Merry Christmas Party at Walt Disney World."
+    },
+    {
+      "videoId": "MKJlVWHkpF4",
+      "title": "Mickey's Very Merry Christmas Party — EPIC 4K Full Night | Disney World Live Stream 2026",
+      "channel": "Fun to be Free",
+      "publishedAt": "2026-11-09T06:03:52Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/MKJlVWHkpF4/mqdefault.jpg",
+      "viewCount": 16197,
+      "url": "https://www.youtube.com/watch?v=MKJlVWHkpF4",
+      "summary": "Fun to be Free live-streams the entire evening of Mickey's Very Merry Christmas Party in 4K from Disney World."
+    },
+    {
+      "videoId": "IV4GsqhewkI",
+      "title": "🔴LIVE: Magic Kingdom to EPCOT! Christmas Decorations, Rides, and Luminous!",
+      "channel": "Men of Main Street Podcast",
+      "publishedAt": "2026-11-09T02:44:40Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/IV4GsqhewkI/mqdefault.jpg",
+      "viewCount": 3437,
+      "url": "https://www.youtube.com/watch?v=IV4GsqhewkI",
+      "summary": "Men of Main Street Podcast streams a park-hop from Magic Kingdom to EPCOT, highlighting holiday decorations and the Luminous nighttime show."
+    },
+    {
+      "videoId": "CEpqnapcbLY",
+      "title": "Where In The World Is Disney? | Map Animation Disneyland",
+      "channel": "Past In Numbers",
+      "publishedAt": "2026-11-09T05:14:12Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/CEpqnapcbLY/mqdefault.jpg",
+      "viewCount": 1188,
+      "url": "https://www.youtube.com/watch?v=CEpqnapcbLY",
+      "summary": "Past In Numbers presents an animated map exploring Disneyland's global locations and layout."
+    }
+  ],
+  "updatedAt": "2026-11-09T11:47:27.487Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-11-09T11:47:27.487Z",
+    "tokens": {
+      "input": 11215,
+      "output": 4773,
+      "costUsd": 0.1052
+    }
+  }
+}
