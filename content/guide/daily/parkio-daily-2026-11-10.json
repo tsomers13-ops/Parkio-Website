@@ -1,0 +1,344 @@
+{
+  "title": "Parkio Daily for November 10, 2026",
+  "slug": "parkio-daily-2026-11-10",
+  "date": "2026-11-10",
+  "teaser": "Indiana Jones playground opens soon at Hollywood Studios; Typhoon Lagoon returns this winter; Target gift card promo live through Saturday.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "TRON Lightcycle / Run",
+        "parkSlug": "magic-kingdom",
+        "note": "Early morning window before 10am typically under 30 min"
+      },
+      {
+        "name": "Guardians of the Galaxy: Cosmic Rewind",
+        "parkSlug": "epcot",
+        "note": "Virtual queue fills fast; join at park open"
+      },
+      {
+        "name": "Rise of the Resistance",
+        "parkSlug": "hollywood-studios",
+        "note": "Rope drop or late evening for shortest waits"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [],
+    "bignews": [
+      {
+        "title": "Indiana Jones Epic Jr. Stunt Spectacular playground coming to Hollywood Studios",
+        "body": "Disney confirmed the mysterious Project Fedora construction near Indiana Jones Epic Stunt Spectacular is a themed play area where kids can reenact scenes from the show. The interactive playground lets younger guests step into the action.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/11/disney-reveals-indiana-jones-playground-as-mysterious-project-fedora-at-hollywood-studios-rl1/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "The new play area likely draws families with young kids away from Toy Story Land during peak afternoon hours. If you're hitting Slinky Dog Dash or Alien Swirling Saucers, mid-morning before the playground opens may offer slightly shorter waits."
+        }
+      },
+      {
+        "title": "Typhoon Lagoon reopening this winter with new seasonal pass",
+        "body": "Disney's Typhoon Lagoon returns this winter after its annual refurbishment. A new Disney Water Park Seasonal Pass lets guests visit both water parks repeatedly through 2027.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/typhoon-lagoon-reopening-date-and-ticket-details/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Water parks tend to see lighter crowds on cooler winter mornings. Arriving at rope drop usually means walk-on access to Crush 'n' Gusher and Miss Adventure Falls before temperatures climb."
+        }
+      },
+      {
+        "title": "Target gift card promotion running through November 16",
+        "body": "Target is offering a limited-time discount on Disney gift cards ahead of Black Friday. The promotion started November 8 and ends Saturday, November 16.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/best-disney-gift-card-flash-sale-of-2026-is-now-live/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Gift card deals typically sell out fast at Target locations near Disney parks. Checking stock online or visiting early in the day often improves your chances before the weekend rush."
+        }
+      },
+      {
+        "title": "Encanto attraction construction visible at Animal Kingdom",
+        "body": "Work on the Encanto-themed ride inside the new Tropical Americas land at Animal Kingdom is accelerating. The attraction is part of the larger DinoLand U.S.A. replacement project announced at D23 2026.",
+        "parkSlug": "animal-kingdom",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/11/new-progress-revealed-animal-kingdoms-encanto-attraction-disney-world-th1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Construction noise near DinoLand tends to peak mid-morning and early afternoon. If you're planning a relaxing meal at Restaurantosaurus or Flame Tree Barbecue, late afternoon or evening usually offers a quieter atmosphere."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "New churro creations debut at Animal Kingdom",
+        "body": "Two new churro-DOLE Whip hybrid desserts are now available at Animal Kingdom, created by the team behind the resort's recent Churro-lympics competition. The treats combine classic churro dough with soft-serve.",
+        "parkSlug": "animal-kingdom",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/how-the-churro-lympics-spawned-two-new-churro-creations/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Limited-time snacks at Animal Kingdom typically sell fastest between 1pm and 4pm when midday crowds peak. Grabbing one before 11am or after 5pm often means shorter lines at the cart."
+        }
+      },
+      {
+        "title": "Toy Story Land receiving holiday overlay at Hollywood Studios",
+        "body": "Toy Story Land is getting seasonal decorations and atmosphere changes for the Christmas season. The transformation is underway and marks a shift from the land's usual year-round look.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/11/disney-world-confirms-major-changes-to-toy-story-land-for-christmas-2026-ab1/"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "Holiday overlays tend to draw more guests to smaller lands. Toy Story Mania and Slinky Dog Dash waits may climb 10–15 minutes higher than usual during the first week of the new decor, especially on weekends."
+        }
+      },
+      {
+        "title": "Four Magic Kingdom attractions getting seasonal updates",
+        "body": "Four classic Magic Kingdom rides are receiving temporary holiday transformations in November, including changes to music, lighting, and theming. The overlays give the attractions a different seasonal atmosphere.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/11/disney-world-changing-4-classic-magic-kingdom-rides-effective-november-ab1/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Guests often flock to newly updated attractions in the first few days. If you're hoping to experience the seasonal versions with shorter waits, mid-week mornings in late November tend to be calmer than launch weekends."
+        }
+      },
+      {
+        "title": "Thanksgiving week hours extended at multiple parks",
+        "body": "Disney World has adjusted operating hours for several theme parks during Thanksgiving week. The changes reflect expected higher attendance during one of the busiest travel periods of the year.",
+        "parkSlug": null,
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/11/disney-world-makes-last-minute-park-changes-closing-times-addressed-ab1/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Extended evening hours during peak weeks usually mean lighter crowds in the final two hours before close. Hitting headline attractions after 8pm often cuts wait times by 20–30 minutes compared to mid-afternoon."
+        }
+      },
+      {
+        "title": "New Disneyland Resort security area under construction",
+        "body": "Visible construction is now underway in the Disneyland Resort Esplanade as crews build a new security checkpoint. Guests entering from the east side are being routed around the work zone.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/11/visible-construction-progress-on-new-security-area-in-disneyland-resort-esplanade/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Esplanade construction tends to funnel guests into tighter pathways during morning entry. Arriving 20–30 minutes before rope drop rather than right at park open usually avoids the heaviest security bottleneck."
+        }
+      },
+      {
+        "title": "Haunted Mansion Holiday trading card released for Magic Key holders",
+        "body": "Disneyland has released the third lenticular trading card in its 25th anniversary Haunted Mansion Holiday series, featuring Sally from The Nightmare Before Christmas. The card is available exclusively to Magic Key holders.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/11/disneyland-releases-third-haunted-mansion-holiday-lenticular-trading-card-featuring-sally-for-magic-key-holders/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Limited Magic Key collectibles typically disappear within days at pickup locations. Visiting World of Disney or the Emporium during early morning or late evening hours often improves your odds before stock runs out."
+        }
+      },
+      {
+        "title": "Lion King pins arrive at Animal Kingdom and Hollywood Studios",
+        "body": "Two new trading pins featuring Simba, Nala, Timon, and Pumbaa from The Lion King are now available at select merchandise locations in Animal Kingdom and Hollywood Studios.",
+        "parkSlug": "animal-kingdom",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/11/lion-king-pins-featuring-simba-nala-timon-pumbaa-arrive-at-walt-disney-world/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Pin releases often sell fastest at flagship stores during midday hours. Checking Island Mercantile or Keystone Clothiers within the first hour of park open usually gives you the best selection before collectors arrive."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Moana Wishables plush mystery boxes at Disneyland Resort",
+        "body": "New Moana-themed Wishables Shimmer mystery boxes are on shelves at Disneyland Resort, featuring five collectible plush characters including Moana, Maui, Heihei, Pua, and a Kakamora.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/11/moana-wishables-shimmer-mystery-boxes-featuring-moana-maui-and-more-now-available-at-disneyland-resort/"
+        }
+      },
+      {
+        "title": "Disney Iconics plush including glass slipper and poison apple",
+        "body": "Disneyland Resort has stocked new Iconics plush items inspired by classic Disney films, including Cinderella's glass slipper and the poison apple from Snow White.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://insidethemagic.net/2026/11/new-iconics-plush-including-cinderellas-glass-slipper-poison-apple-and-more-arrive-at-disneyland-resort/"
+        }
+      },
+      {
+        "title": "Disney x Gustaf Westman home decor collaboration announced",
+        "body": "Swedish designer Gustaf Westman is partnering with Disney on a new line of home goods featuring Mickey and Friends in his signature playful, sculptural style. The collection is now available.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/products/disney-gustaf-westman-home-decor-collab/"
+        }
+      },
+      {
+        "title": "Disney announcing new AI partnership",
+        "body": "The Walt Disney Company revealed a new artificial intelligence partnership aimed at enhancing guest planning tools and experiences. Details on specific features were not disclosed.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/11/09/new-ai-partnership-announced-for-walt-disney-company/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "Jack Skellington and Sally meet-and-greet at Magic Kingdom for wish recipient",
+        "body": "A 6-year-old wish kid met Jack Skellington and Sally at Magic Kingdom this week, helping decorate their corner of the park for the holidays. The special character interaction was part of a wish fulfillment experience.",
+        "parkSlug": "magic-kingdom",
+        "ctaLabel": "Learn more about Disney wish experiences",
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Character meet-and-greets in Frontierland and Liberty Square tend to draw lighter crowds in the 30 minutes after park open and the final hour before close. Early or late visits often mean shorter waits for photos with seasonal characters."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "zzaEdq0XCds",
+      "title": "Disney Springs 2026 | Christmas Treats, Holiday Merch & New Gideon's Cookies | Walt Disney World",
+      "channel": "Paging Mr. Morrow",
+      "publishedAt": "2026-11-06T16:58:29Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/zzaEdq0XCds/mqdefault.jpg",
+      "viewCount": 106231,
+      "url": "https://www.youtube.com/watch?v=zzaEdq0XCds",
+      "summary": "Paging Mr. Morrow tours Disney Springs to showcase the latest Christmas treats, holiday merchandise, and new cookie flavors at Gideon's Bakehouse."
+    },
+    {
+      "videoId": "vPhGW524Gsg",
+      "title": "Mickey's Very Merry Christmas Party 2026 | NEW Cookies & Shows | Is It Worth $229: Walt Disney World",
+      "channel": "Paging Mr. Morrow",
+      "publishedAt": "2026-11-09T13:00:01Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/vPhGW524Gsg/mqdefault.jpg",
+      "viewCount": 83238,
+      "url": "https://www.youtube.com/watch?v=vPhGW524Gsg",
+      "summary": "A review of Mickey's Very Merry Christmas Party 2026 at Magic Kingdom, covering new cookies, entertainment, and whether the ticket price is justified."
+    },
+    {
+      "videoId": "ggFTTDiWoqg",
+      "title": "🔴 Live Mickey's Very Merry Christmas Party 2026 at Magic Kingdom - Walt Disney World 11/9/2026",
+      "channel": "RON ON THE GO",
+      "publishedAt": "2026-11-10T05:47:17Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/ggFTTDiWoqg/mqdefault.jpg",
+      "viewCount": 70821,
+      "url": "https://www.youtube.com/watch?v=ggFTTDiWoqg",
+      "summary": "RON ON THE GO streams live from Mickey's Very Merry Christmas Party at Magic Kingdom on November 9, 2026."
+    },
+    {
+      "videoId": "RTAiIUL65nw",
+      "title": "Grand Floridian Cafe Reopening & NEW Menu! Breakfast & Lunch Review | Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-11-05T17:00:50Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/RTAiIUL65nw/mqdefault.jpg",
+      "viewCount": 50622,
+      "url": "https://www.youtube.com/watch?v=RTAiIUL65nw",
+      "summary": "WrightDownMainStreet reviews the newly reopened Grand Floridian Cafe, highlighting the updated breakfast and lunch menus."
+    },
+    {
+      "videoId": "Ny6WQt-LGC4",
+      "title": "ULTIMATE FOODIE GUIDE: Jollywood Nights- Hollywood Studios Christmas Party | Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-11-08T14:16:42Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Ny6WQt-LGC4/mqdefault.jpg",
+      "viewCount": 38267,
+      "url": "https://www.youtube.com/watch?v=Ny6WQt-LGC4",
+      "summary": "A comprehensive food guide to Jollywood Nights, the Christmas-themed party at Hollywood Studios."
+    },
+    {
+      "videoId": "ZAHMEOwhtrk",
+      "title": "🔴 Live: 4K Monday Stream at Disneyland! Mickey's Mix Magic and Rides - 11/09/26",
+      "channel": "Koda Bear the Explorer ",
+      "publishedAt": "2026-11-10T07:53:44Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/ZAHMEOwhtrk/mqdefault.jpg",
+      "viewCount": 37089,
+      "url": "https://www.youtube.com/watch?v=ZAHMEOwhtrk",
+      "summary": "Koda Bear the Explorer streams from Disneyland in 4K, featuring Mickey's Mix Magic and various attractions."
+    },
+    {
+      "videoId": "fe7UZH3BX9k",
+      "title": "ULTIMATE FOODIE GUIDE: Mickey's Very Merry Christmas Party | Magic Kingdom, Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-11-09T13:13:54Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/fe7UZH3BX9k/mqdefault.jpg",
+      "viewCount": 25250,
+      "url": "https://www.youtube.com/watch?v=fe7UZH3BX9k",
+      "summary": "WrightDownMainStreet provides a complete food guide for Mickey's Very Merry Christmas Party at Magic Kingdom."
+    },
+    {
+      "videoId": "QdzPbeSIG6s",
+      "title": "#ディズニー #ディズニーランド #リルリンリン #ディズニークリスマス",
+      "channel": "ピンキー",
+      "publishedAt": "2026-11-10T09:00:04Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/QdzPbeSIG6s/mqdefault.jpg",
+      "viewCount": 3312,
+      "url": "https://www.youtube.com/watch?v=QdzPbeSIG6s",
+      "summary": "ピンキー shares content from Tokyo Disneyland featuring Christmas celebrations."
+    },
+    {
+      "videoId": "XaAVMzxOUXY",
+      "title": "EIGEN TIARA MAKEN IN DISNEYLAND PARIJS! 😱 WAUW !! 💎 #disneylandparis  #disney #disneylandparijs",
+      "channel": "Noëll van Dreven",
+      "publishedAt": "2026-11-10T06:00:08Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/XaAVMzxOUXY/mqdefault.jpg",
+      "viewCount": 1435,
+      "url": "https://www.youtube.com/watch?v=XaAVMzxOUXY",
+      "summary": "Noëll van Dreven showcases the custom tiara-making experience at Disneyland Paris."
+    },
+    {
+      "videoId": "sW25LGPbLi8",
+      "title": "【楽しすぎだったペーパードールダンサーさん達 】トイズ・ワンダラス・クリスマス！2025 #disney #disneyland  #dance  #ディズニー  #クリスマス",
+      "channel": "ゆら旅日記",
+      "publishedAt": "2026-11-10T06:01:26Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/sW25LGPbLi8/mqdefault.jpg",
+      "viewCount": 1310,
+      "url": "https://www.youtube.com/watch?v=sW25LGPbLi8",
+      "summary": "ゆら旅日記 highlights the Paper Doll dancers from the Toys Wonderous Christmas show at Tokyo Disneyland."
+    }
+  ],
+  "updatedAt": "2026-11-10T11:46:57.676Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-11-10T11:46:57.676Z",
+    "tokens": {
+      "input": 11362,
+      "output": 5629,
+      "costUsd": 0.1185
+    }
+  }
+}
