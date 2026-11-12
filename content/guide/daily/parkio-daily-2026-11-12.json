@@ -1,0 +1,349 @@
+{
+  "title": "Parkio Daily for November 12, 2026",
+  "slug": "parkio-daily-2026-11-12",
+  "date": "2026-11-12",
+  "teaser": "Fantastic Four meet-and-greets debut at Avengers Campus; Napa Rose rolls out new à la carte menu; Mickey's PhilharMagic closing at one Disney park in March.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Test Track",
+        "parkSlug": "epcot",
+        "note": "Light crowds mid-morning before Festival booths open"
+      },
+      {
+        "name": "Big Thunder Mountain",
+        "parkSlug": "magic-kingdom",
+        "note": "Steady moderate waits; rope-drop window has passed"
+      },
+      {
+        "name": "Guardians of the Galaxy - Mission: BREAKOUT!",
+        "parkSlug": "california-adventure",
+        "note": "Virtual queue filling quickly, standby available"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [
+      {
+        "title": "California Grill New Year's Eve Event Fully Sold Out",
+        "body": "The Magic of New Year's Eve ticketed celebration at California Grill atop the Contemporary Resort is no longer showing any availability for December 31. The booking calendar marks the date unavailable for both seatings.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/11/magic-kingdom-resort-location-now-fully-booked-new-years-eve-th1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "If you're hoping to watch fireworks from a signature dining location on New Year's Eve, alternate reservations at Narcoossee's or Toledo may still be available. Worth checking those within the next day or two before inventory tightens further."
+        }
+      },
+      {
+        "title": "Blizzard Beach Closes for Cold Weather Through Weekend",
+        "body": "A cold front moving into Central Florida has prompted the closure of Blizzard Beach water park for at least two days, with additional closures possible through the weekend depending on temperatures.",
+        "parkSlug": null,
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/11/disney-world-water-park-closures-cold-front-november-2026-emd1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "If you planned a water park visit this week, watch the official app for reopening updates. Typhoon Lagoon remains the only Disney water park operating and may see heavier crowds if weather improves later this week."
+        }
+      }
+    ],
+    "bignews": [
+      {
+        "title": "Fantastic Four Characters Now Meeting Guests at Avengers Campus",
+        "body": "In celebration of the upcoming Avengers: Doomsday theatrical release, Disneyland Resort has launched Fantastic Four character meet-and-greets at Avengers Campus. The experience runs through the film's December 18 debut.",
+        "parkSlug": "california-adventure",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/disney-experiences/avengers-doomsday-at-disney-parks/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Character meet queues at Avengers Campus tend to peak between noon and 3pm. Arriving during the first or last hour of park operation often yields shorter waits and better photo lighting."
+        }
+      },
+      {
+        "title": "Disney on Broadway Concert Series Returns to Festival of the Arts in January",
+        "body": "The 10th anniversary Disney on Broadway Concert Series will run January 15 through March 1, 2027, at EPCOT Festival of the Arts. The lineup features performers from Disney's Broadway productions, with shows held at the America Gardens Theatre.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/disney-experiences/epcot-festival-of-the-arts-2027-disney-on-broadway-concert-series-schedule/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "World Showcase crowds typically thin out during the 5:30pm and 6:45pm concert times. That window often creates walk-on or near-walk-on conditions for Frozen Ever After and Remy's Ratatouille Adventure."
+        }
+      },
+      {
+        "title": "Napa Rose Debuts New À La Carte Menu Alongside Prix Fixe Option",
+        "body": "Napa Rose at the Grand Californian has introduced an à la carte menu in the main dining room, available alongside the existing prix fixe offering. The new menu features seasonal dishes sourced from local California producers.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/dlr/napa-rose-menu-and-seasonal-dishes/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "The à la carte option typically allows for quicker dining experiences than the multi-course prix fixe. If you're planning a park day after dinner, ordering from the new menu may save 30–45 minutes."
+        }
+      },
+      {
+        "title": "WDW Announces Deep Resort Discounts Up to 50 Percent Off Through Early 2027",
+        "body": "Walt Disney World has released a new general-public resort discount offering up to 50 percent off and rooms starting at 99 dollars per night for select dates in late 2026 and early 2027. The offer marks an unusually aggressive pricing move.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/save-50-off-resorts-at-disney-world-in-late-2026-2027-rooms-starting-at-99/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "January and early February historically see lighter crowds following the holiday surge. Pairing these resort rates with lower attendance often yields shorter waits and better availability for dining and Lightning Lane."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "Mickey's PhilharMagic to Close at One International Park in March 2027",
+        "body": "One Disney park outside the United States will shutter its version of Mickey's PhilharMagic after 15 years of operation. The closure is scheduled for March 2027, though the Magic Kingdom installation remains unaffected.",
+        "parkSlug": null,
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/11/mickeys-philharmagic-closure-15-years-cj1/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "If you're visiting Magic Kingdom today and enjoy the show, Fantasyland often has walk-in availability for PhilharMagic during the mid-afternoon parade window. The domestic version is not affected by the international closure."
+        }
+      },
+      {
+        "title": "New Meet-and-Greets from Hexed and Avengers Movies Coming to Both Coasts",
+        "body": "Characters from the holiday tentpole releases Hexed and Avengers: Doomsday are being added to Walt Disney World and Disneyland as meet-and-greet experiences. The additions coincide with the films' Thanksgiving and Christmas theatrical windows.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/meet-greet-characters-coming-to-disney-world-disneyland-from-new-holiday-2026-tentpoles/"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "New character debuts typically draw heavy crowds in the first few days. If you're hoping to meet these characters, arriving at their designated location near park opening or in the final hour before close usually shortens the wait."
+        }
+      },
+      {
+        "title": "2027 Armed Forces Salute Year-Long Ticket Returns for Military Families",
+        "body": "Walt Disney World has released 2027 military discounts including the return of the Disney Celebrates America year-long ticket, priced at less than half a standard annual pass. The offer is available to active and retired U.S. military members.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/deep-discount-disney-celebrates-america-year-long-ticket-returns-for-2027-first-deal-on-lakeshore-lodge/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "If you qualify, purchasing this year-long ticket now may allow you to visit during both the holiday season and lower-attendance periods in early 2027. Spreading visits across both windows maximizes value and minimizes wait times."
+        }
+      },
+      {
+        "title": "Disneyland Releases 2027 Multi-Day Ticket Deal for General Public",
+        "body": "Disneyland has announced discounted 2-day and 3-day tickets for the general public going on sale soon for 2027 visits. The promotion marks the first Disneyland ticket deal of the new year.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/new-3-4-day-disneyland-ticket-deals-coming-for-2027/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Disneyland's January and February weekdays historically see some of the lowest wait times of the year. Pairing discounted tickets with off-peak travel dates often yields the best overall experience and value."
+        }
+      },
+      {
+        "title": "Disney Kicks Off 79th Annual Toy Drive with Marine Toys for Tots",
+        "body": "Disney has launched its 79th annual toy drive benefitting the Marine Toys for Tots Foundation as part of the Make the Holidays Magic campaign. Donation bins are available at select Disney locations.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/disney-experiences/disney-launches-annual-toy-drive-benefitting-marine-toys-for-tots/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Donation bins are typically stationed near Guest Relations at each park. If you're planning to contribute, stopping by Guest Relations during mid-morning or late afternoon often avoids the busiest service windows."
+        }
+      },
+      {
+        "title": "Jock Lindsey's Holiday Menu Now Available at Disney Springs",
+        "body": "Jock Lindsey's Hangar Bar in Disney Springs has debuted a limited-time holiday menu featuring seasonal cocktails and small plates. The offerings are available through the end of the year.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/11/11/review-jock-lindseys-holiday-menu-taste-test/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Jock Lindsey's is a walk-up bar without reservations. Arriving before 5pm or after 8pm tends to yield shorter waits for seating, especially on weekends when Disney Springs sees heavier foot traffic."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Shanghai Disney Enchanted Star Hotel Opens December 16",
+        "body": "Shanghai Disney Resort's third hotel, the Enchanted Star Hotel, will open December 16, 2026, with 400 rooms and suites along Wishing Star Lake. The premium family-friendly retreat sits adjacent to Shanghai Disneyland Hotel.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/shdl/shanghai-disney-resort-new-hotel-details/"
+        }
+      },
+      {
+        "title": "Disney Celebrates 100 Years of Macy's Thanksgiving Day Parade",
+        "body": "Disney will participate in the 100th anniversary of the Macy's Thanksgiving Day Parade with special floats and performances. The parade airs Thanksgiving morning on NBC.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/disney-experiences/how-disney-is-celebrating-100-years-of-the-macys-thanksgiving-day-parade/"
+        }
+      },
+      {
+        "title": "Holiday Merchandise Guide Released for 2026 Season",
+        "body": "Disney has published a 2026 holiday merchandise guide highlighting seasonal items available at the parks and online. The guide features apparel, accessories, and home goods.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/products/holiday-merchandise-guide-must-haves-for-everyone-on-your-list/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "John Stamos and the Beach Boys Performing at EPCOT This Week",
+        "body": "John Stamos is headlining a limited run of California Sound concerts at EPCOT's America Gardens Theatre this week, featuring Beach Boys classics and other West Coast hits. The performances are included with park admission and run through the weekend.",
+        "parkSlug": "epcot",
+        "ctaLabel": "Check the EPCOT app for showtimes",
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "America Gardens Theatre shows typically draw crowds 30–45 minutes before curtain. Arriving early secures better seating, but if you're skipping the concert, that pre-show window often creates lighter waits at nearby Future World attractions."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "vPhGW524Gsg",
+      "title": "Mickey's Very Merry Christmas Party 2026 | NEW Cookies & Shows | Is It Worth $229: Walt Disney World",
+      "channel": "Paging Mr. Morrow",
+      "publishedAt": "2026-11-09T13:00:01Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/vPhGW524Gsg/mqdefault.jpg",
+      "viewCount": 136849,
+      "url": "https://www.youtube.com/watch?v=vPhGW524Gsg",
+      "summary": "Paging Mr. Morrow reviews this year's Mickey's Very Merry Christmas Party at Magic Kingdom, covering new cookies, entertainment, and whether the 229-dollar ticket price delivers value."
+    },
+    {
+      "videoId": "zzaEdq0XCds",
+      "title": "Disney Springs 2026 | Christmas Treats, Holiday Merch & New Gideon's Cookies | Walt Disney World",
+      "channel": "Paging Mr. Morrow",
+      "publishedAt": "2026-11-06T16:58:29Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/zzaEdq0XCds/mqdefault.jpg",
+      "viewCount": 115416,
+      "url": "https://www.youtube.com/watch?v=zzaEdq0XCds",
+      "summary": "A tour of Disney Springs holiday offerings including seasonal treats, merchandise, and new cookie flavors at Gideon's Bakehouse."
+    },
+    {
+      "videoId": "Vo3mmAcxk0M",
+      "title": "🔴Live Magic Kingdom Wednesday with Rides, Parades, Fireworks at Walt Disney World 11/11/2026",
+      "channel": "RON ON THE GO",
+      "publishedAt": "2026-11-12T04:45:22Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Vo3mmAcxk0M/mqdefault.jpg",
+      "viewCount": 73646,
+      "url": "https://www.youtube.com/watch?v=Vo3mmAcxk0M",
+      "summary": "A live stream from Magic Kingdom on November 11 featuring attractions, parades, and evening fireworks."
+    },
+    {
+      "videoId": "RTAiIUL65nw",
+      "title": "Grand Floridian Cafe Reopening & NEW Menu! Breakfast & Lunch Review | Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-11-05T17:00:50Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/RTAiIUL65nw/mqdefault.jpg",
+      "viewCount": 53259,
+      "url": "https://www.youtube.com/watch?v=RTAiIUL65nw",
+      "summary": "WrightDownMainStreet reviews the reopened Grand Floridian Cafe and its new breakfast and lunch menu offerings."
+    },
+    {
+      "videoId": "Ny6WQt-LGC4",
+      "title": "ULTIMATE FOODIE GUIDE: Jollywood Nights- Hollywood Studios Christmas Party | Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-11-08T14:16:42Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Ny6WQt-LGC4/mqdefault.jpg",
+      "viewCount": 44587,
+      "url": "https://www.youtube.com/watch?v=Ny6WQt-LGC4",
+      "summary": "A comprehensive food guide to Jollywood Nights, the holiday after-hours event at Hollywood Studios."
+    },
+    {
+      "videoId": "fe7UZH3BX9k",
+      "title": "ULTIMATE FOODIE GUIDE: Mickey's Very Merry Christmas Party | Magic Kingdom, Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-11-09T13:13:54Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/fe7UZH3BX9k/mqdefault.jpg",
+      "viewCount": 43523,
+      "url": "https://www.youtube.com/watch?v=fe7UZH3BX9k",
+      "summary": "WrightDownMainStreet walks through all the food offerings available at Mickey's Very Merry Christmas Party in Magic Kingdom."
+    },
+    {
+      "videoId": "NB4Zi8QqsoM",
+      "title": "🔴 Live: 4K Wednesday Stream at Disneyland! Mickey's Mix Magic and Rides - 11/11/26",
+      "channel": "Koda Bear the Explorer ",
+      "publishedAt": "2026-11-12T07:37:27Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/NB4Zi8QqsoM/mqdefault.jpg",
+      "viewCount": 39634,
+      "url": "https://www.youtube.com/watch?v=NB4Zi8QqsoM",
+      "summary": "A live 4K stream from Disneyland on November 11 featuring attractions and the Mickey's Mix Magic nighttime show."
+    },
+    {
+      "videoId": "u0-Qljrcl8c",
+      "title": "John Stamos & The Beach Boys ROCK EPCOT - Full Show 4K | Disney World 2026",
+      "channel": "Fun to be Free",
+      "publishedAt": "2026-11-12T03:02:32Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/u0-Qljrcl8c/mqdefault.jpg",
+      "viewCount": 14399,
+      "url": "https://www.youtube.com/watch?v=u0-Qljrcl8c",
+      "summary": "Full 4K footage of John Stamos performing with the Beach Boys at EPCOT's America Gardens Theatre."
+    },
+    {
+      "videoId": "IaAgwSyIAYk",
+      "title": "被った瞬間キャラになりきるチェウォンｗｗ #kpop #LESSERAFIM",
+      "channel": "Kドルきゅん",
+      "publishedAt": "2026-11-12T03:00:15Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/IaAgwSyIAYk/mqdefault.jpg",
+      "viewCount": 4214,
+      "url": "https://www.youtube.com/watch?v=IaAgwSyIAYk",
+      "summary": "A K-pop video featuring LESSERAFIM member Chaewon, not related to Disney parks."
+    },
+    {
+      "videoId": "A0dvELRccB4",
+      "title": "🔴 LIVE EPCOT: John Stamos and the California Sound + Luminous! | Disney World Live Stream | 11/11",
+      "channel": "In The Park Daze",
+      "publishedAt": "2026-11-12T05:30:56Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/A0dvELRccB4/mqdefault.jpg",
+      "viewCount": 2586,
+      "url": "https://www.youtube.com/watch?v=A0dvELRccB4",
+      "summary": "A live stream from EPCOT on November 11 featuring the John Stamos concert and the Luminous nighttime spectacular."
+    }
+  ],
+  "updatedAt": "2026-11-12T11:47:30.191Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-11-12T11:47:30.191Z",
+    "tokens": {
+      "input": 10000,
+      "output": 5754,
+      "costUsd": 0.1163
+    }
+  }
+}
