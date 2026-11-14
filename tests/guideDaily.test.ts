@@ -140,6 +140,44 @@ describe("getDailyPost", () => {
     expect(parsed?.sections?.breaking).toHaveLength(1);
     expect(parsed?.videos).toHaveLength(1);
   });
+
+  it("accepts a real leap-day slug and rejects every other shape", () => {
+    files = {
+      "passwd.json": post("2026-04-26", { title: "should not load" }),
+      "parkio-daily-2026-04-26.json": post("2026-04-26"),
+      "parkio-daily-2028-02-29.json": post("2028-02-29"),
+      "parkio-daily-2026-02-29.json": post("2026-02-29"),
+      "parkio-daily-2026-04-31.json": post("2026-04-31"),
+    };
+
+    expect(getDailyPost("parkio-daily-2026-04-26")?.date).toBe("2026-04-26");
+    expect(getDailyPost("parkio-daily-2028-02-29")?.date).toBe("2028-02-29");
+
+    const rejected = [
+      "../passwd",
+      "..\\passwd",
+      "parkio-daily-2026-04-26/../../../passwd",
+      "parkio-daily-2026-04-26.json",
+      "/etc/passwd",
+      "parkio-daily-2026-04-26 ",
+      "Parkio-daily-2026-04-26",
+      "parkio-daily-2026-4-26",
+      "parkio-daily-2026-04-26-extra",
+      "parkio-daily-2026-02-29",
+      "parkio-daily-2026-04-31",
+      "parkio-daily-2026-13-01",
+      "parkio-daily-0000-01-01",
+      "parkio-daily-2026-00-01",
+      "",
+      ".",
+      "..",
+      "%2e%2e/passwd",
+      "parkio-daily-2026-04-26%00",
+    ];
+    for (const slug of rejected) {
+      expect(getDailyPost(slug), slug).toBeNull();
+    }
+  });
 });
 
 describe("listDailyPosts", () => {

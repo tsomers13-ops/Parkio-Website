@@ -34,6 +34,7 @@ import {
   sectionEyebrow,
   sectionTitle,
 } from "@/lib/guideDaily";
+import { safeCssUrl, safeHttpUrl } from "@/lib/safeUrl";
 
 interface GuideDetailProps {
   params: Promise<{ slug: string }>;
@@ -453,6 +454,7 @@ function NewsItemRow({
   item: DailyNewsItem;
   emphasized?: boolean;
 }) {
+  const sourceUrl = item.source ? safeHttpUrl(item.source.url) : null;
   return (
     <article
       className={`rounded-2xl px-4 py-4 sm:px-5 sm:py-5 ${
@@ -486,9 +488,9 @@ function NewsItemRow({
             Check live waits
           </Link>
         )}
-        {item.source && (
+        {sourceUrl && item.source && (
           <a
-            href={item.source.url}
+            href={sourceUrl}
             target="_blank"
             rel="noopener nofollow"
             className="text-ink-500 transition hover:text-ink-800"
@@ -614,6 +616,13 @@ function SpotlightItem({ item }: { item: DailySpotlightItem }) {
 /* ─────────────── Videos rail ─────────────── */
 
 function VideosSection({ items }: { items: DailyVideoItem[] }) {
+  const cards = items.flatMap((video, index) => {
+    const href = safeHttpUrl(video.url);
+    if (!href) return [];
+    return [{ index, video, href, thumbnail: safeCssUrl(video.thumbnailUrl) }];
+  });
+  if (cards.length === 0) return null;
+
   return (
     <section className="mt-10">
       <p className="text-[11px] font-semibold uppercase tracking-widest text-accent-600">
@@ -623,10 +632,10 @@ function VideosSection({ items }: { items: DailyVideoItem[] }) {
         Most watched Disney videos
       </h2>
       <div className="mt-4 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
-        {items.map((v, i) => (
+        {cards.map(({ index, video, href, thumbnail }) => (
           <a
-            key={i}
-            href={v.url}
+            key={index}
+            href={href}
             target="_blank"
             rel="noopener nofollow"
             className="group block overflow-hidden rounded-2xl border border-ink-100 bg-white shadow-soft transition hover:shadow-lift"
@@ -634,9 +643,9 @@ function VideosSection({ items }: { items: DailyVideoItem[] }) {
             <div
               className="relative aspect-video bg-ink-100"
               style={
-                v.thumbnailUrl
+                thumbnail
                   ? {
-                      backgroundImage: `url(${v.thumbnailUrl})`,
+                      backgroundImage: `url(${thumbnail})`,
                       backgroundSize: "cover",
                       backgroundPosition: "center",
                     }
@@ -654,10 +663,10 @@ function VideosSection({ items }: { items: DailyVideoItem[] }) {
             </div>
             <div className="p-3 sm:p-4">
               <p className="line-clamp-2 text-sm font-semibold tracking-tight text-ink-900 group-hover:text-accent-700">
-                {v.title}
+                {video.title}
               </p>
               <p className="mt-1 text-[12px] font-medium text-ink-500">
-                {v.channel}
+                {video.channel}
               </p>
             </div>
           </a>
