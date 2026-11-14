@@ -37,8 +37,8 @@ SLIDE 4: 🎬 Indiana Jones Epic Jr. Stunt Spectacular playground coming to…
    Disney confirmed the mysterious Project Fedora construction near Indiana Jones Epic Stunt Spectacular is a themed play area where kids can reenact…
 SLIDE 5: 🦁 Encanto attraction construction visible at Animal Kingdom
    Work on the Encanto-themed ride inside the new Tropical Americas land at Animal Kingdom is accelerating. The attraction is part of the larger…
-SLIDE 6: 📍 Target gift card promotion running through November 16
-   Target is offering a limited-time discount on Disney gift cards ahead of Black Friday. The promotion started November 8 and ends Saturday, November…
+SLIDE 6: 📍 Target gift card promotion runs through November 14
+   Get a $10 Target GiftCard with $100 or more in eligible gift cards, including Disney. Ends November 14; terms apply.
 SLIDE 7 (CTA): Full briefing every morning → parkio.info
 ```
 
@@ -57,7 +57,7 @@ The Disney news that matters, every morning — free at parkio.info. Link in bio
 - [icymi] Disney announcing new AI partnership
 - [bignews] Indiana Jones Epic Jr. Stunt Spectacular playground coming to Hollywood Studios
 - [bignews] Encanto attraction construction visible at Animal Kingdom
-- [bignews] Target gift card promotion running through November 16
+- [bignews] Target gift card promotion runs through November 14
 
 ---
 _Built by scripts/parkio-daily/social.mjs from content/guide/daily/parkio-daily-2026-11-10.json._
