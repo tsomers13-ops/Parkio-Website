@@ -1,0 +1,354 @@
+{
+  "title": "Parkio Daily for November 14, 2026",
+  "slug": "parkio-daily-2026-11-14",
+  "date": "2026-11-14",
+  "teaser": "EPCOT VP resigns; holiday season kicks off at Disneyland; Carousel of Progress May 2027 reopening leaked; Disney World extends December hours.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Remy's Ratatouille Adventure",
+        "parkSlug": "epcot",
+        "note": "New scene enhancements just added"
+      },
+      {
+        "name": "it's a small world Holiday",
+        "parkSlug": "disneyland",
+        "note": "Projection show debuted last night"
+      },
+      {
+        "name": "Big Thunder Mountain Railroad",
+        "parkSlug": "magic-kingdom",
+        "note": "Open during Frontierland construction"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [
+      {
+        "title": "EPCOT Vice President Matt Simon leaves Disney",
+        "body": "Matt Simon has resigned from his role overseeing EPCOT operations and departed the company. No replacement has been announced yet.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/11/epcot-vice-president-matt-simon-reportedly-resigns-and-leaves-disney-in-todays-daily-recap-for-11-13-2026/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Leadership transitions often slow decisions on guest-facing issues like refurbishment schedules and event changes. If you encounter operational hiccups at EPCOT over the next few weeks, Guest Relations tends to be more responsive during morning hours."
+        }
+      }
+    ],
+    "bignews": [
+      {
+        "title": "Bryan Cranston reveals Carousel of Progress reopening date",
+        "body": "Actor Bryan Cranston told guests at an EPCOT tequila event that the reimagined Carousel of Progress will reopen in May 2027. Cranston voices the Father character in the updated show.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/bryan-cranston-leaks-when-reimagined-carousel-of-progress-will-open-at-magic-kingdom/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "The current version runs through spring 2027. Lines for the classic show tend to stay short even during peak crowds, so catching it before closure is usually easy with a mid-afternoon walk-on window."
+        }
+      },
+      {
+        "title": "Disney World extends December park hours",
+        "body": "Walt Disney World has added operating time to several parks during the first week of December, giving guests more hours to experience the holiday season than originally scheduled.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/11/disney-world-confirms-major-park-hours-changes-for-december-2026-ab1/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Extended hours in early December often create lighter evening crowds as many guests leave after dinner. Rides like Seven Dwarfs and Flight of Passage typically see wait drops of 20–30 minutes in the final two operating hours."
+        }
+      },
+      {
+        "title": "Remy's Ratatouille Adventure receives scene enhancements",
+        "body": "Imagineers have installed new props and set pieces in multiple scenes to better conceal screen seams and improve immersion. The team also added hidden Easter eggs throughout the attraction.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/imagineers-add-more-new-props-to-remys-ratatouille-adventure-at-epcot-to-help-suspend-disbelief/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "The France pavilion tends to be quietest during morning Extra Entry hours if you're staying on property. Riding before 10am usually means sub-15-minute waits and better sightlines to spot the new details."
+        }
+      },
+      {
+        "title": "Star Wars virtual queue starts November 17 at Hollywood Studios",
+        "body": "A new offering in Star Wars: Galaxy's Edge will require a virtual queue beginning this Monday. Disney has not yet disclosed which experience will use the system.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/11/disneys-hollywood-studios-enforces-new-star-wars-virtual-queue-starting-november-17-sb1/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Virtual queue drops often happen at park open and 1pm. Setting a phone alarm for 6:59am on arrival days tends to secure better return windows, especially if you're targeting morning slots before afternoon heat builds."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "Disneyland holiday season officially underway",
+        "body": "Holiday overlays, decorations, entertainment, and the Festival of Holidays at California Adventure all launched yesterday. It's a small world Holiday debuted its nightly projection show, and the Christmas tree on Buena Vista Street now features warmer lighting.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/dlr/guide-to-holidays-at-the-disneyland-resort/"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "Opening weekend for holiday events tends to draw heavier local crowds, especially on Saturdays. Fantasyland and Buena Vista Street usually see the biggest congestion between noon and 3pm; rope-drop touring or post-dinner visits often yield shorter waits."
+        }
+      },
+      {
+        "title": "Rain delays A Christmas Fantasy Parade debut",
+        "body": "Disneyland's seasonal parade was replaced by Mickey's Holiday Cavalcade for the first scheduled performance due to wet conditions. The cavalcade features three holiday-decorated vehicles with characters but no full floats.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/11/mickeys-holiday-cavalcade-performs-in-place-of-first-a-christmas-fantasy-parade-of-the-season-due-to-rain/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Forecast rain often triggers parade cancellations with little warning. Staking out prime viewing spots more than 45 minutes early carries higher risk on overcast days; check the Disneyland app for real-time entertainment updates before committing."
+        }
+      },
+      {
+        "title": "EPCOT Festival of Holidays menu includes 98 new items",
+        "body": "This year's festival features 20 holiday kitchens and a first-ever Figment Christmas popcorn bucket. The lineup spans global holiday dishes, desserts, and drinks running through the season.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/full-food-menus-for-2026-epcot-festival-of-holidays-figment-christmas-popcorn-bucket-and-98-new-items/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Limited-edition popcorn buckets often sell out by mid-morning on weekends. Arriving at World Showcase popcorn carts within the first 90 minutes of park open typically improves your odds before stock depletes."
+        }
+      },
+      {
+        "title": "Magic Kingdom construction visible across park",
+        "body": "Cranes and walls extending from Liberty Square to Frontierland mark ongoing work on Villains Land and Piston Peak National Park. The footprint affects sightlines but most walkways and attractions remain open.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/magic-kingdom-construction-walls-impact-guests/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Construction noise tends to peak mid-morning near Frontierland. Scheduling table-service dining or indoor attractions like Haunted Mansion between 10am and 1pm often provides a quieter break from the work zones."
+        }
+      },
+      {
+        "title": "Hollywood Studios holiday Pixar characters debut",
+        "body": "Three Pixar characters have been updated with festive costumes for the Christmas season at Hollywood Studios. The meet-and-greet additions are part of the park's 2026 holiday celebration.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/11/disney-world-officially-changes-3-beloved-pixar-characters-for-christmas-2026-ab1/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Character meet queues at Studios tend to be shortest right after park open or during the final hour before close. Mid-afternoon waits can stretch 30–40 minutes when families fill time between Lightning Lane windows."
+        }
+      },
+      {
+        "title": "November Jollywood Nights nearly sold out",
+        "body": "Only eight dates remain available for the separately ticketed holiday party at Hollywood Studios this month. The event features exclusive entertainment, festive décor, and seasonal treats.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/11/disney-world-confirms-complete-november-sellout-only-8-dates-remain-ab1/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Sold-out party nights often mean lighter daytime crowds at Studios as guests save energy for the evening event. Booking a non-party day in late November may yield shorter waits for Rise of the Resistance and Slinky Dog."
+        }
+      },
+      {
+        "title": "Star Wars Life Day merchandise arrives November 17",
+        "body": "Disney Store and both resorts will carry new products celebrating the Wookiee holiday, including red robes and themed collectibles tied to the 1978 Holiday Special tradition.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/products/star-wars-life-day-merchandise-disney-store-and-disney-parks/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Limited Star Wars releases tend to move fastest at Galaxy's Edge retail locations. Visiting Dok-Ondar's or the Resistance Supply within the first two hours of park open usually improves selection before popular items disappear."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Santa meet-and-greets confirmed across Disney World",
+        "body": "All four theme parks and Disney Springs will host Santa Claus throughout the holiday season. Locations and schedules vary by park.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/where-to-meet-santa-at-disney-world-this-holiday-season/"
+        }
+      },
+      {
+        "title": "Disney celebrates 100 years of Macy's Thanksgiving Day Parade",
+        "body": "Disney will participate in the parade's centennial celebration with floats and performances. The broadcast airs Thanksgiving morning on NBC.",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/disney-experiences/how-disney-is-celebrating-100-years-of-the-macys-thanksgiving-day-parade/"
+        }
+      },
+      {
+        "title": "Star Wars 50th anniversary plans previewed for 2027",
+        "body": "Lucasfilm and Disney shared a look at reimagined offerings coming to parks and cruise ships next year to mark five decades of the franchise. Details on specific attractions and events remain under wraps.",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-parks-reimaginings-for-star-wars-50th-anniversary-in-2027/"
+        }
+      },
+      {
+        "title": "Tokyo Disneyland's Center Street Coffeehouse closes in 2027",
+        "body": "The 43-year-old location will permanently shut its doors next year. Tokyo Disney has not announced what will replace the restaurant.",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/11/tokyo-disneyland-center-street-coffeehouse-closure-2027-emd1/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "DVC Moonlight Magic returns to Disney World in 2027",
+        "body": "Free after-hours parties for Disney Vacation Club members will take place at EPCOT, Animal Kingdom, Hollywood Studios, and Typhoon Lagoon next year. No events are scheduled for Magic Kingdom or either Disneyland park. Registration details and specific dates are now available.",
+        "ctaLabel": "Check DVC calendar",
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Moonlight Magic nights often pull DVC members out of regular daytime park visits. Non-members visiting the same parks on event days may find slightly lower crowds during afternoon hours as members conserve energy for the evening party."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "vPhGW524Gsg",
+      "title": "Mickey's Very Merry Christmas Party 2026 | NEW Cookies & Shows | Is It Worth $229: Walt Disney World",
+      "channel": "Paging Mr. Morrow",
+      "publishedAt": "2026-11-09T13:00:01Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/vPhGW524Gsg/mqdefault.jpg",
+      "viewCount": 159075,
+      "url": "https://www.youtube.com/watch?v=vPhGW524Gsg",
+      "summary": "A breakdown of the updated offerings at this year's Very Merry Christmas Party and whether the ticket price delivers value for guests."
+    },
+    {
+      "videoId": "yEcQqW_xvXg",
+      "title": "🔴 Live: Opening Christmas Stream at Disneyland! Parades, Fireworks & WoC Season of Light - 11/13/26",
+      "channel": "Koda Bear the Explorer ",
+      "publishedAt": "2026-11-14T08:01:14Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/yEcQqW_xvXg/mqdefault.jpg",
+      "viewCount": 93726,
+      "url": "https://www.youtube.com/watch?v=yEcQqW_xvXg",
+      "summary": "Live coverage of Disneyland's holiday season kickoff featuring parades, fireworks, and the World of Color seasonal show."
+    },
+    {
+      "videoId": "4nidYkQjAPY",
+      "title": "🔴 Live Mickey's Very Merry Christmas Party 2026 at Magic Kingdom - Walt Disney World 11/13/2026",
+      "channel": "RON ON THE GO",
+      "publishedAt": "2026-11-14T05:35:05Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/4nidYkQjAPY/mqdefault.jpg",
+      "viewCount": 56122,
+      "url": "https://www.youtube.com/watch?v=4nidYkQjAPY",
+      "summary": "Real-time walkthrough of the separately ticketed holiday party at Magic Kingdom with entertainment and atmosphere."
+    },
+    {
+      "videoId": "fe7UZH3BX9k",
+      "title": "ULTIMATE FOODIE GUIDE: Mickey's Very Merry Christmas Party | Magic Kingdom, Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-11-09T13:13:54Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/fe7UZH3BX9k/mqdefault.jpg",
+      "viewCount": 50399,
+      "url": "https://www.youtube.com/watch?v=fe7UZH3BX9k",
+      "summary": "Comprehensive look at all the complimentary treats and special food offerings available during the Christmas party."
+    },
+    {
+      "videoId": "Ny6WQt-LGC4",
+      "title": "ULTIMATE FOODIE GUIDE: Jollywood Nights- Hollywood Studios Christmas Party | Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-11-08T14:16:42Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Ny6WQt-LGC4/mqdefault.jpg",
+      "viewCount": 48139,
+      "url": "https://www.youtube.com/watch?v=Ny6WQt-LGC4",
+      "summary": "Complete food rundown for Jollywood Nights, the separately ticketed holiday event at Hollywood Studios."
+    },
+    {
+      "videoId": "hsLIhFesC50",
+      "title": "🔴Live: Friday Night Live - Christmas at Hollywood Studios - 11-13-26 - Walt Disney World Live Stream",
+      "channel": "ResortTV1",
+      "publishedAt": "2026-11-14T03:08:04Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/hsLIhFesC50/mqdefault.jpg",
+      "viewCount": 29717,
+      "url": "https://www.youtube.com/watch?v=hsLIhFesC50",
+      "summary": "Live stream from Hollywood Studios showcasing the park's holiday decorations and seasonal entertainment."
+    },
+    {
+      "videoId": "_hKDnn0S73I",
+      "title": "Pixie Dusted at Disneyland… Her Reaction 😂✨ #Shorts",
+      "channel": "The Way We Live",
+      "publishedAt": "2026-11-14T05:37:28Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/_hKDnn0S73I/mqdefault.jpg",
+      "viewCount": 1616,
+      "url": "https://www.youtube.com/watch?v=_hKDnn0S73I",
+      "summary": "Short video capturing a guest's reaction to receiving pixie dust from a cast member at Disneyland."
+    },
+    {
+      "videoId": "rx9Eil-FG_w",
+      "title": "Ever Notice THIS?! #hauntedmansion #jackandsally #disney #funny #disneyland #disneyparks",
+      "channel": "Sunshine Daily",
+      "publishedAt": "2026-11-14T04:37:36Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/rx9Eil-FG_w/mqdefault.jpg",
+      "viewCount": 1370,
+      "url": "https://www.youtube.com/watch?v=rx9Eil-FG_w",
+      "summary": "Short clip highlighting a hidden detail involving Jack and Sally at Haunted Mansion."
+    },
+    {
+      "videoId": "7ttx2btvEh4",
+      "title": "La parade #disney #disneyland #dance",
+      "channel": "Clara.A",
+      "publishedAt": "2026-11-14T08:08:44Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/7ttx2btvEh4/mqdefault.jpg",
+      "viewCount": 1338,
+      "url": "https://www.youtube.com/watch?v=7ttx2btvEh4",
+      "summary": "Brief look at a parade performance and dancer routines at Disneyland."
+    },
+    {
+      "videoId": "FLE-7saGwag",
+      "title": "So cute! Animal Kingdom for the holidays! #christmas #disney #waltdisneyworld #disneyparks #cute",
+      "channel": "Heart and Saul Travel",
+      "publishedAt": "2026-11-14T05:42:02Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/FLE-7saGwag/mqdefault.jpg",
+      "viewCount": 1304,
+      "url": "https://www.youtube.com/watch?v=FLE-7saGwag",
+      "summary": "Quick glimpse of Animal Kingdom's holiday decorations and seasonal atmosphere."
+    }
+  ],
+  "updatedAt": "2026-11-14T11:47:35.833Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-11-14T11:47:35.833Z",
+    "tokens": {
+      "input": 11323,
+      "output": 5626,
+      "costUsd": 0.1184
+    }
+  }
+}
