@@ -202,6 +202,29 @@ export interface DailyPost {
 
 const DAILY_DIR = path.join(process.cwd(), "content", "guide", "daily");
 
+/**
+ * On-disk briefings are `parkio-daily-YYYY-MM-DD.json`. The slug is
+ * appended to that directory, so anything else — including `..` — is
+ * rejected before the path is built.
+ */
+const DAILY_SLUG = /^parkio-daily-(\d{4})-(\d{2})-(\d{2})$/;
+
+function isDailySlug(slug: string): boolean {
+  const match = DAILY_SLUG.exec(slug);
+  if (!match) return false;
+  const year = Number(match[1]);
+  const month = Number(match[2]);
+  const day = Number(match[3]);
+  // Years 0–99 are remapped by Date.UTC, and impossible days (Apr 31,
+  // Feb 29 outside a leap year) roll forward, so the round-trip fails.
+  const utc = new Date(Date.UTC(year, month - 1, day));
+  return (
+    utc.getUTCFullYear() === year &&
+    utc.getUTCMonth() === month - 1 &&
+    utc.getUTCDate() === day
+  );
+}
+
 function dirExists(p: string): boolean {
   try {
     return fs.statSync(p).isDirectory();
@@ -221,6 +244,7 @@ export function listDailySlugs(): string[] {
 
 /** Read + parse a single daily-briefing file. Returns null on any error. */
 export function getDailyPost(slug: string): DailyPost | null {
+  if (!isDailySlug(slug)) return null;
   if (!dirExists(DAILY_DIR)) return null;
   const file = path.join(DAILY_DIR, `${slug}.json`);
   if (!fs.existsSync(file)) return null;
