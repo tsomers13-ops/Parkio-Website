@@ -38,7 +38,7 @@ SLIDE 4: 🎬 Indiana Jones Epic Jr. Stunt Spectacular playground coming to…
 SLIDE 5: 🦁 Encanto attraction construction visible at Animal Kingdom
    Work on the Encanto-themed ride inside the new Tropical Americas land at Animal Kingdom is accelerating. The attraction is part of the larger…
 SLIDE 6: 📍 Target gift card promotion runs through November 14
-   Get a $10 Target GiftCard with $100 or more in eligible gift cards, including Disney. Ends November 14 at 11:59 PM Pacific; terms apply.
+   Get a $10 Target GiftCard with $100 or more in eligible gift cards, including Disney. Ends November 14; terms apply.
 SLIDE 7 (CTA): Full briefing every morning → parkio.info
 ```
 
