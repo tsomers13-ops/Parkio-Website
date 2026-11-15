@@ -1,0 +1,344 @@
+{
+  "title": "Parkio Daily for November 15, 2026",
+  "slug": "parkio-daily-2026-11-15",
+  "date": "2026-11-15",
+  "teaser": "Holiday season opens today at both coasts; Tree of Life Awakenings debuts at Animal Kingdom while Disneyland's Christmas Fantasy parade returns.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Soarin'",
+        "parkSlug": "epcot",
+        "note": "Festival crowds usually thin during dinner; try 6–7pm"
+      },
+      {
+        "name": "Big Thunder Mountain",
+        "parkSlug": "magic-kingdom",
+        "note": "Open today after refurbishment; early morning waits under 25 min"
+      },
+      {
+        "name": "Radiator Springs Racers",
+        "parkSlug": "california-adventure",
+        "note": "Festival crowds heavy; rope drop or last hour best"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [],
+    "bignews": [
+      {
+        "title": "Tree of Life Awakenings holiday shows debut at Animal Kingdom",
+        "body": "Three holiday-themed projection shows now run nightly on the Tree of Life through January 3, marking the park's seasonal nighttime entertainment return. Showtimes begin at dusk and rotate throughout the evening.",
+        "parkSlug": "animal-kingdom",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/11/photos-video-tree-of-life-awakenings-holiday-returns-to-disneys-animal-kingdom-for-2026-holiday-season/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Discovery Island tends to fill up around the first show after dark. Watching the final rotation of the night usually offers clearer sightlines and quicker park exit."
+        }
+      },
+      {
+        "title": "A Christmas Fantasy Parade returns to Disneyland through November 2027",
+        "body": "The seasonal parade featuring Disney characters, floats, and Santa runs twice daily at 3:15pm and 5:30pm. Performances continue through November 6, 2027.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/11/photos-video-a-christmas-fantasy-parade-returns-to-disneyland-for-2026-holiday-season/"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "Main Street and hub viewing spots tend to fill 45 minutes before showtime. The second parade often has lighter crowds and easier viewing along the Frontierland route."
+        }
+      },
+      {
+        "title": "Lightning Lane Premier Pass sells out four days next week at Magic Kingdom",
+        "body": "The high-priced skip-the-line pass is already unavailable for four dates in the coming week, reflecting strong demand during the holiday season launch. Guests looking to buy should check availability early each morning.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/11/disney-world-cash-guests-sell-out-400-pass-multiple-days-th1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Sold-out Premier Pass dates often signal heavier park traffic overall. Consider shifting your Magic Kingdom day to mid-week when availability tends to be better."
+        }
+      },
+      {
+        "title": "Napa Rose switches to à la carte menu after guest pushback",
+        "body": "Disneyland's Grand Californian signature restaurant now offers individual menu items alongside its prix fixe option, reversing an earlier decision that required guests to pay over $200 per person for a full meal.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/best-disneyland-restaurant-gives-in-to-guest-requests-with-new-a-la-carte-menu-no-longer-prix-fixe-only/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Reservations for Napa Rose may open up as the new menu draws guests who skipped the prix fixe format. Check the app around 5pm for same-day cancellations."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "Nomad Lounge adds walk-up availability under new reservation system",
+        "body": "The popular Animal Kingdom bar now accepts more guests without advance bookings, making it easier to grab a drink and small plates during your park day.",
+        "parkSlug": "animal-kingdom",
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/11/14/review-it-just-got-easier-to-go-to-nomad-lounge-at-disney-world/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Walk-up waits tend to be shortest during early afternoon and late evening. Stopping by between 2–4pm or after 7pm usually gets you seated within 15 minutes."
+        }
+      },
+      {
+        "title": "¡Viva Navidad! street party returns for Festival of the Holidays",
+        "body": "The Three Caballeros host this musical celebration with dancers and Disney characters in festive costumes at California Adventure. Showtimes run daily through early January.",
+        "parkSlug": "california-adventure",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/11/viva-navidad-returns-for-2026-festival-of-holidays-at-disney-california-adventure/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "The street party draws a crowd near Paradise Gardens, but viewing spots open up quickly after each performance. Arriving five minutes before showtime often secures a good vantage point."
+        }
+      },
+      {
+        "title": "Mickey's Happy Holidays Cavalcade debuts at California Adventure",
+        "body": "A new holiday mini-parade featuring Mickey and friends runs multiple times daily during Festival of the Holidays. The short procession encourages guests to dance along the route.",
+        "parkSlug": "california-adventure",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/11/photos-video-dance-along-with-mickeys-happy-holidays-cavalcade-at-disney-california-adventure/"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "Cavalcades tend to slow foot traffic on Buena Vista Street for about ten minutes. Crossing the park during a performance usually means waiting for the route to clear."
+        }
+      },
+      {
+        "title": "Star Wars Life Day merchandise arrives at Disney Store and parks November 17",
+        "body": "A collection celebrating the Wookiee holiday from the 1978 Star Wars Holiday Special launches next Tuesday at Disney retail locations and both U.S. resorts.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/products/star-wars-life-day-merchandise-disney-store-and-disney-parks/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Limited-edition Star Wars merchandise often sells out within hours at park locations. Visiting Star Trader or Tatooine Traders right at park open on Tuesday may secure the full collection."
+        }
+      },
+      {
+        "title": "Santa Claus meet-and-greets begin at all four Walt Disney World parks",
+        "body": "The holiday season brings Santa to each theme park and Disney Springs through the end of December. Specific locations and hours vary by park and are listed in the My Disney Experience app.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/where-to-meet-santa-at-disney-world-this-holiday-season/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Santa meet lines tend to peak mid-morning and late afternoon. Visiting right at park open or during evening fireworks windows often cuts waits to under 15 minutes."
+        }
+      },
+      {
+        "title": "Disney Resort holiday merchandise launches at Grand Californian",
+        "body": "Hotel-themed ornaments and gifts have arrived at Disney's Grand Californian, including a gingerbread Chip and Dale ornament priced at $24.99. Similar items may appear at other Disneyland Resort hotels.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/11/disney-resort-themed-holiday-merch-arrives-at-disneyland-resort/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Hotel gift shops tend to restock mornings and evenings. Checking inventory before 10am or after 6pm usually finds the best selection of limited-run holiday items."
+        }
+      },
+      {
+        "title": "Walt Disney World moves forward with road sign replacement project",
+        "body": "Two overhead sign structures will be removed and replaced across the resort in 2027 as part of an infrastructure upgrade managed by the Central Florida Tourism Oversight District.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/11/more-walt-disney-world-road-signs-will-be-replaced-next-year/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Road construction tends to slow arrival and departure times during peak hours. Allowing an extra 15 minutes for resort-to-park drives next year may help avoid parking delays."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Imagineering files permit for Glob Theater in Monstropolis at Hollywood Studios",
+        "body": "Walt Disney Imagineering submitted a construction permit for the Glob Theater building, part of the upcoming Monstropolis land expansion. The filing signals continued progress on the project.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/11/disney-parks-mini-kingdom-playsets-spotted-at-walt-disney-world-in-todays-daily-recap-for-11-14-2026/"
+        }
+      },
+      {
+        "title": "Disney announces Star Wars 50th anniversary product preview",
+        "body": "With 50 days until 2027, Disney shared a first look at merchandise celebrating the 50th anniversary of the original Star Wars film. Products will roll out throughout next year.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/products/celebrating-50-years-of-star-wars-with-new-products/"
+        }
+      },
+      {
+        "title": "Disney Vero Beach sea turtle conservation reaches two million hatchlings",
+        "body": "The Disney Conservation team marked a milestone this month as an estimated two million sea turtle hatchlings have emerged from nests on Vero Beach over more than 20 years of monitoring.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/ase/2-million-sea-turtles-vero-beach-disney/"
+        }
+      },
+      {
+        "title": "Universal Studios Japan stops same-day ticket sales due to capacity",
+        "body": "The Osaka park implemented emergency crowd control measures this weekend, halting same-day admissions and reentry as attendance reached record levels. Advance tickets remain the only entry option.",
+        "parkSlug": null,
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/11/universal-studios-japan-crowds-reentry-november-2026-emd1/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "Holiday festivals at both coasts bring new food, entertainment, and character appearances",
+        "body": "Disneyland's Festival of the Holidays and Walt Disney World's EPCOT International Festival of the Holidays are both in full swing, offering seasonal treats, live performances, and holiday overlays on classic attractions. Official Disney guides detail parade times, character meet schedules, and festival booth menus across all parks.",
+        "parkSlug": null,
+        "ctaLabel": "View festival guides",
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Festival food booths tend to have the shortest lines during the first hour after park open and the final hour before close. Sampling early or late usually avoids peak lunch and dinner rushes."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "vPhGW524Gsg",
+      "title": "Mickey's Very Merry Christmas Party 2026 | NEW Cookies & Shows | Is It Worth $229: Walt Disney World",
+      "channel": "Paging Mr. Morrow",
+      "publishedAt": "2026-11-09T13:00:01Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/vPhGW524Gsg/mqdefault.jpg",
+      "viewCount": 170360,
+      "url": "https://www.youtube.com/watch?v=vPhGW524Gsg",
+      "summary": "Paging Mr. Morrow reviews this year's Mickey's Very Merry Christmas Party at Magic Kingdom, covering new cookies, shows, and whether the $229 ticket price delivers value."
+    },
+    {
+      "videoId": "fe7UZH3BX9k",
+      "title": "ULTIMATE FOODIE GUIDE: Mickey's Very Merry Christmas Party | Magic Kingdom, Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-11-09T13:13:54Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/fe7UZH3BX9k/mqdefault.jpg",
+      "viewCount": 53599,
+      "url": "https://www.youtube.com/watch?v=fe7UZH3BX9k",
+      "summary": "WrightDownMainStreet breaks down all the food offerings at Mickey's Very Merry Christmas Party, helping guests plan what to eat during the special event."
+    },
+    {
+      "videoId": "Ny6WQt-LGC4",
+      "title": "ULTIMATE FOODIE GUIDE: Jollywood Nights- Hollywood Studios Christmas Party | Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-11-08T14:16:42Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Ny6WQt-LGC4/mqdefault.jpg",
+      "viewCount": 49601,
+      "url": "https://www.youtube.com/watch?v=Ny6WQt-LGC4",
+      "summary": "A complete food guide to Jollywood Nights at Hollywood Studios, walking through the seasonal menu items available at the Christmas party event."
+    },
+    {
+      "videoId": "HN1kwSXnkIE",
+      "title": "🔴Live Disneyland resort Saturday for Christmas Parades rides, shows and everything else 11/14/2026",
+      "channel": "RON ON THE GO",
+      "publishedAt": "2026-11-15T06:04:44Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/HN1kwSXnkIE/mqdefault.jpg",
+      "viewCount": 49050,
+      "url": "https://www.youtube.com/watch?v=HN1kwSXnkIE",
+      "summary": "RON ON THE GO livestreams from Disneyland Resort on Saturday, November 14, covering Christmas parades, rides, and holiday entertainment throughout the day."
+    },
+    {
+      "videoId": "OsD5oAp71ZQ",
+      "title": "en disney no se me gasta la energía 🤣❤️ #disneyland #disneylandparis #disney  #ona #shorts",
+      "channel": "Ona",
+      "publishedAt": "2026-11-15T06:32:34Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/OsD5oAp71ZQ/mqdefault.jpg",
+      "viewCount": 4283,
+      "url": "https://www.youtube.com/watch?v=OsD5oAp71ZQ",
+      "summary": "Ona shares a quick short about maintaining energy during a Disneyland visit, filmed at Disneyland Paris."
+    },
+    {
+      "videoId": "_Pg1VWzr5SQ",
+      "title": "アトラクションにほぼ乗らないディズニーvlog🍽🍨🧸🎯✨#ディズニー #ディズニーランド #ディズニーランドホテル #ディズニーvlog #雨の日の過ごし方",
+      "channel": "だみ / dami 🎀🪞",
+      "publishedAt": "2026-11-15T09:00:16Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/_Pg1VWzr5SQ/mqdefault.jpg",
+      "viewCount": 4101,
+      "url": "https://www.youtube.com/watch?v=_Pg1VWzr5SQ",
+      "summary": "A Tokyo Disneyland vlog focusing on dining, shopping, and relaxation at the resort hotel rather than riding attractions."
+    },
+    {
+      "videoId": "EP4Mv6T6sD0",
+      "title": "Is this Cinderella flying over the water?💭👸🏼 #disney #disneyland #princess #watersports #pumpfoil",
+      "channel": "Alina Kornelli",
+      "publishedAt": "2026-11-15T08:00:08Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/EP4Mv6T6sD0/mqdefault.jpg",
+      "viewCount": 3233,
+      "url": "https://www.youtube.com/watch?v=EP4Mv6T6sD0",
+      "summary": "Alina Kornelli combines Disney princess content with water sports, showcasing a Cinderella-themed performance on a pump foil."
+    },
+    {
+      "videoId": "-5Bckl7WrYY",
+      "title": "Never to old for Disney #disneyland",
+      "channel": "Nicolette IRL",
+      "publishedAt": "2026-11-15T07:38:44Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/-5Bckl7WrYY/mqdefault.jpg",
+      "viewCount": 1604,
+      "url": "https://www.youtube.com/watch?v=-5Bckl7WrYY",
+      "summary": "Nicolette IRL shares a short clip celebrating the timeless appeal of Disneyland for guests of all ages."
+    },
+    {
+      "videoId": "vj43dQ7FVgI",
+      "title": "siempre🥹🤍 #disney #disneyland  #ona #shorts",
+      "channel": "Ona",
+      "publishedAt": "2026-11-15T06:34:05Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/vj43dQ7FVgI/mqdefault.jpg",
+      "viewCount": 1224,
+      "url": "https://www.youtube.com/watch?v=vj43dQ7FVgI",
+      "summary": "A short video from Ona capturing a moment at Disneyland with an emotional reflection on the Disney experience."
+    },
+    {
+      "videoId": "2eJ7JKp7N74",
+      "title": "AMAZING SHOWS❤️ #disney #disneyplus #disneyland #disneyprincess #disneyworld #viral #viralshort",
+      "channel": "ItsShA🖤",
+      "publishedAt": "2026-11-15T06:18:46Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/2eJ7JKp7N74/mqdefault.jpg",
+      "viewCount": 1220,
+      "url": "https://www.youtube.com/watch?v=2eJ7JKp7N74",
+      "summary": "ItsShA highlights impressive Disney shows at the parks in a short viral-style video."
+    }
+  ],
+  "updatedAt": "2026-11-15T11:47:30.146Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-11-15T11:47:30.146Z",
+    "tokens": {
+      "input": 11430,
+      "output": 5537,
+      "costUsd": 0.1173
+    }
+  }
+}
