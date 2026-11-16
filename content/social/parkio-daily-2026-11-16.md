@@ -36,7 +36,7 @@ SLIDE 3: 🦁 Tropical Americas permit extended to late 2027 at Animal Kingdom
 SLIDE 4: 📍 Disney Springs Cast Member costumes refreshed
    New uniforms have been introduced for select Cast Members working in the shopping and dining district. The updated look rolled out quietly this week.
 SLIDE 5: 🎡 Fantastic Four character meet location revealed at Avengers Campus
-   A mobile laboratory set has been installed in Avengers Campus at Disney California Adventure, preparing for the Fantastic Four's first guest…
+   The Fantastic Four begin appearing Friday, November 20, at Avengers Campus in Disney California Adventure. A mobile laboratory set near Avengers…
 SLIDE 6: 📍 Rainforest Cafe at Disneyland Paris closes permanently
    The Disney Village location served its final guests and shut down November 15. Only two Rainforest Cafe restaurants remain at Walt Disney World,…
 SLIDE 7 (CTA): Full briefing every morning → parkio.info
@@ -44,7 +44,7 @@ SLIDE 7 (CTA): Full briefing every morning → parkio.info
 
 **Caption**
 ```
-Mickey's Very Merry Christmas Party sold out for all 2026 dates; Fantastic Four meet area opens at Avengers Campus.
+Mickey's Very Merry Christmas Party sold out for all 2026 dates; Fantastic Four appearances at Avengers Campus begin November 20.
 
 The Disney news that matters, every morning — free at parkio.info. Link in bio.
 
