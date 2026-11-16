@@ -1,0 +1,322 @@
+{
+  "title": "Parkio Daily for November 16, 2026",
+  "slug": "parkio-daily-2026-11-16",
+  "date": "2026-11-16",
+  "teaser": "Mickey's Very Merry Christmas Party sold out for all 2026 dates; Fantastic Four meet area opens at Avengers Campus.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Big Thunder Mountain Railroad",
+        "parkSlug": "magic-kingdom",
+        "note": "Lower crowds early this week before Thanksgiving rush"
+      },
+      {
+        "name": "Soarin' Around the World",
+        "parkSlug": "epcot",
+        "note": "Festival of the Holidays crowds still building"
+      },
+      {
+        "name": "Radiator Springs Racers",
+        "parkSlug": "california-adventure",
+        "note": "Holiday overlays drawing crowds to other areas"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [],
+    "bignews": [
+      {
+        "title": "Mickey's Very Merry Christmas Party completely sold out for 2026",
+        "body": "Every date of the Magic Kingdom after-hours holiday event has sold through just one week into the season. The separately ticketed event runs select nights through December.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/mickeys-very-merry-christmas-party-is-sold-out-for-disney-worlds-2026-holiday-season/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "With the party sold out, regular park hours tend to end earlier on event nights. Plan to shift to EPCOT or another park by mid-afternoon on party dates to maximize your day."
+        }
+      },
+      {
+        "title": "Fantastic Four character meet location revealed at Avengers Campus",
+        "body": "A mobile laboratory set has been installed in Avengers Campus at Disney California Adventure, preparing for the Fantastic Four's first guest appearances. The superhero team will meet visitors in the newly revealed bay door area.",
+        "parkSlug": "california-adventure",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/11/fantastic-four-meet-and-greet-area-revealed-in-avengers-campus-at-disneyland-resort/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "New character debuts usually draw long waits in the first few weeks. Arriving at rope drop and heading straight to Avengers Campus often gives you the shortest queue before word spreads."
+        }
+      },
+      {
+        "title": "Lightning Lane Premier Pass at Magic Kingdom sells out at $479 price point",
+        "body": "The first date priced at the new $479 ceiling for Magic Kingdom's skip-the-line product has sold through. November 23 is now unavailable, with other high-price dates expected to follow.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/11/disney-world-guests-react-to-magic-kingdoms-479-attraction-passes-th1/"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "Sellouts at premium pricing usually signal heavy attendance. Standby waits on November 23 may climb above average; consider starting your day at a different park if flexibility allows."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "Orlando International Airport issues brief ground stop",
+        "body": "The airport serving Walt Disney World issued a temporary ground stop two days after a separate nationwide incident. Operations have since resumed to normal schedules.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/11/orlando-international-airport-issues-ground-stop-two-days-after-nationwide-incident-in-todays-daily-recap-for-11-15-2026/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "If you're flying today, check your airline app for real-time gate updates. Arriving at the airport 30 minutes earlier than usual may help absorb any residual delays."
+        }
+      },
+      {
+        "title": "Star Wars Life Day merchandise launches November 17 at parks and Disney Store",
+        "body": "New products celebrating the Wookiee holiday debut Tuesday across Disney retail locations. The collection ties to the 1978 Star Wars Holiday Special tradition.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/products/star-wars-life-day-merchandise-disney-store-and-disney-parks/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Limited-edition Star Wars drops tend to move quickly at Tatooine Traders in Hollywood Studios and Star Trader at Disneyland. Visiting these shops within the first two hours of park open usually improves your odds."
+        }
+      },
+      {
+        "title": "Four Disneyland Paris attractions close for January refurbishment",
+        "body": "Beginning January 4, 2027, La Tanière du Dragon walkthrough and three other park experiences will shut down for maintenance. The dragon den is unique to the Paris resort.",
+        "parkSlug": null,
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/11/disneyland-paris-confirms-closure-of-4-park-attractions-in-january-2027-including-dragon-walkthrough-jc1/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "If Disneyland Paris is on your 2027 calendar, visiting before early January lets you experience all four attractions before they go dark. Book by mid-December to lock in pre-closure dates."
+        }
+      },
+      {
+        "title": "Napa Rose at Disneyland adds à la carte menu alongside prix fixe",
+        "body": "The Grand Californian's signature restaurant reversed its prix-fixe-only policy following guest feedback. Diners can now order individual courses instead of the full tasting menu.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/best-disneyland-restaurant-gives-in-to-guest-requests-with-new-a-la-carte-menu-no-longer-prix-fixe-only/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "À la carte dining lets you control both portion and price. Reservations for Napa Rose often open up same-day around 3pm as guests adjust plans; check the app mid-afternoon."
+        }
+      },
+      {
+        "title": "Tropical Americas permit extended to late 2027 at Animal Kingdom",
+        "body": "Imagineering has pushed back paperwork deadlines for the new land, suggesting the Encanto-themed attraction may open later than initially signaled. Construction photos show ongoing work.",
+        "parkSlug": "animal-kingdom",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/is-tropical-americas-still-on-track-to-open-in-late-2027/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "If you're planning a 2027 trip around the new land, holding off on booking until spring may give you clearer opening dates. Construction noise near DinoLand tends to peak mid-morning; visit that area early or late in the day."
+        }
+      },
+      {
+        "title": "Rainforest Cafe at Disneyland Paris closes permanently",
+        "body": "The Disney Village location served its final guests and shut down November 15. Only two Rainforest Cafe restaurants remain at Walt Disney World, plus one at Tokyo Disney.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/11/photos-frances-only-rainforest-cafe-now-permanently-closed-at-disneyland-paris/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "The two Walt Disney World Rainforest Cafe locations—Animal Kingdom and Disney Springs—may see heavier traffic as the brand shrinks globally. Reservations or off-peak dining windows around 3pm usually reduce waits."
+        }
+      },
+      {
+        "title": "Holiday DVC member merchandise arrives at Disneyland Resort",
+        "body": "Exclusive items for Disney Vacation Club members featuring Mickey, Minnie, and Pluto in seasonal designs are now on shelves. A train-themed mug with lid is priced at $29.99.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/11/holiday-dvc-exclusive-merch-featuring-mickey-and-friends-arrives-at-disneyland/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "DVC exclusives tend to sell through quickly during the holidays. If you're a member, visiting the DVC lounge or resort gift shops before mid-morning usually improves availability."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Disney Springs Cast Member costumes refreshed",
+        "body": "New uniforms have been introduced for select Cast Members working in the shopping and dining district. The updated look rolled out quietly this week.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/11/15/disney-world-changes-another-cast-member-costume/"
+        }
+      },
+      {
+        "title": "42 Disney World restaurant menus updated this week",
+        "body": "Menu adjustments went live across dozens of dining locations, including pricing and item changes. The updates span quick-service and table-service venues resort-wide.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/11/15/disney-world-just-quietly-changed-menus-at-42-restaurants-this-week/"
+        }
+      },
+      {
+        "title": "Lucasfilm confirms 2027 Star Wars theatrical releases",
+        "body": "The studio announced its major 2027 lineup, including the return of Mark Hamill's Luke Skywalker in a 1977 re-release. The 50th-anniversary celebration kicks off in January.",
+        "parkSlug": null,
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/11/lucasfilm-confirms-star-wars-tentpole-releases-2027-th1/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "Believe in Holiday Magic fireworks return to Disneyland",
+        "body": "The seasonal nighttime spectacular is running nightly at 9:30pm through early January. The show blends classic holiday songs with projections on Sleeping Beauty's Winter Castle and pyrotechnics above Main Street.",
+        "parkSlug": "disneyland",
+        "ctaLabel": "Watch the full show",
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Main Street and the hub fill up 45 minutes before showtime on weekends. Staking out a spot near the flag pole or by the train station around 8:45pm usually secures a clear view without the longest waits."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "vPhGW524Gsg",
+      "title": "Mickey's Very Merry Christmas Party 2026 | NEW Cookies & Shows | Is It Worth $229: Walt Disney World",
+      "channel": "Paging Mr. Morrow",
+      "publishedAt": "2026-11-09T13:00:01Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/vPhGW524Gsg/mqdefault.jpg",
+      "viewCount": 180994,
+      "url": "https://www.youtube.com/watch?v=vPhGW524Gsg",
+      "summary": "A walkthrough of the 2026 Magic Kingdom holiday party covering new cookies, entertainment, and whether the $229 ticket price delivers value."
+    },
+    {
+      "videoId": "fe7UZH3BX9k",
+      "title": "ULTIMATE FOODIE GUIDE: Mickey's Very Merry Christmas Party | Magic Kingdom, Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-11-09T13:13:54Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/fe7UZH3BX9k/mqdefault.jpg",
+      "viewCount": 56491,
+      "url": "https://www.youtube.com/watch?v=fe7UZH3BX9k",
+      "summary": "A comprehensive guide to all the food offerings available during Mickey's Very Merry Christmas Party at Magic Kingdom."
+    },
+    {
+      "videoId": "pRDHV7wxl9s",
+      "title": "🔴Live Disneyland resort Sunday for Christmas Parades rides, shows and everything else 11/15/2026",
+      "channel": "RON ON THE GO",
+      "publishedAt": "2026-11-16T06:21:51Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/pRDHV7wxl9s/mqdefault.jpg",
+      "viewCount": 44226,
+      "url": "https://www.youtube.com/watch?v=pRDHV7wxl9s",
+      "summary": "Live stream from Disneyland Resort on November 15 showcasing holiday parades, attractions, and entertainment throughout the day."
+    },
+    {
+      "videoId": "KuXFNWTImjE",
+      "title": "🔴LIVE! Mickey's Very Merry Christmas Party at Magic Kingdom Walt Disney World 11.15.26",
+      "channel": "Disney Girl Kim",
+      "publishedAt": "2026-11-16T05:28:21Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/KuXFNWTImjE/mqdefault.jpg",
+      "viewCount": 19630,
+      "url": "https://www.youtube.com/watch?v=KuXFNWTImjE",
+      "summary": "Live coverage from inside Mickey's Very Merry Christmas Party at Magic Kingdom on November 15, 2026."
+    },
+    {
+      "videoId": "c009GeCujpw",
+      "title": "💥 E SE VOCÊ QUEBRAR ALGO NA DISNEY? O MICKEY PAGA?",
+      "channel": "MarcianoShorts",
+      "publishedAt": "2026-11-16T11:00:05Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/c009GeCujpw/mqdefault.jpg",
+      "viewCount": 3611,
+      "url": "https://www.youtube.com/watch?v=c009GeCujpw",
+      "summary": "A short video exploring what happens if guests accidentally break something at a Disney park."
+    },
+    {
+      "videoId": "mCRO4QT5fwg",
+      "title": "there were supposed to be not one but two rides in the Japan pavilion in Epcot! (Also Disney Factmas",
+      "channel": "The Mouselets",
+      "publishedAt": "2026-11-16T03:19:00Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/mCRO4QT5fwg/mqdefault.jpg",
+      "viewCount": 2301,
+      "url": "https://www.youtube.com/watch?v=mCRO4QT5fwg",
+      "summary": "Disney history covering the two attractions originally planned for EPCOT's Japan pavilion that were never built."
+    },
+    {
+      "videoId": "wUxPn8XZcmA",
+      "title": "River Rapids Ride at Disneyland vs Disney World! #disneyparks #riverrapids #ride",
+      "channel": "Karen Yang",
+      "publishedAt": "2026-11-16T05:50:20Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/wUxPn8XZcmA/mqdefault.jpg",
+      "viewCount": 1284,
+      "url": "https://www.youtube.com/watch?v=wUxPn8XZcmA",
+      "summary": "A comparison of the river rapids attractions at Disneyland and Walt Disney World."
+    },
+    {
+      "videoId": "3p-LjolpFFw",
+      "title": "#destino1 #disney #disneyland #doñaalegria #viajeinolvidable #viajes #comedy",
+      "channel": "Saraidhy- DESTINO1 Travel Agent",
+      "publishedAt": "2026-11-16T02:31:19Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/3p-LjolpFFw/mqdefault.jpg",
+      "viewCount": 1206,
+      "url": "https://www.youtube.com/watch?v=3p-LjolpFFw",
+      "summary": "A travel agent's comedic take on Disney vacation planning and experiences."
+    },
+    {
+      "videoId": "1Ecv-wgTecE",
+      "title": "perfect weather for the parks!! ❄️🎠🪽🎀 #disney #trending #relatable #disneyparks #pinterest #fyp",
+      "channel": "Jill Rice",
+      "publishedAt": "2026-11-16T02:45:12Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/1Ecv-wgTecE/mqdefault.jpg",
+      "viewCount": 1167,
+      "url": "https://www.youtube.com/watch?v=1Ecv-wgTecE",
+      "summary": "A short video highlighting ideal weather conditions for visiting the Disney parks."
+    },
+    {
+      "videoId": "f1pU69lB7IE",
+      "title": "Ratatouille Remy Chef Hat Pop-Up Keychain #disney #ratatouille #disneyland #fidgettoys #squishy #fun",
+      "channel": "KatieCake",
+      "publishedAt": "2026-11-16T03:38:58Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/f1pU69lB7IE/mqdefault.jpg",
+      "viewCount": 1164,
+      "url": "https://www.youtube.com/watch?v=f1pU69lB7IE",
+      "summary": "A showcase of a Ratatouille-themed Remy chef hat pop-up keychain available at Disneyland."
+    }
+  ],
+  "updatedAt": "2026-11-16T11:47:27.370Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-11-16T11:47:27.370Z",
+    "tokens": {
+      "input": 11355,
+      "output": 5072,
+      "costUsd": 0.1101
+    }
+  }
+}
