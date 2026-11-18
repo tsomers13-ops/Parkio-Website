@@ -1,0 +1,336 @@
+{
+  "title": "Parkio Daily for Wednesday, November 18, 2026",
+  "slug": "parkio-daily-2026-11-18",
+  "date": "2026-11-18",
+  "teaser": "Tropical Americas confirmed for 2027 at Animal Kingdom; Disney cuts $3B in costs while attendance climbs 3%. New Monstropolis permit filed at Hollywood Studios.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Space Mountain",
+        "parkSlug": "magic-kingdom",
+        "note": "Early morning waits under 20 min typical"
+      },
+      {
+        "name": "Soarin'",
+        "parkSlug": "epcot",
+        "note": "Dinner hour often brings walk-on windows"
+      },
+      {
+        "name": "Mickey & Minnie's Runaway Railway",
+        "parkSlug": "hollywood-studios",
+        "note": "Mid-morning shows lighter crowds"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [
+      {
+        "title": "Disney confirms Tropical Americas still on track for 2027 opening at Animal Kingdom",
+        "body": "The Walt Disney Company reaffirmed during its Q4 earnings call that the Tropical Americas land will open at Animal Kingdom next year as planned. The company also announced $3 billion in annual operating cost cuts while reporting a 3% attendance increase and 1% resort occupancy gain across parks.",
+        "parkSlug": "animal-kingdom",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/11/tropical-americas-still-set-to-open-at-disneys-animal-kingdom-in-2027-in-todays-daily-recap-for-11-17-2026/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Opening year crowds tend to peak mid-morning through early afternoon. Visiting during the first or last hour of park operation usually offers shorter waits for new land experiences."
+        }
+      }
+    ],
+    "bignews": [
+      {
+        "title": "Hollywood Studios files permit for new Monstropolis attraction",
+        "body": "Disney submitted a construction permit for an attraction inside the upcoming Monsters, Inc.-themed land at Hollywood Studios. Blue paint continues to appear on the scale-like shingles covering rooftops in the expansion area, visible from guest pathways.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/11/17/disney-world-files-permit-for-attraction-in-new-monstropolis-expansion/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Construction activity near Sunset Boulevard tends to be loudest between 9am and 1pm. Plan quieter meal breaks or resort time during those hours if noise sensitivity is a concern."
+        }
+      },
+      {
+        "title": "Magic Kingdom announces lowest-crowd day of 2027",
+        "body": "Disney added a new calendar date that will likely be one of Magic Kingdom's two slowest days of the year. The day falls in the first half of 2027 and precedes the summer party season.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/lowest-crowd-day-to-visit-magic-kingdom-in-2027/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Low-crowd days typically see walk-on windows for Tomorrowland attractions by mid-afternoon. Rope-drop is still worth targeting for Seven Dwarfs Mine Train, which rarely dips below 30 minutes."
+        }
+      },
+      {
+        "title": "Three-day Disney World ticket deal launches for 2027 visits at $109 per day",
+        "body": "Walt Disney World released a new three-park, three-day ticket package starting at $109 per day for select 2027 dates. The promotion offers savings of more than $200 compared to standard gate pricing.",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/new-disney-world-3-day-3-park-ticket-deal-for-109-per-day-for-2027/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Discounted tickets often sell out for peak spring and holiday windows within days. Booking early today or tomorrow usually secures the best date selection before blackout restrictions tighten."
+        }
+      },
+      {
+        "title": "Hollywood Studios enforces new Galaxy's Edge access restrictions",
+        "body": "Star Wars: Galaxy's Edge introduced additional entry rules on November 17. Guests arriving unprepared for the new requirements may be turned away at certain times.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/11/disneys-hollywood-studios-enforces-new-galaxys-edge-restrictions-now-in-effect-sb1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Arrive at Galaxy's Edge before 10am or after 7pm to minimize access delays. Mid-day crowds tend to compound with the new entry procedures, adding 15–30 minutes to your land visit."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "Avengers: Doomsday merchandise and collegiate Monsters University apparel arrive at Walt Disney World",
+        "body": "A new Marvel collection featuring Doctor Doom, the Avengers, X-Men, and Fantastic Four is now on shelves alongside Monsters University varsity jackets, sweatshirts, and rugby shirts. Both lines include multiple apparel and accessory options.",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/11/avengers-doomsday-merchandise-arrives-at-walt-disney-world-including-apparel-and-accessories/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Limited-edition Marvel and Pixar items tend to sell out at flagship stores like World of Disney by early afternoon. A morning stop usually ensures full size and design availability."
+        }
+      },
+      {
+        "title": "Cheshire Cat Loungefly purse and new Grand Californian Christmas ornament debut",
+        "body": "A dark indigo velvet Loungefly handbag inspired by the Cheshire Cat from Alice in Wonderland is now available at Walt Disney World for $80. At Disneyland Resort, a light-up keepsake ornament recreating the Craftsman-style lanterns from Grand Californian's lobby tree launched for $29.99.",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/11/cheshire-cat-loungefly-arrives-at-walt-disney-world/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Holiday-themed accessories and character Loungefly bags often see stock shortages by late morning at high-traffic stores. Visiting right at park open or during evening Extra Magic Hours usually improves selection."
+        }
+      },
+      {
+        "title": "Star Wars Life Day merchandise launches across Disney Parks and Disney Store",
+        "body": "New products celebrating the Wookiee holiday Life Day are now on sale, honoring the tradition first introduced in the 1978 Star Wars Holiday Special. The collection includes apparel, accessories, and collectibles.",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/products/star-wars-life-day-merchandise-disney-store-and-disney-parks/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Limited Star Wars releases typically see fastest turnover at Star Wars Trading Post in Disney Springs and Galactic Outpost at Hollywood Studios. Early-day visits often secure the widest range of sizes and designs."
+        }
+      },
+      {
+        "title": "Ghirardelli refurbishment at Disney Springs shows foam board and metal framing progress",
+        "body": "New exterior work is visible at the Ghirardelli location in Disney Springs, which has been under refurbishment since July. The shop temporarily relocated to Town Center during construction.",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/11/refurbishment-progress-continues-at-ghirardelli-in-disney-springs/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Scaffolding and construction barriers near Ghirardelli tend to narrow pedestrian flow during evening hours when Disney Springs crowds peak. Routing through Marketplace or West Side usually saves time between 6–9pm."
+        }
+      },
+      {
+        "title": "Disneyland Paris walls off Phantom Manor following November 16 closure",
+        "body": "The unique European version of Haunted Mansion at Disneyland Park is now fully surrounded by themed construction walls. Guests cannot approach the building during the refurbishment period.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/11/walls-surrounding-haunted-mansion-attraction-phantom-manor-at-disneyland-paris-jc1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Frontierland at Disneyland Paris tends to feel quieter with Phantom Manor closed, shifting crowds toward Big Thunder Mountain and adjacent dining. Expect slightly longer waits for the coaster through mid-afternoon."
+        }
+      },
+      {
+        "title": "Disney World opens all four parks to passholders today after last-minute access change",
+        "body": "Annual Passholder access restrictions were lifted across Magic Kingdom, EPCOT, Hollywood Studios, and Animal Kingdom on November 17 despite flood watch conditions. The change allows spontaneous park visits.",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/11/disney-world-opens-all-4-parks-to-passholders-with-last-minute-access-change-ad1/"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "Last-minute passholder access often boosts attendance by 10–15% across all parks. Attractions like Flight of Passage and Rise of the Resistance may see waits climb 20–30 minutes above forecast by late morning."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Jollywood Nights food menu designed for style and speed at Hollywood Studios",
+        "body": "Disney revealed the behind-the-scenes process for creating nearly 80 exclusive food and beverage items for the Jollywood Nights holiday event. Each dish balances festive flavor, glamorous presentation, and efficient service for thousands of guests.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/inside-the-making-of-the-disney-jollywood-nights-menu/"
+        }
+      },
+      {
+        "title": "D23 Gold membership for 2027 now available",
+        "body": "Disney announced the next tier of D23 Gold membership for the coming year. The package includes exclusive perks and early access opportunities for fans.",
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/11/17/disney-drops-new-d23-gold-membership-for-2027/"
+        }
+      },
+      {
+        "title": "Holiday movie filmed at Disney World to debut on Hallmark Channel and Disney+ next day",
+        "body": "Holiday Ever After: A Disney World Wish Come True will air on Hallmark Channel before streaming on Disney+ and Hulu the following day. The film is the first Christmas movie shot entirely at Walt Disney World.",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/new-disney-world-christmas-movie-streams-on-disney-day-after-hallmark-channel-debut/"
+        }
+      },
+      {
+        "title": "Teacup Confessions series launches with celebrity interviews on Mad Tea Party",
+        "body": "Disney Parks Blog introduced a new video series featuring celebrities riding the Mad Tea Party teacups while discussing their latest projects and Disney memories. The spinning interviews add a playful twist to traditional press conversations.",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/disney-experiences/teacup-confessions-celebrities-take-a-spin-at-disney-parks/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "Disneyland Resort popcorn buckets and sippers guide updated for holiday season",
+        "body": "Disney published a full roundup of current novelty containers available at Disneyland and California Adventure, including seasonal designs for the holidays. The guide covers popcorn buckets, drink sippers, and other collectible vessels.",
+        "parkSlug": "disneyland",
+        "ctaLabel": "See the guide",
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Holiday popcorn buckets often sell out at Main Street and Buena Vista Street carts by early afternoon. Grabbing your preferred design within the first two hours of park opening usually avoids disappointment."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "jti5tJgWOuI",
+      "title": "NEW Food at Disney Springs: Jock Lindsey's Holiday Bar, Gideon's & More! Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-11-16T16:36:10Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/jti5tJgWOuI/mqdefault.jpg",
+      "viewCount": 44063,
+      "url": "https://www.youtube.com/watch?v=jti5tJgWOuI",
+      "summary": "WrightDownMainStreet tours new seasonal food offerings at Jock Lindsey's Holiday Bar, Gideon's, and other Disney Springs locations."
+    },
+    {
+      "videoId": "9jEaziANPwE",
+      "title": "🔴 Live: EPCOT Rides, Luminous Fireworks & More Tuesday Night | Disney World Live Stream 11.17.2026",
+      "channel": "Daily FastPass",
+      "publishedAt": "2026-11-18T02:49:23Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/9jEaziANPwE/mqdefault.jpg",
+      "viewCount": 25707,
+      "url": "https://www.youtube.com/watch?v=9jEaziANPwE",
+      "summary": "Daily FastPass live-streams an EPCOT evening featuring rides and the Luminous fireworks show on November 17."
+    },
+    {
+      "videoId": "4FJk6TyKzRY",
+      "title": "🔴 DISNEY WORLD LIVE: Magic Kingdom Christmas + Star Wars Life Day Lightsabers at Hollywood Studios 🎄",
+      "channel": "The Weekly Hop",
+      "publishedAt": "2026-11-18T03:12:54Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/4FJk6TyKzRY/mqdefault.jpg",
+      "viewCount": 16712,
+      "url": "https://www.youtube.com/watch?v=4FJk6TyKzRY",
+      "summary": "The Weekly Hop broadcasts live from Magic Kingdom's Christmas decorations and Hollywood Studios during Star Wars Life Day celebrations."
+    },
+    {
+      "videoId": "u89uEvtZay0",
+      "title": "#LIVE Disneyland Holiday Magic,  Rides, Characters, New Merch",
+      "channel": "Main Street Cowgirl",
+      "publishedAt": "2026-11-18T08:01:35Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/u89uEvtZay0/mqdefault.jpg",
+      "viewCount": 12790,
+      "url": "https://www.youtube.com/watch?v=u89uEvtZay0",
+      "summary": "Main Street Cowgirl live-streams Disneyland's holiday atmosphere, covering rides, character meet-and-greets, and new seasonal merchandise."
+    },
+    {
+      "videoId": "ZFlfnxCdl9o",
+      "title": "Disney Just Answered the Villains Land & Tropical Americas Rumors (Plus a 2027 Surprise?)",
+      "channel": "Probably at Disney",
+      "publishedAt": "2026-11-18T01:18:58Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/ZFlfnxCdl9o/mqdefault.jpg",
+      "viewCount": 9525,
+      "url": "https://www.youtube.com/watch?v=ZFlfnxCdl9o",
+      "summary": "Probably at Disney breaks down Disney's recent confirmation of Villains Land and Tropical Americas timelines, hinting at a potential 2027 announcement."
+    },
+    {
+      "videoId": "0FxLAFbvKcg",
+      "title": "Playing Disney Pin Trading Alphabet BINGO at Magic Kingdom 😲",
+      "channel": "Summer",
+      "publishedAt": "2026-11-18T02:11:05Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/0FxLAFbvKcg/mqdefault.jpg",
+      "viewCount": 8256,
+      "url": "https://www.youtube.com/watch?v=0FxLAFbvKcg",
+      "summary": "Summer documents a pin trading challenge at Magic Kingdom, playing alphabet BINGO with collected Disney pins."
+    },
+    {
+      "videoId": "c4_On3Oh8o4",
+      "title": "1000円以下！ディズニー絶品フード5選",
+      "channel": "Yoppy ディズニー攻略のプロ",
+      "publishedAt": "2026-11-18T09:30:35Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/c4_On3Oh8o4/mqdefault.jpg",
+      "viewCount": 5600,
+      "url": "https://www.youtube.com/watch?v=c4_On3Oh8o4",
+      "summary": "Yoppy highlights five top Disney food picks available for under 1000 yen at Tokyo Disney Resort."
+    },
+    {
+      "videoId": "ANruqqF1mPk",
+      "title": "디즈니까지 진출한 장원영",
+      "channel": "연예부 김버니",
+      "publishedAt": "2026-11-18T09:00:07Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/ANruqqF1mPk/mqdefault.jpg",
+      "viewCount": 3105,
+      "url": "https://www.youtube.com/watch?v=ANruqqF1mPk",
+      "summary": "Korean entertainment channel covers celebrity Jang Wonyoung's connection to Disney."
+    },
+    {
+      "videoId": "1ClB_ZNct54",
+      "title": "Así funciona el VIP TOUR de Disney World (¡Experiencia REAL!) | Dani Godinez",
+      "channel": "Dani Godinez",
+      "publishedAt": "2026-11-18T00:45:40Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/1ClB_ZNct54/mqdefault.jpg",
+      "viewCount": 2531,
+      "url": "https://www.youtube.com/watch?v=1ClB_ZNct54",
+      "summary": "Dani Godinez shares a firsthand account of Disney World's VIP tour experience, explaining how the service works."
+    },
+    {
+      "videoId": "v6wSoCwcD20",
+      "title": "DISNEY OUTLET SHOPPING! SO MUCH NEW Disney Parks Merchandise! BOTH Orlando Locations! November 17",
+      "channel": "Life With Liz",
+      "publishedAt": "2026-11-18T02:12:34Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/v6wSoCwcD20/mqdefault.jpg",
+      "viewCount": 1810,
+      "url": "https://www.youtube.com/watch?v=v6wSoCwcD20",
+      "summary": "Life With Liz explores both Orlando Disney outlet stores on November 17, showcasing new Disney Parks merchandise available at discounted prices."
+    }
+  ],
+  "updatedAt": "2026-11-18T11:46:55.841Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-11-18T11:46:55.841Z",
+    "tokens": {
+      "input": 11330,
+      "output": 5526,
+      "costUsd": 0.1169
+    }
+  }
+}
