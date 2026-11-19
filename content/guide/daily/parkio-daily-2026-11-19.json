@@ -1,0 +1,359 @@
+{
+  "title": "Parkio Daily for November 19, 2026",
+  "slug": "parkio-daily-2026-11-19",
+  "date": "2026-11-19",
+  "teaser": "Bountiful Valley Brews opens today at California Adventure; Disney Jollywood Nights selling fast with only six dates left.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Soarin'",
+        "parkSlug": "epcot",
+        "note": "Dinner hour tends to be quieter"
+      },
+      {
+        "name": "Space Mountain",
+        "parkSlug": "magic-kingdom",
+        "note": "First hour typically under 20 minutes"
+      },
+      {
+        "name": "Radiator Springs Racers",
+        "parkSlug": "california-adventure",
+        "note": "Early morning windows offer shortest waits"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [
+      {
+        "title": "Magic Kingdom fire reported Wednesday afternoon",
+        "body": "Emergency crews responded to a fire at Magic Kingdom on Wednesday afternoon. All attractions except one remained operational during the response, though Disney has not released details on the fire's location or current status.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/11/fire-reported-at-disneys-magic-kingdom-on-wednesday-afternoon-florida-officials-responding-jc1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "If visiting today, check park hours updates and ask cast members about affected areas. Smoke or closures may linger in one section, though most of the park likely remains normal."
+        }
+      },
+      {
+        "title": "Second fire incident at Disney World hotel this week",
+        "body": "A Disney World resort hotel experienced its second fire-related emergency in three days. No guest impact details have been shared, but emergency services responded to both incidents.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/11/second-fire-of-the-week-reported-at-disney-world-hotel-ad1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "If staying on property, verify your resort's status with the front desk. Smoke alarms and evacuations can disrupt sleep, so pack a small flashlight and know your exit routes."
+        }
+      }
+    ],
+    "bignews": [
+      {
+        "title": "Bountiful Valley Brews opens today at California Adventure",
+        "body": "The new outdoor bar officially opens today in California Adventure, serving craft beers, specialty drinks, and light bites including a pizza egg roll. Magic Key holders were able to preview the location during a soft opening yesterday.",
+        "parkSlug": "california-adventure",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/11/review-we-tried-the-brand-new-bountiful-valley-brews-outdoor-bar-at-disney-california-adventure/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Stop by early afternoon before dinner crowds arrive. The pizza egg roll is a limited-time item that may sell out on busy evenings, so grab it before 5pm if you want to try it."
+        }
+      },
+      {
+        "title": "Disney Jollywood Nights nearly sold out at Hollywood Studios",
+        "body": "Only six dates remain available for the after-hours Christmas event at Hollywood Studios. December 7 is already sold out, and remaining tickets are going fast for the holiday season.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/11/disney-jollywood-nights-at-disneys-hollywood-studios-sold-out-december-7-jc1/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "If you're considering Jollywood Nights, book within the next day or two. These events typically offer walk-on access to major attractions, making them worth the premium when regular park hours are crowded."
+        }
+      },
+      {
+        "title": "Space Mountain and Muppets Rock 'n' Roller Coaster win Thea Awards",
+        "body": "Disney captured four honors at the 2027 Thea Awards from the Themed Entertainment Association. Space Mountain and Rock 'n' Roller Coaster Starring The Muppets were recognized alongside Disney's Anzellan animatronics and the Disney Adventure cruise ship.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-wins-four-2027-thea-awards-including-space-mountain-and-muppets-rock-n-roller-coaster/"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "Award recognition tends to drive up interest in honored attractions. Space Mountain waits may climb 10-15 minutes above normal today, so rope-drop or evening hours usually offer better windows."
+        }
+      },
+      {
+        "title": "Disneyland After Dark 2027 lineup announced with new theme",
+        "body": "Four separately ticketed evening events are coming to Disneyland in 2027, including three returning fan favorites and one brand-new theme. The events offer themed entertainment, character experiences, and park access for all ages.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/dlr/dates-and-details-for-disneyland-after-dark-events/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "After Dark events typically sell out within weeks of announcement. If you're planning a 2027 visit, booking soon often locks in lower crowds and exclusive meet-and-greets not available during regular hours."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "EPCOT begins removing final World Celebration pavement lights",
+        "body": "Disney has started the final removal process for the in-ground lighting system installed in 2023 at World Celebration Gardens. The technology has experienced recurring issues since installation, and crews are now pulling out the remaining fixtures.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/11/epcot-pavement-lights-removal-begins-jc1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Construction activity near World Celebration may create noise and foot-traffic bottlenecks through mid-morning. Reroute through World Showcase for a quieter path to Test Track or Frozen."
+        }
+      },
+      {
+        "title": "Disney Springs bus restrictions remain in place for holidays",
+        "body": "Resort-hopping guests using Disney Springs buses will continue to face transportation restrictions during the holiday season. The policy limits which resorts can be accessed via Disney Springs, affecting those touring holiday decorations at multiple hotels.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/11/disney-springs-bus-restrictions-will-remain-in-place-for-the-holiday-season-at-disney-world-rl1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "If planning a resort decoration tour, confirm bus routes with Guest Relations before heading out. Monorail and Skyliner resorts tend to be easier to chain together than Disney Springs-served properties."
+        }
+      },
+      {
+        "title": "Temporary security screening construction continues at Disneyland",
+        "body": "Work is ongoing for a temporary security checkpoint in the Esplanade between Disneyland and California Adventure. The construction adjusts guest flow during the multi-month project.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/11/disneyland-esplanade-security-screening-area-construction-update-jc1/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Security lines tend to spike between 9:30-11am and 1-3pm. Arriving before 9am or after 7pm typically cuts screening time by 10-15 minutes during busy construction phases."
+        }
+      },
+      {
+        "title": "Pandora gingerbread holiday charm set arrives with Stitch ornament promo",
+        "body": "A three-charm Pandora holiday set themed to gingerbread is now available at Walt Disney World for $275. Guests making qualifying Pandora purchases also receive a complimentary Stitch ornament while supplies last.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/11/pandora-gingerbread-holiday-charm-set-and-stitch-ornament-arrive-at-walt-disney-world/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Limited-time ornament promos usually run out within 7-10 days at high-traffic stores. Visit the World of Disney or the Pandora store in Disney Springs before noon to maximize your chances."
+        }
+      },
+      {
+        "title": "Pastel character cardigans and Cinderella accessories debut",
+        "body": "New merchandise has arrived at Walt Disney World featuring pastel cardigans inspired by Cinderella, Marie, and Mickey, plus a Cinderella Loungefly mini backpack and matching ear headband. The Cinderella cardigan includes embroidered glass slipper designs.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/11/marie-and-mickey-inspired-sweaters-cinderella-ear-headband-and-more-arrive-at-walt-disney-world-resort/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Popular character apparel often sells out in common sizes by mid-week. Check Emporium or World of Disney early in your trip if you want a specific size or style."
+        }
+      },
+      {
+        "title": "Disney confirms Tropical Americas opens in 2027 at Animal Kingdom",
+        "body": "CEO Josh D'Amaro reiterated in the company's fiscal 2026 shareholder letter that the Tropical Americas land will open next year at Animal Kingdom. The timeline also covers upcoming projects at other global Disney parks and cruise expansions.",
+        "parkSlug": "animal-kingdom",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-shares-opening-timeline-for-parks-projects-reiterating-tropical-americas-in-2027/"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "New lands typically draw heavy crowds for 6-12 months post-opening. If visiting Animal Kingdom in late 2027, plan Tropical Americas for rope drop or the final two hours before close to avoid peak wait times."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Sweethearts Nite menu preview released for Disneyland 2027",
+        "body": "Disney has shared a sneak peek at the food menu for Sweethearts Nite, one of the 2027 Disneyland After Dark events. The Valentine's-themed evening includes exclusive treats and character experiences.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/11/18/sneak-peek-at-the-menu-for-an-exclusive-disney-after-hours-event/"
+        }
+      },
+      {
+        "title": "Disney and McDonald's partner on Home Alone Happy Meals",
+        "body": "McDonald's is launching adult Happy Meals featuring Disney socks and Home Alone tie-ins for Christmas 2026. The collaboration celebrates the film's 36th anniversary with themed collectibles.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-and-mcdonalds-are-cooking-up-cool-socks-home-alone-adult-happy-meals-for-christmas-2026/"
+        }
+      },
+      {
+        "title": "Disney Believe cruise ship sets late 2027 launch",
+        "body": "Disney Cruise Line's newest ship, the Disney Believe, will begin sailing in late 2027. The vessel will feature new venue concepts and entertainment experiences inspired by classic Disney stories.",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/dcl/meet-the-disney-believe-the-next-disney-cruise-line-ship/"
+        }
+      },
+      {
+        "title": "Best Buy launches Disney gift card deal with $10 bonus",
+        "body": "Best Buy is running a Black Friday flash sale offering a free $10 bonus when purchasing a $100 Disney gift card. The promotion joins similar deals at Target and Sam's Club ahead of the holiday shopping weekend.",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/early-black-friday-sale-buy-100-disney-gift-card-get-10-free/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "Anzellan droids debut with real-time AI interactions",
+        "body": "Walt Disney Imagineering has unveiled the Anzellans, AI-powered droidsmith animatronics that create unique, real-time conversations with guests. The characters represent the most advanced robotic technology Disney has built to date, using artificial intelligence to respond dynamically rather than following scripted loops.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/11/meet-the-anzellans-the-most-advanced-ai-powered-robotic-characters-created-by-walt-disney-imagineering-in-todays-daily-recap-for-11-18-2026/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "If the Anzellans are deployed at Galaxy's Edge, mornings before 11am tend to offer shorter queues for interactive experiences. These AI characters likely draw curious crowds, so early visits usually mean more one-on-one time."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "jti5tJgWOuI",
+      "title": "NEW Food at Disney Springs: Jock Lindsey's Holiday Bar, Gideon's & More! Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-11-16T16:36:10Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/jti5tJgWOuI/mqdefault.jpg",
+      "viewCount": 50843,
+      "url": "https://www.youtube.com/watch?v=jti5tJgWOuI",
+      "summary": "A tour of new holiday food offerings at Disney Springs, including seasonal items at Jock Lindsey's and Gideon's Bakehouse."
+    },
+    {
+      "videoId": "eISf2ioL7Bw",
+      "title": "🔴 Live: 4K Wednesday Christmas Stream at Disneyland! Believe in Holiday Magic Fireworks - 11/18/26",
+      "channel": "Koda Bear the Explorer ",
+      "publishedAt": "2026-11-19T07:58:51Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/eISf2ioL7Bw/mqdefault.jpg",
+      "viewCount": 42796,
+      "url": "https://www.youtube.com/watch?v=eISf2ioL7Bw",
+      "summary": "A live 4K stream from Disneyland showcasing holiday decorations and the Believe in Holiday Magic fireworks show."
+    },
+    {
+      "videoId": "jDJx2uxYqRU",
+      "title": "🔴 Live Epcot Wednesday for rides and Luminous at 9pm, story time at Walt Disney World 11/18/2026",
+      "channel": "RON ON THE GO",
+      "publishedAt": "2026-11-19T03:13:39Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/jDJx2uxYqRU/mqdefault.jpg",
+      "viewCount": 25895,
+      "url": "https://www.youtube.com/watch?v=jDJx2uxYqRU",
+      "summary": "Live coverage from EPCOT featuring attractions and the Luminous nighttime spectacular at 9pm."
+    },
+    {
+      "videoId": "tWN9-I_uvPU",
+      "title": "🔴 Live: Magic Kingdom Christmas Decor, Starlight & Fireworks | Disney World Live Stream 11.18.2026",
+      "channel": "Daily FastPass",
+      "publishedAt": "2026-11-19T02:10:55Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/tWN9-I_uvPU/mqdefault.jpg",
+      "viewCount": 14237,
+      "url": "https://www.youtube.com/watch?v=tWN9-I_uvPU",
+      "summary": "A live stream showcasing Magic Kingdom's holiday decorations and evening fireworks display."
+    },
+    {
+      "videoId": "UaZuuhYnu1E",
+      "title": "🔴 LIVE: EPIC Christmas Ambience at Magic Kingdom in 4K | Disney World Live Stream 2026",
+      "channel": "Fun to be Free",
+      "publishedAt": "2026-11-19T03:46:03Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/UaZuuhYnu1E/mqdefault.jpg",
+      "viewCount": 11563,
+      "url": "https://www.youtube.com/watch?v=UaZuuhYnu1E",
+      "summary": "A 4K live stream capturing the holiday atmosphere at Magic Kingdom during the Christmas season."
+    },
+    {
+      "videoId": "B8PCjByxRkM",
+      "title": "🔴LIVE🔴 Magic Kingdom for Parades, Rides and Fireworks | Walt Disney World 4K",
+      "channel": "Park Pass TV",
+      "publishedAt": "2026-11-19T04:31:13Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/B8PCjByxRkM/mqdefault.jpg",
+      "viewCount": 10343,
+      "url": "https://www.youtube.com/watch?v=B8PCjByxRkM",
+      "summary": "Live 4K coverage of parades, attractions, and fireworks at Magic Kingdom."
+    },
+    {
+      "videoId": "MrQGM4zd6OE",
+      "title": "🔴 LIVE: Rainy Christmas at Magic Kingdom! 🌧️🎄 | Disney World Holiday Magic",
+      "channel": "Wilsons in the World",
+      "publishedAt": "2026-11-19T02:16:15Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/MrQGM4zd6OE/mqdefault.jpg",
+      "viewCount": 5484,
+      "url": "https://www.youtube.com/watch?v=MrQGM4zd6OE",
+      "summary": "A live stream documenting a rainy day at Magic Kingdom during the holiday season."
+    },
+    {
+      "videoId": "-DRm5st_mY4",
+      "title": "🔴LIVE EPCOT Let's Find Christmas  Walt Disney World 11/18/2026",
+      "channel": "Jennifer Caruso",
+      "publishedAt": "2026-11-19T03:10:20Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/-DRm5st_mY4/mqdefault.jpg",
+      "viewCount": 4506,
+      "url": "https://www.youtube.com/watch?v=-DRm5st_mY4",
+      "summary": "A live exploration of Christmas decorations and holiday offerings throughout EPCOT."
+    },
+    {
+      "videoId": "AR-_-qIJa8A",
+      "title": "Zuid-Amerika in It's a Small World! - 16-05-2026 - Disneyland Parijs",
+      "channel": "Van Achtbaan tot Zebra",
+      "publishedAt": "2026-11-19T06:00:23Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/AR-_-qIJa8A/mqdefault.jpg",
+      "viewCount": 1291,
+      "url": "https://www.youtube.com/watch?v=AR-_-qIJa8A",
+      "summary": "Coverage of South American additions to It's a Small World at Disneyland Paris."
+    },
+    {
+      "videoId": "buThxREUJj0",
+      "title": "BLING BLING 💎 DISNEYLAND PARIJS OORTJES 🤩 #disneylandparijs  #disney #disneylandparis",
+      "channel": "Noëll van Dreven",
+      "publishedAt": "2026-11-19T06:00:38Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/buThxREUJj0/mqdefault.jpg",
+      "viewCount": 1138,
+      "url": "https://www.youtube.com/watch?v=buThxREUJj0",
+      "summary": "A look at new jewelry or earrings merchandise available at Disneyland Paris."
+    }
+  ],
+  "updatedAt": "2026-11-19T11:47:46.466Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-11-19T11:47:46.466Z",
+    "tokens": {
+      "input": 11392,
+      "output": 5891,
+      "costUsd": 0.1225
+    }
+  }
+}
