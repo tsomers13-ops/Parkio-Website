@@ -1,0 +1,327 @@
+{
+  "title": "Parkio Daily for November 21, 2026",
+  "slug": "parkio-daily-2026-11-21",
+  "date": "2026-11-21",
+  "teaser": "Pirates of the Caribbean closes most of 2027 at Magic Kingdom; EPCOT Festival of the Arts dates set for Jan 15–March 1; Christmas week prices hit new highs.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Big Thunder Mountain Railroad",
+        "parkSlug": "magic-kingdom",
+        "note": "Shorter waits before lunch hour"
+      },
+      {
+        "name": "Soarin'",
+        "parkSlug": "epcot",
+        "note": "Walk-on windows during dinner"
+      },
+      {
+        "name": "Expedition Everest",
+        "parkSlug": "animal-kingdom",
+        "note": "Evening safari combos save time"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [],
+    "bignews": [
+      {
+        "title": "Pirates of the Caribbean closing for year-long refurbishment in 2027",
+        "body": "Magic Kingdom will close Pirates of the Caribbean for most of 2027 for a major refurbishment adding new effects and what Disney calls new magic. The attraction will shut down in early 2027 and remain closed through most of the year.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-world-closing-pirates-of-the-caribbean-for-nearly-year-long-2027-refurbishment-and-new-magic/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Adventureland may see heavier traffic in early 2026 as guests try to ride before closure. Jungle Cruise and Haunted Mansion tend to absorb displaced crowds once work begins."
+        }
+      },
+      {
+        "title": "EPCOT Festival of the Arts returns January 15 through March 1",
+        "body": "The 2027 EPCOT International Festival of the Arts will run from January 15 through March 1, featuring visual artists, culinary offerings, and performing arts experiences. Disney Lorcana Trading Card Game returns as presenting sponsor.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/epcot-international-festival-of-the-arts-dates-and-offerings/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Early festival weeks in mid-January usually see lighter crowds than February school breaks. Weekdays before Presidents Day tend to offer shorter lines and easier access to artist meet-and-greets."
+        }
+      },
+      {
+        "title": "Disney World raises Christmas week ticket prices to new peak levels",
+        "body": "Single-day tickets for late December 2026 have climbed to new highs, with Disney also introducing a discounted three-park option for guests willing to skip Magic Kingdom during the holiday rush.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-world-raises-christmas-2026-ticket-prices-debuts-new-3-park-deal/"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "Christmas week tends to push Magic Kingdom to capacity by mid-morning. EPCOT and Animal Kingdom often remain more manageable for walk-ups and Lightning Lane availability through early afternoon."
+        }
+      },
+      {
+        "title": "Victoria and Albert's ranks top 10 in U.S., Jiko earns AAA Four Diamond",
+        "body": "Victoria and Albert's at the Grand Floridian has been named one of the top ten restaurants in the United States, while Jiko at Animal Kingdom Lodge has regained its AAA Four Diamond designation alongside other recent Michelin recognitions.",
+        "parkSlug": "animal-kingdom",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/flagship-disney-world-restaurant-ranks-top-10-in-us-jiko-regains-aaa-four-diamond-designation/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Award announcements often drive reservation surges within 48 hours. Check for cancellations during breakfast hours when guests adjust travel plans."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "Tokyo Disneyland closes it's a small world in 2027",
+        "body": "Tokyo Disneyland has scheduled a 2027 refurbishment for its version of it's a small world, adding to a growing closure list that also includes Tower of Terror at Tokyo DisneySea reopening in May.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/11/disney-its-a-small-world-ride-closure-cj1/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "International park closures rarely affect U.S. operations, but Fantasyland at Disneyland tends to see spillover interest when Tokyo updates make headlines. Early mornings usually avoid the bump."
+        }
+      },
+      {
+        "title": "Disneyland security pavilion nears completion in Esplanade",
+        "body": "The eastern half of the new security checkpoint in the Disneyland Resort Esplanade has opened, with fresh pavement and completed framework now visible after months of construction walls.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/11/half-of-new-security-area-finished-in-disneyland-resort-esplanade/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "New screening lanes often process guests faster during the break-in period as crowds adjust. Arriving before 8:30am on rope-drop days usually means minimal queue buildup."
+        }
+      },
+      {
+        "title": "Joe Rohde critiques prop changes in Expedition Everest queue",
+        "body": "Imagineer Joe Rohde has publicly commented on recent alterations to props in the Expedition Everest queue at Animal Kingdom, calling certain changes problematic in terms of storytelling and authenticity.",
+        "parkSlug": "animal-kingdom",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/11/joe-rohde-calls-out-problematic-prop-changes-in-expedition-everest-queue-in-todays-daily-recap-for-11-20-2026/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Queue details spark guest interest when designers comment publicly. Everest standby waits tend to climb mid-morning; rope-drop or evening rides usually offer shorter lines and better queue viewing."
+        }
+      },
+      {
+        "title": "Hexed merchandise launches ahead of November 25 theatrical release",
+        "body": "Disney has released a full line of Hexed-branded products including hair color kits, nail polish, Funko Pop figures, and apparel ahead of the animated film's November 25 debut in theaters.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/11/disneys-hexed-hair-color-kits-nail-polish-funko-pop-and-more-now-available/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Film-tie merchandise often sells out at flagship stores within the first weekend. World of Disney at Disney Springs and Emporium on Main Street usually restock mornings, but limited-edition items may not return."
+        }
+      },
+      {
+        "title": "Thanksgiving week crowds expected to reach historic levels",
+        "body": "Travel forecasts, park reservation data, and Lightning Lane sellouts all point to Thanksgiving 2026 becoming one of the busiest holiday weeks in Disney World history, with Main Street gridlock likely throughout the period.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/11/thanksgiving-crowds-expected-to-be-massive-this-week-at-disney-world-rl1/"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "Thanksgiving week historically sees capacity limits by 10am at Magic Kingdom. EPCOT and Animal Kingdom tend to remain more accessible, with better Lightning Lane inventory through early afternoon."
+        }
+      },
+      {
+        "title": "Mickey's Very Merry Christmas Party washed out by storms, guests receive gift cards",
+        "body": "The November 19 edition of Mickey's Very Merry Christmas Party was heavily impacted by weather, with no castle shows, one parade, and widespread disappointment prompting Disney to issue seventy-five dollar gift cards to attendees.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/11/mickeys-very-merry-christmas-party-washed-out-by-central-florida-storms-as-disney-offers-guests-75-gift-card-rl1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "November Florida storms tend to roll through between 7–9pm. Guests at evening events may want to monitor radar apps and plan indoor experiences or early exits when storms approach."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Hallmark holiday movie filmed at Walt Disney World premieres",
+        "body": "Hallmark's first-ever Walt Disney World-set Christmas film, Holiday Ever After: A Disney World Wish Come True, features cinematic celebrations shot across the resort during the holiday season.",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/disney-experiences/cinematic-celebrations-for-holiday-ever-after-a-disney-world-wish-come-true/"
+        }
+      },
+      {
+        "title": "Disney and Formula 1 extend partnership into 2026 season",
+        "body": "Mickey and Friends return trackside for the 2026 Formula 1 race season as part of the multi-year Fuel the Magic partnership, building on last year's Las Vegas Grand Prix debut.",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/products/disney-and-formula-1-2026-race-season/"
+        }
+      },
+      {
+        "title": "Droid Factory returns to Star Wars: Galaxy's Edge",
+        "body": "The classic build-your-own droid experience has reopened at Star Wars: Galaxy's Edge in both Hollywood Studios and Disneyland, allowing guests to assemble custom astromech units once again.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/11/joe-rohde-calls-out-problematic-prop-changes-in-expedition-everest-queue-in-todays-daily-recap-for-11-20-2026/"
+        }
+      },
+      {
+        "title": "Saratoga Springs pool refurbishment added to 2027 calendar",
+        "body": "Disney has scheduled a pool project at Saratoga Springs Resort for 2027, continuing construction work that has been underway at the property throughout this year.",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/new-refurbishments-at-disneys-saratoga-springs-resort-with-more-likely-to-come-in-2027-or-2028/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "ShopRite offering twenty dollars back on hundred-dollar Disney gift card purchases",
+        "body": "ShopRite has launched a Black Friday promotion where customers who spend one hundred dollars on Disney gift cards receive twenty dollars back, joining other retailers offering pre-holiday discounts on park admission funding.",
+        "ctaLabel": "Plan your savings",
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Gift card promotions typically sell out within 72 hours of announcement. Stacking discounts with credit card rewards can often reduce effective ticket costs by fifteen to twenty percent for future visits."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "gNBwdv4cKvo",
+      "title": "Disney's Animal Kingdom 2026 | Christmas Food, Pandora At NIGHT & The BEST Safari: Walt Disney World",
+      "channel": "Paging Mr. Morrow",
+      "publishedAt": "2026-11-19T21:24:21Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/gNBwdv4cKvo/mqdefault.jpg",
+      "viewCount": 88483,
+      "url": "https://www.youtube.com/watch?v=gNBwdv4cKvo",
+      "summary": "Paging Mr. Morrow tours Animal Kingdom's Christmas offerings, nighttime Pandora experiences, and safari highlights during the 2026 holiday season."
+    },
+    {
+      "videoId": "Q21i6HXtdoU",
+      "title": "🔴 Live Mickey's Very Merry Christmas Party 2026 at Magic Kingdom - Walt Disney World 11/20/2026",
+      "channel": "RON ON THE GO",
+      "publishedAt": "2026-11-21T05:16:28Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Q21i6HXtdoU/mqdefault.jpg",
+      "viewCount": 64199,
+      "url": "https://www.youtube.com/watch?v=Q21i6HXtdoU",
+      "summary": "RON ON THE GO livestreams the November 20 edition of Mickey's Very Merry Christmas Party from Magic Kingdom."
+    },
+    {
+      "videoId": "jti5tJgWOuI",
+      "title": "NEW Food at Disney Springs: Jock Lindsey's Holiday Bar, Gideon's & More! Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-11-16T16:36:10Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/jti5tJgWOuI/mqdefault.jpg",
+      "viewCount": 54740,
+      "url": "https://www.youtube.com/watch?v=jti5tJgWOuI",
+      "summary": "WrightDownMainStreet samples new holiday food offerings at Disney Springs locations including Jock Lindsey's and Gideon's."
+    },
+    {
+      "videoId": "JvGVsGGbSEs",
+      "title": "🔴 Live: 4K Fantasmic Friday Stream at Disneyland! Fireworks & World of Color - 11/20/26",
+      "channel": "Koda Bear the Explorer ",
+      "publishedAt": "2026-11-21T07:54:58Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/JvGVsGGbSEs/mqdefault.jpg",
+      "viewCount": 36954,
+      "url": "https://www.youtube.com/watch?v=JvGVsGGbSEs",
+      "summary": "Koda Bear the Explorer livestreams Disneyland's Fantasmic, fireworks, and World of Color shows in 4K on November 20."
+    },
+    {
+      "videoId": "Jt1zIG6G3-4",
+      "title": "Every NEW Food in Disney's Animal Kingdom- Christmas Food, Nomad Lounge, Flame Tree | Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-11-19T17:00:01Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Jt1zIG6G3-4/mqdefault.jpg",
+      "viewCount": 34542,
+      "url": "https://www.youtube.com/watch?v=Jt1zIG6G3-4",
+      "summary": "WrightDownMainStreet reviews every new holiday food item available at Animal Kingdom, including options at Nomad Lounge and Flame Tree Barbecue."
+    },
+    {
+      "videoId": "TY9K4V9mPAc",
+      "title": "🔴 LIVE: Vintage Christmas in Hollywood — Walking Tour 4K | YOU Pick! Disney World 2026",
+      "channel": "Fun to be Free",
+      "publishedAt": "2026-11-21T03:58:36Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/TY9K4V9mPAc/mqdefault.jpg",
+      "viewCount": 10131,
+      "url": "https://www.youtube.com/watch?v=TY9K4V9mPAc",
+      "summary": "Fun to be Free streams an interactive 4K walking tour through Hollywood Studios' vintage Christmas decorations."
+    },
+    {
+      "videoId": "bFlcsDQwHQk",
+      "title": "🔴Live: Night at Hollywood Studios & EPCOT! - Rides & Food & Wine Fun - Disney World Livestream",
+      "channel": "GooToYou!",
+      "publishedAt": "2026-11-21T02:48:43Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/bFlcsDQwHQk/mqdefault.jpg",
+      "viewCount": 9989,
+      "url": "https://www.youtube.com/watch?v=bFlcsDQwHQk",
+      "summary": "GooToYou livestreams an evening park visit covering attractions and food experiences at Hollywood Studios and EPCOT."
+    },
+    {
+      "videoId": "85Sm5n5gBg0",
+      "title": "🔴[LIVE] DISNEY CHRISTMAS WISHES NIGHT : La soiréepass annuel Noël à Disneyland Paris 🥰",
+      "channel": "Theme Park Travellers",
+      "publishedAt": "2026-11-21T01:32:14Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/85Sm5n5gBg0/mqdefault.jpg",
+      "viewCount": 7744,
+      "url": "https://www.youtube.com/watch?v=85Sm5n5gBg0",
+      "summary": "Theme Park Travellers streams Disneyland Paris's annual passholder Christmas event from the resort."
+    },
+    {
+      "videoId": "IYnJYR-y71E",
+      "title": "count me in btw 🥨🎄🍿🏰 #disney #disneyland #dandy @⋆｡˚ ౨ৎ LEAN ౨ৎ ⋆｡˚ Lola Winters",
+      "channel": "Dandy Worldwide",
+      "publishedAt": "2026-11-21T03:10:50Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/IYnJYR-y71E/mqdefault.jpg",
+      "viewCount": 4391,
+      "url": "https://www.youtube.com/watch?v=IYnJYR-y71E",
+      "summary": "Dandy Worldwide shares a quick Disneyland moment featuring holiday snacks and castle views."
+    },
+    {
+      "videoId": "5HAQbNrf6DE",
+      "title": "Why Are Beach Balls Flying at a Frozen Show? ☃️ Shanghai Disneyland #shorts",
+      "channel": "Places & Moments with Aigerim",
+      "publishedAt": "2026-11-21T02:45:30Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/5HAQbNrf6DE/mqdefault.jpg",
+      "viewCount": 3079,
+      "url": "https://www.youtube.com/watch?v=5HAQbNrf6DE",
+      "summary": "Places & Moments with Aigerim captures an unexpected beach ball moment during a Frozen show at Shanghai Disneyland."
+    }
+  ],
+  "updatedAt": "2026-11-21T11:47:28.481Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-11-21T11:47:28.481Z",
+    "tokens": {
+      "input": 11644,
+      "output": 5423,
+      "costUsd": 0.1163
+    }
+  }
+}
