@@ -103,6 +103,29 @@ import { fileURLToPath } from "node:url";
 
 import { isAllowedPath, validateCandidate } from "./validatePublishCandidate.mjs";
 
+// Repo-owner identity, as recorded on already-merged commits on main
+// (e.g. GitHub squash/merge of a reviewed PR). Name and email must both
+// match exactly; a spoofed name with a different email is rejected.
+export const REPO_OWNER_AUTHOR_NAME = "tsomers13-ops";
+export const REPO_OWNER_AUTHOR_EMAIL = "tsomers13@gmail.com";
+
+/**
+ * True when a history commit is authored by the repo owner and touches
+ * ONLY Daily allowlist paths (guide daily JSON and/or social markdown).
+ * Used solely by planHistoryOverlay() for already-walked history; it
+ * does not loosen validateCandidate() / the no-approval publish path,
+ * which still requires the Daily bot.
+ */
+export function isOwnerAllowlistOnlyCommit({ authorName, authorEmail, changedPaths }) {
+  return (
+    authorName === REPO_OWNER_AUTHOR_NAME &&
+    authorEmail === REPO_OWNER_AUTHOR_EMAIL &&
+    Array.isArray(changedPaths) &&
+    changedPaths.length > 0 &&
+    changedPaths.every(isAllowedPath)
+  );
+}
+
 /**
  * Pure function over pre-gathered git facts — testable without a real
  * repo, same split as validateCandidate() in validatePublishCandidate.mjs.
@@ -146,12 +169,21 @@ export function planHistoryOverlay(commits) {
       changedPaths: commit.changedPaths,
     });
     if (!result.ok) {
-      return {
-        ok: false,
-        problems: [
-          `commit ${commit.sha} touches a Daily-shaped path but fails validation: ${result.problems.join("; ")}`,
-        ],
-      };
+      // Exception limited to this history walk: an already-merged commit
+      // on the candidate's first-parent chain, authored by the verified
+      // repo-owner identity, may overlay Daily content if and only if
+      // every changed path is on the Daily allowlist. Owner commits that
+      // mix application (or any other) files with content still fail
+      // closed, as do unknown authors. validateCandidate() itself is
+      // unchanged — new no-approval publishes still require the bot.
+      if (!isOwnerAllowlistOnlyCommit(commit)) {
+        return {
+          ok: false,
+          problems: [
+            `commit ${commit.sha} touches a Daily-shaped path but fails validation: ${result.problems.join("; ")}`,
+          ],
+        };
+      }
     }
 
     for (const event of commit.fileEvents) {
