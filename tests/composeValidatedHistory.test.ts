@@ -6,7 +6,10 @@ import path from "node:path";
 
 import {
   commitsBetween,
+  isOwnerAllowlistOnlyCommit,
   planHistoryOverlay,
+  REPO_OWNER_AUTHOR_EMAIL,
+  REPO_OWNER_AUTHOR_NAME,
   resolvePublishPlan,
 } from "@/scripts/parkio-daily/composeValidatedHistory.mjs";
 
@@ -42,10 +45,16 @@ const BOT_ENV = {
   GIT_COMMITTER_EMAIL: "parkio-daily-bot@users.noreply.github.com",
 };
 const HUMAN_ENV = {
-  GIT_AUTHOR_NAME: "tsomers13-ops",
-  GIT_AUTHOR_EMAIL: "tsomers13@gmail.com",
-  GIT_COMMITTER_NAME: "tsomers13-ops",
-  GIT_COMMITTER_EMAIL: "tsomers13@gmail.com",
+  GIT_AUTHOR_NAME: REPO_OWNER_AUTHOR_NAME,
+  GIT_AUTHOR_EMAIL: REPO_OWNER_AUTHOR_EMAIL,
+  GIT_COMMITTER_NAME: REPO_OWNER_AUTHOR_NAME,
+  GIT_COMMITTER_EMAIL: REPO_OWNER_AUTHOR_EMAIL,
+};
+const NON_OWNER_ENV = {
+  GIT_AUTHOR_NAME: "Tom Somers",
+  GIT_AUTHOR_EMAIL: "tsomers@outlook.com",
+  GIT_COMMITTER_NAME: "Tom Somers",
+  GIT_COMMITTER_EMAIL: "tsomers@outlook.com",
 };
 
 function dailyPath(date: string) {
@@ -300,7 +309,7 @@ describe("composeValidatedHistory — real-git regressions", () => {
     expect(result.problems.join(" ")).toContain("fails validation");
   });
 
-  it("a human deletion of Daily content fails closed", () => {
+  it("a non-owner human deletion of Daily content fails closed", () => {
     const baseline = commit("app.txt", "v1\n", "Initial app baseline", HUMAN_ENV);
     const dayPath = dailyPath("2026-10-21");
     commit(dayPath, "{}\n", "Parkio Daily — 2026-10-21", BOT_ENV);
@@ -309,6 +318,44 @@ describe("composeValidatedHistory — real-git regressions", () => {
     execFileSync("git", ["add", "."], { cwd: repo });
     execFileSync("git", ["commit", "-m", "Revert accidental Daily publish"], {
       cwd: repo,
+      env: { ...process.env, ...NON_OWNER_ENV },
+    });
+    const candidate = headSha();
+
+    const result = withRepoCwd(() => resolvePublishPlan(baseline, candidate));
+
+    expect(result.ok).toBe(false);
+    if (result.ok) return;
+    expect(result.problems.join(" ")).toMatch(/author mismatch/);
+  });
+
+  it("accepts an already-merged repo-owner commit that touches only Daily allowlist files", () => {
+    const baseline = commit("app.txt", "v1\n", "Initial app baseline", HUMAN_ENV);
+    commit(dailyPath("2026-11-15"), '{"title":"original"}\n', "Parkio Daily — 2026-11-15", BOT_ENV);
+    const candidate = commit(
+      dailyPath("2026-11-15"),
+      '{"title":"corrected"}\n',
+      "Correct Nov 15 Parkio Daily date and show guidance",
+      HUMAN_ENV,
+    );
+
+    const result = withRepoCwd(() => resolvePublishPlan(baseline, candidate));
+
+    expect(result.ok).toBe(true);
+    if (!result.ok) return;
+    expect(result.overlay).toEqual([
+      { op: "apply", path: dailyPath("2026-11-15"), sha: candidate },
+    ]);
+  });
+
+  it("rejects a repo-owner commit that mixes application files with Daily content", () => {
+    const baseline = commit("app.txt", "v1\n", "Initial app baseline", HUMAN_ENV);
+    fs.mkdirSync(path.join(repo, path.dirname(dailyPath("2026-11-16"))), { recursive: true });
+    fs.writeFileSync(path.join(repo, dailyPath("2026-11-16")), "{}\n");
+    fs.writeFileSync(path.join(repo, "app.txt"), "v1-mixed\n");
+    execFileSync("git", ["add", "."], { cwd: repo });
+    execFileSync("git", ["commit", "-m", "Owner mixed app and Daily content"], {
+      cwd: repo,
       env: { ...process.env, ...HUMAN_ENV },
     });
     const candidate = headSha();
@@ -316,6 +363,25 @@ describe("composeValidatedHistory — real-git regressions", () => {
     const result = withRepoCwd(() => resolvePublishPlan(baseline, candidate));
 
     expect(result.ok).toBe(false);
+    if (result.ok) return;
+    expect(result.problems.join(" ")).toContain("fails validation");
+    expect(result.problems.join(" ")).toContain("app.txt");
+  });
+
+  it("rejects a non-owner author even when every changed path is on the Daily allowlist", () => {
+    const baseline = commit("app.txt", "v1\n", "Initial app baseline", HUMAN_ENV);
+    const candidate = commit(
+      dailyPath("2026-11-17"),
+      "{}\n",
+      "Non-owner Daily edit",
+      NON_OWNER_ENV,
+    );
+
+    const result = withRepoCwd(() => resolvePublishPlan(baseline, candidate));
+
+    expect(result.ok).toBe(false);
+    if (result.ok) return;
+    expect(result.problems.join(" ")).toMatch(/author mismatch/);
   });
 
   it("a validated bot deletion agrees with the candidate's final tree and cannot resurrect the removed content", () => {
@@ -394,5 +460,130 @@ describe("planHistoryOverlay — pure unit coverage", () => {
       },
     ]);
     expect(result).toEqual({ ok: true, overlay: [] });
+  });
+
+  it("accepts a repo-owner commit whose changed paths are all on the Daily allowlist", () => {
+    const result = planHistoryOverlay([
+      {
+        sha: "df4efd35",
+        authorName: REPO_OWNER_AUTHOR_NAME,
+        authorEmail: REPO_OWNER_AUTHOR_EMAIL,
+        changedPaths: [
+          "content/guide/daily/parkio-daily-2026-11-15.json",
+          "content/guide/daily/parkio-daily-2026-11-16.json",
+        ],
+        fileEvents: [
+          { type: "apply", path: "content/guide/daily/parkio-daily-2026-11-15.json" },
+          { type: "apply", path: "content/guide/daily/parkio-daily-2026-11-16.json" },
+        ],
+      },
+    ]);
+    expect(result.ok).toBe(true);
+    if (!result.ok) return;
+    expect(result.overlay.map((o) => o.path).sort()).toEqual([
+      "content/guide/daily/parkio-daily-2026-11-15.json",
+      "content/guide/daily/parkio-daily-2026-11-16.json",
+    ]);
+    expect(result.overlay.every((o) => o.op === "apply")).toBe(true);
+  });
+
+  it("rejects a repo-owner commit that mixes an application path with Daily content", () => {
+    const result = planHistoryOverlay([
+      {
+        sha: "mixed0001",
+        authorName: REPO_OWNER_AUTHOR_NAME,
+        authorEmail: REPO_OWNER_AUTHOR_EMAIL,
+        changedPaths: [
+          "content/guide/daily/parkio-daily-2026-11-15.json",
+          "lib/ratingsWriteHost.ts",
+        ],
+        fileEvents: [
+          { type: "apply", path: "content/guide/daily/parkio-daily-2026-11-15.json" },
+          { type: "apply", path: "lib/ratingsWriteHost.ts" },
+        ],
+      },
+    ]);
+    expect(result.ok).toBe(false);
+    if (!result.ok) {
+      expect(result.problems.join(" ")).toContain("lib/ratingsWriteHost.ts");
+    }
+  });
+
+  it("rejects a non-owner author even with allowlist-only paths", () => {
+    const result = planHistoryOverlay([
+      {
+        sha: "notowner1",
+        authorName: "Tom Somers",
+        authorEmail: "tsomers@outlook.com",
+        changedPaths: ["content/guide/daily/parkio-daily-2026-11-15.json"],
+        fileEvents: [
+          { type: "apply", path: "content/guide/daily/parkio-daily-2026-11-15.json" },
+        ],
+      },
+    ]);
+    expect(result.ok).toBe(false);
+    if (!result.ok) {
+      expect(result.problems.join(" ")).toMatch(/author mismatch/);
+    }
+  });
+
+  it("still accepts a Daily bot commit after the owner-allowlist exception is in place", () => {
+    const result = planHistoryOverlay([
+      {
+        sha: "bot000001",
+        authorName: "parkio-daily-bot",
+        authorEmail: "parkio-daily-bot@users.noreply.github.com",
+        changedPaths: [
+          "content/guide/daily/parkio-daily-2026-11-21.json",
+          "content/social/parkio-daily-2026-11-21.md",
+        ],
+        fileEvents: [
+          { type: "apply", path: "content/guide/daily/parkio-daily-2026-11-21.json" },
+          { type: "apply", path: "content/social/parkio-daily-2026-11-21.md" },
+        ],
+      },
+    ]);
+    expect(result.ok).toBe(true);
+    if (!result.ok) return;
+    expect(result.overlay).toHaveLength(2);
+  });
+
+  it("isOwnerAllowlistOnlyCommit requires both the owner identity and allowlist-only paths", () => {
+    const allowlisted = ["content/guide/daily/parkio-daily-2026-11-15.json"];
+    expect(
+      isOwnerAllowlistOnlyCommit({
+        authorName: REPO_OWNER_AUTHOR_NAME,
+        authorEmail: REPO_OWNER_AUTHOR_EMAIL,
+        changedPaths: allowlisted,
+      }),
+    ).toBe(true);
+    expect(
+      isOwnerAllowlistOnlyCommit({
+        authorName: REPO_OWNER_AUTHOR_NAME,
+        authorEmail: "attacker@example.com",
+        changedPaths: allowlisted,
+      }),
+    ).toBe(false);
+    expect(
+      isOwnerAllowlistOnlyCommit({
+        authorName: "parkio-daily-bot",
+        authorEmail: REPO_OWNER_AUTHOR_EMAIL,
+        changedPaths: allowlisted,
+      }),
+    ).toBe(false);
+    expect(
+      isOwnerAllowlistOnlyCommit({
+        authorName: REPO_OWNER_AUTHOR_NAME,
+        authorEmail: REPO_OWNER_AUTHOR_EMAIL,
+        changedPaths: [...allowlisted, "package.json"],
+      }),
+    ).toBe(false);
+    expect(
+      isOwnerAllowlistOnlyCommit({
+        authorName: REPO_OWNER_AUTHOR_NAME,
+        authorEmail: REPO_OWNER_AUTHOR_EMAIL,
+        changedPaths: [],
+      }),
+    ).toBe(false);
   });
 });
