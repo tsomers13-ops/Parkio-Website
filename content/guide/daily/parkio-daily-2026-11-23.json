@@ -1,0 +1,362 @@
+{
+  "title": "Parkio Daily for November 23, 2026",
+  "slug": "parkio-daily-2026-11-23",
+  "date": "2026-11-23",
+  "teaser": "Bright blue pavement now rolling out in Tomorrowland; EPCOT's Festival of the Arts dates set for Jan 15–March 1.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Avatar Flight of Passage",
+        "parkSlug": "animal-kingdom",
+        "note": "Evening hours typically bring shorter waits"
+      },
+      {
+        "name": "Rock 'n' Roller Coaster",
+        "parkSlug": "hollywood-studios",
+        "note": "Muppet overlay remains popular"
+      },
+      {
+        "name": "Test Track",
+        "parkSlug": "epcot",
+        "note": "Dinner hour often sees walk-on windows"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [
+      {
+        "title": "Flames spotted on Tom Sawyer Island during Fantasmic finale",
+        "body": "Fire erupted on Tom Sawyer Island at Disneyland during Saturday night's Fantasmic performance, echoing the 2023 dragon fire incident. Guests reported seeing flames during the show's conclusion along the Rivers of America.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/11/fire-erupts-on-tom-sawyer-island-during-disneyland-performance-of-fantasmic-rl1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Fantasmic may face temporary adjustments or cancellations while crews assess Saturday's fire. Check the app for showtimes before claiming a viewing spot along the Rivers of America today."
+        }
+      }
+    ],
+    "bignews": [
+      {
+        "title": "2027 EPCOT Festival of the Arts confirmed for January 15 through March 1",
+        "body": "The festival will return with visual, culinary, and performing arts programming presented by Disney Lorcana. New and returning artists have been announced for the 2027 run.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/wdw/epcot-international-festival-of-the-arts-dates-and-offerings/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Early festival weekends in mid-January typically see lighter crowds than February and March. Book dining reservations 60 days out to lock in prime Festival of the Arts experiences."
+        }
+      },
+      {
+        "title": "Magic Kingdom adds bright blue pavement in Tomorrowland",
+        "body": "New blue pavement has appeared in Tomorrowland with no official announcement from Disney. The installation marks the latest visual refresh in the land.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/11/disney-world-installs-bright-blue-pavement-in-tomorrowland-at-the-magic-kingdom-jc1/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "The new pavement is visible now near Space Mountain and Carousel of Progress. Quick photo ops are easiest during rope drop or late evening when foot traffic slows."
+        }
+      },
+      {
+        "title": "Lightning Lane Premier Pass sells out for extended stretch at record pricing",
+        "body": "The top-tier pass has sold out at all four Walt Disney World parks for nearly a week ahead of Thanksgiving, with Magic Kingdom pricing hitting new highs. Single Pass is also unavailable.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/lightning-lane-premier-pass-is-selling-out-at-new-record-high-prices-but-is-it-worth-it/"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "Sold-out Premier Pass signals heavier-than-usual attendance through the holiday week. Rope-drop strategy and midday breaks become critical when standby lines stretch into the afternoon."
+        }
+      },
+      {
+        "title": "Cameroon red tarantula now on view at Gorilla Falls Exploration Trail",
+        "body": "Animal Kingdom has added a Cameroon red tarantula to the trail in a glass-fronted enclosure that previously housed an aquarium. The spider joins other animals along the walkthrough habitat.",
+        "parkSlug": "animal-kingdom",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/11/red-tarantula-moves-into-gorilla-falls-exploration-trail-at-disneys-animal-kingdom/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "The tarantula habitat sits midway along Gorilla Falls. Early-morning safari guests can loop back through the trail with minimal waits before lunch crowds arrive."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "Build-your-own droid experience returns to Disneyland's Droid Depot",
+        "body": "The classic Droid Factory station is back at Star Wars: Galaxy's Edge, allowing guests to assemble small plastic droid figures with lights and sounds. This version differs from the full-size R-unit and BB-unit builds.",
+        "parkSlug": "california-adventure",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/11/classic-star-wars-build-your-own-droid-factory-experience-returns-to-disneyland/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Droid Depot lines tend to spike mid-morning once Galaxy's Edge fills. Arrive within the first 90 minutes of park opening or after 7pm for shorter build waits."
+        }
+      },
+      {
+        "title": "The Beak and Barrel walk-up waitlist reinstated at Magic Kingdom",
+        "body": "The popular Adventureland lounge now accepts walk-up waitlist requests again after a period of advance reservations only. Guests can join the waitlist through the My Disney Experience app.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/11/22/popular-magic-kingdom-lounge-finally-has-a-walk-up-waitlist-again/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Walk-up availability typically opens up between 2–4pm and again after 8pm. Check the app while riding nearby attractions to snag a table without camping the entrance."
+        }
+      },
+      {
+        "title": "EPCOT's Mexico Pavilion restaurant menus updated",
+        "body": "Menu changes have rolled out at dining locations inside the Mexico Pavilion this week. Specific items and pricing adjustments were not detailed.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/11/22/theres-been-a-restaurant-menu-shake-up-in-epcots-mexico-pavilion/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "San Angel Inn and La Cantina often update menus in tandem. Mobile order at La Cantina during World Showcase lunch rush to skip the counter line."
+        }
+      },
+      {
+        "title": "New Star Wars Black Series figures arrive at Hollywood Studios",
+        "body": "Ahsoka Tano and ARC Trooper Jesse two-pack from the Clones of the Republic collection, plus a Life Day Chewbacca figure, are now in stock at merchandise locations. The Ahsoka set retails for $54.99.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/11/black-series-ahsoka-and-arc-trooper-jesse-plus-life-day-chewbacca-figures-arrive-at-disneys-hollywood-studios/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Limited-edition Star Wars figures often sell out by mid-afternoon at Tatooine Traders and Launch Bay. Swing by before 11am or use mobile checkout if the queue backs up."
+        }
+      },
+      {
+        "title": "Mickey-shaped Lion King Rice Krispies treats debut at Downtown Disney",
+        "body": "Three-pack crisped rice cereal treats featuring Mickey ears and Lion King theming are now available at Disneyland Resort. The treats combine Disney character shapes with franchise branding.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/11/mickey-shaped-lion-king-themed-crisped-rice-cereal-treats-now-available-at-disneyland-resort/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Downtown Disney snack stands restock treats in the morning and late afternoon. Grab these before 10am or after 8pm to avoid midday sellouts."
+        }
+      },
+      {
+        "title": "EPCOT installs temporary canopy in CommuniCore Plaza",
+        "body": "A new canopy structure has appeared in the World Celebration neighborhood's CommuniCore Plaza area. Disney has not commented on the addition, which appears to be temporary.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/11/disney-world-installs-temporary-canopy-in-communicore-plaza-at-epcot-jc1/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "CommuniCore Plaza canopies often signal upcoming Festival of the Holidays programming or character meet setups. Check the app for schedule updates as the season ramps up this week."
+        }
+      },
+      {
+        "title": "Disney patents new animatronic skin for more lifelike figures",
+        "body": "A recently granted patent describes elastomeric coupling methods that allow animatronic skin to move more naturally than traditional molded-and-attached techniques. The technology could appear in future Audio-Animatronics.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/11/disney-patents-animatronic-skin-to-make-figures-more-lifelike/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Imagineering advances like this often preview in new attractions years ahead. Keep an eye on upcoming ride announcements for potential first applications of lifelike skin tech."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Teacup Confessions celebrity interview series launches",
+        "body": "Disney Parks is releasing a new video series featuring celebrity interviews conducted while riding the Mad Tea Party spinning teacups. The format combines attraction footage with Q&A segments.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/disney-experiences/teacup-confessions-celebrities-take-a-spin-at-disney-parks/"
+        }
+      },
+      {
+        "title": "The Wonderful World of Disney: Holiday Spectacular airs November 30",
+        "body": "ABC's annual Disney holiday special returns with musical performances and park footage from Walt Disney World. The broadcast airs Monday, November 30.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/disney-experiences/disney-holiday-special-returns-with-star-studded-music-lineup-and-more/"
+        }
+      },
+      {
+        "title": "Hallmark's Holiday Ever After filmed at Walt Disney World",
+        "body": "The first Hallmark Christmas movie set at Disney World will air this season. A 15-year-old Make-A-Wish recipient appeared in the film as part of her wish.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/disney-experiences/cinematic-celebrations-for-holiday-ever-after-a-disney-world-wish-come-true/"
+        }
+      },
+      {
+        "title": "We Call It Imagineering video series now streaming",
+        "body": "A new behind-the-scenes series showcases how Imagineers design attractions, lands, and entertainment. The show echoes Walt Disney's original Disneyland TV specials.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/disney-experiences/go-behind-the-scenes-in-imagineering-video-series/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "Living with the Land holiday overlay extended into 2027",
+        "body": "EPCOT's Glimmering Greenhouses ride overlay will remain open beyond the typical Festival of the Holidays window, running into the new year. The extended season allows more guests to experience the nighttime greenhouse lighting and seasonal decor.",
+        "parkSlug": "epcot",
+        "ctaLabel": "Plan your EPCOT evening",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-world-extends-best-christmas-ride-overlay-into-2027/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "The overlay looks best after dark when greenhouse lighting activates. Queue waits drop sharply after 8pm, making late evening your best window for short lines and full effect."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "gNBwdv4cKvo",
+      "title": "Disney's Animal Kingdom 2026 | Christmas Food, Pandora At NIGHT & The BEST Safari: Walt Disney World",
+      "channel": "Paging Mr. Morrow",
+      "publishedAt": "2026-11-19T21:24:21Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/gNBwdv4cKvo/mqdefault.jpg",
+      "viewCount": 121410,
+      "url": "https://www.youtube.com/watch?v=gNBwdv4cKvo",
+      "summary": "Paging Mr. Morrow tours Animal Kingdom's Christmas offerings, including holiday food, nighttime views of Pandora, and a safari ride."
+    },
+    {
+      "videoId": "jti5tJgWOuI",
+      "title": "NEW Food at Disney Springs: Jock Lindsey's Holiday Bar, Gideon's & More! Walt Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-11-16T16:36:10Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/jti5tJgWOuI/mqdefault.jpg",
+      "viewCount": 59079,
+      "url": "https://www.youtube.com/watch?v=jti5tJgWOuI",
+      "summary": "WrightDownMainStreet samples new menu items at Disney Springs locations including Jock Lindsey's holiday offerings and Gideon's Bakehouse."
+    },
+    {
+      "videoId": "wUst1KDEoGI",
+      "title": "🔴 Live: 4K Sunday Christmas Stream at Disneyland! A Christmas Fantasy Parade - 11/22/26",
+      "channel": "Koda Bear the Explorer ",
+      "publishedAt": "2026-11-23T04:20:27Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/wUst1KDEoGI/mqdefault.jpg",
+      "viewCount": 59063,
+      "url": "https://www.youtube.com/watch?v=wUst1KDEoGI",
+      "summary": "Koda Bear the Explorer live-streams A Christmas Fantasy Parade and other holiday entertainment at Disneyland in 4K."
+    },
+    {
+      "videoId": "duIfP2ThbLk",
+      "title": "🔴Live Magic Kingdom Sunday with Rides, Parades, Fireworks at Walt Disney World 11/22/2026",
+      "channel": "RON ON THE GO",
+      "publishedAt": "2026-11-23T04:15:28Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/duIfP2ThbLk/mqdefault.jpg",
+      "viewCount": 55830,
+      "url": "https://www.youtube.com/watch?v=duIfP2ThbLk",
+      "summary": "RON ON THE GO broadcasts a live Magic Kingdom tour featuring rides, holiday parades, and evening fireworks."
+    },
+    {
+      "videoId": "Jt1zIG6G3-4",
+      "title": "Every NEW Food in Disney's Animal Kingdom- Christmas Food, Nomad Lounge, Flame Tree | Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-11-19T17:00:01Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Jt1zIG6G3-4/mqdefault.jpg",
+      "viewCount": 43244,
+      "url": "https://www.youtube.com/watch?v=Jt1zIG6G3-4",
+      "summary": "WrightDownMainStreet reviews every new food item available at Animal Kingdom, including Christmas offerings at Nomad Lounge and Flame Tree Barbecue."
+    },
+    {
+      "videoId": "ylynh7LDWzs",
+      "title": "🔴 LIVE: EPIC Disney Christmas at Magic Kingdom in 4K | Disney World Live Stream 2026 🎄",
+      "channel": "Fun to be Free",
+      "publishedAt": "2026-11-23T05:30:59Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/ylynh7LDWzs/mqdefault.jpg",
+      "viewCount": 12904,
+      "url": "https://www.youtube.com/watch?v=ylynh7LDWzs",
+      "summary": "Fun to be Free live-streams Christmas celebrations and entertainment at Magic Kingdom in 4K resolution."
+    },
+    {
+      "videoId": "NR9r6zmURcc",
+      "title": "🔴Live: Magical Night at Magic Kingdom! - Rides, Parade & Fireworks - Disney World Livestream",
+      "channel": "GooToYou!",
+      "publishedAt": "2026-11-23T03:01:31Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/NR9r6zmURcc/mqdefault.jpg",
+      "viewCount": 10688,
+      "url": "https://www.youtube.com/watch?v=NR9r6zmURcc",
+      "summary": "GooToYou live-streams an evening at Magic Kingdom featuring rides, the holiday parade, and fireworks."
+    },
+    {
+      "videoId": "oKebDv0AgD4",
+      "title": "Mickey and Minnie Christmas Tree Float | Disney Christmas Parade | Magic Kingdom",
+      "channel": "disneyherewego",
+      "publishedAt": "2026-11-23T03:11:08Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/oKebDv0AgD4/mqdefault.jpg",
+      "viewCount": 6802,
+      "url": "https://www.youtube.com/watch?v=oKebDv0AgD4",
+      "summary": "disneyherewego captures the Mickey and Minnie Christmas tree float from Magic Kingdom's holiday parade."
+    },
+    {
+      "videoId": "oUO6Vvlf9qc",
+      "title": "El color PANTETADO por DISNEY (hace que las cosas sean invisibles)",
+      "channel": "Cómo Viajar",
+      "publishedAt": "2026-11-23T06:00:20Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/oUO6Vvlf9qc/mqdefault.jpg",
+      "viewCount": 1791,
+      "url": "https://www.youtube.com/watch?v=oUO6Vvlf9qc",
+      "summary": "Cómo Viajar discusses Disney's patented color used to make objects appear invisible in theme park environments."
+    },
+    {
+      "videoId": "W2ulFEFZgaw",
+      "title": "Disney Pins",
+      "channel": "Lindsay N",
+      "publishedAt": "2026-11-23T04:32:30Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/W2ulFEFZgaw/mqdefault.jpg",
+      "viewCount": 1100,
+      "url": "https://www.youtube.com/watch?v=W2ulFEFZgaw",
+      "summary": "Lindsay N showcases Disney pin collections and trading culture at the parks."
+    }
+  ],
+  "updatedAt": "2026-11-23T11:47:04.496Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-11-23T11:47:04.496Z",
+    "tokens": {
+      "input": 11534,
+      "output": 5720,
+      "costUsd": 0.1204
+    }
+  }
+}
