@@ -53,6 +53,7 @@ function loadDaily(name: string) {
 describe("partial names", () => {
   it("matches Big Thunder to Big Thunder Mountain Railroad and ignores a generic token", () => {
     expect(partialNameMatch("Big Thunder", "Big Thunder Mountain Railroad Reopens with New Magic")).toBe(true);
+    expect(partialNameMatch("Magic of Disney Animation", "The Magic of Disney Animation opens at Hollywood Studios today")).toBe(true);
     expect(partialNameMatch("Mountain", "Big Thunder Mountain Railroad")).toBe(false);
     expect(partialNameMatch("Magic Kingdom", "Big Thunder Mountain Railroad at Magic Kingdom")).toBe(false);
   });

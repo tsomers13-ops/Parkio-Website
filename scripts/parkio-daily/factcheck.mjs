@@ -399,7 +399,9 @@ function hasExplicitFutureDate(sentence, issueDate) {
 }
 
 function linkNouns(title) {
-  const found = String(title || "").match(/\b[A-Z][a-z]+(?:\s+[A-Z][a-z]+)+\b/g) || [];
+  const found = String(title || "").match(
+    /\b[A-Z][a-z]+(?:\s+(?:of|the|and|&)\s+[A-Z][a-z]+|\s+[A-Z][a-z]+)+\b/g,
+  ) || [];
   return found.filter((n) => !NOUN_STOP.has(n));
 }
 
