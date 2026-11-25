@@ -1,0 +1,362 @@
+{
+  "title": "Parkio Daily for November 25, 2026",
+  "slug": "parkio-daily-2026-11-25",
+  "date": "2026-11-25",
+  "teaser": "Animal Kingdom launches nighttime Kilimanjaro Safaris; Blizzard Beach closes three days this week; Bucky Barnes debuts at Avengers Campus.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Kilimanjaro Safaris",
+        "parkSlug": "animal-kingdom",
+        "note": "New Twilight Tales experience starts tonight"
+      },
+      {
+        "name": "Big Thunder Mountain Railroad",
+        "parkSlug": "magic-kingdom",
+        "note": "Lower waits early morning"
+      },
+      {
+        "name": "Web Slingers",
+        "parkSlug": "california-adventure",
+        "note": "New Marvel characters meeting nearby"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [
+      {
+        "title": "Blizzard Beach closes three days this week",
+        "body": "The water park will be shut Wednesday, Friday, and Saturday during one of the busiest travel weeks of the year. No reason was given for the closures.",
+        "parkSlug": null,
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/11/disney-world-blizzard-beach-water-park-closed-november-27-and-28-jc1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Typhoon Lagoon is likely your only water park option this week. Consider booking a resort pool day instead if that park feels too crowded."
+        }
+      },
+      {
+        "title": "Magic Kingdom reports grand theft incident",
+        "body": "Law enforcement responded to the park Tuesday afternoon for a reported grand theft. No details have been released about the incident or whether any guests were involved.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/11/grand-theft-reported-at-magic-kingdom-during-thanksgiving-travel-spike-jc1/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Keep personal belongings secure in lockers on major attractions. Thanksgiving week crowds often mean tighter spaces and more opportunity for theft."
+        }
+      }
+    ],
+    "bignews": [
+      {
+        "title": "Animal Kingdom launches nighttime Kilimanjaro Safaris experience",
+        "body": "Twilight Tales debuts today as the park extends evening hours into late 2026 and early 2027. The new after-dark version of the safari offers different animal activity and lighting.",
+        "parkSlug": "animal-kingdom",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-world-testing-new-twilight-tales-night-safari-at-animal-kingdom/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Animals tend to be more active at dusk than midday. Booking a safari slot between 6-8pm usually offers cooler temperatures and livelier wildlife behavior."
+        }
+      },
+      {
+        "title": "Bucky Barnes and Yelena Belova arrive at Avengers Campus",
+        "body": "The two Marvel characters begin meet-and-greets at Disney California Adventure this week ahead of Avengers Doomsday opening in theaters December 18. Themed food and additional experiences are part of the rollout.",
+        "parkSlug": "california-adventure",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/disney-experiences/avengers-doomsday-at-disney-parks/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Character meet queues in Avengers Campus tend to build after 11am. Arriving at rope drop usually gives you shorter waits for both heroes and Web Slingers."
+        }
+      },
+      {
+        "title": "Annual Passholder water park ticket price increases to fifty-four dollars",
+        "body": "The discounted single-day water park ticket for passholders rose from its previous price. The new rate applies to both Typhoon Lagoon and Blizzard Beach.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/11/disney-world-increases-discounted-annual-passholder-water-park-ticket-price-to-54/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "With Blizzard Beach closed three days this week, Typhoon Lagoon is likely to feel more crowded. Consider visiting after 3pm when families with young children often leave."
+        }
+      },
+      {
+        "title": "EPCOT Festival of the Holidays setup underway",
+        "body": "Holiday Storyteller stages and decorations are being installed across World Showcase ahead of the festival launch Friday, November 27. The event runs through December 30.",
+        "parkSlug": "epcot",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/11/holiday-storyteller-stages-and-decor-begin-setting-up-for-2026-epcot-international-festival-of-the-holidays/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Opening day of EPCOT festivals tends to draw larger afternoon crowds. Visiting Friday morning before 11am usually means shorter lines for Cookie Stroll booths and Storytellers."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "Glass panels added to Monstropolis building facades",
+        "body": "Windows have been installed on distant buildings in the new Monstropolis land under construction at Hollywood Studios. The area will house a suspended coaster themed to Monsters Inc.",
+        "parkSlug": "hollywood-studios",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/11/glass-panes-added-to-distant-monstropolis-building-windows-at-disneys-hollywood-studios/"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "Construction noise near Sunset Boulevard tends to peak between 9am and 2pm. Plan quieter experiences like BaseLine Tap House or indoor shows during that window."
+        }
+      },
+      {
+        "title": "Two Disneyland attractions closing for January refurbishment",
+        "body": "A pair of classic rides will shut down next month for maintenance work. Specific attraction names and closure dates have not yet been released.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/11/24/2-classic-disneyland-rides-will-close-for-refurbishment-in-january/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Late December tends to be the last chance to ride attractions going down in January. If you're visiting before New Year's, prioritize older favorites that may close soon."
+        }
+      },
+      {
+        "title": "Walt Disney the Dreamer merchandise collection arrives",
+        "body": "New apparel, accessories, and collectibles honoring Walt Disney himself are now on shelves across Walt Disney World. The line includes a sixty-five dollar Tinker Bell special edition doll inspired by early Disneyland TV appearances.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/11/walt-disney-the-dreamer-merchandise-collection-arrives-at-walt-disney-world/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Limited-edition Disney collectibles often sell out within days at Emporium and World of Disney. Visiting those shops before 10am usually gives you first pick of new inventory."
+        }
+      },
+      {
+        "title": "Park icon sweatshirts debut for Magic Kingdom, EPCOT, and Hollywood Studios",
+        "body": "Three new sweatshirts featuring the signature icon of each park are now available. Animal Kingdom and the two California parks are not yet included in the line.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/11/magic-kingdom-epcot-disneys-hollywood-studios-park-icon-sweatshirts-arrive-at-walt-disney-world-in-todays-daily-recap-for-11-24-2026/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Popular apparel tends to disappear in common sizes by midday during Thanksgiving week. Stopping at the main shop in each park right at opening usually secures your size."
+        }
+      },
+      {
+        "title": "Avengers Campus construction beams show Mickey silhouette",
+        "body": "Steel beams stamped with Mickey's iconic shape are now visible on the canopy framework rising over the expansion at Disney California Adventure. The structure continues to grow upward.",
+        "parkSlug": "california-adventure",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/11/mickey-beams-rise-over-avengers-campus-as-disneyland-expansion-construction-grows-upward/"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "Avengers Campus walkways tend to feel congested when guests stop to photograph construction. Cutting through Hollywood Land instead usually saves time getting to Cars Land or Grizzly Peak."
+        }
+      },
+      {
+        "title": "Gideon's Bakehouse releases Black Friday tiki mug and merchandise",
+        "body": "The Disney Springs bakery will drop a new tiki mug and other exclusive items Friday, November 28 at 10am Eastern. Some products are online-only while others will be available at the East End Market location.",
+        "parkSlug": null,
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/11/gideons-bakehouse-releasing-new-tiki-mug-more-merchandise-this-black-friday/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Gideon's limited releases often sell out within the first hour. Joining the online queue at 10am sharp tends to give you the best shot at securing the new mug."
+        }
+      },
+      {
+        "title": "Disney Cruise Line debuts new gingerbread tower designs",
+        "body": "The fleet's holiday decorations now feature redesigned gingerbread structures built by eighty crew members using over 700 pounds of powdered sugar and fondant. Life-sized gingerbread houses seen in past years are no longer part of the display.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/dcl/behind-the-scenes-new-gingerbread-towers-disney-cruise-line/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Gingerbread displays on cruise ships tend to draw crowds during embarkation afternoon. Visiting the atrium after dinner usually offers clearer photo opportunities."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Disneyland cancels Walt Disney Day pin release due to defects",
+        "body": "A collectible pin planned for Tuesday was pulled from sale at both Disneyland and Walt Disney World after cast members reported quality issues. The status of the Florida drop remains unclear.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/11/walt-disney-day-2026-pin-defects-disneyland-walt-disney-world-jc1/"
+        }
+      },
+      {
+        "title": "Disneyland loses top employer ranking in Orange County",
+        "body": "After holding the number-one spot for four years, Disneyland Resort is no longer the largest employer in the county. The shift reflects broader changes in Southern California's economic landscape.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/11/disneyland-resort-loses-no-1-employer-spot-in-orange-county-after-four-years-ad1/"
+        }
+      },
+      {
+        "title": "Disney and Formula 1 extend partnership for 2026 race season",
+        "body": "Mickey and Friends return trackside as Disney continues its multi-year sponsorship of Formula 1. The collaboration includes activations at race venues and special experiences for fans.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/products/disney-and-formula-1-2026-race-season/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "Columbia Harbour House remains Magic Kingdom's best counter-service option",
+        "body": "Despite Magic Kingdom's reputation for mediocre quick-service dining, this Liberty Square restaurant continues to deliver quality food in a quieter setting. The upstairs seating area offers a rare escape from the park's chaotic cafeterias.",
+        "parkSlug": "magic-kingdom",
+        "ctaLabel": "Read the full review",
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Columbia Harbour House upstairs seating tends to stay quiet even during peak lunch hours. Ordering between 11-11:30am usually lets you grab a table before the noon rush hits."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "gNBwdv4cKvo",
+      "title": "Disney's Animal Kingdom 2026 | Christmas Food, Pandora At NIGHT & The BEST Safari: Walt Disney World",
+      "channel": "Paging Mr. Morrow",
+      "publishedAt": "2026-11-19T21:24:21Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/gNBwdv4cKvo/mqdefault.jpg",
+      "viewCount": 136943,
+      "url": "https://www.youtube.com/watch?v=gNBwdv4cKvo",
+      "summary": "Paging Mr. Morrow explores Animal Kingdom's holiday food offerings and showcases Pandora after dark alongside safari experiences."
+    },
+    {
+      "videoId": "Jt1zIG6G3-4",
+      "title": "Every NEW Food in Disney's Animal Kingdom- Christmas Food, Nomad Lounge, Flame Tree | Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-11-19T17:00:01Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Jt1zIG6G3-4/mqdefault.jpg",
+      "viewCount": 48468,
+      "url": "https://www.youtube.com/watch?v=Jt1zIG6G3-4",
+      "summary": "WrightDownMainStreet reviews all the new food options available at Animal Kingdom this holiday season, including stops at Nomad Lounge and Flame Tree."
+    },
+    {
+      "videoId": "y-kuw8gCG1E",
+      "title": "🔴 Live: 4K Tuesday Christmas Stream at Disneyland! Fantamsic, Fireworks & World of Color - 11/24/26",
+      "channel": "Koda Bear the Explorer ",
+      "publishedAt": "2026-11-25T07:07:56Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/y-kuw8gCG1E/mqdefault.jpg",
+      "viewCount": 36964,
+      "url": "https://www.youtube.com/watch?v=y-kuw8gCG1E",
+      "summary": "Koda Bear streams live from Disneyland's holiday celebrations, capturing Fantasmic, fireworks, and World of Color in 4K."
+    },
+    {
+      "videoId": "nPOU3VvNdEE",
+      "title": "Magic Kingdom  11/24/26  #live",
+      "channel": "That Crazy Disney Lady",
+      "publishedAt": "2026-11-24T21:10:17Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/nPOU3VvNdEE/mqdefault.jpg",
+      "viewCount": 21619,
+      "url": "https://www.youtube.com/watch?v=nPOU3VvNdEE",
+      "summary": "That Crazy Disney Lady broadcasts live from Magic Kingdom on November 24."
+    },
+    {
+      "videoId": "Yuj-5aonoXc",
+      "title": "Live Streaming Walt Disney World EPCOT! Lumonous and Monorail Rides!!",
+      "channel": "Reamer Streamer",
+      "publishedAt": "2026-11-25T03:46:12Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Yuj-5aonoXc/mqdefault.jpg",
+      "viewCount": 7823,
+      "url": "https://www.youtube.com/watch?v=Yuj-5aonoXc",
+      "summary": "Reamer Streamer goes live from EPCOT, featuring the Luminous nighttime show and monorail transportation."
+    },
+    {
+      "videoId": "9F10KxIxk2M",
+      "title": "#disneyland #disneylandcalifornia #disney #piratesofthecaribbean",
+      "channel": "Ali Lilly",
+      "publishedAt": "2026-11-25T04:54:00Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/9F10KxIxk2M/mqdefault.jpg",
+      "viewCount": 1141,
+      "url": "https://www.youtube.com/watch?v=9F10KxIxk2M",
+      "summary": "Ali Lilly shares a short clip from Pirates of the Caribbean at Disneyland."
+    },
+    {
+      "videoId": "SDtG4GoETys",
+      "title": "#disneyland #disneylandcalifornia #disney #disneylandchristmas #rainstorm",
+      "channel": "Ali Lilly",
+      "publishedAt": "2026-11-25T05:42:22Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/SDtG4GoETys/mqdefault.jpg",
+      "viewCount": 1120,
+      "url": "https://www.youtube.com/watch?v=SDtG4GoETys",
+      "summary": "Ali Lilly captures Disneyland's holiday atmosphere during a rainstorm."
+    },
+    {
+      "videoId": "3F-ua14kbKc",
+      "title": "#disneyland #christmas #navidad  #disneyworld #disney #mickeymouse #snow #winter",
+      "channel": "Dany Moons",
+      "publishedAt": "2026-11-25T03:56:04Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/3F-ua14kbKc/mqdefault.jpg",
+      "viewCount": 1116,
+      "url": "https://www.youtube.com/watch?v=3F-ua14kbKc",
+      "summary": "Dany Moons showcases Christmas and winter decorations at the Disney parks."
+    },
+    {
+      "videoId": "G1vEJ7T3YZQ",
+      "title": "Look at what Disneyland surprised us with! #christmas #disney #disneyland #fyp @DisneyParks",
+      "channel": "Expeditionhappy",
+      "publishedAt": "2026-11-25T04:50:43Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/G1vEJ7T3YZQ/mqdefault.jpg",
+      "viewCount": 1048,
+      "url": "https://www.youtube.com/watch?v=G1vEJ7T3YZQ",
+      "summary": "Expeditionhappy shares a surprise holiday moment they encountered at Disneyland."
+    },
+    {
+      "videoId": "uOA7QSMVUdM",
+      "title": "Zu disneyland Paris #disney #travel #disneyland #disneylandparis",
+      "channel": "Travel mit mir",
+      "publishedAt": "2026-11-25T07:45:43Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/uOA7QSMVUdM/mqdefault.jpg",
+      "viewCount": 1025,
+      "url": "https://www.youtube.com/watch?v=uOA7QSMVUdM",
+      "summary": "Travel mit mir shares travel footage from Disneyland Paris."
+    }
+  ],
+  "updatedAt": "2026-11-25T11:47:42.372Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-11-25T11:47:42.372Z",
+    "tokens": {
+      "input": 11314,
+      "output": 5628,
+      "costUsd": 0.1184
+    }
+  }
+}
