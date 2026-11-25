@@ -66,13 +66,12 @@ jobs:
       # Allow the workflow to push the committed JSON back to main.
       # The default GITHUB_TOKEN is scoped per-run, no PAT needed.
       contents: write
-      # actions: read can download an artifact and read a workflow run.
-      # It cannot upload one. actions/upload-artifact returns
-      # "Resource not accessible by integration" without actions: write,
-      # and the same-day release path needs that held artifact.
-      # write includes read, so this is the minimum for upload, download,
-      # and the runs API check on release_held_run_id. No new secret.
-      actions: write
+      # Download of a held artifact and the runs API lookup need actions: read.
+      # actions/upload-artifact@v4 uploads with ACTIONS_RUNTIME_TOKEN, not
+      # GITHUB_TOKEN, so this job does not take actions: write.
+      # The first controlled run of this workflow must confirm that upload
+      # still succeeds with actions: read.
+      actions: read
     timeout-minutes: 10
 
     steps:

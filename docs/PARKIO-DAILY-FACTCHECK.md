@@ -21,6 +21,14 @@ A later run the same day that generates a briefing the checks accept is allowed 
 
 Feed evidence is `title`, `link`, `pubDate` (ISO), `source`, and a short excerpt, written under `$RUNNER_TEMP` by `build.mjs`. It is not committed. When today's file already exists, `build.mjs` does not fetch again. The checker then uses the JSON-only backstop unless a release restored the held evidence file.
 
+If a cited URL is not in that feed file, the fact-check step fetches the page (10s timeout, 24 pages per run) and reads a published date from `article:published_time`, then JSON-LD `datePublished` (including `@graph`), then `<time datetime>` (preferring one marked published). The fetch lives in the checker because the cited URLs are not known until the briefing JSON exists. The step is still in the build job, before commit. Tests inject the fetcher and do not use the network.
+
+A 403, other 4xx or 5xx, timeout, network error, a page with no parseable date, or a spotlight opening/debut/closing claim with no source URL and no matching feed title is an **unverifiable** finding. It is not a contradiction. `data/parkio-daily/factcheck-config.json` sets `unverifiable` to `hold` (default; the finding blocks) or `pass` (listed in the report, does not block). That switch is only this class. There is no warn mode for the other checks.
+
+The build job's `actions` permission is `read`. `actions/upload-artifact` v4 uploads with `ACTIONS_RUNTIME_TOKEN`, and downloading a held artifact plus the runs lookup need `read`. `contents: write` stays for the bot commit. The first controlled run of this workflow must confirm the held-artifact upload still succeeds.
+
+A `release_held_run_id` is accepted only when the run is `.github/workflows/parkio-daily.yml` in this repository, `head_branch` is `main`, and the API response includes both the workflow path and the repository. A missing path, a missing repository, or any other branch is rejected.
+
 ## Same-day release
 
 Actions → Parkio Daily → Run workflow. The scheduler's normal dispatch leaves the inputs empty.
@@ -39,14 +47,15 @@ Committing a fix straight to `main` as yourself does not publish. The publish jo
 
 The name match is case-insensitive, and "remains open" / "operational" count. `parkio-daily-2026-07-05` ("DinoLand U.S.A. remains open") and `parkio-daily-2026-09-12` ("DinoLand attractions remain operational") hold. Those sentences contradict the February 2, 2026 date in the March 6, 2025 Disney Parks Blog post. That post is a pre-announcement, not a later confirmation that the land was actually closed on those dates.
 
-`facts.json` has one entry, Twilight Tales, tier `secondary`, `officialConfirmation: not-found`. The Disney Food Blog RSS item for `https://www.disneyfoodblog.com/2026/11/24/new-nighttime-safari-coming-to-disneys-animal-kingdom/` (fetched 2026-11-25; the HTML page returned 403) says the experience is coming next month and, according to Scott Gustin, runs "from December 20th through January 3rd." The years 2026 and 2027 are inferred from the item's November 24, 2026 pubDate and "next month." They are not printed in the quote. No BlogMickey URL is stored. Official Disney text was not in that feed item.
+`facts.json` has one entry, Twilight Tales, tier `secondary`, `officialConfirmation: not-found`. WDWNT's More Details post, fetched 2026-11-25 (HTTP 200), says: "The experience will be available after the sun sets from December 20, 2026, through January 3, 2027." Those printed years are `startDate` and `endDate`. The Disney Food Blog RSS item (HTML 403) has two separate sentences, "from December 20th through January 3rd" and "only from December 20th through January 3rd," without years. Neither source is a Disney page.
 
 ## Replay
 
-JSON-only replay of the 198 issues in `content/guide/daily` holds 7. Five are check (d). Two are check (b): 2026-07-05 and 2026-09-12, above.
+JSON-only replay of the 198 issues in `content/guide/daily` holds 8. Six are check (d). Two are check (b): 2026-07-05 and 2026-09-12, above.
 
 | Issue | Why it holds |
 | --- | --- |
+| 2026-05-15 | (d) Teaser "new Muppets snack stand" shares that name with an item whose body is future tense. |
 | 2026-07-05 | (b) "DinoLand U.S.A. remains open" after the ledger's February 2, 2026 close. |
 | 2026-07-23 | (d) Title "debuts at D23 Expo" while the body says the line "will debut" in August. |
 | 2026-08-06 | (d) Teaser "new dining concept" shares Diamond Horseshoe with an item whose body says the change "will begin". |

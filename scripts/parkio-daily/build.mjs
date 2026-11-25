@@ -759,6 +759,7 @@ GUARDRAILS — read carefully, follow strictly:
 9. VIDEO SUMMARIES are 1–2 sentences and based ONLY on the video's title + channel. Do not invent details about what's inside the video.
 10. EXACT VIDEOS. Use the EXACT 10 videos provided in TOP 10 YOUTUBE VIDEOS — copy each field verbatim and ADD a "summary" field per video.
 11. NO BREAKING-NEWS UNLESS SOURCED. Every breaking-news item must be supported by the source data. If nothing is genuinely breaking, set sections.breaking to [].
+12. SPOTLIGHT SOURCE. If the spotlight says an attraction, venue, or show is opening, debuting, or closing, include source.url for that item. Do not leave that source blank.
 
 SCHEMA (produce this object):
 {
@@ -775,7 +776,7 @@ SCHEMA (produce this object):
     "bignews":    [ { ...same shape with parkioInsight object } ],                                                                  // 2–4
     "topstories": [ { ...same shape with parkioInsight object } ],                                                                  // 4–7
     "icymi":      [ { "title", "body", "parkSlug?", "source?": { "label", "url" } } ],                                              // 2–4, NO parkioInsight
-    "spotlight":  [ { "title", "body", "parkSlug?", "ctaLabel?", "parkioInsight": { "category", "text" } } ]                        // exactly 1
+    "spotlight":  [ { "title", "body", "parkSlug?", "source?": { "label", "url" }, "ctaLabel?", "parkioInsight": { "category", "text" } } ]  // exactly 1; source.url required when it says something is opening, debuting, or closing
     // Aim for 10–13 DISTINCT stories total across breaking+bignews+topstories+icymi+spotlight when sources support it.
   },
   "videos": [

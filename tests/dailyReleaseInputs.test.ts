@@ -54,8 +54,21 @@ describe("release_held_run_id must be this repo's Parkio Daily workflow", () => 
     expect(assessDailyWorkflowRun({
       path: ".github/workflows/parkio-daily.yml",
       name: "Parkio Daily",
+      head_branch: "main",
       repository: { full_name: repo },
     }, { repo, runId: "123" }).ok).toBe(true);
+
+    expect(assessDailyWorkflowRun({
+      name: "Parkio Daily",
+      head_branch: "main",
+    }, { repo, runId: "h5" }).ok).toBe(false);
+
+    expect(assessDailyWorkflowRun({
+      path: ".github/workflows/parkio-daily.yml",
+      name: "Parkio Daily",
+      head_branch: "cursor/daily-factcheck-gate-3c3f",
+      repository: { full_name: repo },
+    }, { repo, runId: "h6" }).problems.join(" ")).toMatch(/head_branch/);
 
     expect(assessDailyWorkflowRun({
       path: ".github/workflows/workers-production.yml",
@@ -77,6 +90,7 @@ describe("release_held_run_id must be this repo's Parkio Daily workflow", () => 
         json: async () => ({
           path: ".github/workflows/parkio-daily.yml",
           name: "Parkio Daily",
+          head_branch: "main",
           repository: { full_name: repo },
         }),
       };

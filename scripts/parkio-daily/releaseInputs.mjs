@@ -69,23 +69,29 @@ export function assessDailyWorkflowRun(body, { repo, runId }) {
   if (!body || typeof body !== "object") {
     return { ok: false, problems: [`release_held_run_id ${runId} did not return a workflow run.`] };
   }
-  const fullName = body.repository?.full_name || body.repository?.name || "";
-  if (fullName && repo && fullName.toLowerCase() !== String(repo).toLowerCase()) {
-    return {
-      ok: false,
-      problems: [`release_held_run_id ${runId} belongs to ${fullName}, not ${repo}.`],
-    };
+  if (!body.path) {
+    return { ok: false, problems: [`release_held_run_id ${runId} response has no workflow path.`] };
   }
-  if (body.path && body.path !== DAILY_WORKFLOW_PATH) {
+  if (body.path !== DAILY_WORKFLOW_PATH) {
     return {
       ok: false,
       problems: [`release_held_run_id ${runId} is ${body.path}, not ${DAILY_WORKFLOW_PATH} in ${repo}.`],
     };
   }
-  if (!body.path && body.name !== DAILY_WORKFLOW_NAME) {
+  const fullName = body.repository?.full_name;
+  if (!fullName) {
+    return { ok: false, problems: [`release_held_run_id ${runId} response has no repository.`] };
+  }
+  if (repo && fullName.toLowerCase() !== String(repo).toLowerCase()) {
     return {
       ok: false,
-      problems: [`release_held_run_id ${runId} is workflow "${body.name || "unknown"}", not ${DAILY_WORKFLOW_NAME} in ${repo}.`],
+      problems: [`release_held_run_id ${runId} belongs to ${fullName}, not ${repo}.`],
+    };
+  }
+  if (body.head_branch !== "main") {
+    return {
+      ok: false,
+      problems: [`release_held_run_id ${runId} head_branch is "${body.head_branch || ""}", not main.`],
     };
   }
   return { ok: true, problems: [] };

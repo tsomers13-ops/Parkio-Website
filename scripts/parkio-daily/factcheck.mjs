@@ -25,6 +25,7 @@ import { appendFileSync, copyFileSync, existsSync, mkdirSync, readFileSync, writ
 import { tmpdir } from "node:os";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { augmentEvidence, fetchCitedPage } from "./pageDate.mjs";
 
 const WEEKDAYS = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
@@ -54,7 +55,7 @@ const STATUS_VERB =
 // same-day status claim, not a tip that merely says "today" or "currently".
 const C_SOURCE_SAME_DAY = /\b(this morning|today)\b/i;
 const C_SOURCE_STATUS =
-  /\b(down|closed|fail(?:ed|s)? to open|re-?open(?:s|ed|ing)?|opened)\b/i;
+  /\b(down|closed|fail(?:ed|s)? to open|(?:re-?)?open(?:s|ed|ing)?)\b/i;
 // Source-date (d) is an opening or closing claim about a named attraction,
 // venue, or show. The adjective "new" is not enough.
 const OPEN_CLOSE_CLAIM =
@@ -176,11 +177,51 @@ function findingId(rule, where, text) {
   return `${rule}:${h}`;
 }
 
-function pushFinding(findings, { rule, where, text, evidence }) {
+function pushFinding(findings, { rule, where, text, evidence, findingClass }) {
   const sliced = String(text || "").replace(/\s+/g, " ").trim().slice(0, 300);
   const id = findingId(rule, where, sliced);
   if (findings.some((f) => f.id === id)) return;
-  findings.push({ id, rule, path: where, text: sliced, evidence });
+  findings.push({
+    id,
+    rule,
+    class: findingClass || (rule === "unverifiable" ? "unverifiable" : "contradiction"),
+    path: where,
+    text: sliced,
+    evidence,
+  });
+}
+
+function pageFetchFor(evidence, url) {
+  const needle = normalizeUrl(url);
+  if (!needle) return null;
+  return (evidence?.pageFetches || []).find((row) => normalizeUrl(row.url) === needle) || null;
+}
+
+/**
+ * A failed page fetch is unverifiable, never a contradiction.
+ * A dated feed or page item that does not support the claim stays a contradiction.
+ * No URL at all stays a contradiction (there was nothing to fetch).
+ */
+function gapClass(evidence, urls, datedItems) {
+  if ((datedItems || []).some((item) => item?.pubDate)) return "contradiction";
+  const fetches = (urls || []).map((url) => pageFetchFor(evidence, url)).filter(Boolean);
+  if (fetches.length && fetches.every((row) => !row.ok)) return "unverifiable";
+  return "contradiction";
+}
+
+function pushGap(findings, { rule, where, text, evidenceText, evidenceBag, urls, datedItems }) {
+  const kind = gapClass(evidenceBag, urls, datedItems);
+  if (kind === "unverifiable") {
+    const failed = (urls || []).map((url) => pageFetchFor(evidenceBag, url)).find((row) => row && !row.ok);
+    pushFinding(findings, {
+      rule: "unverifiable",
+      where,
+      text,
+      evidence: `Source fetch failed (${failed?.reason || "unknown"}${failed?.status ? ` HTTP ${failed.status}` : ""}) for ${failed?.url || "the cited URL"}. This is not a contradiction.`,
+    });
+    return;
+  }
+  pushFinding(findings, { rule, where, text, evidence: evidenceText });
 }
 
 function compileMatchers(attractions) {
@@ -218,6 +259,23 @@ export function loadAttractionStatus(root = repoRoot()) {
   return compileMatchers(data.attractions);
 }
 
+export function loadFactcheckConfig(root = repoRoot()) {
+  const file = path.join(root, "data", "parkio-daily", "factcheck-config.json");
+  const data = JSON.parse(readFileSync(file, "utf8"));
+  if (data?.unverifiable !== "hold" && data?.unverifiable !== "pass") {
+    throw new Error(`${file} unverifiable must be "hold" or "pass"`);
+  }
+  return data;
+}
+
+/** Unverifiable findings block only when config says hold. They are never contradictions. */
+export function blockingFindings(findings, config = { unverifiable: "hold" }) {
+  if (config?.unverifiable === "pass") {
+    return findings.filter((finding) => finding.class !== "unverifiable" && finding.rule !== "unverifiable");
+  }
+  return findings;
+}
+
 export function loadFacts(root = repoRoot()) {
   const file = path.join(root, "data", "parkio-daily", "facts.json");
   const data = JSON.parse(readFileSync(file, "utf8"));
@@ -247,6 +305,7 @@ function collect(post) {
         where: `rightNow.rides[${i}].note`,
         text: String(ride.note),
         kind: "rightNow",
+        rideName: ride.name || "",
       });
     }
   });
@@ -342,6 +401,49 @@ function hasExplicitFutureDate(sentence, issueDate) {
 function linkNouns(title) {
   const found = String(title || "").match(/\b[A-Z][a-z]+(?:\s+[A-Z][a-z]+)+\b/g) || [];
   return found.filter((n) => !NOUN_STOP.has(n));
+}
+
+const GENERIC_NAME_TOKENS = new Set([
+  "the", "and", "for", "with", "from", "that", "this", "into", "over",
+  "new", "park", "parks", "disney", "world", "kingdom", "mountain",
+  "railroad", "ride", "rides", "show", "today", "open", "opens", "opened",
+  "reopens", "reopened", "attraction", "attractions", "resort", "resorts",
+]);
+
+/** Distinctive name tokens. Drops "Mountain", "The", and park-name words so they cannot match alone. */
+export function significantNameTokens(text) {
+  return String(text || "")
+    .toLowerCase()
+    .replace(/&/g, " ")
+    .replace(/[^a-z0-9\s']/g, " ")
+    .split(/\s+/)
+    .filter((token) => token.length > 2 && !GENERIC_NAME_TOKENS.has(token));
+}
+
+/**
+ * "Big Thunder" matches "Big Thunder Mountain Railroad" because both
+ * distinctive tokens of the shorter name appear in the longer text.
+ * A single leftover token ("Mountain", "Magic Kingdom") does not match.
+ */
+export function partialNameMatch(needle, haystack) {
+  const left = significantNameTokens(needle);
+  if (left.length < 2) return false;
+  const right = new Set(significantNameTokens(haystack));
+  return left.every((token) => right.has(token));
+}
+
+function claimMatchesTarget(claimText, extraName, targetText) {
+  const candidates = linkNouns(claimText);
+  const claimTokens = significantNameTokens(claimText);
+  if (claimTokens.length >= 2 && claimTokens.length <= 3) candidates.push(claimText);
+  if (extraName) candidates.push(extraName);
+  return candidates.some((candidate) => partialNameMatch(candidate, targetText));
+}
+
+function evidenceMatchingName(evidence, claimText, extraName) {
+  return (evidence?.items || []).filter((item) =>
+    claimMatchesTarget(claimText, extraName, `${item.title || ""} ${item.link || ""}`),
+  );
 }
 
 function otherWeekdayCues(text, issueDate) {
@@ -530,9 +632,8 @@ function checkWeekdayBackstop(post, findings) {
     for (const { it } of items) {
       const others = otherWeekdayCues(it.body || "", issue);
       if (!others.length) continue;
-      const nouns = linkNouns(it.title);
-      const hit = nouns.filter((n) => clause.includes(n));
-      if (!hit.length) continue;
+      if (!claimMatchesTarget(clause, "", it.title || "")) continue;
+      const hit = [it.title];
       pushFinding(findings, {
         rule: "c-teaser-sameday",
         where: "teaser",
@@ -583,23 +684,29 @@ function checkSourceDates(post, evidence, findings) {
       if (field.teaser || field.where === "title") {
         sources = [];
         for (const { it } of items) {
-          const nouns = linkNouns(it.title);
-          if (!nouns.some((n) => sentence.includes(n))) continue;
+          if (!claimMatchesTarget(sentence, "", it.title || "")) continue;
           sources.push(...evidenceForUrl(evidence, it.source?.url));
         }
+        sources.push(...evidenceMatchingName(evidence, sentence, ""));
       }
       const ok = sources.some((item) => sameDaySource(item, issue));
       if (ok) continue;
+      const cited = field.teaser || field.where === "title"
+        ? items.filter((row) => claimMatchesTarget(sentence, "", row.it.title || "")).map((row) => row.it.source?.url).filter(Boolean)
+        : [field.item?.source?.url].filter(Boolean);
       const seen = sources
-        .map((item) => `${item.source || "source"} ${item.pubDate || item.pubDateRaw || "undated"} → ET ${etCalendarDate(item.pubDate) || "unparsed"}`)
+        .map((item) => `${item.source || "source"} ${item.pubDate || item.pubDateRaw || "undated"} → ET ${etCalendarDate(item.pubDate) || "unparsed"}${item.dateMethod ? ` via ${item.dateMethod}` : ""}`)
         .join("; ");
-      pushFinding(findings, {
+      pushGap(findings, {
         rule: "c-source-date",
         where: field.where,
         text: sentence,
-        evidence: seen
-          ? `Same-day status wording needs a cited feed item whose pubDate falls on ${issue} in America/New_York. Cited items: ${seen}. No live park-status feed is saved.`
-          : `Same-day status wording has no cited feed item in this run's evidence. No live park-status feed is saved.`,
+        evidenceBag: evidence,
+        urls: cited,
+        datedItems: sources,
+        evidenceText: seen
+          ? `Same-day status wording needs a cited source whose published date falls on ${issue} in America/New_York. Cited items: ${seen}.`
+          : `Same-day status wording has no cited source with a published date.`,
       });
     }
   }
@@ -631,18 +738,17 @@ function checkDebuts(post, facts, evidence, findings) {
           evidence: "Insight says \"new\" and \"today\" while the item body is future tense.",
         });
       }
-      const nouns = linkNouns(it.title);
       for (const field of fields) {
         if (field.kind !== "teaser" && field.kind !== "rightNow") continue;
         for (const clause of String(field.text || "").split(/[;]\s*/)) {
-          if (!nouns.some((n) => clause.includes(n))) continue;
+          if (!claimMatchesTarget(clause, field.rideName || "", it.title || "")) continue;
           const bareNew = /\bnew\b/i.test(clause) && !datedLoose(clause, issue) && !explicitDates(clause, issue).some((d) => d > issue);
           if (claimStatesCurrent(clause, issue) || bareNew) {
             pushFinding(findings, {
               rule: "d-debut-tense",
               where: field.where,
               text: clause,
-              evidence: `This ${field.kind} states "${nouns.find((n) => clause.includes(n))}" as current, while ${where}.body is future tense.`,
+              evidence: `This ${field.kind} states a current opening while ${where}.body is future tense.`,
             });
           }
         }
@@ -652,21 +758,44 @@ function checkDebuts(post, facts, evidence, findings) {
     if (!full) continue;
     const currentBits = [];
     if (isSourceDateOpeningClaim(it.title || "", issue)) currentBits.push({ where: `${where}.title`, text: it.title });
-    const linked = evidenceForUrl(evidence, it.source?.url);
+    const feedNamed = evidenceMatchingName(evidence, it.title || "", "");
+    const linked = [
+      ...evidenceForUrl(evidence, it.source?.url),
+      ...(!it.source?.url ? feedNamed : []),
+    ];
     for (const bit of currentBits) {
       const supports = linked.some((item) => sourceSupportsCurrent(item, issue));
       const ledgerBlock = facts.some((fact) => mentionsFact(bit.text, fact) && fact.startDate && issue < fact.startDate);
       if (supports && !ledgerBlock) continue;
       const why = linked.length
-        ? linked.map((item) => `${item.source || ""} ${item.pubDate || "undated"} “${(item.excerpt || item.title || "").slice(0, 120)}”`).join(" | ")
+        ? linked.map((item) => `${item.source || ""} ${item.pubDate || "undated"} “${(item.excerpt || item.title || "").slice(0, 120)}”${item.dateMethod ? ` via ${item.dateMethod}` : ""}`).join(" | ")
         : "no evidence item matches the cited URL";
-      pushFinding(findings, {
+      if (ledgerBlock) {
+        pushFinding(findings, {
+          rule: "d-source-date",
+          where: bit.where,
+          text: bit.text,
+          evidence: `Ledger startDate is after ${issue}, so a current-tense debut is blocked even if a feed item exists. ${why}`,
+        });
+        continue;
+      }
+      if (where.startsWith("sections.spotlight") && !it.source?.url && feedNamed.length === 0) {
+        pushFinding(findings, {
+          rule: "unverifiable",
+          where: bit.where,
+          text: bit.text,
+          evidence: "Spotlight opening or closing claim has no source URL and no feed title matched it. This is not a contradiction.",
+        });
+        continue;
+      }
+      pushGap(findings, {
         rule: "d-source-date",
         where: bit.where,
         text: bit.text,
-        evidence: ledgerBlock
-          ? `Ledger startDate is after ${issue}, so a current-tense debut is blocked even if a feed item exists. ${why}`
-          : `A current-tense debut needs a feed item published on or before ${issue} whose excerpt is not future tense ("coming", "will open", "set to"). ${why}`,
+        evidenceBag: evidence,
+        urls: [it.source?.url].filter(Boolean),
+        datedItems: linked,
+        evidenceText: `A current-tense opening or closing needs a source published on or before ${issue} whose excerpt is not future tense ("coming", "will open", "set to"). ${why}`,
       });
     }
   }
@@ -697,11 +826,15 @@ function checkDebuts(post, facts, evidence, findings) {
     for (const clause of String(field.text || "").split(/[;]\s*/)) {
       if (!isSourceDateOpeningClaim(clause, issue)) continue;
       let linked = [];
+      const matchedUrls = [];
       for (const { it } of items) {
-        const nouns = linkNouns(it.title);
-        if (!nouns.some((n) => clause.includes(n))) continue;
-        linked.push(...evidenceForUrl(evidence, it.source?.url));
+        if (!claimMatchesTarget(clause, field.rideName || "", it.title || "")) continue;
+        if (it.source?.url) {
+          matchedUrls.push(it.source.url);
+          linked.push(...evidenceForUrl(evidence, it.source.url));
+        }
       }
+      linked.push(...evidenceMatchingName(evidence, clause, field.rideName || ""));
       const supports = linked.some((item) => sourceSupportsCurrent(item, issue));
       if (supports) continue;
       // The JSON-only rule already records the contradiction. Avoid a second
@@ -709,13 +842,16 @@ function checkDebuts(post, facts, evidence, findings) {
       if (findings.some((f) => f.rule === "d-debut-tense" && f.path === field.where && f.text === clause.trim())) {
         continue;
       }
-      pushFinding(findings, {
+      pushGap(findings, {
         rule: "d-source-date",
         where: field.where,
         text: clause,
-        evidence: linked.length
-          ? `Feed excerpt is future tense or the pubDate is after ${issue}.`
-          : "No feed item for this current-tense debut was in the run evidence.",
+        evidenceBag: evidence,
+        urls: matchedUrls,
+        datedItems: linked,
+        evidenceText: linked.length
+          ? `Feed or page date does not support this opening or closing claim for ${issue}.`
+          : "No dated source for this opening or closing claim was in the run evidence.",
       });
     }
   }
@@ -836,7 +972,7 @@ function howToRelease(findings) {
   ].join("\n");
 }
 
-export function runCli() {
+export async function runCli(opts = {}) {
   const today = process.env.PARKIO_DAILY_TODAY || etToday();
   const slug = `parkio-daily-${today}`;
   const file = path.join(repoRoot(), "content", "guide", "daily", `${slug}.json`);
@@ -875,12 +1011,26 @@ export function runCli() {
     return 1;
   }
 
-  const { findings, notices } = checkDailyPost(post, { evidence: resolved.evidence });
+  const config = opts.config || loadFactcheckConfig();
+  let evidence = resolved.evidence;
+  let pageFetches = [];
+  if (resolved.mode === "full") {
+    const augmented = await augmentEvidence(post, evidence, {
+      fetchPage: opts.fetchPage === null ? undefined : (opts.fetchPage || fetchCitedPage),
+    });
+    evidence = augmented.evidence;
+    pageFetches = augmented.fetches;
+  }
+
+  const { findings, notices } = checkDailyPost(post, { evidence });
+  const blocking = blockingFindings(findings, config);
   const releaseRequested = Boolean(
     String(process.env.RELEASE_HELD_RUN_ID || "").trim() || String(process.env.FIXED_REF || "").trim(),
   );
   const ackIds = parseAckList(process.env.ACK);
-  const decision = evaluateAcknowledgements({ findings, ackIds, releaseRequested });
+  const decision = evaluateAcknowledgements({ findings: blocking, ackIds, releaseRequested });
+  const contradictions = findings.filter((finding) => finding.class !== "unverifiable");
+  const unverifiable = findings.filter((finding) => finding.class === "unverifiable");
 
   const report = {
     version: 1,
@@ -888,6 +1038,10 @@ export function runCli() {
     date: today,
     sha256: sha256(bytes),
     evidence: resolved.mode,
+    unverifiablePolicy: config.unverifiable,
+    contradictions,
+    unverifiable,
+    pageFetches,
     findings,
     notices,
     releaseRequested,
@@ -895,23 +1049,38 @@ export function runCli() {
     actor: process.env.GITHUB_ACTOR || "",
   };
 
-  const lines = [`# Parkio Daily fact-check (${today})`, "", `Evidence mode: ${resolved.mode}. Blocking findings: ${findings.length}.`];
+  const lines = [
+    `# Parkio Daily fact-check (${today})`,
+    "",
+    `Evidence mode: ${resolved.mode}. Contradictions: ${contradictions.length}. Unverifiable: ${unverifiable.length} (${config.unverifiable}; not contradictions).`,
+  ];
   if (notices.length) {
     lines.push("", "## Notices (not blocking)", ...notices.map((n) => `- ${n}`));
   }
-  if (!findings.length) {
-    lines.push("", "Passed. No findings.");
-  } else {
+  const table = (rows) => {
     lines.push("", "| id | rule | path | text |", "| --- | --- | --- | --- |");
-    for (const f of findings) {
-      lines.push(`| \`${f.id}\` | ${f.rule} | ${f.path} | ${f.text.replace(/\|/g, "\\|")} |`);
-    }
+    for (const f of rows) lines.push(`| \`${f.id}\` | ${f.rule} | ${f.path} | ${f.text.replace(/\|/g, "\\|")} |`);
+  };
+  if (contradictions.length) {
+    lines.push("", "## Contradictions");
+    table(contradictions);
   }
+  if (unverifiable.length) {
+    lines.push("", `## Unverifiable (policy: ${config.unverifiable})`);
+    table(unverifiable);
+  }
+  if (!findings.length) lines.push("", "Passed. No findings.");
   writeSummary(lines);
 
   for (const notice of notices) console.log(`[parkio-daily] notice: ${notice}`);
-  for (const f of findings) {
+  for (const f of contradictions) {
     console.log(`::error title=${f.id}::[${f.rule}] ${f.path}: ${f.text}`);
+    console.log(`[parkio-daily] ${f.id} evidence: ${f.evidence}`);
+  }
+  for (const f of unverifiable) {
+    const line = `[unverifiable] ${f.path}: ${f.text}`;
+    if (config.unverifiable === "hold") console.log(`::error title=${f.id}::${line}`);
+    else console.log(`[parkio-daily] ${line}`);
     console.log(`[parkio-daily] ${f.id} evidence: ${f.evidence}`);
   }
 
@@ -921,8 +1090,8 @@ export function runCli() {
     copyFileSync(file, path.join(dir, "briefing.json"));
     writeFileSync(path.join(dir, "report.json"), JSON.stringify(report, null, 2) + "\n");
     copyFileSync(evidencePath, path.join(dir, "evidence.json"));
-    writeFileSync(path.join(dir, "HOW-TO-RELEASE.txt"), howToRelease(findings));
-    console.error(`[parkio-daily] Held ${slug}. ${findings.length} finding(s). Bundle: ${dir}`);
+    writeFileSync(path.join(dir, "HOW-TO-RELEASE.txt"), howToRelease(blocking));
+    console.error(`[parkio-daily] Held ${slug}. ${blocking.length} blocking finding(s) (${contradictions.length} contradictions, ${unverifiable.length} unverifiable). Bundle: ${dir}`);
     for (const problem of decision.problems) console.error(`::error::${problem}`);
     return 1;
   }
@@ -944,10 +1113,13 @@ export function runCli() {
 }
 
 if (process.argv[1] && process.argv[1] === fileURLToPath(import.meta.url)) {
-  try {
-    process.exit(runCli());
-  } catch (err) {
-    console.error(`::error::${err?.stack || err?.message || err}`);
-    process.exit(1);
-  }
+  Promise.resolve()
+    .then(() => runCli())
+    .then((code) => {
+      process.exit(code);
+    })
+    .catch((err) => {
+      console.error(`::error::${err?.stack || err?.message || err}`);
+      process.exit(1);
+    });
 }

@@ -20,6 +20,7 @@ import {
   loadAttractionStatus,
   loadFacts,
   parseAckList,
+  partialNameMatch,
   resolveEvidence,
   runCli,
 } from "../scripts/parkio-daily/factcheck.mjs";
@@ -35,6 +36,7 @@ const PRECORRECTION_BLOB = "17261b14a13cd24a192964059665a23361881b51";
  * real d-debut-tense hit, not a guessed list.
  */
 const REPLAY_HOLDS = [
+  "parkio-daily-2026-05-15.json",
   "parkio-daily-2026-07-05.json",
   "parkio-daily-2026-07-23.json",
   "parkio-daily-2026-08-06.json",
@@ -47,6 +49,49 @@ const REPLAY_HOLDS = [
 function loadDaily(name: string) {
   return JSON.parse(readFileSync(path.join(DAILY, name), "utf8"));
 }
+
+describe("partial names", () => {
+  it("matches Big Thunder to Big Thunder Mountain Railroad and ignores a generic token", () => {
+    expect(partialNameMatch("Big Thunder", "Big Thunder Mountain Railroad Reopens with New Magic")).toBe(true);
+    expect(partialNameMatch("Mountain", "Big Thunder Mountain Railroad")).toBe(false);
+    expect(partialNameMatch("Magic Kingdom", "Big Thunder Mountain Railroad at Magic Kingdom")).toBe(false);
+  });
+
+  it("lets a rightNow note use the ride name, and marks an unsourced spotlight opening unverifiable", () => {
+    const post = {
+      date: "2026-05-04",
+      title: "t",
+      teaser: "Big Thunder reopens today at Magic Kingdom",
+      rightNow: { rides: [{ name: "Big Thunder", note: "Just reopened with new Rainbow Caverns scene" }] },
+      sections: {
+        breaking: [{
+          title: "Big Thunder Mountain Railroad Reopens with New Magic",
+          body: "The coaster reopened today.",
+          source: { url: "https://example.com/thunder", label: "Example" },
+        }],
+        spotlight: [{
+          title: "Grand Floridian Cafe reopens with new breakfast and lunch menu",
+          body: "The cafe is back.",
+        }],
+      },
+    };
+    const evidence = {
+      version: 1,
+      skipped: false,
+      items: [{
+        source: "sim",
+        title: "big thunder mountain railroad reopens with new magic",
+        link: "https://example.com/thunder",
+        pubDate: "2026-05-04T15:00:00.000Z",
+        excerpt: "",
+      }],
+    };
+    const { findings } = checkDailyPost(post, { evidence });
+    expect(findings.some((f) => f.path === "teaser" && (f.rule === "c-source-date" || f.rule === "d-source-date"))).toBe(false);
+    expect(findings.some((f) => f.path.startsWith("rightNow") && f.rule === "d-source-date")).toBe(false);
+    expect(findings.some((f) => f.rule === "unverifiable" && f.path.startsWith("sections.spotlight"))).toBe(true);
+  });
+});
 
 describe("ledger and attraction seed", () => {
   it("seeds only DINOSAUR and DinoLand U.S.A., from the March 6, 2025 Disney Parks Blog post", () => {
@@ -77,7 +122,7 @@ describe("ledger and attraction seed", () => {
       startDate: string;
       endDate: string;
       dateConfidence: string;
-      sources: Array<{ url: string; tier: string; quote?: string }>;
+      sources: Array<{ url: string; tier: string; quote?: string; quotes?: string[] }>;
     }>;
     expect(facts.map((f) => f.id)).toEqual(["ak-twilight-tales"]);
     const fact = facts[0];
@@ -86,12 +131,17 @@ describe("ledger and attraction seed", () => {
     expect(fact.officialConfirmation).toBe("not-found");
     expect(fact.startDate).toBe("2026-12-20");
     expect(fact.endDate).toBe("2027-01-03");
-    expect(fact.dateConfidence).toBe("secondary-years-inferred");
-    expect(fact.sources[0].url).toBe(
+    expect(fact.dateConfidence).toBe("secondary-years-stated");
+    const dfb = fact?.sources[0];
+    const wdwnt = fact?.sources[1];
+    expect(dfb?.url).toBe(
       "https://www.disneyfoodblog.com/2026/11/24/new-nighttime-safari-coming-to-disneys-animal-kingdom/",
     );
-    expect(fact.sources[0].quote).toMatch(/December 20th through January 3rd/);
-    expect(fact.sources[0].tier).toBe("secondary");
+    expect(dfb?.quotes?.[0] ?? "").toMatch(/December 20th through January 3rd/);
+    expect(wdwnt?.quote).toBe(
+      "The experience will be available after the sun sets from December 20, 2026, through January 3, 2027.",
+    );
+    expect(dfb?.tier).toBe("secondary");
   });
 });
 
@@ -425,7 +475,7 @@ describe("acknowledgements", () => {
     expect(full.ok).toBe(true);
   });
 
-  it("refuses to run the CLI without an evidence file", () => {
+  it("refuses to run the CLI without an evidence file", async () => {
     const previous = {
       today: process.env.PARKIO_DAILY_TODAY,
       evidence: process.env.PARKIO_DAILY_EVIDENCE_PATH,
@@ -442,10 +492,10 @@ describe("acknowledgements", () => {
     delete process.env.FIXED_REF;
     delete process.env.ACK;
     try {
-      expect(runCli()).toBe(1);
+      expect(await runCli({ fetchPage: null })).toBe(1);
       expect(resolveEvidence(null).error).toMatch(/missing/i);
       writeFileSync(process.env.PARKIO_DAILY_EVIDENCE_PATH, JSON.stringify({ version: 1, skipped: true, items: [] }));
-      expect(runCli()).toBe(0);
+      expect(await runCli({ fetchPage: null })).toBe(0);
     } finally {
       for (const [key, value] of Object.entries({
         PARKIO_DAILY_TODAY: previous.today,
@@ -507,8 +557,8 @@ describe("parkio-daily.yml wires the gate without a skip switch", () => {
     expect(inputs).toEqual(["release_held_run_id", "ack", "fixed_ref"]);
     expect(doc.on.schedule).toEqual([{ cron: "0 11 * * *" }]);
     expect(doc.jobs.publish.if).toBe("needs.build.outputs.pushed == 'true'");
-    // actions: read cannot upload the held artifact. write is the minimum that can.
-    expect(doc.jobs.build.permissions.actions).toBe("write");
+    // upload-artifact v4 uses ACTIONS_RUNTIME_TOKEN. Download and run lookup need read.
+    expect(doc.jobs.build.permissions.actions).toBe("read");
     expect(doc.jobs.build.permissions.contents).toBe("write");
     const upload = steps.find((step) => step.name === "Upload held briefing");
     expect(upload?.if).toMatch(/factcheck/);
