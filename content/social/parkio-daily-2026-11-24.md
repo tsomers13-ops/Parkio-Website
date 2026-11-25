@@ -5,20 +5,19 @@ _Generated from the daily briefing. Zero AI cost — just reformatted. Paste-and
 ## 1. Short / Reel / TikTok (post to all three)
 
 ```
-HOOK (0–2s): Ride it before it's gone — Big Thunder Mountain and Haunted Mansion both failed to open this morning
-BEAT (3–20s): Two of Magic Kingdom's highest-capacity attractions remained closed through midday Monday as Thanksgiving week crowds arrived. No reopening time has been announced for either ride.
-TIP (insert ~15s): Frontierland and Liberty Square tend to bottleneck fast when these two are down. Prioritizing Tomorrowland or Fantasyland during the first few hours usually…
+HOOK (0–2s): Twilight Tales safari coming Dec 20 at Animal Kingdom
+BEAT (3–20s): A new after-dark version of Kilimanjaro Safaris called Twilight Tales is coming Dec 20 to Animal Kingdom. The experience will offer a different narrative and lighting setup for evening guests.
+TIP (insert ~15s): Evening safari slots tend to book quickly once word spreads.
 PAYOFF (20–30s): We track every closure, opening, and change so you never miss it — Parkio Daily, free at parkio.info.
-ON-SCREEN TEXT: Big Thunder Mountain and Haunted Mansion both failed to…  |  parkio.info
-CAPTION: Big Thunder Mountain and Haunted Mansion both failed to open this morning #DisneyWorld #DisneyParks #Disney #ParkioDaily #MagicKingdom
+ON-SCREEN TEXT: Twilight Tales safari coming Dec 20  |  parkio.info
+CAPTION: Twilight Tales safari coming Dec 20 at Animal Kingdom #DisneyWorld #DisneyParks #Disney #ParkioDaily #AnimalKingdom
 ```
 
 ## 2. X / Threads
 
 ```
 🏰 Today at Disney:
-• Big Thunder Mountain and Haunted Mansion both failed to open this…
-• Twilight Tales nighttime safari launching at Animal Kingdom
+• Twilight Tales safari coming Dec 20 at Animal Kingdom
 • Lightning Lane Premier Pass selling out at record-high prices
 Full briefing → parkio.info
 #DisneyWorld #MagicKingdom #AnimalKingdom
@@ -29,22 +28,20 @@ Full briefing → parkio.info
 **Carousel slides**
 ```
 SLIDE 1 (cover): Today at Disney — 2026-11-24
-SLIDE 2: 🏰 Big Thunder Mountain and Haunted Mansion both failed to open this…
-   Two of Magic Kingdom's highest-capacity attractions remained closed through midday Monday as Thanksgiving week crowds arrived. No reopening time has…
-SLIDE 3: 🦁 Twilight Tales nighttime safari launching at Animal Kingdom
-   A new after-dark version of Kilimanjaro Safaris called Twilight Tales is coming to Animal Kingdom. The experience will offer a different narrative…
-SLIDE 4: 📍 Lightning Lane Premier Pass selling out at record-high prices
+SLIDE 2: 🦁 Twilight Tales safari coming Dec 20 at Animal Kingdom
+   A new after-dark version of Kilimanjaro Safaris called Twilight Tales is coming Dec 20 to Animal Kingdom. The experience will offer a different narrative…
+SLIDE 3: 📍 Lightning Lane Premier Pass selling out at record-high prices
    The top-tier skip-the-line product has sold out across all four Disney World parks for nearly a full week ahead of Thanksgiving, with Magic Kingdom…
-SLIDE 5: 📍 Disney Cruise Line replaces gingerbread houses with towers across…
+SLIDE 4: 📍 Disney Cruise Line replaces gingerbread houses with towers across…
    The holiday gingerbread displays on Disney's classic cruise ships are now vertical towers instead of the traditional house designs. The change…
-SLIDE 6: 🎡 Bucky Barnes and Yelena Belova debut at Avengers Campus
+SLIDE 5: 🎡 Bucky Barnes and Yelena Belova debut at Avengers Campus
    Two new characters from Avengers: Doomsday are now meeting guests at Disney California Adventure ahead of the film's December 18 release. Additional…
-SLIDE 7 (CTA): Full briefing every morning → parkio.info
+SLIDE 6 (CTA): Full briefing every morning → parkio.info
 ```
 
 **Caption**
 ```
-Twilight Tales safari debuts at Animal Kingdom; Big Thunder and Haunted Mansion both down this morning at Magic Kingdom.
+Twilight Tales safari coming Dec 20 at Animal Kingdom.
 
 The Disney news that matters, every morning — free at parkio.info. Link in bio.
 
@@ -53,8 +50,7 @@ The Disney news that matters, every morning — free at parkio.info. Link in bio
 
 ## Source stories used (top-ranked by shareability)
 
-- [breaking] Big Thunder Mountain and Haunted Mansion both failed to open this morning
-- [breaking] Twilight Tales nighttime safari launching at Animal Kingdom
+- [breaking] Twilight Tales safari coming Dec 20 at Animal Kingdom
 - [topstories] Lightning Lane Premier Pass selling out at record-high prices
 - [topstories] Disney Cruise Line replaces gingerbread houses with towers across fleet
 - [bignews] Bucky Barnes and Yelena Belova debut at Avengers Campus
