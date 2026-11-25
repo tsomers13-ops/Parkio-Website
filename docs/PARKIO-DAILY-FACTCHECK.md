@@ -1,8 +1,8 @@
 # Parkio Daily fact-check
 
-The build job in `.github/workflows/parkio-daily.yml` runs `scripts/parkio-daily/factcheck.mjs` after today's JSON exists and before social drafts and the commit. All checks block. There is no warn mode and no skip switch.
+The build job in `.github/workflows/parkio-daily.yml` runs `scripts/parkio-daily/factcheck.mjs` after today's JSON exists and before social drafts and the commit. Closed-attraction findings and weekday mismatches block. The other date findings, debut and closing findings, and unverifiable findings are report-only. There is no warn mode for the whole gate and no skip switch.
 
-A failing check exits the step. Commit does not run, so `pushed` stays unset and the publish job does not run. Nothing is written to `main`, `/guide/<slug>`, `/feed.xml`, or Buttondown. The held JSON, the feed evidence, the report, and a short release note are uploaded as the `parkio-daily-held` artifact (7 days).
+A blocking finding exits the step. Commit does not run, so `pushed` stays unset and the publish job does not run. Nothing is written to `main`, `/guide/<slug>`, `/feed.xml`, or Buttondown. The held JSON, the feed evidence, the report, and a short release note are uploaded as the `parkio-daily-held` artifact (7 days). Report-only findings are labelled `report-only` in the job summary and in `parkio-daily-factcheck` (14 days). They do not hold the run, so that artifact is uploaded on a passing check too.
 
 The check lives in the build job, which uses the workflow file on `main` at dispatch time. It is not in `parkio-daily-publish.yml`, because that job loads its tooling from the candidate commit.
 
@@ -12,18 +12,35 @@ A later run the same day that generates a briefing the checks accept is allowed 
 
 ## What blocks
 
-| Check | Data | What it blocks |
+Tom's choice, November 25, 2026: block now on the closed-ride list and on weekday mismatch. Date checks stay report-only for about two weeks, then become blocking.
+
+| Check | Disposition | What it looks at |
 | --- | --- | --- |
-| (a) | `data/parkio-daily/facts.json` | A sentence that names a ledger subject and states it as current before `startDate`, or gives a calendar date outside the ledger window. A bare mention does not block. A past `reviewBy` is a notice, not a hold. |
-| (b) | `data/parkio-daily/attraction-status.json` | On or after `effectiveDate`, operating language in a sentence that names the attraction. The match is case-insensitive. Language includes `final season`, `last ride`, `last chance`, `one last`, `still open`, `still operating`, `remains open`, `operational`, `running its`, `closing soon`, or a wait like `40 min` / `walk-on`. "Replacing DINOSAUR" and "DINOSAUR closed in February" pass. |
-| (c) | The issue text, plus feed evidence when this run fetched feeds | A title or teaser that says a ride is down "this morning" / "today" while the body dates that event to another weekday. With feed evidence, only a concrete same-day status claim counts: down, closed, failed to open, reopened, or opened, with "today" or "this morning", and a named place when the claim is in the teaser. A tip that only says "today" does not. 11:30 PM ET the day before does not count. |
-| (d) | The issue text, the ledger, and feed evidence when present | An undated "debuts" / "now open" / "now meeting" claim, or "new …" in the teaser or a right-now note, while that item's body is future tense ("is coming", "will open"). An explicit later date ("debuts August 7") passes. With feed evidence, source-date fires only for an opening or closing claim about a named attraction, venue, or show. The adjective "new" by itself does not. |
+| (a) | Report-only while `dateChecks` is `report` | A sentence that names a ledger subject and states it as current before `startDate`, or gives a calendar date outside the ledger window. A bare mention does not fire. A past `reviewBy` is a notice. |
+| (b) | Blocking | On or after `effectiveDate`, operating language in a sentence that names the attraction. The match is case-insensitive. Language includes `final season`, `last ride`, `last chance`, `one last`, `still open`, `still operating`, `remains open`, `operational`, `running its`, `closing soon`, or a wait like `40 min` / `walk-on`. "Replacing DINOSAUR" and "DINOSAUR closed in February" pass. |
+| (c) weekday | Blocking | A title or teaser that says a ride is down "this morning" / "today" while the body dates that event to another weekday. |
+| (c) other dates | Report-only while `dateChecks` is `report` | A concrete same-day status claim: down, closed, failed to open, reopened, or opened, with "today" or "this morning". A tip that only says "today" does not fire. 11:30 PM ET the day before does not count. |
+| (d) | Report-only while `dateChecks` is `report` | An undated "debuts" / "now open" / "now meeting" claim, or "new …" in the teaser or a right-now note, while that item's body is future tense. With feed evidence, source-date fires only for an opening or closing claim about a named attraction, venue, or show. |
+
+The flip is one line in `data/parkio-daily/factcheck-config.json`. Planned date: **2026-12-09**. Change:
+
+```json
+"dateChecks": "report"
+```
+
+to:
+
+```json
+"dateChecks": "block"
+```
+
+That makes (a), the non-weekday part of (c), and all of (d) blocking. Closed-ride and weekday findings stay blocking either way. There is no whole-gate warn mode.
 
 Feed evidence is `title`, `link`, `pubDate` (ISO), `source`, and a short excerpt, written under `$RUNNER_TEMP` by `build.mjs`. It is not committed. When today's file already exists, `build.mjs` does not fetch again. The checker then uses the JSON-only backstop unless a release restored the held evidence file.
 
 If a cited URL is not in that feed file, the fact-check step fetches the page (10s timeout, 24 pages per run) and reads a published date from `article:published_time`, then JSON-LD `datePublished` (including `@graph`), then `<time datetime>` (preferring one marked published). The fetch lives in the checker because the cited URLs are not known until the briefing JSON exists. The step is still in the build job, before commit. Tests inject the fetcher and do not use the network.
 
-A 403, other 4xx or 5xx, timeout, network error, a page with no parseable date, or a spotlight opening/debut/closing claim with no source URL and no matching feed title is an **unverifiable** finding. It is not a contradiction. `data/parkio-daily/factcheck-config.json` sets `unverifiable` to `hold` (default; the finding blocks) or `pass` (listed in the report, does not block). That switch is only this class. There is no warn mode for the other checks.
+A 403, other 4xx or 5xx, timeout, network error, a page with no parseable date, or a spotlight opening/debut/closing claim with no source URL and no matching feed title is an **unverifiable** finding. It is not a contradiction. If a source blocks reading, the finding is reported and the issue is not held. `unverifiable` in `data/parkio-daily/factcheck-config.json` is `report` (the default) or `hold`.
 
 The build job's `actions` permission is `read`. `actions/upload-artifact` v4 uploads with `ACTIONS_RUNTIME_TOKEN`, and downloading a held artifact plus the runs lookup need `read`. `contents: write` stays for the bot commit. The first controlled run of this workflow must confirm the held-artifact upload still succeeds.
 
@@ -47,7 +64,9 @@ Committing a fix straight to `main` as yourself does not publish. The publish jo
 
 The name match is case-insensitive, and "remains open" / "operational" count. `parkio-daily-2026-07-05` ("DinoLand U.S.A. remains open") and `parkio-daily-2026-09-12` ("DinoLand attractions remain operational") hold. Those sentences contradict the February 2, 2026 date in the March 6, 2025 Disney Parks Blog post. That post is a pre-announcement, not a later confirmation that the land was actually closed on those dates.
 
-`facts.json` has one entry, Twilight Tales, tier `secondary`, `officialConfirmation: not-found`. WDWNT's More Details post, fetched 2026-11-25 (HTTP 200), says: "The experience will be available after the sun sets from December 20, 2026, through January 3, 2027." Those printed years are `startDate` and `endDate`. The Disney Food Blog RSS item (HTML 403) has two separate sentences, "from December 20th through January 3rd" and "only from December 20th through January 3rd," without years. Neither source is a Disney page.
+New facts are added by pull request with a linked source. Tom approves those merges. A fact sourced only from fan sites is tier `secondary` and worded "reported" or "expected".
+
+`facts.json` has one entry, Twilight Tales, tier `secondary`, wording `reported`, `officialConfirmation: not-found`. It is reported by fan sites and expected from December 20, 2026 through January 3, 2027. WDWNT's More Details post, fetched 2026-11-25 (HTTP 200), says: "The experience will be available after the sun sets from December 20, 2026, through January 3, 2027." Those printed years are `startDate` and `endDate`. The Disney Food Blog RSS item (HTML 403) has two separate sentences, "from December 20th through January 3rd" and "only from December 20th through January 3rd," without years. Neither source is a Disney page.
 
 ## Replay
 

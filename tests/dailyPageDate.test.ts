@@ -102,10 +102,12 @@ describe("unverifiable config", () => {
     { id: "unverifiable:2", rule: "unverifiable", class: "unverifiable", path: "t", text: "opens today", evidence: "403" },
   ];
 
-  it("holds unverifiable findings by default and can pass them without calling them contradictions", () => {
-    expect(blockingFindings(findings, { unverifiable: "hold" })).toHaveLength(2);
-    const passed = blockingFindings(findings, { unverifiable: "pass" }) as Array<{ rule: string }>;
-    expect(passed.map((f) => f.rule)).toEqual(["c-source-date"]);
+  it("reports unverifiable findings unless that key is hold, separate from date checks", () => {
+    expect(blockingFindings(findings, { unverifiable: "report", dateChecks: "report" })).toEqual([]);
+    const heldUnverifiable = blockingFindings(findings, { unverifiable: "hold", dateChecks: "report" }) as Array<{ rule: string }>;
+    expect(heldUnverifiable.map((f) => f.rule)).toEqual(["unverifiable"]);
+    const heldDates = blockingFindings(findings, { unverifiable: "report", dateChecks: "block" }) as Array<{ rule: string }>;
+    expect(heldDates.map((f) => f.rule)).toEqual(["c-source-date"]);
     expect(findings.find((f) => f.rule === "unverifiable")?.class).toBe("unverifiable");
   });
 });

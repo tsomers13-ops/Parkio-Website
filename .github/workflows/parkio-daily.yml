@@ -154,7 +154,9 @@ jobs:
 
       # In this build job, which checked out main. Not in the publish
       # workflow: that job loads tooling from the candidate commit.
-      # All checks block. A failure skips social, commit, and publish.
+      # Closed-attraction and weekday-mismatch findings block. Date checks
+      # and unverifiable findings are report-only until dateChecks is "block".
+      # A blocking failure skips social, commit, and publish.
       # The re-offer path reaches this step too, because it sits before
       # "Commit the new briefing". A later run whose new text passes is
       # allowed to publish; nothing here latches an earlier hold.
@@ -165,6 +167,17 @@ jobs:
           FIXED_REF: ${{ inputs.fixed_ref }}
           ACK: ${{ inputs.ack }}
         run: node scripts/parkio-daily/factcheck.mjs
+
+      # Report-only findings are in this artifact and in the step summary.
+      # They do not fail the step, so this upload also runs when the check passes.
+      - name: Upload fact-check report
+        if: always() && (steps.factcheck.outcome == 'success' || steps.factcheck.outcome == 'failure')
+        uses: actions/upload-artifact@v4
+        with:
+          name: parkio-daily-factcheck
+          retention-days: 14
+          if-no-files-found: warn
+          path: ${{ runner.temp }}/parkio-daily-factcheck/
 
       - name: Generate social drafts
         # Reformats today's briefing into ready-to-post social drafts at

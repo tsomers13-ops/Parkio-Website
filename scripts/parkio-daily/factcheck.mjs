@@ -262,18 +262,51 @@ export function loadAttractionStatus(root = repoRoot()) {
 export function loadFactcheckConfig(root = repoRoot()) {
   const file = path.join(root, "data", "parkio-daily", "factcheck-config.json");
   const data = JSON.parse(readFileSync(file, "utf8"));
-  if (data?.unverifiable !== "hold" && data?.unverifiable !== "pass") {
-    throw new Error(`${file} unverifiable must be "hold" or "pass"`);
+  if (data?.unverifiable !== "hold" && data?.unverifiable !== "report") {
+    throw new Error(`${file} unverifiable must be "hold" or "report"`);
+  }
+  if (data?.dateChecks !== "report" && data?.dateChecks !== "block") {
+    throw new Error(`${file} dateChecks must be "report" or "block"`);
   }
   return data;
 }
 
-/** Unverifiable findings block only when config says hold. They are never contradictions. */
-export function blockingFindings(findings, config = { unverifiable: "hold" }) {
-  if (config?.unverifiable === "pass") {
-    return findings.filter((finding) => finding.class !== "unverifiable" && finding.rule !== "unverifiable");
+/** Ledger dates, same-day source dates, and debut/closing tense. Not weekday mismatch. */
+const DATE_CHECK_RULES = new Set([
+  "a-fact-ledger",
+  "c-teaser-sameday",
+  "c-source-date",
+  "d-debut-tense",
+  "d-source-date",
+]);
+
+function resolvedConfig(config) {
+  return {
+    unverifiable: "report",
+    dateChecks: "report",
+    ...(config || {}),
+  };
+}
+
+/**
+ * Closed attractions and weekday mismatch always block.
+ * dateChecks "report" (the default) lists the other date findings and does not hold.
+ * Set dateChecks to "block" to make those findings blocking. That is the one-line flip.
+ * unverifiable "report" (the default) lists 403s and unsourced spotlights and does not hold.
+ */
+export function findingDisposition(finding, config) {
+  const resolved = resolvedConfig(config);
+  if (finding?.class === "unverifiable" || finding?.rule === "unverifiable") {
+    return resolved.unverifiable === "hold" ? "blocking" : "report-only";
   }
-  return findings;
+  if (DATE_CHECK_RULES.has(finding?.rule)) {
+    return resolved.dateChecks === "block" ? "blocking" : "report-only";
+  }
+  return "blocking";
+}
+
+export function blockingFindings(findings, config) {
+  return (findings || []).filter((finding) => findingDisposition(finding, config) === "blocking");
 }
 
 export function loadFacts(root = repoRoot()) {
@@ -934,6 +967,11 @@ export function heldDir() {
   return path.join(process.env.RUNNER_TEMP || tmpdir(), "parkio-daily-held");
 }
 
+export function reportDir() {
+  if (process.env.PARKIO_DAILY_REPORT_DIR) return process.env.PARKIO_DAILY_REPORT_DIR;
+  return path.join(process.env.RUNNER_TEMP || tmpdir(), "parkio-daily-factcheck");
+}
+
 export function evidenceFilePath() {
   if (process.env.PARKIO_DAILY_EVIDENCE_PATH) return process.env.PARKIO_DAILY_EVIDENCE_PATH;
   return path.join(process.env.RUNNER_TEMP || tmpdir(), "parkio-daily-evidence.json");
@@ -1025,14 +1063,17 @@ export async function runCli(opts = {}) {
   }
 
   const { findings, notices } = checkDailyPost(post, { evidence });
-  const blocking = blockingFindings(findings, config);
+  const labelled = findings.map((finding) => ({
+    ...finding,
+    disposition: findingDisposition(finding, config),
+  }));
+  const blocking = labelled.filter((finding) => finding.disposition === "blocking");
+  const reportOnly = labelled.filter((finding) => finding.disposition === "report-only");
   const releaseRequested = Boolean(
     String(process.env.RELEASE_HELD_RUN_ID || "").trim() || String(process.env.FIXED_REF || "").trim(),
   );
   const ackIds = parseAckList(process.env.ACK);
   const decision = evaluateAcknowledgements({ findings: blocking, ackIds, releaseRequested });
-  const contradictions = findings.filter((finding) => finding.class !== "unverifiable");
-  const unverifiable = findings.filter((finding) => finding.class === "unverifiable");
 
   const report = {
     version: 1,
@@ -1041,10 +1082,11 @@ export async function runCli(opts = {}) {
     sha256: sha256(bytes),
     evidence: resolved.mode,
     unverifiablePolicy: config.unverifiable,
-    contradictions,
-    unverifiable,
+    dateChecks: config.dateChecks,
+    blocking,
+    reportOnly,
     pageFetches,
-    findings,
+    findings: labelled,
     notices,
     releaseRequested,
     acknowledged: decision.acknowledged,
@@ -1054,7 +1096,7 @@ export async function runCli(opts = {}) {
   const lines = [
     `# Parkio Daily fact-check (${today})`,
     "",
-    `Evidence mode: ${resolved.mode}. Contradictions: ${contradictions.length}. Unverifiable: ${unverifiable.length} (${config.unverifiable}; not contradictions).`,
+    `Evidence mode: ${resolved.mode}. Blocking: ${blocking.length}. Report-only: ${reportOnly.length}. unverifiable=${config.unverifiable}. dateChecks=${config.dateChecks}.`,
   ];
   if (notices.length) {
     lines.push("", "## Notices (not blocking)", ...notices.map((n) => `- ${n}`));
@@ -1063,26 +1105,26 @@ export async function runCli(opts = {}) {
     lines.push("", "| id | rule | path | text |", "| --- | --- | --- | --- |");
     for (const f of rows) lines.push(`| \`${f.id}\` | ${f.rule} | ${f.path} | ${f.text.replace(/\|/g, "\\|")} |`);
   };
-  if (contradictions.length) {
-    lines.push("", "## Contradictions");
-    table(contradictions);
-  }
-  if (unverifiable.length) {
-    lines.push("", `## Unverifiable (policy: ${config.unverifiable})`);
-    table(unverifiable);
-  }
+  lines.push("", "## Blocking");
+  if (blocking.length) table(blocking);
+  else lines.push("", "None.");
+  lines.push("", "## Report-only");
+  if (reportOnly.length) table(reportOnly);
+  else lines.push("", "None.");
   if (!findings.length) lines.push("", "Passed. No findings.");
   writeSummary(lines);
 
+  const outDir = reportDir();
+  mkdirSync(outDir, { recursive: true });
+  writeFileSync(path.join(outDir, "report.json"), JSON.stringify(report, null, 2) + "\n");
+
   for (const notice of notices) console.log(`[parkio-daily] notice: ${notice}`);
-  for (const f of contradictions) {
+  for (const f of blocking) {
     console.log(`::error title=${f.id}::[${f.rule}] ${f.path}: ${f.text}`);
     console.log(`[parkio-daily] ${f.id} evidence: ${f.evidence}`);
   }
-  for (const f of unverifiable) {
-    const line = `[unverifiable] ${f.path}: ${f.text}`;
-    if (config.unverifiable === "hold") console.log(`::error title=${f.id}::${line}`);
-    else console.log(`[parkio-daily] ${line}`);
+  for (const f of reportOnly) {
+    console.log(`[parkio-daily] [report-only] [${f.rule}] ${f.path}: ${f.text}`);
     console.log(`[parkio-daily] ${f.id} evidence: ${f.evidence}`);
   }
 
@@ -1093,7 +1135,7 @@ export async function runCli(opts = {}) {
     writeFileSync(path.join(dir, "report.json"), JSON.stringify(report, null, 2) + "\n");
     copyFileSync(evidencePath, path.join(dir, "evidence.json"));
     writeFileSync(path.join(dir, "HOW-TO-RELEASE.txt"), howToRelease(blocking));
-    console.error(`[parkio-daily] Held ${slug}. ${blocking.length} blocking finding(s) (${contradictions.length} contradictions, ${unverifiable.length} unverifiable). Bundle: ${dir}`);
+    console.error(`[parkio-daily] Held ${slug}. ${blocking.length} blocking finding(s). ${reportOnly.length} report-only finding(s) are in the report and do not hold the run. Bundle: ${dir}`);
     for (const problem of decision.problems) console.error(`::error::${problem}`);
     return 1;
   }

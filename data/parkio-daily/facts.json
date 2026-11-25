@@ -1,5 +1,6 @@
 {
   "version": 1,
+  "policy": "New facts are added by pull request with a linked source. Tom approves those merges. A fact sourced only from fan sites is tier secondary and worded reported or expected.",
   "facts": [
     {
       "id": "ak-twilight-tales",
@@ -10,6 +11,7 @@
       "startDate": "2026-12-20",
       "endDate": "2027-01-03",
       "tier": "secondary",
+      "wording": "reported",
       "officialConfirmation": "not-found",
       "dateConfidence": "secondary-years-stated",
       "reviewBy": "2026-12-19",
@@ -35,7 +37,7 @@
           "note": "Fetched 2026-11-25 from this URL, HTTP 200. Byline Shannen Ace November 24, 2026. The sentence prints both years. It is a WDWNT report, not a Disney page. This is the date source for startDate and endDate."
         }
       ],
-      "notes": "Secondary. Official Disney confirmation was not in the fetched text. startDate and endDate are the years printed in the WDWNT More Details sentence quoted above."
+      "notes": "Reported by WDWNT and Disney Food Blog. Expected from December 20, 2026 through January 3, 2027. Official Disney confirmation was not in the fetched text. startDate and endDate are the years printed in the WDWNT More Details sentence quoted above."
     }
   ]
 }

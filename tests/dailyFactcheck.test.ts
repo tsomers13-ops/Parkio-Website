@@ -12,12 +12,15 @@ import {
   writeSkippedFeedEvidence,
 } from "../scripts/parkio-daily/build.mjs";
 import {
+  blockingFindings,
   checkDailyPost,
   etCalendarDate,
   evaluateAcknowledgements,
   explicitDates,
+  findingDisposition,
   issueWeekday,
   loadAttractionStatus,
+  loadFactcheckConfig,
   loadFacts,
   parseAckList,
   partialNameMatch,
@@ -119,17 +122,22 @@ describe("ledger and attraction seed", () => {
       id: string;
       subject: string;
       tier: string;
+      wording: string;
       officialConfirmation: string;
       startDate: string;
       endDate: string;
       dateConfidence: string;
+      notes: string;
       sources: Array<{ url: string; tier: string; quote?: string; quotes?: string[] }>;
     }>;
     expect(facts.map((f) => f.id)).toEqual(["ak-twilight-tales"]);
     const fact = facts[0];
     expect(fact.subject).toBe("Twilight Tales");
     expect(fact.tier).toBe("secondary");
+    expect(fact.wording).toBe("reported");
     expect(fact.officialConfirmation).toBe("not-found");
+    expect(fact.notes).toMatch(/Reported by/);
+    expect(fact.notes).toMatch(/Expected from December 20, 2026/);
     expect(fact.startDate).toBe("2026-12-20");
     expect(fact.endDate).toBe("2027-01-03");
     expect(fact.dateConfidence).toBe("secondary-years-stated");
@@ -514,6 +522,77 @@ describe("acknowledgements", () => {
   });
 });
 
+describe("blocking policy", () => {
+  const sample = [
+    { id: "b", rule: "b-closed-attraction", class: "contradiction", path: "p", text: "remains open", evidence: "e" },
+    { id: "w", rule: "c-weekday-mismatch", class: "contradiction", path: "p", text: "this morning", evidence: "e" },
+    { id: "c", rule: "c-source-date", class: "contradiction", path: "p", text: "opens today", evidence: "e" },
+    { id: "d", rule: "d-debut-tense", class: "contradiction", path: "p", text: "debuts", evidence: "e" },
+    { id: "a", rule: "a-fact-ledger", class: "contradiction", path: "p", text: "debuts", evidence: "e" },
+    { id: "u", rule: "unverifiable", class: "unverifiable", path: "p", text: "opens today", evidence: "403" },
+  ];
+
+  it("reports date checks and unverifiable findings, and blocks closed rides and weekday mismatch", () => {
+    const config = loadFactcheckConfig() as { unverifiable: string; dateChecks: string };
+    expect(config.unverifiable).toBe("report");
+    expect(config.dateChecks).toBe("report");
+    expect(blockingFindings(sample).map((f) => f.rule)).toEqual(["b-closed-attraction", "c-weekday-mismatch"]);
+    expect(findingDisposition(sample[2], config)).toBe("report-only");
+    expect(findingDisposition(sample[5], config)).toBe("report-only");
+  });
+
+  it("blocks date checks when dateChecks is block, and unverifiable findings when unverifiable is hold", () => {
+    const dates = blockingFindings(sample, { unverifiable: "report", dateChecks: "block" }).map((f) => f.rule);
+    expect(dates).toEqual(["b-closed-attraction", "c-weekday-mismatch", "c-source-date", "d-debut-tense", "a-fact-ledger"]);
+    const held = blockingFindings(sample, { unverifiable: "hold", dateChecks: "report" }).map((f) => f.rule);
+    expect(held).toEqual(["b-closed-attraction", "c-weekday-mismatch", "unverifiable"]);
+  });
+
+  it("writes report-only findings to the summary and the report file without holding", async () => {
+    const previous = {
+      today: process.env.PARKIO_DAILY_TODAY,
+      evidence: process.env.PARKIO_DAILY_EVIDENCE_PATH,
+      held: process.env.PARKIO_DAILY_HELD_DIR,
+      report: process.env.PARKIO_DAILY_REPORT_DIR,
+      summary: process.env.GITHUB_STEP_SUMMARY,
+    };
+    const dir = mkdtempSync(path.join(tmpdir(), "parkio-report-"));
+    process.env.PARKIO_DAILY_TODAY = "2026-08-06";
+    process.env.PARKIO_DAILY_EVIDENCE_PATH = path.join(dir, "evidence.json");
+    process.env.PARKIO_DAILY_HELD_DIR = path.join(dir, "held");
+    process.env.PARKIO_DAILY_REPORT_DIR = path.join(dir, "report");
+    process.env.GITHUB_STEP_SUMMARY = path.join(dir, "summary.md");
+    writeFileSync(process.env.PARKIO_DAILY_EVIDENCE_PATH, JSON.stringify({ version: 1, skipped: true, items: [] }));
+    writeFileSync(process.env.GITHUB_STEP_SUMMARY, "");
+    try {
+      expect(await runCli({ fetchPage: null })).toBe(0);
+      const summary = readFileSync(process.env.GITHUB_STEP_SUMMARY, "utf8");
+      const blockingSection = summary.split("## Report-only")[0] ?? "";
+      expect(summary).toMatch(/## Report-only/);
+      expect(summary).toMatch(/new dining concept/);
+      expect(blockingSection).toMatch(/## Blocking/);
+      expect(blockingSection).not.toMatch(/dining concept/);
+      const report = JSON.parse(readFileSync(path.join(process.env.PARKIO_DAILY_REPORT_DIR, "report.json"), "utf8"));
+      expect(report.reportOnly.some((f: { text: string }) => /dining concept/.test(f.text))).toBe(true);
+      expect(report.reportOnly.every((f: { disposition: string }) => f.disposition === "report-only")).toBe(true);
+      expect(report.blocking).toEqual([]);
+    } finally {
+      for (const [key, envName] of [
+        ["today", "PARKIO_DAILY_TODAY"],
+        ["evidence", "PARKIO_DAILY_EVIDENCE_PATH"],
+        ["held", "PARKIO_DAILY_HELD_DIR"],
+        ["report", "PARKIO_DAILY_REPORT_DIR"],
+        ["summary", "GITHUB_STEP_SUMMARY"],
+      ] as const) {
+        const value = previous[key];
+        if (value === undefined) delete process.env[envName];
+        else process.env[envName] = value;
+      }
+      rmSync(dir, { recursive: true, force: true });
+    }
+  });
+});
+
 describe("full-history replay", () => {
   it("holds the known JSON-only issues, including DinoLand still described as open", () => {
     const files = readdirSync(DAILY).filter((name) => name.endsWith(".json")).sort();
@@ -563,6 +642,9 @@ describe("parkio-daily.yml wires the gate without a skip switch", () => {
     expect(doc.jobs.build.permissions.contents).toBe("write");
     const upload = steps.find((step) => step.name === "Upload held briefing");
     expect(upload?.if).toMatch(/factcheck/);
+    const report = steps.find((step) => step.name === "Upload fact-check report");
+    expect(report?.if).toMatch(/always\(\)/);
+    expect(report?.if).toMatch(/factcheck/);
   });
 
   it("a later passing regenerate is not latched, so it commits and can publish", () => {
