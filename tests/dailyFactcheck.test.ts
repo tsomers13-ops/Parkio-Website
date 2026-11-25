@@ -537,15 +537,15 @@ describe("blocking policy", () => {
     const config = loadFactcheckConfig() as { unverifiable: string; dateChecks: string };
     expect(config.unverifiable).toBe("report");
     expect(config.dateChecks).toBe("report");
-    expect(blockingFindings(sample).map((f) => f.rule)).toEqual(["b-closed-attraction", "c-weekday-mismatch"]);
+    expect((blockingFindings(sample) as Array<{ rule: string }>).map((f) => f.rule)).toEqual(["b-closed-attraction", "c-weekday-mismatch"]);
     expect(findingDisposition(sample[2], config)).toBe("report-only");
     expect(findingDisposition(sample[5], config)).toBe("report-only");
   });
 
   it("blocks date checks when dateChecks is block, and unverifiable findings when unverifiable is hold", () => {
-    const dates = blockingFindings(sample, { unverifiable: "report", dateChecks: "block" }).map((f) => f.rule);
+    const dates = (blockingFindings(sample, { unverifiable: "report", dateChecks: "block" }) as Array<{ rule: string }>).map((f) => f.rule);
     expect(dates).toEqual(["b-closed-attraction", "c-weekday-mismatch", "c-source-date", "d-debut-tense", "a-fact-ledger"]);
-    const held = blockingFindings(sample, { unverifiable: "hold", dateChecks: "report" }).map((f) => f.rule);
+    const held = (blockingFindings(sample, { unverifiable: "hold", dateChecks: "report" }) as Array<{ rule: string }>).map((f) => f.rule);
     expect(held).toEqual(["b-closed-attraction", "c-weekday-mismatch", "unverifiable"]);
   });
 
