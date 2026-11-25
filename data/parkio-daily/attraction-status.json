@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "attractions": [
+    {
+      "id": "ak-dinosaur",
+      "name": "DINOSAUR",
+      "match": ["\\bDINOSAUR\\b(?!\\s*Treasures)"],
+      "park": "animal-kingdom",
+      "status": "closed-permanently",
+      "effectiveDate": "2026-02-02",
+      "lastOperatingDay": "2026-02-01",
+      "source": {
+        "url": "https://disneyparksblog.com/wdw/dinoland-closing-animal-kingdom/",
+        "label": "Disney Parks Blog",
+        "publishedAt": "2025-03-06",
+        "tier": "official",
+        "quote": "DinoLand U.S.A. will permanently close on February 2, 2026. This means the final day to experience DINOSAUR, The Dino Institute Shop, Restaurantosaurus, and Restaurantosaurus Lounge is February 1. DINOSAUR closes February 2, 2026."
+      },
+      "addedBy": "daily-factcheck-gate",
+      "reviewBy": "2027-02-02",
+      "note": "The March 6, 2025 Disney Parks Blog post is a pre-announcement of the closure date, fetched again while writing this file. It is not a separate post-closure confirmation."
+    },
+    {
+      "id": "ak-dinoland",
+      "name": "DinoLand U.S.A.",
+      "match": ["\\bDinoLand(?:\\s+U\\.?S\\.?A\\.?)?\\b"],
+      "park": "animal-kingdom",
+      "status": "closed-permanently",
+      "effectiveDate": "2026-02-02",
+      "lastOperatingDay": "2026-02-01",
+      "source": {
+        "url": "https://disneyparksblog.com/wdw/dinoland-closing-animal-kingdom/",
+        "label": "Disney Parks Blog",
+        "publishedAt": "2025-03-06",
+        "tier": "official",
+        "quote": "DinoLand U.S.A. will permanently close on February 2, 2026."
+      },
+      "addedBy": "daily-factcheck-gate",
+      "reviewBy": "2027-02-02",
+      "note": "Same March 6, 2025 post. A mention of the land as a place (near DinoLand, former DinoLand, the land replacing DinoLand) is not an operating claim. The same post also names The Dino Institute Shop, Restaurantosaurus, Restaurantosaurus Lounge, and several venues it said were already closed. Those were not seeded: this file only lists DINOSAUR and DinoLand U.S.A."
+    }
+  ]
+}

@@ -42,6 +42,7 @@
  */
 
 import { existsSync, readFileSync, writeFileSync, mkdirSync } from "node:fs";
+import { tmpdir } from "node:os";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -121,6 +122,11 @@ export {
   buildPrompt,
   buildPost,
   isValidExistingDailyPost,
+  parsePubDateToIso,
+  feedEvidencePath,
+  buildFeedEvidence,
+  writeFeedEvidenceFile,
+  writeSkippedFeedEvidence,
 };
 
 async function main() {
@@ -157,6 +163,10 @@ async function main() {
       process.exit(1);
     }
     console.log(`[parkio-daily] ${outPath} already exists and is valid — skipping generation (idempotent no-op).`);
+    // A re-offer has no fresh feed. Leave evidence already restored by a
+    // held-run release alone; otherwise write a skipped marker so the
+    // fact-check uses its JSON-only backstop instead of failing closed.
+    writeSkippedFeedEvidence("existing-file");
     return;
   }
 
@@ -194,6 +204,11 @@ async function main() {
   console.log(
     `[parkio-daily] Total parsed RSS items across all feeds: ${totalRssItems}`,
   );
+  // Run-only. Never committed. factcheck.mjs reads it for source dates.
+  // Kept outside buildPrompt so a prompt-only PR does not collide.
+  const evidence = buildFeedEvidence(parksBlogItems, additionalSources);
+  const evidenceFile = writeFeedEvidenceFile(evidence);
+  console.log(`[parkio-daily] Wrote feed evidence (${evidence.items.length} items) to ${evidenceFile}`);
 
   // ── YouTube ─────────────────────────────────────────────────
   const [broadSearch, morrowSearch, wrightSearch] = await Promise.all([
@@ -480,6 +495,66 @@ function stitchAdditionalSources(sources) {
         : `=== ${s.name} ===\n[unavailable: ${s.err || "unknown error"}]`,
     )
     .join("\n\n---\n\n");
+}
+
+/**
+ * RSS pubDate → ISO-8601 UTC, or null when the string does not parse.
+ * The fact-check compares the ISO instant in America/New_York. The raw
+ * string is kept beside it so an unparsed date is visible in the evidence
+ * file instead of being dropped.
+ */
+function parsePubDateToIso(raw) {
+  if (typeof raw !== "string" || raw.trim() === "") return null;
+  const ms = Date.parse(raw);
+  if (Number.isNaN(ms)) return null;
+  return new Date(ms).toISOString();
+}
+
+/** Outside the repo. GitHub Actions uses RUNNER_TEMP; local runs use the OS temp dir. */
+function feedEvidencePath() {
+  if (process.env.PARKIO_DAILY_EVIDENCE_PATH) return process.env.PARKIO_DAILY_EVIDENCE_PATH;
+  return path.join(process.env.RUNNER_TEMP || tmpdir(), "parkio-daily-evidence.json");
+}
+
+function buildFeedEvidence(parksBlogItems, additionalSources, capturedAt = new Date().toISOString()) {
+  const items = [];
+  const push = (source, list) => {
+    for (const it of list || []) {
+      items.push({
+        source,
+        title: it?.title || "",
+        link: it?.link || "",
+        pubDate: parsePubDateToIso(it?.pubDate),
+        pubDateRaw: typeof it?.pubDate === "string" ? it.pubDate : "",
+        excerpt: it?.description || "",
+      });
+    }
+  };
+  push("Disney Parks Blog", parksBlogItems);
+  for (const src of additionalSources || []) {
+    if (!src?.ok) continue;
+    push(src.name || "unknown", src.items);
+  }
+  return { version: 1, skipped: false, capturedAt, items };
+}
+
+function writeFeedEvidenceFile(payload, file = feedEvidencePath()) {
+  mkdirSync(path.dirname(file), { recursive: true });
+  writeFileSync(file, JSON.stringify(payload, null, 2) + "\n", "utf8");
+  return file;
+}
+
+function writeSkippedFeedEvidence(reason, file = feedEvidencePath()) {
+  if (existsSync(file)) {
+    console.log(`[parkio-daily] Feed evidence already at ${file}; not replacing it.`);
+    return file;
+  }
+  writeFeedEvidenceFile(
+    { version: 1, skipped: true, reason, capturedAt: new Date().toISOString(), items: [] },
+    file,
+  );
+  console.log(`[parkio-daily] Existing briefing; wrote JSON-only evidence marker ${file} (${reason}).`);
+  return file;
 }
 
 /* ──────────────────────────────────────────────────────────────

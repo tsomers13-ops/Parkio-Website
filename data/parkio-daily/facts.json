@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "facts": [
+    {
+      "id": "ak-twilight-tales",
+      "subject": "Twilight Tales",
+      "aliases": ["Twilight Tales safari"],
+      "kind": "offering",
+      "status": "scheduled",
+      "startDate": "2026-12-20",
+      "endDate": "2027-01-03",
+      "tier": "secondary",
+      "officialConfirmation": "not-found",
+      "dateConfidence": "secondary-unconfirmed-by-official",
+      "reviewBy": "2026-12-19",
+      "sources": [
+        {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/11/new-nighttime-version-of-kilimanjaro-safaris-attraction-called-twilight-tales-coming-to-disneys-animal-kingdom-in-todays-daily-recap-for-11-23-2026/",
+          "tier": "secondary",
+          "publishedAt": "2026-11-24",
+          "note": "Fetched while writing this file. The headline says Twilight Tales is 'Coming to Disney's Animal Kingdom' in the daily recap for Monday, November 23, 2026. The byline date is November 24, 2026. Clock time was not in the extracted page, so 05:30 ET is not recorded. The extracted text did not include December 20, 2026 or January 3, 2027 (the article body may have been truncated)."
+        }
+      ],
+      "notes": "startDate and endDate are the fan-site window reported by merged PR #49 (fa8db4ea) and by the Nov 25, 2026 fact-check task: December 20, 2026 through January 3, 2027. PR #49 says disneyworld.disney.go.com and a Disney Parks Blog search did not confirm it. No BlogMickey URL was verified while writing this file, so none is stored. Check (a) blocks a current-tense claim or a calendar date that disagrees with this window. It does not block a bare mention, or 'coming Dec 20'."
+    }
+  ]
+}

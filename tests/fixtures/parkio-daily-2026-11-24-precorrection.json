@@ -1,0 +1,358 @@
+{
+  "title": "Parkio Daily for Tuesday, November 24, 2026",
+  "slug": "parkio-daily-2026-11-24",
+  "date": "2026-11-24",
+  "teaser": "Twilight Tales safari debuts at Animal Kingdom; Big Thunder and Haunted Mansion both down this morning at Magic Kingdom.",
+  "rightNow": {
+    "headline": "Best rides right now",
+    "rides": [
+      {
+        "name": "Test Track",
+        "parkSlug": "epcot",
+        "note": "Lightning Lane wait times often drop mid-morning"
+      },
+      {
+        "name": "Rise of the Resistance",
+        "parkSlug": "hollywood-studios",
+        "note": "Virtual queue spots still available for afternoon return"
+      },
+      {
+        "name": "Avatar Flight of Passage",
+        "parkSlug": "animal-kingdom",
+        "note": "Early crowds shifting to new Twilight Tales safari"
+      }
+    ]
+  },
+  "sections": {
+    "breaking": [
+      {
+        "title": "Big Thunder Mountain and Haunted Mansion both failed to open this morning",
+        "body": "Two of Magic Kingdom's highest-capacity attractions remained closed through midday Monday as Thanksgiving week crowds arrived. No reopening time has been announced for either ride.",
+        "parkSlug": "magic-kingdom",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/11/as-thanksgiving-crowds-head-to-disney-world-haunted-mansion-and-big-thunder-mountain-railroad-fail-to-open-through-midday-at-magic-kingdom/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Frontierland and Liberty Square tend to bottleneck fast when these two are down. Prioritizing Tomorrowland or Fantasyland during the first few hours usually avoids the worst congestion."
+        }
+      },
+      {
+        "title": "Twilight Tales nighttime safari launching at Animal Kingdom",
+        "body": "A new after-dark version of Kilimanjaro Safaris called Twilight Tales is coming to Animal Kingdom. The experience will offer a different narrative and lighting setup for evening guests.",
+        "parkSlug": "animal-kingdom",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/11/new-nighttime-version-of-kilimanjaro-safaris-attraction-called-twilight-tales-coming-to-disneys-animal-kingdom-in-todays-daily-recap-for-11-23-2026/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Evening safari slots tend to book quickly once word spreads. Guests visiting Animal Kingdom today may find shorter waits for the daytime safari while others queue for the new twilight version."
+        }
+      }
+    ],
+    "bignews": [
+      {
+        "title": "Bucky Barnes and Yelena Belova debut at Avengers Campus",
+        "body": "Two new characters from Avengers: Doomsday are now meeting guests at Disney California Adventure ahead of the film's December 18 release. Additional interactive experiences tied to the movie will roll out through the holiday season.",
+        "parkSlug": "california-adventure",
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/disney-experiences/avengers-doomsday-at-disney-parks/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Character debuts typically draw long queues in the first few days. Arriving at Avengers Campus right at park opening or during the dinner hour often yields shorter meet-and-greet waits."
+        }
+      },
+      {
+        "title": "Half of Disneyland's new security screening area now open",
+        "body": "Construction barriers have come down around the first phase of the expanded security checkpoint in the Esplanade. Guests can now walk under the new awning, though the second half remains under construction.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/11/barriers-removed-around-half-of-the-new-security-area-at-disneyland/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "The new lanes may speed entry during peak arrival windows. Guests rope-dropping Disneyland this week often benefit from testing the expanded checkpoint rather than older lanes."
+        }
+      },
+      {
+        "title": "Gideon's Bakehouse switches to Ghirardelli chocolate and renames signature cookie",
+        "body": "The Disney Springs bakery is changing its chocolate chip supplier and renaming its flagship chocolate chip cookie to The Maximus. The recipe adjustment takes effect immediately.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/11/23/crucial-cookie-news-gideons-bakehouse-announces-huge-chocolate-chip-change-in-disney-world/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Recipe changes at Gideon's tend to spark curiosity rushes. Visiting Disney Springs before 11am today usually means shorter waits and better cookie availability."
+        }
+      },
+      {
+        "title": "Animal Kingdom adds surprise late hours through early 2027",
+        "body": "Disney World extended operating hours at Animal Kingdom for Christmas week 2026 and into January 2027, joining previously announced extensions at Magic Kingdom and Hollywood Studios.",
+        "parkSlug": "animal-kingdom",
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/why-did-disney-world-just-make-surprise-park-hours-extensions-at-animal-kingdom-for-late-2026-2027/"
+        },
+        "parkioInsight": {
+          "category": "timing-advantage",
+          "text": "Late-night hours at Animal Kingdom are rare and tend to thin crowds significantly after 8pm. Guests visiting during the holiday stretch may find Flight of Passage and Everest nearly walk-on after sunset."
+        }
+      }
+    ],
+    "topstories": [
+      {
+        "title": "Lightning Lane Premier Pass selling out at record-high prices",
+        "body": "The top-tier skip-the-line product has sold out across all four Disney World parks for nearly a full week ahead of Thanksgiving, with Magic Kingdom pricing hitting new highs. Single-day Lightning Lane is also unavailable.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/lightning-lane-premier-pass-is-selling-out-at-new-record-high-prices-but-is-it-worth-it/"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "Sellouts of paid line-skip typically signal very heavy attendance. Guests without Lightning Lane this week should prioritize rope drop and plan for standby waits over 60 minutes at headliners."
+        }
+      },
+      {
+        "title": "Magic Kingdom and Hollywood Studios blocked out for many annual passholders",
+        "body": "Half of Disney World's parks are unavailable to most pass types during Thanksgiving week, with blockout dates in effect before the holiday itself.",
+        "parkSlug": null,
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/11/half-of-disney-world-parks-unavailable-to-passholders-before-thanksgiving-ad1/"
+        },
+        "parkioInsight": {
+          "category": "crowd-impact",
+          "text": "Blockouts concentrate crowds at EPCOT and Animal Kingdom. Passholders visiting this week often find better ride availability at those two parks, especially mid-afternoon."
+        }
+      },
+      {
+        "title": "Imagineers reveal more details about Indiana Jones ride replacing DINOSAUR",
+        "body": "Indiana Jones and the Myth of the Jade Serpent will open in 2027 as part of the new Tropical Americas land at Animal Kingdom. Disney shared fresh story and setting information for the rethemed attraction.",
+        "parkSlug": "animal-kingdom",
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/11/details-on-setting-of-indiana-jones-ride-at-disneys-animal-kingdom-theme-park-jc1/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "DINOSAUR is likely running its final season. Guests who want one last ride before the retheme should visit Animal Kingdom in the next few months, as closure timing may be announced soon."
+        }
+      },
+      {
+        "title": "Coco ride construction ramps up at Disney California Adventure",
+        "body": "Large structural elements and additional materials have arrived at the future Coco attraction site near Disneyland Drive. Activity is visibly increasing along the perimeter.",
+        "parkSlug": "california-adventure",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/11/structural-elements-buried-at-coco-ride-site-in-disney-california-adventure/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Construction noise and equipment can be noticeable near Paradise Gardens. Guests sensitive to construction activity may want to focus on the opposite side of the park during daytime hours."
+        }
+      },
+      {
+        "title": "Disney Cruise Line replaces gingerbread houses with towers across fleet",
+        "body": "The holiday gingerbread displays on Disney's classic cruise ships are now vertical towers instead of the traditional house designs. The change debuts on this season's Very Merrytime sailings.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Tourist Blog",
+          "url": "https://www.disneytouristblog.com/disney-cruise-line-debuts-controversial-gingerbread-towers-across-fleet-replacing-houses/"
+        },
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Gingerbread displays tend to draw photo crowds in the first days after installation. Guests sailing this week may find shorter lines for photos early in the morning or late at night."
+        }
+      },
+      {
+        "title": "BoardWalk Inn facing refurbishment in early 2027",
+        "body": "Experts are advising guests to avoid booking Disney's BoardWalk Inn for early 2027 due to planned work at the resort.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/11/23/why-experts-are-avoiding-disneys-boardwalk-inn-in-2027/"
+        },
+        "parkioInsight": {
+          "category": "avoid-risk",
+          "text": "Refurbishments at Deluxe resorts often bring noise and reduced amenities. Guests with early 2027 trips may want to consider Beach Club or Yacht Club for similar EPCOT-area access without construction."
+        }
+      }
+    ],
+    "icymi": [
+      {
+        "title": "Starbucks at Disneyland Paris Village closed through November 27",
+        "body": "The coffeehouse in Disney Village is under renovation and will remain closed for the rest of this week.",
+        "parkSlug": null,
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/11/starbucks-at-disney-village-closed-through-november-27-jc1/"
+        }
+      },
+      {
+        "title": "One-day Disney World tickets could hit 334 dollars by 2035",
+        "body": "A market analysis projects that the most expensive single-day Magic Kingdom admission could exceed 330 dollars within a decade, based on current year-over-year price increases.",
+        "parkSlug": null,
+        "source": {
+          "label": "Inside the Magic",
+          "url": "https://insidethemagic.net/2026/11/priciest-tickets-to-disney-world-could-reach-330-by-2035-jc1/"
+        }
+      },
+      {
+        "title": "Hallmark's Disney World Christmas movie premieres this week",
+        "body": "Holiday Ever After: A Disney World Wish Come True debuts as Hallmark's first movie filmed at Walt Disney World. The film was shot overnight across multiple park locations.",
+        "parkSlug": null,
+        "source": {
+          "label": "Disney Parks Blog",
+          "url": "https://disneyparksblog.com/disney-experiences/cinematic-celebrations-for-holiday-ever-after-a-disney-world-wish-come-true/"
+        }
+      },
+      {
+        "title": "New Disneyland sepia Spirit Jersey features vintage park photos",
+        "body": "A brown pullover with beige designs and sepia-toned images of Disneyland icons is now available at the resort for 84.99 dollars.",
+        "parkSlug": "disneyland",
+        "source": {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/11/sepia-disneyland-spirit-jersey-featuring-park-photos/"
+        }
+      }
+    ],
+    "spotlight": [
+      {
+        "title": "Disney's Wonderful World of Disney: Holiday Spectacular airs November 30",
+        "body": "The annual holiday special returns to television on Monday, November 30, with a star-studded music lineup filmed across Walt Disney World. The broadcast features performances and park highlights from Magic Kingdom, EPCOT, and other resort locations.",
+        "parkSlug": null,
+        "ctaLabel": "Mark your calendar",
+        "parkioInsight": {
+          "category": "opportunity",
+          "text": "Holiday filming often closes sections of the parks for taping. Guests visiting in late November may encounter brief reroutes but can also catch glimpses of celebrity talent and production crews around the resort."
+        }
+      }
+    ]
+  },
+  "videos": [
+    {
+      "videoId": "gNBwdv4cKvo",
+      "title": "Disney's Animal Kingdom 2026 | Christmas Food, Pandora At NIGHT & The BEST Safari: Walt Disney World",
+      "channel": "Paging Mr. Morrow",
+      "publishedAt": "2026-11-19T21:24:21Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/gNBwdv4cKvo/mqdefault.jpg",
+      "viewCount": 130085,
+      "url": "https://www.youtube.com/watch?v=gNBwdv4cKvo",
+      "summary": "Paging Mr. Morrow tours Animal Kingdom's holiday food offerings, explores Pandora after dark, and reviews the safari experience during the Christmas season."
+    },
+    {
+      "videoId": "Jt1zIG6G3-4",
+      "title": "Every NEW Food in Disney's Animal Kingdom- Christmas Food, Nomad Lounge, Flame Tree | Disney World",
+      "channel": "WrightDownMainStreet",
+      "publishedAt": "2026-11-19T17:00:01Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Jt1zIG6G3-4/mqdefault.jpg",
+      "viewCount": 46109,
+      "url": "https://www.youtube.com/watch?v=Jt1zIG6G3-4",
+      "summary": "WrightDownMainStreet samples all the new holiday menu items at Animal Kingdom, including stops at Nomad Lounge and Flame Tree Barbecue."
+    },
+    {
+      "videoId": "q0CANUij0Cw",
+      "title": "🔴Live Magic Kingdom Monday with Rides, Parades, Fireworks at Walt Disney World 11/23/2026",
+      "channel": "RON ON THE GO",
+      "publishedAt": "2026-11-24T04:24:52Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/q0CANUij0Cw/mqdefault.jpg",
+      "viewCount": 42460,
+      "url": "https://www.youtube.com/watch?v=q0CANUij0Cw",
+      "summary": "A live stream from Magic Kingdom on Monday, November 23, covering attractions, parades, and the evening fireworks show."
+    },
+    {
+      "videoId": "OYFxCpwypUc",
+      "title": "🔴 Live: Jollywood Hollywood Studios Christmas Party 2026 | Disney World 11.23.2026",
+      "channel": "Disney Parks with Love - Janel",
+      "publishedAt": "2026-11-24T05:00:55Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/OYFxCpwypUc/mqdefault.jpg",
+      "viewCount": 24679,
+      "url": "https://www.youtube.com/watch?v=OYFxCpwypUc",
+      "summary": "A live broadcast from the Jollywood Nights holiday event at Hollywood Studios on November 23, 2026."
+    },
+    {
+      "videoId": "PEbbkvYFtx8",
+      "title": "🔴 LIVE: EPIC Disney Christmas at Magic Kingdom in 4K — Disney World Live Stream 2026",
+      "channel": "Fun to be Free",
+      "publishedAt": "2026-11-24T05:06:12Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/PEbbkvYFtx8/mqdefault.jpg",
+      "viewCount": 11061,
+      "url": "https://www.youtube.com/watch?v=PEbbkvYFtx8",
+      "summary": "A 4K live stream showcasing Christmas decorations and atmosphere at Magic Kingdom during the 2026 holiday season."
+    },
+    {
+      "videoId": "nEbujMKk02k",
+      "title": "they all got eachother other righttt💘 #disneyland #disney #dandyhoodie Faith😴 @⋆｡˚ ౨ৎ LEAN ౨ৎ ⋆｡˚",
+      "channel": "Dandy Worldwide",
+      "publishedAt": "2026-11-24T02:10:55Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/nEbujMKk02k/mqdefault.jpg",
+      "viewCount": 10391,
+      "url": "https://www.youtube.com/watch?v=nEbujMKk02k",
+      "summary": "A short social media clip from Disneyland featuring merchandise and guest interactions."
+    },
+    {
+      "videoId": "GeLLnhHVH58",
+      "title": "🔴Live: Jolly Night of Jollywood Nights! - Disney's Hollywood Studios - Disney World Livestream",
+      "channel": "GooToYou!",
+      "publishedAt": "2026-11-24T04:53:11Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/GeLLnhHVH58/mqdefault.jpg",
+      "viewCount": 9331,
+      "url": "https://www.youtube.com/watch?v=GeLLnhHVH58",
+      "summary": "GooToYou streams live from the Jollywood Nights special event at Hollywood Studios."
+    },
+    {
+      "videoId": "N12UUFTthh4",
+      "title": "🔴 LIVE: Hollywood Studios Christmas Decorations & Boardwalk Resort Hopping!",
+      "channel": "Theme Park Giant",
+      "publishedAt": "2026-11-24T04:02:55Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/N12UUFTthh4/mqdefault.jpg",
+      "viewCount": 8548,
+      "url": "https://www.youtube.com/watch?v=N12UUFTthh4",
+      "summary": "A live tour of holiday decorations at Hollywood Studios followed by a walk through the BoardWalk Resort area."
+    },
+    {
+      "videoId": "sp4Y15MwhMg",
+      "title": "🔴 Live: Magic Kingdom Thanksgiving Week Starlight & Fireworks | Disney World Live Stream 11.23.2026",
+      "channel": "Daily FastPass",
+      "publishedAt": "2026-11-24T03:14:50Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/sp4Y15MwhMg/mqdefault.jpg",
+      "viewCount": 8226,
+      "url": "https://www.youtube.com/watch?v=sp4Y15MwhMg",
+      "summary": "Daily FastPass streams Magic Kingdom's evening atmosphere and fireworks during Thanksgiving week 2026."
+    },
+    {
+      "videoId": "tc_FzlGN4LE",
+      "title": "Cars & Monsters Inc. Walt Disney World Construction Updates, Nighttime Safari Ride at Animal Kingdom",
+      "channel": "WDW News Today",
+      "publishedAt": "2026-11-24T03:08:51Z",
+      "thumbnailUrl": "https://i.ytimg.com/vi/tc_FzlGN4LE/mqdefault.jpg",
+      "viewCount": 7494,
+      "url": "https://www.youtube.com/watch?v=tc_FzlGN4LE",
+      "summary": "WDW News Today provides construction updates on the Cars and Monsters Inc. expansions and covers the new nighttime safari at Animal Kingdom."
+    }
+  ],
+  "updatedAt": "2026-11-24T11:47:43.458Z",
+  "type": "daily-briefing",
+  "meta": {
+    "aiGenerated": true,
+    "sources": [
+      "Disney Parks Blog RSS",
+      "themeparks.wiki destinations",
+      "YouTube Data API v3 (top 10 last 48h)"
+    ],
+    "generatedAt": "2026-11-24T11:47:43.458Z",
+    "tokens": {
+      "input": 11460,
+      "output": 5689,
+      "costUsd": 0.1197
+    }
+  }
+}
