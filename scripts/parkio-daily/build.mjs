@@ -113,6 +113,7 @@ function isValidExistingDailyPost(candidate) {
 // ad-hoc node -e) can exercise them without hitting the network.
 export {
   todaysSlugAndDate,
+  weekdayForIssueDate,
   mergeYouTubeIds,
   rankTop10,
   parseFeedItems,
@@ -302,6 +303,18 @@ function todaysSlugAndDate() {
     year: "numeric",
   });
   return { etDate, slug, niceDate };
+}
+
+/**
+ * Weekday name for an issue date that is already YYYY-MM-DD in
+ * America/New_York. Parsed at UTC midnight so the calendar day does not
+ * shift, matching niceDate in todaysSlugAndDate().
+ */
+function weekdayForIssueDate(etDate) {
+  return new Date(`${etDate}T00:00:00Z`).toLocaleDateString("en-US", {
+    timeZone: "UTC",
+    weekday: "long",
+  });
 }
 
 /* ──────────────────────────────────────────────────────────────
@@ -642,9 +655,10 @@ function buildPrompt({
   videosJson,
   totalRssItems = 0,
 }) {
-  return `You are writing the Parkio Daily briefing for ${etDate}.
+  const issueWeekday = weekdayForIssueDate(etDate);
+  return `You are writing the Parkio Daily briefing for ${issueWeekday}, ${etDate} (America/New_York).
 
-SOURCE VOLUME TODAY: ${totalRssItems} parsed article items across all RSS feeds (plus live park status and the YouTube list below). Treat this as a normal news day unless that count is very low (≈5 or fewer items total).
+SOURCE VOLUME TODAY: ${totalRssItems} parsed article items across all RSS feeds (plus the themeparks.wiki resort directory and the YouTube list below). Treat this as a normal news day unless that count is very low (≈5 or fewer items total).
 
 Parkio Daily is a fast, trusted morning briefing for Disney park guests. It is NOT a blog. It feels like a quick read that helps a guest plan their park day. Every word is yours — no copy/paste from sources, no paraphrased blog posts.
 
@@ -653,7 +667,7 @@ Output ONE JSON object — no commentary, no markdown fences — that conforms e
 GUARDRAILS — read carefully, follow strictly:
 1. ORIGINAL LANGUAGE ONLY. Do NOT copy any phrasing from the source feeds. Do NOT paraphrase entire articles. Each story must be summarized in 1–2 sentences using ENTIRELY ORIGINAL language. The Parkio voice is fast, plain, direct. If you find yourself echoing source phrasing, rewrite.
 2. COMBINE DUPLICATES. If multiple sources cover the same story (e.g., WDWNT, AllEars, and Inside the Magic all covering one announcement), merge into ONE summary item. Never list the same story twice.
-3. NO INVENTION. Every factual claim — names, dates, closures, openings, prices — MUST be supported by AT LEAST ONE source feed below or by themeparks.wiki status. If you cannot ground a claim, drop the item. Do not speculate.
+3. NO INVENTION. Every factual claim — names, dates, closures, openings, prices — MUST be supported by AT LEAST ONE source feed below. The themeparks.wiki block is a resort and park directory, not live ride status; do not treat it as attraction status. If you cannot ground a claim, drop the item. Do not speculate.
 4. NO-NEWS FALLBACK — LAST RESORT ONLY. Only use this if SOURCE VOLUME TODAY is genuinely low (≈5 or fewer total items) AND none describe a real development. In that case respond with a single bignews item titled "No major updates today" with a short body noting the parks are operating normally, and set sections.breaking and sections.icymi to []. Do NOT use this fallback on a normal news day just because writing is harder — if there are real items, cover them.
 5. COVER THE NEWS — do not underfill. The feeds below typically contain many distinct stories (new attractions, ride closures/openings, food and festival updates, entertainment changes, resort/hotel news, merchandise, and major operational changes across Walt Disney World AND Disneyland). TARGET 10–13 distinct, well-grounded stories per day across all sections when the sources support it. Include every DISTINCT story you can ground in a source — across Magic Kingdom, EPCOT, Hollywood Studios, Animal Kingdom, Disneyland, and California Adventure, and across all categories above. Do NOT drop a real, sourced story just to keep the list short, and do NOT pad with speculation. Quality AND coverage — a reader should leave feeling caught up on the day, not handed three items.
 6. TOPIC DIVERSITY — strict. Each item across ALL sections (breaking + bignews + topstories + icymi + spotlight) must cover a DISTINCT story. Aim for breadth — different parks, different categories (attractions, food, merchandise, entertainment, transportation, characters, news), different angles. A reader should never feel like they're reading the same story rephrased twice.
@@ -684,13 +698,16 @@ GUARDRAILS — read carefully, follow strictly:
 9. VIDEO SUMMARIES are 1–2 sentences and based ONLY on the video's title + channel. Do not invent details about what's inside the video.
 10. EXACT VIDEOS. Use the EXACT 10 videos provided in TOP 10 YOUTUBE VIDEOS — copy each field verbatim and ADD a "summary" field per video.
 11. NO BREAKING-NEWS UNLESS SOURCED. Every breaking-news item must be supported by the source data. If nothing is genuinely breaking, set sections.breaking to [].
+12. DATE THE NEWS. Each feed item includes its publication date. Describe that item by its real publication day (for example "Monday afternoon"), never as "today" or "this morning", unless that source's pubDate falls on the issue date ${etDate} in America/New_York.
+13. ANNOUNCEMENTS STAY ANNOUNCEMENTS. Keep "coming", "expected", and "planned" wording as-is. Never turn an announcement into a debut, an opening, or a "now open" claim.
+14. NO INVENTED STATUS. Do not invent attraction status — closures, final seasons, outages, or openings — that is not in a provided source.
 
 SCHEMA (produce this object):
 {
   "title": string,
   "slug": string (must equal "${slug}"),
   "date": string (must equal "${etDate}"),
-  "teaser": string (1–2 sentences, ≤160 chars; SEO + email subject/preview + first email line. Lead with the single most concrete, useful, TODAY-specific fact — a name, a park, a number, a date — not vague hype. Good: "Big Thunder reopens today; EPCOT is your best low-wait bet." Bad: "You won't believe what Disney just announced!" No source phrasing),
+  "teaser": string (1–2 sentences, ≤160 chars; SEO + email subject/preview + first email line. Lead with the single most concrete, useful, timely fact grounded in a dated source — a name, a park, a number, a date — not vague hype. Good: "A new Animal Kingdom safari is coming Dec 20, from Monday's report." Bad: "You won't believe what Disney just announced!" No source phrasing),
   "rightNow": {
     "headline": "Best rides right now",
     "rides": [ { "name": string, "parkSlug": string, "note": string } ]   // 2–3 items
@@ -716,7 +733,7 @@ ${rssText}
 RESEARCH — Additional Disney sources (community blogs), parsed recent items [title — date / link / excerpt]:
 ${additionalText}
 
-RESEARCH — themeparks.wiki destinations summary (live park status):
+RESEARCH — themeparks.wiki destinations (resort and park directory, not live ride status):
 ${parksJson}
 
 TOP 10 YOUTUBE VIDEOS (last 48h, ranked by views — copy verbatim into "videos", add a 1–2 sentence "summary" for each):
