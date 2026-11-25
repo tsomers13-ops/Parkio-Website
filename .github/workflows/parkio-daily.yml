@@ -66,8 +66,12 @@ jobs:
       # Allow the workflow to push the committed JSON back to main.
       # The default GITHUB_TOKEN is scoped per-run, no PAT needed.
       contents: write
-      # upload-artifact needs actions: write. That also covers downloading
-      # a held run's artifact on the release path. No new secret.
+      # actions: read can download an artifact and read a workflow run.
+      # It cannot upload one. actions/upload-artifact returns
+      # "Resource not accessible by integration" without actions: write,
+      # and the same-day release path needs that held artifact.
+      # write includes read, so this is the minimum for upload, download,
+      # and the runs API check on release_held_run_id. No new secret.
       actions: write
     timeout-minutes: 10
 
@@ -107,6 +111,8 @@ jobs:
           RELEASE_HELD_RUN_ID: ${{ inputs.release_held_run_id }}
           FIXED_REF: ${{ inputs.fixed_ref }}
           ACK: ${{ inputs.ack }}
+          GITHUB_TOKEN: ${{ github.token }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
         run: node scripts/parkio-daily/releaseInputs.mjs --check
 
       - name: Download held briefing artifact
@@ -125,6 +131,8 @@ jobs:
           FIXED_REF: ${{ inputs.fixed_ref }}
           ACK: ${{ inputs.ack }}
           HELD_ARTIFACT_DIR: ${{ runner.temp }}/parkio-daily-held-artifact
+          GITHUB_TOKEN: ${{ github.token }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
         run: node scripts/parkio-daily/releaseInputs.mjs --apply
 
       - name: Build today's briefing

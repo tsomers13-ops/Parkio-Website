@@ -1,5 +1,5 @@
 import { execFileSync } from "node:child_process";
-import { mkdtempSync, readFileSync, readdirSync, rmSync, writeFileSync } from "node:fs";
+import { mkdirSync, mkdtempSync, readFileSync, readdirSync, rmSync, writeFileSync } from "node:fs";
 import { tmpdir } from "node:os";
 import path from "node:path";
 import { describe, expect, it } from "vitest";
@@ -35,10 +35,12 @@ const PRECORRECTION_BLOB = "17261b14a13cd24a192964059665a23361881b51";
  * real d-debut-tense hit, not a guessed list.
  */
 const REPLAY_HOLDS = [
+  "parkio-daily-2026-07-05.json",
   "parkio-daily-2026-07-23.json",
   "parkio-daily-2026-08-06.json",
   "parkio-daily-2026-08-12.json",
   "parkio-daily-2026-08-15.json",
+  "parkio-daily-2026-09-12.json",
   "parkio-daily-2026-11-12.json",
 ] as const;
 
@@ -74,7 +76,8 @@ describe("ledger and attraction seed", () => {
       officialConfirmation: string;
       startDate: string;
       endDate: string;
-      sources: Array<{ url: string; tier: string }>;
+      dateConfidence: string;
+      sources: Array<{ url: string; tier: string; quote?: string }>;
     }>;
     expect(facts.map((f) => f.id)).toEqual(["ak-twilight-tales"]);
     const fact = facts[0];
@@ -83,7 +86,11 @@ describe("ledger and attraction seed", () => {
     expect(fact.officialConfirmation).toBe("not-found");
     expect(fact.startDate).toBe("2026-12-20");
     expect(fact.endDate).toBe("2027-01-03");
-    expect(fact.sources[0].url).toContain("wdwnt.com/2026/11/new-nighttime-version");
+    expect(fact.dateConfidence).toBe("secondary-years-inferred");
+    expect(fact.sources[0].url).toBe(
+      "https://www.disneyfoodblog.com/2026/11/24/new-nighttime-safari-coming-to-disneys-animal-kingdom/",
+    );
+    expect(fact.sources[0].quote).toMatch(/December 20th through January 3rd/);
     expect(fact.sources[0].tier).toBe("secondary");
   });
 });
@@ -291,6 +298,25 @@ describe("America/New_York source dates", () => {
     expect(findings.some((f) => f.rule === "d-debut-tense" && /debuts/i.test(f.text))).toBe(true);
   });
 
+  it("does not treat an ordinary new adjective as a source-date debut", () => {
+    const post = {
+      date: "2026-11-24",
+      title: "t",
+      teaser: "Christmas week prices hit new highs. New props added on the parade route.",
+      sections: {
+        topstories: [
+          {
+            title: "Christmas week prices hit new highs",
+            body: "Ticket prices hit new highs for the holiday week.",
+            source: { url: "https://example.com/prices", label: "Example" },
+          },
+        ],
+      },
+    };
+    const evidence = { skipped: false, items: [] };
+    expect(checkDailyPost(post, { evidence }).findings.map((f) => f.rule)).not.toContain("d-source-date");
+  });
+
   it("a current-tense debut fails when the feed excerpt is still future tense", () => {
     const post = {
       date: "2026-11-24",
@@ -299,7 +325,7 @@ describe("America/New_York source dates", () => {
       sections: {
         breaking: [
           {
-            title: "The pavilion now open",
+            title: "Space Mountain is now open",
             body: "Guests can walk through.",
             source: { url: "https://example.com/pavilion", label: "Example" },
           },
@@ -438,7 +464,7 @@ describe("acknowledgements", () => {
 });
 
 describe("full-history replay", () => {
-  it("holds 5 of the archived issues, all on the debut check, and none on a, b, or c", () => {
+  it("holds the known JSON-only issues, including DinoLand still described as open", () => {
     const files = readdirSync(DAILY).filter((name) => name.endsWith(".json")).sort();
     expect(files).toHaveLength(198);
     const held: string[] = [];
@@ -446,9 +472,12 @@ describe("full-history replay", () => {
       const { findings } = checkDailyPost(loadDaily(name));
       if (!findings.length) continue;
       held.push(name);
-      expect(findings.every((f) => f.rule === "d-debut-tense")).toBe(true);
     }
     expect(held).toEqual([...REPLAY_HOLDS]);
+    const july = checkDailyPost(loadDaily("parkio-daily-2026-07-05.json")).findings;
+    const sept = checkDailyPost(loadDaily("parkio-daily-2026-09-12.json")).findings;
+    expect(july.some((f) => f.rule === "b-closed-attraction" && /remains open/i.test(f.text))).toBe(true);
+    expect(sept.some((f) => f.rule === "b-closed-attraction" && /operational/i.test(f.text))).toBe(true);
   });
 });
 
@@ -478,9 +507,60 @@ describe("parkio-daily.yml wires the gate without a skip switch", () => {
     expect(inputs).toEqual(["release_held_run_id", "ack", "fixed_ref"]);
     expect(doc.on.schedule).toEqual([{ cron: "0 11 * * *" }]);
     expect(doc.jobs.publish.if).toBe("needs.build.outputs.pushed == 'true'");
+    // actions: read cannot upload the held artifact. write is the minimum that can.
     expect(doc.jobs.build.permissions.actions).toBe("write");
+    expect(doc.jobs.build.permissions.contents).toBe("write");
     const upload = steps.find((step) => step.name === "Upload held briefing");
     expect(upload?.if).toMatch(/factcheck/);
+  });
+
+  it("a later passing regenerate is not latched, so it commits and can publish", () => {
+    const bad = JSON.parse(readFileSync(path.join(REPO, "tests", "fixtures", "parkio-daily-2026-11-24-precorrection.json"), "utf8"));
+    expect(checkDailyPost(bad).findings.length).toBeGreaterThan(0);
+    const good = loadDaily("parkio-daily-2026-11-24.json");
+    expect(checkDailyPost(good).findings).toEqual([]);
+
+    const commit = steps.find((step) => step.name === "Commit the new briefing");
+    const fact = steps.find((step) => step.name === "Fact-check today's briefing");
+    expect(fact?.if).toBeUndefined();
+    expect(commit?.if).toBeUndefined();
+    expect(commit?.run).toMatch(/git commit/);
+    expect(commit?.run).toMatch(/git push origin HEAD:main/);
+    expect(commit?.run).toMatch(/pushed=true/);
+    expect(yaml).not.toMatch(/held_run_latch|skip_factcheck/);
+    expect(doc.jobs.publish.if).toBe("needs.build.outputs.pushed == 'true'");
+
+    const root = mkdtempSync(path.join(tmpdir(), "parkio-republish-"));
+    const origin = path.join(root, "origin.git");
+    const repo = path.join(root, "repo");
+    try {
+      execFileSync("git", ["init", "--bare", "-b", "main", origin]);
+      execFileSync("git", ["clone", origin, repo]);
+      const env = {
+        ...process.env,
+        GIT_AUTHOR_NAME: "parkio-daily-bot",
+        GIT_AUTHOR_EMAIL: "parkio-daily-bot@users.noreply.github.com",
+        GIT_COMMITTER_NAME: "parkio-daily-bot",
+        GIT_COMMITTER_EMAIL: "parkio-daily-bot@users.noreply.github.com",
+      };
+      execFileSync("git", ["commit", "--allow-empty", "-m", "init"], { cwd: repo, env });
+      execFileSync("git", ["push", "origin", "HEAD:main"], { cwd: repo });
+      mkdirSync(path.join(repo, "content", "social"), { recursive: true });
+      const rel = path.join("content", "guide", "daily", "parkio-daily-2026-11-25.json");
+      mkdirSync(path.dirname(path.join(repo, rel)), { recursive: true });
+      writeFileSync(path.join(repo, rel), `${JSON.stringify({ ...good, date: "2026-11-25", slug: "parkio-daily-2026-11-25" }, null, 2)}\n`);
+      execFileSync("git", ["add", "content/guide/daily/", "content/social/"], { cwd: repo });
+      execFileSync("git", ["commit", "-m", "Parkio Daily — 2026-11-25"], { cwd: repo, env });
+      const name = execFileSync("git", ["log", "-1", "--format=%an"], { cwd: repo, encoding: "utf8" }).trim();
+      const email = execFileSync("git", ["log", "-1", "--format=%ae"], { cwd: repo, encoding: "utf8" }).trim();
+      const changed = execFileSync("git", ["diff-tree", "--no-commit-id", "--name-only", "-r", "HEAD"], { cwd: repo, encoding: "utf8" });
+      expect(name).toBe("parkio-daily-bot");
+      expect(email).toBe("parkio-daily-bot@users.noreply.github.com");
+      expect(changed).toContain(rel);
+      expect(changed.trim().split("\n").every((p) => p.startsWith("content/guide/daily/") || p.startsWith("content/social/"))).toBe(true);
+    } finally {
+      rmSync(root, { recursive: true, force: true });
+    }
   });
 
   it("is not referenced by the publish workflow", () => {

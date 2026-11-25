@@ -4,25 +4,34 @@
     {
       "id": "ak-twilight-tales",
       "subject": "Twilight Tales",
-      "aliases": ["Twilight Tales safari"],
+      "aliases": ["Twilight Tales safari", "Kilimanjaro Safaris: Twilight Tales"],
       "kind": "offering",
-      "status": "scheduled",
+      "status": "coming",
       "startDate": "2026-12-20",
       "endDate": "2027-01-03",
       "tier": "secondary",
       "officialConfirmation": "not-found",
-      "dateConfidence": "secondary-unconfirmed-by-official",
+      "dateConfidence": "secondary-years-inferred",
       "reviewBy": "2026-12-19",
       "sources": [
+        {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/11/24/new-nighttime-safari-coming-to-disneys-animal-kingdom/",
+          "feedUrl": "https://www.disneyfoodblog.com/feed/",
+          "tier": "secondary",
+          "publishedAt": "2026-11-24T16:55:43Z",
+          "quote": "A brand-new experience is coming to Disney's Animal Kingdom next month, but it'll only be available for a VERY limited time! According to Scott Gustin, Animal Kingdom is testing a new nighttime experience for the Kilimanjaro Safaris from December 20th through January 3rd. Kilimanjaro Safaris: Twilight Tales is the new nighttime experience reportedly coming to Animal Kingdom next month. The experience will be available for guests for a VERY limited time, only from December 20th through January 3rd. This is just a TEST for Disney at the time being.",
+          "note": "Fetched 2026-11-25 from the Disney Food Blog RSS item for this URL (content:encoded). The article HTML URL returned HTTP 403, so this quote is the feed text, not the rendered page. The sentences say December 20th through January 3rd and next month. They do not print 2026 or 2027. startDate 2026-12-20 and endDate 2027-01-03 are inferred from the item pubDate Tue, 24 Nov 2026 16:55:43 +0000 plus next month, with January 3rd following December 20th. The feed cites Scott Gustin. It is not a Disney page."
+        },
         {
           "label": "WDWNT",
           "url": "https://wdwnt.com/2026/11/new-nighttime-version-of-kilimanjaro-safaris-attraction-called-twilight-tales-coming-to-disneys-animal-kingdom-in-todays-daily-recap-for-11-23-2026/",
           "tier": "secondary",
           "publishedAt": "2026-11-24",
-          "note": "Fetched while writing this file. The headline says Twilight Tales is 'Coming to Disney's Animal Kingdom' in the daily recap for Monday, November 23, 2026. The byline date is November 24, 2026. Clock time was not in the extracted page, so 05:30 ET is not recorded. The extracted text did not include December 20, 2026 or January 3, 2027 (the article body may have been truncated)."
+          "note": "Fetched earlier while writing the ledger. The headline says Twilight Tales is Coming to Disney's Animal Kingdom in the daily recap for Monday, November 23, 2026. The byline date is November 24, 2026. That fetch did not include December 20 or January 3, so this source is not the date source."
         }
       ],
-      "notes": "startDate and endDate are the fan-site window reported by merged PR #49 (fa8db4ea) and by the Nov 25, 2026 fact-check task: December 20, 2026 through January 3, 2027. PR #49 says disneyworld.disney.go.com and a Disney Parks Blog search did not confirm it. No BlogMickey URL was verified while writing this file, so none is stored. Check (a) blocks a current-tense claim or a calendar date that disagrees with this window. It does not block a bare mention, or 'coming Dec 20'."
+      "notes": "Secondary. Official Disney confirmation was not in the fetched text. The December 20 through January 3 window is the Disney Food Blog feed quote above; the years on startDate and endDate are inferred, not printed."
     }
   ]
 }

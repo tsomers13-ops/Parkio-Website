@@ -57,6 +57,77 @@ export function parseFixedRef(ref, today) {
   };
 }
 
+export const DAILY_WORKFLOW_PATH = ".github/workflows/parkio-daily.yml";
+export const DAILY_WORKFLOW_NAME = "Parkio Daily";
+
+/**
+ * A held-run id is accepted only when the Actions API says that run is
+ * parkio-daily.yml in this repository. A run id from another workflow or
+ * another repo is rejected. 404 from this repo's runs endpoint is a reject.
+ */
+export function assessDailyWorkflowRun(body, { repo, runId }) {
+  if (!body || typeof body !== "object") {
+    return { ok: false, problems: [`release_held_run_id ${runId} did not return a workflow run.`] };
+  }
+  const fullName = body.repository?.full_name || body.repository?.name || "";
+  if (fullName && repo && fullName.toLowerCase() !== String(repo).toLowerCase()) {
+    return {
+      ok: false,
+      problems: [`release_held_run_id ${runId} belongs to ${fullName}, not ${repo}.`],
+    };
+  }
+  if (body.path && body.path !== DAILY_WORKFLOW_PATH) {
+    return {
+      ok: false,
+      problems: [`release_held_run_id ${runId} is ${body.path}, not ${DAILY_WORKFLOW_PATH} in ${repo}.`],
+    };
+  }
+  if (!body.path && body.name !== DAILY_WORKFLOW_NAME) {
+    return {
+      ok: false,
+      problems: [`release_held_run_id ${runId} is workflow "${body.name || "unknown"}", not ${DAILY_WORKFLOW_NAME} in ${repo}.`],
+    };
+  }
+  return { ok: true, problems: [] };
+}
+
+export async function verifyHeldRunId(runId, { repo, token, fetchImpl }) {
+  if (!repo) {
+    return { ok: false, problems: ["GITHUB_REPOSITORY is not set, so release_held_run_id cannot be checked."] };
+  }
+  if (!token) {
+    return { ok: false, problems: ["GITHUB_TOKEN is not set, so release_held_run_id cannot be checked."] };
+  }
+  const url = `https://api.github.com/repos/${repo}/actions/runs/${encodeURIComponent(runId)}`;
+  let res;
+  try {
+    res = await fetchImpl(url, {
+      headers: {
+        Accept: "application/vnd.github+json",
+        Authorization: `Bearer ${token}`,
+        "X-GitHub-Api-Version": "2022-11-28",
+        "User-Agent": "parkio-daily-factcheck",
+      },
+    });
+  } catch (err) {
+    return {
+      ok: false,
+      problems: [`Could not verify release_held_run_id ${runId} in ${repo} (${err.message}). Refusing to release.`],
+    };
+  }
+  if (res.status === 404) {
+    return { ok: false, problems: [`release_held_run_id ${runId} is not a workflow run in ${repo}.`] };
+  }
+  if (!res.ok) {
+    return {
+      ok: false,
+      problems: [`Could not verify release_held_run_id ${runId} in ${repo} (HTTP ${res.status}). Refusing to release.`],
+    };
+  }
+  const body = await res.json();
+  return assessDailyWorkflowRun(body, { repo, runId });
+}
+
 export function inspectInputs({ releaseHeldRunId, fixedRef, ack, today }) {
   const runId = String(releaseHeldRunId || "").trim();
   const ref = String(fixedRef || "").trim();
@@ -193,11 +264,22 @@ function inputsFromEnv() {
   });
 }
 
-export function runCheck() {
+export async function runCheck(opts = {}) {
   const inspected = inputsFromEnv();
   if (!inspected.ok) {
     for (const problem of inspected.problems) console.error(`::error::${problem}`);
     return 1;
+  }
+  if (inspected.runId) {
+    const verified = await verifyHeldRunId(inspected.runId, {
+      repo: process.env.GITHUB_REPOSITORY,
+      token: process.env.GITHUB_TOKEN || process.env.GH_TOKEN,
+      fetchImpl: opts.fetchImpl || fetch,
+    });
+    if (!verified.ok) {
+      for (const problem of verified.problems) console.error(`::error::${problem}`);
+      return 1;
+    }
   }
   writeOutput({
     download: inspected.download ? "true" : "false",
@@ -213,11 +295,22 @@ export function runCheck() {
   return 0;
 }
 
-export function runApply() {
+export async function runApply(opts = {}) {
   const inspected = inputsFromEnv();
   if (!inspected.ok) {
     for (const problem of inspected.problems) console.error(`::error::${problem}`);
     return 1;
+  }
+  if (inspected.runId) {
+    const verified = await verifyHeldRunId(inspected.runId, {
+      repo: process.env.GITHUB_REPOSITORY,
+      token: process.env.GITHUB_TOKEN || process.env.GH_TOKEN,
+      fetchImpl: opts.fetchImpl || fetch,
+    });
+    if (!verified.ok) {
+      for (const problem of verified.problems) console.error(`::error::${problem}`);
+      return 1;
+    }
   }
   if (!inspected.apply) return 0;
   const repo = repoRoot();
@@ -248,10 +341,13 @@ function main() {
 }
 
 if (process.argv[1] && process.argv[1] === fileURLToPath(import.meta.url)) {
-  try {
-    process.exit(main());
-  } catch (err) {
-    console.error(`::error::${err?.message || err}`);
-    process.exit(1);
-  }
+  Promise.resolve()
+    .then(() => main())
+    .then((code) => {
+      process.exit(code);
+    })
+    .catch((err) => {
+      console.error(`::error::${err?.message || err}`);
+      process.exit(1);
+    });
 }

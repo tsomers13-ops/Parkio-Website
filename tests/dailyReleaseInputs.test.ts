@@ -4,12 +4,15 @@ import { tmpdir } from "node:os";
 import path from "node:path";
 import { afterEach, describe, expect, it } from "vitest";
 import {
+  assessDailyWorkflowRun,
   inspectInputs,
   materializeFixedRef,
   materializeHeldBriefing,
   parseFixedRef,
   restoreHeldEvidence,
+  runCheck,
   sha256Bytes,
+  verifyHeldRunId,
 } from "../scripts/parkio-daily/releaseInputs.mjs";
 
 const temps: string[] = [];
@@ -41,6 +44,76 @@ describe("release input shape", () => {
     expect(ok.fixed?.relPath).toBe("content/guide/daily/parkio-daily-2026-11-25.json");
     const normal = inspectInputs({ releaseHeldRunId: "", fixedRef: "", ack: "", today });
     expect(normal).toMatchObject({ ok: true, download: false, apply: false });
+  });
+});
+
+describe("release_held_run_id must be this repo's Parkio Daily workflow", () => {
+  const repo = "tsomers13-ops/Parkio-Website";
+
+  it("accepts parkio-daily.yml and rejects another workflow, another repo, and a 404", async () => {
+    expect(assessDailyWorkflowRun({
+      path: ".github/workflows/parkio-daily.yml",
+      name: "Parkio Daily",
+      repository: { full_name: repo },
+    }, { repo, runId: "123" }).ok).toBe(true);
+
+    expect(assessDailyWorkflowRun({
+      path: ".github/workflows/workers-production.yml",
+      name: "Production",
+      repository: { full_name: repo },
+    }, { repo, runId: "456" }).ok).toBe(false);
+
+    expect(assessDailyWorkflowRun({
+      path: ".github/workflows/parkio-daily.yml",
+      name: "Parkio Daily",
+      repository: { full_name: "other/Parkio-Website" },
+    }, { repo, runId: "789" }).problems.join(" ")).toMatch(/other\/Parkio-Website/);
+
+    const fetchImpl = async (url: string) => {
+      if (String(url).endsWith("/789")) return { ok: false, status: 404, json: async () => ({}) };
+      return {
+        ok: true,
+        status: 200,
+        json: async () => ({
+          path: ".github/workflows/parkio-daily.yml",
+          name: "Parkio Daily",
+          repository: { full_name: repo },
+        }),
+      };
+    };
+    const good = await verifyHeldRunId("123", { repo, token: "token", fetchImpl });
+    expect(good.ok).toBe(true);
+    const missing = await verifyHeldRunId("789", { repo, token: "token", fetchImpl });
+    expect(missing.ok).toBe(false);
+    expect(missing.problems.join(" ")).toMatch(/not a workflow run/);
+
+    const previous = { repo: process.env.GITHUB_REPOSITORY, token: process.env.GITHUB_TOKEN, run: process.env.RELEASE_HELD_RUN_ID, out: process.env.GITHUB_OUTPUT };
+    const out = path.join(tempDir(), "output");
+    process.env.GITHUB_REPOSITORY = repo;
+    process.env.GITHUB_TOKEN = "token";
+    process.env.RELEASE_HELD_RUN_ID = "456";
+    process.env.GITHUB_OUTPUT = out;
+    delete process.env.FIXED_REF;
+    delete process.env.ACK;
+    try {
+      const code = await runCheck({
+        fetchImpl: async () => ({
+          ok: true,
+          status: 200,
+          json: async () => ({ path: ".github/workflows/workers-preview.yml", name: "Preview", repository: { full_name: repo } }),
+        }),
+      });
+      expect(code).toBe(1);
+    } finally {
+      if (previous.repo === undefined) delete process.env.GITHUB_REPOSITORY;
+      else process.env.GITHUB_REPOSITORY = previous.repo;
+      if (previous.token === undefined) delete process.env.GITHUB_TOKEN;
+      else process.env.GITHUB_TOKEN = previous.token;
+      if (previous.run === undefined) delete process.env.RELEASE_HELD_RUN_ID;
+      else process.env.RELEASE_HELD_RUN_ID = previous.run;
+      if (previous.out === undefined) delete process.env.GITHUB_OUTPUT;
+      else process.env.GITHUB_OUTPUT = previous.out;
+    }
   });
 });
 

@@ -44,12 +44,21 @@ const MONTHS = {
 };
 
 const OPERATING =
-  /\b(final season|last (?:ride|chance|year)|one last|before (?:it|the \w+) (?:closes|goes)|still (?:open|operating|running)|running its|closing soon)\b/i;
+  /\b(final season|last (?:ride|chance|year)|one last|before (?:it|the \w+) (?:closes|goes)|still (?:open|operating|running)|running its|closing soon|remains? open|still operating|remains? operational|operational)\b/i;
 const WAIT_TIME = /\b\d+\s*(?:min|mins|minutes)\b|\bwalk-?on\b/i;
 const SAME_DAY =
   /\b(this morning|today|tonight|right now|this afternoon|this evening|currently)\b/i;
 const STATUS_VERB =
   /\b(down|closed|fail(?:ed|s)? to open|not operating|outage|reopen(?:s|ed|ing)?|delay(?:ed)?|evacuat\w*|broke down|breakdown)\b/i;
+// Source-date (c) is narrower than the JSON weekday backstop: a concrete
+// same-day status claim, not a tip that merely says "today" or "currently".
+const C_SOURCE_SAME_DAY = /\b(this morning|today)\b/i;
+const C_SOURCE_STATUS =
+  /\b(down|closed|fail(?:ed|s)? to open|re-?open(?:s|ed|ing)?|opened)\b/i;
+// Source-date (d) is an opening or closing claim about a named attraction,
+// venue, or show. The adjective "new" is not enough.
+const OPEN_CLOSE_CLAIM =
+  /\b(debuts?|debuted|now open|now meeting|opens(?:\s+today)?|opened(?:\s+today)?|re-?opens?(?:\s+today)?|re-?opened(?:\s+today)?|premieres?|premiered|final season|last chance|last ride|closing soon)\b/i;
 const DEBUT_NOW =
   /\b(debuts?|debuted|now open|opens today|now meeting|premieres?|launch(?:es|ing)? today|new [\w'’-]+(?:\s+[\w'’-]+){0,6}\s+(?:today|version))\b/i;
 const FUTURE =
@@ -133,7 +142,12 @@ function padIso(year, month, day) {
 export function sentences(text) {
   const t = String(text || "").replace(/\s+/g, " ").trim();
   if (!t) return [];
-  return t.split(/(?<=[.!?])\s+/).map((s) => s.trim()).filter(Boolean);
+  // Keep "U.S.A." from splitting "DinoLand U.S.A. remains open" into two sentences.
+  const masked = t.replace(/\b([A-Z])\./g, "$1\u0000");
+  return masked
+    .split(/(?<=[.!?])\s+/)
+    .map((s) => s.replace(/\u0000/g, ".").trim())
+    .filter(Boolean);
 }
 
 export function parseAckList(raw) {
@@ -173,7 +187,8 @@ function compileMatchers(attractions) {
   return attractions.map((a) => {
     const match = (a.match || []).map((source) => {
       try {
-        return new RegExp(source);
+        // Case-insensitive so "Dinosaur" and "DINOSAUR" are the same ride.
+        return new RegExp(source, "i");
       } catch (err) {
         throw new Error(`attraction ${a.id} has an invalid match /${source}/: ${err.message}`);
       }
@@ -281,7 +296,9 @@ function isOperatingClaim(sentence) {
  * never excused by a nearby "replacing".
  */
 function isPastOrReplacement(sentence) {
-  if (/\b(final season|still (?:open|operating|running)|closing soon)\b/i.test(sentence)) return false;
+  if (/\b(final season|still (?:open|operating|running)|closing soon|remains? open|remains? operational|operational)\b/i.test(sentence)) {
+    return false;
+  }
   return /\b(replac\w+|former|closed in|permanently closed)\b/i.test(sentence) || /\bold DinoLand\b/i.test(sentence);
 }
 
@@ -373,6 +390,41 @@ function claimStatesCurrent(text, issueDate) {
   return true;
 }
 
+function isFutureHedged(text, issueDate) {
+  if (/\b(soon|coming|will\b|set to|later|upcoming|next)\b/i.test(text || "")) return true;
+  if (/\b(January|February|March|April|May|June|July|August|September|October|November|December)\b/i.test(text || "")) return true;
+  if (namesWeekday(text)) return true;
+  if (LOOSE_DATED.test(text || "")) return true;
+  if (issueDate && explicitDates(text, issueDate).some((d) => d > issueDate)) return true;
+  return false;
+}
+
+/**
+ * d-source-date only. Requires an opening/closing verb and a multi-word
+ * name (an attraction, venue, or show). "new highs" and "new props" do not.
+ */
+function isSourceDateOpeningClaim(text, issueDate) {
+  const raw = text || "";
+  if (!OPEN_CLOSE_CLAIM.test(raw)) return false;
+  if (/\bopens\s+at\s+\d/i.test(raw) && !/\b(debuts?|now open|re-?opens?|opened|re-?opened)\b/i.test(raw)) {
+    return false;
+  }
+  // "the Early Entry window opens" is a tip, not a venue opening.
+  if (/\b(?:window|opportunity|opportunities)\s+opens\b/i.test(raw) || /\bopens\s+strong\b/i.test(raw)) {
+    return false;
+  }
+  // A snack, treat, or piece of merch "debuts" is not the venue opening.
+  if (
+    /\b(debuts?|debuted)\b/i.test(raw) &&
+    /\b(sundae|cookie|snack|treats?|merch(?:andise)?|menu|flavor|ornament|purse|costume|sweater|cardigan|popcorn|mug|pin|accessory|accessories)\b/i.test(raw) &&
+    !/\b(now open|opens today|re-?opens?(?:\s+today)?)\b/i.test(raw)
+  ) {
+    return false;
+  }
+  if (isFutureHedged(raw, issueDate)) return false;
+  return linkNouns(raw).length > 0;
+}
+
 function fieldChunks(field) {
   if (field.kind === "teaser" || field.kind === "rightNow") {
     return String(field.text || "").split(/[;]\s*/).map((s) => s.trim()).filter(Boolean);
@@ -442,6 +494,13 @@ function checkFactLedger(post, facts, findings, notices) {
             where: field.where,
             text: sentence,
             evidence: `${fact.subject} endDate ${fact.endDate} is before this issue (${issue}). Tier ${fact.tier}.`,
+          });
+        } else if (current && !fact.startDate && !fact.endDate && /^(coming|scheduled|announced)$/.test(fact.status || "")) {
+          pushFinding(findings, {
+            rule: "a-fact-ledger",
+            where: field.where,
+            text: sentence,
+            evidence: `${fact.subject} is recorded as ${fact.status} with no confirmed date (${fact.tier}; official confirmation ${fact.officialConfirmation || "unconfirmed"}). The sentence states it as current. ${fact.notes || ""}`.trim(),
           });
         }
       }
@@ -515,7 +574,11 @@ function checkSourceDates(post, evidence, findings) {
   for (const field of consider) {
     const chunks = field.teaser ? String(field.text || "").split(/[;]\s*/) : sentences(field.text);
     for (const sentence of chunks) {
-      if (!SAME_DAY.test(sentence) || !STATUS_VERB.test(sentence)) continue;
+      if (!C_SOURCE_SAME_DAY.test(sentence) || !C_SOURCE_STATUS.test(sentence)) continue;
+      // A post title or teaser with no named attraction/venue is a tip
+      // ("plan for today"), not a status claim. An item's own title or
+      // body is already about that item.
+      if ((field.teaser || field.where === "title") && linkNouns(sentence).length === 0) continue;
       let sources = field.sources || [];
       if (field.teaser || field.where === "title") {
         sources = [];
@@ -588,7 +651,7 @@ function checkDebuts(post, facts, evidence, findings) {
 
     if (!full) continue;
     const currentBits = [];
-    if (claimStatesCurrent(it.title || "", issue)) currentBits.push({ where: `${where}.title`, text: it.title });
+    if (isSourceDateOpeningClaim(it.title || "", issue)) currentBits.push({ where: `${where}.title`, text: it.title });
     const linked = evidenceForUrl(evidence, it.source?.url);
     for (const bit of currentBits) {
       const supports = linked.some((item) => sourceSupportsCurrent(item, issue));
@@ -632,9 +695,7 @@ function checkDebuts(post, facts, evidence, findings) {
   for (const field of fields) {
     if (field.kind !== "teaser" && field.kind !== "rightNow") continue;
     for (const clause of String(field.text || "").split(/[;]\s*/)) {
-      const bareNew = /\bnew\b/i.test(clause) && !datedLoose(clause, issue);
-      if (!claimStatesCurrent(clause, issue) && !bareNew) continue;
-      if (explicitDates(clause, issue).some((d) => d > issue)) continue;
+      if (!isSourceDateOpeningClaim(clause, issue)) continue;
       let linked = [];
       for (const { it } of items) {
         const nouns = linkNouns(it.title);
