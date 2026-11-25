@@ -2,7 +2,7 @@
   "title": "Parkio Daily for Tuesday, November 24, 2026",
   "slug": "parkio-daily-2026-11-24",
   "date": "2026-11-24",
-  "teaser": "Twilight Tales safari debuts at Animal Kingdom; Big Thunder and Haunted Mansion both down this morning at Magic Kingdom.",
+  "teaser": "Twilight Tales safari coming Dec 20 at Animal Kingdom.",
   "rightNow": {
     "headline": "Best rides right now",
     "rides": [
@@ -18,29 +18,15 @@
       },
       {
         "name": "Avatar Flight of Passage",
-        "parkSlug": "animal-kingdom",
-        "note": "Early crowds shifting to new Twilight Tales safari"
+        "parkSlug": "animal-kingdom"
       }
     ]
   },
   "sections": {
     "breaking": [
       {
-        "title": "Big Thunder Mountain and Haunted Mansion both failed to open this morning",
-        "body": "Two of Magic Kingdom's highest-capacity attractions remained closed through midday Monday as Thanksgiving week crowds arrived. No reopening time has been announced for either ride.",
-        "parkSlug": "magic-kingdom",
-        "source": {
-          "label": "Inside the Magic",
-          "url": "https://insidethemagic.net/2026/11/as-thanksgiving-crowds-head-to-disney-world-haunted-mansion-and-big-thunder-mountain-railroad-fail-to-open-through-midday-at-magic-kingdom/"
-        },
-        "parkioInsight": {
-          "category": "avoid-risk",
-          "text": "Frontierland and Liberty Square tend to bottleneck fast when these two are down. Prioritizing Tomorrowland or Fantasyland during the first few hours usually avoids the worst congestion."
-        }
-      },
-      {
-        "title": "Twilight Tales nighttime safari launching at Animal Kingdom",
-        "body": "A new after-dark version of Kilimanjaro Safaris called Twilight Tales is coming to Animal Kingdom. The experience will offer a different narrative and lighting setup for evening guests.",
+        "title": "Twilight Tales safari coming Dec 20 at Animal Kingdom",
+        "body": "A new after-dark version of Kilimanjaro Safaris called Twilight Tales is coming Dec 20 to Animal Kingdom. The experience will offer a different narrative and lighting setup for evening guests.",
         "parkSlug": "animal-kingdom",
         "source": {
           "label": "WDWNT",
@@ -48,7 +34,7 @@
         },
         "parkioInsight": {
           "category": "timing-advantage",
-          "text": "Evening safari slots tend to book quickly once word spreads. Guests visiting Animal Kingdom today may find shorter waits for the daytime safari while others queue for the new twilight version."
+          "text": "Evening safari slots tend to book quickly once word spreads."
         }
       }
     ],
@@ -140,10 +126,6 @@
         "source": {
           "label": "Inside the Magic",
           "url": "https://insidethemagic.net/2026/11/details-on-setting-of-indiana-jones-ride-at-disneys-animal-kingdom-theme-park-jc1/"
-        },
-        "parkioInsight": {
-          "category": "opportunity",
-          "text": "DINOSAUR is likely running its final season. Guests who want one last ride before the retheme should visit Animal Kingdom in the next few months, as closure timing may be announced soon."
         }
       },
       {
