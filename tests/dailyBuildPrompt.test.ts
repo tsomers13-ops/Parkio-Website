@@ -31,6 +31,10 @@ describe("buildPrompt — issue date and status wording", () => {
     expect(prompt).not.toContain("live park status");
     expect(prompt).not.toContain("reopens today");
     expect(prompt).toContain("resort and park directory, not live ride status");
-    expect(prompt).toContain("from Monday's report");
+    const teaserRule = prompt.split("\n").find((line) => line.includes('"teaser":'));
+    expect(teaserRule).toBeDefined();
+    expect(teaserRule).toContain('Good: "A new [attraction] is coming [date], from Monday\'s report."');
+    expect(teaserRule).not.toContain("Dec 20");
+    expect(teaserRule).not.toContain("Animal Kingdom safari");
   });
 });
