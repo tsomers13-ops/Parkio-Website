@@ -11,7 +11,7 @@ const PATH = "/animal-kingdom-best-rides-today";
 export function generateMetadata(): Metadata {
   const { long } = getTodayLandingDate();
   const title = `Animal Kingdom Best Rides Today — ${long}`;
-  const description = `What to ride at Disney's Animal Kingdom today, ${long}. Parkio's smart picks based on live wait times — Avatar Flight of Passage, Expedition Everest, Na'vi River Journey, Kilimanjaro Safaris, DINOSAUR, Kali River Rapids, and every operating attraction — refreshed every minute.`;
+  const description = `What to ride at Disney's Animal Kingdom today, ${long}. Parkio's smart picks based on live wait times — Avatar Flight of Passage, Expedition Everest, Na'vi River Journey, Kilimanjaro Safaris, Kali River Rapids, and every operating attraction — refreshed every minute.`;
   return {
     title,
     description,

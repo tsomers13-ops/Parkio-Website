@@ -70,7 +70,7 @@ New facts are added by pull request with a linked source. Tom approves those mer
 
 ## Replay
 
-JSON-only replay of the 198 issues in `content/guide/daily` holds 8. Six are check (d). Two are check (b): 2026-07-05 and 2026-09-12, above.
+JSON-only replay of the issues in `content/guide/daily` records findings on 9 issues. With `dateChecks` set to `report`, the blocking ones are the two check (b) lines: 2026-07-05 and 2026-09-12. The check (d) lines and the 2026-11-25 Twilight Tales "debuts today" / "starts tonight" lines are report-only.
 
 | Issue | Why it holds |
 | --- | --- |
@@ -81,4 +81,5 @@ JSON-only replay of the 198 issues in `content/guide/daily` holds 8. Six are che
 | 2026-08-12 | (d) Teaser "new Cars Land details" shares Cars Land with an item whose body says the land is "coming" and the model "will debut". |
 | 2026-08-15 | (d) Teaser "Indiana Jones temple facade debuts at D23" shares Indiana Jones with an item whose body says the models are for a land "coming" in 2027. |
 | 2026-09-12 | (b) "DinoLand attractions remain operational" after the ledger's February 2, 2026 close. |
-| 2026-11-12 | (d) Title "Now Meeting" and teaser "debut" while the body says "upcoming" about the film. The meet-and-greet itself may have been current; the rule still holds the issue. |
+| 2026-11-12 | (d) Title "Now Meeting" and teaser "debut" while the body says "upcoming" about the film. The meet-and-greet itself may have been current. Report-only. |
+| 2026-11-25 | (a) and (d) "Twilight Tales debuts today" and "starts tonight" while the ledger start is December 20, 2026. Report-only. The dates are the reported fan-site window, not an official confirmation. |

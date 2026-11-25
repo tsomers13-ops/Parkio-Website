@@ -47,6 +47,7 @@ const REPLAY_HOLDS = [
   "parkio-daily-2026-08-15.json",
   "parkio-daily-2026-09-12.json",
   "parkio-daily-2026-11-12.json",
+  "parkio-daily-2026-11-25.json",
 ] as const;
 
 function loadDaily(name: string) {
@@ -596,7 +597,7 @@ describe("blocking policy", () => {
 describe("full-history replay", () => {
   it("holds the known JSON-only issues, including DinoLand still described as open", () => {
     const files = readdirSync(DAILY).filter((name) => name.endsWith(".json")).sort();
-    expect(files).toHaveLength(198);
+    expect(files).toHaveLength(199);
     const held: string[] = [];
     for (const name of files) {
       const { findings } = checkDailyPost(loadDaily(name));
