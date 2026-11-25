@@ -699,7 +699,7 @@ export const RIDES: Ride[] = [
     externalId: "d56506e2-6ad3-443a-8065-fea37987248d",
   },
 
-  // ─── Animal Kingdom (DINOSAUR removed — closed early 2025) ────────
+  // ─── Animal Kingdom (DINOSAUR removed — closed Feb 2, 2026; last day Feb 1, 2026) ────────
   {
     id: "ak-flight-of-passage",
     parkId: "animal-kingdom",
