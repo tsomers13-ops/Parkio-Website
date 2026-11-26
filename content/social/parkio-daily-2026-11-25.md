@@ -5,23 +5,23 @@ _Generated from the daily briefing. Zero AI cost — just reformatted. Paste-and
 ## 1. Short / Reel / TikTok (post to all three)
 
 ```
-HOOK (0–2s): This is coming to Disney — Annual Passholder water park ticket price increases to fifty-four dollars
-BEAT (3–20s): The discounted single-day water park ticket for passholders rose from its previous price. The new rate applies to both Typhoon Lagoon and Blizzard Beach.
-TIP (insert ~15s): With Blizzard Beach closed three days this week, Typhoon Lagoon is likely to feel more crowded. Consider visiting after 3pm when families with young children…
+HOOK (0–2s): Ride it before it's gone — Blizzard Beach closes three days this week
+BEAT (3–20s): The water park will be shut Wednesday, Friday, and Saturday during one of the busiest travel weeks of the year. No reason was given for the closures.
+TIP (insert ~15s): Typhoon Lagoon is also closed for refurbishment until Jan 27, so no Disney water park is open Wednesday, Friday or Saturday. A resort pool day is your best bet.
 PAYOFF (20–30s): We track every closure, opening, and change so you never miss it — Parkio Daily, free at parkio.info.
-ON-SCREEN TEXT: Annual Passholder water park ticket price increases to…  |  parkio.info
-CAPTION: Annual Passholder water park ticket price increases to fifty-four dollars #DisneyWorld #DisneyParks #Disney #ParkioDaily
+ON-SCREEN TEXT: Blizzard Beach closes three days this week  |  parkio.info
+CAPTION: Blizzard Beach closes three days this week #DisneyWorld #DisneyParks #Disney #ParkioDaily
 ```
 
 ## 2. X / Threads
 
 ```
 🏰 Today at Disney:
-• Annual Passholder water park ticket price increases to fifty-four…
 • Blizzard Beach closes three days this week
-• Two Disneyland attractions closing for January refurbishment
+• Twilight Tales night safari coming to Animal Kingdom Dec 20
+• Glass panels added to Monstropolis building facades
 Full briefing → parkio.info
-#DisneyWorld #Disneyland
+#DisneyWorld #AnimalKingdom #HollywoodStudios
 ```
 
 ## 3. Instagram — carousel + caption
@@ -29,35 +29,35 @@ Full briefing → parkio.info
 **Carousel slides**
 ```
 SLIDE 1 (cover): Today at Disney — 2026-11-25
-SLIDE 2: 📍 Annual Passholder water park ticket price increases to fifty-four…
-   The discounted single-day water park ticket for passholders rose from its previous price. The new rate applies to both Typhoon Lagoon and Blizzard…
-SLIDE 3: 📍 Blizzard Beach closes three days this week
+SLIDE 2: 📍 Blizzard Beach closes three days this week
    The water park will be shut Wednesday, Friday, and Saturday during one of the busiest travel weeks of the year. No reason was given for the closures.
-SLIDE 4: 🏰 Two Disneyland attractions closing for January refurbishment
-   A pair of classic rides will shut down next month for maintenance work. Specific attraction names and closure dates have not yet been released.
-SLIDE 5: 🦁 Animal Kingdom launches nighttime Kilimanjaro Safaris experience
-   Twilight Tales debuts today as the park extends evening hours into late 2026 and early 2027. The new after-dark version of the safari offers…
-SLIDE 6: 🎡 Bucky Barnes and Yelena Belova arrive at Avengers Campus
-   The two Marvel characters begin meet-and-greets at Disney California Adventure this week ahead of Avengers Doomsday opening in theaters December 18.…
+SLIDE 3: 🦁 Twilight Tales night safari coming to Animal Kingdom Dec 20
+   Animal Kingdom will test Twilight Tales, a nighttime version of Kilimanjaro Safaris, from Dec 20 through Jan 3.
+SLIDE 4: 🎬 Glass panels added to Monstropolis building facades
+   Windows have been installed on distant buildings in the new Monstropolis land under construction at Hollywood Studios. The area will house a…
+SLIDE 5: 📍 Walt Disney the Dreamer merchandise collection arrives
+   New apparel, accessories, and collectibles honoring Walt Disney himself are now on shelves across Walt Disney World. The line includes a $64.99…
+SLIDE 6: 📍 Park icon sweatshirts debut for Magic Kingdom, EPCOT, and Hollywood…
+   Three new sweatshirts featuring the signature icon of each park are now available, joining the Animal Kingdom sweatshirt released earlier.
 SLIDE 7 (CTA): Full briefing every morning → parkio.info
 ```
 
 **Caption**
 ```
-Animal Kingdom launches nighttime Kilimanjaro Safaris; Blizzard Beach closes three days this week; Bucky Barnes debuts at Avengers Campus.
+Blizzard Beach closes three days this week while Typhoon Lagoon stays shut for refurbishment; Bucky Barnes and Yelena Belova arrive at Avengers…
 
 The Disney news that matters, every morning — free at parkio.info. Link in bio.
 
-#Disneyland #AnimalKingdom #DisneyCaliforniaAdventure #DisneyWorld #DisneyParks #Disney #ParkioDaily
+#AnimalKingdom #HollywoodStudios #DisneyWorld #DisneyParks #Disney #ParkioDaily
 ```
 
 ## Source stories used (top-ranked by shareability)
 
-- [bignews] Annual Passholder water park ticket price increases to fifty-four dollars
 - [breaking] Blizzard Beach closes three days this week
-- [topstories] Two Disneyland attractions closing for January refurbishment
-- [bignews] Animal Kingdom launches nighttime Kilimanjaro Safaris experience
-- [bignews] Bucky Barnes and Yelena Belova arrive at Avengers Campus
+- [bignews] Twilight Tales night safari coming to Animal Kingdom Dec 20
+- [topstories] Glass panels added to Monstropolis building facades
+- [topstories] Walt Disney the Dreamer merchandise collection arrives
+- [topstories] Park icon sweatshirts debut for Magic Kingdom, EPCOT, and Hollywood Studios
 
 ---
 _Built by scripts/parkio-daily/social.mjs from content/guide/daily/parkio-daily-2026-11-25.json._
