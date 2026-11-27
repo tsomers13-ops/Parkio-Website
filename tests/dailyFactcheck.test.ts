@@ -2,16 +2,26 @@ import { describe, expect, it } from "vitest";
 
 import {
   applyCuts,
-  checkerRequest,
+  checkerRequest as checkerRequestJs,
   collectItems,
-  decide,
+  decide as decideJs,
   findWeekdayDateMismatches,
   isHedged,
   isRisky,
   parseVerdicts,
-  renderReport,
+  renderReport as renderReportJs,
 } from "../scripts/parkio-daily/verify.mjs";
 import { buildCalendar, buildPrompt, finalText } from "../scripts/parkio-daily/build.mjs";
+
+// verify.mjs is plain JavaScript, so TypeScript infers its parameter and
+// return types from default values (e.g. `checkedIds = []` becomes never[]).
+// These loose aliases let the tests pass the shapes the code really takes.
+const checkerRequest = checkerRequestJs as (opts: { prompt: string; useThemeParks: boolean }) => {
+  body: any;
+  betas: string[];
+};
+const decide = decideJs as (args: any) => any;
+const renderReport = renderReportJs as (args: any) => string;
 
 const post = {
   title: "Parkio Daily",
