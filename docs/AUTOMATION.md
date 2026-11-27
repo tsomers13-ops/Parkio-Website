@@ -45,8 +45,8 @@ pipeline.
                  Build Claude prompt (RSS + parks + videos + research)
                       │
                       ▼
-                 Compose with Claude (claude-sonnet-4-5)
-                   retry 3× / 30s / 120s timeout / neverError
+                 Compose with Claude (claude-sonnet-5-5, effort medium)
+                   retry 3× / 30s / 300s timeout / neverError
                       │
                       ▼
                  Validate + format JSON
@@ -56,6 +56,11 @@ pipeline.
                       │
                       ▼
                  Write content/guide/daily/{slug}.json
+                      │
+                      ▼
+                 Fact-check (scripts/parkio-daily/verify.mjs)
+                   • shadow: report only · enforce: cut / hold
+                   • see docs/PARKIO-DAILY-ACCURACY.md
                       │
                       ▼
                  git commit + git push (Actions GITHUB_TOKEN)
@@ -196,7 +201,7 @@ The TypeScript types live in `lib/guideDaily.ts`. n8n must produce:
 | `slug` | Must equal the filename (without `.json`) |
 | `date` | ISO `YYYY-MM-DD`, Eastern time |
 | `teaser` | ≤ 160 chars; used for SEO description AND RSS `<description>` |
-| `rightNow.rides` | 2–3 rides recommended; renders as 3-column grid (1-col mobile) |
+| `rightNow.rides` | Optional. The GitHub Actions build no longer writes it (no live wait data reaches the writer); the site hides the box when absent |
 | `parkSlug` | One of: `magic-kingdom`, `epcot`, `hollywood-studios`, `animal-kingdom`, `disneyland`, `california-adventure` |
 | `body` | Plain text — no markdown parser at render time |
 | `sections.*` | Any subset present. Renderer enforces order: breaking → bignews → topstories → icymi → spotlight |

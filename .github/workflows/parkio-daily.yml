@@ -41,7 +41,9 @@ jobs:
       # Allow the workflow to push the committed JSON back to main.
       # The default GITHUB_TOKEN is scoped per-run, no PAT needed.
       contents: write
-    timeout-minutes: 10
+    # Writer + fact-check each make a Claude call of up to 5 minutes,
+    # with retries, so 10 minutes was no longer enough headroom.
+    timeout-minutes: 25
 
     steps:
       - name: Checkout main
@@ -90,6 +92,22 @@ jobs:
             exit 1
           fi
           echo "Found $f — either a new commit will be created, or (if it already existed) the existing commit will be offered to publish."
+
+      - name: Fact-check today's briefing
+        # Checks dates, prices, openings, closings and ride status against
+        # Disney's own pages and ThemeParks.wiki before anything is
+        # committed, published or emailed. See docs/PARKIO-DAILY-ACCURACY.md.
+        #
+        # PARKIO_FACTCHECK_MODE:
+        #   shadow  — report only (job summary); the briefing is not changed
+        #             and this step never blocks publishing. Week 1.
+        #   enforce — cut items that fail; a hold stops the run here, before
+        #             the commit step, so nothing publishes or emails.
+        # Switching to enforce is a one-line change, made only on review.
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          PARKIO_FACTCHECK_MODE: shadow
+        run: node scripts/parkio-daily/verify.mjs
 
       - name: Generate social drafts
         # Reformats today's briefing into ready-to-post social drafts at
