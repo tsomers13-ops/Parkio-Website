@@ -2,14 +2,14 @@
   "title": "Parkio Daily for November 25, 2026",
   "slug": "parkio-daily-2026-11-25",
   "date": "2026-11-25",
-  "teaser": "Animal Kingdom launches nighttime Kilimanjaro Safaris; Blizzard Beach closes three days this week; Bucky Barnes debuts at Avengers Campus.",
+  "teaser": "Blizzard Beach closes three days this week while Typhoon Lagoon stays shut for refurbishment; Bucky Barnes and Yelena Belova arrive at Avengers Campus Friday; Animal Kingdom's Twilight Tales night safari is coming Dec 20.",
   "rightNow": {
     "headline": "Best rides right now",
     "rides": [
       {
         "name": "Kilimanjaro Safaris",
         "parkSlug": "animal-kingdom",
-        "note": "New Twilight Tales experience starts tonight"
+        "note": "Daytime runs only for now; the Twilight Tales night version starts Dec 20"
       },
       {
         "name": "Big Thunder Mountain Railroad",
@@ -19,7 +19,7 @@
       {
         "name": "Web Slingers",
         "parkSlug": "california-adventure",
-        "note": "New Marvel characters meeting nearby"
+        "note": "Bucky Barnes and Yelena Belova start meeting guests nearby on Friday"
       }
     ]
   },
@@ -35,12 +35,12 @@
         },
         "parkioInsight": {
           "category": "avoid-risk",
-          "text": "Typhoon Lagoon is likely your only water park option this week. Consider booking a resort pool day instead if that park feels too crowded."
+          "text": "Typhoon Lagoon is also closed for refurbishment until Jan 27, so no Disney water park is open Wednesday, Friday or Saturday. A resort pool day is your best bet."
         }
       },
       {
-        "title": "Magic Kingdom reports grand theft incident",
-        "body": "Law enforcement responded to the park Tuesday afternoon for a reported grand theft. No details have been released about the incident or whether any guests were involved.",
+        "title": "Theft call reported at Magic Kingdom Tuesday",
+        "body": "A police scanner report logged a theft call at Magic Kingdom Tuesday afternoon; Disney hasn't commented.",
         "parkSlug": "magic-kingdom",
         "source": {
           "label": "Inside the Magic",
@@ -48,14 +48,14 @@
         },
         "parkioInsight": {
           "category": "avoid-risk",
-          "text": "Keep personal belongings secure in lockers on major attractions. Thanksgiving week crowds often mean tighter spaces and more opportunity for theft."
+          "text": "With Thanksgiving crowds, keep bags zipped and valuables on you."
         }
       }
     ],
     "bignews": [
       {
-        "title": "Animal Kingdom launches nighttime Kilimanjaro Safaris experience",
-        "body": "Twilight Tales debuts today as the park extends evening hours into late 2026 and early 2027. The new after-dark version of the safari offers different animal activity and lighting.",
+        "title": "Twilight Tales night safari coming to Animal Kingdom Dec 20",
+        "body": "Animal Kingdom will test Twilight Tales, a nighttime version of Kilimanjaro Safaris, from Dec 20 through Jan 3.",
         "parkSlug": "animal-kingdom",
         "source": {
           "label": "Disney Tourist Blog",
@@ -63,12 +63,12 @@
         },
         "parkioInsight": {
           "category": "timing-advantage",
-          "text": "Animals tend to be more active at dusk than midday. Booking a safari slot between 6-8pm usually offers cooler temperatures and livelier wildlife behavior."
+          "text": "Disney will test an after-dark version of Kilimanjaro Safaris from Dec 20 through Jan 3, with guides telling animal folktales as you ride. No reservation or Lightning Lane option has been announced, so expect standby lines after sunset. If you're at Animal Kingdom this week, the daytime safari is your only option."
         }
       },
       {
-        "title": "Bucky Barnes and Yelena Belova arrive at Avengers Campus",
-        "body": "The two Marvel characters begin meet-and-greets at Disney California Adventure this week ahead of Avengers Doomsday opening in theaters December 18. Themed food and additional experiences are part of the rollout.",
+        "title": "Bucky Barnes and Yelena Belova arrive at Avengers Campus Friday",
+        "body": "Starting Friday, Nov 27, Bucky Barnes and Yelena Belova meet guests at Disney California Adventure for a limited time, ahead of Avengers: Doomsday in theaters Dec 18.",
         "parkSlug": "california-adventure",
         "source": {
           "label": "Disney Parks Blog",
@@ -76,20 +76,7 @@
         },
         "parkioInsight": {
           "category": "opportunity",
-          "text": "Character meet queues in Avengers Campus tend to build after 11am. Arriving at rope drop usually gives you shorter waits for both heroes and Web Slingers."
-        }
-      },
-      {
-        "title": "Annual Passholder water park ticket price increases to fifty-four dollars",
-        "body": "The discounted single-day water park ticket for passholders rose from its previous price. The new rate applies to both Typhoon Lagoon and Blizzard Beach.",
-        "parkSlug": null,
-        "source": {
-          "label": "WDWNT",
-          "url": "https://wdwnt.com/2026/11/disney-world-increases-discounted-annual-passholder-water-park-ticket-price-to-54/"
-        },
-        "parkioInsight": {
-          "category": "avoid-risk",
-          "text": "With Blizzard Beach closed three days this week, Typhoon Lagoon is likely to feel more crowded. Consider visiting after 3pm when families with young children often leave."
+          "text": "Lines are usually longest the first weekend, so head to Avengers Campus at rope drop."
         }
       },
       {
@@ -121,21 +108,8 @@
         }
       },
       {
-        "title": "Two Disneyland attractions closing for January refurbishment",
-        "body": "A pair of classic rides will shut down next month for maintenance work. Specific attraction names and closure dates have not yet been released.",
-        "parkSlug": "disneyland",
-        "source": {
-          "label": "Disney Food Blog",
-          "url": "https://www.disneyfoodblog.com/2026/11/24/2-classic-disneyland-rides-will-close-for-refurbishment-in-january/"
-        },
-        "parkioInsight": {
-          "category": "timing-advantage",
-          "text": "Late December tends to be the last chance to ride attractions going down in January. If you're visiting before New Year's, prioritize older favorites that may close soon."
-        }
-      },
-      {
         "title": "Walt Disney the Dreamer merchandise collection arrives",
-        "body": "New apparel, accessories, and collectibles honoring Walt Disney himself are now on shelves across Walt Disney World. The line includes a sixty-five dollar Tinker Bell special edition doll inspired by early Disneyland TV appearances.",
+        "body": "New apparel, accessories, and collectibles honoring Walt Disney himself are now on shelves across Walt Disney World. The line includes a $64.99 Tinker Bell special edition doll inspired by early Disneyland TV appearances.",
         "parkSlug": null,
         "source": {
           "label": "WDWNT",
@@ -148,7 +122,7 @@
       },
       {
         "title": "Park icon sweatshirts debut for Magic Kingdom, EPCOT, and Hollywood Studios",
-        "body": "Three new sweatshirts featuring the signature icon of each park are now available. Animal Kingdom and the two California parks are not yet included in the line.",
+        "body": "Three new sweatshirts featuring the signature icon of each park are now available, joining the Animal Kingdom sweatshirt released earlier.",
         "parkSlug": null,
         "source": {
           "label": "WDWNT",
@@ -174,7 +148,7 @@
       },
       {
         "title": "Gideon's Bakehouse releases Black Friday tiki mug and merchandise",
-        "body": "The Disney Springs bakery will drop a new tiki mug and other exclusive items Friday, November 28 at 10am Eastern. Some products are online-only while others will be available at the East End Market location.",
+        "body": "Gideon's Bakehouse releases its first tiki mug and other Black Friday merchandise on Friday, Nov 27 at 10 AM ET. The mug is sold online only; some other items will be in the Disney Springs shop.",
         "parkSlug": null,
         "source": {
           "label": "WDWNT",
@@ -219,8 +193,8 @@
         }
       },
       {
-        "title": "Disney and Formula 1 extend partnership for 2026 race season",
-        "body": "Mickey and Friends return trackside as Disney continues its multi-year sponsorship of Formula 1. The collaboration includes activations at race venues and special experiences for fans.",
+        "title": "Disney and Formula 1 partnership runs through 2028",
+        "body": "Disney's Formula 1 partnership, extended in August, runs through 2028 and adds Pixar's Cars.",
         "parkSlug": null,
         "source": {
           "label": "Disney Parks Blog",

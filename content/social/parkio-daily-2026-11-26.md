@@ -37,18 +37,18 @@ SLIDE 4: 🏰 Magic Kingdom files new construction permit for Frontierland's…
    Walt Disney World has submitted a permit to install signage at Golden Oak Outpost in Frontierland, days after filing for general construction at…
 SLIDE 5: 🌍 EPCOT files twelve new construction permits
    Walt Disney World has submitted a dozen construction permits for EPCOT, signaling additional changes on the horizon for the park. The filings follow…
-SLIDE 6: 🎡 Bucky Barnes and Yelena Belova debut at Avengers Campus
-   Winter Soldier and Yelena Belova are now meeting guests at Avengers Campus in Disney California Adventure as part of the leadup to Avengers:…
+SLIDE 6: 🏰 Doctor Doom popcorn bucket and Avengers food coming to Disney parks
+   A Doctor Doom throne popcorn bucket is coming soon to Disney California Adventure, is on sale at Hong Kong Disneyland, and reaches Disney Cruise…
 SLIDE 7 (CTA): Full briefing every morning → parkio.info
 ```
 
 **Caption**
 ```
-Bucky Barnes and Yelena Belova debut at Avengers Campus this week ahead of Doomsday's December 18 release, plus new character meets at Hollywood…
+Bucky Barnes and Yelena Belova start meeting guests at Avengers Campus Friday ahead of Doomsday's December 18 release, plus new character meets at…
 
 The Disney news that matters, every morning — free at parkio.info. Link in bio.
 
-#HollywoodStudios #EPCOT #MagicKingdom #DisneyCaliforniaAdventure #DisneyWorld #DisneyParks #Disney #ParkioDaily
+#HollywoodStudios #EPCOT #MagicKingdom #Disneyland #DisneyWorld #DisneyParks #Disney #ParkioDaily
 ```
 
 ## Source stories used (top-ranked by shareability)
@@ -57,7 +57,7 @@ The Disney news that matters, every morning — free at parkio.info. Link in bio
 - [topstories] Popular EPCOT attraction receives new overlay
 - [topstories] Magic Kingdom files new construction permit for Frontierland's Golden Oak Outpost
 - [topstories] EPCOT files twelve new construction permits
-- [bignews] Bucky Barnes and Yelena Belova debut at Avengers Campus
+- [bignews] Doctor Doom popcorn bucket and Avengers food coming to Disney parks
 
 ---
 _Built by scripts/parkio-daily/social.mjs from content/guide/daily/parkio-daily-2026-11-26.json._
