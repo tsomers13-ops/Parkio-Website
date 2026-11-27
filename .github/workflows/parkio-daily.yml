@@ -20,7 +20,32 @@ on:
   # Manual trigger from the Actions tab — useful for back-fills,
   # debugging, or running an extra briefing the same day. Confirmed
   # working; this is how you run a same-day briefing on demand.
+  #
+  # The scheduler posts `{ ref }` and leaves these inputs empty. Empty
+  # inputs are a normal enforced run. There is no skip input.
   workflow_dispatch:
+    inputs:
+      release_held_run_id:
+        description: >-
+          Release a held run as-is. Numeric Actions run id whose
+          parkio-daily-held artifact to restore. Requires ack of every
+          finding id. Not a skip switch.
+        required: false
+        type: string
+      ack:
+        description: >-
+          Comma-separated finding ids from the fact-check report. Honored
+          only with release_held_run_id or fixed_ref. Every current finding
+          must be listed. Unknown ids fail.
+        required: false
+        type: string
+      fixed_ref:
+        description: >-
+          Branch daily-fix/parkio-daily-YYYY-MM-DD for today in
+          America/New_York. Only that JSON file is copied, then re-checked.
+          Ack any finding ids that remain.
+        required: false
+        type: string
 
 # Concurrency guard — if a previous run is still going (rare; the
 # build is < 3 min), cancel it so we never end up with two commits
@@ -41,6 +66,12 @@ jobs:
       # Allow the workflow to push the committed JSON back to main.
       # The default GITHUB_TOKEN is scoped per-run, no PAT needed.
       contents: write
+      # Download of a held artifact and the runs API lookup need actions: read.
+      # actions/upload-artifact@v4 uploads with ACTIONS_RUNTIME_TOKEN, not
+      # GITHUB_TOKEN, so this job does not take actions: write.
+      # The first controlled run of this workflow must confirm that upload
+      # still succeeds with actions: read.
+      actions: read
     timeout-minutes: 10
 
     steps:
@@ -73,6 +104,36 @@ jobs:
         with:
           node-version: "20"
 
+      - name: Check release inputs
+        id: release
+        env:
+          RELEASE_HELD_RUN_ID: ${{ inputs.release_held_run_id }}
+          FIXED_REF: ${{ inputs.fixed_ref }}
+          ACK: ${{ inputs.ack }}
+          GITHUB_TOKEN: ${{ github.token }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: node scripts/parkio-daily/releaseInputs.mjs --check
+
+      - name: Download held briefing artifact
+        if: steps.release.outputs.download == 'true'
+        uses: actions/download-artifact@v4
+        with:
+          name: parkio-daily-held
+          path: ${{ runner.temp }}/parkio-daily-held-artifact
+          run-id: ${{ inputs.release_held_run_id }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Apply same-day release inputs
+        if: steps.release.outputs.apply == 'true'
+        env:
+          RELEASE_HELD_RUN_ID: ${{ inputs.release_held_run_id }}
+          FIXED_REF: ${{ inputs.fixed_ref }}
+          ACK: ${{ inputs.ack }}
+          HELD_ARTIFACT_DIR: ${{ runner.temp }}/parkio-daily-held-artifact
+          GITHUB_TOKEN: ${{ github.token }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: node scripts/parkio-daily/releaseInputs.mjs --apply
+
       - name: Build today's briefing
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
@@ -90,6 +151,33 @@ jobs:
             exit 1
           fi
           echo "Found $f — either a new commit will be created, or (if it already existed) the existing commit will be offered to publish."
+
+      # In this build job, which checked out main. Not in the publish
+      # workflow: that job loads tooling from the candidate commit.
+      # Closed-attraction and weekday-mismatch findings block. Date checks
+      # and unverifiable findings are report-only until dateChecks is "block".
+      # A blocking failure skips social, commit, and publish.
+      # The re-offer path reaches this step too, because it sits before
+      # "Commit the new briefing". A later run whose new text passes is
+      # allowed to publish; nothing here latches an earlier hold.
+      - name: Fact-check today's briefing
+        id: factcheck
+        env:
+          RELEASE_HELD_RUN_ID: ${{ inputs.release_held_run_id }}
+          FIXED_REF: ${{ inputs.fixed_ref }}
+          ACK: ${{ inputs.ack }}
+        run: node scripts/parkio-daily/factcheck.mjs
+
+      # Report-only findings are in this artifact and in the step summary.
+      # They do not fail the step, so this upload also runs when the check passes.
+      - name: Upload fact-check report
+        if: always() && (steps.factcheck.outcome == 'success' || steps.factcheck.outcome == 'failure')
+        uses: actions/upload-artifact@v4
+        with:
+          name: parkio-daily-factcheck
+          retention-days: 14
+          if-no-files-found: warn
+          path: ${{ runner.temp }}/parkio-daily-factcheck/
 
       - name: Generate social drafts
         # Reformats today's briefing into ready-to-post social drafts at
@@ -128,7 +216,12 @@ jobs:
             exit 0
           fi
           today=$(TZ=America/New_York date +%Y-%m-%d)
-          git commit -m "Parkio Daily — ${today}"
+          msg="Parkio Daily — ${today}"
+          note="${RUNNER_TEMP}/parkio-daily-release-note.txt"
+          if [ -f "$note" ]; then
+            msg=$(printf '%s\n\n%s' "$msg" "$(cat "$note")")
+          fi
+          git commit -m "$msg"
           # The remote main may have advanced since checkout (manual pushes,
           # a prior run). A plain push then fails with non-fast-forward
           # ([rejected] fetch first), which is what silently stopped the bot
@@ -143,6 +236,25 @@ jobs:
             echo "pushed=true"
             echo "sha=$(git rev-parse HEAD)"
           } >> "$GITHUB_OUTPUT"
+
+      - name: Add social draft to held artifact
+        if: failure() && steps.factcheck.outcome == 'failure'
+        run: |
+          node scripts/parkio-daily/social.mjs || echo "social draft unavailable"
+          today=$(TZ=America/New_York date +%Y-%m-%d)
+          src="content/social/parkio-daily-${today}.md"
+          dest="${RUNNER_TEMP}/parkio-daily-held"
+          mkdir -p "$dest"
+          if [ -f "$src" ]; then cp "$src" "$dest/social.md"; fi
+
+      - name: Upload held briefing
+        if: failure() && steps.factcheck.outcome == 'failure'
+        uses: actions/upload-artifact@v4
+        with:
+          name: parkio-daily-held
+          retention-days: 7
+          if-no-files-found: error
+          path: ${{ runner.temp }}/parkio-daily-held/
 
   # Publish the commit just made.
   #

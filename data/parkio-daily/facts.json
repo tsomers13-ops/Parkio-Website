@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "policy": "New facts are added by pull request with a linked source. Tom approves those merges. A fact sourced only from fan sites is tier secondary and worded reported or expected.",
+  "facts": [
+    {
+      "id": "ak-twilight-tales",
+      "subject": "Twilight Tales",
+      "aliases": ["Twilight Tales safari", "Kilimanjaro Safaris: Twilight Tales"],
+      "kind": "offering",
+      "status": "coming",
+      "startDate": "2026-12-20",
+      "endDate": "2027-01-03",
+      "tier": "secondary",
+      "wording": "reported",
+      "officialConfirmation": "not-found",
+      "dateConfidence": "secondary-years-stated",
+      "reviewBy": "2026-12-19",
+      "sources": [
+        {
+          "label": "Disney Food Blog",
+          "url": "https://www.disneyfoodblog.com/2026/11/24/new-nighttime-safari-coming-to-disneys-animal-kingdom/",
+          "feedUrl": "https://www.disneyfoodblog.com/feed/",
+          "tier": "secondary",
+          "publishedAt": "2026-11-24T16:55:43Z",
+          "quotes": [
+            "According to Scott Gustin , Animal Kingdom is testing a new nighttime experience for the Kilimanjaro Safaris from December 20th through January 3rd .",
+            "The experience will be available for guests for a VERY limited time, only from December 20th through January 3rd."
+          ],
+          "note": "Fetched 2026-11-25 from the Disney Food Blog RSS content:encoded for this URL. The article HTML returned HTTP 403. These are two separate sentences from that feed text, not one spliced paragraph. A heading 'Kilimanjaro Safaris' sits immediately before the Scott Gustin sentence in the stripped feed. The sentences do not print 2026 or 2027. The feed cites Scott Gustin. It is not a Disney page."
+        },
+        {
+          "label": "WDWNT",
+          "url": "https://wdwnt.com/2026/11/more-details-on-nighttime-kilimanjaro-safaris-twilight-tales-other-animal-kingdom-attractions-operating-later/",
+          "tier": "secondary",
+          "publishedAt": "2026-11-24",
+          "quote": "The experience will be available after the sun sets from December 20, 2026, through January 3, 2027.",
+          "note": "Fetched 2026-11-25 from this URL, HTTP 200. Byline Shannen Ace November 24, 2026. The sentence prints both years. It is a WDWNT report, not a Disney page. This is the date source for startDate and endDate."
+        }
+      ],
+      "notes": "Reported by WDWNT and Disney Food Blog. Expected from December 20, 2026 through January 3, 2027. Official Disney confirmation was not in the fetched text. startDate and endDate are the years printed in the WDWNT More Details sentence quoted above."
+    }
+  ]
+}
