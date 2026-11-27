@@ -18,7 +18,7 @@ CAPTION: Spaceship Earth refurbishment timing still unconfirmed #DisneyWorld #Di
 ```
 🏰 Today at Disney:
 • Spaceship Earth refurbishment timing still unconfirmed
-• Pirates of the Caribbean changes confirmed for 2027
+• Magic Kingdom's Pirates of the Caribbean closes Jan 11 for most of…
 • Bucky Barnes and Yelena Belova debut at Avengers Campus
 Full briefing → parkio.info
 #DisneyWorld #EPCOT #MagicKingdom
@@ -31,10 +31,10 @@ Full briefing → parkio.info
 SLIDE 1 (cover): Today at Disney — 2026-11-27
 SLIDE 2: 🌍 Spaceship Earth refurbishment timing still unconfirmed
    EPCOT's icon attraction is slated for its first major update in nearly 20 years, but Disney has not announced a closure date. The reimagining will…
-SLIDE 3: 🏰 Pirates of the Caribbean changes confirmed for 2027
-   Disney announced major updates coming to the classic attraction next year, marking the biggest planned shift revealed in November. Details on scope…
+SLIDE 3: 🏰 Magic Kingdom's Pirates of the Caribbean closes Jan 11 for most of…
+   Walt Disney World says the ride closes Monday, Jan 11, 2027 for a long refurbishment with new effects, and is expected back near the end of 2027.…
 SLIDE 4: 🎡 Bucky Barnes and Yelena Belova debut at Avengers Campus
-   Winter Soldier and the assassin from Black Widow are now meeting guests at Avengers Campus ahead of Avengers: Doomsday hitting theaters December 18.…
+   Starting today, Nov 27, Bucky Barnes and Yelena Belova meet guests at Avengers Campus in Disney California Adventure for a limited time, ahead of…
 SLIDE 5: 🏰 Magic Kingdom removes Fab 50 character statues
    Disney World has started pulling down the golden character statues installed for the 50th anniversary, which were key interactive touchpoints for…
 SLIDE 6: 🏰 Extended Evening Hours shifts away from Magic Kingdom in winter
@@ -54,7 +54,7 @@ The Disney news that matters, every morning — free at parkio.info. Link in bio
 ## Source stories used (top-ranked by shareability)
 
 - [topstories] Spaceship Earth refurbishment timing still unconfirmed
-- [topstories] Pirates of the Caribbean changes confirmed for 2027
+- [topstories] Magic Kingdom's Pirates of the Caribbean closes Jan 11 for most of 2027
 - [bignews] Bucky Barnes and Yelena Belova debut at Avengers Campus
 - [bignews] Magic Kingdom removes Fab 50 character statues
 - [bignews] Extended Evening Hours shifts away from Magic Kingdom in winter
