@@ -49,12 +49,19 @@ import { fileURLToPath } from "node:url";
  * Tunables — keep mirrored with n8n/parkio-daily.json on changes
  * ────────────────────────────────────────────────────────────── */
 
-const MODEL = "claude-sonnet-4-5";
-const MAX_TOKENS = 6000;
+const MODEL = "claude-sonnet-5-5";
+// Sonnet 5.5 thinks before it answers (adaptive thinking is always on),
+// so the cap must cover thinking + the JSON. Effort "medium" keeps the
+// thinking short on what is mostly a writing task.
+const MAX_TOKENS = 16000;
+const EFFORT = "medium";
+// On a safety refusal, the API re-runs the request on a fallback model
+// inside the same call instead of returning nothing.
+const FALLBACK_BETA = "server-side-fallback-2026-07-01";
 
 const CLAUDE_RETRIES = 3;
 const CLAUDE_WAIT_MS = 30_000;
-const CLAUDE_TIMEOUT_MS = 120_000;
+const CLAUDE_TIMEOUT_MS = 300_000;
 
 const SOURCE_TIMEOUT_MS = 30_000;
 const PARKS_TIMEOUT_MS = 60_000;
@@ -62,8 +69,13 @@ const YOUTUBE_TIMEOUT_MS = 30_000;
 
 /* Anthropic public pricing (per 1M tokens) — used for the per-run
  * cost log. Update if Anthropic changes pricing.                    */
-const PRICE_INPUT_PER_M = 3.0;
-const PRICE_OUTPUT_PER_M = 15.0;
+const PRICE_INPUT_PER_M = 2.0;
+const PRICE_OUTPUT_PER_M = 10.0;
+
+/* How much of each article the writer sees. The old 300-character cap
+ * cut most stories off before their dates and details, and the model
+ * filled the gaps itself — the main source of wrong facts. */
+const EXCERPT_CHARS = 2500;
 
 const PARKIO_USER_AGENT =
   "Mozilla/5.0 (compatible; ParkioBot/1.0; +https://parkio.info)";
@@ -114,6 +126,7 @@ function isValidExistingDailyPost(candidate) {
 export {
   todaysSlugAndDate,
   weekdayForIssueDate,
+  buildCalendar,
   mergeYouTubeIds,
   rankTop10,
   parseFeedItems,
@@ -121,6 +134,7 @@ export {
   stitchAdditionalSources,
   buildPrompt,
   buildPost,
+  finalText,
   isValidExistingDailyPost,
 };
 
@@ -228,9 +242,13 @@ async function main() {
   const claudeBody = JSON.stringify({
     model: MODEL,
     max_tokens: MAX_TOKENS,
+    output_config: { effort: EFFORT },
+    fallbacks: "default",
     messages: [{ role: "user", content: prompt }],
   });
-  const claudeResult = await callClaudeWithRetry(claudeBody);
+  const claudeResult = await callClaudeWithRetry(claudeBody, {
+    betas: [FALLBACK_BETA],
+  });
 
   // ── Validate + format ──────────────────────────────────────
   const post = buildPost({
@@ -317,6 +335,30 @@ function weekdayForIssueDate(etDate) {
   });
 }
 
+/**
+ * A plain day-by-day calendar around the issue date, e.g.
+ * "2026-11-24 = Tuesday, November 24". Models are unreliable at working
+ * out which weekday a date falls on, so the writer and the checker look
+ * it up here instead. Covers `back` days before through `ahead` days
+ * after the issue date.
+ */
+function buildCalendar(etDate, { back = 14, ahead = 30 } = {}) {
+  const base = Date.parse(`${etDate}T00:00:00Z`);
+  const lines = [];
+  for (let d = -back; d <= ahead; d++) {
+    const day = new Date(base + d * 86_400_000);
+    const iso = day.toISOString().slice(0, 10);
+    const label = day.toLocaleDateString("en-US", {
+      timeZone: "UTC",
+      weekday: "long",
+      month: "long",
+      day: "numeric",
+    });
+    lines.push(`${iso} = ${label}${d === 0 ? "  <- issue date" : ""}`);
+  }
+  return lines.join("\n");
+}
+
 /* ──────────────────────────────────────────────────────────────
  * RSS + themeparks.wiki + additional sources
  * ────────────────────────────────────────────────────────────── */
@@ -381,9 +423,9 @@ async function fetchAdditionalSources() {
  * Lightweight, dependency-free. Handles both RSS (<item>) and Atom
  * (<entry>) feeds. Returns the N most recent items as flat objects:
  *   { title, link, pubDate, description }
- * `description` is HTML-stripped and capped so the full <content:encoded>
- * article body never bloats the prompt. We deliberately do NOT hand
- * Claude raw markup — just real headlines + short excerpts.
+ * `description` is the HTML-stripped article body (<content:encoded>
+ * when the feed has it), capped at EXCERPT_CHARS. We deliberately do NOT
+ * hand Claude raw markup — just real headlines + the article text.
  * ────────────────────────────────────────────────────────────── */
 
 function parseFeedItems(xml, max = 10) {
@@ -442,16 +484,19 @@ function parseFeedItems(xml, max = 10) {
     const pubDate = clean(
       pickTag(block, ["pubDate", "published", "updated", "dc:date"]),
     );
+    // Prefer the full article body over the short summary, so the writer
+    // sees the dates and details instead of guessing them.
     let description = clean(
       pickTag(block, [
-        "description",
-        "summary",
         "content:encoded",
         "content",
+        "description",
+        "summary",
       ]),
     );
-    if (description.length > 300) {
-      description = description.slice(0, 300).replace(/\s+\S*$/, "") + "…";
+    if (description.length > EXCERPT_CHARS) {
+      description =
+        description.slice(0, EXCERPT_CHARS).replace(/\s+\S*$/, "") + "…";
     }
     items.push({ title, link, pubDate, description });
     if (items.length >= max) break;
@@ -660,6 +705,8 @@ function buildPrompt({
 
 SOURCE VOLUME TODAY: ${totalRssItems} parsed article items across all RSS feeds (plus the themeparks.wiki resort directory and the YouTube list below). Treat this as a normal news day unless that count is very low (≈5 or fewer items total).
 
+After you write it, a separate fact-check reads every date, price, opening, closing and status claim against the sources and Disney's own pages. Claims it cannot confirm are cut. Write only what the sources below actually say.
+
 Parkio Daily is a fast, trusted morning briefing for Disney park guests. It is NOT a blog. It feels like a quick read that helps a guest plan their park day. Every word is yours — no copy/paste from sources, no paraphrased blog posts.
 
 Output ONE JSON object — no commentary, no markdown fences — that conforms exactly to the schema below.
@@ -667,9 +714,9 @@ Output ONE JSON object — no commentary, no markdown fences — that conforms e
 GUARDRAILS — read carefully, follow strictly:
 1. ORIGINAL LANGUAGE ONLY. Do NOT copy any phrasing from the source feeds. Do NOT paraphrase entire articles. Each story must be summarized in 1–2 sentences using ENTIRELY ORIGINAL language. The Parkio voice is fast, plain, direct. If you find yourself echoing source phrasing, rewrite.
 2. COMBINE DUPLICATES. If multiple sources cover the same story (e.g., WDWNT, AllEars, and Inside the Magic all covering one announcement), merge into ONE summary item. Never list the same story twice.
-3. NO INVENTION. Every factual claim — names, dates, closures, openings, prices — MUST be supported by AT LEAST ONE source feed below. The themeparks.wiki block is a resort and park directory, not live ride status; do not treat it as attraction status. If you cannot ground a claim, drop the item. Do not speculate.
+3. NO INVENTION. Every factual claim — names, dates, closures, openings, prices — MUST be stated in AT LEAST ONE source item below, in that item's own text. Do not fill in a detail the item does not state, even if you believe you know it. The themeparks.wiki block is a resort and park directory, not live ride status; do not treat it as attraction status. If you cannot ground a claim, drop the item. Do not speculate.
 4. NO-NEWS FALLBACK — LAST RESORT ONLY. Only use this if SOURCE VOLUME TODAY is genuinely low (≈5 or fewer total items) AND none describe a real development. In that case respond with a single bignews item titled "No major updates today" with a short body noting the parks are operating normally, and set sections.breaking and sections.icymi to []. Do NOT use this fallback on a normal news day just because writing is harder — if there are real items, cover them.
-5. COVER THE NEWS — do not underfill. The feeds below typically contain many distinct stories (new attractions, ride closures/openings, food and festival updates, entertainment changes, resort/hotel news, merchandise, and major operational changes across Walt Disney World AND Disneyland). TARGET 10–13 distinct, well-grounded stories per day across all sections when the sources support it. Include every DISTINCT story you can ground in a source — across Magic Kingdom, EPCOT, Hollywood Studios, Animal Kingdom, Disneyland, and California Adventure, and across all categories above. Do NOT drop a real, sourced story just to keep the list short, and do NOT pad with speculation. Quality AND coverage — a reader should leave feeling caught up on the day, not handed three items.
+5. ACCURACY OVER VOLUME. Aim for 6–10 distinct, well-grounded stories across all sections. Fewer is fine: a short, correct issue beats a long one with a wrong date in it. Prefer stories the Disney Parks Blog confirms, then stories with a clear dated report. Never pad with speculation or with a story you can only half ground.
 6. TOPIC DIVERSITY — strict. Each item across ALL sections (breaking + bignews + topstories + icymi + spotlight) must cover a DISTINCT story. Aim for breadth — different parks, different categories (attractions, food, merchandise, entertainment, transportation, characters, news), different angles. A reader should never feel like they're reading the same story rephrased twice.
 7. PARKIO INSIGHT — REQUIRED for every item in breaking, bignews, topstories, and spotlight. This is the Parkio differentiator. The field is an OBJECT with two keys:
    {
@@ -701,6 +748,9 @@ GUARDRAILS — read carefully, follow strictly:
 12. DATE THE NEWS. Each feed item includes its publication date. Describe that item by its real publication day (for example "Monday afternoon"), never as "today" or "this morning", unless that source's pubDate falls on the issue date ${etDate} in America/New_York.
 13. ANNOUNCEMENTS STAY ANNOUNCEMENTS. Keep "coming", "expected", and "planned" wording as-is. Never turn an announcement into a debut, an opening, or a "now open" claim.
 14. NO INVENTED STATUS. Do not invent attraction status — closures, final seasons, outages, or openings — that is not in a provided source.
+15. OFFICIAL vs REPORTED. The Disney Parks Blog is Disney's own word. The community blogs are reports. When a story rests ONLY on community blogs, say so in the body ("WDWNT reports…", "according to AllEars") and keep their hedges ("expected", "rumored"). Set "source" to the item you used — the Disney Parks Blog link when Disney covers the story.
+16. DATES AND WEEKDAYS. Only write a date or weekday that a source states. Whenever you pair a weekday with a date ("Tuesday, December 2"), look the pair up in the CALENDAR below — never work it out yourself. Never add a year, day or time a source does not give.
+17. NO "RIGHT NOW" RIDES. Parkio has no live wait-time data in this prompt, so do NOT include a "rightNow" block.
 
 SCHEMA (produce this object):
 {
@@ -708,17 +758,13 @@ SCHEMA (produce this object):
   "slug": string (must equal "${slug}"),
   "date": string (must equal "${etDate}"),
   "teaser": string (1–2 sentences, ≤160 chars; SEO + email subject/preview + first email line. Lead with the single most concrete, useful, timely fact grounded in a dated source — a name, a park, a number, a date — not vague hype. Good: "A new [attraction] is coming [date], from Monday's report." Bad: "You won't believe what Disney just announced!" No source phrasing),
-  "rightNow": {
-    "headline": "Best rides right now",
-    "rides": [ { "name": string, "parkSlug": string, "note": string } ]   // 2–3 items
-  },
   "sections": {
-    "breaking":   [ { "title", "body", "parkSlug?", "source?": { "label", "url" }, "parkioInsight": { "category", "text" } } ],   // 0–3 (only genuinely breaking, sourced)
-    "bignews":    [ { ...same shape with parkioInsight object } ],                                                                  // 2–4
-    "topstories": [ { ...same shape with parkioInsight object } ],                                                                  // 4–7
-    "icymi":      [ { "title", "body", "parkSlug?", "source?": { "label", "url" } } ],                                              // 2–4, NO parkioInsight
-    "spotlight":  [ { "title", "body", "parkSlug?", "ctaLabel?", "parkioInsight": { "category", "text" } } ]                        // exactly 1
-    // Aim for 10–13 DISTINCT stories total across breaking+bignews+topstories+icymi+spotlight when sources support it.
+    "breaking":   [ { "title", "body", "parkSlug?", "source": { "label", "url" }, "parkioInsight": { "category", "text" } } ],   // 0–2 (only genuinely breaking, sourced)
+    "bignews":    [ { ...same shape with parkioInsight object } ],                                                                 // 1–3
+    "topstories": [ { ...same shape with parkioInsight object } ],                                                                 // 2–5
+    "icymi":      [ { "title", "body", "parkSlug?", "source": { "label", "url" } } ],                                              // 0–3, NO parkioInsight
+    "spotlight":  [ { "title", "body", "parkSlug?", "source?": { "label", "url" }, "ctaLabel?", "parkioInsight": { "category", "text" } } ]   // exactly 1
+    // Aim for 6–10 DISTINCT stories total; fewer is fine. Every news item carries the "source" it came from.
   },
   "videos": [
     { "title", "channel", "url", "thumbnailUrl", "videoId", "viewCount", "publishedAt", "summary" }
@@ -727,10 +773,13 @@ SCHEMA (produce this object):
 
 parkSlug enum: magic-kingdom | epcot | hollywood-studios | animal-kingdom | disneyland | california-adventure.
 
-RESEARCH — Disney Parks Blog (official), parsed recent items [title — date / link / excerpt]:
+CALENDAR (use this for every weekday/date pair):
+${buildCalendar(etDate)}
+
+RESEARCH — Disney Parks Blog (OFFICIAL — Disney's own word), parsed recent items [title — date / link / article text]:
 ${rssText}
 
-RESEARCH — Additional Disney sources (community blogs), parsed recent items [title — date / link / excerpt]:
+RESEARCH — Additional Disney sources (REPORTED — community blogs, not Disney), parsed recent items [title — date / link / article text]:
 ${additionalText}
 
 RESEARCH — themeparks.wiki destinations (resort and park directory, not live ride status):
@@ -746,7 +795,7 @@ Return the JSON object only.`;
  * Claude API call (with retry)
  * ────────────────────────────────────────────────────────────── */
 
-async function callClaudeWithRetry(body) {
+async function callClaudeWithRetry(body, { betas = [] } = {}) {
   for (let attempt = 1; attempt <= CLAUDE_RETRIES; attempt++) {
     try {
       const res = await fetch("https://api.anthropic.com/v1/messages", {
@@ -755,6 +804,7 @@ async function callClaudeWithRetry(body) {
           "anthropic-version": "2023-06-01",
           "content-type": "application/json",
           "x-api-key": process.env.ANTHROPIC_API_KEY,
+          ...(betas.length ? { "anthropic-beta": betas.join(",") } : {}),
         },
         body,
         signal: AbortSignal.timeout(CLAUDE_TIMEOUT_MS),
@@ -827,7 +877,9 @@ function buildPost({ claudeResult, etDate, slug, niceDate, rankedVideos }) {
     claudeResult.type === "error" ||
     (typeof claudeResult.statusCode === "number" &&
       claudeResult.statusCode >= 400);
-  const rawText = claudeResult?.content?.[0]?.text ?? "";
+  // Sonnet 5.5 returns a thinking block before the answer, so take the
+  // last text block rather than content[0].
+  const rawText = finalText(claudeResult);
 
   // Fallback path — same minimal-but-valid DailyPost shape the n8n
   // validate node produces. Videos pass through from the upstream rank
@@ -896,6 +948,12 @@ function buildPost({ claudeResult, etDate, slug, niceDate, rankedVideos }) {
       fallbackReason = "json-parse-failure";
       post = fallbackPost(fallbackReason, e.message);
     }
+  }
+
+  // No live ride data reaches the writer, so a "Best rides right now"
+  // box could only be made up. The site and feed treat it as optional.
+  if (!usedFallback && post && typeof post === "object" && "rightNow" in post) {
+    delete post.rightNow;
   }
 
   // Fix 1: REPAIR-AND-WARN instead of throw. A single malformed field
@@ -991,7 +1049,8 @@ function buildPost({ claudeResult, etDate, slug, niceDate, rankedVideos }) {
     {
       aiGenerated: !usedFallback,
       sources: [
-        "Disney Parks Blog RSS",
+        "Disney Parks Blog RSS (official)",
+        "WDWNT, AllEars.Net, Disney Food Blog, Disney Tourist Blog, Inside the Magic RSS (reported)",
         "themeparks.wiki destinations",
         "YouTube Data API v3 (top 10 last 48h)",
       ],
@@ -1069,6 +1128,13 @@ async function getJson(url, { headers = {}, timeoutMs = 30_000 } = {}) {
     throw new Error(`${url} → HTTP ${res.status}: ${detail}`);
   }
   return await res.json();
+}
+
+/* Text of the model's answer: the last text block in the response. */
+function finalText(claudeResult) {
+  const blocks = Array.isArray(claudeResult?.content) ? claudeResult.content : [];
+  const texts = blocks.filter((b) => b?.type === "text" && typeof b.text === "string");
+  return texts.length ? texts[texts.length - 1].text : "";
 }
 
 function requireEnv(keys) {
